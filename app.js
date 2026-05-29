@@ -1,3 +1,6 @@
+const SUPABASE_URL = "https://ejseesgzjdabsndtdung.supabase.co";
+const SUPABASE_KEY = "sb_publishable_pLC5bh3LWUTi1w_7BoSCZg_ahBnuZ36";
+
 const state = {
   questions: [],
   exams: [],
@@ -37,9 +40,25 @@ const state = {
   sessionCompletionMessage: "",
   examCompletionMessage: "",
   activeAnswers: {},
+  supabase: null,
+  authUser: null,
+  cloudReady: false,
+  syncTimer: null,
+  settingsSyncTimer: null,
 };
 
 const el = {
+  authPanel: document.querySelector("#authPanel"),
+  authTitle: document.querySelector("#authTitle"),
+  authStatus: document.querySelector("#authStatus"),
+  authForm: document.querySelector("#authForm"),
+  authEmail: document.querySelector("#authEmail"),
+  authPassword: document.querySelector("#authPassword"),
+  login: document.querySelector("#loginBtn"),
+  signup: document.querySelector("#signupBtn"),
+  logout: document.querySelector("#logoutBtn"),
+  resetPassword: document.querySelector("#resetPasswordBtn"),
+  syncStatus: document.querySelector("#syncStatus"),
   search: document.querySelector("#searchInput"),
   topic: document.querySelector("#topicSelect"),
   status: document.querySelector("#statusSelect"),
@@ -163,6 +182,7 @@ const el = {
 
 function saveProgress() {
   localStorage.setItem("banco-rmais-progress", JSON.stringify(state.progress));
+  scheduleCloudProgressSync();
 }
 
 function saveCorrections() {
@@ -175,6 +195,7 @@ function saveExcluded() {
 
 function saveDiscardedOptions() {
   localStorage.setItem("banco-rmais-discarded-options", JSON.stringify(state.discardedOptions));
+  scheduleCloudSettingsSync();
 }
 
 function savePositions() {
@@ -183,18 +204,209 @@ function savePositions() {
 
 function saveSelectedTopics() {
   localStorage.setItem("banco-rmais-selected-topics", JSON.stringify(state.selectedTopics));
+  scheduleCloudSettingsSync();
 }
 
 function saveSessionSize() {
   localStorage.setItem("banco-rmais-session-size", String(state.sessionSize));
+  scheduleCloudSettingsSync();
 }
 
 function saveIncludeReviews() {
   localStorage.setItem("banco-rmais-include-reviews", String(state.includeReviewsInSession));
+  scheduleCloudSettingsSync();
 }
 
 function saveSessionSource() {
   localStorage.setItem("banco-rmais-session-source", state.sessionSource);
+  scheduleCloudSettingsSync();
+}
+
+function currentSettingsPayload() {
+  return {
+    selectedTopics: state.selectedTopics,
+    sessionSize: state.sessionSize,
+    includeReviewsInSession: state.includeReviewsInSession,
+    sessionSource: state.sessionSource,
+    discardedOptions: state.discardedOptions,
+  };
+}
+
+function applySettingsPayload(settings = {}) {
+  if (Object.prototype.hasOwnProperty.call(settings, "selectedTopics")) {
+    state.selectedTopics = settings.selectedTopics;
+    localStorage.setItem("banco-rmais-selected-topics", JSON.stringify(state.selectedTopics));
+  }
+  if (Object.prototype.hasOwnProperty.call(settings, "sessionSize")) {
+    state.sessionSize = Number(settings.sessionSize) || 30;
+    localStorage.setItem("banco-rmais-session-size", String(state.sessionSize));
+  }
+  if (Object.prototype.hasOwnProperty.call(settings, "includeReviewsInSession")) {
+    state.includeReviewsInSession = Boolean(settings.includeReviewsInSession);
+    localStorage.setItem("banco-rmais-include-reviews", String(state.includeReviewsInSession));
+  }
+  if (Object.prototype.hasOwnProperty.call(settings, "sessionSource")) {
+    state.sessionSource = settings.sessionSource || "content";
+    localStorage.setItem("banco-rmais-session-source", state.sessionSource);
+  }
+  if (Object.prototype.hasOwnProperty.call(settings, "discardedOptions")) {
+    state.discardedOptions = settings.discardedOptions || {};
+    localStorage.setItem("banco-rmais-discarded-options", JSON.stringify(state.discardedOptions));
+  }
+}
+
+function setSyncStatus(message) {
+  if (el.syncStatus) el.syncStatus.textContent = message;
+}
+
+function renderAuth() {
+  if (!el.authPanel) return;
+  const user = state.authUser;
+  el.authTitle.textContent = user ? "Conta conectada" : "Entrar";
+  el.authStatus.textContent = user ? user.email : "Salve seu progresso com login.";
+  el.authForm.hidden = Boolean(user);
+  el.logout.hidden = !user;
+  if (!user) setSyncStatus(state.supabase ? "Modo local ativo." : "Supabase indisponivel neste navegador.");
+}
+
+function scheduleCloudProgressSync() {
+  if (!state.cloudReady || !state.authUser || !state.supabase) return;
+  clearTimeout(state.syncTimer);
+  state.syncTimer = setTimeout(syncProgressToCloud, 900);
+}
+
+function scheduleCloudSettingsSync() {
+  if (!state.cloudReady || !state.authUser || !state.supabase) return;
+  clearTimeout(state.settingsSyncTimer);
+  state.settingsSyncTimer = setTimeout(syncSettingsToCloud, 900);
+}
+
+async function syncProgressToCloud() {
+  if (!state.authUser || !state.supabase) return;
+  const entries = Object.entries(state.progress).filter(([, progress]) => progress && Object.keys(progress).length);
+  if (!entries.length) return;
+  const rows = entries.map(([questionId, progress]) => ({
+    user_id: state.authUser.id,
+    question_id: questionId,
+    progress,
+    updated_at: new Date().toISOString(),
+  }));
+  const { error } = await state.supabase.from("user_progress").upsert(rows, { onConflict: "user_id,question_id" });
+  setSyncStatus(error ? `Erro ao sincronizar: ${error.message}` : "Progresso sincronizado.");
+}
+
+async function syncSettingsToCloud() {
+  if (!state.authUser || !state.supabase) return;
+  const { error } = await state.supabase.from("user_settings").upsert(
+    {
+      user_id: state.authUser.id,
+      settings: currentSettingsPayload(),
+      updated_at: new Date().toISOString(),
+    },
+    { onConflict: "user_id" },
+  );
+  setSyncStatus(error ? `Erro ao salvar configuracoes: ${error.message}` : "Configuracoes sincronizadas.");
+}
+
+async function loadCloudState() {
+  if (!state.authUser || !state.supabase) return;
+  setSyncStatus("Carregando progresso da conta...");
+  const [{ data: progressRows, error: progressError }, { data: settingsRow, error: settingsError }] = await Promise.all([
+    state.supabase.from("user_progress").select("question_id, progress"),
+    state.supabase.from("user_settings").select("settings").eq("user_id", state.authUser.id).maybeSingle(),
+  ]);
+  if (progressError || settingsError) {
+    setSyncStatus(`Erro ao carregar conta: ${(progressError || settingsError).message}`);
+    return;
+  }
+  const cloudProgress = {};
+  for (const row of progressRows || []) cloudProgress[row.question_id] = row.progress || {};
+  state.progress = { ...state.progress, ...cloudProgress };
+  localStorage.setItem("banco-rmais-progress", JSON.stringify(state.progress));
+  if (settingsRow?.settings) applySettingsPayload(settingsRow.settings);
+  state.cloudReady = true;
+  await Promise.all([syncProgressToCloud(), syncSettingsToCloud()]);
+  setSyncStatus("Conta sincronizada.");
+  renderTopics();
+  applyFilters({ preserveCurrent: true });
+}
+
+async function setupSupabaseAuth() {
+  if (!window.supabase?.createClient) {
+    renderAuth();
+    return;
+  }
+  state.supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+  const { data } = await state.supabase.auth.getSession();
+  state.authUser = data.session?.user || null;
+  state.cloudReady = Boolean(state.authUser);
+  renderAuth();
+  if (state.authUser) await loadCloudState();
+  state.supabase.auth.onAuthStateChange(async (_event, session) => {
+    state.authUser = session?.user || null;
+    state.cloudReady = Boolean(state.authUser);
+    renderAuth();
+    if (state.authUser) await loadCloudState();
+    else setSyncStatus("Modo local ativo.");
+  });
+}
+
+async function signIn() {
+  if (!state.supabase) {
+    setSyncStatus("Supabase ainda nao carregou. Recarregue a pagina.");
+    return;
+  }
+  const email = el.authEmail.value.trim();
+  const password = el.authPassword.value;
+  if (!email || !password) {
+    setSyncStatus("Informe email e senha.");
+    return;
+  }
+  setSyncStatus("Entrando...");
+  const { error } = await state.supabase.auth.signInWithPassword({ email, password });
+  if (error) setSyncStatus(`Erro ao entrar: ${error.message}`);
+}
+
+async function signUp() {
+  if (!state.supabase) {
+    setSyncStatus("Supabase ainda nao carregou. Recarregue a pagina.");
+    return;
+  }
+  const email = el.authEmail.value.trim();
+  const password = el.authPassword.value;
+  if (!email || !password) {
+    setSyncStatus("Informe email e senha para criar a conta.");
+    return;
+  }
+  setSyncStatus("Criando conta...");
+  const { error } = await state.supabase.auth.signUp({
+    email,
+    password,
+    options: { emailRedirectTo: window.location.origin },
+  });
+  setSyncStatus(error ? `Erro ao criar conta: ${error.message}` : "Conta criada. Verifique seu email se a confirmacao estiver ativa.");
+}
+
+async function signOut() {
+  if (!state.supabase) return;
+  await state.supabase.auth.signOut();
+  state.authUser = null;
+  state.cloudReady = false;
+  renderAuth();
+}
+
+async function resetPassword() {
+  if (!state.supabase) {
+    setSyncStatus("Supabase ainda nao carregou. Recarregue a pagina.");
+    return;
+  }
+  const email = el.authEmail.value.trim();
+  if (!email) {
+    setSyncStatus("Informe o email para recuperar a senha.");
+    return;
+  }
+  const { error } = await state.supabase.auth.resetPasswordForEmail(email, { redirectTo: window.location.origin });
+  setSyncStatus(error ? `Erro ao enviar recuperacao: ${error.message}` : "Email de recuperacao enviado.");
 }
 
 function currentQuestion() {
@@ -1763,6 +1975,10 @@ function resetUserProgress() {
   localStorage.removeItem("banco-rmais-discarded-options");
   saveProgress();
   saveDiscardedOptions();
+  if (state.authUser && state.supabase) {
+    state.supabase.from("user_progress").delete().eq("user_id", state.authUser.id);
+    syncSettingsToCloud();
+  }
   state.index = 0;
   setTab("activity");
   applyFilters({ preserveCurrent: true });
@@ -1888,6 +2104,13 @@ function restoreExcludedQuestions() {
 }
 
 el.tabs.forEach((button) => button.addEventListener("click", () => setTab(button.dataset.tab)));
+el.login.addEventListener("click", signIn);
+el.signup.addEventListener("click", signUp);
+el.logout.addEventListener("click", signOut);
+el.resetPassword.addEventListener("click", resetPassword);
+el.authPassword.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") signIn();
+});
 el.topicChecklist.addEventListener("change", (event) => {
   const input = event.target.closest("input[type='checkbox']");
   if (!input) return;
@@ -2147,12 +2370,13 @@ function loadPayload() {
 }
 
 loadPayload()
-  .then((payload) => {
+  .then(async (payload) => {
     state.questions = payload.questions || [];
     state.exams = window.BANCO_RMAIS_EXAMS?.exams || [];
     seedLegacySpacedReviews();
     renderTopics();
     applyFilters();
+    await setupSupabaseAuth();
   })
   .catch((error) => {
     el.source.textContent = "Importação pendente";

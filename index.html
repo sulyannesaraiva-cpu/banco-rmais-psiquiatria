@@ -16,6 +16,24 @@
         </div>
       </div>
 
+      <section class="auth-panel" id="authPanel">
+        <div class="auth-status">
+          <strong id="authTitle">Entrar</strong>
+          <span id="authStatus">Salve seu progresso com login.</span>
+        </div>
+        <div id="authForm" class="auth-form">
+          <input id="authEmail" type="email" autocomplete="email" placeholder="email" />
+          <input id="authPassword" type="password" autocomplete="current-password" placeholder="senha" />
+          <div class="auth-actions">
+            <button id="loginBtn" class="primary-btn">Entrar</button>
+            <button id="signupBtn">Criar conta</button>
+          </div>
+          <button id="resetPasswordBtn" class="link-btn">Recuperar senha</button>
+        </div>
+        <button id="logoutBtn" hidden>Sair</button>
+        <p class="panel-line" id="syncStatus">Modo local ativo.</p>
+      </section>
+
       <nav class="tabs" aria-label="Painel do banco">
         <button class="tab active" data-tab="overview">Visao geral</button>
         <button class="tab" data-tab="topics">Temas</button>
@@ -394,6 +412,7 @@
 
     <script src="data/questions.js"></script>
     <script src="data/exams.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="app.js"></script>
   </body>
 </html>

@@ -96,6 +96,60 @@ button.active {
   line-height: 1.1;
 }
 
+.auth-panel {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 18px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+}
+
+.auth-status {
+  display: grid;
+  gap: 2px;
+}
+
+.auth-status span {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.auth-form {
+  display: grid;
+  gap: 8px;
+}
+
+.auth-form input {
+  min-height: 38px;
+  padding: 9px 10px;
+}
+
+.auth-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.auth-actions button,
+.auth-panel > button {
+  width: 100%;
+}
+
+.link-btn {
+  min-height: 30px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #155e75;
+  text-align: left;
+}
+
+.link-btn:hover {
+  text-decoration: underline;
+}
+
 .brand p,
 .topbar p,
 .field span,
