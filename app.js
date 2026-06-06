@@ -2369,7 +2369,7 @@ function startSpacedReview() {
   state.spacedReviewIds = due.map((question) => question.id);
   state.index = 0;
   setTab("today");
-  render();
+  applyFilters({ preserveCurrent: true });
 }
 
 function endSpacedReview() {
