@@ -37,9 +37,9 @@
 
       <nav class="tabs" aria-label="Painel do banco">
         <button class="tab active" data-tab="overview">Visão geral</button>
-        <button class="tab" data-tab="topics">Temas</button>
         <button class="tab" data-tab="activity">Sessão</button>
         <button class="tab" data-tab="exams">Provas prévias</button>
+        <button class="tab admin-tab" data-tab="topics">Manutenção</button>
       </nav>
 
       <section class="dashboard">
@@ -167,6 +167,8 @@
 
         <div class="tab-panel" id="topicsPanel">
           <div class="panel-section">
+            <h3>Manutenção do banco</h3>
+            <p class="panel-line">Área administrativa para corrigir cadastro de questões. Não faz parte do fluxo normal de estudo.</p>
             <input id="searchInput" type="search" placeholder="termo, tema ou enunciado" hidden />
             <select id="topicSelect" hidden aria-hidden="true"></select>
 
