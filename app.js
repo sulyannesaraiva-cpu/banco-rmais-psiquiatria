@@ -1,5 +1,6 @@
 const SUPABASE_URL = "https://ejseesgzjdabsndtdung.supabase.co";
 const SUPABASE_KEY = "sb_publishable_pLC5bh3LWUTi1w_7BoSCZg_ahBnuZ36";
+const storedSidebarState = localStorage.getItem("banco-rmais-sidebar-collapsed");
 
 const state = {
   questions: [],
@@ -13,6 +14,8 @@ const state = {
   discardedOptions: JSON.parse(localStorage.getItem("banco-rmais-discarded-options") || "{}"),
   positions: JSON.parse(localStorage.getItem("banco-rmais-positions") || "{}"),
   selectedTopics: JSON.parse(localStorage.getItem("banco-rmais-selected-topics") || "null"),
+  selectedSubthemes: JSON.parse(localStorage.getItem("banco-rmais-selected-subthemes") || "[]"),
+  refineSubthemes: localStorage.getItem("banco-rmais-refine-subthemes") === "true",
   sessionSize: Number(localStorage.getItem("banco-rmais-session-size") || "30"),
   includeReviewsInSession: localStorage.getItem("banco-rmais-include-reviews") === "true",
   sessionSource: localStorage.getItem("banco-rmais-session-source") || "content",
@@ -45,9 +48,121 @@ const state = {
   cloudReady: false,
   syncTimer: null,
   settingsSyncTimer: null,
+  sidebarCollapsed:
+    storedSidebarState === null ? window.matchMedia("(max-width: 860px)").matches : storedSidebarState === "true",
 };
 
+const MIN_SUBTHEME_COUNT = 10;
+const PSYCHOPHARM_SESSION_TOPIC = "Psicofarmacologia e terapêutica psiquiátrica";
+
+const SESSION_TOPIC_GROUPS = [
+  {
+    label: "Demências e transtornos neurocognitivos",
+    sources: ["Demências"],
+  },
+  {
+    label: "Delirium, consciência e neuropsiquiatria clínica",
+    sources: ["Coma e alterações"],
+  },
+  {
+    label: "Ansiedade, TOC, trauma e somatoformes",
+    sources: [
+      "Transtornos de Ansiedade",
+      "Transtorno Obsessivo-Compulsivo",
+      "Transtornos Relacionados a Trauma",
+      "Transtornos Somatiformes",
+    ],
+  },
+];
+
+const SUBTHEME_RULES = [
+  {
+    label: "Depressão e suicídio",
+    keywords: ["depress", "distimia", "luto", "suicid", "autoles", "eletroconvulsoterapia", "ect"],
+  },
+  {
+    label: "Transtorno bipolar e mania",
+    keywords: ["bipolar", "mania", "maniaco", "maníaco", "hipomania", "ciclotim"],
+  },
+  {
+    label: "Antidepressivos",
+    keywords: ["antidepress", "ssri", "isrs", "fluoxetina", "sertralina", "paroxetina", "venlafaxina", "duloxetina", "bupropiona", "mirtazapina", "triciclico", "tricíclico"],
+  },
+  {
+    label: "Antipsicóticos",
+    keywords: ["antipsicot", "clozapina", "olanzapina", "quetiapina", "risperidona", "haloperidol", "aripiprazol", "síndrome neuroléptica", "sindrome neuroleptica"],
+  },
+  {
+    label: "Estabilizadores do humor",
+    keywords: ["litio", "lítio", "valproato", "carbamazepina", "lamotrigina", "estabilizador"],
+  },
+  {
+    label: "Benzodiazepínicos e sedativos",
+    keywords: ["benzodiazep", "diazepam", "clonazepam", "alprazolam", "zolpidem", "sedativo"],
+  },
+  {
+    label: "Álcool e abstinência",
+    keywords: ["alcool", "álcool", "abstinencia alcool", "abstinência alcool", "delirium tremens", "dependencia alcool", "dependência alcool"],
+  },
+  {
+    label: "Drogas e intoxicações",
+    keywords: ["cocaina", "cocaína", "crack", "cannabis", "maconha", "opioide", "anfetamina", "intoxic", "dependencia quimica", "dependência química", "redução de danos", "reducao de danos"],
+  },
+  {
+    label: "TEA e neurodesenvolvimento",
+    keywords: ["autis", "tea", "espectro autista", "neurodesenvolvimento", "desenvolvimento neuropsicomotor"],
+  },
+  {
+    label: "TDAH e comportamento disruptivo",
+    keywords: ["tdah", "hiperatividade", "déficit de atenção", "deficit de atencao", "oposição", "oposicao", "desafio", "conduta", "bullying"],
+  },
+  {
+    label: "Demências e rastreio cognitivo",
+    keywords: ["demencia", "demência", "alzheimer", "minimental", "mini mental", "comprometimento cognitivo", "neurocognitivo", "rastreio cognitivo"],
+  },
+  {
+    label: "Delirium e alterações da consciência",
+    keywords: ["delirium", "coma", "consciência", "consciencia", "rebaixamento", "estado confusional", "orientação", "orientacao"],
+  },
+  {
+    label: "Psicopatologia e exame mental",
+    keywords: ["exame do estado mental", "psicopatologia", "delirio", "delírio", "alucin", "juízo", "juizo", "insight", "sensopercep", "pensamento"],
+  },
+  {
+    label: "Ansiedade, TOC e trauma",
+    keywords: ["ansiedade", "panico", "pânico", "fobia", "toc", "obsess", "compuls", "trauma", "tept", "estresse pós", "estresse pos"],
+  },
+  {
+    label: "Sono",
+    keywords: ["sono", "insonia", "insônia", "apneia", "narcolepsia", "terror noturno", "pesadelo", "sonolência", "sonolencia"],
+  },
+  {
+    label: "Alimentares",
+    keywords: ["anorexia", "bulimia", "compulsão alimentar", "compulsao alimentar", "transtorno alimentar", "imagem corporal"],
+  },
+  {
+    label: "Personalidade",
+    keywords: ["personalidade", "borderline", "antissocial", "narcis", "histri", "esquiva", "dependente"],
+  },
+  {
+    label: "Forense, ética e legislação",
+    keywords: ["forense", "ética", "etica", "lei", "legislação", "legislacao", "inimput", "perícia", "pericia", "capacidade civil", "interdição", "interdicao", "sigilo", "internação involuntária", "internacao involuntaria"],
+  },
+  {
+    label: "Psicoterapia",
+    keywords: ["psicoterapia", "terapia cognitiva", "tcc", "psican", "transferência", "transferencia", "contratransfer", "terapia familiar", "terapia de grupo"],
+  },
+  {
+    label: "Psicogeriatria e saúde do idoso",
+    keywords: ["idoso", "geriatr", "fragilidade", "quedas", "polifarm", "envelhecimento", "cuidador", "funcionalidade"],
+  },
+];
+
 const el = {
+  sidebarToggle: document.querySelector("#sidebarToggle"),
+  startPanel: document.querySelector("#startPanel"),
+  goSession: document.querySelector("#goSessionBtn"),
+  goExams: document.querySelector("#goExamsBtn"),
   authPanel: document.querySelector("#authPanel"),
   authTitle: document.querySelector("#authTitle"),
   authStatus: document.querySelector("#authStatus"),
@@ -121,6 +236,8 @@ const el = {
   startTopic: document.querySelector("#startTopicBtn"),
   endTopic: document.querySelector("#endTopicBtn"),
   topicModeLine: document.querySelector("#topicModeLine"),
+  refineSubthemes: document.querySelector("#refineSubthemesToggle"),
+  subthemeChecklist: document.querySelector("#subthemeChecklist"),
   selectAllTopics: document.querySelector("#selectAllTopicsBtn"),
   clearTopics: document.querySelector("#clearTopicsBtn"),
   sessionSizeGroup: document.querySelector("#sessionSizeGroup"),
@@ -207,6 +324,12 @@ function saveSelectedTopics() {
   scheduleCloudSettingsSync();
 }
 
+function saveSubthemeSettings() {
+  localStorage.setItem("banco-rmais-selected-subthemes", JSON.stringify(state.selectedSubthemes));
+  localStorage.setItem("banco-rmais-refine-subthemes", String(state.refineSubthemes));
+  scheduleCloudSettingsSync();
+}
+
 function saveSessionSize() {
   localStorage.setItem("banco-rmais-session-size", String(state.sessionSize));
   scheduleCloudSettingsSync();
@@ -225,6 +348,8 @@ function saveSessionSource() {
 function currentSettingsPayload() {
   return {
     selectedTopics: state.selectedTopics,
+    selectedSubthemes: state.selectedSubthemes,
+    refineSubthemes: state.refineSubthemes,
     sessionSize: state.sessionSize,
     includeReviewsInSession: state.includeReviewsInSession,
     sessionSource: state.sessionSource,
@@ -236,6 +361,14 @@ function applySettingsPayload(settings = {}) {
   if (Object.prototype.hasOwnProperty.call(settings, "selectedTopics")) {
     state.selectedTopics = settings.selectedTopics;
     localStorage.setItem("banco-rmais-selected-topics", JSON.stringify(state.selectedTopics));
+  }
+  if (Object.prototype.hasOwnProperty.call(settings, "selectedSubthemes")) {
+    state.selectedSubthemes = Array.isArray(settings.selectedSubthemes) ? settings.selectedSubthemes : [];
+    localStorage.setItem("banco-rmais-selected-subthemes", JSON.stringify(state.selectedSubthemes));
+  }
+  if (Object.prototype.hasOwnProperty.call(settings, "refineSubthemes")) {
+    state.refineSubthemes = Boolean(settings.refineSubthemes);
+    localStorage.setItem("banco-rmais-refine-subthemes", String(state.refineSubthemes));
   }
   if (Object.prototype.hasOwnProperty.call(settings, "sessionSize")) {
     state.sessionSize = Number(settings.sessionSize) || 30;
@@ -432,6 +565,18 @@ function isActiveAttemptMode() {
   );
 }
 
+function hasActiveQuestionFlow() {
+  return Boolean(
+    state.topicActive ||
+      state.sessionActive ||
+      state.smartTrainingActive ||
+      state.spacedReviewActive ||
+      state.examActive ||
+      state.examSetActive ||
+      state.examSimulationActive,
+  );
+}
+
 function currentAttemptFor(questionId) {
   return state.activeAnswers[questionId] || {};
 }
@@ -561,18 +706,39 @@ function pendingCounts() {
 }
 
 function allTopics() {
-  return [...new Set(state.questions.filter((question) => !isExcluded(question.id)).map((question) => question.source))].sort();
+  return [
+    ...new Set(
+      state.questions
+        .filter((question) => !isExcluded(question.id))
+        .map((question) => topicForQuestion(question)),
+    ),
+  ].sort();
+}
+
+function sourcesForTopic(topic) {
+  const group = SESSION_TOPIC_GROUPS.find((item) => item.label === topic);
+  return group ? group.sources : [topic];
+}
+
+function questionBelongsToTopic(question, topic) {
+  return topicForQuestion(question) === topic;
+}
+
+function topicForQuestion(question) {
+  if (isPsychopharmacologyQuestion(question)) return PSYCHOPHARM_SESSION_TOPIC;
+  const group = SESSION_TOPIC_GROUPS.find((item) => item.sources.includes(question.source));
+  return group?.label || question.source || question.topic || "Sem tema";
 }
 
 function topicsForStats() {
   if (!Array.isArray(state.selectedTopics)) return allTopics();
   return state.selectedTopics.filter((topic) =>
-    state.questions.some((question) => question.source === topic && !isExcluded(question.id)),
+    state.questions.some((question) => questionBelongsToTopic(question, topic) && !isExcluded(question.id)),
   );
 }
 
 function topicQuestions(topic) {
-  return state.questions.filter((question) => question.source === topic && !isExcluded(question.id));
+  return state.questions.filter((question) => questionBelongsToTopic(question, topic) && !isExcluded(question.id));
 }
 
 function topicPerformance(topic) {
@@ -590,6 +756,150 @@ function topicStatus(topic) {
   if (perf.answered >= 5 && perf.accuracy >= 0.7) return "consolidated";
   if (perf.accuracy >= 0.5) return "building";
   return "fragile";
+}
+
+function subthemeKey(topic, label) {
+  return `${topic}::${label}`;
+}
+
+function subthemeMinorKey(topic) {
+  return subthemeKey(topic, "__minor__");
+}
+
+function questionSubthemeText(question) {
+  return normalize(
+    [
+      question.source,
+      question.topic,
+      question.title,
+      question.text,
+      ...(question.options || []).map((option) => option.text),
+    ].join(" "),
+  );
+}
+
+function isPsychopharmacologyQuestion(question) {
+  const haystack = questionSubthemeText(question);
+  const keywords = [
+    "antidepress",
+    "fluoxetina",
+    "sertralina",
+    "paroxetina",
+    "citalopram",
+    "escitalopram",
+    "venlafaxina",
+    "duloxetina",
+    "bupropiona",
+    "mirtazapina",
+    "trazodona",
+    "amitriptilina",
+    "imipramina",
+    "nortriptilina",
+    "triciclico",
+    "isrs",
+    "irsn",
+    "imao",
+    "antipsicot",
+    "neuroleptico",
+    "haloperidol",
+    "risperidona",
+    "olanzapina",
+    "quetiapina",
+    "clozapina",
+    "aripiprazol",
+    "ziprasidona",
+    "paliperidona",
+    "lurasidona",
+    "discinesia",
+    "acatisia",
+    "distonia",
+    "extrapiramidal",
+    "sindrome neuroleptica",
+    "litio",
+    "valproato",
+    "divalproato",
+    "carbamazepina",
+    "oxcarbazepina",
+    "lamotrigina",
+    "estabilizador do humor",
+    "benzodiazep",
+    "diazepam",
+    "clonazepam",
+    "alprazolam",
+    "lorazepam",
+    "midazolam",
+    "zolpidem",
+    "zopiclona",
+    "donepezila",
+    "rivastigmina",
+    "galantamina",
+    "memantina",
+    "colinesterase",
+    "metilfenidato",
+    "atomoxetina",
+    "lisdexanfetamina",
+    "psicoestimulante",
+    "naltrexona",
+    "acamprosato",
+    "dissulfiram",
+    "metadona",
+    "buprenorfina",
+    "naloxona",
+    "tiamina",
+    "serotoninergica",
+    "hiperprolactinemia",
+  ];
+  return keywords.some((keyword) => haystack.includes(normalize(keyword))) || question.source === "Psicofarmacologia";
+}
+
+function questionSubtheme(question) {
+  const haystack = questionSubthemeText(effectiveQuestion(question));
+  const scored = SUBTHEME_RULES.map((rule, index) => {
+    const score = rule.keywords.reduce((total, keyword) => total + (haystack.includes(normalize(keyword)) ? 1 : 0), 0);
+    return { label: rule.label, score, index };
+  })
+    .filter((item) => item.score > 0)
+    .sort((a, b) => b.score - a.score || a.index - b.index);
+  return scored[0]?.label || "Subtema a revisar";
+}
+
+function subthemeCatalogForTopics(topics = topicsForStats()) {
+  const catalog = new Map();
+  for (const topic of topics) {
+    const questions = topicQuestions(topic).filter((question) => isReadyQuestion(effectiveQuestion(question)));
+    const counts = new Map();
+    for (const question of questions) {
+      const label = questionSubtheme(question);
+      counts.set(label, (counts.get(label) || 0) + 1);
+    }
+    const visible = [...counts.entries()]
+      .filter(([, count]) => count >= MIN_SUBTHEME_COUNT)
+      .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+    const minorLabels = [...counts.entries()]
+      .filter(([, count]) => count < MIN_SUBTHEME_COUNT)
+      .map(([label]) => label);
+    const minorCount = questions.filter((question) => minorLabels.includes(questionSubtheme(question))).length;
+    catalog.set(topic, { visible, minorLabels, minorCount });
+  }
+  return catalog;
+}
+
+function activeSubthemeKeys() {
+  return new Set(state.refineSubthemes ? state.selectedSubthemes || [] : []);
+}
+
+function questionMatchesSelectedSubthemes(question) {
+  const keys = activeSubthemeKeys();
+  if (!keys.size) return true;
+  const topic = topicForQuestion(question);
+  const catalog = subthemeCatalogForTopics([topic]).get(topic);
+  const label = questionSubtheme(question);
+  const selectedLabels = [...keys]
+    .filter((key) => !key.endsWith("::__minor__"))
+    .map((key) => key.split("::").slice(1).join("::"));
+  return selectedLabels.includes(label) || keys.has(subthemeKey(topic, label)) || Boolean(
+    catalog?.minorLabels.includes(label) && keys.has(subthemeMinorKey(topic)),
+  );
 }
 
 function shuffle(items) {
@@ -659,6 +969,24 @@ function reviewDaysByAnswerType(grade, answerType, previous) {
     return previous.nextReviewAt || previous.review || previous.wrongCount ? Math.min(Math.max((previous.intervalDays || 1) * 2, 2), 30) : 14;
   }
   return null;
+}
+
+function pluralize(count, singular, plural = `${singular}s`) {
+  return `${count} ${count === 1 ? singular : plural}`;
+}
+
+function formatReviewInterval(days) {
+  if (days === 0) return "hoje";
+  if (days === 1) return "em 1 dia";
+  return `em ${days} dias`;
+}
+
+function nextReviewGuidance(question) {
+  const progress = getProgress(question.id);
+  const grade = progress.grade || "wrong";
+  const answerType = progress.errorType || progress.successType || "";
+  const days = reviewDaysByAnswerType(grade, answerType, progress);
+  return formatReviewInterval(days ?? 2);
 }
 
 function reviewPatchForGrade(previous, grade, answerType = "", countAttempt = true) {
@@ -842,6 +1170,14 @@ function applyFilters({ preserveCurrent = false } = {}) {
     return;
   }
 
+  if (el.status.value === "all") {
+    state.filtered = [];
+    state.index = 0;
+    state.filterKey = currentFilterKey();
+    render();
+    return;
+  }
+
   const nextFilterKey = currentFilterKey();
   const filterChanged = nextFilterKey !== state.filterKey;
   if (filterChanged) rememberCurrentPosition();
@@ -864,9 +1200,9 @@ function applyFilters({ preserveCurrent = false } = {}) {
     const matchesTopic = pendingAdminMode
       ? true
       : activeTopicIds
-        ? activeTopicIds.has(view.source)
+        ? [...activeTopicIds].some((topicName) => questionBelongsToTopic(view, topicName))
         : selectedTopicIds
-          ? selectedTopicIds.has(view.source)
+          ? [...selectedTopicIds].some((topicName) => questionBelongsToTopic(view, topicName))
           : topic === "all" || view.source === topic;
     const matchesStatus =
       status === "all" ||
@@ -912,11 +1248,11 @@ function renderStats() {
   const visibleQuestions = state.questions.filter((question) => !isExcluded(question.id));
   const answered = visibleQuestions.filter((question) => getProgress(question.id).grade).length;
   const correct = visibleQuestions.filter((question) => getProgress(question.id).grade === "correct").length;
-  const ready = state.filtered.filter((question) => {
+  const ready = visibleQuestions.filter((question) => {
     const view = effectiveQuestion(question);
     return isReadyQuestion(view);
   }).length;
-  el.total.textContent = state.filtered.length;
+  el.total.textContent = visibleQuestions.length;
   el.answered.textContent = answered;
   el.ready.textContent = ready;
   el.accuracy.textContent = answered ? `${Math.round((correct / answered) * 100)}%` : "0%";
@@ -993,16 +1329,18 @@ function renderErrorChart() {
 
 function renderOverview() {
   const topics = topicsForStats();
-  const selectedQuestions = state.questions.filter((question) => topics.includes(question.source) && !isExcluded(question.id));
+  const selectedQuestions = state.questions.filter(
+    (question) => topics.some((topicName) => questionBelongsToTopic(question, topicName)) && !isExcluded(question.id),
+  );
   const counts = { dominated: 0, consolidated: 0, building: 0, fragile: 0, unseen: 0 };
   for (const topic of topics) counts[topicStatus(topic)] += 1;
   const totalTopics = Math.max(topics.length, 1);
   const dueCount = spacedReviewQuestions(true).length;
   const unseenCount = selectedQuestions.filter((question) => !getProgress(question.id).grade).length;
   if (el.overviewSmartLine) {
-    el.overviewSmartLine.textContent = `${dueCount} revisoes vencidas, ${counts.fragile} temas frageis e ${unseenCount} questoes nao praticadas nos temas selecionados.`;
+    el.overviewSmartLine.textContent = `${pluralize(dueCount, "revisão", "revisões")} vencida${dueCount === 1 ? "" : "s"}, ${pluralize(counts.fragile, "tema frágil", "temas frágeis")} e ${pluralize(unseenCount, "questão não praticada", "questões não praticadas")} nos temas selecionados.`;
   }
-  el.overviewLine.textContent = `Estatisticas dos ${topics.length} temas selecionados (${selectedQuestions.length} questoes)`;
+  el.overviewLine.textContent = `Estatísticas dos ${topics.length} temas selecionados (${pluralize(selectedQuestions.length, "questão", "questões")})`;
   for (const key of Object.keys(counts)) {
     el.overviewCounts[key].textContent = counts[key];
     el.overviewBars[key].style.width = `${(counts[key] / totalTopics) * 100}%`;
@@ -1012,8 +1350,12 @@ function renderOverview() {
 function renderTopicChecklist() {
   if (!el.topicChecklist || !state.questions.length) return;
   const selectedTopics = Array.isArray(state.selectedTopics) ? state.selectedTopics : [];
-  const selectedQuestionCount = state.questions.filter((question) => selectedTopics.includes(question.source) && !isExcluded(question.id)).length;
-  el.topicModeLine.textContent = `${selectedTopics.length}/${allTopics().length} temas selecionados - ${selectedQuestionCount} questoes no banco.`;
+  const selectedQuestionCount = selectedContentQuestions({ ignoreSubthemes: true }).length;
+  const refinedQuestionCount = selectedContentQuestions().length;
+  const subthemeNote = state.refineSubthemes
+    ? ` Refinamento ativo: ${pluralize(refinedQuestionCount, "questão", "questões")} no recorte.`
+    : "";
+  el.topicModeLine.textContent = `${selectedTopics.length}/${allTopics().length} temas selecionados - ${pluralize(selectedQuestionCount, "questão", "questões")} no banco.${subthemeNote}`;
   const topicQuery = normalize(el.topicPanelSearch.value);
   const topics = allTopics().filter((topic) => !topicQuery || normalize(topic).includes(topicQuery));
   el.topicChecklist.innerHTML = topics
@@ -1032,6 +1374,67 @@ function renderTopicChecklist() {
   if (!topics.length) {
     el.topicChecklist.innerHTML = `<p class="panel-line">Nenhum tema encontrado.</p>`;
   }
+  renderSubthemeChecklist();
+}
+
+function renderSubthemeChecklist() {
+  if (!el.subthemeChecklist || !el.refineSubthemes) return;
+  el.refineSubthemes.checked = state.refineSubthemes;
+  el.subthemeChecklist.hidden = !state.refineSubthemes;
+  if (!state.refineSubthemes) {
+    el.subthemeChecklist.innerHTML = "";
+    return;
+  }
+  const topics = topicsForStats();
+  const catalog = subthemeCatalogForTopics(topics);
+  const validKeys = new Set();
+  const groups = [];
+  for (const topic of topics) {
+    const item = catalog.get(topic);
+    if (!item) continue;
+    const rows = [];
+    for (const [label, count] of item.visible) {
+      const key = subthemeKey(topic, label);
+      validKeys.add(key);
+      rows.push({ key, label, count });
+    }
+    if (item.minorCount >= 5) {
+      const key = subthemeMinorKey(topic);
+      validKeys.add(key);
+      rows.push({ key, label: "Subtemas menores", count: item.minorCount });
+    }
+    if (rows.length) groups.push({ topic, rows });
+  }
+  const cleaned = (state.selectedSubthemes || []).filter((key) => validKeys.has(key));
+  if (cleaned.length !== (state.selectedSubthemes || []).length) {
+    state.selectedSubthemes = cleaned;
+    saveSubthemeSettings();
+  }
+  el.subthemeChecklist.innerHTML = groups.length
+    ? groups
+        .map(
+          (group) => `
+            <details class="subtheme-group" open>
+              <summary>${escapeHtml(group.topic)}</summary>
+              <div class="subtheme-list">
+                ${group.rows
+                  .map((row) => {
+                    const checked = state.selectedSubthemes.includes(row.key) ? "checked" : "";
+                    return `
+                      <label class="subtheme-item ${checked ? "selected" : ""}">
+                        <input type="checkbox" value="${escapeHtml(row.key)}" ${checked} />
+                        <span>${escapeHtml(row.label)}</span>
+                        <small>${row.count}</small>
+                      </label>
+                    `;
+                  })
+                  .join("")}
+              </div>
+            </details>
+          `,
+        )
+        .join("")
+    : `<p class="panel-line">Nenhum subtema com volume suficiente nos temas selecionados.</p>`;
 }
 
 function selectedExamFilters() {
@@ -1061,11 +1464,11 @@ function renderExamStudyFilters() {
   const areas = [...new Set(examsForAreas.map((exam) => exam.area))].sort();
 
   el.examInstitution.innerHTML = [
-    `<option value="all">Todas as instituicoes</option>`,
+    `<option value="all">Todas as instituições</option>`,
     ...institutions.map((institution) => `<option value="${escapeHtml(institution)}">${escapeHtml(institution)}</option>`),
   ].join("");
   el.examArea.innerHTML = [
-    `<option value="all">Todas as areas</option>`,
+    `<option value="all">Todas as áreas</option>`,
     ...areas.map((area) => `<option value="${escapeHtml(area)}">${escapeHtml(area)}</option>`),
   ].join("");
   el.examInstitution.value = institutionForAreas;
@@ -1074,7 +1477,7 @@ function renderExamStudyFilters() {
   const exams = state.examSetActive ? currentExamSet() : examsForStudyFilters();
   el.examSelect.innerHTML = [
     `<option value="">Selecionar</option>`,
-    ...exams.map((exam) => `<option value="${escapeHtml(exam.id)}">${escapeHtml(exam.title)} (${exam.questionCount} questoes)</option>`),
+    ...exams.map((exam) => `<option value="${escapeHtml(exam.id)}">${escapeHtml(exam.title)} (${pluralize(exam.questionCount, "questão", "questões")})</option>`),
   ].join("");
   if (exams.some((exam) => exam.id === currentExamId)) {
     state.activeExamId = currentExamId;
@@ -1085,8 +1488,8 @@ function renderExamStudyFilters() {
   }
   const questions = exams.reduce((total, exam) => total + exam.questionCount, 0);
   el.examSetLine.textContent = state.examSetActive
-    ? `Provas ativas: ${exams.length} provas, ${state.filtered.length} questoes na lista atual.`
-    : `${exams.length} provas encontradas, ${questions} questoes no total.`;
+    ? `Provas ativas: ${pluralize(exams.length, "prova", "provas")}, ${pluralize(state.filtered.length, "questão", "questões")} na lista atual.`
+    : `${pluralize(exams.length, "prova encontrada", "provas encontradas")}, ${pluralize(questions, "questão", "questões")} no total.`;
 }
 
 function renderActivity() {
@@ -1099,7 +1502,10 @@ function renderActivity() {
   el.includeReviews.checked = state.includeReviewsInSession;
   const topics = topicsForStats();
   const contentAvailable = state.questions.filter(
-    (question) => topics.includes(question.source) && !isExcluded(question.id) && isReadyQuestion(effectiveQuestion(question)),
+    (question) =>
+      topics.some((topicName) => questionBelongsToTopic(question, topicName)) &&
+      !isExcluded(question.id) &&
+      isReadyQuestion(effectiveQuestion(question)),
   );
   const examAvailable = state.exams
     .flatMap((exam) => exam.questions || [])
@@ -1109,20 +1515,20 @@ function renderActivity() {
   const availableNew = available.filter((question) => !getProgress(question.id).grade).length;
   const originLabel =
     state.sessionSource === "content"
-      ? `${contentAvailable.length} questoes didaticas`
+      ? pluralize(contentAvailable.length, "questão didática", "questões didáticas")
       : state.sessionSource === "exams"
-        ? `${examAvailable.length} questoes de provas`
-        : `${contentAvailable.length} didaticas + ${examAvailable.length} de provas`;
+        ? pluralize(examAvailable.length, "questão de prova", "questões de provas")
+        : `${contentAvailable.length} didáticas + ${examAvailable.length} de provas`;
   const studyActive = state.sessionActive || state.smartTrainingActive;
   const answeredInSession = studyActive ? currentRunAnsweredQuestions().length : 0;
   el.finishSession.hidden = !studyActive;
   el.sessionLine.textContent = state.sessionCompletionMessage && !studyActive
     ? state.sessionCompletionMessage
     : state.smartTrainingActive
-    ? `Treino inteligente ativo: ${answeredInSession}/${state.filtered.length} questoes respondidas.`
+    ? `Treino inteligente ativo: ${answeredInSession}/${state.filtered.length} questões respondidas.`
     : state.sessionActive
-      ? `Sessao ativa: ${answeredInSession}/${state.filtered.length} questoes respondidas.`
-      : `${originLabel}. ${state.includeReviewsInSession ? `${dueReviewCount} revisoes + ` : ""}${availableNew} novas disponiveis.`;
+      ? `Sessão ativa: ${answeredInSession}/${state.filtered.length} questões respondidas.`
+      : `${originLabel}. ${state.includeReviewsInSession ? `${pluralize(dueReviewCount, "revisão", "revisões")} + ` : ""}${pluralize(availableNew, "nova disponível", "novas disponíveis")}.`;
   renderSessionSummary();
   el.restoreExcluded.hidden = !state.excluded.length;
 }
@@ -1158,13 +1564,13 @@ function renderSessionSummary() {
     ${
       wrong.length
         ? `<div class="summary-focus">
-            <span>Maior ponto de atencao</span>
+            <span>Maior ponto de atenção</span>
             <strong>${escapeHtml(topTopic ? topTopic[0] : "Sem tema")}${topError ? ` · ${escapeHtml(topError[0] === "unclassified" ? "Sem tipo marcado" : errorTypeLabel(topError[0]))}` : ""}</strong>
             <button class="primary-btn" data-review-block-errors>Revisar erros deste bloco</button>
           </div>`
         : answered.length === state.filtered.length
-          ? `<p class="panel-line">Bloco concluido sem erros registrados.</p>`
-          : `<p class="panel-line">Responda algumas questoes para gerar o resumo do bloco.</p>`
+          ? `<p class="panel-line">Bloco concluído sem erros registrados.</p>`
+          : `<p class="panel-line">Responda algumas questões para gerar o resumo do bloco.</p>`
     }
   `;
 }
@@ -1177,13 +1583,26 @@ function renderHistory() {
   const reviewTotal = visibleQuestions.filter((question) => getProgress(question.id).review).length;
   const dueQuestions = spacedReviewQuestions(true);
   const scheduledQuestions = spacedReviewQuestions(false);
+  const dailyTarget = Math.min(dueQuestions.length, state.sessionSize || 30);
+  const estimatedMinutes = Math.max(5, Math.ceil(dailyTarget * 1.5));
+  const nextScheduled = scheduledQuestions
+    .map((question) => getProgress(question.id).nextReviewAt)
+    .filter(Boolean)
+    .sort((a, b) => a - b)[0];
+  const nextScheduledText = nextScheduled
+    ? new Date(nextScheduled).toLocaleDateString("pt-BR", { day: "2-digit", month: "2-digit" })
+    : "";
   el.dueReviewCount.textContent = dueQuestions.length;
   el.scheduledReviewCount.textContent = scheduledQuestions.length;
-  el.spacedReviewLine.textContent = state.spacedReviewActive
-    ? `Revisao ativa: ${state.filtered.length} questoes vencidas.`
-    : dueQuestions.length
-      ? `${dueQuestions.length} questoes vencidas para revisar hoje.`
-      : `${scheduledQuestions.length} questoes programadas para revisao futura.`;
+  if (state.spacedReviewActive) {
+    el.spacedReviewLine.innerHTML = `<strong>Revisão ativa:</strong> ${pluralize(state.filtered.length, "questão vencida", "questões vencidas")}.<br>Ao responder, a próxima revisão será definida pelo tipo marcado: erro importante volta hoje ou em 1 dia; leitura/desatenção em 2 dias; acerto com dúvida em 3 dias; domínio sólido em 14 a 21 dias.`;
+  } else if (dueQuestions.length) {
+    el.spacedReviewLine.innerHTML = `<strong>Meta de hoje:</strong> resolver ${pluralize(dailyTarget, "questão vencida", "questões vencidas")} (${estimatedMinutes} min estimados).<br><strong>Próximo passo:</strong> depois das revisões, faça uma sessão de ${state.sessionSize} questões novas ou treine seus temas frágeis. Erros recorrentes voltam com prioridade; acertos seguros ficam mais espaçados.`;
+  } else if (scheduledQuestions.length) {
+    el.spacedReviewLine.innerHTML = `<strong>Hoje:</strong> não há revisões vencidas.<br>${pluralize(scheduledQuestions.length, "questão programada", "questões programadas")} para revisão futura${nextScheduledText ? `; próxima previsão: ${nextScheduledText}` : ""}. Sugestão: faça uma sessão inteligente ou avance em questões novas.`;
+  } else {
+    el.spacedReviewLine.innerHTML = `<strong>Nenhuma revisão programada ainda.</strong><br>Próximo passo: faça um bloco de ${state.sessionSize} questões; ao errar ou marcar acerto com dúvida, a plataforma criará automaticamente o calendário de revisão.`;
+  }
   const accuracy = answeredTotal ? Math.round((correctTotal / answeredTotal) * 100) : 0;
   el.historySummary.innerHTML = `
     <div><strong>${answeredTotal}</strong><span>respondidas</span></div>
@@ -1202,7 +1621,7 @@ function renderHistory() {
         .map(
           ({ question, progress }) => `
             <div class="history-item">
-              <span>${escapeHtml(question.source)} · Questao ${question.number}</span>
+              <span>${escapeHtml(question.source)} · Questão ${question.number}</span>
               <strong class="${progress.grade === "correct" ? "good-text" : "bad-text"}">${progress.grade === "correct" ? "Acerto" : "Erro"}</strong>
               ${progress.grade === "correct" && progress.successType ? `<small>${escapeHtml(successTypeLabel(progress.successType))}</small>` : ""}
               ${progress.grade === "wrong" && progress.errorType ? `<small>${escapeHtml(errorTypeLabel(progress.errorType))}</small>` : ""}
@@ -1210,7 +1629,7 @@ function renderHistory() {
           `,
         )
         .join("")
-    : `<p class="panel-line">Nenhuma questao respondida ainda.</p>`;
+    : `<p class="panel-line">Nenhuma questão respondida ainda.</p>`;
 }
 
 function renderErrorNotebook() {
@@ -1254,9 +1673,9 @@ function errorTypeLabel(value) {
   const labels = {
     knowledge: "Falta de conhecimento",
     concept: "Confundi conceito",
-    reading: "Li rapido",
+    reading: "Li rápido",
     "two-options": "Duvida entre alternativas",
-    attention: "Desatencao",
+    attention: "Desatenção",
     guess: "Chute",
   };
   return labels[value] || value;
@@ -1265,9 +1684,9 @@ function errorTypeLabel(value) {
 function successTypeLabel(value) {
   const labels = {
     mastered: "Dominei",
-    reasoning: "Raciocinio correto",
+    reasoning: "Raciocínio correto",
     partial: "Lembrei parcialmente",
-    doubt: "Acerto com duvida",
+    doubt: "Acerto com dúvida",
     "guess-correct": "Chutei e acertei",
   };
   return labels[value] || value;
@@ -1283,9 +1702,9 @@ function questionTrainingReasons(question) {
   if (progress.grade === "wrong" && progress.errorType) reasons.push(errorTypeLabel(progress.errorType));
   if (progress.grade === "correct" && progress.successType) reasons.push(successTypeLabel(progress.successType));
   if (question.source && state.questions.some((item) => item.id === question.id)) {
-    const status = topicStatus(question.source);
-    if (status === "fragile") reasons.push("Tema fragil");
-    if (status === "building") reasons.push("Em consolidacao");
+    const status = topicStatus(topicForQuestion(question));
+    if (status === "fragile") reasons.push("Tema frágil");
+    if (status === "building") reasons.push("Em consolidação");
   }
   return reasons.slice(0, 2);
 }
@@ -1306,10 +1725,10 @@ function spacedReviewQuestions(onlyDue) {
 function smartTrainingQuestions() {
   const now = Date.now();
   const selectedTopics = new Set(topicsForStats());
-  const bankQuestions = state.questions.filter((question) => selectedTopics.has(question.source));
+  const bankQuestions = selectedContentQuestions();
   const examQuestions = state.exams.flatMap((exam) => exam.questions || []);
   const pool = [...bankQuestions, ...examQuestions].filter(
-    (question) => !isExcluded(question.id) && isReadyQuestion(effectiveQuestion(question)),
+    (question) => !isExcluded(question.id) && isReadyQuestion(effectiveQuestion(question)) && questionMatchesSelectedSubthemes(question),
   );
   const seen = new Set();
   const scored = pool
@@ -1331,8 +1750,9 @@ function smartTrainingQuestions() {
       if (progress.successType === "doubt") score += 45;
       if (progress.successType === "partial") score += 25;
       if (progress.favorite) score += 8;
-      if (question.source && selectedTopics.has(question.source)) {
-        const status = topicStatus(question.source);
+      const matchedTopic = [...selectedTopics].find((topicName) => questionBelongsToTopic(question, topicName));
+      if (matchedTopic) {
+        const status = topicStatus(matchedTopic);
         if (status === "fragile") score += 42;
         if (status === "building") score += 26;
         if (status === "unseen") score += 18;
@@ -1343,17 +1763,21 @@ function smartTrainingQuestions() {
   return scored.slice(0, state.sessionSize).map((item) => item.question);
 }
 
-function selectedContentQuestions() {
+function selectedContentQuestions({ ignoreSubthemes = false } = {}) {
   const topics = new Set(topicsForStats());
   return state.questions.filter(
-    (question) => topics.has(question.source) && !isExcluded(question.id) && isReadyQuestion(effectiveQuestion(question)),
+    (question) =>
+      [...topics].some((topicName) => questionBelongsToTopic(question, topicName)) &&
+      !isExcluded(question.id) &&
+      isReadyQuestion(effectiveQuestion(question)) &&
+      (ignoreSubthemes || questionMatchesSelectedSubthemes(question)),
   );
 }
 
 function examSessionQuestions() {
   return examsForStudyFilters()
     .flatMap((exam) => exam.questions || [])
-    .filter((question) => !isExcluded(question.id) && isReadyQuestion(effectiveQuestion(question)));
+    .filter((question) => !isExcluded(question.id) && isReadyQuestion(effectiveQuestion(question)) && questionMatchesSelectedSubthemes(question));
 }
 
 function sessionPoolQuestions() {
@@ -1417,12 +1841,12 @@ function renderExams() {
     ? state.examCompletionMessage
     : state.examSimulationActive
     ? state.examSimulationFinished
-      ? `Simulado finalizado: ${simulationSelected}/${state.filtered.length} questoes marcadas.`
-      : `Simulado ativo: ${simulationSelected}/${state.filtered.length} questoes marcadas.`
+      ? `Simulado finalizado: ${simulationSelected}/${state.filtered.length} questões marcadas.`
+      : `Simulado ativo: ${simulationSelected}/${state.filtered.length} questões marcadas.`
     : state.examActive
-    ? `Estudo ativo: ${answeredInExam}/${state.filtered.length} questoes respondidas.`
+    ? `Estudo ativo: ${answeredInExam}/${state.filtered.length} questões respondidas.`
     : exam
-      ? `${exam.institution} ${exam.year} · ${exam.area} · ${exam.questionCount} questoes.`
+      ? `${exam.institution} ${exam.year} · ${exam.area} · ${pluralize(exam.questionCount, "questão", "questões")}.`
       : "Selecione uma prova para estudar ou simular.";
 
   const unusedExamListHtml = state.exams.length
@@ -1465,12 +1889,12 @@ function renderQuestionMap() {
       const status = mapStatusFor(question);
       const label = index + 1;
       const title = status === "correct"
-        ? `Questao ${label}: acerto`
+        ? `Questão ${label}: acerto`
         : status === "wrong"
-          ? `Questao ${label}: erro`
+          ? `Questão ${label}: erro`
           : status === "selected"
-            ? `Questao ${label}: alternativa marcada`
-            : `Questao ${label}`;
+            ? `Questão ${label}: alternativa marcada`
+            : `Questão ${label}`;
       return `<button class="map-item ${index === state.index ? "active" : ""} ${status}" data-jump-index="${index}" title="${escapeHtml(title)}">${label}</button>`;
     })
     .join("");
@@ -1479,13 +1903,16 @@ function renderQuestionMap() {
 function render() {
   renderStats();
   renderDashboard();
+  const showStartPanel = !hasActiveQuestionFlow() && !state.filtered.length;
+  if (el.startPanel) el.startPanel.hidden = !showStartPanel;
+  document.body.classList.toggle("no-question-active", showStartPanel);
   renderQuestionMap();
   const baseQuestion = currentQuestion();
   const question = effectiveQuestion(baseQuestion);
 
   if (!question) {
-    el.source.textContent = "Nenhuma questão encontrada";
-    el.title.textContent = "Ajuste os filtros";
+    el.source.textContent = showStartPanel ? "Pronto para estudar" : "Nenhuma questão encontrada";
+    el.title.textContent = showStartPanel ? "Banco de questões" : "Ajuste os filtros";
     el.tags.innerHTML = "";
     el.tags.classList.remove("visible");
     el.text.textContent = "";
@@ -1517,13 +1944,13 @@ function render() {
     : state.smartTrainingActive
       ? "Treino inteligente"
     : state.sessionActive
-      ? "Bloco de questoes"
+      ? "Bloco de questões"
       : state.topicActive
         ? state.topicIds.length === 1
           ? `Tema: ${state.topicIds[0]}`
           : "Temas selecionados"
         : "Banco R+ Psiquiatria";
-  el.title.textContent = state.sessionActive || state.smartTrainingActive || state.examActive || state.examSimulationActive || state.examSetActive || state.topicActive ? `Questao ${state.index + 1}` : `Questao ${question.number}`;
+  el.title.textContent = state.sessionActive || state.smartTrainingActive || state.examActive || state.examSimulationActive || state.examSetActive || state.topicActive ? `Questão ${state.index + 1}` : `Questão ${question.number}`;
   el.position.textContent = `${state.index + 1} / ${state.filtered.length}`;
   const examTag = question.examTag || (question.examId ? question.source : "");
   const trainingReasons = state.smartTrainingActive ? questionTrainingReasons(question) : [];
@@ -1560,7 +1987,7 @@ function render() {
   if (needsReview) {
     const issues = readinessIssues(question);
     el.pendingReviewReason.textContent = issues.length
-      ? `Pendencias: ${issues.join(", ")}.`
+      ? `Pendências: ${issues.join(", ")}.`
       : "Confira gabarito, alternativas ou enunciado.";
   }
   el.manualGradePanel.hidden = examLocked;
@@ -1615,6 +2042,13 @@ function setTab(tabName) {
   });
 }
 
+function setSidebarCollapsed(collapsed) {
+  state.sidebarCollapsed = collapsed;
+  document.body.classList.toggle("sidebar-collapsed", collapsed);
+  localStorage.setItem("banco-rmais-sidebar-collapsed", String(collapsed));
+  if (el.sidebarToggle) el.sidebarToggle.setAttribute("aria-expanded", String(!collapsed));
+}
+
 function topicsForTopicMode() {
   return topicsForStats();
 }
@@ -1651,7 +2085,7 @@ function startExamSet() {
   const exams = examsForStudyFilters();
   if (!exams.length) {
     el.examSetLine.textContent = "Nenhuma prova encontrada com esses filtros.";
-    setTab("topics");
+    setTab("exams");
     return;
   }
   state.examCompletionMessage = "";
@@ -1668,7 +2102,7 @@ function startExamSet() {
     .flatMap((exam) => exam.questions)
     .filter((question) => !isExcluded(question.id) && isReadyQuestion(effectiveQuestion(question)));
   state.index = 0;
-  setTab("topics");
+  setTab("exams");
   render();
 }
 
@@ -1679,13 +2113,13 @@ function endExamSet() {
   state.activeAnswers = {};
   state.index = 0;
   applyFilters({ preserveCurrent: true });
-  setTab("topics");
+  setTab("exams");
 }
 
 function startSpacedReview() {
   const due = spacedReviewQuestions(true);
   if (!due.length) {
-    el.spacedReviewLine.textContent = "Nenhuma revisao vencida no momento.";
+    el.spacedReviewLine.textContent = "Nenhuma revisão vencida no momento.";
     setTab("overview");
     return;
   }
@@ -1729,7 +2163,7 @@ function startSession() {
   const basePool = unseen.length >= Math.min(state.sessionSize - Math.min(reviews.length, state.sessionSize), fallback.length) ? unseen : fallback;
   const session = [...reviews.slice(0, state.sessionSize), ...shuffle(basePool).slice(0, Math.max(state.sessionSize - reviews.length, 0))];
   if (!session.length) {
-    el.sessionLine.textContent = "Selecione pelo menos um tema com questoes corrigiveis para iniciar a sessao.";
+    el.sessionLine.textContent = "Selecione pelo menos um tema com questões corrigíveis para iniciar a sessão.";
     setTab("activity");
     return;
   }
@@ -1752,7 +2186,7 @@ function startSmartTraining() {
   state.sessionActive = false;
   const session = smartTrainingQuestions();
   if (!session.length) {
-    el.sessionLine.textContent = "Nao encontrei questoes corrigiveis para montar o treino.";
+    el.sessionLine.textContent = "Não encontrei questões corrigíveis para montar o treino.";
     setTab("activity");
     return;
   }
@@ -1823,7 +2257,7 @@ function finishSession() {
   const correct = answered.filter((question) => currentAttemptFor(question.id).grade === "correct");
   const wrong = answered.filter((question) => currentAttemptFor(question.id).grade === "wrong");
   const accuracy = answered.length ? Math.round((correct.length / answered.length) * 100) : 0;
-  state.sessionCompletionMessage = `Bloco finalizado: ${answered.length}/${total} questoes respondidas, ${correct.length} acertos, ${wrong.length} erros, ${accuracy}% de acerto.`;
+  state.sessionCompletionMessage = `Bloco finalizado: ${answered.length}/${total} questões respondidas, ${correct.length} acertos, ${wrong.length} erros, ${accuracy}% de acerto.`;
   state.sessionActive = false;
   state.sessionIds = [];
   state.smartTrainingActive = false;
@@ -1838,7 +2272,7 @@ function startExam() {
   const exam = currentExam();
   if (!exam?.questions.length) {
     el.examLine.textContent = "Selecione uma prova importada.";
-    setTab("topics");
+    setTab("exams");
     return;
   }
   state.examCompletionMessage = "";
@@ -1852,7 +2286,7 @@ function startExam() {
   state.examActive = true;
   state.filtered = exam.questions.filter((question) => !isExcluded(question.id) && isReadyQuestion(effectiveQuestion(question)));
   state.index = 0;
-  setTab("topics");
+  setTab("exams");
   render();
 }
 
@@ -1860,7 +2294,7 @@ function startExamSimulation() {
   const exam = currentExam();
   if (!exam?.questions.length) {
     el.examLine.textContent = "Selecione uma prova importada.";
-    setTab("topics");
+    setTab("exams");
     return;
   }
   state.examCompletionMessage = "";
@@ -1879,7 +2313,7 @@ function startExamSimulation() {
   state.examSimulationAnswers = {};
   state.filtered = exam.questions.filter((question) => !isExcluded(question.id) && isReadyQuestion(effectiveQuestion(question)));
   state.index = 0;
-  setTab("topics");
+  setTab("exams");
   render();
 }
 
@@ -1919,14 +2353,14 @@ function finishExamStudy() {
   const correct = answered.filter((question) => currentAttemptFor(question.id).grade === "correct");
   const wrong = answered.filter((question) => currentAttemptFor(question.id).grade === "wrong");
   const accuracy = answered.length ? Math.round((correct.length / answered.length) * 100) : 0;
-  state.examCompletionMessage = `Prova finalizada: ${answered.length}/${total} questoes respondidas, ${correct.length} acertos, ${wrong.length} erros, ${accuracy}% de acerto.`;
+  state.examCompletionMessage = `Prova finalizada: ${answered.length}/${total} questões respondidas, ${correct.length} acertos, ${wrong.length} erros, ${accuracy}% de acerto.`;
   state.examActive = false;
   state.examSetActive = false;
   state.examSetIds = [];
   state.activeAnswers = {};
   state.index = 0;
   applyFilters({ preserveCurrent: true });
-  setTab("topics");
+  setTab("exams");
 }
 
 function reviewExamSimulationErrors() {
@@ -1953,7 +2387,7 @@ function endExam() {
 
 function resetUserProgress() {
   const shouldReset = window.confirm(
-    "Tem certeza que deseja zerar seu historico de desempenho? Isso apaga acertos, erros, respostas marcadas, revisoes programadas, anotacoes e alternativas riscadas neste navegador. O banco de questoes e as correcoes administrativas serao preservados.",
+    "Tem certeza que deseja zerar seu histórico de desempenho? Isso apaga acertos, erros, respostas marcadas, revisões programadas, anotações e alternativas riscadas neste navegador. O banco de questões e as correções administrativas serão preservados.",
   );
   if (!shouldReset) return;
   state.progress = {};
@@ -1968,7 +2402,7 @@ function resetUserProgress() {
   state.examActive = false;
   state.examSetActive = false;
   state.examSetIds = [];
-  state.sessionCompletionMessage = "Historico de desempenho zerado. Voce pode recomecar seus blocos do inicio.";
+  state.sessionCompletionMessage = "Histórico de desempenho zerado. Você pode recomeçar seus blocos do início.";
   state.examCompletionMessage = "";
   clearExamSimulationState();
   localStorage.removeItem("banco-rmais-progress");
@@ -2076,15 +2510,15 @@ function exportCorrections() {
   URL.revokeObjectURL(url);
   if (el.correctionExportLine) {
     el.correctionExportLine.textContent = correctionCount
-      ? `${correctionCount} revisoes exportadas. Use o script scripts/apply_corrections.py para aplicar ao banco definitivo.`
-      : "Nenhuma revisao local encontrada para exportar.";
+      ? `${pluralize(correctionCount, "revisão exportada", "revisões exportadas")}. Use o script scripts/apply_corrections.py para aplicar ao banco definitivo.`
+      : "Nenhuma revisão local encontrada para exportar.";
   }
 }
 
 function excludeCurrentQuestion() {
   const question = currentQuestion();
   if (!question) return;
-  const shouldExclude = window.confirm("Excluir esta questao do banco neste navegador?");
+  const shouldExclude = window.confirm("Excluir esta questão do banco neste navegador?");
   if (!shouldExclude) return;
   if (!state.excluded.includes(question.id)) state.excluded.push(question.id);
   saveExcluded();
@@ -2095,7 +2529,7 @@ function excludeCurrentQuestion() {
 
 function restoreExcludedQuestions() {
   if (!state.excluded.length) return;
-  const shouldRestore = window.confirm("Restaurar todas as questoes excluidas?");
+  const shouldRestore = window.confirm("Restaurar todas as questões excluídas?");
   if (!shouldRestore) return;
   state.excluded = [];
   saveExcluded();
@@ -2104,6 +2538,15 @@ function restoreExcludedQuestions() {
 }
 
 el.tabs.forEach((button) => button.addEventListener("click", () => setTab(button.dataset.tab)));
+el.sidebarToggle.addEventListener("click", () => setSidebarCollapsed(!state.sidebarCollapsed));
+el.goSession.addEventListener("click", () => {
+  setTab("activity");
+  setSidebarCollapsed(false);
+});
+el.goExams.addEventListener("click", () => {
+  setTab("exams");
+  setSidebarCollapsed(false);
+});
 el.login.addEventListener("click", signIn);
 el.signup.addEventListener("click", signUp);
 el.logout.addEventListener("click", signOut);
@@ -2121,6 +2564,27 @@ el.topicChecklist.addEventListener("change", (event) => {
   saveSelectedTopics();
   state.topicActive = false;
   state.smartTrainingActive = false;
+  applyFilters({ preserveCurrent: true });
+});
+el.refineSubthemes.addEventListener("change", () => {
+  state.refineSubthemes = el.refineSubthemes.checked;
+  saveSubthemeSettings();
+  state.smartTrainingActive = false;
+  state.sessionActive = false;
+  renderActivity();
+  applyFilters({ preserveCurrent: true });
+});
+el.subthemeChecklist.addEventListener("change", (event) => {
+  const input = event.target.closest("input[type='checkbox']");
+  if (!input) return;
+  const selected = new Set(state.selectedSubthemes || []);
+  if (input.checked) selected.add(input.value);
+  else selected.delete(input.value);
+  state.selectedSubthemes = [...selected];
+  saveSubthemeSettings();
+  state.smartTrainingActive = false;
+  state.sessionActive = false;
+  renderActivity();
   applyFilters({ preserveCurrent: true });
 });
 el.selectAllTopics.addEventListener("click", () => {
@@ -2373,6 +2837,7 @@ loadPayload()
   .then(async (payload) => {
     state.questions = payload.questions || [];
     state.exams = window.BANCO_RMAIS_EXAMS?.exams || [];
+    setSidebarCollapsed(state.sidebarCollapsed);
     seedLegacySpacedReviews();
     renderTopics();
     applyFilters();

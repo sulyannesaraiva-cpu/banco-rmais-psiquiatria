@@ -1,4 +1,4 @@
-window.BANCO_RMAIS_QUESTIONS = {
+{
   "files": [
     {
       "provider": "Estratégia",
@@ -49295,4 +49295,4 @@ window.BANCO_RMAIS_QUESTIONS = {
       "originalSource": "Álcool"
     }
   ]
-};
+}

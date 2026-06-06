@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <button id="sidebarToggle" class="sidebar-toggle" aria-label="Abrir ou fechar menu">☰</button>
     <aside class="sidebar">
       <div class="brand">
         <span class="brand-mark">R+</span>
@@ -35,9 +36,10 @@
       </section>
 
       <nav class="tabs" aria-label="Painel do banco">
-        <button class="tab active" data-tab="overview">Visao geral</button>
+        <button class="tab active" data-tab="overview">Visão geral</button>
         <button class="tab" data-tab="topics">Temas</button>
-        <button class="tab" data-tab="activity">Sessao</button>
+        <button class="tab" data-tab="activity">Sessão</button>
+        <button class="tab" data-tab="exams">Provas prévias</button>
       </nav>
 
       <section class="dashboard">
@@ -45,7 +47,7 @@
           <div class="stats">
             <div>
               <strong id="totalCount">0</strong>
-              <span>questoes</span>
+              <span>questões</span>
             </div>
             <div>
               <strong id="answeredCount">0</strong>
@@ -53,7 +55,7 @@
             </div>
             <div>
               <strong id="readyCount">0</strong>
-              <span>corrigiveis</span>
+              <span>corrigíveis</span>
             </div>
             <div>
               <strong id="accuracyCount">0%</strong>
@@ -62,10 +64,10 @@
           </div>
           <div class="overview-actions">
             <button id="overviewSmartTrainingBtn" class="primary-btn">Treinar agora</button>
-            <p class="panel-line" id="overviewSmartLine">Monte uma sessao priorizando revisoes e pontos frageis.</p>
+            <p class="panel-line" id="overviewSmartLine">Monte uma sessão priorizando revisões e pontos frágeis.</p>
           </div>
 
-          <p class="panel-line" id="overviewLine">Estatisticas dos temas selecionados</p>
+          <p class="panel-line" id="overviewLine">Estatísticas dos temas selecionados</p>
           <div class="progress-track">
             <span id="progressDominated" class="dominated"></span>
             <span id="progressConsolidated" class="consolidated"></span>
@@ -76,9 +78,9 @@
           <div class="legend">
             <span><i class="dot dominated"></i>Dominadas: <strong id="dominatedCount">0</strong></span>
             <span><i class="dot consolidated"></i>Consolidadas: <strong id="consolidatedCount">0</strong></span>
-            <span><i class="dot building"></i>Em consolidacao: <strong id="buildingCount">0</strong></span>
-            <span><i class="dot fragile"></i>Frageis: <strong id="fragileCount">0</strong></span>
-            <span><i class="dot unseen"></i>Nao praticadas: <strong id="unseenCount">0</strong></span>
+            <span><i class="dot building"></i>Em consolidação: <strong id="buildingCount">0</strong></span>
+            <span><i class="dot fragile"></i>Frágeis: <strong id="fragileCount">0</strong></span>
+            <span><i class="dot unseen"></i>Não praticadas: <strong id="unseenCount">0</strong></span>
           </div>
           <div class="study-section">
             <h3>Erros por tema</h3>
@@ -86,7 +88,7 @@
           </div>
           <div class="study-section">
             <h3>Perfil USP Psicogeriatria</h3>
-            <p class="panel-line">Frequencia dos temas nas provas cadastradas, para orientar a prioridade de estudo.</p>
+            <p class="panel-line">Frequência dos temas nas provas cadastradas, para orientar a prioridade de estudo.</p>
             <div class="priority-table" aria-label="Perfil de temas da USP Psicogeriatria">
               <div class="priority-row priority-head">
                 <span>Tema</span>
@@ -94,7 +96,7 @@
                 <span>Prioridade</span>
               </div>
               <div class="priority-row">
-                <span>Demencias e neurocognitivos</span>
+                <span>Demências e neurocognitivos</span>
                 <strong>51,5-60,8</strong>
                 <em class="priority-pill high">Alta</em>
               </div>
@@ -104,24 +106,24 @@
                 <em class="priority-pill high">Alta</em>
               </div>
               <div class="priority-row">
-                <span>Depressao, luto, suicidio e ECT</span>
+                <span>Depressão, luto, suicídio e ECT</span>
                 <strong>8,5</strong>
-                <em class="priority-pill medium">Media</em>
+                <em class="priority-pill medium">Média</em>
               </div>
               <div class="priority-row">
-                <span>Sono, dor e sintomas somaticos</span>
+                <span>Sono, dor e sintomas somáticos</span>
                 <strong>5,4</strong>
-                <em class="priority-pill medium">Media</em>
+                <em class="priority-pill medium">Média</em>
               </div>
               <div class="priority-row">
                 <span>Delirium e quadros agudos</span>
                 <strong>2,3-4,6</strong>
-                <em class="priority-pill medium">Media</em>
+                <em class="priority-pill medium">Média</em>
               </div>
               <div class="priority-row">
                 <span>Mania tardia e bipolaridade</span>
                 <strong>3,1-4,6</strong>
-                <em class="priority-pill medium">Media</em>
+                <em class="priority-pill medium">Média</em>
               </div>
               <div class="priority-row">
                 <span>Outros temas</span>
@@ -131,15 +133,15 @@
             </div>
             <div class="subtheme-list">
               <strong>Subtemas-chave:</strong>
-              <span>Alzheimer/CCL/rastreio, DFT, Lewy/Parkinsonismo, demencia vascular, antipsicoticos no idoso e depressao geriatrica.</span>
+              <span>Alzheimer/CCL/rastreio, DFT, Lewy/Parkinsonismo, demência vascular, antipsicóticos no idoso e depressão geriátrica.</span>
             </div>
           </div>
           <div class="study-section">
-            <h3>Revisoes espacadas</h3>
+            <h3>Revisões espaçadas</h3>
             <div class="review-box">
               <div>
                 <strong id="dueReviewCount">0</strong>
-                <span>revisoes vencidas</span>
+                <span>revisões vencidas</span>
               </div>
               <div>
                 <strong id="scheduledReviewCount">0</strong>
@@ -147,17 +149,17 @@
               </div>
             </div>
             <div class="topic-toolbar">
-              <button id="startSpacedReviewBtn" class="primary-btn">Resolver revisoes</button>
-              <button id="endSpacedReviewBtn">Sair das revisoes</button>
+              <button id="startSpacedReviewBtn" class="primary-btn">Resolver revisões</button>
+              <button id="endSpacedReviewBtn">Sair das revisões</button>
             </div>
-            <p class="panel-line" id="spacedReviewLine">As questoes erradas entram automaticamente em revisao espacada.</p>
+            <p class="panel-line" id="spacedReviewLine">As questões erradas entram automaticamente em revisão espaçada.</p>
           </div>
           <div class="study-section">
             <h3>Caderno de erros</h3>
             <div class="error-notebook" id="errorNotebook"></div>
           </div>
           <div class="study-section">
-            <h3>Historico recente</h3>
+            <h3>Histórico recente</h3>
             <div class="history-summary" id="historySummary"></div>
             <div class="history-list" id="historyList"></div>
           </div>
@@ -169,7 +171,7 @@
             <select id="topicSelect" hidden aria-hidden="true"></select>
 
             <label class="field">
-              <span>Pendencias do banco</span>
+              <span>Pendências do banco</span>
               <select id="statusSelect">
                 <option value="all">Selecionar</option>
                 <option value="needs-review">Precisam revisar</option>
@@ -181,24 +183,86 @@
             </label>
             <button id="confirmPendingBtn" class="primary-btn">Confirmar</button>
             <div class="pending-summary" id="pendingSummary"></div>
-            <p class="panel-line">Area para localizar questoes que precisam de revisao de cadastro, como gabarito, enunciado ou alternativas. Futuramente isso pode ficar restrito a perfil administrador.</p>
+            <p class="panel-line">Área para localizar questões que precisam de revisão de cadastro, como gabarito, enunciado ou alternativas. Futuramente isso pode ficar restrito a perfil administrador.</p>
             <div class="admin-tools">
-              <button id="exportCorrectionsBtn">Exportar revisoes</button>
-              <p class="panel-line" id="correctionExportLine">Exporte as revisoes feitas neste navegador para aplicar ao banco definitivo.</p>
+              <button id="exportCorrectionsBtn">Exportar revisões</button>
+              <p class="panel-line" id="correctionExportLine">Exporte as revisões feitas neste navegador para aplicar ao banco definitivo.</p>
             </div>
           </div>
 
           <button id="startTopicBtn" hidden>Resolver tema</button>
           <button id="endTopicBtn" hidden>Sair do tema</button>
 
+        </div>
+
+        <div class="tab-panel" id="activityPanel">
+          <p class="panel-line">Monte uma sessão escolhendo temas, tamanho e revisões.</p>
+          <div class="session-builder">
+            <span>Origem das questões:</span>
+            <div class="segmented wide-segmented" id="sessionSourceGroup">
+              <button data-source="content">Conteúdo didático</button>
+              <button data-source="mixed">Didático + provas</button>
+              <button data-source="exams">Apenas provas</button>
+            </div>
+            <span>Questões por sessão:</span>
+            <div class="segmented" id="sessionSizeGroup">
+              <button data-size="10">10</button>
+              <button data-size="20">20</button>
+              <button data-size="30" class="active">30</button>
+              <button data-size="40">40</button>
+              <button data-size="50">50</button>
+            </div>
+            <label class="session-toggle">
+              <input id="includeReviewsToggle" type="checkbox" />
+              <span>Incluir revisões vencidas</span>
+            </label>
+            <button id="startSessionBtn" class="primary-btn">Iniciar sessão de estudo</button>
+            <button id="startSmartTrainingBtn">Sessão inteligente</button>
+            <button id="finishSessionBtn" hidden>Finalizar bloco</button>
+            <button id="endSessionBtn">Sair do bloco</button>
+          </div>
+          <p class="smart-help">A sessão inteligente monta automaticamente um bloco com revisões vencidas, erros anteriores, temas frágeis e questões ainda pouco praticadas.</p>
+          <p class="panel-line" id="sessionLine">Selecione temas e crie um bloco de questões.</p>
+          <div class="session-summary" id="sessionSummary"></div>
+          <div class="study-section reset-section">
+            <h3>Recomeçar desempenho</h3>
+            <p class="panel-line">Limpa respostas, erros, acertos, revisões programadas, anotações e alternativas riscadas deste navegador.</p>
+            <button id="resetProgressBtn" class="danger-lite">Zerar histórico de desempenho</button>
+          </div>
           <div class="study-section">
-            <h3>Provas por instituicao ou area</h3>
+            <h3>Temas do bloco</h3>
+            <p class="panel-line">Marque os temas que podem entrar na sessão de estudo.</p>
             <label class="field compact-field">
-              <span>Instituicao</span>
+              <span>Filtrar temas</span>
+              <input id="topicPanelSearch" type="search" placeholder="nome do tema" />
+            </label>
+            <div class="topic-toolbar">
+              <button id="selectAllTopicsBtn">Selecionar todos</button>
+              <button id="clearTopicsBtn">Limpar seleção</button>
+            </div>
+            <p class="panel-line" id="topicModeLine">Use os temas marcados abaixo.</p>
+            <div class="topic-grid" id="topicChecklist"></div>
+            <label class="session-toggle subtheme-toggle">
+              <input id="refineSubthemesToggle" type="checkbox" />
+              <span>Focar por subtema principal</span>
+            </label>
+            <p class="panel-line">Opcional: cada questão entra em apenas um subtema principal, para evitar filtros sobrepostos.</p>
+            <div class="subtheme-grid" id="subthemeChecklist"></div>
+          </div>
+          <button id="restoreExcludedBtn" class="danger-lite">Restaurar excluídas</button>
+        </div>
+
+        <div class="tab-panel" id="historyPanel"></div>
+
+        <div class="tab-panel" id="examsPanel">
+          <div class="study-section">
+            <h3>Provas prévias</h3>
+            <label class="field compact-field">
+              <span>Instituição</span>
               <select id="examInstitutionSelect"></select>
             </label>
             <label class="field compact-field">
-              <span>Area</span>
+              <span>Área</span>
               <select id="examAreaSelect"></select>
             </label>
             <label class="field compact-field">
@@ -206,10 +270,10 @@
               <select id="examSelect"></select>
             </label>
             <div class="topic-toolbar">
-              <button id="startExamSetBtn" class="primary-btn">Resolver provas</button>
-              <button id="endExamSetBtn">Sair das provas</button>
+              <button id="startExamSetBtn" class="primary-btn">Resolver conjunto</button>
+              <button id="endExamSetBtn">Sair do conjunto</button>
             </div>
-            <p class="panel-line" id="examSetLine">Filtre por instituicao ou area para resolver varias provas em sequencia.</p>
+            <p class="panel-line" id="examSetLine">Filtre por instituição ou área para resolver várias provas em sequência.</p>
             <div class="exam-actions">
               <button id="startExamBtn" class="primary-btn">Estudar prova</button>
               <button id="startExamSimulationBtn" class="primary-btn">Simular prova</button>
@@ -222,61 +286,6 @@
             <div class="exam-result" id="examResult"></div>
           </div>
         </div>
-
-        <div class="tab-panel" id="activityPanel">
-          <p class="panel-line">Monte uma sessao escolhendo temas, tamanho e revisoes.</p>
-          <div class="session-builder">
-            <span>Origem das questoes:</span>
-            <div class="segmented wide-segmented" id="sessionSourceGroup">
-              <button data-source="content">Conteudo didatico</button>
-              <button data-source="mixed">Didatico + provas</button>
-              <button data-source="exams">Apenas provas</button>
-            </div>
-            <span>Questoes por sessao:</span>
-            <div class="segmented" id="sessionSizeGroup">
-              <button data-size="10">10</button>
-              <button data-size="20">20</button>
-              <button data-size="30" class="active">30</button>
-              <button data-size="40">40</button>
-              <button data-size="50">50</button>
-            </div>
-            <label class="session-toggle">
-              <input id="includeReviewsToggle" type="checkbox" />
-              <span>Incluir revisoes vencidas</span>
-            </label>
-            <button id="startSessionBtn" class="primary-btn">Iniciar sessao de estudo</button>
-            <button id="startSmartTrainingBtn">Sessao inteligente</button>
-            <button id="finishSessionBtn" hidden>Finalizar bloco</button>
-            <button id="endSessionBtn">Sair do bloco</button>
-          </div>
-          <p class="smart-help">A sessao inteligente monta automaticamente um bloco com revisoes vencidas, erros anteriores, temas frageis e questoes ainda pouco praticadas.</p>
-          <p class="panel-line" id="sessionLine">Selecione temas e crie um bloco de questoes.</p>
-          <div class="session-summary" id="sessionSummary"></div>
-          <div class="study-section reset-section">
-            <h3>Recomecar desempenho</h3>
-            <p class="panel-line">Limpa respostas, erros, acertos, revisoes programadas, anotacoes e alternativas riscadas deste navegador.</p>
-            <button id="resetProgressBtn" class="danger-lite">Zerar historico de desempenho</button>
-          </div>
-          <div class="study-section">
-            <h3>Temas do bloco</h3>
-            <p class="panel-line">Marque os temas que podem entrar na sessao de estudo.</p>
-            <label class="field compact-field">
-              <span>Filtrar temas</span>
-              <input id="topicPanelSearch" type="search" placeholder="nome do tema" />
-            </label>
-            <div class="topic-toolbar">
-              <button id="selectAllTopicsBtn">Selecionar todos</button>
-              <button id="clearTopicsBtn">Limpar selecao</button>
-            </div>
-            <p class="panel-line" id="topicModeLine">Use os temas marcados abaixo.</p>
-            <div class="topic-grid" id="topicChecklist"></div>
-          </div>
-          <button id="restoreExcludedBtn" class="danger-lite">Restaurar excluidas</button>
-        </div>
-
-        <div class="tab-panel" id="historyPanel"></div>
-
-        <div class="tab-panel" id="examsPanel"></div>
       </section>
     </aside>
 
@@ -284,23 +293,31 @@
       <header class="topbar">
         <div>
           <p id="sourceLabel">Carregando banco...</p>
-          <h2 id="questionTitle">Banco de questoes</h2>
+          <h2 id="questionTitle">Banco de questões</h2>
         </div>
         <div class="actions">
-          <button id="shuffleBtn" class="icon-btn" title="Embaralhar questoes">↻</button>
-          <button id="favoriteBtn" class="icon-btn" title="Favoritar questao">☆</button>
+          <button id="shuffleBtn" class="icon-btn" title="Embaralhar questões">↻</button>
+          <button id="favoriteBtn" class="icon-btn" title="Favoritar questão">☆</button>
           <button id="reviewBtn" class="icon-btn" title="Marcar para revisar">⚑</button>
-          <button id="excludeBtn" class="icon-btn" title="Excluir questao do banco">×</button>
+          <button id="excludeBtn" class="icon-btn" title="Excluir questão do banco">×</button>
         </div>
       </header>
 
       <section class="question-shell">
+        <section class="start-panel" id="startPanel">
+          <h2>Escolha como quer estudar</h2>
+          <p>Use a aba Sessão para montar um bloco por temas ou a aba Provas prévias para resolver provas por instituição, área e ano.</p>
+          <div class="start-actions">
+            <button id="goSessionBtn" class="primary-btn">Montar sessão</button>
+            <button id="goExamsBtn">Ver provas prévias</button>
+          </div>
+        </section>
         <nav class="question-nav">
           <button id="prevBtn">Anterior</button>
           <span id="positionLabel">0 / 0</span>
-          <button id="nextBtn">Proxima</button>
+          <button id="nextBtn">Próxima</button>
         </nav>
-        <div class="question-map" id="questionMap" aria-label="Mapa de questoes do bloco"></div>
+        <div class="question-map" id="questionMap" aria-label="Mapa de questões do bloco"></div>
 
         <article class="question-card">
           <div class="tags" id="tagList"></div>
@@ -309,10 +326,10 @@
           <p id="answerBox" class="answer-box"></p>
           <div class="pending-review-panel" id="pendingReviewPanel" hidden>
             <div>
-              <strong>Questao precisa de revisao</strong>
+              <strong>Questão precisa de revisão</strong>
               <span id="pendingReviewReason">Confira gabarito, alternativas ou enunciado.</span>
             </div>
-            <button id="editPendingBtn" class="primary-btn">Editar pendencia</button>
+            <button id="editPendingBtn" class="primary-btn">Editar pendência</button>
           </div>
           <div class="question-tools" id="manualGradePanel">
             <div class="tool-row primary-tools">
@@ -321,11 +338,11 @@
               <button id="clearBtn">Limpar</button>
             </div>
             <details class="tool-details">
-              <summary>Mais opcoes</summary>
+              <summary>Mais opções</summary>
               <div class="tool-row secondary-tools">
                 <button id="correctBtn">Marcar acerto</button>
                 <button id="wrongBtn">Marcar erro</button>
-                <button id="editBtn">Editar questao</button>
+                <button id="editBtn">Editar questão</button>
               </div>
             </details>
           </div>
@@ -333,9 +350,9 @@
             <span>Acerto - como foi?</span>
             <div id="successTypeGroup" class="error-type-grid">
               <button data-success-type="mastered">Dominei</button>
-              <button data-success-type="reasoning">Raciocinio correto</button>
+              <button data-success-type="reasoning">Raciocínio correto</button>
               <button data-success-type="partial">Lembrei parcialmente</button>
-              <button data-success-type="doubt">Acerto com duvida</button>
+              <button data-success-type="doubt">Acerto com dúvida</button>
               <button data-success-type="guess-correct">Chutei e acertei</button>
             </div>
           </div>
@@ -344,9 +361,9 @@
             <div id="errorTypeGroup" class="error-type-grid">
               <button data-error-type="knowledge">Falta de conhecimento</button>
               <button data-error-type="concept">Confundi conceito</button>
-              <button data-error-type="reading">Li rapido</button>
+              <button data-error-type="reading">Li rápido</button>
               <button data-error-type="two-options">Duvida entre alternativas</button>
-              <button data-error-type="attention">Desatencao</button>
+              <button data-error-type="attention">Desatenção</button>
               <button data-error-type="guess">Chute</button>
             </div>
           </div>
@@ -354,10 +371,10 @@
 
         <section id="editorPanel" class="editor-panel" hidden>
           <div class="editor-head">
-            <h3>Revisar questao</h3>
+            <h3>Revisar questão</h3>
             <button id="cancelEditBtn">Cancelar</button>
           </div>
-          <p class="editor-hint">Corrija o enunciado, separe alternativas quando necessario e escolha o gabarito. Ao salvar uma questao completa, ela sai da lista de pendencias.</p>
+          <p class="editor-hint">Corrija o enunciado, separe alternativas quando necessário e escolha o gabarito. Ao salvar uma questão completa, ela sai da lista de pendências.</p>
           <label class="field">
             <span>Enunciado</span>
             <textarea id="editText" rows="8"></textarea>
@@ -396,14 +413,14 @@
                 <option value="E">E</option>
               </select>
             </label>
-            <button id="saveEditBtn">Salvar revisao</button>
+            <button id="saveEditBtn">Salvar revisão</button>
             <button id="resetEditBtn">Restaurar original</button>
           </div>
         </section>
 
         <section class="notes">
           <label class="field">
-            <span>Anotacoes da questao</span>
+            <span>Anotações da questão</span>
             <textarea id="noteInput" rows="5" placeholder="Resumo, pegadinha, mnemonico ou conduta..."></textarea>
           </label>
         </section>
