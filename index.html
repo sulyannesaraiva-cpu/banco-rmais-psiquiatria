@@ -37,6 +37,7 @@
 
       <nav class="tabs" aria-label="Painel do banco">
         <button class="tab active" data-tab="overview">Visão geral</button>
+        <button class="tab" data-tab="today">Revisão de hoje</button>
         <button class="tab" data-tab="activity">Sessão</button>
         <button class="tab" data-tab="exams">Provas prévias</button>
         <button class="tab admin-tab" data-tab="topics">Manutenção</button>
@@ -197,6 +198,28 @@
 
         </div>
 
+        <div class="tab-panel" id="todayPanel">
+          <div class="study-section">
+            <h3>Revisão de hoje</h3>
+            <div class="review-box">
+              <div>
+                <strong id="todayDueCount">0</strong>
+                <span>vencidas</span>
+              </div>
+              <div>
+                <strong id="todayPriorityCount">0</strong>
+                <span>prioritárias</span>
+              </div>
+            </div>
+            <div class="topic-toolbar">
+              <button id="startTodayReviewBtn" class="primary-btn">Iniciar revisão de hoje</button>
+              <button id="endTodayReviewBtn">Sair da revisão</button>
+            </div>
+            <p class="panel-line" id="todayReviewLine">As questões vencidas aparecerão aqui quando houver revisão programada.</p>
+            <div class="today-plan" id="todayPlan"></div>
+          </div>
+        </div>
+
         <div class="tab-panel" id="activityPanel">
           <p class="panel-line">Monte uma sessão escolhendo temas, tamanho e revisões.</p>
           <div class="session-builder">
@@ -351,17 +374,27 @@
           <div class="error-type-panel" id="successTypePanel">
             <span>Acerto - como foi?</span>
             <div id="successTypeGroup" class="error-type-grid">
-              <button data-success-type="mastered">Dominei</button>
-              <button data-success-type="reasoning">Raciocínio correto</button>
-              <button data-success-type="partial">Lembrei parcialmente</button>
+              <button data-success-type="mastered">Muito fácil</button>
+              <button data-success-type="reasoning">Sabia bem</button>
+              <button data-success-type="partial">Sabia parcialmente</button>
               <button data-success-type="doubt">Acerto com dúvida</button>
               <button data-success-type="guess-correct">Chutei e acertei</button>
+            </div>
+          </div>
+          <div class="error-type-panel" id="confidencePanel">
+            <span>Nível de confiança</span>
+            <div id="confidenceGroup" class="confidence-grid">
+              <button data-confidence="1">1 · Chutei</button>
+              <button data-confidence="2">2 · Fiquei em dúvida</button>
+              <button data-confidence="3">3 · Sabia parcialmente</button>
+              <button data-confidence="4">4 · Sabia bem</button>
+              <button data-confidence="5">5 · Muito fácil</button>
             </div>
           </div>
           <div class="error-type-panel" id="errorTypePanel">
             <span>Tipo de erro</span>
             <div id="errorTypeGroup" class="error-type-grid">
-              <button data-error-type="knowledge">Falta de conhecimento</button>
+              <button data-error-type="knowledge">Falta de memorização</button>
               <button data-error-type="concept">Confundi conceito</button>
               <button data-error-type="reading">Li rápido</button>
               <button data-error-type="two-options">Duvida entre alternativas</button>

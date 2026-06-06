@@ -9,6 +9,8 @@ const state = {
   index: 0,
   selected: null,
   progress: JSON.parse(localStorage.getItem("banco-rmais-progress") || "{}"),
+  attempts: JSON.parse(localStorage.getItem("banco-rmais-attempts") || "[]"),
+  reviewSchedule: JSON.parse(localStorage.getItem("banco-rmais-review-schedule") || "{}"),
   corrections: JSON.parse(localStorage.getItem("banco-rmais-corrections") || "{}"),
   excluded: JSON.parse(localStorage.getItem("banco-rmais-excluded") || "[]"),
   discardedOptions: JSON.parse(localStorage.getItem("banco-rmais-discarded-options") || "{}"),
@@ -243,6 +245,7 @@ const el = {
   tabs: document.querySelectorAll("[data-tab]"),
   panels: {
     overview: document.querySelector("#overviewPanel"),
+    today: document.querySelector("#todayPanel"),
     topics: document.querySelector("#topicsPanel"),
     activity: document.querySelector("#activityPanel"),
     history: document.querySelector("#historyPanel"),
@@ -308,6 +311,14 @@ const el = {
   startSpacedReview: document.querySelector("#startSpacedReviewBtn"),
   endSpacedReview: document.querySelector("#endSpacedReviewBtn"),
   spacedReviewLine: document.querySelector("#spacedReviewLine"),
+  todayDueCount: document.querySelector("#todayDueCount"),
+  todayPriorityCount: document.querySelector("#todayPriorityCount"),
+  todayReviewLine: document.querySelector("#todayReviewLine"),
+  todayPlan: document.querySelector("#todayPlan"),
+  startTodayReview: document.querySelector("#startTodayReviewBtn"),
+  endTodayReview: document.querySelector("#endTodayReviewBtn"),
+  confidenceGroup: document.querySelector("#confidenceGroup"),
+  confidencePanel: document.querySelector("#confidencePanel"),
   editOptions: {
     A: document.querySelector("#editOptionA"),
     B: document.querySelector("#editOptionB"),
@@ -320,6 +331,14 @@ const el = {
 function saveProgress() {
   localStorage.setItem("banco-rmais-progress", JSON.stringify(state.progress));
   scheduleCloudProgressSync();
+}
+
+function saveAttempts() {
+  localStorage.setItem("banco-rmais-attempts", JSON.stringify(state.attempts.slice(-2000)));
+}
+
+function saveReviewSchedule() {
+  localStorage.setItem("banco-rmais-review-schedule", JSON.stringify(state.reviewSchedule));
 }
 
 function saveCorrections() {
@@ -1005,25 +1024,6 @@ function clearExamSimulationState() {
   state.examSimulationAnswers = {};
 }
 
-function reviewDaysByAnswerType(grade, answerType, previous) {
-  const recurring = (previous.wrongCount || 0) >= 2;
-  if (grade === "wrong") {
-    if (recurring) return 0;
-    if (["knowledge", "concept", "two-options", "guess"].includes(answerType)) return 1;
-    if (["reading", "attention"].includes(answerType)) return 2;
-    return 2;
-  }
-  if (grade === "correct") {
-    if (answerType === "guess-correct") return 1;
-    if (answerType === "doubt") return 3;
-    if (answerType === "partial") return 7;
-    if (answerType === "reasoning") return 14;
-    if (answerType === "mastered") return 21;
-    return previous.nextReviewAt || previous.review || previous.wrongCount ? Math.min(Math.max((previous.intervalDays || 1) * 2, 2), 30) : 14;
-  }
-  return null;
-}
-
 function pluralize(count, singular, plural = `${singular}s`) {
   return `${count} ${count === 1 ? singular : plural}`;
 }
@@ -1037,12 +1037,42 @@ function formatReviewInterval(days) {
 function nextReviewGuidance(question) {
   const progress = getProgress(question.id);
   const grade = progress.grade || "wrong";
-  const answerType = progress.errorType || progress.successType || "";
-  const days = reviewDaysByAnswerType(grade, answerType, progress);
+  const days = calculateReviewPlan({ grade, confidence: progress.confidence || defaultConfidenceForGrade(grade), previous: progress }).intervalDays;
   return formatReviewInterval(days ?? 2);
 }
 
-function reviewPatchForGrade(previous, grade, answerType = "", countAttempt = true) {
+function defaultConfidenceForGrade(grade) {
+  if (grade === "wrong") return 2;
+  if (grade === "correct") return 4;
+  return null;
+}
+
+function calculateReviewPlan({ grade, confidence, previous = {} }) {
+  if (!grade) return { intervalDays: null, review: false, nextReviewAt: null };
+  const conf = Number(confidence || defaultConfidenceForGrade(grade) || 3);
+  const wrongCount = previous.wrongCount || 0;
+  const correctStreak = previous.correctStreak || 0;
+  let intervalDays = 7;
+  if (grade === "wrong") {
+    intervalDays = conf <= 2 ? 1 : 3;
+    if (wrongCount >= 2) intervalDays = 1;
+  } else if (conf <= 2) {
+    intervalDays = 5;
+  } else if (conf === 3) {
+    intervalDays = 7;
+  } else if (conf === 4) {
+    intervalDays = correctStreak >= 2 ? 30 : 14;
+  } else {
+    intervalDays = correctStreak >= 3 ? 60 : correctStreak >= 1 ? 30 : 14;
+  }
+  return {
+    intervalDays,
+    review: grade === "wrong" || conf <= 3,
+    nextReviewAt: nextReviewTime(intervalDays),
+  };
+}
+
+function reviewPatchForGrade(previous, grade, confidence, countAttempt = true) {
   if (grade === null) {
     return {
       review: false,
@@ -1051,24 +1081,25 @@ function reviewPatchForGrade(previous, grade, answerType = "", countAttempt = tr
       correctStreak: null,
     };
   }
+  const plan = calculateReviewPlan({ grade, confidence, previous });
   if (grade === "wrong") {
-    const intervalDays = reviewDaysByAnswerType(grade, answerType, previous);
     return {
-      review: true,
+      review: plan.review,
       wrongCount: countAttempt && previous.grade !== "wrong" ? (previous.wrongCount || 0) + 1 : previous.wrongCount || 1,
       correctStreak: 0,
-      intervalDays,
-      nextReviewAt: nextReviewTime(intervalDays),
+      confidence,
+      intervalDays: plan.intervalDays,
+      nextReviewAt: plan.nextReviewAt,
       lastWrongAt: Date.now(),
     };
   }
   if (grade === "correct") {
-    const intervalDays = reviewDaysByAnswerType(grade, answerType, previous);
     return {
       correctStreak: countAttempt && previous.grade !== "correct" ? (previous.correctStreak || 0) + 1 : previous.correctStreak || 1,
-      intervalDays,
-      nextReviewAt: nextReviewTime(intervalDays),
-      review: false,
+      confidence,
+      intervalDays: plan.intervalDays,
+      nextReviewAt: plan.nextReviewAt,
+      review: plan.review,
     };
   }
   return {};
@@ -1089,6 +1120,106 @@ function seedLegacySpacedReviews() {
   if (changed) saveProgress();
 }
 
+function currentQuestionMode() {
+  if (state.examSimulationActive) return "exam-simulation";
+  if (state.examActive) return "exam-study";
+  if (state.examSetActive) return "exam-set";
+  if (state.smartTrainingActive) return "smart-training";
+  if (state.spacedReviewActive) return "daily-review";
+  if (state.sessionActive) return "session";
+  return "free";
+}
+
+function attemptPayload(question, progress) {
+  const grade = progress.grade;
+  if (!question || !grade) return null;
+  return {
+    id: `${Date.now()}-${question.id}`,
+    user_id: state.authUser?.id || null,
+    question_id: question.id,
+    tema: topicForQuestion(question),
+    subtema: questionSubtheme(question),
+    answered_at: new Date().toISOString(),
+    selected_answer: progress.selected || null,
+    correct_answer: question.correctAnswer || null,
+    is_correct: grade === "correct",
+    confidence: Number(progress.confidence || defaultConfidenceForGrade(grade) || 3),
+    error_type: grade === "wrong" ? progress.errorType || null : progress.successType || null,
+    source: question.source || null,
+    mode: currentQuestionMode(),
+  };
+}
+
+function saveAttempt(question, progress) {
+  const attempt = attemptPayload(question, progress);
+  if (!attempt) return;
+  state.attempts.push(attempt);
+  state.attempts = state.attempts.slice(-2000);
+  saveAttempts();
+  syncAttemptToCloud(attempt);
+}
+
+function daysSince(timestamp) {
+  if (!timestamp) return 0;
+  return Math.max(0, Math.floor((Date.now() - timestamp) / (24 * 60 * 60 * 1000)));
+}
+
+function themeWeaknessScore(topic) {
+  const perf = topicPerformance(topic);
+  if (!perf.answered) return 1;
+  if (perf.accuracy < 0.5) return 3;
+  if (perf.accuracy < 0.7) return 2;
+  if (perf.accuracy < 0.85) return 1;
+  return 0;
+}
+
+function priorityScoreFor(question, progress = getProgress(question.id)) {
+  const isWrong = progress.grade === "wrong" ? 1 : 0;
+  const confidence = Number(progress.confidence || defaultConfidenceForGrade(progress.grade) || 3);
+  const lowConfidenceWeight = Math.max(0, 4 - confidence);
+  const since = daysSince(progress.updatedAt);
+  const themeWeaknessWeight = themeWeaknessScore(topicForQuestion(question));
+  const questionDifficultyWeight = progress.wrongCount || 0;
+  return Math.round(((isWrong * 3) + (lowConfidenceWeight * 2) + (since * 0.5) + (themeWeaknessWeight * 2) + questionDifficultyWeight) * 10) / 10;
+}
+
+function updateReviewSchedule(question, progress) {
+  if (!question || !progress?.nextReviewAt) return;
+  const row = {
+    user_id: state.authUser?.id || null,
+    question_id: question.id,
+    tema: topicForQuestion(question),
+    subtema: questionSubtheme(question),
+    next_review_at: new Date(progress.nextReviewAt).toISOString(),
+    interval_days: progress.intervalDays || 1,
+    priority_score: priorityScoreFor(question, progress),
+    wrong_count: progress.wrongCount || 0,
+    correct_streak: progress.correctStreak || 0,
+    last_confidence: progress.confidence || null,
+    last_result: progress.grade || null,
+    status: progress.grade === "correct" && (progress.confidence || 0) >= 5 && (progress.correctStreak || 0) >= 3 ? "mastered" : "active",
+    updated_at: new Date().toISOString(),
+  };
+  state.reviewSchedule[question.id] = row;
+  saveReviewSchedule();
+  syncReviewScheduleToCloud(row);
+}
+
+async function syncAttemptToCloud(attempt) {
+  if (!state.supabase || !state.authUser || !attempt) return;
+  const row = { ...attempt, user_id: state.authUser.id };
+  delete row.id;
+  const { error } = await state.supabase.from("question_attempts").insert(row);
+  if (error) console.warn("question_attempts sync skipped:", error.message);
+}
+
+async function syncReviewScheduleToCloud(row) {
+  if (!state.supabase || !state.authUser || !row) return;
+  const payload = { ...row, user_id: state.authUser.id };
+  const { error } = await state.supabase.from("review_schedule").upsert(payload, { onConflict: "user_id,question_id" });
+  if (error) console.warn("review_schedule sync skipped:", error.message);
+}
+
 function setProgress(patch) {
   const question = currentQuestion();
   if (!question) return;
@@ -1096,14 +1227,19 @@ function setProgress(patch) {
   const nextGrade = Object.prototype.hasOwnProperty.call(patch, "grade") ? patch.grade : previous.grade;
   const nextErrorType = Object.prototype.hasOwnProperty.call(patch, "errorType") ? patch.errorType : previous.errorType;
   const nextSuccessType = Object.prototype.hasOwnProperty.call(patch, "successType") ? patch.successType : previous.successType;
-  const nextAnswerType = nextGrade === "correct" ? nextSuccessType : nextErrorType;
+  const nextConfidence = Object.prototype.hasOwnProperty.call(patch, "confidence")
+    ? Number(patch.confidence)
+    : previous.confidence || defaultConfidenceForGrade(nextGrade);
   const shouldRecalculate =
     Object.prototype.hasOwnProperty.call(patch, "grade") ||
     Object.prototype.hasOwnProperty.call(patch, "errorType") ||
-    Object.prototype.hasOwnProperty.call(patch, "successType");
+    Object.prototype.hasOwnProperty.call(patch, "successType") ||
+    Object.prototype.hasOwnProperty.call(patch, "confidence");
   const gradeChanged = Object.prototype.hasOwnProperty.call(patch, "grade") && patch.grade !== previous.grade;
-  const reviewPatch = shouldRecalculate ? reviewPatchForGrade(previous, nextGrade, nextAnswerType, gradeChanged) : {};
+  const reviewPatch = shouldRecalculate ? reviewPatchForGrade(previous, nextGrade, nextConfidence, gradeChanged) : {};
   state.progress[question.id] = { ...previous, ...patch, ...reviewPatch, updatedAt: Date.now() };
+  if (gradeChanged && nextGrade) saveAttempt(question, state.progress[question.id]);
+  if (shouldRecalculate && nextGrade) updateReviewSchedule(question, state.progress[question.id]);
   if (state.filterKey) {
     state.positions[state.filterKey] = question.id;
     savePositions();
@@ -1331,6 +1467,7 @@ function renderDashboard() {
   renderExamStudyFilters();
   renderActivity();
   renderHistory();
+  renderTodayReview();
   renderExams();
 }
 
@@ -1685,6 +1822,45 @@ function renderHistory() {
     : `<p class="panel-line">Nenhuma questão respondida ainda.</p>`;
 }
 
+function renderTodayReview() {
+  if (!el.todayPlan) return;
+  const due = spacedReviewQuestions(true);
+  const recentErrors = due.filter((question) => getProgress(question.id).grade === "wrong").length;
+  const lowConfidence = due.filter((question) => (getProgress(question.id).confidence || 5) <= 2).length;
+  const maintenance = due.filter((question) => getProgress(question.id).grade === "correct").length;
+  el.todayDueCount.textContent = due.length;
+  el.todayPriorityCount.textContent = due.filter((question) => priorityScoreFor(question) >= 6).length;
+  if (!due.length) {
+    el.todayReviewLine.textContent = "Nenhuma revisão vencida hoje. Faça uma sessão nova ou uma sessão inteligente para alimentar o cronograma.";
+    el.todayPlan.innerHTML = "";
+    return;
+  }
+  el.todayReviewLine.textContent = `Hoje sugerimos ${pluralize(Math.min(due.length, state.sessionSize), "questão", "questões")} para revisar, priorizando erros recentes, baixa confiança e temas frágeis.`;
+  el.todayPlan.innerHTML = `
+    <div class="summary-grid">
+      <div><strong>${recentErrors}</strong><span>erros recentes</span></div>
+      <div><strong>${lowConfidence}</strong><span>baixa confiança</span></div>
+      <div><strong>${maintenance}</strong><span>manutenção</span></div>
+      <div><strong>${state.sessionSize}</strong><span>meta diária</span></div>
+    </div>
+    <div class="today-list">
+      ${due
+        .slice(0, 12)
+        .map((question) => {
+          const progress = getProgress(question.id);
+          return `
+            <div class="today-item">
+              <strong>${escapeHtml(topicForQuestion(question))}</strong>
+              <span>${escapeHtml(questionSubtheme(question))}</span>
+              <small>prioridade ${priorityScoreFor(question, progress)} · confiança ${progress.confidence || defaultConfidenceForGrade(progress.grade) || "-"}</small>
+            </div>
+          `;
+        })
+        .join("")}
+    </div>
+  `;
+}
+
 function renderErrorNotebook() {
   if (!el.errorNotebook) return;
   const wrongItems = allStudyQuestions()
@@ -1772,7 +1948,7 @@ function spacedReviewQuestions(onlyDue) {
       if (!progress.nextReviewAt) return false;
       return onlyDue ? progress.nextReviewAt <= now : progress.nextReviewAt > now;
     })
-    .sort((a, b) => (getProgress(a.id).nextReviewAt || 0) - (getProgress(b.id).nextReviewAt || 0));
+    .sort((a, b) => priorityScoreFor(b) - priorityScoreFor(a) || (getProgress(a.id).nextReviewAt || 0) - (getProgress(b.id).nextReviewAt || 0));
 }
 
 function smartTrainingQuestions() {
@@ -1976,6 +2152,7 @@ function render() {
     el.position.textContent = "0 / 0";
     el.manualGradePanel.hidden = false;
     el.successTypePanel.hidden = true;
+    el.confidencePanel.hidden = true;
     el.errorTypePanel.hidden = true;
     el.note.value = "";
     return;
@@ -2045,6 +2222,7 @@ function render() {
   }
   el.manualGradePanel.hidden = examLocked;
   el.successTypePanel.hidden = examLocked || progress.grade !== "correct";
+  el.confidencePanel.hidden = examLocked || !progress.grade;
   el.errorTypePanel.hidden = examLocked || progress.grade !== "wrong";
   el.confirmAnswer.disabled = !question.correctAnswer || !selectedLetter || Boolean(progress.grade) || examLocked;
   el.confirmAnswer.textContent = progress.grade ? "Alternativa confirmada" : "Confirmar alternativa";
@@ -2057,6 +2235,9 @@ function render() {
   el.wrong.classList.toggle("active", progress.grade === "wrong");
   el.successTypeGroup.querySelectorAll("[data-success-type]").forEach((button) => {
     button.classList.toggle("active", progress.successType === button.dataset.successType);
+  });
+  el.confidenceGroup.querySelectorAll("[data-confidence]").forEach((button) => {
+    button.classList.toggle("active", Number(button.dataset.confidence) === Number(progress.confidence || defaultConfidenceForGrade(progress.grade)));
   });
   el.errorTypeGroup.querySelectorAll("[data-error-type]").forEach((button) => {
     button.classList.toggle("active", progress.errorType === button.dataset.errorType);
@@ -2444,6 +2625,8 @@ function resetUserProgress() {
   );
   if (!shouldReset) return;
   state.progress = {};
+  state.attempts = [];
+  state.reviewSchedule = {};
   state.discardedOptions = {};
   state.activeAnswers = {};
   state.sessionActive = false;
@@ -2459,11 +2642,17 @@ function resetUserProgress() {
   state.examCompletionMessage = "";
   clearExamSimulationState();
   localStorage.removeItem("banco-rmais-progress");
+  localStorage.removeItem("banco-rmais-attempts");
+  localStorage.removeItem("banco-rmais-review-schedule");
   localStorage.removeItem("banco-rmais-discarded-options");
   saveProgress();
+  saveAttempts();
+  saveReviewSchedule();
   saveDiscardedOptions();
   if (state.authUser && state.supabase) {
     state.supabase.from("user_progress").delete().eq("user_id", state.authUser.id);
+    state.supabase.from("question_attempts").delete().eq("user_id", state.authUser.id);
+    state.supabase.from("review_schedule").delete().eq("user_id", state.authUser.id);
     syncSettingsToCloud();
   }
   state.index = 0;
@@ -2669,6 +2858,8 @@ el.startExamSet.addEventListener("click", startExamSet);
 el.endExamSet.addEventListener("click", endExamSet);
 el.startSpacedReview.addEventListener("click", startSpacedReview);
 el.endSpacedReview.addEventListener("click", endSpacedReview);
+el.startTodayReview.addEventListener("click", startSpacedReview);
+el.endTodayReview.addEventListener("click", endSpacedReview);
 el.sessionSourceGroup.addEventListener("click", (event) => {
   const button = event.target.closest("[data-source]");
   if (!button) return;
@@ -2828,6 +3019,11 @@ el.successTypeGroup.addEventListener("click", (event) => {
   const button = event.target.closest("[data-success-type]");
   if (!button) return;
   setProgress({ successType: button.dataset.successType });
+});
+el.confidenceGroup.addEventListener("click", (event) => {
+  const button = event.target.closest("[data-confidence]");
+  if (!button) return;
+  setProgress({ confidence: Number(button.dataset.confidence) });
 });
 el.errorTypeGroup.addEventListener("click", (event) => {
   const button = event.target.closest("[data-error-type]");

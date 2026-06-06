@@ -1110,16 +1110,45 @@ textarea {
   font-weight: 700;
 }
 
-.error-type-grid {
+.error-type-grid,
+.confidence-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 8px;
 }
 
-.error-type-grid button {
+.error-type-grid button,
+.confidence-grid button {
   min-height: 36px;
   padding: 0 10px;
   font-size: 14px;
+}
+
+.error-type-grid button.active,
+.confidence-grid button.active {
+  border-color: #155e75;
+  background: #eaf6fb;
+  color: #155e75;
+  font-weight: 700;
+}
+
+.today-list {
+  display: grid;
+  gap: 8px;
+}
+
+.today-item {
+  display: grid;
+  gap: 3px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+}
+
+.today-item span,
+.today-item small {
+  color: var(--muted);
 }
 
 .error-notebook {
