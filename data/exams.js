@@ -28044,6 +28044,619 @@ window.BANCO_RMAIS_EXAMS = {
       ]
     },
     {
+      "id": "unifesp-2024-psiquiatria-geral",
+      "institution": "UNIFESP",
+      "year": 2024,
+      "code": "",
+      "area": "Psiquiatria Geral",
+      "title": "UNIFESP 2024 - Psiquiatria Geral",
+      "file": "Prova r+ Unifesp 2024..pdf",
+      "questionCount": 20,
+      "answerCount": 20,
+      "questions": [
+        {
+          "id": "unifesp-2024-psiquiatria-geral-001",
+          "number": 1,
+          "source": "UNIFESP 2024 - Psiquiatria Geral",
+          "topic": "Psiquiatria Geral",
+          "title": "Questao 1",
+          "text": "Mulher, 69 anos de idade , publicitária aposentada, ensino superior completo, casada, sem filhos, evangélica. Paciente sem histórico de alterações prévias de comportamento, anteriormente era bastante produtiva, com diversas atividades comunitárias. Relata que, após falecimento de sua mãe há 3 anos, passou a se sentir muito desanimada, entristecida, sente -se “travada”, sem iniciativa e muito indecisa. Queixa de estar desatenta, esquecendo compromissos, tomadas de medicamentos e trajetos costumeiros pela cidade. Nega, no entanto, prejuízo de sua autonomia. Parou de sair e fazer exercícios. Perdeu um pouco de apetite, tendo perdido 3kg no período. Tem ficado inquieta ao tentar deitar-se, demorando cerca de 2h para iniciar sono, e dormindo das 02h às 08h. Foi realizado tratamento com uso de sertralina 150mg/dia, com melhora estimada em 60%. A paciente manteve o tratamento por 6 meses, sustentando principalmente sintomas de desatenção e esquecim entos. Na sequência, interrompeu o tratamento e passa por piora do quadro há 1 ano. Na ocasião atual, manifesta sintomas mais graves, com lentificação psíquica importante, desorientação temporal, discurso lacônico, com conteúdo do pensamento predominante de ruína. Não são observados ideação suicida ou sintomas psicóticos. Antecedentes pessoais: Hipertensão em uso de losartana 100mg/dia, hipotireoidismo em uso de levotiroxina 75mcg/dia. Testagem cognitiva na avaliação atual: Montreal Cognitive Assessment (Mo CA) = 16/30 pontos (perde 1 em trilhas, 2 em desenho do relógio, 3 em atenção, 1 em abstração, 3 em memória e 1 em linguagem e 3 em orientação temporal). Possui amplo rastreio laboratorial sem alterações. A ressonância magnética de crânio demonstra atrofia difusa e microangiopatia discreta em substância branca. Qual é a conduta adequada?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Reintroduzir sertralina até dose máxima tolerada e considerar potencialização com antipsicótico atípico devido a gravidade dos sintomas depressivos."
+            },
+            {
+              "letter": "B",
+              "text": "Introduzir donepezila até 10mg/dia para tratamento da demência e considerar associação de memantina para sintomas comportamentais."
+            },
+            {
+              "letter": "C",
+              "text": "Introduzir venlafaxina devido a falha terapêutica da sertralina e melhor indicação desta classe de antidepressivo para o perfil grave e lacônico d a paciente."
+            },
+            {
+              "letter": "D",
+              "text": "Introduzir lítio até atingir litemia de 0,8mEq/L e considerar associação de antipsicótico atípico, devido a provável depressão bipolar indicada pela gravidade e recorrência."
+            }
+          ],
+          "correctAnswer": "A",
+          "examId": "unifesp-2024-psiquiatria-geral",
+          "examTag": "UNIFESP 2024",
+          "provider": "UNIFESP"
+        },
+        {
+          "id": "unifesp-2024-psiquiatria-geral-002",
+          "number": 2,
+          "source": "UNIFESP 2024 - Psiquiatria Geral",
+          "topic": "Psiquiatria Geral",
+          "title": "Questao 2",
+          "text": "Homem, 73 anos de idade, porteiro aposentado, ensino fundamental completo, casado, 2 filhos, mora com esposa, católico. O paciente comparece ao pronto socorro com queixa de “visões”. Filha relata que, há 6 anos, começou a ficar mais quieto, angustiado, apresentou algumas quedas e notaram tremores. Cerca de 3 meses depois, co meçou a apresentar períodos de “confusão”, não sabia onde estava e via pessoas em sua casa. Procurou atendimento médico, recebendo tratamento com rivastigmina 6mg 12/12h e levodopa/benserazida 200/50mg 3x/dia. Apresentou melhora dos períodos de confusão e cessou “visões”. Melhorou também discretamente dos tremores, mas ainda apresentava marcha lenta e quedas ocasionais. Ao longo dos últimos anos comportamento tem se mantido estável, com raras oscilações quando não compreende uma informação em momentos de confusão e fica irritado. Apresenta também agitação com movimentos complexos e vocalizações durante o sono em algumas noites. No entanto, sua funcionalidade está cada vez mais restrita, sendo dependente de seus familiares para quaisquer atividades instrument ais de vida diária. Há 6 meses, sua marcha vem piorando, de modo que o médico que o acompanha associou Pramipexol há 3 meses, chegando à dose de 0,25mg 3x/dia, e na sequência, Amantadina 100mg/dia, com benefício incerto. Há cerca de 1 mês, paciente voltou a apresentar “visões” mais importantes, vendo cenas ameaçadoras como fogo em seu quarto e ficando muito agitado, tentando agr edir esposa e atirando objetos. Nega comorbidades e uso de outras medicações, possui ressonância magnética de crânio com atrofia di fusa compatível com idade. Em testagem cognitiva de rastreio, pontua 20/30 pontos no Mini Exame do Estado Mental. Perde pontos em função visuoespacial e executiva, atenção, memória e orientação. Qual a conduta adequada?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Suspender amantadina, e na sequênci a pramipexol. Prescrever quetiapina em caso de agitação com risco ao paciente, familiares ou equipe."
+            },
+            {
+              "letter": "B",
+              "text": "Trocar rivastigmina para donepezila. Prescrever trazodona em caso de agitação com risco ao paciente, familiares ou equipe."
+            },
+            {
+              "letter": "C",
+              "text": "Manter paciente em observação ho spitalar, solicitar rastreio infeccioso e prescrever haloperidol se agitação com risco ao paciente, familiares ou equipe."
+            },
+            {
+              "letter": "D",
+              "text": "Suspender pramipexol e na sequência levodopa/benserazida. Prescrever memantina para melhora cognitiva e da agitação."
+            }
+          ],
+          "correctAnswer": "A",
+          "examId": "unifesp-2024-psiquiatria-geral",
+          "examTag": "UNIFESP 2024",
+          "provider": "UNIFESP"
+        },
+        {
+          "id": "unifesp-2024-psiquiatria-geral-003",
+          "number": 3,
+          "source": "UNIFESP 2024 - Psiquiatria Geral",
+          "topic": "Psiquiatria Geral",
+          "title": "Questao 3",
+          "text": "Sobre a fisiopatologia da Doença de Alzheimer, assinale a alternativa correta.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "A principal hipótese sobre o papel da APOE na fisiopatologia da Doença de Alzheimer é de que o alelo ε4 induz uma maior produção de proteína beta amiloide em comparação com as demais variantes."
+            },
+            {
+              "letter": "B",
+              "text": "Na principal hipótese sobre a cascata fisiopatológica da Doença de Alzheimer, fatores inflamatórios levam a uma hiperfosforilação da proteína tau, que por consequência leva ao acúmulo da proteína beta amiloide."
+            },
+            {
+              "letter": "C",
+              "text": "Indivíduos portadores de ao menos um alelo ε4 da APOE possuem uma chance maior de desenvolver Doença de Alzheimer, no entanto, não possuem uma doença autossômica dominante."
+            },
+            {
+              "letter": "D",
+              "text": "Os principais achados neuropatológicos da Doença de Alzheimer são agregados intracitoplasmáticos de proteína beta am iloide, chamados de emaranhados neurofibrilares, e placas extracelulares compostas de proteína tau."
+            }
+          ],
+          "correctAnswer": "C",
+          "examId": "unifesp-2024-psiquiatria-geral",
+          "examTag": "UNIFESP 2024",
+          "provider": "UNIFESP"
+        },
+        {
+          "id": "unifesp-2024-psiquiatria-geral-004",
+          "number": 4,
+          "source": "UNIFESP 2024 - Psiquiatria Geral",
+          "topic": "Psiquiatria Geral",
+          "title": "Questao 4",
+          "text": "Sobre o delirium, assinale a alternativa correta.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "O delirium possui uma causa sistêmica específica que, caso corrigida, resultará em sua reversão."
+            },
+            {
+              "letter": "B",
+              "text": "O trat amento farmacológico da agitação no delirium deve ser feito preferencialmente com antipsicóticos atípicos como a quetiapina."
+            },
+            {
+              "letter": "C",
+              "text": "É recomendada a introdução de anticolinesterásico para redução do tempo de delirium e melhora do prognóstico."
+            },
+            {
+              "letter": "D",
+              "text": "Embora uma preocupação frequente no manejo do delirium sejam os períodos de agitação, o delirium hipoativo possui pior prognóstico."
+            }
+          ],
+          "correctAnswer": "D",
+          "examId": "unifesp-2024-psiquiatria-geral",
+          "examTag": "UNIFESP 2024",
+          "provider": "UNIFESP"
+        },
+        {
+          "id": "unifesp-2024-psiquiatria-geral-005",
+          "number": 5,
+          "source": "UNIFESP 2024 - Psiquiatria Geral",
+          "topic": "Psiquiatria Geral",
+          "title": "Questao 5",
+          "text": "Em ação previdenciária contra o INSS em que é pleiteada aposentadoria por invalidez, o autor de 45 anos apresenta atestado médico referindo diagnóstico de esquizofrenia (CID -10 F20). Durante a perícia psiquiátrica, diz que esqueceu todos os seus dados, não sabendo quem é, onde está ou se tem família ou filhos. Permanece durante toda a perícia olhando para o teto, com expressão perplexa. Responde que um cachorro tem três patas e que o presidente atual do Brasil é o Luís Inácio Bolsonaro. Veio desacompanhado. Qual o diagnóstico mais provável?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Amnésia dissociativa."
+            },
+            {
+              "letter": "B",
+              "text": "Paciente simulando, por tanto não há diagnóstico psiquiátrico."
+            },
+            {
+              "letter": "C",
+              "text": "Esquizofrenia em surto."
+            },
+            {
+              "letter": "D",
+              "text": "Transtorno de personalidade histriônica."
+            }
+          ],
+          "correctAnswer": "B",
+          "examId": "unifesp-2024-psiquiatria-geral",
+          "examTag": "UNIFESP 2024",
+          "provider": "UNIFESP"
+        },
+        {
+          "id": "unifesp-2024-psiquiatria-geral-006",
+          "number": 6,
+          "source": "UNIFESP 2024 - Psiquiatria Geral",
+          "topic": "Psiquiatria Geral",
+          "title": "Questao 6",
+          "text": "Paciente do sexo feminino, 25 anos, procura atendimento no pronto -socorro de psiquiatria alegando que está muito estressada com o trabalho. É professora em uma escola particular e se decepcionou muito com a profissão. Diz que não suporta mais a falta de educação dos alunos e o barulho em sala de aula. Não apresenta alterações ao exame psíquico e não são constatadas evidências de doença psiquiátrica. Ao final do atendimento, pede um atestado para apresentar na escola e pergunta se não poderia ser afastada de suas funções por alguns dias para “colocar a cabeça no lugar”. Qual é a melhor conduta do ponto de vista ético?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Emitir atestado em que consta a realização do atendimento e os sintomas relatados pela paciente, sem indicar afastamento do trabalho."
+            },
+            {
+              "letter": "B",
+              "text": "Emitir um atestado com indicação de afastamento do trabalho por duas semanas, pois a paciente apresenta quadro clássico de burnout, que é uma doença mental com graves repercussões."
+            },
+            {
+              "letter": "C",
+              "text": "Dizer à paciente que atestad os médicos não são dados em pronto-socorro."
+            },
+            {
+              "letter": "D",
+              "text": "Emitir CAT (Comunicação de Acidente de Trabalho), pois o sofrimento mental descrito é equiparado a acidente do trabalho."
+            }
+          ],
+          "correctAnswer": "A",
+          "examId": "unifesp-2024-psiquiatria-geral",
+          "examTag": "UNIFESP 2024",
+          "provider": "UNIFESP"
+        },
+        {
+          "id": "unifesp-2024-psiquiatria-geral-007",
+          "number": 7,
+          "source": "UNIFESP 2024 - Psiquiatria Geral",
+          "topic": "Psiquiatria Geral",
+          "title": "Questao 7",
+          "text": "Marcos esteve em tratamento com seu psiquiatra, Dr. Carlos, durante três anos, tendo receb ido alta há seis meses. Ele procura novamente o médico e o convida para ser seu assistente técnico, pois moveu ação trabalhista contra a empresa em que trabalhou durante o período em que esteve em acompanhamento psiquiátrico, alegando que sua doença foi re sultado de assédio moral associado a burnout. Existe impedimento ético ou legal para Carlos atuar na ação?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Sim, pois há vedação ao exercício da função de assistente técnico em relação a pacientes ou ex - pacientes do médico."
+            },
+            {
+              "letter": "B",
+              "text": "Não, desde que o médico não volt e a tratar do paciente para quem irá trabalhar."
+            },
+            {
+              "letter": "C",
+              "text": "Sim, já que a alta do tratamento foi recente."
+            },
+            {
+              "letter": "D",
+              "text": "Não, pois a lei processual afirma expressamente que o assistente técnico é de confiança da parte e não está sujeito a impedimento ou suspeição."
+            }
+          ],
+          "correctAnswer": "D",
+          "examId": "unifesp-2024-psiquiatria-geral",
+          "examTag": "UNIFESP 2024",
+          "provider": "UNIFESP"
+        },
+        {
+          "id": "unifesp-2024-psiquiatria-geral-008",
+          "number": 8,
+          "source": "UNIFESP 2024 - Psiquiatria Geral",
+          "topic": "Psiquiatria Geral",
+          "title": "Questao 8",
+          "text": "Menino de 11 anos começou a ficar muito ansioso no retorno às aulas, com crises de choro, desânimo, insônia inicial de 2 horas e perda de peso. Mesmo em psicoterapia há 6 semanas, vem apresentando piora da angústia e da ansiedade. Menino afirma que não gostaria mais de viver assim. Foi iniciada Fluoxetina 10mg ao dia e após 3 dias, pai descreve que paciente começou a dormir melhor e chorar menos, mas continua muito preocupado e passou a falar mais em morrer. Ao exame psíquico, menino apresenta discreta pior a do tônus ansioso e aceleração de fala, mantem pensamentos prevalentes de menos valia e ruína. Aumento da frequência dos pensamentos de morte, mas continua sem planejamento suicida. Sem melhora do humor deprimido. Sem alterações da sensopercepção. Qual é a conduta mais adequada?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Associar antipsicótico atípico, como olanzapina, por risco de virada maníaca."
+            },
+            {
+              "letter": "B",
+              "text": "Aumentar a fluoxetina para 20mg por não resposta."
+            },
+            {
+              "letter": "C",
+              "text": "Suspender imediatamente a Fluoxetina por aumento do risco de cometer suicídio e iniciar lítio."
+            },
+            {
+              "letter": "D",
+              "text": "Orientar família e paciente sobre tratamento antidepressivo, intensificar cuidados preventivos ao suicídio e fazer retorno clínico breve."
+            }
+          ],
+          "correctAnswer": "D",
+          "examId": "unifesp-2024-psiquiatria-geral",
+          "examTag": "UNIFESP 2024",
+          "provider": "UNIFESP"
+        },
+        {
+          "id": "unifesp-2024-psiquiatria-geral-009",
+          "number": 9,
+          "source": "UNIFESP 2024 - Psiquiatria Geral",
+          "topic": "Psiquiatria Geral",
+          "title": "Questao 9",
+          "text": "Paciente masculino de 13 anos apresentou depressão grave com tentativa de suicídio por overdose. Foi introduzido escitalopra m 10mg ao dia e após 20 dias, sua mãe liga contando que paciente vinha muito melhor, mais falante, rindo à toa, achando-se a pessoa mais inteligente e bonita do mundo. No entanto, nos últimos 5 dias não dormiu mais que 4 horas por noite, não consegue parar de se movimentar, dançou no meio da sala de aula, gastando muito dinheiro, e falando de muitos assuntos ao mesmo tempo. Qual a conduta apropriada?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Já introduzir lamotrigina."
+            },
+            {
+              "letter": "B",
+              "text": "Avaliar presencialmente o paciente, se for virada maníaca, introduzir lítio e suspender escitalopram."
+            },
+            {
+              "letter": "C",
+              "text": "Avaliar presencialmente o paciente, se for virada maníaca, introduzir lítio e diminuir escitalopram."
+            },
+            {
+              "letter": "D",
+              "text": "Avaliar presencialmente o paciente, se for virada maníaca, introduzir divalproato de sódio e diminuir escitalopram."
+            }
+          ],
+          "correctAnswer": "B",
+          "examId": "unifesp-2024-psiquiatria-geral",
+          "examTag": "UNIFESP 2024",
+          "provider": "UNIFESP"
+        },
+        {
+          "id": "unifesp-2024-psiquiatria-geral-010",
+          "number": 10,
+          "source": "UNIFESP 2024 - Psiquiatria Geral",
+          "topic": "Psiquiatria Geral",
+          "title": "Questao 10",
+          "text": "João, 14 an os, iniciou acompanhamento psiquiátrico por estar apresentando dificuldades em frequentar a escola. Mãe e paciente referem que ele fica ansioso à noite, especialmente nas que antecedem os dias de prova. Chega a ter sintomas físicos, como falta de ar, e nes ses momentos fica andando “para lá e para cá”. Apresenta este mesmo comportamento quando está muito feliz e animado com algo. João refere que tem muita dificuldade na escola por conta de trabalhos em grupo, pois nunca sabe como se inserir em um. Também não gosta do recreio, prefere ficar na biblioteca. Falou em consulta que “adolescentes são muito complexos”, fica confuso quando fazem piadas ou em situações de paquera. Tem evitado também situações familiares, pois é solicitado que fale mais e que coma melho r, refere que gosta de comer sempre as mesmas coisas. A mãe refere que, desde criança, é muito difícil de entender o que ele está sentindo, parece sempre muito sério. Refere ainda que ele sempre precisou da ajuda dela para intermediar as relações com os pa res. Sempre se deu melhor com pessoas bem mais novas ou com adultos. Nasceu a termo, sem complicações ao nascimento. Mãe nega atraso de fala ou atraso dos marcos do desenvolvimento motor, apesar de sempre ter sido uma criança mais “desajeitada”. sobre o caso julgue alternativas como verdadeiro (v) ou falso (f): 1. Não há necessidade de investigação para transtornos do neurodesenvolvimento, pois não há relato de atraso de fala ou atraso motor. 2. Há indicação de investigação diagnóstica para transtorno do es pectro autista (TEA) e seu diagnóstico exclui a possibilidade de fobia social. 3. Para avaliação diagnóstica do paciente em questão se faz necessária a solicitação de avaliação neuropsicológica. 4. Na descrição do caso podemos identificar características s ugestivas de alteração em reciprocidade socioemocional, comunicação não verbal e no desenvolvimento, manutenção e compreensão das relações. 5. Durante a avaliação diagnóstica, a investigação de alterações no processamento sensorial é essencial, pois sua presença é imprescindível para o diagnóstico de TEA pelo DSM-5. 6. No caso em questão a piora de sintomas ansiosos na adolescência pode estar associada ao aumento de demandas sociais e funcionais que comumente acontece em momentos de transição de fase (Ex: Infância para adolescência ou adolescência para vida adulta) Assinale a alternativa correta:",
+          "options": [
+            {
+              "letter": "A",
+              "text": "F F F V F V"
+            },
+            {
+              "letter": "B",
+              "text": "F V F V V V"
+            },
+            {
+              "letter": "C",
+              "text": "V F F F F V"
+            },
+            {
+              "letter": "D",
+              "text": "F V V V V F"
+            }
+          ],
+          "correctAnswer": "A",
+          "examId": "unifesp-2024-psiquiatria-geral",
+          "examTag": "UNIFESP 2024",
+          "provider": "UNIFESP"
+        },
+        {
+          "id": "unifesp-2024-psiquiatria-geral-011",
+          "number": 11,
+          "source": "UNIFESP 2024 - Psiquiatria Geral",
+          "topic": "Psiquiatria Geral",
+          "title": "Questao 11",
+          "text": "João é um menino de 8 anos que está no terceiro ano do ensino fundamental. Essa semana sua mãe foi chamada à escola porque a professora está preocupada com o aluno. A professora relatou a mãe que desde o ano passado o aluno está com dificuldade de aprendizado. Ela tem o acompanhado desde o primeiro ano, e observa que o aluno é preguiçoso, não tem entregado sua lição de casa, ou quando a entrega, ela está pela metade. Durante a aula, o mesmo fica conversando com os amigos ou fica brincando com seu lápis e não tem conseguido copiar as atividades até o final da aula. Semana passada era um dia especial na escola, as c rianças tinham que trazer um brinquedo que seria usado em uma atividade, mas o mesmo esqueceu de trazer. Sua mãe relatou que em casa o filho faz as tarefas da escola rapidinho para ir logo brincar. Gosta de brincar o tempo todo, várias brincadeiras ao long o do dia, pois enjoa fácil das mesmas e precisa estar sempre inventando novas formas de diversão. Ele é muito criativo e suas brincadeiras preferidas são pega -pega, pique - esconde, subir em árvores. Não tem paciência para assistir TV e desenhos não lhe des pertam interesse. Mãe relata que não consegue acompanhar o ritmo do paciente e a noite ela está exausta. Ela contou que o pai do paciente está distante da família nos últimos 2 meses porque o mesmo tem feito uso de substâncias psicoativas e alguns dias não consegue voltar para casa. Diante do caso apresentado, a ssinale a alternativa INCORRETA.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "A provável Hipótese Diagnóstica é TDAH e entre as condições comórbidas mais comuns nesta idade podemos citar transtorno de oposição desafiante (TOD), transtorno de ansiedade, transtorno de conduta (TC) e transtornos de aprendizagem."
+            },
+            {
+              "letter": "B",
+              "text": "A provável hipótese diagnóstica é TDAH e o uso de psicoestimulante está contraindicado devido o histórico familiar do paciente."
+            },
+            {
+              "letter": "C",
+              "text": "A provável hipótese diagnóstica é TDAH e não há necessidade de eletrocardiograma antes de iniciar o tratamento com psicoestimulante em crianças sem fatores de risco cardiovascular."
+            },
+            {
+              "letter": "D",
+              "text": "Os sintomas de TDAH tendem a diminuir no final da adolescência e na idade adulta e os sintomas hiperativos / impulsivos diminuem mais do que os de desatenção ao longo do desenvolvimento."
+            }
+          ],
+          "correctAnswer": "B",
+          "examId": "unifesp-2024-psiquiatria-geral",
+          "examTag": "UNIFESP 2024",
+          "provider": "UNIFESP"
+        },
+        {
+          "id": "unifesp-2024-psiquiatria-geral-012",
+          "number": 12,
+          "source": "UNIFESP 2024 - Psiquiatria Geral",
+          "topic": "Psiquiatria Geral",
+          "title": "Questao 12",
+          "text": "Segundo o diagnóstico de Transtorno Depressivo Maior com características mistas pelo o DSM -V, é INCORRETO afirmar:",
+          "options": [
+            {
+              "letter": "A",
+              "text": "É fator de risco para desenvolvimento de transtorno bipolar tipo I ou II."
+            },
+            {
+              "letter": "B",
+              "text": "É necessária a presença de pelo menos dois sintomas de polo maníaco."
+            },
+            {
+              "letter": "C",
+              "text": "É necessário que os sintomas sejam observaveis por outros indivíduos."
+            },
+            {
+              "letter": "D",
+              "text": "Irritabilidade não é um sintoma que direciona para o especificador de características mistas."
+            }
+          ],
+          "correctAnswer": "B",
+          "examId": "unifesp-2024-psiquiatria-geral",
+          "examTag": "UNIFESP 2024",
+          "provider": "UNIFESP"
+        },
+        {
+          "id": "unifesp-2024-psiquiatria-geral-013",
+          "number": 13,
+          "source": "UNIFESP 2024 - Psiquiatria Geral",
+          "topic": "Psiquiatria Geral",
+          "title": "Questao 13",
+          "text": "Segundo o tratamento de depressão pelo CANMAT, são estratégias de primeira linha para tratamento adjuntivo (potencialização), em caso de resposta insatisfatória a antidepressivo, EXCETO.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Carbonato de lítio."
+            },
+            {
+              "letter": "B",
+              "text": "Quetiapina."
+            },
+            {
+              "letter": "C",
+              "text": "Aripiprazol."
+            },
+            {
+              "letter": "D",
+              "text": "Risperidona."
+            }
+          ],
+          "correctAnswer": "A",
+          "examId": "unifesp-2024-psiquiatria-geral",
+          "examTag": "UNIFESP 2024",
+          "provider": "UNIFESP"
+        },
+        {
+          "id": "unifesp-2024-psiquiatria-geral-014",
+          "number": 14,
+          "source": "UNIFESP 2024 - Psiquiatria Geral",
+          "topic": "Psiquiatria Geral",
+          "title": "Questao 14",
+          "text": "Segundo a CANMAT, são características que direcionam para o uso de lítio no tratamento da mania aguda, EXCETO.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Mania eufórica e grandiosa."
+            },
+            {
+              "letter": "B",
+              "text": "História familiar positiva para TAB."
+            },
+            {
+              "letter": "C",
+              "text": "Curso depressão-mania-eutimia."
+            },
+            {
+              "letter": "D",
+              "text": "Poucos episódios prévios."
+            }
+          ],
+          "correctAnswer": "C",
+          "examId": "unifesp-2024-psiquiatria-geral",
+          "examTag": "UNIFESP 2024",
+          "provider": "UNIFESP"
+        },
+        {
+          "id": "unifesp-2024-psiquiatria-geral-015",
+          "number": 15,
+          "source": "UNIFESP 2024 - Psiquiatria Geral",
+          "topic": "Psiquiatria Geral",
+          "title": "Questao 15",
+          "text": "Resistência ao tratamento e falta de adesão são dois conceitos que apresentam uma zona de sobreposição. Sobre a relação entre esses dois conceitos é correto afirmar de ac ordo com o protocolo mais atual.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Para um trial com antipsicótico ser considerado adequado, deve -se garantir 100% de tomada adequada das doses conforme prescritas."
+            },
+            {
+              "letter": "B",
+              "text": "A avaliação da falta de adesão pode ser verificada diretamente com o paciente, desde que seja perguntado a ele especificamente sobre a tomada correta das medicações."
+            },
+            {
+              "letter": "C",
+              "text": "Se em um trial com antipsicótico, não se consegue alcançar a dose mínima efetiva do antipsicótico por intolerância (efeitos colaterais), essa tentativa não conta para a definição de resistência ao tratamento."
+            },
+            {
+              "letter": "D",
+              "text": "Pseudoresistência é a condição na qual a falta de resposta é melhor explicada por falha na adesão do que por resposta insuficiente e é uma indicação formal de uso da clozapina."
+            }
+          ],
+          "correctAnswer": "C",
+          "examId": "unifesp-2024-psiquiatria-geral",
+          "examTag": "UNIFESP 2024",
+          "provider": "UNIFESP"
+        },
+        {
+          "id": "unifesp-2024-psiquiatria-geral-016",
+          "number": 16,
+          "source": "UNIFESP 2024 - Psiquiatria Geral",
+          "topic": "Psiquiatria Geral",
+          "title": "Questao 16",
+          "text": "A clozapina se associa a muitos efeitos colaterais e para o tratamento adequado é importante saber os identificar e conduzir corretamente. Assinale a alternativa correta.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "A miocardite apesar de rara é potencialmente fatal, febre, eosinofilia e taquicardia indicam uma avaliação urgente."
+            },
+            {
+              "letter": "B",
+              "text": "A agranulocitose é muito comum, atingindo até 4% dos pacientes se a introdução for realizada de forma mais rápida."
+            },
+            {
+              "letter": "C",
+              "text": "A hipotensão ortostática é rara e não indica cuidados adicionais por ser uma condição associada a baixo risco para os pacientes."
+            },
+            {
+              "letter": "D",
+              "text": "O risco de convulsão não é d ose-dependente e é elevado, mesmo em doses baixas."
+            }
+          ],
+          "correctAnswer": "A",
+          "examId": "unifesp-2024-psiquiatria-geral",
+          "examTag": "UNIFESP 2024",
+          "provider": "UNIFESP"
+        },
+        {
+          "id": "unifesp-2024-psiquiatria-geral-017",
+          "number": 17,
+          "source": "UNIFESP 2024 - Psiquiatria Geral",
+          "topic": "Psiquiatria Geral",
+          "title": "Questao 17",
+          "text": "Lima, C.V.O. in Abreu, C.N. e Roso, M. descreve o método do questionamento socrático frequentemente utilizado na terapia cognitiva. Dentre as características deste questionamento assinale a única correta.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "O objetivo do questionamento socrático não é desenvolver no paciente uma forma de raciocínio autônomo com o objetivo de que ele questione as evidências de seus pensamentos automáticos."
+            },
+            {
+              "letter": "B",
+              "text": "O questionamento socrático deve assumir um caráter de interrogatório pessoal da vida do paciente."
+            },
+            {
+              "letter": "C",
+              "text": "Através do questionamento socrático o paciente gera alternativas ao seu modo de pensar, ou seja, constrói novos significados."
+            },
+            {
+              "letter": "D",
+              "text": "O questionamento socrático assume a forma de perguntas sucessivas feitas pelo paciente ao terapeuta durante a sessão de terapia."
+            }
+          ],
+          "correctAnswer": "C",
+          "examId": "unifesp-2024-psiquiatria-geral",
+          "examTag": "UNIFESP 2024",
+          "provider": "UNIFESP"
+        },
+        {
+          "id": "unifesp-2024-psiquiatria-geral-018",
+          "number": 18,
+          "source": "UNIFESP 2024 - Psiquiatria Geral",
+          "topic": "Psiquiatria Geral",
+          "title": "Questao 18",
+          "text": "Sobre a Psicoterapia Interpessoal, é correto dizer que:",
+          "options": [
+            {
+              "letter": "A",
+              "text": "a formulação interpessoal deve ser informada ao paciente durante a última fase do tratamento."
+            },
+            {
+              "letter": "B",
+              "text": "tem o objetivo de questionar as crenças distorcidas do paciente deprimido."
+            },
+            {
+              "letter": "C",
+              "text": "tem a Teoria do Apego, de John Bowlby, como um de seus principais pilares teóricos."
+            },
+            {
+              "letter": "D",
+              "text": "clarificação, role -playing, interpretação e análise da comunicação são técnicas usadas nesta linha psicoterápica."
+            }
+          ],
+          "correctAnswer": "C",
+          "examId": "unifesp-2024-psiquiatria-geral",
+          "examTag": "UNIFESP 2024",
+          "provider": "UNIFESP"
+        },
+        {
+          "id": "unifesp-2024-psiquiatria-geral-019",
+          "number": 19,
+          "source": "UNIFESP 2024 - Psiquiatria Geral",
+          "topic": "Psiquiatria Geral",
+          "title": "Questao 19",
+          "text": "O conceito do transtorno de personalidade borderline (TPB) é fronteiriço por natureza. Diversos pontos de vista clínicos são convocados para tentar dar contorno a essa condição, como os prismas neurobiológico e psicodinâmico. Sobre esse último, para esse transtorno, podemos afirmar:",
+          "options": [
+            {
+              "letter": "A",
+              "text": "A cisão é um mecanismo de defesa importante no TPB. Considerado uma defesa primitiva, se expressa em atitudes alternantes e comportamentos contraditórios, compartimentalização das pessoas em grupos “totalmente boas” e “totalmente más” e visões e imagens contraditórias de si mesmo que se alternam."
+            },
+            {
+              "letter": "B",
+              "text": "Com a cisão o pacient e com TPB até consegue integrar adequadamente elementos mistos (bons e maus) em suas relações de objeto. A falha estaria não na configuração desses objetos, mas sim na ativação dessas relações e externalização do comportamento."
+            },
+            {
+              "letter": "C",
+              "text": "A identificação projetiva é um mecanismo de defesa mais maduro em que aspectos do indivíduo são rejeitados e atribuídos a algum outro indivíduo, evitando assim um conflito intrapsíquico. No TPB é um mecanismo muito presente."
+            },
+            {
+              "letter": "D",
+              "text": "A identificação projetiva é mais observada em quadros neuró ticos quando comparado a quadros psicóticos. Devido o TPB ser uma condição fronteiriça que se situa entre a neurose e a psicose, a identificação projetiva é uma boa representante dos aspectos neuróticos e por isso mais amadurecidos."
+            }
+          ],
+          "correctAnswer": "A",
+          "examId": "unifesp-2024-psiquiatria-geral",
+          "examTag": "UNIFESP 2024",
+          "provider": "UNIFESP"
+        },
+        {
+          "id": "unifesp-2024-psiquiatria-geral-020",
+          "number": 20,
+          "source": "UNIFESP 2024 - Psiquiatria Geral",
+          "topic": "Psiquiatria Geral",
+          "title": "Questao 20",
+          "text": "Segundo Carl Gustav Ju ng, é correto afirmar que:",
+          "options": [
+            {
+              "letter": "A",
+              "text": "a sombra é um complexo, enquanto o ego e a persona são arquétipos."
+            },
+            {
+              "letter": "B",
+              "text": "o ego é um complexo, enquanto a sombra e a persona são arquétipos."
+            },
+            {
+              "letter": "C",
+              "text": "a persona é um complexo, enquanto o ego e a sombra são arquétipos."
+            },
+            {
+              "letter": "D",
+              "text": "o ego, a persona e a sombra são arquétipos."
+            }
+          ],
+          "correctAnswer": "B",
+          "examId": "unifesp-2024-psiquiatria-geral",
+          "examTag": "UNIFESP 2024",
+          "provider": "UNIFESP"
+        }
+      ]
+    },
+    {
       "id": "usp-2021-psicogeriatria",
       "institution": "USP",
       "year": 2021,
