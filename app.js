@@ -2353,8 +2353,9 @@ function endExamSet() {
 function startSpacedReview() {
   const due = spacedReviewQuestions(true);
   if (!due.length) {
-    el.spacedReviewLine.textContent = "Nenhuma revisão vencida no momento.";
-    setTab("overview");
+    if (el.todayReviewLine) el.todayReviewLine.textContent = "Nenhuma revisão vencida no momento.";
+    if (el.spacedReviewLine) el.spacedReviewLine.textContent = "Nenhuma revisão vencida no momento.";
+    setTab("today");
     return;
   }
   state.sessionActive = false;
@@ -2367,7 +2368,7 @@ function startSpacedReview() {
   state.spacedReviewActive = true;
   state.spacedReviewIds = due.map((question) => question.id);
   state.index = 0;
-  setTab("overview");
+  setTab("today");
   render();
 }
 
@@ -2377,7 +2378,7 @@ function endSpacedReview() {
   state.activeAnswers = {};
   state.index = 0;
   applyFilters({ preserveCurrent: true });
-  setTab("overview");
+  setTab("today");
 }
 
 function startSession() {
@@ -2856,10 +2857,10 @@ el.examArea.addEventListener("change", () => {
 });
 el.startExamSet.addEventListener("click", startExamSet);
 el.endExamSet.addEventListener("click", endExamSet);
-el.startSpacedReview.addEventListener("click", startSpacedReview);
-el.endSpacedReview.addEventListener("click", endSpacedReview);
-el.startTodayReview.addEventListener("click", startSpacedReview);
-el.endTodayReview.addEventListener("click", endSpacedReview);
+el.startSpacedReview?.addEventListener("click", startSpacedReview);
+el.endSpacedReview?.addEventListener("click", endSpacedReview);
+el.startTodayReview?.addEventListener("click", startSpacedReview);
+el.endTodayReview?.addEventListener("click", endSpacedReview);
 el.sessionSourceGroup.addEventListener("click", (event) => {
   const button = event.target.closest("[data-source]");
   if (!button) return;
@@ -2881,7 +2882,7 @@ el.includeReviews.addEventListener("change", () => {
 });
 el.startSession.addEventListener("click", startSession);
 el.startSmartTraining.addEventListener("click", startSmartTraining);
-el.overviewSmartTraining.addEventListener("click", startSmartTraining);
+el.overviewSmartTraining?.addEventListener("click", startSmartTraining);
 el.finishSession.addEventListener("click", finishSession);
 el.endSession.addEventListener("click", endSession);
 el.resetProgress.addEventListener("click", resetUserProgress);
