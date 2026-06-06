@@ -28657,6 +28657,619 @@ window.BANCO_RMAIS_EXAMS = {
       ]
     },
     {
+      "id": "usp-2021-ano-adicional",
+      "institution": "USP",
+      "year": 2021,
+      "code": "",
+      "area": "Ano Adicional",
+      "title": "USP 2021 - Ano Adicional",
+      "file": "ANOS ADICIONAIS - USP - 2021.pdf",
+      "questionCount": 20,
+      "answerCount": 20,
+      "questions": [
+        {
+          "id": "usp-2021-ano-adicional-001",
+          "number": 1,
+          "source": "USP 2021 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 1",
+          "text": "Adolescente, sexo masculino, 16 anos, so lteiro, estudante do 2º grau , iniciou o uso de tabaco há 2 meses. Entre os motivos abaixo, qual o efeito reforçador do uso?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Melhora do humor."
+            },
+            {
+              "letter": "B",
+              "text": "Menor irritabilidade."
+            },
+            {
+              "letter": "C",
+              "text": "Melhora da ansiedade."
+            },
+            {
+              "letter": "D",
+              "text": "Melhora cognitiva."
+            }
+          ],
+          "correctAnswer": "D",
+          "examId": "usp-2021-ano-adicional",
+          "examTag": "USP Ano Adicional 2021",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2021-ano-adicional-002",
+          "number": 2,
+          "source": "USP 2021 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 2",
+          "text": "Existem associações estatísticas entre o uso de álcool e outras substâncias por adolescentes e diversos problema s escolares, como faltas frequentes, repetência e evasão escolar, dificuldade de aprendizagem, pouco comprometimento com atividades escolares. De acordo com a afirmação anterior, é possível afirmar que:",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Problemas escolares e o uso de álcool e outras substâncias estão relacionados."
+            },
+            {
+              "letter": "B",
+              "text": "O uso de álcool e de outras substâncias é o principal fator de atraso escolar."
+            },
+            {
+              "letter": "C",
+              "text": "A repetência e o uso de álcool e de outras substâncias evoluem conjuntamente."
+            },
+            {
+              "letter": "D",
+              "text": "Alunos que faltam frequentemente têm maior risco de uso de substâncias."
+            }
+          ],
+          "correctAnswer": "A",
+          "examId": "usp-2021-ano-adicional",
+          "examTag": "USP Ano Adicional 2021",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2021-ano-adicional-003",
+          "number": 3,
+          "source": "USP 2021 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 3",
+          "text": "Mulher, 23 anos, solteira, trabalha em casa lotérica. Queixa -se de tristeza intensa e diária. Refere ter perdido o interesse por atividades que antes eram motivo de satisfação. Nos últimos dois meses, quando começou a sentir essas dificuldades, também p erdeu o apetite e não tem conseguido dormir. Começou a fazer uso de clonazepam aos 16 anos, quando sentiu pela primeira vez falta de sono e tensão constante. Nos últimos dois anos, tem aumentado o número de gotas de clonazepam para dormir, chegando atualme nte a 60 gotas. Considerando os eventos descritos é possível afirmar que:",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Deve-se tratar primeiro o quadro de uso de clonazepam."
+            },
+            {
+              "letter": "B",
+              "text": "Deve-se fazer o tratamento integrado dos dois quadros."
+            },
+            {
+              "letter": "C",
+              "text": "É necessário tratar primeiro o quadro depressivo."
+            },
+            {
+              "letter": "D",
+              "text": "Não importa a ordem em que os quadros serão tratados."
+            }
+          ],
+          "correctAnswer": "B",
+          "examId": "usp-2021-ano-adicional",
+          "examTag": "USP Ano Adicional 2021",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2021-ano-adicional-004",
+          "number": 4,
+          "source": "USP 2021 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 4",
+          "text": "A Síndrome coronária aguda é a doe nça cardíaca mais associada ao uso de cocaína. Entre a alternativas abaixo, qual é um dos possíveis mecanismos associados a esse desfecho?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Redução da demanda de oxigênio."
+            },
+            {
+              "letter": "B",
+              "text": "Aumento do relaxamento vascular."
+            },
+            {
+              "letter": "C",
+              "text": "Potencialização da ação do tromboxano."
+            },
+            {
+              "letter": "D",
+              "text": "Menor estimulação simpatomimética. Página 4/8 – Faculdade de Medicina da USP - Residência Médica 2021"
+            }
+          ],
+          "correctAnswer": "C",
+          "examId": "usp-2021-ano-adicional",
+          "examTag": "USP Ano Adicional 2021",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2021-ano-adicional-005",
+          "number": 5,
+          "source": "USP 2021 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 5",
+          "text": "Jovem, sexo feminino, 21 anos, solteira, iniciou o uso de oxicodona, 2 comprimidos por dia para obter efeitos de euforia e , após 3 meses de uso, passou a tomar 10 comprimidos para obter a mesma sensação de euforia de antes. Qual o fenômeno descrito?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Tolerância."
+            },
+            {
+              "letter": "B",
+              "text": "Abstinência."
+            },
+            {
+              "letter": "C",
+              "text": "Controle do comportamento."
+            },
+            {
+              "letter": "D",
+              "text": "Evidência de dano."
+            }
+          ],
+          "correctAnswer": "A",
+          "examId": "usp-2021-ano-adicional",
+          "examTag": "USP Ano Adicional 2021",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2021-ano-adicional-006",
+          "number": 6,
+          "source": "USP 2021 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 6",
+          "text": "Entre os sinais e sintomas da síndrome de abstinência da cannabis, podemos citar:",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Passividade."
+            },
+            {
+              "letter": "B",
+              "text": "Sonhos perturbadores."
+            },
+            {
+              "letter": "C",
+              "text": "Déficits de memória."
+            },
+            {
+              "letter": "D",
+              "text": "Disfunção sexual."
+            }
+          ],
+          "correctAnswer": "B",
+          "examId": "usp-2021-ano-adicional",
+          "examTag": "USP Ano Adicional 2021",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2021-ano-adicional-007",
+          "number": 7,
+          "source": "USP 2021 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 7",
+          "text": "Com relação à definição da CID -10 “um conjunto de fenômenos comportamentais, cognitivos e fisiológicos no qual o uso de uma substância , ou de uma classe de substâncias, alcança prioridade muito maior para um determinado indivíduo que outros comportamentos que antes tinham valor.” Qual dos exemplos abaixo expressa especificamente o sentido de prioridade?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Mulher, 30 anos, tabagista, mantém o consumo mesmo apresentando quadro de tromboflebite."
+            },
+            {
+              "letter": "B",
+              "text": "Homem, 36 anos, no caminho para casa planeja como comprar e usar cocaína."
+            },
+            {
+              "letter": "C",
+              "text": "Jovem, 22 anos, sexo masculino, usou cocaína em festa, embora tivesse planejado não usar."
+            },
+            {
+              "letter": "D",
+              "text": "Homem, 42 anos, deixa de ir aos almoços de dia das mães para ficar beb endo com amigos."
+            }
+          ],
+          "correctAnswer": "D",
+          "examId": "usp-2021-ano-adicional",
+          "examTag": "USP Ano Adicional 2021",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2021-ano-adicional-008",
+          "number": 8,
+          "source": "USP 2021 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 8",
+          "text": "Entre as diversas estratégias para o tratamento da dependência do tabaco sugeridas abaixo, indique a alternativa correta.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Fornecer informações generalizadas sobre o risco do tabagismo."
+            },
+            {
+              "letter": "B",
+              "text": "Explorar sentimentos negativos para reforçar a culpa."
+            },
+            {
+              "letter": "C",
+              "text": "Assegurar que tentativas de parar sem sucesso podem acontecer."
+            },
+            {
+              "letter": "D",
+              "text": "Desenvolver ações para que o paciente se sinta ambivalente. Faculdade de Medicina da USP – Residência Médica 2021 - Página 5/8"
+            }
+          ],
+          "correctAnswer": "C",
+          "examId": "usp-2021-ano-adicional",
+          "examTag": "USP Ano Adicional 2021",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2021-ano-adicional-009",
+          "number": 9,
+          "source": "USP 2021 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 9",
+          "text": "Homem, 47 anos, casado, professor do ensino médio. Faz uso de álcool há mais de 25 anos e chega ao ambulatório com queixa de irritabilidade, cansaço recorrente e acha que o álco ol é um a das principais causas dos sintomas. Acha que chegou o momento de iniciar um tratamento, mas não quer parar de beber. Qual das medicações abaixo está indicada?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Dissulfiram."
+            },
+            {
+              "letter": "B",
+              "text": "Naltrexona."
+            },
+            {
+              "letter": "C",
+              "text": "Diazepam."
+            },
+            {
+              "letter": "D",
+              "text": "Topiramato."
+            }
+          ],
+          "correctAnswer": "B",
+          "examId": "usp-2021-ano-adicional",
+          "examTag": "USP Ano Adicional 2021",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2021-ano-adicional-010",
+          "number": 10,
+          "source": "USP 2021 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 10",
+          "text": "Com relação à comorbidade entre os Transtornos de Personalidade (TP) e os Transtornos por uso de Substâncias (TUS), é correto dizer:",
+          "options": [
+            {
+              "letter": "A",
+              "text": "O comportamento antissocial em pacientes com TUS é resultado do TP."
+            },
+            {
+              "letter": "B",
+              "text": "Os sintomas de TP e de TUS são facilmente diferenciados na clínica."
+            },
+            {
+              "letter": "C",
+              "text": "Pacientes com TP raramente apresentam apenas o abuso de substâncias."
+            },
+            {
+              "letter": "D",
+              "text": "Pacientes com TP antissocial e TUS são mais propensos a ser multiusuários."
+            }
+          ],
+          "correctAnswer": "D",
+          "examId": "usp-2021-ano-adicional",
+          "examTag": "USP Ano Adicional 2021",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2021-ano-adicional-011",
+          "number": 11,
+          "source": "USP 2021 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 11",
+          "text": "A associação entre o Tabagismo e os Transtornos de D éficit de Atenção e Hiperatividade (TDAH) entre adolescentes se evidencia principalmente por qual dos sintomas abaixo?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Desatenção."
+            },
+            {
+              "letter": "B",
+              "text": "Esquecimento."
+            },
+            {
+              "letter": "C",
+              "text": "Hiperatividade."
+            },
+            {
+              "letter": "D",
+              "text": "Impulsividade."
+            }
+          ],
+          "correctAnswer": "A",
+          "examId": "usp-2021-ano-adicional",
+          "examTag": "USP Ano Adicional 2021",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2021-ano-adicional-012",
+          "number": 12,
+          "source": "USP 2021 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 12",
+          "text": "Paciente chega ao Pronto-Socorro com quadro de intoxicação moderada por opioide. Qual a medicação indicada?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Nalmefene."
+            },
+            {
+              "letter": "B",
+              "text": "Clonidina."
+            },
+            {
+              "letter": "C",
+              "text": "Naloxone."
+            },
+            {
+              "letter": "D",
+              "text": "Flumazenil. Página 6/8 – Faculdade de Medicina da USP - Residência Médica 2021"
+            }
+          ],
+          "correctAnswer": "C",
+          "examId": "usp-2021-ano-adicional",
+          "examTag": "USP Ano Adicional 2021",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2021-ano-adicional-013",
+          "number": 13,
+          "source": "USP 2021 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 13",
+          "text": "Entre as condições clínicas abaixo, quais estão associadas, respectivam ente, a consequências do beber pesado episódico; a riscos do uso nocivo de álcool; e ao uso frequente de álcool?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Diversos tipos de câncer; Depressão; Suicídio."
+            },
+            {
+              "letter": "B",
+              "text": "Dependência do álcool; Sexo desprotegido; Suicídio."
+            },
+            {
+              "letter": "C",
+              "text": "Sexo desprotegido; Dependência do álcool; Tuberculose."
+            },
+            {
+              "letter": "D",
+              "text": "Depressão; Dependência do álcool; Tuberculose."
+            }
+          ],
+          "correctAnswer": "C",
+          "examId": "usp-2021-ano-adicional",
+          "examTag": "USP Ano Adicional 2021",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2021-ano-adicional-014",
+          "number": 14,
+          "source": "USP 2021 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 14",
+          "text": "Entre os objetivos da internação integral, podemos citar:",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Desenvolver habilidade para lidar com situações de estresse sem drogas."
+            },
+            {
+              "letter": "B",
+              "text": "Elaborar aspectos psicodinâmicos do uso compulsivo de drogas."
+            },
+            {
+              "letter": "C",
+              "text": "Afastar o paciente do ambiente familiar e do contexto social."
+            },
+            {
+              "letter": "D",
+              "text": "Introduzir medicações que envolvem alto risco clínico."
+            }
+          ],
+          "correctAnswer": "A",
+          "examId": "usp-2021-ano-adicional",
+          "examTag": "USP Ano Adicional 2021",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2021-ano-adicional-015",
+          "number": 15,
+          "source": "USP 2021 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 15",
+          "text": "Qual o efeito da quetiapina no tratamento da dependência do álcool, embora ainda não exista consenso sobre a efetividade da medicação para esse fim?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Melhora do sono."
+            },
+            {
+              "letter": "B",
+              "text": "Redução do consumo."
+            },
+            {
+              "letter": "C",
+              "text": "Redução da impulsividade."
+            },
+            {
+              "letter": "D",
+              "text": "Manejo da abstinência."
+            }
+          ],
+          "correctAnswer": "B",
+          "examId": "usp-2021-ano-adicional",
+          "examTag": "USP Ano Adicional 2021",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2021-ano-adicional-016",
+          "number": 16,
+          "source": "USP 2021 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 16",
+          "text": "O estado agudo de carência de tiamina é um dos principais fatores para a evoluç ão para qual dos quadros abaixo?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Encefalopatia de Wernicke."
+            },
+            {
+              "letter": "B",
+              "text": "Delirium tremens."
+            },
+            {
+              "letter": "C",
+              "text": "Abstinência grave."
+            },
+            {
+              "letter": "D",
+              "text": "Alucinose alcoólica. Faculdade de Medicina da USP – Residência Médica 2021 - Página 7/8"
+            }
+          ],
+          "correctAnswer": "A",
+          "examId": "usp-2021-ano-adicional",
+          "examTag": "USP Ano Adicional 2021",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2021-ano-adicional-017",
+          "number": 17,
+          "source": "USP 2021 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 17",
+          "text": "Segundo estudo realizado na Nova Zelândia, sobre a idade de início do uso de álcool, controlando condiçõ es socioeconômicas, características do funcionamento familiar e individuais de personalidade e comportamentais, a idade do primeiro consumo estava significativamente associada ao aumento do risco para qual transtorno abaixo?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Transtornos da ansiedade."
+            },
+            {
+              "letter": "B",
+              "text": "Dependência de cannabis."
+            },
+            {
+              "letter": "C",
+              "text": "Transtornos depressivos."
+            },
+            {
+              "letter": "D",
+              "text": "Dependência de nicotina."
+            }
+          ],
+          "correctAnswer": "D",
+          "examId": "usp-2021-ano-adicional",
+          "examTag": "USP Ano Adicional 2021",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2021-ano-adicional-018",
+          "number": 18,
+          "source": "USP 2021 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 18",
+          "text": "Homem, 45 anos, faz uso de álcool há mais de 25 anos. Está afastado do trabalho desde que o médico do trabalho identificou insuficiência hepática. Há 4 horas , o paciente apresentou quadro de tremores intensos, náusea, inquietude, transpiração intensa. No tratamento da síndrome de abstinência, qual a medicação abaixo mais adequada?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Clobazam."
+            },
+            {
+              "letter": "B",
+              "text": "Clordiazepóxido."
+            },
+            {
+              "letter": "C",
+              "text": "Lorazepam."
+            },
+            {
+              "letter": "D",
+              "text": "Diazepam."
+            }
+          ],
+          "correctAnswer": "C",
+          "examId": "usp-2021-ano-adicional",
+          "examTag": "USP Ano Adicional 2021",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2021-ano-adicional-019",
+          "number": 19,
+          "source": "USP 2021 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 19",
+          "text": "Homem, 27 anos, iniciou tratamento devido à dependência de cocaína e está abstinente há 18 dias. Refere que resolveu visitar a “boca” para saber se conseguiria resistir à ideia de usar a droga. Qual a estratégia psicoterapêutica específica para essa situação?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Entrevista motivacional."
+            },
+            {
+              "letter": "B",
+              "text": "Terapia Cognitivo-Comportamental."
+            },
+            {
+              "letter": "C",
+              "text": "Manejo de contingências."
+            },
+            {
+              "letter": "D",
+              "text": "Prevenção de recaídas."
+            }
+          ],
+          "correctAnswer": "D",
+          "examId": "usp-2021-ano-adicional",
+          "examTag": "USP Ano Adicional 2021",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2021-ano-adicional-020",
+          "number": 20,
+          "source": "USP 2021 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 20",
+          "text": "A Políti ca Nacional sobre Drogas, aprovada em 11 de abril de 2019, decidiu coibir o plantio de plantas de drogas ilícitas e indicou um gênero epecífico de planta. Qual o nome da planta?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Iboga."
+            },
+            {
+              "letter": "B",
+              "text": "Cannabis."
+            },
+            {
+              "letter": "C",
+              "text": "Saia branca."
+            },
+            {
+              "letter": "D",
+              "text": "Papoula. Página 8/8 – Faculdade de Medicina da USP - Residência Médica 2021"
+            }
+          ],
+          "correctAnswer": "B",
+          "examId": "usp-2021-ano-adicional",
+          "examTag": "USP Ano Adicional 2021",
+          "provider": "USP"
+        }
+      ]
+    },
+    {
       "id": "usp-2021-psicogeriatria",
       "institution": "USP",
       "year": 2021,
@@ -31117,6 +31730,619 @@ window.BANCO_RMAIS_EXAMS = {
       ]
     },
     {
+      "id": "usp-2023-e23",
+      "institution": "USP",
+      "year": 2023,
+      "code": "E23",
+      "area": "Ano Adicional",
+      "title": "USP 2023 - Ano Adicional",
+      "file": "ANOS ADICIONAIS - USP - 2023.pdf",
+      "questionCount": 20,
+      "answerCount": 19,
+      "questions": [
+        {
+          "id": "usp-2023-e23-001",
+          "number": 1,
+          "source": "USP 2023 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 1",
+          "text": "Homem de 38 anos, é usuário de crack e vive em situação de rua. Foi avaliado no pronto-socorro e encaminhado para o CAPS. Entre as alternativas abaixo, qual está correta quanto ao acolhimento recomendado?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "O cartão do SUS é fundamental para o registro."
+            },
+            {
+              "letter": "B",
+              "text": "Para o tratamento, demanda-se frequência diária."
+            },
+            {
+              "letter": "C",
+              "text": "O acolhimento depende da disponibilidade de vaga na agenda."
+            },
+            {
+              "letter": "D",
+              "text": "O lugar de fala do usuário deve ser preservado."
+            }
+          ],
+          "correctAnswer": "D",
+          "examId": "usp-2023-e23",
+          "examTag": "USP Ano Adicional 2023",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2023-e23-002",
+          "number": 2,
+          "source": "USP 2023 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 2",
+          "text": "N o p l a n e j a m e n t o d e a ç õ e s v o ltadas para pacientes pré- adolescentes, qual das alternativas abaixo indica abordagens adequadas?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Apresentação sobre as substâncias."
+            },
+            {
+              "letter": "B",
+              "text": "Desenvolvimento de autocontrole."
+            },
+            {
+              "letter": "C",
+              "text": "Controle da curiosidade."
+            },
+            {
+              "letter": "D",
+              "text": "Controle dos impulsos."
+            }
+          ],
+          "correctAnswer": "B",
+          "examId": "usp-2023-e23",
+          "examTag": "USP Ano Adicional 2023",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2023-e23-003",
+          "number": 3,
+          "source": "USP 2023 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 3",
+          "text": "Ao realizar o acolhimento de uma mulher de 31 anos, casada, com uso diário e excessivo de benzodiazepínicos, para o planejamento do projeto terapêutico singular, foi necessário avaliar o potencial de contratualidade da usuária. Qual a definição mais adequada para o potencial de contratualidade?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Distinguir em quais circunstâncias a usuária procurou o serviço e qual foi sua trajetória anterior."
+            },
+            {
+              "letter": "B",
+              "text": "Identificar sua disponibilidade e sua flexibilidade de horários visando a facilitação de uso do serviço."
+            },
+            {
+              "letter": "C",
+              "text": "Levantar o interesse da usuária por insumos de proteção à saúde e à vida (ex. preservativos, alimentação etc.)."
+            },
+            {
+              "letter": "D",
+              "text": "Fazer o diagnóstico psiquiátrico e o levantamento de traços de personalidade viáveis para o tratamento."
+            }
+          ],
+          "correctAnswer": "A",
+          "examId": "usp-2023-e23",
+          "examTag": "USP Ano Adicional 2023",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2023-e23-004",
+          "number": 4,
+          "source": "USP 2023 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 4",
+          "text": "D u r a n t e o a c o l h i m e n t o d e u m u s u á r i o d e 2 5 a n o s , h o m e m , solteiro e dependente de crack, foi feito um levantamento de demandas de carências e necessidades. Qual das alternativas abaixo indica esta etapa de ação específica?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Ações de reparação."
+            },
+            {
+              "letter": "B",
+              "text": "Ações de potenciação."
+            },
+            {
+              "letter": "C",
+              "text": "Ações de emancipação."
+            },
+            {
+              "letter": "D",
+              "text": "Ações de pertencimento."
+            }
+          ],
+          "correctAnswer": "A",
+          "examId": "usp-2023-e23",
+          "examTag": "USP Ano Adicional 2023",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2023-e23-005",
+          "number": 5,
+          "source": "USP 2023 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 5",
+          "text": "Mulher, 30 anos, solteira. Entrou em conflito com outra usuária d o s e r v i ç o e a m e a ç o u a g r e d i - l a . A s t é c n i c a s d e r e d u ç ã o n a escalada de crise utilizadas no CAPS são condutas para o manejo de situações iminentes de comportamento agitado e ou agressivo. Assinale a alternativa que corresponde a uma técnica indicada para a crise descrita acima.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Contenção física e química da usuária."
+            },
+            {
+              "letter": "B",
+              "text": "Elaboração do conflito em assembleia."
+            },
+            {
+              "letter": "C",
+              "text": "Isolamento da usuária durante a crise."
+            },
+            {
+              "letter": "D",
+              "text": "Proporcionar espaço à usuária em crise."
+            }
+          ],
+          "correctAnswer": "D",
+          "examId": "usp-2023-e23",
+          "examTag": "USP Ano Adicional 2023",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2023-e23-006",
+          "number": 6,
+          "source": "USP 2023 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 6",
+          "text": "Homem de 31 anos é dependente de crack e vive em situação de rua. Ele percebe que o crack é um problema, mas não vê a possibilidade de parar de usar a substância, nem de controlar seu uso, e diz que “vai se jogar” no uso. Entre as ações abaixo q u e o p r o f i s s i o n a l t é c n i c o p o de realizar, indique a que representa uma estratégia de redução de danos.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Aconselhamento sobre a gravidade associada ao uso de álcool e outras drogas."
+            },
+            {
+              "letter": "B",
+              "text": "Manejo do estigma a partir da proteção do sujeito na estrutura do CAPS."
+            },
+            {
+              "letter": "C",
+              "text": "Adoção de postura de baixa exigência diante da ambivalência do usuário."
+            },
+            {
+              "letter": "D",
+              "text": "A p r e s e n t a r o u s u á r i o c o m o p a r t i c i p a n t e d o C A P S p a r a a comunidade local."
+            }
+          ],
+          "correctAnswer": "C",
+          "examId": "usp-2023-e23",
+          "examTag": "USP Ano Adicional 2023",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2023-e23-007",
+          "number": 7,
+          "source": "USP 2023 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 7",
+          "text": "Homem de 18 anos está fazendo uso recorrente de cannabis. Foi indicada uma ação de redução de danos (RD). Assinale a alternativa que corresponde a alguns dos princípios desta estratégia de saúde pública.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Ética do cuidado e valorização da vulnerabilidade."
+            },
+            {
+              "letter": "B",
+              "text": "Ética do cuidado e reconhecimento de singularidades."
+            },
+            {
+              "letter": "C",
+              "text": "Ética profissional e reconhecimento de vulnerabilidades."
+            },
+            {
+              "letter": "D",
+              "text": "Ética social e política e diminuição de vulnerabilidades."
+            }
+          ],
+          "correctAnswer": "B",
+          "examId": "usp-2023-e23",
+          "examTag": "USP Ano Adicional 2023",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2023-e23-008",
+          "number": 8,
+          "source": "USP 2023 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 8",
+          "text": "No planejamento de ações preventivas para o uso de álcool e o u t r a s d r o g a s e m e s c o l a s d a r e g i ã o d e a t u a ç ã o d o C A P S , f o i solicitada uma sequência de passos fundamentais para a implantação das ações. Indique qual das alternativas abaixo apresenta uma sequência correta desses passos.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "1 º d e f i n i r o p r o b l e m a ; 2 º d e f i n i r o c o n t e x t o ; 3 º t o m a r decisões baseadas em resultados prévios."
+            },
+            {
+              "letter": "B",
+              "text": "1º considerar diferentes opções de ação; 2º definir o contexto; 3º presumir os resultados esperados."
+            },
+            {
+              "letter": "C",
+              "text": "1 º d e f i n i r o c o n t e x t o ; 2 º d e f i n i r o p r o b l e m a ; 3 º p e s q u i s a r evidências sobre políticas e/ou ações anteriores."
+            },
+            {
+              "letter": "D",
+              "text": "1 º p e s q u i s a r e v i d ê n c i a s s o b r e p o l í t i c a s e / o u a ç õ e s anteriores; 2º definir o contexto; 3º definir o problema. Processo Seletivo – Residência Médica – Psiquiatria – Ano Adicional (COREME/FM – 05/2022)"
+            }
+          ],
+          "correctAnswer": "",
+          "examId": "usp-2023-e23",
+          "examTag": "USP Ano Adicional 2023",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2023-e23-009",
+          "number": 9,
+          "source": "USP 2023 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 9",
+          "text": "Homem de 52 anos apresenta quadro de excitação psicomotora, transpiração excessiva, sensibilidade à luz e insônia. A síndrome de abstinência do álcool envolve alterações na neurotransmissão cerebral, como a redução da atuação do neurotransmissor GABA. Qual outra alteração no sistema GABA pode ser observada?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Maior sensibilidade dos receptores GABA-A."
+            },
+            {
+              "letter": "B",
+              "text": "Aumento da latência da liberação de GABA."
+            },
+            {
+              "letter": "C",
+              "text": "Menor sensibilidade dos receptores GABA-A."
+            },
+            {
+              "letter": "D",
+              "text": "Sensibilidade reduzida da liberação de GABA."
+            }
+          ],
+          "correctAnswer": "A",
+          "examId": "usp-2023-e23",
+          "examTag": "USP Ano Adicional 2023",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2023-e23-010",
+          "number": 10,
+          "source": "USP 2023 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 10",
+          "text": "Homem de 52 anos apresenta quadro de abstinência do álcool. Tem história de baixa tolerabilidade com os benzodiazepínicos. Com relação ao tratamento farmacológico da síndrome de abstinência do álcool, qual medicação abaixo demonstrou melhor tolerabilidade e menor duração do tratamento?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Carbamazepina."
+            },
+            {
+              "letter": "B",
+              "text": "Clonidina."
+            },
+            {
+              "letter": "C",
+              "text": "Valproato."
+            },
+            {
+              "letter": "D",
+              "text": "Fenitoína."
+            }
+          ],
+          "correctAnswer": "C",
+          "examId": "usp-2023-e23",
+          "examTag": "USP Ano Adicional 2023",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2023-e23-011",
+          "number": 11,
+          "source": "USP 2023 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 11",
+          "text": "Homem de 37 anos, casado, com boa recuperação pós- síndrome de abstinência do álcool. É usuário eventual de cannabis e de cocaína. Vai começar o tratamento de manutenção com naltrexona. Quais condições devem ser verificadas para a indicação da medicação?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Histórico de pancreatite aguda e de uso de opioides."
+            },
+            {
+              "letter": "B",
+              "text": "Uso de opioides e alterações das enzimas hepáticas."
+            },
+            {
+              "letter": "C",
+              "text": "Convulsões generalizadas e quadro de pancreatite."
+            },
+            {
+              "letter": "D",
+              "text": "Uso de opioides e quadro prévio de gastrite antral."
+            }
+          ],
+          "correctAnswer": "B",
+          "examId": "usp-2023-e23",
+          "examTag": "USP Ano Adicional 2023",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2023-e23-012",
+          "number": 12,
+          "source": "USP 2023 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 12",
+          "text": "Homem de 54 anos, com quadro de dependência do álcool e diversas tentativas anteriores de tratamento. O paciente se mostra decidido a seguir um tratamento específico e pede \"aquele remédio que se eu beber vai dar ruim na hora”. Com relação ao uso do dissulfiram, assinale a alternativa que corresponde a uma recomendação importante.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "O dissulfiram precisa ser usado por alguns dias para que a reação aversiva seja mais intensa."
+            },
+            {
+              "letter": "B",
+              "text": "O dissulfiram é uma medicação segura desde que não haja ingestão concomitante de álcool."
+            },
+            {
+              "letter": "C",
+              "text": "É preciso cuidado, pois o efeito aversivo máximo do dissulfiram começa desde a primeira tomada."
+            },
+            {
+              "letter": "D",
+              "text": "A adesão ao tratamento com o dissulfiram não depende de supervisão no uso da medicação."
+            }
+          ],
+          "correctAnswer": "A",
+          "examId": "usp-2023-e23",
+          "examTag": "USP Ano Adicional 2023",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2023-e23-013",
+          "number": 13,
+          "source": "USP 2023 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 13",
+          "text": "Mulher de 31 anos com quadro de sobrepeso, deseja parar de fumar sem ganhar peso. A proposta seria usar a bupropiona antidepressivo atípico, cujo mecanismo de ação envolve sistemas dopaminérgicos e noradrenérgicos com indícios de uma ação específica antitabágica. Assinale a alternativa que corresponde à referida ação?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Agonista não competitivo da acetilcolina."
+            },
+            {
+              "letter": "B",
+              "text": "Antagonista parcial alfa-2 adrenérgico."
+            },
+            {
+              "letter": "C",
+              "text": "Agonista parcial de receptores nicotínicos."
+            },
+            {
+              "letter": "D",
+              "text": "Antagonista não competitivo da nicotina."
+            }
+          ],
+          "correctAnswer": "D",
+          "examId": "usp-2023-e23",
+          "examTag": "USP Ano Adicional 2023",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2023-e23-014",
+          "number": 14,
+          "source": "USP 2023 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 14",
+          "text": "Mulher de 35 anos, com quadro de dependência de tabaco, refere ter apresentado reação alérgica ao adesivo de nicotina. Quais as alternativas de tratamento disponíveis no Brasil para a dependência do tabaco?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Vareniclina, goma de mascar e cigarros eletrônicos."
+            },
+            {
+              "letter": "B",
+              "text": "Bupropiona, pastilhas de nicotina e vareniclina."
+            },
+            {
+              "letter": "C",
+              "text": "Vareniclina, spray nasal e goma de mascar de nicotina."
+            },
+            {
+              "letter": "D",
+              "text": "Bupropiona, inaladores e spray nasal de nicotina."
+            }
+          ],
+          "correctAnswer": "B",
+          "examId": "usp-2023-e23",
+          "examTag": "USP Ano Adicional 2023",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2023-e23-015",
+          "number": 15,
+          "source": "USP 2023 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 15",
+          "text": "Homem de 24 anos, solteiro, é usuário recorrente de cocaína há mais de 3 anos. O paciente faz uso eventual de álcool e de cannabis. Nega problemas clínicos relevantes e está abstinente de cocaína há 5 dias. O modafinil tem resultados mistos em ensaios para o tratamento da dependência da cocaína, não sugerindo eficácia significativa. Aparentemente, o modafinil mostrou eficácia em algumas subpo pulações. Qual alternativa abaixo corresponde às caract erísticas tanto do paciente quanto dessas subpopulações?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Poliusuário de cocaína e de álcool, mas abstinente."
+            },
+            {
+              "letter": "B",
+              "text": "Usuário de cocaína sem comprometimento clínico."
+            },
+            {
+              "letter": "C",
+              "text": "Usuário de cocaína sem uso de álcool comórbido."
+            },
+            {
+              "letter": "D",
+              "text": "Usuário recorrente de cocaína clinicamente estável. Texto para as questões 16 e 17 Mulher de 62 anos, casada, auxiliar de enfermagem, iniciou o uso de diazepam há mais de 2 anos e não acredita que vai conseguir parar de tomar o remédio. Processo Seletivo – Residência Médica – Psiquiatria – Ano Adicional (COREME/FM – 05/2022)"
+            }
+          ],
+          "correctAnswer": "C",
+          "examId": "usp-2023-e23",
+          "examTag": "USP Ano Adicional 2023",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2023-e23-016",
+          "number": 16,
+          "source": "USP 2023 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 16",
+          "text": "A paciente tentou parar o remédio uma vez por apenas 2 semanas, tendo experimentado sintomas de abstinência importantes. Q u a n t o t e m p o p o d e d u r a r a abstinência de sedativos e hipnóticos?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "De 4 semanas a 2 meses."
+            },
+            {
+              "letter": "B",
+              "text": "Um mês, mas às vezes um ano."
+            },
+            {
+              "letter": "C",
+              "text": "Algumas semanas, em geral."
+            },
+            {
+              "letter": "D",
+              "text": "De 3 meses até mais de 1 ano."
+            }
+          ],
+          "correctAnswer": "D",
+          "examId": "usp-2023-e23",
+          "examTag": "USP Ano Adicional 2023",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2023-e23-017",
+          "number": 17,
+          "source": "USP 2023 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 17",
+          "text": "Nos últimos tempos a paciente em questão tem aumentado a dose da medicação. Q u a l a r e c o m e n d a ç ã o g e r a l p a r a a R E D U Ç Ã O d a d o s e d o benzodiazepínico?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Retirar 50% da dose em 15 dias, depois retirar mais 50% a cada semana."
+            },
+            {
+              "letter": "B",
+              "text": "Retirar no máximo um quarto da dose diária total a cada 2 semanas."
+            },
+            {
+              "letter": "C",
+              "text": "Retirar 25% da dose a cada 2 dias e manter uma medicação de resgate."
+            },
+            {
+              "letter": "D",
+              "text": "Substituir a medicação por outra de meia vida maior com 50% da dose."
+            }
+          ],
+          "correctAnswer": "B",
+          "examId": "usp-2023-e23",
+          "examTag": "USP Ano Adicional 2023",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2023-e23-018",
+          "number": 18,
+          "source": "USP 2023 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 18",
+          "text": "Mulher de 57 anos, casada, sem atividade profissional, procura atendimento acompanhada pela filha, que relata que a mãe faz uso diário de álcool em gran des quantidades, geralmente escondida no quarto. A pacie nte apresenta sintomas depressivos importantes e ideação de menos-valia. A associação entre problemas relacionados ao uso de álcool e transtorno depressivo resulta em prognó stico desfavorável. Qual alternativa abaixo indica um fator para este prognóstico?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Piores resultados do funcionamento social."
+            },
+            {
+              "letter": "B",
+              "text": "Maior risco de complicações clínicas graves."
+            },
+            {
+              "letter": "C",
+              "text": "Menor taxa de adesão ao tratamento em geral."
+            },
+            {
+              "letter": "D",
+              "text": "Menor resposta ao tratamento farmacológico."
+            }
+          ],
+          "correctAnswer": "A",
+          "examId": "usp-2023-e23",
+          "examTag": "USP Ano Adicional 2023",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2023-e23-019",
+          "number": 19,
+          "source": "USP 2023 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 19",
+          "text": "Homem de 22 anos, dá entrada no pronto-socorro durante a madrugada, acompanhado de um amigo que relata uso de ecstasy em balada. O paciente apresenta taquicardia, alterações da pressão arterial, evoluindo para arritmia. Qual o mecanismo de ação da 3,4- metilenodioximetanfetamina responsável por este efeito no sistema cardiovascular?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Reação imunomediada no sistema ventricular."
+            },
+            {
+              "letter": "B",
+              "text": "Estimulação de receptores pós-sinápticos 5-ht."
+            },
+            {
+              "letter": "C",
+              "text": "Aumento da demanda de oxigênio no miocárdio."
+            },
+            {
+              "letter": "D",
+              "text": "Lesão miocárdica decorrente de hipertermia."
+            }
+          ],
+          "correctAnswer": "C",
+          "examId": "usp-2023-e23",
+          "examTag": "USP Ano Adicional 2023",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2023-e23-020",
+          "number": 20,
+          "source": "USP 2023 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 20",
+          "text": "Homem de 27 anos, usuário de 4 cigarros de maconha por dia, c o m q u e i x a d e t o s s e , c h i a d o e f a l t a d e a r a o s e s f o r ç o s . A a s s o c i a ç ã o e n t r e f u m a r m a c o n h a e o d e s e n v o l v i m e n t o d e doença pulmonar obstrutiva crônica é bem conhecida. O padrão d e u s o i n d i c a d o a c i m a p o d e s e r r e s p o n s á v e l p o r a l t e r a ç õ e s histológicas equivalentes ao consumo de quantos cigarros de tabaco por dia?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "10."
+            },
+            {
+              "letter": "B",
+              "text": "40."
+            },
+            {
+              "letter": "C",
+              "text": "05."
+            },
+            {
+              "letter": "D",
+              "text": "20."
+            }
+          ],
+          "correctAnswer": "D",
+          "examId": "usp-2023-e23",
+          "examTag": "USP Ano Adicional 2023",
+          "provider": "USP"
+        }
+      ]
+    },
+    {
       "id": "usp-2023-e7",
       "institution": "USP",
       "year": 2023,
@@ -33560,6 +34786,919 @@ window.BANCO_RMAIS_EXAMS = {
           "correctAnswer": "A",
           "examId": "usp-2023-e9",
           "examTag": "USP Psiquiatria da Infancia e Adolescencia 2023",
+          "provider": "USP"
+        }
+      ]
+    },
+    {
+      "id": "usp-2024-ano-adicional",
+      "institution": "USP",
+      "year": 2024,
+      "code": "F34",
+      "area": "Ano Adicional",
+      "title": "USP 2024 - Ano Adicional",
+      "file": "USP_RM_2024_F34_OCR_corrigido_colunas.md",
+      "questionCount": 30,
+      "answerCount": 30,
+      "questions": [
+        {
+          "id": "usp-2024-ano-adicional-001",
+          "number": 1,
+          "source": "USP 2024 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 1",
+          "text": "Homem, 32 anos, solteiro e desempregado. Procura tratamento, pois sente que não está mais controlando o uso crack. Depois de procurar a Unidade Básica de Saúde e ser orientado a procurar o CAPS, não conseguiu encontrar o referido equipamento. Segundo dados do Relatório Mundial sobre Drogas 2017, do Escritório das Nações Unidas sobre Drogas e Crime (UNODC — United Nations Office on Drugs and Crime), a situação acima reflete uma dificuldade que os pacientes encontram para receber tratamento. Segundo a UNODC, é correto dizer:",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Menos de 20% das pessoas com um transtorno por uso de substâncias recebeu tratamento."
+            },
+            {
+              "letter": "B",
+              "text": "Menos de 20% das pessoas com uso problemático de substâncias recebeu tratamento."
+            },
+            {
+              "letter": "C",
+              "text": "Menos de 40% das pessoas com uso problemático de substâncias recebeu tratamento."
+            },
+            {
+              "letter": "D",
+              "text": "Menos de 40% das pessoas com um transtorno por uso de substâncias recebeu tratamento."
+            }
+          ],
+          "correctAnswer": "A",
+          "examId": "usp-2024-ano-adicional",
+          "examTag": "USP Ano Adicional 2024",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2024-ano-adicional-002",
+          "number": 2,
+          "source": "USP 2024 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 2",
+          "text": "Ao avaliar os pacientes em tratamento no CAPS, a equipe observa diversos problemas de natureza clínica, inclusive com incapacidades motoras, nos reflexos, déficits nutricionais etc. Segundo dados do Global Burden of Disease (GBD), de 2016, os transtornos mentais e os transtornos relacionados ao uso de substâncias foram responsáveis por aproximadamente 10% dos anos de vida saudável perdidos por morte ou incapacitação (DALY). Entre as substâncias a seguir, qual foi a maior responsável por esses dados?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Crack."
+            },
+            {
+              "letter": "B",
+              "text": "Álcool."
+            },
+            {
+              "letter": "C",
+              "text": "Tabaco."
+            },
+            {
+              "letter": "D",
+              "text": "Ecstasy."
+            }
+          ],
+          "correctAnswer": "B",
+          "examId": "usp-2024-ano-adicional",
+          "examTag": "USP Ano Adicional 2024",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2024-ano-adicional-003",
+          "number": 3,
+          "source": "USP 2024 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 3",
+          "text": "Na atenção primária, é possível observar diversas pessoas com padrões variados de uso de álcool, o que exige a elaboração de orientações específicas sobre a segurança do uso dessa substância. Em qual das condições a seguir o consumo de álcool é considerado nocivo?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Idosos."
+            },
+            {
+              "letter": "B",
+              "text": "Gestantes."
+            },
+            {
+              "letter": "C",
+              "text": "Fumantes."
+            },
+            {
+              "letter": "D",
+              "text": "Trabalhadores"
+            }
+          ],
+          "correctAnswer": "B",
+          "examId": "usp-2024-ano-adicional",
+          "examTag": "USP Ano Adicional 2024",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2024-ano-adicional-004",
+          "number": 4,
+          "source": "USP 2024 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 4",
+          "text": "Homem, 26 anos, solteiro, ajudante de pedreiro. O paciente procurou o pronto-socorro por sentir \"queima??o no est?mago\" que tem se repetido muito nos ?ltimos 2 meses, geralmente associada ao uso de ?lcool. Refere fazer uso de destilados, geralmente em grupo, mas, muitas vezes, sozinho. Come?ou a beber por volta dos 14 anos. A maior probabilidade de transi??o do uso regular do ?lcool para o uso nocivo do ?lcool est? associada a qual dos fatores presentes na hist?ria do paciente?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Beber em grupo."
+            },
+            {
+              "letter": "B",
+              "text": "Beber sozinho."
+            },
+            {
+              "letter": "C",
+              "text": "Idade de in?cio."
+            },
+            {
+              "letter": "D",
+              "text": "Uso de destilados."
+            }
+          ],
+          "correctAnswer": "C",
+          "examId": "usp-2024-ano-adicional",
+          "examTag": "USP Ano Adicional 2024",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2024-ano-adicional-005",
+          "number": 5,
+          "source": "USP 2024 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 5",
+          "text": "Mulher, 38 anos, casada, manicure. Procura tratamento porque seu marido quer que ela pare de tomar Rivotril. Ela acha que ele exagera, mas resolveu ir à consulta para ele “parar de me aborrecer”. A estratégia de abordagem da consulta a partir da Entrevista Motivacional visa estimular qual tipo de motivação?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Social."
+            },
+            {
+              "letter": "B",
+              "text": "Intrínseca."
+            },
+            {
+              "letter": "C",
+              "text": "Extrínseca."
+            },
+            {
+              "letter": "D",
+              "text": "Natural."
+            }
+          ],
+          "correctAnswer": "B",
+          "examId": "usp-2024-ano-adicional",
+          "examTag": "USP Ano Adicional 2024",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2024-ano-adicional-006",
+          "number": 6,
+          "source": "USP 2024 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 6",
+          "text": "Homem, 44 anos, casado, eletricista. Na consulta regular sobre seu tratamento de hipertensão arterial, pergunta sobre o uso de vape. O paciente quer saber se é mais seguro de usar, já que não tem tabaco, nem outras substâncias associadas ao cigarro. Por isso mesmo, acha que não vai ter tanto risco de ficar dependente. Com relação ao tabaco, a maior parte dos fumantes é dependente de",
+          "options": [
+            {
+              "letter": "A",
+              "text": "nicotina."
+            },
+            {
+              "letter": "B",
+              "text": "alcatrão."
+            },
+            {
+              "letter": "C",
+              "text": "tabaco."
+            },
+            {
+              "letter": "D",
+              "text": "alcaloides."
+            }
+          ],
+          "correctAnswer": "A",
+          "examId": "usp-2024-ano-adicional",
+          "examTag": "USP Ano Adicional 2024",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2024-ano-adicional-007",
+          "number": 7,
+          "source": "USP 2024 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 7",
+          "text": "Homem, 23 anos, solteiro, trabalha como balconista em uma padaria. É usuário crônico de Cannabis sp. e procurou atendimento alguns meses depois de um roubo que ocorreu na padaria. Quando lhe perguntaram onde estava no momento do roubo, ele não conseguiu se lembrar. Com relação ao uso crônico de Cannabis sp., a alteração relatada pode expressar qual formação de memória?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Memória verbal."
+            },
+            {
+              "letter": "B",
+              "text": "Memória episódica."
+            },
+            {
+              "letter": "C",
+              "text": "Memória processual."
+            },
+            {
+              "letter": "D",
+              "text": "Memória semântica."
+            }
+          ],
+          "correctAnswer": "B",
+          "examId": "usp-2024-ano-adicional",
+          "examTag": "USP Ano Adicional 2024",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2024-ano-adicional-008",
+          "number": 8,
+          "source": "USP 2024 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 8",
+          "text": "Mulher, 37 anos, casada, escriturária. Usuária de tabaco, cerca de 15 cigarros por dia. Deseja parar de fumar. Entre as medicações a seguir, qual é considerada uma opção secundária?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Nortriptilina."
+            },
+            {
+              "letter": "B",
+              "text": "Vareniclina."
+            },
+            {
+              "letter": "C",
+              "text": "Fluoxetina."
+            },
+            {
+              "letter": "D",
+              "text": "Bupropiona."
+            }
+          ],
+          "correctAnswer": "A",
+          "examId": "usp-2024-ano-adicional",
+          "examTag": "USP Ano Adicional 2024",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2024-ano-adicional-009",
+          "number": 9,
+          "source": "USP 2024 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 9",
+          "text": "Homem, 43 anos, solteiro, técnico em contabilidade. Iniciou tratamento para quadro de dependência do álcool com dissulfiram há 10 dias. Queixa-se de dor latejante na cabeça, rigidez ao levantar de manhã, redução da vontade de fazer sexo e gosto de metal na boca. Qual dos sintomas citados faz parte da reação álcool versus dissulfiram?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Rigidez matinal."
+            },
+            {
+              "letter": "B",
+              "text": "Prejuízo da libido."
+            },
+            {
+              "letter": "C",
+              "text": "Cefaleia latejante."
+            },
+            {
+              "letter": "D",
+              "text": "Gosto metálico na boca."
+            }
+          ],
+          "correctAnswer": "C",
+          "examId": "usp-2024-ano-adicional",
+          "examTag": "USP Ano Adicional 2024",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2024-ano-adicional-010",
+          "number": 10,
+          "source": "USP 2024 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 10",
+          "text": "Homem, 64 anos, casado, aposentado. Faz uso de álcool há mais de 35 anos, todos os dias, cerca de 5 doses diárias recentemente. Há 8 horas não bebe. No passado, fazia uso de até meio litro de destilados por dia. Não tem dormido regularmente e chegou ao pronto-socorro com quadro de tremores não visíveis nos braços, náusea leve sem vômito. A filha, que o acompanha, relata episódio de convulsão há 3 meses, durante quadro anterior em que apresentou tremores visíveis, náuseas recorrentes com vômito, “via luzes brilhantes” constantes. Qual das condições apresentadas é uma indicação de internação para observação?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Padrão de uso."
+            },
+            {
+              "letter": "B",
+              "text": "Náusea sem vômito."
+            },
+            {
+              "letter": "C",
+              "text": "Tremor não visível."
+            },
+            {
+              "letter": "D",
+              "text": "Convulsão prévia."
+            }
+          ],
+          "correctAnswer": "D",
+          "examId": "usp-2024-ano-adicional",
+          "examTag": "USP Ano Adicional 2024",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2024-ano-adicional-011",
+          "number": 11,
+          "source": "USP 2024 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 11",
+          "text": "Homem, 27 anos, dá entrada no pronto-socorro com suspeita de vaso espasmo e possível infarto agudo do miocárdio (IAM). Além da cocaína e da metanfetamina, qual outra substância pode causar o quadro apresentado?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Ecstasy."
+            },
+            {
+              "letter": "B",
+              "text": "Clonidina."
+            },
+            {
+              "letter": "C",
+              "text": "Cannabis sp."
+            },
+            {
+              "letter": "D",
+              "text": "Midazolam."
+            }
+          ],
+          "correctAnswer": "A",
+          "examId": "usp-2024-ano-adicional",
+          "examTag": "USP Ano Adicional 2024",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2024-ano-adicional-012",
+          "number": 12,
+          "source": "USP 2024 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 12",
+          "text": "Em pacientes com comorbidade entre transtornos devido ao uso de substâncias e outros transtornos mentais, recomenda- se que o tratamento seja:",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Em série."
+            },
+            {
+              "letter": "B",
+              "text": "Paralelo."
+            },
+            {
+              "letter": "C",
+              "text": "Aleatório."
+            },
+            {
+              "letter": "D",
+              "text": "Integrado."
+            }
+          ],
+          "correctAnswer": "D",
+          "examId": "usp-2024-ano-adicional",
+          "examTag": "USP Ano Adicional 2024",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2024-ano-adicional-013",
+          "number": 13,
+          "source": "USP 2024 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 13",
+          "text": "Mulher, 62 anos, casada, projetista. Sem religião. Apresenta quadro de dependência do álcool. Resolveu se tratar e identificou, como dificuldade para evitar beber, o fato de que fica muito sozinha em casa (geralmente só bebe em casa). Estabeleceu com sua psicoterapeuta que não ficaria mais sozinha em casa. Com o tempo, foi se sentindo mais confiante e segura com sua decisão. Qual o nome desse processo, dentro do modelo linear de prevenção da recaída?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Autonomia."
+            },
+            {
+              "letter": "B",
+              "text": "Autoengano."
+            },
+            {
+              "letter": "C",
+              "text": "Autoeficácia."
+            },
+            {
+              "letter": "D",
+              "text": "Risco de recaída."
+            }
+          ],
+          "correctAnswer": "C",
+          "examId": "usp-2024-ano-adicional",
+          "examTag": "USP Ano Adicional 2024",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2024-ano-adicional-014",
+          "number": 14,
+          "source": "USP 2024 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 14",
+          "text": "Homem, 44 anos, sem emprego, solteiro. Mora com a mãe e a irmã. Faz uso recorrente, diário e pesado de crack. Durante o tratamento, verificou-se que o paciente tinha grande dificuldade específica da atenção e de tomada de decisão. Segundo a irmã, a dificuldade vem desde a infância, inclusive com problemas disciplinares na escola. Qual dos recursos a seguir pode fornecer informações detalhadas para o diagnóstico do paciente?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Avaliação neuropsicológica."
+            },
+            {
+              "letter": "B",
+              "text": "Montreal cognitive assessment."
+            },
+            {
+              "letter": "C",
+              "text": "Mini-exame do estado mental."
+            },
+            {
+              "letter": "D",
+              "text": "Bateria de avaliação frontal."
+            }
+          ],
+          "correctAnswer": "A",
+          "examId": "usp-2024-ano-adicional",
+          "examTag": "USP Ano Adicional 2024",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2024-ano-adicional-015",
+          "number": 15,
+          "source": "USP 2024 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 15",
+          "text": "O CAPS AD IV atende pessoas com quadros graves e intenso sofrimento decorrentes do uso de crack, álcool e outras drogas. No planejamento de instalação de um novo equipamento, é necessário adequar a estrutura aos diferentes contextos urbanos. De acordo com a Portaria nº 9.761, de 11 de abril de 2019, qual deve ser a localização desses equipamentos?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Em bairros de difícil acesso."
+            },
+            {
+              "letter": "B",
+              "text": "Anexos aos hospitais gerais."
+            },
+            {
+              "letter": "C",
+              "text": "Perto da rede de transportes."
+            },
+            {
+              "letter": "D",
+              "text": "Junto às cenas abertas de uso."
+            }
+          ],
+          "correctAnswer": "D",
+          "examId": "usp-2024-ano-adicional",
+          "examTag": "USP Ano Adicional 2024",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2024-ano-adicional-016",
+          "number": 16,
+          "source": "USP 2024 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 16",
+          "text": "A Portaria nº 3.588, de 21 de dezembro de 2017 descreve a estrutura física mínima dos CAPS AD IV. De acordo com essa estrutura física mínima, qual o número de leitos de observação previstos?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "No mínimo 5 (cinco) e no máximo 10 (dez)."
+            },
+            {
+              "letter": "B",
+              "text": "No mínimo 10 (dez) e no máximo 20 (vinte)."
+            },
+            {
+              "letter": "C",
+              "text": "No mínimo 10 (dez) e no máximo 40 (quarenta)."
+            },
+            {
+              "letter": "D",
+              "text": "No mínimo 20 (vinte) e no máximo 30 (trinta)."
+            }
+          ],
+          "correctAnswer": "B",
+          "examId": "usp-2024-ano-adicional",
+          "examTag": "USP Ano Adicional 2024",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2024-ano-adicional-017",
+          "number": 17,
+          "source": "USP 2024 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 17",
+          "text": "Homem, 23 anos, solteiro, balconista. Iniciou o uso de crack há mais de um ano, época em que sentiu estímulo prazeroso importante como efeito da droga. Depois que passou a fazer uso frequente do crack, notou que sua reação de prazer não era mais a mesma. De acordo com modelos neurobiológicos, após o estabelecimento de um padrão de uso frequente, qual área cerebral passa a desempenhar o papel mais importante?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Estriado dorsolateral."
+            },
+            {
+              "letter": "B",
+              "text": "Núcleo accumbens."
+            },
+            {
+              "letter": "C",
+              "text": "Córtex pré-frontal."
+            },
+            {
+              "letter": "D",
+              "text": "Área regimental lateral."
+            }
+          ],
+          "correctAnswer": "A",
+          "examId": "usp-2024-ano-adicional",
+          "examTag": "USP Ano Adicional 2024",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2024-ano-adicional-018",
+          "number": 18,
+          "source": "USP 2024 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 18",
+          "text": "Homem, 34 anos, usuário diário de Cannabis sp. fumada. Está há 15 dias abstinente. Apresenta quadro de coceiras, olhar vago, calafrios, ansiedade, dor abdominal e náuseas. Qual dos sintomas citados a seguir pode ser considerado parte da síndrome de abstinência da Cannabis sp.?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Olhar vago."
+            },
+            {
+              "letter": "B",
+              "text": "Coceiras."
+            },
+            {
+              "letter": "C",
+              "text": "Dor abdominal."
+            },
+            {
+              "letter": "D",
+              "text": "Náuseas."
+            }
+          ],
+          "correctAnswer": "C",
+          "examId": "usp-2024-ano-adicional",
+          "examTag": "USP Ano Adicional 2024",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2024-ano-adicional-019",
+          "number": 19,
+          "source": "USP 2024 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 19",
+          "text": "Homem, 34 anos, usuário de Cannabis sp. fumada, todos os dias, 3 a 4 vezes por dia, há mais de 15 anos. Com relação à testagem de urina para detecção de metabólitos da Cannabis sp. qual o limite máximo de detecção no paciente descrito?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "10 dias."
+            },
+            {
+              "letter": "B",
+              "text": "15 dias."
+            },
+            {
+              "letter": "C",
+              "text": "20 dias."
+            },
+            {
+              "letter": "D",
+              "text": "40 dias."
+            }
+          ],
+          "correctAnswer": "D",
+          "examId": "usp-2024-ano-adicional",
+          "examTag": "USP Ano Adicional 2024",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2024-ano-adicional-020",
+          "number": 20,
+          "source": "USP 2024 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 20",
+          "text": "Mulher, 41 anos, casada, assistente social. Há 2 anos, passou a apresentar crises de ansiedade e preocupação recorrente de ter novas crises. Procurou psiquiatra que prescreveu clonazepam em gotas. Progressivamente, ela passou a aumentar o número diário de gotas, chegando a 15 gotas três veres pur Uld €, dtuditiiciie, Cotd LUH UU LU SUldo Uutdito o dia e 15 à noite. Justifica a dose atual pelo aparecimento de sintomas que, de fato, são típicos do uso crônico de benzodiazepínicos, como no quadro descrito. Assinale quais são esses sintomas?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Dificuldade para adormecer e náuseas toda vez em que se alimenta."
+            },
+            {
+              "letter": "B",
+              "text": "Ansiedade súbita e intensa, semelhante a inicial e reações alérgicas."
+            },
+            {
+              "letter": "C",
+              "text": "Ansiedade semelhante à do início do tratamento e dor no corpo."
+            },
+            {
+              "letter": "D",
+              "text": "Náuseas sempre que se alimenta e sono pesado, não restaurador."
+            }
+          ],
+          "correctAnswer": "C",
+          "examId": "usp-2024-ano-adicional",
+          "examTag": "USP Ano Adicional 2024",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2024-ano-adicional-021",
+          "number": 21,
+          "source": "USP 2024 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 21",
+          "text": "Homem, 48 anos, casado, bancário. Apresentou quadro de insônia recorrente, sem outros sintomas relevantes. Queixava-se de dificuldade para pegar no sono. Costuma deitar-se por volta das 23 horas e, muitas vezes, só conseguia dormir depois das 3 horas da madrugada. Recebeu prescrição de zolpidem 10 mg ao deitar. Progressivamente, passou a tomar dois comprimidos por dia e, atualmente, toma 3 comprimidos. O risco de uso nocivo/dependência de zolpidem se dá por uma mudança importante no seu mecanismo de ação. Assinale a alternativa que apresenta essa mudança.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Aumento da ligação seletiva à subunidade alfa-1-GABA."
+            },
+            {
+              "letter": "B",
+              "text": "Aumento da estimulação de receptores como o NMDA."
+            },
+            {
+              "letter": "C",
+              "text": "Perda da ligação seletiva à subunidade alfa-1-GABA."
+            },
+            {
+              "letter": "D",
+              "text": "Perda da ligação seletiva a receptores como o NMDA."
+            }
+          ],
+          "correctAnswer": "C",
+          "examId": "usp-2024-ano-adicional",
+          "examTag": "USP Ano Adicional 2024",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2024-ano-adicional-022",
+          "number": 22,
+          "source": "USP 2024 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 22",
+          "text": "Homem, 22 anos, estudante, solteiro. Paciente chega ao pronto-socorro com quadro de ansiedade, inquietude, alucinações auditivas e sensação de perda de controle. Um amigo que o acompanha refere o uso de LSD. Durante a avaliação, o paciente passa a apresentar quadro de agitação psicomotora importante. Assinale qual conduta neste caso deve ser evitada, pelo risco de falência cardiovascular aguda.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Sedação com hipnóticos."
+            },
+            {
+              "letter": "B",
+              "text": "Contenção mecânica."
+            },
+            {
+              "letter": "C",
+              "text": "Antipsicóticos típicos."
+            },
+            {
+              "letter": "D",
+              "text": "Antipsicóticos atípicos."
+            }
+          ],
+          "correctAnswer": "B",
+          "examId": "usp-2024-ano-adicional",
+          "examTag": "USP Ano Adicional 2024",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2024-ano-adicional-023",
+          "number": 23,
+          "source": "USP 2024 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 23",
+          "text": "O uso do MDMA pode causar, entre outras alterações clínicas, hiponatremia e hipertermia. Qual hormônio pode ser um fator protetor para a hipertermia entre mulheres?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Hormônio luteinizante."
+            },
+            {
+              "letter": "B",
+              "text": "Progesterona."
+            },
+            {
+              "letter": "C",
+              "text": "Testosterona."
+            },
+            {
+              "letter": "D",
+              "text": "Estrogênio."
+            }
+          ],
+          "correctAnswer": "D",
+          "examId": "usp-2024-ano-adicional",
+          "examTag": "USP Ano Adicional 2024",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2024-ano-adicional-024",
+          "number": 24,
+          "source": "USP 2024 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 24",
+          "text": "Mulher, 36 anos, solteira, técnica de laboratório. Quer parar de fumar. Fuma cerca de 25 cigarros por dia, há mais de 15 anos. Já teve experiência com adesivo transdérmico, mas não se adaptou, devido a irritação na pele. A alternativa seria a substituição da reposição de nicotina do adesivo para a goma de mascar. Assinale qual o uso correto da goma para esta paciente.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Uso quando abstinente."
+            },
+            {
+              "letter": "B",
+              "text": "Uso continuado diário."
+            },
+            {
+              "letter": "C",
+              "text": "Uso se sentir fissura."
+            },
+            {
+              "letter": "D",
+              "text": "Dose fixa durante o dia."
+            }
+          ],
+          "correctAnswer": "D",
+          "examId": "usp-2024-ano-adicional",
+          "examTag": "USP Ano Adicional 2024",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2024-ano-adicional-025",
+          "number": 25,
+          "source": "USP 2024 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 25",
+          "text": "M., sexo feminino, 48 anos, divorciada, secretária, atualmente afastada do trabalho. Mora sozinha. Uma vizinha solicitou à Agente Comunitária de Saúde (ACS) que fosse até a casa de M. Na visita, soube que M. tem dois filhos, mas eles se afastaram dela. Ela não sabe dizer por qual motivo eles não querem falar com ela. Quando perguntada sobre o motivo do afastamento do trabalho, diz que tinha muitas dores nos braços e nas mãos, devido ao trabalho de digitação. No relatório para o INSS, consta diagnóstico de dependência do álcool. Ela nega ter problemas com o álcool. Diz que bebe eventualmente e que não precisa de ajuda. A ACS entrou em contato com a equipe da Unidade Básica de Saúde e relatou o caso. Assinale qual aspecto é fundamental na elaboração de um projeto terapêutico singular.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Ativar a rede de suporte de M."
+            },
+            {
+              "letter": "B",
+              "text": "Incentivar a autonomia de M."
+            },
+            {
+              "letter": "C",
+              "text": "Conduzir M. ao pronto-socorro."
+            },
+            {
+              "letter": "D",
+              "text": "Acionar o empregador de M."
+            }
+          ],
+          "correctAnswer": "A",
+          "examId": "usp-2024-ano-adicional",
+          "examTag": "USP Ano Adicional 2024",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2024-ano-adicional-026",
+          "number": 26,
+          "source": "USP 2024 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 26",
+          "text": "Homem, 36 anos, solteiro, médico. Faz uso de 40 mL de elixir paregórico quatro vezes por dia. Tem deixado o trabalho e por duas vezes faltou ao plantão. Duas colegas resolveram intervir e conseguiram levá-lo para avaliação. Devido ao estado geral do paciente, a decisão foi pela internação e substituição do elixir paregórico por metadona. Qual a dose inicial diária de metadona?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "5 mg."
+            },
+            {
+              "letter": "B",
+              "text": "10 mg."
+            },
+            {
+              "letter": "C",
+              "text": "20 mg."
+            },
+            {
+              "letter": "D",
+              "text": "40 mg."
+            }
+          ],
+          "correctAnswer": "C",
+          "examId": "usp-2024-ano-adicional",
+          "examTag": "USP Ano Adicional 2024",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2024-ano-adicional-027",
+          "number": 27,
+          "source": "USP 2024 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 27",
+          "text": "Homem, 37 anos, solteiro, sem moradia, sem trabalho regular, procura o CAPS AD porque n?o tem conseguido dormir, porque, segundo ele, ?podem me bater?, e usa o crack todos os dias, diversas vezes por dia. A m?e, que o acompanha, responde que n?o quer, pois sabe que a m?e n?o vai aceitar que ele use o crack. No planejamento do cuidado, a m?e aceita que ele use o crack em casa. Entre as interven??es singulares propostas para a redu??o de danos, assinale qual a estrat?gia proposta.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Reduzir o uso da droga."
+            },
+            {
+              "letter": "B",
+              "text": "Substituição da droga."
+            },
+            {
+              "letter": "C",
+              "text": "Abstinência da droga."
+            },
+            {
+              "letter": "D",
+              "text": "Uso protegido da droga."
+            }
+          ],
+          "correctAnswer": "D",
+          "examId": "usp-2024-ano-adicional",
+          "examTag": "USP Ano Adicional 2024",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2024-ano-adicional-028",
+          "number": 28,
+          "source": "USP 2024 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 28",
+          "text": "Nos Estados Unidos, a Síndrome Alcoólica Fetal (SAF) é a terceira maior causa de déficit cognitivo em recém-nascidos. Assinale qual das alternativas a seguir indica um dos componentes da SAF?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Ponte nasal baixa e filtro ausente."
+            },
+            {
+              "letter": "B",
+              "text": "Lesões no fígado e nas vias biliares."
+            },
+            {
+              "letter": "C",
+              "text": "Malformações renais e na bexiga."
+            },
+            {
+              "letter": "D",
+              "text": "Baixa implantação de orelhas."
+            }
+          ],
+          "correctAnswer": "A",
+          "examId": "usp-2024-ano-adicional",
+          "examTag": "USP Ano Adicional 2024",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2024-ano-adicional-029",
+          "number": 29,
+          "source": "USP 2024 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 29",
+          "text": "Homem, 21 anos, solteiro, estudante. Procura atendimento por sentir que seu rendimento na faculdade está baixo e se queixa especificamente da falta de atenção. Durante a entrevista, ele relata uso de álcool nos finais de semana e uma a duas vezes nos dias de aula. Bebe, segundo ele, “até cair”. Nega complicações decorrentes do uso, nega situações de violência ou acidentes. Com relação ao padrão de uso, como é possível categorizar o comportamento, segundo a CID-11?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Uso abusivo."
+            },
+            {
+              "letter": "B",
+              "text": "Uso pesado."
+            },
+            {
+              "letter": "C",
+              "text": "Uso perigoso."
+            },
+            {
+              "letter": "D",
+              "text": "Uso danoso."
+            }
+          ],
+          "correctAnswer": "C",
+          "examId": "usp-2024-ano-adicional",
+          "examTag": "USP Ano Adicional 2024",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2024-ano-adicional-030",
+          "number": 30,
+          "source": "USP 2024 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 30",
+          "text": "Com relação ao uso de substâncias, algumas características são mais relacionadas às mulheres do que aos homens. Entre as alternativas a seguir, identifique a que apresenta 2 características da relação das mulheres com as substâncias.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Início do uso mais tarde que os homens, o companheiro é um fator importante para a manutenção do consumo."
+            },
+            {
+              "letter": "B",
+              "text": "Início do uso com mais episódios de binge do que o homem, a manutenção do uso se dá quando fica sozinha."
+            },
+            {
+              "letter": "C",
+              "text": "O companheiro é um fator importante para a manutenção do consumo, quantidade total maior que a do homem."
+            },
+            {
+              "letter": "D",
+              "text": "Início do uso com mais episódios de binge do que o homem, o companheiro é fator importante da manutenção do uso."
+            }
+          ],
+          "correctAnswer": "A",
+          "examId": "usp-2024-ano-adicional",
+          "examTag": "USP Ano Adicional 2024",
           "provider": "USP"
         }
       ]
@@ -37303,6 +39442,1219 @@ window.BANCO_RMAIS_EXAMS = {
           "examTag": "USP Psiquiatria da Infancia e Adolescencia 2024",
           "provider": "USP",
           "ocrSource": "PIA_2024_paginas_legiveis usp.docx"
+        }
+      ]
+    },
+    {
+      "id": "usp-2025-f37",
+      "institution": "USP",
+      "year": 2025,
+      "code": "F37",
+      "area": "Ano Adicional",
+      "title": "USP 2025 - Ano Adicional",
+      "file": "ANOS ADICIONAIS - USP - 2025.pdf",
+      "questionCount": 40,
+      "answerCount": 38,
+      "questions": [
+        {
+          "id": "usp-2025-f37-001",
+          "number": 1,
+          "source": "USP 2025 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 1",
+          "text": "Entre os dados apresentados na história do paciente, qual pode representar um fator de risco para o desenvolvimento de problemas relacionados ao uso de álcool?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Estar atualmente desempregado."
+            },
+            {
+              "letter": "B",
+              "text": "Idade de início do uso de álcool."
+            },
+            {
+              "letter": "C",
+              "text": "Ter ensino superior incompleto."
+            },
+            {
+              "letter": "D",
+              "text": "Ser natural de cidade pequena. ####"
+            }
+          ],
+          "correctAnswer": "B",
+          "examId": "usp-2025-f37",
+          "examTag": "USP Ano Adicional 2025",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2025-f37-002",
+          "number": 2,
+          "source": "USP 2025 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 2",
+          "text": "Em relação ao caso apresentado, a alteração descrita como confabulação deve-se a uma alteração da memória. Qual a amnésia mais provável?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "De trabalho."
+            },
+            {
+              "letter": "B",
+              "text": "Remota."
+            },
+            {
+              "letter": "C",
+              "text": "Anterógrada."
+            },
+            {
+              "letter": "D",
+              "text": "Lacunar. ####"
+            }
+          ],
+          "correctAnswer": "C",
+          "examId": "usp-2025-f37",
+          "examTag": "USP Ano Adicional 2025",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2025-f37-003",
+          "number": 3,
+          "source": "USP 2025 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 3",
+          "text": "No exame físico, o paciente apresentou alterações da marcha, com incoordenação motora, fraqueza e desbalanço. Qual alteração neurológica explica os resultados do exame físico?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Degeneração das células de Purkinje."
+            },
+            {
+              "letter": "B",
+              "text": "Atrofia global da substância cinzenta."
+            },
+            {
+              "letter": "C",
+              "text": "Neuropatia compressiva assimétrica."
+            },
+            {
+              "letter": "D",
+              "text": "Desmielinização axonal difusa. ####"
+            }
+          ],
+          "correctAnswer": "A",
+          "examId": "usp-2025-f37",
+          "examTag": "USP Ano Adicional 2025",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2025-f37-004",
+          "number": 4,
+          "source": "USP 2025 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 4",
+          "text": "Entre os fatores agravantes do estado do paciente, pode-se destacar, como vulnerabilidade:",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Estar em situação de rua."
+            },
+            {
+              "letter": "B",
+              "text": "O uso de outras substâncias."
+            },
+            {
+              "letter": "C",
+              "text": "A presença de comorbidades."
+            },
+            {
+              "letter": "D",
+              "text": "Exposição à violência física. ####"
+            }
+          ],
+          "correctAnswer": "A",
+          "examId": "usp-2025-f37",
+          "examTag": "USP Ano Adicional 2025",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2025-f37-005",
+          "number": 5,
+          "source": "USP 2025 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 5",
+          "text": "A prevenção de recaídas está baseada em alguns elementos fundamentais. Entre eles, é possível citar:",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Independe da motivação do paciente para o tratamento."
+            },
+            {
+              "letter": "B",
+              "text": "Não está indicada quando o paciente tem uma recaída."
+            },
+            {
+              "letter": "C",
+              "text": "Treinamento de habilidades sociais de enfrentamento."
+            },
+            {
+              "letter": "D",
+              "text": "Busca encontrar responsáveis pelos atos do paciente. ####"
+            }
+          ],
+          "correctAnswer": "C",
+          "examId": "usp-2025-f37",
+          "examTag": "USP Ano Adicional 2025",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2025-f37-006",
+          "number": 6,
+          "source": "USP 2025 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 6",
+          "text": "A cetamina é um depressor do sistema nervoso central. Entre as alterações a seguir, assinal e a alternativa que apresenta uma alteração importante.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Insônia."
+            },
+            {
+              "letter": "B",
+              "text": "Irritabilidade."
+            },
+            {
+              "letter": "C",
+              "text": "Dissociação."
+            },
+            {
+              "letter": "D",
+              "text": "Hipermnésia. ####"
+            }
+          ],
+          "correctAnswer": "C",
+          "examId": "usp-2025-f37",
+          "examTag": "USP Ano Adicional 2025",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2025-f37-007",
+          "number": 7,
+          "source": "USP 2025 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 7",
+          "text": "Qual a classificação do uso de seis doses de bebida alcoólica de três a quatro vezes por semana?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Beber pesado."
+            },
+            {
+              "letter": "B",
+              "text": "Beber pesado episódico."
+            },
+            {
+              "letter": "C",
+              "text": "Uso nocivo."
+            },
+            {
+              "letter": "D",
+              "text": "Uso danoso. ####"
+            }
+          ],
+          "correctAnswer": "B",
+          "examId": "usp-2025-f37",
+          "examTag": "USP Ano Adicional 2025",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2025-f37-008",
+          "number": 8,
+          "source": "USP 2025 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 8",
+          "text": "Entre os traços de personalidade associados com os transtornos por uso de substâncias, além do neuroticismo, qual o mais frequente?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Esquiva / Evitação."
+            },
+            {
+              "letter": "B",
+              "text": "Dependente de recompensas."
+            },
+            {
+              "letter": "C",
+              "text": "Autotranscedência."
+            },
+            {
+              "letter": "D",
+              "text": "Buscador de novidade. ####"
+            }
+          ],
+          "correctAnswer": "D",
+          "examId": "usp-2025-f37",
+          "examTag": "USP Ano Adicional 2025",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2025-f37-009",
+          "number": 9,
+          "source": "USP 2025 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 9",
+          "text": "Nos quadros de transtornos por uso de álcool e comorbidade com transtornos de personalidade, qual o tipo mais comum?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Histriônico."
+            },
+            {
+              "letter": "B",
+              "text": "Antissocial."
+            },
+            {
+              "letter": "C",
+              "text": "Borderline."
+            },
+            {
+              "letter": "D",
+              "text": "Narcisista. #### Processo Seletivo aos Programas de Residência Médica – Edital: COREME/FM/Nº 01/2024 – Anos Adicionais – Psiquiatria – PROVA F37"
+            }
+          ],
+          "correctAnswer": "B",
+          "examId": "usp-2025-f37",
+          "examTag": "USP Ano Adicional 2025",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2025-f37-010",
+          "number": 10,
+          "source": "USP 2025 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 10",
+          "text": "Pacientes dependentes de múltiplas substâncias avaliados pela Bateria de Avaliação Frontal (Frontal Assessment Battery, FAB) apresentam dificuldades importantes na capacidade de abstração. Qual das alternativ as inclui outra dificuldade importante desses pacientes?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Programação motora."
+            },
+            {
+              "letter": "B",
+              "text": "Habilidades visoespaciais."
+            },
+            {
+              "letter": "C",
+              "text": "Capacidade visomotora."
+            },
+            {
+              "letter": "D",
+              "text": "Velocidade de processamento. #### TEXTO PARA AS QUESTÕES DE 11 A 14 Homem cis, 41 anos de idade, pardo, pintor, evangélico, natural de Salvador (BA), há 3 anos morando em São Paulo (SP). Apresenta-se no CAPS AD com a seguinte frase: “Vim me internar”. Paciente diz que quer se internar e deixar as drogas para voltar à Salvador. Iniciou uso de Cannabis sp. aos 9 anos de idade, avançando para outras drogas aos 14 anos de idade, juntamente com tabaco. Atualmente em uso compulsivo diário de crack (5-8 g); tabaco (40-60 cigarros). Uso eventual de Cannabis sp. em pequena quanƟdade. Uso diário de álcool. Paciente esteve internado recentemente. Na alta, recaiu no mesmo dia. TentaƟva de suicídio aos 39 anos de idade. Nega comorbidades; alergias; cirurgia s prévias; nega IST ou DST; nega síndrome de absƟnência do álcool. Tem uma ﬁlha de 12 anos de idade que mora co m a mãe em Salvador - BA, atualmente sem contato com familiares (há 2 anos). Pai eƟlista crônico e usuário de Cannabis sp. e mãe e Ɵlista crônica."
+            }
+          ],
+          "correctAnswer": "A",
+          "examId": "usp-2025-f37",
+          "examTag": "USP Ano Adicional 2025",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2025-f37-011",
+          "number": 11,
+          "source": "USP 2025 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 11",
+          "text": "Com relação ao procedimento no CAPS, qual é o primeiro atendimento?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Acolhimento diurno."
+            },
+            {
+              "letter": "B",
+              "text": "Atendimento individual."
+            },
+            {
+              "letter": "C",
+              "text": "Acolhimento inicial."
+            },
+            {
+              "letter": "D",
+              "text": "Atenção às crises. ####"
+            }
+          ],
+          "correctAnswer": "C",
+          "examId": "usp-2025-f37",
+          "examTag": "USP Ano Adicional 2025",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2025-f37-012",
+          "number": 12,
+          "source": "USP 2025 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 12",
+          "text": "A elaboração de um Projeto Terapêutico Singular (PTS) para esse paciente deve envolver quais das ações a seguir?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Avaliação neurológica, avaliação clínica e observação em pronto-socorro."
+            },
+            {
+              "letter": "B",
+              "text": "Avaliação do risco de síndrome de abstinência e internação hospitalar."
+            },
+            {
+              "letter": "C",
+              "text": "Atendimento inicial e familiar e encaminhamento à Unidade Básica de Saúde."
+            },
+            {
+              "letter": "D",
+              "text": "Atendimento inicial, atendimento em grupo e promoção de contratualidade. ####"
+            }
+          ],
+          "correctAnswer": "D",
+          "examId": "usp-2025-f37",
+          "examTag": "USP Ano Adicional 2025",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2025-f37-013",
+          "number": 13,
+          "source": "USP 2025 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 13",
+          "text": "A presença de um transtorno depressivo tem sido associada ao uso precoce e regular de qual das substâncias a seguir?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Crack."
+            },
+            {
+              "letter": "B",
+              "text": "Maconha."
+            },
+            {
+              "letter": "C",
+              "text": "Tabaco."
+            },
+            {
+              "letter": "D",
+              "text": "Hipnóticos. ####"
+            }
+          ],
+          "correctAnswer": "B",
+          "examId": "usp-2025-f37",
+          "examTag": "USP Ano Adicional 2025",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2025-f37-014",
+          "number": 14,
+          "source": "USP 2025 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 14",
+          "text": "Na evolução do paciente, observou-se tosse seca recorrente. O paciente foi encaminhado ao pronto-socorro para avaliação e o raio X evidenciou opacidades pulmonares migratórias. No hemograma, constatou-se a pr esença de eosinofilia. Qual o diagnóstico mais provável?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Fibrose pulmonar."
+            },
+            {
+              "letter": "B",
+              "text": "Pneumonia intersticial."
+            },
+            {
+              "letter": "C",
+              "text": "Derrame pleural."
+            },
+            {
+              "letter": "D",
+              "text": "Síndrome de Loeffler. ####"
+            }
+          ],
+          "correctAnswer": "D",
+          "examId": "usp-2025-f37",
+          "examTag": "USP Ano Adicional 2025",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2025-f37-015",
+          "number": 15,
+          "source": "USP 2025 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 15",
+          "text": "O uso do ecstasy está associado à diversas complicações clínicas. A hemorragia intracraniana pelo ecstasy está geralmente associada à",
+          "options": [
+            {
+              "letter": "A",
+              "text": "má formação prévia."
+            },
+            {
+              "letter": "B",
+              "text": "recorrência do uso."
+            },
+            {
+              "letter": "C",
+              "text": "hipertermia maligna."
+            },
+            {
+              "letter": "D",
+              "text": "mulheres gestantes. ####"
+            }
+          ],
+          "correctAnswer": "A",
+          "examId": "usp-2025-f37",
+          "examTag": "USP Ano Adicional 2025",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2025-f37-016",
+          "number": 16,
+          "source": "USP 2025 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 16",
+          "text": "Com relação à duração dos efeitos do ecstasy no sistema nervoso central, qual a meia-vida esperada?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "1 hora e meia."
+            },
+            {
+              "letter": "B",
+              "text": "4 horas."
+            },
+            {
+              "letter": "C",
+              "text": "12 horas."
+            },
+            {
+              "letter": "D",
+              "text": "20 horas. ####"
+            }
+          ],
+          "correctAnswer": "C",
+          "examId": "usp-2025-f37",
+          "examTag": "USP Ano Adicional 2025",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2025-f37-017",
+          "number": 17,
+          "source": "USP 2025 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 17",
+          "text": "Com relação às equipes de consultório na rua, a responsabilidade, no âmbito da rede de atenção psicossocial, é ofertar cuidados em saúde mental para quais pessoas?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Usuárias apenas de crack."
+            },
+            {
+              "letter": "B",
+              "text": "Com transtornos mentais."
+            },
+            {
+              "letter": "C",
+              "text": "Apenas em situação de rua."
+            },
+            {
+              "letter": "D",
+              "text": "Em moradia assistida. #### Processo Seletivo aos Programas de Residência Médica – Edital: COREME/FM/Nº 01/2024 – Anos Adicionais – Psiquiatria – PROVA F37 TEXTO PARA AS QUESTÕES 18 E 19 Homem cis, 53 anos de idade, casado, médico intensivista, comparece no pronto-socorro após ter sido encontrado deitado no chão da Unidade de Terapia Intensiva respirando pesadamente e com os olhos bem abertos. Na chegada ao pronto-socorro, estava semicomatoso, com sudorese e trêmulo, com “postura decorticada”. Sua temperatura era de 40,4 °C, FC de 140 bpm, PA de 146x67 mmHg e FR de 32 ipm."
+            }
+          ],
+          "correctAnswer": "B",
+          "examId": "usp-2025-f37",
+          "examTag": "USP Ano Adicional 2025",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2025-f37-018",
+          "number": 18,
+          "source": "USP 2025 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 18",
+          "text": "Os sinais observados são acha dos prováveis de intoxicação por qual substância?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Fentanil."
+            },
+            {
+              "letter": "B",
+              "text": "Diazepam."
+            },
+            {
+              "letter": "C",
+              "text": "Ecstasy."
+            },
+            {
+              "letter": "D",
+              "text": "e-Cigarro. ####"
+            }
+          ],
+          "correctAnswer": "C",
+          "examId": "usp-2025-f37",
+          "examTag": "USP Ano Adicional 2025",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2025-f37-019",
+          "number": 19,
+          "source": "USP 2025 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 19",
+          "text": "Em relação ao caso descrito , assinale a alternativa que apresenta o principal motivo de uso da substância encontrada.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Recreacional."
+            },
+            {
+              "letter": "B",
+              "text": "Dissociativo."
+            },
+            {
+              "letter": "C",
+              "text": "Alucinatórios."
+            },
+            {
+              "letter": "D",
+              "text": "Medicinal. ####"
+            }
+          ],
+          "correctAnswer": "A",
+          "examId": "usp-2025-f37",
+          "examTag": "USP Ano Adicional 2025",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2025-f37-020",
+          "number": 20,
+          "source": "USP 2025 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 20",
+          "text": "Homem, 48 anos de idade, dependente de álcool, desnutrido, desidratado, apresenta nistagmo e ataxia. O tratamento deve oferecer qual estratégia?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Reposição de tiamina, 100 mg VO por dez dias."
+            },
+            {
+              "letter": "B",
+              "text": "Reposição de tiamina após administração de glicose."
+            },
+            {
+              "letter": "C",
+              "text": "Reposição de glicose independentemente da glicemia."
+            },
+            {
+              "letter": "D",
+              "text": "Reposição de tiamina, 300 a 500 mg EV por três dias. #### TEXTO PARA AS QUESTÕES DE 21 A 24 A ANVISA propôs um problema regulatório sobre os Dispositivos Eletrônicos para Fumar (DEF), definido como “Riscos e agravos associados ao uso dos DEF”."
+            }
+          ],
+          "correctAnswer": "D",
+          "examId": "usp-2025-f37",
+          "examTag": "USP Ano Adicional 2025",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2025-f37-021",
+          "number": 21,
+          "source": "USP 2025 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 21",
+          "text": "Com relação aos DEF, qual das alternativas indica um fator importante de maior risco de adesão ao uso?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Variação de preços, com alternativas de baixo custo."
+            },
+            {
+              "letter": "B",
+              "text": "Menor risco de evolução para dependência grave."
+            },
+            {
+              "letter": "C",
+              "text": "Menor percepção de risco relativa a estes produtos."
+            },
+            {
+              "letter": "D",
+              "text": "Formatos mais atrativos do que a do cigarro comum. ####"
+            }
+          ],
+          "correctAnswer": "C",
+          "examId": "usp-2025-f37",
+          "examTag": "USP Ano Adicional 2025",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2025-f37-022",
+          "number": 22,
+          "source": "USP 2025 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 22",
+          "text": "Os DEF têm sido apresentados como uma alternativa de redução de danos para fumantes de cigarro comum. Estudos de qualidade metodológica alta tem avaliado essa hipótese e indicam qual das respostas informadas nas alternativas a seguir?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Nos Estados Unidos da Am érica, estudos econômicos concluem que os benefícios do uso dos DEF superam os prejuízos."
+            },
+            {
+              "letter": "B",
+              "text": "Adolescentes e jovens que usavam DEF tiveram maiores chances de progressão para o tabagismo."
+            },
+            {
+              "letter": "C",
+              "text": "As perdas de anos de vida em usuários de DEF não dependem de diferenças nos percentuais otimistas."
+            },
+            {
+              "letter": "D",
+              "text": "Há homogeneidade na entrega de nicotina na comparação entre os DEF e o cigarro. ####"
+            }
+          ],
+          "correctAnswer": "B",
+          "examId": "usp-2025-f37",
+          "examTag": "USP Ano Adicional 2025",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2025-f37-023",
+          "number": 23,
+          "source": "USP 2025 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 23",
+          "text": "A decisão da ANVISA sobre os DEF foi a manutenção da Resolução da Diretoria Colegiada no 46/2009, que",
+          "options": [
+            {
+              "letter": "A",
+              "text": "restringe a importação."
+            },
+            {
+              "letter": "B",
+              "text": "padroniza a propaganda."
+            },
+            {
+              "letter": "C",
+              "text": "libera a comercialização."
+            },
+            {
+              "letter": "D",
+              "text": "proíbe a comercialização. ####"
+            }
+          ],
+          "correctAnswer": "D",
+          "examId": "usp-2025-f37",
+          "examTag": "USP Ano Adicional 2025",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2025-f37-024",
+          "number": 24,
+          "source": "USP 2025 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 24",
+          "text": "Segundo a Convenção Quadro para o Controle do Tabaco (CQCT), o uso dos DEF pode ter, como consequência,",
+          "options": [
+            {
+              "letter": "A",
+              "text": "efeito porta de entrada para tabagismo e outras drogas."
+            },
+            {
+              "letter": "B",
+              "text": "iniciação por jovens, mas não de não-fumantes ao tabagismo."
+            },
+            {
+              "letter": "C",
+              "text": "aumento do consumo/uso do produto, sem efeito sobre os agravos."
+            },
+            {
+              "letter": "D",
+              "text": "aumento da prevalência de danos como acidentes. ####"
+            }
+          ],
+          "correctAnswer": "A",
+          "examId": "usp-2025-f37",
+          "examTag": "USP Ano Adicional 2025",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2025-f37-025",
+          "number": 25,
+          "source": "USP 2025 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 25",
+          "text": "Alguns aspectos específicos são importantes no entendimento da dependência do álcool em mulheres. Assinale a alternativa que apresenta um desses aspectos.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Mulheres dependentes de álcool usam mais drogas ilícitas do que os homens dependentes de álcool."
+            },
+            {
+              "letter": "B",
+              "text": "Elas bebem menores quantidades e mais frequentemente do que homens dependentes."
+            },
+            {
+              "letter": "C",
+              "text": "Mulheres dependentes de álcool tentam menos o suicídio do que os homens dependentes de álcool."
+            },
+            {
+              "letter": "D",
+              "text": "Elas têm mais complicaçõe s orgânicas precoces e mais graves do que homens dependentes do álcool. #### Processo Seletivo aos Programas de Residência Médica – Edital: COREME/FM/Nº 01/2024 – Anos Adicionais – Psiquiatria – PROVA F37 TEXTO PARA AS QUESTÕES DE 26 A 29 Mulher cis, 40 anos de idade, tabagista desde os 16 anos de idade, fuma cerca de um maço e meio por dia, relata três tentativas prévias para parar de fumar sozinha, e uma tentativa com goma de mascar de 2 mg, sem sucesso. Afirma ter voltado a fumar porque ao tentar parar, da última vez, sentiu muita irritabilidade, ansiedade e chegou a ser agressiva. No momento, refere muita motivação para cessar o hábito, visto que seu irmão faleceu recentemente de câncer de pulmão. Relata que fuma o primeiro cigarro imediatamente após acordar e que, com frequência, acorda no meio da noite para fumar. A paciente diz que fuma mais pela manhã, o primeiro cigarro do dia causa muita satisfação, tem dificuldade de ficar sem fumar em lugares proibidos e fuma mesmo doente."
+            }
+          ],
+          "correctAnswer": "D",
+          "examId": "usp-2025-f37",
+          "examTag": "USP Ano Adicional 2025",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2025-f37-026",
+          "number": 26,
+          "source": "USP 2025 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 26",
+          "text": "Qual a porcentagem de pessoas que têm sucesso na primeira tentativa de parar?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "8%"
+            },
+            {
+              "letter": "B",
+              "text": "10%"
+            },
+            {
+              "letter": "C",
+              "text": "25%"
+            },
+            {
+              "letter": "D",
+              "text": "30% ####"
+            }
+          ],
+          "correctAnswer": "",
+          "examId": "usp-2025-f37",
+          "examTag": "USP Ano Adicional 2025",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2025-f37-027",
+          "number": 27,
+          "source": "USP 2025 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 27",
+          "text": "De acordo com o teste de Fagerström e com o cálculo da carga tabágica, a paciente pode ser classificada em um nível de dependência do tabaco",
+          "options": [
+            {
+              "letter": "A",
+              "text": "moderado; carga tabágica 36."
+            },
+            {
+              "letter": "B",
+              "text": "alto; carga tabágica 24."
+            },
+            {
+              "letter": "C",
+              "text": "muito alto; carga tabágica 36."
+            },
+            {
+              "letter": "D",
+              "text": "muito alto; carga tabágica 24. ####"
+            }
+          ],
+          "correctAnswer": "C",
+          "examId": "usp-2025-f37",
+          "examTag": "USP Ano Adicional 2025",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2025-f37-028",
+          "number": 28,
+          "source": "USP 2025 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 28",
+          "text": "Em relação ao uso da goma de mascar, qual o esquema de uso indicado para a paciente descrita no caso?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "4 mg, se tiver sintomas de fissura."
+            },
+            {
+              "letter": "B",
+              "text": "2 mg 12 unidades por dia em dose fixa."
+            },
+            {
+              "letter": "C",
+              "text": "2 mg, se tiver sintomas de fissura."
+            },
+            {
+              "letter": "D",
+              "text": "4 mg, 12 unidades por dia em dose fixa. ####"
+            }
+          ],
+          "correctAnswer": "D",
+          "examId": "usp-2025-f37",
+          "examTag": "USP Ano Adicional 2025",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2025-f37-029",
+          "number": 29,
+          "source": "USP 2025 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 29",
+          "text": "Assinale a alternativa que aprese nta o mais frequente efeito adverso da vareniclina.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Náuseas."
+            },
+            {
+              "letter": "B",
+              "text": "Pesadelos."
+            },
+            {
+              "letter": "C",
+              "text": "Angústia."
+            },
+            {
+              "letter": "D",
+              "text": "Insônia. #### TEXTO PARA AS QUESTÕES DE 30 A 34 Mulher, 29 anos de idade, sem profissão, desempregada. Não tem religião. Em situação de ru a há um ano e meio. Chega à maternidade em trabalho de parto em fase adiantada. Realizou apenas uma consulta de pré-natal logo que descobriu a gravidez, mas não prosseguiu o acompanhamento. Refere uso de substâncias, como álcool, crack, maconha, tabaco, e refere promiscuidade sexual, mesmo durante a gestação."
+            }
+          ],
+          "correctAnswer": "A",
+          "examId": "usp-2025-f37",
+          "examTag": "USP Ano Adicional 2025",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2025-f37-030",
+          "number": 30,
+          "source": "USP 2025 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 30",
+          "text": "Qual das substâncias a seguir causa mais prejuízos ao feto durante a gravidez?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Heroína."
+            },
+            {
+              "letter": "B",
+              "text": "Cocaína."
+            },
+            {
+              "letter": "C",
+              "text": "Álcool."
+            },
+            {
+              "letter": "D",
+              "text": "Maconha. ####"
+            }
+          ],
+          "correctAnswer": "C",
+          "examId": "usp-2025-f37",
+          "examTag": "USP Ano Adicional 2025",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2025-f37-031",
+          "number": 31,
+          "source": "USP 2025 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 31",
+          "text": "Diversos recursos e equipamentos são importantes para o tratamento das mulheres fa rmacodependentes. Assinale a alternativa que apresenta um recurso fundamental.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Creches com recursos de acolhimento."
+            },
+            {
+              "letter": "B",
+              "text": "Grupos psicoterápicos só de mulheres."
+            },
+            {
+              "letter": "C",
+              "text": "Internação hospitalar só para mulheres."
+            },
+            {
+              "letter": "D",
+              "text": "Equipe multiprofissional só feminina. ####"
+            }
+          ],
+          "correctAnswer": "B",
+          "examId": "usp-2025-f37",
+          "examTag": "USP Ano Adicional 2025",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2025-f37-032",
+          "number": 32,
+          "source": "USP 2025 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 32",
+          "text": "Sobre gestantes usuárias de crack, pode-se afirmar:",
+          "options": [
+            {
+              "letter": "A",
+              "text": "O uso de crack durante a gestação, por si só, não é uma indicação de perda de guarda ou afastamento da criança de sua mãe."
+            },
+            {
+              "letter": "B",
+              "text": "O acompanhamento pré-natal deve ser necessariamente realizado em serviço espe cializado e/ou de alta complexidade."
+            },
+            {
+              "letter": "C",
+              "text": "É comum o recém-nascido apresentar síndrome de abstinência e necessitar de cuidados intensivos ao nascimento."
+            },
+            {
+              "letter": "D",
+              "text": "Não é necessária nenhuma intervenção nos casos de gestante usuária de crack, pois a questão pode ser abordada após o parto. #### Processo Seletivo aos Programas de Residência Médica – Edital: COREME/FM/Nº 01/2024 – Anos Adicionais – Psiquiatria – PROVA F37"
+            }
+          ],
+          "correctAnswer": "A",
+          "examId": "usp-2025-f37",
+          "examTag": "USP Ano Adicional 2025",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2025-f37-033",
+          "number": 33,
+          "source": "USP 2025 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 33",
+          "text": "Assinale a alternativa que apresenta um dos critérios importantes para a internação involuntária.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Risco de prejuízo moral."
+            },
+            {
+              "letter": "B",
+              "text": "Uso recorrente de substâncias."
+            },
+            {
+              "letter": "C",
+              "text": "Incapacidade de autocuidado."
+            },
+            {
+              "letter": "D",
+              "text": "Ameaça à vida do paciente. ####"
+            }
+          ],
+          "correctAnswer": "D",
+          "examId": "usp-2025-f37",
+          "examTag": "USP Ano Adicional 2025",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2025-f37-034",
+          "number": 34,
+          "source": "USP 2025 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 34",
+          "text": "Os compostos voláteis mais utilizados são os solventes. Qual o outro grupo de compostos voláteis dos quatro existentes?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Nitratos."
+            },
+            {
+              "letter": "B",
+              "text": "Álcoois."
+            },
+            {
+              "letter": "C",
+              "text": "Aerossóis."
+            },
+            {
+              "letter": "D",
+              "text": "Sulfetos. ####"
+            }
+          ],
+          "correctAnswer": "C",
+          "examId": "usp-2025-f37",
+          "examTag": "USP Ano Adicional 2025",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2025-f37-035",
+          "number": 35,
+          "source": "USP 2025 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 35",
+          "text": "Paciente apresenta quadro de alterações de humor, desejo intenso de uso de substância da preferência, falta de concentração, irritabilidade, alteração do apetite e do sono e desconforto físico. O quadro descrito é característico da síndrome de abstinência de qual das substâncias apresentadas a seguir?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Clonazepam."
+            },
+            {
+              "letter": "B",
+              "text": "Maconha."
+            },
+            {
+              "letter": "C",
+              "text": "Ecstasy."
+            },
+            {
+              "letter": "D",
+              "text": "Tabaco. ####"
+            }
+          ],
+          "correctAnswer": "",
+          "examId": "usp-2025-f37",
+          "examTag": "USP Ano Adicional 2025",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2025-f37-036",
+          "number": 36,
+          "source": "USP 2025 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 36",
+          "text": "Entre as medicações a seguir, qual a mais indicada nos quadros de piloereção, ansiedade e hiperatividade autonômica da síndrome de abstinência dos opioides?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Diazepam."
+            },
+            {
+              "letter": "B",
+              "text": "Loperamida."
+            },
+            {
+              "letter": "C",
+              "text": "Naproxeno."
+            },
+            {
+              "letter": "D",
+              "text": "Clonidina. ####"
+            }
+          ],
+          "correctAnswer": "D",
+          "examId": "usp-2025-f37",
+          "examTag": "USP Ano Adicional 2025",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2025-f37-037",
+          "number": 37,
+          "source": "USP 2025 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 37",
+          "text": "Assinale a alternativa que exp lica o efeito atenuador de sensações agradáveis do álcool pela naltrexona.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Antagonismo do receptor opioide."
+            },
+            {
+              "letter": "B",
+              "text": "Agonismo do receptor opioide."
+            },
+            {
+              "letter": "C",
+              "text": "Agonismo de receptor dopaminérgico."
+            },
+            {
+              "letter": "D",
+              "text": "Antagonismo de receptor serotoninérgico. ####"
+            }
+          ],
+          "correctAnswer": "A",
+          "examId": "usp-2025-f37",
+          "examTag": "USP Ano Adicional 2025",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2025-f37-038",
+          "number": 38,
+          "source": "USP 2025 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 38",
+          "text": "Os núcleos de apoio à saúde da família, tem como característica o apoio às",
+          "options": [
+            {
+              "letter": "A",
+              "text": "equipes da academia da saúde para atividades físicas."
+            },
+            {
+              "letter": "B",
+              "text": "condições indicadas no cuidado compartilhado supra territorial."
+            },
+            {
+              "letter": "C",
+              "text": "equipes de atenção básica para populações específicas."
+            },
+            {
+              "letter": "D",
+              "text": "situações de sofrimento que exijam cuidados em internação. ####"
+            }
+          ],
+          "correctAnswer": "C",
+          "examId": "usp-2025-f37",
+          "examTag": "USP Ano Adicional 2025",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2025-f37-039",
+          "number": 39,
+          "source": "USP 2025 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 39",
+          "text": "Na rede de atenção psicossocial, qual dos componentes a seguir faz parte da equipe de apoio aos serviços do componente de atenção residencial de caráter transitório?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Residências terapêuticas."
+            },
+            {
+              "letter": "B",
+              "text": "Centro de convivência."
+            },
+            {
+              "letter": "C",
+              "text": "Unidade Básica de Saúde."
+            },
+            {
+              "letter": "D",
+              "text": "Pronto-socorro. ####"
+            }
+          ],
+          "correctAnswer": "B",
+          "examId": "usp-2025-f37",
+          "examTag": "USP Ano Adicional 2025",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2025-f37-040",
+          "number": 40,
+          "source": "USP 2025 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 40",
+          "text": "Na comparação entre mulheres e homens, assinale a alternativa correta.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "A maior influência para o iníc io do uso de drogas para as mulheres é pelos amigos e, nos homens, pela companheira."
+            },
+            {
+              "letter": "B",
+              "text": "Mulheres e homens tê m a mesma vulnerabilidade genética para o desenvolvimento da dependência do álcool."
+            },
+            {
+              "letter": "C",
+              "text": "A maternidade não tem qualquer influência sobre a recuperação das mulheres farmacodependentes."
+            },
+            {
+              "letter": "D",
+              "text": "Homens apresentam progressão mais rápida do uso e do abuso para a dependência do que as mulheres. ####"
+            }
+          ],
+          "correctAnswer": "B",
+          "examId": "usp-2025-f37",
+          "examTag": "USP Ano Adicional 2025",
+          "provider": "USP"
         }
       ]
     },
@@ -42222,6 +45574,1219 @@ window.BANCO_RMAIS_EXAMS = {
           "correctAnswer": "B",
           "examId": "usp-2025-f10",
           "examTag": "USP Psiquiatria da Infancia e Adolescencia 2025",
+          "provider": "USP"
+        }
+      ]
+    },
+    {
+      "id": "usp-2026-ano-adicional",
+      "institution": "USP",
+      "year": 2026,
+      "code": "",
+      "area": "Ano Adicional",
+      "title": "USP 2026 - Ano Adicional",
+      "file": "ANOS ADICIONAIS - USP - 2026.pdf",
+      "questionCount": 40,
+      "answerCount": 40,
+      "questions": [
+        {
+          "id": "usp-2026-ano-adicional-001",
+          "number": 1,
+          "source": "USP 2026 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 1",
+          "text": "Segundo diversos estudos epidemiológicos realizados no Brasil, cerca de 50% dos entrevistados se declararam abstinentes do álcool nos últimos doze mes es anteriores à pesquisa. Já em relação aos padrões de uso e sobre os aspectos demográficos de gênero, foram observadas diferenças importantes. Qual é essa diferença?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "O uso moderado de álcool foi menor que o padrão de uso em binge."
+            },
+            {
+              "letter": "B",
+              "text": "Proporção semelhante de dependentes do álcool entre os gêneros."
+            },
+            {
+              "letter": "C",
+              "text": "Aumento de 34,5% de bebedores frequentes entre o gênero feminino."
+            },
+            {
+              "letter": "D",
+              "text": "Redução do padrão de uso nocivo e do padrão de beber em binge. #####"
+            }
+          ],
+          "correctAnswer": "C",
+          "examId": "usp-2026-ano-adicional",
+          "examTag": "USP Ano Adicional 2026",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2026-ano-adicional-002",
+          "number": 2,
+          "source": "USP 2026 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 2",
+          "text": "Muitos estudos sugeriram que o risco à saúde relacionado ao consumo de álcool seria mais bem expresso em uma curva J, em que níveis baixos ou altos de consumo representariam o maior nível de risco, enquanto níveis moderados envolveriam menos riscos. Uma revisão da avaliação de riscos associados ao nível teórico mínimo de exposição ao risco pelo álcool (Rehm et al ., 2017) sugeriu uma mudança na avaliação do impacto geral do uso de álcool. Qual é esta mudança?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Inclusão dos danos sociais, além dos danos à saúde."
+            },
+            {
+              "letter": "B",
+              "text": "Volume seguro de doses igual para homens e mulheres."
+            },
+            {
+              "letter": "C",
+              "text": "Usar apenas o risco de câncer para definir o nível seguro."
+            },
+            {
+              "letter": "D",
+              "text": "O nível de risco deve ser independente da faixa etária. #####"
+            }
+          ],
+          "correctAnswer": "A",
+          "examId": "usp-2026-ano-adicional",
+          "examTag": "USP Ano Adicional 2026",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2026-ano-adicional-003",
+          "number": 3,
+          "source": "USP 2026 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 3",
+          "text": "Um dos fatores que influenciam os efeitos metabólicos do álcool é a velocidade de ingestão. Assinale a alternativa que indica adequadamente essa relação?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Quanto mais lento o consumo, maior o tempo de metabolização e eliminação do conteúdo alcoólico ingerido."
+            },
+            {
+              "letter": "B",
+              "text": "Quanto mais rápido o consumo, maior o tempo de metabolização e eliminação do con teúdo alcoólico ingerido."
+            },
+            {
+              "letter": "C",
+              "text": "Quanto mais rápido o consumo, menor o tempo de metabolização e eliminação do conteúdo alcoólico ingerido."
+            },
+            {
+              "letter": "D",
+              "text": "Quanto mais lento o consumo, menor o tempo de metabolização e eliminação do conteúdo alcoólico ingerido. #####"
+            }
+          ],
+          "correctAnswer": "B",
+          "examId": "usp-2026-ano-adicional",
+          "examTag": "USP Ano Adicional 2026",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2026-ano-adicional-004",
+          "number": 4,
+          "source": "USP 2026 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 4",
+          "text": "Qual dos seguintes itens é amplamente reconhecido como fator de risco para progressão de uso de cocaína para um quadro de dependência?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "História familiar de uso de cocaína."
+            },
+            {
+              "letter": "B",
+              "text": "Exposição intrauterina à cocaína."
+            },
+            {
+              "letter": "C",
+              "text": "Transtorno por uso de álcool comórbido."
+            },
+            {
+              "letter": "D",
+              "text": "Vulnerabilidade social e familiar. #####"
+            }
+          ],
+          "correctAnswer": "A",
+          "examId": "usp-2026-ano-adicional",
+          "examTag": "USP Ano Adicional 2026",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2026-ano-adicional-005",
+          "number": 5,
+          "source": "USP 2026 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 5",
+          "text": "Entre os diversos efeitos da cocaína, pode-se citar:",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Ação vasoconstritora."
+            },
+            {
+              "letter": "B",
+              "text": "Anestésico central."
+            },
+            {
+              "letter": "C",
+              "text": "Vasodilatador periférico."
+            },
+            {
+              "letter": "D",
+              "text": "Inibição dopaminérgica. #####"
+            }
+          ],
+          "correctAnswer": "A",
+          "examId": "usp-2026-ano-adicional",
+          "examTag": "USP Ano Adicional 2026",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2026-ano-adicional-006",
+          "number": 6,
+          "source": "USP 2026 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 6",
+          "text": "Segundo a Organização Mundial d E Saúde (OMS), os efeitos negativos do consumo de álcool estão associados à ocorrência de mais de 200 tipos de doenças e acidentes. Entre as mortes atribuídas a problemas causados pelo álcool, qual o grupo populacional mais atingido?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Mulheres na pré-menopausa."
+            },
+            {
+              "letter": "B",
+              "text": "Mulheres com 75 anos ou mais."
+            },
+            {
+              "letter": "C",
+              "text": "Homens com menos de 40 anos."
+            },
+            {
+              "letter": "D",
+              "text": "Homens entre 40 e 50 anos. #####"
+            }
+          ],
+          "correctAnswer": "C",
+          "examId": "usp-2026-ano-adicional",
+          "examTag": "USP Ano Adicional 2026",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2026-ano-adicional-007",
+          "number": 7,
+          "source": "USP 2026 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 7",
+          "text": "Dados recentes do III Levantamento Nacional sobre o Uso de Álcool e Outras Drogas (LENAD), apontam que o uso no último ano de cocaína e crack manteve-se estável na população entre 2012 e 2022. Qual dos seguintes dados também revela uma maior gravidade do impacto do uso destas substâncias?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Mais pessoas dirigiram sob efeito de cocaína ou crack."
+            },
+            {
+              "letter": "B",
+              "text": "Menor procura por tratamento nas regiões sudeste e sul."
+            },
+            {
+              "letter": "C",
+              "text": "Mais pessoas preencheram critérios de dependência."
+            },
+            {
+              "letter": "D",
+              "text": "Manutenção da idade de início do uso entre homens. #####"
+            }
+          ],
+          "correctAnswer": "C",
+          "examId": "usp-2026-ano-adicional",
+          "examTag": "USP Ano Adicional 2026",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2026-ano-adicional-008",
+          "number": 8,
+          "source": "USP 2026 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 8",
+          "text": "Assinale a alternativa que apresenta o recurso fundamental para o tratamento de mulheres farmacodependentes.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Creches que têm grupos de ajuda mútua."
+            },
+            {
+              "letter": "B",
+              "text": "Internação em comunidade terapêutica."
+            },
+            {
+              "letter": "C",
+              "text": "Equipe profissional apenas de mulheres."
+            },
+            {
+              "letter": "D",
+              "text": "Grupo psicoterápico exclusivo de mulheres. #####"
+            }
+          ],
+          "correctAnswer": "D",
+          "examId": "usp-2026-ano-adicional",
+          "examTag": "USP Ano Adicional 2026",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2026-ano-adicional-009",
+          "number": 9,
+          "source": "USP 2026 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 9",
+          "text": "Os opioides constituem um grupo de drogas que apresentam efeitos similares entre si e atuam nos receptores opioides mu (μ), delta ( Δ) e kappa ( Κ) do corpo, abrangendo desde alcaloides opiáceos naturais, até substâncias semissintéticas. Em relação aos opioides, é correto afirmar:",
+          "options": [
+            {
+              "letter": "A",
+              "text": "A metadona é um opioide semissintético 10 vezes mais potente que a morfina."
+            },
+            {
+              "letter": "B",
+              "text": "A morfina é o único alcaloide opiáceo natural extraído diretamente do ópio."
+            },
+            {
+              "letter": "C",
+              "text": "A naltrexona é um opioide semissintético antagonista de receptores opioides."
+            },
+            {
+              "letter": "D",
+              "text": "A oxicodona tem ação analgésica inferior e menor risco de abuso que a morfina. ##### Processo Seletivo aos Programas de Residência Médica – Edital: COREME/FM/Nº 03/2025 – Anos Adicionais – Psiquiatria – PROVA AA8 Texto para as questões de 10 a 12 Homem, 32 anos de idade, u suário de cocaína há 14 anos. Atualmente, usa dois a três pinos por dia. Faz panfletagem e gasta todo o dinheiro com a substância. Teve uma internação há 4 meses. Sentiu muita dificuldade nos primeiros dias de internação. Sentia-se cansado, sem atitude, com vontade de ficar na cama. Ficava irritado com tudo , mas tinha muita vontade de usar a substância. Aceitou a internação porque percebeu que mesmo querendo parar de usar a cocaína, não conseguia evitar o uso."
+            }
+          ],
+          "correctAnswer": "C",
+          "examId": "usp-2026-ano-adicional",
+          "examTag": "USP Ano Adicional 2026",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2026-ano-adicional-010",
+          "number": 10,
+          "source": "USP 2026 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 10",
+          "text": "Entre as diversas neuroadaptações decorrentes do uso crônico de cocaína , assinale a alternativa que apresenta a associação correta entre sítio de ação e repercussão clíni ca em relação a esta substância.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Aumento de disponibilidade de d opamina no sistema mesolímbico e sintomas de abstinência."
+            },
+            {
+              "letter": "B",
+              "text": "Maior excitabilidade glutamatérgica no núcleo accumbens e aumento da saliência do incentivo."
+            },
+            {
+              "letter": "C",
+              "text": "Hipomodulação do cór tex pré -frontal órbito -frontal e melhora na tomada de decisão."
+            },
+            {
+              "letter": "D",
+              "text": "Redução de dopamin a no sistema tegmental ventral e melhora dos sintomas de fissura. #####"
+            }
+          ],
+          "correctAnswer": "B",
+          "examId": "usp-2026-ano-adicional",
+          "examTag": "USP Ano Adicional 2026",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2026-ano-adicional-011",
+          "number": 11,
+          "source": "USP 2026 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 11",
+          "text": "Após a avaliação criteriosa do quadro descrito, e seguindo as recomendações da Organização Mundial de Saúde e do Escritório das Nações Unidas sobre Drogas e Crime, o tratamento preconizado no quadro de abstinência aguda de cocaína e crack é:",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Benzodiazepínico de 2/2 horas."
+            },
+            {
+              "letter": "B",
+              "text": "Antipsicóticos diariamente."
+            },
+            {
+              "letter": "C",
+              "text": "Uso breve de antidepressivos."
+            },
+            {
+              "letter": "D",
+              "text": "Sintomáticos, se necessário. #####"
+            }
+          ],
+          "correctAnswer": "D",
+          "examId": "usp-2026-ano-adicional",
+          "examTag": "USP Ano Adicional 2026",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2026-ano-adicional-012",
+          "number": 12,
+          "source": "USP 2026 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 12",
+          "text": "O tratamento baseado em evidências científicas no manejo do quadro de dependência de cocaína e crack é:",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Psicoterapia, entrevista motivacional e abordagens de reabilitação psicossocial."
+            },
+            {
+              "letter": "B",
+              "text": "Tratamento de substituição com psicoestimulantes (p.ex. metilfenidato, modafinila)."
+            },
+            {
+              "letter": "C",
+              "text": "Antipsicóticos de 2ª geração em baixa dosagem, como a risperidona e a clozapina."
+            },
+            {
+              "letter": "D",
+              "text": "Anticonvulsivantes, como valproato de sódio, topiramato, pregabalina e carbamazepina. #####"
+            }
+          ],
+          "correctAnswer": "A",
+          "examId": "usp-2026-ano-adicional",
+          "examTag": "USP Ano Adicional 2026",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2026-ano-adicional-013",
+          "number": 13,
+          "source": "USP 2026 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 13",
+          "text": "Qual dos medicamentos a seguir é contraindicado para pacientes com histórico de convulsões ao tratar a dependência de nicotina?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Vareniclina."
+            },
+            {
+              "letter": "B",
+              "text": "Nortriptilina."
+            },
+            {
+              "letter": "C",
+              "text": "Bupropiona."
+            },
+            {
+              "letter": "D",
+              "text": "Reposição de nicotina. #####"
+            }
+          ],
+          "correctAnswer": "C",
+          "examId": "usp-2026-ano-adicional",
+          "examTag": "USP Ano Adicional 2026",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2026-ano-adicional-014",
+          "number": 14,
+          "source": "USP 2026 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 14",
+          "text": "Qual é a recomendação atual do Ministério da Saúde em relação ao uso de cigarros eletrônicos ( vapes) como estratégia para cessação do tabagismo?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Não recomendados por falta de comprovação de eficácia e segurança."
+            },
+            {
+              "letter": "B",
+              "text": "Recomendados apenas em casos resistentes ao tratamento convencional."
+            },
+            {
+              "letter": "C",
+              "text": "Permitidos mediante prescrição médica especializada."
+            },
+            {
+              "letter": "D",
+              "text": "Recomendados como primeira linha devido à redução de danos. #####"
+            }
+          ],
+          "correctAnswer": "A",
+          "examId": "usp-2026-ano-adicional",
+          "examTag": "USP Ano Adicional 2026",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2026-ano-adicional-015",
+          "number": 15,
+          "source": "USP 2026 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 15",
+          "text": "Em relação à vareniclina, é correto afirmar:",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Atua como agonista total nos receptores nicotínicos."
+            },
+            {
+              "letter": "B",
+              "text": "É recomendada como primeira escolha apenas para gestantes."
+            },
+            {
+              "letter": "C",
+              "text": "Tem maior eficácia quando combinada com bupropiona."
+            },
+            {
+              "letter": "D",
+              "text": "Diminui o prazer de fumar ao se ligar parcialmente aos receptores α4β2. #####"
+            }
+          ],
+          "correctAnswer": "D",
+          "examId": "usp-2026-ano-adicional",
+          "examTag": "USP Ano Adicional 2026",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2026-ano-adicional-016",
+          "number": 16,
+          "source": "USP 2026 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 16",
+          "text": "A modulação sináptica dos canabinoides endógenos é conhecida como:",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Estimulação pós-sináptica."
+            },
+            {
+              "letter": "B",
+              "text": "Inibição pós-sináptica."
+            },
+            {
+              "letter": "C",
+              "text": "Inibição do fluxo de cálcio."
+            },
+            {
+              "letter": "D",
+              "text": "Sinalização retrógrada. #####"
+            }
+          ],
+          "correctAnswer": "D",
+          "examId": "usp-2026-ano-adicional",
+          "examTag": "USP Ano Adicional 2026",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2026-ano-adicional-017",
+          "number": 17,
+          "source": "USP 2026 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 17",
+          "text": "Qual a estrutura da planta de Cannabis spp. responsáveis pela produção dos canabinoides e terpenos?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Caule."
+            },
+            {
+              "letter": "B",
+              "text": "Pistilo."
+            },
+            {
+              "letter": "C",
+              "text": "Raízes."
+            },
+            {
+              "letter": "D",
+              "text": "Tricomas. #####"
+            }
+          ],
+          "correctAnswer": "D",
+          "examId": "usp-2026-ano-adicional",
+          "examTag": "USP Ano Adicional 2026",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2026-ano-adicional-018",
+          "number": 18,
+          "source": "USP 2026 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 18",
+          "text": "Sobre o consumo de Cannabis spp., pode-se afirmar:",
+          "options": [
+            {
+              "letter": "A",
+              "text": "O uso crônico causa downregulation dos receptores CB1."
+            },
+            {
+              "letter": "B",
+              "text": "Aumenta a percepção de risco na população em geral."
+            },
+            {
+              "letter": "C",
+              "text": "Reduz o risco de sangramento naqueles que usam warfarina."
+            },
+            {
+              "letter": "D",
+              "text": "Não há risco de morte por intoxicação entre os usuários. ##### Processo Seletivo aos Programas de Residência Médica – Edital: COREME/FM/Nº 03/2025 – Anos Adicionais – Psiquiatria – PROVA AA8"
+            }
+          ],
+          "correctAnswer": "A",
+          "examId": "usp-2026-ano-adicional",
+          "examTag": "USP Ano Adicional 2026",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2026-ano-adicional-019",
+          "number": 19,
+          "source": "USP 2026 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 19",
+          "text": "Assinale a alternativa que está mais alinhada com as atuais evidências neurobiológicas quanto ao impacto do uso crônico de álcool no desenvolvimento cerebral durante a adolescência.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Alterações reversíveis da substância branca sem prejuízos duradouros."
+            },
+            {
+              "letter": "B",
+              "text": "Alterações no córtex occipital sem impacto nos circuitos de recompensa."
+            },
+            {
+              "letter": "C",
+              "text": "Redução do volume do hipocampo, prejudicando memória e aprendizagem."
+            },
+            {
+              "letter": "D",
+              "text": "Comprometimento dos circuitos relacionados ao controle motor fino. #####"
+            }
+          ],
+          "correctAnswer": "C",
+          "examId": "usp-2026-ano-adicional",
+          "examTag": "USP Ano Adicional 2026",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2026-ano-adicional-020",
+          "number": 20,
+          "source": "USP 2026 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 20",
+          "text": "Um adolescente apresenta padrão de abuso de múltiplas substâncias e sintomas intensos de impulsividade. Considerando a associação entre impulsividade e Transtornos por Uso de S ubstâncias (TUS), assinale a alternativa que melhor expressa os achados sobre essa comorbidade.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "A impulsividade elevada é consequência do uso recorrente de substâncias, com pouca evidência de predisposição."
+            },
+            {
+              "letter": "B",
+              "text": "A impulsividade elevada pode preceder o início do uso de substâncias, assim como pode ser potencializada pelo próprio uso."
+            },
+            {
+              "letter": "C",
+              "text": "A impulsividade elevada associa -se, estatisticamente, ao uso de estimulantes por adolescentes sem predisposição."
+            },
+            {
+              "letter": "D",
+              "text": "Não há relação documentada entre impulsividade e vulnerabilidade ao desenvolvimento de TUS em adolescentes. #####"
+            }
+          ],
+          "correctAnswer": "B",
+          "examId": "usp-2026-ano-adicional",
+          "examTag": "USP Ano Adicional 2026",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2026-ano-adicional-021",
+          "number": 21,
+          "source": "USP 2026 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 21",
+          "text": "Qual alternativa ref lete a posição mais atualizada sobre a indicação de tratamento farmacológico para adolescentes com transtorno por uso de substâncias associado à impulsividade?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Indicado em quadros graves, associado a intervenções psicossociais."
+            },
+            {
+              "letter": "B",
+              "text": "Psicoestimulantes de ação curta, com ou sem diagnóstico de TDAH."
+            },
+            {
+              "letter": "C",
+              "text": "Antidepressivos seletivos como estratégia de prevenção de recaídas."
+            },
+            {
+              "letter": "D",
+              "text": "Antagonistas opioides, na ausência de dependência grave do álcool. #####"
+            }
+          ],
+          "correctAnswer": "A",
+          "examId": "usp-2026-ano-adicional",
+          "examTag": "USP Ano Adicional 2026",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2026-ano-adicional-022",
+          "number": 22,
+          "source": "USP 2026 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 22",
+          "text": "Assinale a alternativa correta.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Mulheres têm maior vulnerabilidade genética ao alcoolismo que os homens."
+            },
+            {
+              "letter": "B",
+              "text": "A maternidade influencia a recuperação das mulheres farmacodependentes."
+            },
+            {
+              "letter": "C",
+              "text": "Mulheres iniciam o consumo de álcool e drogas em busca de novas sensações."
+            },
+            {
+              "letter": "D",
+              "text": "Homens apresentam uma progressão mais rápida do alcoolismo que as mulheres. #####"
+            }
+          ],
+          "correctAnswer": "B",
+          "examId": "usp-2026-ano-adicional",
+          "examTag": "USP Ano Adicional 2026",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2026-ano-adicional-023",
+          "number": 23,
+          "source": "USP 2026 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 23",
+          "text": "Na comparação entre homens e mu lheres alcoolistas, as mulheres",
+          "options": [
+            {
+              "letter": "A",
+              "text": "tentam mais suicídio."
+            },
+            {
+              "letter": "B",
+              "text": "bebem mais rapidamente."
+            },
+            {
+              "letter": "C",
+              "text": "usam mais drogas ilícitas."
+            },
+            {
+              "letter": "D",
+              "text": "têm menos danos clínicos. #####"
+            }
+          ],
+          "correctAnswer": "A",
+          "examId": "usp-2026-ano-adicional",
+          "examTag": "USP Ano Adicional 2026",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2026-ano-adicional-024",
+          "number": 24,
+          "source": "USP 2026 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 24",
+          "text": "Sobre gestantes usuárias de crack, pode-se afirmar:",
+          "options": [
+            {
+              "letter": "A",
+              "text": "O uso de crack na gestação, por si só, não é indicação de perda de guarda ou afastamento da criança de sua mãe."
+            },
+            {
+              "letter": "B",
+              "text": "O acompanhamento pré -natal deve ser realizado em serviços especializados e/ou de alta complexidade."
+            },
+            {
+              "letter": "C",
+              "text": "É comum o recém -nascido apresentar síndrome de abstinência e necessitar de cuidados intensivos ao nascimento."
+            },
+            {
+              "letter": "D",
+              "text": "Não é necessária nenhuma intervenção especial nesses casos e deve-se aguardar o fim da gestação para abordar a questão. #####"
+            }
+          ],
+          "correctAnswer": "A",
+          "examId": "usp-2026-ano-adicional",
+          "examTag": "USP Ano Adicional 2026",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2026-ano-adicional-025",
+          "number": 25,
+          "source": "USP 2026 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 25",
+          "text": "Os Medicamentos para os Tratamentos por Uso de Opioides (MTUO) abrangem tanto as medicações agonistas opioides como os antagonistas opioides. Em relação a esses medicamentos, assinale a alternativa correta.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "A terapia substitutiva inclui opioides de meia -via longa, que permitem a redução de dose gradual sem causar sintomas de abstinência."
+            },
+            {
+              "letter": "B",
+              "text": "A principal vantagem dos MTUO é a redução de mortalidade, incluindo mortes por suicídio durante períodos estáveis de tratamento."
+            },
+            {
+              "letter": "C",
+              "text": "A retirada supervisionada ambulatorial pode ser difícil, tornando a transição para um antagonista mais prática do que um agonista."
+            },
+            {
+              "letter": "D",
+              "text": "Os MTUO reforçam a abstinência, porém pioram a retenção ao tratamento, não sendo indicada em casos leves a moderados. #####"
+            }
+          ],
+          "correctAnswer": "B",
+          "examId": "usp-2026-ano-adicional",
+          "examTag": "USP Ano Adicional 2026",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2026-ano-adicional-026",
+          "number": 26,
+          "source": "USP 2026 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 26",
+          "text": "No manejo da dependência do zolpidem, devido à sua meia- vida curta e por ser administrado uma vez ao dia, pode -se observar menos dependência física do que ao diazepam (presente durante todo o dia). Assim, recomenda -se preferencialmente a redução gradual da dose do zolpidem. Caso o paciente descreva sintomas de abstinência entre doses, qual a medicação indicada?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Benzodiazepínico de ação longa."
+            },
+            {
+              "letter": "B",
+              "text": "Benzodiazepínico de ação curta."
+            },
+            {
+              "letter": "C",
+              "text": "Pregabalina ou gabapentina."
+            },
+            {
+              "letter": "D",
+              "text": "Zolpidem de liberação prolongada. ##### Processo Seletivo aos Programas de Residência Médica – Edital: COREME/FM/Nº 03/2025 – Anos Adicionais – Psiquiatria – PROVA AA8"
+            }
+          ],
+          "correctAnswer": "A",
+          "examId": "usp-2026-ano-adicional",
+          "examTag": "USP Ano Adicional 2026",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2026-ano-adicional-027",
+          "number": 27,
+          "source": "USP 2026 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 27",
+          "text": "Qual o grupo com maior risco de efeitos adversos pela continuação do uso de benzodiazepínicos?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Pessoas com 50 anos de idade ou mais."
+            },
+            {
+              "letter": "B",
+              "text": "Pessoas com mais de 65 anos de idade."
+            },
+            {
+              "letter": "C",
+              "text": "Mulheres na pré-menopausa."
+            },
+            {
+              "letter": "D",
+              "text": "Usuários por mais de 1 mês. #####"
+            }
+          ],
+          "correctAnswer": "B",
+          "examId": "usp-2026-ano-adicional",
+          "examTag": "USP Ano Adicional 2026",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2026-ano-adicional-028",
+          "number": 28,
+          "source": "USP 2026 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 28",
+          "text": "Quando surgem os sintomas de abstinência ao parar de fumar, e quando eles atingem o pico típico?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Iniciam em 1 hora; pico em 12 h."
+            },
+            {
+              "letter": "B",
+              "text": "Iniciam em 8 horas; pico em 3 a 4 dias."
+            },
+            {
+              "letter": "C",
+              "text": "Iniciam após 24 horas; pico em 7 a 10 dias."
+            },
+            {
+              "letter": "D",
+              "text": "Iniciam após 48 horas; pico em 2 semanas. #####"
+            }
+          ],
+          "correctAnswer": "C",
+          "examId": "usp-2026-ano-adicional",
+          "examTag": "USP Ano Adicional 2026",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2026-ano-adicional-029",
+          "number": 29,
+          "source": "USP 2026 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 29",
+          "text": "Qual o esquema inicial recomendado para uso de nicotina em goma de mascar?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "2 mg a cada 2 h no dia todo por 20 dias."
+            },
+            {
+              "letter": "B",
+              "text": "4 mg a cada 1 a 2 h, por até 12 semanas."
+            },
+            {
+              "letter": "C",
+              "text": "8 mg por dia, durante 3 meses."
+            },
+            {
+              "letter": "D",
+              "text": "Uso contínuo de 1 mg por 6 semanas. #####"
+            }
+          ],
+          "correctAnswer": "B",
+          "examId": "usp-2026-ano-adicional",
+          "examTag": "USP Ano Adicional 2026",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2026-ano-adicional-030",
+          "number": 30,
+          "source": "USP 2026 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 30",
+          "text": "Qual das substâncias apresentadas a seguir é agonista total ou agonista direto dos receptores CB1?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Canabidiol (CBD)."
+            },
+            {
+              "letter": "B",
+              "text": "Canabinoide sintético K2."
+            },
+            {
+              "letter": "C",
+              "text": "Delta-9 tetrahidrocannabinol (THC)."
+            },
+            {
+              "letter": "D",
+              "text": "Ácido tetrahidrocanabinólico. #####"
+            }
+          ],
+          "correctAnswer": "B",
+          "examId": "usp-2026-ano-adicional",
+          "examTag": "USP Ano Adicional 2026",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2026-ano-adicional-031",
+          "number": 31,
+          "source": "USP 2026 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 31",
+          "text": "Segundo o DSM -5, pode -se considera r um sintoma de abstinência de Cannabis spp.:",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Boca seca."
+            },
+            {
+              "letter": "B",
+              "text": "Olhos vermelhos."
+            },
+            {
+              "letter": "C",
+              "text": "Diminuição do apetite."
+            },
+            {
+              "letter": "D",
+              "text": "Aumento da sociabilidade. #####"
+            }
+          ],
+          "correctAnswer": "C",
+          "examId": "usp-2026-ano-adicional",
+          "examTag": "USP Ano Adicional 2026",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2026-ano-adicional-032",
+          "number": 32,
+          "source": "USP 2026 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 32",
+          "text": "Entre os principais fatores de risco para o mau uso ou adição de opioides de acordo com a Opioid Risk Tool, pode-se citar:",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Faixa etária da pessoa entre 50 e 65 anos."
+            },
+            {
+              "letter": "B",
+              "text": "Histórico de violência física na adolescência."
+            },
+            {
+              "letter": "C",
+              "text": "Histórico pessoal de abuso de substâncias."
+            },
+            {
+              "letter": "D",
+              "text": "Transtornos psiquiátricos comórbidos. #####"
+            }
+          ],
+          "correctAnswer": "D",
+          "examId": "usp-2026-ano-adicional",
+          "examTag": "USP Ano Adicional 2026",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2026-ano-adicional-033",
+          "number": 33,
+          "source": "USP 2026 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 33",
+          "text": "No atendimento a um paciente com um quadro clínico de intoxicação medicamentosa por opioide, observam -se os seguintes sintomas:",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Miose, sedação e depressão respiratória."
+            },
+            {
+              "letter": "B",
+              "text": "Miose, agitação psicomotora e taquicardia."
+            },
+            {
+              "letter": "C",
+              "text": "Miose, agitação psicomotora e taquipneia."
+            },
+            {
+              "letter": "D",
+              "text": "Midríase, sedação e hipertensão arterial #####"
+            }
+          ],
+          "correctAnswer": "A",
+          "examId": "usp-2026-ano-adicional",
+          "examTag": "USP Ano Adicional 2026",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2026-ano-adicional-034",
+          "number": 34,
+          "source": "USP 2026 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 34",
+          "text": "Assinale a alternativa que apresenta um sintoma típico da síndrome de abstinência por opioides.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Arreflexia."
+            },
+            {
+              "letter": "B",
+              "text": "Lacrimejamento."
+            },
+            {
+              "letter": "C",
+              "text": "Prurido."
+            },
+            {
+              "letter": "D",
+              "text": "Rubor facial. #####"
+            }
+          ],
+          "correctAnswer": "B",
+          "examId": "usp-2026-ano-adicional",
+          "examTag": "USP Ano Adicional 2026",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2026-ano-adicional-035",
+          "number": 35,
+          "source": "USP 2026 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 35",
+          "text": "Entre os sintomas da tríade clássica da encefalopatia de Wernicke, qual a característica mais consistente?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Anormalidade leve da marcha."
+            },
+            {
+              "letter": "B",
+              "text": "Alteração no estado mental."
+            },
+            {
+              "letter": "C",
+              "text": "Nistagmo horizontal ou vertical."
+            },
+            {
+              "letter": "D",
+              "text": "Paralisia do sexto par craniano. #####"
+            }
+          ],
+          "correctAnswer": "B",
+          "examId": "usp-2026-ano-adicional",
+          "examTag": "USP Ano Adicional 2026",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2026-ano-adicional-036",
+          "number": 36,
+          "source": "USP 2026 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 36",
+          "text": "No tratamento da síndrome de abstinência do álcool, o uso da tiamina tem como objetivo prevenir o desenvolviment o da Encefalopatia de Wernicke. Qual a via de administração mais segura da tiamina?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Intravenosa."
+            },
+            {
+              "letter": "B",
+              "text": "Intramuscular."
+            },
+            {
+              "letter": "C",
+              "text": "Oral."
+            },
+            {
+              "letter": "D",
+              "text": "Retal. #####"
+            }
+          ],
+          "correctAnswer": "B",
+          "examId": "usp-2026-ano-adicional",
+          "examTag": "USP Ano Adicional 2026",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2026-ano-adicional-037",
+          "number": 37,
+          "source": "USP 2026 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 37",
+          "text": "Homem, 29 anos de idade, faz uso de Cannabis spp. há mais de 11 anos. Refere aumento progressivo do consumo e do tempo gasto consumindo a substância. Reduziu significativamente seu convívio social e não está trabalhando há 5 meses. Refere ansiedade e irritabilidade, cansaço e pensa re correntemente em usar a droga. Qual medicação pode ser utilizada no tratamento da fissura em pacientes com transtornos relacionados ao uso de Cannabis spp.?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Gabapentina."
+            },
+            {
+              "letter": "B",
+              "text": "Fluoxetina."
+            },
+            {
+              "letter": "C",
+              "text": "Sertralina."
+            },
+            {
+              "letter": "D",
+              "text": "Topiramato. ##### Processo Seletivo aos Programas de Residência Médica – Edital: COREME/FM/Nº 03/2025 – Anos Adicionais – Psiquiatria – PROVA AA8"
+            }
+          ],
+          "correctAnswer": "A",
+          "examId": "usp-2026-ano-adicional",
+          "examTag": "USP Ano Adicional 2026",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2026-ano-adicional-038",
+          "number": 38,
+          "source": "USP 2026 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 38",
+          "text": "Adolescente, 17 anos de idade, sexo masculino, iniciou o uso de Cannabis spp.aos 12 anos de idade e nos últimos 2 anos, tem feito uso diário, mais de dois cigarros de maconha por dia e uso quase semanal de haxixe. Há 1 ano e meio , tem apresentado conflitos na escola, que abandonou há 3 meses, e em sua casa. Recentemente, agrediu o pai que o recriminou por ter perdido dinheiro em aplicativos de jogos no celular. Assinale a alternativa que descreve com maior precisão os achados contempo râneos de neuroimagem funcional em adolescentes e adultos jovens usuários de Cannabis spp.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Diminuição da conectividade entre o córtex pré -frontal dorsolateral e o estriado ventral."
+            },
+            {
+              "letter": "B",
+              "text": "Elevação do fluxo sanguíneo na substância negra, que pode reverter com a abstinência."
+            },
+            {
+              "letter": "C",
+              "text": "Intensificação da atividade do lobo occipital, sem alterações estruturais observáveis."
+            },
+            {
+              "letter": "D",
+              "text": "Hipoatividade do cerebelo, com pouca repercussão em circuitos cortico-estriatais. #####"
+            }
+          ],
+          "correctAnswer": "A",
+          "examId": "usp-2026-ano-adicional",
+          "examTag": "USP Ano Adicional 2026",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2026-ano-adicional-039",
+          "number": 39,
+          "source": "USP 2026 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 39",
+          "text": "Em relação aos fatores neurocomportamentais que contribuem para o início precoce do uso de substâncias psicoativas em adolescentes, assinale a alternativa que apresenta corretamente as mais recentes descobertas.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "O córtex pré -frontal em adolescentes encontra -se amadurecido, reduzindo o risco de tomada de decisão impulsiva relacionada ao uso de substâncias."
+            },
+            {
+              "letter": "B",
+              "text": "Os fatores ambientais, como contexto familia r e social de risco, e a reprovação escolar, são os principais responsáveis pelo início precoce do uso."
+            },
+            {
+              "letter": "C",
+              "text": "O desenvolvimento neurocomportamental de adolescentes usuários de substâncias impulsivos é semelhante ao de adultos em abstinência."
+            },
+            {
+              "letter": "D",
+              "text": "A maturação precoce do sistema límbico e o desenvolvimento tardio do córtex pré -frontal aumentam o risco de comportamentos impulsivos. #####"
+            }
+          ],
+          "correctAnswer": "D",
+          "examId": "usp-2026-ano-adicional",
+          "examTag": "USP Ano Adicional 2026",
+          "provider": "USP"
+        },
+        {
+          "id": "usp-2026-ano-adicional-040",
+          "number": 40,
+          "source": "USP 2026 - Ano Adicional",
+          "topic": "Ano Adicional",
+          "title": "Questao 40",
+          "text": "Assinale a substância psicoativa que traz mais prejuízos ao crescimento fetal e à placenta.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Cafeína."
+            },
+            {
+              "letter": "B",
+              "text": "Cocaína."
+            },
+            {
+              "letter": "C",
+              "text": "Heroína."
+            },
+            {
+              "letter": "D",
+              "text": "Maconha. #####"
+            }
+          ],
+          "correctAnswer": "B",
+          "examId": "usp-2026-ano-adicional",
+          "examTag": "USP Ano Adicional 2026",
           "provider": "USP"
         }
       ]
