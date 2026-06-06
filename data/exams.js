@@ -36878,13 +36878,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "O tratamento farmacológico atual para a doença de Alzheimer inclui inibidores da colinesterase e um antagonista parcial de receptores N-metil-D-aspartato. #### Processo Seletivo aos Programas de Residência Médica – Edital: COREME/FM/Nº 01/2024 – Áreas de Atuações – Psicogeriatria – PROVA F17"
+              "text": "O tratamento farmacológico atual para a doença de Alzheimer inclui inibidores da colinesterase e um antagonista parcial de receptores N-metil-D-aspartato."
             }
           ],
           "correctAnswer": "D",
           "examId": "usp-2025-f17",
           "examTag": "USP Psicogeriatria 2025",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-06T08:16:28"
         },
         {
           "id": "usp-2025-f17-007",
@@ -36938,13 +36940,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Giro temporal superior. ####"
+              "text": "Giro temporal superior."
             }
           ],
           "correctAnswer": "C",
           "examId": "usp-2025-f17",
           "examTag": "USP Psicogeriatria 2025",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-06T08:16:28"
         },
         {
           "id": "usp-2025-f17-009",
@@ -36968,13 +36972,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Desinibição; indiferença afetiva; dificuldades em planejamento e solução de problemas. ####"
+              "text": "Desinibição; indiferença afetiva; dificuldades em planejamento e solução de problemas."
             }
           ],
           "correctAnswer": "D",
           "examId": "usp-2025-f17",
           "examTag": "USP Psicogeriatria 2025",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-06T08:16:28"
         },
         {
           "id": "usp-2025-f17-010",
@@ -36998,13 +37004,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Envelhecimento normal. ####"
+              "text": "Envelhecimento normal."
             }
           ],
           "correctAnswer": "B",
           "examId": "usp-2025-f17",
           "examTag": "USP Psicogeriatria 2025",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-06T08:16:28"
         },
         {
           "id": "usp-2025-f17-011",
@@ -37028,13 +37036,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "A psicose explica a perda de funcionalidade, portanto, doença neurodegenerativa não é uma hipótese diagnóstica. #### Processo Seletivo aos Programas de Residência Médica – Edital: COREME/FM/Nº 01/2024 – Áreas de Atuações – Psicogeriatria – PROVA F17 TEXTO PARA AS QUESTÕES DE 12 A 14 H o m e m d e 8 1 a n o s d e i d a d e , e n g e n h e i r o a p o s e n t a d o , previamente hígido do ponto de vista psiquiátrico. Há 3 meses, vem relatando preocupações e ansiedade com relação à sua situação financeira. Tem algumas dívidas em crédito consignado, mas quer “resolvê-las” o mais breve possível: liga para os familiares pedindo empréstimos, com o intuito de investir em ativos financeiros mais atraentes. Está intransigente e não aceita opin iões contrárias, quando se tenta explicar os maiores riscos dessa estratégia. Segundo o filho, tais comportamentos são incompatíveis com a sua personalidade habitual, pois sempre foi pessoa flexível, criterioso quanto à tomada de riscos e nunca foi de expor suas dificuldades à família. O paciente exibe grande otimismo com a sua estratégia financeira e fica bastante irritado quando os familiares tentam coibir. Cheg ou a agredir fisicamente a esposa e o filho, mostrou-se arrependido depois. À noite, fica acordado até as 2 horas da manhã, pensando em novos empreendimentos e acorda cedo para colocar todos os seus projetos em prática. Contudo, o filho observa que ele não avança de maneira assertiva com nenhum projeto. Seu pensamento está acelerado, com preservação dos nexos associativos entre ideias. Ne sse período, passou a ingerir álcool em maior quantidade, cerca de quatro vezes por semana. Não tem alterações de apetite ou do padrão alimentar. Não há sintomas psicóticos e não há queixas cognitivas. Sua crítica sobre seu estado mental é pobre; recusa-se a tomar qualquer medicação psiquiátrica. MoCA 26 pontos (perde 1 ponto na fluência verbal; 1 ponto na vigilância em erro por comissão; 2 pontos na evocação tardia, com benefício de pistas); testes específicos não mostraram alterações em cognição social. Ao exame neurológico, apresenta parkinsonismo de predomínio nos membros inferiores. Comorbidades: hipertensão arterial sistêmica, diabetes melito, ex-tabagista (carga de 50 anos-maço), doença arterial coronariana (a ngioplastia prévia), doença renal crônica (estágio IV). Me dicações em uso: valsartana, hidroclorotiazida, anlodipino, atorvastatina, insulinoterapia, metformina e glicazida)."
+              "text": "A psicose explica a perda de funcionalidade, portanto, doença neurodegenerativa não é uma hipótese diagnóstica."
             }
           ],
           "correctAnswer": "C",
           "examId": "usp-2025-f17",
           "examTag": "USP Psicogeriatria 2025",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-06T08:16:28"
         },
         {
           "id": "usp-2025-f17-012",
@@ -37042,7 +37052,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 12",
-          "text": "Assinale a alternativa que apresenta a principal hipótese diagnóstica e uma possível etiologia subjacente.",
+          "text": "TEXTO PARA AS QUESTÕES DE 12 A 14 \nHomem de 81 anos de idade, engenheiro aposentado, previamente hígido do ponto de vista psiquiátrico. Há 3 meses, vem relatando preocupações e ansiedade com relação à sua situação financeira. Tem algumas dívidas em crédito consignado, mas quer “resolvê-las” o mais breve possível: liga para os familiares pedindo empréstimos, com o intuito de investir em ativos financeiros mais atraentes. Está intransigente e não aceita opin iões contrárias, quando se tenta explicar os maiores riscos dessa estratégia. Segundo o filho, tais comportamentos são incompatíveis com a sua personalidade habitual, pois sempre foi pessoa flexível, criterioso quanto à tomada de riscos e nunca foi de expor suas dificuldades à família. O paciente exibe grande otimismo com a sua estratégia financeira e fica bastante irritado quando os familiares tentam coibir. Cheg ou a agredir fisicamente a esposa e o filho, mostrou-se arrependido depois. À noite, fica acordado até as 2 horas da manhã, pensando em novos empreendimentos e acorda cedo para colocar todos os seus projetos em prática. Contudo, o filho observa que ele não avança de maneira assertiva com nenhum projeto. Seu pensamento está acelerado, com preservação dos nexos associativos entre ideias. Ne sse período, passou a ingerir álcool em maior quantidade, cerca de quatro vezes por semana. Não tem alterações de apetite ou do padrão alimentar. Não há sintomas psicóticos e não há queixas cognitivas. Sua crítica sobre seu estado mental é pobre; recusa-se a tomar qualquer medicação psiquiátrica. MoCA 26 pontos (perde 1 ponto na fluência verbal; 1 ponto na vigilância em erro por comissão; 2 pontos na evocação tardia, com benefício de pistas); testes específicos não mostraram alterações em cognição social. Ao exame neurológico, apresenta parkinsonismo de predomínio nos membros inferiores. Comorbidades: hipertensão arterial sistêmica, diabetes melito, ex-tabagista (carga de 50 anos-maço), doença arterial coronariana (a ngioplastia prévia), doença renal crônica (estágio IV). Me dicações em uso: valsartana, hidroclorotiazida, anlodipino, atorvastatina, insulinoterapia, metformina e glicazida).Assinale a alternativa que apresenta a principal hipótese diagnóstica e uma possível etiologia subjacente.",
           "options": [
             {
               "letter": "A",
@@ -37064,7 +37074,9 @@ window.BANCO_RMAIS_EXAMS = {
           "correctAnswer": "B",
           "examId": "usp-2025-f17",
           "examTag": "USP Psicogeriatria 2025",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-06T08:16:28"
         },
         {
           "id": "usp-2025-f17-013",
@@ -37072,7 +37084,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 13",
-          "text": "A respeito do caso descrito, assinale a alternativa correta em relação aos aspectos neuropsiquiátricos e cognitivos.",
+          "text": "Homem de 81 anos de idade, engenheiro aposentado, previamente hígido do ponto de vista psiquiátrico. Há 3 meses, vem relatando preocupações e ansiedade com relação à sua situação financeira. Tem algumas dívidas em crédito consignado, mas quer “resolvê-las” o mais breve possível: liga para os familiares pedindo empréstimos, com o intuito de investir em ativos financeiros mais atraentes. Está intransigente e não aceita opin iões contrárias, quando se tenta explicar os maiores riscos dessa estratégia. Segundo o filho, tais comportamentos são incompatíveis com a sua personalidade habitual, pois sempre foi pessoa flexível, criterioso quanto à tomada de riscos e nunca foi de expor suas dificuldades à família. O paciente exibe grande otimismo com a sua estratégia financeira e fica bastante irritado quando os familiares tentam coibir. Cheg ou a agredir fisicamente a esposa e o filho, mostrou-se arrependido depois. À noite, fica acordado até as 2 horas da manhã, pensando em novos empreendimentos e acorda cedo para colocar todos os seus projetos em prática. Contudo, o filho observa que ele não avança de maneira assertiva com nenhum projeto. Seu pensamento está acelerado, com preservação dos nexos associativos entre ideias. Ne sse período, passou a ingerir álcool em maior quantidade, cerca de quatro vezes por semana. Não tem alterações de apetite ou do padrão alimentar. Não há sintomas psicóticos e não há queixas cognitivas. Sua crítica sobre seu estado mental é pobre; recusa-se a tomar qualquer medicação psiquiátrica. MoCA 26 pontos (perde 1 ponto na fluência verbal; 1 ponto na vigilância em erro por comissão; 2 pontos na evocação tardia, com benefício de pistas); testes específicos não mostraram alterações em cognição social. Ao exame neurológico, apresenta parkinsonismo de predomínio nos membros inferiores. Comorbidades: hipertensão arterial sistêmica, diabetes melito, ex-tabagista (carga de 50 anos-maço), doença arterial coronariana (a ngioplastia prévia), doença renal crônica (estágio IV). Me dicações em uso: valsartana, hidroclorotiazida, anlodipino, atorvastatina, insulinoterapia, metformina e glicazida).Assinale a alternativa que apresenta a principal hipótese diagnóstica e uma possível etiologia subjacente.\nA respeito do caso descrito, assinale a alternativa correta em relação aos aspectos neuropsiquiátricos e cognitivos.",
           "options": [
             {
               "letter": "A",
@@ -37088,13 +37100,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "O julgamento pobre para tomada de decisões tipicamente reflete lesões em pré-cuneus e cíngulo posterior. ####"
+              "text": "O julgamento pobre para tomada de decisões tipicamente reflete lesões em pré-cuneus e cíngulo posterior."
             }
           ],
           "correctAnswer": "A",
           "examId": "usp-2025-f17",
           "examTag": "USP Psicogeriatria 2025",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-06T08:16:28"
         },
         {
           "id": "usp-2025-f17-014",
@@ -37102,7 +37116,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 14",
-          "text": "Considerando o caso descrito , assinale a alternativa que contém uma conduta/proposta de tratamento apropriada para esse paciente neste momento.",
+          "text": "Homem de 81 anos de idade, engenheiro aposentado, previamente hígido do ponto de vista psiquiátrico. Há 3 meses, vem relatando preocupações e ansiedade com relação à sua situação financeira. Tem algumas dívidas em crédito consignado, mas quer “resolvê-las” o mais breve possível: liga para os familiares pedindo empréstimos, com o intuito de investir em ativos financeiros mais atraentes. Está intransigente e não aceita opin iões contrárias, quando se tenta explicar os maiores riscos dessa estratégia. Segundo o filho, tais comportamentos são incompatíveis com a sua personalidade habitual, pois sempre foi pessoa flexível, criterioso quanto à tomada de riscos e nunca foi de expor suas dificuldades à família. O paciente exibe grande otimismo com a sua estratégia financeira e fica bastante irritado quando os familiares tentam coibir. Cheg ou a agredir fisicamente a esposa e o filho, mostrou-se arrependido depois. À noite, fica acordado até as 2 horas da manhã, pensando em novos empreendimentos e acorda cedo para colocar todos os seus projetos em prática. Contudo, o filho observa que ele não avança de maneira assertiva com nenhum projeto. Seu pensamento está acelerado, com preservação dos nexos associativos entre ideias. Ne sse período, passou a ingerir álcool em maior quantidade, cerca de quatro vezes por semana. Não tem alterações de apetite ou do padrão alimentar. Não há sintomas psicóticos e não há queixas cognitivas. Sua crítica sobre seu estado mental é pobre; recusa-se a tomar qualquer medicação psiquiátrica. MoCA 26 pontos (perde 1 ponto na fluência verbal; 1 ponto na vigilância em erro por comissão; 2 pontos na evocação tardia, com benefício de pistas); testes específicos não mostraram alterações em cognição social. Ao exame neurológico, apresenta parkinsonismo de predomínio nos membros inferiores. Comorbidades: hipertensão arterial sistêmica, diabetes melito, ex-tabagista (carga de 50 anos-maço), doença arterial coronariana (a ngioplastia prévia), doença renal crônica (estágio IV). Me dicações em uso: valsartana, hidroclorotiazida, anlodipino, atorvastatina, insulinoterapia, metformina e glicazida).Assinale a alternativa que apresenta a principal hipótese diagnóstica e uma possível etiologia subjacente.\nConsiderando o caso descrito , assinale a alternativa que contém uma conduta/proposta de tratamento apropriada para esse paciente neste momento.",
           "options": [
             {
               "letter": "A",
@@ -37118,13 +37132,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Internação hospitalar/quetiapina e divalproato. ####"
+              "text": "Internação hospitalar/quetiapina e divalproato."
             }
           ],
           "correctAnswer": "D",
           "examId": "usp-2025-f17",
           "examTag": "USP Psicogeriatria 2025",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-06T08:16:28"
         },
         {
           "id": "usp-2025-f17-015",
@@ -37148,13 +37164,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Realizar ultrassonografia de tiroide. #### Processo Seletivo aos Programas de Residência Médica – Edital: COREME/FM/Nº 01/2024 – Áreas de Atuações – Psicogeriatria – PROVA F17 TEXTO PARA AS QUESTÕES 16 E 17 Mulher, 67 anos de idade, psicóloga, viúva há 10 anos, procura atendimento médico devido a sintomas de desconforto emocional iniciados há 2 meses. Refere choro fácil, tristeza, sensação de ansiedade, principalmente quando vê notícias de acidentes na televisão. Conta que seu primo faleceu há cerca de 3 meses num acidente de motocicleta. Nega pensamentos de morte, alteração de sono ou apetite. Desde então, sente dificuldade para conseguir manter atenção durante seus atendimentos clínicos e teve um evento recente de esquecer a panela no fogo. Apesar disto, tem conseguido realizar suas atividades habituais, sem necessitar de auxílio de terceiros. Nega tratamentos psiquiátricos prévios. Antecedentes clínicos de hipertensão arterial sistêmica e dislipidemia, fazendo uso de maleato de enalapril 40 mg/dia e sinvastatina 20 mg/dia. Realizou diversos exames laboratoriais que estavam dentro dos padrões da normalidade. Em testagem cognitiva com o MoCA ( Montreal Cognitive Assessment) pontuou 25 em 30 pontos. Perdeu um ponto no teste de trilhas, um ponto na cópia do cubo, dois pontos no subtestes de atenção e um ponto em evocação tardia (porém conseguiu evocar corretamente com auxílio da pista de categoria)."
+              "text": "Realizar ultrassonografia de tiroide."
             }
           ],
           "correctAnswer": "C",
           "examId": "usp-2025-f17",
           "examTag": "USP Psicogeriatria 2025",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-06T08:16:28"
         },
         {
           "id": "usp-2025-f17-016",
@@ -37162,7 +37180,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 16",
-          "text": "Considerando os dados disponíveis, quais seriam as hipóteses diagnósticas mais prováveis para o caso?",
+          "text": "TEXTO PARA AS QUESTÕES 16 E 17 Mulher, 67 anos de idade, psicóloga, viúva há 10 anos, procura atendimento médico devido a sintomas de desconforto emocional iniciados há 2 meses. Refere choro fácil, tristeza, sensação de ansiedade, principalmente quando vê notícias de acidentes na televisão. Conta que seu primo faleceu há cerca de 3 meses num acidente de motocicleta. Nega pensamentos de morte, alteração de sono ou apetite. Desde então, sente dificuldade para conseguir manter atenção durante seus atendimentos clínicos e teve um evento recente de esquecer a panela no fogo. Apesar disto, tem conseguido realizar suas atividades habituais, sem necessitar de auxílio de terceiros. Nega tratamentos psiquiátricos prévios. Antecedentes clínicos de hipertensão arterial sistêmica e dislipidemia, fazendo uso de maleato de enalapril 40 mg/dia e sinvastatina 20 mg/dia. Realizou diversos exames laboratoriais que estavam dentro dos padrões da normalidade. Em testagem cognitiva com o MoCA ( Montreal Cognitive Assessment) pontuou 25 em 30 pontos. Perdeu um ponto no teste de trilhas, um ponto na cópia do cubo, dois pontos no subtestes de atenção e um ponto em evocação tardia (porém conseguiu evocar corretamente com auxílio da pista de categoria).\n\nConsiderando os dados disponíveis, quais seriam as hipóteses diagnósticas mais prováveis para o caso?",
           "options": [
             {
               "letter": "A",
@@ -37178,13 +37196,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Demência leve de predomínio amnéstico e transtorno do luto prolongado. ####"
+              "text": "Demência leve de predomínio amnéstico e transtorno do luto prolongado."
             }
           ],
           "correctAnswer": "C",
           "examId": "usp-2025-f17",
           "examTag": "USP Psicogeriatria 2025",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-06T08:16:28"
         },
         {
           "id": "usp-2025-f17-017",
@@ -37268,13 +37288,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Como ainda não existe tratamento farmacológico específico, a abordagem medicamentosa dos quadros com alterações comportamentais importantes deve ser feita sintomaticamente com o uso de psicofármacos. #### Processo Seletivo aos Programas de Residência Médica – Edital: COREME/FM/Nº 01/2024 – Áreas de Atuações – Psicogeriatria – PROVA F17 TEXTO PARA AS QUESTÕES 20 E 21 Homem de 60 anos de idade, professor aposentado, cujos filhos relatam mudanças do comportamento há 15 dias. Está dormindo menos, agitado, com certa euforia, muitas ideias ao mesmo tempo e “sem filtro”. Estão preocupados com gastos excessivos e suspeitam que ele está se relacionando com várias mulheres. Fez tratamento para episódio depressivo há 16 anos, após falecimento da esposa. Nega uso de substâncias psicoativas. Não há histórico de traumatismo cranioencefálico ou crises convulsivas. Hipert enso e com antecedente de infarto agudo do miocárdio há 5 anos. Nega história familiar de doenças psiquiátricas. Faz uso de enalapril 10 mg/dia, AAS 100 mg/dia, sertralina 50 mg/dia e clonazepam 0,5 mg/noite. Exame psíquico: vigil, parcialmente orientado em espaço e tempo, hipotenaz, humor eufórico, afeto expansivo, pensamento acelerado, discurso taquilálico com fuga de ideias, conteúdo grandioso. PA de 150x83mmhg FC de 82 bpm."
+              "text": "Como ainda não existe tratamento farmacológico específico, a abordagem medicamentosa dos quadros com alterações comportamentais importantes deve ser feita sintomaticamente com o uso de psicofármacos."
             }
           ],
           "correctAnswer": "D",
           "examId": "usp-2025-f17",
           "examTag": "USP Psicogeriatria 2025",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-06T08:16:28"
         },
         {
           "id": "usp-2025-f17-020",
@@ -37282,7 +37304,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 20",
-          "text": "Assinale a alternativa que apresenta a melhor hipótese diagnóstica para o caso descrito.",
+          "text": "TEXTO PARA AS QUESTÕES 20 E 21 Homem de 60 anos de idade, professor aposentado, cujos filhos relatam mudanças do comportamento há 15 dias. Está dormindo menos, agitado, com certa euforia, muitas ideias ao mesmo tempo e “sem filtro”. Estão preocupados com gastos excessivos e suspeitam que ele está se relacionando com várias mulheres. Fez tratamento para episódio depressivo há 16 anos, após falecimento da esposa. Nega uso de substâncias psicoativas. Não há histórico de traumatismo cranioencefálico ou crises convulsivas. Hipert enso e com antecedente de infarto agudo do miocárdio há 5 anos. Nega história familiar de doenças psiquiátricas. Faz uso de enalapril 10 mg/dia, AAS 100 mg/dia, sertralina 50 mg/dia e clonazepam 0,5 mg/noite. Exame psíquico: vigil, parcialmente orientado em espaço e tempo, hipotenaz, humor eufórico, afeto expansivo, pensamento acelerado, discurso taquilálico com fuga de ideias, conteúdo grandioso. PA de 150x83mmhg FC de 82 bpm.\nAssinale a alternativa que apresenta a melhor hipótese diagnóstica para o caso descrito.",
           "options": [
             {
               "letter": "A",
@@ -37298,13 +37320,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Transtorno bipolar é um diagnóstico possível, já que o episódio atual preenche critérios para a mania. ####"
+              "text": "Transtorno bipolar é um diagnóstico possível, já que o episódio atual preenche critérios para a mania."
             }
           ],
           "correctAnswer": "D",
           "examId": "usp-2025-f17",
           "examTag": "USP Psicogeriatria 2025",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-06T08:16:28"
         },
         {
           "id": "usp-2025-f17-021",
@@ -37328,13 +37352,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Iniciar olanzapina, suspender sertralina e solicitar exames laboratoriais. #### TEXTO PARA AS QUESTÕES 22 E 23 Mulher de 77 anos de idade, com diagnósticos de demência na doença de Alzheimer (FAST 5), transtorno bipolar do tipo I (início aos 30 anos de idade, em remissão nos últimos seis anos), hipertensão arterial sistêmica, hipotireoidismo, dislipidemia, constipação crônica, osteoartrose de joelho, presbiacusia moderada bilateral (teve indicação de prótese auditiva). Há uma semana, ficou internada durante três dias em leito de UTI por sepse de foco urinário com injúria renal aguda (KDIGO 2). Com a antibioticoterapia e medidas de suporte clínico, evoluiu com melhora dos parâmetros infecciosos e da função renal. A paciente foi transferida para leito de enfermaria, onde se encontra atualmente. A paciente tem oscilado entre períodos de confusão mental, agitação psicomotora, delírios persecutórios e períodos de sonolência e apatia. A investigação inicial para distúrbios hidroeletrolíticos, desidrataçã o, infecções, desbalanços metabólicos foi negativa. A dosagem sérica de creatinofosfoquinase foi de 362 U/L (valor de referência: < 140 U/L) e a paciente se mantém afebril, estável hemodinamicamente e com boa saturação de oxigênio em ar ambiente. A paciente está contida mecanicamente no leito e pouco cooperativa com o exame clínico devido à sonolência, o que compromete a avaliação cognitiva. Força e reflexos tendinosos preservados nos quatro membros, sem alterações de nervos cranianos ou movime ntos discinéticos. Prescrição atual: carbonato de lítio 900 mg/dia, divalproato de sódio 1.000 mg/dia, cloridrato de sertralina 50 mg/dia, ceftriaxone, bisacodil, rosuvastatina, levoti roxina, losartana, dipirona a critério médico. Para o manejo da agitação, está prescrito resgates com haloperidol 2,5 mg e prometazina 50 mg por via intramuscular, que têm sido administrados 1-2 vezes/dia com boa resposta, apesar de apresentar sonolência nas horas seguintes."
+              "text": "Iniciar olanzapina, suspender sertralina e solicitar exames laboratoriais."
             }
           ],
           "correctAnswer": "C",
           "examId": "usp-2025-f17",
           "examTag": "USP Psicogeriatria 2025",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-06T08:16:28"
         },
         {
           "id": "usp-2025-f17-022",
@@ -37342,7 +37368,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 22",
-          "text": "Em relação à investigação semiológica e exames complementares, assinale a alternativa correta.",
+          "text": "TEXTO PARA AS QUESTÕES 22 E 23 \nMulher de 77 anos de idade, com diagnósticos de demência na doença de Alzheimer (FAST 5), transtorno bipolar do tipo I (início aos 30 anos de idade, em remissão nos últimos seis anos), hipertensão arterial sistêmica, hipotireoidismo, dislipidemia, constipação crônica, osteoartrose de joelho, presbiacusia moderada bilateral (teve indicação de prótese auditiva). Há uma semana, ficou internada durante três dias em leito de UTI por sepse de foco urinário com injúria renal aguda (KDIGO 2). Com a antibioticoterapia e medidas de suporte clínico, evoluiu com melhora dos parâmetros infecciosos e da função renal. A paciente foi transferida para leito de enfermaria, onde se encontra atualmente. A paciente tem oscilado entre períodos de confusão mental, agitação psicomotora, delírios persecutórios e períodos de sonolência e apatia. A investigação inicial para distúrbios hidroeletrolíticos, desidrataçã o, infecções, desbalanços metabólicos foi negativa. A dosagem sérica de creatinofosfoquinase foi de 362 U/L (valor de referência: < 140 U/L) e a paciente se mantém afebril, estável hemodinamicamente e com boa saturação de oxigênio em ar ambiente. A paciente está contida mecanicamente no leito e pouco cooperativa com o exame clínico devido à sonolência, o que compromete a avaliação cognitiva. Força e reflexos tendinosos preservados nos quatro membros, sem alterações de nervos cranianos ou movime ntos discinéticos. Prescrição atual: carbonato de lítio 900 mg/dia, divalproato de sódio 1.000 mg/dia, cloridrato de sertralina 50 mg/dia, ceftriaxone, bisacodil, rosuvastatina, levoti roxina, losartana, dipirona a critério médico. Para o manejo da agitação, está prescrito resgates com haloperidol 2,5 mg e prometazina 50 mg por via intramuscular, que têm sido administrados 1-2 vezes/dia com boa resposta, apesar de apresentar sonolência nas horas seguintes.\nEm relação à investigação semiológica e exames complementares, assinale a alternativa correta.",
           "options": [
             {
               "letter": "A",
@@ -37358,13 +37384,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "A revisão da prescrição faz parte da boa prática clínica; porém, nenhuma das medicações em uso é tipicamente considerado um fator de piora. ####"
+              "text": "A revisão da prescrição faz parte da boa prática clínica; porém, nenhuma das medicações em uso é tipicamente considerado um fator de piora."
             }
           ],
           "correctAnswer": "B",
           "examId": "usp-2025-f17",
           "examTag": "USP Psicogeriatria 2025",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-06T08:16:28"
         },
         {
           "id": "usp-2025-f17-023",
@@ -37388,13 +37416,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Eletroconvulsoterapia; suspender haloperidol e prometazina, prescrever clonazepam para controle de rigidez e agitação. #### Processo Seletivo aos Programas de Residência Médica – Edital: COREME/FM/Nº 01/2024 – Áreas de Atuações – Psicogeriatria – PROVA F17"
+              "text": "Eletroconvulsoterapia; suspender haloperidol e prometazina, prescrever clonazepam para controle de rigidez e agitação."
             }
           ],
           "correctAnswer": "A",
           "examId": "usp-2025-f17",
           "examTag": "USP Psicogeriatria 2025",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-06T08:16:28"
         },
         {
           "id": "usp-2025-f17-024",
@@ -37418,13 +37448,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Associar sertralina para potencializar o tratamento antidepressivo. #### TEXTO PARA AS QUESTÕES 25 E 26 Mulher de 73 anos de idade fazia acompanhamento regular com geriatra e há 2 anos iniciou com alterações comportamentais, irritabilidade e insônia. Estava em uso de quetiapina 100mg/dia com melhora parcial dos sintomas. Familiares reforçam que paciente sempre foi muito reservada; porém, nos últimos 6 meses, tem apresentado mudanças comportamentais. Apresenta insônia, com vários despertares noturnos e perambulação. No mês anterior, ficou indiferente com a morte da irmã e, durante o sepultamento, para surpresa de todos, revelou de forma jocosa algumas intimidades da irmã falecida para os presentes no funeral. Durante a investigação do ca so foi detectado declínio cognitivo, principalmente nos domínios da atenção e funções executivas. Não há sinais de doença cerebrovascular e não apresenta comorbidades médicas importantes. Exame físico sem alterações. Exame neurológico: grasping e snout positivos, sem outras alterações. Imagem por ressonância magnética evidenciou atrofia do lobo frontal bilateralmente e atrofia menos acentuada do lobo temporal bilateralmente."
+              "text": "Associar sertralina para potencializar o tratamento antidepressivo."
             }
           ],
           "correctAnswer": "A",
           "examId": "usp-2025-f17",
           "examTag": "USP Psicogeriatria 2025",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-06T08:16:28"
         },
         {
           "id": "usp-2025-f17-025",
@@ -37432,7 +37464,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 25",
-          "text": "Considerando os dados do caso apresentado, qual a principal hipótese diagnóstica?",
+          "text": "#### TEXTO PARA AS QUESTÕES 25 E 26 Mulher de 73 anos de idade fazia acompanhamento regular com geriatra e há 2 anos iniciou com alterações comportamentais, irritabilidade e insônia. Estava em uso de quetiapina 100mg/dia com melhora parcial dos sintomas. Familiares reforçam que paciente sempre foi muito reservada; porém, nos últimos 6 meses, tem apresentado mudanças comportamentais. Apresenta insônia, com vários despertares noturnos e perambulação. No mês anterior, ficou indiferente com a morte da irmã e, durante o sepultamento, para surpresa de todos, revelou de forma jocosa algumas intimidades da irmã falecida para os presentes no funeral. Durante a investigação do ca so foi detectado declínio cognitivo, principalmente nos domínios da atenção e funções executivas. Não há sinais de doença cerebrovascular e não apresenta comorbidades médicas importantes. Exame físico sem alterações. Exame neurológico: grasping e snout positivos, sem outras alterações. Imagem por ressonância magnética evidenciou atrofia do lobo frontal bilateralmente e atrofia menos acentuada do lobo temporal bilateralmente.Considerando os dados do caso apresentado, qual a principal hipótese diagnóstica?",
           "options": [
             {
               "letter": "A",
@@ -37448,13 +37480,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Transtorno obsessivo-compulsivo. ####"
+              "text": "Transtorno obsessivo-compulsivo."
             }
           ],
           "correctAnswer": "A",
           "examId": "usp-2025-f17",
           "examTag": "USP Psicogeriatria 2025",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-06T08:16:28"
         },
         {
           "id": "usp-2025-f17-026",
@@ -37478,13 +37512,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Inibidor seletivo de recapt ura de serotonina ou inibidor dual, inibidor das colinesterases e neuroléptico. ####"
+              "text": "Inibidor seletivo de recapt ura de serotonina ou inibidor dual, inibidor das colinesterases e neuroléptico."
             }
           ],
           "correctAnswer": "C",
           "examId": "usp-2025-f17",
           "examTag": "USP Psicogeriatria 2025",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-06T08:16:28"
         },
         {
           "id": "usp-2025-f17-027",
@@ -37508,13 +37544,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Afasia progressiva primária; depressão unipolar; avaliação neuropsicológica. #### Processo Seletivo aos Programas de Residência Médica – Edital: COREME/FM/Nº 01/2024 – Áreas de Atuações – Psicogeriatria – PROVA F17"
+              "text": "Afasia progressiva primária; depressão unipolar; avaliação neuropsicológica."
             }
           ],
           "correctAnswer": "A",
           "examId": "usp-2025-f17",
           "examTag": "USP Psicogeriatria 2025",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-06T08:16:28"
         },
         {
           "id": "usp-2025-f17-028",
@@ -37538,13 +37576,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Comprometimento cognit ivo leve amnéstico único domínio. ####"
+              "text": "Comprometimento cognit ivo leve amnéstico único domínio."
             }
           ],
           "correctAnswer": "C",
           "examId": "usp-2025-f17",
           "examTag": "USP Psicogeriatria 2025",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-06T08:16:28"
         },
         {
           "id": "usp-2025-f17-029",
@@ -37568,13 +37608,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Demência vascular. ####"
+              "text": "Demência vascular."
             }
           ],
           "correctAnswer": "C",
           "examId": "usp-2025-f17",
           "examTag": "USP Psicogeriatria 2025",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-06T08:16:28"
         },
         {
           "id": "usp-2025-f17-030",
@@ -37598,13 +37640,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Esse diagnóstico, nessa idade, é mais comum em mulheres. ####"
+              "text": "Esse diagnóstico, nessa idade, é mais comum em mulheres."
             }
           ],
           "correctAnswer": "D",
           "examId": "usp-2025-f17",
           "examTag": "USP Psicogeriatria 2025",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-06T08:16:28"
         },
         {
           "id": "usp-2025-f17-031",
@@ -37658,13 +37702,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Introduzir clonazepam para sedação. #### TEXTO PARA AS QUESTÕES 33 E 34 Homem com trissomia completa do cromossomo 21, de 46 anos de idade, alfabetizado. Trabalhou como office boy em escritório e como empregado em uma cafeteria. Atualmente, trabalha na empresa da mãe registrado como ajudante geral. Faz aulas de natação e participa de grupo de teatro. Sempre fez uso autônomo de suas medicações, mas recentemente a mãe tem percebido sobrarem remédios no blister, sugerindo falhas na continuidade do uso. Nunca manejou dinheiro ou fez compras sem a presença de um acompanhante. Era capaz de utilizar transporte público, embora o fizesse esporadicamente; na última vez que andou de ônibus desacompanhado passou do ponto em que deveria descer. Ultimamente tem esquecido orientações dadas pela mãe e demonstra estar com maior dificuldade nas leituras do grupo de teatro (não consegue decorar as falas nas peças de teatro de que participa). Mãe refere percebê-lo mais quieto, retraído, com menos disposição para participar de atividades sociais, e acredita que está ouvindo pior. Ocorrem variações do humor, com tendência à irritabilidade. Dorme com facilidade, mas tem desperta do algumas vezes durante a noite. Apresenta roncos noturnos intermitentes há cerca de 5 anos, a depender da posição que dorme. Pausas respiratórias são notadas nesse período. Os despertares que ocorrem durante a noite parecem estar associados à noctúria (1-2 vezes por noite). Não são referidos comportamentos anormais ou agitação durante o sono. Apresenta propensão a engasgos, de longa data, mas com piora nos últimos 2 anos, principalmente associados à ingesta de alimentos sólidos. Apresenta hipotireoidismo, dislipidemia, deficiência de vitamina D, e aterosclerose de carótida. Faz uso de levotiroxina 75 μg/dia, AAS 100 mg 1x/dia, rosuvastatina 10 mg/dia, vitamina D 5000 1x/semana. Nega doenças neurológicas e psiquiátricas na família. Ao exame psíquico, demonstra discurso coerente, porém com dificuldades de fluência e expressão; conteúdos repetitivos (conta várias vezes a mesma história)."
+              "text": "Introduzir clonazepam para sedação."
             }
           ],
           "correctAnswer": "C",
           "examId": "usp-2025-f17",
           "examTag": "USP Psicogeriatria 2025",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-06T08:16:28"
         },
         {
           "id": "usp-2025-f17-033",
@@ -37672,7 +37718,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 33",
-          "text": "Considerando-se o processo de envelhecimento nas pessoas com Síndrome de Down (SD), é correto afirmar:",
+          "text": "#### TEXTO PARA AS QUESTÕES 33 E 34 Homem com trissomia completa do cromossomo 21, de 46 anos de idade, alfabetizado. Trabalhou como office boy em escritório e como empregado em uma cafeteria. Atualmente, trabalha na empresa da mãe registrado como ajudante geral. Faz aulas de natação e participa de grupo de teatro. Sempre fez uso autônomo de suas medicações, mas recentemente a mãe tem percebido sobrarem remédios no blister, sugerindo falhas na continuidade do uso. Nunca manejou dinheiro ou fez compras sem a presença de um acompanhante. Era capaz de utilizar transporte público, embora o fizesse esporadicamente; na última vez que andou de ônibus desacompanhado passou do ponto em que deveria descer. Ultimamente tem esquecido orientações dadas pela mãe e demonstra estar com maior dificuldade nas leituras do grupo de teatro (não consegue decorar as falas nas peças de teatro de que participa). Mãe refere percebê-lo mais quieto, retraído, com menos disposição para participar de atividades sociais, e acredita que está ouvindo pior. Ocorrem variações do humor, com tendência à irritabilidade. Dorme com facilidade, mas tem desperta do algumas vezes durante a noite. Apresenta roncos noturnos intermitentes há cerca de 5 anos, a depender da posição que dorme. Pausas respiratórias são notadas nesse período. Os despertares que ocorrem durante a noite parecem estar associados à noctúria (1-2 vezes por noite). Não são referidos comportamentos anormais ou agitação durante o sono. Apresenta propensão a engasgos, de longa data, mas com piora nos últimos 2 anos, principalmente associados à ingesta de alimentos sólidos. Apresenta hipotireoidismo, dislipidemia, deficiência de vitamina D, e aterosclerose de carótida. Faz uso de levotiroxina 75 μg/dia, AAS 100 mg 1x/dia, rosuvastatina 10 mg/dia, vitamina D 5000 1x/semana. Nega doenças neurológicas e psiquiátricas na família. Ao exame psíquico, demonstra discurso coerente, porém com dificuldades de fluência e expressão; conteúdos repetitivos (conta várias vezes a mesma história).\nConsiderando-se o processo de envelhecimento nas pessoas com Síndrome de Down (SD), é correto afirmar:",
           "options": [
             {
               "letter": "A",
@@ -37688,13 +37734,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "O principal componente da fisiopatologia da demência na SD é a coexistência de doença cerebrovascular. ####"
+              "text": "O principal componente da fisiopatologia da demência na SD é a coexistência de doença cerebrovascular."
             }
           ],
           "correctAnswer": "A",
           "examId": "usp-2025-f17",
           "examTag": "USP Psicogeriatria 2025",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-06T08:16:28"
         },
         {
           "id": "usp-2025-f17-034",
@@ -37718,13 +37766,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Solicitar exames laboratoriais, polissonografia, audiometria e ressonância magnética de crânio e iniciar tratamento com escitalopram. #### TEXTO PARA AS QUESTÕES 35 E 36 A Srª A., 67 anos de idade tem uma síndrome demencial com importante flutuação cognitiva, alucinações visuais vívidas, transtorno comportamental de sono REM e sensibilidade a neurolépticos. Mas não tem parkinsonismo."
+              "text": "Solicitar exames laboratoriais, polissonografia, audiometria e ressonância magnética de crânio e iniciar tratamento com escitalopram."
             }
           ],
           "correctAnswer": "D",
           "examId": "usp-2025-f17",
           "examTag": "USP Psicogeriatria 2025",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-06T08:16:28"
         },
         {
           "id": "usp-2025-f17-035",
@@ -37732,7 +37782,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 35",
-          "text": "A principal hipótese diagnóstica para essa paciente é demência",
+          "text": "#### TEXTO PARA AS QUESTÕES 35 E 36 \nA Srª A., 67 anos de idade tem uma síndrome demencial com importante flutuação cognitiva, alucinações visuais vívidas, transtorno comportamental de sono REM e sensibilidade a neurolépticos. Mas não tem parkinsonismo.A principal hipótese diagnóstica para essa paciente é demência",
           "options": [
             {
               "letter": "A",
@@ -37748,13 +37798,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Vascular. ####"
+              "text": "Vascular."
             }
           ],
           "correctAnswer": "C",
           "examId": "usp-2025-f17",
           "examTag": "USP Psicogeriatria 2025",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-06T08:16:28"
         },
         {
           "id": "usp-2025-f17-036",
@@ -37778,13 +37830,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Haloperidol deve ser introduzido para o tratamento da psicose. #### Processo Seletivo aos Programas de Residência Médica – Edital: COREME/FM/Nº 01/2024 – Áreas de Atuações – Psicogeriatria – PROVA F17"
+              "text": "Haloperidol deve ser introduzido para o tratamento da psicose."
             }
           ],
           "correctAnswer": "B",
           "examId": "usp-2025-f17",
           "examTag": "USP Psicogeriatria 2025",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-06T08:16:28"
         },
         {
           "id": "usp-2025-f17-037",
@@ -37838,13 +37892,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "maior possibilidade de ser um transtorno afetivo bipolar em episódio depressivo. #### TEXTO PARA AS QUESTÕES 39 E 40 Mulher, 72 anos de idade, viúva, aposentada, vive sozinha em seu apartamento situado no mesmo prédio em que seu filho reside. História de episódios de humor instável, alternando entre períodos de euforia, aumento da energia e atividade (mania) e períodos de depressão profunda. Filho relata períodos em que se sente \"no topo do mundo\", com aumento da fala, gastos excessivos e envolvimento em atividades de risco, como investimentos fina nceiros impulsivos. Em outros momentos, sente-se extremamente desanimada, com baixa energia, dificuldade de concentração e pensamentos suicidas. Hipertensão arterial controlada com medicação. Não há histórico de uso de substâncias psicoativas."
+              "text": "maior possibilidade de ser um transtorno afetivo bipolar em episódio depressivo."
             }
           ],
           "correctAnswer": "A",
           "examId": "usp-2025-f17",
           "examTag": "USP Psicogeriatria 2025",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-06T08:16:28"
         },
         {
           "id": "usp-2025-f17-039",
@@ -37852,7 +37908,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 39",
-          "text": "Em relação ao tratamento de Transtorno Afetivo Bipolar (TAB) no idoso, assinale a alternativa correta.",
+          "text": "#### TEXTO PARA AS QUESTÕES 39 E 40 Mulher, 72 anos de idade, viúva, aposentada, vive sozinha em seu apartamento situado no mesmo prédio em que seu filho reside. História de episódios de humor instável, alternando entre períodos de euforia, aumento da energia e atividade (mania) e períodos de depressão profunda. Filho relata períodos em que se sente \"no topo do mundo\", com aumento da fala, gastos excessivos e envolvimento em atividades de risco, como investimentos fina nceiros impulsivos. Em outros momentos, sente-se extremamente desanimada, com baixa energia, dificuldade de concentração e pensamentos suicidas. Hipertensão arterial controlada com medicação. Não há histórico de uso de substâncias psicoativas.\nEm relação ao tratamento de Transtorno Afetivo Bipolar (TAB) no idoso, assinale a alternativa correta.",
           "options": [
             {
               "letter": "A",
@@ -37874,7 +37930,9 @@ window.BANCO_RMAIS_EXAMS = {
           "correctAnswer": "B",
           "examId": "usp-2025-f17",
           "examTag": "USP Psicogeriatria 2025",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-06T08:16:28"
         },
         {
           "id": "usp-2025-f17-040",
@@ -37898,13 +37956,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Idosos com TAB não apresentam maior risco de demência quando comparados com indivíduos sem TAB. ####"
+              "text": "Idosos com TAB não apresentam maior risco de demência quando comparados com indivíduos sem TAB."
             }
           ],
           "correctAnswer": "A",
           "examId": "usp-2025-f17",
           "examTag": "USP Psicogeriatria 2025",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-06T08:16:28"
         }
       ]
     },

@@ -158,6 +158,26 @@ const SUBTHEME_RULES = [
   },
 ];
 
+let classificationCache = {
+  text: new Map(),
+  psychopharm: new Map(),
+  topic: new Map(),
+  subtheme: new Map(),
+  catalog: new Map(),
+  excluded: null,
+};
+
+function clearClassificationCache() {
+  classificationCache = {
+    text: new Map(),
+    psychopharm: new Map(),
+    topic: new Map(),
+    subtheme: new Map(),
+    catalog: new Map(),
+    excluded: null,
+  };
+}
+
 const el = {
   sidebarToggle: document.querySelector("#sidebarToggle"),
   startPanel: document.querySelector("#startPanel"),
@@ -304,10 +324,12 @@ function saveProgress() {
 
 function saveCorrections() {
   localStorage.setItem("banco-rmais-corrections", JSON.stringify(state.corrections));
+  clearClassificationCache();
 }
 
 function saveExcluded() {
   localStorage.setItem("banco-rmais-excluded", JSON.stringify(state.excluded));
+  clearClassificationCache();
 }
 
 function saveDiscardedOptions() {
@@ -725,9 +747,16 @@ function questionBelongsToTopic(question, topic) {
 }
 
 function topicForQuestion(question) {
-  if (isPsychopharmacologyQuestion(question)) return PSYCHOPHARM_SESSION_TOPIC;
+  const cacheKey = question.id || `${question.source}-${question.number}`;
+  if (classificationCache.topic.has(cacheKey)) return classificationCache.topic.get(cacheKey);
+  if (isPsychopharmacologyQuestion(question)) {
+    classificationCache.topic.set(cacheKey, PSYCHOPHARM_SESSION_TOPIC);
+    return PSYCHOPHARM_SESSION_TOPIC;
+  }
   const group = SESSION_TOPIC_GROUPS.find((item) => item.sources.includes(question.source));
-  return group?.label || question.source || question.topic || "Sem tema";
+  const result = group?.label || question.source || question.topic || "Sem tema";
+  classificationCache.topic.set(cacheKey, result);
+  return result;
 }
 
 function topicsForStats() {
@@ -767,7 +796,9 @@ function subthemeMinorKey(topic) {
 }
 
 function questionSubthemeText(question) {
-  return normalize(
+  const cacheKey = question.id || `${question.source}-${question.number}`;
+  if (classificationCache.text.has(cacheKey)) return classificationCache.text.get(cacheKey);
+  const text = normalize(
     [
       question.source,
       question.topic,
@@ -776,9 +807,13 @@ function questionSubthemeText(question) {
       ...(question.options || []).map((option) => option.text),
     ].join(" "),
   );
+  classificationCache.text.set(cacheKey, text);
+  return text;
 }
 
 function isPsychopharmacologyQuestion(question) {
+  const cacheKey = question.id || `${question.source}-${question.number}`;
+  if (classificationCache.psychopharm.has(cacheKey)) return classificationCache.psychopharm.get(cacheKey);
   const haystack = questionSubthemeText(question);
   const keywords = [
     "antidepress",
@@ -849,10 +884,14 @@ function isPsychopharmacologyQuestion(question) {
     "serotoninergica",
     "hiperprolactinemia",
   ];
-  return keywords.some((keyword) => haystack.includes(normalize(keyword))) || question.source === "Psicofarmacologia";
+  const result = keywords.some((keyword) => haystack.includes(normalize(keyword))) || question.source === "Psicofarmacologia";
+  classificationCache.psychopharm.set(cacheKey, result);
+  return result;
 }
 
 function questionSubtheme(question) {
+  const cacheKey = question.id || `${question.source}-${question.number}`;
+  if (classificationCache.subtheme.has(cacheKey)) return classificationCache.subtheme.get(cacheKey);
   const haystack = questionSubthemeText(effectiveQuestion(question));
   const scored = SUBTHEME_RULES.map((rule, index) => {
     const score = rule.keywords.reduce((total, keyword) => total + (haystack.includes(normalize(keyword)) ? 1 : 0), 0);
@@ -860,10 +899,14 @@ function questionSubtheme(question) {
   })
     .filter((item) => item.score > 0)
     .sort((a, b) => b.score - a.score || a.index - b.index);
-  return scored[0]?.label || "Subtema a revisar";
+  const result = scored[0]?.label || "Subtema a revisar";
+  classificationCache.subtheme.set(cacheKey, result);
+  return result;
 }
 
 function subthemeCatalogForTopics(topics = topicsForStats()) {
+  const catalogKey = [...topics].sort().join("||");
+  if (classificationCache.catalog.has(catalogKey)) return classificationCache.catalog.get(catalogKey);
   const catalog = new Map();
   for (const topic of topics) {
     const questions = topicQuestions(topic).filter((question) => isReadyQuestion(effectiveQuestion(question)));
@@ -881,6 +924,7 @@ function subthemeCatalogForTopics(topics = topicsForStats()) {
     const minorCount = questions.filter((question) => minorLabels.includes(questionSubtheme(question))).length;
     catalog.set(topic, { visible, minorLabels, minorCount });
   }
+  classificationCache.catalog.set(catalogKey, catalog);
   return catalog;
 }
 
@@ -912,10 +956,19 @@ function shuffle(items) {
 }
 
 function isExcluded(id) {
-  if (state.excluded.includes(id)) return true;
-  const bankQuestion = state.questions.find((question) => question.id === id);
-  if (bankQuestion?.excluded) return true;
-  return state.exams.some((exam) => (exam.questions || []).some((question) => question.id === id && question.excluded));
+  if (!classificationCache.excluded) {
+    const ids = new Set(state.excluded);
+    for (const question of state.questions) {
+      if (question.excluded) ids.add(question.id);
+    }
+    for (const exam of state.exams) {
+      for (const question of exam.questions || []) {
+        if (question.excluded) ids.add(question.id);
+      }
+    }
+    classificationCache.excluded = ids;
+  }
+  return classificationCache.excluded.has(id);
 }
 
 function getProgress(id) {

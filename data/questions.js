@@ -2592,7 +2592,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Coma e alterações",
       "topic": "Coma e alterações",
       "title": "Questão 74",
-      "text": "Um homem de 62 anos foi encontrado pelo >lho com confusão mental ao acordar pela manhã. É hipertenso e etilista (fazuso de destilados diariamente há mais de 30 anos). Ao exame do estado mental, estava desorientado no tempo e noespaço, hipotenaz, normovigil, com perda da memória recente, com juízo e crítica comprometidos, sem alteração dasensopercepção, do pensamento e da linguagem, humor preservado e eutímico. O exame neurológico revelou nistagmohorizontal, demais pares cranianos normais, motricidade e sensibilidade sem alterações, marcha atáxica, com base alargadae desequilíbrio. Restante do exame clínico sem alterações signi>cativas. Sobre o caso descrito, assinale a alternativaCORRETA",
+      "text": "Um homem de 62 anos foi encontrado pelo olho com confusão mental ao acordar pela manhã. É hipertenso e etilista (faz uso de destilados diariamente há mais de 30 anos). Ao exame do estado mental, estava desorientado no tempo e no espaço, hipotenaz, normovigil, com perda da memória recente, com juízo e crítica comprometidos, sem alteração da sensopercepção, do pensamento e da linguagem, humor preservado e eutímico. O exame neurológico revelou nistagmo horizontal, demais pares cranianos normais, motricidade e sensibilidade sem alterações, marcha atáxica, com base alargada e desequilíbrio. Restante do exame clínico sem alterações significativas. Sobre o caso descrito, assinale a alternativa CORRETA",
       "options": [
         {
           "letter": "A",
@@ -2614,7 +2614,9 @@ window.BANCO_RMAIS_QUESTIONS = {
       "sourceId": "4000016653",
       "correctAnswer": "C",
       "provider": "Estratégia",
-      "originalSource": "Coma e alterações"
+      "originalSource": "Coma e alterações",
+      "manuallyReviewed": true,
+      "reviewedAt": "2026-06-06T08:15:42"
     },
     {
       "id": "coma-e-alterações-75",
@@ -20417,7 +20419,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Saúde do Idoso",
       "topic": "Saúde do Idoso",
       "title": "Questão 92",
-      "text": "Idoso pela preceptora da unidade relata antecedentes de DM, HAS, Osteoporose e Osteoartrose de joelhos. - Inventáriomedicamentoso: omeprazol em jejum, Ibuprofeno 8/8 h se dor, Hidroclorotiazida 25 mg/dia, atenolol 50 mg/dia,Glibenclamida 5 mg 3 x dia Metformina 850mg 3x dia, AAS 100mg/dia, Clonazepam 0,5mg a noite e Amitriptilina 25 mg anoite, sinvastatina20 mg, ômega 3 e , alendronato de sódio 70 mg, cálcio e vitamina D. - Queixa Principal: dor nos joelhos ediGculdade para deambulação há aproximadamente 2 anos. Interrogatório Sintomatológico: fadiga, astenia, urgênciamiccional, dor no corpo tudo, rigidez articular matinal, desmotivação, insônia, diminuição de memória recente e tonturasdiárias. Realizado AGA (avaliação geriátrica ampla/Funcional - Global) encontrando: Miniavaliação do estado mental(MEEM): 9 pontos. Escala geriátrica de depressão (EGD) 11 pontos, AIVD: 14/27 precisa de ajuda para uso de telefone,gerenciar medicamentos, Gnanças, preparar refeições e transporte. AVD: 2/6: + continência e alimentação. Get up and GO:33 segundos. Deambula com dispositivoauxiliar da marcha IMC: 23Kg/m2 CP(circunferência da panturrilha)= 33 cm;Segundo o resultado da Avalização Funcional da paciente, que lista de problemas e ou Síndromes Geriátricas estãopresente nesta paciente no momento da avaliação, exceto",
+      "text": "Idoso pela preceptora da unidade relata antecedentes de DM, HAS, Osteoporose e Osteoartrose de joelhos. \n- Inventário medicamentoso: omeprazol em jejum, Ibuprofeno 8/8 h se dor, Hidroclorotiazida 25 mg/dia, atenolol 50 mg/dia,Glibenclamida 5 mg 3 x dia Metformina 850mg 3x dia, AAS 100mg/dia, Clonazepam 0,5mg a noite e Amitriptilina 25 mg anoite, sinvastatina20 mg, ômega 3 e , alendronato de sódio 70 mg, cálcio e vitamina D. \n- Queixa Principal: dor nos joelhos e dificuldade para deambulação há aproximadamente 2 anos. Interrogatório Sintomatológico: fadiga, astenia, urgência miccional, dor no corpo tudo, rigidez articular matinal, desmotivação, insônia, diminuição de memória recente e tonturas diárias. \nRealizado AGA (avaliação geriátrica ampla/Funcional - Global) encontrando: Miniavaliação do estado mental(MEEM): 9 pontos. Escala geriátrica de depressão (EGD) 11 pontos, AIVD: 14/27 precisa de ajuda para uso de telefone, gerenciar medicamentos, finanças, preparar refeições e transporte. AVD: 2/6: + continência e alimentação. Get up and GO:33 segundos. Deambula com dispositivo auxiliar da marcha IMC: 23Kg/m2 CP(circunferência da panturrilha)= 33 cm; Segundo o resultado da Avaliação Funcional da paciente, que lista de problemas e ou Síndromes Geriátricas estão presentes nesta paciente no momento da avaliação, exceto",
       "options": [
         {
           "letter": "A",
@@ -20439,7 +20441,9 @@ window.BANCO_RMAIS_QUESTIONS = {
       "sourceId": "4000005014",
       "correctAnswer": "D",
       "provider": "Estratégia",
-      "originalSource": "Saúde do Idoso"
+      "originalSource": "Saúde do Idoso",
+      "manuallyReviewed": true,
+      "reviewedAt": "2026-06-06T08:15:42"
     },
     {
       "id": "saúde-do-idoso-93",
@@ -20650,11 +20654,11 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Saúde do Idoso",
       "topic": "Saúde do Idoso",
       "title": "Questão 99",
-      "text": "Assinale a assertiva correta sobre iatrogenia e prescrição medicamentosa para pacientes idosos.A",
+      "text": "Assinale a assertiva correta sobre iatrogenia e prescrição medicamentosa para pacientes idosos.",
       "options": [
         {
           "letter": "A",
-          "text": "definição de prescrição apropriada contempla todos os potenciais benefícios dos fármacos, não considerandotanto os riscos de complicações"
+          "text": "A definição de prescrição apropriada contempla todos os potenciais benefícios dos fármacos, não considerandotanto os riscos de complicações"
         },
         {
           "letter": "B",
@@ -20683,7 +20687,9 @@ window.BANCO_RMAIS_QUESTIONS = {
           "number": 6,
           "sourceId": ""
         }
-      ]
+      ],
+      "manuallyReviewed": true,
+      "reviewedAt": "2026-06-06T08:15:42"
     },
     {
       "id": "saúde-do-idoso-100",
@@ -22077,7 +22083,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtorno Obsessivo-Compulsivo",
       "topic": "Transtorno Obsessivo-Compulsivo",
       "title": "Questão 14",
-      "text": "Transtorno ObsessivoCompulsivo TOCEm conformidade com o DSM-V, até _______________ dos indivíduos com TOC têm um transtorno de tique ao longo davida. Isso é mais comum no sexo _______________ com início do TOC na infância. A alternativa que corresponde às lacunasé",
+      "text": "Em conformidade com o DSM-V, até _______________ dos indivíduos com TOC têm um transtorno de tique ao longo da vida. Isso é mais comum no sexo _______________ com início do TOC na infância. A alternativa que corresponde às lacunas é",
       "options": [
         {
           "letter": "A",
@@ -22099,7 +22105,9 @@ window.BANCO_RMAIS_QUESTIONS = {
       "sourceId": "4000172410",
       "correctAnswer": "C",
       "provider": "Estratégia",
-      "originalSource": "TOC"
+      "originalSource": "TOC",
+      "manuallyReviewed": true,
+      "reviewedAt": "2026-06-06T08:15:42"
     },
     {
       "id": "toc-16",
@@ -22922,11 +22930,11 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "B",
-          "text": "Doença de"
+          "text": "Doença de Crohn"
         },
         {
           "letter": "C",
-          "text": "rohn,CSíndrome de Munchausen por procuração"
+          "text": "Síndrome de Munchausen por procuração"
         },
         {
           "letter": "D",
@@ -22934,13 +22942,15 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "E",
-          "text": "Dearréia bacteriana autolimitada"
+          "text": "DIarréia bacteriana autolimitada"
         }
       ],
       "sourceId": "4000096719",
       "correctAnswer": "C",
       "provider": "Estratégia",
-      "originalSource": "TOC"
+      "originalSource": "TOC",
+      "manuallyReviewed": true,
+      "reviewedAt": "2026-06-06T08:15:42"
     },
     {
       "id": "toc-44",
@@ -24030,11 +24040,11 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtorno Obsessivo-Compulsivo",
       "topic": "Transtorno Obsessivo-Compulsivo",
       "title": "Questão 78",
-      "text": "Um homem que recebeu placebo devido a uma dor discreta relata, após 30 minutos, que a dor desapareceu. A conclusãomais apropriada seria de que o homem:A",
+      "text": "Um homem que recebeu placebo devido a uma dor discreta relata, após 30 minutos, que a dor desapareceu. A conclusão mais apropriada seria de que o homem:",
       "options": [
         {
           "letter": "A",
-          "text": "presenta um trastorno de conversão"
+          "text": "Apresenta um trastorno de conversão"
         },
         {
           "letter": "B",
@@ -24056,7 +24066,9 @@ window.BANCO_RMAIS_QUESTIONS = {
       "sourceId": "4000119152",
       "correctAnswer": "E",
       "provider": "Estratégia",
-      "originalSource": "TOC"
+      "originalSource": "TOC",
+      "manuallyReviewed": true,
+      "reviewedAt": "2026-06-06T08:15:42"
     },
     {
       "id": "toc-79",
@@ -24233,7 +24245,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtorno Obsessivo-Compulsivo",
       "topic": "Transtorno Obsessivo-Compulsivo",
       "title": "Questão 85",
-      "text": "Estado de Estresse PósTraumático Transtorno de Estresse PósTraumático TEPTReação Aguda ao EstresseNo transtorno de estresse pós-traumático (TEPT),",
+      "text": "No transtorno de estresse pós-traumático (TEPT),",
       "options": [
         {
           "letter": "A",
@@ -24255,7 +24267,9 @@ window.BANCO_RMAIS_QUESTIONS = {
       "sourceId": "4000129099",
       "correctAnswer": "C",
       "provider": "Estratégia",
-      "originalSource": "TOC"
+      "originalSource": "TOC",
+      "manuallyReviewed": true,
+      "reviewedAt": "2026-06-06T08:15:42"
     },
     {
       "id": "toc-86",
@@ -26531,7 +26545,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Alimentares",
       "topic": "Transtornos Alimentares",
       "title": "Questão 64",
-      "text": "Transtorno de Compulsão Alimentar TCATratamento da DepressãoAo se prescrever fluoxetina em monoterapia para uma paciente deprimida com compulsão alimentar periódica, deve-se",
+      "text": "Ao se prescrever fluoxetina em monoterapia para uma paciente deprimida com compulsão alimentar periódica, deve-se",
       "options": [
         {
           "letter": "A",
@@ -26553,7 +26567,9 @@ window.BANCO_RMAIS_QUESTIONS = {
       "sourceId": "4000055153",
       "correctAnswer": "B",
       "provider": "Estratégia",
-      "originalSource": "Transtornos Alimentares"
+      "originalSource": "Transtornos Alimentares",
+      "manuallyReviewed": true,
+      "reviewedAt": "2026-06-06T08:15:42"
     },
     {
       "id": "transtornos-alimentares-65",
@@ -30113,7 +30129,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos do Humor",
       "topic": "Transtornos do Humor",
       "title": "Questão 85",
-      "text": "Mulher de 30 anos, comparece a consulta em APS queixando de anedonia, insônia, aumento do apetite com ingesta degrande quantidade de comida. Relata acordar a noite para fazer \"ataques a geladeira\", há 2 meses. O médico resolveprescrever Quoxetina para tratar depressão. Ao prescrever Quoxetina em monoterapia para uma paciente deprimida comcompulsão alimentar periódica, deve-se",
+      "text": "Mulher de 30 anos, comparece a consulta em APS queixando de anedonia, insônia, aumento do apetite com ingesta de grande quantidade de comida. Relata acordar a noite para fazer \"ataques a geladeira\", há 2 meses. O médico resolve prescrever fluoxetina para tratar depressão. Ao prescrever Fluoxetina em monoterapia para uma paciente deprimida com compulsão alimentar periódica, deve-se",
       "options": [
         {
           "letter": "A",
@@ -30135,7 +30151,9 @@ window.BANCO_RMAIS_QUESTIONS = {
       "sourceId": "4000007568",
       "correctAnswer": "C",
       "provider": "Estratégia",
-      "originalSource": "Transtornos de humor"
+      "originalSource": "Transtornos de humor",
+      "manuallyReviewed": true,
+      "reviewedAt": "2026-06-06T08:15:42"
     },
     {
       "id": "transtornos-de-humor-86",
@@ -31628,7 +31646,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Psicóticos",
       "topic": "Transtornos Psicóticos",
       "title": "Questão 11",
-      "text": "Transtorno Psicótico BreveA paciente Jéssica Lorraine, 28 anos, está apresentando um comportamento “diferente” há 18 dias. Apresenta risosimotivados, acusa sua irmã de ser uma espiã da antiga união soviética e acredita que sua mãe deseja envenená-la,colocando veneno de rato na sua comida. O quadro iniciou-se abruptamente, após ser acusada de furtar 12 reais do caixado mercadinho em que trabalha. Após avaliação médica, a paciente é internada, inicia o tratamento com antipsicótico e tem uma melhora completa doquadro após uma semana, com retorno a sua funcionalidade e padrão de comportamento",
+      "text": "/A paciente Jéssica Lorraine, 28 anos, está apresentando um comportamento “diferente” há 18 dias. Apresenta risos imotivados, acusa sua irmã de ser uma espiã da antiga união soviética e acredita que sua mãe deseja envenená-la, colocando veneno de rato na sua comida. O quadro iniciou-se abruptamente, após ser acusada de furtar 12 reais do caixa do mercadinho em que trabalha. Após avaliação médica, a paciente é internada, inicia o tratamento com antipsicótico e tem uma melhora completa do quadro após uma semana, com retorno a sua funcionalidade e padrão de comportamento",
       "options": [
         {
           "letter": "A",
@@ -31654,7 +31672,9 @@ window.BANCO_RMAIS_QUESTIONS = {
       "sourceId": "4000159694",
       "correctAnswer": "A",
       "provider": "Estratégia",
-      "originalSource": "Transtornos Psicóticos"
+      "originalSource": "Transtornos Psicóticos",
+      "manuallyReviewed": true,
+      "reviewedAt": "2026-06-06T08:15:42"
     },
     {
       "id": "transtornos-psicóticos-12",
@@ -31824,7 +31844,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Psicóticos",
       "topic": "Transtornos Psicóticos",
       "title": "Questão 18",
-      "text": "Transtorno PsicóticosA paciente Jéssica Lorraine, 28 anos, está apresentando um comportamento “diferente” há 18 dias. Apresenta risosimotivados, acusa sua irmã de ser uma espiã da antiga união soviética e acredita que sua mãe deseja envenenála, colocandoveneno de rato na sua comida. O quadro iniciouse abruptamente, após ser acusada de furtar 12 reais do caixa domercadinho em que trabalha. Após avaliação médica, a paciente é internada, inicia o tratamento com antipsicótico e temuma melhora completa do quadro após uma semana, com retorno a sua funcionalidade e padrão de comportamento.A hipótese diagnóstica para o caso é de",
+      "text": "A paciente Jéssica Lorraine, 28 anos, está apresentando um comportamento “diferente” há 18 dias. Apresenta risosimotivados, acusa sua irmã de ser uma espiã da antiga união soviética e acredita que sua mãe deseja envenenála, colocandoveneno de rato na sua comida. O quadro iniciouse abruptamente, após ser acusada de furtar 12 reais do caixa domercadinho em que trabalha. Após avaliação médica, a paciente é internada, inicia o tratamento com antipsicótico e temuma melhora completa do quadro após uma semana, com retorno a sua funcionalidade e padrão de comportamento.A hipótese diagnóstica para o caso é de",
       "options": [
         {
           "letter": "A",
@@ -31850,7 +31870,9 @@ window.BANCO_RMAIS_QUESTIONS = {
       "sourceId": "4000147680",
       "correctAnswer": "A",
       "provider": "Estratégia",
-      "originalSource": "Transtornos Psicóticos"
+      "originalSource": "Transtornos Psicóticos",
+      "manuallyReviewed": true,
+      "reviewedAt": "2026-06-06T08:15:42"
     },
     {
       "id": "transtornos-psicóticos-19",
@@ -32821,7 +32843,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Psicóticos",
       "topic": "Transtornos Psicóticos",
       "title": "Questão 57",
-      "text": "Transtorno Psicótico BreveTratamento da EsquizofreniaSr. João procura a Unidade acompanhamento do filho André de 18 anos. Relata que há cerca de 3 dias o filho está agitado,com pensamentos delirantes, não dorme e sai de casa sem rumo. O pai diz que há três meses vem percebendo alteraçãono comportamento do filho que às vezes falava sozinho, com di+culdade de concentração, insônia e abandono doemprego e da escola. Sem história de uso de ácool ou outras drogas. Durante a consulta André tem discurso desorganizadoe fala delirante. Não há relatos de agressões contra si próprio ou contra terceiros. Tem boa rede de suporte familiar. Nãoapresenta alterações no exame físico. A conduta mais adequada para este caso é",
+      "text": "Sr. João procura a Unidade acompanhamento do filho André de 18 anos. Relata que há cerca de 3 dias o filho está agitado,com pensamentos delirantes, não dorme e sai de casa sem rumo. O pai diz que há três meses vem percebendo alteraçãono comportamento do filho que às vezes falava sozinho, com di+culdade de concentração, insônia e abandono doemprego e da escola. Sem história de uso de ácool ou outras drogas. Durante a consulta André tem discurso desorganizadoe fala delirante. Não há relatos de agressões contra si próprio ou contra terceiros. Tem boa rede de suporte familiar. Nãoapresenta alterações no exame físico. A conduta mais adequada para este caso é",
       "options": [
         {
           "letter": "A",
@@ -32843,7 +32865,9 @@ window.BANCO_RMAIS_QUESTIONS = {
       "sourceId": "4000021990",
       "correctAnswer": "B",
       "provider": "Estratégia",
-      "originalSource": "Transtornos Psicóticos"
+      "originalSource": "Transtornos Psicóticos",
+      "manuallyReviewed": true,
+      "reviewedAt": "2026-06-06T08:15:42"
     },
     {
       "id": "transtornos-psicóticos-58",
@@ -33515,11 +33539,11 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Psicóticos",
       "topic": "Transtornos Psicóticos",
       "title": "Questão 83",
-      "text": "Paciente do sexo feminino, 17 anos, chega ao consultório afirmando que tem a capacidade de realizar milagres, como o defazer cegos voltarem a enxergar, e que vem sendo perseguida por \"seres demoníacos que querem promover o apocalipse\".Ao exame, encontra-se vígil, orientada auto e alopsiquicamente, assustada, ansiosa e com memória preservada. Negahumor deprimido ou exaltado. Os familiares informam que o quadro atual iniciou-se há mais de 6 meses. O diagnóstico maisprovável e a melhor conduta terapêutica para esse caso são, respectivamente: AEsquizofrenia",
+      "text": "Paciente do sexo feminino, 17 anos, chega ao consultório afirmando que tem a capacidade de realizar milagres, como o defazer cegos voltarem a enxergar, e que vem sendo perseguida por \"seres demoníacos que querem promover o apocalipse\".Ao exame, encontra-se vígil, orientada auto e alopsiquicamente, assustada, ansiosa e com memória preservada. Negahumor deprimido ou exaltado. Os familiares informam que o quadro atual iniciou-se há mais de 6 meses. O diagnóstico maisprovável e a melhor conduta terapêutica para esse caso são, respectivamente:",
       "options": [
         {
           "letter": "A",
-          "text": "paciente deve ser medicada com um medicamento antipsicótico"
+          "text": "Esquizofrenia. A paciente deve ser medicada com um medicamento antipsicótico"
         },
         {
           "letter": "B",
@@ -33537,7 +33561,9 @@ window.BANCO_RMAIS_QUESTIONS = {
       "sourceId": "4000075749",
       "correctAnswer": "A",
       "provider": "Estratégia",
-      "originalSource": "Transtornos Psicóticos"
+      "originalSource": "Transtornos Psicóticos",
+      "manuallyReviewed": true,
+      "reviewedAt": "2026-06-06T08:15:42"
     },
     {
       "id": "transtornos-psicóticos-86",
@@ -34675,10 +34701,6 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "D",
-          "text": "Psicose de korsakoff"
-        },
-        {
-          "letter": "E",
           "text": "Esquizofrenia paranoide"
         }
       ],
@@ -34687,7 +34709,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "provider": "MedReview",
       "originalSource": "Delirium",
       "manuallyReviewed": true,
-      "reviewedAt": "2026-05-29T08:26:05"
+      "reviewedAt": "2026-06-06T08:16:28"
     },
     {
       "id": "medreview-delirium-34",
@@ -36199,25 +36221,27 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "B",
-          "text": "Perguntar sobre histórico familiar de demências, aplicar Questionário de Mudança"
+          "text": "Perguntar sobre histórico familiar de demências, aplicar Questionário de Mudança cognitiva (QMC8) e Escala de epressão Geriátrica (GDS) e solicitar exames de sangue para investigação."
         },
         {
           "letter": "C",
-          "text": "ognitiva (QMC8) e Escala de"
+          "text": "Perguntar sobre histórico familiar de demências, solicitar exames de sangue para investigação e tomografia de crânio."
         },
         {
           "letter": "D",
-          "text": "epressão Geriátrica (GDS) e solicitar exames de sangue para investigação. C) Perguntar sobre histórico familiar de demências, solicitar exames de sangue para investigação e tomografia de crânio. D) Perguntar sobre histórico familiar de demências, realizar Mini"
+          "text": "Perguntar sobre histórico familiar de demências, realizar Mini exame do Estado Mental (MEEM), solicitar exames de sangue para investigação e encaminhar à Geriatria"
         },
         {
           "letter": "E",
-          "text": "xame do Estado Mental (MEEM), solicitar exames de sangue para investigação e encaminhar à Geriatria. E) Perguntar sobre histórico familiar de demências, realizar Mini Exame do Estado Mental (MEEM) e encaminhar à Neurologia"
+          "text": "Perguntar sobre histórico familiar de demências, realizar Mini Exame do Estado Mental (MEEM) e encaminhar à Neurologia"
         }
       ],
       "sourceId": "",
       "correctAnswer": "B",
       "provider": "MedReview",
-      "originalSource": "Demências"
+      "originalSource": "Demências",
+      "manuallyReviewed": true,
+      "reviewedAt": "2026-06-06T08:15:42"
     },
     {
       "id": "medreview-demências-50",
@@ -43502,17 +43526,15 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "D",
-          "text": "T"
-        },
-        {
-          "letter": "E",
-          "text": "A e TDAH são diagnósticos mutuamente excludentes"
+          "text": "TEA e TDAH são diagnósticos mutuamente excludentes"
         }
       ],
       "sourceId": "",
       "correctAnswer": "B",
       "provider": "MedReview",
-      "originalSource": "Psiquiatria Infantil (TEA, TDAH)"
+      "originalSource": "Psiquiatria Infantil (TEA, TDAH)",
+      "manuallyReviewed": true,
+      "reviewedAt": "2026-06-06T08:15:42"
     },
     {
       "id": "medreview-psiquiatria-infantil-(tea,-tdah)-53",
@@ -44848,11 +44870,11 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos de Ansiedade",
       "topic": "Transtornos de Ansiedade",
       "title": "Questão 23",
-      "text": "Em relação às recomendações sobe o diagnóstico diferencial da depressão com transtorno bipolar, analise as assertivas abaixo: I. Investigar história prévia de episódio maníaco ou hipomaníaco.; II. Deve-se assegurar que os sintomas que levantam suspeita de episódio maníaco ou hipomaníaco ocorreram no mesmo período.; III. Antidepressivos não devem ser iniciados em pacientes com transtorno bipolar, sob risco de desencadear episódio maníaco. Quais estão corretas? A)",
+      "text": "Em relação às recomendações sobe o diagnóstico diferencial da depressão com transtorno bipolar, analise as assertivas abaixo: \nI. Investigar história prévia de episódio maníaco ou hipomaníaco.; \nII. Deve-se assegurar que os sintomas que levantam suspeita de episódio maníaco ou hipomaníaco ocorreram no mesmo período.; \nIII. Antidepressivos não devem ser iniciados em pacientes com transtorno bipolar, sob risco de desencadear episódio maníaco. \nQuais estão corretas?",
       "options": [
         {
           "letter": "A",
-          "text": "penas I"
+          "text": "Apenas I"
         },
         {
           "letter": "B",
@@ -44874,7 +44896,9 @@ window.BANCO_RMAIS_QUESTIONS = {
       "sourceId": "",
       "correctAnswer": "E",
       "provider": "MedReview",
-      "originalSource": "Transtornos de Ansiedade"
+      "originalSource": "Transtornos de Ansiedade",
+      "manuallyReviewed": true,
+      "reviewedAt": "2026-06-06T08:15:42"
     },
     {
       "id": "medreview-transtornos-de-ansiedade-24",
@@ -48700,11 +48724,11 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Intoxicação por Drogas e Dependência Química",
       "topic": "Intoxicação por Drogas e Dependência Química",
       "title": "Questão 41",
-      "text": "Mulher, 41a, procura a Unidade Pronto Atendimento com história de mal-estar e fraqueza. Refere ter interrompido há um dia o consumo de bebida alcoólica. Antecedentes pessoais: uso de 1 garrafa de aguardente/dia há 20 anos. Durante a consulta a paciente apresenta repentinamente movimentos tônico- clônicos generalizados, acompanhados de incontinência urinária e perda da consciência com duração de um minuto, com recuperação total do nível de consciência. ALÉM DE GARANTIR AS VIAS AÉREAS PÉRVIAS A CONDUTA É: A)",
+      "text": "Mulher, 41a, procura a Unidade Pronto Atendimento com história de mal-estar e fraqueza. Refere ter interrompido há um dia o consumo de bebida alcoólica. Antecedentes pessoais: uso de 1 garrafa de aguardente/dia há 20 anos. Durante a consulta a paciente apresenta repentinamente movimentos tônico-clônicos generalizados, acompanhados de incontinência urinária e perda da consciência com duração de um minuto, com recuperação total do nível de consciência. ALÉM DE GARANTIR AS VIAS AÉREAS PÉRVIAS A CONDUTA É:",
       "options": [
         {
           "letter": "A",
-          "text": "dministrar fenitoina e tiamina intravenosos"
+          "text": "Administrar fenitoina e tiamina intravenosos"
         },
         {
           "letter": "B",
@@ -48722,7 +48746,9 @@ window.BANCO_RMAIS_QUESTIONS = {
       "sourceId": "",
       "correctAnswer": "D",
       "provider": "MedReview",
-      "originalSource": "Álcool"
+      "originalSource": "Álcool",
+      "manuallyReviewed": true,
+      "reviewedAt": "2026-06-06T08:15:42"
     },
     {
       "id": "medreview-álcool-42",
