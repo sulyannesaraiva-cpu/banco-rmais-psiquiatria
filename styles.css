@@ -792,8 +792,24 @@ textarea {
 }
 
 .comment-body {
-  white-space: pre-wrap;
   line-height: 1.45;
+}
+
+.markdown-content {
+  display: grid;
+  gap: 12px;
+}
+
+.markdown-content p {
+  margin: 0;
+}
+
+.markdown-content strong {
+  font-weight: 800;
+}
+
+.markdown-content .markdown-heading {
+  font-weight: 700;
 }
 
 .comment-actions {
@@ -832,12 +848,11 @@ textarea {
   font-size: 14px;
 }
 
-.saved-note-item p {
+.saved-note-preview {
   margin: 0;
   color: var(--text);
   font-size: 14px;
   line-height: 1.4;
-  white-space: pre-wrap;
 }
 
 .saved-note-actions {

@@ -736,7 +736,7 @@ function renderQuestionDiscussion(question, progress = {}) {
                     ? `<div class="comment-edit-box">
                         <textarea rows="5" data-edit-comment-input="${escapeHtml(comment.id)}">${escapeHtml(comment.content)}</textarea>
                       </div>`
-                    : `<div class="comment-body">${escapeHtml(comment.content)}</div>`
+                    : `<div class="comment-body markdown-content">${renderSafeMarkdown(comment.content)}</div>`
                 }
                 ${
                   canDelete || canEdit
@@ -1651,6 +1651,29 @@ function escapeHtml(value) {
     .replace(/'/g, "&#039;");
 }
 
+function renderSafeMarkdown(value) {
+  const normalized = String(value ?? "")
+    .replace(/\r\n/g, "\n")
+    .split("\n")
+    .map((line) => line.replace(/^\s*>\s?/, ""))
+    .join("\n")
+    .trim();
+  if (!normalized) return "";
+  const escaped = escapeHtml(normalized);
+  return escaped
+    .split(/\n{2,}/)
+    .map((block) => {
+      const lines = block.split("\n");
+      const firstLine = lines[0]?.trim() || "";
+      const heading = firstLine.match(/^#{1,3}\s*(.+)$/);
+      const content = heading ? [heading[1], ...lines.slice(1)].join("\n") : block;
+      const withBold = content.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+      const html = withBold.replace(/\n/g, "<br>");
+      return heading ? `<p class="markdown-heading">${html}</p>` : `<p>${html}</p>`;
+    })
+    .join("");
+}
+
 function currentFilterKey() {
   return JSON.stringify({
     topic: el.topic.value,
@@ -1796,7 +1819,7 @@ function renderTopics() {
 }
 
 function renderStats() {
-  const visibleQuestions = state.questions.filter((question) => !isExcluded(question.id));
+  const visibleQuestions = allStudyQuestions().filter((question) => !isExcluded(question.id));
   const answered = visibleQuestions.filter((question) => getProgress(question.id).grade).length;
   const correct = visibleQuestions.filter((question) => getProgress(question.id).grade === "correct").length;
   const ready = visibleQuestions.filter((question) => {
@@ -1902,7 +1925,7 @@ function renderSavedNotesPanel() {
           return `
             <article class="saved-note-item">
               <strong>${escapeHtml(title)}</strong>
-              <p>${escapeHtml(preview)}</p>
+              <div class="saved-note-preview markdown-content">${renderSafeMarkdown(preview)}</div>
               <div class="saved-note-actions">
                 <span>${escapeHtml(note.updated_at ? formatCommentDate(note.updated_at) : "")}</span>
                 <button data-open-note-question="${escapeHtml(note.question_id)}">Abrir questão</button>
@@ -1978,6 +2001,7 @@ function renderErrorChart() {
 
 function renderOverview() {
   const topics = topicsForStats();
+  const allVisibleQuestions = allStudyQuestions().filter((question) => !isExcluded(question.id));
   const selectedQuestions = state.questions.filter(
     (question) => topics.some((topicName) => questionBelongsToTopic(question, topicName)) && !isExcluded(question.id),
   );
@@ -1985,9 +2009,9 @@ function renderOverview() {
   for (const topic of topics) counts[topicStatus(topic)] += 1;
   const totalTopics = Math.max(topics.length, 1);
   const dueCount = spacedReviewQuestions(true).length;
-  const unseenCount = selectedQuestions.filter((question) => !getProgress(question.id).grade).length;
+  const unseenCount = allVisibleQuestions.filter((question) => !getProgress(question.id).grade).length;
   if (el.overviewSmartLine) {
-    el.overviewSmartLine.textContent = `${pluralize(dueCount, "revisão", "revisões")} vencida${dueCount === 1 ? "" : "s"}, ${pluralize(counts.fragile, "tema frágil", "temas frágeis")} e ${pluralize(unseenCount, "questão não praticada", "questões não praticadas")} nos temas selecionados.`;
+    el.overviewSmartLine.textContent = `${pluralize(dueCount, "revisão", "revisões")} vencida${dueCount === 1 ? "" : "s"}, ${pluralize(counts.fragile, "tema frágil", "temas frágeis")} e ${pluralize(unseenCount, "questão não praticada", "questões não praticadas")} no banco total.`;
   }
   el.overviewLine.textContent = `Estatísticas dos ${topics.length} temas selecionados (${pluralize(selectedQuestions.length, "questão", "questões")})`;
   for (const key of Object.keys(counts)) {
