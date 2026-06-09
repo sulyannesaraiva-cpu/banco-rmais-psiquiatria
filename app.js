@@ -237,7 +237,9 @@ const el = {
   review: document.querySelector("#reviewBtn"),
   exclude: document.querySelector("#excludeBtn"),
   edit: document.querySelector("#editBtn"),
+  sendMaintenance: document.querySelector("#sendMaintenanceBtn"),
   manualGradePanel: document.querySelector("#manualGradePanel"),
+  moreOptions: document.querySelector(".tool-details"),
   confirmAnswer: document.querySelector("#confirmAnswerBtn"),
   answerBtn: document.querySelector("#answerBtn"),
   correct: document.querySelector("#correctBtn"),
@@ -475,6 +477,8 @@ function renderAdminAccess() {
     state.activeTab = "overview";
   }
   if (el.edit) el.edit.hidden = !state.isAdmin;
+  if (el.sendMaintenance) el.sendMaintenance.hidden = !state.isAdmin;
+  if (el.moreOptions) el.moreOptions.hidden = !state.isAdmin;
   if (el.exclude) el.exclude.hidden = !state.isAdmin;
   if (el.editPending) el.editPending.hidden = !state.isAdmin;
   if (el.exportCorrections) el.exportCorrections.hidden = !state.isAdmin;
@@ -1035,6 +1039,7 @@ function effectiveQuestion(question) {
     text: correction.text || question.text,
     options: correction.options || question.options,
     correctAnswer: correction.correctAnswer ?? question.correctAnswer,
+    maintenanceFlagged: Boolean(correction.maintenanceFlagged || question.maintenanceFlagged),
     manuallyReviewed: true,
   };
 }
@@ -1050,11 +1055,13 @@ function isReadyQuestion(question) {
 }
 
 function needsBankReview(question) {
+  if (question?.maintenanceFlagged) return true;
   return !question?.annulled && !isReadyQuestion(question);
 }
 
 function readinessIssues(question) {
   const issues = [];
+  if (question?.maintenanceFlagged) issues.push("sinalizada para manutenção");
   if (question?.annulled) return issues;
   if (!question?.text?.trim()) issues.push("enunciado vazio");
   if (!question?.options?.length || question.options.length < 2) issues.push("alternativas nao separadas");
@@ -1071,6 +1078,7 @@ function readinessIssues(question) {
 
 function readinessIssueKeys(question) {
   const issues = [];
+  if (question?.maintenanceFlagged) issues.push("manual-review");
   if (question?.annulled) return issues;
   if (!question?.text?.trim()) issues.push("empty-text");
   if (!question?.options?.length || question.options.length < 2) issues.push("incomplete-options");
@@ -1416,8 +1424,10 @@ function calculateReviewPlan({ grade, confidence, previous = {} }) {
   const correctStreak = previous.correctStreak || 0;
   let intervalDays = 7;
   if (grade === "wrong") {
-    intervalDays = conf <= 2 ? 1 : 3;
+    intervalDays = conf <= 2 || conf === 6 ? 1 : 3;
     if (wrongCount >= 2) intervalDays = 1;
+  } else if (conf === 6) {
+    intervalDays = 3;
   } else if (conf <= 2) {
     intervalDays = 5;
   } else if (conf === 3) {
@@ -1429,7 +1439,7 @@ function calculateReviewPlan({ grade, confidence, previous = {} }) {
   }
   return {
     intervalDays,
-    review: grade === "wrong" || conf <= 3,
+    review: grade === "wrong" || conf <= 3 || conf === 6,
     nextReviewAt: nextReviewTime(intervalDays),
   };
 }
@@ -1538,7 +1548,8 @@ function themeWeaknessScore(topic) {
 function priorityScoreFor(question, progress = getProgress(question.id)) {
   const isWrong = progress.grade === "wrong" ? 1 : 0;
   const confidence = Number(progress.confidence || defaultConfidenceForGrade(progress.grade) || 3);
-  const lowConfidenceWeight = Math.max(0, 4 - confidence);
+  const confidenceForPriority = confidence === 6 ? 1 : confidence;
+  const lowConfidenceWeight = Math.max(0, 4 - confidenceForPriority);
   const since = daysSince(progress.updatedAt);
   const themeWeaknessWeight = themeWeaknessScore(topicForQuestion(question));
   const questionDifficultyWeight = progress.wrongCount || 0;
@@ -1559,7 +1570,7 @@ function updateReviewSchedule(question, progress) {
     correct_streak: progress.correctStreak || 0,
     last_confidence: progress.confidence || null,
     last_result: progress.grade || null,
-    status: progress.grade === "correct" && (progress.confidence || 0) >= 5 && (progress.correctStreak || 0) >= 3 ? "mastered" : "active",
+    status: progress.grade === "correct" && progress.confidence === 5 && (progress.correctStreak || 0) >= 3 ? "mastered" : "active",
     updated_at: new Date().toISOString(),
   };
   state.reviewSchedule[question.id] = row;
@@ -2309,7 +2320,10 @@ function renderTodayReview() {
   if (!el.todayPlan) return;
   const due = spacedReviewQuestions(true);
   const recentErrors = due.filter((question) => getProgress(question.id).grade === "wrong").length;
-  const lowConfidence = due.filter((question) => (getProgress(question.id).confidence || 5) <= 2).length;
+  const lowConfidence = due.filter((question) => {
+    const confidence = getProgress(question.id).confidence || 5;
+    return confidence <= 2 || confidence === 6;
+  }).length;
   const maintenance = due.filter((question) => getProgress(question.id).grade === "correct").length;
   el.todayDueCount.textContent = due.length;
   el.todayPriorityCount.textContent = due.filter((question) => priorityScoreFor(question) >= 6).length;
@@ -3209,6 +3223,29 @@ function resetEdit() {
   applyFilters({ preserveCurrent: true });
 }
 
+function sendCurrentQuestionToMaintenance() {
+  if (!state.isAdmin) return;
+  const question = currentQuestion();
+  if (!question) return;
+  const current = state.corrections[question.id] || {};
+  state.corrections[question.id] = {
+    ...current,
+    maintenanceFlagged: true,
+  };
+  saveCorrections();
+  if (el.pendingReviewReason) el.pendingReviewReason.textContent = "Pendências: sinalizada para manutenção.";
+  if (el.status) el.status.value = "needs-review";
+  state.sessionActive = false;
+  state.examActive = false;
+  clearExamSimulationState();
+  state.examSetActive = false;
+  state.spacedReviewActive = false;
+  state.smartTrainingActive = false;
+  state.topicActive = false;
+  setTab("topics");
+  applyFilters({ preserveCurrent: true });
+}
+
 function exportCorrections() {
   if (!state.isAdmin) return;
   const corrections = Object.fromEntries(
@@ -3216,6 +3253,7 @@ function exportCorrections() {
       Boolean(
         correction?.text ||
           correction?.correctAnswer ||
+          correction?.maintenanceFlagged ||
           (Array.isArray(correction?.options) && correction.options.length),
       ),
     ),
@@ -3479,6 +3517,7 @@ el.review.addEventListener("click", () => {
 });
 el.exclude.addEventListener("click", excludeCurrentQuestion);
 el.edit.addEventListener("click", openEditor);
+el.sendMaintenance?.addEventListener("click", sendCurrentQuestionToMaintenance);
 el.editPending.addEventListener("click", openEditor);
 el.cancelEdit.addEventListener("click", closeEditor);
 el.saveEdit.addEventListener("click", saveEdit);
