@@ -47,6 +47,7 @@ const state = {
   activeAnswers: {},
   supabase: null,
   authUser: null,
+  isAdmin: false,
   cloudReady: false,
   syncTimer: null,
   settingsSyncTimer: null,
@@ -191,6 +192,7 @@ const el = {
   authForm: document.querySelector("#authForm"),
   authEmail: document.querySelector("#authEmail"),
   authPassword: document.querySelector("#authPassword"),
+  adminTabs: document.querySelectorAll(".admin-tab"),
   login: document.querySelector("#loginBtn"),
   signup: document.querySelector("#signupBtn"),
   logout: document.querySelector("#logoutBtn"),
@@ -441,6 +443,42 @@ function renderAuth() {
   el.authForm.hidden = Boolean(user);
   el.logout.hidden = !user;
   if (!user) setSyncStatus(state.supabase ? "Modo local ativo." : "Supabase indisponivel neste navegador.");
+  renderAdminAccess();
+}
+
+function renderAdminAccess() {
+  el.adminTabs?.forEach((button) => {
+    button.hidden = !state.isAdmin;
+  });
+  if (!state.isAdmin && state.activeTab === "topics") {
+    state.activeTab = "overview";
+  }
+  if (el.edit) el.edit.hidden = !state.isAdmin;
+  if (el.exclude) el.exclude.hidden = !state.isAdmin;
+  if (el.editPending) el.editPending.hidden = !state.isAdmin;
+  if (el.exportCorrections) el.exportCorrections.hidden = !state.isAdmin;
+  if (el.confirmPending) el.confirmPending.disabled = !state.isAdmin;
+  if (el.status) el.status.disabled = !state.isAdmin;
+  if (el.editor && !state.isAdmin) {
+    state.editing = false;
+    el.editor.hidden = true;
+  }
+}
+
+async function loadUserProfile() {
+  state.isAdmin = false;
+  if (!state.authUser || !state.supabase) {
+    renderAdminAccess();
+    return;
+  }
+  const { data, error } = await state.supabase.rpc("is_admin");
+  if (error) {
+    console.warn("Nao foi possivel carregar o perfil administrativo.", error);
+    renderAdminAccess();
+    return;
+  }
+  state.isAdmin = Boolean(data);
+  renderAdminAccess();
 }
 
 function scheduleCloudProgressSync() {
@@ -500,7 +538,7 @@ async function loadCloudState() {
   if (settingsRow?.settings) applySettingsPayload(settingsRow.settings);
   state.cloudReady = true;
   await Promise.all([syncProgressToCloud(), syncSettingsToCloud()]);
-  setSyncStatus("Conta sincronizada.");
+  setSyncStatus(state.isAdmin ? "Conta sincronizada. Perfil administrador." : "Conta sincronizada.");
   renderTopics();
   applyFilters({ preserveCurrent: true });
 }
@@ -514,11 +552,14 @@ async function setupSupabaseAuth() {
   const { data } = await state.supabase.auth.getSession();
   state.authUser = data.session?.user || null;
   state.cloudReady = Boolean(state.authUser);
+  if (state.authUser) await loadUserProfile();
   renderAuth();
   if (state.authUser) await loadCloudState();
   state.supabase.auth.onAuthStateChange(async (_event, session) => {
     state.authUser = session?.user || null;
     state.cloudReady = Boolean(state.authUser);
+    if (state.authUser) await loadUserProfile();
+    else state.isAdmin = false;
     renderAuth();
     if (state.authUser) await loadCloudState();
     else setSyncStatus("Modo local ativo.");
@@ -565,6 +606,7 @@ async function signOut() {
   if (!state.supabase) return;
   await state.supabase.auth.signOut();
   state.authUser = null;
+  state.isAdmin = false;
   state.cloudReady = false;
   renderAuth();
 }
@@ -2130,6 +2172,7 @@ function renderQuestionMap() {
 }
 
 function render() {
+  renderAdminAccess();
   renderStats();
   renderDashboard();
   const showStartPanel = !hasActiveQuestionFlow() && !state.filtered.length;
@@ -2213,8 +2256,8 @@ function render() {
   el.answer.textContent = showAnswer ? `Gabarito: alternativa ${question.correctAnswer}` : "";
   el.answer.classList.toggle("visible", Boolean(showAnswer));
   const needsReview = needsBankReview(question);
-  el.pendingReviewPanel.hidden = !needsReview || examLocked;
-  if (needsReview) {
+  el.pendingReviewPanel.hidden = !state.isAdmin || !needsReview || examLocked;
+  if (state.isAdmin && needsReview) {
     const issues = readinessIssues(question);
     el.pendingReviewReason.textContent = issues.length
       ? `Pendências: ${issues.join(", ")}.`
@@ -2243,7 +2286,7 @@ function render() {
     button.classList.toggle("active", progress.errorType === button.dataset.errorType);
   });
   el.note.value = progress.note || "";
-  el.editor.hidden = !state.editing;
+  el.editor.hidden = !state.isAdmin || !state.editing;
   if (state.editing) fillEditor(question);
 }
 
@@ -2269,6 +2312,7 @@ function shuffleFiltered() {
 }
 
 function setTab(tabName) {
+  if (tabName === "topics" && !state.isAdmin) tabName = "overview";
   state.activeTab = tabName;
   el.tabs.forEach((button) => button.classList.toggle("active", button.dataset.tab === tabName));
   Object.entries(el.panels).forEach(([name, panel]) => {
@@ -2684,6 +2728,7 @@ function collectEditor() {
 }
 
 function openEditor() {
+  if (!state.isAdmin) return;
   const question = effectiveQuestion(currentQuestion());
   if (!question) return;
   state.editing = true;
@@ -2696,6 +2741,7 @@ function closeEditor() {
 }
 
 function saveEdit() {
+  if (!state.isAdmin) return;
   const question = currentQuestion();
   if (!question) return;
   const correction = collectEditor();
@@ -2711,6 +2757,7 @@ function saveEdit() {
 }
 
 function resetEdit() {
+  if (!state.isAdmin) return;
   const question = currentQuestion();
   if (!question) return;
   delete state.corrections[question.id];
@@ -2720,6 +2767,7 @@ function resetEdit() {
 }
 
 function exportCorrections() {
+  if (!state.isAdmin) return;
   const corrections = Object.fromEntries(
     Object.entries(state.corrections).filter(([, correction]) =>
       Boolean(
@@ -2759,6 +2807,7 @@ function exportCorrections() {
 }
 
 function excludeCurrentQuestion() {
+  if (!state.isAdmin) return;
   const question = currentQuestion();
   if (!question) return;
   const shouldExclude = window.confirm("Excluir esta questão do banco neste navegador?");
@@ -2771,6 +2820,7 @@ function excludeCurrentQuestion() {
 }
 
 function restoreExcludedQuestions() {
+  if (!state.isAdmin) return;
   if (!state.excluded.length) return;
   const shouldRestore = window.confirm("Restaurar todas as questões excluídas?");
   if (!shouldRestore) return;
@@ -2912,6 +2962,7 @@ el.examResult.addEventListener("click", (event) => {
   reviewExamSimulationErrors();
 });
 el.confirmPending.addEventListener("click", () => {
+  if (!state.isAdmin) return;
   state.sessionActive = false;
   state.examActive = false;
   clearExamSimulationState();
