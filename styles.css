@@ -746,6 +746,67 @@ textarea {
   background: var(--panel);
 }
 
+.comments-panel {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 18px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--line);
+}
+
+.comments-head h3 {
+  margin: 0 0 4px;
+  font-size: 16px;
+}
+
+.comments-head p,
+.comment-meta,
+.comment-empty {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.comment-form {
+  display: grid;
+  gap: 10px;
+}
+
+.comment-form textarea {
+  width: 100%;
+  resize: vertical;
+}
+
+.comments-list {
+  display: grid;
+  gap: 10px;
+}
+
+.comment-item {
+  display: grid;
+  gap: 8px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+}
+
+.comment-body {
+  white-space: pre-wrap;
+  line-height: 1.45;
+}
+
+.comment-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.comment-delete {
+  border-color: #fecaca;
+  color: #b91c1c;
+  background: #fff7f7;
+}
+
 .good-text {
   color: var(--good);
 }

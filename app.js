@@ -14,6 +14,11 @@ const state = {
   corrections: JSON.parse(localStorage.getItem("banco-rmais-corrections") || "{}"),
   excluded: JSON.parse(localStorage.getItem("banco-rmais-excluded") || "[]"),
   discardedOptions: JSON.parse(localStorage.getItem("banco-rmais-discarded-options") || "{}"),
+  commentsByQuestion: {},
+  commentsLoaded: {},
+  commentsLoading: {},
+  privateNotes: {},
+  privateNotesLoading: {},
   positions: JSON.parse(localStorage.getItem("banco-rmais-positions") || "{}"),
   selectedTopics: JSON.parse(localStorage.getItem("banco-rmais-selected-topics") || "null"),
   selectedSubthemes: JSON.parse(localStorage.getItem("banco-rmais-selected-subthemes") || "[]"),
@@ -51,6 +56,7 @@ const state = {
   cloudReady: false,
   syncTimer: null,
   settingsSyncTimer: null,
+  privateNoteSyncTimer: null,
   sidebarCollapsed:
     storedSidebarState === null ? window.matchMedia("(max-width: 860px)").matches : storedSidebarState === "true",
 };
@@ -238,6 +244,13 @@ const el = {
   successTypeGroup: document.querySelector("#successTypeGroup"),
   successTypePanel: document.querySelector("#successTypePanel"),
   note: document.querySelector("#noteInput"),
+  commentsPanel: document.querySelector("#commentsPanel"),
+  commentsStatus: document.querySelector("#commentsStatus"),
+  commentForm: document.querySelector("#commentForm"),
+  commentInput: document.querySelector("#commentInput"),
+  sendComment: document.querySelector("#sendCommentBtn"),
+  commentsList: document.querySelector("#commentsList"),
+  privateNoteStatus: document.querySelector("#privateNoteStatus"),
   editor: document.querySelector("#editorPanel"),
   cancelEdit: document.querySelector("#cancelEditBtn"),
   saveEdit: document.querySelector("#saveEditBtn"),
@@ -558,6 +571,11 @@ async function setupSupabaseAuth() {
   state.supabase.auth.onAuthStateChange(async (_event, session) => {
     state.authUser = session?.user || null;
     state.cloudReady = Boolean(state.authUser);
+    state.commentsByQuestion = {};
+    state.commentsLoaded = {};
+    state.commentsLoading = {};
+    state.privateNotes = {};
+    state.privateNotesLoading = {};
     if (state.authUser) await loadUserProfile();
     else state.isAdmin = false;
     renderAuth();
@@ -608,6 +626,11 @@ async function signOut() {
   state.authUser = null;
   state.isAdmin = false;
   state.cloudReady = false;
+  state.commentsByQuestion = {};
+  state.commentsLoaded = {};
+  state.commentsLoading = {};
+  state.privateNotes = {};
+  state.privateNotesLoading = {};
   renderAuth();
 }
 
@@ -623,6 +646,214 @@ async function resetPassword() {
   }
   const { error } = await state.supabase.auth.resetPasswordForEmail(email, { redirectTo: window.location.origin });
   setSyncStatus(error ? `Erro ao enviar recuperacao: ${error.message}` : "Email de recuperacao enviado.");
+}
+
+function setDiscussionStaticText() {
+  const title = el.commentsPanel?.querySelector("h3");
+  if (title) title.textContent = "Comentários da questão";
+  if (el.commentInput) el.commentInput.placeholder = "Compartilhe uma explicação, dúvida ou observação sobre esta questão...";
+  if (el.sendComment) el.sendComment.textContent = "Enviar comentário";
+  const privateLabel = el.note?.closest("label")?.querySelector("span");
+  if (privateLabel) privateLabel.textContent = "Anotação privada";
+  if (el.note) el.note.placeholder = "Resumo, pegadinha, mnemônico ou conduta... Apenas você visualiza.";
+}
+
+function authorNameForUser() {
+  const email = state.authUser?.email || "";
+  return email ? email.split("@")[0] : "Usuário";
+}
+
+function formatCommentDate(value) {
+  if (!value) return "";
+  return new Intl.DateTimeFormat("pt-BR", {
+    day: "2-digit",
+    month: "2-digit",
+    year: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+  }).format(new Date(value));
+}
+
+function renderQuestionDiscussion(question, progress = {}) {
+  setDiscussionStaticText();
+  const questionId = question?.id;
+  if (!questionId) {
+    if (el.commentsPanel) el.commentsPanel.hidden = true;
+    if (el.note) el.note.value = "";
+    if (el.privateNoteStatus) el.privateNoteStatus.textContent = "";
+    return;
+  }
+  if (el.commentsPanel) el.commentsPanel.hidden = false;
+  if (el.commentForm) el.commentForm.hidden = !state.authUser;
+  if (!state.authUser) {
+    if (el.commentsStatus) el.commentsStatus.textContent = "Entre na conta para ver e enviar comentários.";
+    if (el.commentsList) el.commentsList.innerHTML = `<p class="comment-empty">Comentários colaborativos ficam disponíveis para usuários logados.</p>`;
+    if (el.note) el.note.value = progress.note || "";
+    if (el.privateNoteStatus) el.privateNoteStatus.textContent = "Anotação privada salva apenas neste navegador até entrar na conta.";
+    return;
+  }
+
+  const comments = state.commentsByQuestion[questionId] || [];
+  if (el.commentsStatus) {
+    el.commentsStatus.textContent = state.commentsLoaded[questionId]
+      ? `${pluralize(comments.length, "comentário público", "comentários públicos")}.`
+      : "Carregando comentários...";
+  }
+  if (el.commentsList) {
+    el.commentsList.innerHTML = comments.length
+      ? comments
+          .map((comment) => {
+            const canDelete = state.isAdmin || comment.user_id === state.authUser?.id;
+            const adminLabel = state.isAdmin && comment.user_id !== state.authUser?.id ? "Moderação admin" : "Apagar";
+            return `
+              <article class="comment-item" data-comment-id="${escapeHtml(comment.id)}">
+                <div class="comment-meta">
+                  <strong>${escapeHtml(comment.author_name || "Usuário")}</strong>
+                  <span>${escapeHtml(formatCommentDate(comment.created_at))}</span>
+                </div>
+                <div class="comment-body">${escapeHtml(comment.content)}</div>
+                ${
+                  canDelete
+                    ? `<div class="comment-actions"><button class="comment-delete" data-delete-comment="${escapeHtml(comment.id)}">${escapeHtml(adminLabel)}</button></div>`
+                    : ""
+                }
+              </article>
+            `;
+          })
+          .join("")
+      : `<p class="comment-empty">Nenhum comentário ainda. Seja a primeira pessoa a comentar esta questão.</p>`;
+  }
+
+  if (Object.prototype.hasOwnProperty.call(state.privateNotes, questionId)) {
+    if (el.note && document.activeElement !== el.note) el.note.value = state.privateNotes[questionId] || "";
+    if (el.privateNoteStatus) el.privateNoteStatus.textContent = "Anotação privada sincronizada na sua conta.";
+  } else {
+    if (el.note && document.activeElement !== el.note) el.note.value = progress.note || "";
+    if (el.privateNoteStatus) el.privateNoteStatus.textContent = "Carregando anotação privada...";
+  }
+
+  if (!state.commentsLoaded[questionId]) loadCommentsForQuestion(questionId);
+  if (!Object.prototype.hasOwnProperty.call(state.privateNotes, questionId)) loadPrivateNoteForQuestion(questionId, progress.note || "");
+}
+
+async function loadCommentsForQuestion(questionId) {
+  if (!state.supabase || !state.authUser || !questionId) return;
+  if (state.commentsLoading[questionId]) return;
+  state.commentsLoading[questionId] = true;
+  state.commentsLoaded[questionId] = false;
+  const { data, error } = await state.supabase
+    .from("question_comments")
+    .select("id, question_id, user_id, author_name, content, created_at")
+    .eq("question_id", questionId)
+    .order("created_at", { ascending: false })
+    .limit(50);
+  if (error) {
+    state.commentsLoading[questionId] = false;
+    if (currentQuestion()?.id === questionId && el.commentsStatus) {
+      el.commentsStatus.textContent = `Não foi possível carregar comentários: ${error.message}`;
+    }
+    return;
+  }
+  state.commentsByQuestion[questionId] = data || [];
+  state.commentsLoaded[questionId] = true;
+  state.commentsLoading[questionId] = false;
+  if (currentQuestion()?.id === questionId) renderQuestionDiscussion(effectiveQuestion(currentQuestion()), displayProgressFor(questionId));
+}
+
+async function sendCurrentComment() {
+  const question = currentQuestion();
+  const questionId = question?.id;
+  const content = el.commentInput?.value.trim();
+  if (!state.supabase || !state.authUser || !questionId || !content) return;
+  el.sendComment.disabled = true;
+  const { error } = await state.supabase.from("question_comments").insert({
+    question_id: questionId,
+    user_id: state.authUser.id,
+    author_name: authorNameForUser(),
+    content,
+  });
+  el.sendComment.disabled = false;
+  if (error) {
+    if (el.commentsStatus) el.commentsStatus.textContent = `Erro ao enviar comentário: ${error.message}`;
+    return;
+  }
+  el.commentInput.value = "";
+  state.commentsLoaded[questionId] = false;
+  await loadCommentsForQuestion(questionId);
+}
+
+async function deleteComment(commentId) {
+  const question = currentQuestion();
+  const questionId = question?.id;
+  if (!state.supabase || !state.authUser || !questionId || !commentId) return;
+  const shouldDelete = window.confirm(state.isAdmin ? "Apagar este comentário?" : "Apagar seu comentário?");
+  if (!shouldDelete) return;
+  const { error } = await state.supabase.from("question_comments").delete().eq("id", commentId);
+  if (error) {
+    if (el.commentsStatus) el.commentsStatus.textContent = `Erro ao apagar comentário: ${error.message}`;
+    return;
+  }
+  state.commentsByQuestion[questionId] = (state.commentsByQuestion[questionId] || []).filter((comment) => comment.id !== commentId);
+  state.commentsLoaded[questionId] = true;
+  renderQuestionDiscussion(effectiveQuestion(question), displayProgressFor(questionId));
+}
+
+async function loadPrivateNoteForQuestion(questionId, fallback = "") {
+  if (!state.supabase || !state.authUser || !questionId) return;
+  if (state.privateNotesLoading[questionId]) return;
+  state.privateNotesLoading[questionId] = true;
+  const { data, error } = await state.supabase
+    .from("private_question_notes")
+    .select("content")
+    .eq("user_id", state.authUser.id)
+    .eq("question_id", questionId)
+    .maybeSingle();
+  if (error) {
+    state.privateNotesLoading[questionId] = false;
+    state.privateNotes[questionId] = fallback || "";
+    if (currentQuestion()?.id === questionId && el.privateNoteStatus) {
+      el.privateNoteStatus.textContent = `Não foi possível carregar anotação privada: ${error.message}`;
+    }
+    return;
+  }
+  state.privateNotes[questionId] = data?.content || fallback || "";
+  state.privateNotesLoading[questionId] = false;
+  if (currentQuestion()?.id === questionId) renderQuestionDiscussion(effectiveQuestion(currentQuestion()), displayProgressFor(questionId));
+}
+
+function savePrivateNoteInput() {
+  const question = currentQuestion();
+  if (!question || !el.note) return;
+  const content = el.note.value;
+  const previous = getProgress(question.id);
+  state.progress[question.id] = { ...previous, note: content, updatedAt: Date.now() };
+  localStorage.setItem("banco-rmais-progress", JSON.stringify(state.progress));
+  state.privateNotes[question.id] = content;
+  if (!state.supabase || !state.authUser) {
+    if (el.privateNoteStatus) el.privateNoteStatus.textContent = "Anotação privada salva neste navegador.";
+    return;
+  }
+  if (el.privateNoteStatus) el.privateNoteStatus.textContent = "Salvando anotação privada...";
+  clearTimeout(state.privateNoteSyncTimer);
+  state.privateNoteSyncTimer = setTimeout(() => syncPrivateNoteToCloud(question.id, content), 700);
+}
+
+async function syncPrivateNoteToCloud(questionId, content) {
+  if (!state.supabase || !state.authUser || !questionId) return;
+  const { error } = await state.supabase.from("private_question_notes").upsert(
+    {
+      user_id: state.authUser.id,
+      question_id: questionId,
+      content,
+      updated_at: new Date().toISOString(),
+    },
+    { onConflict: "user_id,question_id" },
+  );
+  if (currentQuestion()?.id === questionId && el.privateNoteStatus) {
+    el.privateNoteStatus.textContent = error
+      ? `Erro ao salvar anotação privada: ${error.message}`
+      : "Anotação privada sincronizada na sua conta.";
+  }
 }
 
 function currentQuestion() {
@@ -2198,6 +2429,7 @@ function render() {
     el.confidencePanel.hidden = true;
     el.errorTypePanel.hidden = true;
     el.note.value = "";
+    renderQuestionDiscussion(null);
     return;
   }
 
@@ -2285,7 +2517,7 @@ function render() {
   el.errorTypeGroup.querySelectorAll("[data-error-type]").forEach((button) => {
     button.classList.toggle("active", progress.errorType === button.dataset.errorType);
   });
-  el.note.value = progress.note || "";
+  renderQuestionDiscussion(question, progress);
   el.editor.hidden = !state.isAdmin || !state.editing;
   if (state.editing) fillEditor(question);
 }
@@ -3066,7 +3298,16 @@ el.clear.addEventListener("click", () => {
   }
   setProgress({ grade: null, selected: null, confirmed: false, revealed: false, errorType: null, successType: null });
 });
-el.note.addEventListener("input", () => setProgress({ note: el.note.value }));
+el.sendComment?.addEventListener("click", sendCurrentComment);
+el.commentInput?.addEventListener("keydown", (event) => {
+  if ((event.ctrlKey || event.metaKey) && event.key === "Enter") sendCurrentComment();
+});
+el.commentsList?.addEventListener("click", (event) => {
+  const button = event.target.closest("[data-delete-comment]");
+  if (!button) return;
+  deleteComment(button.dataset.deleteComment);
+});
+el.note.addEventListener("input", savePrivateNoteInput);
 el.successTypeGroup.addEventListener("click", (event) => {
   const button = event.target.closest("[data-success-type]");
   if (!button) return;

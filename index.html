@@ -447,10 +447,24 @@
         </section>
 
         <section class="notes">
+          <div class="comments-panel" id="commentsPanel">
+            <div class="comments-head">
+              <div>
+                <h3>ComentÃ¡rios da questÃ£o</h3>
+                <p id="commentsStatus">Entre na conta para ver e enviar comentÃ¡rios.</p>
+              </div>
+            </div>
+            <div class="comment-form" id="commentForm">
+              <textarea id="commentInput" rows="3" maxlength="2000" placeholder="Compartilhe uma explicaÃ§Ã£o, dÃºvida ou observaÃ§Ã£o sobre esta questÃ£o..."></textarea>
+              <button id="sendCommentBtn" class="primary-btn">Enviar comentÃ¡rio</button>
+            </div>
+            <div class="comments-list" id="commentsList"></div>
+          </div>
           <label class="field">
             <span>Anotações da questão</span>
             <textarea id="noteInput" rows="5" placeholder="Resumo, pegadinha, mnemonico ou conduta..."></textarea>
           </label>
+          <p class="panel-line" id="privateNoteStatus">Anotacao privada salva apenas neste navegador ate entrar na conta.</p>
         </section>
       </section>
     </main>
