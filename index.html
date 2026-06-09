@@ -41,6 +41,7 @@
         <button class="tab" data-tab="activity">Sessão</button>
         <button class="tab" data-tab="exams">Provas prévias</button>
         <button class="tab admin-tab" data-tab="topics">Manutenção</button>
+        <button class="tab" data-tab="notes">Minhas anota&ccedil;&otilde;es</button>
       </nav>
 
       <section class="dashboard">
@@ -189,6 +190,14 @@
           <button id="startTopicBtn" hidden>Resolver tema</button>
           <button id="endTopicBtn" hidden>Sair do tema</button>
 
+        </div>
+
+        <div class="tab-panel" id="notesPanel">
+          <div class="study-section">
+            <h3>Minhas anota&ccedil;&otilde;es</h3>
+            <p class="panel-line" id="notesPanelStatus">Entre na conta para ver suas anota&ccedil;&otilde;es privadas sincronizadas.</p>
+            <div class="notes-list" id="savedNotesList"></div>
+          </div>
         </div>
 
         <div class="tab-panel" id="todayPanel">
@@ -464,6 +473,7 @@
             <span>Anotações da questão</span>
             <textarea id="noteInput" rows="5" placeholder="Resumo, pegadinha, mnemonico ou conduta..."></textarea>
           </label>
+          <button id="savePrivateNoteBtn" class="primary-btn">Salvar anota&ccedil;&atilde;o</button>
           <p class="panel-line" id="privateNoteStatus">Anotacao privada salva apenas neste navegador ate entrar na conta.</p>
         </section>
       </section>

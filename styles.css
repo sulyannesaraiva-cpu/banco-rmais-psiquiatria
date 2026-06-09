@@ -798,6 +798,8 @@ textarea {
 
 .comment-actions {
   display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
   justify-content: flex-end;
 }
 
@@ -805,6 +807,49 @@ textarea {
   border-color: #fecaca;
   color: #b91c1c;
   background: #fff7f7;
+}
+
+.comment-edit-box textarea {
+  width: 100%;
+  resize: vertical;
+}
+
+.notes-list {
+  display: grid;
+  gap: 10px;
+}
+
+.saved-note-item {
+  display: grid;
+  gap: 8px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+}
+
+.saved-note-item strong {
+  font-size: 14px;
+}
+
+.saved-note-item p {
+  margin: 0;
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.4;
+  white-space: pre-wrap;
+}
+
+.saved-note-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.saved-note-actions span {
+  color: var(--muted);
+  font-size: 12px;
 }
 
 .good-text {

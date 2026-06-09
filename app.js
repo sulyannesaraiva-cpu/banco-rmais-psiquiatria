@@ -19,6 +19,10 @@ const state = {
   commentsLoading: {},
   privateNotes: {},
   privateNotesLoading: {},
+  savedNotesList: [],
+  savedNotesLoaded: false,
+  savedNotesLoading: false,
+  editingCommentId: null,
   positions: JSON.parse(localStorage.getItem("banco-rmais-positions") || "{}"),
   selectedTopics: JSON.parse(localStorage.getItem("banco-rmais-selected-topics") || "null"),
   selectedSubthemes: JSON.parse(localStorage.getItem("banco-rmais-selected-subthemes") || "[]"),
@@ -244,6 +248,7 @@ const el = {
   successTypeGroup: document.querySelector("#successTypeGroup"),
   successTypePanel: document.querySelector("#successTypePanel"),
   note: document.querySelector("#noteInput"),
+  savePrivateNote: document.querySelector("#savePrivateNoteBtn"),
   commentsPanel: document.querySelector("#commentsPanel"),
   commentsStatus: document.querySelector("#commentsStatus"),
   commentForm: document.querySelector("#commentForm"),
@@ -251,6 +256,8 @@ const el = {
   sendComment: document.querySelector("#sendCommentBtn"),
   commentsList: document.querySelector("#commentsList"),
   privateNoteStatus: document.querySelector("#privateNoteStatus"),
+  notesPanelStatus: document.querySelector("#notesPanelStatus"),
+  savedNotesList: document.querySelector("#savedNotesList"),
   editor: document.querySelector("#editorPanel"),
   cancelEdit: document.querySelector("#cancelEditBtn"),
   saveEdit: document.querySelector("#saveEditBtn"),
@@ -261,6 +268,7 @@ const el = {
   panels: {
     overview: document.querySelector("#overviewPanel"),
     today: document.querySelector("#todayPanel"),
+    notes: document.querySelector("#notesPanel"),
     topics: document.querySelector("#topicsPanel"),
     activity: document.querySelector("#activityPanel"),
     history: document.querySelector("#historyPanel"),
@@ -576,6 +584,9 @@ async function setupSupabaseAuth() {
     state.commentsLoading = {};
     state.privateNotes = {};
     state.privateNotesLoading = {};
+    state.savedNotesList = [];
+    state.savedNotesLoaded = false;
+    state.savedNotesLoading = false;
     if (state.authUser) await loadUserProfile();
     else state.isAdmin = false;
     renderAuth();
@@ -631,6 +642,9 @@ async function signOut() {
   state.commentsLoading = {};
   state.privateNotes = {};
   state.privateNotesLoading = {};
+  state.savedNotesList = [];
+  state.savedNotesLoaded = false;
+  state.savedNotesLoading = false;
   renderAuth();
 }
 
@@ -704,17 +718,39 @@ function renderQuestionDiscussion(question, progress = {}) {
       ? comments
           .map((comment) => {
             const canDelete = state.isAdmin || comment.user_id === state.authUser?.id;
+            const canEdit = canDelete;
             const adminLabel = state.isAdmin && comment.user_id !== state.authUser?.id ? "Moderação admin" : "Apagar";
+            const isEditing = state.editingCommentId === comment.id;
+            const wasEdited =
+              comment.updated_at &&
+              comment.created_at &&
+              Math.abs(new Date(comment.updated_at).getTime() - new Date(comment.created_at).getTime()) > 2000;
             return `
               <article class="comment-item" data-comment-id="${escapeHtml(comment.id)}">
                 <div class="comment-meta">
                   <strong>${escapeHtml(comment.author_name || "Usuário")}</strong>
-                  <span>${escapeHtml(formatCommentDate(comment.created_at))}</span>
+                  <span>${escapeHtml(formatCommentDate(comment.created_at))}${wasEdited ? " · editado" : ""}</span>
                 </div>
-                <div class="comment-body">${escapeHtml(comment.content)}</div>
                 ${
-                  canDelete
-                    ? `<div class="comment-actions"><button class="comment-delete" data-delete-comment="${escapeHtml(comment.id)}">${escapeHtml(adminLabel)}</button></div>`
+                  isEditing
+                    ? `<div class="comment-edit-box">
+                        <textarea rows="5" data-edit-comment-input="${escapeHtml(comment.id)}">${escapeHtml(comment.content)}</textarea>
+                      </div>`
+                    : `<div class="comment-body">${escapeHtml(comment.content)}</div>`
+                }
+                ${
+                  canDelete || canEdit
+                    ? `<div class="comment-actions">
+                        ${
+                          isEditing
+                            ? `<button class="primary-btn" data-save-comment="${escapeHtml(comment.id)}">Salvar</button>
+                               <button data-cancel-comment-edit="${escapeHtml(comment.id)}">Cancelar</button>`
+                            : canEdit
+                              ? `<button data-edit-comment="${escapeHtml(comment.id)}">Editar</button>`
+                              : ""
+                        }
+                        <button class="comment-delete" data-delete-comment="${escapeHtml(comment.id)}">${escapeHtml(adminLabel)}</button>
+                      </div>`
                     : ""
                 }
               </article>
@@ -743,7 +779,7 @@ async function loadCommentsForQuestion(questionId) {
   state.commentsLoaded[questionId] = false;
   const { data, error } = await state.supabase
     .from("question_comments")
-    .select("id, question_id, user_id, author_name, content, created_at")
+    .select("id, question_id, user_id, author_name, content, created_at, updated_at")
     .eq("question_id", questionId)
     .order("created_at", { ascending: false })
     .limit(50);
@@ -798,6 +834,41 @@ async function deleteComment(commentId) {
   renderQuestionDiscussion(effectiveQuestion(question), displayProgressFor(questionId));
 }
 
+function startCommentEdit(commentId) {
+  state.editingCommentId = commentId;
+  const question = currentQuestion();
+  if (question) renderQuestionDiscussion(effectiveQuestion(question), displayProgressFor(question.id));
+}
+
+function cancelCommentEdit() {
+  state.editingCommentId = null;
+  const question = currentQuestion();
+  if (question) renderQuestionDiscussion(effectiveQuestion(question), displayProgressFor(question.id));
+}
+
+async function saveCommentEdit(commentId) {
+  const question = currentQuestion();
+  const questionId = question?.id;
+  if (!state.supabase || !state.authUser || !questionId || !commentId) return;
+  const input = el.commentsList?.querySelector(`[data-edit-comment-input="${CSS.escape(commentId)}"]`);
+  const content = input?.value.trim();
+  if (!content) {
+    if (el.commentsStatus) el.commentsStatus.textContent = "O comentário não pode ficar vazio.";
+    return;
+  }
+  const { error } = await state.supabase
+    .from("question_comments")
+    .update({ content, updated_at: new Date().toISOString() })
+    .eq("id", commentId);
+  if (error) {
+    if (el.commentsStatus) el.commentsStatus.textContent = `Erro ao editar comentário: ${error.message}`;
+    return;
+  }
+  state.editingCommentId = null;
+  state.commentsLoaded[questionId] = false;
+  await loadCommentsForQuestion(questionId);
+}
+
 async function loadPrivateNoteForQuestion(questionId, fallback = "") {
   if (!state.supabase || !state.authUser || !questionId) return;
   if (state.privateNotesLoading[questionId]) return;
@@ -821,7 +892,7 @@ async function loadPrivateNoteForQuestion(questionId, fallback = "") {
   if (currentQuestion()?.id === questionId) renderQuestionDiscussion(effectiveQuestion(currentQuestion()), displayProgressFor(questionId));
 }
 
-function savePrivateNoteInput() {
+function markPrivateNoteDirty() {
   const question = currentQuestion();
   if (!question || !el.note) return;
   const content = el.note.value;
@@ -829,13 +900,30 @@ function savePrivateNoteInput() {
   state.progress[question.id] = { ...previous, note: content, updatedAt: Date.now() };
   localStorage.setItem("banco-rmais-progress", JSON.stringify(state.progress));
   state.privateNotes[question.id] = content;
+  state.savedNotesLoaded = false;
+  if (el.privateNoteStatus) {
+    el.privateNoteStatus.textContent = state.authUser
+      ? "Alterações ainda não salvas na conta."
+      : "Anotação salva apenas neste navegador. Entre na conta para sincronizar.";
+  }
+}
+
+function saveCurrentPrivateNote() {
+  const question = currentQuestion();
+  if (!question || !el.note) return;
+  const content = el.note.value;
+  const previous = getProgress(question.id);
+  state.progress[question.id] = { ...previous, note: content, updatedAt: Date.now() };
+  localStorage.setItem("banco-rmais-progress", JSON.stringify(state.progress));
+  state.privateNotes[question.id] = content;
+  state.savedNotesLoaded = false;
   if (!state.supabase || !state.authUser) {
     if (el.privateNoteStatus) el.privateNoteStatus.textContent = "Anotação privada salva neste navegador.";
     return;
   }
   if (el.privateNoteStatus) el.privateNoteStatus.textContent = "Salvando anotação privada...";
   clearTimeout(state.privateNoteSyncTimer);
-  state.privateNoteSyncTimer = setTimeout(() => syncPrivateNoteToCloud(question.id, content), 700);
+  syncPrivateNoteToCloud(question.id, content);
 }
 
 async function syncPrivateNoteToCloud(questionId, content) {
@@ -854,6 +942,7 @@ async function syncPrivateNoteToCloud(questionId, content) {
       ? `Erro ao salvar anotação privada: ${error.message}`
       : "Anotação privada sincronizada na sua conta.";
   }
+  if (!error) state.savedNotesLoaded = false;
 }
 
 function currentQuestion() {
@@ -1741,7 +1830,104 @@ function renderDashboard() {
   renderActivity();
   renderHistory();
   renderTodayReview();
+  renderSavedNotesPanel();
   renderExams();
+}
+
+function noteQuestionById(questionId) {
+  return allStudyQuestions().find((question) => question.id === questionId) || null;
+}
+
+function localSavedNotes() {
+  return Object.entries(state.progress)
+    .filter(([, progress]) => progress?.note?.trim())
+    .map(([questionId, progress]) => ({
+      question_id: questionId,
+      content: progress.note.trim(),
+      updated_at: progress.updatedAt ? new Date(progress.updatedAt).toISOString() : null,
+    }));
+}
+
+async function loadSavedNotesPanel() {
+  if (state.savedNotesLoading) return;
+  state.savedNotesLoading = true;
+  if (!state.supabase || !state.authUser) {
+    state.savedNotesList = localSavedNotes();
+    state.savedNotesLoaded = true;
+    state.savedNotesLoading = false;
+    renderSavedNotesPanel();
+    return;
+  }
+  if (el.notesPanelStatus) el.notesPanelStatus.textContent = "Carregando suas anotações privadas...";
+  const { data, error } = await state.supabase
+    .from("private_question_notes")
+    .select("question_id, content, updated_at")
+    .eq("user_id", state.authUser.id)
+    .neq("content", "")
+    .order("updated_at", { ascending: false });
+  if (error) {
+    state.savedNotesLoading = false;
+    if (el.notesPanelStatus) el.notesPanelStatus.textContent = `Não foi possível carregar anotações: ${error.message}`;
+    return;
+  }
+  state.savedNotesList = data || [];
+  state.savedNotesLoaded = true;
+  state.savedNotesLoading = false;
+  renderSavedNotesPanel();
+}
+
+function renderSavedNotesPanel() {
+  if (!el.savedNotesList || !el.notesPanelStatus) return;
+  if (state.activeTab === "notes" && !state.savedNotesLoaded) {
+    loadSavedNotesPanel();
+  }
+  const notes = state.authUser ? state.savedNotesList : localSavedNotes();
+  if (!state.authUser) {
+    el.notesPanelStatus.textContent = notes.length
+      ? "Mostrando anotações salvas neste navegador. Entre na conta para sincronizar."
+      : "Entre na conta para ver suas anotações privadas sincronizadas.";
+  } else if (state.savedNotesLoaded) {
+    el.notesPanelStatus.textContent = notes.length
+      ? `${pluralize(notes.length, "anotação privada salva", "anotações privadas salvas")}.`
+      : "Você ainda não salvou anotações privadas.";
+  }
+  el.savedNotesList.innerHTML = notes.length
+    ? notes
+        .map((note) => {
+          const question = noteQuestionById(note.question_id);
+          const title = question
+            ? `${question.examTag || question.source || topicForQuestion(question)} · Questão ${question.number || ""}`
+            : note.question_id;
+          const preview = note.content.length > 220 ? `${note.content.slice(0, 220)}...` : note.content;
+          return `
+            <article class="saved-note-item">
+              <strong>${escapeHtml(title)}</strong>
+              <p>${escapeHtml(preview)}</p>
+              <div class="saved-note-actions">
+                <span>${escapeHtml(note.updated_at ? formatCommentDate(note.updated_at) : "")}</span>
+                <button data-open-note-question="${escapeHtml(note.question_id)}">Abrir questão</button>
+              </div>
+            </article>
+          `;
+        })
+        .join("")
+    : `<p class="comment-empty">Nenhuma anotação salva ainda.</p>`;
+}
+
+function openQuestionFromNote(questionId) {
+  const question = noteQuestionById(questionId);
+  if (!question) return;
+  state.topicActive = false;
+  state.sessionActive = false;
+  state.smartTrainingActive = false;
+  state.spacedReviewActive = false;
+  state.examActive = false;
+  state.examSetActive = false;
+  clearExamSimulationState();
+  state.filtered = [question];
+  state.index = 0;
+  setTab("notes");
+  render();
 }
 
 function errorStatsByTopic() {
@@ -2550,6 +2736,7 @@ function setTab(tabName) {
   Object.entries(el.panels).forEach(([name, panel]) => {
     panel.classList.toggle("active", name === tabName);
   });
+  if (tabName === "notes") renderSavedNotesPanel();
 }
 
 function setSidebarCollapsed(collapsed) {
@@ -3178,6 +3365,11 @@ el.errorNotebook.addEventListener("click", (event) => {
   if (!button) return;
   startErrorNotebookReview(button.dataset.errorReview);
 });
+el.savedNotesList?.addEventListener("click", (event) => {
+  const button = event.target.closest("[data-open-note-question]");
+  if (!button) return;
+  openQuestionFromNote(button.dataset.openNoteQuestion);
+});
 el.examSelect.addEventListener("change", () => {
   state.examCompletionMessage = "";
   state.activeExamId = el.examSelect.value;
@@ -3303,11 +3495,27 @@ el.commentInput?.addEventListener("keydown", (event) => {
   if ((event.ctrlKey || event.metaKey) && event.key === "Enter") sendCurrentComment();
 });
 el.commentsList?.addEventListener("click", (event) => {
+  const editButton = event.target.closest("[data-edit-comment]");
+  if (editButton) {
+    startCommentEdit(editButton.dataset.editComment);
+    return;
+  }
+  const saveButton = event.target.closest("[data-save-comment]");
+  if (saveButton) {
+    saveCommentEdit(saveButton.dataset.saveComment);
+    return;
+  }
+  const cancelButton = event.target.closest("[data-cancel-comment-edit]");
+  if (cancelButton) {
+    cancelCommentEdit();
+    return;
+  }
   const button = event.target.closest("[data-delete-comment]");
   if (!button) return;
   deleteComment(button.dataset.deleteComment);
 });
-el.note.addEventListener("input", savePrivateNoteInput);
+el.note.addEventListener("input", markPrivateNoteDirty);
+el.savePrivateNote?.addEventListener("click", saveCurrentPrivateNote);
 el.successTypeGroup.addEventListener("click", (event) => {
   const button = event.target.closest("[data-success-type]");
   if (!button) return;
