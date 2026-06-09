@@ -3652,7 +3652,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Demências",
       "topic": "Demências",
       "title": "Questão 8",
-      "text": "Avaliação CognitivaComprometimento Cognitivo LeveO Miniexame do Estado Mental (MEEM) é um exame de rastreamento padronizado da função cognitiva. Em relação aoMEEM, analisar os itens abaixo: I. É um dos melhores métodos para documentar o estado mental atual do paciente, particularmente útil para comparar comescores futuros do mesmo exame. II. É o exame indicado para definir diagnóstico em fase inicial de demência. III. É o teste com melhor sensibilidade e especificidade para pacientes analfabetos. Está(ão) CORRETO(S)",
+      "text": "O Miniexame do Estado Mental (MEEM) é um exame de rastreamento padronizado da função cognitiva. Em relação ao MEEM, analisar os itens abaixo: \nI. É um dos melhores métodos para documentar o estado mental atual do paciente, particularmente útil para comparar com escores futuros do mesmo exame. \nII. É o exame indicado para definir diagnóstico em fase inicial de demência. \nIII. É o teste com melhor sensibilidade e especificidade para pacientes analfabetos. \nEstá(ão) CORRETO(S):",
       "options": [
         {
           "letter": "A",
@@ -3674,7 +3674,9 @@ window.BANCO_RMAIS_QUESTIONS = {
       "sourceId": "4000169585",
       "correctAnswer": "A",
       "provider": "Estratégia",
-      "originalSource": "Demências"
+      "originalSource": "Demências",
+      "manuallyReviewed": true,
+      "reviewedAt": "2026-06-09T11:17:56"
     },
     {
       "id": "demências-9",
@@ -3682,7 +3684,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Demências",
       "topic": "Demências",
       "title": "Questão 9",
-      "text": "Fisiopatologia e Fatores de RiscoQuadro ClínicoA despeito da doença de Alzheimer, tem-se como verdadeiro",
+      "text": "A despeito da doença de Alzheimer, tem-se como verdadeiro",
       "options": [
         {
           "letter": "A",
@@ -3708,7 +3710,9 @@ window.BANCO_RMAIS_QUESTIONS = {
       "sourceId": "4000169173",
       "correctAnswer": "C",
       "provider": "Estratégia",
-      "originalSource": "Demências"
+      "originalSource": "Demências",
+      "manuallyReviewed": true,
+      "reviewedAt": "2026-06-09T11:17:56"
     },
     {
       "id": "demências-10",
@@ -3907,27 +3911,23 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Demências",
       "topic": "Demências",
       "title": "Questão 16",
-      "text": "Considere o caso clínico abaixo e os personagens nele ilustrados, para responder.Após ser aprovado e ingressar no Programa de Residência Médica em Medicina de Família e Comunidade, você édirecionado para uma Unidade de Atenção Primária à Saúde (UAPS) para ser recebido pelo médico preceptor da Unidade.Em sua primeira participação de reunião de equipe, uma das agentes comunitárias de saúde (ACS) da equipe do médicopreceptor traz o relato de uma gestante de sua microárea que não procurou a Unidade de Saúde para começar o pré-natal.A gestante era Vanessa e ela era antiga conhecida da equipe, porque seu Enado pai, Seu Odair, fora uma liderançacomunitária e era muito querido por todos. Vanessa tinha a primeira consulta de pré-natal agendada para o primeiro horáriodepois da reunião de equipe. Dr. Marcos Júlio, seu preceptor, relata que Vanessa nunca teve boa relação com os pais e saiude casa cedo, passando a morar, aos 14 anos, na casa de Ubiratan, seu primeiro parceiro. Após alguns anos morando juntos,Vanessa engravidou e chegou a ser acompanhada pela UAPS no pré-natal, mas teve perda gravídica com aproximadamente12 semanas de seguimento. Durante esse acompanhamento pré-natal, a equipe Ecou ciente de que Vanessa vivia emcontexto de violência doméstica, mas continuava vivendo com Ubiratan, porque não aceitava voltar para a casa dos pais.Por volta de seus 24 anos, Vanessa teve episódio de hemiplegia desproporcional em dimídio esquerdo, desvio de rima labiale disartria, enquanto trabalhava em uma casa como diarista. Foi levada à urgência e hospitalizada. Durante hospitalização,conErmou-se um infarto cerebral. A família de Vanessa possui histórico de AVCs em idades precoces: Vanusa apresentouepisódio de",
+      "text": "Considere o caso clínico abaixo e os personagens nele ilustrados para responder. \nApós ser aprovado e ingressar no Programa de Residência Médica em Medicina de Família e Comunidade, você é direcionado para uma Unidade de Atenção Primária à Saúde (UAPS) para ser recebido pelo médico preceptor da unidade. Em sua primeira participação de reunião de equipe, uma das agentes comunitárias de saúde (ACS) da equipe do médico preceptor traz o relato de uma gestante de sua microárea que não procurou a Unidade de Saúde para começar o pré-natal. A gestante era Vanessa e ela era antiga conhecida da equipe, porque seu Enado pai, Seu Odair, fora uma liderança comunitária e era muito querido por todos. Vanessa tinha a primeira consulta de pré-natal agendada para o primeiro horário depois da reunião de equipe. Dr. Marcos Júlio, seu preceptor, relata que Vanessa nunca teve boa relação com os pais e saiude casa cedo, passando a morar, aos 14 anos, na casa de Ubiratan, seu primeiro parceiro. Após alguns anos morando juntos, Vanessa engravidou e chegou a ser acompanhada pela UAPS no pré-natal, mas teve perda gravídica com aproximadamente 12 semanas de seguimento. Durante esse acompanhamento pré-natal, a equipe ficou ciente de que Vanessa vivia em contexto de violência doméstica, mas continuava vivendo com Ubiratan, porque não aceitava voltar para a casa dos pais. Por volta de seus 24 anos, Vanessa teve episódio de hemiplegia desproporcional em dimídio esquerdo, desvio de rima labial e disartria, enquanto trabalhava em uma casa como diarista. Foi levada à urgência e hospitalizada. Durante a hospitalização, confirmou-se um infarto cerebral. A família de Vanessa possui histórico de AVCs em idades precoces: Vanusa apresentou episódio de AVC durante uma de suas gestações e Dona Enzarina teria apresentado o primeiro AVC antes da menopausa.Segundo a assistente social do hospital em que Vanessa ficou internada por quase dois meses, Ubiratan nunca teria realizado uma visita, mas Edberto, um ex-namorado, foi companhia assídua. Após a alta hospitalar, Vanessa descobriu que Ubiratan estava vivendo com outra mulher e se mudou para casa de Edberto, que a acolheu, a despeito da não-aceitação do pai de Edberto, Seu Eduardo. Depois de seis anos morando juntos, Vanessa engravidou novamente, mas não procurou a UAPS A ACS fazia visitas domiciliares na mesma rua em que Edberto e Vanessa moram; quando viu Vanessa, já com barriga grávida, varrendo a calçada. Após breve conversa, a ACS agenda atendimento para Vanessa na UAPS. Em um turno de demanda programada na Unidade, Vanusa, irmã de Vanessa, traz dona Benzarina para atendimento. A consulta é para mostrar exames solicitados há seis meses. O registro no prontuário traz “síndrome demencialcom predominânciaa de disfunção executiva, sintomas neurológicos focais, síndrome pseudobulbar e início precoce de alteração de marcha”. A ressonância nuclear magnética de crânio evidencia acometimento extenso de substância branca, no gdo cíngulogulo, no lobo temporal medial e no tálamo. Assinale a alternativa com o diagnóstico mais provável.",
       "options": [
         {
           "letter": "A",
-          "text": "VC durante uma de suas gestações e dona"
+          "text": "Demência vascular"
         },
         {
           "letter": "B",
-          "text": "enzarina teria apresentado o primeiro AV"
+          "text": "Demência de Alzheimer"
         },
         {
           "letter": "C",
-          "text": "antes da menopausa.Segundo a Assistente Social do hospital em que Vanessa Ecou internada por quase dois meses, Ubiratan nunca teriarealizado uma visita, mas Edberto, um ex-namorado, foi companhia assídua. Após a alta hospitalar, Vanessa descobriu queUbiratan estava vivendo com outra mulher e se mudou para casa de Edberto, que a acolheu, a despeito da não-aceitaçãodo pai de Edberto, Seu Eduardo"
+          "text": "Demência frontotemporal (DFT)"
         },
         {
           "letter": "D",
-          "text": "epois de seis anos morando juntos, Vanessa engravidou novamente, mas não procurou aUAPS. A ACS fazia visitas domiciliares na mesma rua em que"
-        },
-        {
-          "letter": "E",
-          "text": "dberto e Vanessa moram, quando viu Vanessa, já com barrigagravídica, varrendo a calçada. Após breve conversa, a ACS agenda atendimento para Vanessa na UAPS.Em um turno de demanda programada na Unidade, Vanusa, irmã de Vanessa, traz dona Benzarina para atendimento. Aconsulta é para mostrar exames solicitados há seis meses. O registro no prontuário traz “síndrome demencial compredominância de disfunção executiva, sintomas neurológicos focais, síndrome pseudobulbar e início precoce de alteração de marcha”. A ressonância nuclear magnética de crânio evidencia acometimento extenso de substância branca, no giro docíngulo, no lobo temporal medial e no tálamo. Assinale a alternativa com o diagnóstico mais provável. ADemência vascular.BDemência de Alzheimer.CDemência frontotemporal (DFT).DDemência por corpúsculo de Lewy"
+          "text": "Demência por corpúsculo de Lewy"
         }
       ],
       "sourceId": "4000163711",
@@ -3945,7 +3945,9 @@ window.BANCO_RMAIS_QUESTIONS = {
           "number": 15,
           "sourceId": ""
         }
-      ]
+      ],
+      "manuallyReviewed": true,
+      "reviewedAt": "2026-06-09T11:17:56"
     },
     {
       "id": "demências-17",
@@ -5505,7 +5507,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Demências",
       "topic": "Demências",
       "title": "Questão 66",
-      "text": "Quadro clínico da anemia megaloblásticaDeficiência de vitamina B12Deficiência de Vitamina B12 e Ácido FólicoIzabel, 50 anos, com histórico prévio de cirurgia bariátrica (restritiva-disabsortiva) há 10 anos, sem seguimento regular.Encaminhada ao Pronto Socorro do Hospital Cajuru por anemia, com Hb de 6,5 g por dL e volume corpuscular médio de120K. Além disso apresentava diminuição da série branca (2500 leucócitos por mm3) e das plaquetas (45.000 por mm3).Sorologias realizadas na admissão, incluindo pesquisa de HIV, negativas. Quadro recente relatado pelos familiares de pioracognitiva progressiva e desequilíbrio. Recebeu diagnóstico de Demência de Alzheimer há cerca de duas semanas, apósavaliação em Unidade de Emergência, tendo iniciado Memantina, com pouca resposta. De acordo com o caso clínico, a alteração observada no esfregaço do hemograma que poderia colaborar para odiagnóstico é a presença de",
+      "text": "Paciente, 50 anos, com histórico prévio de cirurgia bariátrica (restritiva-disabsortiva) há 10 anos, sem seguimento regular. Encaminhada ao Pronto-Socorro do Hospital Cajuru por anemia, com Hb de 6,5 g por dL e volume corpuscular médio de 120K. Além disso apresentava diminuição da série branca (2500 leucócitos por mm3) e das plaquetas (45.000 por mm³ Sorologias realizadas na admissão, incluindo pesquisa de HIV, negativas. Quadro recente relatado pelos familiares de piora cognitiva progressiva e desequilíbrio. Recebeu diagnóstico de Demência de Alzheimer há cerca de duas semanas, após avaliação em Unidade de Emergência, tendo iniciado Memantina, com pouca resposta. De acordo com o caso clínico, a alteração observada no esfregaço do hemograma que poderia colaborar para o diagnóstico é a presença de",
       "options": [
         {
           "letter": "A",
@@ -5531,7 +5533,9 @@ window.BANCO_RMAIS_QUESTIONS = {
       "sourceId": "4000048075",
       "correctAnswer": "A",
       "provider": "Estratégia",
-      "originalSource": "Demências"
+      "originalSource": "Demências",
+      "manuallyReviewed": true,
+      "reviewedAt": "2026-06-09T11:17:56"
     },
     {
       "id": "demências-67",
@@ -6314,11 +6318,11 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "C",
-          "text": "Apolipoproteína E (APOE"
+          "text": "Apolipoproteína E (APOE)"
         },
         {
           "letter": "D",
-          "text": "Presenilina 2 (PSN2"
+          "text": "Presenilina 2 (PSN2])"
         }
       ],
       "sourceId": "4000001962",
@@ -6326,7 +6330,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "provider": "Estratégia",
       "originalSource": "Demências",
       "manuallyReviewed": true,
-      "reviewedAt": "2026-05-29T08:26:05"
+      "reviewedAt": "2026-06-09T11:17:56"
     },
     {
       "id": "demências-91",
@@ -11197,33 +11201,31 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Intoxicação por Drogas e Dependência Química",
       "topic": "Intoxicação por Drogas e Dependência Química",
       "title": "Questão 63",
-      "text": "Síndrome ColinérgicaOs inibidores de colinesterase exercem sua ação tóxica, segundo o item",
+      "text": "Os inibidores de colinesterase exercem sua ação tóxica, segundo o item",
       "options": [
         {
           "letter": "A",
-          "text": "Principalmente por meio da inibição das esterases e, mais especificamente, a acetilcolinesterase. Esta,responsável pela degradação da acetilcolina, que é o mediador químico de sinapses do Sistema Nervoso Central(SNC, Sistema Nervoso Periférico (SNP e junções neuro-musculares"
+          "text": "Principalmente por meio da inibição das esterases e, mais especificamente, a acetilcolinesterase. Esta é responsável pela degradação da acetilcolina, que é o mediador químico de sinapses do Sistema Nervoso Central (SNC), Sistema Nervoso Periférico (SNP) e junções neuromusculares."
         },
         {
           "letter": "B",
-          "text": "Principalmente por meio da estimulação das esterases e, mais especificamente, a acetilcolinesterase. Esta,responsável pela degradação da acetilcolina, que é o mediador químico de sinapses do Sistema Nervoso"
+          "text": "Principalmente por meio da estimulação das esterases e, mais especificamente, a acetilcolinesterase. Esta é responsável pela degradação da acetilcolina, que é o mediador químico de sinapses do Sistema Nervoso Central (SNC), Sistema Nervoso Periférico (SNP) e junções neuromusculares."
         },
         {
           "letter": "C",
-          "text": "entral(SNC, Sistema Nervoso Periférico (SNP e junções neuro-musculares.CPrincipalmente por meio da inibição das esterases e, mais especificamente, a acetilcolinesterase. Esta,responsável pela receptação da acetilcolina, que é o mediador químico de sinapses do Sistema Nervoso Central(SNC, Sistema Nervoso Periférico (SNP e junções neuro-musculares"
+          "text": "Principalmente por meio da inibição das esterases e, mais especificamente, da acetilcolinesterase. Esta,responsável pela receptação da acetilcolina, que é o mediador químico de sinapses do Sistema Nervoso Central (SNC), Sistema Nervoso Periférico (SNP) e junções neuromusculares."
         },
         {
           "letter": "D",
-          "text": "Principalmente por meio da inibição das esterases e, mais especificamente, a acetilcolinesterase"
-        },
-        {
-          "letter": "E",
-          "text": "sta,responsável pela degradação da acetilcolina, que é o mediador químico de sinapses somente no SistemaNervoso Central (SNC"
+          "text": "Principalmente por meio da inibição das esterases e, mais especificamente, a acetilcolinesterase, responsável pela degradação da acetilcolina, que é o mediador químico de sinapses somente no Sistema Nervoso Central (SNC)."
         }
       ],
       "sourceId": "4000022542",
       "correctAnswer": "A",
       "provider": "Estratégia",
-      "originalSource": "Intoxicações Exógenas"
+      "originalSource": "Intoxicações Exógenas",
+      "manuallyReviewed": true,
+      "reviewedAt": "2026-06-09T11:17:56"
     },
     {
       "id": "intoxicações-exógenas-64",
@@ -14032,7 +14034,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Psicopatologia",
       "topic": "Psicopatologia",
       "title": "Questão 53",
-      "text": "Uma paciente de 78 anos, com pneumonia, foi internada devido a um quadro confusional agudo: agressividade alternadacom lucidez, associada com dé8cit de atenção, alteração do ciclo sono-vigília, com delírios visuais noturnos. A paciente éportadora de bronquite crônica, segundo os familiares, e sem outras comorbidades. Podemos afirmar que se trata de",
+      "text": "Uma paciente de 78 anos, com pneumonia, foi internada devido a um quadro confusional agudo: agressividade alternada com lucidez, associada com déficit de atenção, alteração do ciclo sono-vigília, com delírios visuais noturnos. A paciente é portadora de bronquite crônica, segundo os familiares, e sem outras comorbidades. Podemos afirmar que se trata de",
       "options": [
         {
           "letter": "A",
@@ -14058,7 +14060,9 @@ window.BANCO_RMAIS_QUESTIONS = {
       "sourceId": "4000109249",
       "correctAnswer": "B",
       "provider": "Estratégia",
-      "originalSource": "Psicopatologia"
+      "originalSource": "Psicopatologia",
+      "manuallyReviewed": true,
+      "reviewedAt": "2026-06-09T11:17:56"
     },
     {
       "id": "psicopatologia-54",
@@ -17431,7 +17435,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Psiquiatria Infantil",
       "topic": "Psiquiatria Infantil",
       "title": "Questão 96",
-      "text": "Um adolescente de 13 anos é levado ao consultório médico pelos pais, que a:rmam estarem preocupados e\"desorientados\", pois o rapaz, antes sensato e obediente, agora está rebelde, ouvindo apenas as opiniões dos amigos. Àsvezes está alegre e brincalhão, outras, tranca-se no quarto, triste e calado. Em casa, é mal educado e preguiçoso. Emcontrapartida, é gentil e prestativo com os vizinhos. Qual o possível diagnóstico?",
+      "text": "Um adolescente de 13 anos é levado ao consultório médico pelos pais, que afirmam estarem preocupados e \"desorientados\", pois o rapaz, antes sensato e obediente, agora está rebelde, ouvindo apenas as opiniões dos amigos. Às vezes está alegre e brincalhão, outras, tranca-se no quarto, triste e calado. Em casa, é mal-educado e preguiçoso. Em contrapartida, é gentil e prestativo com os vizinhos. Qual é o possível diagnóstico?",
       "options": [
         {
           "letter": "A",
@@ -17457,7 +17461,9 @@ window.BANCO_RMAIS_QUESTIONS = {
       "sourceId": "4000122217",
       "correctAnswer": "E",
       "provider": "Estratégia",
-      "originalSource": "Psiquiatria Infantil"
+      "originalSource": "Psiquiatria Infantil",
+      "manuallyReviewed": true,
+      "reviewedAt": "2026-06-09T11:17:56"
     },
     {
       "id": "psiquiatria-infantil-97",
@@ -18151,17 +18157,15 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "D",
-          "text": "A"
-        },
-        {
-          "letter": "E",
-          "text": "scala Geriátrica de Yesavage mede, através de 15 perguntas simples de \"Sim\" ou \"Não\", o grau de depressãodo idoso avaliado, o que poderia indicar o início do tratamento"
+          "text": "A Escala Geriátrica de Yesavage mede, através de 15 perguntas simples de \"Sim\" ou \"Não\", o grau de depressãodo idoso avaliado, o que poderia indicar o início do tratamento"
         }
       ],
       "sourceId": "4000169864",
       "correctAnswer": "C",
       "provider": "Estratégia",
-      "originalSource": "Saúde do Idoso"
+      "originalSource": "Saúde do Idoso",
+      "manuallyReviewed": true,
+      "reviewedAt": "2026-06-09T11:17:56"
     },
     {
       "id": "saúde-do-idoso-19",
@@ -19264,11 +19268,11 @@ window.BANCO_RMAIS_QUESTIONS = {
       "options": [
         {
           "letter": "A",
-          "text": "O mini exame do estado mental (MEEM) é um instrumento extremamente útil na triagem cognitiva por ser simplese de fácil avaliação neste exame avaliamos os atributos psíquicos de Orientação, Memória, Evocação,Linguagem e Humor"
+          "text": "O mini exame do estado mental (MEEM) é um instrumento extremamente útil na triagem cognitiva por ser simplese de fácil avaliação neste exame avaliamos os atributos psíquicos de Orientação, Memória, Evocação, Linguagem e Humor"
         },
         {
           "letter": "B",
-          "text": "O instrumento APGAR de FAMÍLIA é uma escala que serve para refletir a experiência do idoso com seusrelacionamentos mais próximos. Quando temos um resultado menor que três pontos caracterizamos umadeficiência acentuada desse suporte familiar para o paciente geriátrico"
+          "text": "O instrumento APGAR de FAMÍLIA é uma escala que serve para refletir a experiência do idoso com seusrelacionamentos mais próximos. Quando temos um resultado menor que três pontos caracterizamos uma deficiência acentuada desse suporte familiar para o paciente geriátrico"
         },
         {
           "letter": "C",
@@ -19282,7 +19286,9 @@ window.BANCO_RMAIS_QUESTIONS = {
       "sourceId": "4000144422",
       "correctAnswer": "B",
       "provider": "Estratégia",
-      "originalSource": "Saúde do Idoso"
+      "originalSource": "Saúde do Idoso",
+      "manuallyReviewed": true,
+      "reviewedAt": "2026-06-09T11:17:56"
     },
     {
       "id": "saúde-do-idoso-56",
@@ -21743,7 +21749,7 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "C",
-          "text": "É imprescindível descartar primeira e exaustivamente todas as possibilidades orgânicas para apenasposteriormente pensar nos aspectos psicossociais"
+          "text": "É imprescindível descartar primeira e exaustivamente todas as possibilidades orgânicas para apenas posteriormente pensar nos aspectos psicossociais"
         },
         {
           "letter": "D",
@@ -21753,7 +21759,9 @@ window.BANCO_RMAIS_QUESTIONS = {
       "sourceId": "4000183399",
       "correctAnswer": "B",
       "provider": "Estratégia",
-      "originalSource": "TOC"
+      "originalSource": "TOC",
+      "manuallyReviewed": true,
+      "reviewedAt": "2026-06-09T11:17:56"
     },
     {
       "id": "toc-3",
@@ -24102,7 +24110,8 @@ window.BANCO_RMAIS_QUESTIONS = {
       "sourceId": "4000116978",
       "correctAnswer": "A",
       "provider": "Estratégia",
-      "originalSource": "TOC"
+      "originalSource": "TOC",
+      "excluded": true
     },
     {
       "id": "toc-81",
@@ -26039,25 +26048,27 @@ window.BANCO_RMAIS_QUESTIONS = {
       "options": [
         {
           "letter": "A",
-          "text": "O paciente com anorexia nervosa, na maioria dos casos, aceita o tratamento oferecido pelos médicos"
+          "text": "O paciente com anorexia nervosa, na maioria dos casos, aceita o tratamento oferecido pelos médicos."
         },
         {
           "letter": "B",
-          "text": "A internação involuntária de um paciente com anorexia nervosa pode ser encerrada por solicitação expressa dafamília mesmo em casos de risco iminente"
+          "text": "A internação involuntária de um paciente com anorexia nervosa pode ser encerrada por solicitação expressa da família, mesmo em casos de risco iminente."
         },
         {
           "letter": "C",
-          "text": "Algumas indicações de internamento imediato nos casos de anorexia são: ideação suicida, síncope, perda rápidade peso, recusa alimentar, convulsões, bradicardia, distúrbios hidroeletrolíticos, hipoglicemia, ausência deresposta ao tratamento ambulatorial, ambiente familiar muito comprometido"
+          "text": "Algumas indicações de internamento imediato nos casos de anorexia são: ideação suicida, síncope, perda rápidade peso, recusa alimentar, convulsões, bradicardia, distúrbios hidroeletrolíticos, hipoglicemia, ausência de resposta ao tratamento ambulatorial, ambiente familiar muito comprometido."
         },
         {
           "letter": "D",
-          "text": "Os pacientes com anorexia nervosa são globalmente incompetentes pelo comprometimento de seuspensamentos, percepções, julgamentos e comportamentos"
+          "text": "Os pacientes com anorexia nervosa são globalmente incompetentes pelo comprometimento de seus pensamentos, percepções, julgamentos e comportamentos."
         }
       ],
       "sourceId": "4000070795",
       "correctAnswer": "C",
       "provider": "Estratégia",
-      "originalSource": "Transtornos Alimentares"
+      "originalSource": "Transtornos Alimentares",
+      "manuallyReviewed": true,
+      "reviewedAt": "2026-06-09T11:17:56"
     },
     {
       "id": "transtornos-alimentares-50",
@@ -31425,7 +31436,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Psicóticos",
       "topic": "Transtornos Psicóticos",
       "title": "Questão 4",
-      "text": "EsquizofreniaA catatonia é um quadro sindrômico caracterizado por alteração grave da volição e da motricidade, di+cultando o manejodo paciente na enfermaria, tendo em vista o negativismo, a recusa alimentar, entre outros sintomas. O tratamentofarmacológico mais adequado para o manejo de pacientes catatônicos é",
+      "text": "A catatonia é um quadro sindrômico caracterizado por alteração grave da volição e da motricidade, dificultando o manejo do paciente na enfermaria, tendo em vista o negativismo, a recusa alimentar, entre outros sintomas. O tratamento farmacológico mais adequado para o manejo de pacientes catatônicos é",
       "options": [
         {
           "letter": "A",
@@ -31447,7 +31458,9 @@ window.BANCO_RMAIS_QUESTIONS = {
       "sourceId": "4000177584",
       "correctAnswer": "A",
       "provider": "Estratégia",
-      "originalSource": "Transtornos Psicóticos"
+      "originalSource": "Transtornos Psicóticos",
+      "manuallyReviewed": true,
+      "reviewedAt": "2026-06-09T11:17:56"
     },
     {
       "id": "transtornos-psicóticos-5",
@@ -36021,33 +36034,31 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Demências",
       "topic": "Demências",
       "title": "Questão 43",
-      "text": "Mulher, 87 anos de idade, viúva, mora com a filha. A paciente apresenta quadro de perambulação noturna, choro fácil, agressividade verbal. Há 4 anos, apresenta perda de memória recente gradual e lentamente e, há 1 ano, piora da funcionalidade, com necessidade de ajuda para banho, higiene pessoal, alimentação e uso de fraldas. Diante da principal hipótese diagnóstica, quais são as escalas mais indicadas para avaliação do estágio da doença? A) Avaliação Geriátrica",
+      "text": "Mulher, 87 anos de idade, viúva, mora com a filha. A paciente apresenta quadro de perambulação noturna, choro fácil, agressividade verbal. Há 4 anos, apresenta perda de memória recente gradual e lentamente e, há 1 ano, piora da funcionalidade, com necessidade de ajuda para banho, higiene pessoal, alimentação e uso de fraldas. Diante da principal hipótese diagnóstica, quais são as escalas mais indicadas para avaliação do estágio da doença?",
       "options": [
         {
           "letter": "A",
-          "text": "mpla e velocidade de marcha"
+          "text": "Avaliação Geriátrica ampla e velocidade de marcha"
         },
         {
           "letter": "B",
-          "text": "Timed Up and Go Test e"
+          "text": "Timed Up and Go Test e clinical dementia Rating"
         },
         {
           "letter": "C",
-          "text": "linical"
+          "text": "Estágio de Avaliação Funcional e Clinical Dementia Rating"
         },
         {
           "letter": "D",
-          "text": "ementia Rating C"
-        },
-        {
-          "letter": "E",
-          "text": "stágio de Avaliação Funcional e Clinical Dementia Rating D) Estágio de Avaliação Funcional e Short Physical Performance Battery"
+          "text": "Estágio de Avaliação Funcional e Short Physical Performance Battery"
         }
       ],
       "sourceId": "",
       "correctAnswer": "C",
       "provider": "MedReview",
-      "originalSource": "Demências"
+      "originalSource": "Demências",
+      "manuallyReviewed": true,
+      "reviewedAt": "2026-06-09T11:17:56"
     },
     {
       "id": "medreview-demências-44",
@@ -38985,11 +38996,11 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Saúde do Idoso",
       "topic": "Saúde do Idoso",
       "title": "Questão 2",
-      "text": "Um número cada vez maior de pessoas idosas é submetido a procedimentos cirúrgicos. Em geral, a função orgânica declina com a idade, mas na maioria das vezes é adequada para atender à demanda metabólica de idosos submetidos a operações eletivas. Em relação às alterações fisiológicas que ocorrem durante o envelhecimento é CORRETO afirmar: A)",
+      "text": "Um número cada vez maior de pessoas idosas é submetido a procedimentos cirúrgicos. Em geral, a função orgânica declina com a idade, mas na maioria das vezes é adequada para atender à demanda metabólica de idosos submetidos a operações eletivas. Em relação às alterações fisiológicas que ocorrem durante o envelhecimento é CORRETO afirmar:",
       "options": [
         {
           "letter": "A",
-          "text": "atividade do sistema renina-angiotensina-aldosterona está aumentada"
+          "text": "A atividade do sistema renina-angiotensina-aldosterona está aumentada"
         },
         {
           "letter": "B",
@@ -39007,7 +39018,9 @@ window.BANCO_RMAIS_QUESTIONS = {
       "sourceId": "",
       "correctAnswer": "D",
       "provider": "MedReview",
-      "originalSource": "Fisiologia do Envelhecimento"
+      "originalSource": "Fisiologia do Envelhecimento",
+      "manuallyReviewed": true,
+      "reviewedAt": "2026-06-09T11:17:56"
     },
     {
       "id": "medreview-fisiologia-do-envelhecimento-3",
@@ -39181,17 +39194,19 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "C",
-          "text": "Iatrogenia, imobilidade, incontinências, instabilidade emocional e instabilidadepostural"
+          "text": "Iatrogenia, imobilidade, incontinências, instabilidade emocional e instabilidade postural"
         },
         {
           "letter": "D",
-          "text": "Instabilidade emocional, instabilidade postural, insuficiência cerebral, imobilidade eincontinências"
+          "text": "Instabilidade emocional, instabilidade postural, insuficiência cerebral, imobilidade e incontinências"
         }
       ],
       "sourceId": "",
       "correctAnswer": "A",
       "provider": "MedReview",
-      "originalSource": "Grandes Síndromes Geriátricas"
+      "originalSource": "Grandes Síndromes Geriátricas",
+      "manuallyReviewed": true,
+      "reviewedAt": "2026-06-09T11:17:56"
     },
     {
       "id": "medreview-grandes-síndromes-geriátricas-5",

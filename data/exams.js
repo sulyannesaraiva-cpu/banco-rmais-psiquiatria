@@ -46884,13 +46884,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Transtorno bipolar tipo II de início tardio. ##### Texto para as questões 04 e 05 Você é solicitado para avaliar, como interconsultor da psiquiatria, uma mulher de 63 anos de idade, internada eletivamente em hospital geral para realizar colecistectomia por colecistopatia calculosa. Entretanto, a cirurgia foi suspensa, pois a paciente inicia, após 12 horas da internação, quadro de crises de ansiedade, inquietação psicomotora leve e intermitente, náuseas, palpitações (taquicardia sinusal, FC de 104 bpm), além de tremores leves em extremidades de mãos. Perma nece bem orientada em tempo e espaço, atenção preservada, pensamento acelerado, com associação coerente entre as ideias, angustiada, com humor ansioso, sensações de formigamento nos braços, sem alterações de juízo de realidade. Sem alterações somáticas ao exame neurológico. Exame físico e exames complementares iniciais descartaram distúrbios metabólicos ou infecciosos que justificassem o quadro atual. Recebeu haloperidol 5 mg via intramuscular, com pouca eficácia. Antecedentes: transtorno de ansiedade gener alizada (estava remitida com uso de sertralina 100 mg/dia e clonazepam 2 mg/dia, não conciliados na prescrição da internação), etilismo há 10 anos (refere consumo de 5 latas de cerveja por dia), cirurgia bariátrica com bypass, obesidade classe I, HAS."
+              "text": "Transtorno bipolar tipo II de início tardio."
             }
           ],
           "correctAnswer": "A",
           "examId": "usp-2026-a17",
           "examTag": "USP Psicogeriatria 2026",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-09T11:17:56"
         },
         {
           "id": "usp-2026-a17-004",
@@ -46898,7 +46900,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2026 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 4",
-          "text": "Assinale a alternativa que contém o diagnóstico etiológico mais provável para o quadro neuropsiquiátrico agudo da paciente descrita.",
+          "text": "Texto para as questões 04 e 05 \nVocê é solicitado para avaliar, como interconsultor da psiquiatria, uma mulher de 63 anos de idade, internada eletivamente em hospital geral para realizar colecistectomia por colecistopatia calculosa. Entretanto, a cirurgia foi suspensa, pois a paciente inicia, após 12 horas da internação, quadro de crises de ansiedade, inquietação psicomotora leve e intermitente, náuseas, palpitações (taquicardia sinusal, FC de 104 bpm), além de tremores leves em extremidades de mãos. Permanece bem orientada em tempo e espaço, atenção preservada, pensamento acelerado, com associação coerente entre as ideias, angustiada, com humor ansioso, sensações de formigamento nos braços, sem alterações de juízo de realidade. Sem alterações somáticas ao exame neurológico. Exame físico e exames complementares iniciais descartaram distúrbios metabólicos ou infecciosos que justificassem o quadro atual. Recebeu haloperidol 5 mg via intramuscular, com pouca eficácia. Antecedentes: transtorno de ansiedade gener alizada (estava remitida com uso de sertralina 100 mg/dia e clonazepam 2 mg/dia, não conciliados na prescrição da internação), etilismo há 10 anos (refere consumo de 5 latas de cerveja por dia), cirurgia bariátrica com bypass, obesidade classe I, HAS.\n\nAssinale a alternativa que contém o diagnóstico etiológico mais provável para o quadro neuropsiquiátrico agudo da paciente descrita.",
           "options": [
             {
               "letter": "A",
@@ -46914,13 +46916,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Síndrome de descontinuação do antidepressivo. #####"
+              "text": "Síndrome de descontinuação do antidepressivo."
             }
           ],
           "correctAnswer": "B",
           "examId": "usp-2026-a17",
           "examTag": "USP Psicogeriatria 2026",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-09T11:17:56"
         },
         {
           "id": "usp-2026-a17-005",
@@ -46928,7 +46932,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2026 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 5",
-          "text": "Sobre o tratamento principal do quadro neuropsiquiátrico agudo da paciente, assinale a alternativa correta.",
+          "text": "Texto para as questões 04 e 05 \nVocê é solicitado para avaliar, como interconsultor da psiquiatria, uma mulher de 63 anos de idade, internada eletivamente em hospital geral para realizar colecistectomia por colecistopatia calculosa. Entretanto, a cirurgia foi suspensa, pois a paciente inicia, após 12 horas da internação, quadro de crises de ansiedade, inquietação psicomotora leve e intermitente, náuseas, palpitações (taquicardia sinusal, FC de 104 bpm), além de tremores leves em extremidades de mãos. Perma nece bem orientada em tempo e espaço, atenção preservada, pensamento acelerado, com associação coerente entre as ideias, angustiada, com humor ansioso, sensações de formigamento nos braços, sem alterações de juízo de realidade. Sem alterações somáticas ao exame neurológico. Exame físico e exames complementares iniciais descartaram distúrbios metabólicos ou infecciosos que justificassem o quadro atual. Recebeu haloperidol 5 mg via intramuscular, com pouca eficácia. Antecedentes: transtorno de ansiedade generalizada (estava remitida com uso de sertralina 100 mg/dia e clonazepam 2 mg/dia, não conciliados na prescrição da internação), etilismo há 10 anos (refere consumo de 5 latas de cerveja por dia), cirurgia bariátrica com bypass, obesidade classe I, HAS.\nSobre o tratamento principal do quadro neuropsiquiátrico agudo da paciente, assinale a alternativa correta.",
           "options": [
             {
               "letter": "A",
@@ -46936,7 +46940,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "B",
-              "text": "A reconciliação da sertralina, associada a técnicas de relaxamento muscular progressiv o e de respiração diafragmática são os tratamentos mais adequados."
+              "text": "A reconciliação da sertralina, associada a técnicas de relaxamento muscular progressivo e de respiração diafragmática são os tratamentos mais adequados."
             },
             {
               "letter": "C",
@@ -46944,13 +46948,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "O clonazepam pode ser utilizado, se a paciente permanecer cl inicamente estável e com aceitação de medicação via oral. ##### Processo Seletivo aos Programas de Residência Médica – Edital: COREME/FM/Nº 03/2025 – Áreas de Atuações – Psicogeriatria – PROVA A17"
+              "text": "O clonazepam pode ser utilizado, se a paciente permanecer clinicamente estável e com aceitação de medicação via oral."
             }
           ],
           "correctAnswer": "D",
           "examId": "usp-2026-a17",
           "examTag": "USP Psicogeriatria 2026",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-09T11:17:56"
         },
         {
           "id": "usp-2026-a17-006",
@@ -46988,7 +46994,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2026 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 7",
-          "text": "Homem, 68 anos de idade , destro, professor universitário aposentado, é avaliado por alterações na linguagem iniciadas há cerca de dois ano s. Refere que sua fala se tornou mais lenta e entrecortada, com pausas frequentes e dificuldade em formar frases completas. Os familiares notam que ele “troca palavras” e “fala como se estivesse esforçando -se para encontrar o jeito certo de dizer as coisas”. A compreensão de ordens simples permanece preservada, assim como a memória para eventos recentes. Não há alterações motoras evidentes. A ressonância magnética mostra atrofia assimétrica na região inferior do giro frontal esquerdo e na ínsula anterior esquerda. Com base no quadro clínico e nos achados de imagem, qual é o subtipo de afasia progressiva primária mais provável?",
+          "text": "Homem, 68 anos de idade, destro, professor universitário aposentado, é avaliado por alterações na linguagem iniciadas há cerca de dois anos. Refere que sua fala se tornou mais lenta e entrecortada, com pausas frequentes e dificuldade em formar frases completas. Os familiares notam que ele “troca palavras” e “fala como se estivesse se esforçando para encontrar o jeito certo de dizer as coisas”. A compreensão de ordens simples permanece preservada, assim como a memória para eventos recentes. Não há alterações motoras evidentes. A ressonância magnética mostra atrofia assimétrica na região inferior do giro frontal esquerdo e na ínsula anterior esquerda. Com base no quadro clínico e nos achados de imagem, qual é o subtipo de afasia progressiva primária mais provável?",
           "options": [
             {
               "letter": "A",
@@ -47004,13 +47010,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Variante transcortical mista. #####"
+              "text": "Variante transcortical mista."
             }
           ],
           "correctAnswer": "C",
           "examId": "usp-2026-a17",
           "examTag": "USP Psicogeriatria 2026",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-09T11:17:56"
         },
         {
           "id": "usp-2026-a17-008",
@@ -47034,13 +47042,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Psicose tardia; iniciar antipsicótico típico com monitoramento. ##### Texto para as questões 09 e 10 Homem, 78 anos de idade , com ensino superior completo, inicia quadro de delírios de traição relacionados à esposa e alucinações (enxerga vultos passando na periferia da visão) há 1 ano. Além disso, não tem conseguido administrar seus compromissos (inicia tarefas e esquece de concluí-las, marca diferentes compromissos no mesmo horário), dificuldade em tomar decisões banais (tem sempre pedido a opinião da esposa), mas nega esquecimento para fatos recentes. Montreal Cognitive Assessment (MoCA): 24/30 pontos (prejuízos em funções exe cutivas, visuoespaciais e memória operacional). Está vigil, orientado, com atenção básica preservada, irritável com o assunto da traição, mas a afetividade mantém-se modulante de forma congruente em outros temas da conversa, pensamento circunstancial. Tem diagnóstico de doença de Parkinson, cujos sintomas motores iniciaram-se há 10 anos, bem controlados com o uso de levodopa 1 .200 mg/dia, rotigotina transdérmica 6 mg/dia e amantadina 300 mg/dia. Tem constipação intestinal, disfunção erétil e hipotensão orto stática há vários anos, interpretados como sinais de disautonomia da doença de Parkinson. Não há alterações no exame neurológico somático, exceto por sinais discretos de parkinsonismo. Não há antecedentes pessoal ou familiar de transtornos psicóticos prévi os ou de outros transtornos psiquiátricos, não há manifestações clínicas de crises epilépticas. Os exames de sangue para investigação de causas potencialmente tratáveis de declínio cognitivo estão normais; provas inflamatórias estão normais, assim como os rastreios de neoplasias. Ressonância magnética de crânio evidencia atrofia difusa discreta, sem predomínios regionais, sem carga de doença cerebrovascular significativa, sem lesões de focais ou com restrição à difusão."
+              "text": "Psicose tardia; iniciar antipsicótico típico com monitoramento."
             }
           ],
           "correctAnswer": "A",
           "examId": "usp-2026-a17",
           "examTag": "USP Psicogeriatria 2026",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-09T11:17:56"
         },
         {
           "id": "usp-2026-a17-009",
@@ -47048,7 +47058,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2026 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 9",
-          "text": "Assinale a alternativa que apresenta os exames necessários para a investigação etiológica do quadro psicótico nesse momento.",
+          "text": "Texto para as questões 09 e 10 \nHomem, 78 anos de idade, com ensino superior completo, inicia quadro de delírios de traição relacionados à esposa e alucinações (enxerga vultos passando na periferia da visão) há 1 ano. Além disso, não tem conseguido administrar seus compromissos (inicia tarefas e esquece de concluí-las, marca diferentes compromissos no mesmo horário), dificuldade em tomar decisões banais (tem sempre pedido a opinião da esposa), mas nega esquecimento para fatos recentes. Montreal Cognitive Assessment (MoCA): 24/30 pontos (prejuízos em funções executivas, visuoespaciais e memória operacional). Está vigil, orientado, com atenção básica preservada, irritável com o assunto da traição, mas a afetividade mantém-se modulante de forma congruente em outros temas da conversa, pensamento circunstancial. Tem diagnóstico de doença de Parkinson, cujos sintomas motores iniciaram-se há 10 anos, bem controlados com o uso de levodopa 1 .200 mg/dia, rotigotina transdérmica 6 mg/dia e amantadina 300 mg/dia. Tem constipação intestinal, disfunção erétil e hipotensão ortostática há vários anos, interpretados como sinais de disautonomia da doença de Parkinson. Não há alterações no exame neurológico somático, exceto por sinais discretos de parkinsonismo. Não há antecedentes pessoal ou familiar de transtornos psicóticos prévi os ou de outros transtornos psiquiátricos, não há manifestações clínicas de crises epilépticas. Os exames de sangue para investigação de causas potencialmente tratáveis de declínio cognitivo estão normais; provas inflamatórias estão normais, assim como os rastreios de neoplasias. Ressonância magnética de crânio evidencia atrofia difusa discreta, sem predomínios regionais, sem carga de doença cerebrovascular significativa, sem lesões de focais ou com restrição à difusão.\nAssinale a alternativa que apresenta os exames necessários para a investigação etiológica do quadro psicótico nesse momento.",
           "options": [
             {
               "letter": "A",
@@ -47064,13 +47074,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Nenhuma investigação compl ementar adicional é necessária. #####"
+              "text": "Nenhuma investigação complementar adicional é necessária."
             }
           ],
           "correctAnswer": "D",
           "examId": "usp-2026-a17",
           "examTag": "USP Psicogeriatria 2026",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-09T11:17:56"
         },
         {
           "id": "usp-2026-a17-010",
@@ -47078,7 +47090,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2026 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 10",
-          "text": "Assinale a alternativa que apresenta a melhor abordage m terapêutica inicial.",
+          "text": "Texto para as questões 09 e 10 \nHomem, 78 anos de idade, com ensino superior completo, inicia quadro de delírios de traição relacionados à esposa e alucinações (enxerga vultos passando na periferia da visão) há 1 ano. Além disso, não tem conseguido administrar seus compromissos (inicia tarefas e esquece de concluí-las, marca diferentes compromissos no mesmo horário), dificuldade em tomar decisões banais (tem sempre pedido a opinião da esposa), mas nega esquecimento para fatos recentes. Montreal Cognitive Assessment (MoCA): 24/30 pontos (prejuízos em funções executivas, visuoespaciais e memória operacional). Está vigil, orientado, com atenção básica preservada, irritável com o assunto da traição, mas a afetividade mantém-se modulante de forma congruente em outros temas da conversa, pensamento circunstancial. Tem diagnóstico de doença de Parkinson, cujos sintomas motores iniciaram-se há 10 anos, bem controlados com o uso de levodopa 1 .200 mg/dia, rotigotina transdérmica 6 mg/dia e amantadina 300 mg/dia. Tem constipação intestinal, disfunção erétil e hipotensão ortostática há vários anos, interpretados como sinais de disautonomia da doença de Parkinson. Não há alterações no exame neurológico somático, exceto por sinais discretos de parkinsonismo. Não há antecedentes pessoal ou familiar de transtornos psicóticos prévi os ou de outros transtornos psiquiátricos, não há manifestações clínicas de crises epilépticas. Os exames de sangue para investigação de causas potencialmente tratáveis de declínio cognitivo estão normais; provas inflamatórias estão normais, assim como os rastreios de neoplasias. Ressonância magnética de crânio evidencia atrofia difusa discreta, sem predomínios regionais, sem carga de doença cerebrovascular significativa, sem lesões de focais ou com restrição à difusão.\nAssinale a alternativa que apresenta a melhor abordage m terapêutica inicial.",
           "options": [
             {
               "letter": "A",
@@ -47094,13 +47106,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Redução ou suspensão da amantadina. ##### Processo Seletivo aos Programas de Residência Médica – Edital: COREME/FM/Nº 03/2025 – Áreas de Atuações – Psicogeriatria – PROVA A17"
+              "text": "Redução ou suspensão da amantadina."
             }
           ],
           "correctAnswer": "D",
           "examId": "usp-2026-a17",
           "examTag": "USP Psicogeriatria 2026",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-09T11:17:56"
         },
         {
           "id": "usp-2026-a17-011",
@@ -47124,13 +47138,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Recomenda-se a prescrição de estimuladores do apetite e polivitamínicos. #####"
+              "text": "Recomenda-se a prescrição de estimuladores do apetite e polivitamínicos."
             }
           ],
           "correctAnswer": "A",
           "examId": "usp-2026-a17",
           "examTag": "USP Psicogeriatria 2026",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-09T11:17:56"
         },
         {
           "id": "usp-2026-a17-012",
@@ -47198,7 +47214,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2026 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 14",
-          "text": "Mulher, 72 anos de idade, é avaliada por quadro progressivo de lentidão motora e rigidez assimétrica em membro superior direito, com início há aproximadamente 18 meses. Evoluiu com dificuldade de executar movimentos voluntários no braço direito, apesar de força preservada, além de posturas tônicas involuntárias e movimentos estereotipados. Também apresenta apraxia ideomotora e orobucolingual. Exame neuropsicológico revela leve prejuízo executivo, com preservação da memória episódica. Com base no quadro clínico, assinale a alte rnativa que apresenta a hipótese mais compatível com o diagnóstico.",
+          "text": "Mulher, 72 anos de idade, é avaliada por quadro progressivo de lentidão motora e rigidez assimétrica em membro superior direito, com início há aproximadamente 18 meses. Evoluiu com dificuldade de executar movimentos voluntários no braço direito, apesar de força preservada, além de posturas tônicas involuntárias e movimentos estereotipados. Também apresenta apraxia ideomotora e orobucolingual. Exame neuropsicológico revela leve prejuízo executivo, com preservação da memória episódica. Com base no quadro clínico, assinale a alternativa que apresenta a hipótese mais compatível com o diagnóstico.",
           "options": [
             {
               "letter": "A",
@@ -47214,13 +47230,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Síndrome corticobasal com provável degeneração corticobasal subjacente. ##### Processo Seletivo aos Programas de Residência Médica – Edital: COREME/FM/Nº 03/2025 – Áreas de Atuações – Psicogeriatria – PROVA A17"
+              "text": "Síndrome corticobasal com provável degeneração corticobasal subjacente."
             }
           ],
           "correctAnswer": "D",
           "examId": "usp-2026-a17",
           "examTag": "USP Psicogeriatria 2026",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-09T11:17:56"
         },
         {
           "id": "usp-2026-a17-015",
@@ -47244,13 +47262,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Atrofia de múltiplos sistemas (AMS). ##### Texto para as questões de 16 a 19 Homem branco, 71 anos de idade, casado, engenheiro (sócio proprietário de empresa de construção civil), residente em São Paulo. Solicita uma consulta, em consultório particular, para obter uma terceira opinião sobre o seu caso. Comparece acompanhado da esposa, mas ele próprio fornece as informações de anamnese com boa precisão. Conta que , no último ano , tem notado lapsos de memória, particularmente para fatos recentes, e dificuldades para encontrar palavras durante uma conversa informal – sintomas que parecem ter se acentuado ao longo do tempo. Apesar disso, continua com capacidade plena para exercer atividades diárias, inclusive aquelas relacionadas ao exercício de sua profissão, embora hoje não tenha mais tantas atribuições, pois o trabalho operacional é realizado por sua equipe. Mantém suas rotinas esportivas (joga tênis, faz caminhadas) e sociais (frequenta concertos de música clássica e aprecia reunir -se com amigos em restaurantes). Não se considera deprimido, mas reconhece estar preocupado com os sintomas cognitivos . Sua esposa corrobora a impressão de que os esquecimentos não causam incapacitação, mas são perceptíveis em situações cotidianas. Em uma primeira consulta com seu médico generalista, foi assegurado de que estaria bem clinicamente, eutrófico e com parâmetros de saúde normais. Relata hipertensão leve e dislipidemia (cont roladas); nega diabetes melito , hipotireoidismo ou outras condições clínicas. Tem boa acuidade auditiva e visual, com lentes corretivas. Faz uso de metoprolol (50 mg/dia), ácido acetil salicí lico (100 mg/dia) e rosuvastatina (10 mg/dia). É filho único e sua mãe, com 94 anos de idade, tem boa saúde, mas já demonstra sinais de senilidade. Quando insistiu sobre sua preocupação com as falhas de memória, somadas ao fato de que seu pai faleceu com demência aos 82 anos de idade , o médico lhe recomendou consultar um neurologista. Nesta consulta, apesar de não identificar anormalidades no exame neurológico e de ter apresentado desempenho satisfatório em teste de rastreio cognitivo (28 pontos no teste cognitivo de Montreal), foram solicitados outros exames. A avaliação neuropsicológica foi compatível com a hipótese de comprometimento cognitivo leve amnéstico. O exame de imagem cerebral por ressonância magnética não mostrou alterações significativas em re lação aos parâmetros gerais; apenas mínimas alterações microangiopáticas (escore de zero na escala de Fazekas) e, à inspeção visual das porções mesiais dos lobos temporais, foram atribuídos os escores MTA (Medial Temporal Atrophy, ou Atrofia Medial Tempora l) pela escala de Scheltens, sendo MTA = 2 à esquerda e MTA = 1 à direita. Com base nessas informações, o médico tranquilizou o paciente, dizendo que sua condição não seria compatível com o diagnóstico de demência. Prescreveu um polivitamínico “para forta lecer a memória ” e sugeriu que ele retornasse em consulta de seguimento em 6 meses. Na consulta com você, psicogeriatra, são relatados os dados da história clínica e apresentados os exames realizados. Sua orientação foi de que a condição clínica descrita, como comprometimento cognitivo leve amnéstico pode ser indício de doença de Alzheimer em fase incipiente; contudo, seria precipitado estabelecer esse diagnóstico categoricamente com os dados atuais. E que, embora a conduta expectante não esteja incorreta, outros exames poderiam ser realizados para se obter uma melhor caracterização clínica e estabelecer o diagnóstico diferencial com a Doença de Alzheimer."
+              "text": "Atrofia de múltiplos sistemas (AMS)."
             }
           ],
           "correctAnswer": "B",
           "examId": "usp-2026-a17",
           "examTag": "USP Psicogeriatria 2026",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-09T11:17:56"
         },
         {
           "id": "usp-2026-a17-016",
@@ -47258,7 +47278,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2026 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 16",
-          "text": "Considerando que o paciente tem condições financeiras para custear exames não providos pelo SUS, assinale a alternativa que apresenta os exames que você indicaria para completar a investigação clínica, tendo como objetivo estabelecer o “diagnóstico biológico ” da Doença de Alzheimer, considerando-se um possível encaminhamento para terapia modificadora da doença com drogas antiamiloide.",
+          "text": "Texto para as questões de 16 a 19 \nHomem branco, 71 anos de idade, casado, engenheiro (sócio proprietário de empresa de construção civil), residente em São Paulo. Solicita uma consulta, em consultório particular, para obter uma terceira opinião sobre o seu caso. Comparece acompanhado da esposa, mas ele próprio fornece as informações de anamnese com boa precisão. Conta que , no último ano , tem notado lapsos de memória, particularmente para fatos recentes, e dificuldades para encontrar palavras durante uma conversa informal – sintomas que parecem ter se acentuado ao longo do tempo. Apesar disso, continua com capacidade plena para exercer atividades diárias, inclusive aquelas relacionadas ao exercício de sua profissão, embora hoje não tenha mais tantas atribuições, pois o trabalho operacional é realizado por sua equipe. Mantém suas rotinas esportivas (joga tênis, faz caminhadas) e sociais (frequenta concertos de música clássica e aprecia reunir -se com amigos em restaurantes). Não se considera deprimido, mas reconhece estar preocupado com os sintomas cognitivos . Sua esposa corrobora a impressão de que os esquecimentos não causam incapacitação, mas são perceptíveis em situações cotidianas. Em uma primeira consulta com seu médico generalista, foi assegurado de que estaria bem clinicamente, eutrófico e com parâmetros de saúde normais. Relata hipertensão leve e dislipidemia (cont roladas); nega diabetes melito , hipotireoidismo ou outras condições clínicas. Tem boa acuidade auditiva e visual, com lentes corretivas. Faz uso de metoprolol (50 mg/dia), ácido acetil salicí lico (100 mg/dia) e rosuvastatina (10 mg/dia). É filho único e sua mãe, com 94 anos de idade, tem boa saúde, mas já demonstra sinais de senilidade. Quando insistiu sobre sua preocupação com as falhas de memória, somadas ao fato de que seu pai faleceu com demência aos 82 anos de idade , o médico lhe recomendou consultar um neurologista. Nesta consulta, apesar de não identificar anormalidades no exame neurológico e de ter apresentado desempenho satisfatório em teste de rastreio cognitivo (28 pontos no teste cognitivo de Montreal), foram solicitados outros exames. A avaliação neuropsicológica foi compatível com a hipótese de comprometimento cognitivo leve amnéstico. O exame de imagem cerebral por ressonância magnética não mostrou alterações significativas em re lação aos parâmetros gerais; apenas mínimas alterações microangiopáticas (escore de zero na escala de Fazekas) e, à inspeção visual das porções mesiais dos lobos temporais, foram atribuídos os escores MTA (Medial Temporal Atrophy, ou Atrofia Medial Tempora l) pela escala de Scheltens, sendo MTA = 2 à esquerda e MTA = 1 à direita. Com base nessas informações, o médico tranquilizou o paciente, dizendo que sua condição não seria compatível com o diagnóstico de demência. Prescreveu um polivitamínico “para forta lecer a memória ” e sugeriu que ele retornasse em consulta de seguimento em 6 meses. Na consulta com você, psicogeriatra, são relatados os dados da história clínica e apresentados os exames realizados. Sua orientação foi de que a condição clínica descrita, como comprometimento cognitivo leve amnéstico pode ser indício de doença de Alzheimer em fase incipiente; contudo, seria precipitado estabelecer esse diagnóstico categoricamente com os dados atuais. E que, embora a conduta expectante não esteja incorreta, outros exames poderiam ser realizados para se obter uma melhor caracterização clínica e estabelecer o diagnóstico diferencial com a Doença de Alzheimer.\n\nConsiderando que o paciente tem condições financeiras para custear exames não providos pelo SUS, assinale a alternativa que apresenta os exames que você indicaria para completar a investigação clínica, tendo como objetivo estabelecer o “diagnóstico biológico ” da Doença de Alzheimer, considerando-se um possível encaminhamento para terapia modificadora da doença com drogas antiamiloide.",
           "options": [
             {
               "letter": "A",
@@ -47274,13 +47294,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Exame de imagem molecular do amiloide por PET (11C-PIB ou 18F-florbetaben) e/ou biomarcadores plasmáticos (razão entre peptídeos Aβ42/40 e razão entre proteína Tau fosforilada/não fosforilada no resíduo de treonina-217) e/ou biomarcadores liqu óricos (pept ídeos A β42 e A β40, Tau total e fosfoTau-181). ##### Processo Seletivo aos Programas de Residência Médica – Edital: COREME/FM/Nº 03/2025 – Áreas de Atuações – Psicogeriatria – PROVA A17"
+              "text": "Exame de imagem molecular do amiloide por PET (11C-PIB ou 18F-florbetaben) e/ou biomarcadores plasmáticos (razão entre peptídeos Aβ42/40 e razão entre proteína Tau fosforilada/não fosforilada no resíduo de treonina-217) e/ou biomarcadores liqu óricos (pept ídeos A β42 e A β40, Tau total e fosfoTau-181)."
             }
           ],
           "correctAnswer": "D",
           "examId": "usp-2026-a17",
           "examTag": "USP Psicogeriatria 2026",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-09T11:17:56"
         },
         {
           "id": "usp-2026-a17-017",
@@ -47288,7 +47310,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2026 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 17",
-          "text": "O paciente aceitou a sua indicação sobre os exames subsidiários, e tomou providências para realizá -los da forma mais abrangente possível. Alguns exames já ficaram prontos e são apresentados a seguir:  A avaliação da funcionalidade, feita por uma terapeuta ocupacional experiente, mostrou preservação total da capacidade de desempenhar atividades básicas da vida diária, mas identificou algumas dificuldades em tarefas instrumentais de maior complexidade, como lembrar-se de todos os itens de uma lista de compras e realizar cálculos mentais para determinar o troco em transações financeiras.  A volumetria hipocampal por ressonância magnética mostrou volume hipocampal de 1,82 cm 3 à esquerda e 2,16 cm 3 a direita, sugerindo redução assimétrica do volume hipocampal.  O exame de imagem funcional por 18F-FDG-PET revelou redução da atividade metabólica em região mesial dos lobos temporais, mais acentuada à esquerda, e também nos córtices de associação temporoparietais (pré-cúneo e cíngulo posterior) com predomínio à esquer da. As concentrações do radiofármaco em áreas subcorticais, como estriado e tálamo, bem como nos córtices sensoriomotores e no cerebelo estavam preservadas.  A análise de biomarcadores plasmáticos (com base nas concentrações de peptídeos A β42 e A β40, proteí na Tau fosforilada e não fosforilada em treonina 217, e do genótipo ApoE) indicou um índice APS ( amyloid probability score ) de 75, sugerindo alta probabilidade da presença de placas de amiloide em tecidos cerebrais.  Exame de imagem molecular por 11C-PIB-PET revelou captação do traçador em áreas corticais, com SUVR (Standardized Uptake Value Ratio ) de 2,05 sugerindo acúmulo de amiloide cerebral.  Pesquisa de polimorfismos da apolipoproteína E indicou que o paciente é portador do genótipo heterozigoto ε-3/ε-4. Com base nessas informações, assinale a alternativa que melhor reflete (i) a classificação AT(N), onde A se refere à presunção do acúmulo de amiloide cerebral, T se refere à presunção de acúmulo de proteína tau fosforilada e N indica evidência de proces so neurodegenerativo; e (ii) como essa informação pode auxiliar no raciocínio clínico, para fins de esclarecimento diagnóstico e tomada de decisões terapêuticas.",
+          "text": "Texto para as questões de 16 a 19 \nHomem branco, 71 anos de idade, casado, engenheiro (sócio proprietário de empresa de construção civil), residente em São Paulo. Solicita uma consulta, em consultório particular, para obter uma terceira opinião sobre o seu caso. Comparece acompanhado da esposa, mas ele próprio fornece as informações de anamnese com boa precisão. Conta que , no último ano , tem notado lapsos de memória, particularmente para fatos recentes, e dificuldades para encontrar palavras durante uma conversa informal – sintomas que parecem ter se acentuado ao longo do tempo. Apesar disso, continua com capacidade plena para exercer atividades diárias, inclusive aquelas relacionadas ao exercício de sua profissão, embora hoje não tenha mais tantas atribuições, pois o trabalho operacional é realizado por sua equipe. Mantém suas rotinas esportivas (joga tênis, faz caminhadas) e sociais (frequenta concertos de música clássica e aprecia reunir -se com amigos em restaurantes). Não se considera deprimido, mas reconhece estar preocupado com os sintomas cognitivos . Sua esposa corrobora a impressão de que os esquecimentos não causam incapacitação, mas são perceptíveis em situações cotidianas. Em uma primeira consulta com seu médico generalista, foi assegurado de que estaria bem clinicamente, eutrófico e com parâmetros de saúde normais. Relata hipertensão leve e dislipidemia (cont roladas); nega diabetes melito , hipotireoidismo ou outras condições clínicas. Tem boa acuidade auditiva e visual, com lentes corretivas. Faz uso de metoprolol (50 mg/dia), ácido acetil salicí lico (100 mg/dia) e rosuvastatina (10 mg/dia). É filho único e sua mãe, com 94 anos de idade, tem boa saúde, mas já demonstra sinais de senilidade. Quando insistiu sobre sua preocupação com as falhas de memória, somadas ao fato de que seu pai faleceu com demência aos 82 anos de idade , o médico lhe recomendou consultar um neurologista. Nesta consulta, apesar de não identificar anormalidades no exame neurológico e de ter apresentado desempenho satisfatório em teste de rastreio cognitivo (28 pontos no teste cognitivo de Montreal), foram solicitados outros exames. A avaliação neuropsicológica foi compatível com a hipótese de comprometimento cognitivo leve amnéstico. O exame de imagem cerebral por ressonância magnética não mostrou alterações significativas em re lação aos parâmetros gerais; apenas mínimas alterações microangiopáticas (escore de zero na escala de Fazekas) e, à inspeção visual das porções mesiais dos lobos temporais, foram atribuídos os escores MTA (Medial Temporal Atrophy, ou Atrofia Medial Tempora l) pela escala de Scheltens, sendo MTA = 2 à esquerda e MTA = 1 à direita. Com base nessas informações, o médico tranquilizou o paciente, dizendo que sua condição não seria compatível com o diagnóstico de demência. Prescreveu um polivitamínico “para forta lecer a memória ” e sugeriu que ele retornasse em consulta de seguimento em 6 meses. Na consulta com você, psicogeriatra, são relatados os dados da história clínica e apresentados os exames realizados. Sua orientação foi de que a condição clínica descrita, como comprometimento cognitivo leve amnéstico pode ser indício de doença de Alzheimer em fase incipiente; contudo, seria precipitado estabelecer esse diagnóstico categoricamente com os dados atuais. E que, embora a conduta expectante não esteja incorreta, outros exames poderiam ser realizados para se obter uma melhor caracterização clínica e estabelecer o diagnóstico diferencial com a Doença de Alzheimer.\n\n\nO paciente aceitou a sua indicação sobre os exames subsidiários, e tomou providências para realizá -los da forma mais abrangente possível. Alguns exames já ficaram prontos e são apresentados a seguir: \n A avaliação da funcionalidade, feita por uma terapeuta ocupacional experiente, mostrou preservação total da capacidade de desempenhar atividades básicas da vida diária, mas identificou algumas dificuldades em tarefas instrumentais de maior complexidade, como lembrar-se de todos os itens de uma lista de compras e realizar cálculos mentais para determinar o troco em transações financeiras. \n A volumetria hipocampal por ressonância magnética mostrou volume hipocampal de 1,82 cm 3 à esquerda e 2,16 cm 3 a direita, sugerindo redução assimétrica do volume hipocampal. \n O exame de imagem funcional por 18F-FDG-PET revelou redução da atividade metabólica em região mesial dos lobos temporais, mais acentuada à esquerda, e também nos córtices de associação temporoparietais (pré-cúneo e cíngulo posterior) com predomínio à esquer da. As concentrações do radiofármaco em áreas subcorticais, como estriado e tálamo, bem como nos córtices sensoriomotores e no cerebelo estavam preservadas. \n A análise de biomarcadores plasmáticos (com base nas concentrações de peptídeos A β42 e A β40, proteí na Tau fosforilada e não fosforilada em treonina 217, e do genótipo ApoE) indicou um índice APS ( amyloid probability score ) de 75, sugerindo alta probabilidade da presença de placas de amiloide em tecidos cerebrais. \n Exame de imagem molecular por 11C-PIB-PET revelou captação do traçador em áreas corticais, com SUVR (Standardized Uptake Value Ratio ) de 2,05 sugerindo acúmulo de amiloide cerebral. \n Pesquisa de polimorfismos da apolipoproteína E indicou que o paciente é portador do genótipo heterozigoto ε-3/ε-4. \nCom base nessas informações, assinale a alternativa que melhor reflete (i) a classificação AT(N), onde A se refere à presunção do acúmulo de amiloide cerebral, T se refere à presunção de acúmulo de proteína tau fosforilada e N indica evidência de proces so neurodegenerativo; e (ii) como essa informação pode auxiliar no raciocínio clínico, para fins de esclarecimento diagnóstico e tomada de decisões terapêuticas.",
           "options": [
             {
               "letter": "A",
@@ -47304,13 +47326,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "(i) A -T+(N+); a afa sia logopênica é considerada uma tauopatia (T +) que progride com neurodegeneração, evidenciada neste caso pelo hipometabolismo glicolítico em áreas corticais associativas temporoparietais (N +); contudo, ocorre independentemente do acúmulo de amiloide cerebral (portanto, A-). (ii) Desconsidera a doença de Alzheimer como primeira hipótese diagnóstica neste caso, devendo ser consideradas outras etiologias, como afasias primárias, tauopatias e demência vascular. #####"
+              "text": "(i) A -T+(N+); a afa sia logopênica é considerada uma tauopatia (T +) que progride com neurodegeneração, evidenciada neste caso pelo hipometabolismo glicolítico em áreas corticais associativas temporoparietais (N +); contudo, ocorre independentemente do acúmulo de amiloide cerebral (portanto, A-). (ii) Desconsidera a doença de Alzheimer como primeira hipótese diagnóstica neste caso, devendo ser consideradas outras etiologias, como afasias primárias, tauopatias e demência vascular."
             }
           ],
           "correctAnswer": "B",
           "examId": "usp-2026-a17",
           "examTag": "USP Psicogeriatria 2026",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-09T11:17:56"
         },
         {
           "id": "usp-2026-a17-018",
@@ -47318,7 +47342,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2026 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 18",
-          "text": "Em relação à terapia modi ficadora da Doença de Alzheimer (DA), assinale a alternativa correta.",
+          "text": "Texto para as questões de 16 a 19 \nHomem branco, 71 anos de idade, casado, engenheiro (sócio proprietário de empresa de construção civil), residente em São Paulo. Solicita uma consulta, em consultório particular, para obter uma terceira opinião sobre o seu caso. Comparece acompanhado da esposa, mas ele próprio fornece as informações de anamnese com boa precisão. Conta que , no último ano , tem notado lapsos de memória, particularmente para fatos recentes, e dificuldades para encontrar palavras durante uma conversa informal – sintomas que parecem ter se acentuado ao longo do tempo. Apesar disso, continua com capacidade plena para exercer atividades diárias, inclusive aquelas relacionadas ao exercício de sua profissão, embora hoje não tenha mais tantas atribuições, pois o trabalho operacional é realizado por sua equipe. Mantém suas rotinas esportivas (joga tênis, faz caminhadas) e sociais (frequenta concertos de música clássica e aprecia reunir -se com amigos em restaurantes). Não se considera deprimido, mas reconhece estar preocupado com os sintomas cognitivos . Sua esposa corrobora a impressão de que os esquecimentos não causam incapacitação, mas são perceptíveis em situações cotidianas. Em uma primeira consulta com seu médico generalista, foi assegurado de que estaria bem clinicamente, eutrófico e com parâmetros de saúde normais. Relata hipertensão leve e dislipidemia (cont roladas); nega diabetes melito , hipotireoidismo ou outras condições clínicas. Tem boa acuidade auditiva e visual, com lentes corretivas. Faz uso de metoprolol (50 mg/dia), ácido acetil salicí lico (100 mg/dia) e rosuvastatina (10 mg/dia). É filho único e sua mãe, com 94 anos de idade, tem boa saúde, mas já demonstra sinais de senilidade. Quando insistiu sobre sua preocupação com as falhas de memória, somadas ao fato de que seu pai faleceu com demência aos 82 anos de idade , o médico lhe recomendou consultar um neurologista. Nesta consulta, apesar de não identificar anormalidades no exame neurológico e de ter apresentado desempenho satisfatório em teste de rastreio cognitivo (28 pontos no teste cognitivo de Montreal), foram solicitados outros exames. A avaliação neuropsicológica foi compatível com a hipótese de comprometimento cognitivo leve amnéstico. O exame de imagem cerebral por ressonância magnética não mostrou alterações significativas em re lação aos parâmetros gerais; apenas mínimas alterações microangiopáticas (escore de zero na escala de Fazekas) e, à inspeção visual das porções mesiais dos lobos temporais, foram atribuídos os escores MTA (Medial Temporal Atrophy, ou Atrofia Medial Tempora l) pela escala de Scheltens, sendo MTA = 2 à esquerda e MTA = 1 à direita. Com base nessas informações, o médico tranquilizou o paciente, dizendo que sua condição não seria compatível com o diagnóstico de demência. Prescreveu um polivitamínico “para forta lecer a memória ” e sugeriu que ele retornasse em consulta de seguimento em 6 meses. Na consulta com você, psicogeriatra, são relatados os dados da história clínica e apresentados os exames realizados. Sua orientação foi de que a condição clínica descrita, como comprometimento cognitivo leve amnéstico pode ser indício de doença de Alzheimer em fase incipiente; contudo, seria precipitado estabelecer esse diagnóstico categoricamente com os dados atuais. E que, embora a conduta expectante não esteja incorreta, outros exames poderiam ser realizados para se obter uma melhor caracterização clínica e estabelecer o diagnóstico diferencial com a Doença de Alzheimer.\n\nEm relação à terapia modificadora da Doença de Alzheimer (DA), assinale a alternativa correta.",
           "options": [
             {
               "letter": "A",
@@ -47340,7 +47364,9 @@ window.BANCO_RMAIS_EXAMS = {
           "correctAnswer": "D",
           "examId": "usp-2026-a17",
           "examTag": "USP Psicogeriatria 2026",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-09T11:17:56"
         },
         {
           "id": "usp-2026-a17-019",
@@ -47348,7 +47374,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2026 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 19",
-          "text": "Após iniciar terapia de reposição colinérgica com cloridrato de donepezila e manter 10 mg/dia por três meses, você decide encaminhar o paciente para um serviço especializado , visando à implementação da imunoterapia antiamiloide por via infusional, utilizando -se o medicamento l ecanemab, importado dos Estados Unidos. A avaliação feita pela equipe especializada ratificou a indicação do tratamento, pelas premissas de: (i) adequação do diagnóstico biológico da doença de Alzheimer; (ii) estágio evolutivo compatível com a perspectiva de benefícios clínicos; e (iii) genótipo da apolipoproteína E compatível com a intervenção. Os exames prévios de ressonância magnética foram revisados pela equipe, que identificou: ausência de eventos vasculares corticais prévios, isquêmicos ou hemorrágicos; microangiopatia subcortical leve, sem lesões conf luentes; ausência de siderose superficial cortical ou de micro hemorragias sugestivas de angiopatia cerebral amiloide subjacente. Foram prescritas infusões quinzenais do medicamento na dose de 10 mg/kg e programados exames de imagem cerebral por ressonância magnética seriados para monitoramento de segurança. As infusões ocorreram sem intercorrências clínicas e não foram relatados sintomas sugestivos de eventos adversos. Após a 13ª infusão, foi feita uma ressonância magnética de controle que identificou a ocorrência de duas lesões compatíveis com ARIA ( Amyloid- Related Imaging Abnormalities) em região occipitotemporal esquerda, sugestivas de micro hemorragias de volume inferior a 1 cm 3 conforme mostra a imagem a seguir ( achado em destaque). O paciente foi convocado para reavaliação clínica, constatando-se que esse achado de imagem não era acompanhado de sintomas ou sinais clínicos. Com base nessas informações, assinale a alternativa que melhor corresponde ao diagnóstico e conduta neste caso.",
+          "text": "Texto para as questões de 16 a 19 \nHomem branco, 71 anos de idade, casado, engenheiro (sócio proprietário de empresa de construção civil), residente em São Paulo. Solicita uma consulta, em consultório particular, para obter uma terceira opinião sobre o seu caso. Comparece acompanhado da esposa, mas ele próprio fornece as informações de anamnese com boa precisão. Conta que , no último ano , tem notado lapsos de memória, particularmente para fatos recentes, e dificuldades para encontrar palavras durante uma conversa informal – sintomas que parecem ter se acentuado ao longo do tempo. Apesar disso, continua com capacidade plena para exercer atividades diárias, inclusive aquelas relacionadas ao exercício de sua profissão, embora hoje não tenha mais tantas atribuições, pois o trabalho operacional é realizado por sua equipe. Mantém suas rotinas esportivas (joga tênis, faz caminhadas) e sociais (frequenta concertos de música clássica e aprecia reunir -se com amigos em restaurantes). Não se considera deprimido, mas reconhece estar preocupado com os sintomas cognitivos . Sua esposa corrobora a impressão de que os esquecimentos não causam incapacitação, mas são perceptíveis em situações cotidianas. Em uma primeira consulta com seu médico generalista, foi assegurado de que estaria bem clinicamente, eutrófico e com parâmetros de saúde normais. Relata hipertensão leve e dislipidemia (cont roladas); nega diabetes melito , hipotireoidismo ou outras condições clínicas. Tem boa acuidade auditiva e visual, com lentes corretivas. Faz uso de metoprolol (50 mg/dia), ácido acetil salicí lico (100 mg/dia) e rosuvastatina (10 mg/dia). É filho único e sua mãe, com 94 anos de idade, tem boa saúde, mas já demonstra sinais de senilidade. Quando insistiu sobre sua preocupação com as falhas de memória, somadas ao fato de que seu pai faleceu com demência aos 82 anos de idade , o médico lhe recomendou consultar um neurologista. Nesta consulta, apesar de não identificar anormalidades no exame neurológico e de ter apresentado desempenho satisfatório em teste de rastreio cognitivo (28 pontos no teste cognitivo de Montreal), foram solicitados outros exames. A avaliação neuropsicológica foi compatível com a hipótese de comprometimento cognitivo leve amnéstico. O exame de imagem cerebral por ressonância magnética não mostrou alterações significativas em re lação aos parâmetros gerais; apenas mínimas alterações microangiopáticas (escore de zero na escala de Fazekas) e, à inspeção visual das porções mesiais dos lobos temporais, foram atribuídos os escores MTA (Medial Temporal Atrophy, ou Atrofia Medial Tempora l) pela escala de Scheltens, sendo MTA = 2 à esquerda e MTA = 1 à direita. Com base nessas informações, o médico tranquilizou o paciente, dizendo que sua condição não seria compatível com o diagnóstico de demência. Prescreveu um polivitamínico “para forta lecer a memória ” e sugeriu que ele retornasse em consulta de seguimento em 6 meses. Na consulta com você, psicogeriatra, são relatados os dados da história clínica e apresentados os exames realizados. Sua orientação foi de que a condição clínica descrita, como comprometimento cognitivo leve amnéstico pode ser indício de doença de Alzheimer em fase incipiente; contudo, seria precipitado estabelecer esse diagnóstico categoricamente com os dados atuais. E que, embora a conduta expectante não esteja incorreta, outros exames poderiam ser realizados para se obter uma melhor caracterização clínica e estabelecer o diagnóstico diferencial com a Doença de Alzheimer.\n\nApós iniciar terapia de reposição colinérgica com cloridrato de donepezila e manter 10 mg/dia por três meses, você decide encaminhar o paciente para um serviço especializado , visando à implementação da imunoterapia antiamiloide por via infusional, utilizando -se o medicamento l ecanemab, importado dos Estados Unidos. A avaliação feita pela equipe especializada ratificou a indicação do tratamento, pelas premissas de: (i) adequação do diagnóstico biológico da doença de Alzheimer; (ii) estágio evolutivo compatível com a perspectiva de benefícios clínicos; e (iii) genótipo da apolipoproteína E compatível com a intervenção. Os exames prévios de ressonância magnética foram revisados pela equipe, que identificou: ausência de eventos vasculares corticais prévios, isquêmicos ou hemorrágicos; microangiopatia subcortical leve, sem lesões conf luentes; ausência de siderose superficial cortical ou de micro hemorragias sugestivas de angiopatia cerebral amiloide subjacente. Foram prescritas infusões quinzenais do medicamento na dose de 10 mg/kg e programados exames de imagem cerebral por ressonância magnética seriados para monitoramento de segurança. As infusões ocorreram sem intercorrências clínicas e não foram relatados sintomas sugestivos de eventos adversos. Após a 13ª infusão, foi feita uma ressonância magnética de controle que identificou a ocorrência de duas lesões compatíveis com ARIA ( Amyloid- Related Imaging Abnormalities) em região occipitotemporal esquerda, sugestivas de micro hemorragias de volume inferior a 1 cm 3 conforme mostra a imagem a seguir ( achado em destaque). O paciente foi convocado para reavaliação clínica, constatando-se que esse achado de imagem não era acompanhado de sintomas ou sinais clínicos. Com base nessas informações, assinale a alternativa que melhor corresponde ao diagnóstico e conduta neste caso.",
           "options": [
             {
               "letter": "A",
@@ -47364,13 +47390,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Diante da ocorrência de ARIA-H, a orientação mais correta é interromper a administração do medicamento e monitorar a incidência de sintomas neurológicos até a resolução completa do quadro clínico e o desaparecimento das alterações de imagem. Após esse período, o tratamento poderá ser reiniciado em doses inferiores às inicialmente prescritas. #####"
+              "text": "Diante da ocorrência de ARIA-H, a orientação mais correta é interromper a administração do medicamento e monitorar a incidência de sintomas neurológicos até a resolução completa do quadro clínico e o desaparecimento das alterações de imagem. Após esse período, o tratamento poderá ser reiniciado em doses inferiores às inicialmente prescritas."
             }
           ],
           "correctAnswer": "A",
           "examId": "usp-2026-a17",
           "examTag": "USP Psicogeriatria 2026",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-09T11:17:56"
         },
         {
           "id": "usp-2026-a17-020",
@@ -48148,13 +48176,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "embriaguez completa por motivo de força maior. ##### Processo Seletivo aos Programas de Residência Médica – Edital: COREME/FM/Nº 03/2025 – Áreas de Atuações – Psiquiatria Forense – PROVA A11"
+              "text": "embriaguez completa por motivo de força maior."
             }
           ],
           "correctAnswer": "A",
           "examId": "usp-2026-a11",
           "examTag": "USP Psiquiatria Forense 2026",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-09T11:17:56"
         },
         {
           "id": "usp-2026-a11-005",
