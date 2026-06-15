@@ -328,6 +328,11 @@ const el = {
   startExamSet: document.querySelector("#startExamSetBtn"),
   endExamSet: document.querySelector("#endExamSetBtn"),
   examSetLine: document.querySelector("#examSetLine"),
+  examFilteredCount: document.querySelector("#examFilteredCount"),
+  examFilteredQuestionCount: document.querySelector("#examFilteredQuestionCount"),
+  examLastTitle: document.querySelector("#examLastTitle"),
+  examProgressAccuracy: document.querySelector("#examProgressAccuracy"),
+  examProgressAnswered: document.querySelector("#examProgressAnswered"),
   overviewCounts: {
     dominated: document.querySelector("#dominatedCount"),
     consolidated: document.querySelector("#consolidatedCount"),
@@ -2341,9 +2346,25 @@ function renderExamStudyFilters() {
     el.examSelect.value = "";
   }
   const questions = exams.reduce((total, exam) => total + exam.questionCount, 0);
+  if (el.examFilteredCount) el.examFilteredCount.textContent = exams.length;
+  if (el.examFilteredQuestionCount) el.examFilteredQuestionCount.textContent = questions;
   el.examSetLine.textContent = state.examSetActive
     ? `Provas ativas: ${pluralize(exams.length, "prova", "provas")}, ${pluralize(state.filtered.length, "questão", "questões")} na lista atual.`
     : `${pluralize(exams.length, "prova encontrada", "provas encontradas")}, ${pluralize(questions, "questão", "questões")} no total.`;
+  renderExamProgressCard();
+}
+
+function renderExamProgressCard() {
+  if (!el.examLastTitle || !el.examProgressAccuracy || !el.examProgressAnswered) return;
+  const answered = state.exams
+    .flatMap((exam) => (exam.questions || []).map((question) => ({ exam, question, progress: getProgress(question.id) })))
+    .filter((item) => item.progress.grade)
+    .sort((a, b) => (b.progress.updatedAt || 0) - (a.progress.updatedAt || 0));
+  const correct = answered.filter((item) => item.progress.grade === "correct").length;
+  const last = answered[0];
+  el.examLastTitle.textContent = last ? last.exam.title : "Ainda não iniciada";
+  el.examProgressAccuracy.textContent = answered.length ? `${Math.round((correct / answered.length) * 100)}%` : "0%";
+  el.examProgressAnswered.textContent = answered.length;
 }
 
 function renderActivity() {

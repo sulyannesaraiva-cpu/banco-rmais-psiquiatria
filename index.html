@@ -303,8 +303,12 @@
         <div class="tab-panel" id="historyPanel"></div>
 
         <div class="tab-panel" id="examsPanel">
-          <div class="study-section">
-            <h3>Provas prévias</h3>
+          <div class="study-section exam-sidebar">
+            <header class="exam-panel-head">
+              <span>Provas anteriores</span>
+              <h3>Escolha seu treino</h3>
+            </header>
+            <h4>Filtros</h4>
             <label class="field compact-field">
               <span>Instituição</span>
               <select id="examInstitutionSelect"></select>
@@ -313,25 +317,40 @@
               <span>Área</span>
               <select id="examAreaSelect"></select>
             </label>
+            <div class="exam-study-card">
+              <h4>Banco de Questões</h4>
+              <div class="exam-metrics">
+                <div><strong id="examFilteredCount">0</strong><span>provas</span></div>
+                <div><strong id="examFilteredQuestionCount">0</strong><span>questões</span></div>
+              </div>
+              <p class="panel-line">Resolva questões misturadas de acordo com os filtros selecionados.</p>
+              <button id="startExamSetBtn" class="primary-btn">Treinar questões</button>
+              <button id="endExamSetBtn" class="tertiary-btn">Sair do treino</button>
+              <p class="panel-line" id="examSetLine">Filtre por instituição ou área para resolver várias provas em sequência.</p>
+            </div>
+            <h4>Prova específica</h4>
             <label class="field compact-field">
               <span>Prova</span>
               <select id="examSelect"></select>
             </label>
-            <div class="topic-toolbar">
-              <button id="startExamSetBtn" class="primary-btn">Resolver conjunto</button>
-              <button id="endExamSetBtn">Sair do conjunto</button>
-            </div>
-            <p class="panel-line" id="examSetLine">Filtre por instituição ou área para resolver várias provas em sequência.</p>
             <div class="exam-actions">
-              <button id="startExamBtn" class="primary-btn">Estudar prova</button>
-              <button id="startExamSimulationBtn" class="primary-btn">Simular prova</button>
+              <button id="startExamBtn" class="primary-btn">Estudar</button>
+              <button id="startExamSimulationBtn">Simular</button>
               <button id="finishExamStudyBtn" hidden>Finalizar prova</button>
               <button id="finishExamSimulationBtn" hidden>Finalizar prova</button>
-              <button id="endExamBtn">Sair da prova</button>
+              <button id="endExamBtn" class="tertiary-btn">Sair</button>
             </div>
             <div class="exam-timer" id="examTimer" hidden>00:00</div>
             <p class="panel-line" id="examLine">Selecione uma prova para resolver na ordem original.</p>
             <div class="exam-result" id="examResult"></div>
+            <div class="exam-progress-card">
+              <h4>Seu progresso</h4>
+              <div class="exam-progress-list">
+                <div><span>Última prova</span><strong id="examLastTitle">Ainda não iniciada</strong></div>
+                <div><span>Desempenho</span><strong id="examProgressAccuracy">0%</strong></div>
+                <div><span>Questões respondidas</span><strong id="examProgressAnswered">0</strong></div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

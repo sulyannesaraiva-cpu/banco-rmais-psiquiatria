@@ -2185,6 +2185,153 @@ body.theme-dark .theme-toggle {
   background: var(--panel-soft);
 }
 
+.exam-sidebar {
+  display: grid;
+  gap: 18px;
+  padding-top: 0;
+  border-top: 0;
+}
+
+.exam-panel-head {
+  display: grid;
+  gap: 4px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--line);
+}
+
+.exam-panel-head span,
+.exam-sidebar h4 {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 720;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.exam-panel-head h3 {
+  margin: 0;
+  color: var(--ink);
+  font-size: 18px;
+  font-weight: 680;
+}
+
+.exam-sidebar .field {
+  margin-bottom: 12px;
+}
+
+.exam-study-card,
+.exam-progress-card {
+  display: grid;
+  gap: 12px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--panel);
+}
+
+.exam-study-card {
+  background: linear-gradient(180deg, var(--panel) 0%, #fbfdff 100%);
+}
+
+.exam-metrics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.exam-metrics div {
+  display: grid;
+  gap: 3px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--panel-soft);
+}
+
+.exam-metrics strong {
+  color: var(--ink);
+  font-size: 22px;
+  line-height: 1;
+}
+
+.exam-metrics span,
+.exam-progress-list span {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.exam-study-card .primary-btn {
+  width: 100%;
+}
+
+.exam-study-card .tertiary-btn {
+  width: 100%;
+}
+
+.tertiary-btn {
+  border-color: transparent;
+  background: transparent;
+  color: var(--muted);
+}
+
+.tertiary-btn:hover {
+  border-color: var(--line);
+  background: var(--panel-soft);
+  color: var(--ink);
+}
+
+.exam-sidebar > .field:nth-of-type(3) {
+  padding-top: 2px;
+  border-top: 1px solid var(--line);
+}
+
+.exam-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.exam-actions .tertiary-btn {
+  grid-column: 1 / -1;
+}
+
+.exam-timer {
+  width: fit-content;
+  border-radius: var(--radius-sm);
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+}
+
+.exam-result {
+  gap: 8px;
+}
+
+.compact-line {
+  margin-bottom: 0;
+  font-size: 13px;
+}
+
+.exam-progress-list {
+  display: grid;
+  gap: 10px;
+}
+
+.exam-progress-list div {
+  display: grid;
+  gap: 2px;
+}
+
+.exam-progress-list strong {
+  color: var(--ink);
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+body.theme-dark .exam-study-card {
+  background: var(--panel);
+}
+
 @media (max-width: 860px) {
   body {
     grid-template-columns: 1fr;
