@@ -12,8 +12,10 @@ const state = {
   attempts: JSON.parse(localStorage.getItem("banco-rmais-attempts") || "[]"),
   reviewSchedule: JSON.parse(localStorage.getItem("banco-rmais-review-schedule") || "{}"),
   corrections: JSON.parse(localStorage.getItem("banco-rmais-corrections") || "{}"),
+  globalCorrections: {},
+  globalCorrectionsLoaded: false,
   excluded: JSON.parse(localStorage.getItem("banco-rmais-excluded") || "[]"),
-  discardedOptions: JSON.parse(localStorage.getItem("banco-rmais-discarded-options") || "{}"),
+  discardedOptions: {},
   commentsByQuestion: {},
   commentsLoaded: {},
   commentsLoading: {},
@@ -66,6 +68,7 @@ const state = {
 };
 
 const MIN_SUBTHEME_COUNT = 10;
+localStorage.removeItem("banco-rmais-discarded-options");
 const PSYCHOPHARM_SESSION_TOPIC = "Psicofarmacologia e terapêutica psiquiátrica";
 
 const SESSION_TOPIC_GROUPS = [
@@ -377,8 +380,7 @@ function saveExcluded() {
 }
 
 function saveDiscardedOptions() {
-  localStorage.setItem("banco-rmais-discarded-options", JSON.stringify(state.discardedOptions));
-  scheduleCloudSettingsSync();
+  localStorage.removeItem("banco-rmais-discarded-options");
 }
 
 function savePositions() {
@@ -419,7 +421,6 @@ function currentSettingsPayload() {
     sessionSize: state.sessionSize,
     includeReviewsInSession: state.includeReviewsInSession,
     sessionSource: state.sessionSource,
-    discardedOptions: state.discardedOptions,
   };
 }
 
@@ -447,10 +448,6 @@ function applySettingsPayload(settings = {}) {
   if (Object.prototype.hasOwnProperty.call(settings, "sessionSource")) {
     state.sessionSource = settings.sessionSource || "content";
     localStorage.setItem("banco-rmais-session-source", state.sessionSource);
-  }
-  if (Object.prototype.hasOwnProperty.call(settings, "discardedOptions")) {
-    state.discardedOptions = settings.discardedOptions || {};
-    localStorage.setItem("banco-rmais-discarded-options", JSON.stringify(state.discardedOptions));
   }
 }
 
@@ -518,6 +515,69 @@ function scheduleCloudSettingsSync() {
   state.settingsSyncTimer = setTimeout(syncSettingsToCloud, 900);
 }
 
+function normalizeCorrectionForCloud(correction = {}) {
+  const normalized = {};
+  if (typeof correction.text === "string" && correction.text.trim()) normalized.text = correction.text.trim();
+  if (Array.isArray(correction.options) && correction.options.length) {
+    normalized.options = correction.options
+      .map((option) => ({
+        letter: String(option.letter || "").trim(),
+        text: String(option.text || "").trim(),
+      }))
+      .filter((option) => option.letter && option.text);
+  }
+  if (Object.prototype.hasOwnProperty.call(correction, "correctAnswer")) {
+    normalized.correctAnswer = String(correction.correctAnswer || "").trim().toUpperCase();
+  }
+  if (Object.prototype.hasOwnProperty.call(correction, "maintenanceFlagged")) {
+    normalized.maintenanceFlagged = Boolean(correction.maintenanceFlagged);
+  }
+  normalized.reviewedAt = new Date().toISOString();
+  return normalized;
+}
+
+async function loadGlobalCorrections() {
+  if (!state.supabase) return;
+  const { data, error } = await state.supabase.from("question_corrections").select("question_id, correction, reviewed_at");
+  if (error) {
+    console.warn("Correcoes globais nao carregadas:", error.message);
+    return;
+  }
+  state.globalCorrections = {};
+  for (const row of data || []) {
+    state.globalCorrections[row.question_id] = {
+      ...(row.correction || {}),
+      reviewedAt: row.reviewed_at,
+    };
+  }
+  state.globalCorrectionsLoaded = true;
+  clearClassificationCache();
+}
+
+async function saveGlobalCorrection(questionId, correction) {
+  if (!state.supabase || !state.authUser || !state.isAdmin || !questionId) return false;
+  const normalized = normalizeCorrectionForCloud(correction);
+  const { error } = await state.supabase.from("question_corrections").upsert(
+    {
+      question_id: questionId,
+      correction: normalized,
+      reviewed_by: state.authUser.id,
+      reviewed_at: new Date().toISOString(),
+    },
+    { onConflict: "question_id" },
+  );
+  if (error) {
+    setSyncStatus(`Erro ao publicar correção: ${error.message}`);
+    return false;
+  }
+  state.globalCorrections[questionId] = normalized;
+  delete state.corrections[questionId];
+  saveCorrections();
+  clearClassificationCache();
+  setSyncStatus("Correção publicada para todos os usuários.");
+  return true;
+}
+
 async function syncProgressToCloud() {
   if (!state.authUser || !state.supabase) return;
   const entries = Object.entries(state.progress).filter(([, progress]) => progress && Object.keys(progress).length);
@@ -574,6 +634,7 @@ async function setupSupabaseAuth() {
     return;
   }
   state.supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+  await loadGlobalCorrections();
   const { data } = await state.supabase.auth.getSession();
   state.authUser = data.session?.user || null;
   state.cloudReady = Boolean(state.authUser);
@@ -1030,9 +1091,7 @@ function allStudyQuestions() {
   return [...state.questions, ...state.exams.flatMap((exam) => exam.questions || [])];
 }
 
-function effectiveQuestion(question) {
-  if (!question) return null;
-  const correction = state.corrections[question.id];
+function applyQuestionCorrection(question, correction) {
   if (!correction) return question;
   return {
     ...question,
@@ -1040,8 +1099,16 @@ function effectiveQuestion(question) {
     options: correction.options || question.options,
     correctAnswer: correction.correctAnswer ?? question.correctAnswer,
     maintenanceFlagged: Boolean(correction.maintenanceFlagged || question.maintenanceFlagged),
-    manuallyReviewed: true,
+    manuallyReviewed: Boolean(question.manuallyReviewed || correction.text || correction.options || correction.correctAnswer || correction.maintenanceFlagged),
+    reviewedAt: correction.reviewedAt || correction.reviewed_at || question.reviewedAt,
   };
+}
+
+function effectiveQuestion(question) {
+  if (!question) return null;
+  const globalCorrection = state.globalCorrections[question.id];
+  const localCorrection = state.corrections[question.id];
+  return applyQuestionCorrection(applyQuestionCorrection(question, globalCorrection), localCorrection);
 }
 
 function isReadyQuestion(question) {
@@ -1611,6 +1678,10 @@ function setProgress(patch) {
   const gradeChanged = Object.prototype.hasOwnProperty.call(patch, "grade") && patch.grade !== previous.grade;
   const reviewPatch = shouldRecalculate ? reviewPatchForGrade(previous, nextGrade, nextConfidence, gradeChanged) : {};
   state.progress[question.id] = { ...previous, ...patch, ...reviewPatch, updatedAt: Date.now() };
+  if (patch.confirmed || nextGrade) {
+    delete state.discardedOptions[question.id];
+    saveDiscardedOptions();
+  }
   if (gradeChanged && nextGrade) saveAttempt(question, state.progress[question.id]);
   if (shouldRecalculate && nextGrade) updateReviewSchedule(question, state.progress[question.id]);
   if (state.filterKey) {
@@ -3177,11 +3248,19 @@ function collectEditor() {
     const text = el.editOptions[letter].value.trim();
     if (text) options.push({ letter, text });
   }
-  return {
+  const correction = {
     text: el.editText.value.trim(),
     options,
     correctAnswer: el.editAnswer.value,
   };
+  const readyAfterEdit = Boolean(
+    correction.correctAnswer &&
+      correction.options.length >= 2 &&
+      new Set(correction.options.map((option) => option.letter)).size === correction.options.length &&
+      correction.options.some((option) => option.letter === correction.correctAnswer),
+  );
+  correction.maintenanceFlagged = !readyAfterEdit;
+  return correction;
 }
 
 function openEditor() {
@@ -3197,13 +3276,16 @@ function closeEditor() {
   render();
 }
 
-function saveEdit() {
+async function saveEdit() {
   if (!state.isAdmin) return;
   const question = currentQuestion();
   if (!question) return;
   const correction = collectEditor();
-  state.corrections[question.id] = correction;
-  saveCorrections();
+  const savedGlobally = await saveGlobalCorrection(question.id, correction);
+  if (!savedGlobally) {
+    state.corrections[question.id] = correction;
+    saveCorrections();
+  }
   state.editing = false;
   const corrected = effectiveQuestion(question);
   if (el.status.value === "needs-review" && isReadyQuestion(corrected)) {
@@ -3213,26 +3295,39 @@ function saveEdit() {
   applyFilters({ preserveCurrent: true });
 }
 
-function resetEdit() {
+async function resetEdit() {
   if (!state.isAdmin) return;
   const question = currentQuestion();
   if (!question) return;
+  if (state.supabase && state.authUser) {
+    const { error } = await state.supabase.from("question_corrections").delete().eq("question_id", question.id);
+    if (!error) {
+      delete state.globalCorrections[question.id];
+      setSyncStatus("Correção global removida.");
+    } else {
+      setSyncStatus(`Erro ao remover correção global: ${error.message}`);
+    }
+  }
   delete state.corrections[question.id];
   saveCorrections();
   state.editing = false;
   applyFilters({ preserveCurrent: true });
 }
 
-function sendCurrentQuestionToMaintenance() {
+async function sendCurrentQuestionToMaintenance() {
   if (!state.isAdmin) return;
   const question = currentQuestion();
   if (!question) return;
-  const current = state.corrections[question.id] || {};
-  state.corrections[question.id] = {
+  const current = state.corrections[question.id] || state.globalCorrections[question.id] || {};
+  const correction = {
     ...current,
     maintenanceFlagged: true,
   };
-  saveCorrections();
+  const savedGlobally = await saveGlobalCorrection(question.id, correction);
+  if (!savedGlobally) {
+    state.corrections[question.id] = correction;
+    saveCorrections();
+  }
   if (el.pendingReviewReason) el.pendingReviewReason.textContent = "Pendências: sinalizada para manutenção.";
   if (el.status) el.status.value = "needs-review";
   state.sessionActive = false;
@@ -3249,7 +3344,7 @@ function sendCurrentQuestionToMaintenance() {
 function exportCorrections() {
   if (!state.isAdmin) return;
   const corrections = Object.fromEntries(
-    Object.entries(state.corrections).filter(([, correction]) =>
+    Object.entries({ ...state.globalCorrections, ...state.corrections }).filter(([, correction]) =>
       Boolean(
         correction?.text ||
           correction?.correctAnswer ||
