@@ -150,6 +150,25 @@
             <p class="panel-line" id="spacedReviewLine">As questões erradas entram automaticamente em revisão espaçada.</p>
           </div>
           <div class="study-section">
+            <h3>Questões perigosas</h3>
+            <div class="review-box">
+              <div>
+                <strong id="dangerousCount">0</strong>
+                <span>na fila especial</span>
+              </div>
+              <div>
+                <strong id="dangerousRecentCount">0</strong>
+                <span>recentes</span>
+              </div>
+            </div>
+            <div class="topic-toolbar">
+              <button id="startDangerousReviewBtn" class="primary-btn">Revisar perigosas</button>
+              <button id="endDangerousReviewBtn">Sair das perigosas</button>
+            </div>
+            <p class="panel-line" id="dangerousLine">Questões com erro repetido, tempo excessivo ou troca de resposta certa para errada entram aqui.</p>
+            <div class="dangerous-list" id="dangerousList"></div>
+          </div>
+          <div class="study-section">
             <h3>Caderno de erros</h3>
             <div class="error-notebook" id="errorNotebook"></div>
           </div>

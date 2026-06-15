@@ -48,6 +48,8 @@ const state = {
   examSetIds: [],
   spacedReviewActive: false,
   spacedReviewIds: [],
+  dangerousReviewActive: false,
+  dangerousReviewIds: [],
   smartTrainingActive: false,
   smartTrainingIds: [],
   activeTab: "overview",
@@ -56,6 +58,9 @@ const state = {
   sessionCompletionMessage: "",
   examCompletionMessage: "",
   activeAnswers: {},
+  questionTimerId: null,
+  questionStartedAt: null,
+  choiceTrail: {},
   supabase: null,
   authUser: null,
   isAdmin: false,
@@ -339,6 +344,12 @@ const el = {
   startSpacedReview: document.querySelector("#startSpacedReviewBtn"),
   endSpacedReview: document.querySelector("#endSpacedReviewBtn"),
   spacedReviewLine: document.querySelector("#spacedReviewLine"),
+  dangerousCount: document.querySelector("#dangerousCount"),
+  dangerousRecentCount: document.querySelector("#dangerousRecentCount"),
+  dangerousLine: document.querySelector("#dangerousLine"),
+  dangerousList: document.querySelector("#dangerousList"),
+  startDangerousReview: document.querySelector("#startDangerousReviewBtn"),
+  endDangerousReview: document.querySelector("#endDangerousReviewBtn"),
   todayDueCount: document.querySelector("#todayDueCount"),
   todayPriorityCount: document.querySelector("#todayPriorityCount"),
   todayReviewLine: document.querySelector("#todayReviewLine"),
@@ -1028,6 +1039,7 @@ function isActiveAttemptMode() {
     state.sessionActive ||
       state.smartTrainingActive ||
       state.spacedReviewActive ||
+      state.dangerousReviewActive ||
       state.examActive ||
       state.examSetActive,
   );
@@ -1039,6 +1051,7 @@ function hasActiveQuestionFlow() {
       state.sessionActive ||
       state.smartTrainingActive ||
       state.spacedReviewActive ||
+      state.dangerousReviewActive ||
       state.examActive ||
       state.examSetActive ||
       state.examSimulationActive,
@@ -1067,6 +1080,69 @@ function setActiveAttempt(questionId, patch) {
     ...currentAttemptFor(questionId),
     ...patch,
   };
+}
+
+function ensureQuestionTimer(questionId) {
+  if (!questionId) return;
+  if (state.questionTimerId === questionId && state.questionStartedAt) return;
+  state.questionTimerId = questionId;
+  state.questionStartedAt = Date.now();
+  state.choiceTrail[questionId] = [];
+}
+
+function elapsedOnCurrentQuestion() {
+  if (!state.questionStartedAt) return 0;
+  return Date.now() - state.questionStartedAt;
+}
+
+function recordChoice(questionId, letter) {
+  if (!questionId || !letter) return;
+  const trail = state.choiceTrail[questionId] || [];
+  if (trail[trail.length - 1] !== letter) trail.push(letter);
+  state.choiceTrail[questionId] = trail.slice(-8);
+}
+
+function dangerousPatchFor(question, selected, grade) {
+  const elapsedMs = elapsedOnCurrentQuestion();
+  const trail = state.choiceTrail[question.id] || [];
+  const changedCorrectToWrong = Boolean(
+    question.correctAnswer &&
+      selected &&
+      selected !== question.correctAnswer &&
+      trail.includes(question.correctAnswer),
+  );
+  const excessiveTime = elapsedMs >= 120000;
+  return {
+    lastElapsedMs: elapsedMs,
+    longTimeCount: excessiveTime ? (getProgress(question.id).longTimeCount || 0) + 1 : getProgress(question.id).longTimeCount || 0,
+    changedCorrectToWrong: changedCorrectToWrong || Boolean(getProgress(question.id).changedCorrectToWrong),
+    dangerousUpdatedAt: excessiveTime || changedCorrectToWrong || grade === "wrong" ? Date.now() : getProgress(question.id).dangerousUpdatedAt || null,
+  };
+}
+
+function dangerousReasonsFor(question) {
+  const progress = getProgress(question.id);
+  const attemptWrongCount = state.attempts.filter((attempt) => attempt.question_id === question.id && attempt.is_correct === false).length;
+  const wrongCount = Math.max(progress.wrongCount || 0, attemptWrongCount);
+  const reasons = [];
+  if (wrongCount >= 2) reasons.push("errou 2 vezes");
+  if ((progress.longTimeCount || 0) >= 1) reasons.push("tempo excessivo");
+  if (progress.changedCorrectToWrong) reasons.push("mudou de certa para errada");
+  return reasons;
+}
+
+function isDangerousQuestion(question) {
+  return dangerousReasonsFor(question).length > 0;
+}
+
+function dangerousQuestions() {
+  return allStudyQuestions()
+    .filter((question) => !isExcluded(question.id) && isReadyQuestion(effectiveQuestion(question)) && isDangerousQuestion(question))
+    .sort((a, b) => {
+      const pa = getProgress(a.id);
+      const pb = getProgress(b.id);
+      return (pb.dangerousUpdatedAt || pb.updatedAt || 0) - (pa.dangerousUpdatedAt || pa.updatedAt || 0);
+    });
 }
 
 function currentRunAnsweredQuestions() {
@@ -1524,7 +1600,7 @@ function reviewPatchForGrade(previous, grade, confidence, countAttempt = true) {
   if (grade === "wrong") {
     return {
       review: plan.review,
-      wrongCount: countAttempt && previous.grade !== "wrong" ? (previous.wrongCount || 0) + 1 : previous.wrongCount || 1,
+      wrongCount: countAttempt ? (previous.wrongCount || 0) + 1 : previous.wrongCount || 1,
       correctStreak: 0,
       confidence,
       intervalDays: plan.intervalDays,
@@ -1534,7 +1610,7 @@ function reviewPatchForGrade(previous, grade, confidence, countAttempt = true) {
   }
   if (grade === "correct") {
     return {
-      correctStreak: countAttempt && previous.grade !== "correct" ? (previous.correctStreak || 0) + 1 : previous.correctStreak || 1,
+      correctStreak: countAttempt ? (previous.correctStreak || 0) + 1 : previous.correctStreak || 1,
       confidence,
       intervalDays: plan.intervalDays,
       nextReviewAt: plan.nextReviewAt,
@@ -1565,6 +1641,7 @@ function currentQuestionMode() {
   if (state.examSetActive) return "exam-set";
   if (state.smartTrainingActive) return "smart-training";
   if (state.spacedReviewActive) return "daily-review";
+  if (state.dangerousReviewActive) return "dangerous-review";
   if (state.sessionActive) return "session";
   return "free";
 }
@@ -1676,13 +1753,20 @@ function setProgress(patch) {
     Object.prototype.hasOwnProperty.call(patch, "successType") ||
     Object.prototype.hasOwnProperty.call(patch, "confidence");
   const gradeChanged = Object.prototype.hasOwnProperty.call(patch, "grade") && patch.grade !== previous.grade;
-  const reviewPatch = shouldRecalculate ? reviewPatchForGrade(previous, nextGrade, nextConfidence, gradeChanged) : {};
-  state.progress[question.id] = { ...previous, ...patch, ...reviewPatch, updatedAt: Date.now() };
+  const confirmedAttempt = Boolean(patch.confirmed && Object.prototype.hasOwnProperty.call(patch, "grade") && nextGrade);
+  const countAttempt = confirmedAttempt || gradeChanged;
+  const reviewPatch = shouldRecalculate ? reviewPatchForGrade(previous, nextGrade, nextConfidence, countAttempt) : {};
+  const shouldCheckDanger = patch.confirmed || Object.prototype.hasOwnProperty.call(patch, "grade");
+  const dangerPatch = shouldCheckDanger && nextGrade ? dangerousPatchFor(question, patch.selected ?? previous.selected, nextGrade) : {};
+  state.progress[question.id] = { ...previous, ...patch, ...reviewPatch, ...dangerPatch, updatedAt: Date.now() };
   if (patch.confirmed || nextGrade) {
     delete state.discardedOptions[question.id];
+    delete state.choiceTrail[question.id];
+    state.questionTimerId = null;
+    state.questionStartedAt = null;
     saveDiscardedOptions();
   }
-  if (gradeChanged && nextGrade) saveAttempt(question, state.progress[question.id]);
+  if (countAttempt && nextGrade) saveAttempt(question, state.progress[question.id]);
   if (shouldRecalculate && nextGrade) updateReviewSchedule(question, state.progress[question.id]);
   if (state.filterKey) {
     state.positions[state.filterKey] = question.id;
@@ -1786,6 +1870,16 @@ function applyFilters({ preserveCurrent = false } = {}) {
   if (state.spacedReviewActive) {
     const byId = new Map(allStudyQuestions().map((question) => [question.id, question]));
     state.filtered = state.spacedReviewIds.map((id) => byId.get(id)).filter((question) => question && !isExcluded(question.id));
+    state.index = Math.min(state.index, Math.max(state.filtered.length - 1, 0));
+    render();
+    return;
+  }
+
+  if (state.dangerousReviewActive) {
+    const byId = new Map(allStudyQuestions().map((question) => [question.id, question]));
+    state.filtered = state.dangerousReviewIds
+      .map((id) => byId.get(id))
+      .filter((question) => question && !isExcluded(question.id) && isReadyQuestion(effectiveQuestion(question)));
     state.index = Math.min(state.index, Math.max(state.filtered.length - 1, 0));
     render();
     return;
@@ -1934,6 +2028,7 @@ function renderDashboard() {
   renderExamStudyFilters();
   renderActivity();
   renderHistory();
+  renderDangerousQuestions();
   renderTodayReview();
   renderSavedNotesPanel();
   renderExams();
@@ -2429,6 +2524,39 @@ function renderTodayReview() {
   `;
 }
 
+function renderDangerousQuestions() {
+  if (!el.dangerousCount) return;
+  const dangerous = dangerousQuestions();
+  const recentLimit = Date.now() - 7 * 24 * 60 * 60 * 1000;
+  const recent = dangerous.filter((question) => (getProgress(question.id).dangerousUpdatedAt || 0) >= recentLimit);
+  el.dangerousCount.textContent = dangerous.length;
+  el.dangerousRecentCount.textContent = recent.length;
+  el.startDangerousReview.disabled = !dangerous.length;
+  el.endDangerousReview.hidden = !state.dangerousReviewActive;
+  if (state.dangerousReviewActive) {
+    el.dangerousLine.innerHTML = `<strong>Fila ativa:</strong> ${pluralize(state.filtered.length, "questão perigosa", "questões perigosas")} para revisar.`;
+  } else if (dangerous.length) {
+    el.dangerousLine.innerHTML = `<strong>Prioridade especial:</strong> revise primeiro questões com erro repetido, tempo excessivo ou troca da resposta certa para errada.`;
+  } else {
+    el.dangerousLine.textContent = "Nenhuma questão perigosa no momento. Quando houver erro repetido ou padrão de risco, ela aparecerá aqui.";
+  }
+  el.dangerousList.innerHTML = dangerous.length
+    ? dangerous
+        .slice(0, 6)
+        .map((question) => {
+          const reasons = dangerousReasonsFor(question).join(", ");
+          return `
+            <button class="notebook-row" data-dangerous-question="${escapeHtml(question.id)}">
+              <strong>${escapeHtml(topicForQuestion(question))}</strong>
+              <span>${escapeHtml(question.source || "Banco R+")} · Questão ${escapeHtml(String(question.number || ""))}</span>
+              <small>${escapeHtml(reasons)}</small>
+            </button>
+          `;
+        })
+        .join("")
+    : `<p class="panel-line">A fila especial está vazia.</p>`;
+}
+
 function renderErrorNotebook() {
   if (!el.errorNotebook) return;
   const wrongItems = allStudyQuestions()
@@ -2730,6 +2858,7 @@ function render() {
 
   const storedProgress = getProgress(question.id);
   const progress = displayProgressFor(question.id);
+  ensureQuestionTimer(question.id);
   const examLocked = state.examSimulationActive && !state.examSimulationFinished;
   const selectedLetter = state.examSimulationActive ? state.examSimulationAnswers[question.id] || storedProgress.selected : progress.selected;
   state.selected = selectedLetter || null;
@@ -2743,6 +2872,8 @@ function render() {
       ? "Provas filtradas"
     : state.smartTrainingActive
       ? "Treino inteligente"
+      : state.dangerousReviewActive
+        ? "Questões perigosas"
     : state.sessionActive
       ? "Bloco de questões"
       : state.topicActive
@@ -2752,9 +2883,11 @@ function render() {
         : "Banco R+ Psiquiatria";
   el.title.textContent = state.sessionActive || state.smartTrainingActive || state.examActive || state.examSimulationActive || state.examSetActive || state.topicActive ? `Questão ${state.index + 1}` : `Questão ${question.number}`;
   el.position.textContent = `${state.index + 1} / ${state.filtered.length}`;
+  if (state.dangerousReviewActive) el.title.textContent = `Questão ${state.index + 1}`;
   const examTag = question.examTag || (question.examId ? question.source : "");
   const trainingReasons = state.smartTrainingActive ? questionTrainingReasons(question) : [];
-  const tags = [examTag, ...trainingReasons].filter(Boolean);
+  const dangerousTag = isDangerousQuestion(question) ? `⚠️ Questão perigosa: ${dangerousReasonsFor(question).join(", ")}` : "";
+  const tags = [examTag, dangerousTag, ...trainingReasons].filter(Boolean);
   el.tags.innerHTML = tags.map((tag) => `<span>${escapeHtml(tag)}</span>`).join("");
   el.tags.classList.toggle("visible", Boolean(tags.length));
   el.text.textContent = question.text;
@@ -2872,6 +3005,8 @@ function startTopic() {
   state.examSetActive = false;
   state.spacedReviewActive = false;
   state.smartTrainingActive = false;
+  state.dangerousReviewActive = false;
+  state.dangerousReviewIds = [];
   state.topicActive = true;
   state.topicIds = topics;
   state.index = 0;
@@ -2902,6 +3037,8 @@ function startExamSet() {
   clearExamSimulationState();
   state.spacedReviewActive = false;
   state.smartTrainingActive = false;
+  state.dangerousReviewActive = false;
+  state.dangerousReviewIds = [];
   state.examSetActive = true;
   state.examSetIds = exams.map((exam) => exam.id);
   state.filtered = exams
@@ -2937,10 +3074,64 @@ function startSpacedReview() {
   clearExamSimulationState();
   state.examSetActive = false;
   state.smartTrainingActive = false;
+  state.dangerousReviewActive = false;
+  state.dangerousReviewIds = [];
   state.spacedReviewActive = true;
   state.spacedReviewIds = due.map((question) => question.id);
   state.index = 0;
   setTab("today");
+  applyFilters({ preserveCurrent: true });
+}
+
+function startDangerousReview() {
+  const dangerous = dangerousQuestions();
+  if (!dangerous.length) {
+    if (el.dangerousLine) el.dangerousLine.textContent = "Nenhuma questão perigosa no momento.";
+    setTab("overview");
+    return;
+  }
+  state.sessionCompletionMessage = "";
+  state.activeAnswers = {};
+  state.topicActive = false;
+  state.examActive = false;
+  clearExamSimulationState();
+  state.examSetActive = false;
+  state.sessionActive = false;
+  state.smartTrainingActive = false;
+  state.spacedReviewActive = false;
+  state.spacedReviewIds = [];
+  state.dangerousReviewActive = true;
+  state.dangerousReviewIds = dangerous.map((question) => question.id);
+  state.index = 0;
+  setTab("overview");
+  applyFilters({ preserveCurrent: true });
+}
+
+function endDangerousReview() {
+  state.dangerousReviewActive = false;
+  state.dangerousReviewIds = [];
+  state.activeAnswers = {};
+  state.index = 0;
+  applyFilters({ preserveCurrent: true });
+  setTab("overview");
+}
+
+function openDangerousQuestion(questionId) {
+  const question = allStudyQuestions().find((item) => item.id === questionId);
+  if (!question) return;
+  state.topicActive = false;
+  state.examActive = false;
+  clearExamSimulationState();
+  state.examSetActive = false;
+  state.sessionActive = false;
+  state.smartTrainingActive = false;
+  state.spacedReviewActive = false;
+  state.spacedReviewIds = [];
+  state.dangerousReviewActive = true;
+  state.dangerousReviewIds = [question.id];
+  state.activeAnswers = {};
+  state.index = 0;
+  setTab("overview");
   applyFilters({ preserveCurrent: true });
 }
 
@@ -2962,6 +3153,8 @@ function startSession() {
   state.examSetActive = false;
   state.spacedReviewActive = false;
   state.smartTrainingActive = false;
+  state.dangerousReviewActive = false;
+  state.dangerousReviewIds = [];
   const pool = sessionPoolQuestions();
   const reviews = state.includeReviewsInSession ? shuffle(sessionReviewPool()) : [];
   const reviewIds = new Set(reviews.map((question) => question.id));
@@ -2991,6 +3184,8 @@ function startSmartTraining() {
   state.examSetActive = false;
   state.spacedReviewActive = false;
   state.sessionActive = false;
+  state.dangerousReviewActive = false;
+  state.dangerousReviewIds = [];
   const session = smartTrainingQuestions();
   if (!session.length) {
     el.sessionLine.textContent = "Não encontrei questões corrigíveis para montar o treino.";
@@ -3022,6 +3217,8 @@ function startErrorNotebookReview(errorType) {
   state.examSetActive = false;
   state.spacedReviewActive = false;
   state.sessionActive = false;
+  state.dangerousReviewActive = false;
+  state.dangerousReviewIds = [];
   state.smartTrainingActive = true;
   state.smartTrainingIds = ids;
   state.activeAnswers = {};
@@ -3039,6 +3236,8 @@ function startCurrentBlockErrors() {
   state.examSetActive = false;
   state.spacedReviewActive = false;
   state.sessionActive = false;
+  state.dangerousReviewActive = false;
+  state.dangerousReviewIds = [];
   state.smartTrainingActive = true;
   state.smartTrainingIds = ids;
   state.activeAnswers = {};
@@ -3052,6 +3251,8 @@ function endSession() {
   state.sessionIds = [];
   state.smartTrainingActive = false;
   state.smartTrainingIds = [];
+  state.dangerousReviewActive = false;
+  state.dangerousReviewIds = [];
   state.activeAnswers = {};
   state.index = 0;
   applyFilters({ preserveCurrent: true });
@@ -3069,6 +3270,8 @@ function finishSession() {
   state.sessionIds = [];
   state.smartTrainingActive = false;
   state.smartTrainingIds = [];
+  state.dangerousReviewActive = false;
+  state.dangerousReviewIds = [];
   state.activeAnswers = {};
   state.index = 0;
   applyFilters({ preserveCurrent: true });
@@ -3089,6 +3292,8 @@ function startExam() {
   state.examSetActive = false;
   state.spacedReviewActive = false;
   state.smartTrainingActive = false;
+  state.dangerousReviewActive = false;
+  state.dangerousReviewIds = [];
   clearExamSimulationState();
   state.examActive = true;
   state.filtered = exam.questions.filter((question) => !isExcluded(question.id) && isReadyQuestion(effectiveQuestion(question)));
@@ -3111,6 +3316,8 @@ function startExamSimulation() {
   state.examSetActive = false;
   state.spacedReviewActive = false;
   state.smartTrainingActive = false;
+  state.dangerousReviewActive = false;
+  state.dangerousReviewIds = [];
   state.examActive = false;
   state.examSimulationActive = true;
   state.examSimulationFinished = false;
@@ -3174,6 +3381,8 @@ function reviewExamSimulationErrors() {
   if (!state.examSimulationErrorIds.length) return;
   state.smartTrainingActive = true;
   state.smartTrainingIds = [...state.examSimulationErrorIds];
+  state.dangerousReviewActive = false;
+  state.dangerousReviewIds = [];
   state.activeAnswers = {};
   clearExamSimulationState();
   state.examActive = false;
@@ -3208,6 +3417,8 @@ function resetUserProgress() {
   state.smartTrainingIds = [];
   state.spacedReviewActive = false;
   state.spacedReviewIds = [];
+  state.dangerousReviewActive = false;
+  state.dangerousReviewIds = [];
   state.examActive = false;
   state.examSetActive = false;
   state.examSetIds = [];
@@ -3485,6 +3696,8 @@ el.startExamSet.addEventListener("click", startExamSet);
 el.endExamSet.addEventListener("click", endExamSet);
 el.startSpacedReview?.addEventListener("click", startSpacedReview);
 el.endSpacedReview?.addEventListener("click", endSpacedReview);
+el.startDangerousReview?.addEventListener("click", startDangerousReview);
+el.endDangerousReview?.addEventListener("click", endDangerousReview);
 el.startTodayReview?.addEventListener("click", startSpacedReview);
 el.endTodayReview?.addEventListener("click", endSpacedReview);
 el.sessionSourceGroup.addEventListener("click", (event) => {
@@ -3521,6 +3734,11 @@ el.errorNotebook.addEventListener("click", (event) => {
   const button = event.target.closest("[data-error-review]");
   if (!button) return;
   startErrorNotebookReview(button.dataset.errorReview);
+});
+el.dangerousList?.addEventListener("click", (event) => {
+  const button = event.target.closest("[data-dangerous-question]");
+  if (!button) return;
+  openDangerousQuestion(button.dataset.dangerousQuestion);
 });
 el.savedNotesList?.addEventListener("click", (event) => {
   const button = event.target.closest("[data-open-note-question]");
@@ -3711,6 +3929,7 @@ el.options.addEventListener("click", (event) => {
     if (!state.discardedOptions[question.id].length) delete state.discardedOptions[question.id];
     saveDiscardedOptions();
   }
+  recordChoice(question.id, button.dataset.option);
   if (state.examSimulationActive) {
     state.examSimulationAnswers[question.id] = button.dataset.option;
     render();
