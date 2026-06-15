@@ -23061,7 +23061,10 @@ window.BANCO_RMAIS_EXAMS = {
           "correctAnswer": "E",
           "examId": "enare-2025-psiquiatria-geral",
           "examTag": "ENARE Psiquiatria Geral 2025",
-          "provider": "ENARE"
+          "provider": "ENARE",
+          "maintenanceFlagged": true,
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-15T18:05:11"
         },
         {
           "id": "enare-2025-psiquiatria-geral-033",
@@ -39454,7 +39457,7 @@ window.BANCO_RMAIS_EXAMS = {
       "title": "USP 2025 - Ano Adicional",
       "file": "ANOS ADICIONAIS - USP - 2025.pdf",
       "questionCount": 40,
-      "answerCount": 38,
+      "answerCount": 40,
       "questions": [
         {
           "id": "usp-2025-f37-001",
@@ -39732,7 +39735,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Ano Adicional",
           "topic": "Ano Adicional",
           "title": "Questao 10",
-          "text": "Pacientes dependentes de múltiplas substâncias avaliados pela Bateria de Avaliação Frontal (Frontal Assessment Battery, FAB) apresentam dificuldades importantes na capacidade de abstração. Qual das alternativ as inclui outra dificuldade importante desses pacientes?",
+          "text": "Pacientes dependentes de múltiplas substâncias avaliados pela Bateria de Avaliação Frontal (Frontal Assessment Battery, FAB) apresentam dificuldades importantes na capacidade de abstração. Qual das alternativas inclui outra dificuldade importante desses pacientes?",
           "options": [
             {
               "letter": "A",
@@ -39748,13 +39751,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Velocidade de processamento. #### TEXTO PARA AS QUESTÕES DE 11 A 14 Homem cis, 41 anos de idade, pardo, pintor, evangélico, natural de Salvador (BA), há 3 anos morando em São Paulo (SP). Apresenta-se no CAPS AD com a seguinte frase: “Vim me internar”. Paciente diz que quer se internar e deixar as drogas para voltar à Salvador. Iniciou uso de Cannabis sp. aos 9 anos de idade, avançando para outras drogas aos 14 anos de idade, juntamente com tabaco. Atualmente em uso compulsivo diário de crack (5-8 g); tabaco (40-60 cigarros). Uso eventual de Cannabis sp. em pequena quanƟdade. Uso diário de álcool. Paciente esteve internado recentemente. Na alta, recaiu no mesmo dia. TentaƟva de suicídio aos 39 anos de idade. Nega comorbidades; alergias; cirurgia s prévias; nega IST ou DST; nega síndrome de absƟnência do álcool. Tem uma ﬁlha de 12 anos de idade que mora co m a mãe em Salvador - BA, atualmente sem contato com familiares (há 2 anos). Pai eƟlista crônico e usuário de Cannabis sp. e mãe e Ɵlista crônica."
+              "text": "Velocidade de processamento."
             }
           ],
           "correctAnswer": "A",
           "examId": "usp-2025-f37",
           "examTag": "USP Ano Adicional 2025",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-15T18:05:11"
         },
         {
           "id": "usp-2025-f37-011",
@@ -39762,7 +39767,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Ano Adicional",
           "topic": "Ano Adicional",
           "title": "Questao 11",
-          "text": "Com relação ao procedimento no CAPS, qual é o primeiro atendimento?",
+          "text": "#### TEXTO PARA AS QUESTÕES DE 11 A 14 \nHomem cis, 41 anos de idade, pardo, pintor, evangélico, natural de Salvador (BA), há 3 anos morando em São Paulo (SP). Apresenta-se no CAPS AD com a seguinte frase: “Vim me internar”. Paciente diz que quer se internar e deixar as drogas para voltar a Salvador. Iniciou uso de Cannabis sp. aos 9 anos de idade, avançando para outras drogas aos 14 anos de idade, juntamente com tabaco. Atualmente em uso compulsivo diário de crack (5-8 g); tabaco (40-60 cigarros). Uso eventual de Cannabis sp. em pequena quantidade Uso diário de álcool. Paciente esteve internado recentemente. Na alta, recaiu no mesmo dia. Tentativa de suicídio aos 39 anos de idade. Nega comorbidades; alergias; cirurgias prévias; nega IST ou DST; nega síndrome de abstinência do álcool. Tem uma ﬁlha de 12 anos de idade que mora com a mãe em Salvador - BA, atualmente sem contato com familiares (há 2 anos). Pai é etilista crônico e usuário de Cannabis sp. e mãe é etilista crônica. Com relação ao procedimento no CAPS, qual é o primeiro atendimento?",
           "options": [
             {
               "letter": "A",
@@ -39778,13 +39783,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Atenção às crises. ####"
+              "text": "Atenção às crises."
             }
           ],
           "correctAnswer": "C",
           "examId": "usp-2025-f37",
           "examTag": "USP Ano Adicional 2025",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-15T18:05:11"
         },
         {
           "id": "usp-2025-f37-012",
@@ -39792,7 +39799,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Ano Adicional",
           "topic": "Ano Adicional",
           "title": "Questao 12",
-          "text": "A elaboração de um Projeto Terapêutico Singular (PTS) para esse paciente deve envolver quais das ações a seguir?",
+          "text": "#### TEXTO PARA AS QUESTÕES DE 11 A 14 \nHomem cis, 41 anos de idade, pardo, pintor, evangélico, natural de Salvador (BA), há 3 anos morando em São Paulo (SP). Apresenta-se no CAPS AD com a seguinte frase: “Vim me internar”. Paciente diz que quer se internar e deixar as drogas para voltar a Salvador. Iniciou uso de Cannabis sp. aos 9 anos de idade, avançando para outras drogas aos 14 anos de idade, juntamente com tabaco. Atualmente em uso compulsivo diário de crack (5-8 g); tabaco (40-60 cigarros). Uso eventual de Cannabis sp. em pequena quantidade Uso diário de álcool. Paciente esteve internado recentemente. Na alta, recaiu no mesmo dia. Tentativa de suicídio aos 39 anos de idade. Nega comorbidades; alergias; cirurgias prévias; nega IST ou DST; nega síndrome de abstinência do álcool. Tem uma ﬁlha de 12 anos de idade que mora com a mãe em Salvador - BA, atualmente sem contato com familiares (há 2 anos). Pai é etilista crônico e usuário de Cannabis sp. e mãe é etilista crônica. Com relação ao procedimento no CAPS, qual é o primeiro atendimento?\nA elaboração de um Projeto Terapêutico Singular (PTS) para esse paciente deve envolver quais das ações a seguir?",
           "options": [
             {
               "letter": "A",
@@ -39808,13 +39815,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Atendimento inicial, atendimento em grupo e promoção de contratualidade. ####"
+              "text": "Atendimento inicial, atendimento em grupo e promoção de contratualidade."
             }
           ],
           "correctAnswer": "D",
           "examId": "usp-2025-f37",
           "examTag": "USP Ano Adicional 2025",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-15T18:05:11"
         },
         {
           "id": "usp-2025-f37-013",
@@ -39822,7 +39831,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Ano Adicional",
           "topic": "Ano Adicional",
           "title": "Questao 13",
-          "text": "A presença de um transtorno depressivo tem sido associada ao uso precoce e regular de qual das substâncias a seguir?",
+          "text": "#### TEXTO PARA AS QUESTÕES DE 11 A 14 \nHomem cis, 41 anos de idade, pardo, pintor, evangélico, natural de Salvador (BA), há 3 anos morando em São Paulo (SP). Apresenta-se no CAPS AD com a seguinte frase: “Vim me internar”. Paciente diz que quer se internar e deixar as drogas para voltar a Salvador. Iniciou uso de Cannabis sp. aos 9 anos de idade, avançando para outras drogas aos 14 anos de idade, juntamente com tabaco. Atualmente em uso compulsivo diário de crack (5-8 g); tabaco (40-60 cigarros). Uso eventual de Cannabis sp. em pequena quantidade Uso diário de álcool. Paciente esteve internado recentemente. Na alta, recaiu no mesmo dia. Tentativa de suicídio aos 39 anos de idade. Nega comorbidades; alergias; cirurgias prévias; nega IST ou DST; nega síndrome de abstinência do álcool. Tem uma ﬁlha de 12 anos de idade que mora com a mãe em Salvador - BA, atualmente sem contato com familiares (há 2 anos). Pai é etilista crônico e usuário de Cannabis sp. e mãe é etilista crônica. Com relação ao procedimento no CAPS, qual é o primeiro atendimento?.\nA presença de um transtorno depressivo tem sido associada ao uso precoce e regular de qual das substâncias a seguir?",
           "options": [
             {
               "letter": "A",
@@ -39838,13 +39847,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Hipnóticos. ####"
+              "text": "Hipnóticos."
             }
           ],
           "correctAnswer": "B",
           "examId": "usp-2025-f37",
           "examTag": "USP Ano Adicional 2025",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-15T18:05:11"
         },
         {
           "id": "usp-2025-f37-014",
@@ -39852,7 +39863,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Ano Adicional",
           "topic": "Ano Adicional",
           "title": "Questao 14",
-          "text": "Na evolução do paciente, observou-se tosse seca recorrente. O paciente foi encaminhado ao pronto-socorro para avaliação e o raio X evidenciou opacidades pulmonares migratórias. No hemograma, constatou-se a pr esença de eosinofilia. Qual o diagnóstico mais provável?",
+          "text": "#### TEXTO PARA AS QUESTÕES DE 11 A 14 \nHomem cis, 41 anos de idade, pardo, pintor, evangélico, natural de Salvador (BA), há 3 anos morando em São Paulo (SP). Apresenta-se no CAPS AD com a seguinte frase: “Vim me internar”. Paciente diz que quer se internar e deixar as drogas para voltar a Salvador. Iniciou uso de Cannabis sp. aos 9 anos de idade, avançando para outras drogas aos 14 anos de idade, juntamente com tabaco. Atualmente em uso compulsivo diário de crack (5-8 g); tabaco (40-60 cigarros). Uso eventual de Cannabis sp. em pequena quantidade Uso diário de álcool. Paciente esteve internado recentemente. Na alta, recaiu no mesmo dia. Tentativa de suicídio aos 39 anos de idade. Nega comorbidades; alergias; cirurgias prévias; nega IST ou DST; nega síndrome de abstinência do álcool. Tem uma ﬁlha de 12 anos de idade que mora com a mãe em Salvador - BA, atualmente sem contato com familiares (há 2 anos). Pai é etilista crônico e usuário de Cannabis sp. e mãe é etilista crônica. Com relação ao procedimento no CAPS, qual é o primeiro atendimento?.\nNa evolução do paciente, observou-se tosse seca recorrente. O paciente foi encaminhado ao pronto-socorro para avaliação e o raio X evidenciou opacidades pulmonares migratórias. No hemograma, constatou-se a pr esença de eosinofilia. Qual o diagnóstico mais provável?",
           "options": [
             {
               "letter": "A",
@@ -39868,13 +39879,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Síndrome de Loeffler. ####"
+              "text": "Síndrome de Loeffler."
             }
           ],
           "correctAnswer": "D",
           "examId": "usp-2025-f37",
           "examTag": "USP Ano Adicional 2025",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-15T18:05:11"
         },
         {
           "id": "usp-2025-f37-015",
@@ -39958,13 +39971,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Em moradia assistida. #### Processo Seletivo aos Programas de Residência Médica – Edital: COREME/FM/Nº 01/2024 – Anos Adicionais – Psiquiatria – PROVA F37 TEXTO PARA AS QUESTÕES 18 E 19 Homem cis, 53 anos de idade, casado, médico intensivista, comparece no pronto-socorro após ter sido encontrado deitado no chão da Unidade de Terapia Intensiva respirando pesadamente e com os olhos bem abertos. Na chegada ao pronto-socorro, estava semicomatoso, com sudorese e trêmulo, com “postura decorticada”. Sua temperatura era de 40,4 °C, FC de 140 bpm, PA de 146x67 mmHg e FR de 32 ipm."
+              "text": "Em moradia assistida."
             }
           ],
           "correctAnswer": "B",
           "examId": "usp-2025-f37",
           "examTag": "USP Ano Adicional 2025",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-15T18:05:11"
         },
         {
           "id": "usp-2025-f37-018",
@@ -39972,7 +39987,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Ano Adicional",
           "topic": "Ano Adicional",
           "title": "Questao 18",
-          "text": "Os sinais observados são acha dos prováveis de intoxicação por qual substância?",
+          "text": "TEXTO PARA AS QUESTÕES 18 E 19 Homem cis, 53 anos de idade, casado, médico intensivista, comparece no pronto-socorro após ter sido encontrado deitado no chão da Unidade de Terapia Intensiva respirando pesadamente e com os olhos bem abertos. Na chegada ao pronto-socorro, estava semicomatoso, com sudorese e trêmulo, com “postura decorticada”. Sua temperatura era de 40,4 °C, FC de 140 bpm, PA de 146x67 mmHg e FR de 32 ipm.\nOs sinais observados são acha dos prováveis de intoxicação por qual substância?",
           "options": [
             {
               "letter": "A",
@@ -39988,13 +40003,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "e-Cigarro. ####"
+              "text": "e-Cigarro."
             }
           ],
           "correctAnswer": "C",
           "examId": "usp-2025-f37",
           "examTag": "USP Ano Adicional 2025",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-15T18:05:11"
         },
         {
           "id": "usp-2025-f37-019",
@@ -40002,7 +40019,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Ano Adicional",
           "topic": "Ano Adicional",
           "title": "Questao 19",
-          "text": "Em relação ao caso descrito , assinale a alternativa que apresenta o principal motivo de uso da substância encontrada.",
+          "text": "TEXTO PARA AS QUESTÕES 18 E 19 \nHomem cis, 53 anos de idade, casado, médico intensivista, comparece no pronto-socorro após ter sido encontrado deitado no chão da Unidade de Terapia Intensiva respirando pesadamente e com os olhos bem abertos. Na chegada ao pronto-socorro, estava semicomatoso, com sudorese e trêmulo, com “postura decorticada”. Sua temperatura era de 40,4 °C, FC de 140 bpm, PA de 146x67 mmHg e FR de 32 ipm.\nOs sinais observados são acha dos prováveis de intoxicação por qual substância?.\nEm relação ao caso descrito , assinale a alternativa que apresenta o principal motivo de uso da substância encontrada.",
           "options": [
             {
               "letter": "A",
@@ -40018,13 +40035,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Medicinal. ####"
+              "text": "Medicinal."
             }
           ],
           "correctAnswer": "A",
           "examId": "usp-2025-f37",
           "examTag": "USP Ano Adicional 2025",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-15T18:05:11"
         },
         {
           "id": "usp-2025-f37-020",
@@ -40048,13 +40067,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Reposição de tiamina, 300 a 500 mg EV por três dias. #### TEXTO PARA AS QUESTÕES DE 21 A 24 A ANVISA propôs um problema regulatório sobre os Dispositivos Eletrônicos para Fumar (DEF), definido como “Riscos e agravos associados ao uso dos DEF”."
+              "text": "Reposição de tiamina, 300 a 500 mg EV por três dias."
             }
           ],
           "correctAnswer": "D",
           "examId": "usp-2025-f37",
           "examTag": "USP Ano Adicional 2025",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-15T18:05:11"
         },
         {
           "id": "usp-2025-f37-021",
@@ -40062,7 +40083,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Ano Adicional",
           "topic": "Ano Adicional",
           "title": "Questao 21",
-          "text": "Com relação aos DEF, qual das alternativas indica um fator importante de maior risco de adesão ao uso?",
+          "text": "#### TEXTO PARA AS QUESTÕES DE 21 A 24 A ANVISA propôs um problema regulatório sobre os Dispositivos Eletrônicos para Fumar (DEF), definido como “Riscos e agravos associados ao uso dos DEF”.\nCom relação aos DEF, qual das alternativas indica um fator importante de maior risco de adesão ao uso?",
           "options": [
             {
               "letter": "A",
@@ -40084,7 +40105,9 @@ window.BANCO_RMAIS_EXAMS = {
           "correctAnswer": "C",
           "examId": "usp-2025-f37",
           "examTag": "USP Ano Adicional 2025",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-15T18:05:11"
         },
         {
           "id": "usp-2025-f37-022",
@@ -40092,7 +40115,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Ano Adicional",
           "topic": "Ano Adicional",
           "title": "Questao 22",
-          "text": "Os DEF têm sido apresentados como uma alternativa de redução de danos para fumantes de cigarro comum. Estudos de qualidade metodológica alta tem avaliado essa hipótese e indicam qual das respostas informadas nas alternativas a seguir?",
+          "text": "#### TEXTO PARA AS QUESTÕES DE 21 A 24 A ANVISA propôs um problema regulatório sobre os Dispositivos Eletrônicos para Fumar (DEF), definido como “Riscos e agravos associados ao uso dos DEF”.\nOs DEF têm sido apresentados como uma alternativa de redução de danos para fumantes de cigarro comum. Estudos de qualidade metodológica alta tem avaliado essa hipótese e indicam qual das respostas informadas nas alternativas a seguir?",
           "options": [
             {
               "letter": "A",
@@ -40114,7 +40137,9 @@ window.BANCO_RMAIS_EXAMS = {
           "correctAnswer": "B",
           "examId": "usp-2025-f37",
           "examTag": "USP Ano Adicional 2025",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-15T18:05:11"
         },
         {
           "id": "usp-2025-f37-023",
@@ -40122,7 +40147,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Ano Adicional",
           "topic": "Ano Adicional",
           "title": "Questao 23",
-          "text": "A decisão da ANVISA sobre os DEF foi a manutenção da Resolução da Diretoria Colegiada no 46/2009, que",
+          "text": "#### TEXTO PARA AS QUESTÕES DE 21 A 24 A ANVISA propôs um problema regulatório sobre os Dispositivos Eletrônicos para Fumar (DEF), definido como “Riscos e agravos associados ao uso dos DEF”.\nA decisão da ANVISA sobre os DEF foi a manutenção da Resolução da Diretoria Colegiada no 46/2009, que",
           "options": [
             {
               "letter": "A",
@@ -40144,7 +40169,9 @@ window.BANCO_RMAIS_EXAMS = {
           "correctAnswer": "D",
           "examId": "usp-2025-f37",
           "examTag": "USP Ano Adicional 2025",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-15T18:05:11"
         },
         {
           "id": "usp-2025-f37-024",
@@ -40152,7 +40179,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Ano Adicional",
           "topic": "Ano Adicional",
           "title": "Questao 24",
-          "text": "Segundo a Convenção Quadro para o Controle do Tabaco (CQCT), o uso dos DEF pode ter, como consequência,",
+          "text": "#### TEXTO PARA AS QUESTÕES DE 21 A 24 A ANVISA propôs um problema regulatório sobre os Dispositivos Eletrônicos para Fumar (DEF), definido como “Riscos e agravos associados ao uso dos DEF”.\nSegundo a Convenção Quadro para o Controle do Tabaco (CQCT), o uso dos DEF pode ter, como consequência,",
           "options": [
             {
               "letter": "A",
@@ -40174,7 +40201,9 @@ window.BANCO_RMAIS_EXAMS = {
           "correctAnswer": "A",
           "examId": "usp-2025-f37",
           "examTag": "USP Ano Adicional 2025",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-15T18:05:11"
         },
         {
           "id": "usp-2025-f37-025",
@@ -40212,7 +40241,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Ano Adicional",
           "topic": "Ano Adicional",
           "title": "Questao 26",
-          "text": "Qual a porcentagem de pessoas que têm sucesso na primeira tentativa de parar?",
+          "text": "Mulher cis, 40 anos de idade, tabagista desde os 16 anos de idade, fuma cerca de um maço e meio por dia, relata três\ntentativas prévias para parar de fumar sozinha, e uma tentativa com goma de mascar de 2 mg, sem sucesso. Afirma ter voltado a fumar porque ao tentar parar, da última vez, sentiu muita irritabilidade, ansiedade e chegou a ser agressiva. No momento, refere muita motivação para cessar o hábito, visto que seu irmão faleceu recentemente de câncer de pulmão. Relata que fuma o primeiro cigarro imediatamente após acordar e que, com frequência, acorda no meio da noite para fumar. A paciente diz que fuma mais pela manhã, o primeiro cigarro do dia causa muita satisfação, tem dificuldade de ficar sem fumar em lugares proibidos e fuma mesmo doente. Qual a porcentagem de pessoas que têm sucesso na primeira tentativa de parar?",
           "options": [
             {
               "letter": "A",
@@ -40228,13 +40257,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "30% ####"
+              "text": "30%"
             }
           ],
-          "correctAnswer": "",
+          "correctAnswer": "A",
           "examId": "usp-2025-f37",
           "examTag": "USP Ano Adicional 2025",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-15T18:05:11"
         },
         {
           "id": "usp-2025-f37-027",
@@ -40318,13 +40349,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Insônia. #### TEXTO PARA AS QUESTÕES DE 30 A 34 Mulher, 29 anos de idade, sem profissão, desempregada. Não tem religião. Em situação de ru a há um ano e meio. Chega à maternidade em trabalho de parto em fase adiantada. Realizou apenas uma consulta de pré-natal logo que descobriu a gravidez, mas não prosseguiu o acompanhamento. Refere uso de substâncias, como álcool, crack, maconha, tabaco, e refere promiscuidade sexual, mesmo durante a gestação."
+              "text": "Insônia."
             }
           ],
           "correctAnswer": "A",
           "examId": "usp-2025-f37",
           "examTag": "USP Ano Adicional 2025",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-15T18:05:11"
         },
         {
           "id": "usp-2025-f37-030",
@@ -40332,7 +40365,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Ano Adicional",
           "topic": "Ano Adicional",
           "title": "Questao 30",
-          "text": "Qual das substâncias a seguir causa mais prejuízos ao feto durante a gravidez?",
+          "text": "#### TEXTO PARA AS QUESTÕES DE 30 A 34 Mulher, 29 anos de idade, sem profissão, desempregada. Não tem religião. Em situação de ru a há um ano e meio. Chega à maternidade em trabalho de parto em fase adiantada. Realizou apenas uma consulta de pré-natal logo que descobriu a gravidez, mas não prosseguiu o acompanhamento. Refere uso de substâncias, como álcool, crack, maconha, tabaco, e refere promiscuidade sexual, mesmo durante a gestação.\nQual das substâncias a seguir causa mais prejuízos ao feto durante a gravidez?",
           "options": [
             {
               "letter": "A",
@@ -40348,13 +40381,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Maconha. ####"
+              "text": "Maconha."
             }
           ],
           "correctAnswer": "C",
           "examId": "usp-2025-f37",
           "examTag": "USP Ano Adicional 2025",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-15T18:05:11"
         },
         {
           "id": "usp-2025-f37-031",
@@ -40362,7 +40397,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Ano Adicional",
           "topic": "Ano Adicional",
           "title": "Questao 31",
-          "text": "Diversos recursos e equipamentos são importantes para o tratamento das mulheres fa rmacodependentes. Assinale a alternativa que apresenta um recurso fundamental.",
+          "text": "#### TEXTO PARA AS QUESTÕES DE 30 A 34 Mulher, 29 anos de idade, sem profissão, desempregada. Não tem religião. Em situação de ru a há um ano e meio. Chega à maternidade em trabalho de parto em fase adiantada. Realizou apenas uma consulta de pré-natal logo que descobriu a gravidez, mas não prosseguiu o acompanhamento. Refere uso de substâncias, como álcool, crack, maconha, tabaco, e refere promiscuidade sexual, mesmo durante a gestação.\nDiversos recursos e equipamentos são importantes para o tratamento das mulheres farmacodependentes. Assinale a alternativa que apresenta um recurso fundamental.",
           "options": [
             {
               "letter": "A",
@@ -40378,13 +40413,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Equipe multiprofissional só feminina. ####"
+              "text": "Equipe multiprofissional só feminina."
             }
           ],
           "correctAnswer": "B",
           "examId": "usp-2025-f37",
           "examTag": "USP Ano Adicional 2025",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-15T18:05:11"
         },
         {
           "id": "usp-2025-f37-032",
@@ -40392,7 +40429,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Ano Adicional",
           "topic": "Ano Adicional",
           "title": "Questao 32",
-          "text": "Sobre gestantes usuárias de crack, pode-se afirmar:",
+          "text": "#### TEXTO PARA AS QUESTÕES DE 30 A 34 Mulher, 29 anos de idade, sem profissão, desempregada. Não tem religião. Em situação de ru a há um ano e meio. Chega à maternidade em trabalho de parto em fase adiantada. Realizou apenas uma consulta de pré-natal logo que descobriu a gravidez, mas não prosseguiu o acompanhamento. Refere uso de substâncias, como álcool, crack, maconha, tabaco, e refere promiscuidade sexual, mesmo durante a gestação.\nSobre gestantes usuárias de crack, pode-se afirmar:",
           "options": [
             {
               "letter": "A",
@@ -40408,13 +40445,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Não é necessária nenhuma intervenção nos casos de gestante usuária de crack, pois a questão pode ser abordada após o parto. #### Processo Seletivo aos Programas de Residência Médica – Edital: COREME/FM/Nº 01/2024 – Anos Adicionais – Psiquiatria – PROVA F37"
+              "text": "Não é necessária nenhuma intervenção nos casos de gestante usuária de crack, pois a questão pode ser abordada após o parto."
             }
           ],
           "correctAnswer": "A",
           "examId": "usp-2025-f37",
           "examTag": "USP Ano Adicional 2025",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-15T18:05:11"
         },
         {
           "id": "usp-2025-f37-033",
@@ -40422,7 +40461,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Ano Adicional",
           "topic": "Ano Adicional",
           "title": "Questao 33",
-          "text": "Assinale a alternativa que apresenta um dos critérios importantes para a internação involuntária.",
+          "text": "#### TEXTO PARA AS QUESTÕES DE 30 A 34 Mulher, 29 anos de idade, sem profissão, desempregada. Não tem religião. Em situação de ru a há um ano e meio. Chega à maternidade em trabalho de parto em fase adiantada. Realizou apenas uma consulta de pré-natal logo que descobriu a gravidez, mas não prosseguiu o acompanhamento. Refere uso de substâncias, como álcool, crack, maconha, tabaco, e refere promiscuidade sexual, mesmo durante a gestação.\nAssinale a alternativa que apresenta um dos critérios importantes para a internação involuntária.",
           "options": [
             {
               "letter": "A",
@@ -40444,7 +40483,9 @@ window.BANCO_RMAIS_EXAMS = {
           "correctAnswer": "D",
           "examId": "usp-2025-f37",
           "examTag": "USP Ano Adicional 2025",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-15T18:05:11"
         },
         {
           "id": "usp-2025-f37-034",
@@ -40452,7 +40493,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Ano Adicional",
           "topic": "Ano Adicional",
           "title": "Questao 34",
-          "text": "Os compostos voláteis mais utilizados são os solventes. Qual o outro grupo de compostos voláteis dos quatro existentes?",
+          "text": "#### TEXTO PARA AS QUESTÕES DE 30 A 34 Mulher, 29 anos de idade, sem profissão, desempregada. Não tem religião. Em situação de ru a há um ano e meio. Chega à maternidade em trabalho de parto em fase adiantada. Realizou apenas uma consulta de pré-natal logo que descobriu a gravidez, mas não prosseguiu o acompanhamento. Refere uso de substâncias, como álcool, crack, maconha, tabaco, e refere promiscuidade sexual, mesmo durante a gestação.\nOs compostos voláteis mais utilizados são os solventes. Qual o outro grupo de compostos voláteis dos quatro existentes?",
           "options": [
             {
               "letter": "A",
@@ -40468,13 +40509,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Sulfetos. ####"
+              "text": "Sulfetos."
             }
           ],
           "correctAnswer": "C",
           "examId": "usp-2025-f37",
           "examTag": "USP Ano Adicional 2025",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-15T18:05:11"
         },
         {
           "id": "usp-2025-f37-035",
@@ -40498,13 +40541,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Tabaco. ####"
+              "text": "Tabaco."
             }
           ],
-          "correctAnswer": "",
+          "correctAnswer": "D",
           "examId": "usp-2025-f37",
           "examTag": "USP Ano Adicional 2025",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-15T18:05:11"
         },
         {
           "id": "usp-2025-f37-036",
@@ -42326,13 +42371,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Descarta a necessidade de análise funcional do comportamento. #### Processo Seletivo aos Programas de Residência Médica – Edital: COREME/FM/Nº 01/2024 – Áreas de Atuações – Psicoterapia – F27"
+              "text": "Descarta a necessidade de análise funcional do comportamento."
             }
           ],
           "correctAnswer": "B",
           "examId": "usp-2025-f27",
           "examTag": "USP Psicoterapia 2025",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-15T18:05:11"
         },
         {
           "id": "usp-2025-f27-014",
@@ -48070,7 +48117,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2026 - Psiquiatria Forense",
           "topic": "Psiquiatria Forense",
           "title": "Questao 1",
-          "text": "Considerando que Carlos tenha tocado as partes íntimas da menina durante a noite e realmente não tivesse consciência em função da medicação, assinale a alternativa correta.",
+          "text": "Texto para as questões de 01 a 20\nQuando era jovem, Carlos nunca tivera problemas para dormir. Mas depois que os cabelos começaram a branquear,\npor volta dos quarenta anos, tornou-se difícil desligar o cérebro ao se deitar. Pensava na filha, Beatriz, que nos últimos\nmeses andava até alta madrugada no bar onde os traficantes do bairro faziam festa toda noite. Como ela vai cuidar do meu neto desse jeito? O Cauã precisa de um exemplo melhor, pensava. Preocupava-se com a mãe, cada vez mais frágil. Depois que quebrou a perna – o colo do fêmur, disse o médico, nunca mais voltou a andar direito, hoje só com\nbengala. Pelo menos agora ele estaciona na vaga especial quando a leva no mercado para as compras da semana.\nNotou que as sacolas estão ficando menores – o que estaria diminuindo, o apetite ou o dinheiro? A cabeça da Dona Maria ainda era boa, mas ela estava falando muito num tal missionário que sempre precisava de doação para as obras.\nSerá que está gastando demais? Impossível dormir com tudo isso na cabeça. Hoje em dia, só com o zolpidem que o médico do posto indicou. No começo, um comprimido de 10 mg dava conta. Mas, quando a filha passou a responder um processo criminal por acompanhar o novo namorando num assalto, havia noites que precisava de dois, até três para dormir. Ela alegava que havia usado maconha, que não se lembrava, mas isso não parecia que iria convencer o juiz. Numa dessas noites de mais preocupação, Carlos perdeu a conta de quantos comprimidos tomou. De manhã, encontrou a esposa, Cláudia, discutindo com a empregada, Tânia, que morava num quarto dos fundos com a filha pequena. Ainda zonzo, demorou a entender que a mulher o estava acusando de abusar da menina durante a noite. A menina, de quatro anos, fizera xixi na cama e acordara chorando. Quando a mãe acordou e foi atrás dela, encontrou-o no banheiro com a garota, tocando suas partes íntimas. Tânia dizia que iria chamar a polícia, mas a esposa afirmava que ele só deveria estar a ajudando a se limpar. Carlos não se lembrava de nada. De repente, se via na mesma situação da filha, alegando não lembrar. Durante a discussão, as duas entraram numa breve altercação física, quando Cláudia empurrou Tânia, que bateu a cabeça sofrendo um corte. Embora sua esposa o defendesse publicamente, o\nrelacionamento foi fortemente abalado. Cláudia se afastou e se fechou, parecia murchar a cada dia. Carlos a flagrava\nchorando. Ela não dormia, não conversava com mais ninguém. Deixou de ir à igreja. Mal saía da cama. O médico da família passou um antidepressivo para ela, fluoxetina 20 mg, dizendo que era depressão, e uma semana depois ela tomou todas as cartelas de fluoxetina de uma vez, sendo levada ao pronto-socorro, onde permaneceu internada por\ndois dias. Tânia deixou o emprego e voltou para sua cidade natal – além de processar os patrões – e Cláudia assumiu os cuidados com a casa, mas não conseguia manter as coisas em ordem, sequer preparava as refeições do neto. Ao saber da situação toda, o pai de Cauã, neto de Carlos, pediu a guarda do filho. Afirmava que a mãe era doente mental, sem condições de cuidar do menino, e que a criança estava sendo negligenciada. Ele já tinha seis anos, e a mãe tentara algum tempo fazer a cabeça do menino contra o pai, só parando depois que começou a namorar. Diante do delegado, Carlos pensava em tudo isso. Sobre a sua acusação? Queria lembrar, mas não conseguia. Todo o resto queria esquecer. Mas não poderia. \nConsiderando que Carlos tenha tocado as partes íntimas da menina durante a noite e realmente não tivesse consciência em função da medicação, assinale a alternativa correta.",
           "options": [
             {
               "letter": "A",
@@ -48086,13 +48133,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "A parassonia induzida pelo zolpidem é caso fortuito, isentando de pena caso impedisse o entendimento ou autocontrole. #####"
+              "text": "A parassonia induzida pelo zolpidem é caso fortuito, isentando de pena caso impedisse o entendimento ou autocontrole."
             }
           ],
           "correctAnswer": "D",
           "examId": "usp-2026-a11",
           "examTag": "USP Psiquiatria Forense 2026",
-          "provider": "USP"
+          "provider": "USP",
+          "manuallyReviewed": true,
+          "reviewedAt": "2026-06-15T18:05:11"
         },
         {
           "id": "usp-2026-a11-002",

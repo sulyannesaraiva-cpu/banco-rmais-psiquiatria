@@ -2850,7 +2850,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Coma e alterações",
       "topic": "Coma e alterações",
       "title": "Questão 82",
-      "text": "Paciente, 82 anos, hipertensa e diabética em uso de atenolol e metformina, acompanhada pelo Cardiologista, em uso deginkobiloba e polivitamínico para problemas de memória. Faz uso de clonazepam para dormir. É dependente para atividadesde vida intermediária, necessitando de ajuda da >lha que assumiu no último ano as contas de casa, compras, organizaçãodas refeições e limpeza da casa. Faz uso de óculos, aparelho auditivo e dentadura. Teve três quedas no último ano e étrazida a Emergência após no queda em casa, sem perda da consciência, sem trauma de cabeça ou face, evoluindo comdor em quadril direito e impotência funcional do membro inferior direito. Foi con>rmado diagnóstico de fratura de fêmur epaciente é internada com proposta cirúrgica. Não evacua há 4 dias, não urina há 8h, relata dor grau 6/10 no local da fratura,que piora a moblilização. Na manhã do primeiro dia de internação paciente apresenta redução do nível de consciência, não consegue acompanhar a conversa com o examinador, com desorientação espacial. Marque a opção errada",
+      "text": "Paciente, 82 anos, hipertensa e diabética em uso de atenolol e metformina, acompanhada pelo cardiologista, em uso de ginkobiloba e polivitamínico para problemas de memória. Faz uso de clonazepam para dormir. É dependente para atividades de vida intermediária, necessitando de ajuda da filha, que assumiu no último ano as contas de casa, compras, organização das refeições e limpeza da casa. Faz uso de óculos, aparelho auditivo e dentadura. Teve três quedas no último ano e foi trazida à emergência após uma queda em casa, sem perda da consciência, sem trauma de cabeça ou face, evoluindo com dor em quadril direito e impotência funcional do membro inferior direito. Foi confirmado diagnóstico de fratura de fêmur e o paciente é internada com proposta cirúrgica. Não evacua há 4 dias, não urina há 8h, relata dor grau 6/10 no local da fratura, que piora a mobilização Na manhã do primeiro dia de internação, paciente apresenta redução do nível de consciência, não consegue acompanhar a conversa com o examinador, com desorientação espacial. Marque a opção errada.",
       "options": [
         {
           "letter": "A",
@@ -2862,11 +2862,11 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "C",
-          "text": "São fatores precipitantes de delirium nesta paciente: dor, constipação, retenção urinária, imobilidade e ahospitalização"
+          "text": "São fatores precipitantes de delirium nesta paciente: dor, constipação, retenção urinária, imobilidade e a hospitalização"
         },
         {
           "letter": "D",
-          "text": "O tratamento do delirium com antipsicótico é indicado, pois diminui a duração do episódio do delirium e suamortalidade"
+          "text": "O tratamento do delirium com antipsicótico é indicado, pois diminui a duração do episódio do delirium e sua mortalidade"
         },
         {
           "letter": "E",
@@ -2876,7 +2876,9 @@ window.BANCO_RMAIS_QUESTIONS = {
       "sourceId": "4000094505",
       "correctAnswer": "D",
       "provider": "Estratégia",
-      "originalSource": "Coma e alterações"
+      "originalSource": "Coma e alterações",
+      "manuallyReviewed": true,
+      "reviewedAt": "2026-06-15T18:05:11"
     },
     {
       "id": "coma-e-alterações-83",
@@ -4372,33 +4374,35 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Demências",
       "topic": "Demências",
       "title": "Questão 30",
-      "text": "Semiologia dos Transtornos CognitivosL. A.O de 69 anos é trazido ao consultório com queixas de memória recente diminuída há 6 meses, com agnosia, apraxia,diminuição da atenção. Tem tido agitação psicomotora, principalmente no período noturno. Diante do quadro clínico,poderemos afirmar:AÉ um quadro de possível Demência de",
+      "text": "L. A.O de 69 anos é trazido ao consultório com queixas de memória recente diminuída há 6 meses, com agnosia, apraxia,diminuição da atenção. Tem tido agitação psicomotora, principalmente no período noturno. Diante do quadro clínico,poderemos afirmar:",
       "options": [
         {
           "letter": "A",
-          "text": "lzheimer, com manifestações da Síndrome de Godot. Confirmado odiagnóstico entraremos com antidepressivos para tratar a doença e associar Memantina"
+          "text": "É um quadro de possível Demência de lzheimer, com manifestações da Síndrome de Godot. Confirmado odiagnóstico entraremos com antidepressivos para tratar a doença e associar Memantina"
         },
         {
           "letter": "B",
-          "text": "O paciente apresenta"
+          "text": "O paciente apresenta omprometimento Cognitivo Leve e necessita de investigação com exames laboratoriais eRessonância Magnética, para excluir"
         },
         {
           "letter": "C",
-          "text": "omprometimento Cognitivo Leve e necessita de investigação com exames laboratoriais eRessonância Magnética, para excluir"
+          "text": "Quadro de Doença de Alzheimer, sem necessidade de pedir exames de imagem, somente os laboratoriais."
         },
         {
           "letter": "D",
-          "text": "emência.CQuadro de Doença de Alzheimer, sem necessidade de pedir exames de imagem, somente os laboratoriais.DPossível Doença de Alzheimer, com Síndrome do Sol Poente, aonde após os exames confirmatórios e testes decognitivos, entraremos com anticolinesterásicos como a Donepezila"
+          "text": "Possível Doença de Alzheimer, com Síndrome do Sol Poente, aonde após os exames confirmatórios e testes decognitivos, entraremos com anticolinesterásicos como a Donepezila"
         },
         {
           "letter": "E",
-          "text": "Possível Doença de Alzheimer, com delírios da Síndrome de Capgras, aonde pediremos dosagem liquórica deproteína beta-amilóide e proteína tau"
+          "text": "Possível Doença de Alzheimer, com delírios da Síndrome de Capgras, em que pediremos dosagem liquórica de proteína beta-amiloide e proteína tau"
         }
       ],
       "sourceId": "4000145070",
       "correctAnswer": "D",
       "provider": "Estratégia",
-      "originalSource": "Demências"
+      "originalSource": "Demências",
+      "manuallyReviewed": true,
+      "reviewedAt": "2026-06-15T18:05:11"
     },
     {
       "id": "demências-31",
@@ -6073,33 +6077,35 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Demências",
       "topic": "Demências",
       "title": "Questão 83",
-      "text": "Dermatoses carenciaisDeficiênciaPelagraA pelagra é uma doença carencial causada pela deficiência da",
+      "text": "A pelagra é uma doença carencial causada pela deficiência da",
       "options": [
         {
           "letter": "A",
-          "text": "vitamina"
+          "text": "Vitamina B2"
         },
         {
           "letter": "B",
-          "text": "2.Bvitamina B1"
+          "text": "Vitamina B1"
         },
         {
           "letter": "C",
-          "text": "vitamina B12"
+          "text": "Vitamina B12"
         },
         {
           "letter": "D",
-          "text": "biotina"
+          "text": "Biotina"
         },
         {
           "letter": "E",
-          "text": "niacina"
+          "text": "Niacina"
         }
       ],
       "sourceId": "4000061978",
       "correctAnswer": "E",
       "provider": "Estratégia",
-      "originalSource": "Demências"
+      "originalSource": "Demências",
+      "manuallyReviewed": true,
+      "reviewedAt": "2026-06-15T18:05:11"
     },
     {
       "id": "demências-84",
@@ -15884,11 +15890,11 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Psiquiatria Infantil",
       "topic": "Psiquiatria Infantil",
       "title": "Questão 48",
-      "text": "Menino de 8 anos é trazido à consulta pelos pais. Ambos referem que o :lho está “sempre agitado”, que é incapaz debrincar calmamente, que com frequência fala demais e interrompe os outros, apresentando muita di:culdade em esperar asua vez (por exemplo, em uma :la). Além disso, evita ou reluta em se envolver em atividades que exijam esforço mental, ébastante desorganizado nas suas tarefas diárias e repetidamente perde coisas (seu material escolar, seus óculos, entreoutros). O menino con:rma as informações trazidas pelos pais. Em função dessa sintomatologia, você realiza o diagnósticode Transtorno de Dé:cit de Atenção/Hiperatividade (TDAH) subtipo combinado e indica tratamento psicoterápico efarmacológico. Sobre o tratamento farmacológico do TDAH em crianças, é correto afirmar que: A",
+      "text": "Menino de 8 anos é trazido à consulta pelos pais. Ambos referem que o filho está “sempre agitado”, que é incapaz de brincar calmamente, que com frequência fala demais e interrompe os outros, apresentando muita dificuldade em esperar a sua vez (por exemplo, em uma fila). Além disso, evita ou reluta em se envolver em atividades que exijam esforço mental, é bastante desorganizado nas suas tarefas diárias e repetidamente perde coisas (seu material escolar, seus óculos, entre outros). O menino confirma as informações trazidas pelos pais. Em função dessa sintomatologia, você realiza o diagnóstico de Transtorno de Déficit de Atenção/Hiperatividade (TDAH) subtipo combinado e indica tratamento psicoterápico e farmacológico. Sobre o tratamento farmacológico do TDAH em crianças, é correto afirmar que: A",
       "options": [
         {
           "letter": "A",
-          "text": "terapia farmacológica não é considerada o tratamento de primeira linha"
+          "text": "A terapia farmacológica não é considerada o tratamento de primeira linha"
         },
         {
           "letter": "B",
@@ -15913,7 +15919,9 @@ window.BANCO_RMAIS_QUESTIONS = {
           "number": 13,
           "sourceId": ""
         }
-      ]
+      ],
+      "manuallyReviewed": true,
+      "reviewedAt": "2026-06-15T18:05:11"
     },
     {
       "id": "psiquiatria-infantil-49",
@@ -16928,7 +16936,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Psiquiatria Infantil",
       "topic": "Psiquiatria Infantil",
       "title": "Questão 80",
-      "text": "Os sintomas do Transtorno do Dé:cit de Atenção e Hiperatividade (TDAH), segundo os critérios do DSM-V, persistirão pormais de 6 meses, causando prejuízo em pelo menos dois ambientes diferentes, não havendo outra patologia que expliquemelhor o quadro clínico. Isso ocorre antes de qual idade?",
+      "text": "Os sintomas do Transtorno do Déficit de Atenção e Hiperatividade (TDAH), segundo os critérios do DSM-V, persistirão por mais de 6 meses, causando prejuízo em pelo menos dois ambientes diferentes, não havendo outra patologia que explique melhor o quadro clínico. Isso ocorre antes de qual idade?",
       "options": [
         {
           "letter": "A",
@@ -16950,7 +16958,9 @@ window.BANCO_RMAIS_QUESTIONS = {
       "sourceId": "4000011869",
       "correctAnswer": "C",
       "provider": "Estratégia",
-      "originalSource": "Psiquiatria Infantil"
+      "originalSource": "Psiquiatria Infantil",
+      "manuallyReviewed": true,
+      "reviewedAt": "2026-06-15T18:05:11"
     },
     {
       "id": "psiquiatria-infantil-81",
@@ -19174,7 +19184,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Saúde do Idoso",
       "topic": "Saúde do Idoso",
       "title": "Questão 52",
-      "text": "Desprescrição de medicações em idososSeu Juvenal, 68 anos, tem diagnóstico de Hipertensão Arterial Sistêmica, Fibrilação Atrial, Dislipidemia e Doença do RefluxoGastro-Esofágico. Faz uso de: atenolol 25 mg duas vezes ao dia, Losartana 50 mg uma vez ao dia, Hidroclorotiazida 25 mguma vez ao dia, Sinvastatina 40 mg uma vez ao dia, Omeprazol 20 mg uma vez ao dia, Rivaroxabana 20 mg uma vez ao dia,Bupropiona 150 mg uma vez ao dia e Clonazepam 2 mg (prescritos após falecimento do irmão). Queixa-se de tontura enáuseas eventuais sem outros sintomas associados. Apresenta PA:130x80mmHg, exame cardiovascular, respiratório,abdominal, e neurológico normais. Teste de Romberg e Dix-Hallpike negativos. Diante de tal situação, qual seria a melhoropção terapêutica?",
+      "text": "Seu Juvenal, 68 anos, tem diagnóstico de Hipertensão Arterial Sistêmica, Fibrilação Atrial, Dislipidemia e Doença do RefluxoGastro-Esofágico. Faz uso de: atenolol 25 mg duas vezes ao dia, Losartana 50 mg uma vez ao dia, Hidroclorotiazida 25 mguma vez ao dia, Sinvastatina 40 mg uma vez ao dia, Omeprazol 20 mg uma vez ao dia, Rivaroxabana 20 mg uma vez ao dia,Bupropiona 150 mg uma vez ao dia e Clonazepam 2 mg (prescritos após falecimento do irmão). Queixa-se de tontura enáuseas eventuais sem outros sintomas associados. Apresenta PA:130x80mmHg, exame cardiovascular, respiratório,abdominal, e neurológico normais. Teste de Romberg e Dix-Hallpike negativos. Diante de tal situação, qual seria a melhoropção terapêutica?",
       "options": [
         {
           "letter": "A",
@@ -19190,13 +19200,15 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "D",
-          "text": "Rever os medicamentos usados considerando a possibilidade de que se trate de efeito adverso de algummedicamento em uso"
+          "text": "Rever os medicamentos usados considerando a possibilidade de que se trate de efeito adverso de algum medicamento em uso"
         }
       ],
       "sourceId": "4000144579",
       "correctAnswer": "D",
       "provider": "Estratégia",
-      "originalSource": "Saúde do Idoso"
+      "originalSource": "Saúde do Idoso",
+      "manuallyReviewed": true,
+      "reviewedAt": "2026-06-15T18:05:11"
     },
     {
       "id": "saúde-do-idoso-53",
@@ -26787,7 +26799,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Alimentares",
       "topic": "Transtornos Alimentares",
       "title": "Questão 71",
-      "text": "Psiquiatria InfantilTranstorno AlimentaresPediatriaA evacuação completa em sua plena sequência Osiológica, realizada por uma criança de seis anos em momento e locaisnão apropriados, é denominada",
+      "text": "A evacuação completa em sua plena sequência fisiológica, realizada por uma criança de seis anos em momentos e locais não apropriados, é denominada",
       "options": [
         {
           "letter": "A",
@@ -26813,7 +26825,9 @@ window.BANCO_RMAIS_QUESTIONS = {
       "sourceId": "4000110036",
       "correctAnswer": "E",
       "provider": "Estratégia",
-      "originalSource": "Transtornos Alimentares"
+      "originalSource": "Transtornos Alimentares",
+      "manuallyReviewed": true,
+      "reviewedAt": "2026-06-15T18:05:11"
     },
     {
       "id": "transtornos-alimentares-72",
@@ -28950,7 +28964,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos do Humor",
       "topic": "Transtornos do Humor",
       "title": "Questão 47",
-      "text": "Paciente feminina, de 27 anos, buscou atendimento em uma Unidade Básica de Saúde por apresentar humor deprimido,sentimentos de culpa excessiva, acentuada diminuição do interesse nas atividades do dia a dia, insônia e perda de pesosigni6cativa e de energia. Esses sintomas tiveram início há 4 semanas e vinham piorando progressivamente. Que conduta,dentre as abaixo, deve ser adotada de imediato?",
+      "text": "Paciente feminina, de 27 anos, buscou atendimento em uma Unidade Básica de Saúde por apresentar humor deprimido, sentimentos de culpa excessiva, acentuada diminuição do interesse nas atividades do dia a dia, insônia e perda de peso significativa e de energia. Esses sintomas tiveram início há 4 semanas e vinham piorando progressivamente. Que conduta, dentre as abaixo, deve ser adotada de imediato?",
       "options": [
         {
           "letter": "A",
@@ -28979,7 +28993,9 @@ window.BANCO_RMAIS_QUESTIONS = {
           "number": 36,
           "sourceId": ""
         }
-      ]
+      ],
+      "manuallyReviewed": true,
+      "reviewedAt": "2026-06-15T18:05:11"
     },
     {
       "id": "transtornos-de-humor-48",
@@ -34036,11 +34052,11 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Coma e alterações",
       "topic": "Coma e alterações",
       "title": "Questão 5",
-      "text": "O quadro de delirium é uma entidade clínica muito frequente na população geriátrica, principalmente no contexto de internação hospitalar. Acerca do tratamento desse quadro, assinale a alternativa correta. A)",
+      "text": "O quadro de delirium é uma entidade clínica muito frequente na população geriátrica, principalmente no contexto de internação hospitalar. Acerca do tratamento desse quadro, assinale a alternativa correta.",
       "options": [
         {
           "letter": "A",
-          "text": "pós o diagnóstico de delirium, faz-se necessário o uso rotineiro de neurolépticos, podendo eles ser típicos, como, por exemplo, o haloperidol, ou atípicos, como, por exemplo, a quetiapina"
+          "text": "Após o diagnóstico de delirium, faz-se necessário o uso rotineiro de neurolépticos, podendo eles ser típicos, como, por exemplo, o haloperidol, ou atípicos, como, por exemplo, a quetiapina"
         },
         {
           "letter": "B",
@@ -34052,17 +34068,19 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "D",
-          "text": "Por se tratar, primeiramente, de um quadro de etiologia multifatorial, deve-se atuar nos fatores desencadeantes"
+          "text": "Por se tratar, primeiramente, de um quadro de etiologia multifatorial, deve-se atuar nos fatores desencadeantes. Em situações de agitação e riscos ao paciente, está autorizada a contenção farmacológica e, até mesmo, a contenção física; no entanto, esta última nunca deve ser uma medida isolada."
         },
         {
           "letter": "E",
-          "text": "m situações de agitação e riscos ao paciente, está autorizada a contenção farmacológica e, até mesmo, a contenção física, no entanto esta última nunca deve ser uma medida isolada. E) Como o principal fator desencadeante é infeccioso, uma vez diagnosticado o delirium, é fundamental a instituição de antibioticoterapia para o tratamento da possível infecção ou para o afastamento dessa possibilidade"
+          "text": "Como o principal fator desencadeante é infeccioso, uma vez diagnosticado o delirium, é fundamental a instituição de antibioticoterapia para o tratamento da possível infecção ou para o afastamento dessa possibilidade"
         }
       ],
       "sourceId": "",
       "correctAnswer": "D",
       "provider": "MedReview",
-      "originalSource": "Delirium"
+      "originalSource": "Delirium",
+      "manuallyReviewed": true,
+      "reviewedAt": "2026-06-15T18:05:11"
     },
     {
       "id": "medreview-delirium-6",
