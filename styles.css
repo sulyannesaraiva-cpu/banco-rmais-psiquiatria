@@ -1693,6 +1693,27 @@ textarea::placeholder {
   letter-spacing: 0;
 }
 
+.theme-toggle {
+  width: 100%;
+  justify-content: flex-start;
+  margin: -4px 0 16px;
+  border-color: var(--line);
+  background: var(--panel);
+  color: var(--muted);
+  text-align: left;
+}
+
+.theme-toggle:hover {
+  border-color: var(--line-strong);
+  background: var(--panel-soft);
+  color: var(--ink);
+}
+
+body.theme-dark .theme-toggle {
+  background: #1f2937;
+  color: #d1d5db;
+}
+
 .brand p,
 .topbar p,
 .field span,

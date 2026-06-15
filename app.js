@@ -1,6 +1,8 @@
 const SUPABASE_URL = "https://ejseesgzjdabsndtdung.supabase.co";
 const SUPABASE_KEY = "sb_publishable_pLC5bh3LWUTi1w_7BoSCZg_ahBnuZ36";
 const storedSidebarState = localStorage.getItem("banco-rmais-sidebar-collapsed");
+const storedTheme = localStorage.getItem("banco-rmais-theme") || "light";
+document.body.classList.toggle("theme-dark", storedTheme === "dark");
 
 const state = {
   questions: [],
@@ -68,6 +70,7 @@ const state = {
   syncTimer: null,
   settingsSyncTimer: null,
   privateNoteSyncTimer: null,
+  theme: storedTheme === "dark" ? "dark" : "light",
   sidebarCollapsed:
     storedSidebarState === null ? window.matchMedia("(max-width: 860px)").matches : storedSidebarState === "true",
 };
@@ -201,6 +204,7 @@ function clearClassificationCache() {
 
 const el = {
   sidebarToggle: document.querySelector("#sidebarToggle"),
+  themeToggle: document.querySelector("#themeToggleBtn"),
   startPanel: document.querySelector("#startPanel"),
   goSession: document.querySelector("#goSessionBtn"),
   goExams: document.querySelector("#goExamsBtn"),
@@ -2988,6 +2992,16 @@ function setSidebarCollapsed(collapsed) {
   if (el.sidebarToggle) el.sidebarToggle.setAttribute("aria-expanded", String(!collapsed));
 }
 
+function applyTheme(theme) {
+  state.theme = theme === "dark" ? "dark" : "light";
+  document.body.classList.toggle("theme-dark", state.theme === "dark");
+  localStorage.setItem("banco-rmais-theme", state.theme);
+  if (el.themeToggle) {
+    el.themeToggle.textContent = state.theme === "dark" ? "Modo claro" : "Modo escuro";
+    el.themeToggle.setAttribute("aria-pressed", String(state.theme === "dark"));
+  }
+}
+
 function topicsForTopicMode() {
   return topicsForStats();
 }
@@ -3619,6 +3633,7 @@ function restoreExcludedQuestions() {
 
 el.tabs.forEach((button) => button.addEventListener("click", () => setTab(button.dataset.tab)));
 el.sidebarToggle.addEventListener("click", () => setSidebarCollapsed(!state.sidebarCollapsed));
+el.themeToggle?.addEventListener("click", () => applyTheme(state.theme === "dark" ? "light" : "dark"));
 el.goSession.addEventListener("click", () => {
   setTab("activity");
   setSidebarCollapsed(false);
@@ -3964,6 +3979,7 @@ loadPayload()
   .then(async (payload) => {
     state.questions = payload.questions || [];
     state.exams = window.BANCO_RMAIS_EXAMS?.exams || [];
+    applyTheme(state.theme);
     setSidebarCollapsed(state.sidebarCollapsed);
     seedLegacySpacedReviews();
     renderTopics();
