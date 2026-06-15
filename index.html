@@ -400,13 +400,13 @@
           </div>
           <div class="question-tools" id="manualGradePanel">
             <div class="tool-row primary-tools">
-              <button id="confirmAnswerBtn" class="primary-btn">Confirmar alternativa</button>
-              <button id="answerBtn">Mostrar gabarito</button>
-              <button id="clearBtn">Limpar</button>
+              <button id="confirmAnswerBtn" class="primary-btn">Confirmar resposta</button>
             </div>
             <details class="tool-details">
               <summary>Mais opções</summary>
               <div class="tool-row secondary-tools">
+                <button id="answerBtn">Mostrar gabarito</button>
+                <button id="clearBtn">Limpar</button>
                 <button id="correctBtn">Marcar acerto</button>
                 <button id="wrongBtn">Marcar erro</button>
                 <button id="editBtn">Editar questão</button>
@@ -498,6 +498,8 @@
         </section>
 
         <section class="notes">
+          <details class="study-accordion" open>
+            <summary>Comentários da questão</summary>
           <div class="comments-panel" id="commentsPanel">
             <div class="comments-head">
               <div>
@@ -511,12 +513,18 @@
             </div>
             <div class="comments-list" id="commentsList"></div>
           </div>
+          </details>
+          <details class="study-accordion">
+            <summary>Anotação privada</summary>
+          <div class="private-note-panel">
           <label class="field">
             <span>Anotações da questão</span>
             <textarea id="noteInput" rows="5" placeholder="Resumo, pegadinha, mnemonico ou conduta..."></textarea>
           </label>
           <button id="savePrivateNoteBtn" class="primary-btn">Salvar anota&ccedil;&atilde;o</button>
           <p class="panel-line" id="privateNoteStatus">Anotacao privada salva apenas neste navegador ate entrar na conta.</p>
+          </div>
+          </details>
         </section>
       </section>
     </main>

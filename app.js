@@ -2953,7 +2953,7 @@ function render() {
   el.confidencePanel.hidden = examLocked || !progress.grade;
   el.errorTypePanel.hidden = examLocked || progress.grade !== "wrong";
   el.confirmAnswer.disabled = !question.correctAnswer || !selectedLetter || Boolean(progress.grade) || examLocked;
-  el.confirmAnswer.textContent = progress.grade ? "Alternativa confirmada" : "Confirmar alternativa";
+  el.confirmAnswer.textContent = progress.grade ? "Resposta confirmada" : "Confirmar resposta";
   el.answerBtn.disabled = !question.correctAnswer;
   el.answerBtn.textContent = progress.revealed ? "Gabarito exibido" : "Mostrar gabarito";
   el.favorite.classList.toggle("active", Boolean(storedProgress.favorite));
