@@ -38,12 +38,13 @@
       </section>
 
       <nav class="tabs" aria-label="Painel do banco">
-        <button class="tab active" data-tab="overview">Visão geral</button>
-        <button class="tab" data-tab="today">Revisão de hoje</button>
-        <button class="tab" data-tab="activity">Sessão</button>
-        <button class="tab" data-tab="exams">Provas prévias</button>
-        <button class="tab admin-tab" data-tab="topics">Manutenção</button>
-        <button class="tab" data-tab="notes">Minhas anota&ccedil;&otilde;es</button>
+        <button class="tab active" data-tab="overview">⌂ Dashboard</button>
+        <button class="tab" data-tab="today">◇ Revisão</button>
+        <button class="tab" data-tab="activity">▣ Estudo por temas</button>
+        <button class="tab" data-tab="exams">□ Provas</button>
+        <button class="tab" data-tab="notes">▤ Anotações</button>
+        <div class="admin-nav-divider admin-only">Administração</div>
+        <button class="tab admin-tab admin-only" data-tab="topics">⚙ Administração</button>
       </nav>
 
       <section class="dashboard">
@@ -244,15 +245,19 @@
         </div>
 
         <div class="tab-panel" id="activityPanel">
-          <p class="panel-line">Monte uma sessão escolhendo temas, tamanho e revisões.</p>
+          <header class="study-planner-head">
+            <span>Estudo por temas</span>
+            <h3>Montar sessão</h3>
+            <p>Escolha o tipo de conteúdo, o tamanho da sessão e se deseja incluir revisões vencidas.</p>
+          </header>
           <div class="session-builder">
-            <span>Origem das questões:</span>
+            <span>Conteúdo</span>
             <div class="segmented wide-segmented" id="sessionSourceGroup">
-              <button data-source="content">Conteúdo didático</button>
-              <button data-source="mixed">Didático + provas</button>
-              <button data-source="exams">Apenas provas</button>
+              <button data-source="content">Didático</button>
+              <button data-source="mixed">Misto</button>
+              <button data-source="exams">Provas</button>
             </div>
-            <span>Questões por sessão:</span>
+            <span>Quantidade</span>
             <div class="segmented" id="sessionSizeGroup">
               <button data-size="10">10</button>
               <button data-size="20">20</button>
@@ -264,19 +269,22 @@
               <input id="includeReviewsToggle" type="checkbox" />
               <span>Incluir revisões vencidas</span>
             </label>
-            <button id="startSessionBtn" class="primary-btn">Iniciar sessão de estudo</button>
-            <button id="startSmartTrainingBtn">Sessão inteligente</button>
+            <div class="availability-card">
+              <div><strong id="sessionDidacticCount">0</strong><span>didáticas</span></div>
+              <div><strong id="sessionExamCount">0</strong><span>provas</span></div>
+              <div><strong id="sessionNewCount">0</strong><span>novas disponíveis</span></div>
+            </div>
+            <div class="smart-review-card">
+              <h4>Revisão Inteligente</h4>
+              <p>Monta automaticamente uma sessão com base em revisões vencidas, erros anteriores, temas frágeis e questões pouco praticadas.</p>
+              <button id="startSmartTrainingBtn" class="primary-btn">Iniciar revisão inteligente</button>
+            </div>
+            <button id="startSessionBtn" class="outline-btn">Iniciar sessão personalizada</button>
             <button id="finishSessionBtn" hidden>Finalizar bloco</button>
-            <button id="endSessionBtn">Sair do bloco</button>
+            <button id="endSessionBtn" class="tertiary-btn">Sair do bloco</button>
           </div>
-          <p class="smart-help">A sessão inteligente monta automaticamente um bloco com revisões vencidas, erros anteriores, temas frágeis e questões ainda pouco praticadas.</p>
           <p class="panel-line" id="sessionLine">Selecione temas e crie um bloco de questões.</p>
           <div class="session-summary" id="sessionSummary"></div>
-          <div class="study-section reset-section">
-            <h3>Recomeçar desempenho</h3>
-            <p class="panel-line">Limpa respostas, erros, acertos, revisões programadas, anotações e alternativas riscadas deste navegador.</p>
-            <button id="resetProgressBtn" class="danger-lite">Zerar histórico de desempenho</button>
-          </div>
           <div class="study-section">
             <h3>Temas do bloco</h3>
             <p class="panel-line">Marque os temas que podem entrar na sessão de estudo.</p>
@@ -298,6 +306,11 @@
             <div class="subtheme-grid" id="subthemeChecklist"></div>
           </div>
           <button id="restoreExcludedBtn" class="danger-lite">Restaurar excluídas</button>
+          <div class="study-section reset-section">
+            <h3>Zona de manutenção</h3>
+            <p class="panel-line"><strong>Reiniciar histórico local</strong><br />Limpa respostas, erros, acertos, revisões programadas, anotações e alternativas riscadas deste navegador.</p>
+            <button id="resetProgressBtn" class="danger-lite">Reiniciar desempenho</button>
+          </div>
         </div>
 
         <div class="tab-panel" id="historyPanel"></div>
@@ -373,10 +386,10 @@
       <section class="question-shell">
         <section class="start-panel" id="startPanel">
           <h2>Escolha como quer estudar</h2>
-          <p>Use a aba Sessão para montar um bloco por temas ou a aba Provas prévias para resolver provas por instituição, área e ano.</p>
+          <p>Use Estudo por temas para montar um bloco por assunto ou Provas para resolver exames anteriores por instituição, área e ano.</p>
           <div class="start-actions">
-            <button id="goSessionBtn" class="primary-btn">Montar sessão</button>
-            <button id="goExamsBtn">Ver provas prévias</button>
+            <button id="goSessionBtn" class="primary-btn">Estudo por temas</button>
+            <button id="goExamsBtn">Ver provas</button>
           </div>
         </section>
         <nav class="question-nav">

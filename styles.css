@@ -2332,6 +2332,202 @@ body.theme-dark .exam-study-card {
   background: var(--panel);
 }
 
+/* Student journey navigation and study planner */
+.admin-nav-divider {
+  margin: 12px 8px 4px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 720;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.study-planner-head {
+  display: grid;
+  gap: 5px;
+  margin-bottom: 18px;
+}
+
+.study-planner-head span {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 720;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.study-planner-head h3 {
+  margin: 0;
+  color: var(--ink);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.study-planner-head p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+#activityPanel {
+  display: none;
+}
+
+#activityPanel.active {
+  display: grid;
+  gap: 18px;
+}
+
+#activityPanel .session-builder {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 0;
+}
+
+#activityPanel .session-builder > span {
+  width: auto;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 720;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+#activityPanel .segmented {
+  width: fit-content;
+  max-width: 100%;
+  border-radius: 12px;
+  background: var(--panel);
+}
+
+#activityPanel .segmented button {
+  min-height: 34px;
+  padding: 0 12px;
+  color: var(--muted);
+}
+
+#activityPanel .segmented button.active {
+  color: #ffffff;
+}
+
+#activityPanel .session-toggle {
+  width: fit-content;
+  min-height: 34px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+}
+
+#activityPanel .session-toggle input {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--accent);
+}
+
+.availability-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--panel);
+}
+
+.availability-card div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.availability-card strong {
+  color: var(--ink);
+  font-size: 20px;
+  line-height: 1;
+}
+
+.availability-card span {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.smart-review-card {
+  display: grid;
+  gap: 11px;
+  padding: 16px;
+  border: 1px solid #bfdbfe;
+  border-radius: 12px;
+  background: var(--panel);
+}
+
+.smart-review-card h4 {
+  margin: 0;
+  color: var(--ink);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.smart-review-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.smart-review-card .primary-btn,
+#activityPanel .outline-btn {
+  width: 100%;
+}
+
+.outline-btn {
+  border-color: var(--line-strong);
+  background: var(--panel);
+  color: var(--ink);
+}
+
+.outline-btn:hover {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+}
+
+#activityPanel #endSessionBtn,
+#activityPanel #restoreExcludedBtn {
+  width: fit-content;
+  min-height: 32px;
+  padding: 0 4px;
+}
+
+#activityPanel .reset-section {
+  order: 99;
+  gap: 10px;
+  padding: 18px 0 0;
+  border-top: 1px solid var(--line);
+}
+
+#activityPanel .reset-section h3 {
+  color: var(--muted);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+#activityPanel .reset-section .danger-lite {
+  width: 100%;
+  border-color: #fecaca;
+  background: transparent;
+  color: #b91c1c;
+}
+
+#activityPanel .reset-section .danger-lite:hover {
+  background: var(--bad-soft);
+}
+
 /* Focused question-reading experience */
 :root {
   --content-width: 1160px;

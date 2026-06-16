@@ -215,6 +215,7 @@ const el = {
   authEmail: document.querySelector("#authEmail"),
   authPassword: document.querySelector("#authPassword"),
   adminTabs: document.querySelectorAll(".admin-tab"),
+  adminOnly: document.querySelectorAll(".admin-only"),
   login: document.querySelector("#loginBtn"),
   signup: document.querySelector("#signupBtn"),
   logout: document.querySelector("#logoutBtn"),
@@ -311,6 +312,9 @@ const el = {
   restoreExcluded: document.querySelector("#restoreExcludedBtn"),
   sessionLine: document.querySelector("#sessionLine"),
   sessionSummary: document.querySelector("#sessionSummary"),
+  sessionDidacticCount: document.querySelector("#sessionDidacticCount"),
+  sessionExamCount: document.querySelector("#sessionExamCount"),
+  sessionNewCount: document.querySelector("#sessionNewCount"),
   historySummary: document.querySelector("#historySummary"),
   historyList: document.querySelector("#historyList"),
   errorNotebook: document.querySelector("#errorNotebook"),
@@ -489,6 +493,9 @@ function renderAuth() {
 function renderAdminAccess() {
   el.adminTabs?.forEach((button) => {
     button.hidden = !state.isAdmin;
+  });
+  el.adminOnly?.forEach((item) => {
+    item.hidden = !state.isAdmin;
   });
   if (!state.isAdmin && state.activeTab === "topics") {
     state.activeTab = "overview";
@@ -2388,6 +2395,9 @@ function renderActivity() {
   const available = sessionPoolQuestions();
   const dueReviewCount = sessionReviewPool().length;
   const availableNew = available.filter((question) => !getProgress(question.id).grade).length;
+  if (el.sessionDidacticCount) el.sessionDidacticCount.textContent = contentAvailable.length;
+  if (el.sessionExamCount) el.sessionExamCount.textContent = examAvailable.length;
+  if (el.sessionNewCount) el.sessionNewCount.textContent = availableNew;
   const originLabel =
     state.sessionSource === "content"
       ? pluralize(contentAvailable.length, "questão didática", "questões didáticas")
