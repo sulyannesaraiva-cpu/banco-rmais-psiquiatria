@@ -42,6 +42,7 @@
         <button class="tab" data-tab="today">◇ Revisão</button>
         <button class="tab" data-tab="activity">▣ Estudo por temas</button>
         <button class="tab" data-tab="exams">□ Provas</button>
+        <button class="tab" data-tab="history">▥ Desempenho</button>
         <button class="tab" data-tab="notes">▤ Anotações</button>
         <div class="admin-nav-divider admin-only">Administração</div>
         <button class="tab admin-tab admin-only" data-tab="topics">⚙ Administração</button>
@@ -49,21 +50,64 @@
 
       <section class="dashboard">
         <div class="tab-panel active" id="overviewPanel">
+          <header class="study-planner-head">
+            <span>Dashboard</span>
+            <h3>Resumo do estudo</h3>
+            <p>Uma visão rápida do seu momento e do melhor próximo passo.</p>
+          </header>
+          <div class="dashboard-quick-grid">
+            <section class="dashboard-card">
+              <h3>Resumo de hoje</h3>
+              <div class="quick-metrics">
+                <div><strong id="dashboardDueCount">0</strong><span>revisões vencidas</span></div>
+                <div><strong id="dashboardPriorityCount">0</strong><span>prioritárias</span></div>
+              </div>
+              <button class="primary-btn" data-dashboard-tab="today">Ir para Revisão</button>
+            </section>
+            <section class="dashboard-card">
+              <h3>Progresso geral</h3>
+              <div class="quick-metrics">
+                <div><strong id="answeredCount">0</strong><span>respondidas</span></div>
+                <div><strong id="accuracyCount">0%</strong><span>acerto</span></div>
+                <div><strong id="dashboardReviewCount">0</strong><span>a revisar</span></div>
+              </div>
+            </section>
+            <section class="dashboard-card">
+              <h3>Atenção</h3>
+              <div class="focus-list" id="dashboardFocusList"></div>
+              <button class="outline-btn" data-dashboard-tab="history">Ver desempenho</button>
+            </section>
+            <section class="dashboard-card">
+              <h3>Próxima recomendação</h3>
+              <p class="panel-line" id="dashboardRecommendationLine">Carregando recomendação...</p>
+              <button class="outline-btn" data-dashboard-tab="activity">Estudo por temas</button>
+            </section>
+          </div>
+          <span id="totalCount" hidden>0</span>
+          <span id="readyCount" hidden>0</span>
+        </div>
+
+        <div class="tab-panel" id="historyPanel">
+          <header class="study-planner-head">
+            <span>Desempenho</span>
+            <h3>Análise do estudo</h3>
+            <p>Estatísticas, padrões de erro e pontos de atenção para ajustar sua preparação.</p>
+          </header>
           <div class="stats">
             <div>
-              <strong id="totalCount">0</strong>
+              <strong id="performanceTotalCount">0</strong>
               <span>questões</span>
             </div>
             <div>
-              <strong id="answeredCount">0</strong>
+              <strong id="performanceAnsweredCount">0</strong>
               <span>respondidas</span>
             </div>
             <div>
-              <strong id="readyCount">0</strong>
+              <strong id="performanceReadyCount">0</strong>
               <span>corrigíveis</span>
             </div>
             <div>
-              <strong id="accuracyCount">0%</strong>
+              <strong id="performanceAccuracyCount">0%</strong>
               <span>acerto</span>
             </div>
           </div>
@@ -137,20 +181,6 @@
               <strong>Subtemas-chave:</strong>
               <span>Alzheimer/CCL/rastreio, DFT, Lewy/Parkinsonismo, demência vascular, antipsicóticos no idoso e depressão geriátrica.</span>
             </div>
-          </div>
-          <div class="study-section">
-            <h3>Revisões espaçadas</h3>
-            <div class="review-box">
-              <div>
-                <strong id="dueReviewCount">0</strong>
-                <span>revisões vencidas</span>
-              </div>
-              <div>
-                <strong id="scheduledReviewCount">0</strong>
-                <span>programadas</span>
-              </div>
-            </div>
-            <p class="panel-line" id="spacedReviewLine">As questões erradas entram automaticamente em revisão espaçada.</p>
           </div>
           <div class="study-section">
             <h3>Questões perigosas</h3>
@@ -241,6 +271,20 @@
             </div>
             <p class="panel-line" id="todayReviewLine">As questões vencidas aparecerão aqui quando houver revisão programada.</p>
             <div class="today-plan" id="todayPlan"></div>
+            <div class="study-section">
+              <h3>Cronograma de revisão</h3>
+              <div class="review-box">
+                <div>
+                  <strong id="dueReviewCount">0</strong>
+                  <span>revisões vencidas</span>
+                </div>
+                <div>
+                  <strong id="scheduledReviewCount">0</strong>
+                  <span>programadas</span>
+                </div>
+              </div>
+              <p class="panel-line" id="spacedReviewLine">As questões erradas entram automaticamente em revisão espaçada.</p>
+            </div>
           </div>
         </div>
 
@@ -312,8 +356,6 @@
             <button id="resetProgressBtn" class="danger-lite">Reiniciar desempenho</button>
           </div>
         </div>
-
-        <div class="tab-panel" id="historyPanel"></div>
 
         <div class="tab-panel" id="examsPanel">
           <div class="study-section exam-sidebar">

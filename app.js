@@ -232,6 +232,15 @@ const el = {
   answered: document.querySelector("#answeredCount"),
   ready: document.querySelector("#readyCount"),
   accuracy: document.querySelector("#accuracyCount"),
+  performanceTotal: document.querySelector("#performanceTotalCount"),
+  performanceAnswered: document.querySelector("#performanceAnsweredCount"),
+  performanceReady: document.querySelector("#performanceReadyCount"),
+  performanceAccuracy: document.querySelector("#performanceAccuracyCount"),
+  dashboardDueCount: document.querySelector("#dashboardDueCount"),
+  dashboardPriorityCount: document.querySelector("#dashboardPriorityCount"),
+  dashboardReviewCount: document.querySelector("#dashboardReviewCount"),
+  dashboardFocusList: document.querySelector("#dashboardFocusList"),
+  dashboardRecommendationLine: document.querySelector("#dashboardRecommendationLine"),
   source: document.querySelector("#sourceLabel"),
   title: document.querySelector("#questionTitle"),
   tags: document.querySelector("#tagList"),
@@ -2018,10 +2027,15 @@ function renderStats() {
     const view = effectiveQuestion(question);
     return isReadyQuestion(view);
   }).length;
-  el.total.textContent = visibleQuestions.length;
-  el.answered.textContent = answered;
-  el.ready.textContent = ready;
-  el.accuracy.textContent = answered ? `${Math.round((correct / answered) * 100)}%` : "0%";
+  const accuracy = answered ? `${Math.round((correct / answered) * 100)}%` : "0%";
+  if (el.total) el.total.textContent = visibleQuestions.length;
+  if (el.answered) el.answered.textContent = answered;
+  if (el.ready) el.ready.textContent = ready;
+  if (el.accuracy) el.accuracy.textContent = accuracy;
+  if (el.performanceTotal) el.performanceTotal.textContent = visibleQuestions.length;
+  if (el.performanceAnswered) el.performanceAnswered.textContent = answered;
+  if (el.performanceReady) el.performanceReady.textContent = ready;
+  if (el.performanceAccuracy) el.performanceAccuracy.textContent = accuracy;
 }
 
 function renderPendingSummary() {
@@ -2037,6 +2051,7 @@ function renderPendingSummary() {
 }
 
 function renderDashboard() {
+  renderQuickDashboard();
   renderOverview();
   renderPendingSummary();
   renderErrorChart();
@@ -2048,6 +2063,42 @@ function renderDashboard() {
   renderTodayReview();
   renderSavedNotesPanel();
   renderExams();
+}
+
+function renderQuickDashboard() {
+  if (!el.dashboardDueCount) return;
+  const due = spacedReviewQuestions(true);
+  const priorityCount = due.filter((question) => priorityScoreFor(question) >= 6).length;
+  const reviewTotal = allStudyQuestions().filter((question) => !isExcluded(question.id) && getProgress(question.id).review).length;
+  el.dashboardDueCount.textContent = due.length;
+  el.dashboardPriorityCount.textContent = priorityCount;
+  el.dashboardReviewCount.textContent = reviewTotal;
+
+  const weakTopics = topicsForStats()
+    .map((topic) => ({ topic, perf: topicPerformance(topic) }))
+    .filter((item) => item.perf.answered >= 3)
+    .sort((a, b) => a.perf.accuracy - b.perf.accuracy)
+    .slice(0, 3);
+  el.dashboardFocusList.innerHTML = weakTopics.length
+    ? weakTopics
+        .map(
+          ({ topic, perf }) => `
+            <div class="focus-item">
+              <strong>${escapeHtml(topic)}</strong>
+              <span>${Math.round(perf.accuracy * 100)}% de acerto · ${perf.answered} feitas</span>
+            </div>
+          `,
+        )
+        .join("")
+    : `<p class="panel-line">Responda mais questões para mapear temas frágeis.</p>`;
+
+  if (due.length) {
+    el.dashboardRecommendationLine.textContent = `Comece pela Revisão: há ${pluralize(due.length, "questão vencida", "questões vencidas")} hoje.`;
+  } else if (weakTopics.length) {
+    el.dashboardRecommendationLine.textContent = `Faça uma sessão focada em ${weakTopics[0].topic}.`;
+  } else {
+    el.dashboardRecommendationLine.textContent = "Faça uma sessão personalizada para gerar novas estatísticas de estudo.";
+  }
 }
 
 function noteQuestionById(questionId) {
@@ -3663,6 +3714,9 @@ function restoreExcludedQuestions() {
 }
 
 el.tabs.forEach((button) => button.addEventListener("click", () => setTab(button.dataset.tab)));
+document.querySelectorAll("[data-dashboard-tab]").forEach((button) => {
+  button.addEventListener("click", () => setTab(button.dataset.dashboardTab));
+});
 el.sidebarToggle.addEventListener("click", () => setSidebarCollapsed(!state.sidebarCollapsed));
 el.themeToggle?.addEventListener("click", () => applyTheme(state.theme === "dark" ? "light" : "dark"));
 el.goSession.addEventListener("click", () => {
