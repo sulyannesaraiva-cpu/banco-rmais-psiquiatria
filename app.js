@@ -2,6 +2,7 @@ const SUPABASE_URL = "https://ejseesgzjdabsndtdung.supabase.co";
 const SUPABASE_KEY = "sb_publishable_pLC5bh3LWUTi1w_7BoSCZg_ahBnuZ36";
 const storedSidebarState = localStorage.getItem("banco-rmais-sidebar-collapsed");
 const storedTheme = localStorage.getItem("banco-rmais-theme") || "light";
+const ACTIVE_STUDY_KEY = "banco-rmais-active-study";
 document.body.classList.toggle("theme-dark", storedTheme === "dark");
 
 const state = {
@@ -1104,6 +1105,81 @@ function setActiveAttempt(questionId, patch) {
   state.activeAnswers[questionId] = {
     ...currentAttemptFor(questionId),
     ...patch,
+  };
+  saveActiveStudyState();
+}
+
+function progressAsAttempt(question) {
+  const progress = getProgress(question.id);
+  if (!progress.grade) return null;
+  return {
+    selected: progress.selected || null,
+    confirmed: Boolean(progress.confirmed || progress.grade),
+    revealed: Boolean(progress.revealed || progress.grade),
+    grade: progress.grade,
+  };
+}
+
+function seedActiveAnswersFromProgress(questions) {
+  const seeded = {};
+  for (const question of questions) {
+    const attempt = progressAsAttempt(question);
+    if (attempt) seeded[question.id] = attempt;
+  }
+  return seeded;
+}
+
+function currentActiveStudyState() {
+  if (state.examSetActive) {
+    return {
+      mode: "exam-set",
+      examSetIds: [...state.examSetIds],
+      index: state.index,
+      activeAnswers: state.activeAnswers,
+      updatedAt: Date.now(),
+    };
+  }
+  if (state.examActive) {
+    return {
+      mode: "exam",
+      activeExamId: state.activeExamId,
+      index: state.index,
+      activeAnswers: state.activeAnswers,
+      updatedAt: Date.now(),
+    };
+  }
+  return null;
+}
+
+function saveActiveStudyState() {
+  const snapshot = currentActiveStudyState();
+  if (!snapshot) return;
+  localStorage.setItem(ACTIVE_STUDY_KEY, JSON.stringify(snapshot));
+}
+
+function clearActiveStudyState() {
+  localStorage.removeItem(ACTIVE_STUDY_KEY);
+}
+
+function loadActiveStudyState() {
+  try {
+    return JSON.parse(localStorage.getItem(ACTIVE_STUDY_KEY) || "null");
+  } catch {
+    return null;
+  }
+}
+
+function restoreActiveAnswersForRun(mode, runIds, questions) {
+  const saved = loadActiveStudyState();
+  const seeded = seedActiveAnswersFromProgress(questions);
+  const idsMatch =
+    mode === "exam-set"
+      ? saved?.mode === "exam-set" && JSON.stringify(saved.examSetIds || []) === JSON.stringify(runIds || [])
+      : saved?.mode === "exam" && saved.activeExamId === runIds;
+  if (!idsMatch) return { activeAnswers: seeded, index: 0 };
+  return {
+    activeAnswers: { ...(saved.activeAnswers || {}), ...seeded },
+    index: Math.min(Number(saved.index || 0), Math.max(questions.length - 1, 0)),
   };
 }
 
@@ -2842,6 +2918,7 @@ function renderExams() {
   if (!el.examSelect) return;
   const exam = currentExam();
   const answeredInExam = exam ? exam.questions.filter((question) => getProgress(question.id).grade).length : 0;
+  const answeredInExamSet = state.examSetActive ? currentRunAnsweredQuestions().length : 0;
   const simulationSelected = state.examSimulationActive ? state.filtered.filter((question) => state.examSimulationAnswers[question.id] || getProgress(question.id).selected).length : 0;
   el.examTimer.hidden = !state.examSimulationActive;
   renderExamTimer();
@@ -2854,6 +2931,8 @@ function renderExams() {
     ? state.examSimulationFinished
       ? `Simulado finalizado: ${simulationSelected}/${state.filtered.length} questões marcadas.`
       : `Simulado ativo: ${simulationSelected}/${state.filtered.length} questões marcadas.`
+    : state.examSetActive
+    ? `Conjunto ativo: ${answeredInExamSet}/${state.filtered.length} questões respondidas.`
     : state.examActive
     ? `Estudo ativo: ${answeredInExam}/${state.filtered.length} questões respondidas.`
     : exam
@@ -3040,6 +3119,7 @@ function move(delta) {
   if (!state.filtered.length) return;
   state.index = (state.index + delta + state.filtered.length) % state.filtered.length;
   rememberCurrentPosition();
+  saveActiveStudyState();
   render();
 }
 
@@ -3140,8 +3220,11 @@ function startExamSet() {
   state.filtered = exams
     .flatMap((exam) => exam.questions)
     .filter((question) => !isExcluded(question.id) && isReadyQuestion(effectiveQuestion(question)));
-  state.index = 0;
+  const restored = restoreActiveAnswersForRun("exam-set", state.examSetIds, state.filtered);
+  state.activeAnswers = restored.activeAnswers;
+  state.index = restored.index;
   setTab("exams");
+  saveActiveStudyState();
   render();
 }
 
@@ -3150,6 +3233,7 @@ function endExamSet() {
   state.examSetActive = false;
   state.examSetIds = [];
   state.activeAnswers = {};
+  clearActiveStudyState();
   state.index = 0;
   applyFilters({ preserveCurrent: true });
   setTab("exams");
@@ -3393,8 +3477,11 @@ function startExam() {
   clearExamSimulationState();
   state.examActive = true;
   state.filtered = exam.questions.filter((question) => !isExcluded(question.id) && isReadyQuestion(effectiveQuestion(question)));
-  state.index = 0;
+  const restored = restoreActiveAnswersForRun("exam", exam.id, state.filtered);
+  state.activeAnswers = restored.activeAnswers;
+  state.index = restored.index;
   setTab("exams");
+  saveActiveStudyState();
   render();
 }
 
@@ -3468,6 +3555,7 @@ function finishExamStudy() {
   state.examSetActive = false;
   state.examSetIds = [];
   state.activeAnswers = {};
+  clearActiveStudyState();
   state.index = 0;
   applyFilters({ preserveCurrent: true });
   setTab("exams");
@@ -3493,6 +3581,7 @@ function endExam() {
   state.examSetIds = [];
   state.activeAnswers = {};
   clearExamSimulationState();
+  clearActiveStudyState();
   state.index = 0;
   applyFilters({ preserveCurrent: true });
 }
@@ -3525,6 +3614,7 @@ function resetUserProgress() {
   localStorage.removeItem("banco-rmais-attempts");
   localStorage.removeItem("banco-rmais-review-schedule");
   localStorage.removeItem("banco-rmais-discarded-options");
+  clearActiveStudyState();
   saveProgress();
   saveAttempts();
   saveReviewSchedule();
