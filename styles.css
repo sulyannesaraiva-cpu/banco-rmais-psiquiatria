@@ -2825,6 +2825,41 @@ body.theme-dark .option:hover {
   }
 }
 
+/* Clear neutral state for an option selected before confirmation */
+.option.selected.pending {
+  position: relative;
+  border-color: #94a3b8;
+  background: #f1f5f9;
+}
+
+.option.selected.pending::before {
+  content: "";
+  position: absolute;
+  inset: 10px auto 10px 0;
+  width: 4px;
+  border-radius: 999px;
+  background: #94a3b8;
+}
+
+.option.selected.pending .option-letter {
+  background: #64748b;
+  color: #ffffff;
+}
+
+.option.selected.pending .option-text {
+  color: var(--ink);
+  font-weight: 620;
+}
+
+body.theme-dark .option.selected.pending {
+  border-color: #64748b;
+  background: #1e293b;
+}
+
+body.theme-dark .option.selected.pending::before {
+  background: #94a3b8;
+}
+
 @media (max-width: 860px) {
   body {
     grid-template-columns: 1fr;
