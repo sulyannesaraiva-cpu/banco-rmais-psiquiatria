@@ -42,6 +42,9 @@ const state = {
   sessionSize: Number(localStorage.getItem("banco-rmais-session-size") || "30"),
   includeReviewsInSession: localStorage.getItem("banco-rmais-include-reviews") === "true",
   sessionSource: localStorage.getItem("banco-rmais-session-source") || "content",
+  reviewTargetExam: localStorage.getItem("banco-rmais-review-target-exam") || "Todas",
+  reviewMode: localStorage.getItem("banco-rmais-review-mode") || "mixed",
+  reviewAvailableMinutes: Number(localStorage.getItem("banco-rmais-review-minutes") || "20"),
   topicActive: false,
   topicIds: [],
   sessionActive: false,
@@ -384,9 +387,20 @@ const el = {
   endDangerousReview: document.querySelector("#endDangerousReviewBtn"),
   todayDueCount: document.querySelector("#todayDueCount"),
   todayPriorityCount: document.querySelector("#todayPriorityCount"),
+  todayMissionLine: document.querySelector("#todayMissionLine"),
   todayReviewLine: document.querySelector("#todayReviewLine"),
   todayPlan: document.querySelector("#todayPlan"),
+  reviewTargetExam: document.querySelector("#reviewTargetExamSelect"),
+  reviewMode: document.querySelector("#reviewModeSelect"),
+  reviewTime: document.querySelector("#reviewTimeSelect"),
+  reviewCriticalCount: document.querySelector("#reviewCriticalCount"),
+  reviewImportantCount: document.querySelector("#reviewImportantCount"),
+  reviewMaintenanceCount: document.querySelector("#reviewMaintenanceCount"),
   startTodayReview: document.querySelector("#startTodayReviewBtn"),
+  quickReview: document.querySelector("#quickReviewBtn"),
+  examThemesReview: document.querySelector("#examThemesReviewBtn"),
+  repeatedErrorsReview: document.querySelector("#repeatedErrorsReviewBtn"),
+  flashcardErrorsReview: document.querySelector("#flashcardErrorsReviewBtn"),
   endTodayReview: document.querySelector("#endTodayReviewBtn"),
   confidenceGroup: document.querySelector("#confidenceGroup"),
   confidencePanel: document.querySelector("#confidencePanel"),
@@ -1828,6 +1842,431 @@ function priorityScoreFor(question, progress = getProgress(question.id)) {
   return Math.round(((isWrong * 3) + (lowConfidenceWeight * 2) + (since * 0.5) + (themeWeaknessWeight * 2) + questionDifficultyWeight) * 10) / 10;
 }
 
+function saveReviewPreferences() {
+  localStorage.setItem("banco-rmais-review-target-exam", state.reviewTargetExam);
+  localStorage.setItem("banco-rmais-review-mode", state.reviewMode);
+  localStorage.setItem("banco-rmais-review-minutes", String(state.reviewAvailableMinutes));
+}
+
+function normalText(value) {
+  return String(value || "")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/\p{Diacritic}/gu, "");
+}
+
+function questionSearchText(question) {
+  return normalText([
+    question?.topic,
+    question?.subtheme,
+    question?.source,
+    question?.examTag,
+    question?.text,
+    questionSubtheme(question || {}),
+  ].join(" "));
+}
+
+function questionImportance(question) {
+  const text = questionSearchText(question);
+  if (/delirium|demencia|alzheimer|moca|beers|psicofarmacologia|litio|clozapina|anticolinerg|psicogeriatria/.test(text)) return 5;
+  if (/suicidio|catatonia|serotoninergica|neuroleptica|intoxic|emergencia|organico|bipolar|psicotico/.test(text)) return 4;
+  if (/ansiedade|humor|personalidade|forense|psicoterapia|infancia|tdah|tea/.test(text)) return 3;
+  return 2;
+}
+
+function targetExamFrequencyFromText(text, targetExam) {
+  const normalizedTarget = normalText(targetExam);
+  if (normalizedTarget && normalizedTarget !== "todas" && text.includes(normalizedTarget)) return 5;
+  if (text.includes("usp")) return 5;
+  if (text.includes("unifesp") || text.includes("sus-sp") || text.includes("unicamp") || text.includes("abp")) return 4;
+  return 0;
+}
+
+function getQuestionExamFrequency(question, targetExam = "Todas") {
+  const text = questionSearchText(question);
+  const direct = targetExamFrequencyFromText(text, targetExam);
+  if (direct) return direct;
+  return questionImportance(question);
+}
+
+function allFlashcardItems() {
+  return (state.flashcards || []).flatMap((deck) =>
+    flashcardCardsForDeck(deck, { applyImportance: false }).map((card) => ({
+      kind: "flashcard",
+      id: card.id,
+      card,
+      deck,
+      module: card.module || deck.module || deck.title || "",
+      topic: card.topic || deck.title || "",
+      title: card.front || deck.title || card.id,
+    })),
+  );
+}
+
+function conceptTitleForQuestion(question) {
+  return questionSubtheme(question) || topicForQuestion(question) || question.source || "Conceito";
+}
+
+function conceptIdForQuestion(question) {
+  const text = normalText(`${topicForQuestion(question)} ${questionSubtheme(question)}`);
+  return `q:${text || question.id}`;
+}
+
+function conceptIdForFlashcard(card, deck) {
+  const text = normalText(`${card.module || deck?.module || ""} ${card.topic || ""} ${(card.tags || [])[0] || ""}`);
+  return `f:${text || card.id}`;
+}
+
+function questionUserStats(question) {
+  const progress = getProgress(question.id);
+  const attempts = state.attempts.filter((attempt) => attempt.question_id === question.id);
+  const wrongAttempts = attempts.filter((attempt) => attempt.is_correct === false).length;
+  const correctAttempts = attempts.filter((attempt) => attempt.is_correct === true).length;
+  const wrong = Math.max(progress.wrongCount || 0, wrongAttempts);
+  const correct = Math.max(progress.correctStreak || 0, correctAttempts);
+  return {
+    attempts: Math.max(wrong + correct, attempts.length, progress.grade ? 1 : 0),
+    correct,
+    wrong,
+    lastAnsweredAt: progress.updatedAt || null,
+    lastReviewedAt: progress.updatedAt || null,
+    nextReviewAt: progress.nextReviewAt || null,
+    confidenceHistory: [progress.confidence, ...attempts.map((attempt) => attempt.confidence)].filter(Boolean),
+    averageResponseTime: progress.lastElapsedMs || null,
+    lapses: wrong,
+    conceptId: conceptIdForQuestion(question),
+  };
+}
+
+function flashcardUserStats(card) {
+  const progress = state.flashcardProgress[card.id] || {};
+  const grade = progress.lastGrade || progress.grade || null;
+  const lapses = progress.lapses || (grade === "again" ? 1 : 0);
+  return {
+    attempts: progress.repetitions || 0,
+    correct: progress.correct || (grade === "easy" || grade === "good" ? 1 : 0),
+    wrong: lapses,
+    lastAnsweredAt: progress.lastReviewedAt || null,
+    lastReviewedAt: progress.lastReviewedAt || null,
+    nextReviewAt: progress.nextReviewAt || null,
+    confidenceHistory: grade === "again" ? [1] : grade === "hard" ? [2] : grade === "good" ? [4] : grade === "easy" ? [5] : [],
+    averageResponseTime: null,
+    lapses,
+    conceptId: null,
+  };
+}
+
+function buildConceptMap(questions = allStudyQuestions(), flashcards = allFlashcardItems()) {
+  const map = new Map();
+  const ensure = (conceptId, patch) => {
+    const current = map.get(conceptId) || {
+      conceptId,
+      title: patch.title || "Conceito",
+      tags: new Set(),
+      module: patch.module || "",
+      attempts: 0,
+      correct: 0,
+      wrong: 0,
+      mastery: 0,
+      lastReviewedAt: null,
+      nextReviewAt: null,
+      relatedQuestionIds: [],
+      relatedFlashcardIds: [],
+      reviewPriorityScore: 0,
+    };
+    if (patch.tags) patch.tags.forEach((tag) => current.tags.add(tag));
+    if (patch.module && !current.module) current.module = patch.module;
+    map.set(conceptId, current);
+    return current;
+  };
+  questions.forEach((question) => {
+    const conceptId = conceptIdForQuestion(question);
+    const stats = questionUserStats(question);
+    const item = ensure(conceptId, {
+      title: conceptTitleForQuestion(question),
+      module: topicForQuestion(question),
+      tags: [topicForQuestion(question), questionSubtheme(question)].filter(Boolean),
+    });
+    item.attempts += stats.attempts;
+    item.correct += stats.correct;
+    item.wrong += stats.wrong;
+    item.lastReviewedAt = Math.max(item.lastReviewedAt || 0, stats.lastReviewedAt || 0) || null;
+    item.nextReviewAt = Math.min(item.nextReviewAt || Infinity, stats.nextReviewAt || Infinity);
+    item.relatedQuestionIds.push(question.id);
+  });
+  flashcards.forEach(({ card, deck }) => {
+    const conceptId = conceptIdForFlashcard(card, deck);
+    const progress = flashcardUserStats(card);
+    const item = ensure(conceptId, {
+      title: card.topic || card.front || deck?.title,
+      module: card.module || deck?.module || deck?.title,
+      tags: card.tags || [],
+    });
+    item.attempts += progress.attempts;
+    item.correct += progress.correct;
+    item.wrong += progress.wrong;
+    item.relatedFlashcardIds.push(card.id);
+  });
+  for (const item of map.values()) {
+    item.mastery = item.attempts ? Math.round((item.correct / item.attempts) * 100) : 0;
+    if (item.nextReviewAt === Infinity) item.nextReviewAt = null;
+    item.tags = [...item.tags];
+  }
+  return map;
+}
+
+function frequencyValueToScore(value) {
+  return Math.max(0, Math.min(100, Number(value || 0) * 20));
+}
+
+function calculateExamFrequencyScore(item, targetExam = "Todas") {
+  if (item.kind === "flashcard") {
+    const frequency = item.card?.examFrequency || {};
+    if (targetExam !== "Todas" && Number.isFinite(frequency[targetExam])) return frequencyValueToScore(frequency[targetExam]);
+    const banks = ["USP", "UNIFESP", "UNICAMP", "SUS-SP", "ABP"];
+    const values = banks.map((bank) => Number(frequency[bank])).filter(Number.isFinite);
+    if (values.length) return frequencyValueToScore(values.reduce((sum, value) => sum + value, 0) / values.length);
+    return frequencyValueToScore(normalizeFlashcardImportance(item.card, getDeckImportance(item.deck)));
+  }
+  return frequencyValueToScore(getQuestionExamFrequency(item.question, targetExam));
+}
+
+function calculatePersonalErrorScore(userStats = {}) {
+  const wrong = userStats.wrong || 0;
+  if (wrong >= 3) return 100;
+  if (wrong === 2) return 60;
+  if (wrong === 1) return 30;
+  return 0;
+}
+
+function calculateRepeatedErrorScore(conceptStats = {}) {
+  const wrong = conceptStats.wrong || 0;
+  if (wrong >= 4) return 100;
+  if (wrong === 3) return 85;
+  if (wrong === 2) return 65;
+  if (wrong === 1) return 25;
+  return 0;
+}
+
+function calculateDaysOverdueScore(nextReviewAt) {
+  if (!nextReviewAt) return 0;
+  const days = Math.floor((Date.now() - Number(nextReviewAt)) / (24 * 60 * 60 * 1000));
+  if (days <= 0) return 0;
+  if (days <= 3) return 25;
+  if (days <= 14) return 55;
+  if (days <= 30) return 75;
+  return 85;
+}
+
+function calculateLowConfidenceScore(confidenceHistory = []) {
+  const values = confidenceHistory.map(Number).filter(Number.isFinite);
+  if (!values.length) return 0;
+  const last = values[0];
+  if (last === 1) return 100;
+  if (last === 2 || last === 6) return 80;
+  if (last === 3) return 45;
+  if (last === 4) return 10;
+  return 0;
+}
+
+function calculateImportanceScore(item) {
+  if (item.kind === "flashcard") return frequencyValueToScore(normalizeFlashcardImportance(item.card, getDeckImportance(item.deck)));
+  return frequencyValueToScore(questionImportance(item.question));
+}
+
+function calculateDangerousTopicScore(item) {
+  const text = item.kind === "flashcard"
+    ? normalText([item.card?.front, item.card?.back, item.card?.topic, item.card?.module, ...(item.card?.tags || [])].join(" "))
+    : questionSearchText(item.question);
+  const keywords = [
+    "delirium",
+    "demencia",
+    "psicofarmacologia",
+    "litio",
+    "clozapina",
+    "anticolinerg",
+    "suicidio",
+    "catatonia",
+    "serotoninergica",
+    "neuroleptica",
+    "intoxic",
+    "emergencia",
+    "organico",
+    "lewy",
+  ];
+  const matched = keywords.filter((keyword) => text.includes(keyword)).length;
+  return Math.min(100, matched * 35);
+}
+
+function calculateWeakTopicScore(conceptStats = {}) {
+  if (!conceptStats.attempts) return 15;
+  const accuracy = conceptStats.correct / conceptStats.attempts;
+  if (accuracy < 0.6) return 100;
+  if (accuracy < 0.8) return 55;
+  return 10;
+}
+
+function calculateReviewPriorityScore(item, userStats, targetExam, conceptStats) {
+  const components = {
+    examFrequencyScore: calculateExamFrequencyScore(item, targetExam),
+    personalErrorScore: calculatePersonalErrorScore(userStats),
+    repeatedErrorScore: calculateRepeatedErrorScore(conceptStats),
+    daysOverdueScore: calculateDaysOverdueScore(userStats.nextReviewAt || conceptStats?.nextReviewAt),
+    lowConfidenceScore: calculateLowConfidenceScore(userStats.confidenceHistory),
+    importanceScore: calculateImportanceScore(item),
+    dangerousTopicScore: calculateDangerousTopicScore(item),
+    weakTopicScore: calculateWeakTopicScore(conceptStats),
+  };
+  const weights = {
+    examFrequencyScore: 2.0,
+    personalErrorScore: 2.2,
+    repeatedErrorScore: 2.0,
+    daysOverdueScore: 1.2,
+    lowConfidenceScore: 1.5,
+    importanceScore: 2.0,
+    dangerousTopicScore: 1.7,
+    weakTopicScore: 1.8,
+  };
+  const totalWeight = Object.values(weights).reduce((sum, value) => sum + value, 0);
+  const raw = Object.entries(weights).reduce((sum, [key, weight]) => sum + components[key] * weight, 0);
+  return {
+    score: Math.max(0, Math.min(100, Math.round(raw / totalWeight))),
+    components,
+  };
+}
+
+function reviewCategoryForScore(score) {
+  if (score >= 80) return "critical";
+  if (score >= 50) return "important";
+  if (score >= 20) return "maintenance";
+  return "low";
+}
+
+function reviewCategoryLabel(category) {
+  const labels = {
+    critical: "Crítica",
+    important: "Importante",
+    maintenance: "Manutenção",
+    low: "Baixa prioridade",
+  };
+  return labels[category] || category;
+}
+
+function reviewItemTitle(item) {
+  if (item.kind === "flashcard") return item.card.front || item.deck.title || "Flashcard";
+  return conceptTitleForQuestion(item.question);
+}
+
+function explainReviewItem(item) {
+  const parts = [];
+  const components = item.components || {};
+  if (components.examFrequencyScore >= 80) parts.push("tema de alta frequência na banca selecionada");
+  if (components.importanceScore >= 80) parts.push("importância alta para prova");
+  if (components.personalErrorScore >= 60) parts.push("erro pessoal repetido");
+  else if (components.personalErrorScore >= 30) parts.push("erro anterior");
+  if (components.repeatedErrorScore >= 60) parts.push("conceito frágil no seu histórico");
+  if (components.lowConfidenceScore >= 70) parts.push("baixa confiança marcada");
+  if (components.daysOverdueScore >= 55) parts.push("revisão atrasada");
+  if (components.dangerousTopicScore >= 35) parts.push("assunto com pegadinha/risco de prova");
+  if (components.weakTopicScore >= 55) parts.push("desempenho baixo no tema");
+  if (!parts.length) parts.push("manutenção de tema relevante");
+  return parts.join(", ") + ".";
+}
+
+function reviewModeMatches(item, mode) {
+  if (mode === "flashcards") return item.kind === "flashcard";
+  if (mode === "questions") return item.kind === "question";
+  if (mode === "high-priority") return item.score >= 50;
+  if (mode === "repeated-errors") return item.components.personalErrorScore >= 60 || item.components.repeatedErrorScore >= 60;
+  if (mode === "exam-themes") return item.components.examFrequencyScore >= 80 || item.components.importanceScore >= 80;
+  if (mode === "light") return item.score >= 20 && item.score < 80;
+  return true;
+}
+
+function maxItemsForMinutes(minutes) {
+  if (minutes <= 10) return 10;
+  if (minutes >= 40) return 35;
+  return 20;
+}
+
+function getTodayReviewSession({ targetExam = state.reviewTargetExam, maxItems, mode = state.reviewMode, availableMinutes = state.reviewAvailableMinutes } = {}) {
+  const limit = maxItems || maxItemsForMinutes(Number(availableMinutes || 20));
+  const questions = allStudyQuestions().filter((question) => !isExcluded(question.id) && isReadyQuestion(effectiveQuestion(question)));
+  const flashcards = allFlashcardItems();
+  const conceptMap = buildConceptMap(questions, flashcards);
+  const questionItems = questions.map((question) => {
+    const userStats = questionUserStats(question);
+    const conceptStats = conceptMap.get(userStats.conceptId) || {};
+    const result = calculateReviewPriorityScore({ kind: "question", question }, userStats, targetExam, conceptStats);
+    return {
+      kind: "question",
+      id: question.id,
+      question,
+      conceptId: userStats.conceptId,
+      conceptTitle: conceptTitleForQuestion(question),
+      userStats,
+      conceptStats,
+      score: result.score,
+      components: result.components,
+    };
+  });
+  const flashcardItems = flashcards.map((item) => {
+    const userStats = flashcardUserStats(item.card);
+    const conceptId = conceptIdForFlashcard(item.card, item.deck);
+    const conceptStats = conceptMap.get(conceptId) || {};
+    const result = calculateReviewPriorityScore(item, { ...userStats, conceptId }, targetExam, conceptStats);
+    return {
+      ...item,
+      conceptId,
+      conceptTitle: item.card.topic || item.card.module || item.deck.title,
+      userStats,
+      conceptStats,
+      score: result.score,
+      components: result.components,
+    };
+  });
+  let pool = [...questionItems, ...flashcardItems]
+    .map((item) => ({
+      ...item,
+      category: reviewCategoryForScore(item.score),
+    }))
+    .filter((item) => item.score >= 20 && reviewModeMatches(item, mode))
+    .sort((a, b) => b.score - a.score || String(a.id).localeCompare(String(b.id), "pt-BR"));
+
+  if (!pool.length && mode !== "mixed") {
+    pool = [...questionItems, ...flashcardItems]
+      .map((item) => ({ ...item, category: reviewCategoryForScore(item.score) }))
+      .filter((item) => item.score >= 20)
+      .sort((a, b) => b.score - a.score);
+  }
+
+  const selected = [];
+  const conceptUse = new Map();
+  const flashcardLimit = mode === "flashcards" ? limit : Math.max(2, Math.round(limit * 0.25));
+  let flashcardCount = 0;
+  for (const item of pool) {
+    const used = conceptUse.get(item.conceptId) || 0;
+    if (used >= 2) continue;
+    if (item.kind === "flashcard" && mode !== "flashcards" && flashcardCount >= flashcardLimit) continue;
+    selected.push({ ...item, explanation: explainReviewItem(item) });
+    conceptUse.set(item.conceptId, used + 1);
+    if (item.kind === "flashcard") flashcardCount += 1;
+    if (selected.length >= limit) break;
+  }
+  return selected;
+}
+
+function reviewSessionSummary(session) {
+  return {
+    total: session.length,
+    critical: session.filter((item) => item.category === "critical").length,
+    important: session.filter((item) => item.category === "important").length,
+    maintenance: session.filter((item) => item.category === "maintenance").length,
+    questions: session.filter((item) => item.kind === "question").length,
+    flashcards: session.filter((item) => item.kind === "flashcard").length,
+  };
+}
+
 function updateReviewSchedule(question, progress) {
   if (!question || !progress?.nextReviewAt) return;
   const row = {
@@ -2936,38 +3375,39 @@ function renderHistory() {
 
 function renderTodayReview() {
   if (!el.todayPlan) return;
-  const due = spacedReviewQuestions(true);
-  const recentErrors = due.filter((question) => getProgress(question.id).grade === "wrong").length;
-  const lowConfidence = due.filter((question) => {
-    const confidence = getProgress(question.id).confidence || 5;
-    return confidence <= 2 || confidence === 6;
-  }).length;
-  const maintenance = due.filter((question) => getProgress(question.id).grade === "correct").length;
-  el.todayDueCount.textContent = due.length;
-  el.todayPriorityCount.textContent = due.filter((question) => priorityScoreFor(question) >= 6).length;
-  if (!due.length) {
-    el.todayReviewLine.textContent = "Nenhuma revisão vencida hoje. Faça uma sessão nova ou uma sessão inteligente para alimentar o cronograma.";
+  if (el.reviewTargetExam) el.reviewTargetExam.value = state.reviewTargetExam;
+  if (el.reviewMode) el.reviewMode.value = state.reviewMode;
+  if (el.reviewTime) el.reviewTime.value = String(state.reviewAvailableMinutes);
+  const session = getTodayReviewSession();
+  const summary = reviewSessionSummary(session);
+  el.todayDueCount.textContent = summary.total;
+  el.todayPriorityCount.textContent = summary.critical;
+  if (el.reviewCriticalCount) el.reviewCriticalCount.textContent = summary.critical;
+  if (el.reviewImportantCount) el.reviewImportantCount.textContent = summary.important;
+  if (el.reviewMaintenanceCount) el.reviewMaintenanceCount.textContent = summary.maintenance;
+  if (el.todayMissionLine) {
+    el.todayMissionLine.textContent = `${summary.total || maxItemsForMinutes(state.reviewAvailableMinutes)} itens de maior impacto para sua aprovação. Banca-alvo: ${state.reviewTargetExam}.`;
+  }
+  if (!session.length) {
+    el.todayReviewLine.textContent = "Ainda não há dados suficientes para montar uma missão inteligente. Responda algumas questões ou flashcards para alimentar o algoritmo.";
     el.todayPlan.innerHTML = "";
     return;
   }
-  el.todayReviewLine.textContent = `Hoje sugerimos ${pluralize(Math.min(due.length, state.sessionSize), "questão", "questões")} para revisar, priorizando erros recentes, baixa confiança e temas frágeis.`;
+  el.todayReviewLine.textContent = `Missão sugerida: ${pluralize(summary.questions, "questão", "questões")} e ${pluralize(summary.flashcards, "flashcard", "flashcards")}, ordenados por impacto esperado.`;
   el.todayPlan.innerHTML = `
-    <div class="summary-grid">
-      <div><strong>${recentErrors}</strong><span>erros recentes</span></div>
-      <div><strong>${lowConfidence}</strong><span>baixa confiança</span></div>
-      <div><strong>${maintenance}</strong><span>manutenção</span></div>
-      <div><strong>${state.sessionSize}</strong><span>meta diária</span></div>
+    <div class="smart-review-card">
+      <strong>Como a missão foi montada</strong>
+      <p>O score cruza frequência em prova, erros pessoais, baixa confiança, atraso de revisão, importância do tema, questões perigosas e desempenho por conceito.</p>
     </div>
     <div class="today-list">
-      ${due
+      ${session
         .slice(0, 12)
-        .map((question) => {
-          const progress = getProgress(question.id);
+        .map((item) => {
           return `
-            <div class="today-item">
-              <strong>${escapeHtml(topicForQuestion(question))}</strong>
-              <span>${escapeHtml(questionSubtheme(question))}</span>
-              <small>prioridade ${priorityScoreFor(question, progress)} · confiança ${progress.confidence || defaultConfidenceForGrade(progress.grade) || "-"}</small>
+            <div class="today-item review-priority-${escapeHtml(item.category)}">
+              <strong>${escapeHtml(reviewItemTitle(item))}</strong>
+              <span>${escapeHtml(item.kind === "flashcard" ? "Flashcard" : "Questão")} · ${escapeHtml(reviewCategoryLabel(item.category))} · score ${item.score}/100</span>
+              <small><strong>Por que revisar:</strong> ${escapeHtml(item.explanation)}</small>
             </div>
           `;
         })
@@ -3556,10 +3996,23 @@ function endExamSet() {
 }
 
 function startSpacedReview() {
-  const due = spacedReviewQuestions(true);
-  if (!due.length) {
-    if (el.todayReviewLine) el.todayReviewLine.textContent = "Nenhuma revisão vencida no momento.";
-    if (el.spacedReviewLine) el.spacedReviewLine.textContent = "Nenhuma revisão vencida no momento.";
+  const session = getTodayReviewSession();
+  const questions = session.filter((item) => item.kind === "question").map((item) => item.question);
+  const flashcards = session.filter((item) => item.kind === "flashcard");
+  if (state.reviewMode === "flashcards" && flashcards.length) {
+    const first = flashcards[0];
+    state.flashcardCategory = first.deck.area || "Psicogeriatria";
+    state.flashcardDeckId = first.deck.id;
+    state.flashcardIndex = 0;
+    state.flashcardRevealed = false;
+    saveFlashcardState();
+    setTab("flashcards");
+    render();
+    return;
+  }
+  if (!questions.length) {
+    if (el.todayReviewLine) el.todayReviewLine.textContent = "Nenhuma questão elegível na missão atual. Tente mudar o tipo de revisão ou iniciar pelos flashcards.";
+    if (el.spacedReviewLine) el.spacedReviewLine.textContent = "Nenhuma questão elegível na missão atual.";
     setTab("today");
     return;
   }
@@ -3573,10 +4026,18 @@ function startSpacedReview() {
   state.dangerousReviewActive = false;
   state.dangerousReviewIds = [];
   state.spacedReviewActive = true;
-  state.spacedReviewIds = due.map((question) => question.id);
+  state.spacedReviewIds = questions.map((question) => question.id);
   state.index = 0;
   setTab("today");
   applyFilters({ preserveCurrent: true });
+}
+
+function startPresetReview({ mode, minutes }) {
+  if (mode) state.reviewMode = mode;
+  if (minutes) state.reviewAvailableMinutes = minutes;
+  saveReviewPreferences();
+  renderTodayReview();
+  startSpacedReview();
 }
 
 function startDangerousReview() {
@@ -4206,6 +4667,25 @@ el.startDangerousReview?.addEventListener("click", startDangerousReview);
 el.endDangerousReview?.addEventListener("click", endDangerousReview);
 el.startTodayReview?.addEventListener("click", startSpacedReview);
 el.endTodayReview?.addEventListener("click", endSpacedReview);
+el.reviewTargetExam?.addEventListener("change", () => {
+  state.reviewTargetExam = el.reviewTargetExam.value;
+  saveReviewPreferences();
+  renderTodayReview();
+});
+el.reviewMode?.addEventListener("change", () => {
+  state.reviewMode = el.reviewMode.value;
+  saveReviewPreferences();
+  renderTodayReview();
+});
+el.reviewTime?.addEventListener("change", () => {
+  state.reviewAvailableMinutes = Number(el.reviewTime.value || 20);
+  saveReviewPreferences();
+  renderTodayReview();
+});
+el.quickReview?.addEventListener("click", () => startPresetReview({ mode: "mixed", minutes: 10 }));
+el.examThemesReview?.addEventListener("click", () => startPresetReview({ mode: "exam-themes", minutes: state.reviewAvailableMinutes }));
+el.repeatedErrorsReview?.addEventListener("click", () => startPresetReview({ mode: "repeated-errors", minutes: state.reviewAvailableMinutes }));
+el.flashcardErrorsReview?.addEventListener("click", () => startPresetReview({ mode: "flashcards", minutes: state.reviewAvailableMinutes }));
 el.sessionSourceGroup.addEventListener("click", (event) => {
   const button = event.target.closest("[data-source]");
   if (!button) return;

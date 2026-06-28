@@ -288,22 +288,81 @@
 
         <div class="tab-panel" id="todayPanel">
           <div class="study-section">
-            <h3>Revisão de hoje</h3>
-            <div class="review-box">
+            <header class="study-planner-head">
+              <span>Revisão inteligente</span>
+              <h3>Missão de hoje</h3>
+              <p id="todayMissionLine">Itens de maior impacto para sua aprovação, combinando erros, confiança, incidência em prova e importância do tema.</p>
+            </header>
+
+            <div class="review-controls">
+              <label>
+                Banca-alvo
+                <select id="reviewTargetExamSelect">
+                  <option value="Todas">Todas</option>
+                  <option value="USP">USP</option>
+                  <option value="UNIFESP">UNIFESP</option>
+                  <option value="UNICAMP">UNICAMP</option>
+                  <option value="SUS-SP">SUS-SP</option>
+                  <option value="ABP">ABP</option>
+                </select>
+              </label>
+              <label>
+                Tipo de revisão
+                <select id="reviewModeSelect">
+                  <option value="mixed">Misto</option>
+                  <option value="high-priority">Alta prioridade</option>
+                  <option value="repeated-errors">Só erros repetidos</option>
+                  <option value="exam-themes">Só temas de prova</option>
+                  <option value="light">Revisão leve</option>
+                  <option value="flashcards">Flashcards</option>
+                  <option value="questions">Questões</option>
+                </select>
+              </label>
+              <label>
+                Tempo disponível
+                <select id="reviewTimeSelect">
+                  <option value="10">10 min</option>
+                  <option value="20">20 min</option>
+                  <option value="40">40 min</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="review-box mission-box">
               <div>
                 <strong id="todayDueCount">0</strong>
-                <span>vencidas</span>
+                <span>itens na missão</span>
               </div>
               <div>
                 <strong id="todayPriorityCount">0</strong>
-                <span>prioritárias</span>
+                <span>críticos</span>
               </div>
             </div>
+
+            <div class="summary-grid review-impact-grid">
+              <div>
+                <strong id="reviewCriticalCount">0</strong>
+                <span>Críticas</span>
+              </div>
+              <div>
+                <strong id="reviewImportantCount">0</strong>
+                <span>Importantes</span>
+              </div>
+              <div>
+                <strong id="reviewMaintenanceCount">0</strong>
+                <span>Manutenção</span>
+              </div>
+            </div>
+
             <div class="topic-toolbar">
-              <button id="startTodayReviewBtn" class="primary-btn">Iniciar revisão de hoje</button>
+              <button id="startTodayReviewBtn" class="primary-btn">Começar revisão inteligente</button>
+              <button id="quickReviewBtn">Revisão rápida 10 min</button>
+              <button id="examThemesReviewBtn">Temas de maior incidência</button>
+              <button id="repeatedErrorsReviewBtn">Meus erros repetidos</button>
+              <button id="flashcardErrorsReviewBtn">Flashcards dos erros</button>
               <button id="endTodayReviewBtn">Sair da revisão</button>
             </div>
-            <p class="panel-line" id="todayReviewLine">As questões vencidas aparecerão aqui quando houver revisão programada.</p>
+            <p class="panel-line" id="todayReviewLine">A fila será montada por impacto esperado, não apenas por atraso.</p>
             <div class="today-plan" id="todayPlan"></div>
             <div class="study-section">
               <h3>Cronograma de revisão</h3>

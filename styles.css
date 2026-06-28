@@ -699,6 +699,75 @@ textarea {
   color: var(--warn);
 }
 
+.review-controls {
+  display: grid;
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.review-controls label {
+  display: grid;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.review-controls select {
+  width: 100%;
+  min-height: 42px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--panel);
+  color: var(--text);
+  padding: 0 12px;
+  font: inherit;
+}
+
+.mission-box div {
+  background: var(--panel);
+  border-radius: 12px;
+}
+
+.mission-box strong {
+  color: var(--primary);
+}
+
+.review-impact-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 12px 0 16px;
+}
+
+.smart-review-card {
+  display: grid;
+  gap: 6px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--panel);
+  margin-bottom: 12px;
+}
+
+.smart-review-card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.today-item.review-priority-critical {
+  border-color: #fecaca;
+  background: #fff7f7;
+}
+
+.today-item.review-priority-important {
+  border-color: #fed7aa;
+  background: #fffbeb;
+}
+
+.today-item.review-priority-maintenance {
+  border-color: #bfdbfe;
+  background: #f8fbff;
+}
+
 .error-chart {
   display: grid;
   gap: 10px;
