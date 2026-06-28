@@ -33,6 +33,8 @@ const state = {
   flashcardDeckId: localStorage.getItem("banco-rmais-flashcard-deck") || "usp-psicogeriatria",
   flashcardIndex: Number(localStorage.getItem("banco-rmais-flashcard-index") || "0"),
   flashcardRevealed: false,
+  flashcardCategory: localStorage.getItem("banco-rmais-flashcard-category") || "all",
+  flashcardPriority: localStorage.getItem("banco-rmais-flashcard-priority") || "all",
   flashcardProgress: JSON.parse(localStorage.getItem("banco-rmais-flashcard-progress") || "{}"),
   selectedTopics: JSON.parse(localStorage.getItem("banco-rmais-selected-topics") || "null"),
   selectedSubthemes: JSON.parse(localStorage.getItem("banco-rmais-selected-subthemes") || "[]"),
@@ -212,6 +214,7 @@ const el = {
   sidebarToggle: document.querySelector("#sidebarToggle"),
   themeToggle: document.querySelector("#themeToggleBtn"),
   startPanel: document.querySelector("#startPanel"),
+  flashcardStudyPanel: document.querySelector("#flashcardStudyPanel"),
   goSession: document.querySelector("#goSessionBtn"),
   goExams: document.querySelector("#goExamsBtn"),
   authPanel: document.querySelector("#authPanel"),
@@ -388,6 +391,8 @@ const el = {
   confidenceGroup: document.querySelector("#confidenceGroup"),
   confidencePanel: document.querySelector("#confidencePanel"),
   flashcardDeckList: document.querySelector("#flashcardDeckList"),
+  flashcardCategorySelect: document.querySelector("#flashcardCategorySelect"),
+  flashcardPriorityGroup: document.querySelector("#flashcardPriorityGroup"),
   flashcardMeta: document.querySelector("#flashcardMeta"),
   flashcardFront: document.querySelector("#flashcardFront"),
   flashcardBack: document.querySelector("#flashcardBack"),
@@ -438,6 +443,8 @@ function savePositions() {
 function saveFlashcardState() {
   localStorage.setItem("banco-rmais-flashcard-deck", state.flashcardDeckId);
   localStorage.setItem("banco-rmais-flashcard-index", String(state.flashcardIndex));
+  localStorage.setItem("banco-rmais-flashcard-category", state.flashcardCategory);
+  localStorage.setItem("banco-rmais-flashcard-priority", state.flashcardPriority);
   localStorage.setItem("banco-rmais-flashcard-progress", JSON.stringify(state.flashcardProgress));
 }
 
@@ -2147,8 +2154,19 @@ function renderPendingSummary() {
 }
 
 function currentFlashcardDeck() {
-  const decks = state.flashcards || [];
+  const decks = filteredFlashcardDecks();
   return decks.find((deck) => deck.id === state.flashcardDeckId) || decks[0] || null;
+}
+
+function filteredFlashcardDecks() {
+  return (state.flashcards || []).filter((deck) => {
+    const categoryMatch = state.flashcardCategory === "all" || deck.area === state.flashcardCategory;
+    const priorityMatch =
+      state.flashcardPriority === "all" ||
+      (deck.priorities || []).includes(state.flashcardPriority) ||
+      (deck.cards || []).some((card) => (card.priorities || []).includes(state.flashcardPriority));
+    return categoryMatch && priorityMatch;
+  });
 }
 
 function currentFlashcard() {
@@ -2178,17 +2196,30 @@ function flashcardNextReviewLabel(card) {
 
 function renderFlashcards() {
   if (!el.flashcardDeckList || !el.flashcardFront) return;
-  const decks = state.flashcards || [];
+  if (el.flashcardCategorySelect) el.flashcardCategorySelect.value = state.flashcardCategory;
+  el.flashcardPriorityGroup?.querySelectorAll("[data-flashcard-priority]").forEach((button) => {
+    button.classList.toggle("active", button.dataset.flashcardPriority === state.flashcardPriority);
+  });
+  const decks = filteredFlashcardDecks();
   if (!decks.length) {
     el.flashcardDeckList.innerHTML = `<p class="panel-line">Nenhum deck cadastrado.</p>`;
-    el.flashcardFront.textContent = "Nenhum flashcard cadastrado ainda.";
+    el.flashcardFront.textContent = "Nenhum flashcard encontrado para esse filtro.";
+    el.flashcardMeta.textContent = "Ajuste categoria ou prioridade.";
     el.flashcardBack.hidden = true;
     el.flashcardGrade.hidden = true;
+    if (el.flashcardStudyPanel) el.flashcardStudyPanel.hidden = state.activeTab !== "flashcards";
     return;
   }
 
   const deck = currentFlashcardDeck();
+  if (deck && state.flashcardDeckId !== deck.id) {
+    state.flashcardDeckId = deck.id;
+    state.flashcardIndex = 0;
+    state.flashcardRevealed = false;
+    saveFlashcardState();
+  }
   const card = currentFlashcard();
+  if (el.flashcardStudyPanel) el.flashcardStudyPanel.hidden = state.activeTab !== "flashcards";
   el.flashcardDeckList.innerHTML = decks
     .map((item) => {
       const active = item.id === deck.id ? " active" : "";
@@ -2196,7 +2227,7 @@ function renderFlashcards() {
       return `
         <button class="flashcard-deck-row${active}" data-flashcard-deck="${escapeHtml(item.id)}">
           <strong>${escapeHtml(item.title)}</strong>
-          <span>${(item.cards || []).length} cartões · ${dueCount} para revisar</span>
+          <span>${escapeHtml(item.area)} · ${(item.cards || []).length} cartões · ${dueCount} para revisar</span>
         </button>
       `;
     })
@@ -2208,6 +2239,7 @@ function renderFlashcards() {
     <span>${escapeHtml(deck.title)}</span>
     <span>${state.flashcardIndex + 1}/${deck.cards.length}</span>
     <span>${escapeHtml(flashcardNextReviewLabel(card))}</span>
+    <span>${escapeHtml((card.priorities || deck.priorities || []).map(priorityLabel).join(" · "))}</span>
   `;
   el.flashcardFront.textContent = card.front;
   el.flashcardBack.innerHTML = `
@@ -2219,6 +2251,20 @@ function renderFlashcards() {
   el.flashcardGrade.hidden = !state.flashcardRevealed;
   el.showFlashcardAnswer.textContent = state.flashcardRevealed ? "Resposta exibida" : "Mostrar resposta";
   el.showFlashcardAnswer.disabled = state.flashcardRevealed;
+  if (state.activeTab === "flashcards") {
+    el.source.textContent = "Flashcards";
+    el.title.textContent = deck.title;
+  }
+}
+
+function priorityLabel(priority) {
+  const labels = {
+    "high-frequency": "alta frequencia",
+    "weak-performance": "baixo desempenho",
+    "repeated-error": "erro repetido",
+    dangerous: "questao perigosa",
+  };
+  return labels[priority] || priority;
 }
 
 function moveFlashcard(delta) {
@@ -3119,14 +3165,39 @@ function render() {
   renderAdminAccess();
   renderStats();
   renderDashboard();
-  const showStartPanel = !hasActiveQuestionFlow() && !state.filtered.length;
+  const flashcardMode = state.activeTab === "flashcards";
+  const showStartPanel = !flashcardMode && !hasActiveQuestionFlow() && !state.filtered.length;
   if (el.startPanel) el.startPanel.hidden = !showStartPanel;
+  if (el.flashcardStudyPanel) el.flashcardStudyPanel.hidden = !flashcardMode;
   document.body.classList.toggle("no-question-active", showStartPanel);
+  document.body.classList.toggle("flashcard-active", flashcardMode);
+  if (flashcardMode) {
+    renderFlashcards();
+    renderQuestionDiscussion(null);
+    return;
+  }
   renderQuestionMap();
   const baseQuestion = currentQuestion();
   const question = effectiveQuestion(baseQuestion);
 
   if (!question) {
+    if (flashcardMode) {
+      el.tags.innerHTML = "";
+      el.tags.classList.remove("visible");
+      el.text.textContent = "";
+      el.options.innerHTML = "";
+      el.answer.textContent = "";
+      el.answer.classList.remove("visible");
+      el.pendingReviewPanel.hidden = true;
+      el.position.textContent = "0 / 0";
+      el.manualGradePanel.hidden = true;
+      el.successTypePanel.hidden = true;
+      el.confidencePanel.hidden = true;
+      el.errorTypePanel.hidden = true;
+      el.note.value = "";
+      renderQuestionDiscussion(null);
+      return;
+    }
     el.source.textContent = showStartPanel ? "Pronto para estudar" : "Nenhuma questão encontrada";
     el.title.textContent = showStartPanel ? "Banco de questões" : "Ajuste os filtros";
     el.tags.innerHTML = "";
@@ -3270,7 +3341,7 @@ function setTab(tabName) {
     panel.classList.toggle("active", name === tabName);
   });
   if (tabName === "notes") renderSavedNotesPanel();
-  if (tabName === "flashcards") renderFlashcards();
+  if (tabName === "flashcards" || document.body.classList.contains("flashcard-active")) render();
 }
 
 function setSidebarCollapsed(collapsed) {
@@ -4065,6 +4136,22 @@ el.flashcardDeckList?.addEventListener("click", (event) => {
   const button = event.target.closest("[data-flashcard-deck]");
   if (!button) return;
   state.flashcardDeckId = button.dataset.flashcardDeck;
+  state.flashcardIndex = 0;
+  state.flashcardRevealed = false;
+  saveFlashcardState();
+  renderFlashcards();
+});
+el.flashcardCategorySelect?.addEventListener("change", () => {
+  state.flashcardCategory = el.flashcardCategorySelect.value;
+  state.flashcardIndex = 0;
+  state.flashcardRevealed = false;
+  saveFlashcardState();
+  renderFlashcards();
+});
+el.flashcardPriorityGroup?.addEventListener("click", (event) => {
+  const button = event.target.closest("[data-flashcard-priority]");
+  if (!button) return;
+  state.flashcardPriority = button.dataset.flashcardPriority;
   state.flashcardIndex = 0;
   state.flashcardRevealed = false;
   saveFlashcardState();
