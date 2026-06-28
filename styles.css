@@ -2684,6 +2684,28 @@ body.theme-dark .exam-study-card {
   gap: 7px;
 }
 
+.flashcard-back .flashcard-extras {
+  display: grid;
+  gap: 8px;
+}
+
+.flashcard-extras section {
+  display: grid;
+  gap: 3px;
+  padding: 10px 0;
+  border-top: 1px solid var(--line);
+}
+
+.flashcard-extras strong {
+  color: var(--ink);
+  font-size: 13px;
+}
+
+.flashcard-extras span {
+  color: var(--muted);
+  line-height: 1.55;
+}
+
 .flashcard-back small {
   color: var(--muted);
 }
