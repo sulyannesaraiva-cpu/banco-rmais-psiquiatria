@@ -337,3 +337,7 @@ window.BANCO_RMAIS_FLASHCARDS = {
     },
   ],
 };
+
+window.BANCO_RMAIS_FLASHCARDS.decks = window.BANCO_RMAIS_FLASHCARDS.decks.filter(
+  (deck) => deck.id !== "usp-psicogeriatria",
+);

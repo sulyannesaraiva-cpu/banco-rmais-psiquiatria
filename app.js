@@ -85,16 +85,16 @@ const state = {
 
 const MIN_SUBTHEME_COUNT = 10;
 localStorage.removeItem("banco-rmais-discarded-options");
-const PSYCHOPHARM_SESSION_TOPIC = "Psicofarmacologia e terapÃªutica psiquiÃ¡trica";
+const PSYCHOPHARM_SESSION_TOPIC = "Psicofarmacologia e terapêutica psiquiátrica";
 
 const SESSION_TOPIC_GROUPS = [
   {
-    label: "DemÃªncias e transtornos neurocognitivos",
-    sources: ["DemÃªncias"],
+    label: "Demências e transtornos neurocognitivos",
+    sources: ["Demências"],
   },
   {
-    label: "Delirium, consciÃªncia e neuropsiquiatria clÃ­nica",
-    sources: ["Coma e alteraÃ§Ãµes"],
+    label: "Delirium, consciência e neuropsiquiatria clínica",
+    sources: ["Coma e alterações"],
   },
   {
     label: "Ansiedade, TOC, trauma e somatoformes",
@@ -109,36 +109,36 @@ const SESSION_TOPIC_GROUPS = [
 
 const SUBTHEME_RULES = [
   {
-    label: "DepressÃ£o e suicÃ­dio",
+    label: "Depressão e suicídio",
     keywords: ["depress", "distimia", "luto", "suicid", "autoles", "eletroconvulsoterapia", "ect"],
   },
   {
     label: "Transtorno bipolar e mania",
-    keywords: ["bipolar", "mania", "maniaco", "manÃ­aco", "hipomania", "ciclotim"],
+    keywords: ["bipolar", "mania", "maniaco", "maníaco", "hipomania", "ciclotim"],
   },
   {
     label: "Antidepressivos",
-    keywords: ["antidepress", "ssri", "isrs", "fluoxetina", "sertralina", "paroxetina", "venlafaxina", "duloxetina", "bupropiona", "mirtazapina", "triciclico", "tricÃ­clico"],
+    keywords: ["antidepress", "ssri", "isrs", "fluoxetina", "sertralina", "paroxetina", "venlafaxina", "duloxetina", "bupropiona", "mirtazapina", "triciclico", "tricíclico"],
   },
   {
-    label: "AntipsicÃ³ticos",
-    keywords: ["antipsicot", "clozapina", "olanzapina", "quetiapina", "risperidona", "haloperidol", "aripiprazol", "sÃ­ndrome neurolÃ©ptica", "sindrome neuroleptica"],
+    label: "Antipsicóticos",
+    keywords: ["antipsicot", "clozapina", "olanzapina", "quetiapina", "risperidona", "haloperidol", "aripiprazol", "síndrome neuroléptica", "sindrome neuroleptica"],
   },
   {
     label: "Estabilizadores do humor",
-    keywords: ["litio", "lÃ­tio", "valproato", "carbamazepina", "lamotrigina", "estabilizador"],
+    keywords: ["litio", "lítio", "valproato", "carbamazepina", "lamotrigina", "estabilizador"],
   },
   {
-    label: "BenzodiazepÃ­nicos e sedativos",
+    label: "Benzodiazepínicos e sedativos",
     keywords: ["benzodiazep", "diazepam", "clonazepam", "alprazolam", "zolpidem", "sedativo"],
   },
   {
-    label: "Ãlcool e abstinÃªncia",
-    keywords: ["alcool", "Ã¡lcool", "abstinencia alcool", "abstinÃªncia alcool", "delirium tremens", "dependencia alcool", "dependÃªncia alcool"],
+    label: "Álcool e abstinência",
+    keywords: ["alcool", "álcool", "abstinencia alcool", "abstinência alcool", "delirium tremens", "dependencia alcool", "dependência alcool"],
   },
   {
-    label: "Drogas e intoxicaÃ§Ãµes",
-    keywords: ["cocaina", "cocaÃ­na", "crack", "cannabis", "maconha", "opioide", "anfetamina", "intoxic", "dependencia quimica", "dependÃªncia quÃ­mica", "reduÃ§Ã£o de danos", "reducao de danos"],
+    label: "Drogas e intoxicações",
+    keywords: ["cocaina", "cocaína", "crack", "cannabis", "maconha", "opioide", "anfetamina", "intoxic", "dependencia quimica", "dependência química", "redução de danos", "reducao de danos"],
   },
   {
     label: "TEA e neurodesenvolvimento",
@@ -146,46 +146,46 @@ const SUBTHEME_RULES = [
   },
   {
     label: "TDAH e comportamento disruptivo",
-    keywords: ["tdah", "hiperatividade", "dÃ©ficit de atenÃ§Ã£o", "deficit de atencao", "oposiÃ§Ã£o", "oposicao", "desafio", "conduta", "bullying"],
+    keywords: ["tdah", "hiperatividade", "déficit de atenção", "deficit de atencao", "oposição", "oposicao", "desafio", "conduta", "bullying"],
   },
   {
-    label: "DemÃªncias e rastreio cognitivo",
-    keywords: ["demencia", "demÃªncia", "alzheimer", "minimental", "mini mental", "comprometimento cognitivo", "neurocognitivo", "rastreio cognitivo"],
+    label: "Demências e rastreio cognitivo",
+    keywords: ["demencia", "demência", "alzheimer", "minimental", "mini mental", "comprometimento cognitivo", "neurocognitivo", "rastreio cognitivo"],
   },
   {
-    label: "Delirium e alteraÃ§Ãµes da consciÃªncia",
-    keywords: ["delirium", "coma", "consciÃªncia", "consciencia", "rebaixamento", "estado confusional", "orientaÃ§Ã£o", "orientacao"],
+    label: "Delirium e alterações da consciência",
+    keywords: ["delirium", "coma", "consciência", "consciencia", "rebaixamento", "estado confusional", "orientação", "orientacao"],
   },
   {
     label: "Psicopatologia e exame mental",
-    keywords: ["exame do estado mental", "psicopatologia", "delirio", "delÃ­rio", "alucin", "juÃ­zo", "juizo", "insight", "sensopercep", "pensamento"],
+    keywords: ["exame do estado mental", "psicopatologia", "delirio", "delírio", "alucin", "juízo", "juizo", "insight", "sensopercep", "pensamento"],
   },
   {
     label: "Ansiedade, TOC e trauma",
-    keywords: ["ansiedade", "panico", "pÃ¢nico", "fobia", "toc", "obsess", "compuls", "trauma", "tept", "estresse pÃ³s", "estresse pos"],
+    keywords: ["ansiedade", "panico", "pânico", "fobia", "toc", "obsess", "compuls", "trauma", "tept", "estresse pós", "estresse pos"],
   },
   {
     label: "Sono",
-    keywords: ["sono", "insonia", "insÃ´nia", "apneia", "narcolepsia", "terror noturno", "pesadelo", "sonolÃªncia", "sonolencia"],
+    keywords: ["sono", "insonia", "insônia", "apneia", "narcolepsia", "terror noturno", "pesadelo", "sonolência", "sonolencia"],
   },
   {
     label: "Alimentares",
-    keywords: ["anorexia", "bulimia", "compulsÃ£o alimentar", "compulsao alimentar", "transtorno alimentar", "imagem corporal"],
+    keywords: ["anorexia", "bulimia", "compulsão alimentar", "compulsao alimentar", "transtorno alimentar", "imagem corporal"],
   },
   {
     label: "Personalidade",
     keywords: ["personalidade", "borderline", "antissocial", "narcis", "histri", "esquiva", "dependente"],
   },
   {
-    label: "Forense, Ã©tica e legislaÃ§Ã£o",
-    keywords: ["forense", "Ã©tica", "etica", "lei", "legislaÃ§Ã£o", "legislacao", "inimput", "perÃ­cia", "pericia", "capacidade civil", "interdiÃ§Ã£o", "interdicao", "sigilo", "internaÃ§Ã£o involuntÃ¡ria", "internacao involuntaria"],
+    label: "Forense, ética e legislação",
+    keywords: ["forense", "ética", "etica", "lei", "legislação", "legislacao", "inimput", "perícia", "pericia", "capacidade civil", "interdição", "interdicao", "sigilo", "internação involuntária", "internacao involuntaria"],
   },
   {
     label: "Psicoterapia",
-    keywords: ["psicoterapia", "terapia cognitiva", "tcc", "psican", "transferÃªncia", "transferencia", "contratransfer", "terapia familiar", "terapia de grupo"],
+    keywords: ["psicoterapia", "terapia cognitiva", "tcc", "psican", "transferência", "transferencia", "contratransfer", "terapia familiar", "terapia de grupo"],
   },
   {
-    label: "Psicogeriatria e saÃºde do idoso",
+    label: "Psicogeriatria e saúde do idoso",
     keywords: ["idoso", "geriatr", "fragilidade", "quedas", "polifarm", "envelhecimento", "cuidador", "funcionalidade"],
   },
 ];
@@ -631,14 +631,14 @@ async function saveGlobalCorrection(questionId, correction) {
     { onConflict: "question_id" },
   );
   if (error) {
-    setSyncStatus(`Erro ao publicar correÃ§Ã£o: ${error.message}`);
+    setSyncStatus(`Erro ao publicar correção: ${error.message}`);
     return false;
   }
   state.globalCorrections[questionId] = normalized;
   delete state.corrections[questionId];
   saveCorrections();
   clearClassificationCache();
-  setSyncStatus("CorreÃ§Ã£o publicada para todos os usuÃ¡rios.");
+  setSyncStatus("Correção publicada para todos os usuários.");
   return true;
 }
 
@@ -793,17 +793,17 @@ async function resetPassword() {
 
 function setDiscussionStaticText() {
   const title = el.commentsPanel?.querySelector("h3");
-  if (title) title.textContent = "ComentÃ¡rios da questÃ£o";
-  if (el.commentInput) el.commentInput.placeholder = "Compartilhe uma explicaÃ§Ã£o, dÃºvida ou observaÃ§Ã£o sobre esta questÃ£o...";
-  if (el.sendComment) el.sendComment.textContent = "Enviar comentÃ¡rio";
+  if (title) title.textContent = "Comentários da questão";
+  if (el.commentInput) el.commentInput.placeholder = "Compartilhe uma explicação, dúvida ou observação sobre esta questão...";
+  if (el.sendComment) el.sendComment.textContent = "Enviar comentário";
   const privateLabel = el.note?.closest("label")?.querySelector("span");
-  if (privateLabel) privateLabel.textContent = "AnotaÃ§Ã£o privada";
-  if (el.note) el.note.placeholder = "Resumo, pegadinha, mnemÃ´nico ou conduta... Apenas vocÃª visualiza.";
+  if (privateLabel) privateLabel.textContent = "Anotação privada";
+  if (el.note) el.note.placeholder = "Resumo, pegadinha, mnemônico ou conduta... Apenas você visualiza.";
 }
 
 function authorNameForUser() {
   const email = state.authUser?.email || "";
-  return email ? email.split("@")[0] : "UsuÃ¡rio";
+  return email ? email.split("@")[0] : "Usuário";
 }
 
 function formatCommentDate(value) {
@@ -829,18 +829,18 @@ function renderQuestionDiscussion(question, progress = {}) {
   if (el.commentsPanel) el.commentsPanel.hidden = false;
   if (el.commentForm) el.commentForm.hidden = !state.authUser;
   if (!state.authUser) {
-    if (el.commentsStatus) el.commentsStatus.textContent = "Entre na conta para ver e enviar comentÃ¡rios.";
-    if (el.commentsList) el.commentsList.innerHTML = `<p class="comment-empty">ComentÃ¡rios colaborativos ficam disponÃ­veis para usuÃ¡rios logados.</p>`;
+    if (el.commentsStatus) el.commentsStatus.textContent = "Entre na conta para ver e enviar comentários.";
+    if (el.commentsList) el.commentsList.innerHTML = `<p class="comment-empty">Comentários colaborativos ficam disponíveis para usuários logados.</p>`;
     if (el.note) el.note.value = progress.note || "";
-    if (el.privateNoteStatus) el.privateNoteStatus.textContent = "AnotaÃ§Ã£o privada salva apenas neste navegador atÃ© entrar na conta.";
+    if (el.privateNoteStatus) el.privateNoteStatus.textContent = "Anotação privada salva apenas neste navegador até entrar na conta.";
     return;
   }
 
   const comments = state.commentsByQuestion[questionId] || [];
   if (el.commentsStatus) {
     el.commentsStatus.textContent = state.commentsLoaded[questionId]
-      ? `${pluralize(comments.length, "comentÃ¡rio pÃºblico", "comentÃ¡rios pÃºblicos")}.`
-      : "Carregando comentÃ¡rios...";
+      ? `${pluralize(comments.length, "comentário público", "comentários públicos")}.`
+      : "Carregando comentários...";
   }
   if (el.commentsList) {
     el.commentsList.innerHTML = comments.length
@@ -848,7 +848,7 @@ function renderQuestionDiscussion(question, progress = {}) {
           .map((comment) => {
             const canDelete = state.isAdmin || comment.user_id === state.authUser?.id;
             const canEdit = canDelete;
-            const adminLabel = state.isAdmin && comment.user_id !== state.authUser?.id ? "ModeraÃ§Ã£o admin" : "Apagar";
+            const adminLabel = state.isAdmin && comment.user_id !== state.authUser?.id ? "Moderação admin" : "Apagar";
             const isEditing = state.editingCommentId === comment.id;
             const wasEdited =
               comment.updated_at &&
@@ -857,8 +857,8 @@ function renderQuestionDiscussion(question, progress = {}) {
             return `
               <article class="comment-item" data-comment-id="${escapeHtml(comment.id)}">
                 <div class="comment-meta">
-                  <strong>${escapeHtml(comment.author_name || "UsuÃ¡rio")}</strong>
-                  <span>${escapeHtml(formatCommentDate(comment.created_at))}${wasEdited ? " Â· editado" : ""}</span>
+                  <strong>${escapeHtml(comment.author_name || "Usuário")}</strong>
+                  <span>${escapeHtml(formatCommentDate(comment.created_at))}${wasEdited ? " · editado" : ""}</span>
                 </div>
                 ${
                   isEditing
@@ -886,15 +886,15 @@ function renderQuestionDiscussion(question, progress = {}) {
             `;
           })
           .join("")
-      : `<p class="comment-empty">Nenhum comentÃ¡rio ainda. Seja a primeira pessoa a comentar esta questÃ£o.</p>`;
+      : `<p class="comment-empty">Nenhum comentário ainda. Seja a primeira pessoa a comentar esta questão.</p>`;
   }
 
   if (Object.prototype.hasOwnProperty.call(state.privateNotes, questionId)) {
     if (el.note && document.activeElement !== el.note) el.note.value = state.privateNotes[questionId] || "";
-    if (el.privateNoteStatus) el.privateNoteStatus.textContent = "AnotaÃ§Ã£o privada sincronizada na sua conta.";
+    if (el.privateNoteStatus) el.privateNoteStatus.textContent = "Anotação privada sincronizada na sua conta.";
   } else {
     if (el.note && document.activeElement !== el.note) el.note.value = progress.note || "";
-    if (el.privateNoteStatus) el.privateNoteStatus.textContent = "Carregando anotaÃ§Ã£o privada...";
+    if (el.privateNoteStatus) el.privateNoteStatus.textContent = "Carregando anotação privada...";
   }
 
   if (!state.commentsLoaded[questionId]) loadCommentsForQuestion(questionId);
@@ -915,7 +915,7 @@ async function loadCommentsForQuestion(questionId) {
   if (error) {
     state.commentsLoading[questionId] = false;
     if (currentQuestion()?.id === questionId && el.commentsStatus) {
-      el.commentsStatus.textContent = `NÃ£o foi possÃ­vel carregar comentÃ¡rios: ${error.message}`;
+      el.commentsStatus.textContent = `Não foi possível carregar comentários: ${error.message}`;
     }
     return;
   }
@@ -939,7 +939,7 @@ async function sendCurrentComment() {
   });
   el.sendComment.disabled = false;
   if (error) {
-    if (el.commentsStatus) el.commentsStatus.textContent = `Erro ao enviar comentÃ¡rio: ${error.message}`;
+    if (el.commentsStatus) el.commentsStatus.textContent = `Erro ao enviar comentário: ${error.message}`;
     return;
   }
   el.commentInput.value = "";
@@ -951,11 +951,11 @@ async function deleteComment(commentId) {
   const question = currentQuestion();
   const questionId = question?.id;
   if (!state.supabase || !state.authUser || !questionId || !commentId) return;
-  const shouldDelete = window.confirm(state.isAdmin ? "Apagar este comentÃ¡rio?" : "Apagar seu comentÃ¡rio?");
+  const shouldDelete = window.confirm(state.isAdmin ? "Apagar este comentário?" : "Apagar seu comentário?");
   if (!shouldDelete) return;
   const { error } = await state.supabase.from("question_comments").delete().eq("id", commentId);
   if (error) {
-    if (el.commentsStatus) el.commentsStatus.textContent = `Erro ao apagar comentÃ¡rio: ${error.message}`;
+    if (el.commentsStatus) el.commentsStatus.textContent = `Erro ao apagar comentário: ${error.message}`;
     return;
   }
   state.commentsByQuestion[questionId] = (state.commentsByQuestion[questionId] || []).filter((comment) => comment.id !== commentId);
@@ -982,7 +982,7 @@ async function saveCommentEdit(commentId) {
   const input = el.commentsList?.querySelector(`[data-edit-comment-input="${CSS.escape(commentId)}"]`);
   const content = input?.value.trim();
   if (!content) {
-    if (el.commentsStatus) el.commentsStatus.textContent = "O comentÃ¡rio nÃ£o pode ficar vazio.";
+    if (el.commentsStatus) el.commentsStatus.textContent = "O comentário não pode ficar vazio.";
     return;
   }
   const { error } = await state.supabase
@@ -990,7 +990,7 @@ async function saveCommentEdit(commentId) {
     .update({ content, updated_at: new Date().toISOString() })
     .eq("id", commentId);
   if (error) {
-    if (el.commentsStatus) el.commentsStatus.textContent = `Erro ao editar comentÃ¡rio: ${error.message}`;
+    if (el.commentsStatus) el.commentsStatus.textContent = `Erro ao editar comentário: ${error.message}`;
     return;
   }
   state.editingCommentId = null;
@@ -1012,7 +1012,7 @@ async function loadPrivateNoteForQuestion(questionId, fallback = "") {
     state.privateNotesLoading[questionId] = false;
     state.privateNotes[questionId] = fallback || "";
     if (currentQuestion()?.id === questionId && el.privateNoteStatus) {
-      el.privateNoteStatus.textContent = `NÃ£o foi possÃ­vel carregar anotaÃ§Ã£o privada: ${error.message}`;
+      el.privateNoteStatus.textContent = `Não foi possível carregar anotação privada: ${error.message}`;
     }
     return;
   }
@@ -1032,8 +1032,8 @@ function markPrivateNoteDirty() {
   state.savedNotesLoaded = false;
   if (el.privateNoteStatus) {
     el.privateNoteStatus.textContent = state.authUser
-      ? "AlteraÃ§Ãµes ainda nÃ£o salvas na conta."
-      : "AnotaÃ§Ã£o salva apenas neste navegador. Entre na conta para sincronizar.";
+      ? "Alterações ainda não salvas na conta."
+      : "Anotação salva apenas neste navegador. Entre na conta para sincronizar.";
   }
 }
 
@@ -1047,10 +1047,10 @@ function saveCurrentPrivateNote() {
   state.privateNotes[question.id] = content;
   state.savedNotesLoaded = false;
   if (!state.supabase || !state.authUser) {
-    if (el.privateNoteStatus) el.privateNoteStatus.textContent = "AnotaÃ§Ã£o privada salva neste navegador.";
+    if (el.privateNoteStatus) el.privateNoteStatus.textContent = "Anotação privada salva neste navegador.";
     return;
   }
-  if (el.privateNoteStatus) el.privateNoteStatus.textContent = "Salvando anotaÃ§Ã£o privada...";
+  if (el.privateNoteStatus) el.privateNoteStatus.textContent = "Salvando anotação privada...";
   clearTimeout(state.privateNoteSyncTimer);
   syncPrivateNoteToCloud(question.id, content);
 }
@@ -1068,8 +1068,8 @@ async function syncPrivateNoteToCloud(questionId, content) {
   );
   if (currentQuestion()?.id === questionId && el.privateNoteStatus) {
     el.privateNoteStatus.textContent = error
-      ? `Erro ao salvar anotaÃ§Ã£o privada: ${error.message}`
-      : "AnotaÃ§Ã£o privada sincronizada na sua conta.";
+      ? `Erro ao salvar anotação privada: ${error.message}`
+      : "Anotação privada sincronizada na sua conta.";
   }
   if (!error) state.savedNotesLoaded = false;
 }
@@ -1332,7 +1332,7 @@ function needsBankReview(question) {
 
 function readinessIssues(question) {
   const issues = [];
-  if (question?.maintenanceFlagged) issues.push("sinalizada para manutenÃ§Ã£o");
+  if (question?.maintenanceFlagged) issues.push("sinalizada para manutenção");
   if (question?.annulled) return issues;
   if (!question?.text?.trim()) issues.push("enunciado vazio");
   if (!question?.options?.length || question.options.length < 2) issues.push("alternativas nao separadas");
@@ -2161,12 +2161,31 @@ function currentFlashcardDeck() {
 function filteredFlashcardDecks() {
   return (state.flashcards || []).filter((deck) => {
     const categoryMatch = state.flashcardCategory === "all" || deck.area === state.flashcardCategory;
+    const requestedImportance = Number(state.flashcardPriority.replace("importance-", ""));
     const priorityMatch =
       state.flashcardPriority === "all" ||
-      (deck.priorities || []).includes(state.flashcardPriority) ||
-      (deck.cards || []).some((card) => (card.priorities || []).includes(state.flashcardPriority));
+      flashcardImportanceForDeck(deck) === requestedImportance ||
+      (deck.cards || []).some((card) => flashcardImportanceForCard(card) === requestedImportance);
     return categoryMatch && priorityMatch;
   });
+}
+
+function flashcardImportanceForCard(card) {
+  if (Number.isFinite(card?.priority)) return Math.max(1, Math.min(5, Number(card.priority)));
+  const uspFrequency = Number(card?.examFrequency?.USP || 0);
+  if (uspFrequency >= 5) return 5;
+  if (uspFrequency === 4) return 4;
+  if ((card?.priorities || []).includes("high-frequency")) return 4;
+  if ((card?.priorities || []).includes("dangerous")) return 4;
+  if ((card?.priorities || []).includes("repeated-error")) return 3;
+  if ((card?.priorities || []).includes("weak-performance")) return 3;
+  return 2;
+}
+
+function flashcardImportanceForDeck(deck) {
+  const values = (deck.cards || []).map(flashcardImportanceForCard);
+  if (Number.isFinite(deck?.importance)) values.push(Number(deck.importance));
+  return values.length ? Math.max(...values) : 2;
 }
 
 function currentFlashcard() {
@@ -2191,11 +2210,15 @@ function flashcardNextReviewLabel(card) {
   if (!progress?.nextReviewAt) return "novo";
   const due = new Date(progress.nextReviewAt).getTime() <= Date.now();
   if (due) return "vencido";
-  return `revisÃ£o em ${new Date(progress.nextReviewAt).toLocaleDateString("pt-BR", { day: "2-digit", month: "2-digit" })}`;
+  return `revisão em ${new Date(progress.nextReviewAt).toLocaleDateString("pt-BR", { day: "2-digit", month: "2-digit" })}`;
 }
 
 function renderFlashcards() {
   if (!el.flashcardDeckList || !el.flashcardFront) return;
+  if (state.flashcardPriority !== "all" && !/^importance-[1-5]$/.test(state.flashcardPriority)) {
+    state.flashcardPriority = "all";
+    saveFlashcardState();
+  }
   if (el.flashcardCategorySelect) el.flashcardCategorySelect.value = state.flashcardCategory;
   el.flashcardPriorityGroup?.querySelectorAll("[data-flashcard-priority]").forEach((button) => {
     button.classList.toggle("active", button.dataset.flashcardPriority === state.flashcardPriority);
@@ -2239,7 +2262,7 @@ function renderFlashcards() {
     <span>${escapeHtml(deck.title)}</span>
     <span>${state.flashcardIndex + 1}/${deck.cards.length}</span>
     <span>${escapeHtml(flashcardNextReviewLabel(card))}</span>
-    <span>${escapeHtml((card.priorities || deck.priorities || []).map(priorityLabel).join(" \u00b7 "))}</span>
+    <span>${escapeHtml(priorityLabel(`importance-${flashcardImportanceForCard(card)}`))}</span>
   `;
   el.flashcardFront.textContent = card.front;
   el.flashcardBack.innerHTML = `
@@ -2268,10 +2291,11 @@ function renderFlashcards() {
 
 function priorityLabel(priority) {
   const labels = {
-    "high-frequency": "alta frequ\u00eancia",
-    "weak-performance": "baixo desempenho",
-    "repeated-error": "erro repetido",
-    dangerous: "quest\u00e3o perigosa",
+    "importance-5": "Importância 5 · cai quase toda prova",
+    "importance-4": "Importância 4 · muito frequente",
+    "importance-3": "Importância 3 · frequente",
+    "importance-2": "Importância 2 · ocasional",
+    "importance-1": "Importância 1 · raro",
   };
   return labels[priority] || priority;
 }
@@ -2341,19 +2365,19 @@ function renderQuickDashboard() {
           ({ topic, perf }) => `
             <div class="focus-item">
               <strong>${escapeHtml(topic)}</strong>
-              <span>${Math.round(perf.accuracy * 100)}% de acerto Â· ${perf.answered} feitas</span>
+              <span>${Math.round(perf.accuracy * 100)}% de acerto · ${perf.answered} feitas</span>
             </div>
           `,
         )
         .join("")
-    : `<p class="panel-line">Responda mais questÃµes para mapear temas frÃ¡geis.</p>`;
+    : `<p class="panel-line">Responda mais questões para mapear temas frágeis.</p>`;
 
   if (due.length) {
-    el.dashboardRecommendationLine.textContent = `Comece pela RevisÃ£o: hÃ¡ ${pluralize(due.length, "questÃ£o vencida", "questÃµes vencidas")} hoje.`;
+    el.dashboardRecommendationLine.textContent = `Comece pela Revisão: há ${pluralize(due.length, "questão vencida", "questões vencidas")} hoje.`;
   } else if (weakTopics.length) {
-    el.dashboardRecommendationLine.textContent = `FaÃ§a uma sessÃ£o focada em ${weakTopics[0].topic}.`;
+    el.dashboardRecommendationLine.textContent = `Faça uma sessão focada em ${weakTopics[0].topic}.`;
   } else {
-    el.dashboardRecommendationLine.textContent = "FaÃ§a uma sessÃ£o personalizada para gerar novas estatÃ­sticas de estudo.";
+    el.dashboardRecommendationLine.textContent = "Faça uma sessão personalizada para gerar novas estatísticas de estudo.";
   }
 }
 
@@ -2381,7 +2405,7 @@ async function loadSavedNotesPanel() {
     renderSavedNotesPanel();
     return;
   }
-  if (el.notesPanelStatus) el.notesPanelStatus.textContent = "Carregando suas anotaÃ§Ãµes privadas...";
+  if (el.notesPanelStatus) el.notesPanelStatus.textContent = "Carregando suas anotações privadas...";
   const { data, error } = await state.supabase
     .from("private_question_notes")
     .select("question_id, content, updated_at")
@@ -2390,7 +2414,7 @@ async function loadSavedNotesPanel() {
     .order("updated_at", { ascending: false });
   if (error) {
     state.savedNotesLoading = false;
-    if (el.notesPanelStatus) el.notesPanelStatus.textContent = `NÃ£o foi possÃ­vel carregar anotaÃ§Ãµes: ${error.message}`;
+    if (el.notesPanelStatus) el.notesPanelStatus.textContent = `Não foi possível carregar anotações: ${error.message}`;
     return;
   }
   state.savedNotesList = data || [];
@@ -2407,19 +2431,19 @@ function renderSavedNotesPanel() {
   const notes = state.authUser ? state.savedNotesList : localSavedNotes();
   if (!state.authUser) {
     el.notesPanelStatus.textContent = notes.length
-      ? "Mostrando anotaÃ§Ãµes salvas neste navegador. Entre na conta para sincronizar."
-      : "Entre na conta para ver suas anotaÃ§Ãµes privadas sincronizadas.";
+      ? "Mostrando anotações salvas neste navegador. Entre na conta para sincronizar."
+      : "Entre na conta para ver suas anotações privadas sincronizadas.";
   } else if (state.savedNotesLoaded) {
     el.notesPanelStatus.textContent = notes.length
-      ? `${pluralize(notes.length, "anotaÃ§Ã£o privada salva", "anotaÃ§Ãµes privadas salvas")}.`
-      : "VocÃª ainda nÃ£o salvou anotaÃ§Ãµes privadas.";
+      ? `${pluralize(notes.length, "anotação privada salva", "anotações privadas salvas")}.`
+      : "Você ainda não salvou anotações privadas.";
   }
   el.savedNotesList.innerHTML = notes.length
     ? notes
         .map((note) => {
           const question = noteQuestionById(note.question_id);
           const title = question
-            ? `${question.examTag || question.source || topicForQuestion(question)} Â· QuestÃ£o ${question.number || ""}`
+            ? `${question.examTag || question.source || topicForQuestion(question)} · Questão ${question.number || ""}`
             : note.question_id;
           const preview = note.content.length > 220 ? `${note.content.slice(0, 220)}...` : note.content;
           return `
@@ -2428,13 +2452,13 @@ function renderSavedNotesPanel() {
               <div class="saved-note-preview markdown-content">${renderSafeMarkdown(preview)}</div>
               <div class="saved-note-actions">
                 <span>${escapeHtml(note.updated_at ? formatCommentDate(note.updated_at) : "")}</span>
-                <button data-open-note-question="${escapeHtml(note.question_id)}">Abrir questÃ£o</button>
+                <button data-open-note-question="${escapeHtml(note.question_id)}">Abrir questão</button>
               </div>
             </article>
           `;
         })
         .join("")
-    : `<p class="comment-empty">Nenhuma anotaÃ§Ã£o salva ainda.</p>`;
+    : `<p class="comment-empty">Nenhuma anotação salva ainda.</p>`;
 }
 
 function openQuestionFromNote(questionId) {
@@ -2489,7 +2513,7 @@ function renderErrorChart() {
             <div class="error-row">
               <div>
                 <strong>${escapeHtml(item.topic)}</strong>
-                <small>${item.wrong} erros Â· ${rate}% das respondidas</small>
+                <small>${item.wrong} erros · ${rate}% das respondidas</small>
               </div>
               <span><i style="width: ${percent}%"></i></span>
             </div>
@@ -2511,9 +2535,9 @@ function renderOverview() {
   const dueCount = spacedReviewQuestions(true).length;
   const unseenCount = allVisibleQuestions.filter((question) => !getProgress(question.id).grade).length;
   if (el.overviewSmartLine) {
-    el.overviewSmartLine.textContent = `${pluralize(dueCount, "revisÃ£o", "revisÃµes")} vencida${dueCount === 1 ? "" : "s"}, ${pluralize(counts.fragile, "tema frÃ¡gil", "temas frÃ¡geis")} e ${pluralize(unseenCount, "questÃ£o nÃ£o praticada", "questÃµes nÃ£o praticadas")} no banco total.`;
+    el.overviewSmartLine.textContent = `${pluralize(dueCount, "revisão", "revisões")} vencida${dueCount === 1 ? "" : "s"}, ${pluralize(counts.fragile, "tema frágil", "temas frágeis")} e ${pluralize(unseenCount, "questão não praticada", "questões não praticadas")} no banco total.`;
   }
-  el.overviewLine.textContent = `EstatÃ­sticas dos ${topics.length} temas selecionados (${pluralize(selectedQuestions.length, "questÃ£o", "questÃµes")})`;
+  el.overviewLine.textContent = `Estatísticas dos ${topics.length} temas selecionados (${pluralize(selectedQuestions.length, "questão", "questões")})`;
   for (const key of Object.keys(counts)) {
     el.overviewCounts[key].textContent = counts[key];
     el.overviewBars[key].style.width = `${(counts[key] / totalTopics) * 100}%`;
@@ -2526,9 +2550,9 @@ function renderTopicChecklist() {
   const selectedQuestionCount = selectedContentQuestions({ ignoreSubthemes: true }).length;
   const refinedQuestionCount = selectedContentQuestions().length;
   const subthemeNote = state.refineSubthemes
-    ? ` Refinamento ativo: ${pluralize(refinedQuestionCount, "questÃ£o", "questÃµes")} no recorte.`
+    ? ` Refinamento ativo: ${pluralize(refinedQuestionCount, "questão", "questões")} no recorte.`
     : "";
-  el.topicModeLine.textContent = `${selectedTopics.length}/${allTopics().length} temas selecionados - ${pluralize(selectedQuestionCount, "questÃ£o", "questÃµes")} no banco.${subthemeNote}`;
+  el.topicModeLine.textContent = `${selectedTopics.length}/${allTopics().length} temas selecionados - ${pluralize(selectedQuestionCount, "questão", "questões")} no banco.${subthemeNote}`;
   const topicQuery = normalize(el.topicPanelSearch.value);
   const topics = allTopics().filter((topic) => !topicQuery || normalize(topic).includes(topicQuery));
   el.topicChecklist.innerHTML = topics
@@ -2539,7 +2563,7 @@ function renderTopicChecklist() {
         <label class="topic-item ${checked ? "selected" : ""}">
           <input type="checkbox" value="${escapeHtml(topic)}" ${checked} />
           <span>${escapeHtml(topic)}</span>
-          <small>${perf.answered}/${perf.total} feitas Â· ${Math.round(perf.accuracy * 100)}%</small>
+          <small>${perf.answered}/${perf.total} feitas · ${Math.round(perf.accuracy * 100)}%</small>
         </label>
       `;
     })
@@ -2637,11 +2661,11 @@ function renderExamStudyFilters() {
   const areas = [...new Set(examsForAreas.map((exam) => exam.area))].sort();
 
   el.examInstitution.innerHTML = [
-    `<option value="all">Todas as instituiÃ§Ãµes</option>`,
+    `<option value="all">Todas as instituições</option>`,
     ...institutions.map((institution) => `<option value="${escapeHtml(institution)}">${escapeHtml(institution)}</option>`),
   ].join("");
   el.examArea.innerHTML = [
-    `<option value="all">Todas as Ã¡reas</option>`,
+    `<option value="all">Todas as áreas</option>`,
     ...areas.map((area) => `<option value="${escapeHtml(area)}">${escapeHtml(area)}</option>`),
   ].join("");
   el.examInstitution.value = institutionForAreas;
@@ -2650,7 +2674,7 @@ function renderExamStudyFilters() {
   const exams = state.examSetActive ? currentExamSet() : examsForStudyFilters();
   el.examSelect.innerHTML = [
     `<option value="">Selecionar</option>`,
-    ...exams.map((exam) => `<option value="${escapeHtml(exam.id)}">${escapeHtml(exam.title)} (${pluralize(exam.questionCount, "questÃ£o", "questÃµes")})</option>`),
+    ...exams.map((exam) => `<option value="${escapeHtml(exam.id)}">${escapeHtml(exam.title)} (${pluralize(exam.questionCount, "questão", "questões")})</option>`),
   ].join("");
   if (exams.some((exam) => exam.id === currentExamId)) {
     state.activeExamId = currentExamId;
@@ -2663,8 +2687,8 @@ function renderExamStudyFilters() {
   if (el.examFilteredCount) el.examFilteredCount.textContent = exams.length;
   if (el.examFilteredQuestionCount) el.examFilteredQuestionCount.textContent = questions;
   el.examSetLine.textContent = state.examSetActive
-    ? `Provas ativas: ${pluralize(exams.length, "prova", "provas")}, ${pluralize(state.filtered.length, "questÃ£o", "questÃµes")} na lista atual.`
-    : `${pluralize(exams.length, "prova encontrada", "provas encontradas")}, ${pluralize(questions, "questÃ£o", "questÃµes")} no total.`;
+    ? `Provas ativas: ${pluralize(exams.length, "prova", "provas")}, ${pluralize(state.filtered.length, "questão", "questões")} na lista atual.`
+    : `${pluralize(exams.length, "prova encontrada", "provas encontradas")}, ${pluralize(questions, "questão", "questões")} no total.`;
   renderExamProgressCard();
 }
 
@@ -2676,7 +2700,7 @@ function renderExamProgressCard() {
     .sort((a, b) => (b.progress.updatedAt || 0) - (a.progress.updatedAt || 0));
   const correct = answered.filter((item) => item.progress.grade === "correct").length;
   const last = answered[0];
-  el.examLastTitle.textContent = last ? last.exam.title : "Ainda nÃ£o iniciada";
+  el.examLastTitle.textContent = last ? last.exam.title : "Ainda não iniciada";
   el.examProgressAccuracy.textContent = answered.length ? `${Math.round((correct / answered.length) * 100)}%` : "0%";
   el.examProgressAnswered.textContent = answered.length;
 }
@@ -2707,20 +2731,20 @@ function renderActivity() {
   if (el.sessionNewCount) el.sessionNewCount.textContent = availableNew;
   const originLabel =
     state.sessionSource === "content"
-      ? pluralize(contentAvailable.length, "questÃ£o didÃ¡tica", "questÃµes didÃ¡ticas")
+      ? pluralize(contentAvailable.length, "questão didática", "questões didáticas")
       : state.sessionSource === "exams"
-        ? pluralize(examAvailable.length, "questÃ£o de prova", "questÃµes de provas")
-        : `${contentAvailable.length} didÃ¡ticas + ${examAvailable.length} de provas`;
+        ? pluralize(examAvailable.length, "questão de prova", "questões de provas")
+        : `${contentAvailable.length} didáticas + ${examAvailable.length} de provas`;
   const studyActive = state.sessionActive || state.smartTrainingActive;
   const answeredInSession = studyActive ? currentRunAnsweredQuestions().length : 0;
   el.finishSession.hidden = !studyActive;
   el.sessionLine.textContent = state.sessionCompletionMessage && !studyActive
     ? state.sessionCompletionMessage
     : state.smartTrainingActive
-    ? `Treino inteligente ativo: ${answeredInSession}/${state.filtered.length} questÃµes respondidas.`
+    ? `Treino inteligente ativo: ${answeredInSession}/${state.filtered.length} questões respondidas.`
     : state.sessionActive
-      ? `SessÃ£o ativa: ${answeredInSession}/${state.filtered.length} questÃµes respondidas.`
-      : `${originLabel}. ${state.includeReviewsInSession ? `${pluralize(dueReviewCount, "revisÃ£o", "revisÃµes")} + ` : ""}${pluralize(availableNew, "nova disponÃ­vel", "novas disponÃ­veis")}.`;
+      ? `Sessão ativa: ${answeredInSession}/${state.filtered.length} questões respondidas.`
+      : `${originLabel}. ${state.includeReviewsInSession ? `${pluralize(dueReviewCount, "revisão", "revisões")} + ` : ""}${pluralize(availableNew, "nova disponível", "novas disponíveis")}.`;
   renderSessionSummary();
   el.restoreExcluded.hidden = !state.excluded.length;
 }
@@ -2756,13 +2780,13 @@ function renderSessionSummary() {
     ${
       wrong.length
         ? `<div class="summary-focus">
-            <span>Maior ponto de atenÃ§Ã£o</span>
-            <strong>${escapeHtml(topTopic ? topTopic[0] : "Sem tema")}${topError ? ` Â· ${escapeHtml(topError[0] === "unclassified" ? "Sem tipo marcado" : errorTypeLabel(topError[0]))}` : ""}</strong>
+            <span>Maior ponto de atenção</span>
+            <strong>${escapeHtml(topTopic ? topTopic[0] : "Sem tema")}${topError ? ` · ${escapeHtml(topError[0] === "unclassified" ? "Sem tipo marcado" : errorTypeLabel(topError[0]))}` : ""}</strong>
             <button class="primary-btn" data-review-block-errors>Revisar erros deste bloco</button>
           </div>`
         : answered.length === state.filtered.length
-          ? `<p class="panel-line">Bloco concluÃ­do sem erros registrados.</p>`
-          : `<p class="panel-line">Responda algumas questÃµes para gerar o resumo do bloco.</p>`
+          ? `<p class="panel-line">Bloco concluído sem erros registrados.</p>`
+          : `<p class="panel-line">Responda algumas questões para gerar o resumo do bloco.</p>`
     }
   `;
 }
@@ -2787,13 +2811,13 @@ function renderHistory() {
   el.dueReviewCount.textContent = dueQuestions.length;
   el.scheduledReviewCount.textContent = scheduledQuestions.length;
   if (state.spacedReviewActive) {
-    el.spacedReviewLine.innerHTML = `<strong>RevisÃ£o ativa:</strong> ${pluralize(state.filtered.length, "questÃ£o vencida", "questÃµes vencidas")}.<br>Ao responder, a prÃ³xima revisÃ£o serÃ¡ definida pelo tipo marcado: erro importante volta hoje ou em 1 dia; leitura/desatenÃ§Ã£o em 2 dias; acerto com dÃºvida em 3 dias; domÃ­nio sÃ³lido em 14 a 21 dias.`;
+    el.spacedReviewLine.innerHTML = `<strong>Revisão ativa:</strong> ${pluralize(state.filtered.length, "questão vencida", "questões vencidas")}.<br>Ao responder, a próxima revisão será definida pelo tipo marcado: erro importante volta hoje ou em 1 dia; leitura/desatenção em 2 dias; acerto com dúvida em 3 dias; domínio sólido em 14 a 21 dias.`;
   } else if (dueQuestions.length) {
-    el.spacedReviewLine.innerHTML = `<strong>Meta de hoje:</strong> resolver ${pluralize(dailyTarget, "questÃ£o vencida", "questÃµes vencidas")} (${estimatedMinutes} min estimados).<br><strong>PrÃ³ximo passo:</strong> depois das revisÃµes, faÃ§a uma sessÃ£o de ${state.sessionSize} questÃµes novas ou treine seus temas frÃ¡geis. Erros recorrentes voltam com prioridade; acertos seguros ficam mais espaÃ§ados.`;
+    el.spacedReviewLine.innerHTML = `<strong>Meta de hoje:</strong> resolver ${pluralize(dailyTarget, "questão vencida", "questões vencidas")} (${estimatedMinutes} min estimados).<br><strong>Próximo passo:</strong> depois das revisões, faça uma sessão de ${state.sessionSize} questões novas ou treine seus temas frágeis. Erros recorrentes voltam com prioridade; acertos seguros ficam mais espaçados.`;
   } else if (scheduledQuestions.length) {
-    el.spacedReviewLine.innerHTML = `<strong>Hoje:</strong> nÃ£o hÃ¡ revisÃµes vencidas.<br>${pluralize(scheduledQuestions.length, "questÃ£o programada", "questÃµes programadas")} para revisÃ£o futura${nextScheduledText ? `; prÃ³xima previsÃ£o: ${nextScheduledText}` : ""}. SugestÃ£o: faÃ§a uma sessÃ£o inteligente ou avance em questÃµes novas.`;
+    el.spacedReviewLine.innerHTML = `<strong>Hoje:</strong> não há revisões vencidas.<br>${pluralize(scheduledQuestions.length, "questão programada", "questões programadas")} para revisão futura${nextScheduledText ? `; próxima previsão: ${nextScheduledText}` : ""}. Sugestão: faça uma sessão inteligente ou avance em questões novas.`;
   } else {
-    el.spacedReviewLine.innerHTML = `<strong>Nenhuma revisÃ£o programada ainda.</strong><br>PrÃ³ximo passo: faÃ§a um bloco de ${state.sessionSize} questÃµes; ao errar ou marcar acerto com dÃºvida, a plataforma criarÃ¡ automaticamente o calendÃ¡rio de revisÃ£o.`;
+    el.spacedReviewLine.innerHTML = `<strong>Nenhuma revisão programada ainda.</strong><br>Próximo passo: faça um bloco de ${state.sessionSize} questões; ao errar ou marcar acerto com dúvida, a plataforma criará automaticamente o calendário de revisão.`;
   }
   const accuracy = answeredTotal ? Math.round((correctTotal / answeredTotal) * 100) : 0;
   el.historySummary.innerHTML = `
@@ -2813,7 +2837,7 @@ function renderHistory() {
         .map(
           ({ question, progress }) => `
             <div class="history-item">
-              <span>${escapeHtml(question.source)} Â· QuestÃ£o ${question.number}</span>
+              <span>${escapeHtml(question.source)} · Questão ${question.number}</span>
               <strong class="${progress.grade === "correct" ? "good-text" : "bad-text"}">${progress.grade === "correct" ? "Acerto" : "Erro"}</strong>
               ${progress.grade === "correct" && progress.successType ? `<small>${escapeHtml(successTypeLabel(progress.successType))}</small>` : ""}
               ${progress.grade === "wrong" && progress.errorType ? `<small>${escapeHtml(errorTypeLabel(progress.errorType))}</small>` : ""}
@@ -2821,7 +2845,7 @@ function renderHistory() {
           `,
         )
         .join("")
-    : `<p class="panel-line">Nenhuma questÃ£o respondida ainda.</p>`;
+    : `<p class="panel-line">Nenhuma questão respondida ainda.</p>`;
 }
 
 function renderTodayReview() {
@@ -2836,17 +2860,17 @@ function renderTodayReview() {
   el.todayDueCount.textContent = due.length;
   el.todayPriorityCount.textContent = due.filter((question) => priorityScoreFor(question) >= 6).length;
   if (!due.length) {
-    el.todayReviewLine.textContent = "Nenhuma revisÃ£o vencida hoje. FaÃ§a uma sessÃ£o nova ou uma sessÃ£o inteligente para alimentar o cronograma.";
+    el.todayReviewLine.textContent = "Nenhuma revisão vencida hoje. Faça uma sessão nova ou uma sessão inteligente para alimentar o cronograma.";
     el.todayPlan.innerHTML = "";
     return;
   }
-  el.todayReviewLine.textContent = `Hoje sugerimos ${pluralize(Math.min(due.length, state.sessionSize), "questÃ£o", "questÃµes")} para revisar, priorizando erros recentes, baixa confianÃ§a e temas frÃ¡geis.`;
+  el.todayReviewLine.textContent = `Hoje sugerimos ${pluralize(Math.min(due.length, state.sessionSize), "questão", "questões")} para revisar, priorizando erros recentes, baixa confiança e temas frágeis.`;
   el.todayPlan.innerHTML = `
     <div class="summary-grid">
       <div><strong>${recentErrors}</strong><span>erros recentes</span></div>
-      <div><strong>${lowConfidence}</strong><span>baixa confianÃ§a</span></div>
-      <div><strong>${maintenance}</strong><span>manutenÃ§Ã£o</span></div>
-      <div><strong>${state.sessionSize}</strong><span>meta diÃ¡ria</span></div>
+      <div><strong>${lowConfidence}</strong><span>baixa confiança</span></div>
+      <div><strong>${maintenance}</strong><span>manutenção</span></div>
+      <div><strong>${state.sessionSize}</strong><span>meta diária</span></div>
     </div>
     <div class="today-list">
       ${due
@@ -2857,7 +2881,7 @@ function renderTodayReview() {
             <div class="today-item">
               <strong>${escapeHtml(topicForQuestion(question))}</strong>
               <span>${escapeHtml(questionSubtheme(question))}</span>
-              <small>prioridade ${priorityScoreFor(question, progress)} Â· confianÃ§a ${progress.confidence || defaultConfidenceForGrade(progress.grade) || "-"}</small>
+              <small>prioridade ${priorityScoreFor(question, progress)} · confiança ${progress.confidence || defaultConfidenceForGrade(progress.grade) || "-"}</small>
             </div>
           `;
         })
@@ -2876,11 +2900,11 @@ function renderDangerousQuestions() {
   el.startDangerousReview.disabled = !dangerous.length;
   el.endDangerousReview.hidden = !state.dangerousReviewActive;
   if (state.dangerousReviewActive) {
-    el.dangerousLine.innerHTML = `<strong>Fila ativa:</strong> ${pluralize(state.filtered.length, "questÃ£o perigosa", "questÃµes perigosas")} para revisar.`;
+    el.dangerousLine.innerHTML = `<strong>Fila ativa:</strong> ${pluralize(state.filtered.length, "questão perigosa", "questões perigosas")} para revisar.`;
   } else if (dangerous.length) {
-    el.dangerousLine.innerHTML = `<strong>Prioridade especial:</strong> revise primeiro questÃµes com erro repetido, tempo excessivo ou troca da resposta certa para errada.`;
+    el.dangerousLine.innerHTML = `<strong>Prioridade especial:</strong> revise primeiro questões com erro repetido, tempo excessivo ou troca da resposta certa para errada.`;
   } else {
-    el.dangerousLine.textContent = "Nenhuma questÃ£o perigosa no momento. Quando houver erro repetido ou padrÃ£o de risco, ela aparecerÃ¡ aqui.";
+    el.dangerousLine.textContent = "Nenhuma questão perigosa no momento. Quando houver erro repetido ou padrão de risco, ela aparecerá aqui.";
   }
   el.dangerousList.innerHTML = dangerous.length
     ? dangerous
@@ -2890,13 +2914,13 @@ function renderDangerousQuestions() {
           return `
             <button class="notebook-row" data-dangerous-question="${escapeHtml(question.id)}">
               <strong>${escapeHtml(topicForQuestion(question))}</strong>
-              <span>${escapeHtml(question.source || "Banco R+")} Â· QuestÃ£o ${escapeHtml(String(question.number || ""))}</span>
+              <span>${escapeHtml(question.source || "Banco R+")} · Questão ${escapeHtml(String(question.number || ""))}</span>
               <small>${escapeHtml(reasons)}</small>
             </button>
           `;
         })
         .join("")
-    : `<p class="panel-line">A fila especial estÃ¡ vazia.</p>`;
+    : `<p class="panel-line">A fila especial está vazia.</p>`;
 }
 
 function renderErrorNotebook() {
@@ -2940,9 +2964,9 @@ function errorTypeLabel(value) {
   const labels = {
     knowledge: "Falta de conhecimento",
     concept: "Confundi conceito",
-    reading: "Li rÃ¡pido",
+    reading: "Li rápido",
     "two-options": "Duvida entre alternativas",
-    attention: "DesatenÃ§Ã£o",
+    attention: "Desatenção",
     guess: "Chute",
   };
   return labels[value] || value;
@@ -2951,9 +2975,9 @@ function errorTypeLabel(value) {
 function successTypeLabel(value) {
   const labels = {
     mastered: "Dominei",
-    reasoning: "RaciocÃ­nio correto",
+    reasoning: "Raciocínio correto",
     partial: "Lembrei parcialmente",
-    doubt: "Acerto com dÃºvida",
+    doubt: "Acerto com dúvida",
     "guess-correct": "Chutei e acertei",
   };
   return labels[value] || value;
@@ -2970,8 +2994,8 @@ function questionTrainingReasons(question) {
   if (progress.grade === "correct" && progress.successType) reasons.push(successTypeLabel(progress.successType));
   if (question.source && state.questions.some((item) => item.id === question.id)) {
     const status = topicStatus(topicForQuestion(question));
-    if (status === "fragile") reasons.push("Tema frÃ¡gil");
-    if (status === "building") reasons.push("Em consolidaÃ§Ã£o");
+    if (status === "fragile") reasons.push("Tema frágil");
+    if (status === "building") reasons.push("Em consolidação");
   }
   return reasons.slice(0, 2);
 }
@@ -3109,14 +3133,14 @@ function renderExams() {
     ? state.examCompletionMessage
     : state.examSimulationActive
     ? state.examSimulationFinished
-      ? `Simulado finalizado: ${simulationSelected}/${state.filtered.length} questÃµes marcadas.`
-      : `Simulado ativo: ${simulationSelected}/${state.filtered.length} questÃµes marcadas.`
+      ? `Simulado finalizado: ${simulationSelected}/${state.filtered.length} questões marcadas.`
+      : `Simulado ativo: ${simulationSelected}/${state.filtered.length} questões marcadas.`
     : state.examSetActive
-    ? `Conjunto ativo: ${answeredInExamSet}/${state.filtered.length} questÃµes respondidas.`
+    ? `Conjunto ativo: ${answeredInExamSet}/${state.filtered.length} questões respondidas.`
     : state.examActive
-    ? `Estudo ativo: ${answeredInExam}/${state.filtered.length} questÃµes respondidas.`
+    ? `Estudo ativo: ${answeredInExam}/${state.filtered.length} questões respondidas.`
     : exam
-      ? `${exam.institution} ${exam.year} Â· ${exam.area} Â· ${pluralize(exam.questionCount, "questÃ£o", "questÃµes")}.`
+      ? `${exam.institution} ${exam.year} · ${exam.area} · ${pluralize(exam.questionCount, "questão", "questões")}.`
       : "Selecione uma prova para estudar ou simular.";
 
   const unusedExamListHtml = state.exams.length
@@ -3126,7 +3150,7 @@ function renderExams() {
           return `
             <button class="exam-item ${item.id === state.activeExamId ? "active" : ""}" data-exam-id="${item.id}">
               <span>${item.title}</span>
-              <small>${answered}/${item.questionCount} respondidas Â· ${item.answerCount} gabaritos</small>
+              <small>${answered}/${item.questionCount} respondidas · ${item.answerCount} gabaritos</small>
             </button>
           `;
         })
@@ -3159,12 +3183,12 @@ function renderQuestionMap() {
       const status = mapStatusFor(question);
       const label = index + 1;
       const title = status === "correct"
-        ? `QuestÃ£o ${label}: acerto`
+        ? `Questão ${label}: acerto`
         : status === "wrong"
-          ? `QuestÃ£o ${label}: erro`
+          ? `Questão ${label}: erro`
           : status === "selected"
-            ? `QuestÃ£o ${label}: alternativa marcada`
-            : `QuestÃ£o ${label}`;
+            ? `Questão ${label}: alternativa marcada`
+            : `Questão ${label}`;
       return `<button class="map-item ${index === state.index ? "active" : ""} ${status}" data-jump-index="${index}" title="${escapeHtml(title)}">${label}</button>`;
     })
     .join("");
@@ -3207,8 +3231,8 @@ function render() {
       renderQuestionDiscussion(null);
       return;
     }
-    el.source.textContent = showStartPanel ? "Pronto para estudar" : "Nenhuma questÃ£o encontrada";
-    el.title.textContent = showStartPanel ? "Banco de questÃµes" : "Ajuste os filtros";
+    el.source.textContent = showStartPanel ? "Pronto para estudar" : "Nenhuma questão encontrada";
+    el.title.textContent = showStartPanel ? "Banco de questões" : "Ajuste os filtros";
     el.tags.innerHTML = "";
     el.tags.classList.remove("visible");
     el.text.textContent = "";
@@ -3243,20 +3267,20 @@ function render() {
     : state.smartTrainingActive
       ? "Treino inteligente"
       : state.dangerousReviewActive
-        ? "QuestÃµes perigosas"
+        ? "Questões perigosas"
     : state.sessionActive
-      ? "Bloco de questÃµes"
+      ? "Bloco de questões"
       : state.topicActive
         ? state.topicIds.length === 1
           ? `Tema: ${state.topicIds[0]}`
           : "Temas selecionados"
         : "Banco R+ Psiquiatria";
-  el.title.textContent = state.sessionActive || state.smartTrainingActive || state.examActive || state.examSimulationActive || state.examSetActive || state.topicActive ? `QuestÃ£o ${state.index + 1}` : `QuestÃ£o ${question.number}`;
+  el.title.textContent = state.sessionActive || state.smartTrainingActive || state.examActive || state.examSimulationActive || state.examSetActive || state.topicActive ? `Questão ${state.index + 1}` : `Questão ${question.number}`;
   el.position.textContent = `${state.index + 1} / ${state.filtered.length}`;
-  if (state.dangerousReviewActive) el.title.textContent = `QuestÃ£o ${state.index + 1}`;
+  if (state.dangerousReviewActive) el.title.textContent = `Questão ${state.index + 1}`;
   const examTag = question.examTag || (question.examId ? question.source : "");
   const trainingReasons = state.smartTrainingActive ? questionTrainingReasons(question) : [];
-  const dangerousTag = isDangerousQuestion(question) ? `âš ï¸ QuestÃ£o perigosa: ${dangerousReasonsFor(question).join(", ")}` : "";
+  const dangerousTag = isDangerousQuestion(question) ? `Atenção Questão perigosa: ${dangerousReasonsFor(question).join(", ")}` : "";
   const tags = [examTag, dangerousTag, ...trainingReasons].filter(Boolean);
   el.tags.innerHTML = tags.map((tag) => `<span>${escapeHtml(tag)}</span>`).join("");
   el.tags.classList.toggle("visible", Boolean(tags.length));
@@ -3281,7 +3305,7 @@ function render() {
           },
         )
         .join("")
-    : `<p>As alternativas nÃ£o foram separadas automaticamente. Use o texto acima e marque seu desempenho manualmente.</p>`;
+    : `<p>As alternativas não foram separadas automaticamente. Use o texto acima e marque seu desempenho manualmente.</p>`;
   const showAnswer = question.correctAnswer && !examLocked && (progress.revealed || progress.grade || progress.confirmed);
   el.answer.textContent = showAnswer ? `Gabarito: alternativa ${question.correctAnswer}` : "";
   el.answer.classList.toggle("visible", Boolean(showAnswer));
@@ -3290,7 +3314,7 @@ function render() {
   if (state.isAdmin && needsReview) {
     const issues = readinessIssues(question);
     el.pendingReviewReason.textContent = issues.length
-      ? `PendÃªncias: ${issues.join(", ")}.`
+      ? `Pendências: ${issues.join(", ")}.`
       : "Confira gabarito, alternativas ou enunciado.";
   }
   el.manualGradePanel.hidden = examLocked;
@@ -3448,8 +3472,8 @@ function endExamSet() {
 function startSpacedReview() {
   const due = spacedReviewQuestions(true);
   if (!due.length) {
-    if (el.todayReviewLine) el.todayReviewLine.textContent = "Nenhuma revisÃ£o vencida no momento.";
-    if (el.spacedReviewLine) el.spacedReviewLine.textContent = "Nenhuma revisÃ£o vencida no momento.";
+    if (el.todayReviewLine) el.todayReviewLine.textContent = "Nenhuma revisão vencida no momento.";
+    if (el.spacedReviewLine) el.spacedReviewLine.textContent = "Nenhuma revisão vencida no momento.";
     setTab("today");
     return;
   }
@@ -3472,7 +3496,7 @@ function startSpacedReview() {
 function startDangerousReview() {
   const dangerous = dangerousQuestions();
   if (!dangerous.length) {
-    if (el.dangerousLine) el.dangerousLine.textContent = "Nenhuma questÃ£o perigosa no momento.";
+    if (el.dangerousLine) el.dangerousLine.textContent = "Nenhuma questão perigosa no momento.";
     setTab("overview");
     return;
   }
@@ -3549,7 +3573,7 @@ function startSession() {
   const basePool = unseen.length >= Math.min(state.sessionSize - Math.min(reviews.length, state.sessionSize), fallback.length) ? unseen : fallback;
   const session = [...reviews.slice(0, state.sessionSize), ...shuffle(basePool).slice(0, Math.max(state.sessionSize - reviews.length, 0))];
   if (!session.length) {
-    el.sessionLine.textContent = "Selecione pelo menos um tema com questÃµes corrigÃ­veis para iniciar a sessÃ£o.";
+    el.sessionLine.textContent = "Selecione pelo menos um tema com questões corrigíveis para iniciar a sessão.";
     setTab("activity");
     return;
   }
@@ -3574,7 +3598,7 @@ function startSmartTraining() {
   state.dangerousReviewIds = [];
   const session = smartTrainingQuestions();
   if (!session.length) {
-    el.sessionLine.textContent = "NÃ£o encontrei questÃµes corrigÃ­veis para montar o treino.";
+    el.sessionLine.textContent = "Não encontrei questões corrigíveis para montar o treino.";
     setTab("activity");
     return;
   }
@@ -3651,7 +3675,7 @@ function finishSession() {
   const correct = answered.filter((question) => currentAttemptFor(question.id).grade === "correct");
   const wrong = answered.filter((question) => currentAttemptFor(question.id).grade === "wrong");
   const accuracy = answered.length ? Math.round((correct.length / answered.length) * 100) : 0;
-  state.sessionCompletionMessage = `Bloco finalizado: ${answered.length}/${total} questÃµes respondidas, ${correct.length} acertos, ${wrong.length} erros, ${accuracy}% de acerto.`;
+  state.sessionCompletionMessage = `Bloco finalizado: ${answered.length}/${total} questões respondidas, ${correct.length} acertos, ${wrong.length} erros, ${accuracy}% de acerto.`;
   state.sessionActive = false;
   state.sessionIds = [];
   state.smartTrainingActive = false;
@@ -3756,7 +3780,7 @@ function finishExamStudy() {
   const correct = answered.filter((question) => currentAttemptFor(question.id).grade === "correct");
   const wrong = answered.filter((question) => currentAttemptFor(question.id).grade === "wrong");
   const accuracy = answered.length ? Math.round((correct.length / answered.length) * 100) : 0;
-  state.examCompletionMessage = `Prova finalizada: ${answered.length}/${total} questÃµes respondidas, ${correct.length} acertos, ${wrong.length} erros, ${accuracy}% de acerto.`;
+  state.examCompletionMessage = `Prova finalizada: ${answered.length}/${total} questões respondidas, ${correct.length} acertos, ${wrong.length} erros, ${accuracy}% de acerto.`;
   state.examActive = false;
   state.examSetActive = false;
   state.examSetIds = [];
@@ -3794,7 +3818,7 @@ function endExam() {
 
 function resetUserProgress() {
   const shouldReset = window.confirm(
-    "Tem certeza que deseja zerar seu histÃ³rico de desempenho? Isso apaga acertos, erros, respostas marcadas, revisÃµes programadas, anotaÃ§Ãµes e alternativas riscadas neste navegador. O banco de questÃµes e as correÃ§Ãµes administrativas serÃ£o preservados.",
+    "Tem certeza que deseja zerar seu histórico de desempenho? Isso apaga acertos, erros, respostas marcadas, revisões programadas, anotações e alternativas riscadas neste navegador. O banco de questões e as correções administrativas serão preservados.",
   );
   if (!shouldReset) return;
   state.progress = {};
@@ -3813,7 +3837,7 @@ function resetUserProgress() {
   state.examActive = false;
   state.examSetActive = false;
   state.examSetIds = [];
-  state.sessionCompletionMessage = "HistÃ³rico de desempenho zerado. VocÃª pode recomeÃ§ar seus blocos do inÃ­cio.";
+  state.sessionCompletionMessage = "Histórico de desempenho zerado. Você pode recomeçar seus blocos do início.";
   state.examCompletionMessage = "";
   clearExamSimulationState();
   localStorage.removeItem("banco-rmais-progress");
@@ -3906,9 +3930,9 @@ async function resetEdit() {
     const { error } = await state.supabase.from("question_corrections").delete().eq("question_id", question.id);
     if (!error) {
       delete state.globalCorrections[question.id];
-      setSyncStatus("CorreÃ§Ã£o global removida.");
+      setSyncStatus("Correção global removida.");
     } else {
-      setSyncStatus(`Erro ao remover correÃ§Ã£o global: ${error.message}`);
+      setSyncStatus(`Erro ao remover correção global: ${error.message}`);
     }
   }
   delete state.corrections[question.id];
@@ -3931,7 +3955,7 @@ async function sendCurrentQuestionToMaintenance() {
     state.corrections[question.id] = correction;
     saveCorrections();
   }
-  if (el.pendingReviewReason) el.pendingReviewReason.textContent = "PendÃªncias: sinalizada para manutenÃ§Ã£o.";
+  if (el.pendingReviewReason) el.pendingReviewReason.textContent = "Pendências: sinalizada para manutenção.";
   if (el.status) el.status.value = "needs-review";
   state.sessionActive = false;
   state.examActive = false;
@@ -3980,8 +4004,8 @@ function exportCorrections() {
   URL.revokeObjectURL(url);
   if (el.correctionExportLine) {
     el.correctionExportLine.textContent = correctionCount
-      ? `${pluralize(correctionCount, "revisÃ£o exportada", "revisÃµes exportadas")}. Use o script scripts/apply_corrections.py para aplicar ao banco definitivo.`
-      : "Nenhuma revisÃ£o local encontrada para exportar.";
+      ? `${pluralize(correctionCount, "revisão exportada", "revisões exportadas")}. Use o script scripts/apply_corrections.py para aplicar ao banco definitivo.`
+      : "Nenhuma revisão local encontrada para exportar.";
   }
 }
 
@@ -3989,7 +4013,7 @@ function excludeCurrentQuestion() {
   if (!state.isAdmin) return;
   const question = currentQuestion();
   if (!question) return;
-  const shouldExclude = window.confirm("Excluir esta questÃ£o do banco neste navegador?");
+  const shouldExclude = window.confirm("Excluir esta questão do banco neste navegador?");
   if (!shouldExclude) return;
   if (!state.excluded.includes(question.id)) state.excluded.push(question.id);
   saveExcluded();
@@ -4001,7 +4025,7 @@ function excludeCurrentQuestion() {
 function restoreExcludedQuestions() {
   if (!state.isAdmin) return;
   if (!state.excluded.length) return;
-  const shouldRestore = window.confirm("Restaurar todas as questÃµes excluÃ­das?");
+  const shouldRestore = window.confirm("Restaurar todas as questões excluídas?");
   if (!shouldRestore) return;
   state.excluded = [];
   saveExcluded();
@@ -4387,7 +4411,7 @@ function loadPayload() {
     return Promise.resolve(window.BANCO_RMAIS_QUESTIONS);
   }
   return fetch("data/questions.json").then((response) => {
-    if (!response.ok) throw new Error("Banco de questÃµes nÃ£o encontrado.");
+    if (!response.ok) throw new Error("Banco de questões não encontrado.");
     return response.json();
   });
 }
@@ -4405,6 +4429,6 @@ loadPayload()
     await setupSupabaseAuth();
   })
   .catch((error) => {
-    el.source.textContent = "ImportaÃ§Ã£o pendente";
+    el.source.textContent = "Importação pendente";
     el.title.textContent = error.message;
   });
