@@ -7,6 +7,7 @@
     "deckId": "pg-demencias-100",
     "deckTitle": "Psicogeriatria - Demencias",
     "module": "Demencias",
+    "importance": 5,
     "cards": [
       {
         "id": "PG-DEM-0001",
@@ -22,6 +23,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 1,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -74,6 +76,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 1,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -128,6 +131,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -181,6 +185,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 1,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -234,6 +239,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 1,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -288,6 +294,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 1,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -341,6 +348,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -394,6 +402,7 @@
           "high-frequency"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 3,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -446,6 +455,7 @@
           "repeated-error"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -498,6 +508,7 @@
           "high-frequency"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -550,6 +561,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 1,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -601,6 +613,7 @@
           "high-frequency"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -651,6 +664,7 @@
           "high-frequency"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -702,6 +716,7 @@
           "high-frequency"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -756,6 +771,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 1,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -809,6 +825,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 1,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -862,6 +879,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 1,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -916,6 +934,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 3,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -969,6 +988,7 @@
           "dangerous"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 3,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -1023,6 +1043,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -1074,6 +1095,7 @@
           "high-frequency"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -1126,6 +1148,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -1179,6 +1202,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 1,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -1230,6 +1254,7 @@
           "high-frequency"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 1,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -1281,6 +1306,7 @@
           "high-frequency"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -1333,6 +1359,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -1384,6 +1411,7 @@
           "high-frequency"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -1435,6 +1463,7 @@
           "high-frequency"
         ],
         "priority": 3,
+        "importance": 3,
         "difficulty": 3,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -1486,6 +1515,7 @@
           "high-frequency"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -1539,6 +1569,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 1,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -1592,6 +1623,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -1643,6 +1675,7 @@
           "high-frequency"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -1695,6 +1728,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -1748,6 +1782,7 @@
           "repeated-error"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -1801,6 +1836,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 1,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -1855,6 +1891,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -1908,6 +1945,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 1,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -1960,6 +1998,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -2011,6 +2050,7 @@
           "high-frequency"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 3,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -2064,6 +2104,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -2117,6 +2158,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 1,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -2170,6 +2212,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 1,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -2222,6 +2265,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 1,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -2274,6 +2318,7 @@
           "high-frequency"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -2326,6 +2371,7 @@
           "high-frequency"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -2379,6 +2425,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 1,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -2431,6 +2478,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -2484,6 +2532,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -2537,6 +2586,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 1,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -2588,6 +2638,7 @@
           "high-frequency"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -2640,6 +2691,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 1,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -2693,6 +2745,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 1,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -2746,6 +2799,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -2800,6 +2854,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -2853,6 +2908,7 @@
           "repeated-error"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -2905,6 +2961,7 @@
           "high-frequency"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -2955,6 +3012,7 @@
           "high-frequency"
         ],
         "priority": 3,
+        "importance": 3,
         "difficulty": 3,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -3008,6 +3066,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 1,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -3059,6 +3118,7 @@
           "high-frequency"
         ],
         "priority": 3,
+        "importance": 3,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -3110,6 +3170,7 @@
           "high-frequency"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -3162,6 +3223,7 @@
           "high-frequency"
         ],
         "priority": 3,
+        "importance": 3,
         "difficulty": 3,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -3215,6 +3277,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 1,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -3268,6 +3331,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 1,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -3322,6 +3386,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -3375,6 +3440,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -3429,6 +3495,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -3482,6 +3549,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 1,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -3535,6 +3603,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 1,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -3587,6 +3656,7 @@
           "high-frequency"
         ],
         "priority": 3,
+        "importance": 3,
         "difficulty": 3,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -3638,6 +3708,7 @@
           "high-frequency"
         ],
         "priority": 3,
+        "importance": 3,
         "difficulty": 3,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -3691,6 +3762,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -3743,6 +3815,7 @@
           "high-frequency"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -3795,6 +3868,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -3848,6 +3922,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -3900,6 +3975,7 @@
           "high-frequency"
         ],
         "priority": 3,
+        "importance": 3,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -3952,6 +4028,7 @@
           "high-frequency"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -4003,6 +4080,7 @@
           "high-frequency"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -4054,6 +4132,7 @@
           "high-frequency"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 3,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -4107,6 +4186,7 @@
           "high-frequency"
         ],
         "priority": 3,
+        "importance": 3,
         "difficulty": 3,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -4158,6 +4238,7 @@
           "high-frequency"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -4211,6 +4292,7 @@
           "repeated-error"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -4262,6 +4344,7 @@
           "high-frequency"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -4314,6 +4397,7 @@
           "high-frequency"
         ],
         "priority": 3,
+        "importance": 3,
         "difficulty": 3,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -4367,6 +4451,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -4418,6 +4503,7 @@
           "high-frequency"
         ],
         "priority": 3,
+        "importance": 3,
         "difficulty": 3,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -4469,6 +4555,7 @@
           "high-frequency"
         ],
         "priority": 3,
+        "importance": 3,
         "difficulty": 3,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -4519,6 +4606,7 @@
           "high-frequency"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -4571,6 +4659,7 @@
           "high-frequency"
         ],
         "priority": 3,
+        "importance": 3,
         "difficulty": 3,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -4621,6 +4710,7 @@
           "high-frequency"
         ],
         "priority": 3,
+        "importance": 3,
         "difficulty": 3,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -4672,6 +4762,7 @@
           "high-frequency"
         ],
         "priority": 3,
+        "importance": 3,
         "difficulty": 3,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -4725,6 +4816,7 @@
           "dangerous"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -4778,6 +4870,7 @@
           "repeated-error"
         ],
         "priority": 3,
+        "importance": 3,
         "difficulty": 3,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -4830,6 +4923,7 @@
           "high-frequency"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 1,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -4881,6 +4975,7 @@
           "high-frequency"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -4933,6 +5028,7 @@
           "high-frequency"
         ],
         "priority": 3,
+        "importance": 3,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -4985,6 +5081,7 @@
           "dangerous"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -5037,6 +5134,7 @@
           "high-frequency"
         ],
         "priority": 3,
+        "importance": 3,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -5088,6 +5186,7 @@
           "high-frequency"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -5140,6 +5239,7 @@
           "high-frequency"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -5193,6 +5293,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 1,
         "specialty": "Psicogeriatria",
         "module": "Demências",
@@ -5242,6 +5343,7 @@
     "deckId": "pg-avaliacao-cognitiva-funcional-90",
     "deckTitle": "Psicogeriatria - Avaliacao Cognitiva e Funcional",
     "module": "Avaliacao Cognitiva e Funcional",
+    "importance": 5,
     "cards": [
       {
         "id": "PG-ACF-0001",
@@ -5257,6 +5359,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 1,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -5312,6 +5415,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 1,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -5367,6 +5471,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 1,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -5422,6 +5527,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 1,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -5476,6 +5582,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -5531,6 +5638,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 1,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -5583,6 +5691,7 @@
           "high-frequency"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 1,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -5634,6 +5743,7 @@
           "high-frequency"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -5686,6 +5796,7 @@
           "high-frequency"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -5738,6 +5849,7 @@
           "high-frequency"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -5792,6 +5904,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 1,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -5845,6 +5958,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -5899,6 +6013,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -5953,6 +6068,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -6005,6 +6121,7 @@
           "high-frequency"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -6059,6 +6176,7 @@
           "repeated-error"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 3,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -6112,6 +6230,7 @@
           "high-frequency"
         ],
         "priority": 3,
+        "importance": 3,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -6165,6 +6284,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 1,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -6218,6 +6338,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -6272,6 +6393,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 1,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -6327,6 +6449,7 @@
           "dangerous"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -6380,6 +6503,7 @@
           "dangerous"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 3,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -6434,6 +6558,7 @@
           "dangerous"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -6488,6 +6613,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 1,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -6542,6 +6668,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 1,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -6594,6 +6721,7 @@
           "high-frequency"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -6647,6 +6775,7 @@
           "repeated-error"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -6700,6 +6829,7 @@
           "repeated-error"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 3,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -6755,6 +6885,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -6809,6 +6940,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 3,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -6862,6 +6994,7 @@
           "high-frequency"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -6915,6 +7048,7 @@
           "high-frequency"
         ],
         "priority": 3,
+        "importance": 3,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -6968,6 +7102,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 1,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -7021,6 +7156,7 @@
           "repeated-error"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 3,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -7074,6 +7210,7 @@
           "high-frequency"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -7127,6 +7264,7 @@
           "repeated-error"
         ],
         "priority": 3,
+        "importance": 3,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -7181,6 +7319,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 1,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -7235,6 +7374,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 1,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -7289,6 +7429,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 1,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -7342,6 +7483,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 1,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -7396,6 +7538,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 1,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -7450,6 +7593,7 @@
           "repeated-error"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -7504,6 +7648,7 @@
           "repeated-error"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -7557,6 +7702,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 1,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -7610,6 +7756,7 @@
           "high-frequency"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -7664,6 +7811,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -7717,6 +7865,7 @@
           "high-frequency"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 3,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -7769,6 +7918,7 @@
           "high-frequency"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -7824,6 +7974,7 @@
           "repeated-error"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -7877,6 +8028,7 @@
           "high-frequency"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -7928,6 +8080,7 @@
         ],
         "priorities": [],
         "priority": 3,
+        "importance": 3,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -7981,6 +8134,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -8036,6 +8190,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 3,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -8090,6 +8245,7 @@
           "repeated-error"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -8144,6 +8300,7 @@
           "repeated-error"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -8198,6 +8355,7 @@
           "repeated-error"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -8251,6 +8409,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 1,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -8303,6 +8462,7 @@
           "high-frequency"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -8357,6 +8517,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 1,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -8410,6 +8571,7 @@
           "high-frequency"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 1,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -8463,6 +8625,7 @@
           "high-frequency"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -8516,6 +8679,7 @@
           "high-frequency"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -8570,6 +8734,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -8624,6 +8789,7 @@
           "dangerous"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -8679,6 +8845,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 1,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -8734,6 +8901,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 1,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -8788,6 +8956,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 1,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -8842,6 +9011,7 @@
           "repeated-error"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -8895,6 +9065,7 @@
           "repeated-error"
         ],
         "priority": 3,
+        "importance": 3,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -8949,6 +9120,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -9003,6 +9175,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 1,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -9058,6 +9231,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -9111,6 +9285,7 @@
           "high-frequency"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -9165,6 +9340,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 1,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -9219,6 +9395,7 @@
           "repeated-error"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -9272,6 +9449,7 @@
           "repeated-error"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -9326,6 +9504,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -9381,6 +9560,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -9434,6 +9614,7 @@
           "high-frequency"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -9485,6 +9666,7 @@
         ],
         "priorities": [],
         "priority": 3,
+        "importance": 3,
         "difficulty": 3,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -9539,6 +9721,7 @@
           "dangerous"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 3,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -9592,6 +9775,7 @@
           "high-frequency"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -9645,6 +9829,7 @@
           "high-frequency"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -9698,6 +9883,7 @@
           "high-frequency"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -9753,6 +9939,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -9807,6 +9994,7 @@
           "repeated-error"
         ],
         "priority": 4,
+        "importance": 4,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -9862,6 +10050,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -9917,6 +10106,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 2,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -9972,6 +10162,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 1,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -10026,6 +10217,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "difficulty": 1,
         "specialty": "Psicogeriatria",
         "module": "Avaliação Cognitiva e Funcional",
@@ -10076,6 +10268,7 @@
     "deckId": "pg-bpsd-75",
     "deckTitle": "Psicogeriatria - Sintomas Neuropsiquiatricos das Demencias (BPSD)",
     "module": "Sintomas Neuropsiquiatricos das Demencias (BPSD)",
+    "importance": 4,
     "cards": [
       {
         "id": "PG-BPSD-0001",
@@ -10090,6 +10283,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Conceito",
@@ -10134,6 +10328,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Epidemiologia",
@@ -10179,6 +10374,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Evolução",
@@ -10224,6 +10420,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Semiologia",
@@ -10269,6 +10466,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Apatia",
@@ -10314,6 +10512,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Sobrecarga do cuidador",
@@ -10358,6 +10557,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Institucionalização",
@@ -10403,6 +10603,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Avaliação inicial",
@@ -10449,6 +10650,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Delirium",
@@ -10493,6 +10695,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Gatilhos ambientais",
@@ -10539,6 +10742,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Apatia",
@@ -10583,6 +10787,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Apatia",
@@ -10627,6 +10832,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "DFT",
@@ -10671,6 +10877,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "DCL",
@@ -10716,6 +10923,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Alzheimer",
@@ -10760,6 +10968,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Agitação",
@@ -10804,6 +11013,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Agressividade",
@@ -10848,6 +11058,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Delírios",
@@ -10891,6 +11102,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Alucinações",
@@ -10936,6 +11148,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "DCL",
@@ -10980,6 +11193,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Apatia",
@@ -11024,6 +11238,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Evolução",
@@ -11068,6 +11283,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Funcionalidade",
@@ -11113,6 +11329,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Cuidador",
@@ -11158,6 +11375,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Integração",
@@ -11204,6 +11422,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Caso clínico",
@@ -11248,6 +11467,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Conduta inicial",
@@ -11294,6 +11514,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Delirium",
@@ -11339,6 +11560,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Diferencial",
@@ -11384,6 +11606,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Delírios",
@@ -11429,6 +11652,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Delírios",
@@ -11474,6 +11698,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Apatia x depressão",
@@ -11519,6 +11744,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Apatia",
@@ -11564,6 +11790,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "DCL",
@@ -11610,6 +11837,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "DFT",
@@ -11656,6 +11884,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "DFT",
@@ -11700,6 +11929,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Comportamento motor",
@@ -11744,6 +11974,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Wandering",
@@ -11789,6 +12020,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Wandering",
@@ -11835,6 +12067,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Sundowning",
@@ -11881,6 +12114,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Sundowning",
@@ -11926,6 +12160,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Vocalizações",
@@ -11971,6 +12206,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Ansiedade",
@@ -12016,6 +12252,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Ansiedade",
@@ -12063,6 +12300,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Gatilhos",
@@ -12108,6 +12346,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Ambiente",
@@ -12153,6 +12392,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Agressividade",
@@ -12198,6 +12438,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Hiperoralidade",
@@ -12243,6 +12484,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Cuidador",
@@ -12287,6 +12529,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Algoritmo diagnóstico",
@@ -12332,6 +12575,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Tratamento não farmacológico",
@@ -12377,6 +12621,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Tratamento farmacológico",
@@ -12421,6 +12666,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Antipsicóticos",
@@ -12466,6 +12712,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Antipsicóticos",
@@ -12511,6 +12758,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Antipsicóticos",
@@ -12556,6 +12804,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Antipsicóticos",
@@ -12601,6 +12850,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Parkinsonismo",
@@ -12647,6 +12897,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "DCL",
@@ -12691,6 +12942,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "DCL",
@@ -12736,6 +12988,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Agitação leve",
@@ -12780,6 +13033,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Ambiente",
@@ -12823,6 +13077,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Musicoterapia",
@@ -12868,6 +13123,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Atividade física",
@@ -12912,6 +13168,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Cuidador",
@@ -12957,6 +13214,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Anticolinesterásicos",
@@ -13002,6 +13260,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Memantina",
@@ -13046,6 +13305,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Antidepressivos",
@@ -13092,6 +13352,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "ISRS",
@@ -13137,6 +13398,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Trazodona",
@@ -13182,6 +13444,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Valproato",
@@ -13227,6 +13490,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Benzodiazepínicos",
@@ -13272,6 +13536,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Objetivo terapêutico",
@@ -13316,6 +13581,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Reavaliação",
@@ -13361,6 +13627,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Erro terapêutico",
@@ -13407,6 +13674,7 @@
           "dangerous"
         ],
         "priority": 5,
+        "importance": 5,
         "specialty": "Psicogeriatria",
         "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
         "topic": "Algoritmo terapêutico",
@@ -13440,6 +13708,13290 @@
         "lapses": 0
       }
     ]
+  },
+  {
+    "file": "C:/Users/sulya/Downloads/psychogeriatricsFlashcards_pharmacology_module4.ts",
+    "variable": "psychogeriatricsPharmacologyFlashcards",
+    "deckId": "pg-psicofarmacologia-geriatrica-122",
+    "deckTitle": "Psicogeriatria - Psicofarmacologia Geriatrica",
+    "module": "Psicofarmacologia Geriatrica",
+    "importance": 5,
+    "cards": [
+      {
+        "id": "PG-PFG-0001",
+        "front": "Qual princípio geral orienta a prescrição de psicofármacos em idosos?",
+        "back": "Start low, go slow, but go: iniciar com dose menor, titular lentamente, monitorar eventos adversos, mas tratar adequadamente quando houver indicação.",
+        "tags": [
+          "start low go slow",
+          "idoso",
+          "prescrição"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 1,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Princípios gerais",
+        "subtopic": "Start low, go slow",
+        "type": "Conceito",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "A banca cobra para evitar tanto iatrogenia quanto subtratamento em idosos.",
+        "trap": "Não significa manter doses subterapêuticas indefinidamente.",
+        "memoryHook": "Baixo e lento, mas com alvo clínico.",
+        "related": [
+          "Farmacocinética",
+          "Iatrogenia"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0002",
+        "front": "Quais mudanças farmacocinéticas do envelhecimento aumentam risco de efeitos adversos?",
+        "back": "Redução da água corporal, aumento relativo de gordura, menor metabolismo hepático, menor filtração renal e maior meia-vida de vários fármacos.",
+        "tags": [
+          "farmacocinética",
+          "envelhecimento"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 1,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Princípios gerais",
+        "subtopic": "Farmacocinética",
+        "type": "Conceito",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "Questões de USP usam idosos com confusão, queda ou sedação após doses usuais de adulto.",
+        "trap": "Dose “habitual” em adulto pode ser excessiva no idoso.",
+        "memoryHook": "Menos rim, menos fígado, mais gordura.",
+        "related": [
+          "Depuração renal",
+          "Polifarmácia"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0003",
+        "front": "Por que idosos podem ter mais efeito clínico com a mesma concentração sérica de psicofármaco?",
+        "back": "Por maior sensibilidade farmacodinâmica, menor reserva cerebral e maior vulnerabilidade a efeitos anticolinérgicos, sedativos, extrapiramidais e hipotensores.",
+        "tags": [
+          "farmacodinâmica",
+          "idoso"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 1,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Princípios gerais",
+        "subtopic": "Farmacodinâmica",
+        "type": "Conceito",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "A banca diferencia farmacocinética de farmacodinâmica.",
+        "trap": "Nem todo evento adverso decorre apenas de aumento de concentração sérica.",
+        "memoryHook": "Mesmo nível, mais efeito.",
+        "related": [
+          "Farmacocinética",
+          "Eventos adversos"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0004",
+        "front": "Qual pergunta prática deve ser feita antes de iniciar qualquer psicofármaco no idoso?",
+        "back": "Qual medicamento posso retirar antes de adicionar outro? Revisar indicação, duplicidade, interações, carga anticolinérgica e risco de queda.",
+        "tags": [
+          "polifarmácia",
+          "deprescrição"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 1,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Princípios gerais",
+        "subtopic": "Polifarmácia",
+        "type": "Conduta",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "Provas valorizam revisão medicamentosa antes de prescrever.",
+        "trap": "Tratar efeito adverso com outro fármaco pode iniciar cascata de prescrição.",
+        "memoryHook": "Antes de somar, subtraia.",
+        "related": [
+          "Polifarmácia",
+          "Deprescrição"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0005",
+        "front": "O que é cascata de prescrição?",
+        "back": "Quando um efeito adverso é interpretado como nova doença e tratado com outro medicamento, aumentando iatrogenia.",
+        "tags": [
+          "cascata de prescrição",
+          "iatrogenia"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Princípios gerais",
+        "subtopic": "Cascata de prescrição",
+        "type": "Pegadinha",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "É armadilha clássica em geriatria e psicogeriatria.",
+        "trap": "Exemplo: antipsicótico causa parkinsonismo; prescreve-se antiparkinsoniano anticolinérgico, piorando cognição.",
+        "memoryHook": "Efeito adverso não é nova doença até prova em contrário.",
+        "related": [
+          "Anticolinérgicos",
+          "Parkinsonismo medicamentoso"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0006",
+        "front": "Quando considerar deprescrição em psicogeriatria?",
+        "back": "Quando o fármaco não tem indicação atual, causa dano, tem benefício incerto, duplica tratamento ou é potencialmente inapropriado para o idoso.",
+        "tags": [
+          "deprescrição",
+          "segurança"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Princípios gerais",
+        "subtopic": "Deprescrição",
+        "type": "Conduta",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "A banca cobra segurança medicamentosa e racionalidade terapêutica.",
+        "trap": "Deprescrição deve ser planejada; alguns fármacos exigem retirada gradual.",
+        "memoryHook": "Deprescrever também é tratamento.",
+        "related": [
+          "Polifarmácia",
+          "Beers"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0007",
+        "front": "Qual parâmetro deve ser considerado antes de prescrever fármacos eliminados por rim em idosos?",
+        "back": "Clearance de creatinina ou taxa de filtração estimada, lembrando que creatinina “normal” pode mascarar baixa função renal por sarcopenia.",
+        "tags": [
+          "função renal",
+          "clearance",
+          "sarcopenia"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Princípios gerais",
+        "subtopic": "Função renal",
+        "type": "Conduta",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "A USP costuma cobrar toxicidade por lítio, gabapentinoides e outros fármacos renais.",
+        "trap": "Creatinina normal não garante rim normal no idoso frágil.",
+        "memoryHook": "Creatinina engana quando há pouca massa muscular.",
+        "related": [
+          "Lítio",
+          "Gabapentina"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0008",
+        "front": "Quais eventos adversos devem ser ativamente monitorados ao iniciar psicofármaco em idoso?",
+        "back": "Quedas, sedação, delirium, hipotensão ortostática, hiponatremia, arritmia/QT, sintomas extrapiramidais, constipação, retenção urinária e piora cognitiva.",
+        "tags": [
+          "eventos adversos",
+          "monitorização"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 1,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Princípios gerais",
+        "subtopic": "Eventos adversos",
+        "type": "Conceito",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "Esses eventos aparecem repetidamente em questões de conduta.",
+        "trap": "A melhora psiquiátrica não compensa iatrogenia grave não monitorada.",
+        "memoryHook": "No idoso, sempre pense em queda e delirium.",
+        "related": [
+          "Quedas",
+          "Delirium"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0009",
+        "front": "Por que quedas são desfecho central ao prescrever psicofármacos no idoso?",
+        "back": "Porque sedação, hipotensão, ataxia, parkinsonismo e confusão aumentam risco de fraturas, perda funcional, internação e mortalidade.",
+        "tags": [
+          "quedas",
+          "fraturas",
+          "sedação"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 1,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Princípios gerais",
+        "subtopic": "Quedas",
+        "type": "Prognóstico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "Provas usam queda como pista de benzodiazepínico, antipsicótico, antidepressivo sedativo ou hipotensor.",
+        "trap": "Não minimizar queda como evento “esperado da idade”.",
+        "memoryHook": "Queda no idoso = evento sentinela.",
+        "related": [
+          "Benzodiazepínicos",
+          "Antipsicóticos"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0010",
+        "front": "Como simplificar a prescrição psicofarmacológica para idosos?",
+        "back": "Preferir esquemas simples, poucas tomadas diárias, revisar duplicidades, explicar objetivo, envolver cuidador quando necessário e monitorar adesão.",
+        "tags": [
+          "adesão",
+          "cuidador"
+        ],
+        "priorities": [
+          "high-frequency"
+        ],
+        "priority": 4,
+        "importance": 4,
+        "difficulty": 1,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Princípios gerais",
+        "subtopic": "Adesão",
+        "type": "Conduta",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "A banca cobra tratamento possível, não apenas teoricamente correto.",
+        "trap": "Esquemas complexos aumentam erro medicamentoso.",
+        "memoryHook": "Menos tomadas, mais segurança.",
+        "related": [
+          "Cuidador",
+          "Funcionalidade"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0011",
+        "front": "Qual raciocínio deve preceder associação de psicofármacos no idoso?",
+        "back": "Avaliar interação farmacocinética, interação farmacodinâmica, somatório de sedação, hipotensão, QT, risco serotoninérgico e carga anticolinérgica.",
+        "tags": [
+          "interações",
+          "polifarmácia"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Princípios gerais",
+        "subtopic": "Interações",
+        "type": "Conduta",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "A USP cobra somatório de riscos mais do que nomes isolados.",
+        "trap": "Duas drogas “seguras” podem ser inseguras juntas.",
+        "memoryHook": "Risco soma.",
+        "related": [
+          "QT",
+          "Serotonina",
+          "Anticolinérgicos"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0012",
+        "front": "No idoso, “dose baixa” sempre significa menor risco?",
+        "back": "Não. Mesmo doses baixas podem causar delirium, queda, hipotensão, sedação ou interação em pacientes frágeis.",
+        "tags": [
+          "dose baixa",
+          "fragilidade"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error"
+        ],
+        "priority": 4,
+        "importance": 4,
+        "difficulty": 1,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Princípios gerais",
+        "subtopic": "Dose",
+        "type": "Pegadinha",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "A banca usa doses aparentemente pequenas para testar vulnerabilidade geriátrica.",
+        "trap": "Não prescrever automaticamente só porque a dose é baixa.",
+        "memoryHook": "Baixa dose não é risco zero.",
+        "related": [
+          "Fragilidade",
+          "Eventos adversos"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0013",
+        "front": "O que deve ser documentado ao iniciar psicofármaco em idoso?",
+        "back": "Indicação-alvo, dose inicial, plano de titulação, riscos discutidos, parâmetros de monitorização, prazo de reavaliação e critérios de suspensão.",
+        "tags": [
+          "monitorização",
+          "prescrição segura"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 1,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Princípios gerais",
+        "subtopic": "Monitorização",
+        "type": "Conduta",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "Questões de prova valorizam racionalidade e segurança longitudinal.",
+        "trap": "Sem alvo terapêutico, não há como saber se o fármaco ainda é necessário.",
+        "memoryHook": "Prescrição precisa de saída.",
+        "related": [
+          "Deprescrição",
+          "Segurança"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0014",
+        "front": "Por que definir sintoma-alvo é essencial em BPSD e psicofarmacologia geriátrica?",
+        "back": "Porque orienta escolha terapêutica, mensura resposta e evita uso crônico de medicamentos sem benefício claro.",
+        "tags": [
+          "sintoma-alvo",
+          "BPSD"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 1,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Princípios gerais",
+        "subtopic": "Sintoma-alvo",
+        "type": "Conduta",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "A banca cobra antipsicótico apenas diante de risco ou sofrimento relevante, nunca por diagnóstico isolado.",
+        "trap": "“Agitação” vaga não basta: descrever comportamento, frequência e risco.",
+        "memoryHook": "Sem alvo, sem remédio.",
+        "related": [
+          "BPSD",
+          "Antipsicóticos"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0015",
+        "front": "Após iniciar psicofármaco em idoso, quando reavaliar?",
+        "back": "Deve haver reavaliação precoce, especialmente nas primeiras semanas, para resposta, adesão, pressão, quedas, sedação, cognição e eventos adversos.",
+        "tags": [
+          "seguimento",
+          "reavaliação"
+        ],
+        "priorities": [
+          "high-frequency"
+        ],
+        "priority": 4,
+        "importance": 4,
+        "difficulty": 1,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Princípios gerais",
+        "subtopic": "Tempo de revisão",
+        "type": "Conduta",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "Provas criticam prescrições sem seguimento.",
+        "trap": "Não iniciar e “deixar renovar” indefinidamente.",
+        "memoryHook": "Idoso exige retorno curto.",
+        "related": [
+          "Monitorização",
+          "Segurança"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0016",
+        "front": "Qual é a função dos Critérios de Beers na prescrição para idosos?",
+        "back": "Identificar medicamentos potencialmente inapropriados em idosos, especialmente quando os riscos superam benefícios ou há alternativas mais seguras.",
+        "tags": [
+          "Beers",
+          "medicamentos inapropriados"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 1,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Critérios de Beers",
+        "subtopic": "Conceito",
+        "type": "Conceito",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "Beers é extremamente frequente em questões sobre iatrogenia, quedas, delirium e anticolinérgicos.",
+        "trap": "Beers não substitui julgamento clínico, mas alerta para risco elevado.",
+        "memoryHook": "Beers = alerta vermelho geriátrico.",
+        "related": [
+          "STOPP/START",
+          "Polifarmácia"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0017",
+        "front": "O que é carga anticolinérgica?",
+        "back": "É o efeito somado de medicamentos com ação anticolinérgica, mesmo quando cada um isoladamente parece pouco relevante.",
+        "tags": [
+          "anticolinérgico",
+          "carga anticolinérgica"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 1,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Anticolinérgicos",
+        "subtopic": "Carga anticolinérgica",
+        "type": "Conceito",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "Provas cobram somatório de amitriptilina, anti-histamínicos, antipsicóticos, antiparkinsonianos e antiespasmódicos.",
+        "trap": "O problema muitas vezes não é um único fármaco, mas a soma.",
+        "memoryHook": "Carga anticolinérgica pesa na cognição.",
+        "related": [
+          "Beers",
+          "Delirium"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0018",
+        "front": "Quais efeitos centrais a carga anticolinérgica pode causar em idosos?",
+        "back": "Confusão, delirium, sonolência, piora cognitiva, alucinações e maior risco de quedas.",
+        "tags": [
+          "anticolinérgico",
+          "cognição",
+          "delirium"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 1,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Anticolinérgicos",
+        "subtopic": "Cognição",
+        "type": "Prognóstico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "A USP cobra anticolinérgico como causa reversível de piora cognitiva.",
+        "trap": "Não confundir piora medicamentosa com progressão inevitável da demência.",
+        "memoryHook": "Anticolinérgico rouba cognição.",
+        "related": [
+          "Demência",
+          "Delirium"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0019",
+        "front": "Quais efeitos periféricos sugerem toxicidade anticolinérgica no idoso?",
+        "back": "Boca seca, constipação, retenção urinária, visão turva, taquicardia, redução de sudorese e piora de glaucoma de ângulo fechado.",
+        "tags": [
+          "anticolinérgico",
+          "retenção urinária"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 1,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Anticolinérgicos",
+        "subtopic": "Efeitos periféricos",
+        "type": "Conceito",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "Questões usam constipação e retenção urinária como pistas de iatrogenia.",
+        "trap": "Retenção urinária pode precipitar delirium.",
+        "memoryHook": "Seco, preso e confuso: pense anticolinérgico.",
+        "related": [
+          "Retenção urinária",
+          "Constipação"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0020",
+        "front": "Quais antidepressivos têm alta carga anticolinérgica e devem ser evitados em idosos?",
+        "back": "Tricíclicos terciários, especialmente amitriptilina, imipramina e clomipramina.",
+        "tags": [
+          "tricíclicos",
+          "amitriptilina",
+          "Beers"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 1,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Anticolinérgicos",
+        "subtopic": "Antidepressivos tricíclicos",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "Aparecem em questões de Beers, delirium, queda e piora cognitiva.",
+        "trap": "Nortriptilina tende a ser menos anticolinérgica que amitriptilina, mas ainda exige cautela.",
+        "memoryHook": "Amitriptilina é vilã de prova.",
+        "related": [
+          "Depressão",
+          "Beers"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0021",
+        "front": "Qual grupo de anti-histamínicos deve ser evitado em idosos por efeito anticolinérgico?",
+        "back": "Anti-histamínicos de primeira geração, como prometazina, hidroxizina, difenidramina e dimenidrinato.",
+        "tags": [
+          "anti-histamínico",
+          "prometazina",
+          "difenidramina"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 1,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Anticolinérgicos",
+        "subtopic": "Anti-histamínicos",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "São cobrados como causas de delirium, sedação e queda.",
+        "trap": "“Remédio para dormir” com difenidramina não é seguro para idoso.",
+        "memoryHook": "Anti-H1 antigo = anticolinérgico.",
+        "related": [
+          "Insônia",
+          "Delirium"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0022",
+        "front": "Por que antiespasmódicos urinários podem piorar cognição em idosos?",
+        "back": "Muitos têm efeito antimuscarínico e podem atravessar o SNC, aumentando confusão, delirium e piora cognitiva.",
+        "tags": [
+          "antimuscarínico",
+          "bexiga hiperativa"
+        ],
+        "priorities": [
+          "high-frequency"
+        ],
+        "priority": 4,
+        "importance": 4,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Anticolinérgicos",
+        "subtopic": "Antiespasmódicos",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "A banca cobra interação entre inibidor da acetilcolinesterase e antimuscarínico urinário.",
+        "trap": "Tratar bexiga hiperativa pode piorar demência.",
+        "memoryHook": "Bexiga melhora, cognição piora.",
+        "related": [
+          "Demência",
+          "Inibidores da AChE"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0023",
+        "front": "Por que biperideno deve ser evitado rotineiramente em idosos?",
+        "back": "É anticolinérgico e pode causar confusão, retenção urinária, constipação, piora cognitiva e delirium.",
+        "tags": [
+          "biperideno",
+          "anticolinérgico"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Anticolinérgicos",
+        "subtopic": "Biperideno",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "Provas cobram cascata: antipsicótico causa parkinsonismo e biperideno piora cognição.",
+        "trap": "Não usar profilaticamente para sintomas extrapiramidais em idosos.",
+        "memoryHook": "Biperideno em idoso = cuidado máximo.",
+        "related": [
+          "Parkinsonismo medicamentoso",
+          "Delirium"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0024",
+        "front": "Idosa com amitriptilina evolui com confusão, boca seca, constipação e retenção urinária. Qual hipótese deve ser priorizada?",
+        "back": "Delirium ou toxicidade precipitada por carga anticolinérgica. A conduta inclui suspender/reduzir o agente, investigar complicações e corrigir fatores precipitantes.",
+        "tags": [
+          "caso clínico",
+          "anticolinérgico",
+          "delirium"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 1,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Anticolinérgicos",
+        "subtopic": "Delirium",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "É caso clássico de prova sobre iatrogenia medicamentosa.",
+        "trap": "Não aumentar antipsicótico antes de rever anticolinérgicos.",
+        "memoryHook": "Confusão + retenção = anticolinérgico.",
+        "related": [
+          "Amitriptilina",
+          "Delirium"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0025",
+        "front": "Qual é a melhor conduta diante de alta carga anticolinérgica em idoso com queixa cognitiva?",
+        "back": "Revisar a prescrição, retirar ou substituir fármacos anticolinérgicos sempre que possível e reavaliar cognição após ajuste.",
+        "tags": [
+          "deprescrição",
+          "anticolinérgico"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Anticolinérgicos",
+        "subtopic": "Deprescrição",
+        "type": "Conduta",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "Provas cobram causas reversíveis de declínio cognitivo.",
+        "trap": "Não iniciar donepezila antes de remover anticolinérgicos quando possível.",
+        "memoryHook": "Limpe a prescrição antes de rotular demência.",
+        "related": [
+          "Queixa cognitiva",
+          "Donepezila"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0026",
+        "front": "Por que relaxantes musculares são problemáticos em idosos segundo Beers?",
+        "back": "Podem causar sedação, confusão, efeitos anticolinérgicos e quedas, com benefício limitado em uso crônico.",
+        "tags": [
+          "relaxante muscular",
+          "Beers"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 4,
+        "importance": 4,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Critérios de Beers",
+        "subtopic": "Relaxantes musculares",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "A banca cobra junto com tricíclicos e benzodiazepínicos como grupos de risco.",
+        "trap": "Não confundir dor musculoesquelética com indicação segura para relaxante.",
+        "memoryHook": "Relaxante relaxa também o equilíbrio.",
+        "related": [
+          "Quedas",
+          "Sedação"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0027",
+        "front": "Por que zolpidem e outros hipnóticos Z devem ser evitados como rotina em idosos?",
+        "back": "Aumentam risco de delirium, quedas, fraturas, sonolência, acidentes e têm benefício modesto para sono.",
+        "tags": [
+          "zolpidem",
+          "hipnóticos",
+          "Beers"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Critérios de Beers",
+        "subtopic": "Z-drugs",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "São cobrados como falsa alternativa “mais segura” que benzodiazepínico.",
+        "trap": "Zolpidem não é solução inocente para insônia no idoso.",
+        "memoryHook": "Z-drug também derruba.",
+        "related": [
+          "Insônia",
+          "Quedas"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0028",
+        "front": "IBP é sempre proibido em idosos pelos Critérios de Beers?",
+        "back": "Não. O alerta é para uso prolongado sem indicação clara, pelo risco de infecções, deficiência de B12/magnésio e fraturas; pode ser indicado quando houver justificativa.",
+        "tags": [
+          "IBP",
+          "Beers",
+          "pegadinha"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 3,
+        "importance": 3,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Critérios de Beers",
+        "subtopic": "IBP",
+        "type": "Pegadinha",
+        "examFrequency": {
+          "USP": 4,
+          "UNIFESP": 4,
+          "UNICAMP": 3,
+          "SUS-SP": 4,
+          "IAMSPE": 3
+        },
+        "whyExamAsks": "Questões podem testar nuance: Beers não é lista de proibição absoluta.",
+        "trap": "Não suspender IBP necessário sem avaliar risco gastrointestinal.",
+        "memoryHook": "Beers alerta, não sentencia.",
+        "related": [
+          "Beers",
+          "Polifarmácia"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0029",
+        "front": "Por que AINEs devem ser usados com cautela em idosos?",
+        "back": "Risco de sangramento gastrointestinal, lesão renal, piora de hipertensão/insuficiência cardíaca e interação com lítio e anticoagulantes.",
+        "tags": [
+          "AINE",
+          "lítio",
+          "interação"
+        ],
+        "priorities": [
+          "high-frequency"
+        ],
+        "priority": 4,
+        "importance": 4,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Critérios de Beers",
+        "subtopic": "AINEs",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "A banca cobra principalmente interação AINE + lítio.",
+        "trap": "Analgésico “simples” pode intoxicar lítio.",
+        "memoryHook": "AINE fecha rim e sobe lítio.",
+        "related": [
+          "Lítio",
+          "Função renal"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0030",
+        "front": "Qual a diferença prática entre Beers e STOPP/START?",
+        "back": "Beers lista medicamentos potencialmente inapropriados; STOPP identifica prescrições potencialmente inadequadas e START identifica omissões terapêuticas relevantes.",
+        "tags": [
+          "STOPP START",
+          "Beers"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 4,
+        "importance": 4,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Critérios de Beers",
+        "subtopic": "STOPP/START",
+        "type": "Conceito",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "Pode cair como conceito de prescrição segura em geriatria.",
+        "trap": "START lembra que subtratamento também é erro.",
+        "memoryHook": "STOPP corta; START inicia.",
+        "related": [
+          "Deprescrição",
+          "Polifarmácia"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0031",
+        "front": "Por que benzodiazepínicos devem ser evitados para uso crônico em idosos?",
+        "back": "Aumentam risco de quedas, fraturas, sedação, delirium, prejuízo cognitivo, dependência, tolerância e acidentes.",
+        "tags": [
+          "benzodiazepínicos",
+          "quedas",
+          "delirium"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 1,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Benzodiazepínicos",
+        "subtopic": "Risco geral",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "Tema muito frequente em USP e bancas de geriatria.",
+        "trap": "Benzodiazepínico pode parecer resolver ansiedade, mas piora desfechos geriátricos.",
+        "memoryHook": "Benzo = queda + confusão.",
+        "related": [
+          "Quedas",
+          "Delirium",
+          "Insônia"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0032",
+        "front": "Qual tipo de benzodiazepínico é especialmente problemático em idosos?",
+        "back": "Os de meia-vida longa ou com metabólitos ativos, como diazepam e clonazepam, pelo acúmulo e sedação prolongada.",
+        "tags": [
+          "benzodiazepínico",
+          "meia-vida"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Benzodiazepínicos",
+        "subtopic": "Meia-vida",
+        "type": "Pegadinha",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "A banca cobra diazepam como alternativa inadequada no idoso.",
+        "trap": "Mesmo os de meia-vida curta não são “seguros” para uso crônico.",
+        "memoryHook": "Longa meia-vida, longa queda.",
+        "related": [
+          "Diazepam",
+          "Clonazepam"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0033",
+        "front": "Benzodiazepínico é tratamento de rotina para delirium?",
+        "back": "Não. Pode piorar delirium, exceto quando o delirium está relacionado à abstinência alcoólica ou de benzodiazepínicos.",
+        "tags": [
+          "benzodiazepínicos",
+          "delirium"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 1,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Benzodiazepínicos",
+        "subtopic": "Delirium",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "Essa exceção cai repetidamente em provas.",
+        "trap": "Não confundir agitação por delirium com indicação automática de benzo.",
+        "memoryHook": "Benzo só no delirium de abstinência.",
+        "related": [
+          "Delirium",
+          "Abstinência alcoólica"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0034",
+        "front": "Como deve ser feita a retirada de benzodiazepínico crônico em idosos?",
+        "back": "De forma gradual e individualizada, com redução progressiva da dose, monitorando rebote de ansiedade, insônia e sintomas de abstinência.",
+        "tags": [
+          "retirada benzodiazepínico",
+          "deprescrição"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Benzodiazepínicos",
+        "subtopic": "Retirada",
+        "type": "Conduta",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "A banca cobra que a retirada abrupta pode ser perigosa.",
+        "trap": "Suspensão súbita pode precipitar abstinência, convulsão e delirium.",
+        "memoryHook": "Descer escada, não pular.",
+        "related": [
+          "Abstinência",
+          "Insônia"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0035",
+        "front": "Qual é a primeira linha para insônia crônica em idosos antes de hipnóticos?",
+        "back": "Medidas comportamentais e TCC-I quando disponível, além de tratar dor, noctúria, ansiedade, depressão e revisar medicamentos.",
+        "tags": [
+          "insônia",
+          "TCC-I",
+          "idoso"
+        ],
+        "priorities": [
+          "high-frequency"
+        ],
+        "priority": 4,
+        "importance": 4,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Benzodiazepínicos",
+        "subtopic": "Alternativas",
+        "type": "Tratamento",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "Provas cobram não farmacológico como primeira etapa.",
+        "trap": "Higiene do sono isolada pode não bastar, mas hipnótico não deve ser primeira resposta crônica.",
+        "memoryHook": "Sono no idoso começa pela rotina.",
+        "related": [
+          "Insônia",
+          "TCC-I"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0036",
+        "front": "Qual o papel da melatonina na insônia do idoso?",
+        "back": "Pode ser considerada em alguns casos, especialmente alterações de ritmo circadiano, com perfil geralmente mais seguro que benzodiazepínicos, mas efeito costuma ser modesto.",
+        "tags": [
+          "melatonina",
+          "insônia"
+        ],
+        "priorities": [
+          "high-frequency"
+        ],
+        "priority": 3,
+        "importance": 3,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Sono e hipnóticos",
+        "subtopic": "Melatonina",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 4,
+          "UNIFESP": 4,
+          "UNICAMP": 3,
+          "SUS-SP": 4,
+          "IAMSPE": 3
+        },
+        "whyExamAsks": "A banca pode cobrar como alternativa menos arriscada, sem transformar em solução universal.",
+        "trap": "Não substitui avaliação de causas de insônia.",
+        "memoryHook": "Melatonina ajusta relógio, não resolve tudo.",
+        "related": [
+          "Insônia",
+          "Ritmo circadiano"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0037",
+        "front": "Qual cuidado é necessário ao usar trazodona para sono em idosos?",
+        "back": "Monitorar sedação, hipotensão ortostática, tontura e quedas; usar doses baixas e reavaliar necessidade.",
+        "tags": [
+          "trazodona",
+          "insônia",
+          "quedas"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 4,
+        "importance": 4,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Sono e hipnóticos",
+        "subtopic": "Trazodona",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "Trazodona aparece como alternativa comum, mas não isenta de risco.",
+        "trap": "Não considerar automaticamente segura por não ser benzodiazepínico.",
+        "memoryHook": "Sedativo também derruba.",
+        "related": [
+          "Quedas",
+          "Hipotensão"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0038",
+        "front": "Quando mirtazapina pode ser útil em idosos deprimidos?",
+        "back": "Quando depressão se associa a insônia, baixo apetite ou perda ponderal, considerando risco de sedação e ganho de peso.",
+        "tags": [
+          "mirtazapina",
+          "depressão",
+          "insônia"
+        ],
+        "priorities": [
+          "high-frequency"
+        ],
+        "priority": 4,
+        "importance": 4,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Sono e hipnóticos",
+        "subtopic": "Mirtazapina",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "Questões cobram escolha guiada por perfil sintomático.",
+        "trap": "Não é apenas “remédio para dormir”.",
+        "memoryHook": "Mirtazapina: sono + apetite.",
+        "related": [
+          "Depressão",
+          "Apetite"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0039",
+        "front": "Por que difenidramina não é boa opção para insônia em idosos?",
+        "back": "É anti-histamínico de primeira geração com ação anticolinérgica, podendo causar delirium, retenção urinária, constipação, sedação e quedas.",
+        "tags": [
+          "difenidramina",
+          "insônia",
+          "anticolinérgico"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 1,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Sono e hipnóticos",
+        "subtopic": "Difenidramina",
+        "type": "Pegadinha",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "É pegadinha clássica de medicação “sem receita” aparentemente inofensiva.",
+        "trap": "OTC não significa seguro para idoso.",
+        "memoryHook": "Sonífero de farmácia pode confundir.",
+        "related": [
+          "Anticolinérgicos",
+          "Insônia"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0040",
+        "front": "Idoso inicia diazepam para insônia e cai à noite na primeira semana. Qual relação causal deve ser considerada?",
+        "back": "Queda relacionada a benzodiazepínico por sedação, ataxia, hipotonia e confusão noturna.",
+        "tags": [
+          "caso clínico",
+          "diazepam",
+          "queda"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 1,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Benzodiazepínicos",
+        "subtopic": "Caso clínico",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "A banca frequentemente usa queda como apresentação de iatrogenia.",
+        "trap": "Não atribuir automaticamente à idade ou ao ambiente.",
+        "memoryHook": "Nova queda = revise nova medicação.",
+        "related": [
+          "Quedas",
+          "Diazepam"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0041",
+        "front": "Benzodiazepínico deve ser primeira linha para TAG crônico em idoso?",
+        "back": "Não. Preferem-se psicoterapia e antidepressivos como ISRS/ISRN quando indicados, com monitorização. Benzodiazepínicos devem ser evitados ou usados por curto prazo em situações selecionadas.",
+        "tags": [
+          "TAG",
+          "benzodiazepínico",
+          "idoso"
+        ],
+        "priorities": [
+          "high-frequency"
+        ],
+        "priority": 4,
+        "importance": 4,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Benzodiazepínicos",
+        "subtopic": "Ansiedade",
+        "type": "Tratamento",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "A banca cobra tratamento de ansiedade sem recorrer a benzo crônico.",
+        "trap": "Alívio rápido não significa melhor tratamento de manutenção.",
+        "memoryHook": "TAG crônico não combina com benzo crônico.",
+        "related": [
+          "Ansiedade",
+          "ISRS"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0042",
+        "front": "Por que benzodiazepínicos podem piorar apneia do sono em idosos?",
+        "back": "Podem reduzir tônus de vias aéreas, aumentar sedação e prejudicar despertar protetor, agravando eventos respiratórios.",
+        "tags": [
+          "apneia",
+          "benzodiazepínico"
+        ],
+        "priorities": [
+          "high-frequency"
+        ],
+        "priority": 3,
+        "importance": 3,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Benzodiazepínicos",
+        "subtopic": "Apneia do sono",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 4,
+          "UNIFESP": 4,
+          "UNICAMP": 3,
+          "SUS-SP": 4,
+          "IAMSPE": 3
+        },
+        "whyExamAsks": "Pode aparecer em questões de insônia com roncos e sonolência diurna.",
+        "trap": "Não tratar insônia sem rastrear apneia quando houver pistas.",
+        "memoryHook": "Ronco + sonolência: cuidado com sedativo.",
+        "related": [
+          "Apneia do sono",
+          "Insônia"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0043",
+        "front": "Quais antidepressivos costumam ser primeira linha para depressão no idoso?",
+        "back": "ISRS, especialmente sertralina e escitalopram, pela eficácia e melhor tolerabilidade relativa, com monitorização de efeitos adversos.",
+        "tags": [
+          "depressão no idoso",
+          "ISRS"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 1,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Antidepressivos",
+        "subtopic": "Escolha inicial",
+        "type": "Tratamento",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "Provas cobram preferência por fármacos com menor carga anticolinérgica.",
+        "trap": "Primeira linha não significa ausência de risco.",
+        "memoryHook": "ISRS: bom perfil, mas monitore.",
+        "related": [
+          "Depressão",
+          "ISRS"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0044",
+        "front": "Por que sertralina é frequentemente lembrada em idosos?",
+        "back": "Tem bom perfil de segurança geral, menor interação relevante que alguns ISRS e é opção comum para depressão e ansiedade, exigindo monitorização gastrointestinal e sódio.",
+        "tags": [
+          "sertralina",
+          "ISRS"
+        ],
+        "priorities": [
+          "high-frequency"
+        ],
+        "priority": 4,
+        "importance": 4,
+        "difficulty": 1,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Antidepressivos",
+        "subtopic": "Sertralina",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "A banca cobra escolhas práticas em comorbidades e polifarmácia.",
+        "trap": "Pode causar hiponatremia, sangramento e sintomas gastrointestinais.",
+        "memoryHook": "Sertralina é comum, não é invisível.",
+        "related": [
+          "Hiponatremia",
+          "Depressão"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0045",
+        "front": "Qual cuidado específico é importante com escitalopram em idosos?",
+        "back": "Monitorar dose, QT, interações e hiponatremia; doses mais altas aumentam preocupação com prolongamento de QT.",
+        "tags": [
+          "escitalopram",
+          "QT",
+          "idoso"
+        ],
+        "priorities": [
+          "high-frequency"
+        ],
+        "priority": 4,
+        "importance": 4,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Antidepressivos",
+        "subtopic": "Escitalopram",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "Provas podem comparar escitalopram, citalopram e risco cardíaco.",
+        "trap": "Não escalar dose sem considerar ECG e comorbidades.",
+        "memoryHook": "Escitalopram: limpo, mas olhe QT.",
+        "related": [
+          "QT",
+          "Hiponatremia"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0046",
+        "front": "Qual risco limita o uso de citalopram em idosos?",
+        "back": "Prolongamento do intervalo QT, especialmente em doses mais altas, cardiopatia, hipocalemia/hipomagnesemia ou associação com outros fármacos que prolongam QT.",
+        "tags": [
+          "citalopram",
+          "QT"
+        ],
+        "priorities": [
+          "high-frequency"
+        ],
+        "priority": 4,
+        "importance": 4,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Antidepressivos",
+        "subtopic": "Citalopram",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "É uma pegadinha frequente de segurança em idosos.",
+        "trap": "Não confundir “ISRS” com ausência de risco cardiológico.",
+        "memoryHook": "Citalopram pede ECG quando risco.",
+        "related": [
+          "QT",
+          "ECG"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0047",
+        "front": "Por que paroxetina costuma ser evitada em idosos?",
+        "back": "Por maior efeito anticolinérgico entre os ISRS, maior risco de sedação, interações e sintomas de retirada.",
+        "tags": [
+          "paroxetina",
+          "anticolinérgico",
+          "ISRS"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 1,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Antidepressivos",
+        "subtopic": "Paroxetina",
+        "type": "Pegadinha",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "É alternativa ruim em provas quando há queixa cognitiva, delirium ou polifarmácia.",
+        "trap": "Não escolher paroxetina só por ser ISRS.",
+        "memoryHook": "Paroxetina não é ISRS “neutro”.",
+        "related": [
+          "Anticolinérgicos",
+          "Depressão"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0048",
+        "front": "Qual característica da fluoxetina exige cautela em idosos?",
+        "back": "Meia-vida longa e maior potencial de interação por inibição enzimática, podendo dificultar manejo de efeitos adversos e trocas.",
+        "tags": [
+          "fluoxetina",
+          "meia-vida"
+        ],
+        "priorities": [
+          "high-frequency"
+        ],
+        "priority": 3,
+        "importance": 3,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Antidepressivos",
+        "subtopic": "Fluoxetina",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 4,
+          "UNIFESP": 4,
+          "UNICAMP": 3,
+          "SUS-SP": 4,
+          "IAMSPE": 3
+        },
+        "whyExamAsks": "A banca cobra acúmulo e interações em polifarmácia.",
+        "trap": "Meia-vida longa pode ser problema em eventos adversos.",
+        "memoryHook": "Fluoxetina demora para sair.",
+        "related": [
+          "Interações",
+          "Polifarmácia"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0049",
+        "front": "Qual alteração eletrolítica é especialmente associada a ISRS em idosos?",
+        "back": "Hiponatremia, geralmente por SIADH, especialmente em mulheres, baixo peso, uso de diuréticos e início recente do antidepressivo.",
+        "tags": [
+          "ISRS",
+          "hiponatremia",
+          "SIADH"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 1,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Antidepressivos",
+        "subtopic": "Hiponatremia",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "Tema de alta incidência em provas de psicofarmacologia geriátrica.",
+        "trap": "Queda, confusão ou convulsão após ISRS pode ser hiponatremia.",
+        "memoryHook": "ISRS novo + confusão = dosar sódio.",
+        "related": [
+          "SIADH",
+          "Delirium"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0050",
+        "front": "Por que ISRS podem aumentar risco de sangramento em idosos?",
+        "back": "Reduzem captação de serotonina pelas plaquetas, podendo aumentar sangramento, especialmente com AAS, AINEs, anticoagulantes ou antiagregantes.",
+        "tags": [
+          "ISRS",
+          "sangramento"
+        ],
+        "priorities": [
+          "high-frequency"
+        ],
+        "priority": 4,
+        "importance": 4,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Antidepressivos",
+        "subtopic": "Sangramento",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "Provas cobram interação farmacodinâmica.",
+        "trap": "Não é interação apenas hepática; é efeito plaquetário.",
+        "memoryHook": "ISRS mexe na plaqueta.",
+        "related": [
+          "AINE",
+          "Anticoagulantes"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0051",
+        "front": "Qual tríade sugere síndrome serotoninérgica?",
+        "back": "Alteração do estado mental, hiperatividade autonômica e hiperatividade neuromuscular, especialmente clônus, hiperreflexia e tremor.",
+        "tags": [
+          "síndrome serotoninérgica",
+          "clônus"
+        ],
+        "priorities": [
+          "high-frequency"
+        ],
+        "priority": 4,
+        "importance": 4,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Antidepressivos",
+        "subtopic": "Síndrome serotoninérgica",
+        "type": "Diagnóstico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "A banca diferencia de síndrome neuroléptica maligna e delirium inespecífico.",
+        "trap": "Clônus e hiperreflexia favorecem serotonina.",
+        "memoryHook": "Serotonina = clônus.",
+        "related": [
+          "SNM",
+          "Interações"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0052",
+        "front": "Qual efeito adverso deve ser monitorado com venlafaxina em idosos?",
+        "back": "Aumento de pressão arterial, além de hiponatremia, sintomas de retirada e interações.",
+        "tags": [
+          "venlafaxina",
+          "pressão arterial"
+        ],
+        "priorities": [
+          "high-frequency"
+        ],
+        "priority": 4,
+        "importance": 4,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Antidepressivos",
+        "subtopic": "Venlafaxina",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "Questões cobram HAS e escolha de antidepressivo em paciente cardiovascular.",
+        "trap": "Não é ideal se hipertensão estiver descontrolada.",
+        "memoryHook": "Venlafaxina pode subir PA.",
+        "related": [
+          "Hipertensão",
+          "ISRN"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0053",
+        "front": "Quando duloxetina pode ser útil em idosos deprimidos?",
+        "back": "Quando há depressão associada a dor crônica ou neuropática, desde que função hepática/renal e interações sejam consideradas.",
+        "tags": [
+          "duloxetina",
+          "dor",
+          "idoso"
+        ],
+        "priorities": [
+          "high-frequency"
+        ],
+        "priority": 4,
+        "importance": 4,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Antidepressivos",
+        "subtopic": "Duloxetina",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "A banca valoriza escolha por comorbidade e sintoma-alvo.",
+        "trap": "Não usar automaticamente em insuficiência renal/hepática relevante.",
+        "memoryHook": "Duloxetina: humor + dor.",
+        "related": [
+          "Dor crônica",
+          "Depressão"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0054",
+        "front": "Qual perfil sintomático pode favorecer bupropiona em depressão no idoso?",
+        "back": "Depressão com apatia, fadiga, hipersonia ou disfunção sexual por ISRS, evitando em epilepsia, transtorno alimentar ou alto risco convulsivo.",
+        "tags": [
+          "bupropiona",
+          "depressão"
+        ],
+        "priorities": [
+          "high-frequency"
+        ],
+        "priority": 3,
+        "importance": 3,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Antidepressivos",
+        "subtopic": "Bupropiona",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 4,
+          "UNIFESP": 4,
+          "UNICAMP": 3,
+          "SUS-SP": 4,
+          "IAMSPE": 3
+        },
+        "whyExamAsks": "Cai como escolha por perfil, mas com contraindicações.",
+        "trap": "Pode piorar ansiedade e insônia.",
+        "memoryHook": "Bupropiona ativa.",
+        "related": [
+          "Apatia",
+          "Convulsão"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0055",
+        "front": "Qual antidepressivo é lembrado quando depressão no idoso cursa com insônia e perda de peso?",
+        "back": "Mirtazapina, por efeito sedativo e aumento de apetite, com cuidado para sedação e quedas.",
+        "tags": [
+          "mirtazapina",
+          "perda ponderal"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 1,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Antidepressivos",
+        "subtopic": "Mirtazapina",
+        "type": "Tratamento",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "É uma das escolhas mais cobradas por perfil clínico.",
+        "trap": "Sedação excessiva pode aumentar queda.",
+        "memoryHook": "Perdeu peso e sono: pense mirtazapina.",
+        "related": [
+          "Insônia",
+          "Perda de peso"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0056",
+        "front": "Por que tricíclicos devem ser evitados como primeira escolha em idosos?",
+        "back": "Por efeitos anticolinérgicos, hipotensão ortostática, sedação, arritmias, prolongamento de condução, quedas e letalidade em overdose.",
+        "tags": [
+          "tricíclicos",
+          "idoso"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 1,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Antidepressivos",
+        "subtopic": "Tricíclicos",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "Aparecem como alternativa errada frequente em provas.",
+        "trap": "Dor neuropática não justifica ignorar risco em idoso frágil.",
+        "memoryHook": "Tricíclico = anticolinérgico + queda + coração.",
+        "related": [
+          "Anticolinérgicos",
+          "QT"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0057",
+        "front": "Nortriptilina é mais segura que amitriptilina em idosos?",
+        "back": "Pode ter menor carga anticolinérgica relativa, mas ainda exige cautela por efeitos cardiovasculares, anticolinérgicos e risco de queda.",
+        "tags": [
+          "nortriptilina",
+          "amitriptilina"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error"
+        ],
+        "priority": 3,
+        "importance": 3,
+        "difficulty": 3,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Antidepressivos",
+        "subtopic": "Nortriptilina",
+        "type": "Pegadinha",
+        "examFrequency": {
+          "USP": 4,
+          "UNIFESP": 4,
+          "UNICAMP": 3,
+          "SUS-SP": 4,
+          "IAMSPE": 3
+        },
+        "whyExamAsks": "A banca pode testar nuance dentro dos tricíclicos.",
+        "trap": "Menos pior não significa ideal.",
+        "memoryHook": "Nortriptilina não vira primeira linha por ser “menos anticolinérgica”.",
+        "related": [
+          "Tricíclicos",
+          "Dor"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0058",
+        "front": "Quanto tempo esperar para avaliar resposta inicial a antidepressivo no idoso?",
+        "back": "Em geral algumas semanas, com resposta podendo ser mais lenta; deve-se monitorar tolerabilidade precocemente e ajustar conforme evolução.",
+        "tags": [
+          "antidepressivo",
+          "tempo de resposta"
+        ],
+        "priorities": [
+          "high-frequency"
+        ],
+        "priority": 4,
+        "importance": 4,
+        "difficulty": 1,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Antidepressivos",
+        "subtopic": "Tempo de resposta",
+        "type": "Tratamento",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "Provas cobram paciência terapêutica versus troca precoce sem motivo.",
+        "trap": "Eventos adversos devem ser avaliados antes da eficácia plena.",
+        "memoryHook": "Efeito demora; evento adverso chega cedo.",
+        "related": [
+          "Depressão",
+          "Seguimento"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0059",
+        "front": "Após remissão de depressão no idoso, por que manter tratamento por tempo adequado?",
+        "back": "Porque idosos têm alto risco de recaída, especialmente depressão recorrente, grave, psicótica ou com comorbidades.",
+        "tags": [
+          "manutenção",
+          "depressão"
+        ],
+        "priorities": [
+          "high-frequency"
+        ],
+        "priority": 4,
+        "importance": 4,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Antidepressivos",
+        "subtopic": "Manutenção",
+        "type": "Tratamento",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "A banca cobra prevenção de recaída e não suspensão precoce.",
+        "trap": "Remissão não significa suspensão imediata.",
+        "memoryHook": "Melhorou, consolide.",
+        "related": [
+          "Depressão recorrente",
+          "Recaída"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0060",
+        "front": "Qual tratamento deve ser lembrado em depressão psicótica no idoso?",
+        "back": "Associação de antidepressivo e antipsicótico ou ECT, especialmente se grave, com risco, recusa alimentar ou necessidade de resposta rápida.",
+        "tags": [
+          "depressão psicótica",
+          "idoso"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Antidepressivos",
+        "subtopic": "Depressão psicótica",
+        "type": "Tratamento",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "Tema muito relevante para psicogeriatria e emergências.",
+        "trap": "Antidepressivo isolado pode ser insuficiente na depressão psicótica.",
+        "memoryHook": "Psicótica grave: pense combinação ou ECT.",
+        "related": [
+          "ECT",
+          "Antipsicóticos"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0061",
+        "front": "Em quais situações ECT deve ser lembrada em depressão no idoso?",
+        "back": "Depressão grave, psicótica, catatônica, risco elevado, recusa alimentar, necessidade de resposta rápida, refratariedade ou intolerância farmacológica.",
+        "tags": [
+          "ECT",
+          "depressão no idoso"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 1,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Antidepressivos",
+        "subtopic": "ECT",
+        "type": "Tratamento",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "USP costuma cobrar ECT como opção eficaz e segura quando bem indicada.",
+        "trap": "Idade avançada não é contraindicação absoluta.",
+        "memoryHook": "ECT é tratamento, não último castigo.",
+        "related": [
+          "Depressão",
+          "Catatonia"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0062",
+        "front": "Idosa inicia sertralina e após 10 dias apresenta confusão, queda e sódio baixo. Qual efeito adverso provável?",
+        "back": "Hiponatremia induzida por ISRS, possivelmente por SIADH.",
+        "tags": [
+          "caso clínico",
+          "ISRS",
+          "hiponatremia"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 1,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Antidepressivos",
+        "subtopic": "Caso clínico",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "Caso clássico de prova sobre ISRS em idosos.",
+        "trap": "Não atribuir confusão apenas à depressão ou demência.",
+        "memoryHook": "ISRS + queda/confusão = sódio.",
+        "related": [
+          "Hiponatremia",
+          "Sertralina"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0063",
+        "front": "Qual efeito adverso dos ISRS frequentemente compromete adesão?",
+        "back": "Disfunção sexual, incluindo redução de libido, atraso orgásmico ou anorgasmia.",
+        "tags": [
+          "ISRS",
+          "disfunção sexual"
+        ],
+        "priorities": [
+          "high-frequency"
+        ],
+        "priority": 3,
+        "importance": 3,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Antidepressivos",
+        "subtopic": "Disfunção sexual",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 4,
+          "UNIFESP": 4,
+          "UNICAMP": 3,
+          "SUS-SP": 4,
+          "IAMSPE": 3
+        },
+        "whyExamAsks": "Pode cair como adesão e escolha alternativa.",
+        "trap": "Idosos também têm vida sexual; não ignorar esse efeito.",
+        "memoryHook": "Adesão depende de perguntar.",
+        "related": [
+          "Adesão",
+          "Bupropiona"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0064",
+        "front": "Qual ISRS tem maior risco de sintomas de retirada pela meia-vida curta?",
+        "back": "Paroxetina. A retirada deve ser gradual para reduzir tontura, irritabilidade, sintomas gripais, insônia e parestesias.",
+        "tags": [
+          "paroxetina",
+          "retirada"
+        ],
+        "priorities": [
+          "high-frequency"
+        ],
+        "priority": 4,
+        "importance": 4,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Antidepressivos",
+        "subtopic": "Retirada de ISRS",
+        "type": "Conduta",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "A banca cobra paroxetina como fármaco problemático em idosos.",
+        "trap": "Não suspender abruptamente.",
+        "memoryHook": "Paroxetina gruda e cobra saída.",
+        "related": [
+          "Paroxetina",
+          "Deprescrição"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0065",
+        "front": "Quando antipsicótico pode ser considerado em sintomas comportamentais da demência?",
+        "back": "Quando há risco, agressividade grave, psicose com sofrimento importante ou falha de medidas não farmacológicas, sempre com menor dose, menor tempo e reavaliação.",
+        "tags": [
+          "antipsicóticos",
+          "BPSD",
+          "demência"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 1,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Antipsicóticos",
+        "subtopic": "Indicação em demência",
+        "type": "Tratamento",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "Talvez o tema de psicofarmacologia geriátrica mais cobrado.",
+        "trap": "Não usar por agitação leve, insônia ou conveniência institucional.",
+        "memoryHook": "Antipsicótico em demência: risco, sofrimento, curto prazo.",
+        "related": [
+          "BPSD",
+          "Demência"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0066",
+        "front": "Qual alerta deve ser lembrado ao usar antipsicóticos em demência?",
+        "back": "Aumento de risco de mortalidade e eventos cerebrovasculares, além de sedação, quedas e sintomas extrapiramidais.",
+        "tags": [
+          "antipsicóticos",
+          "mortalidade",
+          "AVC"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 1,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Antipsicóticos",
+        "subtopic": "Mortalidade",
+        "type": "Prognóstico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "A banca cobra o risco antes da prescrição.",
+        "trap": "Não é medicação “comportamental” sem custo.",
+        "memoryHook": "Antipsicótico em demência tem caixa-preta conceitual.",
+        "related": [
+          "AVC",
+          "BPSD"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0067",
+        "front": "Em qual demência há maior risco de hipersensibilidade a antipsicóticos?",
+        "back": "Demência com corpos de Lewy, podendo ocorrer sedação intensa, piora cognitiva, rigidez, parkinsonismo grave e síndrome neuroléptica maligna-like.",
+        "tags": [
+          "DCL",
+          "antipsicóticos",
+          "hipersensibilidade"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 1,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Antipsicóticos",
+        "subtopic": "Hipersensibilidade",
+        "type": "Pegadinha",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "É uma das pegadinhas mais clássicas da USP.",
+        "trap": "Alucinação visual em DCL não significa usar haloperidol.",
+        "memoryHook": "DCL odeia neuroléptico.",
+        "related": [
+          "Demência com corpos de Lewy",
+          "Haloperidol"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0068",
+        "front": "Qual principal problema do haloperidol em idosos com parkinsonismo ou DCL?",
+        "back": "Bloqueio D2 intenso, com risco de piora motora, rigidez, sintomas extrapiramidais e reação grave em DCL.",
+        "tags": [
+          "haloperidol",
+          "parkinsonismo"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 1,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Antipsicóticos",
+        "subtopic": "Haloperidol",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "A banca costuma colocar haloperidol como alternativa errada nesses quadros.",
+        "trap": "Haloperidol pode ser útil no delirium hiperativo, mas não é bom para DCL/Parkinson.",
+        "memoryHook": "Haloperidol trava dopamina.",
+        "related": [
+          "Parkinsonismo",
+          "DCL"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0069",
+        "front": "Por que quetiapina costuma ser preferida quando antipsicótico é inevitável em Parkinson/DCL?",
+        "back": "Por menor bloqueio D2 e menor risco relativo de piora motora, embora sedação, hipotensão e eficácia limitada devam ser considerados.",
+        "tags": [
+          "quetiapina",
+          "Parkinson",
+          "DCL"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Antipsicóticos",
+        "subtopic": "Quetiapina",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "Cai como escolha menos ruim em psicose associada a parkinsonismo.",
+        "trap": "Menos risco motor não significa ausência de risco.",
+        "memoryHook": "Parkinson psicótico: quetiapina costuma aparecer.",
+        "related": [
+          "Parkinson",
+          "DCL"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0070",
+        "front": "Qual cuidado é importante com risperidona em idosos com demência?",
+        "back": "Pode reduzir agressividade/psicose em casos selecionados, mas aumenta risco de eventos cerebrovasculares, parkinsonismo, sedação e quedas; usar dose baixa e tempo limitado.",
+        "tags": [
+          "risperidona",
+          "demência"
+        ],
+        "priorities": [
+          "high-frequency"
+        ],
+        "priority": 4,
+        "importance": 4,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Antipsicóticos",
+        "subtopic": "Risperidona",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "A banca cobra indicação restrita e riscos.",
+        "trap": "Não usar cronicamente sem tentativa de redução.",
+        "memoryHook": "Risperidona: eficaz, mas cobra AVC/EPS.",
+        "related": [
+          "BPSD",
+          "AVC"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0071",
+        "front": "Quais efeitos adversos limitam olanzapina em idosos?",
+        "back": "Sedação, ganho de peso, síndrome metabólica, hipotensão, efeitos anticolinérgicos relativos e risco de piora cognitiva em vulneráveis.",
+        "tags": [
+          "olanzapina",
+          "síndrome metabólica"
+        ],
+        "priorities": [
+          "high-frequency"
+        ],
+        "priority": 4,
+        "importance": 4,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Antipsicóticos",
+        "subtopic": "Olanzapina",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "Questões com diabetes, obesidade ou dislipidemia testam essa escolha.",
+        "trap": "Não é ideal em alto risco metabólico.",
+        "memoryHook": "Olanzapina pesa metabolismo.",
+        "related": [
+          "Metabólico",
+          "Diabetes"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0072",
+        "front": "Qual característica pode favorecer aripiprazol em alguns idosos?",
+        "back": "Menor sedação e menor risco metabólico relativo, mas pode causar acatisia, insônia e interações.",
+        "tags": [
+          "aripiprazol",
+          "acatisia"
+        ],
+        "priorities": [
+          "high-frequency"
+        ],
+        "priority": 3,
+        "importance": 3,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Antipsicóticos",
+        "subtopic": "Aripiprazol",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 4,
+          "UNIFESP": 4,
+          "UNICAMP": 3,
+          "SUS-SP": 4,
+          "IAMSPE": 3
+        },
+        "whyExamAsks": "Pode aparecer em comparação entre antipsicóticos.",
+        "trap": "Menor metabólico não significa ausência de efeitos adversos.",
+        "memoryHook": "Aripiprazol ativa; vigie acatisia.",
+        "related": [
+          "Acatisia",
+          "Metabólico"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0073",
+        "front": "Qual risco limita ziprasidona em idosos?",
+        "back": "Prolongamento do intervalo QT, exigindo cautela em cardiopatia, distúrbios eletrolíticos ou associação com outros fármacos que prolongam QT.",
+        "tags": [
+          "ziprasidona",
+          "QT"
+        ],
+        "priorities": [
+          "high-frequency"
+        ],
+        "priority": 3,
+        "importance": 3,
+        "difficulty": 3,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Antipsicóticos",
+        "subtopic": "Ziprasidona",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 4,
+          "UNIFESP": 4,
+          "UNICAMP": 3,
+          "SUS-SP": 4,
+          "IAMSPE": 3
+        },
+        "whyExamAsks": "A banca pode comparar menor ganho ponderal versus risco de QT.",
+        "trap": "Não escolher apenas por perfil metabólico.",
+        "memoryHook": "Ziprasidona: pouco peso, mais QT.",
+        "related": [
+          "QT",
+          "ECG"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0074",
+        "front": "Quando clozapina pode ser lembrada em psicogeriatria?",
+        "back": "Psicose refratária ou psicose da doença de Parkinson em casos selecionados, com monitorização rigorosa de neutrófilos e eventos adversos.",
+        "tags": [
+          "clozapina",
+          "monitorização"
+        ],
+        "priorities": [
+          "high-frequency"
+        ],
+        "priority": 4,
+        "importance": 4,
+        "difficulty": 3,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Antipsicóticos",
+        "subtopic": "Clozapina",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "A banca cobra riscos e necessidade de monitorização.",
+        "trap": "Não é primeira escolha simples para idoso com demência.",
+        "memoryHook": "Clozapina exige vigilância.",
+        "related": [
+          "Neutropenia",
+          "Parkinson"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0075",
+        "front": "Quais efeitos adversos graves da clozapina devem ser lembrados?",
+        "back": "Neutropenia/agranulocitose, miocardite, convulsões, sedação, sialorreia, hipotensão, constipação grave/íleo e síndrome metabólica.",
+        "tags": [
+          "clozapina",
+          "agranulocitose",
+          "constipação"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Antipsicóticos",
+        "subtopic": "Clozapina efeitos",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "Clozapina é questão perigosa por múltiplos riscos fatais.",
+        "trap": "Constipação por clozapina pode ser grave e subestimada.",
+        "memoryHook": "Clozapina: sangue, coração, intestino.",
+        "related": [
+          "Agranulocitose",
+          "Constipação"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0076",
+        "front": "Quais antipsicóticos têm maior risco de sintomas extrapiramidais em idosos?",
+        "back": "Os de maior bloqueio D2, especialmente típicos como haloperidol, e alguns atípicos em doses maiores, como risperidona.",
+        "tags": [
+          "EPS",
+          "antipsicóticos"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 1,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Antipsicóticos",
+        "subtopic": "Sintomas extrapiramidais",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "A banca cobra piora de marcha, rigidez e queda após antipsicótico.",
+        "trap": "Não tratar EPS automaticamente com anticolinérgico em idoso.",
+        "memoryHook": "D2 alto = EPS alto.",
+        "related": [
+          "Biperideno",
+          "Parkinsonismo"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0077",
+        "front": "Como reconhecer acatisia induzida por antipsicótico no idoso?",
+        "back": "Inquietação interna, incapacidade de ficar parado, ansiedade intensa e movimentos repetitivos, podendo ser confundida com agitação psiquiátrica.",
+        "tags": [
+          "acatisia",
+          "antipsicótico"
+        ],
+        "priorities": [
+          "high-frequency"
+        ],
+        "priority": 4,
+        "importance": 4,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Antipsicóticos",
+        "subtopic": "Acatisia",
+        "type": "Diagnóstico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "A banca cobra cascata: aumentar antipsicótico pode piorar acatisia.",
+        "trap": "Acatisia não é necessariamente piora psicótica.",
+        "memoryHook": "Agitado por remédio, não por doença.",
+        "related": [
+          "Aripiprazol",
+          "Risperidona"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0078",
+        "front": "O que aumenta risco de arritmia por QT com antipsicóticos em idosos?",
+        "back": "Cardiopatia, hipocalemia, hipomagnesemia, bradicardia, doses altas, via parenteral, interações e associação com outros fármacos que prolongam QT.",
+        "tags": [
+          "QT",
+          "antipsicóticos"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Antipsicóticos",
+        "subtopic": "QT",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "Provas cobram ECG e eletrólitos antes de escolhas de risco.",
+        "trap": "QT não depende só do antipsicótico; depende do contexto.",
+        "memoryHook": "QT soma riscos.",
+        "related": [
+          "ECG",
+          "Eletrólitos"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0079",
+        "front": "No delirium hiperativo com risco imediato, qual fármaco costuma ser lembrado em prova?",
+        "back": "Haloperidol em baixa dose, com monitorização de QT, sintomas extrapiramidais e contraindicações relativas como Parkinson/DCL.",
+        "tags": [
+          "haloperidol",
+          "delirium"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 1,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Antipsicóticos",
+        "subtopic": "Delirium",
+        "type": "Tratamento",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "É uma conduta clássica em delirium grave.",
+        "trap": "Haloperidol controla comportamento, não trata causa do delirium.",
+        "memoryHook": "Haloperidol é contenção química pontual.",
+        "related": [
+          "Delirium",
+          "QT"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0080",
+        "front": "Após melhora de BPSD tratado com antipsicótico, qual deve ser a estratégia?",
+        "back": "Reavaliar periodicamente e tentar redução/suspensão quando possível, evitando manutenção indefinida sem sintoma-alvo ativo.",
+        "tags": [
+          "antipsicótico",
+          "deprescrição"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 1,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Antipsicóticos",
+        "subtopic": "Duração",
+        "type": "Conduta",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "A banca cobra menor tempo possível.",
+        "trap": "Renovação automática é erro geriátrico.",
+        "memoryHook": "Antipsicótico precisa de data para reavaliar.",
+        "related": [
+          "BPSD",
+          "Deprescrição"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0081",
+        "front": "O que deve ser investigado antes de prescrever antipsicótico para agitação em demência?",
+        "back": "Dor, infecção, delirium, constipação, retenção urinária, fome, sono, ambiente, sobrecarga do cuidador e medicamentos.",
+        "tags": [
+          "agitação",
+          "demência",
+          "antipsicótico"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 1,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Antipsicóticos",
+        "subtopic": "Antes de prescrever",
+        "type": "Conduta",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "A USP cobra fatores reversíveis de agitação.",
+        "trap": "Agitação não é automaticamente psicose.",
+        "memoryHook": "Agitação é sintoma, procure gatilho.",
+        "related": [
+          "BPSD",
+          "Dor",
+          "Delirium"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0082",
+        "front": "Idoso com flutuação cognitiva, alucinações visuais e parkinsonismo piora muito após haloperidol. Qual diagnóstico de base é provável?",
+        "back": "Demência com corpos de Lewy, caracterizada por hipersensibilidade a antipsicóticos.",
+        "tags": [
+          "caso clínico",
+          "DCL",
+          "haloperidol"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 1,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Antipsicóticos",
+        "subtopic": "Caso clínico DCL",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "Esse é um dos casos mais clássicos em psicogeriatria.",
+        "trap": "Não interpretar apenas como “efeito colateral comum”.",
+        "memoryHook": "Haloperidol desmascara DCL.",
+        "related": [
+          "DCL",
+          "Haloperidol"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0083",
+        "front": "Qual evento cardiovascular funcional deve ser monitorado com antipsicóticos sedativos em idosos?",
+        "back": "Hipotensão ortostática, com tontura, síncope e quedas, especialmente no início ou após aumento de dose.",
+        "tags": [
+          "hipotensão ortostática",
+          "antipsicóticos"
+        ],
+        "priorities": [
+          "high-frequency"
+        ],
+        "priority": 4,
+        "importance": 4,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Antipsicóticos",
+        "subtopic": "Hipotensão",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "A banca cobra quedas como consequência de psicofármaco.",
+        "trap": "PA sentada normal não exclui hipotensão ortostática.",
+        "memoryHook": "Levantar pode derrubar.",
+        "related": [
+          "Quedas",
+          "Ortostatismo"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0084",
+        "front": "Quais antipsicóticos têm maior preocupação metabólica?",
+        "back": "Olanzapina e clozapina, principalmente, associadas a ganho de peso, dislipidemia e resistência insulínica.",
+        "tags": [
+          "antipsicóticos",
+          "metabólico"
+        ],
+        "priorities": [
+          "high-frequency"
+        ],
+        "priority": 4,
+        "importance": 4,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Antipsicóticos",
+        "subtopic": "Metabolismo",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "Questões com diabetes/dislipidemia testam perfil de escolha.",
+        "trap": "Quetiapina também pode ter impacto metabólico.",
+        "memoryHook": "Cloza/olanza pesam.",
+        "related": [
+          "Diabetes",
+          "Dislipidemia"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0085",
+        "front": "Qual antipsicótico atípico é lembrado por maior risco de hiperprolactinemia?",
+        "back": "Risperidona, especialmente em doses mais altas.",
+        "tags": [
+          "prolactina",
+          "risperidona"
+        ],
+        "priorities": [
+          "high-frequency"
+        ],
+        "priority": 3,
+        "importance": 3,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Antipsicóticos",
+        "subtopic": "Prolactina",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 4,
+          "UNIFESP": 4,
+          "UNICAMP": 3,
+          "SUS-SP": 4,
+          "IAMSPE": 3
+        },
+        "whyExamAsks": "Pode cair em comparação de efeitos adversos.",
+        "trap": "Em idoso, sintomas podem ser pouco espontaneamente relatados.",
+        "memoryHook": "Risperidona sobe prolactina.",
+        "related": [
+          "Risperidona",
+          "Efeitos adversos"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0086",
+        "front": "Qual quadro sugere síndrome neuroléptica maligna?",
+        "back": "Rigidez, hipertermia, alteração do estado mental, instabilidade autonômica e elevação de CPK após exposição a antipsicótico ou retirada dopaminérgica.",
+        "tags": [
+          "SNM",
+          "antipsicóticos"
+        ],
+        "priorities": [
+          "high-frequency"
+        ],
+        "priority": 4,
+        "importance": 4,
+        "difficulty": 3,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Antipsicóticos",
+        "subtopic": "SNM",
+        "type": "Diagnóstico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "A banca diferencia de síndrome serotoninérgica.",
+        "trap": "Clônus favorece serotoninérgica; rigidez em cano de chumbo favorece SNM.",
+        "memoryHook": "SNM = rigidez + febre + CPK.",
+        "related": [
+          "Síndrome serotoninérgica",
+          "Antipsicóticos"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0087",
+        "front": "Por que o lítio exige cautela especial em idosos?",
+        "back": "Janela terapêutica estreita, depuração renal reduzida, risco de intoxicação, tremor, confusão, hipotireoidismo, hiperparatireoidismo e interações.",
+        "tags": [
+          "lítio",
+          "idoso"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 1,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Estabilizadores",
+        "subtopic": "Lítio no idoso",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "Lítio é tema de alta recorrência em psicofarmacologia geriátrica.",
+        "trap": "Lítio pode ser eficaz, mas exige monitorização mais rigorosa.",
+        "memoryHook": "Lítio é bom, mas tem janela estreita.",
+        "related": [
+          "Transtorno bipolar",
+          "Função renal"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0088",
+        "front": "Quais exames monitorar no uso de lítio em idosos?",
+        "back": "Litemia, função renal, eletrólitos, TSH, cálcio quando indicado, ECG em risco cardíaco e avaliação de interações e efeitos neurológicos.",
+        "tags": [
+          "litemia",
+          "monitorização"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Estabilizadores",
+        "subtopic": "Litemia",
+        "type": "Conduta",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "A banca cobra monitorização antes e durante o uso.",
+        "trap": "Não monitorar apenas litemia.",
+        "memoryHook": "Lítio: rim, tireoide, cálcio e nível.",
+        "related": [
+          "Monitorização",
+          "TSH"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0089",
+        "front": "Quais sintomas sugerem intoxicação por lítio em idosos?",
+        "back": "Tremor grosseiro, ataxia, disartria, náuseas, diarreia, sonolência, confusão, delirium, mioclonias e convulsões em casos graves.",
+        "tags": [
+          "lítio",
+          "intoxicação"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Estabilizadores",
+        "subtopic": "Intoxicação por lítio",
+        "type": "Diagnóstico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "A banca costuma apresentar intoxicação como confusão aguda ou queda.",
+        "trap": "Litemia pode não refletir perfeitamente gravidade neurológica em uso crônico.",
+        "memoryHook": "Lítio intoxica com tremor e ataxia.",
+        "related": [
+          "Delirium",
+          "Ataxia"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0090",
+        "front": "Quais medicamentos aumentam risco de intoxicação por lítio?",
+        "back": "Diuréticos tiazídicos, IECA, BRA e AINEs, além de desidratação e redução da função renal.",
+        "tags": [
+          "lítio",
+          "interações"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 1,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Estabilizadores",
+        "subtopic": "Interações do lítio",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "Essa lista cai repetidamente em prova.",
+        "trap": "Infecção, diarreia e baixa ingesta hídrica também podem elevar risco.",
+        "memoryHook": "Tiazida, IECA/BRA e AINE sobem lítio.",
+        "related": [
+          "AINE",
+          "IECA",
+          "Diuréticos"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0091",
+        "front": "Lítio deve ser evitado sempre em idosos?",
+        "back": "Não. Pode ser eficaz no transtorno bipolar e tem efeito antissuicida, mas requer seleção cuidadosa, doses menores e monitorização rigorosa.",
+        "tags": [
+          "lítio",
+          "bipolaridade"
+        ],
+        "priorities": [
+          "high-frequency"
+        ],
+        "priority": 3,
+        "importance": 3,
+        "difficulty": 3,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Estabilizadores",
+        "subtopic": "Lítio e neuroproteção",
+        "type": "Conceito",
+        "examFrequency": {
+          "USP": 4,
+          "UNIFESP": 4,
+          "UNICAMP": 3,
+          "SUS-SP": 4,
+          "IAMSPE": 3
+        },
+        "whyExamAsks": "A banca pode testar equilíbrio entre eficácia e risco.",
+        "trap": "Idade isolada não contraindica lítio.",
+        "memoryHook": "Não demonizar; monitorar.",
+        "related": [
+          "Transtorno bipolar",
+          "Suicídio"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0092",
+        "front": "Quais riscos do valproato devem ser monitorados em idosos?",
+        "back": "Sedação, tremor, ganho de peso, plaquetopenia, hepatotoxicidade, hiperamonemia, interações e piora de marcha/cognição.",
+        "tags": [
+          "valproato",
+          "idoso"
+        ],
+        "priorities": [
+          "high-frequency"
+        ],
+        "priority": 4,
+        "importance": 4,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Estabilizadores",
+        "subtopic": "Valproato",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "Valproato aparece como opção comum, mas não isenta de risco.",
+        "trap": "Hiperamonemia pode causar confusão mesmo com enzimas hepáticas normais.",
+        "memoryHook": "Valproato confuso: pense amônia.",
+        "related": [
+          "Hiperamonemia",
+          "Trombocitopenia"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0093",
+        "front": "Valproato é boa opção de rotina para agitação na demência?",
+        "back": "Não. Evidência de benefício é limitada e há risco de sedação, quedas, trombocitopenia e outros eventos adversos.",
+        "tags": [
+          "valproato",
+          "BPSD",
+          "demência"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Estabilizadores",
+        "subtopic": "Valproato em BPSD",
+        "type": "Pegadinha",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "A banca pode oferecer valproato como alternativa sedutora, mas inadequada de rotina.",
+        "trap": "Não tratar BPSD com estabilizador apenas para sedar.",
+        "memoryHook": "Valproato não é antipsicótico “seguro” para demência.",
+        "related": [
+          "BPSD",
+          "Demência"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0094",
+        "front": "Por que carbamazepina é difícil em idosos?",
+        "back": "Risco de hiponatremia, sedação, ataxia, interações enzimáticas, leucopenia, hepatotoxicidade e piora de quedas.",
+        "tags": [
+          "carbamazepina",
+          "interações"
+        ],
+        "priorities": [
+          "high-frequency"
+        ],
+        "priority": 3,
+        "importance": 3,
+        "difficulty": 3,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Estabilizadores",
+        "subtopic": "Carbamazepina",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 4,
+          "UNIFESP": 4,
+          "UNICAMP": 3,
+          "SUS-SP": 4,
+          "IAMSPE": 3
+        },
+        "whyExamAsks": "Cai menos, mas é importante em polifarmácia.",
+        "trap": "Pode reduzir níveis de vários fármacos por indução enzimática.",
+        "memoryHook": "Carbamazepina interage muito.",
+        "related": [
+          "Hiponatremia",
+          "Interações"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0095",
+        "front": "Qual o principal cuidado ao iniciar lamotrigina em idosos?",
+        "back": "Titulação lenta para reduzir risco de rash grave, incluindo síndrome de Stevens-Johnson; atenção a interação com valproato.",
+        "tags": [
+          "lamotrigina",
+          "titulação"
+        ],
+        "priorities": [
+          "high-frequency"
+        ],
+        "priority": 4,
+        "importance": 4,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Estabilizadores",
+        "subtopic": "Lamotrigina",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "A banca cobra titulação e interação com valproato.",
+        "trap": "Não subir rápido para “fazer efeito logo”.",
+        "memoryHook": "Lamotrigina sobe devagar.",
+        "related": [
+          "Rash",
+          "Valproato"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0096",
+        "front": "Em qual polo do transtorno bipolar a lamotrigina é mais lembrada?",
+        "back": "Prevenção de episódios depressivos e manejo de depressão bipolar, com menor utilidade para mania aguda.",
+        "tags": [
+          "lamotrigina",
+          "depressão bipolar"
+        ],
+        "priorities": [
+          "high-frequency"
+        ],
+        "priority": 3,
+        "importance": 3,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Estabilizadores",
+        "subtopic": "Lamotrigina indicação",
+        "type": "Tratamento",
+        "examFrequency": {
+          "USP": 4,
+          "UNIFESP": 4,
+          "UNICAMP": 3,
+          "SUS-SP": 4,
+          "IAMSPE": 3
+        },
+        "whyExamAsks": "Questões testam escolher estabilizador conforme polo predominante.",
+        "trap": "Não é antimaníaco agudo forte.",
+        "memoryHook": "Lamotrigina é mais depressão bipolar.",
+        "related": [
+          "Bipolaridade",
+          "Depressão bipolar"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0097",
+        "front": "Na mania em idoso, qual raciocínio deve preceder a escolha farmacológica?",
+        "back": "Investigar causas secundárias, medicamentos, delirium, demência, lesão neurológica e condições clínicas; depois escolher estabilizador/antipsicótico conforme risco e comorbidades.",
+        "tags": [
+          "mania no idoso",
+          "bipolaridade"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Estabilizadores",
+        "subtopic": "Mania no idoso",
+        "type": "Tratamento",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "Mania de início tardio é frequentemente secundária.",
+        "trap": "Não presumir transtorno bipolar primário sem investigação.",
+        "memoryHook": "Mania tardia pede causa orgânica.",
+        "related": [
+          "Mania secundária",
+          "Delirium"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0098",
+        "front": "Idoso em lítio inicia hidroclorotiazida e evolui com tremor, ataxia e confusão. Qual hipótese?",
+        "back": "Intoxicação por lítio precipitada por interação com tiazídico e possível alteração de volume/função renal.",
+        "tags": [
+          "caso clínico",
+          "lítio",
+          "tiazídico"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 1,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Estabilizadores",
+        "subtopic": "Lítio e desidratação",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "Caso clássico de prova.",
+        "trap": "Não tratar como novo delirium sem dosar lítio e rever medicação.",
+        "memoryHook": "Tiazida sobe lítio.",
+        "related": [
+          "Hidroclorotiazida",
+          "Intoxicação por lítio"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0099",
+        "front": "Qual alteração endócrina deve ser monitorada com lítio?",
+        "back": "Hipotireoidismo, além de alterações de paratireoide/cálcio.",
+        "tags": [
+          "lítio",
+          "hipotireoidismo"
+        ],
+        "priorities": [
+          "high-frequency"
+        ],
+        "priority": 4,
+        "importance": 4,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Estabilizadores",
+        "subtopic": "Lítio e tireoide",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "A banca cobra TSH na monitorização.",
+        "trap": "Sintomas depressivos e lentificação podem ser hipotireoidismo induzido por lítio.",
+        "memoryHook": "Lítio pede TSH.",
+        "related": [
+          "TSH",
+          "Depressão"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0100",
+        "front": "Qual complicação renal crônica pode ocorrer com lítio?",
+        "back": "Nefropatia túbulo-intersticial crônica e diabetes insipidus nefrogênico, com poliúria e polidipsia.",
+        "tags": [
+          "lítio",
+          "rim"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Estabilizadores",
+        "subtopic": "Lítio e rim",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "Provas cobram função renal e sintomas urinários.",
+        "trap": "Poliúria em lítio não é apenas “idade” ou diabetes mellitus.",
+        "memoryHook": "Lítio pode dar diabetes insipidus.",
+        "related": [
+          "Função renal",
+          "Diabetes insipidus"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0101",
+        "front": "Por que anticonvulsivantes usados como estabilizadores podem aumentar quedas em idosos?",
+        "back": "Podem causar sedação, tontura, ataxia, tremor, lentificação e interações, especialmente em polifarmácia.",
+        "tags": [
+          "anticonvulsivantes",
+          "quedas"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 4,
+        "importance": 4,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Estabilizadores",
+        "subtopic": "Anticonvulsivantes e quedas",
+        "type": "Prognóstico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "A banca usa queda como evento sentinela de psicofármaco.",
+        "trap": "Não atribuir marcha instável apenas à doença neurológica.",
+        "memoryHook": "Estabilizou humor, desestabilizou marcha.",
+        "related": [
+          "Quedas",
+          "Valproato"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0102",
+        "front": "Qual exame hematológico monitorar com valproato?",
+        "back": "Plaquetas, devido ao risco de trombocitopenia, além de enzimas hepáticas quando indicado.",
+        "tags": [
+          "valproato",
+          "plaquetas"
+        ],
+        "priorities": [
+          "high-frequency"
+        ],
+        "priority": 4,
+        "importance": 4,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Estabilizadores",
+        "subtopic": "Valproato e plaquetas",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "Pode cair em pacientes com equimoses, sangramento ou polifarmácia.",
+        "trap": "Sangramento em idoso anticoagulado pode piorar com plaquetopenia.",
+        "memoryHook": "Valproato olha plaqueta.",
+        "related": [
+          "Trombocitopenia",
+          "Sangramento"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0103",
+        "front": "Primeiro episódio maniforme aos 78 anos exige qual atitude diagnóstica?",
+        "back": "Investigar etiologias secundárias: delirium, medicamentos, doença neurológica, demência, AVC, tumor, endocrinopatias e substâncias.",
+        "tags": [
+          "mania tardia",
+          "caso clínico"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Estabilizadores",
+        "subtopic": "Caso clínico mania tardia",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "A USP costuma cobrar mania tardia como pista orgânica.",
+        "trap": "Não fechar TAB primário automaticamente.",
+        "memoryHook": "Mania nova no idoso = procure causa.",
+        "related": [
+          "Mania secundária",
+          "Neuropsiquiatria"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0104",
+        "front": "Quais são os principais inibidores da acetilcolinesterase usados em demências?",
+        "back": "Donepezila, rivastigmina e galantamina.",
+        "tags": [
+          "donepezila",
+          "rivastigmina",
+          "galantamina"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 1,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Demências - tratamento",
+        "subtopic": "Inibidores da AChE",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "Aparecem em Alzheimer, DCL e demência da doença de Parkinson.",
+        "trap": "Não são curativos; têm benefício sintomático modesto.",
+        "memoryHook": "AChE: donepezila, rivastigmina, galantamina.",
+        "related": [
+          "Alzheimer",
+          "DCL"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0105",
+        "front": "Em quais demências os inibidores da acetilcolinesterase são mais lembrados?",
+        "back": "Doença de Alzheimer leve a moderada e demências com componente colinérgico importante, como DCL e demência da doença de Parkinson.",
+        "tags": [
+          "inibidores da acetilcolinesterase",
+          "demência"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 1,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Demências - tratamento",
+        "subtopic": "Indicação AChE",
+        "type": "Tratamento",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "Muito cobrado em terapêutica das demências.",
+        "trap": "Não esperar reversão completa do quadro.",
+        "memoryHook": "Colinérgico ajuda sintomas, não cura.",
+        "related": [
+          "Alzheimer",
+          "Parkinson"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0106",
+        "front": "Quais efeitos adversos dos inibidores da acetilcolinesterase são importantes em idosos?",
+        "back": "Náuseas, diarreia, anorexia, perda de peso, bradicardia, síncope, sonhos vívidos e piora de sintomas extrapiramidais em alguns casos.",
+        "tags": [
+          "donepezila",
+          "bradicardia",
+          "perda de peso"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 1,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Demências - tratamento",
+        "subtopic": "Efeitos AChE",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "A banca cobra bradicardia e perda de peso.",
+        "trap": "Não ignorar síncope após donepezila.",
+        "memoryHook": "AChE pode frear o coração e o apetite.",
+        "related": [
+          "Bradicardia",
+          "Perda de peso"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0107",
+        "front": "Qual cuidado antes de iniciar inibidor da acetilcolinesterase em idoso com síncope ou bloqueio cardíaco?",
+        "back": "Avaliar frequência cardíaca, história de síncope, ECG quando indicado e uso de betabloqueadores/digitálicos ou outros bradicardizantes.",
+        "tags": [
+          "inibidor da acetilcolinesterase",
+          "síncope"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Demências - tratamento",
+        "subtopic": "Bradicardia",
+        "type": "Conduta",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "Questões cobram interação com comorbidades cardiovasculares.",
+        "trap": "Não atribuir síncope apenas à idade.",
+        "memoryHook": "Donepezila + bradicardia = cuidado.",
+        "related": [
+          "ECG",
+          "Betabloqueador"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0108",
+        "front": "Qual associação medicamentosa é conceitualmente contraditória em demência?",
+        "back": "Inibidor da acetilcolinesterase associado a fármaco anticolinérgico, pois um tenta aumentar e outro reduz transmissão colinérgica.",
+        "tags": [
+          "donepezila",
+          "anticolinérgico",
+          "oxibutinina"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 1,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Demências - tratamento",
+        "subtopic": "Anticolinérgico x AChE",
+        "type": "Pegadinha",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "Pegadinha de polifarmácia muito frequente.",
+        "trap": "Exemplo: donepezila + oxibutinina ou amitriptilina.",
+        "memoryHook": "Um acelera acetilcolina, outro freia.",
+        "related": [
+          "Anticolinérgicos",
+          "Polifarmácia"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0109",
+        "front": "Qual é o mecanismo da memantina?",
+        "back": "Antagonismo não competitivo de receptores NMDA, modulando transmissão glutamatérgica.",
+        "tags": [
+          "memantina",
+          "NMDA"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 1,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Demências - tratamento",
+        "subtopic": "Memantina",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "Cai como mecanismo em tratamento de Alzheimer.",
+        "trap": "Não é inibidor da acetilcolinesterase.",
+        "memoryHook": "Memantina = NMDA.",
+        "related": [
+          "Alzheimer",
+          "Glutamato"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0110",
+        "front": "Quando a memantina é mais lembrada na doença de Alzheimer?",
+        "back": "Alzheimer moderado a grave, isolada ou associada a inibidor da acetilcolinesterase, com benefício sintomático modesto.",
+        "tags": [
+          "memantina",
+          "Alzheimer"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 1,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Demências - tratamento",
+        "subtopic": "Indicação memantina",
+        "type": "Tratamento",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "Questões cobram estágio da doença.",
+        "trap": "Não é primeira lembrança para CCL.",
+        "memoryHook": "Memantina entra mais tarde.",
+        "related": [
+          "Alzheimer moderado",
+          "Tratamento"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0111",
+        "front": "Qual cuidado farmacocinético é relevante com memantina em idosos?",
+        "back": "Ajuste/cautela em disfunção renal, pois há eliminação renal importante.",
+        "tags": [
+          "memantina",
+          "função renal"
+        ],
+        "priorities": [
+          "high-frequency"
+        ],
+        "priority": 4,
+        "importance": 4,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Demências - tratamento",
+        "subtopic": "Memantina renal",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "A banca cobra função renal em idosos para múltiplos psicofármacos.",
+        "trap": "Creatinina normal pode mascarar baixa depuração.",
+        "memoryHook": "Memantina passa pelo rim.",
+        "related": [
+          "Função renal",
+          "Alzheimer"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0112",
+        "front": "Inibidores da acetilcolinesterase são indicados de rotina para comprometimento cognitivo leve?",
+        "back": "Não. CCL deve focar investigação etiológica, manejo de fatores de risco, acompanhamento e intervenções não farmacológicas; AChE não é rotina.",
+        "tags": [
+          "CCL",
+          "donepezila"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 1,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Demências - tratamento",
+        "subtopic": "CCL",
+        "type": "Pegadinha",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "A banca cobra diferença entre CCL e demência.",
+        "trap": "Não medicalizar CCL como Alzheimer confirmado.",
+        "memoryHook": "CCL não é donepezila automática.",
+        "related": [
+          "CCL",
+          "Avaliação cognitiva"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0113",
+        "front": "Qual papel a buspirona pode ter em ansiedade no idoso?",
+        "back": "Pode ser opção para TAG, sem dependência ou sedação típica de benzodiazepínicos, mas com início de ação lento e eficácia variável.",
+        "tags": [
+          "buspirona",
+          "ansiedade"
+        ],
+        "priorities": [
+          "high-frequency"
+        ],
+        "priority": 3,
+        "importance": 3,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Ansiolíticos",
+        "subtopic": "Buspirona",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 4,
+          "UNIFESP": 4,
+          "UNICAMP": 3,
+          "SUS-SP": 4,
+          "IAMSPE": 3
+        },
+        "whyExamAsks": "Pode aparecer como alternativa a benzodiazepínicos.",
+        "trap": "Não serve para alívio imediato de crise.",
+        "memoryHook": "Buspirona demora.",
+        "related": [
+          "TAG",
+          "Benzodiazepínicos"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0114",
+        "front": "Quais riscos de gabapentina ou pregabalina em idosos?",
+        "back": "Sedação, tontura, ataxia, edema, quedas e necessidade de ajuste renal.",
+        "tags": [
+          "pregabalina",
+          "gabapentina",
+          "quedas"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 4,
+        "importance": 4,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Ansiolíticos",
+        "subtopic": "Pregabalina/gabapentina",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "A banca cobra quedas e rim em medicações usadas para dor/ansiedade.",
+        "trap": "Não são ansiolíticos “sem risco”.",
+        "memoryHook": "Gabapentinoide derruba e depende do rim.",
+        "related": [
+          "Dor",
+          "Quedas",
+          "Função renal"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0115",
+        "front": "Quando metilfenidato pode ser considerado em psicogeriatria?",
+        "back": "Casos selecionados de apatia/depressão resistente ou fadiga, com cautela cardiovascular, avaliação de ansiedade, sono e risco de perda de peso.",
+        "tags": [
+          "metilfenidato",
+          "idoso"
+        ],
+        "priorities": [
+          "high-frequency"
+        ],
+        "priority": 3,
+        "importance": 3,
+        "difficulty": 3,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Psicoestimulantes",
+        "subtopic": "Metilfenidato",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 4,
+          "UNIFESP": 4,
+          "UNICAMP": 3,
+          "SUS-SP": 4,
+          "IAMSPE": 3
+        },
+        "whyExamAsks": "Cai pouco, mas pode diferenciar candidatos em tratamento avançado.",
+        "trap": "Não usar sem avaliar cardiopatia e pressão.",
+        "memoryHook": "Estimulante exige coração observado.",
+        "related": [
+          "Apatia",
+          "Depressão resistente"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0116",
+        "front": "Quando solicitar ECG antes ou durante psicofármaco no idoso?",
+        "back": "Quando há cardiopatia, síncope, uso de fármacos que prolongam QT, distúrbios eletrolíticos, doses altas ou associação de antipsicóticos/antidepressivos de risco.",
+        "tags": [
+          "ECG",
+          "QT",
+          "psicofármacos"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Segurança",
+        "subtopic": "QT",
+        "type": "Conduta",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "A banca cobra segurança cardiológica em escitalopram, citalopram, haloperidol e ziprasidona.",
+        "trap": "ECG não é obrigatório para tudo, mas é essencial em contexto de risco.",
+        "memoryHook": "QT pede contexto.",
+        "related": [
+          "Antipsicóticos",
+          "Citalopram"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0117",
+        "front": "Como avaliar risco de hipotensão ortostática induzida por psicofármacos?",
+        "back": "Medir pressão em decúbito/sentado e em ortostatismo, especialmente após início/aumento de antidepressivos, antipsicóticos ou sedativos.",
+        "tags": [
+          "hipotensão ortostática",
+          "quedas"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 1,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Segurança",
+        "subtopic": "Hipotensão ortostática",
+        "type": "Conduta",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "Questões com quedas e tontura cobram PA ortostática.",
+        "trap": "PA isolada sentada pode perder o diagnóstico.",
+        "memoryHook": "Meça em pé.",
+        "related": [
+          "Quedas",
+          "Antipsicóticos"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0118",
+        "front": "Por que constipação induzida por psicofármacos é relevante no idoso?",
+        "back": "Pode causar dor, fecaloma, retenção urinária, delirium e, com clozapina, íleo grave potencialmente fatal.",
+        "tags": [
+          "constipação",
+          "fecaloma",
+          "clozapina"
+        ],
+        "priorities": [
+          "high-frequency"
+        ],
+        "priority": 4,
+        "importance": 4,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Segurança",
+        "subtopic": "Constipação",
+        "type": "Prognóstico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "A banca cobra constipação como precipitante de delirium e complicação de clozapina.",
+        "trap": "Não é efeito adverso menor em idoso.",
+        "memoryHook": "Intestino parado confunde cérebro.",
+        "related": [
+          "Delirium",
+          "Clozapina"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0119",
+        "front": "Qual efeito medicamentoso pode precipitar retenção urinária e delirium em idosos?",
+        "back": "Efeito anticolinérgico, especialmente por tricíclicos, anti-histamínicos, antipsicóticos com ação anticolinérgica e antimuscarínicos urinários.",
+        "tags": [
+          "retenção urinária",
+          "delirium"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 4,
+        "importance": 4,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Segurança",
+        "subtopic": "Retenção urinária",
+        "type": "Prognóstico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "A USP usa retenção urinária como gatilho reversível de delirium.",
+        "trap": "Não tratar só agitação; aliviar retenção pode resolver o quadro.",
+        "memoryHook": "Bexiga cheia confunde.",
+        "related": [
+          "Anticolinérgicos",
+          "Delirium"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0120",
+        "front": "Como opioides se relacionam ao delirium em idosos?",
+        "back": "Dor não tratada pode precipitar delirium, mas opioides também podem causar sedação e confusão; a conduta é analgesia adequada com monitorização e menor dose eficaz.",
+        "tags": [
+          "opioides",
+          "delirium",
+          "dor"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 4,
+        "importance": 4,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Segurança",
+        "subtopic": "Dor e opioides",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "A banca cobra equilíbrio: não é simplesmente suspender analgesia.",
+        "trap": "Dor também é precipitante de delirium.",
+        "memoryHook": "Trate dor sem intoxicar.",
+        "related": [
+          "Delirium",
+          "Dor"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0121",
+        "front": "Por que álcool aumenta risco com psicofármacos em idosos?",
+        "back": "Soma sedação, prejuízo motor, risco de quedas, interação com benzodiazepínicos, antidepressivos e antipsicóticos, além de abstinência e delirium.",
+        "tags": [
+          "álcool",
+          "psicofármacos"
+        ],
+        "priorities": [
+          "high-frequency"
+        ],
+        "priority": 4,
+        "importance": 4,
+        "difficulty": 2,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Segurança",
+        "subtopic": "Álcool",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "Provas cobram uso de álcool como fator oculto em confusão e quedas.",
+        "trap": "Não esquecer de perguntar consumo.",
+        "memoryHook": "Álcool soma sedação e confusão.",
+        "related": [
+          "Benzodiazepínicos",
+          "Delirium"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-PFG-0122",
+        "front": "Qual frase resume psicofarmacologia geriátrica de prova?",
+        "back": "Antes de prescrever, pense em rim, fígado, queda, delirium, cognição, QT, sódio, interações, carga anticolinérgica e plano de retirada.",
+        "tags": [
+          "psicofarmacologia geriátrica",
+          "mapa de prova"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "difficulty": 1,
+        "specialty": "Psicogeriatria",
+        "module": "Psicofarmacologia Geriátrica",
+        "topic": "Segurança",
+        "subtopic": "Conceito integrador",
+        "type": "Conceito Integrador",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5,
+          "IAMSPE": 4
+        },
+        "whyExamAsks": "Integra os eixos mais cobrados pela USP e demais bancas.",
+        "trap": "A pergunta raramente é só “qual remédio”; é “qual remédio é mais seguro neste idoso”.",
+        "memoryHook": "Psicofármaco no idoso = eficácia com segurança.",
+        "related": [
+          "Polifarmácia",
+          "Beers",
+          "Monitorização"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Critérios de Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [
+          "Estratégia - Saúde do Idoso",
+          "Estratégia - Demências",
+          "MedReview - Psicofarmacologia",
+          "MedReview - Polifarmácia"
+        ],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      }
+    ]
+  },
+  {
+    "file": "C:/Users/sulya/Downloads/psychogeriatricsFlashcards_mood_anxiety_module6.ts",
+    "variable": "moodAnxietyModule6Flashcards",
+    "deckId": "pg-humor-ansiedade-idoso-75",
+    "deckTitle": "Psicogeriatria - Humor e Ansiedade no Idoso",
+    "module": "Transtornos do Humor e Ansiedade no Idoso",
+    "importance": 4,
+    "cards": [
+      {
+        "id": "PG-MH-0001",
+        "front": "A depressão é uma consequência normal do envelhecimento?",
+        "back": "Não. A depressão nunca deve ser considerada parte fisiológica do envelhecimento.",
+        "tags": [
+          "depressão",
+          "envelhecimento"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Depressão no idoso",
+        "subtopic": "",
+        "type": "Conceito",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "A banca cobra porque sintomas depressivos são subdiagnosticados em idosos sob a justificativa equivocada de que seriam naturais da idade.",
+        "trap": "Envelhecimento aumenta fatores de risco, mas não torna a depressão normal.",
+        "memoryHook": "Depressão no idoso não é normal.",
+        "related": [
+          "Envelhecimento normal"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0002",
+        "front": "Qual transtorno psiquiátrico é o mais frequente no idoso?",
+        "back": "Depressão, especialmente em idosos com doenças clínicas crônicas.",
+        "tags": [
+          "depressão",
+          "epidemiologia"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Epidemiologia",
+        "subtopic": "",
+        "type": "Epidemiologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Ajuda a reconhecer a depressão como hipótese central na avaliação psicogeriátrica.",
+        "trap": "Não atribuir apatia, fadiga e perda funcional apenas à idade.",
+        "memoryHook": "Depressão é muito comum no idoso.",
+        "related": [
+          "Saúde mental do idoso"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0003",
+        "front": "A apresentação clínica da depressão no idoso costuma ser diferente da observada em adultos jovens?",
+        "back": "Sim. É comum haver menos verbalização de tristeza, mais queixas somáticas, lentificação, apatia, perda funcional e queixas cognitivas.",
+        "tags": [
+          "depressão",
+          "semiologia",
+          "somatização"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Semiologia",
+        "subtopic": "",
+        "type": "Semiologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Questões costumam trazer depressão sem tristeza explícita.",
+        "trap": "O paciente pode negar tristeza e ainda preencher critérios para episódio depressivo maior.",
+        "memoryHook": "Depressão geriátrica pode falar pelo corpo.",
+        "related": [
+          "Pseudodemência"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0004",
+        "front": "Idoso refere apenas falta de vontade e perda de energia, negando tristeza. A hipótese de depressão deve ser descartada?",
+        "back": "Não. Anedonia e perda de interesse frequentemente predominam sobre o humor deprimido.",
+        "tags": [
+          "depressão",
+          "anedonia"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Depressão no idoso",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "A banca explora apresentações atípicas da depressão geriátrica.",
+        "trap": "Negar tristeza não exclui depressão.",
+        "memoryHook": "Procure anedonia.",
+        "related": [
+          "Anedonia"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0005",
+        "front": "Qual sintoma costuma ser mais sensível para depressão no idoso do que a tristeza?",
+        "back": "Anedonia.",
+        "tags": [
+          "anedonia",
+          "depressão"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Diagnóstico",
+        "subtopic": "",
+        "type": "Diagnóstico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "A tristeza pode ser pouco verbalizada no idoso, enquanto perda de interesse é muito frequente.",
+        "trap": "Não depender apenas de humor deprimido para suspeitar depressão.",
+        "memoryHook": "Anedonia pesa muito.",
+        "related": [
+          "Depressão no idoso"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0006",
+        "front": "Quais sintomas somáticos são frequentemente observados na depressão do idoso?",
+        "back": "Fadiga, dor, perda ponderal, insônia, constipação e redução do apetite.",
+        "tags": [
+          "depressão",
+          "somáticos"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Sintomas somáticos",
+        "subtopic": "",
+        "type": "Semiologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Idosos deprimidos frequentemente procuram serviços clínicos por sintomas físicos.",
+        "trap": "Queixa somática sem explicação não exclui depressão.",
+        "memoryHook": "Depressão pode parecer doença clínica.",
+        "related": [
+          "Interconsulta"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0007",
+        "front": "Queixas cognitivas podem ser manifestação de depressão?",
+        "back": "Sim. Podem ocorrer déficits de atenção, memória, velocidade de processamento e funções executivas.",
+        "tags": [
+          "cognição",
+          "depressão"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Cognição",
+        "subtopic": "",
+        "type": "Semiologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "A banca cobra depressão como diagnóstico diferencial de demência.",
+        "trap": "Queixa cognitiva no idoso não é automaticamente demência.",
+        "memoryHook": "Depressão também afeta cognição.",
+        "related": [
+          "Pseudodemência",
+          "Demências"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0008",
+        "front": "O que é pseudodemência depressiva?",
+        "back": "Comprometimento cognitivo secundário à depressão, potencialmente reversível após tratamento adequado.",
+        "tags": [
+          "pseudodemência",
+          "depressão"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Pseudodemência",
+        "subtopic": "",
+        "type": "Conceito",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "É clássico em provas de psicogeriatria.",
+        "trap": "Não fechar demência antes de tratar depressão significativa.",
+        "memoryHook": "Depressão pode imitar demência.",
+        "related": [
+          "Demências"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0009",
+        "front": "Na pseudodemência, como costuma ser a percepção do déficit cognitivo?",
+        "back": "O paciente geralmente se queixa intensamente das dificuldades cognitivas.",
+        "tags": [
+          "pseudodemência",
+          "queixa cognitiva"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Pseudodemência",
+        "subtopic": "",
+        "type": "Diferencial",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Ajuda a diferenciar de demências, nas quais o insight pode estar reduzido.",
+        "trap": "Queixa intensa pode sugerir depressão, não maior gravidade cognitiva.",
+        "memoryHook": "Depressão reclama.",
+        "related": [
+          "Alzheimer"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0010",
+        "front": "Como costuma ser a percepção do déficit na doença de Alzheimer?",
+        "back": "O paciente frequentemente minimiza ou não percebe seus déficits.",
+        "tags": [
+          "Alzheimer",
+          "anosognosia"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Alzheimer",
+        "subtopic": "",
+        "type": "Diferencial",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "A banca usa contraste entre queixa depressiva e anosognosia na demência.",
+        "trap": "Ausência de queixa não exclui demência.",
+        "memoryHook": "Alzheimer esquece que esquece.",
+        "related": [
+          "Pseudodemência"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0011",
+        "front": "Paciente responde repetidamente 'não sei' durante avaliação cognitiva. Qual hipótese deve ser lembrada?",
+        "back": "Pseudodemência depressiva.",
+        "tags": [
+          "pseudodemência",
+          "avaliação cognitiva"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Pseudodemência",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "O padrão de esforço reduzido e respostas 'não sei' é clássico.",
+        "trap": "Não interpretar automaticamente como demência avançada.",
+        "memoryHook": "'Não sei' repetido sugere depressão.",
+        "related": [
+          "Avaliação Cognitiva"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0012",
+        "front": "Qual característica favorece pseudodemência em vez de Alzheimer?",
+        "back": "Instalação relativamente rápida.",
+        "tags": [
+          "pseudodemência",
+          "diferencial"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Pseudodemência",
+        "subtopic": "",
+        "type": "Diferencial",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Temporalidade é decisiva em questões clínicas.",
+        "trap": "Alzheimer tende a ter progressão lenta e insidiosa.",
+        "memoryHook": "Rápido + queixa intensa = pense depressão.",
+        "related": [
+          "Alzheimer"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0013",
+        "front": "Qual característica favorece Alzheimer em vez de pseudodemência?",
+        "back": "Progressão lenta e insidiosa.",
+        "tags": [
+          "Alzheimer",
+          "diferencial"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Alzheimer",
+        "subtopic": "",
+        "type": "Diferencial",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "A banca cobra temporalidade para diferenciar depressão e demência.",
+        "trap": "Início abrupto ou subagudo exige rever diagnóstico.",
+        "memoryHook": "Alzheimer é insidioso.",
+        "related": [
+          "Pseudodemência"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0014",
+        "front": "A atenção costuma estar mais comprometida na pseudodemência ou na doença de Alzheimer inicial?",
+        "back": "Na pseudodemência.",
+        "tags": [
+          "atenção",
+          "pseudodemência"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Atenção",
+        "subtopic": "",
+        "type": "Diferencial",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Depressão compromete atenção e velocidade de processamento, gerando baixa performance cognitiva.",
+        "trap": "Atenção muito flutuante sugere delirium, não apenas depressão.",
+        "memoryHook": "Depressão reduz atenção.",
+        "related": [
+          "Delirium",
+          "Alzheimer"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0015",
+        "front": "Paciente com depressão grave apresenta MEEM baixo. O diagnóstico de demência pode ser estabelecido imediatamente?",
+        "back": "Não. É necessário tratar a depressão e reavaliar a cognição.",
+        "tags": [
+          "MEEM",
+          "depressão",
+          "demência"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Cognição",
+        "subtopic": "",
+        "type": "Conduta",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Evita diagnóstico precipitado de demência em depressão grave.",
+        "trap": "Teste cognitivo baixo durante depressão não fecha demência.",
+        "memoryHook": "Trate e reavalie.",
+        "related": [
+          "MEEM",
+          "Demências"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0016",
+        "front": "O que caracteriza a depressão vascular?",
+        "back": "Depressão associada a doença cerebrovascular, frequentemente com lentificação psicomotora e disfunção executiva.",
+        "tags": [
+          "depressão vascular",
+          "AVC"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Depressão vascular",
+        "subtopic": "",
+        "type": "Conceito",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente por cruzar neuropsiquiatria, geriatria e cognição.",
+        "trap": "Pode ser confundida com demência vascular ou apatia.",
+        "memoryHook": "Vascular = executivo + lentidão.",
+        "related": [
+          "Demência vascular"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0017",
+        "front": "Qual alteração cognitiva é mais característica da depressão vascular?",
+        "back": "Disfunção executiva.",
+        "tags": [
+          "depressão vascular",
+          "função executiva"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Depressão vascular",
+        "subtopic": "",
+        "type": "Diagnóstico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Lesões vasculares fronto-subcorticais prejudicam planejamento, flexibilidade e velocidade.",
+        "trap": "Não esperar apenas queixa de memória episódica.",
+        "memoryHook": "Executivo é a pista.",
+        "related": [
+          "Função executiva"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0018",
+        "front": "Idoso com múltiplos AVCs apresenta lentificação, apatia e dificuldade de planejamento. Qual hipótese deve ser considerada?",
+        "back": "Depressão vascular.",
+        "tags": [
+          "depressão vascular",
+          "caso clínico"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Depressão vascular",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "A banca descreve o quadro sem nomear a síndrome.",
+        "trap": "Não confundir automaticamente com Alzheimer.",
+        "memoryHook": "AVC + lentidão + executivo = vascular.",
+        "related": [
+          "AVC",
+          "Demência vascular"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0019",
+        "front": "Como diferenciar depressão de delirium?",
+        "back": "Delirium apresenta instalação aguda, curso flutuante e alteração da atenção.",
+        "tags": [
+          "depressão",
+          "delirium"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Delirium",
+        "subtopic": "",
+        "type": "Diferencial",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Diferencial fundamental na psicogeriatria e em enfermaria.",
+        "trap": "Sonolência ou apatia não são suficientes para delirium sem déficit atencional flutuante.",
+        "memoryHook": "Delirium = atenção + flutuação.",
+        "related": [
+          "Delirium"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0020",
+        "front": "Idoso desenvolve humor deprimido após AVC. Isso reduz a probabilidade de depressão?",
+        "back": "Não. O AVC aumenta significativamente o risco de episódio depressivo.",
+        "tags": [
+          "depressão pós-AVC"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Depressão pós-AVC",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Depressão pós-AVC é frequente e clinicamente relevante.",
+        "trap": "Não atribuir tudo à reação psicológica normal.",
+        "memoryHook": "",
+        "related": [
+          "AVC"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0021",
+        "front": "A depressão aumenta o risco de demência futura?",
+        "back": "Sim. É fator de risco e também pode representar manifestação prodrômica.",
+        "tags": [
+          "depressão",
+          "risco de demência"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Prognóstico",
+        "subtopic": "",
+        "type": "Prognóstico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "A banca cobra relação bidirecional entre depressão e cognição.",
+        "trap": "Depressão tardia pode ser pródromo neurodegenerativo.",
+        "memoryHook": "",
+        "related": [
+          "Demências"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0022",
+        "front": "Idoso com depressão apresenta piora funcional importante. Esse achado exclui depressão?",
+        "back": "Não. A perda funcional pode ser consequência da própria depressão.",
+        "tags": [
+          "depressão",
+          "funcionalidade"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Funcionalidade",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Evita atribuir perda funcional apenas a demência ou doença clínica.",
+        "trap": "Depressão pode gerar dependência funcional.",
+        "memoryHook": "",
+        "related": [
+          "Funcionalidade"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0023",
+        "front": "A depressão no idoso está associada a maior mortalidade?",
+        "back": "Sim, especialmente por suicídio, pior adesão terapêutica e doenças clínicas.",
+        "tags": [
+          "depressão",
+          "mortalidade"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Mortalidade",
+        "subtopic": "",
+        "type": "Conceito",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Mostra que depressão geriátrica é condição de alto risco.",
+        "trap": "Não tratar como sofrimento leve ou esperado.",
+        "memoryHook": "",
+        "related": [
+          "Suicídio"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0024",
+        "front": "Qual sintoma deve sempre ser investigado em idosos deprimidos, mesmo quando não é espontaneamente referido?",
+        "back": "Ideação suicida.",
+        "tags": [
+          "suicídio",
+          "depressão"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Suicídio",
+        "subtopic": "",
+        "type": "Semiologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Idosos podem não comunicar espontaneamente sofrimento suicida.",
+        "trap": "A investigação deve ser ativa.",
+        "memoryHook": "Pergunte diretamente.",
+        "related": [
+          "Risco suicida"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0025",
+        "front": "Qual é o algoritmo diagnóstico da depressão no idoso?",
+        "back": "1) Confirmar critérios para episódio depressivo. 2) Avaliar comprometimento cognitivo. 3) Diferenciar de delirium. 4) Diferenciar de demência. 5) Investigar doenças clínicas e medicamentos. 6) Definir tratamento.",
+        "tags": [
+          "algoritmo",
+          "depressão"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Algoritmo diagnóstico",
+        "subtopic": "",
+        "type": "Flashcard Integrador",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Integra as principais etapas cobradas em casos clínicos.",
+        "trap": "Não diagnosticar depressão sem avaliar cognição, delirium e causas clínicas.",
+        "memoryHook": "Depressão no idoso exige diagnóstico amplo.",
+        "related": [
+          "Delirium",
+          "Demências",
+          "Polifarmácia"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0026",
+        "front": "Os transtornos de ansiedade diminuem com o envelhecimento?",
+        "back": "Não. A prevalência de alguns transtornos pode diminuir, mas ansiedade continua frequente e subdiagnosticada no idoso.",
+        "tags": [
+          "ansiedade",
+          "idoso"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Ansiedade no idoso",
+        "subtopic": "",
+        "type": "Conceito",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Existe o mito de que idosos tornam-se naturalmente menos ansiosos.",
+        "trap": "Ansiedade no idoso pode se manifestar mais por sintomas físicos.",
+        "memoryHook": "Ansiedade não desaparece com a idade.",
+        "related": [
+          "TAG"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0027",
+        "front": "Como a ansiedade costuma se manifestar no idoso?",
+        "back": "Preocupação excessiva, sintomas somáticos, tensão muscular, insônia, irritabilidade e fadiga. A verbalização de medo pode ser discreta.",
+        "tags": [
+          "ansiedade",
+          "semiologia"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Ansiedade no idoso",
+        "subtopic": "",
+        "type": "Semiologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Provas trazem sintomas clínicos e insônia, não necessariamente queixa de ansiedade.",
+        "trap": "Não depender da palavra 'ansiedade' na vinheta.",
+        "memoryHook": "Ansiedade geriátrica pode ser somática.",
+        "related": [
+          "Sintomas somáticos"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0028",
+        "front": "Qual transtorno de ansiedade é mais frequente na população idosa?",
+        "back": "Transtorno de Ansiedade Generalizada (TAG).",
+        "tags": [
+          "TAG",
+          "ansiedade"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "TAG",
+        "subtopic": "",
+        "type": "Diagnóstico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "É o transtorno ansioso mais lembrado nas provas em idosos.",
+        "trap": "Pânico de início tardio é menos comum e exige investigação clínica.",
+        "memoryHook": "TAG é o ansioso clássico do idoso.",
+        "related": [
+          "Ansiedade"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0029",
+        "front": "Paciente de 79 anos apresenta preocupação constante com doenças, finanças e familiares, associada à insônia há vários meses. Qual hipótese diagnóstica é mais provável?",
+        "back": "Transtorno de Ansiedade Generalizada.",
+        "tags": [
+          "TAG",
+          "caso clínico"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "TAG",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "A banca descreve preocupações múltiplas e persistentes para TAG.",
+        "trap": "Descartar causas clínicas e depressão associada.",
+        "memoryHook": "Preocupação difusa e crônica = TAG.",
+        "related": [
+          "Insônia"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0030",
+        "front": "Como diferenciar ansiedade de delirium?",
+        "back": "Ansiedade: atenção e consciência preservadas, curso crônico. Delirium: alteração da atenção, flutuação e início agudo.",
+        "tags": [
+          "ansiedade",
+          "delirium"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Delirium",
+        "subtopic": "",
+        "type": "Diferencial",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Diferencial essencial em idosos agitados ou insones.",
+        "trap": "Agitação não é delirium se atenção e consciência estão preservadas.",
+        "memoryHook": "Delirium flutua; ansiedade preocupa.",
+        "related": [
+          "Delirium"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0031",
+        "front": "Paciente apresenta crises súbitas de palpitações, dispneia e medo intenso com duração de cerca de 15 minutos. Qual hipótese diagnóstica?",
+        "back": "Transtorno do pânico.",
+        "tags": [
+          "pânico",
+          "caso clínico"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Pânico",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Reconhece padrão paroxístico das crises de pânico.",
+        "trap": "Em idoso, sempre investigar causas clínicas antes de confirmar.",
+        "memoryHook": "",
+        "related": [
+          "Cardiologia",
+          "Endocrinologia"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0032",
+        "front": "O transtorno do pânico pode surgir pela primeira vez após os 65 anos?",
+        "back": "Sim, porém é incomum. Sempre investigar causas clínicas antes de confirmar o diagnóstico.",
+        "tags": [
+          "pânico",
+          "idoso"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Pânico tardio",
+        "subtopic": "",
+        "type": "Conceito",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Pânico de início tardio exige investigação médica.",
+        "trap": "Não fechar transtorno do pânico sem excluir causas cardíacas, respiratórias e metabólicas.",
+        "memoryHook": "Pânico tardio pede clínica.",
+        "related": [
+          "Interconsulta"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0033",
+        "front": "Quais causas clínicas devem ser excluídas antes de diagnosticar transtorno do pânico no idoso?",
+        "back": "Arritmias, hipertireoidismo, hipoglicemia, isquemia miocárdica, DPOC e uso de estimulantes.",
+        "tags": [
+          "pânico",
+          "diagnóstico diferencial"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Pânico tardio",
+        "subtopic": "",
+        "type": "Conduta",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "A banca cobra diagnóstico diferencial de sintomas autonômicos.",
+        "trap": "Palpitação e dispneia no idoso não são automaticamente ansiedade.",
+        "memoryHook": "",
+        "related": [
+          "Cardiologia",
+          "DPOC"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0034",
+        "front": "Qual sintoma físico costuma predominar na ansiedade do idoso?",
+        "back": "Queixas somáticas inespecíficas, como dor, fadiga, desconforto abdominal e tontura.",
+        "tags": [
+          "ansiedade",
+          "somáticos"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Sintomas somáticos",
+        "subtopic": "",
+        "type": "Semiologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Ansiedade no idoso aparece muito em contexto clínico.",
+        "trap": "Investigar causas orgânicas sem esquecer ansiedade.",
+        "memoryHook": "",
+        "related": [
+          "Somatização"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0035",
+        "front": "Paciente procura diversos especialistas por sintomas físicos sem explicação orgânica convincente. Qual transtorno deve ser considerado?",
+        "back": "Transtorno de ansiedade, especialmente TAG.",
+        "tags": [
+          "TAG",
+          "somatização"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "TAG",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Treina reconhecimento de ansiedade por somatização.",
+        "trap": "Não concluir simulação ou transtorno factício sem base.",
+        "memoryHook": "",
+        "related": [
+          "Interconsulta"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0036",
+        "front": "A ansiedade aumenta o risco de comprometimento cognitivo?",
+        "back": "Sim. Pode prejudicar atenção, memória e funções executivas.",
+        "tags": [
+          "ansiedade",
+          "cognição"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Cognição",
+        "subtopic": "",
+        "type": "Conceito",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "A banca explora ansiedade como causa reversível de queixa cognitiva.",
+        "trap": "Ansiedade pode piorar desempenho sem demência.",
+        "memoryHook": "",
+        "related": [
+          "Avaliação cognitiva"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0037",
+        "front": "Ansiedade pode simular comprometimento cognitivo?",
+        "back": "Sim, especialmente por déficit de atenção secundário à preocupação excessiva.",
+        "tags": [
+          "ansiedade",
+          "queixa cognitiva"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Cognição",
+        "subtopic": "",
+        "type": "Diferencial",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Ajuda a evitar diagnóstico precoce de demência em paciente ansioso.",
+        "trap": "Atenção prejudicada por preocupação não é igual a neurodegeneração.",
+        "memoryHook": "",
+        "related": [
+          "Demências"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0038",
+        "front": "Paciente refere falhas de memória associadas à preocupação constante, mas testes cognitivos são praticamente normais. Qual hipótese?",
+        "back": "Déficit cognitivo secundário à ansiedade.",
+        "tags": [
+          "ansiedade",
+          "memória"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Ansiedade e cognição",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "A banca pode usar queixa subjetiva com testes preservados.",
+        "trap": "Não superdiagnosticar demência.",
+        "memoryHook": "",
+        "related": [
+          "Queixa cognitiva subjetiva"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0039",
+        "front": "O que caracteriza o luto normal?",
+        "back": "Resposta emocional esperada diante de perda significativa, sem comprometimento persistente do funcionamento global.",
+        "tags": [
+          "luto",
+          "depressão"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Luto",
+        "subtopic": "",
+        "type": "Conceito",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Diferenciar luto normal de depressão maior é recorrente.",
+        "trap": "Sofrimento intenso nas primeiras semanas pode ser normal.",
+        "memoryHook": "",
+        "related": [
+          "Depressão"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0040",
+        "front": "Qual característica favorece luto em vez de episódio depressivo maior?",
+        "back": "Oscilação entre momentos de sofrimento e preservação da autoestima.",
+        "tags": [
+          "luto",
+          "diferencial"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Luto x depressão",
+        "subtopic": "",
+        "type": "Diferencial",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "A banca cobra nuances, não apenas presença de tristeza.",
+        "trap": "No luto, a autoestima costuma estar preservada.",
+        "memoryHook": "",
+        "related": [
+          "Depressão"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0041",
+        "front": "Qual característica favorece episódio depressivo maior em vez de luto?",
+        "back": "Culpa excessiva, desesperança persistente e perda global do interesse.",
+        "tags": [
+          "depressão",
+          "luto"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Depressão x luto",
+        "subtopic": "",
+        "type": "Diferencial",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Define quando o sofrimento do luto passa a sugerir depressão.",
+        "trap": "Não patologizar todo luto, mas reconhecer sinais de depressão.",
+        "memoryHook": "",
+        "related": [
+          "Luto"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0042",
+        "front": "Idosa perde o marido há três semanas, apresenta tristeza intensa, mas ainda consegue sentir prazer ao lembrar momentos positivos do relacionamento. Qual hipótese?",
+        "back": "Luto normal.",
+        "tags": [
+          "luto",
+          "caso clínico"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Luto",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Reconhece preservação de reatividade afetiva e autoestima.",
+        "trap": "Tristeza intensa não basta para depressão maior.",
+        "memoryHook": "",
+        "related": [
+          "Luto"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0043",
+        "front": "O luto aumenta o risco de episódio depressivo?",
+        "back": "Sim, especialmente em indivíduos vulneráveis.",
+        "tags": [
+          "luto",
+          "risco"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Luto",
+        "subtopic": "",
+        "type": "Conceito",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "A banca avalia tanto normalidade quanto risco clínico.",
+        "trap": "Luto normal pode evoluir para episódio depressivo.",
+        "memoryHook": "",
+        "related": [
+          "Depressão"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0044",
+        "front": "O suicídio consumado é mais frequente em idosos ou em adultos jovens?",
+        "back": "Em idosos, especialmente homens idosos.",
+        "tags": [
+          "suicídio",
+          "idoso"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Suicídio",
+        "subtopic": "",
+        "type": "Suicídio",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Altíssimo rendimento em provas de psicogeriatria.",
+        "trap": "Tentativas podem ser menos frequentes, mas mais letais.",
+        "memoryHook": "Idoso tenta menos e morre mais.",
+        "related": [
+          "Depressão"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0045",
+        "front": "Qual grupo apresenta maior taxa de suicídio consumado?",
+        "back": "Homens idosos.",
+        "tags": [
+          "suicídio",
+          "homens idosos"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Suicídio",
+        "subtopic": "",
+        "type": "Epidemiologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Dado epidemiológico clássico.",
+        "trap": "Não confundir ideação/tentativa com suicídio consumado.",
+        "memoryHook": "",
+        "related": [
+          "Risco suicida"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0046",
+        "front": "Qual fator de risco psiquiátrico mais importante para suicídio no idoso?",
+        "back": "Depressão.",
+        "tags": [
+          "suicídio",
+          "depressão"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Suicídio",
+        "subtopic": "",
+        "type": "Semiologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "A maioria dos casos em prova envolve depressão não reconhecida ou grave.",
+        "trap": "Sempre investigar depressão em idoso com desesperança.",
+        "memoryHook": "",
+        "related": [
+          "Depressão"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0047",
+        "front": "Paciente deprimido afirma: 'Não aguento mais viver assim'. Qual deve ser a conduta?",
+        "back": "Investigar imediatamente ideação suicida, plano, intenção e acesso a meios.",
+        "tags": [
+          "suicídio",
+          "risco"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Risco suicida",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "A banca cobra avaliação ativa do risco.",
+        "trap": "Não tratar como frase inespecífica sem investigação.",
+        "memoryHook": "",
+        "related": [
+          "Emergências"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0048",
+        "front": "Idosos costumam comunicar ideação suicida espontaneamente?",
+        "back": "Não. A investigação deve ser ativa.",
+        "tags": [
+          "suicídio",
+          "avaliação"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Risco suicida",
+        "subtopic": "",
+        "type": "Conceito",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Idosos podem comunicar menos sofrimento e apresentar maior letalidade.",
+        "trap": "Não esperar relato espontâneo.",
+        "memoryHook": "Perguntar é obrigatório.",
+        "related": [
+          "Depressão"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0049",
+        "front": "Quais fatores aumentam o risco de suicídio no idoso?",
+        "back": "Depressão, isolamento social, viuvez, dor crônica, doença incapacitante, sexo masculino e tentativa prévia.",
+        "tags": [
+          "suicídio",
+          "fatores de risco"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Risco suicida",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Integra fatores clínicos, sociais e psiquiátricos.",
+        "trap": "Risco não depende apenas do diagnóstico psiquiátrico.",
+        "memoryHook": "",
+        "related": [
+          "Dor",
+          "Isolamento social"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0050",
+        "front": "Qual algoritmo mental resume a avaliação da ansiedade e do suicídio no idoso?",
+        "back": "1) Excluir causas clínicas. 2) Diferenciar ansiedade, depressão, delirium e demência. 3) Avaliar funcionalidade. 4) Investigar ideação suicida ativamente. 5) Definir tratamento e acompanhamento.",
+        "tags": [
+          "algoritmo",
+          "ansiedade",
+          "suicídio"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Algoritmo ansiedade/suicídio",
+        "subtopic": "",
+        "type": "Flashcard Integrador",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Integra o raciocínio exigido em casos clínicos complexos.",
+        "trap": "Não tratar ansiedade no idoso sem avaliar depressão e risco suicida.",
+        "memoryHook": "",
+        "related": [
+          "Delirium",
+          "Demência",
+          "Depressão"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0051",
+        "front": "Qual deve ser o tratamento farmacológico de primeira linha para depressão no idoso?",
+        "back": "ISRS, especialmente sertralina e escitalopram.",
+        "tags": [
+          "ISRS",
+          "depressão",
+          "tratamento"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Tratamento farmacológico",
+        "subtopic": "",
+        "type": "Conduta",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "São antidepressivos com bom perfil de eficácia e segurança na população idosa.",
+        "trap": "Escolha deve considerar comorbidades, interações e eventos adversos.",
+        "memoryHook": "ISRS é primeira linha.",
+        "related": [
+          "Psicofarmacologia"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0052",
+        "front": "Quais antidepressivos tricíclicos devem ser evitados em idosos?",
+        "back": "Principalmente amitriptilina, imipramina e clomipramina.",
+        "tags": [
+          "tricíclicos",
+          "Beers",
+          "anticolinérgico"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Tricíclicos",
+        "subtopic": "",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Critérios de Beers e carga anticolinérgica são muito cobrados.",
+        "trap": "Elevado efeito anticolinérgico, sedação, hipotensão e risco de quedas.",
+        "memoryHook": "Tricíclico anticolinérgico: evite.",
+        "related": [
+          "Beers"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0053",
+        "front": "Qual efeito adverso dos ISRS merece maior atenção em idosos?",
+        "back": "Hiponatremia, especialmente nas primeiras semanas.",
+        "tags": [
+          "ISRS",
+          "hiponatremia"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "ISRS",
+        "subtopic": "",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Evento adverso clássico de ISRS no idoso.",
+        "trap": "Monitorar sintomas como confusão, quedas e piora cognitiva.",
+        "memoryHook": "ISRS pode baixar sódio.",
+        "related": [
+          "Hiponatremia"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0054",
+        "front": "Qual antidepressivo é boa opção quando há insônia importante?",
+        "back": "Mirtazapina.",
+        "tags": [
+          "mirtazapina",
+          "insônia"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Mirtazapina",
+        "subtopic": "",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Perfil sedativo pode ser útil em depressão com insônia.",
+        "trap": "Monitorar sedação diurna e quedas.",
+        "memoryHook": "Dorme mal + deprimido = pensar mirtazapina.",
+        "related": [
+          "Sono"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0055",
+        "front": "Qual antidepressivo pode ser vantajoso em pacientes deprimidos com perda ponderal?",
+        "back": "Mirtazapina, pelo aumento do apetite.",
+        "tags": [
+          "mirtazapina",
+          "perda ponderal"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Mirtazapina",
+        "subtopic": "",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "A banca cobra individualização pela clínica do idoso.",
+        "trap": "Pode não ser boa escolha em obesidade ou síndrome metabólica.",
+        "memoryHook": "Emagrecido + insone = mirtazapina.",
+        "related": [
+          "Nutrição"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0056",
+        "front": "Qual antidepressivo costuma ser evitado em pacientes obesos devido ao ganho ponderal?",
+        "back": "Mirtazapina.",
+        "tags": [
+          "mirtazapina",
+          "ganho ponderal"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Mirtazapina",
+        "subtopic": "",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Mostra que o mesmo fármaco pode ser bom ou ruim conforme o perfil do paciente.",
+        "trap": "Evitar escolha automática sem avaliar peso e metabolismo.",
+        "memoryHook": "",
+        "related": [
+          "Síndrome metabólica"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0057",
+        "front": "Qual antidepressivo apresenta menor risco de disfunção sexual?",
+        "back": "Bupropiona.",
+        "tags": [
+          "bupropiona",
+          "disfunção sexual"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Bupropiona",
+        "subtopic": "",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Comparação de efeitos adversos é frequente em provas.",
+        "trap": "Não usar se houver risco aumentado de convulsão.",
+        "memoryHook": "",
+        "related": [
+          "Disfunção sexual"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0058",
+        "front": "Em qual situação a bupropiona deve ser evitada?",
+        "back": "Em maior risco de convulsões, especialmente epilepsia, transtornos alimentares e abstinência alcoólica importante.",
+        "tags": [
+          "bupropiona",
+          "convulsão"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Bupropiona",
+        "subtopic": "",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "A banca cobra contraindicações práticas.",
+        "trap": "Não escolher apenas por menor disfunção sexual sem avaliar risco.",
+        "memoryHook": "",
+        "related": [
+          "Convulsões",
+          "Álcool"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0059",
+        "front": "Qual antidepressivo pode apresentar benefício adicional sobre cognição?",
+        "back": "Vortioxetina.",
+        "tags": [
+          "vortioxetina",
+          "cognição"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Vortioxetina",
+        "subtopic": "",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema progressivamente mais cobrado por depressão com queixa cognitiva.",
+        "trap": "Benefício cognitivo não substitui investigação de demência.",
+        "memoryHook": "",
+        "related": [
+          "Cognição"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0060",
+        "front": "Quando considerar um SNRI no idoso?",
+        "back": "Quando coexistirem depressão e dor neuropática ou dor crônica.",
+        "tags": [
+          "SNRI",
+          "dor",
+          "depressão"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "SNRI",
+        "subtopic": "",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "A banca cobra escolha guiada por comorbidade.",
+        "trap": "Monitorar pressão arterial, interações e tolerabilidade.",
+        "memoryHook": "",
+        "related": [
+          "Dor crônica"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0061",
+        "front": "Qual SNRI possui melhor evidência para dor neuropática?",
+        "back": "Duloxetina.",
+        "tags": [
+          "duloxetina",
+          "dor neuropática"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Duloxetina",
+        "subtopic": "",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Associação clássica entre depressão e dor neuropática.",
+        "trap": "Cautela em hepatopatia e interações.",
+        "memoryHook": "",
+        "related": [
+          "Dor neuropática"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0062",
+        "front": "Qual antidepressivo deve ser usado com maior cautela em hipertensos?",
+        "back": "Venlafaxina, pois pode elevar a pressão arterial.",
+        "tags": [
+          "venlafaxina",
+          "pressão arterial"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Venlafaxina",
+        "subtopic": "",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Efeito noradrenérgico e segurança cardiovascular são cobrados.",
+        "trap": "Monitorar PA, especialmente em doses mais altas.",
+        "memoryHook": "",
+        "related": [
+          "Hipertensão"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0063",
+        "front": "Qual antidepressivo apresenta maior risco de prolongamento do QT entre os ISRS?",
+        "back": "Citalopram.",
+        "tags": [
+          "citalopram",
+          "QT"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "QT",
+        "subtopic": "",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Muito cobrado em psicofarmacologia geriátrica.",
+        "trap": "Risco aumenta com dose, idade, interações e cardiopatia.",
+        "memoryHook": "",
+        "related": [
+          "QT",
+          "Citalopram"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0064",
+        "front": "Qual exame deve ser considerado antes de iniciar citalopram em idosos com fatores de risco?",
+        "back": "Eletrocardiograma.",
+        "tags": [
+          "citalopram",
+          "ECG",
+          "QT"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "QT",
+        "subtopic": "",
+        "type": "Conduta",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Avalia segurança em pacientes com risco de prolongamento do QT.",
+        "trap": "Não é obrigatório para todos, mas é prudente em fatores de risco.",
+        "memoryHook": "",
+        "related": [
+          "ECG"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0065",
+        "front": "Qual princípio orienta a introdução de antidepressivos em idosos?",
+        "back": "Start low, go slow: iniciar doses menores e titular lentamente.",
+        "tags": [
+          "start low go slow",
+          "idoso"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Prescrição no idoso",
+        "subtopic": "",
+        "type": "Conduta",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Princípio geral de psicofarmacologia geriátrica.",
+        "trap": "Não confundir com subtratar; titular conforme resposta e tolerância.",
+        "memoryHook": "Start low, go slow, but go.",
+        "related": [
+          "Psicofarmacologia Geriátrica"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0066",
+        "front": "Benzodiazepínicos devem ser utilizados por tempo prolongado no idoso?",
+        "back": "Não. Aumentam quedas, delirium, prejuízo cognitivo e dependência.",
+        "tags": [
+          "benzodiazepínicos",
+          "quedas",
+          "delirium"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Benzodiazepínicos",
+        "subtopic": "",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Critérios de Beers e segurança são recorrentes.",
+        "trap": "Uso crônico é armadilha clássica.",
+        "memoryHook": "",
+        "related": [
+          "Beers",
+          "Delirium"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0067",
+        "front": "Quando benzodiazepínicos podem ser utilizados no idoso ansioso?",
+        "back": "Preferencialmente por curto prazo, em ansiedade intensa, enquanto antidepressivo ainda não fez efeito.",
+        "tags": [
+          "benzodiazepínicos",
+          "ansiedade"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Benzodiazepínicos",
+        "subtopic": "",
+        "type": "Conduta",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Reconhece uso eventual, mas limitado.",
+        "trap": "Evitar uso prolongado e sem plano de retirada.",
+        "memoryHook": "",
+        "related": [
+          "Ansiedade"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0068",
+        "front": "A psicoterapia possui eficácia na depressão do idoso?",
+        "back": "Sim, especialmente terapia cognitivo-comportamental e terapia interpessoal.",
+        "tags": [
+          "psicoterapia",
+          "depressão"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Psicoterapia",
+        "subtopic": "",
+        "type": "Tratamento",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "A banca cobra tratamento não farmacológico como parte do cuidado.",
+        "trap": "Não considerar idoso incapaz de se beneficiar de psicoterapia.",
+        "memoryHook": "",
+        "related": [
+          "TCC"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0069",
+        "front": "Quando considerar eletroconvulsoterapia (ECT) no idoso?",
+        "back": "Depressão grave, risco de suicídio, catatonia, depressão psicótica e refratariedade.",
+        "tags": [
+          "ECT",
+          "depressão grave"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "ECT",
+        "subtopic": "",
+        "type": "Tratamento",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Clássico da USP e de alto rendimento.",
+        "trap": "Idade avançada isolada não contraindica ECT.",
+        "memoryHook": "",
+        "related": [
+          "ECT",
+          "Catatonia"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0070",
+        "front": "A idade avançada contraindica ECT?",
+        "back": "Não. A idade isoladamente não é contraindicação.",
+        "tags": [
+          "ECT",
+          "idoso"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "ECT",
+        "subtopic": "",
+        "type": "Conceito",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "ECT é muito útil em depressão grave geriátrica.",
+        "trap": "Avaliar risco anestésico e comorbidades, não a idade isolada.",
+        "memoryHook": "",
+        "related": [
+          "ECT"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0071",
+        "front": "Idoso deprimido apresenta recusa alimentar grave e risco clínico. Qual tratamento deve ser considerado?",
+        "back": "ECT.",
+        "tags": [
+          "ECT",
+          "recusa alimentar"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "ECT",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Necessidade de resposta rápida e gravidade clínica favorecem ECT.",
+        "trap": "Não esperar semanas por antidepressivo em quadro clinicamente ameaçador.",
+        "memoryHook": "",
+        "related": [
+          "Depressão grave"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0072",
+        "front": "Paciente apresenta depressão psicótica. Qual tratamento possui maior eficácia?",
+        "back": "ECT.",
+        "tags": [
+          "ECT",
+          "depressão psicótica"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "ECT",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Depressão psicótica no idoso é indicação clássica de ECT.",
+        "trap": "Antidepressivo isolado costuma ser insuficiente.",
+        "memoryHook": "",
+        "related": [
+          "Psicose"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0073",
+        "front": "Paciente apresenta ideação suicida grave com necessidade de resposta rápida. Qual tratamento possui início de ação mais rápido?",
+        "back": "ECT.",
+        "tags": [
+          "ECT",
+          "risco suicida"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "ECT",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Questões cobram resposta rápida em alto risco.",
+        "trap": "Não depender apenas de ISRS em risco iminente.",
+        "memoryHook": "",
+        "related": [
+          "Suicídio"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0074",
+        "front": "Qual é o maior erro no tratamento farmacológico da depressão do idoso?",
+        "back": "Utilizar doses elevadas logo no início.",
+        "tags": [
+          "start low go slow",
+          "pegadinha"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Prescrição no idoso",
+        "subtopic": "",
+        "type": "Pegadinha USP",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "A banca cobra segurança e titulação gradual.",
+        "trap": "Start low não significa nunca atingir dose terapêutica.",
+        "memoryHook": "Start low. Go slow.",
+        "related": [
+          "Psicofarmacologia"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-MH-0075",
+        "front": "Qual algoritmo resume o tratamento da depressão no idoso?",
+        "back": "1) Confirmar diagnóstico. 2) Excluir delirium e causas clínicas. 3) Escolher ISRS na maioria dos casos. 4) Individualizar: insônia/perda ponderal → mirtazapina; dor → duloxetina; disfunção sexual → bupropiona. 5) Associar psicoterapia. 6) Reavaliar resposta. 7) Considerar ECT em casos graves, psicóticos, refratários ou com risco iminente.",
+        "tags": [
+          "algoritmo",
+          "tratamento",
+          "depressão"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Transtornos do Humor e Ansiedade no Idoso",
+        "topic": "Algoritmo terapêutico",
+        "subtopic": "",
+        "type": "Flashcard Integrador",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Integra os principais pontos terapêuticos cobrados em prova.",
+        "trap": "Não escolher antidepressivo sem considerar comorbidades e urgência clínica.",
+        "memoryHook": "ISRS base; individualize; ECT se grave.",
+        "related": [
+          "ECT",
+          "ISRS",
+          "Psicoterapia"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      }
+    ]
+  },
+  {
+    "file": "C:/Users/sulya/Downloads/psychogeriatricsFlashcards_geriatric_syndromes_module7.ts",
+    "variable": "geriatricSyndromesModule7Flashcards",
+    "deckId": "pg-sindromes-geriatricas-75",
+    "deckTitle": "Psicogeriatria - Grandes Sindromes Geriatricas",
+    "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+    "importance": 3,
+    "cards": [
+      {
+        "id": "PG-GER-0001",
+        "front": "Ver flashcard PG-GER-0001 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0001, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0002",
+        "front": "Ver flashcard PG-GER-0002 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0002, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0003",
+        "front": "Ver flashcard PG-GER-0003 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0003, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0004",
+        "front": "Ver flashcard PG-GER-0004 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0004, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0005",
+        "front": "Ver flashcard PG-GER-0005 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0005, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0006",
+        "front": "Ver flashcard PG-GER-0006 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0006, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0007",
+        "front": "Ver flashcard PG-GER-0007 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0007, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0008",
+        "front": "Ver flashcard PG-GER-0008 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0008, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0009",
+        "front": "Ver flashcard PG-GER-0009 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0009, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0010",
+        "front": "Ver flashcard PG-GER-0010 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0010, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0011",
+        "front": "Ver flashcard PG-GER-0011 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0011, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0012",
+        "front": "Ver flashcard PG-GER-0012 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0012, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0013",
+        "front": "Ver flashcard PG-GER-0013 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0013, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0014",
+        "front": "Ver flashcard PG-GER-0014 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0014, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0015",
+        "front": "Ver flashcard PG-GER-0015 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0015, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0016",
+        "front": "Ver flashcard PG-GER-0016 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0016, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0017",
+        "front": "Ver flashcard PG-GER-0017 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0017, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0018",
+        "front": "Ver flashcard PG-GER-0018 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0018, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0019",
+        "front": "Ver flashcard PG-GER-0019 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0019, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0020",
+        "front": "Ver flashcard PG-GER-0020 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0020, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0021",
+        "front": "Ver flashcard PG-GER-0021 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0021, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0022",
+        "front": "Ver flashcard PG-GER-0022 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0022, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0023",
+        "front": "Ver flashcard PG-GER-0023 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0023, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0024",
+        "front": "Ver flashcard PG-GER-0024 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0024, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0025",
+        "front": "Ver flashcard PG-GER-0025 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0025, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0026",
+        "front": "Ver flashcard PG-GER-0026 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0026, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0027",
+        "front": "Ver flashcard PG-GER-0027 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0027, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0028",
+        "front": "Ver flashcard PG-GER-0028 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0028, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0029",
+        "front": "Ver flashcard PG-GER-0029 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0029, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0030",
+        "front": "Ver flashcard PG-GER-0030 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0030, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0031",
+        "front": "Ver flashcard PG-GER-0031 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0031, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0032",
+        "front": "Ver flashcard PG-GER-0032 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0032, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0033",
+        "front": "Ver flashcard PG-GER-0033 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0033, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0034",
+        "front": "Ver flashcard PG-GER-0034 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0034, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0035",
+        "front": "Ver flashcard PG-GER-0035 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0035, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0036",
+        "front": "Ver flashcard PG-GER-0036 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0036, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0037",
+        "front": "Ver flashcard PG-GER-0037 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0037, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0038",
+        "front": "Ver flashcard PG-GER-0038 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0038, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0039",
+        "front": "Ver flashcard PG-GER-0039 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0039, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0040",
+        "front": "Ver flashcard PG-GER-0040 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0040, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0041",
+        "front": "Ver flashcard PG-GER-0041 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0041, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0042",
+        "front": "Ver flashcard PG-GER-0042 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0042, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0043",
+        "front": "Ver flashcard PG-GER-0043 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0043, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0044",
+        "front": "Ver flashcard PG-GER-0044 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0044, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0045",
+        "front": "Ver flashcard PG-GER-0045 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0045, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0046",
+        "front": "Ver flashcard PG-GER-0046 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0046, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0047",
+        "front": "Ver flashcard PG-GER-0047 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0047, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0048",
+        "front": "Ver flashcard PG-GER-0048 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0048, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0049",
+        "front": "Ver flashcard PG-GER-0049 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0049, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0050",
+        "front": "Ver flashcard PG-GER-0050 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0050, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0051",
+        "front": "Ver flashcard PG-GER-0051 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0051, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0052",
+        "front": "Ver flashcard PG-GER-0052 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0052, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0053",
+        "front": "Ver flashcard PG-GER-0053 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0053, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0054",
+        "front": "Ver flashcard PG-GER-0054 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0054, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0055",
+        "front": "Ver flashcard PG-GER-0055 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0055, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0056",
+        "front": "Ver flashcard PG-GER-0056 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0056, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0057",
+        "front": "Ver flashcard PG-GER-0057 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0057, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0058",
+        "front": "Ver flashcard PG-GER-0058 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0058, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0059",
+        "front": "Ver flashcard PG-GER-0059 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0059, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0060",
+        "front": "Ver flashcard PG-GER-0060 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0060, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0061",
+        "front": "Ver flashcard PG-GER-0061 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0061, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0062",
+        "front": "Ver flashcard PG-GER-0062 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0062, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0063",
+        "front": "Ver flashcard PG-GER-0063 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0063, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0064",
+        "front": "Ver flashcard PG-GER-0064 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0064, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0065",
+        "front": "Ver flashcard PG-GER-0065 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0065, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0066",
+        "front": "Ver flashcard PG-GER-0066 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0066, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0067",
+        "front": "Ver flashcard PG-GER-0067 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0067, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0068",
+        "front": "Ver flashcard PG-GER-0068 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0068, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0069",
+        "front": "Ver flashcard PG-GER-0069 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0069, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0070",
+        "front": "Ver flashcard PG-GER-0070 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0070, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0071",
+        "front": "Ver flashcard PG-GER-0071 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0071, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0072",
+        "front": "Ver flashcard PG-GER-0072 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0072, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0073",
+        "front": "Ver flashcard PG-GER-0073 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0073, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0074",
+        "front": "Ver flashcard PG-GER-0074 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0074, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-GER-0075",
+        "front": "Ver flashcard PG-GER-0075 produzido nos lotes 1–3.",
+        "back": "Conteúdo correspondente ao flashcard PG-GER-0075, conforme os lotes 1–3 deste módulo.",
+        "tags": [
+          "geriatria",
+          "psicogeriatria"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+        "topic": "Módulo 7",
+        "subtopic": "",
+        "type": "Flashcard",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema recorrente nas provas de Psicogeriatria, especialmente USP.",
+        "trap": "",
+        "memoryHook": "",
+        "related": [],
+        "sources": [
+          "HC-FMUSP",
+          "Diretrizes de Geriatria",
+          "Beers",
+          "STOPP/START"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      }
+    ]
   }
 ];
 
@@ -13460,6 +27012,7 @@
       title: moduleBatch.deckTitle,
       area: "Psicogeriatria",
       module: moduleBatch.module,
+      importance: moduleBatch.importance,
       basis: "Modulo Psicogeriatria importado em lote",
       cards: moduleBatch.cards,
     });

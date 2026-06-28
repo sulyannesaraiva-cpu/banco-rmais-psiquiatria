@@ -2159,46 +2159,111 @@ function currentFlashcardDeck() {
 }
 
 function filteredFlashcardDecks() {
-  return (state.flashcards || []).filter((deck) => {
-    const categoryMatch = state.flashcardCategory === "all" || deck.area === state.flashcardCategory;
-    const requestedImportance = Number(state.flashcardPriority.replace("importance-", ""));
-    const priorityMatch =
-      state.flashcardPriority === "all" ||
-      flashcardImportanceForDeck(deck) === requestedImportance ||
-      (deck.cards || []).some((card) => flashcardImportanceForCard(card) === requestedImportance);
-    return categoryMatch && priorityMatch;
-  });
+  return (state.flashcards || [])
+    .filter((deck) => {
+      const categoryMatch = state.flashcardCategory === "all" || deck.area === state.flashcardCategory;
+      const requestedImportance = selectedFlashcardImportance();
+      const priorityMatch =
+        requestedImportance === null ||
+        getDeckImportance(deck) === requestedImportance ||
+        (deck.cards || []).some((card) => normalizeFlashcardImportance(card, getDeckImportance(deck)) === requestedImportance);
+      return categoryMatch && priorityMatch;
+    })
+    .sort((a, b) => {
+      const importanceDiff = getDeckImportance(b) - getDeckImportance(a);
+      if (importanceDiff) return importanceDiff;
+      const orderDiff = flashcardModuleOrder(a) - flashcardModuleOrder(b);
+      if (orderDiff) return orderDiff;
+      return String(a.title || "").localeCompare(String(b.title || ""), "pt-BR");
+    });
 }
 
-function flashcardImportanceForCard(card) {
-  if (Number.isFinite(card?.priority)) return Math.max(1, Math.min(5, Number(card.priority)));
-  const uspFrequency = Number(card?.examFrequency?.USP || 0);
-  if (uspFrequency >= 5) return 5;
-  if (uspFrequency === 4) return 4;
-  if ((card?.priorities || []).includes("high-frequency")) return 4;
-  if ((card?.priorities || []).includes("dangerous")) return 4;
-  if ((card?.priorities || []).includes("repeated-error")) return 3;
-  if ((card?.priorities || []).includes("weak-performance")) return 3;
-  return 2;
+function selectedFlashcardImportance() {
+  if (state.flashcardPriority === "all") return null;
+  const value = Number(String(state.flashcardPriority).replace("importance-", ""));
+  return Number.isFinite(value) ? Math.max(1, Math.min(5, value)) : null;
 }
 
-function flashcardImportanceForDeck(deck) {
-  const values = (deck.cards || []).map(flashcardImportanceForCard);
-  if (Number.isFinite(deck?.importance)) values.push(Number(deck.importance));
-  return values.length ? Math.max(...values) : 2;
+function clampImportance(value, fallback = 3) {
+  const numeric = Number(value);
+  if (!Number.isFinite(numeric)) return fallback;
+  return Math.max(1, Math.min(5, numeric));
+}
+
+function normalizeFlashcardText(value) {
+  return String(value || "")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/\p{Diacritic}/gu, "");
+}
+
+function getDeckImportance(deck) {
+  if (Number.isFinite(deck?.importance)) return clampImportance(deck.importance);
+  const moduleName = normalizeFlashcardText(`${deck?.module || ""} ${deck?.title || ""}`);
+  if (moduleName.includes("delirium")) return 5;
+  if (moduleName.includes("bpsd") || moduleName.includes("sintomas neuropsiquiatricos")) return 4;
+  if (moduleName.includes("demencia") || moduleName.includes("demencias")) return 5;
+  if (moduleName.includes("avaliacao cognitiva") || moduleName.includes("funcional")) return 5;
+  if (moduleName.includes("psicofarmacologia")) return 5;
+  if (moduleName.includes("humor") || moduleName.includes("ansiedade")) return 4;
+  if (moduleName.includes("grandes sindromes") || moduleName.includes("sindromes geriatricas")) return 3;
+  return 3;
+}
+
+function normalizeFlashcardImportance(card, deckImportance = 3) {
+  if (Number.isFinite(card?.importance)) return clampImportance(card.importance, deckImportance);
+  if (Number.isFinite(card?.priority)) return clampImportance(card.priority, deckImportance);
+  if (Number.isFinite(card?.examFrequency?.USP)) return clampImportance(card.examFrequency.USP, deckImportance);
+  return clampImportance(deckImportance, 3);
+}
+
+function flashcardImportanceForCard(card, deck = currentFlashcardDeck()) {
+  return normalizeFlashcardImportance(card, getDeckImportance(deck));
+}
+
+function flashcardModuleOrder(deck) {
+  const moduleName = normalizeFlashcardText(`${deck?.module || ""} ${deck?.title || ""}`);
+  const ordered = [
+    "delirium",
+    "demencias",
+    "avaliacao cognitiva",
+    "psicofarmacologia",
+    "bpsd",
+    "sintomas neuropsiquiatricos",
+    "humor",
+    "ansiedade",
+    "grandes sindromes",
+    "sindromes geriatricas",
+  ];
+  const index = ordered.findIndex((item) => moduleName.includes(item));
+  return index >= 0 ? index : 999;
+}
+
+function flashcardCardsForDeck(deck, { applyImportance = true } = {}) {
+  const requestedImportance = selectedFlashcardImportance();
+  const deckImportance = getDeckImportance(deck);
+  return [...(deck?.cards || [])]
+    .map((card) => ({ ...card, importance: normalizeFlashcardImportance(card, deckImportance) }))
+    .filter((card) => !applyImportance || requestedImportance === null || card.importance === requestedImportance)
+    .sort((a, b) => {
+      const importanceDiff = b.importance - a.importance;
+      if (importanceDiff) return importanceDiff;
+      return String(a.id || "").localeCompare(String(b.id || ""), "pt-BR");
+    });
 }
 
 function currentFlashcard() {
   const deck = currentFlashcardDeck();
-  if (!deck?.cards?.length) return null;
-  const safeIndex = Math.max(0, Math.min(state.flashcardIndex, deck.cards.length - 1));
+  const cards = flashcardCardsForDeck(deck);
+  if (!cards.length) return null;
+  const safeIndex = Math.max(0, Math.min(state.flashcardIndex, cards.length - 1));
   state.flashcardIndex = safeIndex;
-  return deck.cards[safeIndex];
+  return cards[safeIndex];
 }
 
 function flashcardDueCount(deck) {
   const today = Date.now();
-  return (deck.cards || []).filter((card) => {
+  return flashcardCardsForDeck(deck).filter((card) => {
     const progress = state.flashcardProgress[card.id];
     if (!progress?.nextReviewAt) return true;
     return new Date(progress.nextReviewAt).getTime() <= today;
@@ -2247,10 +2312,12 @@ function renderFlashcards() {
     .map((item) => {
       const active = item.id === deck.id ? " active" : "";
       const dueCount = flashcardDueCount(item);
+      const visibleCards = flashcardCardsForDeck(item);
       return `
         <button class="flashcard-deck-row${active}" data-flashcard-deck="${escapeHtml(item.id)}">
           <strong>${escapeHtml(item.title)}</strong>
-          <span>${escapeHtml(item.area)} \u00b7 ${(item.cards || []).length} cartoes \u00b7 ${dueCount} para revisar</span>
+          <span>${escapeHtml(item.area)} \u00b7 ${visibleCards.length} cartoes \u00b7 ${dueCount} para revisar</span>
+          <em class="importance-badge">${escapeHtml(getImportanceLabel(getDeckImportance(item)))}</em>
         </button>
       `;
     })
@@ -2258,12 +2325,12 @@ function renderFlashcards() {
 
   if (!card) return;
   const progress = state.flashcardProgress[card.id] || {};
-  el.flashcardMeta.innerHTML = `
-    <span>${escapeHtml(deck.title)}</span>
-    <span>${state.flashcardIndex + 1}/${deck.cards.length}</span>
-    <span>${escapeHtml(flashcardNextReviewLabel(card))}</span>
-    <span>${escapeHtml(priorityLabel(`importance-${flashcardImportanceForCard(card)}`))}</span>
-  `;
+	  el.flashcardMeta.innerHTML = `
+	    <span>${escapeHtml(deck.title)}</span>
+	    <span>${state.flashcardIndex + 1}/${flashcardCardsForDeck(deck).length}</span>
+	    <span>${escapeHtml(flashcardNextReviewLabel(card))}</span>
+	    <span title="${escapeHtml(getImportanceDescription(flashcardImportanceForCard(card, deck)))}">${escapeHtml(getImportanceLabel(flashcardImportanceForCard(card, deck)))}</span>
+	  `;
   el.flashcardFront.textContent = card.front;
   el.flashcardBack.innerHTML = `
     <p>${escapeHtml(card.back)}</p>
@@ -2289,21 +2356,40 @@ function renderFlashcards() {
   }
 }
 
-function priorityLabel(priority) {
+function getImportanceLabel(importance) {
   const labels = {
-    "importance-5": "Importância 5 · cai quase toda prova",
-    "importance-4": "Importância 4 · muito frequente",
-    "importance-3": "Importância 3 · frequente",
-    "importance-2": "Importância 2 · ocasional",
-    "importance-1": "Importância 1 · raro",
+    1: "1 · Raro",
+    2: "2 · Ocasional",
+    3: "3 · Frequente",
+    4: "4 · Muito frequente",
+    5: "5 · Cai quase toda prova",
   };
-  return labels[priority] || priority;
+  return labels[clampImportance(importance)] || labels[3];
+}
+
+function getImportanceDescription(importance) {
+  const descriptions = {
+    1: "Tema raro, útil para diferenciação em questões difíceis.",
+    2: "Tema ocasional, revisar após dominar os essenciais.",
+    3: "Tema frequente, importante para consolidar o raciocínio clínico.",
+    4: "Tema muito frequente, alto rendimento para prova.",
+    5: "Tema de altíssima incidência, revisar repetidamente.",
+  };
+  return descriptions[clampImportance(importance)] || descriptions[3];
+}
+
+function priorityLabel(priority) {
+  if (String(priority).startsWith("importance-")) {
+    return getImportanceLabel(Number(String(priority).replace("importance-", "")));
+  }
+  return priority;
 }
 
 function moveFlashcard(delta) {
   const deck = currentFlashcardDeck();
-  if (!deck?.cards?.length) return;
-  state.flashcardIndex = (state.flashcardIndex + delta + deck.cards.length) % deck.cards.length;
+  const cards = flashcardCardsForDeck(deck);
+  if (!cards.length) return;
+  state.flashcardIndex = (state.flashcardIndex + delta + cards.length) % cards.length;
   state.flashcardRevealed = false;
   saveFlashcardState();
   renderFlashcards();

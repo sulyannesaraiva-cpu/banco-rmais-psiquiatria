@@ -2758,6 +2758,18 @@ body.theme-dark .exam-study-card {
   font-size: 13px;
 }
 
+.importance-badge {
+  width: fit-content;
+  padding: 3px 8px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--panel-soft);
+  color: var(--accent-strong);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+}
+
 .flashcard-deck-row.active {
   border-color: var(--accent);
   background: var(--accent-soft);

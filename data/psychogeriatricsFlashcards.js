@@ -6,6 +6,7 @@
  * @property {string} topic
  * @property {string} type
  * @property {number} priority
+ * @property {1|2|3|4|5} importance
  * @property {{USP:number, UNIFESP:number, UNICAMP:number, "SUS-SP":number}} examFrequency
  * @property {string} front
  * @property {string} back
@@ -26,6 +27,7 @@
 const deliriumDefaults = {
   specialty: "Psicogeriatria",
   module: "Delirium",
+  importance: 5,
   examFrequency: { USP: 5, UNIFESP: 5, UNICAMP: 4, "SUS-SP": 5 },
   sources: ["HC-FMUSP", "Estrategia", "MedReview", "DSM-5-TR"],
   lastReviewedAt: null,
@@ -747,6 +749,7 @@ function toBancoRmaisFlashcard(card) {
     tags: card.tags,
     priorities: flashcardPriorityBuckets(card),
     priority: card.priority,
+    importance: card.importance || card.priority || 5,
     specialty: card.specialty,
     module: card.module,
     topic: card.topic,
@@ -785,6 +788,7 @@ window.BANCO_RMAIS_FLASHCARDS.decks.push({
   title: "Psicogeriatria - Delirium",
   area: "Psicogeriatria",
   module: "Delirium",
+  importance: 5,
   basis: "Modulo Psicogeriatria + temas de alta frequencia em prova",
   priorities: ["high-frequency", "weak-performance", "repeated-error", "dangerous"],
   cards: psychogeriatricsFlashcards.map(toBancoRmaisFlashcard),
