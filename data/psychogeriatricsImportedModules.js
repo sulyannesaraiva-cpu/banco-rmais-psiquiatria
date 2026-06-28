@@ -10069,6 +10069,3377 @@
         "lapses": 0
       }
     ]
+  },
+  {
+    "file": "C:/Users/sulya/Downloads/psychogeriatricsFlashcards_bpsd_module5.ts",
+    "variable": "bpsdModule5Flashcards",
+    "deckId": "pg-bpsd-75",
+    "deckTitle": "Psicogeriatria - Sintomas Neuropsiquiatricos das Demencias (BPSD)",
+    "module": "Sintomas Neuropsiquiatricos das Demencias (BPSD)",
+    "cards": [
+      {
+        "id": "PG-BPSD-0001",
+        "front": "O que significa a sigla BPSD?",
+        "back": "Behavioral and Psychological Symptoms of Dementia. Em português: sintomas neuropsiquiátricos das demências.",
+        "tags": [
+          "BPSD",
+          "conceito"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Conceito",
+        "subtopic": "",
+        "type": "Conceito",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "A sigla aparece em diretrizes e artigos, enquanto provas brasileiras podem usar 'sintomas comportamentais das demências'.",
+        "trap": "Não limitar BPSD apenas a agitação.",
+        "memoryHook": "BPSD = comportamento + psicologia nas demências.",
+        "related": [
+          "Demências"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0002",
+        "front": "Qual a frequência dos BPSD ao longo da evolução das demências?",
+        "back": "Aproximadamente 90% dos pacientes apresentarão pelo menos um sintoma neuropsiquiátrico durante a evolução da demência.",
+        "tags": [
+          "BPSD",
+          "epidemiologia"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Epidemiologia",
+        "subtopic": "",
+        "type": "Conceito",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "A banca cobra porque BPSD são parte esperada da evolução, não exceção.",
+        "trap": "Não considerar BPSD como evento raro.",
+        "memoryHook": "BPSD são regra, não exceção.",
+        "related": [
+          "Demências"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0003",
+        "front": "Os BPSD costumam surgir apenas nas fases avançadas das demências?",
+        "back": "Não. Podem surgir desde fases iniciais, a depender do tipo de demência.",
+        "tags": [
+          "BPSD",
+          "DFT",
+          "DCL"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Evolução",
+        "subtopic": "",
+        "type": "Conceito",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Questões usam sintomas comportamentais precoces para sugerir DFT ou DCL.",
+        "trap": "Na DFT e DCL, sintomas neuropsiquiátricos podem ser precoces.",
+        "memoryHook": "",
+        "related": [
+          "DFT",
+          "DCL"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0004",
+        "front": "Quais são os sintomas neuropsiquiátricos mais frequentes nas demências?",
+        "back": "Apatia, depressão, ansiedade, irritabilidade, agitação, agressividade, delírios e alucinações.",
+        "tags": [
+          "BPSD",
+          "sintomas"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Semiologia",
+        "subtopic": "",
+        "type": "Conceito",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Ajuda a reconhecer o espectro dos BPSD em casos clínicos.",
+        "trap": "Não restringir a psicose e agressividade.",
+        "memoryHook": "",
+        "related": [
+          "Demências"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0005",
+        "front": "Qual é o sintoma neuropsiquiátrico mais frequente na doença de Alzheimer?",
+        "back": "Apatia.",
+        "tags": [
+          "Alzheimer",
+          "apatia",
+          "BPSD"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Apatia",
+        "subtopic": "",
+        "type": "Conceito",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "A USP gosta de confundir apatia com depressão em Alzheimer.",
+        "trap": "Apatia não é sinônimo de depressão.",
+        "memoryHook": "Alzheimer: apatia aparece muito.",
+        "related": [
+          "Depressão no idoso"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0006",
+        "front": "Qual sintoma está mais associado à sobrecarga do cuidador?",
+        "back": "Agitação acompanhada de agressividade.",
+        "tags": [
+          "agitação",
+          "agressividade",
+          "cuidador"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Sobrecarga do cuidador",
+        "subtopic": "",
+        "type": "Prognóstico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "A banca explora impacto funcional e familiar dos BPSD.",
+        "trap": "Apatia é frequente, mas agitação/agressividade costuma sobrecarregar mais.",
+        "memoryHook": "",
+        "related": [
+          "Cuidador"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0007",
+        "front": "Qual sintoma mais aumenta o risco de institucionalização?",
+        "back": "Agitação grave persistente.",
+        "tags": [
+          "institucionalização",
+          "agitação"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Institucionalização",
+        "subtopic": "",
+        "type": "Prognóstico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "BPSD graves são motivo comum de perda de manejo domiciliar.",
+        "trap": "Não é apenas gravidade cognitiva que leva à institucionalização.",
+        "memoryHook": "",
+        "related": [
+          "Funcionalidade"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0008",
+        "front": "Qual deve ser a primeira etapa da avaliação diante de um novo BPSD?",
+        "back": "Investigar causa clínica reversível: delirium, dor, infecção, retenção urinária, fecaloma e efeitos adversos de medicamentos.",
+        "tags": [
+          "BPSD",
+          "conduta",
+          "delirium"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Avaliação inicial",
+        "subtopic": "",
+        "type": "Conduta",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "A banca cobra o erro de tratar comportamento como progressão da demência sem investigar causa clínica.",
+        "trap": "Nunca assumir progressão da demência de início.",
+        "memoryHook": "Novo comportamento = procurar causa.",
+        "related": [
+          "Delirium",
+          "Polifarmácia"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0009",
+        "front": "Qual é a principal causa de aparecimento súbito de BPSD?",
+        "back": "Delirium.",
+        "tags": [
+          "BPSD",
+          "delirium"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Delirium",
+        "subtopic": "",
+        "type": "Diferencial",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Mudança abrupta de comportamento em demência é uma pegadinha clássica.",
+        "trap": "Demência costuma evoluir lentamente.",
+        "memoryHook": "Súbito = delirium até prova em contrário.",
+        "related": [
+          "Delirium"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0010",
+        "front": "Quais são os principais desencadeantes ambientais dos BPSD?",
+        "back": "Excesso de estímulos, mudança de ambiente, privação do sono, isolamento, dor, fome e medo.",
+        "tags": [
+          "BPSD",
+          "ambiente"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Gatilhos ambientais",
+        "subtopic": "",
+        "type": "Conceito",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "A USP valoriza gatilhos simples antes de medicação.",
+        "trap": "Não medicalizar antes de ajustar ambiente.",
+        "memoryHook": "",
+        "related": [
+          "Cuidador",
+          "Ambiente"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0011",
+        "front": "Qual sintoma costuma ser confundido com depressão nas demências?",
+        "back": "Apatia.",
+        "tags": [
+          "apatia",
+          "depressão"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Apatia",
+        "subtopic": "",
+        "type": "Diferencial",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "A banca cobra a diferença entre perda de iniciativa e tristeza/sofrimento depressivo.",
+        "trap": "Apatia pode ocorrer sem humor deprimido.",
+        "memoryHook": "",
+        "related": [
+          "Depressão no idoso"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0012",
+        "front": "A apatia responde bem a antidepressivos?",
+        "back": "Não necessariamente. Na ausência de episódio depressivo maior, antidepressivos costumam ter benefício limitado.",
+        "tags": [
+          "apatia",
+          "antidepressivos"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Apatia",
+        "subtopic": "",
+        "type": "Tratamento",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Evita prescrição automática de antidepressivo para todo paciente apático.",
+        "trap": "Apatia isolada não é depressão.",
+        "memoryHook": "",
+        "related": [
+          "Depressão no idoso"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0013",
+        "front": "Qual BPSD é mais característico da demência frontotemporal?",
+        "back": "Desinibição comportamental.",
+        "tags": [
+          "DFT",
+          "desinibição"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "DFT",
+        "subtopic": "",
+        "type": "Diagnóstico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "É pista diagnóstica forte para DFT nas provas.",
+        "trap": "Não pensar primeiro em Alzheimer quando comportamento social muda precocemente.",
+        "memoryHook": "DFT = comportamento primeiro.",
+        "related": [
+          "Demência frontotemporal"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0014",
+        "front": "Qual BPSD é mais característico da demência com corpos de Lewy?",
+        "back": "Alucinações visuais recorrentes.",
+        "tags": [
+          "DCL",
+          "alucinações visuais"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "DCL",
+        "subtopic": "",
+        "type": "Diagnóstico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "É uma das associações mais cobradas em psicogeriatria.",
+        "trap": "Não confundir com delirium sem avaliar curso e atenção.",
+        "memoryHook": "DCL vê coisas cedo.",
+        "related": [
+          "Demência com Corpos de Lewy"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0015",
+        "front": "Qual BPSD é mais característico da doença de Alzheimer inicial?",
+        "back": "Apatia e depressão.",
+        "tags": [
+          "Alzheimer",
+          "apatia",
+          "depressão"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Alzheimer",
+        "subtopic": "",
+        "type": "Diagnóstico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Ajuda a diferenciar Alzheimer inicial de DFT e DCL.",
+        "trap": "Desinibição precoce sugere DFT; alucinação visual precoce sugere DCL.",
+        "memoryHook": "",
+        "related": [
+          "Alzheimer"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0016",
+        "front": "Agitação sempre significa agressividade?",
+        "back": "Não. Agitação pode ocorrer sem agressão física ou verbal.",
+        "tags": [
+          "agitação",
+          "agressividade"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Agitação",
+        "subtopic": "",
+        "type": "Conceito",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Provas diferenciam inquietação, agitação e agressividade.",
+        "trap": "Não usar os termos como sinônimos.",
+        "memoryHook": "",
+        "related": [
+          "Agressividade"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0017",
+        "front": "Qual sintoma costuma anteceder episódios de agressividade?",
+        "back": "Agitação.",
+        "tags": [
+          "agitação",
+          "agressividade"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Agressividade",
+        "subtopic": "",
+        "type": "Conceito",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Reconhecer agitação permite intervenção precoce antes da agressão.",
+        "trap": "Não esperar agressão para intervir no ambiente.",
+        "memoryHook": "",
+        "related": [
+          "Agitação"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0018",
+        "front": "Delírios nas demências costumam ser complexos?",
+        "back": "Não. Geralmente são simples, como roubo, abandono, infidelidade ou invasores.",
+        "tags": [
+          "delírios",
+          "psicose"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Delírios",
+        "subtopic": "",
+        "type": "Semiologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "A banca usa delírios simples para caracterizar psicose associada à demência.",
+        "trap": "Delírios muito elaborados sugerem avaliar outros diagnósticos.",
+        "memoryHook": "",
+        "related": [
+          "Psicose tardia"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0019",
+        "front": "Qual tipo de alucinação é mais comum nas demências?",
+        "back": "Visual.",
+        "tags": [
+          "alucinações visuais"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Alucinações",
+        "subtopic": "",
+        "type": "Semiologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Alucinação visual orienta diferenciais como DCL e delirium.",
+        "trap": "Alucinação auditiva isolada e sistematizada sugere avaliar psicose primária/tardia.",
+        "memoryHook": "",
+        "related": [
+          "DCL",
+          "Delirium"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0020",
+        "front": "Qual sintoma deve fazer pensar em demência com corpos de Lewy?",
+        "back": "Alucinações visuais recorrentes desde fases precoces.",
+        "tags": [
+          "DCL",
+          "alucinações"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "DCL",
+        "subtopic": "",
+        "type": "Diagnóstico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Associação clássica e repetida em provas.",
+        "trap": "Lembrar também de flutuação, parkinsonismo e transtorno comportamental do sono REM.",
+        "memoryHook": "",
+        "related": [
+          "DCL"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0021",
+        "front": "Qual BPSD é mais frequentemente negligenciado?",
+        "back": "Apatia.",
+        "tags": [
+          "apatia",
+          "BPSD"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Apatia",
+        "subtopic": "",
+        "type": "Semiologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "É comum, mas menos disruptiva que agitação e por isso pode passar despercebida.",
+        "trap": "Não confundir silêncio com estabilidade clínica.",
+        "memoryHook": "",
+        "related": [
+          "Apatia"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0022",
+        "front": "A gravidade dos BPSD acompanha obrigatoriamente a gravidade da demência?",
+        "back": "Não. BPSD podem surgir em qualquer fase e variar independentemente do comprometimento cognitivo.",
+        "tags": [
+          "BPSD",
+          "evolução"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Evolução",
+        "subtopic": "",
+        "type": "Conceito",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Evita raciocínio linear simplista em casos clínicos.",
+        "trap": "BPSD precoce pode apontar tipo específico de demência.",
+        "memoryHook": "",
+        "related": [
+          "Demências"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0023",
+        "front": "Os BPSD aceleram a perda funcional?",
+        "back": "Sim. Associam-se a maior dependência, institucionalização e sobrecarga do cuidador.",
+        "tags": [
+          "funcionalidade",
+          "BPSD"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Funcionalidade",
+        "subtopic": "",
+        "type": "Prognóstico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "A banca cobra consequências clínicas, não só diagnóstico.",
+        "trap": "BPSD são determinantes de cuidado e prognóstico.",
+        "memoryHook": "",
+        "related": [
+          "Funcionalidade",
+          "Cuidador"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0024",
+        "front": "Quem costuma perceber primeiro o aparecimento dos BPSD?",
+        "back": "O cuidador ou familiar próximo.",
+        "tags": [
+          "cuidador",
+          "história colateral"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Cuidador",
+        "subtopic": "",
+        "type": "Avaliação",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "História colateral é fundamental na avaliação psicogeriátrica.",
+        "trap": "Não depender apenas do relato do paciente com demência.",
+        "memoryHook": "",
+        "related": [
+          "Cuidador"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0025",
+        "front": "Qual frase resume a abordagem inicial dos BPSD?",
+        "back": "Mudança comportamental no idoso com demência deve ser considerada delirium ou causa clínica até prova em contrário.",
+        "tags": [
+          "BPSD",
+          "delirium",
+          "conduta"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Integração",
+        "subtopic": "",
+        "type": "Conceito integrador",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Sintetiza a principal armadilha das provas.",
+        "trap": "Não medicalizar comportamento novo sem investigação.",
+        "memoryHook": "Mudança súbita = delirium.",
+        "related": [
+          "Delirium"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0026",
+        "front": "Paciente de 82 anos com doença de Alzheimer apresenta agitação iniciada há 24 horas. Qual deve ser a primeira hipótese diagnóstica?",
+        "back": "Delirium até prova em contrário.",
+        "tags": [
+          "caso clínico",
+          "delirium",
+          "agitação"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Caso clínico",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "A USP explora o erro de atribuir piora súbita à progressão da demência.",
+        "trap": "Demências evoluem lentamente.",
+        "memoryHook": "",
+        "related": [
+          "Delirium"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0027",
+        "front": "Qual deve ser a primeira intervenção diante de um novo episódio de agitação em paciente com demência?",
+        "back": "Avaliar causas precipitantes: dor, retenção urinária, fecaloma, infecção, hipoxemia, desidratação e medicamentos recentes.",
+        "tags": [
+          "conduta",
+          "agitação"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Conduta inicial",
+        "subtopic": "",
+        "type": "Conduta",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Evita uso precoce de antipsicótico sem avaliação clínica.",
+        "trap": "Nunca iniciar antipsicótico antes dessa avaliação.",
+        "memoryHook": "",
+        "related": [
+          "Delirium",
+          "Polifarmácia"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0028",
+        "front": "Qual característica favorece delirium em vez de BPSD?",
+        "back": "Flutuação importante da atenção e da consciência.",
+        "tags": [
+          "delirium",
+          "atenção"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Delirium",
+        "subtopic": "",
+        "type": "Diferencial",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Diferencia mudança comportamental aguda de sintomas crônicos da demência.",
+        "trap": "Atenção é a chave do delirium.",
+        "memoryHook": "",
+        "related": [
+          "Delirium"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0029",
+        "front": "Qual característica favorece BPSD em vez de delirium?",
+        "back": "Progressão gradual, sem alteração importante da atenção.",
+        "tags": [
+          "BPSD",
+          "diferencial"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Diferencial",
+        "subtopic": "",
+        "type": "Diferencial",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "A banca usa temporalidade e atenção para separar diagnósticos.",
+        "trap": "BPSD não deve ter rebaixamento/flutuação marcante da consciência.",
+        "memoryHook": "",
+        "related": [
+          "Delirium"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0030",
+        "front": "Paciente com Alzheimer acredita repetidamente que objetos foram roubados. Qual é o BPSD mais provável?",
+        "back": "Delírio de roubo.",
+        "tags": [
+          "delírio de roubo",
+          "Alzheimer"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Delírios",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "É um dos delírios mais frequentes na doença de Alzheimer.",
+        "trap": "Não confundir com erro de memória simples quando há convicção delirante.",
+        "memoryHook": "",
+        "related": [
+          "Alzheimer"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0031",
+        "front": "Idosa com demência passa a acusar o marido de infidelidade sem evidências. Qual sintoma neuropsiquiátrico está presente?",
+        "back": "Delírio, especialmente delírio de ciúmes.",
+        "tags": [
+          "delírio",
+          "ciúmes"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Delírios",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Provas exploram exemplos concretos de psicose na demência.",
+        "trap": "Diferenciar delírio de suspeita baseada em fatos reais.",
+        "memoryHook": "",
+        "related": [
+          "Psicose tardia"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0032",
+        "front": "Como diferenciar apatia de depressão?",
+        "back": "Apatia: perda de iniciativa, pouca expressão emocional e sofrimento subjetivo discreto. Depressão: tristeza, culpa, desesperança e sofrimento emocional.",
+        "tags": [
+          "apatia",
+          "depressão"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Apatia x depressão",
+        "subtopic": "",
+        "type": "Diferencial",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Muito cobrado por mudar conduta terapêutica.",
+        "trap": "Antidepressivo não resolve apatia isolada.",
+        "memoryHook": "Apatia = iniciativa; depressão = sofrimento.",
+        "related": [
+          "Depressão no idoso"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0033",
+        "front": "Paciente permanece sentado o dia inteiro, sem iniciativa, mas nega tristeza. Qual BPSD é mais provável?",
+        "back": "Apatia.",
+        "tags": [
+          "apatia",
+          "caso clínico"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Apatia",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Treina reconhecimento de apatia sem sintomas afetivos depressivos.",
+        "trap": "Não diagnosticar depressão apenas por inatividade.",
+        "memoryHook": "",
+        "related": [
+          "Apatia"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0034",
+        "front": "Paciente apresenta alucinações visuais recorrentes desde o início da demência. Qual diagnóstico deve ser considerado?",
+        "back": "Demência com Corpos de Lewy.",
+        "tags": [
+          "DCL",
+          "alucinação visual"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "DCL",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Alucinação visual precoce é pista diagnóstica forte.",
+        "trap": "Se houver flutuação, parkinsonismo e RBD, reforça DCL.",
+        "memoryHook": "",
+        "related": [
+          "DCL"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0035",
+        "front": "Paciente com desinibição social, impulsividade e hiperoralidade. Qual demência é mais provável?",
+        "back": "Demência frontotemporal.",
+        "tags": [
+          "DFT",
+          "hiperoralidade",
+          "desinibição"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "DFT",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Comportamento social precoce é marca da variante comportamental.",
+        "trap": "Não confundir com mania sem avaliar curso neurodegenerativo.",
+        "memoryHook": "",
+        "related": [
+          "DFT",
+          "Bipolaridade"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0036",
+        "front": "Qual BPSD costuma aparecer precocemente na demência frontotemporal?",
+        "back": "Desinibição comportamental.",
+        "tags": [
+          "DFT",
+          "desinibição"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "DFT",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "É uma das pistas mais frequentes de DFT em prova.",
+        "trap": "Alzheimer inicial costuma começar por memória episódica, não por desinibição.",
+        "memoryHook": "",
+        "related": [
+          "DFT"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0037",
+        "front": "Paciente começa a manipular repetidamente objetos sem finalidade. Como é chamado esse comportamento?",
+        "back": "Comportamento motor aberrante.",
+        "tags": [
+          "comportamento motor aberrante"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Comportamento motor",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Provas descrevem o sintoma sem nomeá-lo.",
+        "trap": "Diferenciar de compulsão primária pelo contexto de demência.",
+        "memoryHook": "",
+        "related": [
+          "DFT"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0038",
+        "front": "O wandering é considerado um BPSD?",
+        "back": "Sim. Consiste em deambulação persistente e sem objetivo.",
+        "tags": [
+          "wandering",
+          "deambulação"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Wandering",
+        "subtopic": "",
+        "type": "Conceito",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema prático em segurança domiciliar e institucionalização.",
+        "trap": "Não confundir com marcha por acatisia ou delirium.",
+        "memoryHook": "",
+        "related": [
+          "Segurança"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0039",
+        "front": "Qual comportamento aumenta o risco de fuga do domicílio?",
+        "back": "Wandering.",
+        "tags": [
+          "wandering",
+          "fuga"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Wandering",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "A banca pode cobrar medidas de segurança e orientação familiar.",
+        "trap": "Risco é ambiental e funcional, não apenas psiquiátrico.",
+        "memoryHook": "",
+        "related": [
+          "Segurança",
+          "Cuidador"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0040",
+        "front": "Paciente torna-se extremamente agitado sempre ao final da tarde. Como esse fenômeno é conhecido?",
+        "back": "Síndrome do pôr do sol, ou sundowning.",
+        "tags": [
+          "sundowning",
+          "pôr do sol"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Sundowning",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Fenômeno clássico nas demências e frequentemente confundido com delirium.",
+        "trap": "Não é sinônimo de delirium.",
+        "memoryHook": "",
+        "related": [
+          "Sono",
+          "Delirium"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0041",
+        "front": "Síndrome do pôr do sol é sinônimo de delirium?",
+        "back": "Não. É uma piora vespertina dos sintomas comportamentais da demência.",
+        "tags": [
+          "sundowning",
+          "delirium"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Sundowning",
+        "subtopic": "",
+        "type": "Diferencial",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Diferencia flutuação comportamental crônica de síndrome confusional aguda.",
+        "trap": "Se houver início agudo e déficit atencional, investigar delirium.",
+        "memoryHook": "",
+        "related": [
+          "Delirium"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0042",
+        "front": "Paciente apresenta gritos repetitivos durante toda a noite sem causa clínica evidente. Esse comportamento faz parte dos BPSD?",
+        "back": "Sim. Vocalizações persistentes fazem parte dos sintomas comportamentais.",
+        "tags": [
+          "vocalizações",
+          "BPSD"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Vocalizações",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "A banca usa descrições não técnicas de sintomas comportamentais.",
+        "trap": "Sempre investigar dor, desconforto e delirium antes de concluir BPSD.",
+        "memoryHook": "",
+        "related": [
+          "Dor",
+          "Delirium"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0043",
+        "front": "Ansiedade é considerada BPSD?",
+        "back": "Sim. É frequente, especialmente nas fases leves e moderadas.",
+        "tags": [
+          "ansiedade",
+          "BPSD"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Ansiedade",
+        "subtopic": "",
+        "type": "Conceito",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Nem todo BPSD é agressividade ou psicose.",
+        "trap": "Ansiedade pode aparecer como dependência excessiva do cuidador.",
+        "memoryHook": "",
+        "related": [
+          "Ansiedade no idoso"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0044",
+        "front": "Paciente passa a seguir continuamente o cuidador pela casa. Esse comportamento pode representar o quê?",
+        "back": "Ansiedade de separação associada à demência.",
+        "tags": [
+          "ansiedade",
+          "cuidador"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Ansiedade",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Mostra manifestação prática de ansiedade em demência.",
+        "trap": "Não interpretar automaticamente como manipulação voluntária.",
+        "memoryHook": "",
+        "related": [
+          "Cuidador",
+          "Ansiedade"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0045",
+        "front": "Paciente torna-se agressivo apenas durante o banho. Qual deve ser a primeira hipótese?",
+        "back": "Desencadeante ambiental, medo, dor ou desconforto durante o cuidado.",
+        "tags": [
+          "banho",
+          "agressividade",
+          "gatilho"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Gatilhos",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "A banca cobra análise funcional do comportamento antes de medicação.",
+        "trap": "Antipsicótico não é primeira resposta para gatilho previsível.",
+        "memoryHook": "",
+        "related": [
+          "Cuidador",
+          "Ambiente"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0046",
+        "front": "Mudança de ambiente pode precipitar BPSD?",
+        "back": "Sim. Internações e mudanças de residência frequentemente desencadeiam sintomas.",
+        "tags": [
+          "mudança de ambiente",
+          "BPSD"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Ambiente",
+        "subtopic": "",
+        "type": "Conduta",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Ambiente é fator precipitante muito comum e modificável.",
+        "trap": "Não atribuir automaticamente à piora estrutural da demência.",
+        "memoryHook": "",
+        "related": [
+          "Ambiente"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0047",
+        "front": "Qual BPSD está mais relacionado ao risco de lesões físicas?",
+        "back": "Agressividade física.",
+        "tags": [
+          "agressividade",
+          "risco"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Agressividade",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Ajuda a decidir gravidade e necessidade de intervenção rápida.",
+        "trap": "Risco físico pode justificar tratamento farmacológico se medidas iniciais falharem ou forem inviáveis.",
+        "memoryHook": "",
+        "related": [
+          "Segurança"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0048",
+        "front": "Paciente com demência passa a comer objetos não alimentares. Qual diagnóstico deve ser lembrado?",
+        "back": "Hiperoralidade, mais típica da demência frontotemporal.",
+        "tags": [
+          "hiperoralidade",
+          "DFT"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Hiperoralidade",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Hiperoralidade é pista forte de DFT.",
+        "trap": "Não confundir com alteração alimentar inespecífica.",
+        "memoryHook": "",
+        "related": [
+          "DFT"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0049",
+        "front": "Qual BPSD costuma produzir maior sobrecarga emocional ao cuidador?",
+        "back": "Agitação associada à agressividade.",
+        "tags": [
+          "cuidador",
+          "agressividade"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Cuidador",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Questões frequentemente abordam impacto no cuidador e institucionalização.",
+        "trap": "Apatia é frequente, mas agressividade costuma ser mais disruptiva.",
+        "memoryHook": "",
+        "related": [
+          "Cuidador"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0050",
+        "front": "Qual é o algoritmo mental para avaliar um novo BPSD?",
+        "back": "1) Confirmar se houve mudança aguda. 2) Excluir delirium. 3) Procurar causa clínica. 4) Avaliar fatores ambientais. 5) Considerar progressão da demência e tratamento específico.",
+        "tags": [
+          "algoritmo",
+          "conduta"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Algoritmo diagnóstico",
+        "subtopic": "",
+        "type": "Flashcard Integrador",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Sintetiza o raciocínio mais cobrado em prova.",
+        "trap": "Pular direto para antipsicótico é erro clássico.",
+        "memoryHook": "Novo BPSD: delirium, clínica, ambiente, depois remédio.",
+        "related": [
+          "Delirium",
+          "Ambiente"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0051",
+        "front": "Qual deve ser a primeira linha de tratamento para BPSD?",
+        "back": "Intervenções não farmacológicas individualizadas: identificar gatilhos, orientar cuidador, adequar ambiente, tratar dor e manter rotina.",
+        "tags": [
+          "tratamento",
+          "não farmacológico"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Tratamento não farmacológico",
+        "subtopic": "",
+        "type": "Conduta",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "A banca cobra que antipsicótico não é primeira linha para a maioria dos BPSD.",
+        "trap": "Não medicalizar antes de individualizar o cuidado.",
+        "memoryHook": "",
+        "related": [
+          "Cuidador",
+          "Ambiente"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0052",
+        "front": "Quando está indicado tratamento farmacológico dos BPSD?",
+        "back": "Quando houver sofrimento importante, risco de auto/heteroagressão, prejuízo importante ao cuidado ou falha das medidas não farmacológicas.",
+        "tags": [
+          "tratamento farmacológico",
+          "risco"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Tratamento farmacológico",
+        "subtopic": "",
+        "type": "Conduta",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Define quando o risco da medicação pode ser aceitável.",
+        "trap": "Sintoma leve sem risco geralmente não justifica antipsicótico.",
+        "memoryHook": "",
+        "related": [
+          "Antipsicóticos"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0053",
+        "front": "Todo paciente agitado deve receber antipsicótico?",
+        "back": "Não. Primeiro excluir delirium, tratar causas clínicas e realizar medidas ambientais.",
+        "tags": [
+          "antipsicóticos",
+          "agitação"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Antipsicóticos",
+        "subtopic": "",
+        "type": "Conduta",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Pergunta clássica de conduta em prova.",
+        "trap": "Agitação não é sinônimo de indicação medicamentosa.",
+        "memoryHook": "",
+        "related": [
+          "Delirium"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0054",
+        "front": "Qual é o principal risco dos antipsicóticos em pacientes com demência?",
+        "back": "Aumento da mortalidade. Também aumentam risco de AVC, quedas, pneumonia, sedação e sintomas extrapiramidais.",
+        "tags": [
+          "antipsicóticos",
+          "mortalidade",
+          "AVC"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Antipsicóticos",
+        "subtopic": "",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Risco de mortalidade é alerta central em diretrizes e provas.",
+        "trap": "Risperidona pode ter evidência, mas não é isenta de risco.",
+        "memoryHook": "",
+        "related": [
+          "Beers",
+          "Psicofarmacologia"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0055",
+        "front": "Os antipsicóticos devem ser prescritos por tempo indeterminado nos BPSD?",
+        "back": "Não. Usar a menor dose, pelo menor tempo possível, com reavaliação frequente e tentativa de retirada quando possível.",
+        "tags": [
+          "antipsicóticos",
+          "desprescrição"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Antipsicóticos",
+        "subtopic": "",
+        "type": "Conduta",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "A banca valoriza desprescrição e segurança no idoso.",
+        "trap": "Não manter por inércia após estabilização.",
+        "memoryHook": "",
+        "related": [
+          "Desprescrição"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0056",
+        "front": "Qual antipsicótico apresenta maior evidência para agitação na doença de Alzheimer?",
+        "back": "Risperidona.",
+        "tags": [
+          "risperidona",
+          "Alzheimer",
+          "agitação"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Antipsicóticos",
+        "subtopic": "",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "É uma associação frequente em tratamento de BPSD.",
+        "trap": "Apesar da evidência, há risco de AVC e mortalidade.",
+        "memoryHook": "",
+        "related": [
+          "Alzheimer",
+          "Beers"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0057",
+        "front": "Qual antipsicótico costuma ser preferido quando existe parkinsonismo?",
+        "back": "Quetiapina.",
+        "tags": [
+          "quetiapina",
+          "parkinsonismo"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Parkinsonismo",
+        "subtopic": "",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Menor bloqueio dopaminérgico é útil em parkinsonismo e DCL, embora a decisão exija cautela.",
+        "trap": "Evitar haloperidol.",
+        "memoryHook": "",
+        "related": [
+          "DCL",
+          "Parkinson"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0058",
+        "front": "Qual antipsicótico deve ser evitado na demência com corpos de Lewy?",
+        "back": "Haloperidol. Também é necessária grande cautela com outros bloqueadores dopaminérgicos.",
+        "tags": [
+          "DCL",
+          "haloperidol",
+          "neurolépticos"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "DCL",
+        "subtopic": "",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Hipersensibilidade a neurolépticos na DCL é clássico da USP.",
+        "trap": "Antipsicótico pode piorar gravemente o quadro motor e clínico.",
+        "memoryHook": "",
+        "related": [
+          "DCL"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0059",
+        "front": "Por que pacientes com DCL apresentam maior risco com antipsicóticos?",
+        "back": "Por hipersensibilidade a bloqueadores dopaminérgicos, podendo evoluir com rigidez grave, acinesia e síndrome neuroléptica maligna.",
+        "tags": [
+          "DCL",
+          "antipsicóticos"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "DCL",
+        "subtopic": "",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "É um dos pontos mais perigosos de prova e prática clínica.",
+        "trap": "Não tratar alucinação visual de DCL como psicose comum.",
+        "memoryHook": "",
+        "related": [
+          "DCL",
+          "Síndrome neuroléptica maligna"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0060",
+        "front": "Qual deve ser a primeira medida diante de agitação leve em demência?",
+        "back": "Intervenções ambientais e orientação ao cuidador.",
+        "tags": [
+          "agitação leve",
+          "conduta"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Agitação leve",
+        "subtopic": "",
+        "type": "Conduta",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Evita sobretratamento farmacológico.",
+        "trap": "Agitação leve não exige medicação automática.",
+        "memoryHook": "",
+        "related": [
+          "Ambiente"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0061",
+        "front": "Quais intervenções ambientais possuem melhor evidência nos BPSD?",
+        "back": "Rotina estruturada, ambiente calmo, redução de ruídos, iluminação adequada, presença familiar e atividades significativas.",
+        "tags": [
+          "ambiente",
+          "rotina"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Ambiente",
+        "subtopic": "",
+        "type": "Tratamento",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Bancas cobram medidas simples e efetivas.",
+        "trap": "Ambiente desorganizado pode manter o sintoma.",
+        "memoryHook": "",
+        "related": [
+          "Cuidador"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0062",
+        "front": "A musicoterapia possui benefício nos BPSD?",
+        "back": "Sim. Pode reduzir ansiedade, agitação e irritabilidade em alguns pacientes.",
+        "tags": [
+          "musicoterapia"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Musicoterapia",
+        "subtopic": "",
+        "type": "Tratamento",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Mostra que intervenções não farmacológicas não são apenas 'apoio', mas tratamento.",
+        "trap": "Não substitui avaliação clínica de sintomas novos.",
+        "memoryHook": "",
+        "related": [
+          "Tratamento não farmacológico"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0063",
+        "front": "Atividade física pode reduzir BPSD?",
+        "back": "Sim. Pode ajudar especialmente em agitação, ansiedade e apatia.",
+        "tags": [
+          "atividade física",
+          "apatia",
+          "agitação"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Atividade física",
+        "subtopic": "",
+        "type": "Tratamento",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Integra cuidado funcional e comportamental.",
+        "trap": "Deve ser adaptada à capacidade do idoso.",
+        "memoryHook": "",
+        "related": [
+          "Grandes Síndromes Geriátricas"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0064",
+        "front": "Treinamento do cuidador reduz BPSD?",
+        "back": "Sim. É uma das intervenções com melhor custo-benefício.",
+        "tags": [
+          "cuidador",
+          "treinamento"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Cuidador",
+        "subtopic": "",
+        "type": "Tratamento",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "A USP valoriza orientação ao cuidador como parte do tratamento.",
+        "trap": "Não tratar apenas o paciente; tratar o sistema de cuidado.",
+        "memoryHook": "",
+        "related": [
+          "Cuidador"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0065",
+        "front": "Os inibidores da acetilcolinesterase podem melhorar BPSD?",
+        "back": "Sim, especialmente apatia, alucinações e sintomas leves em alguns pacientes.",
+        "tags": [
+          "donepezila",
+          "rivastigmina",
+          "galantamina"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Anticolinesterásicos",
+        "subtopic": "",
+        "type": "Tratamento",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Liga tratamento cognitivo a sintomas comportamentais, especialmente em DCL.",
+        "trap": "Resposta é modesta e não substitui manejo ambiental.",
+        "memoryHook": "",
+        "related": [
+          "Alzheimer",
+          "DCL"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0066",
+        "front": "A memantina pode reduzir agitação?",
+        "back": "Pode apresentar benefício modesto em alguns pacientes com Alzheimer moderado ou grave.",
+        "tags": [
+          "memantina",
+          "agitação"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Memantina",
+        "subtopic": "",
+        "type": "Tratamento",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Cai como alternativa mais segura que antipsicóticos em cenários selecionados.",
+        "trap": "Não esperar resposta robusta em todos os pacientes.",
+        "memoryHook": "",
+        "related": [
+          "Alzheimer"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0067",
+        "front": "Os antidepressivos podem ser utilizados para tratar alguns BPSD?",
+        "back": "Sim, especialmente quando predominam depressão, ansiedade ou irritabilidade.",
+        "tags": [
+          "antidepressivos",
+          "ISRS"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Antidepressivos",
+        "subtopic": "",
+        "type": "Tratamento",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Diferencia tratamento de sintomas afetivos de tratamento de psicose/agressividade grave.",
+        "trap": "Não usar antidepressivo para todo BPSD.",
+        "memoryHook": "",
+        "related": [
+          "Depressão",
+          "Ansiedade"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0068",
+        "front": "Qual ISRS possui melhor evidência para agitação em pacientes com demência?",
+        "back": "Citalopram.",
+        "tags": [
+          "citalopram",
+          "QT",
+          "agitação"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "ISRS",
+        "subtopic": "",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema de prova por ser alternativa aos antipsicóticos em alguns casos.",
+        "trap": "Monitorar QT e efeitos adversos em idosos.",
+        "memoryHook": "",
+        "related": [
+          "QT",
+          "Psicofarmacologia"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0069",
+        "front": "Quando considerar trazodona em BPSD?",
+        "back": "Quando predominam insônia, agitação noturna ou ansiedade.",
+        "tags": [
+          "trazodona",
+          "insônia"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Trazodona",
+        "subtopic": "",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Muito usada em prática clínica e cobrada como opção sedativa menos problemática que benzodiazepínicos.",
+        "trap": "Monitorar sedação, hipotensão e quedas.",
+        "memoryHook": "",
+        "related": [
+          "Sono",
+          "Quedas"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0070",
+        "front": "Valproato deve ser utilizado rotineiramente para BPSD?",
+        "back": "Não. Estudos mostram benefício limitado e maior risco de efeitos adversos.",
+        "tags": [
+          "valproato",
+          "BPSD"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Valproato",
+        "subtopic": "",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Muito cobrado por ser prescrito na prática, mas não recomendado rotineiramente.",
+        "trap": "Não confundir controle de impulsividade em outros contextos com indicação em BPSD.",
+        "memoryHook": "",
+        "related": [
+          "Psicofarmacologia"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0071",
+        "front": "Benzodiazepínicos devem ser utilizados rotineiramente em BPSD?",
+        "back": "Não. Aumentam quedas, delirium, sedação e prejuízo cognitivo.",
+        "tags": [
+          "benzodiazepínicos",
+          "quedas",
+          "delirium"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Benzodiazepínicos",
+        "subtopic": "",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Cai junto com critérios de Beers e segurança do idoso.",
+        "trap": "Podem piorar exatamente o quadro que se deseja tratar.",
+        "memoryHook": "",
+        "related": [
+          "Beers",
+          "Delirium"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0072",
+        "front": "Qual deve ser o objetivo do tratamento dos BPSD?",
+        "back": "Melhorar segurança, qualidade de vida, conforto e funcionalidade; não eliminar completamente todos os sintomas.",
+        "tags": [
+          "objetivos",
+          "tratamento"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Objetivo terapêutico",
+        "subtopic": "",
+        "type": "Conduta",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Evita metas irreais que levam a sedação excessiva.",
+        "trap": "Paciente 'quieto' por sedação não é necessariamente paciente melhor.",
+        "memoryHook": "",
+        "related": [
+          "Funcionalidade"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0073",
+        "front": "Quando reavaliar necessidade do antipsicótico nos BPSD?",
+        "back": "Regularmente, sempre considerando redução ou suspensão após estabilização clínica.",
+        "tags": [
+          "antipsicóticos",
+          "reavaliação"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Reavaliação",
+        "subtopic": "",
+        "type": "Conduta",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Desprescrição é parte da boa prática em psicogeriatria.",
+        "trap": "Não renovar indefinidamente.",
+        "memoryHook": "",
+        "related": [
+          "Desprescrição"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0074",
+        "front": "Qual é o maior erro terapêutico nos BPSD?",
+        "back": "Tratar apenas o comportamento sem investigar a causa.",
+        "tags": [
+          "erro terapêutico",
+          "conduta"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Erro terapêutico",
+        "subtopic": "",
+        "type": "Pegadinha",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Resume a principal armadilha clínica e de prova.",
+        "trap": "Todo BPSD novo exige investigação clínica.",
+        "memoryHook": "",
+        "related": [
+          "Delirium",
+          "Dor"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      },
+      {
+        "id": "PG-BPSD-0075",
+        "front": "Qual é o algoritmo terapêutico dos BPSD?",
+        "back": "1) Confirmar que não é delirium. 2) Identificar causa clínica. 3) Corrigir fatores ambientais. 4) Implementar medidas não farmacológicas. 5) Se houver sintomas graves ou risco, considerar tratamento farmacológico individualizado. 6) Reavaliar e retirar medicamentos quando possível.",
+        "tags": [
+          "algoritmo",
+          "tratamento",
+          "BPSD"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Algoritmo terapêutico",
+        "subtopic": "",
+        "type": "Flashcard Integrador",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Integra todo o módulo em uma sequência de conduta para prova e prática clínica.",
+        "trap": "Antipsicótico entra tarde, não cedo.",
+        "memoryHook": "Delirium → clínica → ambiente → não farmacológico → fármaco se grave.",
+        "related": [
+          "Delirium",
+          "Antipsicóticos"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0
+      }
+    ]
   }
 ];
 
