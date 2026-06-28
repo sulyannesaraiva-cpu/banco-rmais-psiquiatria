@@ -1,0 +1,132 @@
+window.BANCO_RMAIS_FLASHCARDS = {
+  decks: [
+    {
+      id: "usp-psicogeriatria",
+      title: "USP Psicogeriatria - alta prioridade",
+      area: "Psicogeriatria",
+      basis: "Provas USP + bibliografia informada",
+      cards: [
+        {
+          id: "psg-delirium-001",
+          tags: ["Delirium", "Urgencia"],
+          front: "Qual e a triade pratica que ajuda a diferenciar delirium de demencia em prova?",
+          back: "Delirium costuma ter inicio agudo, curso flutuante e deficit de atencao. Demencia tende a ser progressiva, com atencao relativamente preservada nas fases iniciais.",
+        },
+        {
+          id: "psg-delirium-002",
+          tags: ["Delirium", "Conduta"],
+          front: "Em idoso com delirium, qual deve ser a primeira linha de manejo antes de antipsicotico?",
+          back: "Identificar e tratar causa precipitante, revisar medicamentos, corrigir dor, infeccao, retencao urinaria, constipacao, hipoxia e disturbios metabolicos; associar medidas ambientais e reorientacao.",
+        },
+        {
+          id: "psg-demencia-001",
+          tags: ["Demencias", "Alzheimer"],
+          front: "Qual padrao cognitivo inicial e mais classico da doenca de Alzheimer?",
+          back: "Prejuizo de memoria episodica recente, com dificuldade de aprender novas informacoes. Linguagem, funcao executiva e visuoespacial podem se comprometer com a progressao.",
+        },
+        {
+          id: "psg-demencia-002",
+          tags: ["Demencias", "Lewy"],
+          front: "Quais achados fazem pensar em demencia com corpos de Lewy?",
+          back: "Flutuacao cognitiva, alucinacoes visuais recorrentes, parkinsonismo espontaneo, transtorno comportamental do sono REM e sensibilidade importante a antipsicoticos.",
+        },
+        {
+          id: "psg-demencia-003",
+          tags: ["Demencias", "DFT"],
+          front: "O que sugere demencia frontotemporal variante comportamental?",
+          back: "Mudanca precoce de personalidade e comportamento, desinibicao, apatia, perda de empatia, comportamento compulsivo/ritualistico e hiperoralidade, frequentemente antes de deficit mnestico marcante.",
+        },
+        {
+          id: "psg-demencia-004",
+          tags: ["Demencias", "Vascular"],
+          front: "Qual pista clinica favorece transtorno neurocognitivo vascular?",
+          back: "Associacao com fatores vasculares, AVC previo, alteracao executiva precoce, marcha alterada, sintomas focais e curso em degraus ou com pioras apos eventos vasculares.",
+        },
+        {
+          id: "psg-demencia-005",
+          tags: ["Demencias", "Tratamento"],
+          front: "Quando pensar em inibidores da acetilcolinesterase e qual efeito adverso merece atencao em idosos?",
+          back: "Podem ser usados em Alzheimer leve a moderado e tambem em alguns casos de Lewy/Parkinson. Atencao para nauseas, perda de peso, bradicardia, sincope e interacoes em pacientes com disturbios de conducao.",
+        },
+        {
+          id: "psg-demencia-006",
+          tags: ["Demencias", "Tratamento"],
+          front: "Qual o papel da memantina nas demencias?",
+          back: "E mais lembrada para Alzheimer moderado a grave, isolada ou associada a inibidor da acetilcolinesterase, com beneficio sintomatico modesto em cognicao, funcionalidade ou comportamento.",
+        },
+        {
+          id: "psg-depressao-001",
+          tags: ["Depressao", "Diagnostico"],
+          front: "Como a depressao no idoso pode simular demencia?",
+          back: "Pode causar queixa cognitiva importante, lentificacao, baixa concentracao e pior desempenho em testes. A pista e associacao com humor deprimido, anedonia, culpa, sono/apetite alterados e inicio mais subagudo.",
+        },
+        {
+          id: "psg-depressao-002",
+          tags: ["Depressao", "Suicidio"],
+          front: "Por que suicidio em idosos e tema de alta prioridade?",
+          back: "Idosos tendem a usar metodos mais letais, comunicar menos sofrimento e ter maior associacao com depressao, luto, dor, isolamento, doenca clinica e perda funcional.",
+        },
+        {
+          id: "psg-depressao-003",
+          tags: ["Depressao", "ECT"],
+          front: "Em quais situacoes a ECT deve ser lembrada em psicogeriatria?",
+          back: "Depressao grave, risco suicida alto, sintomas psicoticos, catatonia, recusa alimentar, necessidade de resposta rapida ou falha/intolerancia a farmacoterapia.",
+        },
+        {
+          id: "psg-psicofarmaco-001",
+          tags: ["Psicofarmacologia", "Idoso"],
+          front: "Qual principio geral guia psicofarmacologia no idoso?",
+          back: "Start low, go slow, but go. Iniciar em dose menor, titular com cautela, monitorar resposta e eventos adversos, evitando subtratamento quando ha indicacao clara.",
+        },
+        {
+          id: "psg-psicofarmaco-002",
+          tags: ["Psicofarmacologia", "Litio"],
+          front: "Quais riscos tornam o litio mais delicado no idoso?",
+          back: "Reducao da funcao renal, janela terapeutica estreita, risco de tremor, confusao, hipotireoidismo, diabetes insipidus nefrogenico e interacoes com diureticos tiazidicos, IECA/BRA e anti-inflamatorios.",
+        },
+        {
+          id: "psg-psicofarmaco-003",
+          tags: ["Psicofarmacologia", "Benzodiazepinicos"],
+          front: "Por que benzodiazepinicos costumam ser alternativas ruins para uso cronico em idosos?",
+          back: "Aumentam risco de quedas, fraturas, confusao, delirium, prejuizo cognitivo, sedacao, dependencia e piora de apneia do sono.",
+        },
+        {
+          id: "psg-psicofarmaco-004",
+          tags: ["Psicofarmacologia", "Anticolinergicos"],
+          front: "O que e carga anticolinergica e por que importa?",
+          back: "E o efeito somado de medicamentos com acao anticolinergica. Em idosos, associa-se a confusao, constipacao, retencao urinaria, boca seca, quedas e piora cognitiva.",
+        },
+        {
+          id: "psg-psicofarmaco-005",
+          tags: ["Psicofarmacologia", "Antipsicoticos"],
+          front: "Qual cuidado e essencial ao usar antipsicoticos em sintomas comportamentais da demencia?",
+          back: "Usar apenas quando ha risco ou sofrimento importante, apos medidas nao farmacologicas, na menor dose e pelo menor tempo possivel, discutindo risco de AVC, mortalidade, sedacao e sintomas extrapiramidais.",
+        },
+        {
+          id: "psg-sono-001",
+          tags: ["Sono", "Idoso"],
+          front: "Qual abordagem inicial para insonia cronica no idoso?",
+          back: "Priorizar medidas comportamentais, higiene do sono, TCC-I quando disponivel, tratar dor, nocturia, depressao, ansiedade e revisar substancias/medicamentos antes de hipnoticos.",
+        },
+        {
+          id: "psg-neuro-001",
+          tags: ["Parkinsonismo", "PSP"],
+          front: "Quais pistas sugerem paralisia supranuclear progressiva?",
+          back: "Quedas precoces, rigidez axial, bradicinesia, alteracao do olhar vertical e sinal do beija-flor/bico do colibri na neuroimagem quando citado.",
+        },
+        {
+          id: "psg-funcionalidade-001",
+          tags: ["Funcionalidade", "Avaliacao"],
+          front: "Por que funcionalidade e central na avaliacao psicogeriatrica?",
+          back: "Porque perda de autonomia em AVDs e AIVDs ajuda a dimensionar gravidade, diferenciar queixa cognitiva de transtorno neurocognitivo maior e orientar cuidado, seguranca e suporte familiar.",
+        },
+        {
+          id: "psg-cuidador-001",
+          tags: ["Cuidador", "Manejo"],
+          front: "O que nao deve faltar no manejo de sintomas comportamentais em demencia?",
+          back: "Investigar gatilhos, dor e ambiente; orientar cuidador; estruturar rotina; reduzir sobrecarga; evitar confronto direto; reservar medicacao para casos com risco ou sofrimento relevante.",
+        },
+      ],
+    },
+  ],
+};

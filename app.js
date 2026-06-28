@@ -8,6 +8,7 @@ document.body.classList.toggle("theme-dark", storedTheme === "dark");
 const state = {
   questions: [],
   exams: [],
+  flashcards: [],
   filtered: [],
   index: 0,
   selected: null,
@@ -29,6 +30,10 @@ const state = {
   savedNotesLoading: false,
   editingCommentId: null,
   positions: JSON.parse(localStorage.getItem("banco-rmais-positions") || "{}"),
+  flashcardDeckId: localStorage.getItem("banco-rmais-flashcard-deck") || "usp-psicogeriatria",
+  flashcardIndex: Number(localStorage.getItem("banco-rmais-flashcard-index") || "0"),
+  flashcardRevealed: false,
+  flashcardProgress: JSON.parse(localStorage.getItem("banco-rmais-flashcard-progress") || "{}"),
   selectedTopics: JSON.parse(localStorage.getItem("banco-rmais-selected-topics") || "null"),
   selectedSubthemes: JSON.parse(localStorage.getItem("banco-rmais-selected-subthemes") || "[]"),
   refineSubthemes: localStorage.getItem("banco-rmais-refine-subthemes") === "true",
@@ -294,6 +299,7 @@ const el = {
     overview: document.querySelector("#overviewPanel"),
     today: document.querySelector("#todayPanel"),
     notes: document.querySelector("#notesPanel"),
+    flashcards: document.querySelector("#flashcardsPanel"),
     topics: document.querySelector("#topicsPanel"),
     activity: document.querySelector("#activityPanel"),
     history: document.querySelector("#historyPanel"),
@@ -381,6 +387,14 @@ const el = {
   endTodayReview: document.querySelector("#endTodayReviewBtn"),
   confidenceGroup: document.querySelector("#confidenceGroup"),
   confidencePanel: document.querySelector("#confidencePanel"),
+  flashcardDeckList: document.querySelector("#flashcardDeckList"),
+  flashcardMeta: document.querySelector("#flashcardMeta"),
+  flashcardFront: document.querySelector("#flashcardFront"),
+  flashcardBack: document.querySelector("#flashcardBack"),
+  showFlashcardAnswer: document.querySelector("#showFlashcardAnswerBtn"),
+  prevFlashcard: document.querySelector("#prevFlashcardBtn"),
+  nextFlashcard: document.querySelector("#nextFlashcardBtn"),
+  flashcardGrade: document.querySelector("#flashcardGrade"),
   editOptions: {
     A: document.querySelector("#editOptionA"),
     B: document.querySelector("#editOptionB"),
@@ -419,6 +433,12 @@ function saveDiscardedOptions() {
 
 function savePositions() {
   localStorage.setItem("banco-rmais-positions", JSON.stringify(state.positions));
+}
+
+function saveFlashcardState() {
+  localStorage.setItem("banco-rmais-flashcard-deck", state.flashcardDeckId);
+  localStorage.setItem("banco-rmais-flashcard-index", String(state.flashcardIndex));
+  localStorage.setItem("banco-rmais-flashcard-progress", JSON.stringify(state.flashcardProgress));
 }
 
 function saveSelectedTopics() {
@@ -2126,6 +2146,110 @@ function renderPendingSummary() {
   `;
 }
 
+function currentFlashcardDeck() {
+  const decks = state.flashcards || [];
+  return decks.find((deck) => deck.id === state.flashcardDeckId) || decks[0] || null;
+}
+
+function currentFlashcard() {
+  const deck = currentFlashcardDeck();
+  if (!deck?.cards?.length) return null;
+  const safeIndex = Math.max(0, Math.min(state.flashcardIndex, deck.cards.length - 1));
+  state.flashcardIndex = safeIndex;
+  return deck.cards[safeIndex];
+}
+
+function flashcardDueCount(deck) {
+  const today = Date.now();
+  return (deck.cards || []).filter((card) => {
+    const progress = state.flashcardProgress[card.id];
+    if (!progress?.nextReviewAt) return true;
+    return new Date(progress.nextReviewAt).getTime() <= today;
+  }).length;
+}
+
+function flashcardNextReviewLabel(card) {
+  const progress = state.flashcardProgress[card.id];
+  if (!progress?.nextReviewAt) return "novo";
+  const due = new Date(progress.nextReviewAt).getTime() <= Date.now();
+  if (due) return "vencido";
+  return `revisão em ${new Date(progress.nextReviewAt).toLocaleDateString("pt-BR", { day: "2-digit", month: "2-digit" })}`;
+}
+
+function renderFlashcards() {
+  if (!el.flashcardDeckList || !el.flashcardFront) return;
+  const decks = state.flashcards || [];
+  if (!decks.length) {
+    el.flashcardDeckList.innerHTML = `<p class="panel-line">Nenhum deck cadastrado.</p>`;
+    el.flashcardFront.textContent = "Nenhum flashcard cadastrado ainda.";
+    el.flashcardBack.hidden = true;
+    el.flashcardGrade.hidden = true;
+    return;
+  }
+
+  const deck = currentFlashcardDeck();
+  const card = currentFlashcard();
+  el.flashcardDeckList.innerHTML = decks
+    .map((item) => {
+      const active = item.id === deck.id ? " active" : "";
+      const dueCount = flashcardDueCount(item);
+      return `
+        <button class="flashcard-deck-row${active}" data-flashcard-deck="${escapeHtml(item.id)}">
+          <strong>${escapeHtml(item.title)}</strong>
+          <span>${(item.cards || []).length} cartões · ${dueCount} para revisar</span>
+        </button>
+      `;
+    })
+    .join("");
+
+  if (!card) return;
+  const progress = state.flashcardProgress[card.id] || {};
+  el.flashcardMeta.innerHTML = `
+    <span>${escapeHtml(deck.title)}</span>
+    <span>${state.flashcardIndex + 1}/${deck.cards.length}</span>
+    <span>${escapeHtml(flashcardNextReviewLabel(card))}</span>
+  `;
+  el.flashcardFront.textContent = card.front;
+  el.flashcardBack.innerHTML = `
+    <p>${escapeHtml(card.back)}</p>
+    <div>${(card.tags || []).map((tag) => `<span class="mini-badge">${escapeHtml(tag)}</span>`).join("")}</div>
+    ${progress.lastGrade ? `<small>Última marcação: ${escapeHtml(progress.lastGrade)}</small>` : ""}
+  `;
+  el.flashcardBack.hidden = !state.flashcardRevealed;
+  el.flashcardGrade.hidden = !state.flashcardRevealed;
+  el.showFlashcardAnswer.textContent = state.flashcardRevealed ? "Resposta exibida" : "Mostrar resposta";
+  el.showFlashcardAnswer.disabled = state.flashcardRevealed;
+}
+
+function moveFlashcard(delta) {
+  const deck = currentFlashcardDeck();
+  if (!deck?.cards?.length) return;
+  state.flashcardIndex = (state.flashcardIndex + delta + deck.cards.length) % deck.cards.length;
+  state.flashcardRevealed = false;
+  saveFlashcardState();
+  renderFlashcards();
+}
+
+function gradeFlashcard(grade) {
+  const card = currentFlashcard();
+  if (!card) return;
+  const previous = state.flashcardProgress[card.id] || {};
+  const streak = grade === "again" ? 0 : Number(previous.streak || 0) + 1;
+  const daysByGrade = { again: 1, hard: 3, good: streak >= 3 ? 14 : 7, easy: streak >= 3 ? 30 : 14 };
+  const nextReview = new Date();
+  nextReview.setDate(nextReview.getDate() + daysByGrade[grade]);
+  state.flashcardProgress[card.id] = {
+    ...previous,
+    streak,
+    lastGrade: grade,
+    reviewedAt: new Date().toISOString(),
+    nextReviewAt: nextReview.toISOString(),
+  };
+  state.flashcardRevealed = false;
+  saveFlashcardState();
+  moveFlashcard(1);
+}
+
 function renderDashboard() {
   renderQuickDashboard();
   renderOverview();
@@ -2139,6 +2263,7 @@ function renderDashboard() {
   renderTodayReview();
   renderSavedNotesPanel();
   renderExams();
+  renderFlashcards();
 }
 
 function renderQuickDashboard() {
@@ -3145,6 +3270,7 @@ function setTab(tabName) {
     panel.classList.toggle("active", name === tabName);
   });
   if (tabName === "notes") renderSavedNotesPanel();
+  if (tabName === "flashcards") renderFlashcards();
 }
 
 function setSidebarCollapsed(collapsed) {
@@ -3935,6 +4061,26 @@ el.savedNotesList?.addEventListener("click", (event) => {
   if (!button) return;
   openQuestionFromNote(button.dataset.openNoteQuestion);
 });
+el.flashcardDeckList?.addEventListener("click", (event) => {
+  const button = event.target.closest("[data-flashcard-deck]");
+  if (!button) return;
+  state.flashcardDeckId = button.dataset.flashcardDeck;
+  state.flashcardIndex = 0;
+  state.flashcardRevealed = false;
+  saveFlashcardState();
+  renderFlashcards();
+});
+el.showFlashcardAnswer?.addEventListener("click", () => {
+  state.flashcardRevealed = true;
+  renderFlashcards();
+});
+el.prevFlashcard?.addEventListener("click", () => moveFlashcard(-1));
+el.nextFlashcard?.addEventListener("click", () => moveFlashcard(1));
+el.flashcardGrade?.addEventListener("click", (event) => {
+  const button = event.target.closest("[data-flashcard-grade]");
+  if (!button) return;
+  gradeFlashcard(button.dataset.flashcardGrade);
+});
 el.examSelect.addEventListener("change", () => {
   state.examCompletionMessage = "";
   state.activeExamId = el.examSelect.value;
@@ -4154,6 +4300,7 @@ loadPayload()
   .then(async (payload) => {
     state.questions = payload.questions || [];
     state.exams = window.BANCO_RMAIS_EXAMS?.exams || [];
+    state.flashcards = window.BANCO_RMAIS_FLASHCARDS?.decks || [];
     applyTheme(state.theme);
     setSidebarCollapsed(state.sidebarCollapsed);
     seedLegacySpacedReviews();
