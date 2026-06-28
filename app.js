@@ -2259,10 +2259,10 @@ function renderFlashcards() {
 
 function priorityLabel(priority) {
   const labels = {
-    "high-frequency": "alta frequencia",
+    "high-frequency": "alta frequ\u00eancia",
     "weak-performance": "baixo desempenho",
     "repeated-error": "erro repetido",
-    dangerous: "questao perigosa",
+    dangerous: "quest\u00e3o perigosa",
   };
   return labels[priority] || priority;
 }

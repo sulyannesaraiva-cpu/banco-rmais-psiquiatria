@@ -2577,6 +2577,7 @@ body.theme-dark .exam-study-card {
   border: 1px solid var(--line);
   border-radius: 14px;
   background: var(--panel);
+  align-content: start;
 }
 
 .flashcard-study-head {
@@ -2691,7 +2692,15 @@ body.theme-dark .exam-study-card {
 .flashcard-grade {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 8px;
+}
+
+.flashcard-actions button,
+.flashcard-grade button {
+  flex: 0 0 auto;
+  min-height: 38px;
+  padding: 0 14px;
 }
 
 .flashcard-actions .primary-btn {
@@ -2699,7 +2708,6 @@ body.theme-dark .exam-study-card {
 }
 
 .flashcard-grade button {
-  flex: 1 1 130px;
   border-color: var(--line-strong);
   background: var(--panel);
 }

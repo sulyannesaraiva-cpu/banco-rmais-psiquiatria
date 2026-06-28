@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <button id="sidebarToggle" class="sidebar-toggle" aria-label="Abrir ou fechar menu">â˜°</button>
+    <button id="sidebarToggle" class="sidebar-toggle" aria-label="Abrir ou fechar menu">&#9776;</button>
     <aside class="sidebar">
       <div class="brand">
         <span class="brand-mark">R+</span>
@@ -38,15 +38,15 @@
       </section>
 
       <nav class="tabs" aria-label="Painel do banco">
-        <button class="tab active" data-tab="overview">âŒ‚ Dashboard</button>
-        <button class="tab" data-tab="today">â—‡ RevisÃ£o</button>
-        <button class="tab" data-tab="activity">â–£ Estudo por temas</button>
-        <button class="tab" data-tab="exams">â–¡ Provas</button>
-        <button class="tab" data-tab="history">â–¥ Desempenho</button>
+        <button class="tab active" data-tab="overview">Dashboard</button>
+        <button class="tab" data-tab="today">Revis&atilde;o</button>
+        <button class="tab" data-tab="activity">Estudo por temas</button>
+        <button class="tab" data-tab="exams">Provas</button>
+        <button class="tab" data-tab="history">Desempenho</button>
         <button class="tab" data-tab="flashcards">Flashcards</button>
-        <button class="tab" data-tab="notes">â–¤ AnotaÃ§Ãµes</button>
-        <div class="admin-nav-divider admin-only">AdministraÃ§Ã£o</div>
-        <button class="tab admin-tab admin-only" data-tab="topics">âš™ AdministraÃ§Ã£o</button>
+        <button class="tab" data-tab="notes">Anota&ccedil;&otilde;es</button>
+        <div class="admin-nav-divider admin-only">Administra&ccedil;&atilde;o</div>
+        <button class="tab admin-tab admin-only" data-tab="topics">Administra&ccedil;&atilde;o</button>
       </nav>
 
       <section class="dashboard">
@@ -256,8 +256,8 @@
         <div class="tab-panel" id="flashcardsPanel">
           <header class="study-planner-head">
             <span>Flashcards</span>
-            <h3>Banco de cartoes</h3>
-            <p>Escolha uma categoria e uma prioridade para estudar com revisao ativa.</p>
+            <h3>Banco de cart&otilde;es</h3>
+            <p>Escolha uma categoria e uma prioridade para estudar com revis&atilde;o ativa.</p>
           </header>
           <label class="field">
             <span>Categoria</span>
@@ -273,14 +273,14 @@
           <div class="flashcard-priority-filter" id="flashcardPriorityGroup">
             <span>Prioridade</span>
             <button class="active" data-flashcard-priority="all">Todas</button>
-            <button data-flashcard-priority="high-frequency">Alta frequencia</button>
+            <button data-flashcard-priority="high-frequency">Alta frequ&ecirc;ncia</button>
             <button data-flashcard-priority="weak-performance">Baixo desempenho</button>
             <button data-flashcard-priority="repeated-error">Erro repetido</button>
-            <button data-flashcard-priority="dangerous">Questao perigosa</button>
+            <button data-flashcard-priority="dangerous">Quest&atilde;o perigosa</button>
           </div>
           <section class="flashcard-decks">
             <h3>Decks</h3>
-            <p class="panel-line">Priorize revisoes vencidas e cartoes ligados aos seus erros.</p>
+            <p class="panel-line">Priorize revis&otilde;es vencidas e cart&otilde;es ligados aos seus erros.</p>
             <div id="flashcardDeckList"></div>
           </section>
         </div>
@@ -451,10 +451,10 @@
           <h2 id="questionTitle">Banco de questÃµes</h2>
         </div>
         <div class="actions">
-          <button id="shuffleBtn" class="icon-btn" title="Embaralhar questÃµes">â†»</button>
-          <button id="favoriteBtn" class="icon-btn" title="Favoritar questÃ£o">â˜†</button>
-          <button id="reviewBtn" class="icon-btn" title="Marcar para revisar">âš‘</button>
-          <button id="excludeBtn" class="icon-btn" title="Excluir questÃ£o do banco">Ã—</button>
+          <button id="shuffleBtn" class="icon-btn" title="Embaralhar quest&otilde;es">R</button>
+          <button id="favoriteBtn" class="icon-btn" title="Favoritar quest&atilde;o">*</button>
+          <button id="reviewBtn" class="icon-btn" title="Marcar para revisar">!</button>
+          <button id="excludeBtn" class="icon-btn" title="Excluir quest&atilde;o do banco">x</button>
         </div>
       </header>
 
@@ -471,20 +471,20 @@
           <div class="flashcard-study-head">
             <div>
               <p id="flashcardMeta">Selecione um deck para iniciar.</p>
-              <h2 id="flashcardFront">Flashcards em preparacao</h2>
+              <h2 id="flashcardFront">Flashcards em prepara&ccedil;&atilde;o</h2>
             </div>
           </div>
           <div class="flashcard-back" id="flashcardBack" hidden></div>
           <div class="flashcard-actions">
             <button id="showFlashcardAnswerBtn" class="primary-btn">Mostrar resposta</button>
             <button id="prevFlashcardBtn" class="outline-btn">Anterior</button>
-            <button id="nextFlashcardBtn" class="outline-btn">Proximo</button>
+            <button id="nextFlashcardBtn" class="outline-btn">Pr&oacute;ximo</button>
           </div>
           <div class="flashcard-grade" id="flashcardGrade" hidden>
             <button data-flashcard-grade="again">Errei</button>
-            <button data-flashcard-grade="hard">Dificil</button>
+            <button data-flashcard-grade="hard">Dif&iacute;cil</button>
             <button data-flashcard-grade="good">Bom</button>
-            <button data-flashcard-grade="easy">Facil</button>
+            <button data-flashcard-grade="easy">F&aacute;cil</button>
           </div>
         </section>
         <nav class="question-nav">
