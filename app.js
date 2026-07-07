@@ -35,6 +35,7 @@ const state = {
   flashcardRevealed: false,
   flashcardCategory: localStorage.getItem("banco-rmais-flashcard-category") || "all",
   flashcardPriority: localStorage.getItem("banco-rmais-flashcard-priority") || "all",
+  flashcardPositions: JSON.parse(localStorage.getItem("banco-rmais-flashcard-positions") || "{}"),
   flashcardProgress: JSON.parse(localStorage.getItem("banco-rmais-flashcard-progress") || "{}"),
   selectedTopics: JSON.parse(localStorage.getItem("banco-rmais-selected-topics") || "null"),
   selectedSubthemes: JSON.parse(localStorage.getItem("banco-rmais-selected-subthemes") || "[]"),
@@ -413,6 +414,7 @@ const el = {
   showFlashcardAnswer: document.querySelector("#showFlashcardAnswerBtn"),
   prevFlashcard: document.querySelector("#prevFlashcardBtn"),
   nextFlashcard: document.querySelector("#nextFlashcardBtn"),
+  resetFlashcardDeck: document.querySelector("#resetFlashcardDeckBtn"),
   flashcardGrade: document.querySelector("#flashcardGrade"),
   editOptions: {
     A: document.querySelector("#editOptionA"),
@@ -459,6 +461,7 @@ function saveFlashcardState() {
   localStorage.setItem("banco-rmais-flashcard-index", String(state.flashcardIndex));
   localStorage.setItem("banco-rmais-flashcard-category", state.flashcardCategory);
   localStorage.setItem("banco-rmais-flashcard-priority", state.flashcardPriority);
+  localStorage.setItem("banco-rmais-flashcard-positions", JSON.stringify(state.flashcardPositions));
   localStorage.setItem("banco-rmais-flashcard-progress", JSON.stringify(state.flashcardProgress));
 }
 
@@ -2691,12 +2694,51 @@ function flashcardCardsForDeck(deck, { applyImportance = true } = {}) {
     });
 }
 
+function rememberFlashcardPosition(deck = currentFlashcardDeck()) {
+  if (!deck?.id) return;
+  const cards = flashcardCardsForDeck(deck);
+  const card = cards[state.flashcardIndex];
+  state.flashcardPositions[deck.id] = {
+    index: Math.max(0, Math.min(state.flashcardIndex, Math.max(cards.length - 1, 0))),
+    cardId: card?.id || null,
+    updatedAt: Date.now(),
+  };
+}
+
+function restoreFlashcardPosition(deck) {
+  const cards = flashcardCardsForDeck(deck);
+  const saved = state.flashcardPositions[deck?.id];
+  if (!cards.length) {
+    state.flashcardIndex = 0;
+    return;
+  }
+  if (saved?.cardId) {
+    const savedCardIndex = cards.findIndex((card) => card.id === saved.cardId);
+    if (savedCardIndex >= 0) {
+      state.flashcardIndex = savedCardIndex;
+      return;
+    }
+  }
+  state.flashcardIndex = Math.max(0, Math.min(Number(saved?.index || 0), cards.length - 1));
+}
+
+function resetCurrentFlashcardDeck() {
+  const deck = currentFlashcardDeck();
+  if (!deck?.id) return;
+  state.flashcardIndex = 0;
+  state.flashcardRevealed = false;
+  delete state.flashcardPositions[deck.id];
+  saveFlashcardState();
+  renderFlashcards();
+}
+
 function currentFlashcard() {
   const deck = currentFlashcardDeck();
   const cards = flashcardCardsForDeck(deck);
   if (!cards.length) return null;
   const safeIndex = Math.max(0, Math.min(state.flashcardIndex, cards.length - 1));
   state.flashcardIndex = safeIndex;
+  rememberFlashcardPosition(deck);
   return cards[safeIndex];
 }
 
@@ -2740,8 +2782,9 @@ function renderFlashcards() {
 
   const deck = currentFlashcardDeck();
   if (deck && state.flashcardDeckId !== deck.id) {
+    rememberFlashcardPosition();
     state.flashcardDeckId = deck.id;
-    state.flashcardIndex = 0;
+    restoreFlashcardPosition(deck);
     state.flashcardRevealed = false;
     saveFlashcardState();
   }
@@ -2830,6 +2873,7 @@ function moveFlashcard(delta) {
   if (!cards.length) return;
   state.flashcardIndex = (state.flashcardIndex + delta + cards.length) % cards.length;
   state.flashcardRevealed = false;
+  rememberFlashcardPosition(deck);
   saveFlashcardState();
   renderFlashcards();
 }
@@ -4003,7 +4047,7 @@ function startSpacedReview() {
     const first = flashcards[0];
     state.flashcardCategory = first.deck.area || "Psicogeriatria";
     state.flashcardDeckId = first.deck.id;
-    state.flashcardIndex = 0;
+    restoreFlashcardPosition(first.deck);
     state.flashcardRevealed = false;
     saveFlashcardState();
     setTab("flashcards");
@@ -4734,15 +4778,17 @@ el.savedNotesList?.addEventListener("click", (event) => {
 el.flashcardDeckList?.addEventListener("click", (event) => {
   const button = event.target.closest("[data-flashcard-deck]");
   if (!button) return;
+  rememberFlashcardPosition();
   state.flashcardDeckId = button.dataset.flashcardDeck;
-  state.flashcardIndex = 0;
+  restoreFlashcardPosition(currentFlashcardDeck());
   state.flashcardRevealed = false;
   saveFlashcardState();
   renderFlashcards();
 });
 el.flashcardCategorySelect?.addEventListener("change", () => {
+  rememberFlashcardPosition();
   state.flashcardCategory = el.flashcardCategorySelect.value;
-  state.flashcardIndex = 0;
+  restoreFlashcardPosition(currentFlashcardDeck());
   state.flashcardRevealed = false;
   saveFlashcardState();
   renderFlashcards();
@@ -4750,8 +4796,9 @@ el.flashcardCategorySelect?.addEventListener("change", () => {
 el.flashcardPriorityGroup?.addEventListener("click", (event) => {
   const button = event.target.closest("[data-flashcard-priority]");
   if (!button) return;
+  rememberFlashcardPosition();
   state.flashcardPriority = button.dataset.flashcardPriority;
-  state.flashcardIndex = 0;
+  restoreFlashcardPosition(currentFlashcardDeck());
   state.flashcardRevealed = false;
   saveFlashcardState();
   renderFlashcards();
@@ -4762,6 +4809,7 @@ el.showFlashcardAnswer?.addEventListener("click", () => {
 });
 el.prevFlashcard?.addEventListener("click", () => moveFlashcard(-1));
 el.nextFlashcard?.addEventListener("click", () => moveFlashcard(1));
+el.resetFlashcardDeck?.addEventListener("click", resetCurrentFlashcardDeck);
 el.flashcardGrade?.addEventListener("click", (event) => {
   const button = event.target.closest("[data-flashcard-grade]");
   if (!button) return;

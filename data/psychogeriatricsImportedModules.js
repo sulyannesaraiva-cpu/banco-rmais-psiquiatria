@@ -2,11 +2,2504 @@
 (function () {
   const psychogeriatricsImportedModules = [
   {
+    "file": "C:/Users/sulya/Downloads/psychogeriatricsFlashcards_delirium_expansion_0051_0100.ts",
+    "fallbackFiles": [
+      "C:/Users/sulya/Downloads/psychogeriatricsFlashcards_delirium_expansion.ts"
+    ],
+    "variable": "deliriumExpansionFlashcards",
+    "variableCandidates": [
+      "deliriumExpansionFlashcards",
+      "psychogeriatricsDeliriumExpansionFlashcards"
+    ],
+    "deckId": "pg-delirium-50",
+    "deckTitle": "Psicogeriatria - Delirium",
+    "module": "Delirium",
+    "moduleOrder": 1,
+    "expectedPrefix": "PG-DEL",
+    "expectedStart": 51,
+    "expectedEnd": 100,
+    "expansion": true,
+    "importance": 5,
+    "cards": [
+      {
+        "id": "PG-DEL-0051",
+        "front": "Qual é o principal modelo fisiopatológico atualmente aceito para o delirium?",
+        "back": "O delirium resulta da interação entre vulnerabilidade cerebral prévia e fatores precipitantes agudos. Quanto maior a vulnerabilidade basal, menor o estímulo necessário para desencadear delirium.",
+        "tags": [
+          "delirium",
+          "fisiopatologia",
+          "vulnerabilidade"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Delirium",
+        "topic": "Fisiopatologia",
+        "subtopic": "",
+        "type": "Conceito",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5
+        },
+        "whyExamAsks": "Esse conceito explica por que infecções leves podem causar delirium em idosos frágeis.",
+        "trap": "Não procurar uma causa única em todos os casos; delirium costuma ser multifatorial.",
+        "memoryHook": "Delirium = vulnerabilidade × agressão aguda.",
+        "related": [
+          "Fragilidade",
+          "Demência",
+          "Fatores precipitantes"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "DSM-5-TR",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-DEL-0052",
+        "front": "Qual neurotransmissor está classicamente reduzido no delirium?",
+        "back": "Acetilcolina. A hipótese colinérgica é uma das mais aceitas para explicar alterações de atenção e consciência.",
+        "tags": [
+          "delirium",
+          "acetilcolina",
+          "atenção"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Delirium",
+        "topic": "Fisiopatologia",
+        "subtopic": "",
+        "type": "Fisiopatologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5
+        },
+        "whyExamAsks": "A banca usa esse conceito para cobrar anticolinérgicos como precipitantes de delirium.",
+        "trap": "Não confundir com deficiência colinérgica crônica da doença de Alzheimer.",
+        "memoryHook": "Menos acetilcolina = menos atenção.",
+        "related": [
+          "Anticolinérgicos",
+          "Doença de Alzheimer"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "DSM-5-TR",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-DEL-0053",
+        "front": "Qual neurotransmissor costuma estar aumentado no delirium?",
+        "back": "Dopamina. O excesso dopaminérgico relaciona-se a alucinações, agitação e delírios.",
+        "tags": [
+          "delirium",
+          "dopamina",
+          "agitação"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Delirium",
+        "topic": "Fisiopatologia",
+        "subtopic": "",
+        "type": "Fisiopatologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5
+        },
+        "whyExamAsks": "Justifica por que antipsicóticos podem reduzir sintomas graves, sem tratar a causa do delirium.",
+        "trap": "Bloquear dopamina pode controlar agitação, mas não resolve delirium.",
+        "memoryHook": "Dopamina alta = sintomas psicóticos/agitação.",
+        "related": [
+          "Antipsicóticos",
+          "Alucinações"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "DSM-5-TR",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-DEL-0054",
+        "front": "Por que medicamentos anticolinérgicos aumentam o risco de delirium?",
+        "back": "Porque reduzem ainda mais a transmissão colinérgica, agravando o déficit atencional característico do delirium.",
+        "tags": [
+          "delirium",
+          "anticolinérgicos",
+          "Beers"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Delirium",
+        "topic": "Medicamentos precipitantes",
+        "subtopic": "",
+        "type": "Fisiopatologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5
+        },
+        "whyExamAsks": "Clássico da USP: anticolinérgicos, tricíclicos e anti-histamínicos sedativos aparecem como gatilhos.",
+        "trap": "Anticolinérgico pode parecer medicação banal, mas no idoso pode precipitar delirium.",
+        "memoryHook": "Anticolinérgico rouba atenção.",
+        "related": [
+          "Beers",
+          "Psicofarmacologia Geriátrica"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "DSM-5-TR",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-DEL-0055",
+        "front": "Qual é o papel da inflamação na fisiopatologia do delirium?",
+        "back": "Citocinas inflamatórias alteram neurotransmissão, metabolismo cerebral e integridade da barreira hematoencefálica, favorecendo disfunção cerebral aguda.",
+        "tags": [
+          "delirium",
+          "inflamação",
+          "citocinas"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Delirium",
+        "topic": "Inflamação",
+        "subtopic": "",
+        "type": "Fisiopatologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5
+        },
+        "whyExamAsks": "Explica delirium em sepse, pneumonia, infecção urinária e pós-operatório.",
+        "trap": "Delirium em infecção nem sempre depende de lesão estrutural cerebral.",
+        "memoryHook": "Inflamação bagunça neurotransmissão.",
+        "related": [
+          "Infecção",
+          "Sepse"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "DSM-5-TR",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-DEL-0056",
+        "front": "O que significa reserva cognitiva no contexto do delirium?",
+        "back": "É a capacidade do cérebro de tolerar agressões sem manifestar sintomas clínicos. Menor reserva cognitiva implica maior risco de delirium.",
+        "tags": [
+          "delirium",
+          "reserva cognitiva"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Delirium",
+        "topic": "Reserva cognitiva",
+        "subtopic": "",
+        "type": "Conceito",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5
+        },
+        "whyExamAsks": "A banca cobra por que pacientes com demência desenvolvem delirium com insultos clínicos menores.",
+        "trap": "Reserva cognitiva baixa não é diagnóstico, mas aumenta vulnerabilidade.",
+        "memoryHook": "Menor reserva = menor limiar para delirium.",
+        "related": [
+          "Demência",
+          "Envelhecimento"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "DSM-5-TR",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-DEL-0057",
+        "front": "Dois pacientes apresentam pneumonia semelhante. Apenas o paciente com demência desenvolve delirium. Qual conceito explica essa diferença?",
+        "back": "Maior vulnerabilidade cerebral prévia. A demência reduz a reserva cognitiva e diminui o limiar para delirium.",
+        "tags": [
+          "delirium",
+          "demência",
+          "reserva cognitiva"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Delirium",
+        "topic": "Reserva cognitiva",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5
+        },
+        "whyExamAsks": "Treina aplicação do modelo vulnerabilidade × agressão aguda.",
+        "trap": "Não atribuir apenas à gravidade da pneumonia; o hospedeiro importa.",
+        "memoryHook": "Mesmo insulto, cérebros diferentes.",
+        "related": [
+          "Demência",
+          "Pneumonia"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "DSM-5-TR",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-DEL-0058",
+        "front": "Qual é o principal fator de risco isolado para delirium?",
+        "back": "Demência. Pacientes com demência apresentam risco significativamente maior de desenvolver delirium diante de insultos clínicos.",
+        "tags": [
+          "delirium",
+          "demência",
+          "fator de risco"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Delirium",
+        "topic": "Fatores de risco",
+        "subtopic": "",
+        "type": "Conceito",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5
+        },
+        "whyExamAsks": "Essa associação é uma das mais cobradas em psicogeriatria.",
+        "trap": "Demência não exclui delirium; predispõe a delirium.",
+        "memoryHook": "Demência é o maior terreno para delirium.",
+        "related": [
+          "Demência",
+          "BPSD"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "DSM-5-TR",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-DEL-0059",
+        "front": "Quais condições aumentam significativamente o risco de delirium?",
+        "back": "Demência, idade avançada, fragilidade, déficits sensoriais, internação e polifarmácia.",
+        "tags": [
+          "delirium",
+          "fatores de risco"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Delirium",
+        "topic": "Fatores de risco",
+        "subtopic": "",
+        "type": "Epidemiologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5
+        },
+        "whyExamAsks": "A banca costuma misturar fatores predisponentes em vinhetas clínicas.",
+        "trap": "Não esperar apenas um fator; o risco é cumulativo.",
+        "memoryHook": "Idoso frágil + polifarmácia = alto risco.",
+        "related": [
+          "Fragilidade",
+          "Polifarmácia"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "DSM-5-TR",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-DEL-0060",
+        "front": "Paciente de 92 anos, independente, apresenta delirium após cirurgia de quadril. Qual fator precipitante foi mais importante?",
+        "back": "O procedimento cirúrgico e o estresse fisiológico agudo.",
+        "tags": [
+          "delirium",
+          "cirurgia",
+          "quadril"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Delirium",
+        "topic": "Fatores precipitantes",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5
+        },
+        "whyExamAsks": "Pós-operatório e fratura de quadril são cenários clássicos de delirium em prova.",
+        "trap": "Mesmo sem demência prévia, cirurgia pode precipitar delirium em idosos.",
+        "memoryHook": "Cirurgia é agressão aguda.",
+        "related": [
+          "Pós-operatório",
+          "Quedas"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "DSM-5-TR",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-DEL-0061",
+        "front": "Qual é a diferença entre fator predisponente e fator precipitante no delirium?",
+        "back": "Predisponente aumenta a vulnerabilidade basal, como demência ou fragilidade. Precipitante desencadeia o episódio agudo, como infecção, cirurgia ou novo medicamento.",
+        "tags": [
+          "delirium",
+          "predisponente",
+          "precipitante"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Delirium",
+        "topic": "Fatores de risco",
+        "subtopic": "",
+        "type": "Conceito",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5
+        },
+        "whyExamAsks": "Questões exigem separar terreno vulnerável de evento desencadeante.",
+        "trap": "Confundir predisponente com precipitante atrapalha a conduta.",
+        "memoryHook": "Predispõe = terreno; precipita = gatilho.",
+        "related": [
+          "Fatores precipitantes",
+          "Fragilidade"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "DSM-5-TR",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-DEL-0062",
+        "front": "Paciente jovem desenvolve delirium apenas após sepse grave. Idoso com Alzheimer desenvolve delirium após infecção urinária simples. Como explicar?",
+        "back": "O idoso possui maior vulnerabilidade cerebral e necessita de menor agressão para desenvolver delirium.",
+        "tags": [
+          "delirium",
+          "vulnerabilidade"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Delirium",
+        "topic": "Fatores de risco",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5
+        },
+        "whyExamAsks": "Reforça o modelo fisiopatológico mais importante do módulo.",
+        "trap": "Não comparar apenas a gravidade do gatilho; avaliar vulnerabilidade basal.",
+        "memoryHook": "Quanto mais vulnerável, menor o gatilho necessário.",
+        "related": [
+          "Alzheimer",
+          "Infecção urinária"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "DSM-5-TR",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-DEL-0063",
+        "front": "Quais classes de medicamentos apresentam maior risco de precipitar delirium?",
+        "back": "Anticolinérgicos, benzodiazepínicos, opioides, corticoides e anti-histamínicos sedativos.",
+        "tags": [
+          "delirium",
+          "medicamentos",
+          "polifarmácia"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Delirium",
+        "topic": "Medicamentos precipitantes",
+        "subtopic": "",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5
+        },
+        "whyExamAsks": "Muito cobrado em provas por conexão com Beers e polifarmácia.",
+        "trap": "Não esquecer fármacos não psiquiátricos, como corticoides e anti-histamínicos.",
+        "memoryHook": "Medicação nova em idoso confuso: suspeite.",
+        "related": [
+          "Beers",
+          "Polifarmácia"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "DSM-5-TR",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-DEL-0064",
+        "front": "Paciente apresenta delirium após introdução de oxibutinina. Qual mecanismo explica esse efeito?",
+        "back": "Bloqueio colinérgico central.",
+        "tags": [
+          "delirium",
+          "oxibutinina",
+          "anticolinérgico"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Delirium",
+        "topic": "Anticolinérgicos",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5
+        },
+        "whyExamAsks": "Oxibutinina é exemplo clássico de anticolinérgico usado em idosos que pode precipitar delirium.",
+        "trap": "Sintoma urinário tratado com anticolinérgico pode gerar confusão mental.",
+        "memoryHook": "Oxibutinina pode confundir.",
+        "related": [
+          "Incontinência",
+          "Beers"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "DSM-5-TR",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-DEL-0065",
+        "front": "Qual algoritmo resume a fisiopatologia do delirium?",
+        "back": "1) Existe vulnerabilidade cerebral? 2) Ocorreu fator precipitante? 3) Há redução da atividade colinérgica? 4) Há aumento da atividade dopaminérgica? 5) Inflamação e disfunção metabólica levam à alteração aguda da atenção e da consciência.",
+        "tags": [
+          "delirium",
+          "algoritmo",
+          "fisiopatologia"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Delirium",
+        "topic": "Fisiopatologia",
+        "subtopic": "",
+        "type": "Flashcard Integrador",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5
+        },
+        "whyExamAsks": "Integra fatores de risco, neurotransmissores e apresentação clínica.",
+        "trap": "Não é uma doença única; é uma síndrome final comum de disfunção cerebral aguda.",
+        "memoryHook": "Vulnerabilidade + gatilho + neurotransmissores = delirium.",
+        "related": [
+          "Fatores de risco",
+          "Tratamento"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "DSM-5-TR",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-DEL-0066",
+        "front": "Qual é o principal diagnóstico diferencial do delirium em Psicogeriatria?",
+        "back": "Demência, especialmente quando há piora aguda do comportamento ou da cognição.",
+        "tags": [
+          "delirium",
+          "demência",
+          "diferencial"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Delirium",
+        "topic": "Diagnóstico diferencial",
+        "subtopic": "",
+        "type": "Diferencial",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5
+        },
+        "whyExamAsks": "Grande parte das questões descreve paciente com demência que desenvolve delirium.",
+        "trap": "Demência não protege contra delirium; é seu principal fator predisponente.",
+        "memoryHook": "Demência crônica + piora aguda = delirium sobreposto.",
+        "related": [
+          "Demência"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "DSM-5-TR",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-DEL-0067",
+        "front": "Qual característica favorece delirium em vez de demência?",
+        "back": "Instalação aguda. Delirium ocorre em horas ou dias; demência evolui em meses ou anos.",
+        "tags": [
+          "delirium",
+          "demência",
+          "início agudo"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Delirium",
+        "topic": "Delirium x demência",
+        "subtopic": "",
+        "type": "Diferencial",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5
+        },
+        "whyExamAsks": "Temporalidade é uma das pistas mais cobradas nas provas.",
+        "trap": "Não chamar de demência uma confusão iniciada há 24–48h.",
+        "memoryHook": "Agudo = delirium.",
+        "related": [
+          "Demência"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "DSM-5-TR",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-DEL-0068",
+        "front": "Qual característica favorece demência em vez de delirium?",
+        "back": "Progressão lenta e insidiosa, sem flutuação importante da atenção.",
+        "tags": [
+          "delirium",
+          "demência",
+          "insidioso"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Delirium",
+        "topic": "Delirium x demência",
+        "subtopic": "",
+        "type": "Diferencial",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5
+        },
+        "whyExamAsks": "Ajuda a diferenciar declínio cognitivo crônico de síndrome confusional aguda.",
+        "trap": "Demência pode ter flutuações comportamentais, mas não costuma ter déficit atencional agudo marcado.",
+        "memoryHook": "Insidioso = demência.",
+        "related": [
+          "Demência"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "DSM-5-TR",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-DEL-0069",
+        "front": "Qual domínio cognitivo está mais comprometido no delirium?",
+        "back": "Atenção. É o déficit cognitivo central do delirium.",
+        "tags": [
+          "delirium",
+          "atenção",
+          "CAM"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Delirium",
+        "topic": "Atenção",
+        "subtopic": "",
+        "type": "Diferencial",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5
+        },
+        "whyExamAsks": "Atenção é o principal eixo para separar delirium de várias condições psiquiátricas.",
+        "trap": "Memória pode estar prejudicada, mas não é o déficit primário.",
+        "memoryHook": "Delirium = A de atenção.",
+        "related": [
+          "CAM",
+          "Avaliação Cognitiva"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "DSM-5-TR",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-DEL-0070",
+        "front": "Paciente com Alzheimer internado por pneumonia torna-se sonolento e desatento em 24 horas. O diagnóstico mais provável é qual?",
+        "back": "Delirium sobreposto à demência.",
+        "tags": [
+          "delirium",
+          "Alzheimer",
+          "caso clínico"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Delirium",
+        "topic": "Delirium sobreposto à demência",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5
+        },
+        "whyExamAsks": "Altíssimo rendimento em provas de Psicogeriatria.",
+        "trap": "Não interpretar piora aguda como evolução natural do Alzheimer.",
+        "memoryHook": "Demência + pneumonia + atenção ruim = delirium.",
+        "related": [
+          "Alzheimer",
+          "Pneumonia"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "DSM-5-TR",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-DEL-0071",
+        "front": "Como diferenciar delirium de episódio depressivo maior?",
+        "back": "Depressão: consciência preservada, atenção relativamente preservada e curso subagudo. Delirium: alteração da atenção, flutuação e instalação aguda.",
+        "tags": [
+          "delirium",
+          "depressão",
+          "diferencial"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Delirium",
+        "topic": "Delirium x depressão",
+        "subtopic": "",
+        "type": "Diferencial",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5
+        },
+        "whyExamAsks": "Delirium hipoativo pode parecer depressão em idosos.",
+        "trap": "Lentificação e sonolência isoladas não bastam para delirium sem déficit atencional.",
+        "memoryHook": "Depressão é subaguda; delirium flutua.",
+        "related": [
+          "Depressão no idoso"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "DSM-5-TR",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-DEL-0072",
+        "front": "Paciente permanece sonolento, responde lentamente, porém mantém orientação e atenção preservadas. Esse quadro sugere delirium?",
+        "back": "Não necessariamente. A alteração da atenção é fundamental para o diagnóstico de delirium.",
+        "tags": [
+          "delirium",
+          "atenção",
+          "depressão"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Delirium",
+        "topic": "Delirium x depressão",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5
+        },
+        "whyExamAsks": "Treina a armadilha do delirium hipoativo versus depressão/sedação.",
+        "trap": "Sonolência isolada não fecha delirium.",
+        "memoryHook": "Sem atenção alterada, cuidado com delirium.",
+        "related": [
+          "Depressão",
+          "Sedação"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "DSM-5-TR",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-DEL-0073",
+        "front": "Como diferenciar delirium de psicose primária?",
+        "back": "Na psicose, atenção e consciência geralmente estão preservadas, e orientação costuma estar mantida. No delirium, há déficit atencional, flutuação e comprometimento global.",
+        "tags": [
+          "delirium",
+          "psicose",
+          "diferencial"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Delirium",
+        "topic": "Delirium x psicose",
+        "subtopic": "",
+        "type": "Diferencial",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5
+        },
+        "whyExamAsks": "Questões usam alucinações e delírios para confundir delirium com psicose.",
+        "trap": "Alucinação visual com desatenção sugere delirium, não psicose primária.",
+        "memoryHook": "Psicose preserva consciência; delirium desorganiza atenção.",
+        "related": [
+          "Psicose tardia"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "DSM-5-TR",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-DEL-0074",
+        "front": "Paciente apresenta alucinações visuais, desatenção e oscilação do nível de consciência. Qual hipótese é mais provável?",
+        "back": "Delirium.",
+        "tags": [
+          "delirium",
+          "alucinações visuais"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Delirium",
+        "topic": "Alucinações",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5
+        },
+        "whyExamAsks": "Combinação de alucinação visual + desatenção + flutuação é típica de delirium.",
+        "trap": "Alucinação visual isolada precoce também pode sugerir DCL; o tempo de instalação decide.",
+        "memoryHook": "Visual + atenção ruim + flutuação = delirium.",
+        "related": [
+          "DCL",
+          "Psicose"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "DSM-5-TR",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-DEL-0075",
+        "front": "Como diferenciar delirium de mania?",
+        "back": "Na mania, humor persistentemente elevado ou irritável, energia aumentada e consciência normal. No delirium, há déficit atencional, flutuação e alteração da consciência.",
+        "tags": [
+          "delirium",
+          "mania",
+          "diferencial"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Delirium",
+        "topic": "Delirium x mania",
+        "subtopic": "",
+        "type": "Diferencial",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5
+        },
+        "whyExamAsks": "Agitação, irritabilidade e insônia podem confundir os diagnósticos.",
+        "trap": "Mania não costuma ter rebaixamento/flutuação da consciência.",
+        "memoryHook": "Mania tem energia; delirium tem atenção quebrada.",
+        "related": [
+          "Transtorno bipolar"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "DSM-5-TR",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-DEL-0076",
+        "front": "Como diferenciar delirium de catatonia?",
+        "back": "Na catatonia predominam mutismo, negativismo, posturas mantidas, flexibilidade cérea e estereotipias. No delirium, predomina alteração da atenção e flutuação do estado mental.",
+        "tags": [
+          "delirium",
+          "catatonia",
+          "diferencial"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Delirium",
+        "topic": "Delirium x catatonia",
+        "subtopic": "",
+        "type": "Diferencial",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5
+        },
+        "whyExamAsks": "Catatonia e delirium podem coexistir, exigindo avaliação cuidadosa.",
+        "trap": "Benzodiazepínico pode ajudar catatonia, mas piorar delirium não abstinencial.",
+        "memoryHook": "Catatonia é motora; delirium é atencional/flutuante.",
+        "related": [
+          "Catatonia"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "DSM-5-TR",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-DEL-0077",
+        "front": "Paciente apresenta mutismo, flexibilidade cérea e estupor, mantendo atenção relativamente preservada. Qual hipótese é mais provável?",
+        "back": "Catatonia.",
+        "tags": [
+          "catatonia",
+          "diferencial"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Delirium",
+        "topic": "Catatonia",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5
+        },
+        "whyExamAsks": "Vinhetas com sinais motores clássicos devem levantar catatonia.",
+        "trap": "Não chamar todo estupor de delirium hipoativo.",
+        "memoryHook": "Flexibilidade cérea = catatonia.",
+        "related": [
+          "Catatonia"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "DSM-5-TR",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-DEL-0078",
+        "front": "Como diferenciar delirium de demência com corpos de Lewy?",
+        "back": "A DCL apresenta flutuação crônica, alucinações visuais recorrentes, parkinsonismo e transtorno comportamental do sono REM. O delirium apresenta instalação aguda, fator precipitante e alteração importante da atenção.",
+        "tags": [
+          "delirium",
+          "DCL",
+          "diferencial"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Delirium",
+        "topic": "Delirium x DCL",
+        "subtopic": "",
+        "type": "Diferencial",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5
+        },
+        "whyExamAsks": "Pegadinha frequente, pois ambos podem ter flutuação e alucinações visuais.",
+        "trap": "Curso temporal e fator precipitante são decisivos.",
+        "memoryHook": "DCL flutua cronicamente; delirium muda agudamente.",
+        "related": [
+          "Demência com Corpos de Lewy"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "DSM-5-TR",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-DEL-0079",
+        "front": "Paciente com DCL internado por infecção urinária apresenta piora abrupta da atenção e sonolência. Qual diagnóstico é mais provável?",
+        "back": "Delirium sobreposto à demência com corpos de Lewy.",
+        "tags": [
+          "delirium",
+          "DCL",
+          "caso clínico"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Delirium",
+        "topic": "Delirium sobreposto à DCL",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5
+        },
+        "whyExamAsks": "Mostra que DCL não impede delirium; pelo contrário, aumenta vulnerabilidade.",
+        "trap": "Não atribuir toda flutuação à DCL quando há mudança aguda e gatilho clínico.",
+        "memoryHook": "DCL + gatilho agudo = pense delirium sobreposto.",
+        "related": [
+          "DCL",
+          "Infecção urinária"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "DSM-5-TR",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-DEL-0080",
+        "front": "Qual é o algoritmo mental para o diagnóstico diferencial do delirium?",
+        "back": "1) O início foi agudo? 2) Existe déficit de atenção? 3) Há flutuação ao longo do dia? 4) Existe fator precipitante clínico? 5) Comparar com demência, depressão, psicose, mania, catatonia e DCL. 6) Se compatível, considerar delirium até prova em contrário.",
+        "tags": [
+          "delirium",
+          "algoritmo",
+          "diferencial"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Delirium",
+        "topic": "Diagnóstico diferencial",
+        "subtopic": "",
+        "type": "Flashcard Integrador",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5
+        },
+        "whyExamAsks": "Esse algoritmo resolve a maioria das vinhetas de delirium em provas de residência.",
+        "trap": "Não se prender apenas à presença de alucinações ou agitação.",
+        "memoryHook": "Agudo + atenção + flutuação + gatilho.",
+        "related": [
+          "Demência",
+          "Depressão",
+          "DCL",
+          "Catatonia"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "DSM-5-TR",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-DEL-0081",
+        "front": "Qual é a primeira medida terapêutica diante de um paciente com delirium?",
+        "back": "Identificar e tratar a causa precipitante, como infecção, hipoxemia, distúrbios hidroeletrolíticos, retenção urinária, fecaloma ou medicamentos.",
+        "tags": [
+          "delirium",
+          "tratamento",
+          "conduta"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Delirium",
+        "topic": "Tratamento",
+        "subtopic": "",
+        "type": "Conduta",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5
+        },
+        "whyExamAsks": "O delirium é uma síndrome secundária; tratar a causa é a intervenção mais importante.",
+        "trap": "O tratamento inicial não é sedar o paciente.",
+        "memoryHook": "O melhor tratamento do delirium é tratar o gatilho.",
+        "related": [
+          "Fatores precipitantes"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "DSM-5-TR",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-DEL-0082",
+        "front": "As medidas não farmacológicas são primeira linha no tratamento do delirium?",
+        "back": "Sim. Devem ser instituídas para todos os pacientes, independentemente da gravidade.",
+        "tags": [
+          "delirium",
+          "não farmacológico"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Delirium",
+        "topic": "Tratamento não farmacológico",
+        "subtopic": "",
+        "type": "Conduta",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5
+        },
+        "whyExamAsks": "Bancas cobram que manejo ambiental e clínico vem antes de medicação sedativa.",
+        "trap": "Não reservar medidas não farmacológicas apenas para casos leves.",
+        "memoryHook": "Todo delirium precisa de ambiente e suporte.",
+        "related": [
+          "Prevenção"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "DSM-5-TR",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-DEL-0083",
+        "front": "Quais medidas não farmacológicas possuem melhor evidência para delirium?",
+        "back": "Reorientação frequente, presença de familiares, óculos/aparelhos auditivos, mobilização precoce, higiene do sono, hidratação e controle da dor.",
+        "tags": [
+          "delirium",
+          "prevenção",
+          "HELP"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Delirium",
+        "topic": "Tratamento não farmacológico",
+        "subtopic": "",
+        "type": "Tratamento",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5
+        },
+        "whyExamAsks": "São medidas frequentemente cobradas em casos de enfermaria.",
+        "trap": "Não esquecer correção sensorial: óculos e audição importam.",
+        "memoryHook": "Reorientar, mobilizar, hidratar, dormir.",
+        "related": [
+          "HELP",
+          "Prevenção"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "DSM-5-TR",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-DEL-0084",
+        "front": "O delirium hipoativo também deve receber medidas não farmacológicas?",
+        "back": "Sim. O subtipo hipoativo frequentemente é subdiagnosticado e apresenta pior prognóstico.",
+        "tags": [
+          "delirium",
+          "hipoativo",
+          "tratamento"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Delirium",
+        "topic": "Delirium hipoativo",
+        "subtopic": "",
+        "type": "Conduta",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5
+        },
+        "whyExamAsks": "Evita a falsa ideia de que só delirium agitado precisa de manejo.",
+        "trap": "Hipoativo não significa benigno.",
+        "memoryHook": "Hipoativo também é delirium.",
+        "related": [
+          "Delirium hipoativo"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "DSM-5-TR",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-DEL-0085",
+        "front": "Todo paciente com delirium deve receber antipsicótico?",
+        "back": "Não. Antipsicóticos não tratam o delirium; apenas podem controlar sintomas graves em situações selecionadas.",
+        "tags": [
+          "delirium",
+          "antipsicóticos"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Delirium",
+        "topic": "Antipsicóticos",
+        "subtopic": "",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5
+        },
+        "whyExamAsks": "Pegadinha clássica: a banca quer saber quando não medicar.",
+        "trap": "Antipsicótico não reduz necessariamente mortalidade ou duração do delirium.",
+        "memoryHook": "Antipsicótico controla risco, não cura delirium.",
+        "related": [
+          "Haloperidol",
+          "Quetiapina"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "DSM-5-TR",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-DEL-0086",
+        "front": "Quais são as principais indicações de antipsicóticos no delirium?",
+        "back": "Risco de autoagressão, risco de heteroagressão, agitação que impeça tratamento clínico ou sofrimento intenso.",
+        "tags": [
+          "delirium",
+          "antipsicóticos",
+          "agitação"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Delirium",
+        "topic": "Antipsicóticos",
+        "subtopic": "",
+        "type": "Conduta",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5
+        },
+        "whyExamAsks": "Define quando o benefício pode superar riscos no idoso.",
+        "trap": "Agitação leve sem risco não justifica antipsicótico automático.",
+        "memoryHook": "Use se há risco ou cuidado impedido.",
+        "related": [
+          "Segurança",
+          "Agitação"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "DSM-5-TR",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-DEL-0087",
+        "front": "Qual antipsicótico é tradicionalmente considerado padrão no tratamento da agitação associada ao delirium?",
+        "back": "Haloperidol. Apesar disso, não reduz mortalidade nem duração do delirium.",
+        "tags": [
+          "delirium",
+          "haloperidol"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Delirium",
+        "topic": "Haloperidol",
+        "subtopic": "",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5
+        },
+        "whyExamAsks": "Haloperidol é clássico em prova, mas deve ser usado com critério.",
+        "trap": "Monitorar QT e sintomas extrapiramidais.",
+        "memoryHook": "Haloperidol é sintomático, não causal.",
+        "related": [
+          "QT",
+          "Sintomas extrapiramidais"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "DSM-5-TR",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-DEL-0088",
+        "front": "Quando a quetiapina pode ser preferida ao haloperidol no delirium?",
+        "back": "Quando existe doença de Parkinson, demência com corpos de Lewy ou maior risco de efeitos extrapiramidais.",
+        "tags": [
+          "delirium",
+          "quetiapina",
+          "DCL"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Delirium",
+        "topic": "Quetiapina",
+        "subtopic": "",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5
+        },
+        "whyExamAsks": "Associação muito cobrada pela hipersensibilidade a neurolépticos na DCL.",
+        "trap": "Mesmo quetiapina exige cautela e menor dose possível.",
+        "memoryHook": "Parkinsonismo/DCL: pense quetiapina com cautela.",
+        "related": [
+          "DCL",
+          "Parkinson"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "DSM-5-TR",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-DEL-0089",
+        "front": "Haloperidol deve ser utilizado em pacientes com demência com corpos de Lewy?",
+        "back": "Não. Existe elevado risco de hipersensibilidade a neurolépticos, com rigidez intensa, acinesia e síndrome neuroléptica maligna.",
+        "tags": [
+          "delirium",
+          "DCL",
+          "haloperidol"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Delirium",
+        "topic": "DCL",
+        "subtopic": "",
+        "type": "Pegadinha USP",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5
+        },
+        "whyExamAsks": "Clássico da USP e de alto risco clínico.",
+        "trap": "Alucinação em DCL não deve ser tratada como psicose comum.",
+        "memoryHook": "DCL + haloperidol = perigo.",
+        "related": [
+          "Demência com Corpos de Lewy",
+          "Síndrome neuroléptica maligna"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "DSM-5-TR",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-DEL-0090",
+        "front": "Benzodiazepínicos são tratamento de rotina para delirium?",
+        "back": "Não. Podem agravar desatenção, sedação e delirium.",
+        "tags": [
+          "delirium",
+          "benzodiazepínicos"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Delirium",
+        "topic": "Benzodiazepínicos",
+        "subtopic": "",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5
+        },
+        "whyExamAsks": "Critérios de Beers e manejo de delirium cobram evitar benzodiazepínicos de rotina.",
+        "trap": "Benzodiazepínicos pioram a maioria dos deliriums não abstinenciais.",
+        "memoryHook": "Benzo geralmente piora delirium.",
+        "related": [
+          "Beers",
+          "Sedação"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "DSM-5-TR",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-DEL-0091",
+        "front": "Em qual situação os benzodiazepínicos são tratamento de escolha no delirium?",
+        "back": "Delirium por abstinência alcoólica, ou Delirium Tremens. Também podem ser indicados na abstinência de benzodiazepínicos.",
+        "tags": [
+          "delirium",
+          "abstinência alcoólica",
+          "benzodiazepínicos"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Delirium",
+        "topic": "Abstinência alcoólica",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5
+        },
+        "whyExamAsks": "É a principal exceção à regra de evitar benzodiazepínicos no delirium.",
+        "trap": "Não usar haloperidol isolado como tratamento principal do delirium tremens.",
+        "memoryHook": "Exceção da benzo: abstinência.",
+        "related": [
+          "Álcool",
+          "Delirium Tremens"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "DSM-5-TR",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-DEL-0092",
+        "front": "A contenção física reduz a duração do delirium?",
+        "back": "Não. Pode aumentar agitação, lesões, sofrimento e tempo de delirium.",
+        "tags": [
+          "delirium",
+          "contenção física"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Delirium",
+        "topic": "Contenção física",
+        "subtopic": "",
+        "type": "Conduta",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5
+        },
+        "whyExamAsks": "Provas cobram contenção como medida excepcional, não terapêutica de rotina.",
+        "trap": "Conter não é tratar delirium.",
+        "memoryHook": "Contenção pode piorar.",
+        "related": [
+          "Segurança",
+          "Ética"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "DSM-5-TR",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-DEL-0093",
+        "front": "Quando a contenção física pode ser considerada no delirium?",
+        "back": "Somente em situações excepcionais: risco iminente à segurança, falha de medidas menos restritivas, pelo menor tempo possível e com monitorização contínua.",
+        "tags": [
+          "delirium",
+          "contenção",
+          "conduta"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Delirium",
+        "topic": "Contenção física",
+        "subtopic": "",
+        "type": "Conduta",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5
+        },
+        "whyExamAsks": "Mostra raciocínio ético e clínico de segurança.",
+        "trap": "Nunca usar como conveniência da equipe.",
+        "memoryHook": "Contenção: último recurso e por pouco tempo.",
+        "related": [
+          "Ética",
+          "Segurança"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "DSM-5-TR",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-DEL-0094",
+        "front": "Qual intervenção reduz comprovadamente a incidência de delirium em idosos hospitalizados?",
+        "back": "Programas multicomponentes de prevenção, como o HELP, com mobilização precoce, reorientação, higiene do sono, correção sensorial e hidratação.",
+        "tags": [
+          "delirium",
+          "prevenção",
+          "HELP"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Delirium",
+        "topic": "Prevenção",
+        "subtopic": "",
+        "type": "Tratamento",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5
+        },
+        "whyExamAsks": "Prevenção de delirium em hospital é tema de altíssimo rendimento.",
+        "trap": "Haloperidol não é prevenção rotineira de delirium.",
+        "memoryHook": "HELP = prevenção multicomponente.",
+        "related": [
+          "HELP",
+          "Hospitalização"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "DSM-5-TR",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-DEL-0095",
+        "front": "Qual é o algoritmo terapêutico do delirium?",
+        "back": "1) Confirmar diagnóstico. 2) Identificar e tratar a causa precipitante. 3) Implementar medidas não farmacológicas. 4) Controlar dor, hidratação, sono e ambiente. 5) Se houver risco ou agitação grave, considerar antipsicótico. 6) Reservar benzodiazepínicos para abstinência alcoólica ou de benzodiazepínicos. 7) Evitar contenção sempre que possível.",
+        "tags": [
+          "delirium",
+          "algoritmo",
+          "tratamento"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Delirium",
+        "topic": "Tratamento",
+        "subtopic": "",
+        "type": "Flashcard Integrador",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5
+        },
+        "whyExamAsks": "Integra as principais decisões de conduta cobradas nas provas.",
+        "trap": "O erro mais comum é tratar comportamento antes de tratar a causa.",
+        "memoryHook": "Causa primeiro; remédio se risco.",
+        "related": [
+          "Antipsicóticos",
+          "Prevenção",
+          "Abstinência"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "DSM-5-TR",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-DEL-0096",
+        "front": "Homem de 84 anos, previamente independente, é internado por pneumonia. Após 48 horas, torna-se desatento, alternando sonolência e agitação, com alucinações visuais ocasionais. Qual é o diagnóstico mais provável e qual deve ser a primeira conduta?",
+        "back": "Diagnóstico: delirium. Primeira conduta: confirmar clinicamente, identificar e tratar o fator precipitante, corrigir distúrbios metabólicos, implementar medidas não farmacológicas e reservar antipsicóticos apenas se houver risco importante.",
+        "tags": [
+          "delirium",
+          "caso clínico",
+          "pneumonia"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Delirium",
+        "topic": "Casos integradores",
+        "subtopic": "",
+        "type": "Caso Clínico Integrador",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5
+        },
+        "whyExamAsks": "Caso modelo de enfermaria cobrado por USP/UNIFESP.",
+        "trap": "O tratamento inicial nunca é haloperidol; é tratar a causa.",
+        "memoryHook": "Pneumonia + atenção/flutuação = delirium.",
+        "related": [
+          "Pneumonia",
+          "Tratamento"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "DSM-5-TR",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-DEL-0097",
+        "front": "Mulher de 81 anos com Alzheimer moderado apresenta piora abrupta da cognição, inversão do ciclo sono-vigília e dificuldade para manter atenção após infecção urinária. Qual hipótese explica melhor o quadro?",
+        "back": "Delirium sobreposto à demência. A doença de Alzheimer aumenta a vulnerabilidade cerebral, enquanto a infecção urinária atua como fator precipitante.",
+        "tags": [
+          "delirium",
+          "Alzheimer",
+          "ITU"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Delirium",
+        "topic": "Casos integradores",
+        "subtopic": "",
+        "type": "Caso Clínico Integrador",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5
+        },
+        "whyExamAsks": "Um dos cenários mais clássicos de psicogeriatria.",
+        "trap": "Não interpretar piora aguda como progressão natural da demência.",
+        "memoryHook": "Alzheimer + ITU + atenção ruim = delirium sobreposto.",
+        "related": [
+          "Alzheimer",
+          "Infecção urinária"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "DSM-5-TR",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-DEL-0098",
+        "front": "Paciente de 76 anos com demência com corpos de Lewy apresenta delirium durante internação por sepse e torna-se muito agitado. Qual medicação deve ser evitada?",
+        "back": "Haloperidol. Pacientes com DCL apresentam hipersensibilidade a neurolépticos, podendo evoluir com rigidez intensa, acinesia e síndrome neuroléptica maligna. Se antipsicótico for imprescindível, costuma-se preferir quetiapina com cautela.",
+        "tags": [
+          "delirium",
+          "DCL",
+          "haloperidol"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Delirium",
+        "topic": "Casos integradores",
+        "subtopic": "",
+        "type": "Caso Clínico Integrador",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5
+        },
+        "whyExamAsks": "Integra delirium, DCL e psicofarmacologia de alto risco.",
+        "trap": "Não usar bloqueador dopaminérgico potente em DCL.",
+        "memoryHook": "DCL + haloperidol = risco grave.",
+        "related": [
+          "DCL",
+          "Sepse",
+          "Quetiapina"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "DSM-5-TR",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-DEL-0099",
+        "front": "Homem de 67 anos apresenta tremores, hipertensão, taquicardia, alucinações visuais e importante agitação 48 horas após interrupção do consumo crônico de álcool. Qual é o tratamento de escolha?",
+        "back": "Benzodiazepínicos. Trata-se de delirium por abstinência alcoólica, ou Delirium Tremens.",
+        "tags": [
+          "delirium",
+          "abstinência alcoólica",
+          "benzodiazepínicos"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Delirium",
+        "topic": "Casos integradores",
+        "subtopic": "",
+        "type": "Caso Clínico Integrador",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5
+        },
+        "whyExamAsks": "É a exceção clássica à regra de evitar benzodiazepínicos no delirium.",
+        "trap": "Haloperidol pode ser adjuvante em alguns casos, mas não substitui benzodiazepínico na abstinência alcoólica.",
+        "memoryHook": "Delirium tremens = benzodiazepínico.",
+        "related": [
+          "Álcool",
+          "Delirium Tremens"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "DSM-5-TR",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-DEL-0100",
+        "front": "Qual algoritmo mental resume toda a abordagem do delirium em provas de Psicogeriatria?",
+        "back": "1) Reconhecer início agudo. 2) Confirmar alteração da atenção. 3) Pesquisar fator precipitante. 4) Diferenciar de demência, depressão, psicose, mania e catatonia. 5) Tratar a causa precipitante. 6) Instituir medidas não farmacológicas. 7) Usar antipsicóticos apenas quando houver indicação. 8) Reservar benzodiazepínicos para abstinência alcoólica ou de benzodiazepínicos.",
+        "tags": [
+          "delirium",
+          "algoritmo",
+          "USP"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Delirium",
+        "topic": "Casos integradores",
+        "subtopic": "",
+        "type": "Flashcard Integrador",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 5,
+          "UNICAMP": 4,
+          "SUS-SP": 5
+        },
+        "whyExamAsks": "Resume o módulo e o padrão de raciocínio das provas da USP.",
+        "trap": "O erro mais frequente é tratar o comportamento antes de tratar a causa.",
+        "memoryHook": "Delirium: agudo + atenção + gatilho + causa primeiro.",
+        "related": [
+          "Diagnóstico diferencial",
+          "Tratamento"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "DSM-5-TR",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      }
+    ]
+  },
+  {
     "file": "C:/Users/sulya/Downloads/psychogeriatricsFlashcards_dementia_module2.ts",
+    "fallbackFiles": [
+      "C:/Users/sulya/Downloads/psychogeriatricsFlashcards_dementia_expansion.ts"
+    ],
     "variable": "psychogeriatricsDementiaFlashcards",
+    "variableCandidates": [
+      "psychogeriatricsDementiaFlashcards",
+      "dementiaExpansionFlashcards",
+      "psychogeriatricsDementiaExpansionFlashcards"
+    ],
     "deckId": "pg-demencias-100",
     "deckTitle": "Psicogeriatria - Demencias",
     "module": "Demencias",
+    "moduleOrder": 2,
+    "expectedPrefix": "PG-DEM",
+    "expectedStart": 49,
+    "expectedEnd": 220,
     "importance": 5,
     "cards": [
       {
@@ -60,7 +2553,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0002",
@@ -115,7 +2609,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0003",
@@ -169,7 +2664,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0004",
@@ -223,7 +2719,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0005",
@@ -277,7 +2774,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0006",
@@ -332,7 +2830,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0007",
@@ -386,7 +2885,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0008",
@@ -439,7 +2939,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0009",
@@ -493,7 +2994,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0010",
@@ -545,7 +3047,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0011",
@@ -598,7 +3101,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0012",
@@ -650,7 +3154,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0013",
@@ -701,7 +3206,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0014",
@@ -754,7 +3260,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0015",
@@ -809,7 +3316,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0016",
@@ -863,7 +3371,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0017",
@@ -917,7 +3426,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0018",
@@ -972,7 +3482,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0019",
@@ -1026,7 +3537,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0020",
@@ -1080,7 +3592,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0021",
@@ -1132,7 +3645,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0022",
@@ -1186,7 +3700,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0023",
@@ -1239,7 +3754,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0024",
@@ -1291,7 +3807,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0025",
@@ -1343,7 +3860,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0026",
@@ -1396,7 +3914,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0027",
@@ -1448,7 +3967,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0028",
@@ -1500,7 +4020,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0029",
@@ -1553,7 +4074,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0030",
@@ -1607,7 +4129,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0031",
@@ -1660,7 +4183,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0032",
@@ -1712,7 +4236,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0033",
@@ -1767,7 +4292,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0034",
@@ -1819,7 +4345,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0035",
@@ -1875,7 +4402,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0036",
@@ -1929,7 +4457,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0037",
@@ -1982,7 +4511,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0038",
@@ -2035,7 +4565,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0039",
@@ -2087,7 +4618,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0040",
@@ -2142,7 +4674,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0041",
@@ -2196,7 +4729,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0042",
@@ -2249,7 +4783,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0043",
@@ -2303,7 +4838,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0044",
@@ -2356,7 +4892,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0045",
@@ -2409,7 +4946,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0046",
@@ -2462,7 +5000,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0047",
@@ -2516,7 +5055,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0048",
@@ -2570,7 +5110,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0049",
@@ -2623,7 +5164,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0050",
@@ -2675,7 +5217,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0051",
@@ -2729,7 +5272,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0052",
@@ -2783,7 +5327,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0053",
@@ -2837,7 +5382,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0054",
@@ -2892,7 +5438,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0055",
@@ -2946,7 +5493,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0056",
@@ -2998,7 +5546,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0057",
@@ -3049,7 +5598,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0058",
@@ -3104,7 +5654,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0059",
@@ -3155,7 +5706,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0060",
@@ -3208,7 +5760,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0061",
@@ -3260,7 +5813,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0062",
@@ -3314,7 +5868,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0063",
@@ -3369,7 +5924,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0064",
@@ -3423,7 +5979,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0065",
@@ -3478,7 +6035,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0066",
@@ -3533,7 +6091,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0067",
@@ -3587,7 +6146,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0068",
@@ -3641,7 +6201,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0069",
@@ -3693,7 +6254,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0070",
@@ -3746,7 +6308,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0071",
@@ -3800,7 +6363,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0072",
@@ -3852,7 +6416,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0073",
@@ -3906,7 +6471,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0074",
@@ -3960,7 +6526,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0075",
@@ -4013,7 +6580,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0076",
@@ -4065,7 +6633,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0077",
@@ -4117,7 +6686,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0078",
@@ -4170,7 +6740,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0079",
@@ -4223,7 +6794,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0080",
@@ -4276,7 +6848,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0081",
@@ -4329,7 +6902,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0082",
@@ -4382,7 +6956,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0083",
@@ -4434,7 +7009,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0084",
@@ -4489,7 +7065,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0085",
@@ -4540,7 +7117,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0086",
@@ -4592,7 +7170,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0087",
@@ -4644,7 +7223,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0088",
@@ -4696,7 +7276,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0089",
@@ -4747,7 +7328,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0090",
@@ -4799,7 +7381,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0091",
@@ -4854,7 +7437,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0092",
@@ -4908,7 +7492,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0093",
@@ -4960,7 +7545,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0094",
@@ -5013,7 +7599,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0095",
@@ -5065,7 +7652,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0096",
@@ -5119,7 +7707,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0097",
@@ -5171,7 +7760,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0098",
@@ -5224,7 +7814,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0099",
@@ -5277,7 +7868,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-DEM-0100",
@@ -5333,16 +7925,29 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       }
     ]
   },
   {
     "file": "C:/Users/sulya/Downloads/psychogeriatricsFlashcards_cognitive_functional_module3.ts",
+    "fallbackFiles": [
+      "C:/Users/sulya/Downloads/psychogeriatricsFlashcards_cognitive_functional_expansion.ts"
+    ],
     "variable": "psychogeriatricsCognitiveFunctionalFlashcards",
+    "variableCandidates": [
+      "psychogeriatricsCognitiveFunctionalFlashcards",
+      "cognitiveFunctionalExpansionFlashcards",
+      "psychogeriatricsCognitiveFunctionalExpansionFlashcards"
+    ],
     "deckId": "pg-avaliacao-cognitiva-funcional-90",
     "deckTitle": "Psicogeriatria - Avaliacao Cognitiva e Funcional",
     "module": "Avaliacao Cognitiva e Funcional",
+    "moduleOrder": 3,
+    "expectedPrefix": "PG-ACF",
+    "expectedStart": 45,
+    "expectedEnd": 90,
     "importance": 5,
     "cards": [
       {
@@ -5399,7 +8004,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0002",
@@ -5455,7 +8061,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0003",
@@ -5510,7 +8117,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0004",
@@ -5566,7 +8174,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0005",
@@ -5621,7 +8230,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0006",
@@ -5677,7 +8287,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0007",
@@ -5729,7 +8340,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0008",
@@ -5781,7 +8393,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0009",
@@ -5835,7 +8448,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0010",
@@ -5888,7 +8502,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0011",
@@ -5943,7 +8558,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0012",
@@ -5996,7 +8612,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0013",
@@ -6052,7 +8669,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0014",
@@ -6106,7 +8724,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0015",
@@ -6160,7 +8779,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0016",
@@ -6215,7 +8835,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0017",
@@ -6268,7 +8889,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0018",
@@ -6322,7 +8944,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0019",
@@ -6377,7 +9000,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0020",
@@ -6432,7 +9056,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0021",
@@ -6487,7 +9112,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0022",
@@ -6542,7 +9168,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0023",
@@ -6597,7 +9224,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0024",
@@ -6652,7 +9280,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0025",
@@ -6707,7 +9336,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0026",
@@ -6760,7 +9390,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0027",
@@ -6813,7 +9444,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0028",
@@ -6868,7 +9500,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0029",
@@ -6923,7 +9556,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0030",
@@ -6979,7 +9613,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0031",
@@ -7033,7 +9668,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0032",
@@ -7086,7 +9722,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0033",
@@ -7141,7 +9778,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0034",
@@ -7195,7 +9833,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0035",
@@ -7248,7 +9887,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0036",
@@ -7303,7 +9943,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0037",
@@ -7358,7 +9999,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0038",
@@ -7413,7 +10055,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0039",
@@ -7467,7 +10110,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0040",
@@ -7522,7 +10166,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0041",
@@ -7577,7 +10222,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0042",
@@ -7632,7 +10278,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0043",
@@ -7687,7 +10334,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0044",
@@ -7741,7 +10389,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0045",
@@ -7795,7 +10444,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0046",
@@ -7850,7 +10500,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0047",
@@ -7903,7 +10554,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0048",
@@ -7957,7 +10609,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0049",
@@ -8013,7 +10666,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0050",
@@ -8067,7 +10721,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0051",
@@ -8118,7 +10773,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0052",
@@ -8173,7 +10829,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0053",
@@ -8229,7 +10886,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0054",
@@ -8284,7 +10942,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0055",
@@ -8339,7 +10998,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0056",
@@ -8394,7 +11054,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0057",
@@ -8448,7 +11109,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0058",
@@ -8501,7 +11163,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0059",
@@ -8556,7 +11219,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0060",
@@ -8610,7 +11274,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0061",
@@ -8664,7 +11329,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0062",
@@ -8718,7 +11384,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0063",
@@ -8773,7 +11440,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0064",
@@ -8828,7 +11496,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0065",
@@ -8884,7 +11553,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0066",
@@ -8940,7 +11610,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0067",
@@ -8995,7 +11666,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0068",
@@ -9050,7 +11722,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0069",
@@ -9104,7 +11777,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0070",
@@ -9159,7 +11833,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0071",
@@ -9214,7 +11889,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0072",
@@ -9270,7 +11946,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0073",
@@ -9324,7 +12001,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0074",
@@ -9379,7 +12057,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0075",
@@ -9434,7 +12113,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0076",
@@ -9488,7 +12168,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0077",
@@ -9543,7 +12224,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0078",
@@ -9599,7 +12281,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0079",
@@ -9653,7 +12336,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0080",
@@ -9705,7 +12389,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0081",
@@ -9760,7 +12445,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0082",
@@ -9814,7 +12500,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0083",
@@ -9868,7 +12555,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0084",
@@ -9922,7 +12610,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0085",
@@ -9978,7 +12667,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0086",
@@ -10033,7 +12723,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0087",
@@ -10089,7 +12780,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0088",
@@ -10145,7 +12837,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0089",
@@ -10201,7 +12894,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-ACF-0090",
@@ -10258,3463 +12952,29 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
-      }
-    ]
-  },
-  {
-    "file": "C:/Users/sulya/Downloads/psychogeriatricsFlashcards_bpsd_module5.ts",
-    "variable": "bpsdModule5Flashcards",
-    "deckId": "pg-bpsd-75",
-    "deckTitle": "Psicogeriatria - Sintomas Neuropsiquiatricos das Demencias (BPSD)",
-    "module": "Sintomas Neuropsiquiatricos das Demencias (BPSD)",
-    "importance": 4,
-    "cards": [
-      {
-        "id": "PG-BPSD-0001",
-        "front": "O que significa a sigla BPSD?",
-        "back": "Behavioral and Psychological Symptoms of Dementia. Em português: sintomas neuropsiquiátricos das demências.",
-        "tags": [
-          "BPSD",
-          "conceito"
-        ],
-        "priorities": [
-          "high-frequency",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Conceito",
-        "subtopic": "",
-        "type": "Conceito",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "A sigla aparece em diretrizes e artigos, enquanto provas brasileiras podem usar 'sintomas comportamentais das demências'.",
-        "trap": "Não limitar BPSD apenas a agitação.",
-        "memoryHook": "BPSD = comportamento + psicologia nas demências.",
-        "related": [
-          "Demências"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0002",
-        "front": "Qual a frequência dos BPSD ao longo da evolução das demências?",
-        "back": "Aproximadamente 90% dos pacientes apresentarão pelo menos um sintoma neuropsiquiátrico durante a evolução da demência.",
-        "tags": [
-          "BPSD",
-          "epidemiologia"
-        ],
-        "priorities": [
-          "high-frequency",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Epidemiologia",
-        "subtopic": "",
-        "type": "Conceito",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "A banca cobra porque BPSD são parte esperada da evolução, não exceção.",
-        "trap": "Não considerar BPSD como evento raro.",
-        "memoryHook": "BPSD são regra, não exceção.",
-        "related": [
-          "Demências"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0003",
-        "front": "Os BPSD costumam surgir apenas nas fases avançadas das demências?",
-        "back": "Não. Podem surgir desde fases iniciais, a depender do tipo de demência.",
-        "tags": [
-          "BPSD",
-          "DFT",
-          "DCL"
-        ],
-        "priorities": [
-          "high-frequency",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Evolução",
-        "subtopic": "",
-        "type": "Conceito",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "Questões usam sintomas comportamentais precoces para sugerir DFT ou DCL.",
-        "trap": "Na DFT e DCL, sintomas neuropsiquiátricos podem ser precoces.",
-        "memoryHook": "",
-        "related": [
-          "DFT",
-          "DCL"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0004",
-        "front": "Quais são os sintomas neuropsiquiátricos mais frequentes nas demências?",
-        "back": "Apatia, depressão, ansiedade, irritabilidade, agitação, agressividade, delírios e alucinações.",
-        "tags": [
-          "BPSD",
-          "sintomas"
-        ],
-        "priorities": [
-          "high-frequency",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Semiologia",
-        "subtopic": "",
-        "type": "Conceito",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "Ajuda a reconhecer o espectro dos BPSD em casos clínicos.",
-        "trap": "Não restringir a psicose e agressividade.",
-        "memoryHook": "",
-        "related": [
-          "Demências"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0005",
-        "front": "Qual é o sintoma neuropsiquiátrico mais frequente na doença de Alzheimer?",
-        "back": "Apatia.",
-        "tags": [
-          "Alzheimer",
-          "apatia",
-          "BPSD"
-        ],
-        "priorities": [
-          "high-frequency",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Apatia",
-        "subtopic": "",
-        "type": "Conceito",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "A USP gosta de confundir apatia com depressão em Alzheimer.",
-        "trap": "Apatia não é sinônimo de depressão.",
-        "memoryHook": "Alzheimer: apatia aparece muito.",
-        "related": [
-          "Depressão no idoso"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0006",
-        "front": "Qual sintoma está mais associado à sobrecarga do cuidador?",
-        "back": "Agitação acompanhada de agressividade.",
-        "tags": [
-          "agitação",
-          "agressividade",
-          "cuidador"
-        ],
-        "priorities": [
-          "high-frequency",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Sobrecarga do cuidador",
-        "subtopic": "",
-        "type": "Prognóstico",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "A banca explora impacto funcional e familiar dos BPSD.",
-        "trap": "Apatia é frequente, mas agitação/agressividade costuma sobrecarregar mais.",
-        "memoryHook": "",
-        "related": [
-          "Cuidador"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0007",
-        "front": "Qual sintoma mais aumenta o risco de institucionalização?",
-        "back": "Agitação grave persistente.",
-        "tags": [
-          "institucionalização",
-          "agitação"
-        ],
-        "priorities": [
-          "high-frequency",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Institucionalização",
-        "subtopic": "",
-        "type": "Prognóstico",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "BPSD graves são motivo comum de perda de manejo domiciliar.",
-        "trap": "Não é apenas gravidade cognitiva que leva à institucionalização.",
-        "memoryHook": "",
-        "related": [
-          "Funcionalidade"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0008",
-        "front": "Qual deve ser a primeira etapa da avaliação diante de um novo BPSD?",
-        "back": "Investigar causa clínica reversível: delirium, dor, infecção, retenção urinária, fecaloma e efeitos adversos de medicamentos.",
-        "tags": [
-          "BPSD",
-          "conduta",
-          "delirium"
-        ],
-        "priorities": [
-          "high-frequency",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Avaliação inicial",
-        "subtopic": "",
-        "type": "Conduta",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "A banca cobra o erro de tratar comportamento como progressão da demência sem investigar causa clínica.",
-        "trap": "Nunca assumir progressão da demência de início.",
-        "memoryHook": "Novo comportamento = procurar causa.",
-        "related": [
-          "Delirium",
-          "Polifarmácia"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0009",
-        "front": "Qual é a principal causa de aparecimento súbito de BPSD?",
-        "back": "Delirium.",
-        "tags": [
-          "BPSD",
-          "delirium"
-        ],
-        "priorities": [
-          "high-frequency",
-          "repeated-error",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Delirium",
-        "subtopic": "",
-        "type": "Diferencial",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "Mudança abrupta de comportamento em demência é uma pegadinha clássica.",
-        "trap": "Demência costuma evoluir lentamente.",
-        "memoryHook": "Súbito = delirium até prova em contrário.",
-        "related": [
-          "Delirium"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0010",
-        "front": "Quais são os principais desencadeantes ambientais dos BPSD?",
-        "back": "Excesso de estímulos, mudança de ambiente, privação do sono, isolamento, dor, fome e medo.",
-        "tags": [
-          "BPSD",
-          "ambiente"
-        ],
-        "priorities": [
-          "high-frequency",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Gatilhos ambientais",
-        "subtopic": "",
-        "type": "Conceito",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "A USP valoriza gatilhos simples antes de medicação.",
-        "trap": "Não medicalizar antes de ajustar ambiente.",
-        "memoryHook": "",
-        "related": [
-          "Cuidador",
-          "Ambiente"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0011",
-        "front": "Qual sintoma costuma ser confundido com depressão nas demências?",
-        "back": "Apatia.",
-        "tags": [
-          "apatia",
-          "depressão"
-        ],
-        "priorities": [
-          "high-frequency",
-          "repeated-error",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Apatia",
-        "subtopic": "",
-        "type": "Diferencial",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "A banca cobra a diferença entre perda de iniciativa e tristeza/sofrimento depressivo.",
-        "trap": "Apatia pode ocorrer sem humor deprimido.",
-        "memoryHook": "",
-        "related": [
-          "Depressão no idoso"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0012",
-        "front": "A apatia responde bem a antidepressivos?",
-        "back": "Não necessariamente. Na ausência de episódio depressivo maior, antidepressivos costumam ter benefício limitado.",
-        "tags": [
-          "apatia",
-          "antidepressivos"
-        ],
-        "priorities": [
-          "high-frequency",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Apatia",
-        "subtopic": "",
-        "type": "Tratamento",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "Evita prescrição automática de antidepressivo para todo paciente apático.",
-        "trap": "Apatia isolada não é depressão.",
-        "memoryHook": "",
-        "related": [
-          "Depressão no idoso"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0013",
-        "front": "Qual BPSD é mais característico da demência frontotemporal?",
-        "back": "Desinibição comportamental.",
-        "tags": [
-          "DFT",
-          "desinibição"
-        ],
-        "priorities": [
-          "high-frequency",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "DFT",
-        "subtopic": "",
-        "type": "Diagnóstico",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "É pista diagnóstica forte para DFT nas provas.",
-        "trap": "Não pensar primeiro em Alzheimer quando comportamento social muda precocemente.",
-        "memoryHook": "DFT = comportamento primeiro.",
-        "related": [
-          "Demência frontotemporal"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0014",
-        "front": "Qual BPSD é mais característico da demência com corpos de Lewy?",
-        "back": "Alucinações visuais recorrentes.",
-        "tags": [
-          "DCL",
-          "alucinações visuais"
-        ],
-        "priorities": [
-          "high-frequency",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "DCL",
-        "subtopic": "",
-        "type": "Diagnóstico",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "É uma das associações mais cobradas em psicogeriatria.",
-        "trap": "Não confundir com delirium sem avaliar curso e atenção.",
-        "memoryHook": "DCL vê coisas cedo.",
-        "related": [
-          "Demência com Corpos de Lewy"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0015",
-        "front": "Qual BPSD é mais característico da doença de Alzheimer inicial?",
-        "back": "Apatia e depressão.",
-        "tags": [
-          "Alzheimer",
-          "apatia",
-          "depressão"
-        ],
-        "priorities": [
-          "high-frequency",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Alzheimer",
-        "subtopic": "",
-        "type": "Diagnóstico",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "Ajuda a diferenciar Alzheimer inicial de DFT e DCL.",
-        "trap": "Desinibição precoce sugere DFT; alucinação visual precoce sugere DCL.",
-        "memoryHook": "",
-        "related": [
-          "Alzheimer"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0016",
-        "front": "Agitação sempre significa agressividade?",
-        "back": "Não. Agitação pode ocorrer sem agressão física ou verbal.",
-        "tags": [
-          "agitação",
-          "agressividade"
-        ],
-        "priorities": [
-          "high-frequency",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Agitação",
-        "subtopic": "",
-        "type": "Conceito",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "Provas diferenciam inquietação, agitação e agressividade.",
-        "trap": "Não usar os termos como sinônimos.",
-        "memoryHook": "",
-        "related": [
-          "Agressividade"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0017",
-        "front": "Qual sintoma costuma anteceder episódios de agressividade?",
-        "back": "Agitação.",
-        "tags": [
-          "agitação",
-          "agressividade"
-        ],
-        "priorities": [
-          "high-frequency",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Agressividade",
-        "subtopic": "",
-        "type": "Conceito",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "Reconhecer agitação permite intervenção precoce antes da agressão.",
-        "trap": "Não esperar agressão para intervir no ambiente.",
-        "memoryHook": "",
-        "related": [
-          "Agitação"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0018",
-        "front": "Delírios nas demências costumam ser complexos?",
-        "back": "Não. Geralmente são simples, como roubo, abandono, infidelidade ou invasores.",
-        "tags": [
-          "delírios",
-          "psicose"
-        ],
-        "priorities": [
-          "high-frequency",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Delírios",
-        "subtopic": "",
-        "type": "Semiologia",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "A banca usa delírios simples para caracterizar psicose associada à demência.",
-        "trap": "Delírios muito elaborados sugerem avaliar outros diagnósticos.",
-        "memoryHook": "",
-        "related": [
-          "Psicose tardia"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0019",
-        "front": "Qual tipo de alucinação é mais comum nas demências?",
-        "back": "Visual.",
-        "tags": [
-          "alucinações visuais"
-        ],
-        "priorities": [
-          "high-frequency",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Alucinações",
-        "subtopic": "",
-        "type": "Semiologia",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "Alucinação visual orienta diferenciais como DCL e delirium.",
-        "trap": "Alucinação auditiva isolada e sistematizada sugere avaliar psicose primária/tardia.",
-        "memoryHook": "",
-        "related": [
-          "DCL",
-          "Delirium"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0020",
-        "front": "Qual sintoma deve fazer pensar em demência com corpos de Lewy?",
-        "back": "Alucinações visuais recorrentes desde fases precoces.",
-        "tags": [
-          "DCL",
-          "alucinações"
-        ],
-        "priorities": [
-          "high-frequency",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "DCL",
-        "subtopic": "",
-        "type": "Diagnóstico",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "Associação clássica e repetida em provas.",
-        "trap": "Lembrar também de flutuação, parkinsonismo e transtorno comportamental do sono REM.",
-        "memoryHook": "",
-        "related": [
-          "DCL"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0021",
-        "front": "Qual BPSD é mais frequentemente negligenciado?",
-        "back": "Apatia.",
-        "tags": [
-          "apatia",
-          "BPSD"
-        ],
-        "priorities": [
-          "high-frequency",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Apatia",
-        "subtopic": "",
-        "type": "Semiologia",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "É comum, mas menos disruptiva que agitação e por isso pode passar despercebida.",
-        "trap": "Não confundir silêncio com estabilidade clínica.",
-        "memoryHook": "",
-        "related": [
-          "Apatia"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0022",
-        "front": "A gravidade dos BPSD acompanha obrigatoriamente a gravidade da demência?",
-        "back": "Não. BPSD podem surgir em qualquer fase e variar independentemente do comprometimento cognitivo.",
-        "tags": [
-          "BPSD",
-          "evolução"
-        ],
-        "priorities": [
-          "high-frequency",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Evolução",
-        "subtopic": "",
-        "type": "Conceito",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "Evita raciocínio linear simplista em casos clínicos.",
-        "trap": "BPSD precoce pode apontar tipo específico de demência.",
-        "memoryHook": "",
-        "related": [
-          "Demências"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0023",
-        "front": "Os BPSD aceleram a perda funcional?",
-        "back": "Sim. Associam-se a maior dependência, institucionalização e sobrecarga do cuidador.",
-        "tags": [
-          "funcionalidade",
-          "BPSD"
-        ],
-        "priorities": [
-          "high-frequency",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Funcionalidade",
-        "subtopic": "",
-        "type": "Prognóstico",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "A banca cobra consequências clínicas, não só diagnóstico.",
-        "trap": "BPSD são determinantes de cuidado e prognóstico.",
-        "memoryHook": "",
-        "related": [
-          "Funcionalidade",
-          "Cuidador"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0024",
-        "front": "Quem costuma perceber primeiro o aparecimento dos BPSD?",
-        "back": "O cuidador ou familiar próximo.",
-        "tags": [
-          "cuidador",
-          "história colateral"
-        ],
-        "priorities": [
-          "high-frequency",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Cuidador",
-        "subtopic": "",
-        "type": "Avaliação",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "História colateral é fundamental na avaliação psicogeriátrica.",
-        "trap": "Não depender apenas do relato do paciente com demência.",
-        "memoryHook": "",
-        "related": [
-          "Cuidador"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0025",
-        "front": "Qual frase resume a abordagem inicial dos BPSD?",
-        "back": "Mudança comportamental no idoso com demência deve ser considerada delirium ou causa clínica até prova em contrário.",
-        "tags": [
-          "BPSD",
-          "delirium",
-          "conduta"
-        ],
-        "priorities": [
-          "high-frequency",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Integração",
-        "subtopic": "",
-        "type": "Conceito integrador",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "Sintetiza a principal armadilha das provas.",
-        "trap": "Não medicalizar comportamento novo sem investigação.",
-        "memoryHook": "Mudança súbita = delirium.",
-        "related": [
-          "Delirium"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0026",
-        "front": "Paciente de 82 anos com doença de Alzheimer apresenta agitação iniciada há 24 horas. Qual deve ser a primeira hipótese diagnóstica?",
-        "back": "Delirium até prova em contrário.",
-        "tags": [
-          "caso clínico",
-          "delirium",
-          "agitação"
-        ],
-        "priorities": [
-          "high-frequency",
-          "repeated-error",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Caso clínico",
-        "subtopic": "",
-        "type": "Caso Clínico",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "A USP explora o erro de atribuir piora súbita à progressão da demência.",
-        "trap": "Demências evoluem lentamente.",
-        "memoryHook": "",
-        "related": [
-          "Delirium"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0027",
-        "front": "Qual deve ser a primeira intervenção diante de um novo episódio de agitação em paciente com demência?",
-        "back": "Avaliar causas precipitantes: dor, retenção urinária, fecaloma, infecção, hipoxemia, desidratação e medicamentos recentes.",
-        "tags": [
-          "conduta",
-          "agitação"
-        ],
-        "priorities": [
-          "high-frequency",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Conduta inicial",
-        "subtopic": "",
-        "type": "Conduta",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "Evita uso precoce de antipsicótico sem avaliação clínica.",
-        "trap": "Nunca iniciar antipsicótico antes dessa avaliação.",
-        "memoryHook": "",
-        "related": [
-          "Delirium",
-          "Polifarmácia"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0028",
-        "front": "Qual característica favorece delirium em vez de BPSD?",
-        "back": "Flutuação importante da atenção e da consciência.",
-        "tags": [
-          "delirium",
-          "atenção"
-        ],
-        "priorities": [
-          "high-frequency",
-          "repeated-error",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Delirium",
-        "subtopic": "",
-        "type": "Diferencial",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "Diferencia mudança comportamental aguda de sintomas crônicos da demência.",
-        "trap": "Atenção é a chave do delirium.",
-        "memoryHook": "",
-        "related": [
-          "Delirium"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0029",
-        "front": "Qual característica favorece BPSD em vez de delirium?",
-        "back": "Progressão gradual, sem alteração importante da atenção.",
-        "tags": [
-          "BPSD",
-          "diferencial"
-        ],
-        "priorities": [
-          "high-frequency",
-          "repeated-error",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Diferencial",
-        "subtopic": "",
-        "type": "Diferencial",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "A banca usa temporalidade e atenção para separar diagnósticos.",
-        "trap": "BPSD não deve ter rebaixamento/flutuação marcante da consciência.",
-        "memoryHook": "",
-        "related": [
-          "Delirium"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0030",
-        "front": "Paciente com Alzheimer acredita repetidamente que objetos foram roubados. Qual é o BPSD mais provável?",
-        "back": "Delírio de roubo.",
-        "tags": [
-          "delírio de roubo",
-          "Alzheimer"
-        ],
-        "priorities": [
-          "high-frequency",
-          "repeated-error",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Delírios",
-        "subtopic": "",
-        "type": "Caso Clínico",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "É um dos delírios mais frequentes na doença de Alzheimer.",
-        "trap": "Não confundir com erro de memória simples quando há convicção delirante.",
-        "memoryHook": "",
-        "related": [
-          "Alzheimer"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0031",
-        "front": "Idosa com demência passa a acusar o marido de infidelidade sem evidências. Qual sintoma neuropsiquiátrico está presente?",
-        "back": "Delírio, especialmente delírio de ciúmes.",
-        "tags": [
-          "delírio",
-          "ciúmes"
-        ],
-        "priorities": [
-          "high-frequency",
-          "repeated-error",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Delírios",
-        "subtopic": "",
-        "type": "Caso Clínico",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "Provas exploram exemplos concretos de psicose na demência.",
-        "trap": "Diferenciar delírio de suspeita baseada em fatos reais.",
-        "memoryHook": "",
-        "related": [
-          "Psicose tardia"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0032",
-        "front": "Como diferenciar apatia de depressão?",
-        "back": "Apatia: perda de iniciativa, pouca expressão emocional e sofrimento subjetivo discreto. Depressão: tristeza, culpa, desesperança e sofrimento emocional.",
-        "tags": [
-          "apatia",
-          "depressão"
-        ],
-        "priorities": [
-          "high-frequency",
-          "repeated-error",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Apatia x depressão",
-        "subtopic": "",
-        "type": "Diferencial",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "Muito cobrado por mudar conduta terapêutica.",
-        "trap": "Antidepressivo não resolve apatia isolada.",
-        "memoryHook": "Apatia = iniciativa; depressão = sofrimento.",
-        "related": [
-          "Depressão no idoso"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0033",
-        "front": "Paciente permanece sentado o dia inteiro, sem iniciativa, mas nega tristeza. Qual BPSD é mais provável?",
-        "back": "Apatia.",
-        "tags": [
-          "apatia",
-          "caso clínico"
-        ],
-        "priorities": [
-          "high-frequency",
-          "repeated-error",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Apatia",
-        "subtopic": "",
-        "type": "Caso Clínico",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "Treina reconhecimento de apatia sem sintomas afetivos depressivos.",
-        "trap": "Não diagnosticar depressão apenas por inatividade.",
-        "memoryHook": "",
-        "related": [
-          "Apatia"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0034",
-        "front": "Paciente apresenta alucinações visuais recorrentes desde o início da demência. Qual diagnóstico deve ser considerado?",
-        "back": "Demência com Corpos de Lewy.",
-        "tags": [
-          "DCL",
-          "alucinação visual"
-        ],
-        "priorities": [
-          "high-frequency",
-          "repeated-error",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "DCL",
-        "subtopic": "",
-        "type": "Caso Clínico",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "Alucinação visual precoce é pista diagnóstica forte.",
-        "trap": "Se houver flutuação, parkinsonismo e RBD, reforça DCL.",
-        "memoryHook": "",
-        "related": [
-          "DCL"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0035",
-        "front": "Paciente com desinibição social, impulsividade e hiperoralidade. Qual demência é mais provável?",
-        "back": "Demência frontotemporal.",
-        "tags": [
-          "DFT",
-          "hiperoralidade",
-          "desinibição"
-        ],
-        "priorities": [
-          "high-frequency",
-          "repeated-error",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "DFT",
-        "subtopic": "",
-        "type": "Caso Clínico",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "Comportamento social precoce é marca da variante comportamental.",
-        "trap": "Não confundir com mania sem avaliar curso neurodegenerativo.",
-        "memoryHook": "",
-        "related": [
-          "DFT",
-          "Bipolaridade"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0036",
-        "front": "Qual BPSD costuma aparecer precocemente na demência frontotemporal?",
-        "back": "Desinibição comportamental.",
-        "tags": [
-          "DFT",
-          "desinibição"
-        ],
-        "priorities": [
-          "high-frequency",
-          "repeated-error",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "DFT",
-        "subtopic": "",
-        "type": "Caso Clínico",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "É uma das pistas mais frequentes de DFT em prova.",
-        "trap": "Alzheimer inicial costuma começar por memória episódica, não por desinibição.",
-        "memoryHook": "",
-        "related": [
-          "DFT"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0037",
-        "front": "Paciente começa a manipular repetidamente objetos sem finalidade. Como é chamado esse comportamento?",
-        "back": "Comportamento motor aberrante.",
-        "tags": [
-          "comportamento motor aberrante"
-        ],
-        "priorities": [
-          "high-frequency",
-          "repeated-error",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Comportamento motor",
-        "subtopic": "",
-        "type": "Caso Clínico",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "Provas descrevem o sintoma sem nomeá-lo.",
-        "trap": "Diferenciar de compulsão primária pelo contexto de demência.",
-        "memoryHook": "",
-        "related": [
-          "DFT"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0038",
-        "front": "O wandering é considerado um BPSD?",
-        "back": "Sim. Consiste em deambulação persistente e sem objetivo.",
-        "tags": [
-          "wandering",
-          "deambulação"
-        ],
-        "priorities": [
-          "high-frequency",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Wandering",
-        "subtopic": "",
-        "type": "Conceito",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "Tema prático em segurança domiciliar e institucionalização.",
-        "trap": "Não confundir com marcha por acatisia ou delirium.",
-        "memoryHook": "",
-        "related": [
-          "Segurança"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0039",
-        "front": "Qual comportamento aumenta o risco de fuga do domicílio?",
-        "back": "Wandering.",
-        "tags": [
-          "wandering",
-          "fuga"
-        ],
-        "priorities": [
-          "high-frequency",
-          "repeated-error",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Wandering",
-        "subtopic": "",
-        "type": "Caso Clínico",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "A banca pode cobrar medidas de segurança e orientação familiar.",
-        "trap": "Risco é ambiental e funcional, não apenas psiquiátrico.",
-        "memoryHook": "",
-        "related": [
-          "Segurança",
-          "Cuidador"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0040",
-        "front": "Paciente torna-se extremamente agitado sempre ao final da tarde. Como esse fenômeno é conhecido?",
-        "back": "Síndrome do pôr do sol, ou sundowning.",
-        "tags": [
-          "sundowning",
-          "pôr do sol"
-        ],
-        "priorities": [
-          "high-frequency",
-          "repeated-error",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Sundowning",
-        "subtopic": "",
-        "type": "Caso Clínico",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "Fenômeno clássico nas demências e frequentemente confundido com delirium.",
-        "trap": "Não é sinônimo de delirium.",
-        "memoryHook": "",
-        "related": [
-          "Sono",
-          "Delirium"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0041",
-        "front": "Síndrome do pôr do sol é sinônimo de delirium?",
-        "back": "Não. É uma piora vespertina dos sintomas comportamentais da demência.",
-        "tags": [
-          "sundowning",
-          "delirium"
-        ],
-        "priorities": [
-          "high-frequency",
-          "repeated-error",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Sundowning",
-        "subtopic": "",
-        "type": "Diferencial",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "Diferencia flutuação comportamental crônica de síndrome confusional aguda.",
-        "trap": "Se houver início agudo e déficit atencional, investigar delirium.",
-        "memoryHook": "",
-        "related": [
-          "Delirium"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0042",
-        "front": "Paciente apresenta gritos repetitivos durante toda a noite sem causa clínica evidente. Esse comportamento faz parte dos BPSD?",
-        "back": "Sim. Vocalizações persistentes fazem parte dos sintomas comportamentais.",
-        "tags": [
-          "vocalizações",
-          "BPSD"
-        ],
-        "priorities": [
-          "high-frequency",
-          "repeated-error",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Vocalizações",
-        "subtopic": "",
-        "type": "Caso Clínico",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "A banca usa descrições não técnicas de sintomas comportamentais.",
-        "trap": "Sempre investigar dor, desconforto e delirium antes de concluir BPSD.",
-        "memoryHook": "",
-        "related": [
-          "Dor",
-          "Delirium"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0043",
-        "front": "Ansiedade é considerada BPSD?",
-        "back": "Sim. É frequente, especialmente nas fases leves e moderadas.",
-        "tags": [
-          "ansiedade",
-          "BPSD"
-        ],
-        "priorities": [
-          "high-frequency",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Ansiedade",
-        "subtopic": "",
-        "type": "Conceito",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "Nem todo BPSD é agressividade ou psicose.",
-        "trap": "Ansiedade pode aparecer como dependência excessiva do cuidador.",
-        "memoryHook": "",
-        "related": [
-          "Ansiedade no idoso"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0044",
-        "front": "Paciente passa a seguir continuamente o cuidador pela casa. Esse comportamento pode representar o quê?",
-        "back": "Ansiedade de separação associada à demência.",
-        "tags": [
-          "ansiedade",
-          "cuidador"
-        ],
-        "priorities": [
-          "high-frequency",
-          "repeated-error",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Ansiedade",
-        "subtopic": "",
-        "type": "Caso Clínico",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "Mostra manifestação prática de ansiedade em demência.",
-        "trap": "Não interpretar automaticamente como manipulação voluntária.",
-        "memoryHook": "",
-        "related": [
-          "Cuidador",
-          "Ansiedade"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0045",
-        "front": "Paciente torna-se agressivo apenas durante o banho. Qual deve ser a primeira hipótese?",
-        "back": "Desencadeante ambiental, medo, dor ou desconforto durante o cuidado.",
-        "tags": [
-          "banho",
-          "agressividade",
-          "gatilho"
-        ],
-        "priorities": [
-          "high-frequency",
-          "repeated-error",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Gatilhos",
-        "subtopic": "",
-        "type": "Caso Clínico",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "A banca cobra análise funcional do comportamento antes de medicação.",
-        "trap": "Antipsicótico não é primeira resposta para gatilho previsível.",
-        "memoryHook": "",
-        "related": [
-          "Cuidador",
-          "Ambiente"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0046",
-        "front": "Mudança de ambiente pode precipitar BPSD?",
-        "back": "Sim. Internações e mudanças de residência frequentemente desencadeiam sintomas.",
-        "tags": [
-          "mudança de ambiente",
-          "BPSD"
-        ],
-        "priorities": [
-          "high-frequency",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Ambiente",
-        "subtopic": "",
-        "type": "Conduta",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "Ambiente é fator precipitante muito comum e modificável.",
-        "trap": "Não atribuir automaticamente à piora estrutural da demência.",
-        "memoryHook": "",
-        "related": [
-          "Ambiente"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0047",
-        "front": "Qual BPSD está mais relacionado ao risco de lesões físicas?",
-        "back": "Agressividade física.",
-        "tags": [
-          "agressividade",
-          "risco"
-        ],
-        "priorities": [
-          "high-frequency",
-          "repeated-error",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Agressividade",
-        "subtopic": "",
-        "type": "Caso Clínico",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "Ajuda a decidir gravidade e necessidade de intervenção rápida.",
-        "trap": "Risco físico pode justificar tratamento farmacológico se medidas iniciais falharem ou forem inviáveis.",
-        "memoryHook": "",
-        "related": [
-          "Segurança"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0048",
-        "front": "Paciente com demência passa a comer objetos não alimentares. Qual diagnóstico deve ser lembrado?",
-        "back": "Hiperoralidade, mais típica da demência frontotemporal.",
-        "tags": [
-          "hiperoralidade",
-          "DFT"
-        ],
-        "priorities": [
-          "high-frequency",
-          "repeated-error",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Hiperoralidade",
-        "subtopic": "",
-        "type": "Caso Clínico",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "Hiperoralidade é pista forte de DFT.",
-        "trap": "Não confundir com alteração alimentar inespecífica.",
-        "memoryHook": "",
-        "related": [
-          "DFT"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0049",
-        "front": "Qual BPSD costuma produzir maior sobrecarga emocional ao cuidador?",
-        "back": "Agitação associada à agressividade.",
-        "tags": [
-          "cuidador",
-          "agressividade"
-        ],
-        "priorities": [
-          "high-frequency",
-          "repeated-error",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Cuidador",
-        "subtopic": "",
-        "type": "Caso Clínico",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "Questões frequentemente abordam impacto no cuidador e institucionalização.",
-        "trap": "Apatia é frequente, mas agressividade costuma ser mais disruptiva.",
-        "memoryHook": "",
-        "related": [
-          "Cuidador"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0050",
-        "front": "Qual é o algoritmo mental para avaliar um novo BPSD?",
-        "back": "1) Confirmar se houve mudança aguda. 2) Excluir delirium. 3) Procurar causa clínica. 4) Avaliar fatores ambientais. 5) Considerar progressão da demência e tratamento específico.",
-        "tags": [
-          "algoritmo",
-          "conduta"
-        ],
-        "priorities": [
-          "high-frequency",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Algoritmo diagnóstico",
-        "subtopic": "",
-        "type": "Flashcard Integrador",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "Sintetiza o raciocínio mais cobrado em prova.",
-        "trap": "Pular direto para antipsicótico é erro clássico.",
-        "memoryHook": "Novo BPSD: delirium, clínica, ambiente, depois remédio.",
-        "related": [
-          "Delirium",
-          "Ambiente"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0051",
-        "front": "Qual deve ser a primeira linha de tratamento para BPSD?",
-        "back": "Intervenções não farmacológicas individualizadas: identificar gatilhos, orientar cuidador, adequar ambiente, tratar dor e manter rotina.",
-        "tags": [
-          "tratamento",
-          "não farmacológico"
-        ],
-        "priorities": [
-          "high-frequency",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Tratamento não farmacológico",
-        "subtopic": "",
-        "type": "Conduta",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "A banca cobra que antipsicótico não é primeira linha para a maioria dos BPSD.",
-        "trap": "Não medicalizar antes de individualizar o cuidado.",
-        "memoryHook": "",
-        "related": [
-          "Cuidador",
-          "Ambiente"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0052",
-        "front": "Quando está indicado tratamento farmacológico dos BPSD?",
-        "back": "Quando houver sofrimento importante, risco de auto/heteroagressão, prejuízo importante ao cuidado ou falha das medidas não farmacológicas.",
-        "tags": [
-          "tratamento farmacológico",
-          "risco"
-        ],
-        "priorities": [
-          "high-frequency",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Tratamento farmacológico",
-        "subtopic": "",
-        "type": "Conduta",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "Define quando o risco da medicação pode ser aceitável.",
-        "trap": "Sintoma leve sem risco geralmente não justifica antipsicótico.",
-        "memoryHook": "",
-        "related": [
-          "Antipsicóticos"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0053",
-        "front": "Todo paciente agitado deve receber antipsicótico?",
-        "back": "Não. Primeiro excluir delirium, tratar causas clínicas e realizar medidas ambientais.",
-        "tags": [
-          "antipsicóticos",
-          "agitação"
-        ],
-        "priorities": [
-          "high-frequency",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Antipsicóticos",
-        "subtopic": "",
-        "type": "Conduta",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "Pergunta clássica de conduta em prova.",
-        "trap": "Agitação não é sinônimo de indicação medicamentosa.",
-        "memoryHook": "",
-        "related": [
-          "Delirium"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0054",
-        "front": "Qual é o principal risco dos antipsicóticos em pacientes com demência?",
-        "back": "Aumento da mortalidade. Também aumentam risco de AVC, quedas, pneumonia, sedação e sintomas extrapiramidais.",
-        "tags": [
-          "antipsicóticos",
-          "mortalidade",
-          "AVC"
-        ],
-        "priorities": [
-          "high-frequency",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Antipsicóticos",
-        "subtopic": "",
-        "type": "Farmacologia",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "Risco de mortalidade é alerta central em diretrizes e provas.",
-        "trap": "Risperidona pode ter evidência, mas não é isenta de risco.",
-        "memoryHook": "",
-        "related": [
-          "Beers",
-          "Psicofarmacologia"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0055",
-        "front": "Os antipsicóticos devem ser prescritos por tempo indeterminado nos BPSD?",
-        "back": "Não. Usar a menor dose, pelo menor tempo possível, com reavaliação frequente e tentativa de retirada quando possível.",
-        "tags": [
-          "antipsicóticos",
-          "desprescrição"
-        ],
-        "priorities": [
-          "high-frequency",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Antipsicóticos",
-        "subtopic": "",
-        "type": "Conduta",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "A banca valoriza desprescrição e segurança no idoso.",
-        "trap": "Não manter por inércia após estabilização.",
-        "memoryHook": "",
-        "related": [
-          "Desprescrição"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0056",
-        "front": "Qual antipsicótico apresenta maior evidência para agitação na doença de Alzheimer?",
-        "back": "Risperidona.",
-        "tags": [
-          "risperidona",
-          "Alzheimer",
-          "agitação"
-        ],
-        "priorities": [
-          "high-frequency",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Antipsicóticos",
-        "subtopic": "",
-        "type": "Farmacologia",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "É uma associação frequente em tratamento de BPSD.",
-        "trap": "Apesar da evidência, há risco de AVC e mortalidade.",
-        "memoryHook": "",
-        "related": [
-          "Alzheimer",
-          "Beers"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0057",
-        "front": "Qual antipsicótico costuma ser preferido quando existe parkinsonismo?",
-        "back": "Quetiapina.",
-        "tags": [
-          "quetiapina",
-          "parkinsonismo"
-        ],
-        "priorities": [
-          "high-frequency",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Parkinsonismo",
-        "subtopic": "",
-        "type": "Farmacologia",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "Menor bloqueio dopaminérgico é útil em parkinsonismo e DCL, embora a decisão exija cautela.",
-        "trap": "Evitar haloperidol.",
-        "memoryHook": "",
-        "related": [
-          "DCL",
-          "Parkinson"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0058",
-        "front": "Qual antipsicótico deve ser evitado na demência com corpos de Lewy?",
-        "back": "Haloperidol. Também é necessária grande cautela com outros bloqueadores dopaminérgicos.",
-        "tags": [
-          "DCL",
-          "haloperidol",
-          "neurolépticos"
-        ],
-        "priorities": [
-          "high-frequency",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "DCL",
-        "subtopic": "",
-        "type": "Farmacologia",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "Hipersensibilidade a neurolépticos na DCL é clássico da USP.",
-        "trap": "Antipsicótico pode piorar gravemente o quadro motor e clínico.",
-        "memoryHook": "",
-        "related": [
-          "DCL"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0059",
-        "front": "Por que pacientes com DCL apresentam maior risco com antipsicóticos?",
-        "back": "Por hipersensibilidade a bloqueadores dopaminérgicos, podendo evoluir com rigidez grave, acinesia e síndrome neuroléptica maligna.",
-        "tags": [
-          "DCL",
-          "antipsicóticos"
-        ],
-        "priorities": [
-          "high-frequency",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "DCL",
-        "subtopic": "",
-        "type": "Farmacologia",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "É um dos pontos mais perigosos de prova e prática clínica.",
-        "trap": "Não tratar alucinação visual de DCL como psicose comum.",
-        "memoryHook": "",
-        "related": [
-          "DCL",
-          "Síndrome neuroléptica maligna"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0060",
-        "front": "Qual deve ser a primeira medida diante de agitação leve em demência?",
-        "back": "Intervenções ambientais e orientação ao cuidador.",
-        "tags": [
-          "agitação leve",
-          "conduta"
-        ],
-        "priorities": [
-          "high-frequency",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Agitação leve",
-        "subtopic": "",
-        "type": "Conduta",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "Evita sobretratamento farmacológico.",
-        "trap": "Agitação leve não exige medicação automática.",
-        "memoryHook": "",
-        "related": [
-          "Ambiente"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0061",
-        "front": "Quais intervenções ambientais possuem melhor evidência nos BPSD?",
-        "back": "Rotina estruturada, ambiente calmo, redução de ruídos, iluminação adequada, presença familiar e atividades significativas.",
-        "tags": [
-          "ambiente",
-          "rotina"
-        ],
-        "priorities": [
-          "high-frequency",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Ambiente",
-        "subtopic": "",
-        "type": "Tratamento",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "Bancas cobram medidas simples e efetivas.",
-        "trap": "Ambiente desorganizado pode manter o sintoma.",
-        "memoryHook": "",
-        "related": [
-          "Cuidador"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0062",
-        "front": "A musicoterapia possui benefício nos BPSD?",
-        "back": "Sim. Pode reduzir ansiedade, agitação e irritabilidade em alguns pacientes.",
-        "tags": [
-          "musicoterapia"
-        ],
-        "priorities": [
-          "high-frequency",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Musicoterapia",
-        "subtopic": "",
-        "type": "Tratamento",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "Mostra que intervenções não farmacológicas não são apenas 'apoio', mas tratamento.",
-        "trap": "Não substitui avaliação clínica de sintomas novos.",
-        "memoryHook": "",
-        "related": [
-          "Tratamento não farmacológico"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0063",
-        "front": "Atividade física pode reduzir BPSD?",
-        "back": "Sim. Pode ajudar especialmente em agitação, ansiedade e apatia.",
-        "tags": [
-          "atividade física",
-          "apatia",
-          "agitação"
-        ],
-        "priorities": [
-          "high-frequency",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Atividade física",
-        "subtopic": "",
-        "type": "Tratamento",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "Integra cuidado funcional e comportamental.",
-        "trap": "Deve ser adaptada à capacidade do idoso.",
-        "memoryHook": "",
-        "related": [
-          "Grandes Síndromes Geriátricas"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0064",
-        "front": "Treinamento do cuidador reduz BPSD?",
-        "back": "Sim. É uma das intervenções com melhor custo-benefício.",
-        "tags": [
-          "cuidador",
-          "treinamento"
-        ],
-        "priorities": [
-          "high-frequency",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Cuidador",
-        "subtopic": "",
-        "type": "Tratamento",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "A USP valoriza orientação ao cuidador como parte do tratamento.",
-        "trap": "Não tratar apenas o paciente; tratar o sistema de cuidado.",
-        "memoryHook": "",
-        "related": [
-          "Cuidador"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0065",
-        "front": "Os inibidores da acetilcolinesterase podem melhorar BPSD?",
-        "back": "Sim, especialmente apatia, alucinações e sintomas leves em alguns pacientes.",
-        "tags": [
-          "donepezila",
-          "rivastigmina",
-          "galantamina"
-        ],
-        "priorities": [
-          "high-frequency",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Anticolinesterásicos",
-        "subtopic": "",
-        "type": "Tratamento",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "Liga tratamento cognitivo a sintomas comportamentais, especialmente em DCL.",
-        "trap": "Resposta é modesta e não substitui manejo ambiental.",
-        "memoryHook": "",
-        "related": [
-          "Alzheimer",
-          "DCL"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0066",
-        "front": "A memantina pode reduzir agitação?",
-        "back": "Pode apresentar benefício modesto em alguns pacientes com Alzheimer moderado ou grave.",
-        "tags": [
-          "memantina",
-          "agitação"
-        ],
-        "priorities": [
-          "high-frequency",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Memantina",
-        "subtopic": "",
-        "type": "Tratamento",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "Cai como alternativa mais segura que antipsicóticos em cenários selecionados.",
-        "trap": "Não esperar resposta robusta em todos os pacientes.",
-        "memoryHook": "",
-        "related": [
-          "Alzheimer"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0067",
-        "front": "Os antidepressivos podem ser utilizados para tratar alguns BPSD?",
-        "back": "Sim, especialmente quando predominam depressão, ansiedade ou irritabilidade.",
-        "tags": [
-          "antidepressivos",
-          "ISRS"
-        ],
-        "priorities": [
-          "high-frequency",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Antidepressivos",
-        "subtopic": "",
-        "type": "Tratamento",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "Diferencia tratamento de sintomas afetivos de tratamento de psicose/agressividade grave.",
-        "trap": "Não usar antidepressivo para todo BPSD.",
-        "memoryHook": "",
-        "related": [
-          "Depressão",
-          "Ansiedade"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0068",
-        "front": "Qual ISRS possui melhor evidência para agitação em pacientes com demência?",
-        "back": "Citalopram.",
-        "tags": [
-          "citalopram",
-          "QT",
-          "agitação"
-        ],
-        "priorities": [
-          "high-frequency",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "ISRS",
-        "subtopic": "",
-        "type": "Farmacologia",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "Tema de prova por ser alternativa aos antipsicóticos em alguns casos.",
-        "trap": "Monitorar QT e efeitos adversos em idosos.",
-        "memoryHook": "",
-        "related": [
-          "QT",
-          "Psicofarmacologia"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0069",
-        "front": "Quando considerar trazodona em BPSD?",
-        "back": "Quando predominam insônia, agitação noturna ou ansiedade.",
-        "tags": [
-          "trazodona",
-          "insônia"
-        ],
-        "priorities": [
-          "high-frequency",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Trazodona",
-        "subtopic": "",
-        "type": "Farmacologia",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "Muito usada em prática clínica e cobrada como opção sedativa menos problemática que benzodiazepínicos.",
-        "trap": "Monitorar sedação, hipotensão e quedas.",
-        "memoryHook": "",
-        "related": [
-          "Sono",
-          "Quedas"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0070",
-        "front": "Valproato deve ser utilizado rotineiramente para BPSD?",
-        "back": "Não. Estudos mostram benefício limitado e maior risco de efeitos adversos.",
-        "tags": [
-          "valproato",
-          "BPSD"
-        ],
-        "priorities": [
-          "high-frequency",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Valproato",
-        "subtopic": "",
-        "type": "Farmacologia",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "Muito cobrado por ser prescrito na prática, mas não recomendado rotineiramente.",
-        "trap": "Não confundir controle de impulsividade em outros contextos com indicação em BPSD.",
-        "memoryHook": "",
-        "related": [
-          "Psicofarmacologia"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0071",
-        "front": "Benzodiazepínicos devem ser utilizados rotineiramente em BPSD?",
-        "back": "Não. Aumentam quedas, delirium, sedação e prejuízo cognitivo.",
-        "tags": [
-          "benzodiazepínicos",
-          "quedas",
-          "delirium"
-        ],
-        "priorities": [
-          "high-frequency",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Benzodiazepínicos",
-        "subtopic": "",
-        "type": "Farmacologia",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "Cai junto com critérios de Beers e segurança do idoso.",
-        "trap": "Podem piorar exatamente o quadro que se deseja tratar.",
-        "memoryHook": "",
-        "related": [
-          "Beers",
-          "Delirium"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0072",
-        "front": "Qual deve ser o objetivo do tratamento dos BPSD?",
-        "back": "Melhorar segurança, qualidade de vida, conforto e funcionalidade; não eliminar completamente todos os sintomas.",
-        "tags": [
-          "objetivos",
-          "tratamento"
-        ],
-        "priorities": [
-          "high-frequency",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Objetivo terapêutico",
-        "subtopic": "",
-        "type": "Conduta",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "Evita metas irreais que levam a sedação excessiva.",
-        "trap": "Paciente 'quieto' por sedação não é necessariamente paciente melhor.",
-        "memoryHook": "",
-        "related": [
-          "Funcionalidade"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0073",
-        "front": "Quando reavaliar necessidade do antipsicótico nos BPSD?",
-        "back": "Regularmente, sempre considerando redução ou suspensão após estabilização clínica.",
-        "tags": [
-          "antipsicóticos",
-          "reavaliação"
-        ],
-        "priorities": [
-          "high-frequency",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Reavaliação",
-        "subtopic": "",
-        "type": "Conduta",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "Desprescrição é parte da boa prática em psicogeriatria.",
-        "trap": "Não renovar indefinidamente.",
-        "memoryHook": "",
-        "related": [
-          "Desprescrição"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0074",
-        "front": "Qual é o maior erro terapêutico nos BPSD?",
-        "back": "Tratar apenas o comportamento sem investigar a causa.",
-        "tags": [
-          "erro terapêutico",
-          "conduta"
-        ],
-        "priorities": [
-          "high-frequency",
-          "repeated-error",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Erro terapêutico",
-        "subtopic": "",
-        "type": "Pegadinha",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "Resume a principal armadilha clínica e de prova.",
-        "trap": "Todo BPSD novo exige investigação clínica.",
-        "memoryHook": "",
-        "related": [
-          "Delirium",
-          "Dor"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
-      },
-      {
-        "id": "PG-BPSD-0075",
-        "front": "Qual é o algoritmo terapêutico dos BPSD?",
-        "back": "1) Confirmar que não é delirium. 2) Identificar causa clínica. 3) Corrigir fatores ambientais. 4) Implementar medidas não farmacológicas. 5) Se houver sintomas graves ou risco, considerar tratamento farmacológico individualizado. 6) Reavaliar e retirar medicamentos quando possível.",
-        "tags": [
-          "algoritmo",
-          "tratamento",
-          "BPSD"
-        ],
-        "priorities": [
-          "high-frequency",
-          "dangerous"
-        ],
-        "priority": 5,
-        "importance": 5,
-        "specialty": "Psicogeriatria",
-        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
-        "topic": "Algoritmo terapêutico",
-        "subtopic": "",
-        "type": "Flashcard Integrador",
-        "examFrequency": {
-          "USP": 5,
-          "UNIFESP": 4,
-          "UNICAMP": 4,
-          "SUS-SP": 4
-        },
-        "whyExamAsks": "Integra todo o módulo em uma sequência de conduta para prova e prática clínica.",
-        "trap": "Antipsicótico entra tarde, não cedo.",
-        "memoryHook": "Delirium → clínica → ambiente → não farmacológico → fármaco se grave.",
-        "related": [
-          "Delirium",
-          "Antipsicóticos"
-        ],
-        "sources": [
-          "HC-FMUSP",
-          "Estratégia",
-          "MedReview",
-          "Diretrizes de Psicogeriatria"
-        ],
-        "questionOrigins": [],
-        "lastReviewedAt": null,
-        "nextReviewAt": null,
-        "easeFactor": 2.5,
-        "intervalDays": 0,
-        "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       }
     ]
   },
   {
     "file": "C:/Users/sulya/Downloads/psychogeriatricsFlashcards_pharmacology_module4.ts",
+    "fallbackFiles": [
+      "C:/Users/sulya/Downloads/psychogeriatricsFlashcards_pharmacology_expansion.ts"
+    ],
     "variable": "psychogeriatricsPharmacologyFlashcards",
+    "variableCandidates": [
+      "psychogeriatricsPharmacologyFlashcards",
+      "pharmacologyExpansionFlashcards",
+      "psychogeriatricsPharmacologyExpansionFlashcards"
+    ],
     "deckId": "pg-psicofarmacologia-geriatrica-122",
     "deckTitle": "Psicogeriatria - Psicofarmacologia Geriatrica",
     "module": "Psicofarmacologia Geriatrica",
+    "moduleOrder": 4,
+    "expectedPrefix": "PG-FARM",
+    "expectedStart": 69,
+    "expectedEnd": 120,
     "importance": 5,
     "cards": [
       {
@@ -13770,7 +13030,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0002",
@@ -13824,7 +13085,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0003",
@@ -13878,7 +13140,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0004",
@@ -13932,7 +13195,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0005",
@@ -13987,7 +13251,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0006",
@@ -14041,7 +13306,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0007",
@@ -14096,7 +13362,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0008",
@@ -14150,7 +13417,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0009",
@@ -14205,7 +13473,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0010",
@@ -14258,7 +13527,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0011",
@@ -14313,7 +13583,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0012",
@@ -14367,7 +13638,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0013",
@@ -14421,7 +13693,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0014",
@@ -14475,7 +13748,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0015",
@@ -14528,7 +13802,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0016",
@@ -14582,7 +13857,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0017",
@@ -14636,7 +13912,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0018",
@@ -14691,7 +13968,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0019",
@@ -14745,7 +14023,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0020",
@@ -14800,7 +14079,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0021",
@@ -14855,7 +14135,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0022",
@@ -14908,7 +14189,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0023",
@@ -14962,7 +14244,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0024",
@@ -15018,7 +14301,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0025",
@@ -15072,7 +14356,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0026",
@@ -15126,7 +14411,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0027",
@@ -15181,7 +14467,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0028",
@@ -15237,7 +14524,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0029",
@@ -15291,7 +14579,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0030",
@@ -15345,7 +14634,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0031",
@@ -15401,7 +14691,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0032",
@@ -15456,7 +14747,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0033",
@@ -15510,7 +14802,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0034",
@@ -15564,7 +14857,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0035",
@@ -15618,7 +14912,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0036",
@@ -15671,7 +14966,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0037",
@@ -15726,7 +15022,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0038",
@@ -15780,7 +15077,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0039",
@@ -15836,7 +15134,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0040",
@@ -15892,7 +15191,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0041",
@@ -15946,7 +15246,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0042",
@@ -15999,7 +15300,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0043",
@@ -16053,7 +15355,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0044",
@@ -16106,7 +15409,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0045",
@@ -16160,7 +15464,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0046",
@@ -16213,7 +15518,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0047",
@@ -16269,7 +15575,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0048",
@@ -16322,7 +15629,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0049",
@@ -16377,7 +15685,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0050",
@@ -16430,7 +15739,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0051",
@@ -16483,7 +15793,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0052",
@@ -16536,7 +15847,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0053",
@@ -16590,7 +15902,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0054",
@@ -16643,7 +15956,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0055",
@@ -16697,7 +16011,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0056",
@@ -16751,7 +16066,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0057",
@@ -16805,7 +16121,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0058",
@@ -16858,7 +16175,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0059",
@@ -16911,7 +16229,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0060",
@@ -16965,7 +16284,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0061",
@@ -17019,7 +16339,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0062",
@@ -17075,7 +16396,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0063",
@@ -17128,7 +16450,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0064",
@@ -17181,7 +16504,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0065",
@@ -17236,7 +16560,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0066",
@@ -17291,7 +16616,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0067",
@@ -17347,7 +16673,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0068",
@@ -17401,7 +16728,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0069",
@@ -17456,7 +16784,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0070",
@@ -17509,7 +16838,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0071",
@@ -17562,7 +16892,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0072",
@@ -17615,7 +16946,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0073",
@@ -17668,7 +17000,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0074",
@@ -17721,7 +17054,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0075",
@@ -17776,7 +17110,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0076",
@@ -17830,7 +17165,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0077",
@@ -17883,7 +17219,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0078",
@@ -17937,7 +17274,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0079",
@@ -17991,7 +17329,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0080",
@@ -18045,7 +17384,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0081",
@@ -18101,7 +17441,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0082",
@@ -18157,7 +17498,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0083",
@@ -18210,7 +17552,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0084",
@@ -18263,7 +17606,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0085",
@@ -18316,7 +17660,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0086",
@@ -18369,7 +17714,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0087",
@@ -18423,7 +17769,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0088",
@@ -18477,7 +17824,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0089",
@@ -18531,7 +17879,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0090",
@@ -18586,7 +17935,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0091",
@@ -18639,7 +17989,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0092",
@@ -18692,7 +18043,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0093",
@@ -18748,7 +18100,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0094",
@@ -18801,7 +18154,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0095",
@@ -18854,7 +18208,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0096",
@@ -18907,7 +18262,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0097",
@@ -18961,7 +18317,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0098",
@@ -19017,7 +18374,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0099",
@@ -19070,7 +18428,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0100",
@@ -19124,7 +18483,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0101",
@@ -19178,7 +18538,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0102",
@@ -19231,7 +18592,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0103",
@@ -19286,7 +18648,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0104",
@@ -19341,7 +18704,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0105",
@@ -19395,7 +18759,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0106",
@@ -19450,7 +18815,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0107",
@@ -19504,7 +18870,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0108",
@@ -19560,7 +18927,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0109",
@@ -19614,7 +18982,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0110",
@@ -19668,7 +19037,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0111",
@@ -19721,7 +19091,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0112",
@@ -19776,7 +19147,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0113",
@@ -19829,7 +19201,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0114",
@@ -19885,7 +19258,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0115",
@@ -19938,7 +19312,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0116",
@@ -19993,7 +19368,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0117",
@@ -20047,7 +19423,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0118",
@@ -20101,7 +19478,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0119",
@@ -20155,7 +19533,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0120",
@@ -20210,7 +19589,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0121",
@@ -20263,7 +19643,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-PFG-0122",
@@ -20318,7 +19699,3531 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
+      }
+    ]
+  },
+  {
+    "file": "C:/Users/sulya/Downloads/psychogeriatricsFlashcards_bpsd_module5.ts",
+    "variable": "bpsdModule5Flashcards",
+    "deckId": "pg-bpsd-75",
+    "deckTitle": "Psicogeriatria - Sintomas Neuropsiquiatricos das Demencias (BPSD)",
+    "module": "Sintomas Neuropsiquiatricos das Demencias (BPSD)",
+    "moduleOrder": 5,
+    "importance": 4,
+    "cards": [
+      {
+        "id": "PG-BPSD-0001",
+        "front": "O que significa a sigla BPSD?",
+        "back": "Behavioral and Psychological Symptoms of Dementia. Em português: sintomas neuropsiquiátricos das demências.",
+        "tags": [
+          "BPSD",
+          "conceito"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Conceito",
+        "subtopic": "",
+        "type": "Conceito",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "A sigla aparece em diretrizes e artigos, enquanto provas brasileiras podem usar 'sintomas comportamentais das demências'.",
+        "trap": "Não limitar BPSD apenas a agitação.",
+        "memoryHook": "BPSD = comportamento + psicologia nas demências.",
+        "related": [
+          "Demências"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0002",
+        "front": "Qual a frequência dos BPSD ao longo da evolução das demências?",
+        "back": "Aproximadamente 90% dos pacientes apresentarão pelo menos um sintoma neuropsiquiátrico durante a evolução da demência.",
+        "tags": [
+          "BPSD",
+          "epidemiologia"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Epidemiologia",
+        "subtopic": "",
+        "type": "Conceito",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "A banca cobra porque BPSD são parte esperada da evolução, não exceção.",
+        "trap": "Não considerar BPSD como evento raro.",
+        "memoryHook": "BPSD são regra, não exceção.",
+        "related": [
+          "Demências"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0003",
+        "front": "Os BPSD costumam surgir apenas nas fases avançadas das demências?",
+        "back": "Não. Podem surgir desde fases iniciais, a depender do tipo de demência.",
+        "tags": [
+          "BPSD",
+          "DFT",
+          "DCL"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Evolução",
+        "subtopic": "",
+        "type": "Conceito",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Questões usam sintomas comportamentais precoces para sugerir DFT ou DCL.",
+        "trap": "Na DFT e DCL, sintomas neuropsiquiátricos podem ser precoces.",
+        "memoryHook": "",
+        "related": [
+          "DFT",
+          "DCL"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0004",
+        "front": "Quais são os sintomas neuropsiquiátricos mais frequentes nas demências?",
+        "back": "Apatia, depressão, ansiedade, irritabilidade, agitação, agressividade, delírios e alucinações.",
+        "tags": [
+          "BPSD",
+          "sintomas"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Semiologia",
+        "subtopic": "",
+        "type": "Conceito",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Ajuda a reconhecer o espectro dos BPSD em casos clínicos.",
+        "trap": "Não restringir a psicose e agressividade.",
+        "memoryHook": "",
+        "related": [
+          "Demências"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0005",
+        "front": "Qual é o sintoma neuropsiquiátrico mais frequente na doença de Alzheimer?",
+        "back": "Apatia.",
+        "tags": [
+          "Alzheimer",
+          "apatia",
+          "BPSD"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Apatia",
+        "subtopic": "",
+        "type": "Conceito",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "A USP gosta de confundir apatia com depressão em Alzheimer.",
+        "trap": "Apatia não é sinônimo de depressão.",
+        "memoryHook": "Alzheimer: apatia aparece muito.",
+        "related": [
+          "Depressão no idoso"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0006",
+        "front": "Qual sintoma está mais associado à sobrecarga do cuidador?",
+        "back": "Agitação acompanhada de agressividade.",
+        "tags": [
+          "agitação",
+          "agressividade",
+          "cuidador"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Sobrecarga do cuidador",
+        "subtopic": "",
+        "type": "Prognóstico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "A banca explora impacto funcional e familiar dos BPSD.",
+        "trap": "Apatia é frequente, mas agitação/agressividade costuma sobrecarregar mais.",
+        "memoryHook": "",
+        "related": [
+          "Cuidador"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0007",
+        "front": "Qual sintoma mais aumenta o risco de institucionalização?",
+        "back": "Agitação grave persistente.",
+        "tags": [
+          "institucionalização",
+          "agitação"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Institucionalização",
+        "subtopic": "",
+        "type": "Prognóstico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "BPSD graves são motivo comum de perda de manejo domiciliar.",
+        "trap": "Não é apenas gravidade cognitiva que leva à institucionalização.",
+        "memoryHook": "",
+        "related": [
+          "Funcionalidade"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0008",
+        "front": "Qual deve ser a primeira etapa da avaliação diante de um novo BPSD?",
+        "back": "Investigar causa clínica reversível: delirium, dor, infecção, retenção urinária, fecaloma e efeitos adversos de medicamentos.",
+        "tags": [
+          "BPSD",
+          "conduta",
+          "delirium"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Avaliação inicial",
+        "subtopic": "",
+        "type": "Conduta",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "A banca cobra o erro de tratar comportamento como progressão da demência sem investigar causa clínica.",
+        "trap": "Nunca assumir progressão da demência de início.",
+        "memoryHook": "Novo comportamento = procurar causa.",
+        "related": [
+          "Delirium",
+          "Polifarmácia"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0009",
+        "front": "Qual é a principal causa de aparecimento súbito de BPSD?",
+        "back": "Delirium.",
+        "tags": [
+          "BPSD",
+          "delirium"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Delirium",
+        "subtopic": "",
+        "type": "Diferencial",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Mudança abrupta de comportamento em demência é uma pegadinha clássica.",
+        "trap": "Demência costuma evoluir lentamente.",
+        "memoryHook": "Súbito = delirium até prova em contrário.",
+        "related": [
+          "Delirium"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0010",
+        "front": "Quais são os principais desencadeantes ambientais dos BPSD?",
+        "back": "Excesso de estímulos, mudança de ambiente, privação do sono, isolamento, dor, fome e medo.",
+        "tags": [
+          "BPSD",
+          "ambiente"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Gatilhos ambientais",
+        "subtopic": "",
+        "type": "Conceito",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "A USP valoriza gatilhos simples antes de medicação.",
+        "trap": "Não medicalizar antes de ajustar ambiente.",
+        "memoryHook": "",
+        "related": [
+          "Cuidador",
+          "Ambiente"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0011",
+        "front": "Qual sintoma costuma ser confundido com depressão nas demências?",
+        "back": "Apatia.",
+        "tags": [
+          "apatia",
+          "depressão"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Apatia",
+        "subtopic": "",
+        "type": "Diferencial",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "A banca cobra a diferença entre perda de iniciativa e tristeza/sofrimento depressivo.",
+        "trap": "Apatia pode ocorrer sem humor deprimido.",
+        "memoryHook": "",
+        "related": [
+          "Depressão no idoso"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0012",
+        "front": "A apatia responde bem a antidepressivos?",
+        "back": "Não necessariamente. Na ausência de episódio depressivo maior, antidepressivos costumam ter benefício limitado.",
+        "tags": [
+          "apatia",
+          "antidepressivos"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Apatia",
+        "subtopic": "",
+        "type": "Tratamento",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Evita prescrição automática de antidepressivo para todo paciente apático.",
+        "trap": "Apatia isolada não é depressão.",
+        "memoryHook": "",
+        "related": [
+          "Depressão no idoso"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0013",
+        "front": "Qual BPSD é mais característico da demência frontotemporal?",
+        "back": "Desinibição comportamental.",
+        "tags": [
+          "DFT",
+          "desinibição"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "DFT",
+        "subtopic": "",
+        "type": "Diagnóstico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "É pista diagnóstica forte para DFT nas provas.",
+        "trap": "Não pensar primeiro em Alzheimer quando comportamento social muda precocemente.",
+        "memoryHook": "DFT = comportamento primeiro.",
+        "related": [
+          "Demência frontotemporal"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0014",
+        "front": "Qual BPSD é mais característico da demência com corpos de Lewy?",
+        "back": "Alucinações visuais recorrentes.",
+        "tags": [
+          "DCL",
+          "alucinações visuais"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "DCL",
+        "subtopic": "",
+        "type": "Diagnóstico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "É uma das associações mais cobradas em psicogeriatria.",
+        "trap": "Não confundir com delirium sem avaliar curso e atenção.",
+        "memoryHook": "DCL vê coisas cedo.",
+        "related": [
+          "Demência com Corpos de Lewy"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0015",
+        "front": "Qual BPSD é mais característico da doença de Alzheimer inicial?",
+        "back": "Apatia e depressão.",
+        "tags": [
+          "Alzheimer",
+          "apatia",
+          "depressão"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Alzheimer",
+        "subtopic": "",
+        "type": "Diagnóstico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Ajuda a diferenciar Alzheimer inicial de DFT e DCL.",
+        "trap": "Desinibição precoce sugere DFT; alucinação visual precoce sugere DCL.",
+        "memoryHook": "",
+        "related": [
+          "Alzheimer"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0016",
+        "front": "Agitação sempre significa agressividade?",
+        "back": "Não. Agitação pode ocorrer sem agressão física ou verbal.",
+        "tags": [
+          "agitação",
+          "agressividade"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Agitação",
+        "subtopic": "",
+        "type": "Conceito",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Provas diferenciam inquietação, agitação e agressividade.",
+        "trap": "Não usar os termos como sinônimos.",
+        "memoryHook": "",
+        "related": [
+          "Agressividade"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0017",
+        "front": "Qual sintoma costuma anteceder episódios de agressividade?",
+        "back": "Agitação.",
+        "tags": [
+          "agitação",
+          "agressividade"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Agressividade",
+        "subtopic": "",
+        "type": "Conceito",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Reconhecer agitação permite intervenção precoce antes da agressão.",
+        "trap": "Não esperar agressão para intervir no ambiente.",
+        "memoryHook": "",
+        "related": [
+          "Agitação"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0018",
+        "front": "Delírios nas demências costumam ser complexos?",
+        "back": "Não. Geralmente são simples, como roubo, abandono, infidelidade ou invasores.",
+        "tags": [
+          "delírios",
+          "psicose"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Delírios",
+        "subtopic": "",
+        "type": "Semiologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "A banca usa delírios simples para caracterizar psicose associada à demência.",
+        "trap": "Delírios muito elaborados sugerem avaliar outros diagnósticos.",
+        "memoryHook": "",
+        "related": [
+          "Psicose tardia"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0019",
+        "front": "Qual tipo de alucinação é mais comum nas demências?",
+        "back": "Visual.",
+        "tags": [
+          "alucinações visuais"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Alucinações",
+        "subtopic": "",
+        "type": "Semiologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Alucinação visual orienta diferenciais como DCL e delirium.",
+        "trap": "Alucinação auditiva isolada e sistematizada sugere avaliar psicose primária/tardia.",
+        "memoryHook": "",
+        "related": [
+          "DCL",
+          "Delirium"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0020",
+        "front": "Qual sintoma deve fazer pensar em demência com corpos de Lewy?",
+        "back": "Alucinações visuais recorrentes desde fases precoces.",
+        "tags": [
+          "DCL",
+          "alucinações"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "DCL",
+        "subtopic": "",
+        "type": "Diagnóstico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Associação clássica e repetida em provas.",
+        "trap": "Lembrar também de flutuação, parkinsonismo e transtorno comportamental do sono REM.",
+        "memoryHook": "",
+        "related": [
+          "DCL"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0021",
+        "front": "Qual BPSD é mais frequentemente negligenciado?",
+        "back": "Apatia.",
+        "tags": [
+          "apatia",
+          "BPSD"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Apatia",
+        "subtopic": "",
+        "type": "Semiologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "É comum, mas menos disruptiva que agitação e por isso pode passar despercebida.",
+        "trap": "Não confundir silêncio com estabilidade clínica.",
+        "memoryHook": "",
+        "related": [
+          "Apatia"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0022",
+        "front": "A gravidade dos BPSD acompanha obrigatoriamente a gravidade da demência?",
+        "back": "Não. BPSD podem surgir em qualquer fase e variar independentemente do comprometimento cognitivo.",
+        "tags": [
+          "BPSD",
+          "evolução"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Evolução",
+        "subtopic": "",
+        "type": "Conceito",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Evita raciocínio linear simplista em casos clínicos.",
+        "trap": "BPSD precoce pode apontar tipo específico de demência.",
+        "memoryHook": "",
+        "related": [
+          "Demências"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0023",
+        "front": "Os BPSD aceleram a perda funcional?",
+        "back": "Sim. Associam-se a maior dependência, institucionalização e sobrecarga do cuidador.",
+        "tags": [
+          "funcionalidade",
+          "BPSD"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Funcionalidade",
+        "subtopic": "",
+        "type": "Prognóstico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "A banca cobra consequências clínicas, não só diagnóstico.",
+        "trap": "BPSD são determinantes de cuidado e prognóstico.",
+        "memoryHook": "",
+        "related": [
+          "Funcionalidade",
+          "Cuidador"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0024",
+        "front": "Quem costuma perceber primeiro o aparecimento dos BPSD?",
+        "back": "O cuidador ou familiar próximo.",
+        "tags": [
+          "cuidador",
+          "história colateral"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Cuidador",
+        "subtopic": "",
+        "type": "Avaliação",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "História colateral é fundamental na avaliação psicogeriátrica.",
+        "trap": "Não depender apenas do relato do paciente com demência.",
+        "memoryHook": "",
+        "related": [
+          "Cuidador"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0025",
+        "front": "Qual frase resume a abordagem inicial dos BPSD?",
+        "back": "Mudança comportamental no idoso com demência deve ser considerada delirium ou causa clínica até prova em contrário.",
+        "tags": [
+          "BPSD",
+          "delirium",
+          "conduta"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Integração",
+        "subtopic": "",
+        "type": "Conceito integrador",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Sintetiza a principal armadilha das provas.",
+        "trap": "Não medicalizar comportamento novo sem investigação.",
+        "memoryHook": "Mudança súbita = delirium.",
+        "related": [
+          "Delirium"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0026",
+        "front": "Paciente de 82 anos com doença de Alzheimer apresenta agitação iniciada há 24 horas. Qual deve ser a primeira hipótese diagnóstica?",
+        "back": "Delirium até prova em contrário.",
+        "tags": [
+          "caso clínico",
+          "delirium",
+          "agitação"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Caso clínico",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "A USP explora o erro de atribuir piora súbita à progressão da demência.",
+        "trap": "Demências evoluem lentamente.",
+        "memoryHook": "",
+        "related": [
+          "Delirium"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0027",
+        "front": "Qual deve ser a primeira intervenção diante de um novo episódio de agitação em paciente com demência?",
+        "back": "Avaliar causas precipitantes: dor, retenção urinária, fecaloma, infecção, hipoxemia, desidratação e medicamentos recentes.",
+        "tags": [
+          "conduta",
+          "agitação"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Conduta inicial",
+        "subtopic": "",
+        "type": "Conduta",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Evita uso precoce de antipsicótico sem avaliação clínica.",
+        "trap": "Nunca iniciar antipsicótico antes dessa avaliação.",
+        "memoryHook": "",
+        "related": [
+          "Delirium",
+          "Polifarmácia"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0028",
+        "front": "Qual característica favorece delirium em vez de BPSD?",
+        "back": "Flutuação importante da atenção e da consciência.",
+        "tags": [
+          "delirium",
+          "atenção"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Delirium",
+        "subtopic": "",
+        "type": "Diferencial",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Diferencia mudança comportamental aguda de sintomas crônicos da demência.",
+        "trap": "Atenção é a chave do delirium.",
+        "memoryHook": "",
+        "related": [
+          "Delirium"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0029",
+        "front": "Qual característica favorece BPSD em vez de delirium?",
+        "back": "Progressão gradual, sem alteração importante da atenção.",
+        "tags": [
+          "BPSD",
+          "diferencial"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Diferencial",
+        "subtopic": "",
+        "type": "Diferencial",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "A banca usa temporalidade e atenção para separar diagnósticos.",
+        "trap": "BPSD não deve ter rebaixamento/flutuação marcante da consciência.",
+        "memoryHook": "",
+        "related": [
+          "Delirium"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0030",
+        "front": "Paciente com Alzheimer acredita repetidamente que objetos foram roubados. Qual é o BPSD mais provável?",
+        "back": "Delírio de roubo.",
+        "tags": [
+          "delírio de roubo",
+          "Alzheimer"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Delírios",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "É um dos delírios mais frequentes na doença de Alzheimer.",
+        "trap": "Não confundir com erro de memória simples quando há convicção delirante.",
+        "memoryHook": "",
+        "related": [
+          "Alzheimer"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0031",
+        "front": "Idosa com demência passa a acusar o marido de infidelidade sem evidências. Qual sintoma neuropsiquiátrico está presente?",
+        "back": "Delírio, especialmente delírio de ciúmes.",
+        "tags": [
+          "delírio",
+          "ciúmes"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Delírios",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Provas exploram exemplos concretos de psicose na demência.",
+        "trap": "Diferenciar delírio de suspeita baseada em fatos reais.",
+        "memoryHook": "",
+        "related": [
+          "Psicose tardia"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0032",
+        "front": "Como diferenciar apatia de depressão?",
+        "back": "Apatia: perda de iniciativa, pouca expressão emocional e sofrimento subjetivo discreto. Depressão: tristeza, culpa, desesperança e sofrimento emocional.",
+        "tags": [
+          "apatia",
+          "depressão"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Apatia x depressão",
+        "subtopic": "",
+        "type": "Diferencial",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Muito cobrado por mudar conduta terapêutica.",
+        "trap": "Antidepressivo não resolve apatia isolada.",
+        "memoryHook": "Apatia = iniciativa; depressão = sofrimento.",
+        "related": [
+          "Depressão no idoso"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0033",
+        "front": "Paciente permanece sentado o dia inteiro, sem iniciativa, mas nega tristeza. Qual BPSD é mais provável?",
+        "back": "Apatia.",
+        "tags": [
+          "apatia",
+          "caso clínico"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Apatia",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Treina reconhecimento de apatia sem sintomas afetivos depressivos.",
+        "trap": "Não diagnosticar depressão apenas por inatividade.",
+        "memoryHook": "",
+        "related": [
+          "Apatia"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0034",
+        "front": "Paciente apresenta alucinações visuais recorrentes desde o início da demência. Qual diagnóstico deve ser considerado?",
+        "back": "Demência com Corpos de Lewy.",
+        "tags": [
+          "DCL",
+          "alucinação visual"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "DCL",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Alucinação visual precoce é pista diagnóstica forte.",
+        "trap": "Se houver flutuação, parkinsonismo e RBD, reforça DCL.",
+        "memoryHook": "",
+        "related": [
+          "DCL"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0035",
+        "front": "Paciente com desinibição social, impulsividade e hiperoralidade. Qual demência é mais provável?",
+        "back": "Demência frontotemporal.",
+        "tags": [
+          "DFT",
+          "hiperoralidade",
+          "desinibição"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "DFT",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Comportamento social precoce é marca da variante comportamental.",
+        "trap": "Não confundir com mania sem avaliar curso neurodegenerativo.",
+        "memoryHook": "",
+        "related": [
+          "DFT",
+          "Bipolaridade"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0036",
+        "front": "Qual BPSD costuma aparecer precocemente na demência frontotemporal?",
+        "back": "Desinibição comportamental.",
+        "tags": [
+          "DFT",
+          "desinibição"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "DFT",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "É uma das pistas mais frequentes de DFT em prova.",
+        "trap": "Alzheimer inicial costuma começar por memória episódica, não por desinibição.",
+        "memoryHook": "",
+        "related": [
+          "DFT"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0037",
+        "front": "Paciente começa a manipular repetidamente objetos sem finalidade. Como é chamado esse comportamento?",
+        "back": "Comportamento motor aberrante.",
+        "tags": [
+          "comportamento motor aberrante"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Comportamento motor",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Provas descrevem o sintoma sem nomeá-lo.",
+        "trap": "Diferenciar de compulsão primária pelo contexto de demência.",
+        "memoryHook": "",
+        "related": [
+          "DFT"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0038",
+        "front": "O wandering é considerado um BPSD?",
+        "back": "Sim. Consiste em deambulação persistente e sem objetivo.",
+        "tags": [
+          "wandering",
+          "deambulação"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Wandering",
+        "subtopic": "",
+        "type": "Conceito",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema prático em segurança domiciliar e institucionalização.",
+        "trap": "Não confundir com marcha por acatisia ou delirium.",
+        "memoryHook": "",
+        "related": [
+          "Segurança"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0039",
+        "front": "Qual comportamento aumenta o risco de fuga do domicílio?",
+        "back": "Wandering.",
+        "tags": [
+          "wandering",
+          "fuga"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Wandering",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "A banca pode cobrar medidas de segurança e orientação familiar.",
+        "trap": "Risco é ambiental e funcional, não apenas psiquiátrico.",
+        "memoryHook": "",
+        "related": [
+          "Segurança",
+          "Cuidador"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0040",
+        "front": "Paciente torna-se extremamente agitado sempre ao final da tarde. Como esse fenômeno é conhecido?",
+        "back": "Síndrome do pôr do sol, ou sundowning.",
+        "tags": [
+          "sundowning",
+          "pôr do sol"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Sundowning",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Fenômeno clássico nas demências e frequentemente confundido com delirium.",
+        "trap": "Não é sinônimo de delirium.",
+        "memoryHook": "",
+        "related": [
+          "Sono",
+          "Delirium"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0041",
+        "front": "Síndrome do pôr do sol é sinônimo de delirium?",
+        "back": "Não. É uma piora vespertina dos sintomas comportamentais da demência.",
+        "tags": [
+          "sundowning",
+          "delirium"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Sundowning",
+        "subtopic": "",
+        "type": "Diferencial",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Diferencia flutuação comportamental crônica de síndrome confusional aguda.",
+        "trap": "Se houver início agudo e déficit atencional, investigar delirium.",
+        "memoryHook": "",
+        "related": [
+          "Delirium"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0042",
+        "front": "Paciente apresenta gritos repetitivos durante toda a noite sem causa clínica evidente. Esse comportamento faz parte dos BPSD?",
+        "back": "Sim. Vocalizações persistentes fazem parte dos sintomas comportamentais.",
+        "tags": [
+          "vocalizações",
+          "BPSD"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Vocalizações",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "A banca usa descrições não técnicas de sintomas comportamentais.",
+        "trap": "Sempre investigar dor, desconforto e delirium antes de concluir BPSD.",
+        "memoryHook": "",
+        "related": [
+          "Dor",
+          "Delirium"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0043",
+        "front": "Ansiedade é considerada BPSD?",
+        "back": "Sim. É frequente, especialmente nas fases leves e moderadas.",
+        "tags": [
+          "ansiedade",
+          "BPSD"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Ansiedade",
+        "subtopic": "",
+        "type": "Conceito",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Nem todo BPSD é agressividade ou psicose.",
+        "trap": "Ansiedade pode aparecer como dependência excessiva do cuidador.",
+        "memoryHook": "",
+        "related": [
+          "Ansiedade no idoso"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0044",
+        "front": "Paciente passa a seguir continuamente o cuidador pela casa. Esse comportamento pode representar o quê?",
+        "back": "Ansiedade de separação associada à demência.",
+        "tags": [
+          "ansiedade",
+          "cuidador"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Ansiedade",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Mostra manifestação prática de ansiedade em demência.",
+        "trap": "Não interpretar automaticamente como manipulação voluntária.",
+        "memoryHook": "",
+        "related": [
+          "Cuidador",
+          "Ansiedade"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0045",
+        "front": "Paciente torna-se agressivo apenas durante o banho. Qual deve ser a primeira hipótese?",
+        "back": "Desencadeante ambiental, medo, dor ou desconforto durante o cuidado.",
+        "tags": [
+          "banho",
+          "agressividade",
+          "gatilho"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Gatilhos",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "A banca cobra análise funcional do comportamento antes de medicação.",
+        "trap": "Antipsicótico não é primeira resposta para gatilho previsível.",
+        "memoryHook": "",
+        "related": [
+          "Cuidador",
+          "Ambiente"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0046",
+        "front": "Mudança de ambiente pode precipitar BPSD?",
+        "back": "Sim. Internações e mudanças de residência frequentemente desencadeiam sintomas.",
+        "tags": [
+          "mudança de ambiente",
+          "BPSD"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Ambiente",
+        "subtopic": "",
+        "type": "Conduta",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Ambiente é fator precipitante muito comum e modificável.",
+        "trap": "Não atribuir automaticamente à piora estrutural da demência.",
+        "memoryHook": "",
+        "related": [
+          "Ambiente"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0047",
+        "front": "Qual BPSD está mais relacionado ao risco de lesões físicas?",
+        "back": "Agressividade física.",
+        "tags": [
+          "agressividade",
+          "risco"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Agressividade",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Ajuda a decidir gravidade e necessidade de intervenção rápida.",
+        "trap": "Risco físico pode justificar tratamento farmacológico se medidas iniciais falharem ou forem inviáveis.",
+        "memoryHook": "",
+        "related": [
+          "Segurança"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0048",
+        "front": "Paciente com demência passa a comer objetos não alimentares. Qual diagnóstico deve ser lembrado?",
+        "back": "Hiperoralidade, mais típica da demência frontotemporal.",
+        "tags": [
+          "hiperoralidade",
+          "DFT"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Hiperoralidade",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Hiperoralidade é pista forte de DFT.",
+        "trap": "Não confundir com alteração alimentar inespecífica.",
+        "memoryHook": "",
+        "related": [
+          "DFT"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0049",
+        "front": "Qual BPSD costuma produzir maior sobrecarga emocional ao cuidador?",
+        "back": "Agitação associada à agressividade.",
+        "tags": [
+          "cuidador",
+          "agressividade"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Cuidador",
+        "subtopic": "",
+        "type": "Caso Clínico",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Questões frequentemente abordam impacto no cuidador e institucionalização.",
+        "trap": "Apatia é frequente, mas agressividade costuma ser mais disruptiva.",
+        "memoryHook": "",
+        "related": [
+          "Cuidador"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0050",
+        "front": "Qual é o algoritmo mental para avaliar um novo BPSD?",
+        "back": "1) Confirmar se houve mudança aguda. 2) Excluir delirium. 3) Procurar causa clínica. 4) Avaliar fatores ambientais. 5) Considerar progressão da demência e tratamento específico.",
+        "tags": [
+          "algoritmo",
+          "conduta"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Algoritmo diagnóstico",
+        "subtopic": "",
+        "type": "Flashcard Integrador",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Sintetiza o raciocínio mais cobrado em prova.",
+        "trap": "Pular direto para antipsicótico é erro clássico.",
+        "memoryHook": "Novo BPSD: delirium, clínica, ambiente, depois remédio.",
+        "related": [
+          "Delirium",
+          "Ambiente"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0051",
+        "front": "Qual deve ser a primeira linha de tratamento para BPSD?",
+        "back": "Intervenções não farmacológicas individualizadas: identificar gatilhos, orientar cuidador, adequar ambiente, tratar dor e manter rotina.",
+        "tags": [
+          "tratamento",
+          "não farmacológico"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Tratamento não farmacológico",
+        "subtopic": "",
+        "type": "Conduta",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "A banca cobra que antipsicótico não é primeira linha para a maioria dos BPSD.",
+        "trap": "Não medicalizar antes de individualizar o cuidado.",
+        "memoryHook": "",
+        "related": [
+          "Cuidador",
+          "Ambiente"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0052",
+        "front": "Quando está indicado tratamento farmacológico dos BPSD?",
+        "back": "Quando houver sofrimento importante, risco de auto/heteroagressão, prejuízo importante ao cuidado ou falha das medidas não farmacológicas.",
+        "tags": [
+          "tratamento farmacológico",
+          "risco"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Tratamento farmacológico",
+        "subtopic": "",
+        "type": "Conduta",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Define quando o risco da medicação pode ser aceitável.",
+        "trap": "Sintoma leve sem risco geralmente não justifica antipsicótico.",
+        "memoryHook": "",
+        "related": [
+          "Antipsicóticos"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0053",
+        "front": "Todo paciente agitado deve receber antipsicótico?",
+        "back": "Não. Primeiro excluir delirium, tratar causas clínicas e realizar medidas ambientais.",
+        "tags": [
+          "antipsicóticos",
+          "agitação"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Antipsicóticos",
+        "subtopic": "",
+        "type": "Conduta",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Pergunta clássica de conduta em prova.",
+        "trap": "Agitação não é sinônimo de indicação medicamentosa.",
+        "memoryHook": "",
+        "related": [
+          "Delirium"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0054",
+        "front": "Qual é o principal risco dos antipsicóticos em pacientes com demência?",
+        "back": "Aumento da mortalidade. Também aumentam risco de AVC, quedas, pneumonia, sedação e sintomas extrapiramidais.",
+        "tags": [
+          "antipsicóticos",
+          "mortalidade",
+          "AVC"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Antipsicóticos",
+        "subtopic": "",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Risco de mortalidade é alerta central em diretrizes e provas.",
+        "trap": "Risperidona pode ter evidência, mas não é isenta de risco.",
+        "memoryHook": "",
+        "related": [
+          "Beers",
+          "Psicofarmacologia"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0055",
+        "front": "Os antipsicóticos devem ser prescritos por tempo indeterminado nos BPSD?",
+        "back": "Não. Usar a menor dose, pelo menor tempo possível, com reavaliação frequente e tentativa de retirada quando possível.",
+        "tags": [
+          "antipsicóticos",
+          "desprescrição"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Antipsicóticos",
+        "subtopic": "",
+        "type": "Conduta",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "A banca valoriza desprescrição e segurança no idoso.",
+        "trap": "Não manter por inércia após estabilização.",
+        "memoryHook": "",
+        "related": [
+          "Desprescrição"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0056",
+        "front": "Qual antipsicótico apresenta maior evidência para agitação na doença de Alzheimer?",
+        "back": "Risperidona.",
+        "tags": [
+          "risperidona",
+          "Alzheimer",
+          "agitação"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Antipsicóticos",
+        "subtopic": "",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "É uma associação frequente em tratamento de BPSD.",
+        "trap": "Apesar da evidência, há risco de AVC e mortalidade.",
+        "memoryHook": "",
+        "related": [
+          "Alzheimer",
+          "Beers"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0057",
+        "front": "Qual antipsicótico costuma ser preferido quando existe parkinsonismo?",
+        "back": "Quetiapina.",
+        "tags": [
+          "quetiapina",
+          "parkinsonismo"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Parkinsonismo",
+        "subtopic": "",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Menor bloqueio dopaminérgico é útil em parkinsonismo e DCL, embora a decisão exija cautela.",
+        "trap": "Evitar haloperidol.",
+        "memoryHook": "",
+        "related": [
+          "DCL",
+          "Parkinson"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0058",
+        "front": "Qual antipsicótico deve ser evitado na demência com corpos de Lewy?",
+        "back": "Haloperidol. Também é necessária grande cautela com outros bloqueadores dopaminérgicos.",
+        "tags": [
+          "DCL",
+          "haloperidol",
+          "neurolépticos"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "DCL",
+        "subtopic": "",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Hipersensibilidade a neurolépticos na DCL é clássico da USP.",
+        "trap": "Antipsicótico pode piorar gravemente o quadro motor e clínico.",
+        "memoryHook": "",
+        "related": [
+          "DCL"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0059",
+        "front": "Por que pacientes com DCL apresentam maior risco com antipsicóticos?",
+        "back": "Por hipersensibilidade a bloqueadores dopaminérgicos, podendo evoluir com rigidez grave, acinesia e síndrome neuroléptica maligna.",
+        "tags": [
+          "DCL",
+          "antipsicóticos"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "DCL",
+        "subtopic": "",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "É um dos pontos mais perigosos de prova e prática clínica.",
+        "trap": "Não tratar alucinação visual de DCL como psicose comum.",
+        "memoryHook": "",
+        "related": [
+          "DCL",
+          "Síndrome neuroléptica maligna"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0060",
+        "front": "Qual deve ser a primeira medida diante de agitação leve em demência?",
+        "back": "Intervenções ambientais e orientação ao cuidador.",
+        "tags": [
+          "agitação leve",
+          "conduta"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Agitação leve",
+        "subtopic": "",
+        "type": "Conduta",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Evita sobretratamento farmacológico.",
+        "trap": "Agitação leve não exige medicação automática.",
+        "memoryHook": "",
+        "related": [
+          "Ambiente"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0061",
+        "front": "Quais intervenções ambientais possuem melhor evidência nos BPSD?",
+        "back": "Rotina estruturada, ambiente calmo, redução de ruídos, iluminação adequada, presença familiar e atividades significativas.",
+        "tags": [
+          "ambiente",
+          "rotina"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Ambiente",
+        "subtopic": "",
+        "type": "Tratamento",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Bancas cobram medidas simples e efetivas.",
+        "trap": "Ambiente desorganizado pode manter o sintoma.",
+        "memoryHook": "",
+        "related": [
+          "Cuidador"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0062",
+        "front": "A musicoterapia possui benefício nos BPSD?",
+        "back": "Sim. Pode reduzir ansiedade, agitação e irritabilidade em alguns pacientes.",
+        "tags": [
+          "musicoterapia"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Musicoterapia",
+        "subtopic": "",
+        "type": "Tratamento",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Mostra que intervenções não farmacológicas não são apenas 'apoio', mas tratamento.",
+        "trap": "Não substitui avaliação clínica de sintomas novos.",
+        "memoryHook": "",
+        "related": [
+          "Tratamento não farmacológico"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0063",
+        "front": "Atividade física pode reduzir BPSD?",
+        "back": "Sim. Pode ajudar especialmente em agitação, ansiedade e apatia.",
+        "tags": [
+          "atividade física",
+          "apatia",
+          "agitação"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Atividade física",
+        "subtopic": "",
+        "type": "Tratamento",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Integra cuidado funcional e comportamental.",
+        "trap": "Deve ser adaptada à capacidade do idoso.",
+        "memoryHook": "",
+        "related": [
+          "Grandes Síndromes Geriátricas"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0064",
+        "front": "Treinamento do cuidador reduz BPSD?",
+        "back": "Sim. É uma das intervenções com melhor custo-benefício.",
+        "tags": [
+          "cuidador",
+          "treinamento"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Cuidador",
+        "subtopic": "",
+        "type": "Tratamento",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "A USP valoriza orientação ao cuidador como parte do tratamento.",
+        "trap": "Não tratar apenas o paciente; tratar o sistema de cuidado.",
+        "memoryHook": "",
+        "related": [
+          "Cuidador"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0065",
+        "front": "Os inibidores da acetilcolinesterase podem melhorar BPSD?",
+        "back": "Sim, especialmente apatia, alucinações e sintomas leves em alguns pacientes.",
+        "tags": [
+          "donepezila",
+          "rivastigmina",
+          "galantamina"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Anticolinesterásicos",
+        "subtopic": "",
+        "type": "Tratamento",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Liga tratamento cognitivo a sintomas comportamentais, especialmente em DCL.",
+        "trap": "Resposta é modesta e não substitui manejo ambiental.",
+        "memoryHook": "",
+        "related": [
+          "Alzheimer",
+          "DCL"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0066",
+        "front": "A memantina pode reduzir agitação?",
+        "back": "Pode apresentar benefício modesto em alguns pacientes com Alzheimer moderado ou grave.",
+        "tags": [
+          "memantina",
+          "agitação"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Memantina",
+        "subtopic": "",
+        "type": "Tratamento",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Cai como alternativa mais segura que antipsicóticos em cenários selecionados.",
+        "trap": "Não esperar resposta robusta em todos os pacientes.",
+        "memoryHook": "",
+        "related": [
+          "Alzheimer"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0067",
+        "front": "Os antidepressivos podem ser utilizados para tratar alguns BPSD?",
+        "back": "Sim, especialmente quando predominam depressão, ansiedade ou irritabilidade.",
+        "tags": [
+          "antidepressivos",
+          "ISRS"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Antidepressivos",
+        "subtopic": "",
+        "type": "Tratamento",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Diferencia tratamento de sintomas afetivos de tratamento de psicose/agressividade grave.",
+        "trap": "Não usar antidepressivo para todo BPSD.",
+        "memoryHook": "",
+        "related": [
+          "Depressão",
+          "Ansiedade"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0068",
+        "front": "Qual ISRS possui melhor evidência para agitação em pacientes com demência?",
+        "back": "Citalopram.",
+        "tags": [
+          "citalopram",
+          "QT",
+          "agitação"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "ISRS",
+        "subtopic": "",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Tema de prova por ser alternativa aos antipsicóticos em alguns casos.",
+        "trap": "Monitorar QT e efeitos adversos em idosos.",
+        "memoryHook": "",
+        "related": [
+          "QT",
+          "Psicofarmacologia"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0069",
+        "front": "Quando considerar trazodona em BPSD?",
+        "back": "Quando predominam insônia, agitação noturna ou ansiedade.",
+        "tags": [
+          "trazodona",
+          "insônia"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Trazodona",
+        "subtopic": "",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Muito usada em prática clínica e cobrada como opção sedativa menos problemática que benzodiazepínicos.",
+        "trap": "Monitorar sedação, hipotensão e quedas.",
+        "memoryHook": "",
+        "related": [
+          "Sono",
+          "Quedas"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0070",
+        "front": "Valproato deve ser utilizado rotineiramente para BPSD?",
+        "back": "Não. Estudos mostram benefício limitado e maior risco de efeitos adversos.",
+        "tags": [
+          "valproato",
+          "BPSD"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Valproato",
+        "subtopic": "",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Muito cobrado por ser prescrito na prática, mas não recomendado rotineiramente.",
+        "trap": "Não confundir controle de impulsividade em outros contextos com indicação em BPSD.",
+        "memoryHook": "",
+        "related": [
+          "Psicofarmacologia"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0071",
+        "front": "Benzodiazepínicos devem ser utilizados rotineiramente em BPSD?",
+        "back": "Não. Aumentam quedas, delirium, sedação e prejuízo cognitivo.",
+        "tags": [
+          "benzodiazepínicos",
+          "quedas",
+          "delirium"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Benzodiazepínicos",
+        "subtopic": "",
+        "type": "Farmacologia",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Cai junto com critérios de Beers e segurança do idoso.",
+        "trap": "Podem piorar exatamente o quadro que se deseja tratar.",
+        "memoryHook": "",
+        "related": [
+          "Beers",
+          "Delirium"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0072",
+        "front": "Qual deve ser o objetivo do tratamento dos BPSD?",
+        "back": "Melhorar segurança, qualidade de vida, conforto e funcionalidade; não eliminar completamente todos os sintomas.",
+        "tags": [
+          "objetivos",
+          "tratamento"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Objetivo terapêutico",
+        "subtopic": "",
+        "type": "Conduta",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Evita metas irreais que levam a sedação excessiva.",
+        "trap": "Paciente 'quieto' por sedação não é necessariamente paciente melhor.",
+        "memoryHook": "",
+        "related": [
+          "Funcionalidade"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0073",
+        "front": "Quando reavaliar necessidade do antipsicótico nos BPSD?",
+        "back": "Regularmente, sempre considerando redução ou suspensão após estabilização clínica.",
+        "tags": [
+          "antipsicóticos",
+          "reavaliação"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Reavaliação",
+        "subtopic": "",
+        "type": "Conduta",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Desprescrição é parte da boa prática em psicogeriatria.",
+        "trap": "Não renovar indefinidamente.",
+        "memoryHook": "",
+        "related": [
+          "Desprescrição"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0074",
+        "front": "Qual é o maior erro terapêutico nos BPSD?",
+        "back": "Tratar apenas o comportamento sem investigar a causa.",
+        "tags": [
+          "erro terapêutico",
+          "conduta"
+        ],
+        "priorities": [
+          "high-frequency",
+          "repeated-error",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Erro terapêutico",
+        "subtopic": "",
+        "type": "Pegadinha",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Resume a principal armadilha clínica e de prova.",
+        "trap": "Todo BPSD novo exige investigação clínica.",
+        "memoryHook": "",
+        "related": [
+          "Delirium",
+          "Dor"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
+      },
+      {
+        "id": "PG-BPSD-0075",
+        "front": "Qual é o algoritmo terapêutico dos BPSD?",
+        "back": "1) Confirmar que não é delirium. 2) Identificar causa clínica. 3) Corrigir fatores ambientais. 4) Implementar medidas não farmacológicas. 5) Se houver sintomas graves ou risco, considerar tratamento farmacológico individualizado. 6) Reavaliar e retirar medicamentos quando possível.",
+        "tags": [
+          "algoritmo",
+          "tratamento",
+          "BPSD"
+        ],
+        "priorities": [
+          "high-frequency",
+          "dangerous"
+        ],
+        "priority": 5,
+        "importance": 5,
+        "specialty": "Psicogeriatria",
+        "module": "Sintomas Neuropsiquiátricos das Demências (BPSD)",
+        "topic": "Algoritmo terapêutico",
+        "subtopic": "",
+        "type": "Flashcard Integrador",
+        "examFrequency": {
+          "USP": 5,
+          "UNIFESP": 4,
+          "UNICAMP": 4,
+          "SUS-SP": 4
+        },
+        "whyExamAsks": "Integra todo o módulo em uma sequência de conduta para prova e prática clínica.",
+        "trap": "Antipsicótico entra tarde, não cedo.",
+        "memoryHook": "Delirium → clínica → ambiente → não farmacológico → fármaco se grave.",
+        "related": [
+          "Delirium",
+          "Antipsicóticos"
+        ],
+        "sources": [
+          "HC-FMUSP",
+          "Estratégia",
+          "MedReview",
+          "Diretrizes de Psicogeriatria"
+        ],
+        "questionOrigins": [],
+        "lastReviewedAt": null,
+        "nextReviewAt": null,
+        "easeFactor": 2.5,
+        "intervalDays": 0,
+        "repetitions": 0,
+        "lapses": 0,
+        "updatedAt": null
       }
     ]
   },
@@ -20328,6 +23233,7 @@
     "deckId": "pg-humor-ansiedade-idoso-75",
     "deckTitle": "Psicogeriatria - Humor e Ansiedade no Idoso",
     "module": "Transtornos do Humor e Ansiedade no Idoso",
+    "moduleOrder": 6,
     "importance": 4,
     "cards": [
       {
@@ -20373,7 +23279,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0002",
@@ -20418,7 +23325,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0003",
@@ -20464,7 +23372,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0004",
@@ -20510,7 +23419,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0005",
@@ -20555,7 +23465,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0006",
@@ -20600,7 +23511,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0007",
@@ -20646,7 +23558,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0008",
@@ -20691,7 +23604,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0009",
@@ -20737,7 +23651,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0010",
@@ -20783,7 +23698,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0011",
@@ -20829,7 +23745,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0012",
@@ -20875,7 +23792,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0013",
@@ -20921,7 +23839,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0014",
@@ -20968,7 +23887,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0015",
@@ -21015,7 +23935,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0016",
@@ -21060,7 +23981,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0017",
@@ -21105,7 +24027,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0018",
@@ -21152,7 +24075,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0019",
@@ -21198,7 +24122,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0020",
@@ -21243,7 +24168,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0021",
@@ -21288,7 +24214,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0022",
@@ -21334,7 +24261,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0023",
@@ -21379,7 +24307,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0024",
@@ -21424,7 +24353,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0025",
@@ -21471,7 +24401,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0026",
@@ -21516,7 +24447,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0027",
@@ -21561,7 +24493,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0028",
@@ -21606,7 +24539,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0029",
@@ -21652,7 +24586,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0030",
@@ -21698,7 +24633,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0031",
@@ -21745,7 +24681,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0032",
@@ -21790,7 +24727,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0033",
@@ -21836,7 +24774,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0034",
@@ -21881,7 +24820,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0035",
@@ -21927,7 +24867,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0036",
@@ -21972,7 +24913,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0037",
@@ -22018,7 +24960,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0038",
@@ -22064,7 +25007,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0039",
@@ -22109,7 +25053,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0040",
@@ -22155,7 +25100,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0041",
@@ -22201,7 +25147,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0042",
@@ -22247,7 +25194,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0043",
@@ -22292,7 +25240,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0044",
@@ -22337,7 +25286,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0045",
@@ -22382,7 +25332,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0046",
@@ -22427,7 +25378,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0047",
@@ -22473,7 +25425,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0048",
@@ -22518,7 +25471,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0049",
@@ -22565,7 +25519,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0050",
@@ -22613,7 +25568,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0051",
@@ -22659,7 +25615,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0052",
@@ -22705,7 +25662,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0053",
@@ -22750,7 +25708,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0054",
@@ -22795,7 +25754,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0055",
@@ -22840,7 +25800,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0056",
@@ -22885,7 +25846,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0057",
@@ -22930,7 +25892,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0058",
@@ -22976,7 +25939,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0059",
@@ -23021,7 +25985,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0060",
@@ -23067,7 +26032,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0061",
@@ -23112,7 +26078,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0062",
@@ -23157,7 +26124,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0063",
@@ -23203,7 +26171,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0064",
@@ -23249,7 +26218,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0065",
@@ -23294,7 +26264,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0066",
@@ -23341,7 +26312,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0067",
@@ -23386,7 +26358,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0068",
@@ -23431,7 +26404,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0069",
@@ -23477,7 +26451,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0070",
@@ -23522,7 +26497,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0071",
@@ -23568,7 +26544,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0072",
@@ -23614,7 +26591,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0073",
@@ -23660,7 +26638,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0074",
@@ -23706,7 +26685,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-MH-0075",
@@ -23754,7 +26734,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       }
     ]
   },
@@ -23764,6 +26745,7 @@
     "deckId": "pg-sindromes-geriatricas-75",
     "deckTitle": "Psicogeriatria - Grandes Sindromes Geriatricas",
     "module": "Grandes Sindromes Geriatricas e Interface com a Psicogeriatria",
+    "moduleOrder": 7,
     "importance": 3,
     "cards": [
       {
@@ -23807,7 +26789,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0002",
@@ -23850,7 +26833,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0003",
@@ -23893,7 +26877,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0004",
@@ -23936,7 +26921,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0005",
@@ -23979,7 +26965,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0006",
@@ -24022,7 +27009,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0007",
@@ -24065,7 +27053,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0008",
@@ -24108,7 +27097,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0009",
@@ -24151,7 +27141,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0010",
@@ -24194,7 +27185,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0011",
@@ -24237,7 +27229,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0012",
@@ -24280,7 +27273,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0013",
@@ -24323,7 +27317,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0014",
@@ -24366,7 +27361,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0015",
@@ -24409,7 +27405,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0016",
@@ -24452,7 +27449,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0017",
@@ -24495,7 +27493,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0018",
@@ -24538,7 +27537,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0019",
@@ -24581,7 +27581,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0020",
@@ -24624,7 +27625,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0021",
@@ -24667,7 +27669,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0022",
@@ -24710,7 +27713,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0023",
@@ -24753,7 +27757,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0024",
@@ -24796,7 +27801,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0025",
@@ -24839,7 +27845,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0026",
@@ -24882,7 +27889,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0027",
@@ -24925,7 +27933,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0028",
@@ -24968,7 +27977,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0029",
@@ -25011,7 +28021,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0030",
@@ -25054,7 +28065,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0031",
@@ -25097,7 +28109,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0032",
@@ -25140,7 +28153,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0033",
@@ -25183,7 +28197,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0034",
@@ -25226,7 +28241,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0035",
@@ -25269,7 +28285,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0036",
@@ -25312,7 +28329,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0037",
@@ -25355,7 +28373,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0038",
@@ -25398,7 +28417,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0039",
@@ -25441,7 +28461,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0040",
@@ -25484,7 +28505,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0041",
@@ -25527,7 +28549,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0042",
@@ -25570,7 +28593,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0043",
@@ -25613,7 +28637,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0044",
@@ -25656,7 +28681,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0045",
@@ -25699,7 +28725,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0046",
@@ -25742,7 +28769,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0047",
@@ -25785,7 +28813,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0048",
@@ -25828,7 +28857,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0049",
@@ -25871,7 +28901,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0050",
@@ -25914,7 +28945,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0051",
@@ -25957,7 +28989,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0052",
@@ -26000,7 +29033,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0053",
@@ -26043,7 +29077,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0054",
@@ -26086,7 +29121,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0055",
@@ -26129,7 +29165,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0056",
@@ -26172,7 +29209,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0057",
@@ -26215,7 +29253,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0058",
@@ -26258,7 +29297,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0059",
@@ -26301,7 +29341,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0060",
@@ -26344,7 +29385,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0061",
@@ -26387,7 +29429,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0062",
@@ -26430,7 +29473,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0063",
@@ -26473,7 +29517,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0064",
@@ -26516,7 +29561,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0065",
@@ -26559,7 +29605,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0066",
@@ -26602,7 +29649,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0067",
@@ -26645,7 +29693,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0068",
@@ -26688,7 +29737,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0069",
@@ -26731,7 +29781,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0070",
@@ -26774,7 +29825,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0071",
@@ -26817,7 +29869,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0072",
@@ -26860,7 +29913,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0073",
@@ -26903,7 +29957,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0074",
@@ -26946,7 +30001,8 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       },
       {
         "id": "PG-GER-0075",
@@ -26989,32 +30045,83 @@
         "easeFactor": 2.5,
         "intervalDays": 0,
         "repetitions": 0,
-        "lapses": 0
+        "lapses": 0,
+        "updatedAt": null
       }
     ]
   }
 ];
+
+  function newerCard(existing, incoming) {
+    if (!existing) return incoming;
+    const incomingUpdatedAt = incoming?.updatedAt ? Date.parse(incoming.updatedAt) : NaN;
+    const existingUpdatedAt = existing?.updatedAt ? Date.parse(existing.updatedAt) : NaN;
+    if (Number.isFinite(incomingUpdatedAt) && (!Number.isFinite(existingUpdatedAt) || incomingUpdatedAt > existingUpdatedAt)) {
+      return incoming;
+    }
+    return existing;
+  }
+
+  function mergeFlashcardDecks(existingCards, expansionCards) {
+    const byId = new Map();
+    for (const card of existingCards || []) {
+      if (!card?.id) continue;
+      byId.set(card.id, card);
+    }
+    for (const card of expansionCards || []) {
+      if (!card?.id) continue;
+      if (byId.has(card.id)) console.warn("[flashcards] ID duplicado no merge:", card.id);
+      byId.set(card.id, newerCard(byId.get(card.id), card));
+    }
+    return [...byId.values()].sort((a, b) => String(a.id || "").localeCompare(String(b.id || ""), "pt-BR"));
+  }
+
+  function validateCards(cards, deckTitle) {
+    const seen = new Set();
+    for (const card of cards || []) {
+      if (!card?.id) {
+        console.warn("[flashcards] Card sem ID em", deckTitle);
+        continue;
+      }
+      if (seen.has(card.id)) console.warn("[flashcards] ID duplicado no deck", deckTitle, card.id);
+      seen.add(card.id);
+      if (!card.front || !card.back) console.warn("[flashcards] Card sem front/back:", card.id);
+      if (!Number.isFinite(card.importance) || card.importance < 1 || card.importance > 5) {
+        console.warn("[flashcards] Importance fora de 1-5 em", card.id, card.importance);
+      }
+    }
+  }
 
   window.BANCO_RMAIS_FLASHCARDS = window.BANCO_RMAIS_FLASHCARDS || { decks: [] };
   const api = window.BANCO_RMAIS_PSYCHOGERIATRICS_FLASHCARDS;
 
   for (const moduleBatch of psychogeriatricsImportedModules) {
     if (api?.psychogeriatricsFlashcards) {
-      const existingIds = new Set(api.psychogeriatricsFlashcards.map((card) => card.id));
-      for (const card of moduleBatch.cards) {
-        if (!existingIds.has(card.id)) api.psychogeriatricsFlashcards.push(card);
-      }
+      api.psychogeriatricsFlashcards = mergeFlashcardDecks(api.psychogeriatricsFlashcards, moduleBatch.cards);
     }
 
-    window.BANCO_RMAIS_FLASHCARDS.decks = window.BANCO_RMAIS_FLASHCARDS.decks.filter((deck) => deck.id !== moduleBatch.deckId);
-    window.BANCO_RMAIS_FLASHCARDS.decks.push({
-      id: moduleBatch.deckId,
-      title: moduleBatch.deckTitle,
-      area: "Psicogeriatria",
-      module: moduleBatch.module,
-      importance: moduleBatch.importance,
-      basis: "Modulo Psicogeriatria importado em lote",
-      cards: moduleBatch.cards,
-    });
+    const existingDeck = window.BANCO_RMAIS_FLASHCARDS.decks.find((deck) => deck.id === moduleBatch.deckId);
+    const mergedCards = mergeFlashcardDecks(existingDeck?.cards || [], moduleBatch.cards);
+    validateCards(mergedCards, moduleBatch.deckTitle);
+    if (existingDeck) {
+      existingDeck.title = moduleBatch.deckTitle || existingDeck.title;
+      existingDeck.area = "Psicogeriatria";
+      existingDeck.module = moduleBatch.module || existingDeck.module;
+      existingDeck.importance = moduleBatch.importance || existingDeck.importance;
+      existingDeck.basis = existingDeck.basis || "Modulo Psicogeriatria importado em lote";
+      existingDeck.cards = mergedCards;
+    } else {
+      window.BANCO_RMAIS_FLASHCARDS.decks.push({
+        id: moduleBatch.deckId,
+        title: moduleBatch.deckTitle,
+        area: "Psicogeriatria",
+        module: moduleBatch.module,
+        importance: moduleBatch.importance,
+        basis: "Modulo Psicogeriatria importado em lote",
+        cards: mergedCards,
+      });
+    }
   }
+
+  window.BANCO_RMAIS_FLASHCARDS.mergeFlashcardDecks = mergeFlashcardDecks;
 })();
