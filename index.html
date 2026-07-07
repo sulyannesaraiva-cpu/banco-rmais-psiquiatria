@@ -364,6 +364,34 @@
             </div>
             <p class="panel-line" id="todayReviewLine">A fila será montada por impacto esperado, não apenas por atraso.</p>
             <div class="today-plan" id="todayPlan"></div>
+
+            <section class="smart-review-card flashcard-review-card">
+              <div>
+                <span class="section-eyebrow">Flashcards</span>
+                <h3>Revisão por cartões</h3>
+                <p class="panel-line" id="flashcardReviewLine">Os flashcards marcados como Errei, Difícil, Bom ou Fácil entram aqui conforme o intervalo programado.</p>
+              </div>
+              <div class="summary-grid review-impact-grid">
+                <div>
+                  <strong id="flashcardDueReviewCount">0</strong>
+                  <span>vencidos</span>
+                </div>
+                <div>
+                  <strong id="flashcardScheduledReviewCount">0</strong>
+                  <span>programados</span>
+                </div>
+                <div>
+                  <strong id="flashcardReviewedCount">0</strong>
+                  <span>já vistos</span>
+                </div>
+              </div>
+              <div class="topic-toolbar">
+                <button id="startDueFlashcardsBtn" class="primary-btn">Revisar flashcards vencidos</button>
+                <button id="goFlashcardsBtn">Abrir banco de flashcards</button>
+              </div>
+              <div class="today-list" id="flashcardReviewList"></div>
+            </section>
+
             <div class="study-section">
               <h3>Cronograma de revisão</h3>
               <div class="review-box">

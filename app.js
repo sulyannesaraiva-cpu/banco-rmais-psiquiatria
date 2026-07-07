@@ -403,6 +403,13 @@ const el = {
   repeatedErrorsReview: document.querySelector("#repeatedErrorsReviewBtn"),
   flashcardErrorsReview: document.querySelector("#flashcardErrorsReviewBtn"),
   endTodayReview: document.querySelector("#endTodayReviewBtn"),
+  flashcardDueReviewCount: document.querySelector("#flashcardDueReviewCount"),
+  flashcardScheduledReviewCount: document.querySelector("#flashcardScheduledReviewCount"),
+  flashcardReviewedCount: document.querySelector("#flashcardReviewedCount"),
+  flashcardReviewLine: document.querySelector("#flashcardReviewLine"),
+  flashcardReviewList: document.querySelector("#flashcardReviewList"),
+  startDueFlashcards: document.querySelector("#startDueFlashcardsBtn"),
+  goFlashcards: document.querySelector("#goFlashcardsBtn"),
   confidenceGroup: document.querySelector("#confidenceGroup"),
   confidencePanel: document.querySelector("#confidencePanel"),
   flashcardDeckList: document.querySelector("#flashcardDeckList"),
@@ -2759,6 +2766,64 @@ function flashcardNextReviewLabel(card) {
   return `revisão em ${new Date(progress.nextReviewAt).toLocaleDateString("pt-BR", { day: "2-digit", month: "2-digit" })}`;
 }
 
+function flashcardReviewItems({ dueOnly = false, scheduledOnly = false } = {}) {
+  const now = Date.now();
+  return (state.flashcards || [])
+    .flatMap((deck) =>
+      flashcardCardsForDeck(deck, { applyImportance: false }).map((card) => {
+        const progress = state.flashcardProgress[card.id] || {};
+        const nextReviewAt = progress.nextReviewAt ? new Date(progress.nextReviewAt).getTime() : null;
+        return { deck, card, progress, nextReviewAt };
+      }),
+    )
+    .filter((item) => {
+      if (!item.progress.reviewedAt && !item.progress.nextReviewAt && !item.progress.lastGrade) return false;
+      if (!item.nextReviewAt) return !scheduledOnly;
+      if (dueOnly) return item.nextReviewAt <= now;
+      if (scheduledOnly) return item.nextReviewAt > now;
+      return true;
+    })
+    .sort((a, b) => {
+      const dateDiff = (a.nextReviewAt || 0) - (b.nextReviewAt || 0);
+      if (dateDiff) return dateDiff;
+      return String(a.card.id || "").localeCompare(String(b.card.id || ""), "pt-BR");
+    });
+}
+
+function flashcardGradeLabel(grade) {
+  const labels = {
+    again: "Errei",
+    hard: "Difícil",
+    good: "Bom",
+    easy: "Fácil",
+  };
+  return labels[grade] || grade || "Sem marcação";
+}
+
+function openFlashcardReviewItem(item) {
+  if (!item?.deck || !item?.card) return;
+  state.flashcardCategory = item.deck.area || "all";
+  state.flashcardPriority = "all";
+  state.flashcardDeckId = item.deck.id;
+  const cards = flashcardCardsForDeck(item.deck, { applyImportance: false });
+  state.flashcardIndex = Math.max(0, cards.findIndex((card) => card.id === item.card.id));
+  state.flashcardRevealed = false;
+  rememberFlashcardPosition(item.deck);
+  saveFlashcardState();
+  setTab("flashcards");
+  render();
+}
+
+function startDueFlashcardsReview() {
+  const due = flashcardReviewItems({ dueOnly: true });
+  if (!due.length) {
+    if (el.flashcardReviewLine) el.flashcardReviewLine.textContent = "Nenhum flashcard vencido no momento. Você pode abrir o banco de flashcards para estudar cartões novos.";
+    setTab("today");
+    return;
+  }
+  openFlashcardReviewItem(due[0]);
+}
+
 function renderFlashcards() {
   if (!el.flashcardDeckList || !el.flashcardFront) return;
   if (state.flashcardPriority !== "all" && !/^importance-[1-5]$/.test(state.flashcardPriority)) {
@@ -3435,6 +3500,7 @@ function renderTodayReview() {
   if (!session.length) {
     el.todayReviewLine.textContent = "Ainda não há dados suficientes para montar uma missão inteligente. Responda algumas questões ou flashcards para alimentar o algoritmo.";
     el.todayPlan.innerHTML = "";
+    renderFlashcardReviewPanel();
     return;
   }
   el.todayReviewLine.textContent = `Missão sugerida: ${pluralize(summary.questions, "questão", "questões")} e ${pluralize(summary.flashcards, "flashcard", "flashcards")}, ordenados por impacto esperado.`;
@@ -3458,6 +3524,41 @@ function renderTodayReview() {
         .join("")}
     </div>
   `;
+  renderFlashcardReviewPanel();
+}
+
+function renderFlashcardReviewPanel() {
+  if (!el.flashcardDueReviewCount) return;
+  const due = flashcardReviewItems({ dueOnly: true });
+  const scheduled = flashcardReviewItems({ scheduledOnly: true });
+  const reviewed = flashcardReviewItems();
+  el.flashcardDueReviewCount.textContent = due.length;
+  el.flashcardScheduledReviewCount.textContent = scheduled.length;
+  el.flashcardReviewedCount.textContent = reviewed.length;
+  if (el.startDueFlashcards) el.startDueFlashcards.disabled = !due.length;
+  if (el.flashcardReviewLine) {
+    el.flashcardReviewLine.textContent = due.length
+      ? `${pluralize(due.length, "flashcard vencido", "flashcards vencidos")} para revisar hoje. A fila usa a dificuldade marcada após virar o card.`
+      : scheduled.length
+        ? `Nenhum vencido agora. Existem ${pluralize(scheduled.length, "flashcard programado", "flashcards programados")} para os próximos dias.`
+        : "Ainda não há flashcards classificados. Vire um card e marque Errei, Difícil, Bom ou Fácil para criar a revisão.";
+  }
+  if (!el.flashcardReviewList) return;
+  el.flashcardReviewList.innerHTML = due.length
+    ? due
+        .slice(0, 8)
+        .map((item) => {
+          const dateLabel = item.nextReviewAt ? new Date(item.nextReviewAt).toLocaleDateString("pt-BR", { day: "2-digit", month: "2-digit" }) : "sem data";
+          return `
+            <button class="today-item flashcard-review-item" data-review-flashcard="${escapeHtml(item.card.id)}">
+              <strong>${escapeHtml(item.card.front)}</strong>
+              <span>${escapeHtml(item.deck.title)} · ${escapeHtml(flashcardGradeLabel(item.progress.lastGrade))} · vencido em ${escapeHtml(dateLabel)}</span>
+              <small>${escapeHtml(item.card.topic || item.card.module || "Flashcard")}</small>
+            </button>
+          `;
+        })
+        .join("")
+    : `<p class="panel-line">Sem flashcards vencidos na fila.</p>`;
 }
 
 function renderDangerousQuestions() {
@@ -4730,6 +4831,14 @@ el.quickReview?.addEventListener("click", () => startPresetReview({ mode: "mixed
 el.examThemesReview?.addEventListener("click", () => startPresetReview({ mode: "exam-themes", minutes: state.reviewAvailableMinutes }));
 el.repeatedErrorsReview?.addEventListener("click", () => startPresetReview({ mode: "repeated-errors", minutes: state.reviewAvailableMinutes }));
 el.flashcardErrorsReview?.addEventListener("click", () => startPresetReview({ mode: "flashcards", minutes: state.reviewAvailableMinutes }));
+el.startDueFlashcards?.addEventListener("click", startDueFlashcardsReview);
+el.goFlashcards?.addEventListener("click", () => setTab("flashcards"));
+el.flashcardReviewList?.addEventListener("click", (event) => {
+  const button = event.target.closest("[data-review-flashcard]");
+  if (!button) return;
+  const item = flashcardReviewItems().find((entry) => entry.card.id === button.dataset.reviewFlashcard);
+  openFlashcardReviewItem(item);
+});
 el.sessionSourceGroup.addEventListener("click", (event) => {
   const button = event.target.closest("[data-source]");
   if (!button) return;
