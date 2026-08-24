@@ -88,7 +88,3 @@ clearClassificationCache = function clearClassificationCacheWithExamFrequency() 
   empiricalExamFrequencyCache.clear();
   return legacyClearClassificationCache();
 };
-
-if (typeof renderTodayReview === "function") {
-  renderTodayReview();
-}
