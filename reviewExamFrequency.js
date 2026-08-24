@@ -1,4 +1,9 @@
-/* Revisão inteligente: frequência empírica por banca. */
+/*
+ * Revisão inteligente: frequência empírica por banca.
+ * Usa as provas já carregadas em state.exams para estimar quanto cada subtema
+ * aparece na banca selecionada. A heurística antiga do app.js permanece como
+ * fallback quando não há amostra suficiente.
+ */
 const empiricalExamFrequencyCache = new Map();
 const MIN_EMPIRICAL_EXAM_QUESTIONS = 30;
 
@@ -29,7 +34,9 @@ function empiricalExamFrequencyProfile(targetExam = "Todas") {
       subthemeCounts.set(subtheme, (subthemeCounts.get(subtheme) || 0) + 1);
       seenInExam.add(subtheme);
     }
-    for (const subtheme of seenInExam) subthemeExamCounts.set(subtheme, (subthemeExamCounts.get(subtheme) || 0) + 1);
+    for (const subtheme of seenInExam) {
+      subthemeExamCounts.set(subtheme, (subthemeExamCounts.get(subtheme) || 0) + 1);
+    }
   }
   const profile = { targetExam, totalExams: exams.length, totalQuestions, subthemeCounts, subthemeExamCounts };
   empiricalExamFrequencyCache.set(cacheKey, profile);
@@ -81,3 +88,7 @@ clearClassificationCache = function clearClassificationCacheWithExamFrequency() 
   empiricalExamFrequencyCache.clear();
   return legacyClearClassificationCache();
 };
+
+if (typeof renderTodayReview === "function") {
+  renderTodayReview();
+}
