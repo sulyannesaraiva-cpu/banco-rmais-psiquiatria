@@ -1,39 +1,5 @@
 <!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Preview · Revisão Inteligente por banca</title>
-  <style>
-    html, body { margin: 0; min-height: 100%; font-family: system-ui, sans-serif; background: #f8fafc; }
-    .bar { padding: 10px 14px; border-bottom: 1px solid #e5e7eb; background: #fff; font-size: 14px; }
-    .bar strong { margin-right: 8px; }
-    #status { color: #475569; }
-    iframe { display: block; width: 100%; height: calc(100vh - 45px); border: 0; }
-  </style>
-</head>
-<body>
-  <div class="bar">
-    <strong>Preview da nova frequência por banca</strong>
-    <span id="status">carregando aplicação…</span>
-  </div>
-  <iframe id="appFrame" src="index.html" title="Banco R+ Psiquiatria"></iframe>
-  <script>
-    const frame = document.getElementById('appFrame');
-    const status = document.getElementById('status');
-
-    frame.addEventListener('load', () => {
-      const doc = frame.contentDocument;
-      const script = doc.createElement('script');
-      script.src = 'reviewExamFrequency.js';
-      script.onload = () => {
-        status.textContent = 'nova lógica carregada; compare USP, UNIFESP, UNICAMP, SUS-SP, ABP e Todas na aba Revisão.';
-      };
-      script.onerror = () => {
-        status.textContent = 'falha ao carregar o módulo de teste.';
-      };
-      doc.body.appendChild(script);
-    });
-  </script>
-</body>
+<head><meta charset="utf-8"><title>Preview removido</title></head>
+<body><p>Esta página de preview não é mais necessária após a integração da nova frequência por banca ao fluxo normal do aplicativo.</p></body>
 </html>
