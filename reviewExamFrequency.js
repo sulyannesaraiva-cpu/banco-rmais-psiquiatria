@@ -11,6 +11,44 @@ function normalizedExamTarget(value) {
   return normalText(value).replace(/[^a-z0-9]+/g, "");
 }
 
+function availableReviewExamTargets() {
+  const targets = new Set();
+  for (const exam of state.exams || []) {
+    const label = String(exam?.institution || exam?.provider || "").trim();
+    if (label) targets.add(label);
+  }
+  return [...targets].sort((a, b) => a.localeCompare(b, "pt-BR", { sensitivity: "base" }));
+}
+
+function syncReviewTargetExamOptions() {
+  const select = document.querySelector("#reviewTargetExamSelect");
+  if (!select) return;
+
+  const targets = availableReviewExamTargets();
+  const validTargets = new Set(["Todas", ...targets]);
+  const requested = state.reviewTargetExam || "Todas";
+  const selected = validTargets.has(requested) ? requested : "Todas";
+
+  select.innerHTML = "";
+  const allOption = document.createElement("option");
+  allOption.value = "Todas";
+  allOption.textContent = "Todas";
+  select.appendChild(allOption);
+
+  for (const target of targets) {
+    const option = document.createElement("option");
+    option.value = target;
+    option.textContent = target;
+    select.appendChild(option);
+  }
+
+  select.value = selected;
+  if (state.reviewTargetExam !== selected) {
+    state.reviewTargetExam = selected;
+    localStorage.setItem("banco-rmais-review-target-exam", selected);
+  }
+}
+
 function examMatchesReviewTarget(exam, targetExam = "Todas") {
   const target = normalizedExamTarget(targetExam);
   if (!target || target === "todas") return true;
@@ -87,4 +125,10 @@ const legacyClearClassificationCache = clearClassificationCache;
 clearClassificationCache = function clearClassificationCacheWithExamFrequency() {
   empiricalExamFrequencyCache.clear();
   return legacyClearClassificationCache();
+};
+
+const legacyRenderTodayReview = renderTodayReview;
+renderTodayReview = function renderTodayReviewWithDynamicExamTargets() {
+  syncReviewTargetExamOptions();
+  return legacyRenderTodayReview();
 };
