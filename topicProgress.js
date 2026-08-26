@@ -49,22 +49,23 @@
     renderTopicChecklist();
   }
 
-  function prepareTopicStudy(topics) {
+  function resetOtherStudyModes() {
     state.sessionActive = false;
+    state.sessionIds = [];
     state.examActive = false;
     clearExamSimulationState();
     state.examSetActive = false;
+    state.examSetIds = [];
     state.spacedReviewActive = false;
     state.spacedReviewIds = [];
     state.smartTrainingActive = false;
     state.smartTrainingIds = [];
     state.dangerousReviewActive = false;
     state.dangerousReviewIds = [];
-    state.topicActive = true;
-    state.topicIds = topics;
-    state.index = 0;
-    setTab("activity");
-    applyFilters({ preserveCurrent: true });
+  }
+
+  function selectedTopicQuestionList() {
+    return selectedContentQuestions().slice();
   }
 
   function startSelectedTopics(mode = "pending") {
@@ -75,24 +76,40 @@
       return;
     }
 
-    prepareTopicStudy(topics);
+    resetOtherStudyModes();
+    state.topicActive = true;
+    state.topicIds = topics;
+    state.activeAnswers = {};
 
-    if (mode === "pending") {
-      state.filtered = state.filtered.filter((question) => !getProgress(question.id).grade);
+    const allQuestions = selectedTopicQuestionList();
+    const questions = mode === "pending"
+      ? allQuestions.filter((question) => !getProgress(question.id).grade)
+      : allQuestions;
+
+    state.filtered = questions;
+    state.filterKey = topicSelectionKey(topics, mode);
+    localStorage.setItem(TOPIC_MODE_KEY, mode);
+
+    if (!questions.length) {
       state.index = 0;
-      state.filterKey = topicSelectionKey(topics, "pending");
-      localStorage.setItem(TOPIC_MODE_KEY, "pending");
-      if (!state.filtered.length) {
-        if (el.topicModeLine) el.topicModeLine.textContent = "Tema concluído: não há questões pendentes neste recorte.";
-        render();
-        return;
+      if (el.topicModeLine) {
+        el.topicModeLine.textContent = mode === "pending"
+          ? "Tema concluído: não há questões pendentes neste recorte."
+          : "Nenhuma questão encontrada para este tema.";
       }
-    } else {
-      state.filterKey = topicSelectionKey(topics, "all");
-      localStorage.setItem(TOPIC_MODE_KEY, "all");
-      restorePosition(state.filterKey);
+      setTab("activity");
+      render();
+      return;
     }
 
+    if (mode === "all") {
+      restorePosition(state.filterKey);
+    } else {
+      state.index = 0;
+    }
+
+    state.index = Math.min(state.index, questions.length - 1);
+    setTab("activity");
     render();
   }
 
