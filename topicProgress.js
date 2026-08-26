@@ -2,6 +2,20 @@
 (function setupPersistentTopicProgress() {
   const TOPIC_MODE_KEY = "banco-rmais-topic-mode";
 
+  if (!document.querySelector("#topicProgressStyles")) {
+    const style = document.createElement("style");
+    style.id = "topicProgressStyles";
+    style.textContent = `
+      .topic-progress-panel{margin:14px 0 18px;padding:14px;border:1px solid var(--border,#dfe3e8);border-radius:14px;background:var(--surface,#fff)}
+      .topic-progress-head{display:flex;justify-content:space-between;gap:12px;margin-bottom:12px}.topic-progress-head strong{display:block}.topic-progress-head span{display:block;margin-top:3px;font-size:.86rem;opacity:.72}
+      .topic-progress-list{display:grid;gap:10px}.topic-progress-item{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px;align-items:center;padding:12px;border:1px solid var(--border,#dfe3e8);border-radius:12px}.topic-progress-item.topic-complete{opacity:.82}
+      .topic-progress-copy>strong,.topic-progress-copy>span{display:block}.topic-progress-copy>span{margin-top:4px;font-size:.84rem;opacity:.75}.topic-progress-track{height:6px;margin-top:9px;border-radius:999px;overflow:hidden;background:rgba(127,127,127,.18)}.topic-progress-track i{display:block;height:100%;background:currentColor;opacity:.55}
+      .topic-progress-actions{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}.topic-progress-actions button{white-space:nowrap}
+      @media(max-width:720px){.topic-progress-item{grid-template-columns:1fr}.topic-progress-actions{justify-content:flex-start}}
+    `;
+    document.head.appendChild(style);
+  }
+
   function topicSelectionKey(topics, mode = "all") {
     const cleanTopics = [...(topics || [])].map(String).sort((a, b) => a.localeCompare(b, "pt-BR"));
     const subthemes = state.refineSubthemes ? [...(state.selectedSubthemes || [])].map(String).sort() : [];
@@ -79,7 +93,7 @@
           const stats = topicStats(topic);
           const doneClass = stats.remaining === 0 && stats.total ? " topic-complete" : "";
           return `
-            <article class="topic-progress-item${doneClass}" data-topic-progress-item="${escapeHtml(topic)}">
+            <article class="topic-progress-item${doneClass}">
               <div class="topic-progress-copy">
                 <strong>${escapeHtml(topic)}</strong>
                 <span>${stats.answered}/${stats.total} respondidas · ${stats.remaining} faltam · ${stats.percent}% concluído</span>
