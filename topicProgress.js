@@ -49,6 +49,24 @@
     renderTopicChecklist();
   }
 
+  function prepareTopicStudy(topics) {
+    state.sessionActive = false;
+    state.examActive = false;
+    clearExamSimulationState();
+    state.examSetActive = false;
+    state.spacedReviewActive = false;
+    state.spacedReviewIds = [];
+    state.smartTrainingActive = false;
+    state.smartTrainingIds = [];
+    state.dangerousReviewActive = false;
+    state.dangerousReviewIds = [];
+    state.topicActive = true;
+    state.topicIds = topics;
+    state.index = 0;
+    setTab("activity");
+    applyFilters({ preserveCurrent: true });
+  }
+
   function startSelectedTopics(mode = "pending") {
     const topics = topicsForTopicMode();
     if (!topics.length) {
@@ -57,7 +75,7 @@
       return;
     }
 
-    legacyStartTopic();
+    prepareTopicStudy(topics);
 
     if (mode === "pending") {
       state.filtered = state.filtered.filter((question) => !getProgress(question.id).grade);
@@ -141,8 +159,6 @@
     renderTopicProgressPanel();
     return result;
   };
-
-  const legacyStartTopic = startTopic;
 
   if (el.startTopic) {
     el.startTopic.textContent = "Continuar pendentes";
