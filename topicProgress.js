@@ -1,6 +1,7 @@
 /* Progresso persistente por tema: continuar pendentes, ver todas e acompanhar conclusão. */
 (function setupPersistentTopicProgress() {
   const TOPIC_MODE_KEY = "banco-rmais-topic-mode";
+  let lastProgressSignature = "";
 
   if (!document.querySelector("#topicProgressStyles")) {
     const style = document.createElement("style");
@@ -37,16 +38,18 @@
 
   function topicStats(topic) {
     const questions = topicQuestions(topic);
-    const answered = questions.filter((question) => Boolean(getProgress(question.id).grade));
-    const remaining = Math.max(questions.length - answered.length, 0);
-    const percent = questions.length ? Math.round((answered.length / questions.length) * 100) : 0;
-    return { total: questions.length, answered: answered.length, remaining, percent };
+    let answered = 0;
+    for (const question of questions) {
+      if (getProgress(question.id).grade) answered += 1;
+    }
+    const remaining = Math.max(questions.length - answered, 0);
+    const percent = questions.length ? Math.round((answered / questions.length) * 100) : 0;
+    return { total: questions.length, answered, remaining, percent };
   }
 
   function setSingleTopic(topic) {
     state.selectedTopics = [topic];
     localStorage.setItem("banco-rmais-selected-topics", JSON.stringify(state.selectedTopics));
-    renderTopicChecklist();
   }
 
   function resetOtherStudyModes() {
@@ -102,11 +105,8 @@
       return;
     }
 
-    if (mode === "all") {
-      restorePosition(state.filterKey);
-    } else {
-      state.index = 0;
-    }
+    if (mode === "all") restorePosition(state.filterKey);
+    else state.index = 0;
 
     state.index = Math.min(state.index, questions.length - 1);
     setTab("activity");
@@ -118,9 +118,21 @@
     startSelectedTopics(mode);
   }
 
-  function renderTopicProgressPanel() {
+  function progressSignature() {
+    const answered = Object.values(state.progress || {}).reduce((count, progress) => count + (progress?.grade ? 1 : 0), 0);
+    const selected = Array.isArray(state.selectedTopics) ? state.selectedTopics.join("|") : "";
+    return `${answered}:${state.questions.length}:${selected}:${state.refineSubthemes}:${(state.selectedSubthemes || []).join("|")}`;
+  }
+
+  function renderTopicProgressPanel({ force = false } = {}) {
     if (!el.topicModeLine || !state.questions.length) return;
+    if (state.activeTab !== "activity" || state.topicActive) return;
+
+    const signature = progressSignature();
     let panel = document.querySelector("#topicProgressPanel");
+    if (!force && panel && signature === lastProgressSignature) return;
+    lastProgressSignature = signature;
+
     if (!panel) {
       panel = document.createElement("section");
       panel.id = "topicProgressPanel";
@@ -129,8 +141,9 @@
     }
 
     const topics = allTopics();
-    const answeredTotal = topics.reduce((sum, topic) => sum + topicStats(topic).answered, 0);
-    const questionTotal = topics.reduce((sum, topic) => sum + topicStats(topic).total, 0);
+    const rows = topics.map((topic) => ({ topic, stats: topicStats(topic) }));
+    const answeredTotal = rows.reduce((sum, row) => sum + row.stats.answered, 0);
+    const questionTotal = rows.reduce((sum, row) => sum + row.stats.total, 0);
     const openState = panel.querySelector("details")?.open || false;
 
     panel.innerHTML = `
@@ -142,8 +155,7 @@
         <div class="topic-progress-body">
           <span class="topic-progress-intro">Veja quanto falta em cada tema e escolha entre continuar só as pendentes ou abrir todas.</span>
           <div class="topic-progress-list">
-            ${topics.map((topic) => {
-              const stats = topicStats(topic);
+            ${rows.map(({ topic, stats }) => {
               const doneClass = stats.remaining === 0 && stats.total ? " topic-complete" : "";
               return `
                 <article class="topic-progress-item${doneClass}">
@@ -201,5 +213,5 @@
     return result;
   };
 
-  renderTopicProgressPanel();
+  if (state.activeTab === "activity" && !state.topicActive) renderTopicProgressPanel({ force: true });
 })();
