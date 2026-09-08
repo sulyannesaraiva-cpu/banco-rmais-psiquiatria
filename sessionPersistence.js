@@ -1,10 +1,15 @@
-/* Persistência de sessões ativas de questões entre troca de aba, suspensão e recarregamento. */
+/* Persistência robusta de sessões ativas entre troca de aba, suspensão, descarte e recarregamento. */
 (function setupSessionPersistence() {
-  const SESSION_KEY = "banco-rmais-active-question-flow-v2";
+  const SESSION_KEY = "banco-rmais-active-question-flow-v3";
+  const LEGACY_SESSION_KEY = "banco-rmais-active-question-flow-v2";
   const MAX_AGE_MS = 7 * 24 * 60 * 60 * 1000;
-  let restoreAttempted = false;
+  const STARTUP_GUARD_MS = 20000;
+  const startupDeadline = Date.now() + STARTUP_GUARD_MS;
 
   function activeMode() {
+    if (state.examSimulationActive) return "exam-simulation";
+    if (state.examSetActive) return "exam-set";
+    if (state.examActive) return "exam";
     if (state.topicActive) return "topic";
     if (state.sessionActive) return "session";
     if (state.spacedReviewActive) return "spaced-review";
@@ -13,14 +18,24 @@
     return null;
   }
 
+  function hasActiveFlow() {
+    return Boolean(activeMode());
+  }
+
+  function currentQuestionId() {
+    return state.filtered?.[Math.max(0, Number(state.index || 0))]?.id || "";
+  }
+
   function saveSnapshot() {
     const mode = activeMode();
-    if (!mode || !Array.isArray(state.filtered) || !state.filtered.length) return;
+    if (!mode || !Array.isArray(state.filtered) || !state.filtered.length) return false;
+
     const snapshot = {
-      version: 2,
+      version: 3,
       mode,
       activeTab: state.activeTab,
       filteredIds: state.filtered.map((question) => question.id).filter(Boolean),
+      currentQuestionId: currentQuestionId(),
       index: Math.max(0, Number(state.index || 0)),
       filterKey: state.filterKey || "",
       topicIds: [...(state.topicIds || [])],
@@ -28,23 +43,39 @@
       spacedReviewIds: [...(state.spacedReviewIds || [])],
       dangerousReviewIds: [...(state.dangerousReviewIds || [])],
       smartTrainingIds: [...(state.smartTrainingIds || [])],
+      examSetIds: [...(state.examSetIds || [])],
+      activeExamId: state.activeExamId || "",
+      examSimulationFinished: Boolean(state.examSimulationFinished),
+      examSimulationStartedAt: state.examSimulationStartedAt || null,
+      examSimulationElapsedMs: Number(state.examSimulationElapsedMs || 0),
+      examSimulationErrorIds: [...(state.examSimulationErrorIds || [])],
+      examSimulationAnswers: { ...(state.examSimulationAnswers || {}) },
       selectedTopics: Array.isArray(state.selectedTopics) ? [...state.selectedTopics] : [],
       selectedSubthemes: Array.isArray(state.selectedSubthemes) ? [...state.selectedSubthemes] : [],
       refineSubthemes: Boolean(state.refineSubthemes),
       activeAnswers: { ...(state.activeAnswers || {}) },
       updatedAt: Date.now(),
     };
-    localStorage.setItem(SESSION_KEY, JSON.stringify(snapshot));
+
+    try {
+      localStorage.setItem(SESSION_KEY, JSON.stringify(snapshot));
+      return true;
+    } catch (error) {
+      console.warn("Não foi possível salvar a sessão ativa.", error);
+      return false;
+    }
   }
 
   function clearSnapshot() {
     localStorage.removeItem(SESSION_KEY);
+    localStorage.removeItem(LEGACY_SESSION_KEY);
   }
 
   function loadSnapshot() {
     try {
-      const saved = JSON.parse(localStorage.getItem(SESSION_KEY) || "null");
-      if (!saved || saved.version !== 2) return null;
+      const raw = localStorage.getItem(SESSION_KEY) || localStorage.getItem(LEGACY_SESSION_KEY);
+      const saved = JSON.parse(raw || "null");
+      if (!saved || ![2, 3].includes(saved.version)) return null;
       if (!saved.updatedAt || Date.now() - saved.updatedAt > MAX_AGE_MS) {
         clearSnapshot();
         return null;
@@ -68,31 +99,44 @@
     state.smartTrainingActive = false;
     state.smartTrainingIds = [];
     state.examActive = false;
+    state.examSimulationActive = false;
     state.examSetActive = false;
+    state.examSetIds = [];
   }
 
-  function restoreSnapshot() {
-    if (restoreAttempted) return;
+  function fallbackTabFor(mode) {
+    if (mode === "exam" || mode === "exam-set" || mode === "exam-simulation") return "exams";
+    if (mode === "spaced-review") return "today";
+    if (mode === "dangerous-review" || mode === "smart-training") return "overview";
+    return "activity";
+  }
+
+  function restoreSnapshot(options = {}) {
     const saved = loadSnapshot();
-    if (!saved) {
-      restoreAttempted = true;
-      return;
-    }
-    if (!state.questions.length && !state.exams.length) return;
+    if (!saved) return false;
+    if (!state.questions.length && !state.exams.length) return false;
+
+    const force = Boolean(options.force);
+    if (!force && hasActiveFlow() && Array.isArray(state.filtered) && state.filtered.length) return false;
 
     const questionMap = new Map(allStudyQuestions().map((question) => [question.id, question]));
     const questions = saved.filteredIds.map((id) => questionMap.get(id)).filter(Boolean);
     if (!questions.length) {
       clearSnapshot();
-      restoreAttempted = true;
-      return;
+      return false;
     }
 
     resetQuestionModes();
     state.filtered = questions;
-    state.index = Math.min(Math.max(0, Number(saved.index || 0)), questions.length - 1);
     state.filterKey = saved.filterKey || "";
     state.activeAnswers = { ...(saved.activeAnswers || {}) };
+
+    let restoredIndex = Math.min(Math.max(0, Number(saved.index || 0)), questions.length - 1);
+    if (saved.currentQuestionId) {
+      const questionIndex = questions.findIndex((question) => question.id === saved.currentQuestionId);
+      if (questionIndex >= 0) restoredIndex = questionIndex;
+    }
+    state.index = restoredIndex;
 
     state.selectedTopics = Array.isArray(saved.selectedTopics) ? saved.selectedTopics : state.selectedTopics;
     state.selectedSubthemes = Array.isArray(saved.selectedSubthemes) ? saved.selectedSubthemes : state.selectedSubthemes;
@@ -116,47 +160,98 @@
     } else if (saved.mode === "smart-training") {
       state.smartTrainingActive = true;
       state.smartTrainingIds = [...(saved.smartTrainingIds || saved.filteredIds)];
+    } else if (saved.mode === "exam-set") {
+      state.examSetActive = true;
+      state.examSetIds = [...(saved.examSetIds || saved.filteredIds)];
+    } else if (saved.mode === "exam") {
+      state.examActive = true;
+      state.activeExamId = saved.activeExamId || state.activeExamId || "";
+    } else if (saved.mode === "exam-simulation") {
+      state.examActive = true;
+      state.examSimulationActive = true;
+      state.activeExamId = saved.activeExamId || state.activeExamId || "";
+      state.examSimulationFinished = Boolean(saved.examSimulationFinished);
+      state.examSimulationStartedAt = saved.examSimulationStartedAt || null;
+      state.examSimulationElapsedMs = Number(saved.examSimulationElapsedMs || 0);
+      state.examSimulationErrorIds = [...(saved.examSimulationErrorIds || [])];
+      state.examSimulationAnswers = { ...(saved.examSimulationAnswers || {}) };
     }
 
-    const fallbackTab = saved.mode === "spaced-review" ? "today" : saved.mode === "dangerous-review" || saved.mode === "smart-training" ? "overview" : "activity";
+    const fallbackTab = fallbackTabFor(saved.mode);
     const safeTab = saved.activeTab && saved.activeTab !== "topics" ? saved.activeTab : fallbackTab;
     setTab(safeTab);
     render();
-    restoreAttempted = true;
+    saveSnapshot();
+    return true;
   }
 
-  function scheduleRestore() {
-    let attempts = 0;
-    const timer = setInterval(() => {
-      attempts += 1;
-      if (state.questions.length || state.exams.length) {
-        clearInterval(timer);
-        setTimeout(restoreSnapshot, 250);
-        return;
-      }
-      if (attempts >= 100) {
-        clearInterval(timer);
-        restoreAttempted = true;
-      }
-    }, 100);
+  function restoreIfNeeded() {
+    const saved = loadSnapshot();
+    if (!saved) return false;
+    const currentMissing = !Array.isArray(state.filtered) || !state.filtered.length;
+    if (!hasActiveFlow() || currentMissing) return restoreSnapshot({ force: true });
+    return false;
   }
 
-  function wrapEndFunction(name) {
-    const original = window[name];
-    if (typeof original !== "function") return;
-    window[name] = function wrappedEndFunction(...args) {
-      clearSnapshot();
-      return original.apply(this, args);
+  // O núcleo já chama saveActiveStudyState ao responder/mudar de questão.
+  // Aproveitamos esse ponto para manter nosso snapshot atualizado imediatamente.
+  if (typeof saveActiveStudyState === "function") {
+    const originalSaveActiveStudyState = saveActiveStudyState;
+    saveActiveStudyState = function persistentSaveActiveStudyState(...args) {
+      const result = originalSaveActiveStudyState.apply(this, args);
+      saveSnapshot();
+      return result;
     };
   }
 
+  // Se o núcleo encerrar uma prova/simulado, remove também o snapshot ampliado.
+  if (typeof clearActiveStudyState === "function") {
+    const originalClearActiveStudyState = clearActiveStudyState;
+    clearActiveStudyState = function persistentClearActiveStudyState(...args) {
+      clearSnapshot();
+      return originalClearActiveStudyState.apply(this, args);
+    };
+  }
+
+  // Os botões de encerramento de bloco foram vinculados antes desta extensão;
+  // usamos captura apenas para limpar o snapshot antes do handler original.
+  [el.endTopic, el.endSession, el.finishSession, el.endSpacedReview, el.endDangerousReview]
+    .filter(Boolean)
+    .forEach((button) => button.addEventListener("click", clearSnapshot, true));
+
   document.addEventListener("visibilitychange", () => {
-    if (document.visibilityState === "hidden") saveSnapshot();
+    if (document.visibilityState === "hidden") {
+      saveSnapshot();
+    } else {
+      setTimeout(restoreIfNeeded, 80);
+      setTimeout(restoreIfNeeded, 500);
+    }
+  });
+
+  window.addEventListener("blur", saveSnapshot);
+  window.addEventListener("focus", () => {
+    setTimeout(restoreIfNeeded, 80);
+    setTimeout(restoreIfNeeded, 500);
   });
   window.addEventListener("pagehide", saveSnapshot);
+  window.addEventListener("pageshow", () => setTimeout(restoreIfNeeded, 100));
   window.addEventListener("beforeunload", saveSnapshot);
+  document.addEventListener("freeze", saveSnapshot);
+  document.addEventListener("resume", () => setTimeout(restoreIfNeeded, 100));
 
-  ["endTopic", "endSession", "endSpacedReview", "endDangerousReview", "endSmartTraining"].forEach(wrapEndFunction);
+  // Salva periodicamente enquanto a sessão está ativa. Isso protege contra
+  // descarte abrupto da aba, quando pagehide/beforeunload podem não ocorrer.
+  setInterval(() => {
+    if (hasActiveFlow()) saveSnapshot();
+  }, 1500);
 
-  scheduleRestore();
+  // Durante a inicialização, autenticação e sincronização podem redesenhar a
+  // aplicação depois da primeira restauração. Reaplicamos a sessão por alguns
+  // segundos sempre que ela tiver sido apagada pelo bootstrap.
+  const startupGuard = setInterval(() => {
+    restoreIfNeeded();
+    if (Date.now() >= startupDeadline) clearInterval(startupGuard);
+  }, 300);
+
+  setTimeout(restoreIfNeeded, 100);
 })();
