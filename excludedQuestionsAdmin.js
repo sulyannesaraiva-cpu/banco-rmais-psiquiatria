@@ -1,30 +1,39 @@
-/* Exclusão administrativa reversível de questões fora do escopo da Psiquiatria. */
+/* Exclusão administrativa reversível e global de questões fora do escopo da Psiquiatria. */
 (function setupExcludedQuestionsAdmin() {
   const editorPanel = document.querySelector("#editorPanel");
   const editorActions = editorPanel?.querySelector(".editor-actions");
   const adminPanel = document.querySelector("#topicsPanel .panel-section");
   if (!editorActions || !adminPanel) return;
 
+  function syncGlobalExclusionsIntoState() {
+    const globalIds = Object.entries(state.globalCorrections || {})
+      .filter(([, correction]) => Boolean(correction?.excluded))
+      .map(([questionId]) => questionId);
+    state.excluded = [...new Set([...(state.excluded || []), ...globalIds])];
+    saveExcluded();
+  }
+  syncGlobalExclusionsIntoState();
+
   const deleteButton = document.createElement("button");
   deleteButton.id = "excludeFromEditorBtn";
   deleteButton.type = "button";
-  deleteButton.className = "danger-btn";
+  deleteButton.className = "danger-lite";
   deleteButton.textContent = "Excluir questão";
   deleteButton.title = "Retirar esta questão do banco de estudo e enviar para Questões excluídas";
   editorActions.appendChild(deleteButton);
 
   const excludedSection = document.createElement("section");
-  excludedSection.className = "admin-excluded-section";
+  excludedSection.className = "study-section admin-excluded-section";
   excludedSection.innerHTML = `
-    <div class="admin-subsection-head">
-      <div>
-        <h3>Questões excluídas</h3>
-        <p class="panel-line">Questões retiradas do banco de estudo por não pertencerem ao escopo da Psiquiatria. A exclusão é reversível.</p>
-      </div>
-      <strong id="excludedAdminCount">0</strong>
+    <div>
+      <h3>Questões excluídas <span id="excludedAdminCount">0</span></h3>
+      <p class="panel-line">Questões retiradas do banco por não pertencerem ao escopo da Psiquiatria. A exclusão vale para todos os usuários e pode ser revertida.</p>
     </div>
-    <input id="excludedAdminSearch" type="search" placeholder="Buscar por prova, tema ou enunciado" />
-    <div id="excludedAdminList" class="excluded-admin-list"></div>
+    <label class="field compact-field">
+      <span>Buscar nas excluídas</span>
+      <input id="excludedAdminSearch" type="search" placeholder="prova, tema ou enunciado" />
+    </label>
+    <div id="excludedAdminList" class="history-list"></div>
   `;
   adminPanel.appendChild(excludedSection);
 
@@ -49,24 +58,24 @@
       return;
     }
     excludedSection.hidden = false;
+    syncGlobalExclusionsIntoState();
     const query = normalize(searchEl.value || "");
     const allExcluded = excludedQuestions();
     const visible = allExcluded.filter((question) => {
       if (!query) return true;
-      const haystack = normalize(`${questionLabel(question)} ${question.topic || ""} ${question.text || ""}`);
-      return haystack.includes(query);
+      return normalize(`${questionLabel(question)} ${question.topic || ""} ${question.text || ""}`).includes(query);
     });
-    countEl.textContent = String(allExcluded.length);
+    countEl.textContent = `(${allExcluded.length})`;
     listEl.innerHTML = visible.length
       ? visible.map((question) => `
-          <article class="excluded-admin-item">
+          <div class="history-item">
             <div>
               <strong>${escapeHtml(questionLabel(question))}</strong>
-              <small>${escapeHtml(question.topic || topicForQuestion(question) || "Sem tema")}</small>
-              <p>${escapeHtml((question.text || "").slice(0, 280))}${(question.text || "").length > 280 ? "…" : ""}</p>
+              <span>${escapeHtml(question.topic || topicForQuestion(question) || "Sem tema")}</span>
+              <small>${escapeHtml((question.text || "").slice(0, 240))}${(question.text || "").length > 240 ? "…" : ""}</small>
             </div>
-            <button type="button" class="restore-excluded-btn" data-restore-excluded="${escapeHtml(question.id)}">Restaurar</button>
-          </article>
+            <button type="button" data-restore-excluded="${escapeHtml(question.id)}">Restaurar</button>
+          </div>
         `).join("")
       : `<p class="panel-line">${allExcluded.length ? "Nenhuma questão excluída corresponde à busca." : "Nenhuma questão excluída."}</p>`;
   }
@@ -75,7 +84,6 @@
     const oldIndex = state.index;
     state.filtered = (state.filtered || []).filter((question) => question.id !== questionId);
     state.sessionIds = (state.sessionIds || []).filter((id) => id !== questionId);
-    state.topicIds = (state.topicIds || []).filter((id) => id !== questionId);
     state.spacedReviewIds = (state.spacedReviewIds || []).filter((id) => id !== questionId);
     state.dangerousReviewIds = (state.dangerousReviewIds || []).filter((id) => id !== questionId);
     state.smartTrainingIds = (state.smartTrainingIds || []).filter((id) => id !== questionId);
@@ -83,52 +91,53 @@
     state.index = Math.min(oldIndex, Math.max(state.filtered.length - 1, 0));
   }
 
-  deleteButton.addEventListener("click", (event) => {
+  deleteButton.addEventListener("click", async (event) => {
     event.preventDefault();
     event.stopImmediatePropagation();
     if (!state.isAdmin) return;
     const question = currentQuestion();
     if (!question) return;
-    const confirmed = window.confirm("Excluir esta questão do banco de estudo? Ela será enviada para Administração > Questões excluídas e poderá ser restaurada depois.");
-    if (!confirmed) return;
+    if (!window.confirm("Excluir esta questão do banco? Ela deixará de aparecer para todos os usuários e ficará disponível em Administração > Questões excluídas para restauração.")) return;
 
+    const current = state.globalCorrections[question.id] || state.corrections[question.id] || {};
+    const correction = { ...current, excluded: true };
+    const savedGlobally = await saveGlobalCorrection(question.id, correction);
+    if (!savedGlobally) {
+      setSyncStatus("Não foi possível excluir globalmente. Tente novamente.");
+      return;
+    }
+    state.globalCorrections[question.id] = correction;
     if (!state.excluded.includes(question.id)) state.excluded.push(question.id);
     saveExcluded();
     state.editing = false;
     removeFromActiveQueue(question.id);
     if (typeof saveActiveStudyState === "function") saveActiveStudyState();
-    if (typeof setSyncStatus === "function") setSyncStatus("Questão excluída do banco de estudo. Ela pode ser restaurada em Administração > Questões excluídas.");
+    setSyncStatus("Questão excluída do banco e enviada para Administração > Questões excluídas.");
     renderExcludedAdmin();
-
     if (state.filtered.length && hasActiveQuestionFlow()) render();
     else applyFilters({ preserveCurrent: true });
   }, true);
 
-  listEl.addEventListener("click", (event) => {
+  listEl.addEventListener("click", async (event) => {
     const button = event.target.closest("[data-restore-excluded]");
     if (!button || !state.isAdmin) return;
     const questionId = button.dataset.restoreExcluded;
+    const current = state.globalCorrections[questionId] || {};
+    const correction = { ...current, excluded: false };
+    const savedGlobally = await saveGlobalCorrection(questionId, correction);
+    if (!savedGlobally) {
+      setSyncStatus("Não foi possível restaurar a questão. Tente novamente.");
+      return;
+    }
+    state.globalCorrections[questionId] = correction;
     state.excluded = (state.excluded || []).filter((id) => id !== questionId);
     saveExcluded();
-    if (typeof setSyncStatus === "function") setSyncStatus("Questão restaurada ao banco de estudo.");
+    setSyncStatus("Questão restaurada ao banco de estudo para todos os usuários.");
     renderExcludedAdmin();
     renderTopics();
   });
 
   searchEl.addEventListener("input", renderExcludedAdmin);
-
-  const originalRenderAdminAccess = typeof renderAdminAccess === "function" ? renderAdminAccess : null;
-  if (originalRenderAdminAccess) {
-    renderAdminAccess = function renderAdminAccessWithExcluded(...args) {
-      const result = originalRenderAdminAccess.apply(this, args);
-      renderExcludedAdmin();
-      return result;
-    };
-  }
-
-  document.querySelectorAll('[data-tab="topics"]').forEach((button) => {
-    button.addEventListener("click", () => setTimeout(renderExcludedAdmin, 0));
-  });
-
+  document.querySelectorAll('[data-tab="topics"]').forEach((button) => button.addEventListener("click", () => setTimeout(renderExcludedAdmin, 0)));
   renderExcludedAdmin();
 })();
