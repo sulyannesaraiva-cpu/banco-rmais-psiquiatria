@@ -1,7 +1,7 @@
 /* Bootstrap da aplicação: carrega o núcleo original e extensões isoladas. */
 (async function bootstrapBancoRmais() {
   try {
-    const [coreResponse, reviewResponse, topicProgressResponse, performanceResponse, sessionPersistenceResponse, maintenanceFlowResponse, editSaveFlowResponse] = await Promise.all([
+    const [coreResponse, reviewResponse, topicProgressResponse, performanceResponse, sessionPersistenceResponse, maintenanceFlowResponse, editSaveFlowResponse, authSyncFlowResponse] = await Promise.all([
       fetch("app-core.js"),
       fetch("reviewExamFrequency.js"),
       fetch("topicProgress.js"),
@@ -9,6 +9,7 @@
       fetch("sessionPersistence.js"),
       fetch("maintenanceFlowFix.js"),
       fetch("editSaveFlowFix.js"),
+      fetch("authSyncFlowFix.js"),
     ]);
 
     if (!coreResponse.ok) throw new Error("Falha ao carregar app-core.js");
@@ -18,8 +19,9 @@
     if (!sessionPersistenceResponse.ok) throw new Error("Falha ao carregar sessionPersistence.js");
     if (!maintenanceFlowResponse.ok) throw new Error("Falha ao carregar maintenanceFlowFix.js");
     if (!editSaveFlowResponse.ok) throw new Error("Falha ao carregar editSaveFlowFix.js");
+    if (!authSyncFlowResponse.ok) throw new Error("Falha ao carregar authSyncFlowFix.js");
 
-    const [coreSource, reviewSource, topicProgressSource, performanceSource, sessionPersistenceSource, maintenanceFlowSource, editSaveFlowSource] = await Promise.all([
+    const [coreSource, reviewSource, topicProgressSource, performanceSource, sessionPersistenceSource, maintenanceFlowSource, editSaveFlowSource, authSyncFlowSource] = await Promise.all([
       coreResponse.text(),
       reviewResponse.text(),
       topicProgressResponse.text(),
@@ -27,10 +29,11 @@
       sessionPersistenceResponse.text(),
       maintenanceFlowResponse.text(),
       editSaveFlowResponse.text(),
+      authSyncFlowResponse.text(),
     ]);
 
     const combinedScript = document.createElement("script");
-    combinedScript.textContent = `${coreSource}\n\n${reviewSource}\n\n${topicProgressSource}\n\n${performanceSource}\n\n${sessionPersistenceSource}\n\n${maintenanceFlowSource}\n\n${editSaveFlowSource}\n//# sourceURL=banco-rmais-app-bundle.js`;
+    combinedScript.textContent = `${coreSource}\n\n${reviewSource}\n\n${topicProgressSource}\n\n${performanceSource}\n\n${sessionPersistenceSource}\n\n${maintenanceFlowSource}\n\n${editSaveFlowSource}\n\n${authSyncFlowSource}\n//# sourceURL=banco-rmais-app-bundle.js`;
     document.head.appendChild(combinedScript);
   } catch (error) {
     console.error("Erro ao iniciar Banco R+:", error);
