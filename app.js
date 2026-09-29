@@ -1,6 +1,9 @@
 /* Bootstrap da aplicação: carrega o núcleo original e extensões isoladas. */
 (async function bootstrapBancoRmais() {
   try {
+    /* Provas suplementares ficam isoladas para não reescrever os arquivos gigantes do banco principal. */
+    await import("./data/unifespConcursos2025Loader.js");
+
     const [coreResponse, reviewResponse, topicProgressResponse, performanceResponse, sessionPersistenceResponse, maintenanceFlowResponse, editSaveFlowResponse, authSyncFlowResponse, excludedQuestionsResponse] = await Promise.all([
       fetch("app-core.js"),
       fetch("reviewExamFrequency.js"),
@@ -23,7 +26,6 @@
     if (!authSyncFlowResponse.ok) throw new Error("Falha ao carregar authSyncFlowFix.js");
     if (!excludedQuestionsResponse.ok) throw new Error("Falha ao carregar excludedQuestionsAdmin.js");
 
-    /* Garante que provas suplementares sejam incorporadas antes de state.exams ser criado. */
     if (window.UNIFESP_EXTRA_EXAMS_READY) await window.UNIFESP_EXTRA_EXAMS_READY;
 
     const [coreSource, reviewSource, topicProgressSource, performanceSource, sessionPersistenceSource, maintenanceFlowSource, editSaveFlowSource, authSyncFlowSource, excludedQuestionsSource] = await Promise.all([
