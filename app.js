@@ -23,6 +23,9 @@
     if (!authSyncFlowResponse.ok) throw new Error("Falha ao carregar authSyncFlowFix.js");
     if (!excludedQuestionsResponse.ok) throw new Error("Falha ao carregar excludedQuestionsAdmin.js");
 
+    /* Garante que provas suplementares sejam incorporadas antes de state.exams ser criado. */
+    if (window.UNIFESP_EXTRA_EXAMS_READY) await window.UNIFESP_EXTRA_EXAMS_READY;
+
     const [coreSource, reviewSource, topicProgressSource, performanceSource, sessionPersistenceSource, maintenanceFlowSource, editSaveFlowSource, authSyncFlowSource, excludedQuestionsSource] = await Promise.all([
       coreResponse.text(),
       reviewResponse.text(),
