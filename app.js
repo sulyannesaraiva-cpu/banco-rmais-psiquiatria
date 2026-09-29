@@ -3,6 +3,7 @@
   try {
     /* Provas suplementares ficam isoladas para não reescrever os arquivos gigantes do banco principal. */
     await import("./data/unifespConcursos2025Loader.js");
+    await import("./data/unifespPIA2025.js");
 
     const [coreResponse, reviewResponse, topicProgressResponse, performanceResponse, sessionPersistenceResponse, maintenanceFlowResponse, editSaveFlowResponse, authSyncFlowResponse, excludedQuestionsResponse] = await Promise.all([
       fetch("app-core.js"),
@@ -29,15 +30,7 @@
     if (window.UNIFESP_EXTRA_EXAMS_READY) await window.UNIFESP_EXTRA_EXAMS_READY;
 
     const [coreSource, reviewSource, topicProgressSource, performanceSource, sessionPersistenceSource, maintenanceFlowSource, editSaveFlowSource, authSyncFlowSource, excludedQuestionsSource] = await Promise.all([
-      coreResponse.text(),
-      reviewResponse.text(),
-      topicProgressResponse.text(),
-      performanceResponse.text(),
-      sessionPersistenceResponse.text(),
-      maintenanceFlowResponse.text(),
-      editSaveFlowResponse.text(),
-      authSyncFlowResponse.text(),
-      excludedQuestionsResponse.text(),
+      coreResponse.text(), reviewResponse.text(), topicProgressResponse.text(), performanceResponse.text(), sessionPersistenceResponse.text(), maintenanceFlowResponse.text(), editSaveFlowResponse.text(), authSyncFlowResponse.text(), excludedQuestionsResponse.text(),
     ]);
 
     const combinedScript = document.createElement("script");
