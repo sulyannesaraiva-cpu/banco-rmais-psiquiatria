@@ -4,19 +4,11 @@
     /* Provas suplementares ficam isoladas para não reescrever os arquivos gigantes do banco principal. */
     await import("./data/unifespConcursos2025Loader.js");
     await import("./data/unifespPIA2025.js");
+    await import("./data/unifespPsiquiatria2016.js");
 
     const [coreResponse, reviewResponse, topicProgressResponse, performanceResponse, sessionPersistenceResponse, maintenanceFlowResponse, editSaveFlowResponse, authSyncFlowResponse, excludedQuestionsResponse] = await Promise.all([
-      fetch("app-core.js"),
-      fetch("reviewExamFrequency.js"),
-      fetch("topicProgress.js"),
-      fetch("performanceOptimization.js"),
-      fetch("sessionPersistence.js"),
-      fetch("maintenanceFlowFix.js"),
-      fetch("editSaveFlowFix.js"),
-      fetch("authSyncFlowFix.js"),
-      fetch("excludedQuestionsAdmin.js"),
+      fetch("app-core.js"), fetch("reviewExamFrequency.js"), fetch("topicProgress.js"), fetch("performanceOptimization.js"), fetch("sessionPersistence.js"), fetch("maintenanceFlowFix.js"), fetch("editSaveFlowFix.js"), fetch("authSyncFlowFix.js"), fetch("excludedQuestionsAdmin.js"),
     ]);
-
     if (!coreResponse.ok) throw new Error("Falha ao carregar app-core.js");
     if (!reviewResponse.ok) throw new Error("Falha ao carregar reviewExamFrequency.js");
     if (!topicProgressResponse.ok) throw new Error("Falha ao carregar topicProgress.js");
@@ -26,20 +18,14 @@
     if (!editSaveFlowResponse.ok) throw new Error("Falha ao carregar editSaveFlowFix.js");
     if (!authSyncFlowResponse.ok) throw new Error("Falha ao carregar authSyncFlowFix.js");
     if (!excludedQuestionsResponse.ok) throw new Error("Falha ao carregar excludedQuestionsAdmin.js");
-
     if (window.UNIFESP_EXTRA_EXAMS_READY) await window.UNIFESP_EXTRA_EXAMS_READY;
-
-    const [coreSource, reviewSource, topicProgressSource, performanceSource, sessionPersistenceSource, maintenanceFlowSource, editSaveFlowSource, authSyncFlowSource, excludedQuestionsSource] = await Promise.all([
-      coreResponse.text(), reviewResponse.text(), topicProgressResponse.text(), performanceResponse.text(), sessionPersistenceResponse.text(), maintenanceFlowResponse.text(), editSaveFlowResponse.text(), authSyncFlowResponse.text(), excludedQuestionsResponse.text(),
-    ]);
-
+    const [coreSource, reviewSource, topicProgressSource, performanceSource, sessionPersistenceSource, maintenanceFlowSource, editSaveFlowSource, authSyncFlowSource, excludedQuestionsSource] = await Promise.all([coreResponse.text(), reviewResponse.text(), topicProgressResponse.text(), performanceResponse.text(), sessionPersistenceResponse.text(), maintenanceFlowResponse.text(), editSaveFlowResponse.text(), authSyncFlowResponse.text(), excludedQuestionsResponse.text()]);
     const combinedScript = document.createElement("script");
     combinedScript.textContent = `${coreSource}\n\n${reviewSource}\n\n${topicProgressSource}\n\n${performanceSource}\n\n${sessionPersistenceSource}\n\n${maintenanceFlowSource}\n\n${editSaveFlowSource}\n\n${authSyncFlowSource}\n\n${excludedQuestionsSource}\n//# sourceURL=banco-rmais-app-bundle.js`;
     document.head.appendChild(combinedScript);
   } catch (error) {
     console.error("Erro ao iniciar Banco R+:", error);
-    const sourceLabel = document.querySelector("#sourceLabel");
-    const questionTitle = document.querySelector("#questionTitle");
+    const sourceLabel = document.querySelector("#sourceLabel"); const questionTitle = document.querySelector("#questionTitle");
     if (sourceLabel) sourceLabel.textContent = "Falha ao carregar aplicação";
     if (questionTitle) questionTitle.textContent = error.message;
   }
