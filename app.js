@@ -6,6 +6,8 @@
     await import("./data/unifespPIA2025.js");
     await import("./data/unifespPsiquiatria2016.js");
     await import("./data/unifespPsiquiatria2018.js");
+    /* Reorganização apenas da UNIFESP: Área passa a separar residência de não residência. */
+    await import("./data/unifespProcessTypeOrganizer.js");
 
     const [coreResponse, reviewResponse, topicProgressResponse, performanceResponse, sessionPersistenceResponse, maintenanceFlowResponse, editSaveFlowResponse, authSyncFlowResponse, excludedQuestionsResponse] = await Promise.all([
       fetch("app-core.js"), fetch("reviewExamFrequency.js"), fetch("topicProgress.js"), fetch("performanceOptimization.js"), fetch("sessionPersistence.js"), fetch("maintenanceFlowFix.js"), fetch("editSaveFlowFix.js"), fetch("authSyncFlowFix.js"), fetch("excludedQuestionsAdmin.js"),
