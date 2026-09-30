@@ -26,6 +26,7 @@
     const combinedScript = document.createElement("script");
     combinedScript.textContent = `${coreSource}\n\n${reviewSource}\n\n${topicProgressSource}\n\n${performanceSource}\n\n${sessionPersistenceSource}\n\n${maintenanceFlowSource}\n\n${editSaveFlowSource}\n\n${authSyncFlowSource}\n\n${excludedQuestionsSource}\n//# sourceURL=banco-rmais-app-bundle.js`;
     document.head.appendChild(combinedScript);
+    await import("./data/globalBankCounter.js");
   } catch (error) {
     console.error("Erro ao iniciar Banco R+:", error);
     const sourceLabel = document.querySelector("#sourceLabel"); const questionTitle = document.querySelector("#questionTitle");
