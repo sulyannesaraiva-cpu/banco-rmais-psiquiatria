@@ -6,6 +6,7 @@
     await import("./data/unifespPIA2025.js");
     await import("./data/unifespPsiquiatria2016.js");
     await import("./data/unifespPsiquiatria2018.js");
+    await import("./data/sesdfLoader.js");
     /* Reorganização apenas da UNIFESP: Área passa a separar residência de não residência. */
     await import("./data/unifespProcessTypeOrganizer.js");
 
@@ -22,6 +23,7 @@
     if (!authSyncFlowResponse.ok) throw new Error("Falha ao carregar authSyncFlowFix.js");
     if (!excludedQuestionsResponse.ok) throw new Error("Falha ao carregar excludedQuestionsAdmin.js");
     if (window.UNIFESP_EXTRA_EXAMS_READY) await window.UNIFESP_EXTRA_EXAMS_READY;
+    if (window.SESDF_EXTRA_EXAMS_READY) await window.SESDF_EXTRA_EXAMS_READY;
     const [coreSource, reviewSource, topicProgressSource, performanceSource, sessionPersistenceSource, maintenanceFlowSource, editSaveFlowSource, authSyncFlowSource, excludedQuestionsSource] = await Promise.all([coreResponse.text(), reviewResponse.text(), topicProgressResponse.text(), performanceResponse.text(), sessionPersistenceResponse.text(), maintenanceFlowResponse.text(), editSaveFlowResponse.text(), authSyncFlowResponse.text(), excludedQuestionsResponse.text()]);
     const combinedScript = document.createElement("script");
     combinedScript.textContent = `${coreSource}\n\n${reviewSource}\n\n${topicProgressSource}\n\n${performanceSource}\n\n${sessionPersistenceSource}\n\n${maintenanceFlowSource}\n\n${editSaveFlowSource}\n\n${authSyncFlowSource}\n\n${excludedQuestionsSource}\n//# sourceURL=banco-rmais-app-bundle.js`;
