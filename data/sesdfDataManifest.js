@@ -1,0 +1,1 @@
+window.SESDF_DATA_MANIFEST={encoding:'gzip+base64',parts:6,expected:{'2022':120,'2024':100,total:220},annulled2024:[24,25,26]};
