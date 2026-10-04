@@ -1,19 +1,19 @@
 /* Integra RM/SES-DF 2022 (Grupo 010) e RM-1/SES-DF 2024 (Grupo 12) sem reescrever exams.js.
    A Promise é publicada imediatamente para que app.js aguarde a carga completa antes de montar os filtros. */
 window.SESDF_EXTRA_EXAMS_READY = (async function loadSesdfExams(){
-  /* Os fragmentos foram gravados historicamente nos índices 1,2,3,4,6,7 (não 0..5). */
-  const partNumbers=[1,2,3,4,6,7];
-  const partFiles=partNumbers.map(n=>`sesdfDataPart${n}.js`);
+  /* Os NOMES históricos dos arquivos pulam o Part5, mas cada arquivo grava sequencialmente
+     em SESDF_DATA_PARTS[0..5]: Part1->0, Part2->1, Part3->2, Part4->3, Part6->4, Part7->5. */
+  const partFiles=['sesdfDataPart1.js','sesdfDataPart2.js','sesdfDataPart3.js','sesdfDataPart4.js','sesdfDataPart6.js','sesdfDataPart7.js'];
   for(const p of partFiles) await import(`./${p}`);
 
   const loadedParts=window.SESDF_DATA_PARTS||[];
-  const missing=partNumbers.filter(n=>typeof loadedParts[n]!=="string" || !loadedParts[n]);
+  const expectedIndexes=[0,1,2,3,4,5];
+  const missing=expectedIndexes.filter(i=>typeof loadedParts[i]!=="string" || !loadedParts[i]);
   if(missing.length) {
-    throw new Error(`Dados SES-DF incompletos; partes ausentes: ${missing.join(', ')}`);
+    throw new Error(`Dados SES-DF incompletos; fragmentos internos ausentes: ${missing.map(i=>i+1).join(', ')}`);
   }
 
-  /* Não usar Array.join() diretamente: os índices 0 e 5 são vazios por desenho. */
-  const b64=partNumbers.map(n=>loadedParts[n]).join('');
+  const b64=expectedIndexes.map(i=>loadedParts[i]).join('');
   const bin=Uint8Array.from(atob(b64),c=>c.charCodeAt(0));
   const stream=new Blob([bin]).stream().pipeThrough(new DecompressionStream('gzip'));
   const data=JSON.parse(await new Response(stream).text());
