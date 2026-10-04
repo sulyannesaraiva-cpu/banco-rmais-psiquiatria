@@ -1,16 +1,19 @@
 /* Integra RM/SES-DF 2022 (Grupo 010) e RM-1/SES-DF 2024 (Grupo 12) sem reescrever exams.js.
-   IMPORTANTE: a Promise é publicada imediatamente para que app.js aguarde a carga completa
-   antes de o núcleo montar os filtros de provas. */
+   A Promise é publicada imediatamente para que app.js aguarde a carga completa antes de montar os filtros. */
 window.SESDF_EXTRA_EXAMS_READY = (async function loadSesdfExams(){
-  const parts=['sesdfDataPart1.js','sesdfDataPart2.js','sesdfDataPart3.js','sesdfDataPart4.js','sesdfDataPart6.js','sesdfDataPart7.js'];
-  for(const p of parts) await import(`./${p}`);
+  /* Os fragmentos foram gravados historicamente nos índices 1,2,3,4,6,7 (não 0..5). */
+  const partNumbers=[1,2,3,4,6,7];
+  const partFiles=partNumbers.map(n=>`sesdfDataPart${n}.js`);
+  for(const p of partFiles) await import(`./${p}`);
 
   const loadedParts=window.SESDF_DATA_PARTS||[];
-  if(loadedParts.length!==6 || loadedParts.some(part=>!part)) {
-    throw new Error(`Dados SES-DF incompletos: ${loadedParts.filter(Boolean).length}/6 partes carregadas`);
+  const missing=partNumbers.filter(n=>typeof loadedParts[n]!=="string" || !loadedParts[n]);
+  if(missing.length) {
+    throw new Error(`Dados SES-DF incompletos; partes ausentes: ${missing.join(', ')}`);
   }
 
-  const b64=loadedParts.join('');
+  /* Não usar Array.join() diretamente: os índices 0 e 5 são vazios por desenho. */
+  const b64=partNumbers.map(n=>loadedParts[n]).join('');
   const bin=Uint8Array.from(atob(b64),c=>c.charCodeAt(0));
   const stream=new Blob([bin]).stream().pipeThrough(new DecompressionStream('gzip'));
   const data=JSON.parse(await new Response(stream).text());
@@ -47,9 +50,11 @@ window.SESDF_EXTRA_EXAMS_READY = (async function loadSesdfExams(){
   addExam({id:'sesdf-rm-2024-grupo12',title:'SES-DF — Residência Médica 2024 — Grupo 12 — Psicoterapia/PIA/Psicogeriatria',institution:'SES-DF',provider:'SES-DF',area:'Psiquiatria',year:2024,category:'Residência',examTag:'Residência',questionCount:q24.length,questions:q24});
 
   const result={exams:2,questions:q22.length+q24.length};
+  window.SESDF_LOAD_STATUS={ok:true,...result};
   console.info('SES-DF carregada:',result);
   return result;
 })().catch((error)=>{
+  window.SESDF_LOAD_STATUS={ok:false,error:String(error && error.message || error)};
   console.error('Erro ao carregar provas SES-DF:',error);
   throw error;
 });
