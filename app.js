@@ -7,9 +7,9 @@
     await import("./data/unifespPsiquiatria2016.js");
     await import("./data/unifespPsiquiatria2018.js");
 
-    /* SES-DF é opcional: qualquer falha nessa extensão NÃO pode derrubar o banco inteiro. */
+    /* SES-DF: loader V2 usa fetch dos fragmentos e valida 220 questões antes da interface. */
     try {
-      await import("./data/sesdfLoader.js");
+      await import("./data/sesdfLoaderV2.js?v=20261005-sesdf2");
       if (window.SESDF_EXTRA_EXAMS_READY) await window.SESDF_EXTRA_EXAMS_READY;
     } catch (sesdfError) {
       window.SESDF_LOAD_STATUS={ok:false,error:String(sesdfError && sesdfError.message || sesdfError)};
