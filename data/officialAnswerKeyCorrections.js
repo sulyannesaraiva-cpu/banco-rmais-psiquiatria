@@ -1,6 +1,6 @@
 /* Correções de gabaritos oficiais — AMRIGS Psiquiatria.
  * Fontes auditadas:
- * - AMRIGS/ACM/AMMS 2017, Gabarito Preliminar, pré-requisito Psiquiatria (50 questões).
+ * - AMRIGS/ACM 2015, Gabarito, pré-requisito Psiquiatria (50 questões).\n * - AMRIGS/ACM/AMMS 2017, Gabarito Preliminar, pré-requisito Psiquiatria (50 questões).
  * - AMRIGS/ACM/AMMS 2018, Gabarito Definitivo, pré-requisito Psiquiatria (30 questões).
  *
  * Este arquivo é carregado depois de data/exams.js e antes de app.js.
@@ -63,7 +63,7 @@
   });
 
   window.BANCO_RMAIS_OFFICIAL_KEY_AUDIT = {
-    source: "AMRIGS Psiquiatria 2017/2018",
+    source: "AMRIGS Psiquiatria 2015/2017/2018",
     corrections: audit,
     correctedCount: audit.length,
   };
