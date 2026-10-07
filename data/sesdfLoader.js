@@ -3,9 +3,7 @@
 window.SESDF_EXTRA_EXAMS_READY = (async function loadSesdfExams(){
   /* Os NOMES históricos dos arquivos pulam o Part5, mas cada arquivo grava sequencialmente
      em SESDF_DATA_PARTS[0..5]: Part1->0, Part2->1, Part3->2, Part4->3, Part6->4, Part7->5. */
-  const partFiles=['sesdfDataPart1.js','sesdfDataPart2.js','sesdfDataPart3.js','sesdfDataPart4.js','sesdfDataPart6.js','sesdfDataPart7.js'];
-  for(const p of partFiles) await import(`./${p}?v=20261007-sesdf3`);
-
+  /* Os fragmentos são scripts estáticos do index.html e já devem existir aqui. */
   const loadedParts=window.SESDF_DATA_PARTS||[];
   const expectedIndexes=[0,1,2,3,4,5];
   const missing=expectedIndexes.filter(i=>typeof loadedParts[i]!=="string" || !loadedParts[i]);
