@@ -1,6 +1,6 @@
 /* Correções de gabaritos oficiais — AMRIGS Psiquiatria.
  * Fontes auditadas:
- * - AMRIGS/ACM/AMMS 2017, Gabarito Preliminar, pré-requisito Psiquiatria (50 questões).
+ * - AMRIGS/ACM 2015, Gabarito, pré-requisito Psiquiatria (50 questões).\n * - AMRIGS/ACM/AMMS 2017, Gabarito Preliminar, pré-requisito Psiquiatria (50 questões).
  * - AMRIGS/ACM/AMMS 2018, Gabarito Definitivo, pré-requisito Psiquiatria (30 questões).
  *
  * Este arquivo é carregado depois de data/exams.js e antes de app.js.
@@ -12,6 +12,13 @@
   if (!Array.isArray(exams)) return;
 
   const KEYS = {
+    2015: [
+      "C","B","E","C","D","B","E","C","C","A",
+      "B","D","D","D","B","E","D","E","E","A",
+      "B","B","C","C","D","D","E","C","A","B",
+      "E","C","B","D","B","A","A","E","A","C",
+      "D","E","E","C","E","B","A","D","C","C",
+    ],
     2017: [
     "D","A","C","D","E","B","A","C","B","E",
     "A","B","C","D","C","E","D","D","C","C",
@@ -63,7 +70,7 @@
   });
 
   window.BANCO_RMAIS_OFFICIAL_KEY_AUDIT = {
-    source: "AMRIGS Psiquiatria 2017/2018",
+    source: "AMRIGS Psiquiatria 2015/2017/2018",
     corrections: audit,
     correctedCount: audit.length,
   };
