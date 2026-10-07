@@ -1,6 +1,7 @@
 /* Progresso persistente por tema: continuar pendentes, ver todas e acompanhar conclusão. */
 (function setupPersistentTopicProgress() {
   const TOPIC_MODE_KEY = "banco-rmais-topic-mode";
+  const TOPIC_PANEL_OPEN_KEY = "banco-rmais-topic-progress-open";
   let lastProgressSignature = "";
 
   if (!document.querySelector("#topicProgressStyles")) {
@@ -144,7 +145,9 @@
     const rows = topics.map((topic) => ({ topic, stats: topicStats(topic) }));
     const answeredTotal = rows.reduce((sum, row) => sum + row.stats.answered, 0);
     const questionTotal = rows.reduce((sum, row) => sum + row.stats.total, 0);
-    const openState = panel.querySelector("details")?.open || false;
+    const existingDetails = panel.querySelector("details");
+    const savedOpenState = localStorage.getItem(TOPIC_PANEL_OPEN_KEY);
+    const openState = existingDetails ? existingDetails.open : savedOpenState !== "false";
 
     panel.innerHTML = `
       <details class="topic-progress-details" ${openState ? "open" : ""}>
@@ -173,6 +176,11 @@
           </div>
         </div>
       </details>`;
+
+    const details = panel.querySelector("details");
+    if (details) details.addEventListener("toggle", () => {
+      localStorage.setItem(TOPIC_PANEL_OPEN_KEY, details.open ? "true" : "false");
+    });
 
     panel.querySelectorAll("[data-topic-continue]").forEach((button) => {
       button.addEventListener("click", () => openTopic(button.dataset.topicContinue, "pending"));
