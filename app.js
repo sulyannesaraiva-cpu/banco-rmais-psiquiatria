@@ -7,11 +7,10 @@
     await import("./data/unifespPsiquiatria2016.js");
     await import("./data/unifespPsiquiatria2018.js");
 
-    /* SES-DF: carrega os fragmentos como módulos (mesma origem) e então monta as provas.
-       Evita o fetch+regex do loader V2, que podia falhar antes de registrar as provas. */
+    /* SES-DF já iniciou pelo index.html; apenas aguarda a montagem das provas. */
     try {
-      await import("./data/sesdfLoader.js?v=20261007-sesdf3");
-      if (window.SESDF_EXTRA_EXAMS_READY) await window.SESDF_EXTRA_EXAMS_READY;
+      if (!window.SESDF_EXTRA_EXAMS_READY) throw new Error("Bootstrap SES-DF não iniciado");
+      await window.SESDF_EXTRA_EXAMS_READY;
     } catch (sesdfError) {
       window.SESDF_LOAD_STATUS={ok:false,error:String(sesdfError && sesdfError.message || sesdfError)};
       console.error("SES-DF não carregada; aplicação principal continuará normalmente:", sesdfError);
