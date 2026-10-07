@@ -7,9 +7,10 @@
     await import("./data/unifespPsiquiatria2016.js");
     await import("./data/unifespPsiquiatria2018.js");
 
-    /* SES-DF: loader V2 usa fetch dos fragmentos e valida 220 questões antes da interface. */
+    /* SES-DF: carrega os fragmentos como módulos (mesma origem) e então monta as provas.
+       Evita o fetch+regex do loader V2, que podia falhar antes de registrar as provas. */
     try {
-      await import("./data/sesdfLoaderV2.js?v=20261005-sesdf2");
+      await import("./data/sesdfLoader.js?v=20261007-sesdf3");
       if (window.SESDF_EXTRA_EXAMS_READY) await window.SESDF_EXTRA_EXAMS_READY;
     } catch (sesdfError) {
       window.SESDF_LOAD_STATUS={ok:false,error:String(sesdfError && sesdfError.message || sesdfError)};
