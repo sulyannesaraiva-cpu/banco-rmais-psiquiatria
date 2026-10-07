@@ -12,23 +12,19 @@
   if (!Array.isArray(exams)) return;
 
   const KEYS = {
-    2017: "DACDEBACBEABC DCE DDCCDABBB DDEADCADDDBAB DABEEABA".replace(/\s/g, ""),
-    2018: "BCACCB CDBCADA DAA CDDDDDDCDBCD A".replace(/\s/g, ""),
-  };
-
-  // Declarações explícitas evitam que espaços de formatação alterem a sequência.
-  KEYS[2017] = [
+    2017: [
     "D","A","C","D","E","B","A","C","B","E",
     "A","B","C","D","C","E","D","D","C","C",
     "C","D","D","A","B","B","B","D","D","E",
     "A","D","C","A","D","D","D","C","D","B",
     "A","B","D","A","B","E","E","A","B","A",
-  ];
-  KEYS[2018] = [
+    ],
+    2018: [
     "B","C","A","C","C","B","C","D","B","C",
     "A","D","A","D","A","A","C","D","D","D",
     "D","D","D","D","C","D","B","C","D","A",
-  ];
+    ],
+  };
 
   const normalize = (value) =>
     String(value || "")
