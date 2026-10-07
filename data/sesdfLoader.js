@@ -13,8 +13,16 @@ window.SESDF_EXTRA_EXAMS_READY = (async function loadSesdfExams(){
 
   const b64=expectedIndexes.map(i=>loadedParts[i]).join('');
   const bin=Uint8Array.from(atob(b64),c=>c.charCodeAt(0));
-  const stream=new Blob([bin]).stream().pipeThrough(new DecompressionStream('gzip'));
-  const data=JSON.parse(await new Response(stream).text());
+  let jsonText;
+  if (window.pako && typeof window.pako.ungzip === 'function') {
+    jsonText = window.pako.ungzip(bin, { to: 'string' });
+  } else if (typeof DecompressionStream !== 'undefined') {
+    const stream=new Blob([bin]).stream().pipeThrough(new DecompressionStream('gzip'));
+    jsonText=await new Response(stream).text();
+  } else {
+    throw new Error('Navegador sem suporte à descompactação gzip');
+  }
+  const data=JSON.parse(jsonText);
 
   if(!data || !Array.isArray(data['2022']) || !Array.isArray(data['2024'])) {
     throw new Error('Estrutura dos dados SES-DF inválida');
