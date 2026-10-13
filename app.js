@@ -8,6 +8,14 @@
     await import("./data/unifespPsiquiatria2018.js");
     await import("./data/enarePsiquiatria2027.js");
 
+    /* Preferir módulo estático gerado em CI; preservar fallback enquanto não existir. */
+    try {
+      await import("./data/sesdfStatic.js?v=20261013-static");
+      console.info("SES-DF: dados estáticos carregados");
+    } catch (error) {
+      console.warn("SES-DF: módulo estático ainda indisponível; usando fallback", error);
+    }
+
     /* SES-DF: carregamento resiliente, sem depender apenas da execução no HTML. */
     try {
       const expected = [0,1,2,3,4,5];
