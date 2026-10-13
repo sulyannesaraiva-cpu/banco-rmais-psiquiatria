@@ -1,0 +1,49 @@
+name: Materializar SES-DF estaticamente
+on:
+  push:
+    paths:
+      - '.github/workflows/materialize-sesdf.yml'
+      - 'data/sesdfDataPart*.js'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Gerar módulo estático de 220 questões
+        run: |
+          python3 - <<'PY'
+          import re,base64,gzip,json,pathlib
+          parts=[]
+          for n in [1,2,3,4,6,7]:
+              s=pathlib.Path(f'data/sesdfDataPart{n}.js').read_text()
+              m=re.search(r"='([^']+)'",s)
+              assert m, f'Parte {n} não encontrada'
+              parts.append(m.group(1))
+          raw=json.loads(gzip.decompress(base64.b64decode(''.join(parts))))
+          assert len(raw['2022'])==120 and len(raw['2024'])==100
+          js = """/* SES-DF estática: gerada no GitHub Actions, sem gzip/CDN em runtime. */
+          (function(){
+            const data=__DATA__;
+            const root=window.BANCO_RMAIS_EXAMS||(window.BANCO_RMAIS_EXAMS={exams:[]});
+            if(!Array.isArray(root.exams))root.exams=[];
+            const add=(e)=>{if(!root.exams.some(x=>x.id===e.id))root.exams.push(e);};
+            const q22=data['2022'].map(q=>({id:'sesdf-rm-2022-grupo010-q'+q.n,number:q.n,title:'Questão '+q.n,text:q.text,options:[{letter:'C',text:'CERTO'},{letter:'E',text:'ERRADO'}],correctAnswer:q.correct,source:'SES-DF — Residência Médica 2022 — Grupo 010',provider:'SES-DF',institution:'SES-DF',area:'Psiquiatria da Infância e Adolescência / Psicogeriatria',year:2022,category:'Residência',examTag:'Residência',tags:['SES-DF','2022','residência']}));
+            add({id:'sesdf-rm-2022-grupo010',title:'SES-DF — Residência Médica 2022 — Grupo 010 — PIA/Psicogeriatria',institution:'SES-DF',provider:'SES-DF',area:'Psiquiatria da Infância e Adolescência / Psicogeriatria',year:2022,category:'Residência',examTag:'Residência',questionCount:q22.length,questions:q22});
+            const letters=['A','B','C','D'];
+            const q24=data['2024'].map(q=>({id:'sesdf-rm-2024-grupo12-q'+q.n,number:q.n,title:'Questão '+q.n,text:q.text,options:q.options.map((t,i)=>({letter:letters[i],text:t})),correctAnswer:q.correct,annulled:!!q.annulled,excluded:!!q.annulled,source:'SES-DF — Residência Médica 2024 — Grupo 12',provider:'SES-DF',institution:'SES-DF',area:'Psiquiatria',year:2024,category:'Residência',examTag:'Residência',tags:['SES-DF','2024','residência'].concat(q.annulled?['anulada']:[])}));
+            add({id:'sesdf-rm-2024-grupo12',title:'SES-DF — Residência Médica 2024 — Grupo 12 — Psicoterapia/PIA/Psicogeriatria',institution:'SES-DF',provider:'SES-DF',area:'Psiquiatria',year:2024,category:'Residência',examTag:'Residência',questionCount:q24.length,questions:q24});
+            window.SESDF_LOAD_STATUS={ok:true,exams:2,questions:220};
+          })();
+          """.replace('__DATA__',json.dumps(raw,ensure_ascii=False,separators=(',',':')))
+          pathlib.Path('data/sesdfStatic.js').write_text(js)
+          print('Gerado:',len(js),'bytes')
+          PY
+      - name: Commitar dados estáticos
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add data/sesdfStatic.js
+          git diff --cached --quiet || (git commit -m "Generate static SES-DF exam data" && git push)
