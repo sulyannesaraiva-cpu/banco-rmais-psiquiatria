@@ -50,6 +50,17 @@
       console.error("SES-DF não carregada:", sesdfError);
     }
 
+    /* Identificação uniforme das provas SES-DF, independentemente do carregador. */
+    for (const exam of window.BANCO_RMAIS_EXAMS?.exams || []) {
+      if (exam.institution !== "SES-DF") continue;
+      exam.area = "Psiquiatria Geral";
+      exam.title = exam.year === 2022
+        ? "SES-DF — 2022 — Psiquiatria Geral (Grupo 010)"
+        : exam.year === 2024
+          ? "SES-DF — 2024 — Psiquiatria Geral (Grupo 12)" : exam.title;
+      for (const question of exam.questions || []) question.area = "Psiquiatria Geral";
+    }
+
     /* Reorganização apenas da UNIFESP: Área passa a separar residência de não residência. */
     await import("./data/unifespProcessTypeOrganizer.js");
 
