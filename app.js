@@ -6,6 +6,7 @@
     await import("./data/unifespPIA2025.js");
     await import("./data/unifespPsiquiatria2016.js");
     await import("./data/unifespPsiquiatria2018.js");
+    await import("./data/enarePsiquiatria2027.js");
 
     /* SES-DF já iniciou pelo index.html; apenas aguarda a montagem das provas. */
     try {
