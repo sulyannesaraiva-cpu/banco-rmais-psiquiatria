@@ -1316,7 +1316,7 @@ function toggleDiscardedOption(questionId, letter) {
 }
 
 function allStudyQuestions() {
-  return [...state.questions, ...state.exams.flatMap((exam) => exam.questions || [])];
+  return [...state.questions, ...state.exams.filter((exam) => exam.institution !== 'SES-DF').flatMap((exam) => exam.questions || [])];
 }
 
 function applyQuestionCorrection(question, correction) {
