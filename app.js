@@ -44,6 +44,20 @@
       console.error("SES-DF não carregada:", sesdfError);
     }
 
+    /* Diagnóstico visível na seção Provas, sem depender do console. */
+    const sesdfStatus = window.SESDF_LOAD_STATUS;
+    const sesdfCount = (window.BANCO_RMAIS_EXAMS?.exams || []).filter(e => e.institution === "SES-DF").length;
+    const sesdfNotice = document.createElement("p");
+    sesdfNotice.id = "sesdfLoadNotice";
+    sesdfNotice.className = "panel-line";
+    sesdfNotice.style.marginTop = "8px";
+    sesdfNotice.textContent = sesdfCount === 2
+      ? "SES-DF: 2022 (120 questões) e 2024 (100 questões) carregadas."
+      : "SES-DF indisponível: " + (sesdfStatus?.error || "dados não registrados no catálogo");
+    const sesdfAnchor = document.querySelector("#examFilteredCount")?.parentElement
+      || document.querySelector("#examInstitutionSelect")?.parentElement;
+    if (sesdfAnchor) sesdfAnchor.insertAdjacentElement("afterend", sesdfNotice);
+
     /* Identificação uniforme das provas SES-DF, independentemente do carregador. */
     for (const exam of window.BANCO_RMAIS_EXAMS?.exams || []) {
       if (exam.institution !== "SES-DF") continue;
