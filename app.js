@@ -8,13 +8,38 @@
     await import("./data/unifespPsiquiatria2018.js");
     await import("./data/enarePsiquiatria2027.js");
 
-    /* SES-DF já iniciou pelo index.html; apenas aguarda a montagem das provas. */
+    /* SES-DF: carregamento resiliente, sem depender apenas da execução no HTML. */
     try {
-      if (!window.SESDF_EXTRA_EXAMS_READY) throw new Error("Bootstrap SES-DF não iniciado");
+      const expected = [0,1,2,3,4,5];
+      const partNames = [1,2,3,4,6,7];
+      const loadScript = (src) => new Promise((resolve, reject) => {
+        const script = document.createElement("script");
+        script.src = src;
+        script.onload = resolve;
+        script.onerror = () => reject(new Error("Falha ao carregar " + src));
+        document.head.appendChild(script);
+      });
+      for (let i=0;i<expected.length;i++) {
+        if (typeof window.SESDF_DATA_PARTS?.[i] !== "string") {
+          await loadScript("./data/sesdfDataPart" + partNames[i] + ".js?v=20261013-retry");
+        }
+      }
+      if (!window.pako?.ungzip && typeof DecompressionStream === "undefined") {
+        await loadScript("https://cdn.jsdelivr.net/npm/pako@2.1.0/dist/pako.min.js");
+      }
+      if (!window.SESDF_EXTRA_EXAMS_READY || window.SESDF_LOAD_STATUS?.ok === false) {
+        window.SESDF_EXTRA_EXAMS_READY = undefined;
+        await loadScript("./data/sesdfLoader.js?v=20261013-retry");
+      }
       await window.SESDF_EXTRA_EXAMS_READY;
+      const loaded = window.BANCO_RMAIS_EXAMS?.exams?.filter(e => e.institution === "SES-DF") || [];
+      if (loaded.length !== 2 || loaded.reduce((n,e)=>n+e.questions.length,0)!==220) {
+        throw new Error("SES-DF incompleta após carregamento: " + loaded.length + " provas");
+      }
+      console.info("SES-DF validada: 2 provas / 220 questões");
     } catch (sesdfError) {
-      window.SESDF_LOAD_STATUS={ok:false,error:String(sesdfError && sesdfError.message || sesdfError)};
-      console.error("SES-DF não carregada; aplicação principal continuará normalmente:", sesdfError);
+      window.SESDF_LOAD_STATUS={ok:false,error:String(sesdfError?.message || sesdfError)};
+      console.error("SES-DF não carregada:", sesdfError);
     }
 
     /* Reorganização apenas da UNIFESP: Área passa a separar residência de não residência. */
