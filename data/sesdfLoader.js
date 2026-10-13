@@ -38,22 +38,22 @@ window.SESDF_EXTRA_EXAMS_READY = (async function loadSesdfExams(){
   const q22=data['2022'].map(q=>({
     id:`sesdf-rm-2022-grupo010-q${q.n}`,number:q.n,title:`Questão ${q.n}`,text:q.text,
     options:[{letter:'C',text:'CERTO'},{letter:'E',text:'ERRADO'}],correctAnswer:q.correct,
-    source:'SES-DF — Residência Médica 2022 — Grupo 010 — PIA/Psicogeriatria',provider:'SES-DF',institution:'SES-DF',
-    area:'Psiquiatria da Infância e Adolescência / Psicogeriatria',year:2022,category:'Residência',examTag:'Residência',
+    source:'SES-DF — Residência Médica 2022 — Psiquiatria Geral (Grupo 010)',provider:'SES-DF',institution:'SES-DF',
+    area:'Psiquiatria Geral',year:2022,category:'Residência',examTag:'Residência',
     tags:['SES-DF','2022','residência','PIA','psicogeriatria','certo/errado']
   }));
-  addExam({id:'sesdf-rm-2022-grupo010',title:'SES-DF — Residência Médica 2022 — Grupo 010 — PIA/Psicogeriatria',institution:'SES-DF',provider:'SES-DF',area:'Psiquiatria da Infância e Adolescência / Psicogeriatria',year:2022,category:'Residência',examTag:'Residência',questionCount:q22.length,questions:q22});
+  addExam({id:'sesdf-rm-2022-grupo010',title:'SES-DF — Residência Médica 2022 — Psiquiatria Geral (Grupo 010)',institution:'SES-DF',provider:'SES-DF',area:'Psiquiatria Geral',year:2022,category:'Residência',examTag:'Residência',questionCount:q22.length,questions:q22});
 
   const letters=['A','B','C','D'];
   const q24=data['2024'].map(q=>({
     id:`sesdf-rm-2024-grupo12-q${q.n}`,number:q.n,title:`Questão ${q.n}`,text:q.text,
     options:q.options.map((t,i)=>({letter:letters[i],text:t})),correctAnswer:q.correct,
     annulled:!!q.annulled,excluded:!!q.annulled,
-    source:'SES-DF — Residência Médica 2024 — Grupo 12 — Psicoterapia/PIA/Psicogeriatria',provider:'SES-DF',institution:'SES-DF',
-    area:'Psiquiatria',year:2024,category:'Residência',examTag:'Residência',
+    source:'SES-DF — Residência Médica 2024 — Psiquiatria Geral (Grupo 12)',provider:'SES-DF',institution:'SES-DF',
+    area:'Psiquiatria Geral',year:2024,category:'Residência',examTag:'Residência',
     tags:['SES-DF','2024','residência','psicoterapia','PIA','psicogeriatria'].concat(q.annulled?['anulada']:[])
   }));
-  addExam({id:'sesdf-rm-2024-grupo12',title:'SES-DF — Residência Médica 2024 — Grupo 12 — Psicoterapia/PIA/Psicogeriatria',institution:'SES-DF',provider:'SES-DF',area:'Psiquiatria',year:2024,category:'Residência',examTag:'Residência',questionCount:q24.length,questions:q24});
+  addExam({id:'sesdf-rm-2024-grupo12',title:'SES-DF — Residência Médica 2024 — Psiquiatria Geral (Grupo 12)',institution:'SES-DF',provider:'SES-DF',area:'Psiquiatria Geral',year:2024,category:'Residência',examTag:'Residência',questionCount:q24.length,questions:q24});
 
   const result={exams:2,questions:q22.length+q24.length};
   window.SESDF_LOAD_STATUS={ok:true,...result};
