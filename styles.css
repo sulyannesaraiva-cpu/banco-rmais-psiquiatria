@@ -3236,3 +3236,15 @@ body.theme-dark .option.selected.pending::before {
     grid-template-columns: 1fr 1fr;
   }
 }
+
+/* Figura da questão (diagramas reproduzidos da prova) */
+.question-image {
+  display: block;
+  max-width: min(100%, 720px);
+  height: auto;
+  margin: -6px 0 24px;
+  padding: 8px;
+  border-radius: 10px;
+  background: #fff;
+  border: 1px solid var(--line, #dfe3e8);
+}

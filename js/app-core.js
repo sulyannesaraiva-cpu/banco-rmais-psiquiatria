@@ -3943,6 +3943,24 @@ function renderQuestionMap() {
     .join("");
 }
 
+/* Figura da questão (ex.: diagramas da prova), exibida logo abaixo do enunciado. */
+function renderQuestionImage(question) {
+  let figure = document.querySelector("#questionImage");
+  if (!question?.image) {
+    if (figure) figure.hidden = true;
+    return;
+  }
+  if (!figure) {
+    figure = document.createElement("img");
+    figure.id = "questionImage";
+    figure.className = "question-image";
+    figure.alt = "Figura da questão";
+    el.text.insertAdjacentElement("afterend", figure);
+  }
+  if (figure.getAttribute("src") !== question.image) figure.src = question.image;
+  figure.hidden = false;
+}
+
 function render() {
   renderAdminAccess();
   renderStats();
@@ -3967,6 +3985,7 @@ function render() {
       el.tags.innerHTML = "";
       el.tags.classList.remove("visible");
       el.text.textContent = "";
+      renderQuestionImage(null);
       el.options.innerHTML = "";
       el.answer.textContent = "";
       el.answer.classList.remove("visible");
@@ -3985,6 +4004,7 @@ function render() {
     el.tags.innerHTML = "";
     el.tags.classList.remove("visible");
     el.text.textContent = "";
+    renderQuestionImage(null);
     el.options.innerHTML = "";
     el.answer.textContent = "";
     el.answer.classList.remove("visible");
@@ -4034,6 +4054,7 @@ function render() {
   el.tags.innerHTML = tags.map((tag) => `<span>${escapeHtml(tag)}</span>`).join("");
   el.tags.classList.toggle("visible", Boolean(tags.length));
   el.text.textContent = question.text;
+  renderQuestionImage(question);
   const discarded = discardedFor(question.id);
   el.options.innerHTML = question.options.length
     ? question.options
