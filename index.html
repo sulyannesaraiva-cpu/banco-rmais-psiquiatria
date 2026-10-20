@@ -726,22 +726,26 @@
       </section>
     </main>
 
+    <!-- Dados: cada arquivo acrescenta provas/questões/flashcards aos objetos globais, nesta ordem. -->
     <script src="data/questions.js"></script>
     <script src="data/exams.js"></script>
     <script src="data/officialAnswerKeyCorrections.js"></script>
-    <!-- SES-DF: dados carregados estaticamente antes do bootstrap da aplicação. -->
-    <script src="data/sesdfDataPart1.js?v=20261007-sesdf4"></script>
-    <script src="data/sesdfDataPart2.js?v=20261007-sesdf4"></script>
-    <script src="data/sesdfDataPart3.js?v=20261007-sesdf4"></script>
-    <script src="data/sesdfDataPart4.js?v=20261007-sesdf4"></script>
-    <script src="data/sesdfDataPart6.js?v=20261007-sesdf4"></script>
-    <script src="data/sesdfDataPart7.js?v=20261007-sesdf4"></script>
-    <script src="https://cdn.jsdelivr.net/npm/pako@2.1.0/dist/pako.min.js"></script>
-    <script src="data/sesdfLoader.js?v=20261013-geral"></script>
     <script src="data/flashcards.js"></script>
     <script src="data/psychogeriatricsFlashcards.js"></script>
     <script src="data/psychogeriatricsImportedModules.js"></script>
+    <script src="data/unifesp2025.js"></script>
+    <script src="data/unifespPIA2025.js"></script>
+    <script src="data/unifespPsiquiatria2016.js"></script>
+    <script src="data/unifespPsiquiatria2018.js"></script>
+    <script src="data/enarePsiquiatria2027.js"></script>
+    <script src="js/unifespProcessTypeOrganizer.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-    <script src="app.js?v=20261013-sesdf-diagnostic3"></script>
+    <!-- App: o núcleo inicia no DOMContentLoaded, depois que os módulos abaixo forem aplicados. -->
+    <script src="js/app-core.js"></script>
+    <script src="js/reviewExamFrequency.js"></script>
+    <script src="js/topicProgress.js"></script>
+    <script src="js/sessionPersistence.js"></script>
+    <script src="js/excludedQuestionsAdmin.js"></script>
+    <script src="js/globalBankCounter.js"></script>
   </body>
 </html>

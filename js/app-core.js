@@ -693,25 +693,94 @@ async function syncSettingsToCloud() {
   setSyncStatus(error ? `Erro ao salvar configuracoes: ${error.message}` : "Configuracoes sincronizadas.");
 }
 
+/* Sincroniza progresso/configurações da conta sem desmontar um bloco de questões ativo. */
 async function loadCloudState() {
   if (!state.authUser || !state.supabase) return;
+
+  const activeContext = hasActiveQuestionFlow() && Array.isArray(state.filtered) && state.filtered.length
+    ? {
+        filtered: [...state.filtered],
+        index: state.index,
+        activeTab: state.activeTab,
+        filterKey: state.filterKey,
+        selectedTopics: Array.isArray(state.selectedTopics) ? [...state.selectedTopics] : [],
+        selectedSubthemes: Array.isArray(state.selectedSubthemes) ? [...state.selectedSubthemes] : [],
+        refineSubthemes: Boolean(state.refineSubthemes),
+        activeAnswers: { ...(state.activeAnswers || {}) },
+        topicActive: state.topicActive,
+        topicIds: [...(state.topicIds || [])],
+        sessionActive: state.sessionActive,
+        sessionIds: [...(state.sessionIds || [])],
+        smartTrainingActive: state.smartTrainingActive,
+        smartTrainingIds: [...(state.smartTrainingIds || [])],
+        spacedReviewActive: state.spacedReviewActive,
+        spacedReviewIds: [...(state.spacedReviewIds || [])],
+        dangerousReviewActive: state.dangerousReviewActive,
+        dangerousReviewIds: [...(state.dangerousReviewIds || [])],
+        examActive: state.examActive,
+        examSimulationActive: state.examSimulationActive,
+        examSetActive: state.examSetActive,
+        examSetIds: [...(state.examSetIds || [])],
+        activeExamId: state.activeExamId,
+      }
+    : null;
+
   setSyncStatus("Carregando progresso da conta...");
   const [{ data: progressRows, error: progressError }, { data: settingsRow, error: settingsError }] = await Promise.all([
     state.supabase.from("user_progress").select("question_id, progress"),
     state.supabase.from("user_settings").select("settings").eq("user_id", state.authUser.id).maybeSingle(),
   ]);
+
   if (progressError || settingsError) {
     setSyncStatus(`Erro ao carregar conta: ${(progressError || settingsError).message}`);
     return;
   }
+
   const cloudProgress = {};
   for (const row of progressRows || []) cloudProgress[row.question_id] = row.progress || {};
   state.progress = { ...state.progress, ...cloudProgress };
   localStorage.setItem("banco-rmais-progress", JSON.stringify(state.progress));
+
   if (settingsRow?.settings) applySettingsPayload(settingsRow.settings);
   state.cloudReady = true;
   await Promise.all([syncProgressToCloud(), syncSettingsToCloud()]);
   setSyncStatus(state.isAdmin ? "Conta sincronizada. Perfil administrador." : "Conta sincronizada.");
+
+  if (activeContext) {
+    state.filtered = activeContext.filtered;
+    state.index = Math.min(Math.max(0, Number(activeContext.index || 0)), Math.max(activeContext.filtered.length - 1, 0));
+    state.activeTab = activeContext.activeTab;
+    state.filterKey = activeContext.filterKey;
+    state.selectedTopics = activeContext.selectedTopics;
+    state.selectedSubthemes = activeContext.selectedSubthemes;
+    state.refineSubthemes = activeContext.refineSubthemes;
+    state.activeAnswers = activeContext.activeAnswers;
+    state.topicActive = activeContext.topicActive;
+    state.topicIds = activeContext.topicIds;
+    state.sessionActive = activeContext.sessionActive;
+    state.sessionIds = activeContext.sessionIds;
+    state.smartTrainingActive = activeContext.smartTrainingActive;
+    state.smartTrainingIds = activeContext.smartTrainingIds;
+    state.spacedReviewActive = activeContext.spacedReviewActive;
+    state.spacedReviewIds = activeContext.spacedReviewIds;
+    state.dangerousReviewActive = activeContext.dangerousReviewActive;
+    state.dangerousReviewIds = activeContext.dangerousReviewIds;
+    state.examActive = activeContext.examActive;
+    state.examSimulationActive = activeContext.examSimulationActive;
+    state.examSetActive = activeContext.examSetActive;
+    state.examSetIds = activeContext.examSetIds;
+    state.activeExamId = activeContext.activeExamId;
+
+    localStorage.setItem("banco-rmais-selected-topics", JSON.stringify(state.selectedTopics || []));
+    localStorage.setItem("banco-rmais-selected-subthemes", JSON.stringify(state.selectedSubthemes || []));
+    localStorage.setItem("banco-rmais-refine-subthemes", String(state.refineSubthemes));
+
+    renderTopics();
+    render();
+    if (typeof saveActiveStudyState === "function") saveActiveStudyState();
+    return;
+  }
+
   renderTopics();
   applyFilters({ preserveCurrent: true });
 }
@@ -2572,6 +2641,8 @@ function renderTopics() {
 }
 
 function renderStats() {
+  /* Evita recomputações analíticas pesadas durante fluxos ativos de questões. */
+  if (hasActiveQuestionFlow()) return;
   const visibleQuestions = allStudyQuestions().filter((question) => !isExcluded(question.id));
   const answered = visibleQuestions.filter((question) => getProgress(question.id).grade).length;
   const correct = visibleQuestions.filter((question) => getProgress(question.id).grade === "correct").length;
@@ -2963,7 +3034,14 @@ function gradeFlashcard(grade) {
   moveFlashcard(1);
 }
 
+function heavyAnalyticsVisible() {
+  return ["overview", "today", "history", "activity", "exams", "notes", "flashcards"].includes(state.activeTab);
+}
+
 function renderDashboard() {
+  /* Evita recomputações analíticas pesadas durante fluxos ativos de questões. */
+  if (hasActiveQuestionFlow()) return;
+  if (!heavyAnalyticsVisible()) return;
   renderQuickDashboard();
   renderOverview();
   renderPendingSummary();
@@ -4599,6 +4677,7 @@ async function saveEdit() {
   if (!state.isAdmin) return;
   const question = currentQuestion();
   if (!question) return;
+  if (hasActiveQuestionFlow()) return saveEditPreservingFlow(question);
   const correction = collectEditor();
   const savedGlobally = await saveGlobalCorrection(question.id, correction);
   if (!savedGlobally) {
@@ -4612,6 +4691,45 @@ async function saveEdit() {
     return;
   }
   applyFilters({ preserveCurrent: true });
+}
+
+/* Preserva a sessão ativa ao editar e salvar uma questão dentro de um bloco. */
+async function saveEditPreservingFlow(question) {
+  const originalIndex = state.index;
+  const originalTab = state.activeTab;
+  const originalFiltered = state.filtered;
+  const originalFlags = {
+    sessionActive: state.sessionActive,
+    topicActive: state.topicActive,
+    examActive: state.examActive,
+    examSetActive: state.examSetActive,
+    spacedReviewActive: state.spacedReviewActive,
+    smartTrainingActive: state.smartTrainingActive,
+    dangerousReviewActive: state.dangerousReviewActive,
+  };
+
+  const correction = collectEditor();
+  const savedGlobally = await saveGlobalCorrection(question.id, correction);
+  if (!savedGlobally) {
+    state.corrections[question.id] = correction;
+    saveCorrections();
+  }
+
+  // Restaura explicitamente o contexto do bloco e evita applyFilters(), que pode desmontar a fila.
+  state.filtered = originalFiltered;
+  state.index = Math.min(originalIndex, Math.max(state.filtered.length - 1, 0));
+  Object.assign(state, originalFlags);
+  state.activeTab = originalTab;
+  state.editing = false;
+
+  if (el.pendingReviewReason) {
+    el.pendingReviewReason.textContent = correction.maintenanceFlagged
+      ? "Pendências: sinalizada para manutenção."
+      : "Edição salva.";
+  }
+
+  if (typeof saveActiveStudyState === "function") saveActiveStudyState();
+  render();
 }
 
 async function resetEdit() {
@@ -4633,6 +4751,7 @@ async function resetEdit() {
   applyFilters({ preserveCurrent: true });
 }
 
+/* Sinaliza a questão para manutenção sem alterar aba, filtro, fila, índice ou sessão de estudo. */
 async function sendCurrentQuestionToMaintenance() {
   if (!state.isAdmin) return;
   const question = currentQuestion();
@@ -4647,17 +4766,17 @@ async function sendCurrentQuestionToMaintenance() {
     state.corrections[question.id] = correction;
     saveCorrections();
   }
-  if (el.pendingReviewReason) el.pendingReviewReason.textContent = "Pendências: sinalizada para manutenção.";
-  if (el.status) el.status.value = "needs-review";
-  state.sessionActive = false;
-  state.examActive = false;
-  clearExamSimulationState();
-  state.examSetActive = false;
-  state.spacedReviewActive = false;
-  state.smartTrainingActive = false;
-  state.topicActive = false;
-  setTab("topics");
-  applyFilters({ preserveCurrent: true });
+  if (el.pendingReviewReason) {
+    el.pendingReviewReason.textContent = "Pendências: sinalizada para manutenção.";
+  }
+  if (typeof setSyncStatus === "function") {
+    setSyncStatus("Questão enviada para manutenção. Sua sessão foi mantida.");
+  }
+  const effective = effectiveQuestion(question);
+  if (el.pendingReviewPanel && state.isAdmin) {
+    el.pendingReviewPanel.hidden = !needsBankReview(effective);
+  }
+  saveActiveStudyState();
 }
 
 function exportCorrections() {
@@ -5139,7 +5258,11 @@ function loadPayload() {
   });
 }
 
-loadPayload()
+/* A inicialização espera o fim do carregamento da página para que os módulos
+   carregados depois deste arquivo (revisão, progresso por tema, sessão etc.) já
+   estejam aplicados quando o app desenha a primeira tela. */
+function startApp() {
+  return loadPayload()
   .then(async (payload) => {
     state.questions = payload.questions || [];
     state.exams = window.BANCO_RMAIS_EXAMS?.exams || [];
@@ -5155,3 +5278,7 @@ loadPayload()
     el.source.textContent = "Importação pendente";
     el.title.textContent = error.message;
   });
+}
+
+if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", startApp, { once: true });
+else startApp();
