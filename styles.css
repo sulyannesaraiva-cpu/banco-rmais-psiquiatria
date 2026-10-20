@@ -1019,6 +1019,9 @@ textarea {
 
 .question-shell {
   display: grid;
+  /* a coluna acompanha a largura da tela; sem isso o mapa de questões (21 colunas)
+     alargava a página e empurrava "Próxima" para fora em notebooks */
+  grid-template-columns: minmax(0, 1fr);
   gap: 16px;
   max-width: 980px;
   margin: 0 auto;
@@ -1737,7 +1740,7 @@ textarea::placeholder {
 .sidebar {
   padding: 22px 18px 24px 68px;
   border-right-color: var(--line);
-  background: #ffffff;
+  background: var(--panel);
 }
 
 .sidebar-toggle {
@@ -1761,7 +1764,7 @@ textarea::placeholder {
   height: 42px;
   border-radius: 11px;
   background: var(--ink);
-  color: #ffffff;
+  color: var(--panel);
   font-size: 14px;
 }
 
@@ -3266,4 +3269,20 @@ body.theme-dark .option.selected.pending::before {
   .sidebar-collapsed .sidebar-backdrop {
     display: none;
   }
+}
+
+/* Contador "Banco completo" na barra lateral (segue o tema claro/escuro) */
+#globalBankCounter {
+  margin: 10px 0 4px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--panel-soft, #f8fafc);
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+#globalBankCounter strong {
+  color: var(--ink);
 }

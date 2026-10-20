@@ -35,12 +35,11 @@
     if (!box) {
       box = document.createElement('div');
       box.id = 'globalBankCounter';
-      box.style.cssText = 'margin:10px 0 4px;padding:10px 12px;border:1px solid #dbe3ef;border-radius:10px;background:#f8fafc;color:#475569;font-size:13px;line-height:1.35;';
       const sidebar = document.querySelector('.sidebar') || document.querySelector('aside') || document.querySelector('nav');
       if (sidebar) sidebar.appendChild(box);
       else document.body.appendChild(box);
     }
-    box.innerHTML = `<strong style="color:#0f172a">Banco completo</strong><br>${totalQuestions.toLocaleString('pt-BR')} questões · ${totalExams.toLocaleString('pt-BR')} provas`;
+    box.innerHTML = `<strong>Banco completo</strong><br>${totalQuestions.toLocaleString('pt-BR')} questões · ${totalExams.toLocaleString('pt-BR')} provas`;
     return true;
   }
 
