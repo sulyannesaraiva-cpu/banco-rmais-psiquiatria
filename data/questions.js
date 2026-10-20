@@ -8029,7 +8029,11 @@ window.BANCO_RMAIS_QUESTIONS = {
       "sourceId": "4000099271",
       "correctAnswer": "A",
       "provider": "Estratégia",
-      "originalSource": "Distúrbios do Sono"
+      "originalSource": "Distúrbios do Sono",
+      "excluded": true,
+      "needsReviewReason": "Alternativa D perdida na importação (aparece como \"C\"). Oculta até correção pela fonte original.",
+      "importRepairedAt": "2026-10-20",
+      "importRepairNote": "Alternativa D perdida na importação (aparece como \"C\")."
     },
     {
       "id": "distúrbios-do-sono-46",
@@ -9008,11 +9012,11 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Distúrbios do Sono",
       "topic": "Distúrbios do Sono",
       "title": "Questão 79",
-      "text": "Homem, 38 anos, pedreiro, branco, é tabagista de 1 maço por dia há 20 anos e consome 2 latas de cerveja por dia. HMA:Procurou atendimento porque sua esposa se queixa de seus roncos durante o sono há 6 anos. Nega diabetes. EF: BEG,eupneico, FR = 20 ipm, FC = 87 bpm, PA = 120/78 mmHg, IMC = 29 Kg/m2 e murmúrio vesicular presente bilateralmentesem ruídos adventícios. Ausculta cardíaca normal. PolissonograFa: índice de apneias-hipopneias= 4,8 eventos/hora (Valornormal ≤ a 5 eventos/hora) e tempo total com saturação de O2 abaixo de 90% = 4 minutos. A melhor opção terapêutica para este paciente é: APressão positiva nas vias aéreas (CP",
+      "text": "Homem, 38 anos, pedreiro, branco, é tabagista de 1 maço por dia há 20 anos e consome 2 latas de cerveja por dia. HMA:Procurou atendimento porque sua esposa se queixa de seus roncos durante o sono há 6 anos. Nega diabetes. EF: BEG,eupneico, FR = 20 ipm, FC = 87 bpm, PA = 120/78 mmHg, IMC = 29 Kg/m2 e murmúrio vesicular presente bilateralmentesem ruídos adventícios. Ausculta cardíaca normal. PolissonograFa: índice de apneias-hipopneias= 4,8 eventos/hora (Valornormal ≤ a 5 eventos/hora) e tempo total com saturação de O2 abaixo de 90% = 4 minutos. A melhor opção terapêutica para este paciente é:",
       "options": [
         {
           "letter": "A",
-          "text": "P"
+          "text": "Pressão positiva nas vias aéreas (CPAP)"
         },
         {
           "letter": "B",
@@ -9020,7 +9024,7 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "C",
-          "text": "Pressão em 2 níveis nas vias aéreas (BIPAP"
+          "text": "Pressão em 2 níveis nas vias aéreas (BIPAP)"
         },
         {
           "letter": "D",
@@ -9030,7 +9034,9 @@ window.BANCO_RMAIS_QUESTIONS = {
       "sourceId": "4000101875",
       "correctAnswer": "D",
       "provider": "Estratégia",
-      "originalSource": "Distúrbios do Sono"
+      "originalSource": "Distúrbios do Sono",
+      "importRepairedAt": "2026-10-20",
+      "importRepairNote": "Início da alternativa A estava no fim do enunciado."
     },
     {
       "id": "distúrbios-do-sono-80",
@@ -9038,11 +9044,11 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Distúrbios do Sono",
       "topic": "Distúrbios do Sono",
       "title": "Questão 80",
-      "text": "Masculino, 50 anos, IMC = 32 kg/m2. Queixa-se de sonolência excessiva diurna. PolissonograFa: índice deapneia/hipopneia: 60/hora, com queda de saturação de > 10%. Qual a conduta mais adequada?ARedução peso e CP",
+      "text": "Masculino, 50 anos, IMC = 32 kg/m2. Queixa-se de sonolência excessiva diurna. PolissonograFa: índice deapneia/hipopneia: 60/hora, com queda de saturação de > 10%. Qual a conduta mais adequada?",
       "options": [
         {
           "letter": "A",
-          "text": "P"
+          "text": "Redução peso e CPAP"
         },
         {
           "letter": "B",
@@ -9064,7 +9070,9 @@ window.BANCO_RMAIS_QUESTIONS = {
       "sourceId": "4000103091",
       "correctAnswer": "A",
       "provider": "Estratégia",
-      "originalSource": "Distúrbios do Sono"
+      "originalSource": "Distúrbios do Sono",
+      "importRepairedAt": "2026-10-20",
+      "importRepairNote": "Início da alternativa A estava no fim do enunciado."
     },
     {
       "id": "distúrbios-do-sono-81",
@@ -15043,11 +15051,11 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Psiquiatria Infantil",
       "topic": "Psiquiatria Infantil",
       "title": "Questão 21",
-      "text": "Tratamento do AustismoA avaliação formal do Desenvolvimento Neuropsicomotor é fundamental e indispensável e faz parte da consulta pediátrica.O TEA (Transtorno do Espectro Autista) é causado por uma combinação de fatores genéticos e fatores ambientais. Emrelação ao TEA, qual a alternativa está INCORRETA? AEntre os sinais/sintomas sugestivos do TE",
+      "text": "Tratamento do AustismoA avaliação formal do Desenvolvimento Neuropsicomotor é fundamental e indispensável e faz parte da consulta pediátrica.O TEA (Transtorno do Espectro Autista) é causado por uma combinação de fatores genéticos e fatores ambientais. Emrelação ao TEA, qual a alternativa está INCORRETA?",
       "options": [
         {
           "letter": "A",
-          "text": "podemos destacar: comportamento visual atípico, repetição demovimentos com objetos, estereotipias ou posturas incomuns do corpo e ausência de expressões afetuosas"
+          "text": "Entre os sinais/sintomas sugestivos do TEA podemos destacar: comportamento visual atípico, repetição demovimentos com objetos, estereotipias ou posturas incomuns do corpo e ausência de expressões afetuosas"
         },
         {
           "letter": "B",
@@ -15059,17 +15067,15 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "D",
-          "text": "As evidências científicas sugerem que uma dieta com restrições alimentares, como uma dieta sem glúten e oucaseína auxiliam no tratamento do T"
-        },
-        {
-          "letter": "E",
-          "text": "A"
+          "text": "As evidências científicas sugerem que uma dieta com restrições alimentares, como uma dieta sem glúten e oucaseína auxiliam no tratamento do TEA"
         }
       ],
       "sourceId": "4000171396",
       "correctAnswer": "D",
       "provider": "Estratégia",
-      "originalSource": "Psiquiatria Infantil"
+      "originalSource": "Psiquiatria Infantil",
+      "importRepairedAt": "2026-10-20",
+      "importRepairNote": "Início da alternativa A estava no enunciado; final da D (\"TEA\") estava na E."
     },
     {
       "id": "psiquiatria-infantil-22",
@@ -15077,11 +15083,11 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Psiquiatria Infantil",
       "topic": "Psiquiatria Infantil",
       "title": "Questão 22",
-      "text": "Assinale a alternativa correta em relação à dieta do paciente com Transtorno do Espectro Autista (TEA).ATodos os pacientes com TE",
+      "text": "Assinale a alternativa correta em relação à dieta do paciente com Transtorno do Espectro Autista (TEA).",
       "options": [
         {
           "letter": "A",
-          "text": "são elegíveis para tratamento com dietas de restrição de glúten e caseína"
+          "text": "Todos os pacientes com TEA são elegíveis para tratamento com dietas de restrição de glúten e caseína"
         },
         {
           "letter": "B",
@@ -15093,17 +15099,15 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "D",
-          "text": "Não existem efeitos colaterais no uso da dieta cetogênica em pacientes com T"
-        },
-        {
-          "letter": "E",
-          "text": "A"
+          "text": "Não existem efeitos colaterais no uso da dieta cetogênica em pacientes com TEA"
         }
       ],
       "sourceId": "4000170741",
       "correctAnswer": "C",
       "provider": "Estratégia",
-      "originalSource": "Psiquiatria Infantil"
+      "originalSource": "Psiquiatria Infantil",
+      "importRepairedAt": "2026-10-20",
+      "importRepairNote": "Início da alternativa A estava no enunciado; final da D (\"TEA\") estava na E."
     },
     {
       "id": "psiquiatria-infantil-23",
@@ -27587,11 +27591,11 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos do Humor",
       "topic": "Transtornos do Humor",
       "title": "Questão 3",
-      "text": "Paciente, 67 anos, sexo feminino, professora aposentada, é trazida primeira vez à consulta com MFC da Estratégia Saúdeda Família (ESF), desde que se mudou para morar com o 6lho após falecimento do marido. Refere fazer tratamento parahipertensão (enalapril 20 mg ao dia) e osteoartrite (condroitina - glicosamina). Questionada sobre seu estado de humor, apaciente refere que já não vê graça na vida, pois não faz sentido viver com tantas dores. Além de medicação para dor,solicitou também para insônia. Mesmo bem acolhida pelo 6lho, a paciente referiu sentir-se sozinha. Mostrou-se emotiva eesboçou choro, pausando a fala. Sobre a depressão nos idosos, assinale a afirmativa correta. AA relação do médico da",
+      "text": "Paciente, 67 anos, sexo feminino, professora aposentada, é trazida primeira vez à consulta com MFC da Estratégia Saúdeda Família (ESF), desde que se mudou para morar com o 6lho após falecimento do marido. Refere fazer tratamento parahipertensão (enalapril 20 mg ao dia) e osteoartrite (condroitina - glicosamina). Questionada sobre seu estado de humor, apaciente refere que já não vê graça na vida, pois não faz sentido viver com tantas dores. Além de medicação para dor,solicitou também para insônia. Mesmo bem acolhida pelo 6lho, a paciente referiu sentir-se sozinha. Mostrou-se emotiva eesboçou choro, pausando a fala. Sobre a depressão nos idosos, assinale a afirmativa correta.",
       "options": [
         {
           "letter": "A",
-          "text": "PS com o paciente não influencia o tratamento"
+          "text": "A relação do médico da APS com o paciente não influencia o tratamento"
         },
         {
           "letter": "B",
@@ -27603,17 +27607,15 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "D",
-          "text": "A"
-        },
-        {
-          "letter": "E",
-          "text": "scala de Depressão Geriátrica (GDS) é um instrumento de triagem confiável e pode ser útil para a detecçãodos sintomas de depressão nos idosos"
+          "text": "A Escala de Depressão Geriátrica (GDS) é um instrumento de triagem confiável e pode ser útil para a detecção dos sintomas de depressão nos idosos"
         }
       ],
       "sourceId": "4000186179",
       "correctAnswer": "D",
       "provider": "Estratégia",
-      "originalSource": "Transtornos de humor"
+      "originalSource": "Transtornos de humor",
+      "importRepairedAt": "2026-10-20",
+      "importRepairNote": "Alternativas A e D estavam partidas entre enunciado, D e E."
     },
     {
       "id": "transtornos-de-humor-4",
@@ -35107,22 +35109,24 @@ window.BANCO_RMAIS_QUESTIONS = {
           "text": "Haloperidol"
         },
         {
+          "letter": "B",
+          "text": "Clorpromazina"
+        },
+        {
           "letter": "C",
-          "text": "lorpromazina. C) Tioridazina"
+          "text": "Tioridazina"
         },
         {
           "letter": "D",
-          "text": "Levomepromazina. ACDADDDAACC"
-        },
-        {
-          "letter": "E",
-          "text": "AABCBCCAEBDDACBCBAADCDBABCBDDDBADA Powered by TCPDF (www.tcpdf.org"
+          "text": "Levomepromazina"
         }
       ],
       "sourceId": "",
       "correctAnswer": "A",
       "provider": "MedReview",
-      "originalSource": "Delirium"
+      "originalSource": "Delirium",
+      "importRepairedAt": "2026-10-20",
+      "importRepairNote": "Alternativas B–D estavam fundidas (\"lorpromazina. C) Tioridazina\", \"Levomepromazina. ACDADD…\"); gabarito do PDF removido."
     },
     {
       "id": "medreview-demências-1",
@@ -36278,33 +36282,31 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Demências",
       "topic": "Demências",
       "title": "Questão 50",
-      "text": "Mulher de 63 anos, viúva há dois anos, sofrendo de doença de Alzheimer, reside com a filha única de 40 anos. Nos últimos dois anos, tem se recusado a sair da cama, come pouco, quase não interage e apresenta feridas de decúbito. Nos momentos de lucidez, queixa-se de dor, expressando vontade de morrer. O médico de família realiza visita domiciliar e, além de tratar a dor, identifica como prioridade(s) no plano de cuidados integrais: A) ampliar suporte social e maximizar o bem-estar B) providenciar internação hospitalar e apoiar a familiar C) encaminhar ao psiquiatra, pois trata-se de uma emergência D) apoiar a familiar no suporte ao luto e recomendar maior aporte calórico BCACDCBDCDBBACCBBDBADBEBCADDDDCBBDAD",
+      "text": "Mulher de 63 anos, viúva há dois anos, sofrendo de doença de Alzheimer, reside com a filha única de 40 anos. Nos últimos dois anos, tem se recusado a sair da cama, come pouco, quase não interage e apresenta feridas de decúbito. Nos momentos de lucidez, queixa-se de dor, expressando vontade de morrer. O médico de família realiza visita domiciliar e, além de tratar a dor, identifica como prioridade(s) no plano de cuidados integrais:",
       "options": [
         {
           "letter": "A",
-          "text": "B"
+          "text": "ampliar suporte social e maximizar o bem-estar"
         },
         {
           "letter": "B",
-          "text": "CAD"
+          "text": "providenciar internação hospitalar e apoiar a familiar"
         },
         {
           "letter": "C",
-          "text": "DA"
+          "text": "encaminhar ao psiquiatra, pois trata-se de uma emergência"
         },
         {
           "letter": "D",
-          "text": "A"
-        },
-        {
-          "letter": "E",
-          "text": "BA Powered by TCPDF (www.tcpdf.org"
+          "text": "apoiar a familiar no suporte ao luto e recomendar maior aporte calórico"
         }
       ],
       "sourceId": "",
       "correctAnswer": "A",
       "provider": "MedReview",
-      "originalSource": "Demências"
+      "originalSource": "Demências",
+      "importRepairedAt": "2026-10-20",
+      "importRepairNote": "Alternativas estavam no enunciado; campos de alternativa continham o gabarito do PDF."
     },
     {
       "id": "medreview-desenvolvimento-neuropsicomotor-1",
@@ -38980,33 +38982,31 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Desenvolvimento Neuropsicomotor",
       "topic": "Desenvolvimento Neuropsicomotor",
       "title": "Questão 89",
-      "text": "Menina de 5 anos de idade é levada à consulta pelos pais pois voltou a urinar na cama, está mais irritada, apresenta sono agitado, evita interações sociais e parece desatenta há 2 meses. Uso de tela: 4 horas por dia (vídeos e jogos), inclusive durante as refeições. AF: nascimento de irmão há 3 meses. Exame físico e neurológico: normal. A hipótese diagnóstica e a conduta inicial são, respectivamente, A) transtorno do espectro autista; encaminhar para avaliação multidisciplinar e iniciar terapia de análise do comportamento aplicado (ABA). B) quadro de regressão comportamental secundária a estresse psicossocial e uso disfuncional de telas; orientar para mudança de hábitos e suporte familiar. C) transtorno do déficit de atenção e hiperatividade; iniciar tratamento farmacológico após triagem cognitiva D) transtorno de conduta leve; incluir psicoterapia individual e iniciar terapia de análise do comportamento aplicado (ABA). DEADDDCBCAAACAADCDBDBACADBCDDDCCACCDDCACEADACBDCCABDABBC",
+      "text": "Menina de 5 anos de idade é levada à consulta pelos pais pois voltou a urinar na cama, está mais irritada, apresenta sono agitado, evita interações sociais e parece desatenta há 2 meses. Uso de tela: 4 horas por dia (vídeos e jogos), inclusive durante as refeições. AF: nascimento de irmão há 3 meses. Exame físico e neurológico: normal. A hipótese diagnóstica e a conduta inicial são, respectivamente,",
       "options": [
         {
           "letter": "A",
-          "text": "C"
+          "text": "transtorno do espectro autista; encaminhar para avaliação multidisciplinar e iniciar terapia de análise do comportamento aplicado (ABA)."
         },
         {
           "letter": "B",
-          "text": "CEAB"
+          "text": "quadro de regressão comportamental secundária a estresse psicossocial e uso disfuncional de telas; orientar para mudança de hábitos e suporte familiar."
         },
         {
           "letter": "C",
-          "text": "CA"
+          "text": "transtorno do déficit de atenção e hiperatividade; iniciar tratamento farmacológico após triagem cognitiva"
         },
         {
           "letter": "D",
-          "text": "A"
-        },
-        {
-          "letter": "E",
-          "text": "DBBEADBCBADBCCBCACCB Powered by TCPDF (www.tcpdf.org"
+          "text": "transtorno de conduta leve; incluir psicoterapia individual e iniciar terapia de análise do comportamento aplicado (ABA)."
         }
       ],
       "sourceId": "",
       "correctAnswer": "B",
       "provider": "MedReview",
-      "originalSource": "Desenvolvimento Neuropsicomotor"
+      "originalSource": "Desenvolvimento Neuropsicomotor",
+      "importRepairedAt": "2026-10-20",
+      "importRepairNote": "Alternativas estavam no enunciado; campos de alternativa continham o gabarito do PDF."
     },
     {
       "id": "medreview-fisiologia-do-envelhecimento-2",
@@ -39126,13 +39126,15 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "D",
-          "text": "Introduzir levotiroxina 25mcg/dia BDACDA Powered by TCPDF (www.tcpdf.org"
+          "text": "Introduzir levotiroxina 25mcg/dia"
         }
       ],
       "sourceId": "",
       "correctAnswer": "A",
       "provider": "MedReview",
-      "originalSource": "Fisiologia do Envelhecimento"
+      "originalSource": "Fisiologia do Envelhecimento",
+      "importRepairedAt": "2026-10-20",
+      "importRepairNote": "Removido o gabarito do PDF colado ao fim da última alternativa."
     },
     {
       "id": "medreview-grandes-síndromes-geriátricas-1",
@@ -39300,29 +39302,31 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Saúde do Idoso",
       "topic": "Saúde do Idoso",
       "title": "Questão 7",
-      "text": "Mulher, 81 anos, com relato de três quedas nos últimos seis meses, tem doença de Alzheimer, hipertensão arterial sistêmica (HAS), osteoporose e déficit visual por catarata. Faz uso de: diurético; inibidor da enzima conversora de angiotensina; agente antipsicótico, bisfosfonato e vitamina D. Exame físico: perda de massa muscular e baixo desempenho físico; pressão arterial sistêmica (PAS) = 100x60mmHg; frequência cardíaca (FC) = 70bpm. Exames laboratoriais: nível de vitamina D próximo ao limite inferior da normalidade. Sobre o risco de quedas, pode-se afirmar que o medicamento que deve ser retirado é: A) antipsicótico B) vitamina D C) diurético D) bisfosfonato CD",
+      "text": "Mulher, 81 anos, com relato de três quedas nos últimos seis meses, tem doença de Alzheimer, hipertensão arterial sistêmica (HAS), osteoporose e déficit visual por catarata. Faz uso de: diurético; inibidor da enzima conversora de angiotensina; agente antipsicótico, bisfosfonato e vitamina D. Exame físico: perda de massa muscular e baixo desempenho físico; pressão arterial sistêmica (PAS) = 100x60mmHg; frequência cardíaca (FC) = 70bpm. Exames laboratoriais: nível de vitamina D próximo ao limite inferior da normalidade. Sobre o risco de quedas, pode-se afirmar que o medicamento que deve ser retirado é:",
       "options": [
         {
           "letter": "A",
-          "text": "D"
+          "text": "antipsicótico"
         },
         {
           "letter": "B",
-          "text": "B"
+          "text": "vitamina D"
         },
         {
           "letter": "C",
-          "text": "Powered by TCP"
+          "text": "diurético"
         },
         {
           "letter": "D",
-          "text": "F (www.tcpdf.org"
+          "text": "bisfosfonato"
         }
       ],
       "sourceId": "",
       "correctAnswer": "C",
       "provider": "MedReview",
-      "originalSource": "Grandes Síndromes Geriátricas"
+      "originalSource": "Grandes Síndromes Geriátricas",
+      "importRepairedAt": "2026-10-20",
+      "importRepairNote": "Alternativas estavam no enunciado; campos de alternativa continham o gabarito do PDF."
     },
     {
       "id": "medreview-intoxicação-por-drogas-e-dependência-química-2",
@@ -41131,33 +41135,31 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Intoxicação por Drogas e Dependência Química",
       "topic": "Intoxicação por Drogas e Dependência Química",
       "title": "Questão 60",
-      "text": "Assinale a assertiva correta sobre lesão pulmonar associada a uso de cigarro eletrônico (EVALI). A) Corticosteroide inalatório em dose alta está indicado para tratamento de casos refratários. B) Náusea, vômito e diarreia não fazem parte das manifestações clínicas descritas. C) O diagnóstico é clínico, não sendo necessários exames de imagem para investigação. D) Pode evoluir para insuficiência respiratória com necessidade de ventilação mecânica. DDADDCBBDAABDBBCABCBBCDDACEDDDEAAADBCBA",
+      "text": "Assinale a assertiva correta sobre lesão pulmonar associada a uso de cigarro eletrônico (EVALI).",
       "options": [
         {
           "letter": "A",
-          "text": "BDCC"
+          "text": "Corticosteroide inalatório em dose alta está indicado para tratamento de casos refratários."
         },
         {
           "letter": "B",
-          "text": "CBBBD"
+          "text": "Náusea, vômito e diarreia não fazem parte das manifestações clínicas descritas."
         },
         {
           "letter": "C",
-          "text": "DB"
+          "text": "O diagnóstico é clínico, não sendo necessários exames de imagem para investigação."
         },
         {
           "letter": "D",
-          "text": "B"
-        },
-        {
-          "letter": "E",
-          "text": "EABD Powered by TCPDF (www.tcpdf.org"
+          "text": "Pode evoluir para insuficiência respiratória com necessidade de ventilação mecânica."
         }
       ],
       "sourceId": "",
       "correctAnswer": "D",
       "provider": "MedReview",
-      "originalSource": "Intoxicação por Drogas e Dependência Química"
+      "originalSource": "Intoxicação por Drogas e Dependência Química",
+      "importRepairedAt": "2026-10-20",
+      "importRepairNote": "Alternativas estavam no enunciado; campos de alternativa continham o gabarito do PDF."
     },
     {
       "id": "medreview-neuroanatomia-e-neurofisiologia-1",
@@ -41475,29 +41477,31 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Neuroanatomia e Neurofisiologia",
       "topic": "Neuroanatomia e Neurofisiologia",
       "title": "Questão 11",
-      "text": "O sinal de Romberg refere-se a qual estrutura? A) Nervo vestíbulo-coclear B) Trato espino-talâmico C) Ponta anterior da medula D) Colunas dorsais DCB",
+      "text": "O sinal de Romberg refere-se a qual estrutura?",
       "options": [
         {
           "letter": "A",
-          "text": "D"
+          "text": "Nervo vestíbulo-coclear"
         },
         {
           "letter": "B",
-          "text": "B"
+          "text": "Trato espino-talâmico"
         },
         {
           "letter": "C",
-          "text": "AC"
+          "text": "Ponta anterior da medula"
         },
         {
           "letter": "D",
-          "text": "Powered by TCPDF (www.tcpdf.org"
+          "text": "Colunas dorsais"
         }
       ],
       "sourceId": "",
       "correctAnswer": "D",
       "provider": "MedReview",
-      "originalSource": "Neuroanatomia e Neurofisiologia"
+      "originalSource": "Neuroanatomia e Neurofisiologia",
+      "importRepairedAt": "2026-10-20",
+      "importRepairNote": "Alternativas estavam no enunciado; campos de alternativa continham o gabarito do PDF."
     },
     {
       "id": "medreview-polifarmácia-1",
@@ -41679,7 +41683,11 @@ window.BANCO_RMAIS_QUESTIONS = {
       "sourceId": "",
       "correctAnswer": "A",
       "provider": "MedReview",
-      "originalSource": "Polifarmácia"
+      "originalSource": "Polifarmácia",
+      "excluded": true,
+      "needsReviewReason": "Enunciado e alternativas A–B truncados na importação. Oculta até correção pela fonte original.",
+      "importRepairedAt": "2026-10-20",
+      "importRepairNote": "Enunciado e alternativas A–B truncados na importação."
     },
     {
       "id": "medreview-psicofarmacologia-1",
@@ -42104,11 +42112,11 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "C",
-          "text": "A"
+          "text": "ADT foram desenvolvidas mais recentemente pela indústria farmacêutica e por isso tendem a ser mais dispendiosos que os ISRS, que são mais tradicionais."
         },
         {
           "letter": "D",
-          "text": "T foram desenvolvidas mais recentemente pela indústria farmacêutica e por isso tendem a ser mais dispendiosos que os ISRS, que são mais tradicionais. D) ADT são antidepressivos adjuvantes no tratamento da dor crônica e moderadamente sedativos. Diferentemente dos ISRS, podem desencadear constipação e aumento de peso"
+          "text": "ADT são antidepressivos adjuvantes no tratamento da dor crônica e moderadamente sedativos. Diferentemente dos ISRS, podem desencadear constipação e aumento de peso"
         },
         {
           "letter": "E",
@@ -42118,7 +42126,9 @@ window.BANCO_RMAIS_QUESTIONS = {
       "sourceId": "",
       "correctAnswer": "D",
       "provider": "MedReview",
-      "originalSource": "Psicofarmacologia"
+      "originalSource": "Psicofarmacologia",
+      "importRepairedAt": "2026-10-20",
+      "importRepairNote": "Alternativas C e D estavam fundidas e partidas (\"A\" + \"T foram…\" = ADT)."
     },
     {
       "id": "medreview-psicofarmacologia-16",
@@ -42389,33 +42399,31 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Psicofarmacologia",
       "topic": "Psicofarmacologia",
       "title": "Questão 24",
-      "text": "Mulher, 35 anos de idade, em acompanhamento ambulatorial por artrite reumatoide e depressão. Faz uso de metotrexato 10 mg semanal, ácido fólico 5 mg semanal e fluoxetina 20 mg à noite. Procura ambulatório por insônia há 2 meses. Exame físico geral sem alterações e articulações sem sinais de flogismo. Assinale a alternativa que apresenta a conduta adequada para a queixa da paciente. A) Trocar fluoxetina por clonazepam. B) Associar fluoxetina com clonazepam. C) Aumentar dose da fluoxetina. D) Orientar uso da fluoxetina pela manhã",
+      "text": "Mulher, 35 anos de idade, em acompanhamento ambulatorial por artrite reumatoide e depressão. Faz uso de metotrexato 10 mg semanal, ácido fólico 5 mg semanal e fluoxetina 20 mg à noite. Procura ambulatório por insônia há 2 meses. Exame físico geral sem alterações e articulações sem sinais de flogismo. Assinale a alternativa que apresenta a conduta adequada para a queixa da paciente.",
       "options": [
         {
           "letter": "A",
-          "text": "C"
+          "text": "Trocar fluoxetina por clonazepam."
         },
         {
           "letter": "B",
-          "text": "C"
+          "text": "Associar fluoxetina com clonazepam."
         },
         {
           "letter": "C",
-          "text": "AC"
+          "text": "Aumentar dose da fluoxetina."
         },
         {
           "letter": "D",
-          "text": "CCDDCBD"
-        },
-        {
-          "letter": "E",
-          "text": "AABCCCAD Powered by TCPDF (www.tcpdf.org"
+          "text": "Orientar uso da fluoxetina pela manhã"
         }
       ],
       "sourceId": "",
       "correctAnswer": "D",
       "provider": "MedReview",
-      "originalSource": "Psicofarmacologia"
+      "originalSource": "Psicofarmacologia",
+      "importRepairedAt": "2026-10-20",
+      "importRepairNote": "Alternativas estavam no enunciado; campos de alternativa continham o gabarito do PDF."
     },
     {
       "id": "medreview-psiquiatria-infantil-(tea,-tdah)-1",
@@ -43819,33 +43827,31 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Psiquiatria Infantil",
       "topic": "Psiquiatria Infantil",
       "title": "Questão 61",
-      "text": "Menina, 7 anos de idade, apresenta sono agitado com ronco frequente e sudorese profusa. Considerando o diagnóstico mais provável, qual é a comorbidade mais frequentemente associada a este quadro? A) Fibrilação atrial. B) Hipertensão arterial. C) Alteração comportamental. D) Obesidade. DBDDAADDBCADBABDCCDADCCCABCADCBBDDA",
+      "text": "Menina, 7 anos de idade, apresenta sono agitado com ronco frequente e sudorese profusa. Considerando o diagnóstico mais provável, qual é a comorbidade mais frequentemente associada a este quadro?",
       "options": [
         {
           "letter": "A",
-          "text": "A"
+          "text": "Fibrilação atrial."
         },
         {
           "letter": "B",
-          "text": "B"
+          "text": "Hipertensão arterial."
         },
         {
           "letter": "C",
-          "text": "DBB"
+          "text": "Alteração comportamental."
         },
         {
           "letter": "D",
-          "text": "ADBBABBBBCBBBD"
-        },
-        {
-          "letter": "E",
-          "text": "AC Powered by TCPDF (www.tcpdf.org"
+          "text": "Obesidade."
         }
       ],
       "sourceId": "",
       "correctAnswer": "C",
       "provider": "MedReview",
-      "originalSource": "Psiquiatria Infantil (TEA, TDAH)"
+      "originalSource": "Psiquiatria Infantil (TEA, TDAH)",
+      "importRepairedAt": "2026-10-20",
+      "importRepairNote": "Alternativas estavam no enunciado; campos de alternativa continham o gabarito do PDF."
     },
     {
       "id": "medreview-síndrome-de-fragilidade-1",
@@ -43993,17 +43999,15 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "D",
-          "text": "redução do nível de energia e fadiga, índice de Katz, M"
-        },
-        {
-          "letter": "E",
-          "text": "EM e velocidade de marcha reduzida. EDDAACB Powered by TCPDF (www.tcpdf.org"
+          "text": "redução do nível de energia e fadiga, índice de Katz, MEEM e velocidade de marcha reduzida."
         }
       ],
       "sourceId": "",
       "correctAnswer": "B",
       "provider": "MedReview",
-      "originalSource": "Síndrome de Fragilidade"
+      "originalSource": "Síndrome de Fragilidade",
+      "importRepairedAt": "2026-10-20",
+      "importRepairNote": "Alternativa D estava partida em D/E (\"M\" + E + \"EM\" = MEEM); gabarito do PDF removido."
     },
     {
       "id": "medreview-transtorno-obsessivo-compulsivo-1",
@@ -44157,13 +44161,15 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "D",
-          "text": "transtorno de purgação; metoclopramida. BAACAADDC Powered by TCPDF (www.tcpdf.org"
+          "text": "transtorno de purgação; metoclopramida."
         }
       ],
       "sourceId": "",
       "correctAnswer": "C",
       "provider": "MedReview",
-      "originalSource": "Transtornos Alimentares"
+      "originalSource": "Transtornos Alimentares",
+      "importRepairedAt": "2026-10-20",
+      "importRepairNote": "Removido o gabarito do PDF colado ao fim da última alternativa."
     },
     {
       "id": "medreview-transtornos-da-personalidade-2",
@@ -44247,13 +44253,15 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "D",
-          "text": "Transtorno da personalidade antissocial. DCCC Powered by TCPDF (www.tcpdf.org"
+          "text": "Transtorno da personalidade antissocial."
         }
       ],
       "sourceId": "",
       "correctAnswer": "C",
       "provider": "MedReview",
-      "originalSource": "Transtornos da Personalidade"
+      "originalSource": "Transtornos da Personalidade",
+      "importRepairedAt": "2026-10-20",
+      "importRepairNote": "Removido o gabarito do PDF colado ao fim da última alternativa."
     },
     {
       "id": "medreview-transtornos-de-ansiedade-1",
@@ -45281,33 +45289,31 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos de Ansiedade",
       "topic": "Transtornos de Ansiedade",
       "title": "Questão 36",
-      "text": "Paciente masculino, de 43 anos, procurou atendimento pela segunda vez no serviço ambulatorial da empresa onde trabalhava. Referiu fadiga, cefaleia, esquecimentos e irritabilidade, quadro iniciado há 2 meses. Trouxe resultados de exames solicitados na consulta anterior: hemograma, glicemia, TSH, dosagem de vitaminas, perfil lipídico, todos dentro dos padrões da normalidade. Há cerca de 2 semanas, apresentou algumas medidas de pressão arterial elevadas, o que nunca havia ocorrido. Negou tabagismo e uso abusivo de álcool ou outras drogas. Supervisor de estoque em uma rede de supermercados, há 3 meses passou a trabalhar no turno noturno, 4 vezes/semana, das 22 às 6 horas, com folga no dia seguinte. Informou que, quando chegava em casa, tomava café da manhã, ajudava a arrumar o filho para a escola e ia dormir. Não fazia uso de medicações contínuas. Diante da história, qual a hipótese mais provável e qual a intervenção possível na consulta? A) Transtorno de estresse agudo - Por provocar insônia, necessita de prescrição de antidepressivos e hipnóticos por curto período. B) Episódio depressivo moderado - Necessita de encaminhamento para psicoterapia e início de medicamento antidepressivo. C) Transtorno do ciclo circadiano gerando insônia aguda - Recomendam-se manejo comportamental e uso por curto tempo de hipnóticos. D) Transtorno de ansiedade leve com sintomas somáticos - Necessita de adoção de medidas não farmacológicas, como exercícios físicos e meditação. CD",
+      "text": "Paciente masculino, de 43 anos, procurou atendimento pela segunda vez no serviço ambulatorial da empresa onde trabalhava. Referiu fadiga, cefaleia, esquecimentos e irritabilidade, quadro iniciado há 2 meses. Trouxe resultados de exames solicitados na consulta anterior: hemograma, glicemia, TSH, dosagem de vitaminas, perfil lipídico, todos dentro dos padrões da normalidade. Há cerca de 2 semanas, apresentou algumas medidas de pressão arterial elevadas, o que nunca havia ocorrido. Negou tabagismo e uso abusivo de álcool ou outras drogas. Supervisor de estoque em uma rede de supermercados, há 3 meses passou a trabalhar no turno noturno, 4 vezes/semana, das 22 às 6 horas, com folga no dia seguinte. Informou que, quando chegava em casa, tomava café da manhã, ajudava a arrumar o filho para a escola e ia dormir. Não fazia uso de medicações contínuas. Diante da história, qual a hipótese mais provável e qual a intervenção possível na consulta?",
       "options": [
         {
           "letter": "A",
-          "text": "BC"
+          "text": "Transtorno de estresse agudo - Por provocar insônia, necessita de prescrição de antidepressivos e hipnóticos por curto período."
         },
         {
           "letter": "B",
-          "text": "CDDA"
+          "text": "Episódio depressivo moderado - Necessita de encaminhamento para psicoterapia e início de medicamento antidepressivo."
         },
         {
           "letter": "C",
-          "text": "A"
+          "text": "Transtorno do ciclo circadiano gerando insônia aguda - Recomendam-se manejo comportamental e uso por curto tempo de hipnóticos."
         },
         {
           "letter": "D",
-          "text": "CCCDBABCD"
-        },
-        {
-          "letter": "E",
-          "text": "DDBCDDBCDAAAC Powered by TCPDF (www.tcpdf.org"
+          "text": "Transtorno de ansiedade leve com sintomas somáticos - Necessita de adoção de medidas não farmacológicas, como exercícios físicos e meditação."
         }
       ],
       "sourceId": "",
       "correctAnswer": "C",
       "provider": "MedReview",
-      "originalSource": "Transtornos de Ansiedade"
+      "originalSource": "Transtornos de Ansiedade",
+      "importRepairedAt": "2026-10-20",
+      "importRepairNote": "Alternativas estavam no enunciado; campos de alternativa continham o gabarito do PDF."
     },
     {
       "id": "medreview-transtornos-do-humor-1",
@@ -47345,33 +47351,35 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Psicóticos",
       "topic": "Transtornos Psicóticos",
       "title": "Questão 21",
-      "text": "Um paciente com esquizofrenia em fase crônica apresenta progressivo isolamento social, ausência de iniciativa para realizar atividades, incapacidade de sentir prazer em atividades que antes o gratificavam e fala cada vez mais reduzida e monótona. Identifique o conjunto de sintomas negativos que caracteriza este padrão de apresentação clínica crônica: A) Abulia, alogia, anedonia e embotamento afetivo com retração social e empobrecimento global da vida psíquica, cognitiva e social do indivíduo. B) Apatia isolada sem comprometimento das funções linguísticas e mantendo capacidade de sentir prazer com atividades específicas do ambiente. C) Sintomas positivos residuais com alucinações auditivas persistentes que explicam secundariamente o isolamento social observado. D)",
+      "text": "Um paciente com esquizofrenia em fase crônica apresenta progressivo isolamento social, ausência de iniciativa para realizar atividades, incapacidade de sentir prazer em atividades que antes o gratificavam e fala cada vez mais reduzida e monótona. Identifique o conjunto de sintomas negativos que caracteriza este padrão de apresentação clínica crônica:",
       "options": [
         {
           "letter": "A",
-          "text": "usência de crítica com recusa absoluta de todas as formas de interação sem prejuízo da fluência verbal e produção de linguagem. E) Hipomodulação afetiva restrita apenas à esfera emocional sem atingir aspectos volitivos ou da linguagem. CECD"
+          "text": "Abulia, alogia, anedonia e embotamento afetivo com retração social e empobrecimento global da vida psíquica, cognitiva e social do indivíduo."
         },
         {
           "letter": "B",
-          "text": "DD"
+          "text": "Apatia isolada sem comprometimento das funções linguísticas e mantendo capacidade de sentir prazer com atividades específicas do ambiente."
         },
         {
           "letter": "C",
-          "text": "C"
+          "text": "Sintomas positivos residuais com alucinações auditivas persistentes que explicam secundariamente o isolamento social observado."
         },
         {
           "letter": "D",
-          "text": "C"
+          "text": "Ausência de crítica com recusa absoluta de todas as formas de interação sem prejuízo da fluência verbal e produção de linguagem."
         },
         {
           "letter": "E",
-          "text": "BDDCDDCBA Powered by TCPDF (www.tcpdf.org"
+          "text": "Hipomodulação afetiva restrita apenas à esfera emocional sem atingir aspectos volitivos ou da linguagem."
         }
       ],
       "sourceId": "",
       "correctAnswer": "A",
       "provider": "MedReview",
-      "originalSource": "Transtornos Psicóticos"
+      "originalSource": "Transtornos Psicóticos",
+      "importRepairedAt": "2026-10-20",
+      "importRepairNote": "Alternativas A–C no enunciado, D–E no campo da alternativa A; gabarito do PDF removido."
     },
     {
       "id": "medreview-transtornos-relacionados-a-trauma-1",
@@ -47555,7 +47563,11 @@ window.BANCO_RMAIS_QUESTIONS = {
       "sourceId": "",
       "correctAnswer": "A",
       "provider": "MedReview",
-      "originalSource": "Transtornos Relacionados a Trauma"
+      "originalSource": "Transtornos Relacionados a Trauma",
+      "excluded": true,
+      "needsReviewReason": "Enunciado e início da alternativa A truncados na importação. Oculta até correção pela fonte original.",
+      "importRepairedAt": "2026-10-20",
+      "importRepairNote": "Enunciado e início da alternativa A truncados na importação."
     },
     {
       "id": "medreview-transtornos-somatiformes-1",
@@ -47613,13 +47625,15 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "D",
-          "text": "Projeto terapêutico singular. BBDB Powered by TCPDF (www.tcpdf.org"
+          "text": "Projeto terapêutico singular."
         }
       ],
       "sourceId": "",
       "correctAnswer": "B",
       "provider": "MedReview",
-      "originalSource": "Transtornos Somatiformes"
+      "originalSource": "Transtornos Somatiformes",
+      "importRepairedAt": "2026-10-20",
+      "importRepairNote": "Removido o gabarito do PDF colado ao fim da última alternativa."
     },
     {
       "id": "medreview-álcool-1",
@@ -49325,33 +49339,31 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Intoxicação por Drogas e Dependência Química",
       "topic": "Intoxicação por Drogas e Dependência Química",
       "title": "Questão 60",
-      "text": "Paciente masculino, de 65 anos, foi trazido à Emergência por quadro de confusão mental de início agudo. Familiar relatou que ele consumia cerca de 500 ml/dia de destilados e que estava sem beber há uns 4 dias. Teve tremor, sudorese, insônia e náuseas em casa, mas no momento não apresentava esses sintomas e os sinais vitais permaneciam estáveis. Além de incluí-lo em protocolo de AVC, que medicamento, dentre os abaixo, deveria ser iniciado imediatamente? A) Diazepam por via parenteral B) Diazepam por via oral C) Tiamina por via parenteral D) Tiamina por via oral ABABCCABAEBBBBDCB",
+      "text": "Paciente masculino, de 65 anos, foi trazido à Emergência por quadro de confusão mental de início agudo. Familiar relatou que ele consumia cerca de 500 ml/dia de destilados e que estava sem beber há uns 4 dias. Teve tremor, sudorese, insônia e náuseas em casa, mas no momento não apresentava esses sintomas e os sinais vitais permaneciam estáveis. Além de incluí-lo em protocolo de AVC, que medicamento, dentre os abaixo, deveria ser iniciado imediatamente?",
       "options": [
         {
           "letter": "A",
-          "text": "CD"
+          "text": "Diazepam por via parenteral"
         },
         {
           "letter": "B",
-          "text": "DD"
+          "text": "Diazepam por via oral"
         },
         {
           "letter": "C",
-          "text": "A"
+          "text": "Tiamina por via parenteral"
         },
         {
           "letter": "D",
-          "text": "ABDDCCCAD"
-        },
-        {
-          "letter": "E",
-          "text": "DABADBDBBAABACCBABACBCBC Powered by TCPDF (www.tcpdf.org"
+          "text": "Tiamina por via oral"
         }
       ],
       "sourceId": "",
       "correctAnswer": "C",
       "provider": "MedReview",
-      "originalSource": "Álcool"
+      "originalSource": "Álcool",
+      "importRepairedAt": "2026-10-20",
+      "importRepairNote": "Alternativas estavam no enunciado; campos de alternativa continham o gabarito do PDF."
     }
   ]
 };
