@@ -3286,3 +3286,622 @@ body.theme-dark .option.selected.pending::before {
 #globalBankCounter strong {
   color: var(--ink);
 }
+
+/* ===== Tela "Hoje" e plano de estudo (js/studyPlan.js) ===== */
+.no-question-active .topbar .actions {
+  display: none;
+}
+
+.start-panel.today-panel {
+  display: grid;
+  gap: 16px;
+  width: 100%;
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.today-panel p {
+  max-width: none;
+}
+
+.today-toolbar {
+  display: flex;
+  justify-content: flex-end;
+  min-height: 0;
+}
+
+.today-toolbar .link-btn {
+  min-height: 36px;
+  padding: 0 4px;
+  border: 0;
+  background: transparent;
+  color: var(--accent-strong);
+  font-weight: 600;
+}
+
+.today-dashboard,
+.today-summary,
+.plan-form {
+  display: grid;
+  gap: 16px;
+}
+
+.today-card {
+  display: grid;
+  gap: 12px;
+  padding: 18px 20px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--panel);
+}
+
+.today-card h2,
+.today-card h3 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.today-card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.today-card-head span,
+.today-muted {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.today-notice {
+  margin: 0;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: var(--warn-soft);
+  color: var(--ink);
+  font-size: 14px;
+}
+
+/* bloco de destaque: prova e meta */
+.today-hero {
+  display: grid;
+  gap: 16px;
+  padding: 20px;
+  border-radius: 20px;
+  background: #1d4ed8;
+  color: #ffffff;
+}
+
+body.theme-dark .today-hero {
+  background: #1e3a8a;
+}
+
+.today-hero-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.today-hero-kicker {
+  display: block;
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+.today-hero-title {
+  display: block;
+  margin-top: 2px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.today-hero-days {
+  display: grid;
+  justify-items: end;
+  line-height: 1;
+}
+
+.today-hero-days strong {
+  font-size: 34px;
+  font-weight: 800;
+}
+
+.today-hero-days span {
+  margin-top: 4px;
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+.today-hero-goal {
+  display: grid;
+  gap: 8px;
+}
+
+.today-hero-goal-line {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 14px;
+}
+
+.today-bar {
+  height: 8px;
+  overflow: hidden;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.28);
+}
+
+.today-bar i {
+  display: block;
+  height: 100%;
+  border-radius: 4px;
+  background: #ffffff;
+}
+
+/* estudo de hoje */
+.today-rows {
+  display: grid;
+  gap: 12px;
+}
+
+.today-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.today-row-icon {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+}
+
+.today-row-icon.warn { background: var(--warn-soft); color: #b45309; }
+.today-row-icon.good { background: var(--good-soft); color: #15803d; }
+.today-row-icon.info { background: var(--accent-soft); color: var(--accent-strong); }
+body.theme-dark .today-row-icon.warn { color: #fbbf24; }
+body.theme-dark .today-row-icon.good { color: #4ade80; }
+
+.today-row-text {
+  display: grid;
+  flex: 1;
+  gap: 2px;
+  min-width: 0;
+}
+
+.today-row-text strong {
+  font-size: 15px;
+}
+
+.today-row-text span {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.today-row-btn {
+  flex-shrink: 0;
+  min-height: 40px;
+}
+
+.today-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  min-height: 52px;
+  border-radius: 14px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.today-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  gap: 16px;
+  align-items: start;
+}
+
+/* sequência */
+.today-streak-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+}
+
+.today-flame {
+  display: flex;
+  color: #c2410c;
+}
+
+body.theme-dark .today-flame {
+  color: #fb923c;
+}
+
+.today-week {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.today-day {
+  display: grid;
+  justify-items: center;
+  gap: 4px;
+}
+
+.today-day span {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--line);
+}
+
+.today-day.studied span {
+  background: var(--accent);
+}
+
+.today-day.is-today span {
+  box-sizing: border-box;
+  border: 2px dashed var(--accent);
+  background: var(--accent-soft);
+}
+
+.today-day.is-today.studied span {
+  border-style: solid;
+  background: var(--accent);
+}
+
+.today-day small {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.today-day.is-today small {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+/* temas para reforçar */
+.today-weak-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+}
+
+.today-weak-text {
+  display: grid;
+  flex: 1;
+  gap: 2px;
+  min-width: 0;
+}
+
+.today-weak-text strong {
+  font-size: 14px;
+}
+
+.today-weak-text span {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.today-weak-row .outline-btn {
+  flex-shrink: 0;
+  min-height: 40px;
+}
+
+.today-chip {
+  flex-shrink: 0;
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.today-chip.weak { background: #fdf0e1; color: #9a3412; }
+.today-chip.mid { background: #fef9c3; color: #854d0e; }
+.today-chip.good { background: var(--good-soft); color: #166534; }
+body.theme-dark .today-chip.weak { background: #431407; color: #fdba74; }
+body.theme-dark .today-chip.mid { background: #422006; color: #fde68a; }
+body.theme-dark .today-chip.good { background: #052e16; color: #86efac; }
+
+/* outras formas de estudar */
+.today-more {
+  display: grid;
+  gap: 10px;
+}
+
+.today-more-title {
+  margin: 4px 4px 0;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.today-more-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.today-more-grid button {
+  min-height: 56px;
+  border-radius: 14px;
+  font-weight: 600;
+}
+
+/* resumo do fim do estudo */
+.today-summary-head {
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+  padding-top: 8px;
+  text-align: center;
+}
+
+.today-summary-head h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.today-summary-head p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.today-summary-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #ffffff;
+}
+
+.today-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+@media (min-width: 1100px) {
+  .today-stat-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.today-stat {
+  display: grid;
+  gap: 4px;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--panel);
+}
+
+.today-stat span {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.today-stat strong {
+  font-size: clamp(19px, 5.4vw, 26px);
+  font-weight: 800;
+}
+
+.today-stat small {
+  color: var(--muted);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.today-accent-text {
+  color: var(--accent-strong);
+}
+
+.today-improvement,
+.today-inline {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.today-improvement {
+  border-color: transparent;
+  background: var(--good-soft);
+  color: #166534;
+}
+
+body.theme-dark .today-improvement {
+  color: #86efac;
+}
+
+.today-improvement div,
+.today-inline div {
+  display: grid;
+  gap: 2px;
+}
+
+.today-improvement span,
+.today-inline span {
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+.today-row-split {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 14px;
+}
+
+.today-actions-stack {
+  display: grid;
+  gap: 10px;
+}
+
+.today-actions-stack .outline-btn {
+  min-height: 50px;
+  border-radius: 14px;
+  font-weight: 600;
+}
+
+/* plano de estudo */
+.plan-head h2 {
+  margin: 0 0 6px;
+  font-size: 24px;
+}
+
+.plan-head p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.plan-field {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.plan-field legend,
+.plan-field > label {
+  margin-bottom: 10px;
+  padding: 0;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.plan-optional {
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.plan-chip-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 8px;
+}
+
+.plan-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.plan-chip {
+  min-height: 46px;
+  padding: 0 14px;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.plan-chip[aria-pressed="true"] {
+  border: 2px solid var(--accent);
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+  font-weight: 700;
+}
+
+.plan-segmented {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 6px;
+}
+
+#planExamDate {
+  height: 50px;
+  max-width: 280px;
+  box-sizing: border-box;
+  padding: 0 14px;
+  border: 1px solid var(--line-strong);
+  border-radius: 12px;
+  background: var(--panel);
+  color: var(--ink);
+  font: inherit;
+}
+
+.plan-preview {
+  display: grid;
+  gap: 8px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--panel);
+}
+
+.plan-preview-kicker {
+  color: var(--accent-strong);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.plan-preview-goal {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.plan-preview-goal strong {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.plan-preview-goal span,
+.plan-preview p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.plan-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.plan-actions .today-cta {
+  flex: 1 1 240px;
+  width: auto;
+}
+
+.plan-actions .outline-btn {
+  min-height: 52px;
+  border-radius: 14px;
+}
+
+@media (max-width: 860px) {
+  .today-more-grid button {
+    min-height: 64px;
+    font-size: 13px;
+  }
+
+  .plan-actions .outline-btn {
+    flex: 1 1 100%;
+  }
+}

@@ -548,12 +548,16 @@
       </header>
 
       <section class="question-shell">
-        <section class="start-panel" id="startPanel">
-          <h2>Escolha como quer estudar</h2>
-          <p>Use Estudo por temas para montar um bloco por assunto ou Provas para resolver exames anteriores por instituição, área e ano.</p>
-          <div class="start-actions">
-            <button id="goSessionBtn" class="primary-btn">Estudo por temas</button>
-            <button id="goExamsBtn">Ver provas</button>
+        <section class="start-panel today-panel" id="startPanel">
+          <div class="today-toolbar"><button id="editPlanBtn" type="button" class="link-btn" hidden>Editar plano</button></div>
+          <div id="todayContent"></div>
+          <div class="today-more">
+            <h3 class="today-more-title">Outras formas de estudar</h3>
+            <div class="today-more-grid">
+              <button id="goExamsBtn" type="button">Provas e simulados</button>
+              <button id="goSessionBtn" type="button">Por tema</button>
+              <button id="goFlashcardsTodayBtn" type="button">Flashcards</button>
+            </div>
           </div>
         </section>
         <section class="flashcard-study-panel" id="flashcardStudyPanel" hidden>
@@ -748,6 +752,7 @@
     <script src="js/topicProgress.js"></script>
     <script src="js/sessionPersistence.js"></script>
     <script src="js/excludedQuestionsAdmin.js"></script>
+    <script src="js/studyPlan.js"></script>
     <script src="js/globalBankCounter.js"></script>
   </body>
 </html>

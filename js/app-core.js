@@ -509,6 +509,7 @@ function currentSettingsPayload() {
     sessionSize: state.sessionSize,
     includeReviewsInSession: state.includeReviewsInSession,
     sessionSource: state.sessionSource,
+    studyPlan: state.studyPlan || null,
   };
 }
 
@@ -533,6 +534,7 @@ function applySettingsPayload(settings = {}) {
     state.includeReviewsInSession = Boolean(settings.includeReviewsInSession);
     localStorage.setItem("banco-rmais-include-reviews", String(state.includeReviewsInSession));
   }
+  if (settings.studyPlan && typeof applyStudyPlanFromCloud === "function") applyStudyPlanFromCloud(settings.studyPlan);
   if (Object.prototype.hasOwnProperty.call(settings, "sessionSource")) {
     state.sessionSource = settings.sessionSource || "content";
     localStorage.setItem("banco-rmais-session-source", state.sessionSource);
@@ -4024,6 +4026,7 @@ function render() {
     }
     el.source.textContent = showStartPanel ? "Pronto para estudar" : "Nenhuma questão encontrada";
     el.title.textContent = showStartPanel ? "Banco de questões" : "Ajuste os filtros";
+    if (showStartPanel && typeof renderTodayPanel === "function") renderTodayPanel();
     el.tags.innerHTML = "";
     el.tags.classList.remove("visible");
     el.text.textContent = "";
@@ -4061,7 +4064,7 @@ function render() {
       : state.dangerousReviewActive
         ? "Questões perigosas"
     : state.sessionActive
-      ? "Bloco de questões"
+      ? (typeof studyRunLabel === "function" && studyRunLabel()) || "Bloco de questões"
       : state.topicActive
         ? state.topicIds.length === 1
           ? `Tema: ${state.topicIds[0]}`
@@ -4493,6 +4496,7 @@ function startCurrentBlockErrors() {
 }
 
 function endSession() {
+  if (typeof handleStudyRunExit === "function") handleStudyRunExit();
   state.sessionCompletionMessage = "";
   /* "Sair do bloco" é a saída visível também no estudo por tema ("Continuar" no progresso por tema). */
   state.topicActive = false;
@@ -4510,6 +4514,7 @@ function endSession() {
 
 function finishSession() {
   if (!state.sessionActive && !state.smartTrainingActive) return;
+  if (typeof handleStudyRunFinish === "function") handleStudyRunFinish();
   const total = state.filtered.length;
   const answered = currentRunAnsweredQuestions();
   const correct = answered.filter((question) => currentAttemptFor(question.id).grade === "correct");
