@@ -442,8 +442,49 @@ function saveProgress() {
   scheduleCloudProgressSync();
 }
 
+const MAX_STORED_ATTEMPTS = 5000;
+
 function saveAttempts() {
-  localStorage.setItem("banco-rmais-attempts", JSON.stringify(state.attempts.slice(-2000)));
+  try {
+    localStorage.setItem("banco-rmais-attempts", JSON.stringify(state.attempts.slice(-MAX_STORED_ATTEMPTS)));
+  } catch (error) {
+    console.warn("attempts not saved locally:", error.message);
+  }
+}
+
+function attemptKey(attempt) {
+  return `${attempt?.question_id}|${Date.parse(attempt?.answered_at || "") || ""}`;
+}
+
+/* As tentativas (com data) eram só enviadas à conta; aqui elas voltam e se juntam às deste
+   navegador, para o Desempenho mostrar o histórico de todos os aparelhos. */
+async function loadCloudAttempts() {
+  if (!state.supabase || !state.authUser) return;
+  const pageSize = 1000;
+  const rows = [];
+  for (let from = 0; from < MAX_STORED_ATTEMPTS; from += pageSize) {
+    const { data, error } = await state.supabase
+      .from("question_attempts")
+      .select("question_id, tema, subtema, answered_at, selected_answer, correct_answer, is_correct, confidence, error_type, source, mode")
+      .eq("user_id", state.authUser.id)
+      .order("answered_at", { ascending: false })
+      .range(from, from + pageSize - 1);
+    if (error) {
+      console.warn("question_attempts load skipped:", error.message);
+      return;
+    }
+    rows.push(...(data || []));
+    if (!data || data.length < pageSize) break;
+  }
+  const merged = new Map(state.attempts.map((attempt) => [attemptKey(attempt), attempt]));
+  for (const row of rows) {
+    const key = attemptKey(row);
+    if (!merged.has(key)) merged.set(key, { ...row, id: `${Date.parse(row.answered_at) || 0}-${row.question_id}` });
+  }
+  state.attempts = [...merged.values()]
+    .sort((a, b) => (Date.parse(a.answered_at) || 0) - (Date.parse(b.answered_at) || 0))
+    .slice(-MAX_STORED_ATTEMPTS);
+  saveAttempts();
 }
 
 function saveReviewSchedule() {
@@ -788,6 +829,7 @@ async function loadCloudState() {
   localStorage.setItem("banco-rmais-progress", JSON.stringify(state.progress));
 
   if (settingsRow?.settings) applySettingsPayload(settingsRow.settings);
+  await loadCloudAttempts();
   state.cloudReady = true;
   await Promise.all([syncProgressToCloud(), syncSettingsToCloud()]);
   setSyncStatus(state.isAdmin ? "Conta sincronizada. Perfil administrador." : "Conta sincronizada.");
@@ -1939,7 +1981,7 @@ function saveAttempt(question, progress) {
   const attempt = attemptPayload(question, progress);
   if (!attempt) return;
   state.attempts.push(attempt);
-  state.attempts = state.attempts.slice(-2000);
+  state.attempts = state.attempts.slice(-MAX_STORED_ATTEMPTS);
   saveAttempts();
   if (typeof recordStudyLogAttempt === "function") recordStudyLogAttempt(attempt, progress);
   syncAttemptToCloud(attempt);

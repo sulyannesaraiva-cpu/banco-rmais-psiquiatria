@@ -77,6 +77,25 @@ function questionIndexById() {
   return map;
 }
 
+/* Questões respondidas antes de existir o registro de tentativas (ou fora dele) só têm o
+   progresso salvo. Entram uma vez, na data da última resposta, para o total bater com o
+   "Histórico recente". */
+function legacyProgressAttempts(recorded) {
+  const withAttempt = new Set(recorded.map((attempt) => attempt.question_id));
+  const legacy = [];
+  for (const [questionId, progress] of Object.entries(state.progress || {})) {
+    if (!progress?.grade || withAttempt.has(questionId) || isExcluded(questionId)) continue;
+    legacy.push({
+      question_id: questionId,
+      is_correct: progress.grade === "correct",
+      error_type: progress.grade === "wrong" ? progress.errorType || null : null,
+      ts: Number(progress.updatedAt) || null,
+      legacy: true,
+    });
+  }
+  return legacy;
+}
+
 function periodStart(periodId) {
   const period = PERFORMANCE_PERIODS.find((item) => item.id === periodId) || PERFORMANCE_PERIODS[1];
   return period.days ? startOfLocalDay() - (period.days - 1) * DAY_MS : 0;
@@ -124,8 +143,8 @@ function computePerformanceData() {
   const index = questionIndexById();
   const inExam = (questionId) => exam === "Todas" || index.get(questionId)?.institution === exam;
 
-  const allAttempts = (state.attempts || [])
-    .map((attempt) => ({ ...attempt, ts: attemptTimestamp(attempt) }))
+  const recorded = (state.attempts || []).map((attempt) => ({ ...attempt, ts: attemptTimestamp(attempt) }));
+  const allAttempts = [...recorded, ...legacyProgressAttempts(recorded)]
     .filter((attempt) => attempt.ts && inExam(attempt.question_id));
   const attempts = allAttempts.filter((attempt) => attempt.ts >= since);
   const correct = attempts.filter((attempt) => attempt.is_correct).length;
