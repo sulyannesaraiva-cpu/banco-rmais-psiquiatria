@@ -2502,6 +2502,139 @@ body.theme-dark .exam-study-card {
   color: var(--ink);
 }
 
+/* Estudo por temas: lista única de temas + montagem do bloco. */
+.topic-picker {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 16px;
+}
+
+.topic-picker input {
+  flex: 1 1 220px;
+  min-width: 0;
+}
+
+.topic-picker-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.topic-list {
+  display: grid;
+  gap: 8px;
+  min-width: 0;
+}
+
+.topic-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm, 10px);
+  background: var(--panel);
+}
+
+.topic-row.selected {
+  border-color: var(--accent);
+  background: var(--accent-soft, var(--panel));
+}
+
+.topic-row-main {
+  display: grid;
+  grid-template-columns: 20px minmax(0, 1fr);
+  column-gap: 10px;
+  row-gap: 3px;
+  align-items: center;
+  min-width: 0;
+  cursor: pointer;
+}
+
+.topic-row-main input {
+  grid-row: 1 / span 3;
+  align-self: start;
+  margin-top: 2px;
+}
+
+.topic-row-name {
+  font-weight: 650;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+
+.topic-row-meta {
+  color: var(--muted);
+  font-size: 12.5px;
+}
+
+.topic-row-track {
+  display: block;
+  height: 5px;
+  margin-top: 3px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: var(--line);
+}
+
+.topic-row-track i {
+  display: block;
+  height: 100%;
+  background: var(--accent);
+}
+
+.topic-row-continue {
+  min-height: 34px;
+  padding: 0 12px;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.topic-row-continue:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+
+#activityPanel .block-builder {
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius, 12px);
+  background: var(--panel-soft, var(--panel));
+}
+
+.block-builder h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.block-builder #topicModeLine {
+  margin: -6px 0 0;
+}
+
+.block-builder #startSessionBtn:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+
+@media (max-width: 560px) {
+  .topic-row {
+    gap: 8px;
+    padding: 10px;
+  }
+
+  #activityPanel .topic-row {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  #activityPanel .topic-row-continue {
+    width: auto;
+    min-height: 32px;
+    padding: 0 10px;
+    font-size: 12.5px;
+  }
+}
+
 #activityPanel .session-toggle input {
   width: 16px;
   height: 16px;

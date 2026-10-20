@@ -1,51 +1,10 @@
-/* Progresso persistente por tema: continuar pendentes, ver todas e acompanhar conclusão. */
+/* Estudo de um tema: "Continuar" abre só as pendentes daquele tema. */
 (function setupPersistentTopicProgress() {
   const TOPIC_MODE_KEY = "banco-rmais-topic-mode";
-  const TOPIC_PANEL_OPEN_KEY = "banco-rmais-topic-progress-open";
-  let lastProgressSignature = "";
-
-  if (!document.querySelector("#topicProgressStyles")) {
-    const style = document.createElement("style");
-    style.id = "topicProgressStyles";
-    style.textContent = `
-      .topic-progress-panel{margin:12px 0 16px;min-width:0}
-      .topic-progress-details{border:1px solid var(--border,#dfe3e8);border-radius:12px;background:var(--surface,#fff);overflow:hidden}
-      .topic-progress-summary{cursor:pointer;list-style:none;padding:11px 12px;font-weight:700;display:flex;align-items:center;justify-content:space-between;gap:8px}
-      .topic-progress-summary::-webkit-details-marker{display:none}
-      .topic-progress-summary::after{content:"▾";font-size:.82rem;opacity:.65;transition:transform .15s ease}
-      .topic-progress-details:not([open]) .topic-progress-summary::after{transform:rotate(-90deg)}
-      .topic-progress-body{padding:0 10px 10px}
-      .topic-progress-intro{display:block;margin:0 2px 9px;font-size:.78rem;line-height:1.35;opacity:.7}
-      .topic-progress-list{display:grid;gap:8px;min-width:0}
-      .topic-progress-item{display:block;min-width:0;padding:10px;border:1px solid var(--border,#dfe3e8);border-radius:10px;background:var(--surface,#fff)}
-      .topic-progress-item.topic-complete{opacity:.78}
-      .topic-progress-copy{min-width:0}
-      .topic-progress-copy>strong{display:block;font-size:.9rem;line-height:1.25;overflow-wrap:anywhere}
-      .topic-progress-copy>span{display:block;margin-top:4px;font-size:.76rem;line-height:1.3;opacity:.72}
-      .topic-progress-track{height:5px;margin-top:8px;border-radius:999px;overflow:hidden;background:rgba(127,127,127,.18)}
-      .topic-progress-track i{display:block;height:100%;background:currentColor;opacity:.55}
-      .topic-progress-actions{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:6px;margin-top:9px;min-width:0}
-      .topic-progress-actions button{min-width:0;width:100%;padding:7px 6px;font-size:.72rem;line-height:1.15;white-space:normal}
-      @media(max-width:720px){.topic-progress-actions{grid-template-columns:1fr}}
-    `;
-    document.head.appendChild(style);
-  }
 
   function topicSelectionKey(topics, mode = "all") {
     const cleanTopics = [...(topics || [])].map(String).sort((a, b) => a.localeCompare(b, "pt-BR"));
-    const subthemes = state.refineSubthemes ? [...(state.selectedSubthemes || [])].map(String).sort() : [];
-    return `topic-progress:${mode}:${JSON.stringify({ topics: cleanTopics, subthemes })}`;
-  }
-
-  function topicStats(topic) {
-    const questions = topicQuestions(topic);
-    let answered = 0;
-    for (const question of questions) {
-      if (getProgress(question.id).grade) answered += 1;
-    }
-    const remaining = Math.max(questions.length - answered, 0);
-    const percent = questions.length ? Math.round((answered / questions.length) * 100) : 0;
-    return { total: questions.length, answered, remaining, percent };
+    return `topic-progress:${mode}:${JSON.stringify({ topics: cleanTopics, subthemes: [] })}`;
   }
 
   function setSingleTopic(topic) {
@@ -119,83 +78,13 @@
     startSelectedTopics(mode);
   }
 
-  function progressSignature() {
-    const answered = Object.values(state.progress || {}).reduce((count, progress) => count + (progress?.grade ? 1 : 0), 0);
-    const selected = Array.isArray(state.selectedTopics) ? state.selectedTopics.join("|") : "";
-    return `${answered}:${state.questions.length}:${selected}:${state.refineSubthemes}:${(state.selectedSubthemes || []).join("|")}`;
-  }
-
-  function renderTopicProgressPanel({ force = false } = {}) {
-    if (!el.topicModeLine || !state.questions.length) return;
-    if (state.activeTab !== "activity" || state.topicActive) return;
-
-    const signature = progressSignature();
-    let panel = document.querySelector("#topicProgressPanel");
-    if (!force && panel && signature === lastProgressSignature) return;
-    lastProgressSignature = signature;
-
-    if (!panel) {
-      panel = document.createElement("section");
-      panel.id = "topicProgressPanel";
-      panel.className = "topic-progress-panel";
-      el.topicModeLine.insertAdjacentElement("afterend", panel);
-    }
-
-    const topics = allTopics();
-    const rows = topics.map((topic) => ({ topic, stats: topicStats(topic) }));
-    const answeredTotal = rows.reduce((sum, row) => sum + row.stats.answered, 0);
-    const questionTotal = rows.reduce((sum, row) => sum + row.stats.total, 0);
-    const existingDetails = panel.querySelector("details");
-    const savedOpenState = localStorage.getItem(TOPIC_PANEL_OPEN_KEY);
-    const openState = existingDetails ? existingDetails.open : savedOpenState !== "false";
-
-    panel.innerHTML = `
-      <details class="topic-progress-details" ${openState ? "open" : ""}>
-        <summary class="topic-progress-summary">
-          <span>Progresso por tema</span>
-          <small>${answeredTotal}/${questionTotal}</small>
-        </summary>
-        <div class="topic-progress-body">
-          <span class="topic-progress-intro">Veja quanto falta em cada tema e escolha entre continuar só as pendentes ou abrir todas.</span>
-          <div class="topic-progress-list">
-            ${rows.map(({ topic, stats }) => {
-              const doneClass = stats.remaining === 0 && stats.total ? " topic-complete" : "";
-              return `
-                <article class="topic-progress-item${doneClass}">
-                  <div class="topic-progress-copy">
-                    <strong>${escapeHtml(topic)}</strong>
-                    <span>${stats.answered}/${stats.total} feitas · ${stats.remaining} faltam · ${stats.percent}%</span>
-                    <div class="topic-progress-track" aria-label="${stats.percent}% concluído"><i style="width:${stats.percent}%"></i></div>
-                  </div>
-                  <div class="topic-progress-actions">
-                    <button type="button" data-topic-continue="${escapeHtml(topic)}" ${stats.remaining === 0 ? "disabled" : ""}>Continuar</button>
-                    <button type="button" class="outline-btn" data-topic-all="${escapeHtml(topic)}">Ver todas</button>
-                  </div>
-                </article>`;
-            }).join("")}
-          </div>
-        </div>
-      </details>`;
-
-    const details = panel.querySelector("details");
-    if (details) details.addEventListener("toggle", () => {
-      localStorage.setItem(TOPIC_PANEL_OPEN_KEY, details.open ? "true" : "false");
-    });
-
-    panel.querySelectorAll("[data-topic-continue]").forEach((button) => {
-      button.addEventListener("click", () => openTopic(button.dataset.topicContinue, "pending"));
-    });
-    panel.querySelectorAll("[data-topic-all]").forEach((button) => {
-      button.addEventListener("click", () => openTopic(button.dataset.topicAll, "all"));
-    });
-  }
-
-  const legacyRenderTopicChecklist = renderTopicChecklist;
-  renderTopicChecklist = function renderTopicChecklistWithProgress() {
-    const result = legacyRenderTopicChecklist();
-    renderTopicProgressPanel();
-    return result;
-  };
+  /* "Continuar" fica em cada linha da lista de temas (renderTopicChecklist no núcleo). */
+  el.topicChecklist?.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-topic-continue]");
+    if (!button || button.disabled) return;
+    event.preventDefault();
+    openTopic(button.dataset.topicContinue, "pending");
+  });
 
   if (el.startTopic) {
     el.startTopic.textContent = "Continuar pendentes";
@@ -220,6 +109,4 @@
     }
     return result;
   };
-
-  if (state.activeTab === "activity" && !state.topicActive) renderTopicProgressPanel({ force: true });
 })();

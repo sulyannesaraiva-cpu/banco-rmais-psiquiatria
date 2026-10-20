@@ -44,6 +44,8 @@ const state = {
   sessionSize: Number(localStorage.getItem("banco-rmais-session-size") || "30"),
   includeReviewsInSession: localStorage.getItem("banco-rmais-include-reviews") === "true",
   sessionSource: localStorage.getItem("banco-rmais-session-source") || "content",
+  /* Estudo por temas: "new" (só não feitas), "all" ou "wrong" (só erradas). */
+  sessionPoolMode: localStorage.getItem("banco-rmais-session-pool") || "new",
   reviewTargetExam: localStorage.getItem("banco-rmais-review-target-exam") || "Todas",
   reviewMode: localStorage.getItem("banco-rmais-review-mode") || "mixed",
   reviewAvailableMinutes: Number(localStorage.getItem("banco-rmais-review-minutes") || "20"),
@@ -328,24 +330,18 @@ const el = {
   startTopic: document.querySelector("#startTopicBtn"),
   endTopic: document.querySelector("#endTopicBtn"),
   topicModeLine: document.querySelector("#topicModeLine"),
-  refineSubthemes: document.querySelector("#refineSubthemesToggle"),
-  subthemeChecklist: document.querySelector("#subthemeChecklist"),
   selectAllTopics: document.querySelector("#selectAllTopicsBtn"),
   clearTopics: document.querySelector("#clearTopicsBtn"),
   sessionSizeGroup: document.querySelector("#sessionSizeGroup"),
-  sessionSourceGroup: document.querySelector("#sessionSourceGroup"),
+  sessionPoolGroup: document.querySelector("#sessionPoolGroup"),
   includeReviews: document.querySelector("#includeReviewsToggle"),
   startSession: document.querySelector("#startSessionBtn"),
-  startSmartTraining: document.querySelector("#startSmartTrainingBtn"),
   finishSession: document.querySelector("#finishSessionBtn"),
   endSession: document.querySelector("#endSessionBtn"),
   resetProgress: document.querySelector("#resetProgressBtn"),
   restoreExcluded: document.querySelector("#restoreExcludedBtn"),
   sessionLine: document.querySelector("#sessionLine"),
   sessionSummary: document.querySelector("#sessionSummary"),
-  sessionDidacticCount: document.querySelector("#sessionDidacticCount"),
-  sessionExamCount: document.querySelector("#sessionExamCount"),
-  sessionNewCount: document.querySelector("#sessionNewCount"),
   historySummary: document.querySelector("#historySummary"),
   historyList: document.querySelector("#historyList"),
   errorNotebook: document.querySelector("#errorNotebook"),
@@ -368,6 +364,7 @@ const el = {
   examLastTitle: document.querySelector("#examLastTitle"),
   examProgressAccuracy: document.querySelector("#examProgressAccuracy"),
   examProgressAnswered: document.querySelector("#examProgressAnswered"),
+  examProgressSplit: document.querySelector("#examProgressSplit"),
   overviewCounts: {
     dominated: document.querySelector("#dominatedCount"),
     consolidated: document.querySelector("#consolidatedCount"),
@@ -501,9 +498,8 @@ function saveIncludeReviews() {
   scheduleCloudSettingsSync();
 }
 
-function saveSessionSource() {
-  localStorage.setItem("banco-rmais-session-source", state.sessionSource);
-  scheduleCloudSettingsSync();
+function saveSessionPoolMode() {
+  localStorage.setItem("banco-rmais-session-pool", state.sessionPoolMode);
 }
 
 /* Progresso dos flashcards enviado à conta: só os campos de agendamento dos cartões já vistos. */
@@ -1731,8 +1727,10 @@ function subthemeCatalogForTopics(topics = topicsForStats()) {
   return catalog;
 }
 
+/* O filtro por subtema saiu da tela de estudo por temas (repetia os próprios temas).
+   Fica sempre vazio para que uma escolha antiga salva no navegador ou na conta não esconda questões. */
 function activeSubthemeKeys() {
-  return new Set(state.refineSubthemes ? state.selectedSubthemes || [] : []);
+  return new Set();
 }
 
 function questionMatchesSelectedSubthemes(question) {
@@ -3329,94 +3327,34 @@ function renderOverview() {
   }
 }
 
+/* Lista única de temas: marcar para o bloco, ver progresso e acerto, ou "Continuar" as pendentes. */
 function renderTopicChecklist() {
   if (!el.topicChecklist || !state.questions.length) return;
   const selectedTopics = Array.isArray(state.selectedTopics) ? state.selectedTopics : [];
-  const selectedQuestionCount = selectedContentQuestions({ ignoreSubthemes: true }).length;
-  const refinedQuestionCount = selectedContentQuestions().length;
-  const subthemeNote = state.refineSubthemes
-    ? ` Refinamento ativo: ${pluralize(refinedQuestionCount, "questão", "questões")} no recorte.`
-    : "";
-  el.topicModeLine.textContent = `${selectedTopics.length}/${allTopics().length} temas selecionados - ${pluralize(selectedQuestionCount, "questão", "questões")} no banco.${subthemeNote}`;
   const topicQuery = normalize(el.topicPanelSearch.value);
   const topics = allTopics().filter((topic) => !topicQuery || normalize(topic).includes(topicQuery));
   el.topicChecklist.innerHTML = topics
     .map((topic) => {
       const perf = topicPerformance(topic);
-      const checked = state.selectedTopics.includes(topic) ? "checked" : "";
+      const checked = selectedTopics.includes(topic) ? "checked" : "";
+      const percent = perf.total ? Math.round((perf.answered / perf.total) * 100) : 0;
+      const remaining = Math.max(perf.total - perf.answered, 0);
       return `
-        <label class="topic-item ${checked ? "selected" : ""}">
-          <input type="checkbox" value="${escapeHtml(topic)}" ${checked} />
-          <span>${escapeHtml(topic)}</span>
-          <small>${perf.answered}/${perf.total} feitas · ${Math.round(perf.accuracy * 100)}%</small>
-        </label>
+        <div class="topic-row ${checked ? "selected" : ""}">
+          <label class="topic-row-main">
+            <input type="checkbox" value="${escapeHtml(topic)}" ${checked} />
+            <span class="topic-row-name">${escapeHtml(topic)}</span>
+            <span class="topic-row-meta">${perf.answered}/${perf.total} feitas · ${perf.answered ? `${Math.round(perf.accuracy * 100)}% de acerto` : "sem respostas"}</span>
+            <span class="topic-row-track" aria-hidden="true"><i style="width:${percent}%"></i></span>
+          </label>
+          <button type="button" class="outline-btn topic-row-continue" data-topic-continue="${escapeHtml(topic)}" ${remaining ? "" : "disabled"} title="${remaining ? `${remaining} pendentes` : "Tema concluído"}">${remaining ? "Continuar" : "Concluído"}</button>
+        </div>
       `;
     })
     .join("");
   if (!topics.length) {
     el.topicChecklist.innerHTML = `<p class="panel-line">Nenhum tema encontrado.</p>`;
   }
-  renderSubthemeChecklist();
-}
-
-function renderSubthemeChecklist() {
-  if (!el.subthemeChecklist || !el.refineSubthemes) return;
-  el.refineSubthemes.checked = state.refineSubthemes;
-  el.subthemeChecklist.hidden = !state.refineSubthemes;
-  if (!state.refineSubthemes) {
-    el.subthemeChecklist.innerHTML = "";
-    return;
-  }
-  const topics = topicsForStats();
-  const catalog = subthemeCatalogForTopics(topics);
-  const validKeys = new Set();
-  const groups = [];
-  for (const topic of topics) {
-    const item = catalog.get(topic);
-    if (!item) continue;
-    const rows = [];
-    for (const [label, count] of item.visible) {
-      const key = subthemeKey(topic, label);
-      validKeys.add(key);
-      rows.push({ key, label, count });
-    }
-    if (item.minorCount >= 5) {
-      const key = subthemeMinorKey(topic);
-      validKeys.add(key);
-      rows.push({ key, label: "Subtemas menores", count: item.minorCount });
-    }
-    if (rows.length) groups.push({ topic, rows });
-  }
-  const cleaned = (state.selectedSubthemes || []).filter((key) => validKeys.has(key));
-  if (cleaned.length !== (state.selectedSubthemes || []).length) {
-    state.selectedSubthemes = cleaned;
-    saveSubthemeSettings();
-  }
-  el.subthemeChecklist.innerHTML = groups.length
-    ? groups
-        .map(
-          (group) => `
-            <details class="subtheme-group" open>
-              <summary>${escapeHtml(group.topic)}</summary>
-              <div class="subtheme-list">
-                ${group.rows
-                  .map((row) => {
-                    const checked = state.selectedSubthemes.includes(row.key) ? "checked" : "";
-                    return `
-                      <label class="subtheme-item ${checked ? "selected" : ""}">
-                        <input type="checkbox" value="${escapeHtml(row.key)}" ${checked} />
-                        <span>${escapeHtml(row.label)}</span>
-                        <small>${row.count}</small>
-                      </label>
-                    `;
-                  })
-                  .join("")}
-              </div>
-            </details>
-          `,
-        )
-        .join("")
-    : `<p class="panel-line">Nenhum subtema com volume suficiente nos temas selecionados.</p>`;
 }
 
 function selectedExamFilters() {
@@ -3477,59 +3415,67 @@ function renderExamStudyFilters() {
   renderExamProgressCard();
 }
 
+/* Soma questões de provas e questões por tema (didáticas), sem contar o mesmo id duas vezes. */
 function renderExamProgressCard() {
   if (!el.examLastTitle || !el.examProgressAccuracy || !el.examProgressAnswered) return;
-  const answered = state.exams
-    .flatMap((exam) => (exam.questions || []).map((question) => ({ exam, question, progress: getProgress(question.id) })))
-    .filter((item) => item.progress.grade)
-    .sort((a, b) => (b.progress.updatedAt || 0) - (a.progress.updatedAt || 0));
+  const seen = new Set();
+  const answered = [];
+  const collect = (question, label, kind) => {
+    if (!question || seen.has(question.id)) return;
+    seen.add(question.id);
+    const progress = getProgress(question.id);
+    if (progress.grade) answered.push({ label, kind, progress });
+  };
+  for (const exam of state.exams) for (const question of exam.questions || []) collect(question, exam.title, "exam");
+  for (const question of state.questions) collect(question, `Tema: ${topicForQuestion(question)}`, "topic");
+  answered.sort((a, b) => (b.progress.updatedAt || 0) - (a.progress.updatedAt || 0));
   const correct = answered.filter((item) => item.progress.grade === "correct").length;
+  const fromExams = answered.filter((item) => item.kind === "exam").length;
   const last = answered[0];
-  el.examLastTitle.textContent = last ? last.exam.title : "Ainda não iniciada";
+  el.examLastTitle.textContent = last ? last.label : "Ainda não iniciada";
   el.examProgressAccuracy.textContent = answered.length ? `${Math.round((correct / answered.length) * 100)}%` : "0%";
   el.examProgressAnswered.textContent = answered.length;
+  if (el.examProgressSplit) {
+    el.examProgressSplit.textContent = `${fromExams} de provas · ${answered.length - fromExams} por tema`;
+  }
+}
+
+function sessionPoolByMode(pool) {
+  if (state.sessionPoolMode === "all") return pool;
+  if (state.sessionPoolMode === "wrong") return pool.filter((question) => getProgress(question.id).grade === "wrong");
+  return pool.filter((question) => !getProgress(question.id).grade);
 }
 
 function renderActivity() {
-  el.sessionSourceGroup.querySelectorAll("[data-source]").forEach((button) => {
-    button.classList.toggle("active", button.dataset.source === state.sessionSource);
-  });
   el.sessionSizeGroup.querySelectorAll("[data-size]").forEach((button) => {
     button.classList.toggle("active", Number(button.dataset.size) === state.sessionSize);
   });
+  el.sessionPoolGroup?.querySelectorAll("[data-pool]").forEach((button) => {
+    button.classList.toggle("active", button.dataset.pool === state.sessionPoolMode);
+  });
   el.includeReviews.checked = state.includeReviewsInSession;
   const topics = topicsForStats();
-  const contentAvailable = state.questions.filter(
-    (question) =>
-      topics.some((topicName) => questionBelongsToTopic(question, topicName)) &&
-      !isExcluded(question.id) &&
-      isReadyQuestion(effectiveQuestion(question)),
-  );
-  const examAvailable = state.exams
-    .flatMap((exam) => exam.questions || [])
-    .filter((question) => !isExcluded(question.id) && isReadyQuestion(effectiveQuestion(question)));
-  const available = sessionPoolQuestions();
+  const pool = sessionPoolQuestions();
+  const available = sessionPoolByMode(pool).length;
   const dueReviewCount = sessionReviewPool().length;
-  const availableNew = available.filter((question) => !getProgress(question.id).grade).length;
-  if (el.sessionDidacticCount) el.sessionDidacticCount.textContent = contentAvailable.length;
-  if (el.sessionExamCount) el.sessionExamCount.textContent = examAvailable.length;
-  if (el.sessionNewCount) el.sessionNewCount.textContent = availableNew;
-  const originLabel =
-    state.sessionSource === "content"
-      ? pluralize(contentAvailable.length, "questão didática", "questões didáticas")
-      : state.sessionSource === "exams"
-        ? pluralize(examAvailable.length, "questão de prova", "questões de provas")
-        : `${contentAvailable.length} didáticas + ${examAvailable.length} de provas`;
+  const poolLabel = { new: "não feitas", all: "no total", wrong: "erradas" }[state.sessionPoolMode] || "";
+  if (el.topicModeLine) {
+    el.topicModeLine.textContent = topics.length
+      ? `${pluralize(topics.length, "tema marcado", "temas marcados")} · ${pluralize(available, "questão", "questões")} ${poolLabel}${state.includeReviewsInSession && dueReviewCount ? ` · ${pluralize(dueReviewCount, "revisão vencida", "revisões vencidas")}` : ""}.`
+      : "Marque pelo menos um tema na lista acima.";
+  }
   const studyActive = state.sessionActive || state.smartTrainingActive;
   const answeredInSession = studyActive ? currentRunAnsweredQuestions().length : 0;
   el.finishSession.hidden = !studyActive;
+  el.endSession.hidden = !studyActive && !state.topicActive;
+  el.startSession.disabled = !topics.length;
   el.sessionLine.textContent = state.sessionCompletionMessage && !studyActive
     ? state.sessionCompletionMessage
     : state.smartTrainingActive
     ? `Treino inteligente ativo: ${answeredInSession}/${state.filtered.length} questões respondidas.`
     : state.sessionActive
-      ? `Sessão ativa: ${answeredInSession}/${state.filtered.length} questões respondidas.`
-      : `${originLabel}. ${state.includeReviewsInSession ? `${pluralize(dueReviewCount, "revisão", "revisões")} + ` : ""}${pluralize(availableNew, "nova disponível", "novas disponíveis")}.`;
+      ? `Bloco ativo: ${answeredInSession}/${state.filtered.length} questões respondidas.`
+      : "";
   renderSessionSummary();
   el.restoreExcluded.hidden = !state.excluded.length;
 }
@@ -3540,13 +3486,14 @@ function renderActivity() {
 function renderFlowControls() {
   const studyActive = state.sessionActive || state.smartTrainingActive;
   el.finishSession.hidden = !studyActive;
+  el.endSession.hidden = !studyActive && !state.topicActive;
   if (el.endTopic) el.endTopic.hidden = !state.topicActive;
   if (el.endDangerousReview) el.endDangerousReview.hidden = !state.dangerousReviewActive;
   if (studyActive) {
     const answeredInSession = currentRunAnsweredQuestions().length;
     el.sessionLine.textContent = state.smartTrainingActive
       ? `Treino inteligente ativo: ${answeredInSession}/${state.filtered.length} questões respondidas.`
-      : `Sessão ativa: ${answeredInSession}/${state.filtered.length} questões respondidas.`;
+      : `Bloco ativo: ${answeredInSession}/${state.filtered.length} questões respondidas.`;
     renderSessionSummary();
   }
   renderExams();
@@ -3905,16 +3852,10 @@ function selectedContentQuestions({ ignoreSubthemes = false } = {}) {
   );
 }
 
-function examSessionQuestions() {
-  return examsForStudyFilters()
-    .flatMap((exam) => exam.questions || [])
-    .filter((question) => !isExcluded(question.id) && isReadyQuestion(effectiveQuestion(question)) && questionMatchesSelectedSubthemes(question));
-}
-
+/* O estudo por temas usa só as questões didáticas: as de provas não estão classificadas
+   nestes temas e ficam na aba Provas. */
 function sessionPoolQuestions() {
-  if (state.sessionSource === "content") return selectedContentQuestions();
-  if (state.sessionSource === "exams") return examSessionQuestions();
-  return [...selectedContentQuestions(), ...examSessionQuestions()];
+  return selectedContentQuestions();
 }
 
 function sessionReviewPool() {
@@ -4516,15 +4457,18 @@ function startSession() {
   state.smartTrainingActive = false;
   state.dangerousReviewActive = false;
   state.dangerousReviewIds = [];
-  const pool = sessionPoolQuestions();
   const reviews = state.includeReviewsInSession ? shuffle(sessionReviewPool()) : [];
   const reviewIds = new Set(reviews.map((question) => question.id));
-  const unseen = pool.filter((question) => !getProgress(question.id).grade && !reviewIds.has(question.id));
-  const fallback = pool.filter((question) => !reviewIds.has(question.id));
-  const basePool = unseen.length >= Math.min(state.sessionSize - Math.min(reviews.length, state.sessionSize), fallback.length) ? unseen : fallback;
+  const basePool = sessionPoolByMode(sessionPoolQuestions()).filter((question) => !reviewIds.has(question.id));
   const session = [...reviews.slice(0, state.sessionSize), ...shuffle(basePool).slice(0, Math.max(state.sessionSize - reviews.length, 0))];
   if (!session.length) {
-    el.sessionLine.textContent = "Selecione pelo menos um tema com questões corrigíveis para iniciar a sessão.";
+    el.sessionLine.textContent = !topicsForStats().length
+      ? "Marque pelo menos um tema para começar."
+      : state.sessionPoolMode === "new"
+        ? "Você já fez todas as questões destes temas. Escolha \"Todas\" ou \"Só erradas\"."
+        : state.sessionPoolMode === "wrong"
+          ? "Nenhuma questão errada nestes temas."
+          : "Nenhuma questão corrigível nestes temas.";
     setTab("activity");
     return;
   }
@@ -5063,27 +5007,6 @@ el.topicChecklist.addEventListener("change", (event) => {
   state.smartTrainingActive = false;
   applyFilters({ preserveCurrent: true });
 });
-el.refineSubthemes.addEventListener("change", () => {
-  state.refineSubthemes = el.refineSubthemes.checked;
-  saveSubthemeSettings();
-  state.smartTrainingActive = false;
-  state.sessionActive = false;
-  renderActivity();
-  applyFilters({ preserveCurrent: true });
-});
-el.subthemeChecklist.addEventListener("change", (event) => {
-  const input = event.target.closest("input[type='checkbox']");
-  if (!input) return;
-  const selected = new Set(state.selectedSubthemes || []);
-  if (input.checked) selected.add(input.value);
-  else selected.delete(input.value);
-  state.selectedSubthemes = [...selected];
-  saveSubthemeSettings();
-  state.smartTrainingActive = false;
-  state.sessionActive = false;
-  renderActivity();
-  applyFilters({ preserveCurrent: true });
-});
 el.selectAllTopics.addEventListener("click", () => {
   state.selectedTopics = allTopics();
   saveSelectedTopics();
@@ -5144,11 +5067,11 @@ el.flashcardReviewList?.addEventListener("click", (event) => {
   const item = flashcardReviewItems().find((entry) => entry.card.id === button.dataset.reviewFlashcard);
   openFlashcardReviewItem(item);
 });
-el.sessionSourceGroup.addEventListener("click", (event) => {
-  const button = event.target.closest("[data-source]");
+el.sessionPoolGroup.addEventListener("click", (event) => {
+  const button = event.target.closest("[data-pool]");
   if (!button) return;
-  state.sessionSource = button.dataset.source;
-  saveSessionSource();
+  state.sessionPoolMode = button.dataset.pool;
+  saveSessionPoolMode();
   renderActivity();
 });
 el.sessionSizeGroup.addEventListener("click", (event) => {
@@ -5164,7 +5087,6 @@ el.includeReviews.addEventListener("change", () => {
   renderActivity();
 });
 el.startSession.addEventListener("click", startSession);
-el.startSmartTraining.addEventListener("click", startSmartTraining);
 el.overviewSmartTraining?.addEventListener("click", startSmartTraining);
 el.finishSession.addEventListener("click", finishSession);
 el.endSession.addEventListener("click", endSession);

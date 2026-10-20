@@ -6,8 +6,13 @@
     return root && Array.isArray(root.exams) ? root.exams : [];
   }
 
-  function collectUniqueQuestions(exams) {
-    const seen = new Set();
+  function getTopicQuestions() {
+    const root = window.BANCO_RMAIS_QUESTIONS;
+    if (Array.isArray(root)) return root;
+    return root && Array.isArray(root.questions) ? root.questions : [];
+  }
+
+  function collectUniqueQuestions(exams, seen = new Set()) {
     let total = 0;
     exams.forEach((exam, examIndex) => {
       const qs = Array.isArray(exam.questions) ? exam.questions : [];
@@ -27,9 +32,12 @@
   function renderCounter() {
     const exams = getExams();
     if (!exams.length) return false;
-    const totalQuestions = collectUniqueQuestions(exams);
+    const seen = new Set();
+    const examQuestions = collectUniqueQuestions(exams, seen);
+    const topicQuestions = collectUniqueQuestions([{ id: 'temas', questions: getTopicQuestions() }], seen);
+    const totalQuestions = examQuestions + topicQuestions;
     const totalExams = exams.length;
-    window.BANCO_RMAIS_GLOBAL_STATS = { totalQuestions, totalExams };
+    window.BANCO_RMAIS_GLOBAL_STATS = { totalQuestions, totalExams, examQuestions, topicQuestions };
 
     let box = document.getElementById('globalBankCounter');
     if (!box) {
@@ -38,7 +46,7 @@
       const host = document.querySelector('#examsPanel') || document.querySelector('.question-shell') || document.body;
       host.appendChild(box);
     }
-    box.innerHTML = `<strong>Banco completo</strong><br>${totalQuestions.toLocaleString('pt-BR')} questões · ${totalExams.toLocaleString('pt-BR')} provas`;
+    box.innerHTML = `<strong>Banco completo</strong><br>${totalQuestions.toLocaleString('pt-BR')} questões · ${totalExams.toLocaleString('pt-BR')} provas<br><small>${examQuestions.toLocaleString('pt-BR')} de provas · ${topicQuestions.toLocaleString('pt-BR')} por tema</small>`;
     return true;
   }
 

@@ -252,6 +252,12 @@
               <div class="history-summary" id="historySummary"></div>
               <div class="history-list" id="historyList"></div>
             </div>
+            <div class="study-section reset-section">
+              <h3>Zona de manutenção</h3>
+              <button id="restoreExcludedBtn" class="danger-lite">Restaurar quest&otilde;es exclu&iacute;das</button>
+              <p class="panel-line"><strong>Reiniciar histórico local</strong><br />Limpa respostas, erros, acertos, revisões programadas, anotações e alternativas riscadas deste navegador.</p>
+              <button id="resetProgressBtn" class="danger-lite">Reiniciar desempenho</button>
+            </div>
           </div>
 
           <div class="tab-panel" id="topicsPanel">
@@ -454,16 +460,21 @@
           <div class="tab-panel" id="activityPanel">
             <header class="study-planner-head">
               <span>Estudo por temas</span>
-              <h3>Montar sessão</h3>
-              <p>Escolha o tipo de conteúdo, o tamanho da sessão e se deseja incluir revisões vencidas.</p>
+              <h3>Escolha os temas</h3>
+              <p>Marque um ou mais temas e monte o bloco abaixo, ou toque em Continuar para seguir só as pendentes de um tema.</p>
             </header>
-            <div class="session-builder">
-              <span>Conteúdo</span>
-              <div class="segmented wide-segmented" id="sessionSourceGroup">
-                <button data-source="content">Didático</button>
-                <button data-source="mixed">Misto</button>
-                <button data-source="exams">Provas</button>
+            <div class="topic-picker">
+              <input id="topicPanelSearch" type="search" placeholder="Buscar tema..." aria-label="Buscar tema" />
+              <div class="topic-picker-actions">
+                <button id="selectAllTopicsBtn" type="button" class="link-btn">Marcar todos</button>
+                <button id="clearTopicsBtn" type="button" class="link-btn">Desmarcar</button>
               </div>
+            </div>
+            <div class="topic-list" id="topicChecklist"></div>
+
+            <section class="session-builder block-builder">
+              <h4>Montar bloco</h4>
+              <p class="panel-line" id="topicModeLine">Marque pelo menos um tema.</p>
               <span>Quantidade</span>
               <div class="segmented" id="sessionSizeGroup">
                 <button data-size="10">10</button>
@@ -472,52 +483,22 @@
                 <button data-size="40">40</button>
                 <button data-size="50">50</button>
               </div>
+              <span>Questões</span>
+              <div class="segmented wide-segmented" id="sessionPoolGroup">
+                <button data-pool="new">Só não feitas</button>
+                <button data-pool="all">Todas</button>
+                <button data-pool="wrong">Só erradas</button>
+              </div>
               <label class="session-toggle">
                 <input id="includeReviewsToggle" type="checkbox" />
                 <span>Incluir revisões vencidas</span>
               </label>
-              <div class="availability-card">
-                <div><strong id="sessionDidacticCount">0</strong><span>didáticas</span></div>
-                <div><strong id="sessionExamCount">0</strong><span>provas</span></div>
-                <div><strong id="sessionNewCount">0</strong><span>novas disponíveis</span></div>
-              </div>
-              <div class="smart-review-card">
-                <h4>Revisão Inteligente</h4>
-                <p>Monta automaticamente uma sessão com base em revisões vencidas, erros anteriores, temas frágeis e questões pouco praticadas.</p>
-                <button id="startSmartTrainingBtn" class="primary-btn">Iniciar revisão inteligente</button>
-              </div>
-              <button id="startSessionBtn" class="outline-btn">Iniciar sessão personalizada</button>
+              <button id="startSessionBtn" class="primary-btn">Começar bloco</button>
               <button id="finishSessionBtn" hidden>Finalizar bloco</button>
-              <button id="endSessionBtn" class="tertiary-btn">Sair do bloco</button>
-            </div>
-            <p class="panel-line" id="sessionLine">Selecione temas e crie um bloco de questões.</p>
+              <button id="endSessionBtn" class="tertiary-btn" hidden>Sair do bloco</button>
+              <p class="panel-line" id="sessionLine"></p>
+            </section>
             <div class="session-summary" id="sessionSummary"></div>
-            <div class="study-section">
-              <h3>Temas do bloco</h3>
-              <p class="panel-line">Marque os temas que podem entrar na sessão de estudo.</p>
-              <label class="field compact-field">
-                <span>Filtrar temas</span>
-                <input id="topicPanelSearch" type="search" placeholder="nome do tema" />
-              </label>
-              <div class="topic-toolbar">
-                <button id="selectAllTopicsBtn">Selecionar todos</button>
-                <button id="clearTopicsBtn">Limpar seleção</button>
-              </div>
-              <p class="panel-line" id="topicModeLine">Use os temas marcados abaixo.</p>
-              <div class="topic-grid" id="topicChecklist"></div>
-              <label class="session-toggle subtheme-toggle">
-                <input id="refineSubthemesToggle" type="checkbox" />
-                <span>Focar por subtema principal</span>
-              </label>
-              <p class="panel-line">Opcional: cada questão entra em apenas um subtema principal, para evitar filtros sobrepostos.</p>
-              <div class="subtheme-grid" id="subthemeChecklist"></div>
-            </div>
-            <button id="restoreExcludedBtn" class="danger-lite">Restaurar excluídas</button>
-            <div class="study-section reset-section">
-              <h3>Zona de manutenção</h3>
-              <p class="panel-line"><strong>Reiniciar histórico local</strong><br />Limpa respostas, erros, acertos, revisões programadas, anotações e alternativas riscadas deste navegador.</p>
-              <button id="resetProgressBtn" class="danger-lite">Reiniciar desempenho</button>
-            </div>
           </div>
 
           <div class="tab-panel" id="examsPanel">
@@ -565,10 +546,11 @@
               <div class="exam-progress-card">
                 <h4>Seu progresso</h4>
                 <div class="exam-progress-list">
-                  <div><span>Última prova</span><strong id="examLastTitle">Ainda não iniciada</strong></div>
+                  <div><span>Última atividade</span><strong id="examLastTitle">Ainda não iniciada</strong></div>
                   <div><span>Desempenho</span><strong id="examProgressAccuracy">0%</strong></div>
                   <div><span>Questões respondidas</span><strong id="examProgressAnswered">0</strong></div>
                 </div>
+                <p class="panel-line" id="examProgressSplit">0 de provas · 0 por tema</p>
               </div>
             </div>
           </div>
