@@ -3248,3 +3248,22 @@ body.theme-dark .option.selected.pending::before {
   background: #fff;
   border: 1px solid var(--line, #dfe3e8);
 }
+
+/* Celular: fundo escurecido atrás da gaveta aberta; tocar nele fecha a gaveta. */
+.sidebar-backdrop {
+  display: none;
+}
+
+@media (max-width: 860px) {
+  .sidebar-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 25;
+    display: block;
+    background: rgba(15, 23, 42, 0.38);
+  }
+
+  .sidebar-collapsed .sidebar-backdrop {
+    display: none;
+  }
+}

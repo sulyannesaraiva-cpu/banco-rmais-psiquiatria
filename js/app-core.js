@@ -3,6 +3,7 @@ const SUPABASE_KEY = "sb_publishable_pLC5bh3LWUTi1w_7BoSCZg_ahBnuZ36";
 const storedSidebarState = localStorage.getItem("banco-rmais-sidebar-collapsed");
 const storedTheme = localStorage.getItem("banco-rmais-theme") || "light";
 const ACTIVE_STUDY_KEY = "banco-rmais-active-study";
+const MOBILE_LAYOUT_QUERY = "(max-width: 860px)";
 document.body.classList.toggle("theme-dark", storedTheme === "dark");
 
 const state = {
@@ -83,8 +84,9 @@ const state = {
   settingsSyncTimer: null,
   privateNoteSyncTimer: null,
   theme: storedTheme === "dark" ? "dark" : "light",
+  /* No celular a gaveta sempre começa fechada; a preferência salva vale só para telas largas. */
   sidebarCollapsed:
-    storedSidebarState === null ? window.matchMedia("(max-width: 860px)").matches : storedSidebarState === "true",
+    window.matchMedia(MOBILE_LAYOUT_QUERY).matches || storedSidebarState === "true",
 };
 
 const MIN_SUBTHEME_COUNT = 10;
@@ -258,6 +260,7 @@ const el = {
   title: document.querySelector("#questionTitle"),
   tags: document.querySelector("#tagList"),
   text: document.querySelector("#questionText"),
+  sidebarBackdrop: document.querySelector("#sidebarBackdrop"),
   options: document.querySelector("#optionsList"),
   answer: document.querySelector("#answerBox"),
   pendingReviewPanel: document.querySelector("#pendingReviewPanel"),
@@ -3962,6 +3965,7 @@ function renderQuestionImage(question) {
 }
 
 function render() {
+  closeSidebarWhenMobileFlowStarts();
   renderAdminAccess();
   renderStats();
   renderDashboard();
@@ -4096,7 +4100,7 @@ function render() {
   el.answerBtn.disabled = !question.correctAnswer;
   el.answerBtn.textContent = progress.revealed ? "Gabarito exibido" : "Mostrar gabarito";
   el.favorite.classList.toggle("active", Boolean(storedProgress.favorite));
-  el.favorite.textContent = progress.favorite ? "â˜…" : "â˜†";
+  el.favorite.textContent = progress.favorite ? "★" : "☆";
   el.review.classList.toggle("active", Boolean(storedProgress.review));
   el.correct.classList.toggle("active", progress.grade === "correct");
   el.wrong.classList.toggle("active", progress.grade === "wrong");
@@ -4147,11 +4151,31 @@ function setTab(tabName) {
   if (tabName === "flashcards" || document.body.classList.contains("flashcard-active")) render();
 }
 
+function isMobileLayout() {
+  return window.matchMedia(MOBILE_LAYOUT_QUERY).matches;
+}
+
 function setSidebarCollapsed(collapsed) {
   state.sidebarCollapsed = collapsed;
   document.body.classList.toggle("sidebar-collapsed", collapsed);
-  localStorage.setItem("banco-rmais-sidebar-collapsed", String(collapsed));
+  /* No celular a gaveta é temporária: não sobrescreve a preferência das telas largas. */
+  if (!isMobileLayout()) localStorage.setItem("banco-rmais-sidebar-collapsed", String(collapsed));
   if (el.sidebarToggle) el.sidebarToggle.setAttribute("aria-expanded", String(!collapsed));
+}
+
+/* No celular, filtros e provas ficam na gaveta lateral; quando um bloco de questões
+   começa, a gaveta fecha para não cobrir a questão. */
+let lastMobileFlowKey = "";
+function closeSidebarWhenMobileFlowStarts() {
+  const key = hasActiveQuestionFlow() && state.filtered.length
+    ? [
+        state.topicActive, state.sessionActive, state.smartTrainingActive, state.spacedReviewActive,
+        state.dangerousReviewActive, state.examActive, state.examSetActive, state.examSimulationActive,
+        state.activeExamId || "", state.filterKey || "", state.filtered[0]?.id || "",
+      ].join("|")
+    : "";
+  if (key && key !== lastMobileFlowKey && isMobileLayout() && !state.sidebarCollapsed) setSidebarCollapsed(true);
+  lastMobileFlowKey = key;
 }
 
 function applyTheme(theme) {
@@ -4870,6 +4894,7 @@ document.querySelectorAll("[data-dashboard-tab]").forEach((button) => {
   button.addEventListener("click", () => setTab(button.dataset.dashboardTab));
 });
 el.sidebarToggle.addEventListener("click", () => setSidebarCollapsed(!state.sidebarCollapsed));
+el.sidebarBackdrop?.addEventListener("click", () => setSidebarCollapsed(true));
 el.themeToggle?.addEventListener("click", () => applyTheme(state.theme === "dark" ? "light" : "dark"));
 el.goSession.addEventListener("click", () => {
   setTab("activity");
