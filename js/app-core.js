@@ -511,6 +511,7 @@ function currentSettingsPayload() {
     sessionSource: state.sessionSource,
     studyPlan: state.studyPlan || null,
     customFlashcards: typeof customFlashcardsForSync === "function" ? customFlashcardsForSync() : [],
+    studyLog: typeof studyLogForSync === "function" ? studyLogForSync() : {},
   };
 }
 
@@ -537,6 +538,7 @@ function applySettingsPayload(settings = {}) {
   }
   if (settings.studyPlan && typeof applyStudyPlanFromCloud === "function") applyStudyPlanFromCloud(settings.studyPlan);
   if (Array.isArray(settings.customFlashcards) && typeof applyCustomFlashcardsFromCloud === "function") applyCustomFlashcardsFromCloud(settings.customFlashcards);
+  if (settings.studyLog && typeof applyStudyLogFromCloud === "function") applyStudyLogFromCloud(settings.studyLog);
   if (Object.prototype.hasOwnProperty.call(settings, "sessionSource")) {
     state.sessionSource = settings.sessionSource || "content";
     localStorage.setItem("banco-rmais-session-source", state.sessionSource);
@@ -1900,6 +1902,7 @@ function saveAttempt(question, progress) {
   state.attempts.push(attempt);
   state.attempts = state.attempts.slice(-2000);
   saveAttempts();
+  if (typeof recordStudyLogAttempt === "function") recordStudyLogAttempt(attempt, progress);
   syncAttemptToCloud(attempt);
 }
 
@@ -3050,6 +3053,7 @@ function scheduleFlashcardGrade(cardId, grade) {
     nextReviewAt: nextReview.toISOString(),
   };
   saveFlashcardState();
+  if (typeof recordStudyLogFlashcard === "function") recordStudyLogFlashcard();
 }
 
 function gradeFlashcard(grade) {
@@ -4000,7 +4004,11 @@ function render() {
   renderFlowControls();
   const flashcardMode = state.activeTab === "flashcards";
   const showStartPanel = !flashcardMode && !hasActiveQuestionFlow() && !state.filtered.length;
-  if (el.startPanel) el.startPanel.hidden = !showStartPanel;
+  /* Sem bloco ativo, a área principal mostra a tela Hoje, ou o painel de Desempenho na aba Desempenho. */
+  const showPerformancePanel = showStartPanel && state.activeTab === "history" && typeof renderPerformancePanel === "function";
+  if (el.startPanel) el.startPanel.hidden = !showStartPanel || showPerformancePanel;
+  const performancePanel = document.querySelector("#performancePanel");
+  if (performancePanel) performancePanel.hidden = !showPerformancePanel;
   if (el.flashcardStudyPanel) el.flashcardStudyPanel.hidden = !flashcardMode;
   document.body.classList.toggle("no-question-active", showStartPanel);
   document.body.classList.toggle("flashcard-active", flashcardMode);
@@ -4036,7 +4044,8 @@ function render() {
     }
     el.source.textContent = showStartPanel ? "Pronto para estudar" : "Nenhuma questão encontrada";
     el.title.textContent = showStartPanel ? "Banco de questões" : "Ajuste os filtros";
-    if (showStartPanel && typeof renderTodayPanel === "function") renderTodayPanel();
+    if (showPerformancePanel) renderPerformancePanel();
+    else if (showStartPanel && typeof renderTodayPanel === "function") renderTodayPanel();
     el.tags.innerHTML = "";
     el.tags.classList.remove("visible");
     el.text.textContent = "";
@@ -4179,6 +4188,7 @@ function shuffleFiltered() {
 
 function setTab(tabName) {
   if (tabName === "topics" && !state.isAdmin) tabName = "overview";
+  const previousTab = state.activeTab;
   state.activeTab = tabName;
   el.tabs.forEach((button) => button.classList.toggle("active", button.dataset.tab === tabName));
   Object.entries(el.panels).forEach(([name, panel]) => {
@@ -4186,6 +4196,7 @@ function setTab(tabName) {
   });
   if (tabName === "notes") renderSavedNotesPanel();
   if (tabName === "flashcards" || document.body.classList.contains("flashcard-active")) render();
+  else if (previousTab !== tabName && (tabName === "history" || previousTab === "history") && !hasActiveQuestionFlow()) render();
 }
 
 function isMobileLayout() {
