@@ -7,11 +7,6 @@
     return `topic-progress:${mode}:${JSON.stringify({ topics: cleanTopics, subthemes: [] })}`;
   }
 
-  function setSingleTopic(topic) {
-    state.selectedTopics = [topic];
-    localStorage.setItem("banco-rmais-selected-topics", JSON.stringify(state.selectedTopics));
-  }
-
   function resetOtherStudyModes() {
     state.sessionActive = false;
     state.sessionIds = [];
@@ -27,12 +22,14 @@
     state.dangerousReviewIds = [];
   }
 
-  function selectedTopicQuestionList() {
-    return selectedContentQuestions().slice();
+  function topicQuestionList(topics) {
+    return topics
+      .flatMap((topic) => topicQuestions(topic))
+      .filter((question) => isReadyQuestion(effectiveQuestion(question)));
   }
 
-  function startSelectedTopics(mode = "pending") {
-    const topics = topicsForTopicMode();
+  /* Abre os temas pedidos sem mexer nos temas marcados para o bloco. */
+  function startSelectedTopics(mode = "pending", topics = topicsForTopicMode()) {
     if (!topics.length) {
       if (el.topicModeLine) el.topicModeLine.textContent = "Selecione pelo menos um tema.";
       setTab("activity");
@@ -44,7 +41,7 @@
     state.topicIds = topics;
     state.activeAnswers = {};
 
-    const allQuestions = selectedTopicQuestionList();
+    const allQuestions = topicQuestionList(topics);
     const questions = mode === "pending"
       ? allQuestions.filter((question) => !getProgress(question.id).grade)
       : allQuestions;
@@ -74,8 +71,7 @@
   }
 
   function openTopic(topic, mode) {
-    setSingleTopic(topic);
-    startSelectedTopics(mode);
+    startSelectedTopics(mode, [topic]);
   }
 
   /* "Continuar" fica em cada linha da lista de temas (renderTopicChecklist no núcleo). */
