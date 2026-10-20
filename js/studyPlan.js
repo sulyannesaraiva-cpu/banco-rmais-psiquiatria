@@ -343,24 +343,75 @@ function studyRunTagFor(question) {
   return run.kind === "today" ? "Nova" : "";
 }
 
-/* Barra de progresso do bloco ativo, acima do mapa de questões. */
+/* Ação de encerrar o bloco ativo, conforme o modo (botão na barra de progresso). */
+function runFinishAction() {
+  if (state.examSimulationActive) {
+    return state.examSimulationFinished
+      ? { label: "Sair do simulado", run: endExam }
+      : { label: "Finalizar simulado", run: finishExamSimulation };
+  }
+  if (state.sessionActive || state.smartTrainingActive) return { label: "Finalizar", run: finishSession };
+  if (state.examActive || state.examSetActive) return { label: "Finalizar prova", run: finishExamStudy };
+  if (state.topicActive) return { label: "Sair do tema", run: endSession };
+  if (state.spacedReviewActive) return { label: "Sair da revisão", run: endSpacedReview };
+  if (state.dangerousReviewActive) return { label: "Sair das perigosas", run: endDangerousReview };
+  return null;
+}
+
+/* Barra de progresso do bloco ativo, acima do mapa de questões, com o botão de encerrar. */
 function renderRunProgress() {
   const box = document.querySelector("#runProgress");
   if (!box) return;
-  const visible = isActiveAttemptMode() && !state.examSimulationActive && state.activeTab !== "flashcards" && state.filtered.length > 0;
+  const visible = hasActiveQuestionFlow() && state.activeTab !== "flashcards" && state.filtered.length > 0;
   box.hidden = !visible;
   if (!visible) return;
   const total = state.filtered.length;
-  const answered = currentRunAnsweredQuestions().length;
+  const answered = state.examSimulationActive
+    ? state.filtered.filter((question) => state.examSimulationAnswers[question.id]).length
+    : isActiveAttemptMode() ? currentRunAnsweredQuestions().length : state.filtered.filter((question) => getProgress(question.id).grade).length;
   const remaining = Math.max(total - answered, 0);
+  const action = runFinishAction();
+  const armed = state.runFinishArmedAt && Date.now() - state.runFinishArmedAt < 4000;
+  const verb = state.examSimulationActive && !state.examSimulationFinished ? "marcadas" : "respondidas";
   const html = `
-    <div class="run-progress-line"><strong>${answered} de ${total} respondidas</strong><span>${remaining ? `faltam ${remaining}` : "bloco completo"}</span></div>
-    <div class="run-progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="${total}" aria-valuenow="${answered}" aria-label="Questões respondidas no bloco"><i style="width:${Math.round((answered / total) * 100)}%"></i></div>`;
+    <div class="run-progress-line">
+      <strong>${answered} de ${total} ${verb}</strong>
+      <span>${remaining ? `faltam ${remaining}` : "bloco completo"}</span>
+      ${action ? `<button type="button" class="run-finish ${armed ? "armed" : ""}" data-run-finish>${armed ? "Toque de novo para confirmar" : escapeHtml(action.label)}</button>` : ""}
+    </div>
+    <div class="run-progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="${total}" aria-valuenow="${answered}" aria-label="Questões ${verb} no bloco"><i style="width:${Math.round((answered / total) * 100)}%"></i></div>`;
   if (box.dataset.renderedHtml !== html) {
     box.innerHTML = html;
     box.dataset.renderedHtml = html;
   }
 }
+
+(function setupRunFinishButton() {
+  const box = document.querySelector("#runProgress");
+  if (!box) return;
+  box.addEventListener("click", (event) => {
+    if (!event.target.closest("[data-run-finish]")) return;
+    const action = runFinishAction();
+    if (!action) return;
+    if (state.runFinishArmedAt && Date.now() - state.runFinishArmedAt < 4000) {
+      state.runFinishArmedAt = 0;
+      action.run();
+      // Bloco encerrado: limpa também a cópia usada para retomar a sessão ao recarregar
+      // (os botões da barra lateral fazem isso por um ouvinte próprio).
+      if (!hasActiveQuestionFlow() && typeof clearActiveStudyState === "function") clearActiveStudyState();
+      render();
+      return;
+    }
+    state.runFinishArmedAt = Date.now();
+    render();
+    setTimeout(() => {
+      if (state.runFinishArmedAt && Date.now() - state.runFinishArmedAt >= 4000) {
+        state.runFinishArmedAt = 0;
+        render();
+      }
+    }, 4100);
+  });
+})();
 
 function clearStudyRun() {
   state.studyRun = null;

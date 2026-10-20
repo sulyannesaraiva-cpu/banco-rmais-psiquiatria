@@ -735,6 +735,13 @@
       </section>
     </main>
 
+    <nav class="bottom-nav" id="bottomNav" aria-label="Navegação principal">
+      <button type="button" data-nav="today"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"></path></svg><span>Hoje</span></button>
+      <button type="button" data-nav="study"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2z"></path><path d="M8 7h6"></path></svg><span>Estudar</span></button>
+      <button type="button" data-nav="flashcards"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="14" height="14" rx="2"></rect><path d="M7 3h12a2 2 0 0 1 2 2v12"></path></svg><span>Flashcards</span></button>
+      <button type="button" data-nav="performance"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10"></path><path d="M10 20V4"></path><path d="M16 20v-7"></path><path d="M22 20H2"></path></svg><span>Desempenho</span></button>
+      <button type="button" data-nav="more"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5" cy="12" r="1.5"></circle><circle cx="12" cy="12" r="1.5"></circle><circle cx="19" cy="12" r="1.5"></circle></svg><span>Mais</span></button>
+    </nav>
     <!-- Dados: cada arquivo acrescenta provas/questões/flashcards aos objetos globais, nesta ordem. -->
     <script src="data/questions.js"></script>
     <script src="data/exams.js"></script>
@@ -759,6 +766,7 @@
     <script src="js/studyPlan.js"></script>
     <script src="js/questionCards.js"></script>
     <script src="js/performance.js"></script>
+    <script src="js/mobileNav.js"></script>
     <script src="js/globalBankCounter.js"></script>
   </body>
 </html>

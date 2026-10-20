@@ -4190,6 +4190,7 @@ function setTab(tabName) {
   if (tabName === "topics" && !state.isAdmin) tabName = "overview";
   const previousTab = state.activeTab;
   state.activeTab = tabName;
+  if (typeof renderBottomNav === "function") renderBottomNav();
   el.tabs.forEach((button) => button.classList.toggle("active", button.dataset.tab === tabName));
   Object.entries(el.panels).forEach(([name, panel]) => {
     panel.classList.toggle("active", name === tabName);
@@ -4209,6 +4210,7 @@ function setSidebarCollapsed(collapsed) {
   /* No celular a gaveta é temporária: não sobrescreve a preferência das telas largas. */
   if (!isMobileLayout()) localStorage.setItem("banco-rmais-sidebar-collapsed", String(collapsed));
   if (el.sidebarToggle) el.sidebarToggle.setAttribute("aria-expanded", String(!collapsed));
+  if (typeof renderBottomNav === "function") renderBottomNav();
 }
 
 /* No celular, filtros e provas ficam na gaveta lateral; quando um bloco de questões

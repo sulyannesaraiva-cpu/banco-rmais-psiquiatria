@@ -4345,3 +4345,88 @@ body.theme-dark .perf-next {
     flex: 1;
   }
 }
+
+/* ===== Botão de encerrar na barra de progresso ===== */
+.run-progress-line {
+  align-items: center;
+}
+
+.run-progress-line span {
+  margin-right: auto;
+}
+
+.run-finish {
+  min-height: 36px;
+  padding: 0 12px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.run-finish.armed {
+  border-color: #c2410c;
+  background: #fdf0e1;
+  color: #7c2d12;
+}
+
+body.theme-dark .run-finish.armed {
+  border-color: #fb923c;
+  background: #431407;
+  color: #fed7aa;
+}
+
+/* ===== Barra de navegação inferior no celular (js/mobileNav.js) ===== */
+.bottom-nav {
+  display: none;
+}
+
+@media (max-width: 860px) {
+  .bottom-nav {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 20;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    padding: 6px 4px calc(8px + env(safe-area-inset-bottom));
+    border-top: 1px solid var(--line);
+    background: var(--panel);
+  }
+
+  .bottom-nav button {
+    display: grid;
+    justify-items: center;
+    gap: 3px;
+    min-height: 52px;
+    padding: 4px 2px;
+    border: 0;
+    border-radius: 10px;
+    background: transparent;
+    color: var(--muted);
+    font-size: 11px;
+    font-weight: 600;
+  }
+
+  .bottom-nav button.active {
+    color: var(--accent-strong);
+    font-weight: 700;
+  }
+
+  .bottom-nav button:hover {
+    background: transparent;
+  }
+
+  /* com a barra inferior, a gaveta fechada some por completo e o ☰ só aparece para fechá-la */
+  .sidebar-collapsed .sidebar {
+    transform: translateX(-100%);
+  }
+
+  body.sidebar-collapsed .sidebar-toggle {
+    display: none;
+  }
+
+  .app {
+    padding: 18px 14px calc(88px + env(safe-area-inset-bottom));
+  }
+}
