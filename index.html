@@ -269,6 +269,7 @@
               <option value="Psicoterapia">Psicoterapia</option>
               <option value="PIA">PIA</option>
               <option value="Psicofarmacologia">Psicofarmacologia</option>
+              <option value="Meus cartões">Meus cartões</option>
             </select>
           </label>
           <div class="flashcard-priority-filter" id="flashcardPriorityGroup">
@@ -581,6 +582,7 @@
             <button data-flashcard-grade="easy">F&aacute;cil</button>
           </div>
         </section>
+        <div class="run-progress" id="runProgress" hidden></div>
         <nav class="question-nav">
           <button id="prevBtn">Anterior</button>
           <span id="positionLabel">0 / 0</span>
@@ -648,6 +650,7 @@
               <button data-error-type="guess">Chute</button>
             </div>
           </div>
+          <section class="concept-panel" id="conceptPanel" hidden></section>
         </article>
 
         <section id="editorPanel" class="editor-panel" hidden>
@@ -753,6 +756,7 @@
     <script src="js/sessionPersistence.js"></script>
     <script src="js/excludedQuestionsAdmin.js"></script>
     <script src="js/studyPlan.js"></script>
+    <script src="js/questionCards.js"></script>
     <script src="js/globalBankCounter.js"></script>
   </body>
 </html>

@@ -510,6 +510,7 @@ function currentSettingsPayload() {
     includeReviewsInSession: state.includeReviewsInSession,
     sessionSource: state.sessionSource,
     studyPlan: state.studyPlan || null,
+    customFlashcards: typeof customFlashcardsForSync === "function" ? customFlashcardsForSync() : [],
   };
 }
 
@@ -535,6 +536,7 @@ function applySettingsPayload(settings = {}) {
     localStorage.setItem("banco-rmais-include-reviews", String(state.includeReviewsInSession));
   }
   if (settings.studyPlan && typeof applyStudyPlanFromCloud === "function") applyStudyPlanFromCloud(settings.studyPlan);
+  if (Array.isArray(settings.customFlashcards) && typeof applyCustomFlashcardsFromCloud === "function") applyCustomFlashcardsFromCloud(settings.customFlashcards);
   if (Object.prototype.hasOwnProperty.call(settings, "sessionSource")) {
     state.sessionSource = settings.sessionSource || "content";
     localStorage.setItem("banco-rmais-session-source", state.sessionSource);
@@ -3033,21 +3035,27 @@ function moveFlashcard(delta) {
   renderFlashcards();
 }
 
-function gradeFlashcard(grade) {
-  const card = currentFlashcard();
-  if (!card) return;
-  const previous = state.flashcardProgress[card.id] || {};
+/* Agenda a próxima revisão de um flashcard (usado na aba Flashcards e no "Revisar o conceito"). */
+function scheduleFlashcardGrade(cardId, grade) {
+  const previous = state.flashcardProgress[cardId] || {};
   const streak = grade === "again" ? 0 : Number(previous.streak || 0) + 1;
   const daysByGrade = { again: 1, hard: 3, good: streak >= 3 ? 14 : 7, easy: streak >= 3 ? 30 : 14 };
   const nextReview = new Date();
   nextReview.setDate(nextReview.getDate() + daysByGrade[grade]);
-  state.flashcardProgress[card.id] = {
+  state.flashcardProgress[cardId] = {
     ...previous,
     streak,
     lastGrade: grade,
     reviewedAt: new Date().toISOString(),
     nextReviewAt: nextReview.toISOString(),
   };
+  saveFlashcardState();
+}
+
+function gradeFlashcard(grade) {
+  const card = currentFlashcard();
+  if (!card) return;
+  scheduleFlashcardGrade(card.id, grade);
   state.flashcardRevealed = false;
   saveFlashcardState();
   moveFlashcard(1);
@@ -3996,6 +4004,7 @@ function render() {
   if (el.flashcardStudyPanel) el.flashcardStudyPanel.hidden = !flashcardMode;
   document.body.classList.toggle("no-question-active", showStartPanel);
   document.body.classList.toggle("flashcard-active", flashcardMode);
+  if (typeof renderRunProgress === "function") renderRunProgress();
   if (flashcardMode) {
     renderFlashcards();
     renderQuestionDiscussion(null);
@@ -4020,6 +4029,7 @@ function render() {
       el.successTypePanel.hidden = true;
       el.confidencePanel.hidden = true;
       el.errorTypePanel.hidden = true;
+      if (typeof renderConceptPanel === "function") renderConceptPanel(null);
       el.note.value = "";
       renderQuestionDiscussion(null);
       return;
@@ -4040,6 +4050,7 @@ function render() {
     el.successTypePanel.hidden = true;
     el.confidencePanel.hidden = true;
     el.errorTypePanel.hidden = true;
+    if (typeof renderConceptPanel === "function") renderConceptPanel(null);
     el.note.value = "";
     renderQuestionDiscussion(null);
     return;
@@ -4078,7 +4089,8 @@ function render() {
   const examTag = question.examTag || (question.examId ? question.source : "");
   const trainingReasons = state.smartTrainingActive ? questionTrainingReasons(question) : [];
   const dangerousTag = isDangerousQuestion(question) ? `Atenção Questão perigosa: ${dangerousReasonsFor(question).join(", ")}` : "";
-  const tags = [examTag, dangerousTag, ...trainingReasons].filter(Boolean);
+  const runTag = typeof studyRunTagFor === "function" ? studyRunTagFor(question) : "";
+  const tags = [runTag, examTag, dangerousTag, ...trainingReasons].filter(Boolean);
   el.tags.innerHTML = tags.map((tag) => `<span>${escapeHtml(tag)}</span>`).join("");
   el.tags.classList.toggle("visible", Boolean(tags.length));
   el.text.textContent = question.text;
@@ -4119,6 +4131,7 @@ function render() {
   el.successTypePanel.hidden = examLocked || progress.grade !== "correct";
   el.confidencePanel.hidden = examLocked || !progress.grade;
   el.errorTypePanel.hidden = examLocked || progress.grade !== "wrong";
+  if (typeof renderConceptPanel === "function") renderConceptPanel(question, progress, examLocked);
   el.confirmAnswer.disabled = !question.correctAnswer || !selectedLetter || Boolean(progress.grade) || examLocked;
   el.confirmAnswer.textContent = progress.grade ? "Resposta confirmada" : "Confirmar resposta";
   el.answerBtn.disabled = !question.correctAnswer;

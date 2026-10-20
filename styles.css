@@ -3905,3 +3905,145 @@ body.theme-dark .today-improvement {
     flex: 1 1 100%;
   }
 }
+
+/* ===== Progresso do bloco e "Revisar o conceito" (js/studyPlan.js, js/questionCards.js) ===== */
+.run-progress {
+  display: grid;
+  gap: 6px;
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.run-progress-line {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 13px;
+}
+
+.run-progress-line span {
+  color: var(--muted);
+}
+
+.run-progress-bar {
+  height: 6px;
+  overflow: hidden;
+  border-radius: 3px;
+  background: var(--line);
+}
+
+.run-progress-bar i {
+  display: block;
+  height: 100%;
+  border-radius: 3px;
+  background: var(--accent);
+  transition: width 200ms ease;
+}
+
+.concept-panel {
+  display: grid;
+  gap: 14px;
+  margin-top: 6px;
+}
+
+.concept-block {
+  display: grid;
+  gap: 12px;
+  padding: 16px;
+  border-radius: 16px;
+  background: var(--accent-soft);
+}
+
+.concept-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  color: var(--accent-strong);
+}
+
+.concept-head strong {
+  font-size: 15px;
+}
+
+.concept-head span {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.concept-card {
+  display: grid;
+  gap: 8px;
+  padding: 14px;
+  border-radius: 12px;
+  background: var(--panel);
+}
+
+.concept-card-topic {
+  color: var(--accent-strong);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.concept-card p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.concept-card-back {
+  padding-top: 8px;
+  border-top: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.concept-grades {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.concept-btn {
+  min-height: 44px;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.concept-btn.primary {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: #ffffff;
+}
+
+body.theme-dark .concept-btn.primary {
+  color: #0f172a;
+}
+
+.concept-done,
+.concept-made {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.concept-make {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.concept-make span {
+  flex: 1 1 220px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+@media (max-width: 860px) {
+  .concept-grades {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

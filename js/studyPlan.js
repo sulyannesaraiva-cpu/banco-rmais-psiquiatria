@@ -79,7 +79,8 @@ function applyPlanToReviewTargets(plan) {
 }
 
 function saveStudyPlan(plan) {
-  state.studyPlan = { ...plan, updatedAt: Date.now() };
+  const { targetExam, targetArea, examDate, minutesPerDay } = plan;
+  state.studyPlan = { targetExam, targetArea, examDate, minutesPerDay, updatedAt: Date.now() };
   localStorage.setItem(STUDY_PLAN_KEY, JSON.stringify(state.studyPlan));
   applyPlanToReviewTargets(state.studyPlan);
   todayDataCache.key = "";
@@ -94,11 +95,15 @@ function applyStudyPlanFromCloud(plan) {
   localStorage.setItem(STUDY_PLAN_KEY, JSON.stringify(plan));
   applyPlanToReviewTargets(plan);
   todayDataCache.key = "";
+  // Formulário aberto automaticamente na primeira visita e ainda não mexido: dá lugar ao plano da conta.
+  if (state.planDraft && !state.planDraft.touched && !state.planDraft.openedByUser) state.planDraft = null;
 }
 
-function defaultPlanDraft() {
+function defaultPlanDraft({ openedByUser = false } = {}) {
   const plan = state.studyPlan || {};
   return {
+    openedByUser,
+    touched: false,
     targetExam: plan.targetExam || state.reviewTargetExam || "Todas",
     targetArea: plan.targetArea || "Todas",
     examDate: plan.examDate || "",
@@ -124,7 +129,8 @@ function studyDaySet() {
     if (ts) days.add(localDayKey(ts));
   }
   for (const progress of Object.values(state.flashcardProgress || {})) {
-    const ts = progress?.lastReviewedAt ? new Date(progress.lastReviewedAt).getTime() : null;
+    const reviewed = progress?.reviewedAt || progress?.lastReviewedAt;
+    const ts = reviewed ? new Date(reviewed).getTime() : null;
     if (ts && Number.isFinite(ts)) days.add(localDayKey(ts));
   }
   return days;
@@ -292,7 +298,13 @@ function startStudyRun(questions, { kind, label }) {
   state.sessionIds = questions.map((question) => question.id);
   state.filtered = questions;
   state.index = 0;
-  state.studyRun = { kind, label, ids: state.sessionIds, date: localDayKey(), startedAt: Date.now() };
+  /* Estado anterior das questões já vistas, para mostrar o motivo de cada uma estar na fila. */
+  const prior = {};
+  for (const question of questions) {
+    const progress = getProgress(question.id);
+    if (progress.grade) prior[question.id] = { grade: progress.grade, lastWrongAt: progress.lastWrongAt || null, updatedAt: progress.updatedAt || null };
+  }
+  state.studyRun = { kind, label, ids: state.sessionIds, prior, date: localDayKey(), startedAt: Date.now() };
   localStorage.setItem(STUDY_RUN_KEY, JSON.stringify(state.studyRun));
   setTab("activity");
   render();
@@ -309,6 +321,45 @@ function activeStudyRun() {
 
 function studyRunLabel() {
   return activeStudyRun()?.label || "";
+}
+
+function shortDate(timestamp) {
+  if (!timestamp) return "";
+  return new Date(timestamp).toLocaleDateString("pt-BR", { day: "2-digit", month: "2-digit" });
+}
+
+/* Etiqueta com o motivo da questão estar no bloco ("Revisão · você errou em 12/10", "Nova"). */
+function studyRunTagFor(question) {
+  const run = activeStudyRun();
+  if (!run || !question) return "";
+  const prior = run.prior?.[question.id];
+  if (prior) {
+    if (prior.grade === "wrong" || prior.lastWrongAt) {
+      const when = shortDate(prior.lastWrongAt || prior.updatedAt);
+      return when ? `Revisão · você errou em ${when}` : "Revisão · você errou esta";
+    }
+    return "Revisão programada";
+  }
+  return run.kind === "today" ? "Nova" : "";
+}
+
+/* Barra de progresso do bloco ativo, acima do mapa de questões. */
+function renderRunProgress() {
+  const box = document.querySelector("#runProgress");
+  if (!box) return;
+  const visible = isActiveAttemptMode() && !state.examSimulationActive && state.activeTab !== "flashcards" && state.filtered.length > 0;
+  box.hidden = !visible;
+  if (!visible) return;
+  const total = state.filtered.length;
+  const answered = currentRunAnsweredQuestions().length;
+  const remaining = Math.max(total - answered, 0);
+  const html = `
+    <div class="run-progress-line"><strong>${answered} de ${total} respondidas</strong><span>${remaining ? `faltam ${remaining}` : "bloco completo"}</span></div>
+    <div class="run-progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="${total}" aria-valuenow="${answered}" aria-label="Questões respondidas no bloco"><i style="width:${Math.round((answered / total) * 100)}%"></i></div>`;
+  if (box.dataset.renderedHtml !== html) {
+    box.innerHTML = html;
+    box.dataset.renderedHtml = html;
+  }
 }
 
 function clearStudyRun() {
@@ -644,6 +695,9 @@ function renderTodayPanel() {
 function handleTodayClick(event) {
   const target = event.target.closest("[data-today-action], [data-plan-exam], [data-plan-area], [data-plan-minutes]");
   if (!target) return;
+  if (state.planDraft && (target.dataset.planExam !== undefined || target.dataset.planArea !== undefined || target.dataset.planMinutes !== undefined)) {
+    state.planDraft.touched = true;
+  }
   if (target.dataset.planExam !== undefined) {
     state.planDraft.targetExam = target.dataset.planExam;
     state.planDraft.targetArea = "Todas";
@@ -671,7 +725,7 @@ function handleTodayClick(event) {
     state.planDraft = null;
     render();
   } else if (action === "edit-plan") {
-    state.planDraft = defaultPlanDraft();
+    state.planDraft = defaultPlanDraft({ openedByUser: true });
     render();
   } else if (action === "start") {
     startTodayRun();
@@ -694,6 +748,7 @@ function handleTodayClick(event) {
 
 function handleTodayChange(event) {
   if (event.target.id === "planExamDate" && state.planDraft) {
+    state.planDraft.touched = true;
     state.planDraft.examDate = event.target.value || "";
     render();
   }
@@ -705,7 +760,7 @@ function handleTodayChange(event) {
   panel.addEventListener("click", handleTodayClick);
   panel.addEventListener("change", handleTodayChange);
   document.querySelector("#editPlanBtn")?.addEventListener("click", () => {
-    state.planDraft = defaultPlanDraft();
+    state.planDraft = defaultPlanDraft({ openedByUser: true });
     render();
   });
   document.querySelector("#goFlashcardsTodayBtn")?.addEventListener("click", () => {
