@@ -3464,6 +3464,24 @@ function renderActivity() {
   el.restoreExcluded.hidden = !state.excluded.length;
 }
 
+/* Botões de finalizar/sair, cronômetro e resumos dos blocos ativos. Ficam fora do
+   renderDashboard porque ele pula tudo durante um bloco (otimização), o que deixava
+   "Finalizar prova", "Finalizar bloco", "Sair do tema" e "Sair das perigosas" escondidos. */
+function renderFlowControls() {
+  const studyActive = state.sessionActive || state.smartTrainingActive;
+  el.finishSession.hidden = !studyActive;
+  if (el.endTopic) el.endTopic.hidden = !state.topicActive;
+  if (el.endDangerousReview) el.endDangerousReview.hidden = !state.dangerousReviewActive;
+  if (studyActive) {
+    const answeredInSession = currentRunAnsweredQuestions().length;
+    el.sessionLine.textContent = state.smartTrainingActive
+      ? `Treino inteligente ativo: ${answeredInSession}/${state.filtered.length} questões respondidas.`
+      : `Sessão ativa: ${answeredInSession}/${state.filtered.length} questões respondidas.`;
+    renderSessionSummary();
+  }
+  renderExams();
+}
+
 function renderSessionSummary() {
   if (!el.sessionSummary) return;
   if (!state.sessionActive && !state.smartTrainingActive) {
@@ -3894,20 +3912,6 @@ function renderExams() {
     : exam
       ? `${exam.institution} ${exam.year} · ${exam.area} · ${pluralize(exam.questionCount, "questão", "questões")}.`
       : "Selecione uma prova para estudar ou simular.";
-
-  const unusedExamListHtml = state.exams.length
-    ? state.exams
-        .map((item) => {
-          const answered = item.questions.filter((question) => getProgress(question.id).grade).length;
-          return `
-            <button class="exam-item ${item.id === state.activeExamId ? "active" : ""}" data-exam-id="${item.id}">
-              <span>${item.title}</span>
-              <small>${answered}/${item.questionCount} respondidas · ${item.answerCount} gabaritos</small>
-            </button>
-          `;
-        })
-        .join("")
-    : `<p class="panel-line">Nenhuma prova importada ainda.</p>`;
 }
 
 function mapStatusFor(question) {
@@ -3969,6 +3973,7 @@ function render() {
   renderAdminAccess();
   renderStats();
   renderDashboard();
+  renderFlowControls();
   const flashcardMode = state.activeTab === "flashcards";
   const showStartPanel = !flashcardMode && !hasActiveQuestionFlow() && !state.filtered.length;
   if (el.startPanel) el.startPanel.hidden = !showStartPanel;
@@ -4472,6 +4477,9 @@ function startCurrentBlockErrors() {
 
 function endSession() {
   state.sessionCompletionMessage = "";
+  /* "Sair do bloco" é a saída visível também no estudo por tema ("Continuar" no progresso por tema). */
+  state.topicActive = false;
+  state.topicIds = [];
   state.sessionActive = false;
   state.sessionIds = [];
   state.smartTrainingActive = false;
