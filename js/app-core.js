@@ -501,6 +501,40 @@ function saveSessionSource() {
   scheduleCloudSettingsSync();
 }
 
+/* Progresso dos flashcards enviado à conta: só os campos de agendamento dos cartões já vistos. */
+function flashcardProgressForSync() {
+  const compact = {};
+  for (const [cardId, progress] of Object.entries(state.flashcardProgress || {})) {
+    if (!progress || (!progress.reviewedAt && !progress.nextReviewAt && !progress.lastGrade)) continue;
+    compact[cardId] = {
+      streak: progress.streak || 0,
+      lastGrade: progress.lastGrade || null,
+      reviewedAt: progress.reviewedAt || null,
+      nextReviewAt: progress.nextReviewAt || null,
+    };
+  }
+  return compact;
+}
+
+/* Junta o progresso vindo da conta com o do aparelho, cartão a cartão: vale a revisão mais recente. */
+function mergeFlashcardProgressFromCloud(remote) {
+  if (!remote || typeof remote !== "object") return;
+  const reviewedTime = (progress) => Date.parse(progress?.reviewedAt || "") || 0;
+  let changed = false;
+  for (const [cardId, incoming] of Object.entries(remote)) {
+    if (!incoming || typeof incoming !== "object") continue;
+    const local = state.flashcardProgress[cardId];
+    if (!local || reviewedTime(incoming) > reviewedTime(local)) {
+      state.flashcardProgress[cardId] = { ...(local || {}), ...incoming };
+      changed = true;
+    }
+  }
+  if (changed) {
+    localStorage.setItem("banco-rmais-flashcard-progress", JSON.stringify(state.flashcardProgress));
+    if (typeof todayDataCache !== "undefined") todayDataCache.key = "";
+  }
+}
+
 function currentSettingsPayload() {
   return {
     selectedTopics: state.selectedTopics,
@@ -512,6 +546,7 @@ function currentSettingsPayload() {
     studyPlan: state.studyPlan || null,
     customFlashcards: typeof customFlashcardsForSync === "function" ? customFlashcardsForSync() : [],
     studyLog: typeof studyLogForSync === "function" ? studyLogForSync() : {},
+    flashcardProgress: flashcardProgressForSync(),
   };
 }
 
@@ -539,6 +574,7 @@ function applySettingsPayload(settings = {}) {
   if (settings.studyPlan && typeof applyStudyPlanFromCloud === "function") applyStudyPlanFromCloud(settings.studyPlan);
   if (Array.isArray(settings.customFlashcards) && typeof applyCustomFlashcardsFromCloud === "function") applyCustomFlashcardsFromCloud(settings.customFlashcards);
   if (settings.studyLog && typeof applyStudyLogFromCloud === "function") applyStudyLogFromCloud(settings.studyLog);
+  if (settings.flashcardProgress) mergeFlashcardProgressFromCloud(settings.flashcardProgress);
   if (Object.prototype.hasOwnProperty.call(settings, "sessionSource")) {
     state.sessionSource = settings.sessionSource || "content";
     localStorage.setItem("banco-rmais-session-source", state.sessionSource);
@@ -3054,6 +3090,7 @@ function scheduleFlashcardGrade(cardId, grade) {
   };
   saveFlashcardState();
   if (typeof recordStudyLogFlashcard === "function") recordStudyLogFlashcard();
+  scheduleCloudSettingsSync();
 }
 
 function gradeFlashcard(grade) {
