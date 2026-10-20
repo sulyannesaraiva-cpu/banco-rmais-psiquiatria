@@ -4175,8 +4175,9 @@ function render() {
   el.answerBtn.disabled = !question.correctAnswer;
   el.answerBtn.textContent = progress.revealed ? "Gabarito exibido" : "Mostrar gabarito";
   el.favorite.classList.toggle("active", Boolean(storedProgress.favorite));
-  el.favorite.textContent = progress.favorite ? "★" : "☆";
+  el.favorite.setAttribute("aria-pressed", String(Boolean(storedProgress.favorite)));
   el.review.classList.toggle("active", Boolean(storedProgress.review));
+  el.review.setAttribute("aria-pressed", String(Boolean(storedProgress.review)));
   el.correct.classList.toggle("active", progress.grade === "correct");
   el.wrong.classList.toggle("active", progress.grade === "wrong");
   el.successTypeGroup.querySelectorAll("[data-success-type]").forEach((button) => {
@@ -5332,6 +5333,31 @@ el.commentsList?.addEventListener("click", (event) => {
 });
 el.note.addEventListener("input", markPrivateNoteDirty);
 el.savePrivateNote?.addEventListener("click", saveCurrentPrivateNote);
+/* Atalhos no computador, com uma questão na tela: A–E marca, Enter confirma, setas navegam. */
+document.addEventListener("keydown", (event) => {
+  if (event.ctrlKey || event.metaKey || event.altKey || event.defaultPrevented) return;
+  const target = event.target instanceof Element ? event.target : document.body;
+  if (target.closest("input, textarea, select, [contenteditable='true']")) return;
+  if (!currentQuestion() || !el.options.offsetParent) return;
+  const key = event.key;
+  if (/^[a-e]$/i.test(key)) {
+    const option = el.options.querySelector(`[data-option="${key.toUpperCase()}"]`);
+    if (!option || option.disabled) return;
+    event.preventDefault();
+    option.click();
+  } else if (key === "Enter") {
+    if (target.closest("button, a, summary")) return;
+    if (el.confirmAnswer.disabled || el.confirmAnswer.offsetParent === null) return;
+    event.preventDefault();
+    el.confirmAnswer.click();
+  } else if (key === "ArrowRight" && !el.next.disabled) {
+    event.preventDefault();
+    el.next.click();
+  } else if (key === "ArrowLeft" && !el.prev.disabled) {
+    event.preventDefault();
+    el.prev.click();
+  }
+});
 /* Um toque só: o tipo de acerto/erro já define a confiança usada na revisão espaçada. */
 el.successTypeGroup.addEventListener("click", (event) => {
   const button = event.target.closest("[data-success-type]");
