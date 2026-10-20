@@ -4430,3 +4430,235 @@ body.theme-dark .run-finish.armed {
     padding: 18px 14px calc(88px + env(safe-area-inset-bottom));
   }
 }
+
+/* ===== Barra lateral só de navegação; conteúdo das abas na área principal ===== */
+body {
+  grid-template-columns: 264px minmax(0, 1fr);
+}
+
+body.sidebar-collapsed {
+  grid-template-columns: 64px minmax(0, 1fr);
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar .tabs {
+  margin-bottom: 16px;
+}
+
+.sidebar .tab {
+  min-height: 40px;
+  font-size: 15px;
+}
+
+.sidebar-footer {
+  display: grid;
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+
+.sidebar-footer .auth-panel {
+  gap: 8px;
+  margin: 0;
+  padding: 12px;
+}
+
+.sidebar-footer .auth-status strong {
+  font-size: 14px;
+}
+
+.sidebar-footer .auth-status span,
+.sidebar-footer #syncStatus {
+  overflow-wrap: anywhere;
+  font-size: 12px;
+}
+
+.sidebar-footer #syncStatus {
+  margin: 0;
+}
+
+.auth-details summary {
+  cursor: pointer;
+  color: var(--accent-strong);
+  font-size: 14px;
+  font-weight: 650;
+  list-style: none;
+}
+
+.auth-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.auth-details summary::after {
+  content: " ▾";
+}
+
+.auth-details[open] summary::after {
+  content: " ▴";
+}
+
+.auth-details[open] summary {
+  margin-bottom: 10px;
+}
+
+.auth-details .auth-actions {
+  grid-template-columns: 1fr;
+}
+
+.sidebar-footer .theme-toggle {
+  margin: 0;
+  min-height: 36px;
+  font-size: 14px;
+}
+
+.tab-view,
+.tab-view-back {
+  width: 100%;
+  max-width: 880px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.tab-view {
+  display: grid;
+  gap: 18px;
+}
+
+.tab-view .legend {
+  margin-bottom: 8px;
+}
+
+.tab-view[hidden] {
+  display: none;
+}
+
+.tab-view > .tab-panel.active {
+  padding: clamp(18px, 3vw, 30px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--panel);
+}
+
+.tab-view .study-planner-head h3,
+.tab-view .exam-panel-head h3 {
+  font-size: clamp(22px, 2.2vw, 28px);
+}
+
+.tab-view .study-section:first-of-type {
+  padding-top: 0;
+}
+
+.tab-view-section-title {
+  margin: 0 0 6px;
+  font-size: 16px;
+}
+
+.tab-view-active .topbar {
+  display: none;
+}
+
+.tab-view-back {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px 16px;
+  padding: 12px 16px;
+  border: 1px solid var(--accent);
+  border-radius: var(--radius);
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+  font-weight: 600;
+}
+
+.tab-view-back[hidden] {
+  display: none;
+}
+
+.flashcard-active .flashcard-study-panel {
+  order: 1;
+}
+
+.flashcard-active #tabView {
+  order: 2;
+}
+
+.flashcard-deck-row.active {
+  color: var(--ink);
+}
+
+/* Com espaço de sobra, as listas e grades dos painéis usam a largura da tela */
+@media (min-width: 861px) {
+  .tab-view .topic-grid {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+
+  .tab-view .session-builder,
+  .tab-view .review-controls {
+    max-width: 760px;
+  }
+
+  .tab-view .review-controls {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .tab-view .topic-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .tab-view .topic-toolbar button {
+    width: auto;
+  }
+
+  .tab-view .exam-sidebar {
+    max-width: 760px;
+  }
+
+  .tab-view .availability-card {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .tab-view .availability-card div {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .tab-view #flashcardDeckList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 8px;
+  }
+
+  .tab-view .topic-progress-list {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  }
+
+  .sidebar {
+    position: sticky;
+    top: 0;
+  }
+
+  .tab-view .flashcard-priority-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 860px) {
+  body,
+  body.sidebar-collapsed {
+    grid-template-columns: 1fr;
+  }
+
+  .tab-view > .tab-panel.active {
+    padding: 16px;
+  }
+}

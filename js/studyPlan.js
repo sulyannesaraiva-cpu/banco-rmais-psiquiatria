@@ -362,7 +362,7 @@ function runFinishAction() {
 function renderRunProgress() {
   const box = document.querySelector("#runProgress");
   if (!box) return;
-  const visible = hasActiveQuestionFlow() && state.activeTab !== "flashcards" && state.filtered.length > 0;
+  const visible = hasActiveQuestionFlow() && state.activeTab !== "flashcards" && !state.tabViewOpen && state.filtered.length > 0;
   box.hidden = !visible;
   if (!visible) return;
   const total = state.filtered.length;
@@ -483,11 +483,23 @@ function handleStudyRunFinish() {
     tomorrowReviews,
   };
   clearStudyRun();
+  returnToTodayAfterRun();
 }
 
 /* Chamado pelo núcleo em endSession() ("Sair do bloco"). */
 function handleStudyRunExit() {
   clearStudyRun();
+  returnToTodayAfterRun();
+}
+
+/* O estudo do dia começa na tela Hoje e volta para ela (com o resumo) ao terminar.
+   Roda depois que a função de encerramento do núcleo termina de trocar de aba. */
+function returnToTodayAfterRun() {
+  queueMicrotask(() => {
+    if (hasActiveQuestionFlow()) return;
+    setTab("overview");
+    render();
+  });
 }
 
 function subthemeImprovement(answeredQuestions) {
@@ -815,7 +827,7 @@ function handleTodayChange(event) {
     render();
   });
   document.querySelector("#goFlashcardsTodayBtn")?.addEventListener("click", () => {
-    setTab("flashcards");
+    setTab("flashcards", { fromNav: true });
     render();
   });
   if (state.studyPlan) applyPlanToReviewTargets(state.studyPlan);

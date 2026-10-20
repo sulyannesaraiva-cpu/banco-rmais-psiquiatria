@@ -35,9 +35,8 @@
     if (!box) {
       box = document.createElement('div');
       box.id = 'globalBankCounter';
-      const sidebar = document.querySelector('.sidebar') || document.querySelector('aside') || document.querySelector('nav');
-      if (sidebar) sidebar.appendChild(box);
-      else document.body.appendChild(box);
+      const host = document.querySelector('#examsPanel') || document.querySelector('.question-shell') || document.body;
+      host.appendChild(box);
     }
     box.innerHTML = `<strong>Banco completo</strong><br>${totalQuestions.toLocaleString('pt-BR')} questões · ${totalExams.toLocaleString('pt-BR')} provas`;
     return true;

@@ -1,6 +1,6 @@
 /* Barra de navegação inferior no celular: Hoje · Estudar · Flashcards · Desempenho · Mais.
-   No celular ela substitui a gaveta lateral como navegação principal; a gaveta continua
-   existindo para filtros e opções ("Estudar" e "Mais" a abrem). */
+   Cada botão abre o conteúdo da aba na área principal; "Mais" abre a gaveta, que no
+   celular é só o menu completo (abas, conta e tema). */
 
 const BOTTOM_NAV_TABS = {
   today: ["overview", "today"],
@@ -16,8 +16,7 @@ function renderBottomNav() {
   const drawerOpen = isMobileLayout() && !state.sidebarCollapsed;
   nav.querySelectorAll("[data-nav]").forEach((button) => {
     const key = button.dataset.nav;
-    const drawerKey = state.bottomNavKey === "study" && BOTTOM_NAV_TABS.study.includes(state.activeTab) ? "study" : "more";
-    const active = drawerOpen ? key === drawerKey : key === "more" ? BOTTOM_NAV_TABS.more.includes(state.activeTab) : BOTTOM_NAV_TABS[key].includes(state.activeTab);
+    const active = drawerOpen ? key === "more" : BOTTOM_NAV_TABS[key].includes(state.activeTab);
     button.classList.toggle("active", active);
     if (active) button.setAttribute("aria-current", "page");
     else button.removeAttribute("aria-current");
@@ -32,21 +31,10 @@ function renderBottomNav() {
     if (!button) return;
     const key = button.dataset.nav;
     state.bottomNavKey = key;
-    if (key === "today") {
-      setTab("overview");
+    const target = { today: "overview", study: "activity", flashcards: "flashcards", performance: "history" }[key];
+    if (target) {
       setSidebarCollapsed(true);
-      render();
-    } else if (key === "study") {
-      setTab("activity");
-      setSidebarCollapsed(false);
-    } else if (key === "flashcards") {
-      setSidebarCollapsed(true);
-      setTab("flashcards");
-    } else if (key === "performance") {
-      setTab("history");
-      // Com um bloco ativo a área principal mostra a questão; os números ficam na gaveta.
-      setSidebarCollapsed(!hasActiveQuestionFlow());
-      render();
+      setTab(target, { fromNav: true });
     } else if (key === "more") {
       setSidebarCollapsed(!state.sidebarCollapsed);
     }

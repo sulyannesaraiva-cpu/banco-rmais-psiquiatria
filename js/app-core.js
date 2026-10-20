@@ -68,6 +68,8 @@ const state = {
   smartTrainingActive: false,
   smartTrainingIds: [],
   activeTab: "overview",
+  tabViewOpen: false,
+  tabViewReturnTab: null,
   filterKey: "",
   editing: false,
   sessionCompletionMessage: "",
@@ -223,6 +225,9 @@ const el = {
   flashcardStudyPanel: document.querySelector("#flashcardStudyPanel"),
   goSession: document.querySelector("#goSessionBtn"),
   goExams: document.querySelector("#goExamsBtn"),
+  tabView: document.querySelector("#tabView"),
+  tabViewBack: document.querySelector("#tabViewBack"),
+  tabViewBackBtn: document.querySelector("#tabViewBackBtn"),
   authPanel: document.querySelector("#authPanel"),
   authTitle: document.querySelector("#authTitle"),
   authStatus: document.querySelector("#authStatus"),
@@ -3108,7 +3113,7 @@ function heavyAnalyticsVisible() {
 
 function renderDashboard() {
   /* Evita recomputações analíticas pesadas durante fluxos ativos de questões. */
-  if (hasActiveQuestionFlow()) return;
+  if (hasActiveQuestionFlow() && !state.tabViewOpen) return;
   if (!heavyAnalyticsVisible()) return;
   renderQuickDashboard();
   renderOverview();
@@ -4034,22 +4039,33 @@ function renderQuestionImage(question) {
 }
 
 function render() {
+  syncTabViewWithFlow();
   closeSidebarWhenMobileFlowStarts();
   renderAdminAccess();
   renderStats();
   renderDashboard();
   renderFlowControls();
   const flashcardMode = state.activeTab === "flashcards";
-  const showStartPanel = !flashcardMode && !hasActiveQuestionFlow() && !state.filtered.length;
-  /* Sem bloco ativo, a área principal mostra a tela Hoje, ou o painel de Desempenho na aba Desempenho. */
-  const showPerformancePanel = showStartPanel && state.activeTab === "history" && typeof renderPerformancePanel === "function";
-  if (el.startPanel) el.startPanel.hidden = !showStartPanel || showPerformancePanel;
+  /* A barra lateral só navega; o conteúdo de cada aba aparece aqui na área principal.
+     Com um bloco em andamento a questão fica na tela, a menos que a pessoa abra outra aba
+     pela navegação (tabViewOpen); aí a faixa "Voltar à questão" leva de volta. */
+  const questionMode = hasActiveQuestionFlow() || state.filtered.length > 0;
+  const mainIdle = !flashcardMode && (!questionMode || state.tabViewOpen);
+  const showStartPanel = mainIdle && state.activeTab === "overview";
+  const showPerformancePanel = mainIdle && state.activeTab === "history" && typeof renderPerformancePanel === "function";
+  const showTabView = flashcardMode || (mainIdle && state.activeTab !== "overview");
+  if (el.startPanel) el.startPanel.hidden = !showStartPanel;
   const performancePanel = document.querySelector("#performancePanel");
   if (performancePanel) performancePanel.hidden = !showPerformancePanel;
+  if (el.tabView) el.tabView.hidden = !showTabView;
+  if (el.tabViewBack) el.tabViewBack.hidden = !(questionMode && state.tabViewOpen && (mainIdle || flashcardMode));
   if (el.flashcardStudyPanel) el.flashcardStudyPanel.hidden = !flashcardMode;
-  document.body.classList.toggle("no-question-active", showStartPanel);
+  document.body.classList.toggle("no-question-active", mainIdle);
+  document.body.classList.toggle("tab-view-active", showTabView && !flashcardMode);
   document.body.classList.toggle("flashcard-active", flashcardMode);
   if (typeof renderRunProgress === "function") renderRunProgress();
+  if (showPerformancePanel) renderPerformancePanel();
+  else if (showStartPanel && typeof renderTodayPanel === "function") renderTodayPanel();
   if (flashcardMode) {
     renderFlashcards();
     renderQuestionDiscussion(null);
@@ -4079,10 +4095,8 @@ function render() {
       renderQuestionDiscussion(null);
       return;
     }
-    el.source.textContent = showStartPanel ? "Pronto para estudar" : "Nenhuma questão encontrada";
-    el.title.textContent = showStartPanel ? "Banco de questões" : "Ajuste os filtros";
-    if (showPerformancePanel) renderPerformancePanel();
-    else if (showStartPanel && typeof renderTodayPanel === "function") renderTodayPanel();
+    el.source.textContent = mainIdle ? "Pronto para estudar" : "Nenhuma questão encontrada";
+    el.title.textContent = mainIdle ? "Banco de questões" : "Ajuste os filtros";
     el.tags.innerHTML = "";
     el.tags.classList.remove("visible");
     el.text.textContent = "";
@@ -4223,10 +4237,15 @@ function shuffleFiltered() {
   render();
 }
 
-function setTab(tabName) {
+function setTab(tabName, options = {}) {
   if (tabName === "topics" && !state.isAdmin) tabName = "overview";
   const previousTab = state.activeTab;
   state.activeTab = tabName;
+  const browsing = options.fromNav && (hasActiveQuestionFlow() || state.filtered.length > 0);
+  if (browsing && !state.tabViewOpen) {
+    state.tabViewReturnTab = previousTab;
+    state.tabViewOpen = true;
+  }
   if (typeof renderBottomNav === "function") renderBottomNav();
   el.tabs.forEach((button) => button.classList.toggle("active", button.dataset.tab === tabName));
   Object.entries(el.panels).forEach(([name, panel]) => {
@@ -4234,7 +4253,42 @@ function setTab(tabName) {
   });
   if (tabName === "notes") renderSavedNotesPanel();
   if (tabName === "flashcards" || document.body.classList.contains("flashcard-active")) render();
-  else if (previousTab !== tabName && (tabName === "history" || previousTab === "history") && !hasActiveQuestionFlow()) render();
+  else if (browsing || (previousTab !== tabName && (!hasActiveQuestionFlow() || state.tabViewOpen))) render();
+  if (options.fromNav) document.querySelector(".app")?.scrollTo?.(0, 0);
+  if (options.fromNav) window.scrollTo(0, 0);
+}
+
+/* Fecha a tela de abas e volta para a questão do bloco em andamento. */
+function returnToQuestion() {
+  state.tabViewOpen = false;
+  const back = state.tabViewReturnTab;
+  state.tabViewReturnTab = null;
+  const target = back && back !== "flashcards" ? back : state.activeTab === "flashcards" ? "activity" : state.activeTab;
+  if (target !== state.activeTab) setTab(target);
+  render();
+  window.scrollTo(0, 0);
+}
+
+/* Chave que identifica o bloco de questões em andamento ("" sem bloco). */
+function currentFlowKey() {
+  return state.filtered.length
+    ? [
+        state.topicActive, state.sessionActive, state.smartTrainingActive, state.spacedReviewActive,
+        state.dangerousReviewActive, state.examActive, state.examSetActive, state.examSimulationActive,
+        state.activeExamId || "", state.filterKey || "", state.filtered[0]?.id || "",
+      ].join("|")
+    : "";
+}
+
+/* Quando um bloco começa (ou troca), a questão volta a ocupar a área principal. */
+let lastTabViewFlowKey = "";
+function syncTabViewWithFlow() {
+  const key = currentFlowKey();
+  if (key !== lastTabViewFlowKey) {
+    state.tabViewOpen = false;
+    state.tabViewReturnTab = null;
+  }
+  lastTabViewFlowKey = key;
 }
 
 function isMobileLayout() {
@@ -4254,13 +4308,7 @@ function setSidebarCollapsed(collapsed) {
    começa, a gaveta fecha para não cobrir a questão. */
 let lastMobileFlowKey = "";
 function closeSidebarWhenMobileFlowStarts() {
-  const key = hasActiveQuestionFlow() && state.filtered.length
-    ? [
-        state.topicActive, state.sessionActive, state.smartTrainingActive, state.spacedReviewActive,
-        state.dangerousReviewActive, state.examActive, state.examSetActive, state.examSimulationActive,
-        state.activeExamId || "", state.filterKey || "", state.filtered[0]?.id || "",
-      ].join("|")
-    : "";
+  const key = hasActiveQuestionFlow() ? currentFlowKey() : "";
   if (key && key !== lastMobileFlowKey && isMobileLayout() && !state.sidebarCollapsed) setSidebarCollapsed(true);
   lastMobileFlowKey = key;
 }
@@ -4982,21 +5030,20 @@ function restoreExcludedQuestions() {
   applyFilters({ preserveCurrent: true });
 }
 
-el.tabs.forEach((button) => button.addEventListener("click", () => setTab(button.dataset.tab)));
+el.tabs.forEach((button) => button.addEventListener("click", () => {
+  setTab(button.dataset.tab, { fromNav: true });
+  /* No celular a gaveta é só o menu: escolhida a aba, ela fecha e mostra o conteúdo. */
+  if (isMobileLayout()) setSidebarCollapsed(true);
+}));
 document.querySelectorAll("[data-dashboard-tab]").forEach((button) => {
-  button.addEventListener("click", () => setTab(button.dataset.dashboardTab));
+  button.addEventListener("click", () => setTab(button.dataset.dashboardTab, { fromNav: true }));
 });
+el.tabViewBackBtn?.addEventListener("click", returnToQuestion);
 el.sidebarToggle.addEventListener("click", () => setSidebarCollapsed(!state.sidebarCollapsed));
 el.sidebarBackdrop?.addEventListener("click", () => setSidebarCollapsed(true));
 el.themeToggle?.addEventListener("click", () => applyTheme(state.theme === "dark" ? "light" : "dark"));
-el.goSession.addEventListener("click", () => {
-  setTab("activity");
-  setSidebarCollapsed(false);
-});
-el.goExams.addEventListener("click", () => {
-  setTab("exams");
-  setSidebarCollapsed(false);
-});
+el.goSession.addEventListener("click", () => setTab("activity", { fromNav: true }));
+el.goExams.addEventListener("click", () => setTab("exams", { fromNav: true }));
 el.login.addEventListener("click", signIn);
 el.signup.addEventListener("click", signUp);
 el.logout.addEventListener("click", signOut);
