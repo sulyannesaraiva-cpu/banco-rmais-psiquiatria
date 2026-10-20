@@ -369,6 +369,11 @@
               <p>Marque um ou mais temas e monte o bloco abaixo, ou toque em Continuar para seguir só as pendentes de um tema.</p>
             </header>
             <div class="topic-picker">
+              <div class="segmented wide-segmented topic-source" id="topicSourceGroup" role="group" aria-label="Origem das questões">
+                <button data-topic-source="mixed" title="Didáticas e de provas">Todas</button>
+                <button data-topic-source="content">Didáticas</button>
+                <button data-topic-source="exams">Provas</button>
+              </div>
               <input id="topicPanelSearch" type="search" placeholder="Buscar tema..." aria-label="Buscar tema" />
               <div class="topic-picker-actions">
                 <button id="selectAllTopicsBtn" type="button" class="link-btn">Marcar todos</button>
@@ -647,6 +652,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <!-- App: o núcleo inicia no DOMContentLoaded, depois que os módulos abaixo forem aplicados. -->
     <script src="js/app-core.js"></script>
+    <script src="js/examTopics.js"></script>
     <script src="js/reviewExamFrequency.js"></script>
     <script src="js/topicProgress.js"></script>
     <script src="js/sessionPersistence.js"></script>

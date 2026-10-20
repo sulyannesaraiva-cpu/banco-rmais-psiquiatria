@@ -46,6 +46,8 @@ const state = {
   sessionSource: localStorage.getItem("banco-rmais-session-source") || "content",
   /* Estudo por temas: "new" (só não feitas), "all" ou "wrong" (só erradas). */
   sessionPoolMode: localStorage.getItem("banco-rmais-session-pool") || "new",
+  /* Estudo por temas: "mixed" (didáticas e provas), "content" ou "exams". */
+  topicSource: localStorage.getItem("banco-rmais-topic-source") || "mixed",
   reviewTargetExam: localStorage.getItem("banco-rmais-review-target-exam") || "Todas",
   reviewMode: localStorage.getItem("banco-rmais-review-mode") || "mixed",
   reviewAvailableMinutes: Number(localStorage.getItem("banco-rmais-review-minutes") || "20"),
@@ -331,6 +333,7 @@ const el = {
   clearTopics: document.querySelector("#clearTopicsBtn"),
   sessionSizeGroup: document.querySelector("#sessionSizeGroup"),
   sessionPoolGroup: document.querySelector("#sessionPoolGroup"),
+  topicSourceGroup: document.querySelector("#topicSourceGroup"),
   includeReviews: document.querySelector("#includeReviewsToggle"),
   startSession: document.querySelector("#startSessionBtn"),
   finishSession: document.querySelector("#finishSessionBtn"),
@@ -1547,14 +1550,27 @@ function pendingCounts() {
   return counts;
 }
 
+/* Questões de provas que entram no estudo (mesmo recorte de allStudyQuestions). */
+function examStudyQuestions() {
+  return state.exams.filter((exam) => exam.institution !== "SES-DF").flatMap((exam) => exam.questions || []);
+}
+
+/* Estudo por temas: de onde vêm as questões ("mixed", "content" = didáticas, "exams" = provas).
+   As provas recebem tema em js/examTopics.js. */
+function topicStudyPool() {
+  if (state.topicSource === "content") return state.questions;
+  if (state.topicSource === "exams") return examStudyQuestions();
+  return [...state.questions, ...examStudyQuestions()];
+}
+
 function allTopics() {
   return [
     ...new Set(
-      state.questions
+      topicStudyPool()
         .filter((question) => !isExcluded(question.id))
         .map((question) => topicForQuestion(question)),
     ),
-  ].sort();
+  ].sort((a, b) => a.localeCompare(b, "pt-BR"));
 }
 
 function sourcesForTopic(topic) {
@@ -1581,13 +1597,14 @@ function topicForQuestion(question) {
 
 function topicsForStats() {
   if (!Array.isArray(state.selectedTopics)) return allTopics();
+  const pool = topicStudyPool();
   return state.selectedTopics.filter((topic) =>
-    state.questions.some((question) => questionBelongsToTopic(question, topic) && !isExcluded(question.id)),
+    pool.some((question) => questionBelongsToTopic(question, topic) && !isExcluded(question.id)),
   );
 }
 
 function topicQuestions(topic) {
-  return state.questions.filter((question) => questionBelongsToTopic(question, topic) && !isExcluded(question.id));
+  return topicStudyPool().filter((question) => questionBelongsToTopic(question, topic) && !isExcluded(question.id));
 }
 
 function topicPerformance(topic) {
@@ -2670,7 +2687,7 @@ function applyFilters({ preserveCurrent = false } = {}) {
   const activeTopicIds = state.topicActive ? new Set(state.topicIds) : null;
   const selectedTopicIds = !state.topicActive && Array.isArray(state.selectedTopics) ? new Set(state.selectedTopics) : null;
 
-  const filterBase = pendingAdminMode ? allStudyQuestions() : state.questions;
+  const filterBase = pendingAdminMode ? allStudyQuestions() : activeTopicIds ? topicStudyPool() : state.questions;
   state.filtered = filterBase.filter((question) => {
     if (isExcluded(question.id)) return false;
     const view = effectiveQuestion(question);
@@ -3406,6 +3423,9 @@ function renderActivity() {
   el.sessionPoolGroup?.querySelectorAll("[data-pool]").forEach((button) => {
     button.classList.toggle("active", button.dataset.pool === state.sessionPoolMode);
   });
+  el.topicSourceGroup?.querySelectorAll("[data-topic-source]").forEach((button) => {
+    button.classList.toggle("active", button.dataset.topicSource === state.topicSource);
+  });
   el.includeReviews.checked = state.includeReviewsInSession;
   const topics = topicsForStats();
   const pool = sessionPoolQuestions();
@@ -3784,9 +3804,9 @@ function smartTrainingQuestions() {
 
 function selectedContentQuestions({ ignoreSubthemes = false } = {}) {
   const topics = new Set(topicsForStats());
-  return state.questions.filter(
+  return topicStudyPool().filter(
     (question) =>
-      [...topics].some((topicName) => questionBelongsToTopic(question, topicName)) &&
+      topics.has(topicForQuestion(question)) &&
       !isExcluded(question.id) &&
       isReadyQuestion(effectiveQuestion(question)) &&
       (ignoreSubthemes || questionMatchesSelectedSubthemes(question)),
@@ -5002,6 +5022,14 @@ el.flashcardReviewList?.addEventListener("click", (event) => {
   if (!button) return;
   const item = flashcardReviewItems().find((entry) => entry.card.id === button.dataset.reviewFlashcard);
   openFlashcardReviewItem(item);
+});
+el.topicSourceGroup.addEventListener("click", (event) => {
+  const button = event.target.closest("[data-topic-source]");
+  if (!button) return;
+  state.topicSource = button.dataset.topicSource;
+  localStorage.setItem("banco-rmais-topic-source", state.topicSource);
+  renderTopicChecklist();
+  renderActivity();
 });
 el.sessionPoolGroup.addEventListener("click", (event) => {
   const button = event.target.closest("[data-pool]");
