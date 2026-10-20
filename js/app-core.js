@@ -2315,7 +2315,9 @@ function getTodayReviewSession({ targetExam = state.reviewTargetExam, maxItems, 
     .filter((item) => item.score >= 20 && reviewModeMatches(item, mode))
     .sort((a, b) => b.score - a.score || String(a.id).localeCompare(String(b.id), "pt-BR"));
 
+  let fallbackFrom = "";
   if (!pool.length && mode !== "mixed") {
+    fallbackFrom = mode;
     pool = [...questionItems, ...flashcardItems]
       .map((item) => ({ ...item, category: reviewCategoryForScore(item.score) }))
       .filter((item) => item.score >= 20)
@@ -2335,8 +2337,20 @@ function getTodayReviewSession({ targetExam = state.reviewTargetExam, maxItems, 
     if (item.kind === "flashcard") flashcardCount += 1;
     if (selected.length >= limit) break;
   }
+  /* Quando o tipo escolhido não tem itens, a revisão vira geral; quem inicia a
+     revisão usa isto para avisar o aluno em vez de trocar o conteúdo em silêncio. */
+  selected.fallbackFrom = fallbackFrom;
   return selected;
 }
+
+const REVIEW_FALLBACK_NOTICES = {
+  "repeated-errors": "Revisão geral: você ainda não tem erros repetidos (questão ou assunto errado 2 ou mais vezes)",
+  "high-priority": "Revisão geral: nenhum item de alta prioridade no momento",
+  "exam-themes": "Revisão geral: nenhum tema de prova pendente no momento",
+  light: "Revisão geral: nenhum item de revisão leve no momento",
+  questions: "Revisão geral: nenhuma questão pendente para revisar no momento",
+  flashcards: "Revisão geral: nenhum flashcard pendente no momento",
+};
 
 function reviewSessionSummary(session) {
   return {
@@ -4052,7 +4066,9 @@ function render() {
         ? state.topicIds.length === 1
           ? `Tema: ${state.topicIds[0]}`
           : "Temas selecionados"
-        : "Banco R+ Psiquiatria";
+        : state.spacedReviewActive && state.reviewFallbackNotice
+          ? state.reviewFallbackNotice
+          : "Banco R+ Psiquiatria";
   el.title.textContent = state.sessionActive || state.smartTrainingActive || state.examActive || state.examSimulationActive || state.examSetActive || state.topicActive ? `Questão ${state.index + 1}` : `Questão ${question.number}`;
   el.position.textContent = `${state.index + 1} / ${state.filtered.length}`;
   if (state.dangerousReviewActive) el.title.textContent = `Questão ${state.index + 1}`;
@@ -4300,6 +4316,7 @@ function startSpacedReview() {
   state.dangerousReviewIds = [];
   state.spacedReviewActive = true;
   state.spacedReviewIds = questions.map((question) => question.id);
+  state.reviewFallbackNotice = REVIEW_FALLBACK_NOTICES[session.fallbackFrom] || "";
   state.index = 0;
   setTab("today");
   applyFilters({ preserveCurrent: true });
