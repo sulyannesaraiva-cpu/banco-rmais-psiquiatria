@@ -613,35 +613,24 @@
             </details>
           </div>
           <div class="error-type-panel" id="successTypePanel">
-            <span>Acerto - como foi?</span>
-            <div id="successTypeGroup" class="error-type-grid">
-              <button data-success-type="mastered">Muito fácil</button>
-              <button data-success-type="reasoning">Sabia bem</button>
-              <button data-success-type="partial">Sabia parcialmente</button>
-              <button data-success-type="doubt">Acerto com dúvida</button>
-              <button data-success-type="guess-correct">Chutei e acertei</button>
+            <span>Acertou. Como foi?</span>
+            <div id="successTypeGroup" class="error-type-grid quick-grade-grid">
+              <button data-success-type="mastered" data-confidence="5">Fácil</button>
+              <button data-success-type="reasoning" data-confidence="4">Sabia</button>
+              <button data-success-type="doubt" data-confidence="2">Com dúvida</button>
+              <button data-success-type="guess-correct" data-confidence="1">Chutei</button>
             </div>
-          </div>
-          <div class="error-type-panel" id="confidencePanel">
-            <span>Nível de confiança</span>
-            <div id="confidenceGroup" class="confidence-grid">
-              <button data-confidence="1">1 · Chutei</button>
-              <button data-confidence="2">2 · Fiquei em dúvida</button>
-              <button data-confidence="3">3 · Sabia parcialmente</button>
-              <button data-confidence="4">4 · Sabia bem</button>
-              <button data-confidence="5">5 · Muito fácil</button>
-              <button data-confidence="6">6 · Difícil</button>
-            </div>
+            <small class="quick-grade-hint">Define quando a questão volta na revisão.</small>
           </div>
           <div class="error-type-panel" id="errorTypePanel">
-            <span>Tipo de erro</span>
+            <span>Errou. Por quê?</span>
             <div id="errorTypeGroup" class="error-type-grid">
-              <button data-error-type="knowledge">Falta de memorização</button>
+              <button data-error-type="knowledge">Não lembrava</button>
               <button data-error-type="concept">Confundi conceito</button>
+              <button data-error-type="two-options">Fiquei entre duas</button>
               <button data-error-type="reading">Li rápido</button>
-              <button data-error-type="two-options">Duvida entre alternativas</button>
               <button data-error-type="attention">Desatenção</button>
-              <button data-error-type="guess">Chute</button>
+              <button data-error-type="guess" data-confidence="1">Chutei</button>
             </div>
           </div>
           <section class="concept-panel" id="conceptPanel" hidden></section>

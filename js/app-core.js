@@ -415,8 +415,6 @@ const el = {
   flashcardReviewList: document.querySelector("#flashcardReviewList"),
   startDueFlashcards: document.querySelector("#startDueFlashcardsBtn"),
   goFlashcards: document.querySelector("#goFlashcardsBtn"),
-  confidenceGroup: document.querySelector("#confidenceGroup"),
-  confidencePanel: document.querySelector("#confidencePanel"),
   flashcardDeckList: document.querySelector("#flashcardDeckList"),
   flashcardCategorySelect: document.querySelector("#flashcardCategorySelect"),
   flashcardPriorityGroup: document.querySelector("#flashcardPriorityGroup"),
@@ -3791,20 +3789,20 @@ function renderErrorNotebook() {
 
 function errorTypeLabel(value) {
   const labels = {
-    knowledge: "Falta de conhecimento",
+    knowledge: "Não lembrava",
     concept: "Confundi conceito",
     reading: "Li rápido",
-    "two-options": "Duvida entre alternativas",
+    "two-options": "Fiquei entre duas",
     attention: "Desatenção",
-    guess: "Chute",
+    guess: "Chutei",
   };
   return labels[value] || value;
 }
 
 function successTypeLabel(value) {
   const labels = {
-    mastered: "Dominei",
-    reasoning: "Raciocínio correto",
+    mastered: "Fácil",
+    reasoning: "Sabia",
     partial: "Lembrei parcialmente",
     doubt: "Acerto com dúvida",
     "guess-correct": "Chutei e acertei",
@@ -4071,7 +4069,6 @@ function render() {
       el.position.textContent = "0 / 0";
       el.manualGradePanel.hidden = true;
       el.successTypePanel.hidden = true;
-      el.confidencePanel.hidden = true;
       el.errorTypePanel.hidden = true;
       if (typeof renderConceptPanel === "function") renderConceptPanel(null);
       el.note.value = "";
@@ -4091,7 +4088,6 @@ function render() {
     el.position.textContent = "0 / 0";
     el.manualGradePanel.hidden = false;
     el.successTypePanel.hidden = true;
-    el.confidencePanel.hidden = true;
     el.errorTypePanel.hidden = true;
     if (typeof renderConceptPanel === "function") renderConceptPanel(null);
     el.note.value = "";
@@ -4172,7 +4168,6 @@ function render() {
   }
   el.manualGradePanel.hidden = examLocked;
   el.successTypePanel.hidden = examLocked || progress.grade !== "correct";
-  el.confidencePanel.hidden = examLocked || !progress.grade;
   el.errorTypePanel.hidden = examLocked || progress.grade !== "wrong";
   if (typeof renderConceptPanel === "function") renderConceptPanel(question, progress, examLocked);
   el.confirmAnswer.disabled = !question.correctAnswer || !selectedLetter || Boolean(progress.grade) || examLocked;
@@ -4186,9 +4181,6 @@ function render() {
   el.wrong.classList.toggle("active", progress.grade === "wrong");
   el.successTypeGroup.querySelectorAll("[data-success-type]").forEach((button) => {
     button.classList.toggle("active", progress.successType === button.dataset.successType);
-  });
-  el.confidenceGroup.querySelectorAll("[data-confidence]").forEach((button) => {
-    button.classList.toggle("active", Number(button.dataset.confidence) === Number(progress.confidence || defaultConfidenceForGrade(progress.grade)));
   });
   el.errorTypeGroup.querySelectorAll("[data-error-type]").forEach((button) => {
     button.classList.toggle("active", progress.errorType === button.dataset.errorType);
@@ -5340,20 +5332,16 @@ el.commentsList?.addEventListener("click", (event) => {
 });
 el.note.addEventListener("input", markPrivateNoteDirty);
 el.savePrivateNote?.addEventListener("click", saveCurrentPrivateNote);
+/* Um toque só: o tipo de acerto/erro já define a confiança usada na revisão espaçada. */
 el.successTypeGroup.addEventListener("click", (event) => {
   const button = event.target.closest("[data-success-type]");
   if (!button) return;
-  setProgress({ successType: button.dataset.successType });
-});
-el.confidenceGroup.addEventListener("click", (event) => {
-  const button = event.target.closest("[data-confidence]");
-  if (!button) return;
-  setProgress({ confidence: Number(button.dataset.confidence) });
+  setProgress({ successType: button.dataset.successType, confidence: Number(button.dataset.confidence) });
 });
 el.errorTypeGroup.addEventListener("click", (event) => {
   const button = event.target.closest("[data-error-type]");
   if (!button) return;
-  setProgress({ errorType: button.dataset.errorType });
+  setProgress({ errorType: button.dataset.errorType, confidence: Number(button.dataset.confidence || defaultConfidenceForGrade("wrong")) });
 });
 el.options.addEventListener("click", (event) => {
   const discardButton = event.target.closest("[data-discard-option]");

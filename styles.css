@@ -2502,6 +2502,22 @@ body.theme-dark .exam-study-card {
   color: var(--ink);
 }
 
+/* Depois de responder: uma linha de 4 botões no acerto. */
+.quick-grade-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.quick-grade-hint {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+@media (max-width: 560px) {
+  .quick-grade-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 /* Estudo por temas: lista única de temas + montagem do bloco. */
 .topic-picker {
   display: flex;
@@ -3361,7 +3377,7 @@ body.theme-dark .option.selected.pending::before {
 
   .confidence-grid,
   .error-type-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .stats,
