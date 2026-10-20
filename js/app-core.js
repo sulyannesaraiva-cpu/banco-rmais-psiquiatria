@@ -322,9 +322,6 @@ const el = {
     history: document.querySelector("#historyPanel"),
     exams: document.querySelector("#examsPanel"),
   },
-  overviewLine: document.querySelector("#overviewLine"),
-  overviewSmartTraining: document.querySelector("#overviewSmartTrainingBtn"),
-  overviewSmartLine: document.querySelector("#overviewSmartLine"),
   topicPanelSearch: document.querySelector("#topicPanelSearch"),
   topicChecklist: document.querySelector("#topicChecklist"),
   startTopic: document.querySelector("#startTopicBtn"),
@@ -342,7 +339,6 @@ const el = {
   restoreExcluded: document.querySelector("#restoreExcludedBtn"),
   sessionLine: document.querySelector("#sessionLine"),
   sessionSummary: document.querySelector("#sessionSummary"),
-  historySummary: document.querySelector("#historySummary"),
   historyList: document.querySelector("#historyList"),
   errorNotebook: document.querySelector("#errorNotebook"),
   examSelect: document.querySelector("#examSelect"),
@@ -365,21 +361,6 @@ const el = {
   examProgressAccuracy: document.querySelector("#examProgressAccuracy"),
   examProgressAnswered: document.querySelector("#examProgressAnswered"),
   examProgressSplit: document.querySelector("#examProgressSplit"),
-  overviewCounts: {
-    dominated: document.querySelector("#dominatedCount"),
-    consolidated: document.querySelector("#consolidatedCount"),
-    building: document.querySelector("#buildingCount"),
-    fragile: document.querySelector("#fragileCount"),
-    unseen: document.querySelector("#unseenCount"),
-  },
-  overviewBars: {
-    dominated: document.querySelector("#progressDominated"),
-    consolidated: document.querySelector("#progressConsolidated"),
-    building: document.querySelector("#progressBuilding"),
-    fragile: document.querySelector("#progressFragile"),
-    unseen: document.querySelector("#progressUnseen"),
-  },
-  errorChart: document.querySelector("#errorChart"),
   dueReviewCount: document.querySelector("#dueReviewCount"),
   scheduledReviewCount: document.querySelector("#scheduledReviewCount"),
   startSpacedReview: document.querySelector("#startSpacedReviewBtn"),
@@ -3154,9 +3135,7 @@ function renderDashboard() {
   if (hasActiveQuestionFlow() && !state.tabViewOpen) return;
   if (!heavyAnalyticsVisible()) return;
   renderQuickDashboard();
-  renderOverview();
   renderPendingSummary();
-  renderErrorChart();
   renderTopicChecklist();
   renderExamStudyFilters();
   renderActivity();
@@ -3300,72 +3279,6 @@ function openQuestionFromNote(questionId) {
   render();
 }
 
-function errorStatsByTopic() {
-  const grouped = new Map();
-  for (const question of allStudyQuestions()) {
-    if (isExcluded(question.id)) continue;
-    const progress = getProgress(question.id);
-    if (progress.grade !== "wrong") continue;
-    const topic = question.topic || question.source || "Sem tema";
-    const current = grouped.get(topic) || { topic, wrong: 0, answered: 0 };
-    current.wrong += 1;
-    grouped.set(topic, current);
-  }
-  for (const question of allStudyQuestions()) {
-    if (isExcluded(question.id)) continue;
-    const progress = getProgress(question.id);
-    if (!progress.grade) continue;
-    const topic = question.topic || question.source || "Sem tema";
-    const current = grouped.get(topic) || { topic, wrong: 0, answered: 0 };
-    current.answered += 1;
-    grouped.set(topic, current);
-  }
-  return [...grouped.values()].filter((item) => item.wrong > 0).sort((a, b) => b.wrong - a.wrong || b.answered - a.answered);
-}
-
-function renderErrorChart() {
-  if (!el.errorChart) return;
-  const items = errorStatsByTopic().slice(0, 8);
-  const maxWrong = Math.max(...items.map((item) => item.wrong), 1);
-  el.errorChart.innerHTML = items.length
-    ? items
-        .map((item) => {
-          const percent = Math.round((item.wrong / maxWrong) * 100);
-          const rate = item.answered ? Math.round((item.wrong / item.answered) * 100) : 0;
-          return `
-            <div class="error-row">
-              <div>
-                <strong>${escapeHtml(item.topic)}</strong>
-                <small>${item.wrong} erros · ${rate}% das respondidas</small>
-              </div>
-              <span><i style="width: ${percent}%"></i></span>
-            </div>
-          `;
-        })
-        .join("")
-    : `<p class="panel-line">Nenhum erro registrado ainda.</p>`;
-}
-
-function renderOverview() {
-  const topics = topicsForStats();
-  const allVisibleQuestions = allStudyQuestions().filter((question) => !isExcluded(question.id));
-  const selectedQuestions = state.questions.filter(
-    (question) => topics.some((topicName) => questionBelongsToTopic(question, topicName)) && !isExcluded(question.id),
-  );
-  const counts = { dominated: 0, consolidated: 0, building: 0, fragile: 0, unseen: 0 };
-  for (const topic of topics) counts[topicStatus(topic)] += 1;
-  const totalTopics = Math.max(topics.length, 1);
-  const dueCount = spacedReviewQuestions(true).length;
-  const unseenCount = allVisibleQuestions.filter((question) => !getProgress(question.id).grade).length;
-  if (el.overviewSmartLine) {
-    el.overviewSmartLine.textContent = `${pluralize(dueCount, "revisão", "revisões")} vencida${dueCount === 1 ? "" : "s"}, ${pluralize(counts.fragile, "tema frágil", "temas frágeis")} e ${pluralize(unseenCount, "questão não praticada", "questões não praticadas")} no banco total.`;
-  }
-  el.overviewLine.textContent = `Estatísticas dos ${topics.length} temas selecionados (${pluralize(selectedQuestions.length, "questão", "questões")})`;
-  for (const key of Object.keys(counts)) {
-    el.overviewCounts[key].textContent = counts[key];
-    el.overviewBars[key].style.width = `${(counts[key] / totalTopics) * 100}%`;
-  }
-}
 
 /* Lista única de temas: marcar para o bloco, ver progresso e acerto, ou "Continuar" as pendentes. */
 function renderTopicChecklist() {
@@ -3582,11 +3495,6 @@ function renderSessionSummary() {
 }
 
 function renderHistory() {
-  const visibleQuestions = allStudyQuestions().filter((question) => !isExcluded(question.id));
-  const answeredTotal = visibleQuestions.filter((question) => getProgress(question.id).grade).length;
-  const correctTotal = visibleQuestions.filter((question) => getProgress(question.id).grade === "correct").length;
-  const wrongTotal = visibleQuestions.filter((question) => getProgress(question.id).grade === "wrong").length;
-  const reviewTotal = visibleQuestions.filter((question) => getProgress(question.id).review).length;
   const dueQuestions = spacedReviewQuestions(true);
   const scheduledQuestions = spacedReviewQuestions(false);
   const dailyTarget = Math.min(dueQuestions.length, state.sessionSize || 30);
@@ -3609,13 +3517,6 @@ function renderHistory() {
   } else {
     el.spacedReviewLine.innerHTML = `<strong>Nenhuma revisão programada ainda.</strong><br>Próximo passo: faça um bloco de ${state.sessionSize} questões; ao errar ou marcar acerto com dúvida, a plataforma criará automaticamente o calendário de revisão.`;
   }
-  const accuracy = answeredTotal ? Math.round((correctTotal / answeredTotal) * 100) : 0;
-  el.historySummary.innerHTML = `
-    <div><strong>${answeredTotal}</strong><span>respondidas</span></div>
-    <div><strong>${accuracy}%</strong><span>acerto</span></div>
-    <div><strong>${wrongTotal}</strong><span>erros</span></div>
-    <div><strong>${reviewTotal}</strong><span>revisar</span></div>
-  `;
   renderErrorNotebook();
   const answered = allStudyQuestions()
     .filter((question) => !isExcluded(question.id) && getProgress(question.id).grade)
@@ -5122,7 +5023,6 @@ el.includeReviews.addEventListener("change", () => {
   renderActivity();
 });
 el.startSession.addEventListener("click", startSession);
-el.overviewSmartTraining?.addEventListener("click", startSmartTraining);
 el.finishSession.addEventListener("click", finishSession);
 el.endSession.addEventListener("click", endSession);
 el.resetProgress.addEventListener("click", resetUserProgress);
