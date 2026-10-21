@@ -1527,7 +1527,7 @@ function toggleDiscardedOption(questionId, letter) {
 }
 
 function allStudyQuestions() {
-  return [...state.questions, ...state.exams.filter((exam) => exam.institution !== 'SES-DF').flatMap((exam) => exam.questions || [])];
+  return [...state.questions, ...examStudyQuestions()];
 }
 
 function applyQuestionCorrection(question, correction) {
@@ -1622,9 +1622,9 @@ function pendingCounts() {
   return counts;
 }
 
-/* Questões de provas que entram no estudo (mesmo recorte de allStudyQuestions). */
+/* Todas as questões de provas (inclui a SES-DF, que antes ficava fora do estudo e da revisão). */
 function examStudyQuestions() {
-  return state.exams.filter((exam) => exam.institution !== "SES-DF").flatMap((exam) => exam.questions || []);
+  return state.exams.flatMap((exam) => exam.questions || []);
 }
 
 /* Estudo por temas: de onde vêm as questões ("mixed", "content" = didáticas, "exams" = provas).
