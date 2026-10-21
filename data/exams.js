@@ -51,7 +51,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2022.2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 2",
-          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1ª Edição. Artmed, 2022, embora a avaliação neuropsicológica não seja necessár ia para o diagnóstico do Transtorno do Espectro Autista (TEA), ela traz contribuições importantes para o entendimento do quadro pelo psiquiatra. Segundo a 5ª edição do Manual Diagnóstico e Estatístico de Transtornos Mentais (DSM -5) existem especificadores do TEA que podem modificar de modo significativo a apresentação clínica, a proposta terapêutica e o prognóstico. Assinale a alternativa que corresponde a esses especificadores.",
+          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1ª Edição. Artmed, 2022, embora a avaliação neuropsicológica não seja necessária para o diagnóstico do Transtorno do Espectro Autista (TEA), ela traz contribuições importantes para o entendimento do quadro pelo psiquiatra. Segundo a 5ª edição do Manual Diagnóstico e Estatístico de Transtornos Mentais (DSM -5) existem especificadores do TEA que podem modificar de modo significativo a apresentação clínica, a proposta terapêutica e o prognóstico. Assinale a alternativa que corresponde a esses especificadores.",
           "options": [
             {
               "letter": "A",
@@ -187,7 +187,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2022.2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 6",
-          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1ª Edição. Artmed, 2022, a doença com Corpos de Lewy possui, de acordo com as Diretrizes e Recomendações do 4º Consórcio Internacional de Demência com Corpos de Lewy, como condição obrigatória para o diagnóstico a presença de comprometimento cognitivo, com flutuação da ate nção e do nível de consciência, alucinações visuais, parkinsonismo e transtorno comportamental do sono REM como critérios centrais ou nucleares. Hipersensibilidade a neurolépticos, sintomas físicos e sintomas neuropsiquiátricos são sintomas que apoiam o diagnóstico. O diagnóstico da demência com corpos de Lewy pode ser realizado quando há presença de um dos sintomas nucleares da doença associado à presença de um biomarcador indicativo, de uma lista de três. Assinale, dentre as alternativas a seguir, a que c onstitui um biomarcador indicativo de demência com corpos de Lewy.",
+          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1ª Edição. Artmed, 2022, a doença com Corpos de Lewy possui, de acordo com as Diretrizes e Recomendações do 4º Consórcio Internacional de Demência com Corpos de Lewy, como condição obrigatória para o diagnóstico a presença de comprometimento cognitivo, com flutuação da ate nção e do nível de consciência, alucinações visuais, parkinsonismo e transtorno comportamental do sono REM como critérios centrais ou nucleares. Hipersensibilidade a neurolépticos, sintomas físicos e sintomas neuropsiquiátricos são sintomas que apoiam o diagnóstico. O diagnóstico da demência com corpos de Lewy pode ser realizado quando há presença de um dos sintomas nucleares da doença associado à presença de um biomarcador indicativo, de uma lista de três. Assinale, dentre as alternativas a seguir, a que constitui um biomarcador indicativo de demência com corpos de Lewy.",
           "options": [
             {
               "letter": "A",
@@ -207,7 +207,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "E",
-              "text": "Preservação da captação de contraste por transportadores de dopamina nos núcl eos da base na Cintilografia com Emissão de Fóton Único (SPECT) 99 mTC-TRODAT-1"
+              "text": "Preservação da captação de contraste por transportadores de dopamina nos núcleos da base na Cintilografia com Emissão de Fóton Único (SPECT) 99 mTC-TRODAT-1"
             }
           ],
           "correctAnswer": "D",
@@ -255,7 +255,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2022.2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 8",
-          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1ª Edição. Artmed, 2022, com relação à esquizofrenia, é possível que pacientes apresentem funcionamento pré -mórbido subótimo em graus variados na infância e na adolescência e no período que p recede o primeiro episódio (fase prodrômica), com sintomas inespecíficos que muitas vezes podem passar despercebidos. Entre as manifestações mais comuns do pródromo pode-se citar alterações de sono, sintomas depressivos, ansiedade, irritabilidade, oscilações de humor, isolamento social, hipobulia, redução de concentração, sensação de estranhamento com o mundo e consigo mesmo, desconfiança não estruturada e discurso vago. Nas últimas décadas houve maior interesse na identificação de tais sinais de maneira pr ospectiva. Foi proposto o conceito de risco ultra elevado (UHR) para identificar síndromes que aumentariam o risco de conversão para um transtorno psicótico. Esse termo foi proposto em substituição ao conceito de pródromo, pois este indicaria uma evolução inevitável para um transtorno psicótico e essas síndromes não se enquadram nessa perspectiva mais restrita. Foram propostas três síndromes de UHR, que compartilham características. Assinale a alternativa associada exclusivamente à síndrome de risco genético associado a prejuízo funcional.",
+          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1ª Edição. Artmed, 2022, com relação à esquizofrenia, é possível que pacientes apresentem funcionamento pré-mórbido subótimo em graus variados na infância e na adolescência e no período que p recede o primeiro episódio (fase prodrômica), com sintomas inespecíficos que muitas vezes podem passar despercebidos. Entre as manifestações mais comuns do pródromo pode-se citar alterações de sono, sintomas depressivos, ansiedade, irritabilidade, oscilações de humor, isolamento social, hipobulia, redução de concentração, sensação de estranhamento com o mundo e consigo mesmo, desconfiança não estruturada e discurso vago. Nas últimas décadas houve maior interesse na identificação de tais sinais de maneira pr ospectiva. Foi proposto o conceito de risco ultra elevado (UHR) para identificar síndromes que aumentariam o risco de conversão para um transtorno psicótico. Esse termo foi proposto em substituição ao conceito de pródromo, pois este indicaria uma evolução inevitável para um transtorno psicótico e essas síndromes não se enquadram nessa perspectiva mais restrita. Foram propostas três síndromes de UHR, que compartilham características. Assinale a alternativa associada exclusivamente à síndrome de risco genético associado a prejuízo funcional.",
           "options": [
             {
               "letter": "A",
@@ -323,7 +323,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2022.2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 10",
-          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1ª Edição. Artmed, 2022, há modelos sobre o curso do Transtorno Bipolar (TB) após o diagnóstico formal. Eles são baseados em evidências recentes que sugerem que o TB é uma condição com curso clínico progressivo, de modo que maior núm ero de episódios de humor está associado a maior risco de novos episódios agudos, maior gravidade dos sintomas, duração mais longa dos episódios agudos e maiores taxas de refratariedade ao tratamento farmacológico. Além disso, o número de episódios também está associado a prejuízo funcional e cognitivo e pior qualidade de vida. Um desses modelos é o de estadiamento/neuroprogressão, que descreve o transtorno em três estágios clínicos. Assinale a alternativa que descreve um desses estágios.",
+          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1ª Edição. Artmed, 2022, há modelos sobre o curso do Transtorno Bipolar (TB) após o diagnóstico formal. Eles são baseados em evidências recentes que sugerem que o TB é uma condição com curso clínico progressivo, de modo que maior número de episódios de humor está associado a maior risco de novos episódios agudos, maior gravidade dos sintomas, duração mais longa dos episódios agudos e maiores taxas de refratariedade ao tratamento farmacológico. Além disso, o número de episódios também está associado a prejuízo funcional e cognitivo e pior qualidade de vida. Um desses modelos é o de estadiamento/neuroprogressão, que descreve o transtorno em três estágios clínicos. Assinale a alternativa que descreve um desses estágios.",
           "options": [
             {
               "letter": "A",
@@ -425,7 +425,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2022.2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 13",
-          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1ª Edição. Artmed, 2022, no DSM 5 o critério A de diagnóstico do Transtorno d e Estresse Pós -Traumático (TEPT) inclui quatro formas de vivenciar o evento traumático. Assinale, dentre as alternativas seguintes, aquela que NÃO caracteriza um dos itens do critério A para TEPT no DSM 5.",
+          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1ª Edição. Artmed, 2022, no DSM 5 o critério A de diagnóstico do Transtorno d e Estresse Pós-Traumático (TEPT) inclui quatro formas de vivenciar o evento traumático. Assinale, dentre as alternativas seguintes, aquela que NÃO caracteriza um dos itens do critério A para TEPT no DSM 5.",
           "options": [
             {
               "letter": "A",
@@ -459,7 +459,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2022.2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 14",
-          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1ª Edição. Artmed, 2022, sabe-se que quando estímulos ambientais são interpretados como ameaçad ores, se origina a ansiedade. Para que esta interpretação ocorra, uma pessoa deve primeiro detectar que o os estímulos existem por meio de seus sistemas sensoriais, por meio do córtex sensorial, do tálamo e dos colículos superior e inferior. Uma vez que am eaças importantes são detectadas, ocorre uma interpretação do estímulo que é, em parte, determinada pela experiência anterior do indivíduo e inclui a atribuição de valência ao estímulo por circuitos ligados a uma estrutura anatômica. Assinale a estrutura que está ligada a tais circuitos e participa da atribuição de valência positiva ou negativa aos estímulos.",
+          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1ª Edição. Artmed, 2022, sabe-se que quando estímulos ambientais são interpretados como ameaçadores, se origina a ansiedade. Para que esta interpretação ocorra, uma pessoa deve primeiro detectar que o os estímulos existem por meio de seus sistemas sensoriais, por meio do córtex sensorial, do tálamo e dos colículos superior e inferior. Uma vez que am eaças importantes são detectadas, ocorre uma interpretação do estímulo que é, em parte, determinada pela experiência anterior do indivíduo e inclui a atribuição de valência ao estímulo por circuitos ligados a uma estrutura anatômica. Assinale a estrutura que está ligada a tais circuitos e participa da atribuição de valência positiva ou negativa aos estímulos.",
           "options": [
             {
               "letter": "A",
@@ -527,7 +527,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2022.2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 16",
-          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1ª Edição. Artmed, 2022, o funcionamento cardiovascular dos pacientes com anorexia nervosa (AN) pode ser prejudicado devido à desidratação, distúrbios hidroeletrolíticos e autofagia miocárdica. Pode -se encontrar pacientes com bradicardia, hipotensão e alterações eletroencefalográficas diversas, como prolongamento do intervalo QT ou alterações do segmento ST. Há uma alteração hidroeletrolítica associada à arritmia. Assinale, dentre as alternativas a seguir, a que caracteriza tal alteração.",
+          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1ª Edição. Artmed, 2022, o funcionamento cardiovascular dos pacientes com anorexia nervosa (AN) pode ser prejudicado devido à desidratação, distúrbios hidroeletrolíticos e autofagia miocárdica. Pode-se encontrar pacientes com bradicardia, hipotensão e alterações eletroencefalográficas diversas, como prolongamento do intervalo QT ou alterações do segmento ST. Há uma alteração hidroeletrolítica associada à arritmia. Assinale, dentre as alternativas a seguir, a que caracteriza tal alteração.",
           "options": [
             {
               "letter": "A",
@@ -697,7 +697,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2022.2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 21",
-          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1ª Edição. Artmed, 2022, com relação à neurofisiologia do TDAH a compreensão atual é de que existem claras alterações cerebrais no volume de estruturas corticais e subcorticais, na conectividade e na substância branca. Os principais achados observados em uma metanálise de dez estudos de imagem demonstraram alterações consistentes n o esplênio do corpo caloso, estendendo -se ao cíngulo direito e outras estruturas associadas, sugerindo alterações de conexão entre os hemisférios cerebrais nas regiões parieto -temporais (associadas com atenção Como tal) e nos tratos fronto -posteriores envolvidos em atenção e percepção em pacientes com TDAH. Como a metanálise foi realizada com foco na substância branca, os estudos analisados utilizaram como método de neuroimagem:",
+          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1ª Edição. Artmed, 2022, com relação à neurofisiologia do TDAH a compreensão atual é de que existem claras alterações cerebrais no volume de estruturas corticais e subcorticais, na conectividade e na substância branca. Os principais achados observados em uma metanálise de dez estudos de imagem demonstraram alterações consistentes n o esplênio do corpo caloso, estendendo-se ao cíngulo direito e outras estruturas associadas, sugerindo alterações de conexão entre os hemisférios cerebrais nas regiões parieto -temporais (associadas com atenção Como tal) e nos tratos fronto -posteriores envolvidos em atenção e percepção em pacientes com TDAH. Como a metanálise foi realizada com foco na substância branca, os estudos analisados utilizaram como método de neuroimagem:",
           "options": [
             {
               "letter": "A",
@@ -765,7 +765,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2022.2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 23",
-          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1ª Edição. Artmed, 2022, um dos construtos básicos na compreensão do Transtorno de Per sonalidade (TP) Antissocial é o de traços de frieza e ausência de sentimentos. Propõe -se que tal característica seria o resultado de predisposição genética, associada a experiências negativas na primeira infância, as quais gerariam uma mudança no padrão de resposta ao estresse, para uma reposta embotada ou atenuada a este. Vários estudos de neuroimagem mostram diversas alterações cerebrais associadas ao TP Antissocial. O prejuízo da capacidade de julgamentos éticos sobre danos a outros; insensibilidade às obrigações sociais; e déficit na inibição de impulsos estiveram associados a alterações da região cerebral:",
+          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1ª Edição. Artmed, 2022, um dos construtos básicos na compreensão do Transtorno de Per sonalidade (TP) Antissocial é o de traços de frieza e ausência de sentimentos. Propõe-se que tal característica seria o resultado de predisposição genética, associada a experiências negativas na primeira infância, as quais gerariam uma mudança no padrão de resposta ao estresse, para uma reposta embotada ou atenuada a este. Vários estudos de neuroimagem mostram diversas alterações cerebrais associadas ao TP Antissocial. O prejuízo da capacidade de julgamentos éticos sobre danos a outros; insensibilidade às obrigações sociais; e déficit na inibição de impulsos estiveram associados a alterações da região cerebral:",
           "options": [
             {
               "letter": "A",
@@ -935,7 +935,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2022.2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 28",
-          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1ª Edição. Artmed, 2022, a fisiopatologia da Apneia Obstrutiva do Sono (AOS) é caracterizada pelo repetitivo colapso, parcia l ou completo, da via aérea superior (VAS) durante o sono, apesar de haver esforço respiratório, resultando em redução (hipopneia) ou cessação (apneia) do fluxo aéreo. Assinale a estrutura que impede o colapso posterior da língua durante o sono.",
+          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1ª Edição. Artmed, 2022, a fisiopatologia da Apneia Obstrutiva do Sono (AOS) é caracterizada pelo repetitivo colapso, parcial ou completo, da via aérea superior (VAS) durante o sono, apesar de haver esforço respiratório, resultando em redução (hipopneia) ou cessação (apneia) do fluxo aéreo. Assinale a estrutura que impede o colapso posterior da língua durante o sono.",
           "options": [
             {
               "letter": "A",
@@ -969,7 +969,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2022.2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 29",
-          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1ª Edição. Artmed, 2022, os elementos envolvidos na etiologia da Depressão Pós -Parto (DP) incluem redução dos níveis de hormônios reprodutivos como a alopregnalonona, alterações tireoidianas, disfunções no eixo hipotálamo-hipófise-adrenal e anormalidades de colesterol e ácidos graxos. Estudos com humanos e roedores demonstram oscilações de estradiol, corticosterona, hormônio liberador corticotrópico e ocitocina. Concomitantemente à expulsão da placenta há uma queda abrupta de dois hormônios, o que levou à formulação da hipótese de que a DP teria como um dos fatores contribuintes um “estado de retirada” de um deles. Assinale a alternativa que inclui tal hormônio.",
+          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1ª Edição. Artmed, 2022, os elementos envolvidos na etiologia da Depressão Pós-Parto (DP) incluem redução dos níveis de hormônios reprodutivos como a alopregnalonona, alterações tireoidianas, disfunções no eixo hipotálamo-hipófise-adrenal e anormalidades de colesterol e ácidos graxos. Estudos com humanos e roedores demonstram oscilações de estradiol, corticosterona, hormônio liberador corticotrópico e ocitocina. Concomitantemente à expulsão da placenta há uma queda abrupta de dois hormônios, o que levou à formulação da hipótese de que a DP teria como um dos fatores contribuintes um “estado de retirada” de um deles. Assinale a alternativa que inclui tal hormônio.",
           "options": [
             {
               "letter": "A",
@@ -1003,7 +1003,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2022.2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 30",
-          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1ª Edição. Artmed, 2022, nem todos os indivíduos expostos a um evento traumático desenvolverão um transtorno mental. Diante de uma adversidade, podemos definir como resilientes aqueles que não desenvolverão transtornos mentais e manterão uma trajetória adequada de funcionamento, com relativa competência e bem -estar. Os processos protetores relacionados à resiliência incluem, dentre outros fatores, processos neuroendócrinos e imunes. Assinale o fator protetor que contrabalanceia os efeitos de letérios da ativação do eixo HHA (hipotálamo – hipófise – adrenais):",
+          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1ª Edição. Artmed, 2022, nem todos os indivíduos expostos a um evento traumático desenvolverão um transtorno mental. Diante de uma adversidade, podemos definir como resilientes aqueles que não desenvolverão transtornos mentais e manterão uma trajetória adequada de funcionamento, com relativa competência e bem-estar. Os processos protetores relacionados à resiliência incluem, dentre outros fatores, processos neuroendócrinos e imunes. Assinale o fator protetor que contrabalanceia os efeitos de letérios da ativação do eixo HHA (hipotálamo – hipófise – adrenais):",
           "options": [
             {
               "letter": "A",
@@ -1037,7 +1037,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2022.2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 31",
-          "text": "De acordo com a Referência Kaplan & Sadock`s Com prenhensive Textbook of Psychiatry 10th edition Wolters Kluwer 2017, os neurônios serotoninérgicos projetam - se desde os núcleos da rafe dorsal do tronco cerebral até o córtex cerebral, hipotálamo, tálamo, gânglios basais, septo e hipocampo. As vias da sero tonina (5-HT) têm funções inibitórias e facilitadoras no cérebro. Por exemplo, muitas evidências sugerem que a 5 -HT é um importante regulador do sono, apetite, temperatura corporal, metabolismo e libido. Além disso, a 5 -HT inibe o comportamento agressivo em espécies de mamíferos e répteis. Neurônios serotoninérgicos que projetam -se para o núcleo supraquiasmático (SCN) do hipotálamo ajudam a regular ritmos circadianos (por exemplo, ciclos de sono -vigília, temperatura corporal e função do eixo HPA). A 5 - HT ta mbém permite ou facilita comportamentos motores direcionados a metas, em conjunto com a norepinefrina (NE) e a dopamina (DA). Como observado anteriormente, há algumas evidências de que a neurotransmissão 5 -HT está parcialmente sob controle genético, e um polimorfismo funcional do transportador de serotonina (5 -HTT) tem sido associado a um risco moderado de depressão pela exposição aos estressores ambientais. O \"tom\" da neurotransmissão 5-HT também apresenta uma flutuação sazonal e demonstra uma resposta tem poral característica ao estresse. Especificamente, o estresse agudo aumenta transitoriamente a liberação de 5-HT, enquanto o estresse crônico finalmente irá causar diminuição da atividade 5 - HT e esgotamento de estoques de 5 -HT. O estresse crônico também pode aumentar a síntese de autorreceptores 5-HT tipo 1A (5- HT1A) no núcleo dorsal da rafe, o que diminui ainda mais a neurotransmissão serotoninérgica. Há um mecanismo associado ao estresse crônico que pode melhorar o funcionamento da transmissão serotoninérgica e ter efeitos compensatórios significativos nessa situação. Assinale a alternativa que corresponde a tal mecanismo.",
+          "text": "De acordo com a Referência Kaplan & Sadock`s Com prenhensive Textbook of Psychiatry 10th edition Wolters Kluwer 2017, os neurônios serotoninérgicos projetam - se desde os núcleos da rafe dorsal do tronco cerebral até o córtex cerebral, hipotálamo, tálamo, gânglios basais, septo e hipocampo. As vias da sero tonina (5-HT) têm funções inibitórias e facilitadoras no cérebro. Por exemplo, muitas evidências sugerem que a 5 -HT é um importante regulador do sono, apetite, temperatura corporal, metabolismo e libido. Além disso, a 5 -HT inibe o comportamento agressivo em espécies de mamíferos e répteis. Neurônios serotoninérgicos que projetam-se para o núcleo supraquiasmático (SCN) do hipotálamo ajudam a regular ritmos circadianos (por exemplo, ciclos de sono -vigília, temperatura corporal e função do eixo HPA). A 5 - HT ta mbém permite ou facilita comportamentos motores direcionados a metas, em conjunto com a norepinefrina (NE) e a dopamina (DA). Como observado anteriormente, há algumas evidências de que a neurotransmissão 5 -HT está parcialmente sob controle genético, e um polimorfismo funcional do transportador de serotonina (5 -HTT) tem sido associado a um risco moderado de depressão pela exposição aos estressores ambientais. O \"tom\" da neurotransmissão 5-HT também apresenta uma flutuação sazonal e demonstra uma resposta temporal característica ao estresse. Especificamente, o estresse agudo aumenta transitoriamente a liberação de 5-HT, enquanto o estresse crônico finalmente irá causar diminuição da atividade 5 - HT e esgotamento de estoques de 5 -HT. O estresse crônico também pode aumentar a síntese de autorreceptores 5-HT tipo 1A (5- HT1A) no núcleo dorsal da rafe, o que diminui ainda mais a neurotransmissão serotoninérgica. Há um mecanismo associado ao estresse crônico que pode melhorar o funcionamento da transmissão serotoninérgica e ter efeitos compensatórios significativos nessa situação. Assinale a alternativa que corresponde a tal mecanismo.",
           "options": [
             {
               "letter": "A",
@@ -1071,7 +1071,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2022.2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 32",
-          "text": "De acordo com a referência Kaplan & Sadock`s Comprenhensive Textbook of Psychiatry 10th edition Wolters Kluwer 2017, o crescimento e a conectividade seletiva dos neurônios é o mecanismo básico de toda aprendizagem e adaptação. A aprendizagem pode ser refletida em mudanças neurais de várias maneiras: (1) o crescimento de novos neurônios, (2) a expansão dos neurônios existentes, (3) as mudanças na conectividade entre os neurônios existentes. Todas essas mudanças são expressões de plasticidade, ou a capacidade do sistema nervoso de mudar. Há, atualmente, evidências suficientes para o fato de que os neurônios demonstram crescimento e mudanças na reação a novas experiências e aprendizado. Os neurônios existentes crescem através da expansão e ramificação dos dendritos que projetam -se para outros neurônios. Os neurônios se interconectam para formar redes neurais, que, por sua vez, se integram entre si para realizar tarefas cada vez mais complexas. Por exemplo, redes que participam da linguagem, emoção e memória interagem e se integram, permitindo que uma história emocionalmente significativa seja lembrada e contada com o afeto adequado, detalhes corretos e palavras apropriadas. Assinale o mecanismo também associado ao aprendizado, em complemento aos acima citados.",
+          "text": "De acordo com a referência Kaplan & Sadock`s Comprenhensive Textbook of Psychiatry 10th edition Wolters Kluwer 2017, o crescimento e a conectividade seletiva dos neurônios é o mecanismo básico de toda aprendizagem e adaptação. A aprendizagem pode ser refletida em mudanças neurais de várias maneiras: (1) o crescimento de novos neurônios, (2) a expansão dos neurônios existentes, (3) as mudanças na conectividade entre os neurônios existentes. Todas essas mudanças são expressões de plasticidade, ou a capacidade do sistema nervoso de mudar. Há, atualmente, evidências suficientes para o fato de que os neurônios demonstram crescimento e mudanças na reação a novas experiências e aprendizado. Os neurônios existentes crescem através da expansão e ramificação dos dendritos que projetam-se para outros neurônios. Os neurônios se interconectam para formar redes neurais, que, por sua vez, se integram entre si para realizar tarefas cada vez mais complexas. Por exemplo, redes que participam da linguagem, emoção e memória interagem e se integram, permitindo que uma história emocionalmente significativa seja lembrada e contada com o afeto adequado, detalhes corretos e palavras apropriadas. Assinale o mecanismo também associado ao aprendizado, em complemento aos acima citados.",
           "options": [
             {
               "letter": "A",
@@ -1173,7 +1173,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2022.2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 35",
-          "text": "De acordo com a referência Kaplan & Sadock`s Comprenhensive Textbook of Psychiatry 10th edition Wolters Kluwer 2017, a neurociência afetiva moderna foca na importância de quatro regiões cerebrais na regulação de emoções normais: o córtex pré-frontal (PFC), o cingulado anterior (ACC), o hipocampo e a amígdala. O PFC é visto como a estrutura que detém representações de metas e respostas adequadas para a obtenção desses objetivos. Tais atividades são particularmente importantes quando múltiplas e conflitantes respostas comportamentais são possíveis ou quando é necessário anular a excitação afetiva. A reg ião dorsolateral do PFC é particularmente ativa na supressão de afetos negativos e é um componente -chave na rede de controle cognitivo (CCN). O PFC medial, juntamente com o cingulado posterior e hipocampo são importantes hubs na rede de modo padrão ou Defa ult Mode Network (DMN), um circuito interconectado de regiões que estão ativas durante a vigília de repouso, pensamento autorreferencial (ou seja, memória autobiográfica) ou devaneio acordado. A DMN parece mostrar hiperconectividade em transtornos depressi vos, o que predispõe a recordações negativas e a uma outra alteração. Assinale a alternativa que caracteriza tal alteração.",
+          "text": "De acordo com a referência Kaplan & Sadock`s Comprenhensive Textbook of Psychiatry 10th edition Wolters Kluwer 2017, a neurociência afetiva moderna foca na importância de quatro regiões cerebrais na regulação de emoções normais: o córtex pré-frontal (PFC), o cingulado anterior (ACC), o hipocampo e a amígdala. O PFC é visto como a estrutura que detém representações de metas e respostas adequadas para a obtenção desses objetivos. Tais atividades são particularmente importantes quando múltiplas e conflitantes respostas comportamentais são possíveis ou quando é necessário anular a excitação afetiva. A reg ião dorsolateral do PFC é particularmente ativa na supressão de afetos negativos e é um componente -chave na rede de controle cognitivo (CCN). O PFC medial, juntamente com o cingulado posterior e hipocampo são importantes hubs na rede de modo padrão ou Default Mode Network (DMN), um circuito interconectado de regiões que estão ativas durante a vigília de repouso, pensamento autorreferencial (ou seja, memória autobiográfica) ou devaneio acordado. A DMN parece mostrar hiperconectividade em transtornos depressi vos, o que predispõe a recordações negativas e a uma outra alteração. Assinale a alternativa que caracteriza tal alteração.",
           "options": [
             {
               "letter": "A",
@@ -1193,7 +1193,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "E",
-              "text": "Problemas metacognitivos."
+              "text": "Problemas meta cognitivos."
             }
           ],
           "correctAnswer": "D",
@@ -1207,7 +1207,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2022.2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 36",
-          "text": "De acordo com a ref erência Kaplan & Sadock`s Comprenhensive Textbook of Psychiatry 10th edition Wolters Kluwer 2017, a fisiopatologia do delirium permanece mal compreendida. Embora tenha havido pesquisas para encontrar um caminho comum final que explique todo o delirium dada a heterogeneidade das etiologias e as apresentações do delirium, pode não haver um mecanismo que abranja toda a síndrome. Perturbação na oferta de oxigênio cerebral versus demanda tem sido uma das teorias propostas para o delirium. O metabolismo oxidativo prejudicado parece ser um fator predisponente para o desenvolvimento posterior do delirium. Estudos de eletroencefalograma (EEG) demonstraram desaceleração difusa da atividade de fundo cortical, que não se correlaciona com causas subjacentes. Estudos neuropsicológicos e de neuroimagem revelam alterações generalizadas na função cortical superior, com disfunção no córtex pré -frontal, estruturas subcorticais, tálamo, núcleos da base, córtex frontal e temporoparietal, córtex fusiforme e giro lingual, particula rmente no lado não dominante. Existem duas hipóteses principais para o entendimento da complexa fisiopatologia do delirium. O primeiro se concentra em desequilíbrios neuroquímicos que afetam a neurotransmissão. Assinale o mecanismo potencialmente associado ao delirium por ação de citocinas proinflamatórias, incluindo interleucinas 1, 2, e 6, (IL-1, IL -2 e Il -6, respectivamente), fator de necrose tumoral -α (TNF -α), e interferon.",
+          "text": "De acordo com a referência Kaplan & Sadock`s Comprenhensive Textbook of Psychiatry 10th edition Wolters Kluwer 2017, a fisiopatologia do delirium permanece mal compreendida. Embora tenha havido pesquisas para encontrar um caminho comum final que explique todo o delirium dada a heterogeneidade das etiologias e as apresentações do delirium, pode não haver um mecanismo que abranja toda a síndrome. Perturbação na oferta de oxigênio cerebral versus demanda tem sido uma das teorias propostas para o delirium. O metabolismo oxidativo prejudicado parece ser um fator predisponente para o desenvolvimento posterior do delirium. Estudos de eletroencefalograma (EEG) demonstraram desaceleração difusa da atividade de fundo cortical, que não se correlaciona com causas subjacentes. Estudos neuropsicológicos e de neuroimagem revelam alterações generalizadas na função cortical superior, com disfunção no córtex pré-frontal, estruturas subcorticais, tálamo, núcleos da base, córtex frontal e temporoparietal, córtex fusiforme e giro lingual, particularmente no lado não dominante. Existem duas hipóteses principais para o entendimento da complexa fisiopatologia do delirium. O primeiro se concentra em desequilíbrios neuroquímicos que afetam a neurotransmissão. Assinale o mecanismo potencialmente associado ao delirium por ação de citocinas proinflamatórias, incluindo interleucinas 1, 2, e 6, (IL-1, IL -2 e Il -6, respectivamente), fator de necrose tumoral -α (TNF -α), e interferon.",
           "options": [
             {
               "letter": "A",
@@ -1241,7 +1241,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2022.2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 37",
-          "text": "De acordo com a referência Kaplan & Sadock`s Comprenhensive Textbook of Psychiatry 10th edition Wolters Kluwer 2017 os sinais, sintomas e expe riências subjetivas associadas à depressão há muito sugerem disfunção dos processos básicos do sistema nervoso central (SNC). Com relação à função cortical, a depressão envolve múltiplos distúrbios do processamento de informações. A maioria das pessoas deprimidas interpreta automaticamente experiências por uma perspectiva negativa, e seu acesso à memória é negativamente tendencioso. Em estados depressivos mais graves, as habilidades de cognição e resolução de problemas são ainda mais comprometidas pela baixa concentração e pela diminuição da capacidade de usar o pensamento abstrato. Um monólogo virtual de pensamentos e imagens negativas parece ser executado no “piloto automático”, e, ao contrário dos estados normais de tristeza, conversar com um confidente tem pouco efeito benéfico. Em casos mais extremos, delírios, alucinações, ou ambos, distorcem grosseiramente os testes de realidade. Essas alterações neurocognitivas apontam para disfunção envolvendo diversas estruturas. Dentre as seguintes, assinale a estr utura NÃO límbica envolvida nessa disfunção.",
+          "text": "De acordo com a referência Kaplan & Sadock`s Comprenhensive Textbook of Psychiatry 10th edition Wolters Kluwer 2017 os sinais, sintomas e experiências subjetivas associadas à depressão há muito sugerem disfunção dos processos básicos do sistema nervoso central (SNC). Com relação à função cortical, a depressão envolve múltiplos distúrbios do processamento de informações. A maioria das pessoas deprimidas interpreta automaticamente experiências por uma perspectiva negativa, e seu acesso à memória é negativamente tendencioso. Em estados depressivos mais graves, as habilidades de cognição e resolução de problemas são ainda mais comprometidas pela baixa concentração e pela diminuição da capacidade de usar o pensamento abstrato. Um monólogo virtual de pensamentos e imagens negativas parece ser executado no “piloto automático”, e, ao contrário dos estados normais de tristeza, conversar com um confidente tem pouco efeito benéfico. Em casos mais extremos, delírios, alucinações, ou ambos, distorcem grosseiramente os testes de realidade. Essas alterações neurocognitivas apontam para disfunção envolvendo diversas estruturas. Dentre as seguintes, assinale a estrutura NÃO límbica envolvida nessa disfunção.",
           "options": [
             {
               "letter": "A",
@@ -1275,7 +1275,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2022.2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 38",
-          "text": "De acordo com a referência Kaplan & Sadock`s Comprenhensive Textbook of Psychiatry 10th edition Wolters Kluwer 2017, os critérios clássicos para um composto químico ser considerado um neurotransmissor são: (a) síntese em um neurônio pré- sináptico, (b) armazenamento e liberação de um neurônio pré-sináptico, (c) ligação a um receptor em uma membrana pós -sináptica e (d) remoção da fissura sináptica por recaptação ou degradação. Nas últimas décadas, a descoberta de novos neurotransmissores levou a uma reformulação desses critérios rigorosos. Mensageiros como gases, canabinoides e eicosanoides não são armazenados em vesículas em neurônios pré-sinápticos, mas parecem ser gerados e liberados \"sob demanda\". Além disso, os endocanabinoides parecem ter um papel importante. Assinale, dentre as alternativas a seguir, aquela NÃO é característica dos endocanabinoides.",
+          "text": "De acordo com a referência Kaplan & Sadock`s Comprenhensive Textbook of Psychiatry 10th edition Wolters Kluwer 2017, os critérios clássicos para um composto químico ser considerado um neurotransmissor são: (a) síntese em um neurônio pré- sináptico, (b) armazenamento e liberação de um neurônio pré-sináptico, (c) ligação a um receptor em uma membrana pós-sináptica e (d) remoção da fissura sináptica por recaptação ou degradação. Nas últimas décadas, a descoberta de novos neurotransmissores levou a uma reformulação desses critérios rigorosos. Mensageiros como gases, canabinoides e eicosanoides não são armazenados em vesículas em neurônios pré-sinápticos, mas parecem ser gerados e liberados \"sob demanda\". Além disso, os endocanabinoides parecem ter um papel importante. Assinale, dentre as alternativas a seguir, aquela NÃO é característica dos endocanabinoides.",
           "options": [
             {
               "letter": "A",
@@ -1309,7 +1309,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2022.2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 39",
-          "text": "De acordo com a referência Kaplan & Sado ck`s Comprenhensive Textbook of Psychiatry 10th edition Wolters Kluwer 2017, aberrações epigenéticas (epimutações) podem se originar de três fontes, agindo individualmente ou em combinação: (1) herdadas por processos germinativos; (2) influência dos fatore s ambientais que atuam em diferentes estágios de desenvolvimento; ou (3) gerada através de eventos estocásticos biológicos. Tal modificação epigenética do DNA e proteínas cromossômicas pode ter um impacto significativo na regulação da expressão genética por meio de alterações neuroquímicas dependentes da idade e de influências hormonais, ao invés de mudanças estruturais no cérebro. Estudos recentes sugerem que este pode ser um modelo útil para entender melhor os aspectos do desenvolvimento da esquizofrenia. Um estudo de caso de dois pares de gêmeos monozigóticos (um par concordante para esquizofrenia e o outro discordante) encontrou uma alteração nos linfócitos do co -gêmeo afetado em comparação com o gêmeo não afetado. Além disso, o gêmeo afetado no par discordante era epigeneticamente mais semelhante aos gêmeos afetados não relacionados do que ao seu próprio gêmeo não afetado. Tais estudos epigenéticos podem promover a compreensão atual de como genes anormalmente expressos (desenvolvimento) afetam o desenvol vimento do fenótipo da psicose. Assinale o mecanismo epigenético associado ao risco de esquizofrenia.",
+          "text": "De acordo com a referência Kaplan & Sadock`s Comprenhensive Textbook of Psychiatry 10th edition Wolters Kluwer 2017, aberrações epigenéticas (epimutações) podem se originar de três fontes, agindo individualmente ou em combinação: (1) herdadas por processos germinativos; (2) influência dos fatore s ambientais que atuam em diferentes estágios de desenvolvimento; ou (3) gerada através de eventos estocásticos biológicos. Tal modificação epigenética do DNA e proteínas cromossômicas pode ter um impacto significativo na regulação da expressão genética por meio de alterações neuroquímicas dependentes da idade e de influências hormonais, ao invés de mudanças estruturais no cérebro. Estudos recentes sugerem que este pode ser um modelo útil para entender melhor os aspectos do desenvolvimento da esquizofrenia. Um estudo de caso de dois pares de gêmeos monozigóticos (um par concordante para esquizofrenia e o outro discordante) encontrou uma alteração nos linfócitos do co-gêmeo afetado em comparação com o gêmeo não afetado. Além disso, o gêmeo afetado no par discordante era epigeneticamente mais semelhante aos gêmeos afetados não relacionados do que ao seu próprio gêmeo não afetado. Tais estudos epigenéticos podem promover a compreensão atual de como genes anormalmente expressos (desenvolvimento) afetam o desenvol vimento do fenótipo da psicose. Assinale o mecanismo epigenético associado ao risco de esquizofrenia.",
           "options": [
             {
               "letter": "A",
@@ -1343,7 +1343,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2022.2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 40",
-          "text": "De acordo com a Referência Kaplan & Sadock`s Co mprenhensive Textbook of Psychiatry 10th edition Wolters Kluwer 2017, neurotransmissores são tipicamente inativados ou por recaptação pelos neurônios que os liberam ou por degradação por enzimas altamente específicas, como o exemplo de acetilcolina hidroli sada pela acetilcolinesterase (AChE.). Ao menos duas enzimas existem para degradar endocanabinoides e atenuar sua neurotransmissão. A amida hidrolase de ácidos graxos (FAAH) converte anandamida em ácido aracdônico e etanolamina. A FAAH é encontrada em regi ões do cérebro onde os receptores CB1 são predominantes, e localiza-se em neurônios pós -sinápticos onde a anandamida é sintetizada. A rápida degradação da anandamida explica, em parte, sua potência relativamente baixa em comparação com o THC. Confirmando um papel de FAAH na inativação de anandamida, ratos transgênicos sem FAAH exibem um aumento de 15 vezes nos níveis de anandamida, mas não de 2 -AG. Esses camundongos têm maiores respostas comportamentais à anandamida exógena, devido à diminuição da sua degra dação. O endocanabinoide 2 -AG é inativado pela FAAH, mas também por um monoacilglicerol lipase (MAGL) localizado em neurônios pré -sinápticos. Os inibidores farmacológicos da FAAH têm sido desenvolvidos como fármacos potencialmente destituídos dos efeitos indesejáveis do THC. Assinale o efeito desejável dos inibidores da FAAH como potenciais agentes terapêuticos.",
+          "text": "De acordo com a Referência Kaplan & Sadock`s Co mprenhensive Textbook of Psychiatry 10th edition Wolters Kluwer 2017, neurotransmissores são tipicamente inativados ou por recaptação pelos neurônios que os liberam ou por degradação por enzimas altamente específicas, como o exemplo de acetilcolina hidroli sada pela acetilcolinesterase (AChE.). Ao menos duas enzimas existem para degradar endocanabinoides e atenuar sua neurotransmissão. A amida hidrolase de ácidos graxos (FAAH) converte anandamida em ácido aracdônico e etanolamina. A FAAH é encontrada em regi ões do cérebro onde os receptores CB1 são predominantes, e localiza-se em neurônios pós-sinápticos onde a anandamida é sintetizada. A rápida degradação da anandamida explica, em parte, sua potência relativamente baixa em comparação com o THC. Confirmando um papel de FAAH na inativação de anandamida, ratos transgênicos sem FAAH exibem um aumento de 15 vezes nos níveis de anandamida, mas não de 2 -AG. Esses camundongos têm maiores respostas comportamentais à anandamida exógena, devido à diminuição da sua degra dação. O endocanabinoide 2 -AG é inativado pela FAAH, mas também por um monoacilglicerol lipase (MAGL) localizado em neurônios pré-sinápticos. Os inibidores farmacológicos da FAAH têm sido desenvolvidos como fármacos potencialmente destituídos dos efeitos indesejáveis do THC. Assinale o efeito desejável dos inibidores da FAAH como potenciais agentes terapêuticos.",
           "options": [
             {
               "letter": "A",
@@ -1377,7 +1377,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2022.2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 41",
-          "text": "De acordo com a Referência Kaplan & Sadock`s Comprenhensive Textbook of Psychiatry 10th edition Wolters Kluwer 2017, mudanças na força e eficiência da sinalização sináptica, denominada plasticidade sináptica, estão subjacentes a um dos mais importantes fundamentos neuroquímicos da aprendizagem e memória. Como esses processos desempenham um papel proeminente em uma variedade de transtornos psiquiátricos e psicoterapias, tem havido intenso interesse em definir os eventos celulares e moleculares que medeiam es ses processos. Como a plasticidade sináptica é dependente da atividade, várias vias de sinalização intraneuronais são importantes para coordenar essas mudanças. De fato, existem vários mecanismos que afetam cooperativamente a plasticidade sináptica, inclusive mudanças na liberação de neurotransmissores pré-sinápticos e mudanças na eficácia com a qual o neurônio pós - sináptico responde a esses neurotransmissores. Assinale o mecanismo pós -sináptico que é geralmente considerado um grande mediador para melhorar a eficácia sináptica e definido como um aumento na força de uma sinapse que dura de horas a vários dias e é considerado um dos principais mecanismos pelos quais as memórias são formadas e armazenadas no cérebro.",
+          "text": "De acordo com a Referência Kaplan & Sadock`s Comprenhensive Textbook of Psychiatry 10th edition Wolters Kluwer 2017, mudanças na força e eficiência da sinalização sináptica, denominada plasticidade sináptica, estão subjacentes a um dos mais importantes fundamentos neuroquímicos da aprendizagem e memória. Como esses processos desempenham um papel proeminente em uma variedade de transtornos psiquiátricos e psicoterapias, tem havido intenso interesse em definir os eventos celulares e moleculares que medeiam es ses processos. Como a plasticidade sináptica é dependente da atividade, várias vias de sinalização intraneuronais são importantes para coordenar essas mudanças. De fato, existem vários mecanismos que afetam cooperativamente a plasticidade sináptica, inclusive mudanças na liberação de neurotransmissores pré-sinápticos e mudanças na eficácia com a qual o neurônio pós - sináptico responde a esses neurotransmissores. Assinale o mecanismo pós-sináptico que é geralmente considerado um grande mediador para melhorar a eficácia sináptica e definido como um aumento na força de uma sinapse que dura de horas a vários dias e é considerado um dos principais mecanismos pelos quais as memórias são formadas e armazenadas no cérebro.",
           "options": [
             {
               "letter": "A",
@@ -1411,7 +1411,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2022.2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 42",
-          "text": "De acordo com a referência Kaplan & Sadock`s Comprenhensive Textbook of Psychiatry 10th edition Wolters Kluwer 2017, o DSM -5 define a agorafobia caracterizada pelo medo ou ansiedade em múltiplas situações públicas, sejam elas entre multidões ou simplesmente estando sozinhas. Mais especificamente, pacientes com agorafobia temem esses ambien tes porque sentem que, se desenvolvessem uma condição assustadora ou humilhante, seriam incapazes de obter ajuda ou escapar rapidamente do ambiente. O medo ou ansiedade é, de acordo com o DSM -5, \"fora de proporção\" com relação à ameaça real. A manifestação comportamental em resposta a esse medo é a evitação. Pacientes com agorafobia podem desenvolver sintomas \"semelhantes ao pânico\", conforme o DSM -5. Os pacientes também podem ter outros sintomas psicossomáticos, muitas vezes gastrointestinais ou autônomos, associados ao medo ou à ansiedade. Essa combinação de medo e sintomas psicossomáticos leva a uma grande disfunção em vários aspectos da vida. Com a cronificação da agorafobia os pacientes podem, eventualmente, vir a evitar todo tipo de emprego e interaçõe s sociais presenciais. Assinale a característica comportamental associada à agorafobia.",
+          "text": "De acordo com a referência Kaplan & Sadock`s Comprenhensive Textbook of Psychiatry 10th edition Wolters Kluwer 2017, o DSM -5 define a agorafobia caracterizada pelo medo ou ansiedade em múltiplas situações públicas, sejam elas entre multidões ou simplesmente estando sozinhas. Mais especificamente, pacientes com agorafobia temem esses ambien tes porque sentem que, se desenvolvessem uma condição assustadora ou humilhante, seriam incapazes de obter ajuda ou escapar rapidamente do ambiente. O medo ou ansiedade é, de acordo com o DSM -5, \"fora de proporção\" com relação à ameaça real. A manifestação comportamental em resposta a esse medo é a evitação. Pacientes com agorafobia podem desenvolver sintomas \"semelhantes ao pânico\", conforme o DSM -5. Os pacientes também podem ter outros sintomas psicossomáticos, muitas vezes gastrointestinais ou autônomos, associados ao medo ou à ansiedade. Essa combinação de medo e sintomas psicossomáticos leva a uma grande disfunção em vários aspectos da vida. Com a cronificação da agorafobia os pacientes podem, eventualmente, vir a evitar todo tipo de emprego e interações sociais presenciais. Assinale a característica comportamental associada à agorafobia.",
           "options": [
             {
               "letter": "A",
@@ -1547,7 +1547,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2022.2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 46",
-          "text": "De acordo com a referência Kaplan & Sadock`s Comprenhensive Textbook of Psychiatry 10th edition Wolters Kluwer 2017, \"medo\" e \"ansiedade\" têm sido distinguidos tanto em bases temporais quanto espaciais. Do ponto de vista temporal, o medo refere-se à resposta aguda e imediata ao perigo iminente e repentino, enquanto a ansiedade se refere à resposta sustentada e insidiosa ao perigo, e pode se manifestar quando o grau em que uma ameaça está presente permanece ambíguo. Do ponto de vista espacial, o medo refere -se à resposta aguda às ameaças proximais, enquanto a ansiedade refere-se à resposta a ameaças distais. Quando uma ameaça aguda e proximal é avaliada como particularmente perigosa e dispara uma série de reações cognitivas comportamentais e autonômicas agudas, o estado emocional provocado no organismo pode ser melhor caracterizado como:",
+          "text": "De acordo com a referência Kaplan & Sadock`s Comprenhensive Textbook of Psychiatry 10th edition Wolters Kluwer 2017, \"medo\" e \"ansiedade\" têm sido distinguidos tanto em bases temporais quanto espaciais. Do ponto de vista temporal, o medo refere-se à resposta aguda e imediata ao perigo iminente e repentino, enquanto a ansiedade se refere à resposta sustentada e insidiosa ao perigo, e pode se manifestar quando o grau em que uma ameaça está presente permanece ambíguo. Do ponto de vista espacial, o medo refere-se à resposta aguda às ameaças proximais, enquanto a ansiedade refere-se à resposta a ameaças distais. Quando uma ameaça aguda e proximal é avaliada como particularmente perigosa e dispara uma série de reações cognitivas comportamentais e autonômicas agudas, o estado emocional provocado no organismo pode ser melhor caracterizado como:",
           "options": [
             {
               "letter": "A",
@@ -1615,7 +1615,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2022.2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 48",
-          "text": "De acordo com a referência Kaplan & Sadock`s Comprenhensive Textbook of Psychiatry 10th edition Wolters Kluwer 2017, em situações fisiológicas um neurônio pré-sináptico típico que contém dopamina ou glutamato libera seu neurotransmissor, o que leva à despolarização do neurônio pós -sináptico. Este segundo neurônio pode liberar endocanabinóides que difundem-se através da fissura sináptica e inibem a liberação de neurotransmissor adicional do neurônio pré-sináptico. Além disso, endocanabinóides também foram implicados na regulação de vários processos de neurotransmissão, como a Supressão Induzida por Despolarização (DSE). Conforme exposto, a capacidade dos endoca nabinoides de inibir a liberação de neurotransmissores pode ser um importante mecanismo geral pelo qual a neurotransmissão é regulada. Com relação a essas funções dos endocanabinoides, assinale a alternativa correta.",
+          "text": "De acordo com a referência Kaplan & Sadock`s Comprenhensive Textbook of Psychiatry 10th edition Wolters Kluwer 2017, em situações fisiológicas um neurônio pré-sináptico típico que contém dopamina ou glutamato libera seu neurotransmissor, o que leva à despolarização do neurônio pós-sináptico. Este segundo neurônio pode liberar endocanabinóides que difundem-se através da fissura sináptica e inibem a liberação de neurotransmissor adicional do neurônio pré-sináptico. Além disso, endocanabinóides também foram implicados na regulação de vários processos de neurotransmissão, como a Supressão Induzida por Despolarização (DSE). Conforme exposto, a capacidade dos endoca nabinoides de inibir a liberação de neurotransmissores pode ser um importante mecanismo geral pelo qual a neurotransmissão é regulada. Com relação a essas funções dos endocanabinoides, assinale a alternativa correta.",
           "options": [
             {
               "letter": "A",
@@ -1683,7 +1683,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2022.2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 50",
-          "text": "De acordo com a referência Kaplan & Sadock`s Comprenhensive Textbook of Psychiatry 10th edition W olters Kluwer 2017, acredita-se que o córtex cingulado anterior (ACC) sirva como ponto de integração de aferências atencionais e emocionais. Foram identificadas duas subdivisões do ACC: uma subdivisão afetiva nas regiões rostral e ventral da ACC e uma subdivisão cognitiva envolvendo o ACC dorsal. A primeira subdivisão compartilha extensas conexões com outras regiões límbicas, e esta última interage mais com o córtex pré- frontal (PFC) e outras regiões corticais. Propõe - se que a ativação do ACC como parte de uma rede de controle cognitivo (CCN) facilite o controle ativo da excitação emocional, particularmente quando a realização de metas foi frustrada ou quando novos problemas foram encontrados. Com relação à Rede de Controle Cognitivo (CCN), há evidências de que a conectividade entre os componentes da CCN é diminuída em estados depressivos e, se persistente, essa diminuição da conectividade não pode contribuir para:",
+          "text": "De acordo com a referência Kaplan & Sadock`s Comprenhensive Textbook of Psychiatry 10th edition Wolters Kluwer 2017, acredita-se que o córtex cingulado anterior (ACC) sirva como ponto de integração de aferências atencionais e emocionais. Foram identificadas duas subdivisões do ACC: uma subdivisão afetiva nas regiões rostral e ventral da ACC e uma subdivisão cognitiva envolvendo o ACC dorsal. A primeira subdivisão compartilha extensas conexões com outras regiões límbicas, e esta última interage mais com o córtex pré- frontal (PFC) e outras regiões corticais. Propõe - se que a ativação do ACC como parte de uma rede de controle cognitivo (CCN) facilite o controle ativo da excitação emocional, particularmente quando a realização de metas foi frustrada ou quando novos problemas foram encontrados. Com relação à Rede de Controle Cognitivo (CCN), há evidências de que a conectividade entre os componentes da CCN é diminuída em estados depressivos e, se persistente, essa diminuição da conectividade não pode contribuir para:",
           "options": [
             {
               "letter": "A",
@@ -1730,7 +1730,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2023.1 Modelo 2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 1",
-          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, a Doença de Alzheimer (DA) é um processo neurodegenerativo lento e irreversível, progressivo, compl exo e multifatorial, que representa a causa mais comum de demência em populações mais velhas, além de ser um problema mundial de saúde. O risco de desenvolver DA aumenta significativamente após os 65 anos de idade, podendo chegar a 30% em indivíduos com ma is de 85 anos. Sendo o envelhecimento o principal fator de risco, sua prevalência aumenta com a longevidade. Cerca de 95% dos pacientes hospitalizados com DA apresentam a forma esporádica, conhecida como DA de início tardio (DAIT). A patologia da DAIT é mu ltifatorial e resulta da interação de fatores biológicos, genéticos, epigenéticos e ambientais. A herdabilidade estimada de DAIT é de 60 - 80%. Dentre os fatores genéticos, o mais fortemente associado à DAIT é:",
+          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, a Doença de Alzheimer (DA) é um processo neurodegenerativo lento e irreversível, progressivo, complexo e multifatorial, que representa a causa mais comum de demência em populações mais velhas, além de ser um problema mundial de saúde. O risco de desenvolver DA aumenta significativamente após os 65 anos de idade, podendo chegar a 30% em indivíduos com ma is de 85 anos. Sendo o envelhecimento o principal fator de risco, sua prevalência aumenta com a longevidade. Cerca de 95% dos pacientes hospitalizados com DA apresentam a forma esporádica, conhecida como DA de início tardio (DAIT). A patologia da DAIT é mu ltifatorial e resulta da interação de fatores biológicos, genéticos, epigenéticos e ambientais. A herdabilidade estimada de DAIT é de 60 - 80%. Dentre os fatores genéticos, o mais fortemente associado à DAIT é:",
           "options": [
             {
               "letter": "A",
@@ -1764,7 +1764,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2023.1 Modelo 2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 2",
-          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, para qualquer especialidade médica, o modelo diagnóstico passa por estágios sequenciais, que são am parados pela evidência científica crescente relacionada ao conhecimento da natureza das doenças em questão. No primeiro estágio (pré -sindrômico), o mais \"primitivo\", o diagnóstico é baseado na presença ou na ausência de um sintoma-chave. Sua presença confirma e sua ausência descarta a doença em questão. No estágio II (sindrômico), o diagnóstico é determinado a partir da presença de um conjunto de sintomas que se agregam em síndromes, as quais apresentam uma história natural conhecida. No estágio III (fisiop atológico), há uma fisiopatologia subjacente detectável para cada entidade nosológica proposta. Por fim, no estágio IV (etiológico), além de um simples entendimento dos aspectos fisiopatológicos, a etiologia também é conhecida. Poucas especialidades médicas se encontram no estágio IV, o mais avançado paradigma diagnóstico a maioria se encontra no paradigma fisiopatológico. Dada a complexidade do cérebro, o órgão primariamente afetado nas doenças psiquiátricas, a psiquiatria ainda encara importantes desafios no desenvolvimento diagnóstico, a despeito de consideráveis avanços no entendimento de diversos mecanismos neurobiológicos envolvidos tanto em processos fisiológicos quanto em processos patológicos, que são acompanhados de manifestações psicopatológicas. De acordo com tais definições é possível considerar que a psiquiatria se encontre no estágio:",
+          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, para qualquer especialidade médica, o modelo diagnóstico passa por estágios sequenciais, que são am parados pela evidência científica crescente relacionada ao conhecimento da natureza das doenças em questão. No primeiro estágio (pré-sindrômico), o mais \"primitivo\", o diagnóstico é baseado na presença ou na ausência de um sintoma-chave. Sua presença confirma e sua ausência descarta a doença em questão. No estágio II (sindrômico), o diagnóstico é determinado a partir da presença de um conjunto de sintomas que se agregam em síndromes, as quais apresentam uma história natural conhecida. No estágio III (fisiopatológico), há uma fisiopatologia subjacente detectável para cada entidade nosológica proposta. Por fim, no estágio IV (etiológico), além de um simples entendimento dos aspectos fisiopatológicos, a etiologia também é conhecida. Poucas especialidades médicas se encontram no estágio IV, o mais avançado paradigma diagnóstico a maioria se encontra no paradigma fisiopatológico. Dada a complexidade do cérebro, o órgão primariamente afetado nas doenças psiquiátricas, a psiquiatria ainda encara importantes desafios no desenvolvimento diagnóstico, a despeito de consideráveis avanços no entendimento de diversos mecanismos neurobiológicos envolvidos tanto em processos fisiológicos quanto em processos patológicos, que são acompanhados de manifestações psicopatológicas. De acordo com tais definições é possível considerar que a psiquiatria se encontre no estágio:",
           "options": [
             {
               "letter": "A",
@@ -1798,7 +1798,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2023.1 Modelo 2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 3",
-          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, as representações dimensionais das doenças psiquiátricas demonstraram melhorar substancialmente a validade modesta (muitas vezes, questionável) do diagnóstico em psiquiatria, para além das medidas categoriais, como da CID e do DSM. Os Critérios de Domínios de Pesquisa (RDoC, do inglês Research Domain Criteria) foram elaborados, em 2009, pelo National Institute of Mental Health (NIMH), e propõem identificar novos alvos terapêuticos e determinar subgrupos biologicamente homogêneos, com o intuito de individualizar o tratamento e melhorar a comunicação entre a pesquisa e as decisões clínicas. Têm como premissas fundamentais que os transtornos mentais são doenças cerebrais, resultantes de disfunções de circuitos neuronais específicos, anormalidades que são passíveis de serem identificadas por exames, como de neuroimagem e neurofisiologia. Preveem a utilização de biomarcadores para o refinamento diagnóstico e direcionamento da prática clínica, sem necessariamente abandonar ou substituir as classificações categoriais. Nesse modelo estrutural, o RDoC compartilha e atualiza o modelo anteriormente descrito de Robins e Guze que já incluía descrição clínica, avaliação laboratorial, delimitação, avaliações de seguimento e estudos genéticos. O conceito do RDoC reúne tanto as funções psíquicas (sistemas e valências) e as análises biológicas, como genética, circuitos neuro nais, fisiologia, comportamento, mecanismos celulares e moleculares quanto o autorrelato do paciente (classes de variáveis ou construtos). O sistema RDOC é composto por seis domínios principais. A subdivisão do domínio de sistemas cognitivos que pode ser d efinida como o processo de compartilhamento de representações simbólicas, cujas alterações podem ocorrer em vários quadros neuropsiquiátricos e está bastante relacionada com outros domínios cognitivos, afetivos e sociais é denominada:",
+          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, as representações dimensionais das doenças psiquiátricas demonstraram melhorar substancialmente a validade modesta (muitas vezes, questionável) do diagnóstico em psiquiatria, para além das medidas categoriais, como da CID e do DSM. Os Critérios de Domínios de Pesquisa (RDoC, do inglês Research Domain Criteria) foram elaborados, em 2009, pelo National Institute of Mental Health (NIMH), e propõem identificar novos alvos terapêuticos e determinar subgrupos biologicamente homogêneos, com o intuito de individualizar o tratamento e melhorar a comunicação entre a pesquisa e as decisões clínicas. Têm como premissas fundamentais que os transtornos mentais são doenças cerebrais, resultantes de disfunções de circuitos neuronais específicos, anormalidades que são passíveis de serem identificadas por exames, como de neuroimagem e neurofisiologia. Preveem a utilização de biomarcadores para o refinamento diagnóstico e direcionamento da prática clínica, sem necessariamente abandonar ou substituir as classificações categoriais. Nesse modelo estrutural, o RDoC compartilha e atualiza o modelo anteriormente descrito de Robins e Guze que já incluía descrição clínica, avaliação laboratorial, delimitação, avaliações de seguimento e estudos genéticos. O conceito do RDoC reúne tanto as funções psíquicas (sistemas e valências) e as análises biológicas, como genética, circuitos neuro nais, fisiologia, comportamento, mecanismos celulares e moleculares quanto o autorrelato do paciente (classes de variáveis ou construtos). O sistema RDOC é composto por seis domínios principais. A subdivisão do domínio de sistemas cognitivos que pode ser definida como o processo de compartilhamento de representações simbólicas, cujas alterações podem ocorrer em vários quadros neuropsiquiátricos e está bastante relacionada com outros domínios cognitivos, afetivos e sociais é denominada:",
           "options": [
             {
               "letter": "A",
@@ -1900,7 +1900,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2023.1 Modelo 2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 6",
-          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2021, estudos pré -clínicos com Estimulação Cerebral Profunda (ECP) no córtex pré-frontal ventromedial (CPFvm) evidenciaram efeitos do tipo antidepressivo, somados a alterações nos níveis de noradrenalina no local da estimulação. A ECP parece ativar as áreas relacionadas à modulação das projeções neuronais pré-frontais, que estariam envolvidas na síntese e na liberação da noradrenalina. Em um estudo duplo-cego, randomizado, com controle simulado e seis meses de seguimento em pacientes com diagnóstico de Transtorno Depressivo Resistente (TDR) submetidos à ECP no córtex cingulado anterior (CCA), quatro dos cinco pacientes apresentaram remissão do s sintomas, e nenhum deles apresentou recaída. Embora o estudo apresente uma amostra pequena, demonstrou resultados interessantes quando comparados ao grupo -controle. Com relação aos critérios de inclusão e exclusão sugeridos para elegibilidade de pacientes com Depressão para ECP, assinale a reposta que constitui critério de exclusão.",
+          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2021, estudos pré-clínicos com Estimulação Cerebral Profunda (ECP) no córtex pré-frontal ventromedial (CPFvm) evidenciaram efeitos do tipo antidepressivo, somados a alterações nos níveis de noradrenalina no local da estimulação. A ECP parece ativar as áreas relacionadas à modulação das projeções neuronais pré-frontais, que estariam envolvidas na síntese e na liberação da noradrenalina. Em um estudo duplo-cego, randomizado, com controle simulado e seis meses de seguimento em pacientes com diagnóstico de Transtorno Depressivo Resistente (TDR) submetidos à ECP no córtex cingulado anterior (CCA), quatro dos cinco pacientes apresentaram remissão do s sintomas, e nenhum deles apresentou recaída. Embora o estudo apresente uma amostra pequena, demonstrou resultados interessantes quando comparados ao grupo -controle. Com relação aos critérios de inclusão e exclusão sugeridos para elegibilidade de pacientes com Depressão para ECP, assinale a reposta que constitui critério de exclusão.",
           "options": [
             {
               "letter": "A",
@@ -1994,7 +1994,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2023.1 Modelo 2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 9",
-          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022. a neurobiologia do autismo vem sendo foco de inúmeros estudos, utilizando modalidades como eletroencefalograma e ressonância magnética, e diversas técnicas. Estudos que utilizam desenhos prospectivos, ou seja, avaliam as mesmas crianças ao longo do tempo, apontam para desenvolvimento anormal do cérebro, com início precoce, antes mesmo das manifestações clínicas do autismo. Ao longo do desenvolvimento, é natural que exista um processo de redução de sinapses nos primeiros meses de vida, mas estudos mostram, de maneira consistente, que autistas a presentam um padrão oposto de crescimento cerebral nos primeiros meses e anos de vida. Tal desenvolvimento acelerado na infância inicial associa -se a um padrão de conectividade alterado entre os diferentes circuitos cerebrais. O cérebro autista é, em geral , caracterizado por uma alteração específica da conectividade global associada a aumento da conectividade em certos hubs, sendo estes, no geral, em áreas subcorticais e nos córtices frontal ou occipital. Esses dados sugerem que haja:",
+          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022. a neurobiologia do autismo vem sendo foco de inúmeros estudos, utilizando modalidades como eletroencefalograma e ressonância magnética, e diversas técnicas. Estudos que utilizam desenhos prospectivos, ou seja, avaliam as mesmas crianças ao longo do tempo, apontam para desenvolvimento anormal do cérebro, com início precoce, antes mesmo das manifestações clínicas do autismo. Ao longo do desenvolvimento, é natural que exista um processo de redução de sinapses nos primeiros meses de vida, mas estudos mostram, de maneira consistente, que autistas a presentam um padrão oposto de crescimento cerebral nos primeiros meses e anos de vida. Tal desenvolvimento acelerado na infância inicial associa-se a um padrão de conectividade alterado entre os diferentes circuitos cerebrais. O cérebro autista é, em geral , caracterizado por uma alteração específica da conectividade global associada a aumento da conectividade em certos hubs, sendo estes, no geral, em áreas subcorticais e nos córtices frontal ou occipital. Esses dados sugerem que haja:",
           "options": [
             {
               "letter": "A",
@@ -2030,7 +2030,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2023.1 Modelo 2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 10",
-          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, o Critério B2 para o diagnóstico do TEA inclui quatro grupos de sintomas caracterizados por sequênc ias específicas não usuais e múltiplas de comportamento (rituais ao adormecer apenas se excessivos ou não usuais), insistência em seguir rigidamente rotinas específicas; questionamento repetitivo sobre determinado tópico, rituais verbais, compulsões; dificuldades em transições (atípico para estágio desenvolvimental), reações excessivas a mudanças triviais e inabilidade para entender humor, para entender aspectos não literais do discurso, como ironia ou sentido implícito, seguimento excessivamente rígido e inflexível de comportamento ou pensamento. Assinale a alternativa que NÃO caracteriza um critério desse grupo.",
+          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, o Critério B2 para o diagnóstico do TEA inclui quatro grupos de sintomas caracterizados por sequências específicas não usuais e múltiplas de comportamento (rituais ao adormecer apenas se excessivos ou não usuais), insistência em seguir rigidamente rotinas específicas; questionamento repetitivo sobre determinado tópico, rituais verbais, compulsões; dificuldades em transições (atípico para estágio desenvolvimental), reações excessivas a mudanças triviais e inabilidade para entender humor, para entender aspectos não literais do discurso, como ironia ou sentido implícito, seguimento excessivamente rígido e inflexível de comportamento ou pensamento. Assinale a alternativa que NÃO caracteriza um critério desse grupo.",
           "options": [
             {
               "letter": "A",
@@ -2064,7 +2064,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2023.1 Modelo 2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 11",
-          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022. A teoria serotoninérgica das psicoses surgiu a partir da observação de que vários agentes alucinógenos apresentavam ação agonista ou agonista parcial em receptores 5-HT2A, como o LSD e a mescalina. Posteriormente, o papel da serotonina foi reforçado, pois a maior parte dos antipsicóticos de segunda geração apresentava importante antagonismo 5 -HT2A. Suge riu-se que essa ação poderia explicar o melhor perfil de efeitos colaterais, em especial, o menor risco de sintomas extrapiramidais (SEPs). Esse efeito seria explicado por interações entre a transmissão dopaminérgica e serotoninérgica. A teoria serotoninérgica postula que existe excesso de liberação de serotonina pelos receptores 5 -HT2A e/ou aumento de sua expressão na região cortical, o que causaria liberação subsequente de glutamato. Por sua vez, o aumento de glutamato em neurônios projetados para a área tegumentar ventral poderia então hiperativar a via mesolimbica, causando delírios ou alucinações auditivas. Essa hiperativação da área tegmental ventral (ATV) e os consequentes sintomas psicóticos está relacionada ao aumento da atividade do neurotransmissor:",
+          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022. A teoria serotoninérgica das psicoses surgiu a partir da observação de que vários agentes alucinógenos apresentavam ação agonista ou agonista parcial em receptores 5-HT2A, como o LSD e a mescalina. Posteriormente, o papel da serotonina foi reforçado, pois a maior parte dos antipsicóticos de segunda geração apresentava importante antagonismo 5 -HT2A. Sugeriu-se que essa ação poderia explicar o melhor perfil de efeitos colaterais, em especial, o menor risco de sintomas extrapiramidais (SEPs). Esse efeito seria explicado por interações entre a transmissão dopaminérgica e serotoninérgica. A teoria serotoninérgica postula que existe excesso de liberação de serotonina pelos receptores 5 -HT2A e/ou aumento de sua expressão na região cortical, o que causaria liberação subsequente de glutamato. Por sua vez, o aumento de glutamato em neurônios projetados para a área tegumentar ventral poderia então hiperativar a via mesolimbica, causando delírios ou alucinações auditivas. Essa hiperativação da área tegmental ventral (ATV) e os consequentes sintomas psicóticos está relacionada ao aumento da atividade do neurotransmissor:",
           "options": [
             {
               "letter": "A",
@@ -2120,7 +2120,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2023.1 Modelo 2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 13",
-          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, até o momento, os mecanismos que levam ao surgimento da Esquizofrenia Resistente ao Tratamento (ERT ) ainda não foram totalmente compreendidos. Diversas hipóteses, no entanto, tentam explicá -los. Uma das principais seria a teoria da hipersensibilidade dopaminérgica, onde o bloqueio contínuo dos receptores D2 dopaminérgicos pelo uso de antipsicóticos levaria a um aumento do seu número ou de sua afinidade à dopamina. Tal teoria explicaria a resistência ao tratamento tardia, quando existe melhora sintomática inicial, porém, após algum tempo, a resposta cessa, e o indivíduo se torna resistente. Outra hipótese importante seria a de uma disfunção nos receptores de glutamato em indivíduos com síntese dopaminérgica normal, o que explicaria por que alguns pacientes já não apresentam resposta mínima ao tratamento com antipsicóticos desde o início da doença. Reforçando essa hipótese, um estudo longitudinal recente mostrou que indivíduos com ERT que tiveram melhora sintomática após 12 semanas de tratamento com a clozapina apresentaram maior redução dos níveis de glutamato no núcleo caudado. Melhor compreensão da neurobiologia da ERT pode ter implicações para tratamentos futuros, como o desenvolvimento de fármacos com ações em alvos não dopaminérgicos. Postula -se que essa disfunção glutamatérgica atinja heterorreceptores localizados em neurônios específicos. Assinale a alternativa que corresponde a tais neurônios.",
+          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, até o momento, os mecanismos que levam ao surgimento da Esquizofrenia Resistente ao Tratamento (ERT ) ainda não foram totalmente compreendidos. Diversas hipóteses, no entanto, tentam explicá-los. Uma das principais seria a teoria da hipersensibilidade dopaminérgica, onde o bloqueio contínuo dos receptores D2 dopaminérgicos pelo uso de antipsicóticos levaria a um aumento do seu número ou de sua afinidade à dopamina. Tal teoria explicaria a resistência ao tratamento tardia, quando existe melhora sintomática inicial, porém, após algum tempo, a resposta cessa, e o indivíduo se torna resistente. Outra hipótese importante seria a de uma disfunção nos receptores de glutamato em indivíduos com síntese dopaminérgica normal, o que explicaria por que alguns pacientes já não apresentam resposta mínima ao tratamento com antipsicóticos desde o início da doença. Reforçando essa hipótese, um estudo longitudinal recente mostrou que indivíduos com ERT que tiveram melhora sintomática após 12 semanas de tratamento com a clozapina apresentaram maior redução dos níveis de glutamato no núcleo caudado. Melhor compreensão da neurobiologia da ERT pode ter implicações para tratamentos futuros, como o desenvolvimento de fármacos com ações em alvos não dopaminérgicos. Postula-se que essa disfunção glutamatérgica atinja heterorreceptores localizados em neurônios específicos. Assinale a alternativa que corresponde a tais neurônios.",
           "options": [
             {
               "letter": "A",
@@ -2182,7 +2182,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2023.1 Modelo 2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 15",
-          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, com relação ao Transtorno Depressivo Maior (TDM), as neurotrofinas são consideradas reguladoras fun damentais da proliferação, migração, maturação e sobrevivência das células durante o desenvolvimento, mas também são expressas no cérebro adulto regulando a plasticidade sináptica, a função e a sobrevivência dos neurônios. As mais bem estudadas pertencem à família do fator de crescimento neural (NGF, do inglês nerve growth factor), dentre as quais a mais expressa é o BDNF. Outras proteínas dessa família são o próprio NGF, a neurotrofina -3 e a neurotrofina -4. Exposição crônica a estressores tem como consequência diminuição da expressão de BDNF no córtex pré-frontal e no hipocampo, resultando em redução de sinapses e atrofia neuronal nessas regiões. Além disso, o TDM está associado à atrofia nessas mesmas regiões cerebrais. Já o uso de antidepressivos resulta em aumento do BDNF em tais regiões. Esses achados embasam a teoria neurotrófica da depressão, descrita inicialmente em 1997. Segundo essa hipótese, a exposição crônica a estressores diminui a expressão do BDNF no córtex pré-frontal e em regiões límbicas, como o hipocampo, resultando em perda de sinapses e atrofia de neurônios. Estudos avaliando os efeitos dos antidepressivos sobre o BDNF corroboram essa hipótese. Assinale a alternativa compatível com essa teoria e achados descritos.",
+          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, com relação ao Transtorno Depressivo Maior (TDM), as neurotrofinas são consideradas reguladoras fun da mentais da proliferação, migração, maturação e sobrevivência das células durante o desenvolvimento, mas também são expressas no cérebro adulto regulando a plasticidade sináptica, a função e a sobrevivência dos neurônios. As mais bem estudadas pertencem à família do fator de crescimento neural (NGF, do inglês nerve growth factor), dentre as quais a mais expressa é o BDNF. Outras proteínas dessa família são o próprio NGF, a neurotrofina -3 e a neurotrofina -4. Exposição crônica a estressores tem como consequência diminuição da expressão de BDNF no córtex pré-frontal e no hipocampo, resultando em redução de sinapses e atrofia neuronal nessas regiões. Além disso, o TDM está associado à atrofia nessas mesmas regiões cerebrais. Já o uso de antidepressivos resulta em aumento do BDNF em tais regiões. Esses achados embasam a teoria neurotrófica da depressão, descrita inicialmente em 1997. Segundo essa hipótese, a exposição crônica a estressores diminui a expressão do BDNF no córtex pré-frontal e em regiões límbicas, como o hipocampo, resultando em perda de sinapses e atrofia de neurônios. Estudos avaliando os efeitos dos antidepressivos sobre o BDNF corroboram essa hipótese. Assinale a alternativa compatível com essa teoria e achados descritos.",
           "options": [
             {
               "letter": "A",
@@ -2216,7 +2216,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2023.1 Modelo 2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 16",
-          "text": "a De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022., estudos de neuroimagem estrutural em indivíduos deprimidos identificaram redução no volume de dive rsas estruturas da substância cinzenta, com aumento da razão ventrículos -cérebro e redução do lobo frontal. Assinale a alternativa que NÃO constitui uma dessas regiões.",
+          "text": "a De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022., estudos de neuroimagem estrutural em indivíduos deprimidos identificaram redução no volume de diversas estruturas da substância cinzenta, com aumento da razão ventrículos -cérebro e redução do lobo frontal. Assinale a alternativa que NÃO constitui uma dessas regiões.",
           "options": [
             {
               "letter": "A",
@@ -2316,7 +2316,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2023.1 Modelo 2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 19",
-          "text": "a De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022. os transtornos de ansiedade são um grupo diversificado de condições, e a compreensão atual dos meca nismos neurofisiopatológicos subjacentes a eles reflete essa heterogeneidade. No entanto, algumas generalidades em relação à neurobiologia do medo e da ansiedade são conhecidas. Por exemplo, sabe -se que, quando estímulos ambientais são interpretados como a meaçadores, surge a ansiedade. Para que essa interpretação ocorra, uma pessoa deve primeiro detectar que os estímulos existem por meio de seus sistemas sensoriais, por meio do córtex sensorial, do tálamo e dos colículos superior e inferior. Uma vez que ame aças importantes são detectadas, ocorre uma interpretação do estímulo que é, em parte, determinada pela experiência anterior do indivíduo e inclui a atribuição de valência ao estímulo. Assinale a estrutura associada a circuitos envolvidos a essa atribuição.",
+          "text": "a De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022. os transtornos de ansiedade são um grupo diversificado de condições, e a compreensão atual dos meca nismos neurofisiopatológicos subjacentes a eles reflete essa heterogeneidade. No entanto, algumas generalidades em relação à neurobiologia do medo e da ansiedade são conhecidas. Por exemplo, sabe-se que, quando estímulos ambientais são interpretados como a meaçadores, surge a ansiedade. Para que essa interpretação ocorra, uma pessoa deve primeiro detectar que os estímulos existem por meio de seus sistemas sensoriais, por meio do córtex sensorial, do tálamo e dos colículos superior e inferior. Uma vez que ame aças importantes são detectadas, ocorre uma interpretação do estímulo que é, em parte, determinada pela experiência anterior do indivíduo e inclui a atribuição de valência ao estímulo. Assinale a estrutura associada a circuitos envolvidos a essa atribuição.",
           "options": [
             {
               "letter": "A",
@@ -2386,7 +2386,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2023.1 Modelo 2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 21",
-          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, embora seja majoritariamente uma doença do trato respiratório, a doença infecciosa do coronavírus ( COVID-19) tem associação causal com uma infinidade de condições neuropsiquiátricas e uma parcela significativa dos pacientes com COVID -19 desenvolve sintomas neuropsiquiátricos. Essas manifestações psiquiátricas incluem encefalopatia, delirium, comprometim ento cognitivo leve, alterações de humor, insônia, ideação suicida, episódios de mania e psicose. Pouco se sabe acerca da fisiopatologia das manifestações neuropsiquiátricas causadas pelo coronavirus. Evidências mostram que tais repercussões referem -se a t ranstornos mentais ocasionados por sequelas de lesão ou doença cerebral, que podem surgir de efeitos diretos da infecção do sistema nervoso central (SNC), ou por uma resposta imune ou terapia médica. Apesar de dados e estudos limitados sobre apresentações neuropsiquiátricas como resultado da COVID-19, sabe- se que alguns sintomas estão presentes no curso da doença, seja por disseminação direta do vírus, ou indiretamente, por aumento excessivo da inflamação fisiológica. Com relação à associação descrita, assinale a alternativa correta.",
+          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, embora seja majoritariamente uma doença do trato respiratório, a doença infecciosa do coronavírus ( COVID-19) tem associação causal com uma infinidade de condições neuropsiquiátricas e uma parcela significativa dos pacientes com COVID -19 desenvolve sintomas neuropsiquiátricos. Essas manifestações psiquiátricas incluem encefalopatia, delirium, comprometimento cognitivo leve, alterações de humor, insônia, ideação suicida, episódios de mania e psicose. Pouco se sabe acerca da fisiopatologia das manifestações neuropsiquiátricas causadas pelo coronavirus. Evidências mostram que tais repercussões referem-se a t ranstornos mentais ocasionados por sequelas de lesão ou doença cerebral, que podem surgir de efeitos diretos da infecção do sistema nervoso central (SNC), ou por uma resposta imune ou terapia médica. Apesar de dados e estudos limitados sobre apresentações neuropsiquiátricas como resultado da COVID-19, sabe- se que alguns sintomas estão presentes no curso da doença, seja por disseminação direta do vírus, ou indiretamente, por aumento excessivo da inflamação fisiológica. Com relação à associação descrita, assinale a alternativa correta.",
           "options": [
             {
               "letter": "A",
@@ -2422,7 +2422,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2023.1 Modelo 2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 22",
-          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022 os Transtornos Alimentares (TAs) são transtornos mentais caracterizados por uma alteração da relação do indivíduo com a alimentação, com impacto em sua saúde física e mental. Além das alterações do comportamento alimentar, os pacientes evidenciam alterações na forma como experimentam seu próprio corpo. Os TAs são um conjunto de síndromes clínicas e se en contram representados nos principais sistemas classificatórios atuais (DSM - 5 e CID -11). Esses quadros tendem a ter um curso prolongado e apresentam várias complicações psiquiátricas e clínicas em sua evolução. O tratamento deve se basear em uma avaliação criteriosa dos aspectos psiquiátricos e clínicos envolvidos em cada caso. A abordagem multiprofissional é imprescindível para o sucesso terapêutico. Existem várias diretrizes de tratamento disponíveis na atualidade que oferecem um conjunto de intervenções testadas nas várias categorias diagnósticas existentes. Com relação aos TAs, assinale a alternativa correta.",
+          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022 os Transtornos Alimentares (TAs) são transtornos mentais caracterizados por uma alteração da relação do indivíduo com a alimentação, com impacto em sua saúde física e mental. Além das alterações do comportamento alimentar, os pacientes evidenciam alterações na forma como experimentam seu próprio corpo. Os TAs são um conjunto de síndromes clínicas e se encontram representados nos principais sistemas classificatórios atuais (DSM - 5 e CID -11). Esses quadros tendem a ter um curso prolongado e apresentam várias complicações psiquiátricas e clínicas em sua evolução. O tratamento deve se basear em uma avaliação criteriosa dos aspectos psiquiátricos e clínicos envolvidos em cada caso. A abordagem multiprofissional é imprescindível para o sucesso terapêutico. Existem várias diretrizes de tratamento disponíveis na atualidade que oferecem um conjunto de intervenções testadas nas várias categorias diagnósticas existentes. Com relação aos TAs, assinale a alternativa correta.",
           "options": [
             {
               "letter": "A",
@@ -2490,7 +2490,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2023.1 Modelo 2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 24",
-          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, os usuários crônicos, ao abster - se ou reduzir a ingestão de álcool, apresentam a Síndrome de Abstin ência Alcoólica (SAA), composta por sintomas e sinais advindos da alteração de um \"equilíbrio adquirido\" anteriormente, com o uso prolongado e continuado, um \"caos químico❞ nos sistemas de neurotransmissão envolvidos. A maioria daqueles que têm Transtorno por Uso de Álcool (TUA), 70 a 90%, desenvolve uma SAA entre leve e moderada, que se inicia 24 a 36 horas após a última dose, caracterizada por tremores, insônia, agitação e inquietação psicomotora. Medidas de manutenção geral dos sinais vitais são aplicada s nesses casos. Por volta de 5% dos dependentes apresentarão uma SAA grave. Com relação à SAA, assinale a alternativa correta.",
+          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, os usuários crônicos, ao abster - se ou reduzir a ingestão de álcool, apresentam a Síndrome de Abstinência Alcoólica (SAA), composta por sintomas e sinais advindos da alteração de um \"equilíbrio adquirido\" anteriormente, com o uso prolongado e continuado, um \"caos químico❞ nos sistemas de neurotransmissão envolvidos. A maioria daqueles que têm Transtorno por Uso de Álcool (TUA), 70 a 90%, desenvolve uma SAA entre leve e moderada, que se inicia 24 a 36 horas após a última dose, caracterizada por tremores, insônia, agitação e inquietação psicomotora. Medidas de manutenção geral dos sinais vitais são aplicada s nesses casos. Por volta de 5% dos dependentes apresentarão uma SAA grave. Com relação à SAA, assinale a alternativa correta.",
           "options": [
             {
               "letter": "A",
@@ -2524,11 +2524,11 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2023.1 Modelo 2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 25",
-          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, na última década, houve um crescente uso das chamadas club drugs, ou \"drogas de balada/boate\". Trata -se de um grupo constituído por diferentes substâncias sintéticas de diversas classes, como estimulantes, alucinógenos e hipnóticos, muitas vezes de produção caseira ou em la - boratórios clande stinos, utilizadas principalmente por jovens e adultos jovens em ambientes festivos, como shows, boates, bares, baladas e raves. Entre as diversas drogas, as mais frequentemente utilizadas são MDMA (3,4 - metilenodioximetanfetami na), LSD, cetamina, metanfet aminas, GHB (gama -hidroxibutirato) e flunitrazepam. Com relação a essas substâncias, assinale a alternativa correta.",
+          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, na última década, houve um crescente uso das chamadas club drugs, ou \"drogas de balada/boate\". Trata-se de um grupo constituído por diferentes substâncias sintéticas de diversas classes, como estimulantes, alucinógenos e hipnóticos, muitas vezes de produção caseira ou em la - boratórios clande stinos, utilizadas principalmente por jovens e adultos jovens em ambientes festivos, como shows, boates, bares, baladas e raves. Entre as diversas drogas, as mais frequentemente utilizadas são MDMA (3,4 - metilenodioximetanfetami na), LSD, cetamina, metanfet aminas, GHB (gama -hidroxibutirato) e flunitrazepam. Com relação a essas substâncias, assinale a alternativa correta.",
           "options": [
             {
               "letter": "A",
-              "text": "O MDMA leva a sintomas como euforia, sensação de bem -estar e aumento da empatia/sensação de sociabilidade (efeito empatogênico ou entactogênico)."
+              "text": "O MDMA leva a sintomas como euforia, sensação de bem-estar e aumento da empatia/sensação de sociabilidade (efeito empatogênico ou entactogênico)."
             },
             {
               "letter": "B",
@@ -2558,7 +2558,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2023.1 Modelo 2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 26",
-          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, embora transgêneros e gênero não conformes pertençam a todas as culturas, a transgeneridade e a tra nsexualidade são consideradas atípicas na maioria das sociedades, porque elas transgridem o sistema binário normativo sexo -gênero. As percepções do que são os transgêneros são afetadas pelas diferenças na cultura, na religião e na história, podendo variar amplamente a apresentação e a aceitação da diversidade de gênero entre as regiões do mundo. Por exemplo, a variação na aceitação da diversidade de gênero na Ásia é independente da religião, do nível econômico e da sub-região, com alguns países tendo aceitação mais ampla (Tailândia, Laos e Indonésia) e outros menos (Malásia). Há várias barreiras para o acesso aos cuidados médicos, que variam entre países e culturas, incluindo o medo de ser visto como diferente (com estigma e violência associados), falta de a cesso a profissionais competentes e atenciosos, indisponibilidade de fontes de informação sobre disforia, além de prescrição e monitoramento inadequado de terapia hormonal. Até o momento, não é conhecido qualquer estudo de acompanhamento relatando resultados em indivíduos com disforia de gênero aos quais foi recusado o suporte para a transição. Para a correta avaliação, é importante ter em mente que a disforia de gênero pode apresentar-se como parte de um quadro psíquico. Com relação aos principais diagnóst icos diferenciais da disforia de gênero, assinale a alternativa INCORRETA:",
+          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, embora transgêneros e gênero não conformes pertençam a todas as culturas, a transgeneridade e a tra nsexualidade são consideradas atípicas na maioria das sociedades, porque elas transgridem o sistema binário normativo sexo -gênero. As percepções do que são os transgêneros são afetadas pelas diferenças na cultura, na religião e na história, podendo variar amplamente a apresentação e a aceitação da diversidade de gênero entre as regiões do mundo. Por exemplo, a variação na aceitação da diversidade de gênero na Ásia é independente da religião, do nível econômico e da sub-região, com alguns países tendo aceitação mais ampla (Tailândia, Laos e Indonésia) e outros menos (Malásia). Há várias barreiras para o acesso aos cuidados médicos, que variam entre países e culturas, incluindo o medo de ser visto como diferente (com estigma e violência associados), falta de a cesso a profissionais competentes e atenciosos, indisponibilidade de fontes de informação sobre disforia, além de prescrição e monitoramento inadequado de terapia hormonal. Até o momento, não é conhecido qualquer estudo de acompanhamento relatando resultados em indivíduos com disforia de gênero aos quais foi recusado o suporte para a transição. Para a correta avaliação, é importante ter em mente que a disforia de gênero pode apresentar-se como parte de um quadro psíquico. Com relação aos principais diagnósticos diferenciais da disforia de gênero, assinale a alternativa INCORRETA:",
           "options": [
             {
               "letter": "A",
@@ -2592,7 +2592,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2023.1 Modelo 2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 27",
-          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, em 2020, o CFM publicou a Resolução 2.265/2019, revogando a anterior (Resolução CFM 1.955/2010), so bre as ações e condutas nos serviços de saúde públicos e privados, às pessoas com incongruência de gênero ou transgêneros, incluindo transexuais, travestis e outras expressões identitárias relacionadas à diversidade de gênero. O CFM reitera, nessa Resolução, a importância da assistência integral à saúde dessa população e recomenda um conjunto de condutas terapêuticas formalizado no Projeto Terapêutico Singular. Também estabelece normas sobre o uso de hormônios (de acordo com estágios puberais pela Escala de Tanner), o acompanhamento psiquiátrico e os protocolos cirúrgicos. Em seu texto, a citada Resolução 2.265/2019 do Conselho Federal de Medicina estabelece que:",
+          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, em 2020, o CFM publicou a Resolução 2.265/2019, revogando a anterior (Resolução CFM 1.955/2010), sobre as ações e condutas nos serviços de saúde públicos e privados, às pessoas com incongruência de gênero ou transgêneros, incluindo transexuais, travestis e outras expressões identitárias relacionadas à diversidade de gênero. O CFM reitera, nessa Resolução, a importância da assistência integral à saúde dessa população e recomenda um conjunto de condutas terapêuticas formalizado no Projeto Terapêutico Singular. Também estabelece normas sobre o uso de hormônios (de acordo com estágios puberais pela Escala de Tanner), o acompanhamento psiquiátrico e os protocolos cirúrgicos. Em seu texto, a citada Resolução 2.265/2019 do Conselho Federal de Medicina estabelece que:",
           "options": [
             {
               "letter": "A",
@@ -2630,7 +2630,7 @@ window.BANCO_RMAIS_EXAMS = {
           "options": [
             {
               "letter": "A",
-              "text": "Não há insatisfação com a qualidade de sono: as queixas restringem -se à dificuldade para iniciar, e/ou dificuldade para manter."
+              "text": "Não há insatisfação com a qualidade de sono: as queixas restringem-se à dificuldade para iniciar, e/ou dificuldade para manter."
             },
             {
               "letter": "B",
@@ -2726,7 +2726,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2023.1 Modelo 2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 31",
-          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, oTDAH se caracteriza por um padrão persistente de desatenção, hiperatividade e impulsividade. De ac ordo com o DSM -5, a distribuição dos sintomas entre os diferentes domínio iirá definir uma das três apresentações possíveis: predominantemente desatento (seis ou mais sintomas de desatenção e menos de seis sintomas de hiperatividade/impulsividade); predomi nantemente hiperativo/impulsivo (seis ou mais sintomas de hipera- tividade/impulsividade e menos de seis sintomas de desatenção); ou combinado (seis ou mais sintomas em ambas as dimensões). Com relação ao diagnóstico e ao quadro clínico do TDAH ao longo do tempo, assinale a alternativa correta.",
+          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, oTDAH se caracteriza por um padrão persistente de desatenção, hiperatividade e impulsividade. De ac ordo com o DSM -5, a distribuição dos sintomas entre os diferentes domínio iirá definir uma das três apresentações possíveis: predominantemente desatento (seis ou mais sintomas de desatenção e menos de seis sintomas de hiperatividade/impulsividade); predominantemente hiperativo/impulsivo (seis ou mais sintomas de hipera- tividade/impulsividade e menos de seis sintomas de desatenção); ou combinado (seis ou mais sintomas em ambas as dimensões). Com relação ao diagnóstico e ao quadro clínico do TDAH ao longo do tempo, assinale a alternativa correta.",
           "options": [
             {
               "letter": "A",
@@ -2760,7 +2760,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2023.1 Modelo 2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 32",
-          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, O Transtorno de Personalidade Antissocial é caracterizado por um padrão difuso de desconsideração e violação dos direitos das outras, conforme indicado por três (ou mais) dos seguintes: Fracasso em ajustar -se às normas sociais relativas a comportamentos legais, conforme indicado pela repetição de atos que constituem motivos de detenção. Tendência à fals idade, conforme indicado por mentiras repetidas, uso de nomes falsos ou de trapaça para ganho ou prazer pessoal.Impulsividade ou fracasso em fazer planos para o futuro.Irritabilidade e agressividade, conforme indicado por repetidas lutas corporais ou agres sões físicas. Descaso pela segurança de si ou de outros. Irresponsabilidade reiterada, conforme indicado por falha repetida em manter uma conduta consistente no trabalho ou honrar obrigações financeiras. Ausência de remorso, conforme indicado pela indiferença ou racionalização em relação a ter ferido, maltratado ou roubado outras pessoas. Em relação ao comportamento dos indivíduos e aos critérios diagnósticos do Transtorno de Personalidade Antissocial, assinale a alternativa INCORRETA.",
+          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, O Transtorno de Personalidade Antissocial é caracterizado por um padrão difuso de desconsideração e violação dos direitos das outras, conforme indicado por três (ou mais) dos seguintes: Fracasso em ajustar-se às normas sociais relativas a comportamentos legais, conforme indicado pela repetição de atos que constituem motivos de detenção. Tendência à fals idade, conforme indicado por mentiras repetidas, uso de nomes falsos ou de trapaça para ganho ou prazer pessoal.Impulsividade ou fracasso em fazer planos para o futuro.Irritabilidade e agressividade, conforme indicado por repetidas lutas corporais ou agres sões físicas. Descaso pela segurança de si ou de outros. Irresponsabilidade reiterada, conforme indicado por falha repetida em manter uma conduta consistente no trabalho ou honrar obrigações financeiras. Ausência de remorso, conforme indicado pela indiferença ou racionalização em relação a ter ferido, maltratado ou roubado outras pessoas. Em relação ao comportamento dos indivíduos e aos critérios diagnósticos do Transtorno de Personalidade Antissocial, assinale a alternativa INCORRETA.",
           "options": [
             {
               "letter": "A",
@@ -2864,7 +2864,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2023.1 Modelo 2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 35",
-          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, a discinesia tardia (DT) é um distúrbio do movimento induzido por medicamentos, que pode surgir apó s o uso de agentes antipsicóticos. Observam-se movimentos hipercinéticos, involuntários e sem propósito na região orofacial, mas também podem ser afetados o pescoço, o tronco e as extremidades. Estima -se que a prevalência de DT entre os indivíduos tratados com antipsicóticos seja em torno de 20 - 30%, e ainda maior entre os idosos. A aprovação recente de medicamentos que atuam em um alvo farmacológico específico pode oferecer um avanço no tratamento da DT. Assinale a alternativa que constitui tal grupo de compostos.",
+          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, a discinesia tardia (DT) é um distúrbio do movimento induzido por medicamentos, que pode surgir apó s o uso de agentes antipsicóticos. Observam-se movimentos hipercinéticos, involuntários e sem propósito na região orofacial, mas também podem ser afetados o pescoço, o tronco e as extremidades. Estima-se que a prevalência de DT entre os indivíduos tratados com antipsicóticos seja em torno de 20 - 30%, e ainda maior entre os idosos. A aprovação recente de medicamentos que atuam em um alvo farmacológico específico pode oferecer um avanço no tratamento da DT. Assinale a alternativa que constitui tal grupo de compostos.",
           "options": [
             {
               "letter": "A",
@@ -3060,7 +3060,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2023.1 Modelo 2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 41",
-          "text": "De acordo com a referência Kaplan & Sadock`s. COMPREHENSIVE TEXTBOOK OF PSYCHIATRY. 10th edition Wolters Kluwer, 2017, a epigenética é uma abordagem genética emergente que aumenta os estudos de associação genética. O termo \"epigenética\" é agora geralmente entendido como referindo -se a modificações potencialmente hereditárias e funcionalmente relevantes da expressão gênica e da estrutura da cromatina, acompanhando nenhuma alteração nas sequências genéticas. A metilação do DNA é uma das principais formas de modificações epigenéticas e ocorre em cinco posições de carbono dos resíduos de citosina. Tais mecanismos têm sido considerados possíveis mediadores das respostas a fatores ambientais e, portanto, podem desempenhar um certo papel na patogênese de transtorno s psiquiátricos. A metilação dos resíduos de citosina do DNA geralmente tem o seguinte efeito sobre a expressão gênica:",
+          "text": "De acordo com a referência Kaplan & Sadock`s. COMPREHENSIVE TEXTBOOK OF PSYCHIATRY. 10th edition Wolters Kluwer, 2017, a epigenética é uma abordagem genética emergente que aumenta os estudos de associação genética. O termo \"epigenética\" é agora geralmente entendido como referindo-se a modificações potencialmente hereditárias e funcionalmente relevantes da expressão gênica e da estrutura da cromatina, acompanhando nenhuma alteração nas sequências genéticas. A metilação do DNA é uma das principais formas de modificações epigenéticas e ocorre em cinco posições de carbono dos resíduos de citosina. Tais mecanismos têm sido considerados possíveis mediadores das respostas a fatores ambientais e, portanto, podem desempenhar um certo papel na patogênese de transtorno s psiquiátricos. A metilação dos resíduos de citosina do DNA geralmente tem o seguinte efeito sobre a expressão gênica:",
           "options": [
             {
               "letter": "A",
@@ -3090,11 +3090,11 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2023.1 Modelo 2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 42",
-          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, a agressividade representa um aspecto fundamental do comportamento humano como recurso de defesa ou sobrevivência. Dos pontos de vista evolutivo e civilizatório, no entanto, o uso da agressividade por outras razões que não a autodefesa tornou -se desvantajoso e é geralmente considerado inaceitável. O comportamento agressivo pode variar amplamente, podend o ser manifestado verbal (p. ex., xingamentos, ameaças) ou fisicamente (p. ex., atirar/quebrar objetos, empurrar/bater para ferir alguém); de forma direta (p. ex., gritar/bater em uma pessoa) ou indireta (p. ex., caluniar, difamar alguém ou danificar seus bens).Além disso, o comportamento agressivo pode ser premeditado (instrumental, proativo) ou impulsivo (não planejado, reativo). Na forma premeditada, o dano causado pelo comportamento agressivo é apenas um meio (p. ex., bater em alguém para roubar sua carteira), enquanto no caso de agressão impulsiva, o desejo de prejudicar outra pessoa, em resposta a uma ameaça social ou frustração, é o objetivo principal. O diagnóstico de Transtorno Explosivo Intermitente (TEI) é caracterizado por episódios isolados de i mpulsos agressivos que ocorrem reativamente e de forma desproporcional ao evento estressor que o precede. Com relação ao TEI, assinale a alternativa correta.",
+          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, a agressividade representa um aspecto fundamental do comportamento humano como recurso de defesa ou sobrevivência. Dos pontos de vista evolutivo e civilizatório, no entanto, o uso da agressividade por outras razões que não a autodefesa tornou-se desvantajoso e é geralmente considerado inaceitável. O comportamento agressivo pode variar amplamente, podend o ser manifestado verbal (p. ex., xingamentos, ameaças) ou fisicamente (p. ex., atirar/quebrar objetos, empurrar/bater para ferir alguém); de forma direta (p. ex., gritar/bater em uma pessoa) ou indireta (p. ex., caluniar, difamar alguém ou danificar seus bens).Além disso, o comportamento agressivo pode ser premeditado (instrumental, proativo) ou impulsivo (não planejado, reativo). Na forma premeditada, o dano causado pelo comportamento agressivo é apenas um meio (p. ex., bater em alguém para roubar sua carteira), enquanto no caso de agressão impulsiva, o desejo de prejudicar outra pessoa, em resposta a uma ameaça social ou frustração, é o objetivo principal. O diagnóstico de Transtorno Explosivo Intermitente (TEI) é caracterizado por episódios isolados de impulsos agressivos que ocorrem reativamente e de forma desproporcional ao evento estressor que o precede. Com relação ao TEI, assinale a alternativa correta.",
           "options": [
             {
               "letter": "A",
-              "text": "a característica básica do TEI é a incapacidade de controlar comportamentos agressivos impulsivos em resposta a provocações vivenciadas subjetivamente (ou seja, estressores psicossociais) que, normalmente, resultariam em explosões agressivas."
+              "text": "a característica básica do TEI é a incapacidade de controlar comportamentos agressivos impulsivos em resposta a provocações vivenciadas subjetiva mente (ou seja, estressores psicossociais) que, normalmente, resultariam em explosões agressivas."
             },
             {
               "letter": "B",
@@ -3170,7 +3170,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Anunciar pós -graduação realizada para a capacitação pedagógica em especialidades médicas e suas áreas de atuação, em instituições oficiais ou por estas credenciadas, quando estiver relacionado à especialidade e área de atuação registrada no Conselho de Medicina."
+              "text": "Anunciar pós-graduação realizada para a capacitação pedagógica em especialidades médicas e suas áreas de atuação, em instituições oficiais ou por estas credenciadas, quando estiver relacionado à especialidade e área de atuação registrada no Conselho de Medicina."
             },
             {
               "letter": "E",
@@ -3188,7 +3188,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2023.1 Modelo 2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 45",
-          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, Mais do que simplesmente a ausência de doenças, a saúde corresponde a um estado físico e mental relativamente liberto da dor e do desconforto, que permite ao indivíduo funcionar o melhor possível durante a maior parte do tempo, em um ambiente no qual a casualidade ou a escolha o colocaram. No caso da criança, a casualidade torna -se mais importante, uma vez que, por sua autonomia restrita, ela tem menores e mais limitadas condições de escolha, tendo em vista que, quanto menor ela é, mais dependente do grupo familiar, principalmente da mãe, que se torna, de forma habitual (ou deveria se tornar) aquela que percebe todo e qualquer desvio nesse estado de bem -estar. Quando a criança cresce, a escola também passa a desempenhar esse papel, constituindo-se, juntamente com a família, no universo infantil. A doença mental na infância e na adolescência deve ser, então, visualizada a partir de diferentes fatores envolvidos que, por sua complexidade, devem ser conside - rados de maneiras diferentes. Dentro dessa ótica, a vulnerabilidade biológica, características de personalidade, as primeiras experiências, respostas ao estresse e influências socioculturais caracterizam:",
+          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, Mais do que simplesmente a ausência de doenças, a saúde corresponde a um estado físico e mental relativamente liberto da dor e do desconforto, que permite ao indivíduo funcionar o melhor possível durante a maior parte do tempo, em um ambiente no qual a casualidade ou a escolha o colocaram. No caso da criança, a casualidade torna-se mais importante, uma vez que, por sua autonomia restrita, ela tem menores e mais limitadas condições de escolha, tendo em vista que, quanto menor ela é, mais dependente do grupo familiar, principalmente da mãe, que se torna, de forma habitual (ou deveria se tornar) aquela que percebe todo e qualquer desvio nesse estado de bem-estar. Quando a criança cresce, a escola também passa a desempenhar esse papel, constituindo-se, juntamente com a família, no universo infantil. A doença mental na infância e na adolescência deve ser, então, visualizada a partir de diferentes fatores envolvidos que, por sua complexidade, devem ser conside - rados de maneiras diferentes. Dentro dessa ótica, a vulnerabilidade biológica, características de personalidade, as primeiras experiências, respostas ao estresse e influências socioculturais caracterizam:",
           "options": [
             {
               "letter": "A",
@@ -3224,7 +3224,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2023.1 Modelo 2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 46",
-          "text": "a De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, segundo Kohlberg, o desenvolvimento moral denota os pensamentos, sentimentos e comportamentos relacionados a padrões de certo ou errado. Ele baseia sua teoria do desenvolvimento moral, tendo a autonomia como característica fundamental na tomada de decisão.Suas pesquisas categorizam as etapas do desenvolvimento moral do indivíduo. Em cada um dos três níveis distintos de raciocínio mo ral, existem dois estágios que não são produtos do crescimento, mas emergem quando pensamos sobre os problemas morais, e as experiências sociais promovem o desenvolvimento apenas ao estimular os processos mentais. Segundo ele, as crianças sempre passam pel os estágios em uma sequência invariável, sem pulá -los, ainda que nem todas atinjam aqueles mais elevados. Assinale a alternativa que caracteriza um dos estágios da moralidade pós-convencional.",
+          "text": "a De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, segundo Kohlberg, o desenvolvimento moral denota os pensamentos, sentimentos e comportamentos relacionados a padrões de certo ou errado. Ele baseia sua teoria do desenvolvimento moral, tendo a autonomia como característica fundamental na tomada de decisão.Suas pesquisas categorizam as etapas do desenvolvimento moral do indivíduo. Em cada um dos três níveis distintos de raciocínio mo ral, existem dois estágios que não são produtos do crescimento, mas emergem quando pensamos sobre os problemas morais, e as experiências sociais promovem o desenvolvimento apenas ao estimular os processos mentais. Segundo ele, as crianças sempre passam pelos estágios em uma sequência invariável, sem pulá-los, ainda que nem todas atinjam aqueles mais elevados. Assinale a alternativa que caracteriza um dos estágios da moralidade pós-convencional.",
           "options": [
             {
               "letter": "A",
@@ -3292,7 +3292,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2023.1 Modelo 2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 48",
-          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, a trazodona é uma molécula desenvolvida na década de 1960 e aprovada como antidepressivo muitos ano s depois. Com relação aos efeitos colaterais, especificamente sobre o priapismo, pode -se afirmar que a ocorrência é rara, está associada a doses a partir de 150mg/dia e aos primeiros 28 dias de uso. Com relação a esse efeito adverso, a administração a pacientes com algum outro fator de risco deve ser evitada. Assinale a condição que NÃO constitui um desses fatores.",
+          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, a trazodona é uma molécula desenvolvida na década de 1960 e aprovada como antidepressivo muitos ano s depois. Com relação aos efeitos colaterais, especificamente sobre o priapismo, pode-se afirmar que a ocorrência é rara, está associada a doses a partir de 150mg/dia e aos primeiros 28 dias de uso. Com relação a esse efeito adverso, a administração a pacientes com algum outro fator de risco deve ser evitada. Assinale a condição que NÃO constitui um desses fatores.",
           "options": [
             {
               "letter": "A",
@@ -3326,7 +3326,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2023.1 Modelo 2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 49",
-          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, O lítio pode acarretar algumas alterações no ECG. O mecanismo envolvido decorre de modificações nos canais de sódio voltagem- dependentes dos miócitos, com diminuição do potássio intracelular, causando instabilidade elétrica no átrio e no ventrículo. A bradicardia sinusal é o achado de ECG mais frequente em pacientes fazendo uso de lítio. Em doses terap êuticas (litemias entre 0,6 e 1,2), podem ser observadas outras alterações benignas e assintomáticas. Já litemias acima de 1,5 mEq/L podem causar atraso na condução intraventricular, bloqueio sinoatrial, supra e infra desnivelamento do segmento ST, prolongamento do intervalo QT, e atrasos na condução atrioventricular, podendo ocorrer arritmia cardíaca, instabilidade ventricular e morte súbita. Essas alterações podem ser revertidas com baixa da litemia ou substituição do lítio por outro estabilizador do humor. No caso da ocorrência de achados de ECG benignos e sem sintomas clínicos é desejável a realização de ECG de controle a cada seis a 12 meses. Nessa situação, assinale a conduta recomendável.",
+          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, O lítio pode acarretar algumas alterações no ECG. O mecanismo envolvido decorre de modificações nos canais de sódio voltagem- dependentes dos miócitos, com diminuição do potássio intracelular, causando instabilidade elétrica no átrio e no ventrículo. A bradicardia sinusal é o achado de ECG mais frequente em pacientes fazendo uso de lítio. Em doses terapêuticas (litemias entre 0,6 e 1,2), podem ser observadas outras alterações benignas e assintomáticas. Já litemias acima de 1,5 mEq/L podem causar atraso na condução intraventricular, bloqueio sinoatrial, supra e infra desnivelamento do segmento ST, prolongamento do intervalo QT, e atrasos na condução atrioventricular, podendo ocorrer arritmia cardíaca, instabilidade ventricular e morte súbita. Essas alterações podem ser revertidas com baixa da litemia ou substituição do lítio por outro estabilizador do humor. No caso da ocorrência de achados de ECG benignos e sem sintomas clínicos é desejável a realização de ECG de controle a cada seis a 12 meses. Nessa situação, assinale a conduta recomendável.",
           "options": [
             {
               "letter": "A",
@@ -3360,7 +3360,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2023.1 Modelo 2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 50",
-          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022 a vortioxetina foi aprovada em 2013 para tratamento do Transtorno Depressivo Maior (TDM). É um antidepressivo denominado multimodal, por atuar para além do metabolismo das monoaminas, modulando outros sistemas neurotransmissores, como glutamato, ácido gama -aminobutírico (GABA), acetilcolina e histamina. O cérebro apresenta um mecanismo de feedback negati vo para liberação de serotonina quando na presença de um inibidor da recaptação. Esse mecanismo é exercido por receptores, como os 5-HT1B (autorreceptores), 5-HT1D e 5-HT7. Ao sofrerem antagonismo por parte da vortioxetina, se desfaz esse feedback, permiti ndo maior liberação e aumento da concentração de serotonina na fenda sináptica. O bloqueio em 5 -HT3 também bloqueia a liberação de GABA, aumentando a liberação de glutamato e proporcionando de forma secundária as liberações sinapticas de serotonina, acetil colina e noradrenalina. Acredita -se que esse mecanismo de ação complexo esteja relacionado a um efeito da vortioxetina. Assinale-o.",
+          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022 a vortioxetina foi aprovada em 2013 para tratamento do Transtorno Depressivo Maior (TDM). É um antidepressivo denominado multimodal, por atuar para além do metabolismo das monoaminas, modulando outros sistemas neurotransmissores, como glutamato, ácido gama -aminobutírico (GABA), acetilcolina e histamina. O cérebro apresenta um mecanismo de feedback negati vo para liberação de serotonina quando na presença de um inibidor da recaptação. Esse mecanismo é exercido por receptores, como os 5-HT1B (autorreceptores), 5-HT1D e 5-HT7. Ao sofrerem antagonismo por parte da vortioxetina, se desfaz esse feedback, permitindo maior liberação e aumento da concentração de serotonina na fenda sináptica. O bloqueio em 5 -HT3 também bloqueia a liberação de GABA, aumentando a liberação de glutamato e proporcionando de forma secundária as liberações sinapticas de serotonina, acetil colina e noradrenalina. Acredita-se que esse mecanismo de ação complexo esteja relacionado a um efeito da vortioxetina. Assinale-o.",
           "options": [
             {
               "letter": "A",
@@ -3394,7 +3394,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2023.1 Modelo 2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 51",
-          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, alguns fármacos são classificados como hipnóticos que atuam no complexo GABA -Benzodiazepínico (GABA-BZD), sobremaneira no núcleo pré -óptico ventrolateral, mas não são benzodiazepínicos (BZDs). Da mesma forma que estes, ligam - se aos receptores ionotrópicos GABAa, atuando como moduladores alostéricos. As chamadas drogas- z foram desenvolvidas a partir de 1989, recebendo aprovação da FDA para o tratamento da insônia em 1993. Esses medicamentos surgiram em resposta a uma busca de tentativa de medicamentos hipnóticos que fossem mais seguros em relação aos BZDs. No entanto, apesar de inicialmente descritos co mo medicamentos mais seguros, o seguimento dos dados revelou que as drogas-z inspiram cuidados em diversas situações. Vem sendo verificado que esses medicamentos têm riscos de consequências negativas associadas aos efeitos sedativos, amnésia anterograda, c omportamentos complexos durante o sono (alimentar-se, deambular, dirigir, fazer compras, praticar sexo e até mesmo assumir condutas violentas) e prejuízos na marcha e equilíbrio. Foram encontradas associações entre drogas -z e maior probabilidade de quedas, com amento de fraturas de quadril, de modo que não parecem ser mais seguros quanto a esse aspecto se comparados aos BZDs. Quanto a situações de consumo impróprio, com risco de abuso e necessidade de cautela em pacientes com história de Transtorno por Uso de Substâncias (TUS), assinale a droga-z mais frequentemente associada.",
+          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, alguns fármacos são classificados como hipnóticos que atuam no complexo GABA -Benzodiazepínico (GABA-BZD), sobremaneira no núcleo pré-óptico ventrolateral, mas não são benzodiazepínicos (BZDs). Da mesma forma que estes, ligam - se aos receptores ionotrópicos GABAa, atuando como moduladores alostéricos. As chamadas drogas- z foram desenvolvidas a partir de 1989, recebendo aprovação da FDA para o tratamento da insônia em 1993. Esses medicamentos surgiram em resposta a uma busca de tentativa de medicamentos hipnóticos que fossem mais seguros em relação aos BZDs. No entanto, apesar de inicialmente descritos co mo medicamentos mais seguros, o seguimento dos dados revelou que as drogas-z inspiram cuidados em diversas situações. Vem sendo verificado que esses medicamentos têm riscos de consequências negativas associadas aos efeitos sedativos, amnésia anterograda, comportamentos complexos durante o sono (alimentar-se, deambular, dirigir, fazer compras, praticar sexo e até mesmo assumir condutas violentas) e prejuízos na marcha e equilíbrio. Foram encontradas associações entre drogas -z e maior probabilidade de quedas, com amento de fraturas de quadril, de modo que não parecem ser mais seguros quanto a esse aspecto se comparados aos BZDs. Quanto a situações de consumo impróprio, com risco de abuso e necessidade de cautela em pacientes com história de Transtorno por Uso de Substâncias (TUS), assinale a droga-z mais frequentemente associada.",
           "options": [
             {
               "letter": "A",
@@ -3430,7 +3430,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2023.1 Modelo 2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 52",
-          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, por meio do uso exaustivo dos métodos de neuroimagem nas últimas décadas vêm sendo acumuladas evidê ncias de que diversos tipos de achados de neuroimagem estão associados a diferentes grupos (clusters) de sintomas ou categorias diagnósticas psiquiátricas. Assinale a técnica utilizada preferencialmente para visualizar um excesso de lesões hiperintensas pu ntiformes em substância branca observadas em imagens ponderadas,que podem sugerir a presença de focos de desmielinização / lesões microvasculares.",
+          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, por meio do uso exaustivo dos métodos de neuroimagem nas últimas décadas vêm sendo acumuladas evidê ncias de que diversos tipos de achados de neuroimagem estão associados a diferentes grupos (clusters) de sintomas ou categorias diagnósticas psiquiátricas. Assinale a técnica utilizada preferencialmente para visualizar um excesso de lesões hiperintensas puntiformes em substância branca observadas em imagens ponderadas,que podem sugerir a presença de focos de desmielinização / lesões micro vasculares.",
           "options": [
             {
               "letter": "A",
@@ -3704,7 +3704,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2023.1 Modelo 2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 62",
-          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, de acordo com o projeto Critérios de Domínio de Pesquisa (RDoC) os sistemas sensório -motores são responsáveis pelo controle e execução dos comportamentos motores e seu desenvolvimento durante o processo de aprendizagem. São subdividos em diversos itens por, e padrões inatos. Foram incluídos como domínio no RDoC em 2019, abrangendo áreas de disfunções mo toras, como planejamento, aprendizagem e movimentos involuntários presentes em diferentes transtornos mentais. Assinale a subdivisão NÃO pertente aos sistemas sensório-motores.",
+          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, de acordo com o projeto Critérios de Domínio de Pesquisa (RDoC) os sistemas sensório -motores são responsáveis pelo controle e execução dos comportamentos motores e seu desenvolvimento durante o processo de aprendizagem. São subdividos em diversos itens por, e padrões inatos. Foram incluídos como domínio no RDoC em 2019, abrangendo áreas de disfunções motoras, como planejamento, aprendizagem e movimentos involuntários presentes em diferentes transtornos mentais. Assinale a subdivisão NÃO pertente aos sistemas sensório-motores.",
           "options": [
             {
               "letter": "A",
@@ -3768,7 +3768,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2023.1 Modelo 2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 64",
-          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, durante a terapêutica com antipsicóticos (tanto típicos quanto atípicos), é necessária monitoração com hemograma para pacientes com baixa contagem de leucocitos ou que já tiveram histórico de leucopenia/neutropenia induzida por fármacos. Alguns psicofármacos em particular, como a clozapina, podem alterar de maneira significativa a contagem total de leuc ocitos. É sabido que tal substância pode causar alterações hematológicas graves e, por esse motivo, existem protocolos que recomendam a observação pragmática do hemograma durante sua introdução e toda a manutenção. Quando a contagem de leucocitos é inferio r a 500/mm3 fica caracterizada a:",
+          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, durante a terapêutica com antipsicóticos (tanto típicos quanto atípicos), é necessária monitoração com hemograma para pacientes com baixa contagem de leucocitos ou que já tiveram histórico de leucopenia/neutropenia induzida por fármacos. Alguns psicofármacos em particular, como a clozapina, podem alterar de maneira significativa a contagem total de leuc ocitos. É sabido que tal substância pode causar alterações hematológicas graves e, por esse motivo, existem protocolos que recomendam a observação pragmática do hemograma durante sua introdução e toda a manutenção. Quando a contagem de leucocitos é inferior a 500/mm3 fica caracterizada a:",
           "options": [
             {
               "letter": "A",
@@ -4318,7 +4318,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2023.1 Modelo 2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 80",
-          "text": "De acordo com a referência De acordo com a referência Kaplan & Sadock`s. COMPREHENSIVE TEXTBOOK OF PSYCHIATRY. 10th edition Wolters Kluwer, 2017, A Rede de Modo Padrão ou Default Mode Network (DMN) tem sido associada a uma variedade de funções, mas em particular pode estar ligada à atenção a estados emocionais internos e à capacidade de distinguir ou alternar entre modos internos e externos de atenção. Além disso, há um grande corpo de literatura mostrando que a rede de modo padrão diminui a atividade duran te estados de tarefa engajados, e alguns indícios de que uma falha em \"desligar\" a rede de modo padrão pode prejudicar a função cognitiva. A rede de modo padrão inclui uma ampla variedade de regiões, mas mais notavelmente regiões pré-frontais mediais, cíngulo posterior medial e precuneus. O aumento da conectividade entre regiões da rede de modo padrão tem sido associado um tipo de alteração na Depressão Maior. Assinale essa alteração.",
+          "text": "De acordo com a referência De acordo com a referência Kaplan & Sadock`s. COMPREHENSIVE TEXTBOOK OF PSYCHIATRY. 10th edition Wolters Kluwer, 2017, A Rede de Modo Padrão ou Default Mode Network (DMN) tem sido associada a uma variedade de funções, mas em particular pode estar ligada à atenção a estados emocionais internos e à capacidade de distinguir ou alternar entre modos internos e externos de atenção. Além disso, há um grande corpo de literatura mostrando que a rede de modo padrão diminui a atividade durante estados de tarefa engajados, e alguns indícios de que uma falha em \"desligar\" a rede de modo padrão pode prejudicar a função cognitiva. A rede de modo padrão inclui uma ampla variedade de regiões, mas mais notavelmente regiões pré-frontais mediais, cíngulo posterior medial e precuneus. O aumento da conectividade entre regiões da rede de modo padrão tem sido associado um tipo de alteração na Depressão Maior. Assinale essa alteração.",
           "options": [
             {
               "letter": "A",
@@ -4382,7 +4382,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2023.1 Modelo 2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 82",
-          "text": "De acordo com a referência De acordo com a referência Kaplan & Sadock`s. COMPREHENSIVE TEXTBOOK OF PSYCHIATRY. 10th edition Wolters Kluwer, 2017, Com relação ao tratamento da Doença de Alzheimer (DA) a maioria dos medicamentos disponíveis geralmente possue m atuam no sistema colinérgico, com mecanismos de ação comol a inibição das colinesterases, com características distintas em termos de seletividade para seus subtipos ou influência ou interação com outros alvos farmacológicos nesse sistema. Com relação aos fármacos que possuem tal indicação, assinale a alternativa que descreve especificamente o mecanismo de ação da Galantamina.",
+          "text": "De acordo com a referência De acordo com a referência Kaplan & Sadock`s. COMPREHENSIVE TEXTBOOK OF PSYCHIATRY. 10th edition Wolters Kluwer, 2017, Com relação ao tratamento da Doença de Alzheimer (DA) a maioria dos medicamentos disponíveis geralmente possuem atuam no sistema colinérgico, com mecanismos de ação comol a inibição das colinesterases, com características distintas em termos de seletividade para seus subtipos ou influência ou interação com outros alvos farmacológicos nesse sistema. Com relação aos fármacos que possuem tal indicação, assinale a alternativa que descreve especificamente o mecanismo de ação da Galantamina.",
           "options": [
             {
               "letter": "A",
@@ -4416,7 +4416,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2023.1 Modelo 2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 83",
-          "text": "De acordo com a referência De acordo com a referência Kaplan & Sadock`s. COMPREHENSIVE TEXTBOOK OF PSYCHIATRY. 10th edition Wolters Kluwer, 2017, com relação à psicoterapia assistida por alucinógenos, especialmente alucinógenos clássicos ou serotoninérgicos (ou seja, aqueles alucinógenos que se acredita exercerem seus efeitos psicodélicos ou de alteração da consciência principalmente por meio de atividade agonista ou agonista parcial nos receptores de serotonina 2A [5HT2A]), embora esses compostos tenham sido usados por humanos há milênios, conhecidos pela ciência há mais de um século, e submetidos a extensa pesquisa básica por décadas, o estudo rigoroso de seu uso clínico como adjuvantes à psicoterapia está em sua infância. Assinale a alternativa que NÃO caracteriza um psicodélico clássico por não compartilhar o mecanismo de ação acima descrito.",
+          "text": "De acordo com a referência De acordo com a referência Kaplan & Sadock`s. COMPREHENSIVE TEXTBOOK OF PSYCHIATRY. 10th edition Wolters Kluwer, 2017, com relação à psicoterapia assistida por alucinógenos, especialmente alucinógenos clássicos ou serotoninérgicos (ou seja, aqueles alucinógenos que se acredita exercer em seus efeitos psicodélicos ou de alteração da consciência principalmente por meio de atividade agonista ou agonista parcial nos receptores de serotonina 2A [5HT2A]), embora esses compostos tenham sido usados por humanos há milênios, conhecidos pela ciência há mais de um século, e submetidos a extensa pesquisa básica por décadas, o estudo rigoroso de seu uso clínico como adjuvantes à psicoterapia está em sua infância. Assinale a alternativa que NÃO caracteriza um psicodélico clássico por não compartilhar o mecanismo de ação acima descrito.",
           "options": [
             {
               "letter": "A",
@@ -4442,7 +4442,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2023.1 Modelo 2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 84",
-          "text": "De acordo com a referência De acordo com a referência Kaplan & Sadock`s. COMPREHENSIVE TEXTBOOK OF PSYCHIATRY. 10th edition Wolters Kluwer, 2017, com relação à imunoterapia antiamiloide da Doença de Alzheimer (DA), resultados de um ensaio clínico de fase 1B sugeriram que a infusão venosa mensal de aducanumabe, ao longo de um ano, levaria à redução dos níveis de B- amiloide em indivíduos com DA prodrômica ou leve. O uso desse anticorpo monoclonal, que se liga seletivamente às fibrilas de ẞ-amiloide, possibil itou também o alentecimento da progressão dos déficits cognitivos nesse estudo. Entretanto, dois ensaios clínicos de fase 3 que investigavam os efeitos do aducanumabe sobre a cognição e a progressão da DA foram interrompidos, no ano de 2019, depois de análises interinas concluírem que os desfechos esperados não seriam atingidos. Recentemente, dados de participantes que utilizaram o fármaco por longos períodos e em altas doses foram reanalisados, verificando -se que apresentaram redução nos níveis de tau-fosforilada no líquor e na cintilografia em 7 de junho de 2021, a FDA aprovou o uso dessa droga para o tratamento da DA, despertando críticas de especialistas que ressaltaram os resultados conflitantes quanto à efetividade da substância em ensaios clínicos. Há outros anticorpos monoclonais em investigação na mesma indicação em diversas fases de desenvolvimento e com resultados variávei s. Assinale o mais importante efeito adverso encontrado com o uso do aducanumabe.",
+          "text": "De acordo com a referência De acordo com a referência Kaplan & Sadock`s. COMPREHENSIVE TEXTBOOK OF PSYCHIATRY. 10th edition Wolters Kluwer, 2017, com relação à imunoterapia antiamiloide da Doença de Alzheimer (DA), resultados de um ensaio clínico de fase 1B sugeriram que a infusão venosa mensal de aducanumabe, ao longo de um ano, levaria à redução dos níveis de B- amiloide em indivíduos com DA prodrômica ou leve. O uso desse anticorpo monoclonal, que se liga seletivamente às fibrilas de ẞ-amiloide, possibilitou também o alentecimento da progressão dos déficits cognitivos nesse estudo. Entretanto, dois ensaios clínicos de fase 3 que investigavam os efeitos do aducanumabe sobre a cognição e a progressão da DA foram interrompidos, no ano de 2019, depois de análises interinas concluírem que os desfechos esperados não seriam atingidos. Recentemente, dados de participantes que utilizaram o fármaco por longos períodos e em altas doses foram reanalisados, verificando-se que apresentaram redução nos níveis de tau-fosforilada no líquor e na cintilografia em 7 de junho de 2021, a FDA aprovou o uso dessa droga para o tratamento da DA, despertando críticas de especialistas que ressaltaram os resultados conflitantes quanto à efetividade da substância em ensaios clínicos. Há outros anticorpos monoclonais em investigação na mesma indicação em diversas fases de desenvolvimento e com resultados variávei s. Assinale o mais importante efeito adverso encontrado com o uso do aducanumabe.",
           "options": [
             {
               "letter": "A",
@@ -4544,7 +4544,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2023.1 Modelo 2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 87",
-          "text": "De acordo com a referência Kaplan & Sadock`s. COMPREHENSIVE TEXTBOOK OF PSYCHIATRY. 10th edition Wolters Kluwer, 2017, em pacientes com Transtorno de Acumulação estudos de imagem cerebral estrutural e funcional indicaram que os circuitos neurológicos relevantes se sobrepõem apenas parcialmente com aqueles envolvidos no TOC. Pesquisas em pacientes com distúrbios neurológicos têm sugerido que os córtices pré -frontais/cingulados anteriores ventromediais, bem como as regiões temporais mediais, estão envolvidos no colecionismo. Do ponto de vista neuropsicológico tais pacientes podem demonstrar comprometimento em vários domínios. Assinale a alternativa que NÃO corresponde aos domínios afetados no Transtorno de Acumulação.",
+          "text": "De acordo com a referência Kaplan & Sadock`s. COMPREHENSIVE TEXTBOOK OF PSYCHIATRY. 10th edition Wolters Kluwer, 2017, em pacientes com Transtorno de Acumulação estudos de imagem cerebral estrutural e funcional indicaram que os circuitos neurológicos relevantes se sobrepõem apenas parcialmente com aqueles envolvidos no TOC. Pesquisas em pacientes com distúrbios neurológicos têm sugerido que os córtices pré-frontais/cingulados anteriores ventromediais, bem como as regiões temporais mediais, estão envolvidos no colecionismo. Do ponto de vista neuropsicológico tais pacientes podem demonstrar comprometimento em vários domínios. Assinale a alternativa que NÃO corresponde aos domínios afetados no Transtorno de Acumulação.",
           "options": [
             {
               "letter": "A",
@@ -4680,7 +4680,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2023.1 Modelo 2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 91",
-          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, diversas são as concepções sobre ética. A depender da abordagem, podemos descrevê -la como o estudo ou análise acerca das ações e comportamentos do ser humano, seus princípios orientadores e a interpretação sobre bem e mal, certo e errado. Atualmente, há uma clara tendência na diferenciação conceitual entre ética e moral. No que concerne a tais conceitos assinale a alternativa correta.",
+          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, diversas são as concepções sobre ética. A depender da abordagem, podemos descrevê-la como o estudo ou análise acerca das ações e comportamentos do ser humano, seus princípios orientadores e a interpretação sobre bem e mal, certo e errado. Atualmente, há uma clara tendência na diferenciação conceitual entre ética e moral. No que concerne a tais conceitos assinale a alternativa correta.",
           "options": [
             {
               "letter": "A",
@@ -4750,7 +4750,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2023.1 Modelo 2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 93",
-          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, com relação ao Transtorno Depressivo Maior (TDM), o quadro caracterizado por perda completa de praz er ou falta de reatividade a estímulos positivos, desejados ou prazerosos associados a três ou mais características clínicas, como qualidade de humor depressivo com prostração profunda, desespero ou morosidade, piora pela manhã, despertar muito cedo, agita ção ou lentificação psicomotora, anorexia ou perda de peso e culpa excessiva e inadequada corresponde ao especificador de:",
+          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, com relação ao Transtorno Depressivo Maior (TDM), o quadro caracterizado por perda completa de praz er ou falta de reatividade a estímulos positivos, desejados ou prazerosos associados a três ou mais características clínicas, como qualidade de humor depressivo com prostração profunda, desespero ou morosidade, piora pela manhã, despertar muito cedo, agitação ou lentificação psicomotora, anorexia ou perda de peso e culpa excessiva e inadequada corresponde ao especificador de:",
           "options": [
             {
               "letter": "A",
@@ -4818,7 +4818,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2023.1 Modelo 2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 95",
-          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, um dos novos modelos, mais integrativos, de Terapia Cognitivo Comportamental (TCC) tem como princíp io básico ajudar o paciente a aceitar aquilo que está fora do seu controle, ao mesmo tempo que se mantém comprometido com ações que tornem a sua vida mais significativa, é apoiado na teoria do quadro relacional e ainda incorpora elementos do mindfulness. Parte do pressuposto de que o sofrimento é resultado da inflexibilidade psicológica que, por sua vez, está relacionada à predominância do passado conceitual e de um futuro temido (ruminações e preocupações), à fusão cognitiva (pensamento e realidade tornam -se indistinguíveis) e à falta de clareza de valores (vida significativa só pode ser definida como tal a partir daquilo que é importante para a pessoa). A psicopatologia ocorreria quando o indivíduo deixa de buscar uma vida significativa para se esquivar de experiências desagradáveis. Assim, a inação, a impulsividade ou a persistência evitativa podem desviar o sujeito dos seus propósitos, uma vez que uma vida significativa depende daquilo que fazemos, das nossas ações. Assinale a alternativa que apresenta corretamente o modelo descrito.",
+          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, um dos novos modelos, mais integrativos, de Terapia Cognitivo Comportamental (TCC) tem como princípio básico ajudar o paciente a aceitar aquilo que está fora do seu controle, ao mesmo tempo que se mantém comprometido com ações que tornem a sua vida mais significativa, é apoiado na teoria do quadro relacional e ainda incorpora elementos do mindfulness. Parte do pressuposto de que o sofrimento é resultado da inflexibilidade psicológica que, por sua vez, está relacionada à predominância do passado conceitual e de um futuro temido (ruminações e preocupações), à fusão cognitiva (pensamento e realidade tornam-se indistinguíveis) e à falta de clareza de valores (vida significativa só pode ser definida como tal a partir daquilo que é importante para a pessoa). A psicopatologia ocorreria quando o indivíduo deixa de buscar uma vida significativa para se esquivar de experiências desagradáveis. Assim, a inação, a impulsividade ou a persistência evitativa podem desviar o sujeito dos seus propósitos, uma vez que uma vida significativa depende daquilo que fazem os, das nossas ações. Assinale a alternativa que apresenta corretamente o modelo descrito.",
           "options": [
             {
               "letter": "A",
@@ -4852,7 +4852,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2023.1 Modelo 2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 96",
-          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, com relação à avaliação de transtornos mentais no contexto da religiosidade e da espiritualidade (R /E), um problema que muitas vezes ocorre na prática clínica é como realizar o diagnóstico diferencial entre uma experiência espiritual saudável e um transtorno mental com sintomas de conteúdo religioso. De modo habitual, essa distinção pode ser feita sem d ificuldades, mas há várias situações que geram dúvidas. Por exemplo, ouvir vozes e ter visões atribuídas a entidades espirituais ou sentir- se chamado por Deus para uma missão podem ser sintomas psicóticos. Dúvidas sobre a fé ou repetições de pensamentos ou atos religiosos podem ser sintomas obsessivos e compulsivos. Há o risco de dois extremos indesejáveis: considerar patológica uma experiência saudável (o que geraria intervenções iatrogênicas) ou normalizar sintomas de transtornos mentais (resultando em ab andono ou retardo no início do tratamento necessário). Um marco, nesse sentido, foi a inclusão, em 1994, no DSM -IV (e mantida no DSM -5) da categoria \"Problemas Religiosos e Espirituais\". Nela, enfatiza -se que as experiências R/E geralmente não são patológicas e que vivências envolvendo-as podem gerar sofrimento e busca de atendimento (p. ex., questionamento da fé ou dificuldades em entender e dar sentido a uma experiência de quase - morte) sem que necessariamente se configure um transtorno mental. De acordo com o texto da referência, a experiência que constitui um problema religioso, e não um problema espiritual, é:",
+          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, com relação à avaliação de transtornos mentais no contexto da religiosidade e da espiritualidade (R /E), um problema que muitas vezes ocorre na prática clínica é como realizar o diagnóstico diferencial entre uma experiência espiritual saudável e um transtorno mental com sintomas de conteúdo religioso. De modo habitual, essa distinção pode ser feita sem dificuldades, mas há várias situações que geram dúvidas. Por exemplo, ouvir vozes e ter visões atribuídas a entidades espirituais ou sentir- se chamado por Deus para uma missão podem ser sintomas psicóticos. Dúvidas sobre a fé ou repetições de pensamentos ou atos religiosos podem ser sintomas obsessivos e compulsivos. Há o risco de dois extremos indesejáveis: considerar patológica uma experiência saudável (o que geraria intervenções iatrogênicas) ou normalizar sintomas de transtornos mentais (resultando em abandono ou retardo no início do tratamento necessário). Um marco, nesse sentido, foi a inclusão, em 1994, no DSM -IV (e mantida no DSM -5) da categoria \"Problemas Religiosos e Espirituais\". Nela, enfatiza-se que as experiências R/E geralmente não são patológicas e que vivências envolvendo-as podem gerar sofrimento e busca de atendimento (p. ex., questionamento da fé ou dificuldades em entender e dar sentido a uma experiência de quase - morte) sem que necessariamente se configure um transtorno mental. De acordo com o texto da referência, a experiência que constitui um problema religioso, e não um problema espiritual, é:",
           "options": [
             {
               "letter": "A",
@@ -4886,7 +4886,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2023.1 Modelo 2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 97",
-          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, a Atenção Primária à Saúde (APS) é o primeiro nível de atenção em saúde e se caracteriza por um con junto de ações, nos âmbitos individual e coletivo, que abrange a promoção e a proteção da saúde, a prevenção de agravos, o diagnóstico, o tratamento, a reabilitação, a redução de danos e a manutenção da saúde com o objetivo de desenvolver uma atenção integ ral que impacte positivamente na situação de saúde das coletividades. Trata-se da principal porta de entrada do SUS e do centro de comunicação com toda a Rede de Atenção do SUS. Na Portaria do Ministério da Saúde no 648/2006, o termo utilizado é Atenção Bá sica. Ela tem a saúde da família como estratégia prioritária, de acordo com os preceitos do SUS, e é entendida como o primeiro nível da atenção à saúde. Emprega tecnologia de baixa densidade, que inclui um rol de procedimentos mais simples e baratos, capaz es de atender à maior parte dos problemas comuns de saúde da comunidade. Nesse contexto, assinale a alternativa correta.",
+          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, a Atenção Primária à Saúde (APS) é o primeiro nível de atenção em saúde e se caracteriza por um con junto de ações, nos âmbitos individual e coletivo, que abrange a promoção e a proteção da saúde, a prevenção de agravos, o diagnóstico, o tratamento, a reabilitação, a redução de danos e a manutenção da saúde com o objetivo de desenvolver uma atenção integral que impacte positivamente na situação de saúde das coletividades. Trata-se da principal porta de entrada do SUS e do centro de comunicação com toda a Rede de Atenção do SUS. Na Portaria do Ministério da Saúde no 648/2006, o termo utilizado é Atenção Bá sica. Ela tem a saúde da família como estratégia prioritária, de acordo com os preceitos do SUS, e é entendida como o primeiro nível da atenção à saúde. Emprega tecnologia de baixa densidade, que inclui um rol de procedimentos mais simples e baratos, capaz es de atender à maior parte dos problemas comuns de saúde da comunidade. Nesse contexto, assinale a alternativa correta.",
           "options": [
             {
               "letter": "A",
@@ -4950,7 +4950,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2023.1 Modelo 2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 99",
-          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, as repercussões familiares do estigma dirigido aos pacientes psiquiátricos estendem -se a irmãos, cô njuges, filhos e outros parentes. Por exemplo, os pais foram acusados de criar um ambiente patológico que poderia favorecer o aparecimento de doenças men - tais, como a “mãe esquizofrênica” que induziu esquizofrenia em seu filho devido ao seu estilo de comu nicação disfuncional. Embora essa atitude fosse muito mais forte décadas atrás, essas ideias ainda persistem. Esse tipo de estigmatização é denominado:",
+          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, as repercussões familiares do estigma dirigido aos pacientes psiquiátricos estendem-se a irmãos, cô njuges, filhos e outros parentes. Por exemplo, os pais foram acusados de criar um ambiente patológico que poderia favorecer o aparecimento de doenças men - tais, como a “mãe esquizofrênica” que induziu esquizofrenia em seu filho devido ao seu estilo de comu nicação disfuncional. Embora essa atitude fosse muito mais forte décadas atrás, essas ideias ainda persistem. Esse tipo de estigmatização é denominado:",
           "options": [
             {
               "letter": "A",
@@ -4984,7 +4984,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2023.1 Modelo 2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 100",
-          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, além das mudanças físicas, a adolescência é um período de grande desenvolvimento cognitivo. Se, dur ante a infância, o pensamento tende a ser concreto, na adolescência ele se torna mais abstrato e relativista, dotando o indivíduo da capacidade de se apaixonar, pensar sobre espiritualidade e resolver exercícios de matemática mais avançada. O raciocínio de dutivo e indutivo emerge, permitindo ao adolescente explorar uma gama completa de possibilidades inerentes a uma situação, pensar hipoteticamente e usar um processo de pensamento lógico. Nesse período, o indivíduo também desenvolve a capacidade de introspecção, o que pode levar ao que Elkind chamou de egocentrismo. Esse egocentrismo explica duas características importantes do comportamento adolescente. Assinale a alternativa que constitui uma dessas características, com crenças de invencibilidade e singularidade.",
+          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, além das mudanças físicas, a adolescência é um período de grande desenvolvimento cognitivo. Se, durante a infância, o pensamento tende a ser concreto, na adolescência ele se torna mais abstrato e relativista, dotando o indivíduo da capacidade de se apaixonar, pensar sobre espiritualidade e resolver exercícios de matemática mais avançada. O raciocínio de dutivo e indutivo emerge, permitindo ao adolescente explorar uma gama completa de possibilidades inerentes a uma situação, pensar hipoteticamente e usar um processo de pensamento lógico. Nesse período, o indivíduo também desenvolve a capacidade de introspecção, o que pode levar ao que Elkind chamou de egocentrismo. Esse egocentrismo explica duas características importantes do comportamento adolescente. Assinale a alternativa que constitui uma dessas características, com crenças de invencibilidade e singularidade.",
           "options": [
             {
               "letter": "A",
@@ -5988,7 +5988,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2023.2 Modelo 3 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 33",
-          "text": "De acordo com a referência De acordo com a referência - De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1º Edição. Artmed, 2022, com relação à imunoterapia antiamiloide da Doença de Alzheimer (DA), resultados de um ensaio clínico de fase 1B sugeriram que a infusão venosa mensal de aducanumabe, ao longo de um ano, levaria à redução dos níveis de B-amiloide em indíviduos com DA prodrômica ou leve.O uso desse anticorpo monocional, que se liga seletivamente às fibrilas de B-amiloide, possibilitou também o alentecimento da progressão dos déficits cognitivos nesse estudo. Entretanto, dois ensaios clínicos de fase 3 que investigavam os efeitos do aducanumabe sobre a cognição e a progressão da DA foram interrompidos, no ano de 2019, depois de análises interinas concluirem que os desfechos esperados não seriam atingidos. Recentemente, dados de participantes que utilizaram o fármaco por longos períodos e em altas doses foram reanalisados, verificando-se que apresentaram redução nos níveis de tau-fosforiada no líquor e na cintilografia Em 7 de junho de 2021 a FDA aprovou o uso dessa droga para o tratamento da DA, despertando críticas de especialistas que ressaltaram os resultados conflitantes quanto à efetividade da substância em ensaios clínicos. Há outros anticorpos monoclonais em investigação na mesma indicação em diversas fases de desenvolvimento e com resultados variáveis. Assinale o mais importante efeito adverso encontrado com o uso do aducanumabe.",
+          "text": "De acordo com a referência De acordo com a referência - De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1º Edição. Artmed, 2022, com relação à imunoterapia antiamiloide da Doença de Alzheimer (DA), resultados de um ensaio clínico de fase 1B sugeriram que a infusão venosa mensal de aducanumabe, ao longo de um ano, levaria à redução dos níveis de B-amiloide em indíviduos com DA prodrômica ou leve.O uso desse anticorpo monocional, que se liga seletivamente às fibrilas de B-amiloide, possibilitou também o alentecimento da progressão dos déficits cognitivos nesse estudo. Entretanto, dois ensaios clínicos de fase 3 que investigavam os efeitos do aducanumabe sobre a cognição e a progressão da DA foram interrompidos, no ano de 2019, depois de análises interinas concluir em que os desfechos esperados não seriam atingidos. Recentemente, dados de participantes que utilizaram o fármaco por longos períodos e em altas doses foram reanalisados, verificando-se que apresentaram redução nos níveis de tau-fosforiada no líquor e na cintilografia Em 7 de junho de 2021 a FDA aprovou o uso dessa droga para o tratamento da DA, despertando críticas de especialistas que ressaltaram os resultados conflitantes quanto à efetividade da substância em ensaios clínicos. Há outros anticorpos monoclonais em investigação na mesma indicação em diversas fases de desenvolvimento e com resultados variáveis. Assinale o mais importante efeito adverso encontrado com o uso do aducanumabe.",
           "options": [
             {
               "letter": "A",
@@ -6064,7 +6064,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "B",
-              "text": "são consistentes com o período necessário para os antidepressivos monoamináergicos produzirem\nefeito nos sintomas clínico"
+              "text": "são consistentes com o período necessário para os antidepressivos monoamináergicos produzir em\nefeito nos sintomas clínico"
             },
             {
               "letter": "C",
@@ -6328,7 +6328,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2023.2 Modelo 3 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 43",
-          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1º Edição. Artmed, 2022, o LSD foi sintetizado pela primeira vez em 1938, por Albert Hofmann. É considerado o principal representante dos alucinógenos, gerando alterações de sensopercepção, da consciência do eu, do humor e do pensamento. O mecanismo de ação é complexo, envolvendo serotonina, glutamato e dopamina.Geralmente, é encontrado em papéis que contêm a substância (“quadrado”) ou na forma líquida. É facilmente absorvido pelas mucosas. A dose média utilizada é de 25-200 mcg. Tem início de ação na primeira hora, com pico em 3-5h, e pode durar por até 12hintoxicações graves são raras (> 400 mcg), as quais podem desencadear sindrome serotonérgica e colapso cardiovascular. O maior risco associado a seu uso é: A Ocorrência de flashbacks que podem evoluir para umtranstorno perceptivo persistente por alucinógenos, marcado por episódios intrusivos de alterações de humor, pensamento e sensopercepção (geralmente visuais) levando a sofrimento e prejuízo funcional.",
+          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1º Edição. Artmed, 2022, o LSD foi sintetizado pela primeira vez em 1938, por Albert Hofmann. É considerado o principal representante dos alucinógenos, gerando alterações de sensopercepção, da consciência do eu, do humor e do pensamento. O mecanismo de ação é complexo, envolvendo serotonina, glutamato e dopamina.Geralmente, é encontrado em papéis que contêm a substância (“quadrado”) ou na forma líquida. É facilmente absorvido pelas mucosas. A dose média utilizada é de 25-200 mcg. Tem início de ação na primeira hora, com pico em 3-5h, e pode durar por até 12hintoxicações graves são raras (> 400 mcg), as quais podem desencadear sindrome serotonérgica e colapso cardiovascular. O maior risco associado a seu uso é: A Ocorrência de flashbacks que podem evoluir para um transtorno perceptivo persistente por alucinógenos, marcado por episódios intrusivos de alterações de humor, pensamento e sensopercepção (geralmente visuais) levando a sofrimento e prejuízo funcional.",
           "options": [
             {
               "letter": "B",
@@ -6556,7 +6556,7 @@ window.BANCO_RMAIS_EXAMS = {
           "options": [
             {
               "letter": "A",
-              "text": "Não é permitido ao estabelecimento de hospitalização ou de assistência médica em geral, público ou privado, recusar atendimento médico sob a alegação de que o paciente sejaportador de doença mental."
+              "text": "Não é permitido ao estabelecimento de hospitalização ou de assistência médica em geral, público ou privado, recusar atendimento médico sob a alegação de que o paciente seja portador de doença mental."
             },
             {
               "letter": "B",
@@ -6676,7 +6676,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2023.2 Modelo 3 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 56",
-          "text": "De acordo com a referência De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1º Edição. Artmed, 2022, a situação que ocorre quando o indivíduo premedita uma situação, simulando antecipadamente um transtorno mental para se beneficiar de uma ação que planeja executar futuramente. Nesse caso, Paulo, já com idade avançada, imitaria os sintomas de um amigo com demência, a fim de desviar rendimentos da empresa onde trabalha e depois utilizar essa justificativa para não ser responsabilizado criminalmente. Esse quadro é denominado(a):",
+          "text": "De acordo com a referência De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1º Edição. Artmed, 2022, a situação que ocorre quando o indivíduo premedita uma situação, simulando antecipadamente um transtorno mental para se beneficiar de uma ação que planeja executar futuramente. Nesse caso, Paulo, já com idade avançada, imitaria os sintomas de um amigo com demência, a fim de desviar rendimentos da empresa onde trabalha e depois utilizar essa justificativa para não ser responsabilizado criminal mente. Esse quadro é denominado(a):",
           "options": [
             {
               "letter": "A",
@@ -6784,7 +6784,7 @@ window.BANCO_RMAIS_EXAMS = {
           "options": [
             {
               "letter": "A",
-              "text": "Presença de anticorpos antitireoide"
+              "text": "Presença de anticorpos anti tireoide"
             },
             {
               "letter": "B",
@@ -9406,7 +9406,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2024.1 Modelo 2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 40",
-          "text": "De acordo com a Referência NARDI, A. E.; SILVA, A. G.; QUEVEDO, J. (org.). TRATADO DE PSIQUIATRIA DA ASSOCIAÇÃO BRASILEIRA DE PSIQUIATRIA. Porto Alegre: Artmed, 2022, no contexto da metapsicologia freudiana, exigencias pulsionais, em cada fase do desenvolvimento libidinal, suscitam mecanismos de defesa, operados pelo ego, dentro da sua função modulatória entre demandas pulsionais e adaptação à realidade externa. Os mecanismos defensivos podem ser agrupados, hierarquicamente, de acordo com o grau de funcionamento egóico. Nesse sentido, a ansiedade - em sua origem bifronte (instintos/adaptação) - exerce papel central. De forma geral, o grau de desenvolvimento do ego, em seus aspectos psicóticos, neuróticos e maduros, está relacionado com a intensidade da ansiedade e os mecanismos defensivos dela derivados. Assinale o mecanismo de defesa que caracteriza uma defesa psicótica.",
+          "text": "De acordo com a Referência NARDI, A. E.; SILVA, A. G.; QUEVEDO, J. (org.). TRATADO DE PSIQUIATRIA DA ASSOCIAÇÃO BRASILEIRA DE PSIQUIATRIA. Porto Alegre: Artmed, 2022, no contexto da meta psicologia freudiana, exigencias pulsionais, em cada fase do desenvolvimento libidinal, suscitam mecanismos de defesa, operados pelo ego, dentro da sua função modulatória entre demandas pulsionais e adaptação à realidade externa. Os mecanismos defensivos podem ser agrupados, hierarquicamente, de acordo com o grau de funcionamento egóico. Nesse sentido, a ansiedade - em sua origem bifronte (instintos/adaptação) - exerce papel central. De forma geral, o grau de desenvolvimento do ego, em seus aspectos psicóticos, neuróticos e maduros, está relacionado com a intensidade da ansiedade e os mecanismos defensivos dela derivados. Assinale o mecanismo de defesa que caracteriza uma defesa psicótica.",
           "options": [
             {
               "letter": "A",
@@ -9682,7 +9682,7 @@ window.BANCO_RMAIS_EXAMS = {
           "options": [
             {
               "letter": "A",
-              "text": "O intuito dos formadores do HITOP foi desenvolver, em parceria com elaboradores dos sistemas de diagnóstico tradicionais (DSM e CID), um consenso de classificação dimensional embasado na etiologia das doenças, para uso clínico."
+              "text": "O intuito dos forma dores do HITOP foi desenvolver, em parceria com elaboradores dos sistemas de diagnóstico tradicionais (DSM e CID), um consenso de classificação dimensional embasado na etiologia das doenças, para uso clínico."
             },
             {
               "letter": "B",
@@ -9848,7 +9848,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2024.1 Modelo 2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 53",
-          "text": "De acordo com a Referência NARDI, A. E.; SILVA, A. G.; QUEVEDO, J. (org.). TRATADO DE PSIQUIATRIA DA ASSOCIAÇÃO BRASILEIRA DE PSIQUIATRIA. Porto Alegre: Artmed, 2022, diz-se que os transtornos da personalidade (TPs) constituem um conjunto de condições psiquiátricas com quadro clínico bastante variado, tendo em comum a longa duração e certa estabilidade ao longo da vida. Assim, não devem ser encarados como algo uniforme, uma vez que sua psicopatologia e clínica variam bastante de um TP específico para outro. Em 1835, em Treatise on insanity and other disorders affecting the mind, foi descrita a \"insanidade moral\", que consiste em uma \"perversão mórbida dos sentimentos, hábitos, inclinações, temperamento, disposições morais e impulsos naturais\", sem a presença de delírios, alucinações ou perda das capacidades de raciocínio. A primeira descrição detalhada dos TPs é atribuída ao seu autor. Em 1921, no livro Körperbau und Charakter (constituição e caráter), procurou-se associar determinadas formas fisicas ou biótipos a certos traços de personalidade, estendendo tais características aos TPs e, no extremo, a um determinado tipo de transtorno mental. Por exemplo, a constituição leptossômica estaria ligada a características esquizoides e traria ao indivíduo a propensão à esquizofrenia. Este modelo poderia ser considerado hoje um precursor das categorizações dimensionais em psiquiatria. Em 1923 foi então publicada a monografia Die Psychopathische Persönlichkeiten (as personalidades psicopáticas), parte do Tratado de psiquiatria de Gustav Aschaffenburg. Neste está a definição clássica das personalidades psicopáticas (PPs), aquelas que \"sofrem ou fazem sofrer a sociedade\". Para o autor, as PPs são \"variações extremas da normalidade (e não doenças stricto sensu) dentro de um continuum, em cujo centro estatístico estão as personalidades normais. Em 1980 a American Psychiatric Association, a partir do III Manual diagnóstico e estatístico de transtornos mentais (DSM-III), estabeleceu um sistema multiaxial de diagnóstico, sendo o Eixo I o dos transtornos mentais propriamente ditos, e o Eixo II dedicado exclusivamente aos TPs. O DSM 5, em sua Seçãol, propõe um modelo categorial dos TPs, de uso \"oficial\" e, na Seção II, apresenta propostas ainda em pesquisa, de um modelo dimensional. Dos TPs descritos na Seção I do DSM-5, os borderline esquizotípica e antis social - possivelmente por sua importância clínica e forense - são os mais estudados dos pontos de vista clínico e etiopatogênico. De acordo com as menções na referência, dentre as opções a seguir, marque a alternativa CORRETA.",
+          "text": "De acordo com a Referência NARDI, A. E.; SILVA, A. G.; QUEVEDO, J. (org.). TRATADO DE PSIQUIATRIA DA ASSOCIAÇÃO BRASILEIRA DE PSIQUIATRIA. Porto Alegre: Artmed, 2022, diz-se que os transtornos da personalidade (TPs) constituem um conjunto de condições psiquiátricas com quadro clínico bastante variado, tendo em comum a longa duração e certa estabilidade ao longo da vida. Assim, não devem ser encarados como algo uniforme, uma vez que sua psicopatologia e clínica variam bastante de um TP específico para outro. Em 1835, em Treatise on insanity and other disorders affecting the mind, foi descrita a \"insanidade moral\", que consiste em uma \"perversão mórbida dos sentimentos, hábitos, inclinações, temperamento, disposições morais e impulsos naturais\", sem a presença de delírios, alucinações ou perda das capacidades de raciocínio. A primeira descrição detalhada dos TPs é atribuída ao seu autor. Em 1921, no livro Körperbau und Charakter (constituição e caráter), procurou-se associar determinadas formas fisicas ou biótipos a certos traços de personalidade, estendendo tais características aos TPs e, no extremo, a um determinado tipo de transtorno mental. Por exemplo, a constituição leptossômica estaria ligada a características esquizoides e traria ao indivíduo a propensão à esquizofrenia. Este modelo poderia ser considerado hoje um precursor das categorizações dimensionais em psiquiatria. Em 1923 foi então publicada a monografia Die Psychopathische Persönlichkeiten (as personalidades psicopáticas), parte do Tratado de psiquiatria de Gustav Aschaffenburg. Neste está a definição clássica das personalidades psicopáticas (PPs), aquelas que \"sofrem ou fazem sofrer a sociedade\". Para o autor, as PPs são \"variações extremas da normalidade (e não doenças stricto sensu) dentro de um continuum, em cujo centro estatístico estão as personalidades normais. Em 1980 a American Psychiatric Association, a partir do III Manual diagnóstico e estatístico de transtornos mentais (DSM-III), estabeleceu um sistema multiaxial de diagnóstico, sendo o Eixo I o dos transtornos mentais propriamente ditos, e o Eixo II dedicado exclusivamente aos TPs. O DSM 5, em sua Seçãol, propõe um modelo categorial dos TPs, de uso \"oficial\" e, na Seção II, apresenta propostas ainda em pesquisa, de um modelo dimensional. Dos TPs descritos na Seção I do DSM-5, os borderline esquizotípica e antissocial - possivelmente por sua importância clínica e forense - são os mais estudados dos pontos de vista clínico e etiopatogênico. De acordo com as menções na referência, dentre as opções a seguir, marque a alternativa CORRETA.",
           "options": [
             {
               "letter": "A",
@@ -10052,7 +10052,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2024.1 Modelo 2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 59",
-          "text": "De acordo com a Referência NARDI, A. E.; SILVA, A. G.; QUEVEDO, J. (org.). TRATADO DE PSIQUIATRIA DA ASSOCIAÇÃO BRASILEIRA DE PSIQUIATRIA. Porto Alegre: Artmed, 2022, \"a partir de 1985 [...] uma parte significativa dos postos de chefia de programas estaduais e municipais de saúde mental, assim como a direçãc de importantes unidades hospitalares públicas - inclusive algumas universitárias - estavam sob a condução de fundadores e ativistas do Movimento Nacional dos Trabalhadores em Saúde Mental (MTSM)\". Esse MTSM transformou-se no Movimento Nacional da Luta antimanicomial (MNLA) para incluir pacientes, familiares e simpatizantes das suas propostas. O MNLA foi instrumento importante da Coordenação de Saúde Mental dc Ministério da Saúde (CORSAM/MS) para a implantação de um \"projeto basagliano\". Nos anos 1960, antes dc desenvolvimento dos tratamentos atuais e da expansão do campo da psiquiatria, líderes da antipsiquiatria diziam que \"doença mental não existe e é um subterfúgio para catalogar formas divergentes de viver\". Em 1978 foi promulgada, na Itália, a Lei no 180, conhecida como \"Lei Basaglia\". Em vez de defender a modernização das instituições asilares e manicomiais deterioradas e inadequadas para o exercício da psiquiatria, os \"basaglianos' propunham negar a psiquiatria. Das opções a seguir, marque a que NÃO faz parte do artigo 6o da Lei 180.",
+          "text": "De acordo com a Referência NARDI, A. E.; SILVA, A. G.; QUEVEDO, J. (org.). TRATADO DE PSIQUIATRIA DA ASSOCIAÇÃO BRASILEIRA DE PSIQUIATRIA. Porto Alegre: Artmed, 2022, \"a partir de 1985 [...] uma parte significativa dos postos de chefia de programas estaduais e municipais de saúde mental, assim como a direçãc de importantes unidades hospitalares públicas - inclusive algumas universitárias - estavam sob a condução de fundadores e ativistas do Movimento Nacional dos Trabalhadores em Saúde Mental (MTSM)\". Esse MTSM transformou-se no Movimento Nacional da Luta antimanicomial (MNLA) para incluir pacientes, familiares e simpatizantes das suas propostas. O MNLA foi instrumento importante da Coordenação de Saúde Mental dc Ministério da Saúde (CORSAM/MS) para a implantação de um \"projeto basagliano\". Nos anos 1960, antes dc desenvolvimento dos tratamentos atuais e da expansão do campo da psiquiatria, líderes da anti psiquiatria diziam que \"doença mental não existe e é um subterfúgio para catalogar formas divergentes de viver\". Em 1978 foi promulgada, na Itália, a Lei no 180, conhecida como \"Lei Basaglia\". Em vez de defender a modernização das instituições asilares e manicomiais deterioradas e inadequadas para o exercício da psiquiatria, os \"basaglianos' propunham negar a psiquiatria. Das opções a seguir, marque a que NÃO faz parte do artigo fio da Lei 180.",
           "options": [
             {
               "letter": "A",
@@ -11224,7 +11224,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Amnésia/hipomnésia retrógrada (de evocação): perda ou diminuição, respectivamente, da capacidade de recuperar memórias de longo prazo, que antes haviam sido normalmente fixadas. Por exemplo, o indivíduo, durante muitos anos, sabia de cor a senha de acesso à sua conta bancária e agora não se lembra mais dela."
+              "text": "Amnésia/hipomnésia retrógrada (de evocação): perda ou diminuição, respectivamente, da capacidade de recuperar memórias de longo prazo, que antes haviam sido normalmente fixa das. Por exemplo, o indivíduo, durante muitos anos, sabia de cor a senha de acesso à sua conta bancária e agora não se lembra mais dela."
             },
             {
               "letter": "E",
@@ -11527,7 +11527,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2025.2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 2",
-          "text": "De acordo com a referência Nardi, A.E.; Silva, A. G.; Quevedo, J. (org.).TRATADO DE PSIQUIATRIA DAASSOCIAÇÃO BRASILEIRA DEPSIQUIATRIA. Porto Alegre: Artmed,2022, de acordo com o modelo dimensional de transtornos de personalidade da CID 11, o Quadro que se caracteriza por desrespeito pelos direitos e sentimentos dos outros, englobando tanto egocentrismo quanto falta de empatia, no qual o egocentrismo inclui, por exemplo, expectativa da admiração dos outros, busca de atenção, preocupação com desejos e conforto próprios e não dos outros e aausência de empatia, por sua vez, manifestase por indiferença quanto ao fato de as próprias ações serem inconvenientes ou ferir os outros, ser enganador, manipulador e explorador dos outros, ser mesquinho e fisicamente agressivo, insensível ao sofrimento alheio e cruel na obtenção de seus objetivos, caracteriza:",
+          "text": "De acordo com a referência Nardi, A.E.; Silva, A. G.; Quevedo, J. (org.).TRATADO DE PSIQUIATRIA DAASSOCIAÇÃO BRASILEIRA DEPSIQUIATRIA. Porto Alegre: Artmed,2022, de acordo com o modelo dimensional de transtornos de personalidade da CID 11, o Quadro que se caracteriza por desrespeito pelos direitos e sentimentos dos outros, englobando tanto egocentrismo quanto falta de empatia, no qual o egocentrismo inclui, por exemplo, expectativa da admiração dos outros, busca de atenção, preocupação com desejos e conforto próprios e não dos outros e aausência de empatia, por sua vez, manifesta se por indiferença quanto ao fato de as próprias ações serem inconvenientes ou ferir os outros, ser enganador, manipulador e explorador dos outros, ser mesquinho e fisicamente agressivo, insensível ao sofrimento alheio e cruel na obtenção de seus objetivos, caracteriza:",
           "options": [
             {
               "letter": "A",
@@ -11547,7 +11547,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "E",
-              "text": "transtorno histriônico depersonalidade."
+              "text": "transtorno histriônico de personalidade."
             }
           ],
           "correctAnswer": "D",
@@ -11561,7 +11561,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2025.2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 3",
-          "text": "De acordo com a referência Nardi, A. E.; Silva, A. G.;Quevedo, J. (org.). TRATADO DEPSIQUIATRIA DA ASSOCIAÇÃOBRASILEIRA DE PSIQUIATRIA. Porto Alegre: Artmed, 2022, ainda que exista grande variação interindividual na apresentação clínica do autismo, os prejuízos nas habilidades de comunicação social e os comportamentos sensóriomotores restritos e repetitivos são reconhecidos como suas duas características principais. Em edições anteriores do DSM e da CID, o autismo, denominado transtorno autista ou autismo infantil, era incluído em uma categoria mais ampla denominada transtornos globais ou invasivos do desenvolvimento. Uma das categorias anteriormente integrante desse grupo de transtornos foi retirada, considerando as evidências que indicam tratar-se de uma síndrome genética com etiologia conhecida. Os demais quadros foram agrupados em transtorno do espectro autista, dado que há evidências inconclusivas a respeito da validade da distinção de categorias menores. Assinale a categoria que não foi incluída no transtorno do espectro autista.",
+          "text": "De acordo com a referência Nardi, A. E.; Silva, A. G.;Quevedo, J. (org.). TRATADO DEPSIQUIATRIA DA ASSOCIAÇÃOBRASILEIRA DE PSIQUIATRIA. Porto Alegre: Artmed, 2022, ainda que exista grande variação interindividual na apresentação clínica do autismo, os prejuízos nas habilidades de comunicação social e os comportamentos sensório motores restritos e repetitivos são reconhecidos como suas duas características principais. Em edições anteriores do DSM e da CID, o autismo, denominado transtorno autista ou autismo infantil, era incluído em uma categoria mais ampla denominada transtornos globais ou invasivos do desenvolvimento. Uma das categorias anteriormente integrante desse grupo de transtornos foi retirada, considerando as evidências que indicam tratar-se de uma síndrome genética com etiologia conhecida. Os demais quadros foram agrupados em transtorno do espectro autista, dado que há evidências inconclusivas a respeito da validade da distinção de categorias menores. Assinale a categoria que não foi incluída no transtorno do espectro autista.",
           "options": [
             {
               "letter": "A",
@@ -11767,7 +11767,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2025.2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 9",
-          "text": "De acordo com a referência Nardi, A. E.; Silva, A. G.;Quevedo, J. (org.). TRATADO DE PSIQUIATRIA DA ASSOCIAÇÃOBRASILEIRA DE PSIQUIATRIA. Porto Alegre: Artmed, 2022 ,resultados de um ensaio clínico de fase 1B sugeriram que a infusão venosa mensal de aducanumabe, ao longo de um ano, levaria à redução dos níveisde βamiloide em indivíduos com DA prodrômica ou leve. O uso desse anticorpo monoclonal, que se liga seletivamente às fibrilas de βamiloide, possibilitou também o alentecimento da progressão dos déficits cognitivos nesse estudo. Edema cerebral vasogênico, com resolução em 4 a 12 semanas, foi o mais importante efeito adverso encontrado. Entretanto, dois ensaios clínicos de fase 3 que investigavam os efeitos do aducanumabe sobre a cognição e a progressão da DA foram interrompidos, no ano de 2019, depois de análises interinas concluírem que os desfechos esperados não seriam atingidos. Recentemente, dados de participantes que utilizaram o fármaco por longos períodos e em altas doses foram reanalisados, verificando-se que apresentaram redução nos níveis de taufosforilada no líquor e à cintilografia. Em 7 de junho de 2021, a FDA aprovou o uso dessa droga para o tratamento da DA, despertando críticas de especialistas que ressaltaram os resultados conflitantes quanto à efetividade da substância em ensaios clínicos. O lecanemabe (BAN2401) é um anticorpo monoclonal dirigido contra as protofibrilas de βamiloide. O ensaio clínico de fase 2 demonstrou efeitos benéficos sobre a cognição e reduções de biomarcadores de tau e neurodegeneração em indivíduos com DA leve. Após a interrupção de um ensaio clínico por falha em atingir os efeitos esperados, um novo estudo de fase 3 foi iniciado, utilizando-se altas doses de gantenerumabe em participantes com DA prodrômica e leve. Esse anticorpo liga-se a um epítopo das fibrilas de βamiloide, promovendo, segundo análises iniciais, redução nos níveis de biomarcadores de tau e neurodegeneração. Por fim, em janeiro de 2021, foram divulgados resultados interinos de um ensaio clínico de fase 2, utilizando o anticorpo monoclonal donanemabe em uma amostra com DA em estágio leve. O uso desse agente por 76 semanas reduziu em 32% a velocidade de progressão dos déficits cognitivos e funcionais em comparação com o placebo. Além disso, nos indivíduos tratados, observou-se diminuição nos níveis cerebraisde Aβ, conforme demonstrado por exames de PiBPET. Assinale o principal efeito adverso observado nessa análise interina:",
+          "text": "De acordo com a referência Nardi, A. E.; Silva, A. G.;Quevedo, J. (org.). TRATADO DE PSIQUIATRIA DA ASSOCIAÇÃOBRASILEIRA DE PSIQUIATRIA. Porto Alegre: Artmed, 2022 ,resultados de um ensaio clínico de fase 1B sugeriram que a infusão venosa mensal de aducanumabe, ao longo de um ano, levaria à redução dos níveis de βamiloide em indivíduos com DA prodrômica ou leve. O uso desse anticorpo monoclonal, que se liga seletivamente às fibrilas de βamiloide, possibilitou também o alentecimento da progressão dos déficits cognitivos nesse estudo. Edema cerebral vasogênico, com resolução em 4 a 12 semanas, foi o mais importante efeito adverso encontrado. Entretanto, dois ensaios clínicos de fase 3 que investigavam os efeitos do aducanumabe sobre a cognição e a progressão da DA foram interrompidos, no ano de 2019, depois de análises interinas concluírem que os desfechos esperados não seriam atingidos. Recentemente, dados de participantes que utilizaram o fármaco por longos períodos e em altas doses foram reanalisados, verificando-se que apresentaram redução nos níveis de taufosforilada no líquor e à cintilografia. Em 7 de junho de 2021, a FDA aprovou o uso dessa droga para o tratamento da DA, despertando críticas de especialistas que ressaltaram os resultados conflitantes quanto à efetividade da substância em ensaios clínicos. O lecanemabe (BAN2401) é um anticorpo monoclonal dirigido contra as protofibrilas de βamiloide. O ensaio clínico de fase 2 demonstrou efeitos benéficos sobre a cognição e reduções de biomarcadores de tau e neurodegeneração em indivíduos com DA leve. Após a interrupção de um ensaio clínico por falha em atingir os efeitos esperados, um novo estudo de fase 3 foi iniciado, utilizando-se altas doses de gantenerumabe em participantes com DA prodrômica e leve. Esse anticorpo liga-se a um epítopo das fibrilas de βamiloide, promovendo, segundo análises iniciais, redução nos níveis de biomarcadores de tau e neurodegeneração. Por fim, em janeiro de 2021, foram divulgados resultados interinos de um ensaio clínico de fase 2, utilizando o anticorpo monoclonal donanemabe em uma amostra com DA em estágio leve. O uso desse agente por 76 semanas reduziu em 32% a velocidade de progressão dos déficits cognitivos e funcionais em comparação com o placebo. Além disso, nos indivíduos tratados, observou-se diminuição nos níveis cerebrais de Aβ, conforme demonstrado por exames de PiBPET. Assinale o principal efeito adverso observado nessa análise interina:",
           "options": [
             {
               "letter": "A",
@@ -12379,7 +12379,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2025.2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 27",
-          "text": "De acordo com a referência Nardi, A. E.; Silva, A. G.;Quevedo, J. (org.). TRATADO DE PSIQUIATRIA DA ASSOCIAÇÃO BRASILEIRA DE PSIQUIATRIA. Porto Alegre: Artmed, 2022, na esquizofrenia, a dimensão dos sintomas negativos foi assim chamada como um contraponto à ideia de sintomas resultantes da excitação neuronal, princípio que define o termo “positivo”. Mais diretamente, esses sintomas dizem respeito à ausência de determinados comportamentos esperados, mais notadamente na expressão do afeto e da vontade. O prejuízo na vontade é apontado, em especial, como o principal preditor de prejuízo funcional nas pessoas com esquizofrenia. De forma mais detalhada, o consenso do National Institute of Mental Health (NIMH) propôs cinco domínios para os sintomas negativos. Assinale a alternativa que não caracteriza um desses domínios:",
+          "text": "De acordo com a referência Nardi, A. E.; Silva, A. G.;Quevedo, J. (org.). TRATADO DE PSIQUIATRIA DA ASSOCIAÇÃO BRASILEIRA DE PSIQUIATRIA. Porto Alegre: Artmed, 2022, na esquizofrenia, a dimensão dos sintomas negativos foi assim chamada como um contra ponto à ideia de sintomas resultantes da excitação neuronal, princípio que define o termo “positivo”. Mais diretamente, esses sintomas dizem respeito à ausência de determinados comportamentos esperados, mais notadamente na expressão do afeto e da vontade. O prejuízo na vontade é apontado, em especial, como o principal preditor de prejuízo funcional nas pessoas com esquizofrenia. De forma mais detalhada, o consenso do National Institute of Mental Health (NIMH) propôs cinco domínios para os sintomas negativos. Assinale a alternativa que não caracteriza um desses domínios:",
           "options": [
             {
               "letter": "A",
@@ -12413,7 +12413,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2025.2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 28",
-          "text": "De acordo com a referência Nardi, A. E.; Silva, A. G.;Quevedo, J. (org.). TRATADO DEPSIQUIATRIA DA ASSOCIAÇÃOBRASILEIRA DE PSIQUIATRIA. Porto Alegre: Artmed, 2022, oscorpos de Lewy são constituídospor agregados patológicos da αsinucleína, ubiquitina e estruturas neurofilamentares; a α-sinucleína, em sua atividade normal, tem papel contribuinte para a plasticidade neuronal na fenda sináptica. Na doença dos corpos de Lewy (DCL), os corpos de Lewy intracitoplasmáticos encontram-se, com maior frequência, em regiões distintas das observadas na doença de Parkinson (DP). As manifestações clínicas guardam relação com a localização dessas lesões. Assinale a região na qual os corpos de Lewy são mais Frequentemente observados na DP do que na DCL:",
+          "text": "De acordo com a referência Nardi, A. E.; Silva, A. G.;Quevedo, J. (org.). TRATADO DEPSIQUIATRIA DA ASSOCIAÇÃOBRASILEIRA DE PSIQUIATRIA. Porto Alegre: Artmed, 2022, os corpos de Lewy são constituídospor agregados patológicos da αsinucleína, ubiquitina e estruturas neurofilamentares; a α-sinucleína, em sua atividade normal, tem papel contribuinte para a plasticidade neuronal na fenda sináptica. Na doença dos corpos de Lewy (DCL), os corpos de Lewy intracitoplasmáticos encontram-se, com maior frequência, em regiões distintas das observadas na doença de Parkinson (DP). As manifestações clínicas guardam relação com a localização dessas lesões. Assinale a região na qual os corpos de Lewy são mais Frequentemente observados na DP do que na DCL:",
           "options": [
             {
               "letter": "A",
@@ -12603,7 +12603,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "E",
-              "text": "Arteriopatia cerebral autossômicadominante com infartossubcorticais e leucoencefalopatia(CADASIL)."
+              "text": "Arteriopatia cerebral autossômicadominante com infartos subcorticais e leucoencefalopatia(CADASIL)."
             }
           ],
           "correctAnswer": "E",
@@ -12651,7 +12651,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2025.2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 35",
-          "text": "De acordo com a referência Nardi, A. E.; Silva, A. G.;Quevedo, J. (org.). TRATADO DEPSIQUIATRIA DA ASSOCIAÇÃO BRASILEIRA DE PSIQUIATRIA. Porto Alegre: Artmed, 2022, a estimulação magnética transcraniana repetitiva (EMTr) consiste na aplicação de pulsos magnéticos sobre o couro cabeludo, com o propósito de modular a atividade elétrica emregiões cerebrais subjacentes ao local do estímulo. Diversos estudos demonstram sua eficácia em pacientes que não responderam a pelo menos um fármaco antidepressivo. Por isso, esse tratamento está aprovado para uso clínico. Entretanto, metanálises recentes mostram que o efeito antidepressivo da EMTr é pequeno. Assinale a mais eficaz estratégia antidepressiva disponível:",
+          "text": "De acordo com a referência Nardi, A. E.; Silva, A. G.;Quevedo, J. (org.). TRATADO DEPSIQUIATRIA DA ASSOCIAÇÃO BRASILEIRA DE PSIQUIATRIA. Porto Alegre: Artmed, 2022, a estimulação magnética transcraniana repetitiva (EMTr) consiste na aplicação de pulsos magnéticos sobre o couro cabeludo, com o propósito de modular a atividade elétrica em regiões cerebrais subjacentes ao local do estímulo. Diversos estudos demonstram sua eficácia em pacientes que não responderam a pelo menos um fármaco antidepressivo. Por isso, esse tratamento está aprovado para uso clínico. Entretanto, metanálises recentes mostram que o efeito antidepressivo da EMTr é pequeno. Assinale a mais eficaz estratégia antidepressiva disponível:",
           "options": [
             {
               "letter": "A",
@@ -12855,7 +12855,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2025.2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 41",
-          "text": "De acordo com a referência BRASIL. Presidência da República. Casa Civil. Subchefia para Assuntos Jurídicos. LEI Nº10.216, DE 06 DE ABRIL DE 2001, o tratamento em regime de internação será estruturado de forma a oferecer assistência integral à pessoa portadora de transtornos mentais, o que inclui diversos recursos. Assinale a alternativa não especificada textualmente na redação da Lei citada como referência naquestão:",
+          "text": "De acordo com a referência BRASIL. Presidência da República. Casa Civil. Subchefia para Assuntos Jurídicos. LEI Nº10.216, DE 06 DE ABRIL DE 2001, o tratamento em regime de internação será estruturado de forma a oferecer assistência integral à pessoa portadora de transtornos mentais, o que inclui diversos recursos. Assinale a alternativa não especificada textualmente na redação da Lei citada como referência na questão:",
           "options": [
             {
               "letter": "A",
@@ -13365,7 +13365,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2025.2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 56",
-          "text": "De acordo com a referência Nardi, A. E.; Silva, A. G.;Quevedo, J. (org.). TRATADO DE PSIQUIATRIA DA ASSOCIAÇÃOBRASILEIRA DE PSIQUIATRIA. Porto Alegre: Artmed, 2022, a deficiência intelectual (DI) pode ser considerada como “o funcionamento intelectual geral abaixo da média, que se origina durante o período de desenvolvimento e está associado a prejuízo no comportamento adaptativo”. Nela, observamos, além das perturbações orgânicas, dificuldades na realização de atividades esperadas socialmente, bem como alterações no relacionamento com o mundo. Não corresponde a uma doença única, mas a um complexo de síndromes que têm como característica comum a insuficiência intelectual e, por isso, o indivíduo por ela afetado é incapaz de competir, em termos de igualdade, com os companheiros normais, dentro de seu grupamento social. Cognitivamente, o retardo mental corresponde a um continuum, que vai do próximo ao normal ao francamente anormal, de acordo com o potencial adaptativo do indivíduo em questão, potencial representado pela sua capacidade intelectual. Avaliações padronizadas permitem que se estabeleça um índice que expressa “teoricamente” o nível de habilidade de um indivíduo, de acordo com as “normas” de sua idade, prevendo um desempenho futuro. As mudanças propostas pelo DSM-5 destacam uma alteração de terminologia, com a utilização do termo transtorno do desenvolvimento intelectual, caracterizado pelo déficit nas habilidades mentais, como solução de problemas, planejamento, pensamento abstrato, julgamento, aprendizagem acadêmica e por experiência, situando-se seu QI ao menos dois desvios padrão abaixo da média, considerando-se também idade, grupamento social e o padrão de 70 (como média normal). Altera-se, assim, o termo anterior, considerado discriminatório e estigmatizante, esquecendo-se que essas questões são muito mais relativas ao momento histórico e à cultura em questão do que ao problema propriamente dito, bastando-se lembrar que o termo antigo “idiota” tinha como significado “cidadão privado, individual”, sendo usado para aqueles que não participavam da vida pública. Da mesma forma, a palavra “imbecil”(do latim imbecillis) tinha o significado literal de “sem bastão”, sem nenhuma conotação negativa e representando alguém frágil, débil, vulnerável e até enfermiço. Deve- se, assim, ter em mente que as modificações semânticas correspondem muito mais a um modismo específico do que a uma mudança de caráter técnico e bases científicas. A investigação diagnóstica é, portanto, complexa e custosa, embora deva ser realizada sempre que possível. Ela pode ser feita por etapas, com níveis crescentes de complexidade. Assinale o componente da investigação que deve ser realizado na etapa 2.",
+          "text": "De acordo com a referência Nardi, A. E.; Silva, A. G.;Quevedo, J. (org.). TRATADO DE PSIQUIATRIA DA ASSOCIAÇÃOBRASILEIRA DE PSIQUIATRIA. Porto Alegre: Artmed, 2022, a deficiência intelectual (DI) pode ser considerada como “o funcionamento intelectual geral abaixo da média, que se origina durante o período de desenvolvimento e está associado a prejuízo no comportamento adaptativo”. Nela, observam os, além das perturbações orgânicas, dificuldades na realização de atividades esperadas socialmente, bem como alterações no relacionamento com o mundo. Não corresponde a uma doença única, mas a um complexo de síndromes que têm como característica comum a insuficiência intelectual e, por isso, o indivíduo por ela afetado é incapaz de competir, em termos de igualdade, com os companheiros normais, dentro de seu grupamento social. Cognitivamente, o retardo mental corresponde a um continuum, que vai do próximo ao normal ao francamente anormal, de acordo com o potencial adaptativo do indivíduo em questão, potencial representado pela sua capacidade intelectual. Avaliações padronizadas permitem que se estabeleça um índice que expressa “teoricamente” o nível de habilidade de um indivíduo, de acordo com as “normas” de sua idade, prevendo um desempenho futuro. As mudanças propostas pelo DSM-5 destacam uma alteração de terminologia, com a utilização do termo transtorno do desenvolvimento intelectual, caracterizado pelo déficit nas habilidades mentais, como solução de problemas, planejamento, pensamento abstrato, julgamento, aprendizagem acadêmica e por experiência, situando-se seu QI ao menos dois desvios padrão abaixo da média, considerando-se também idade, grupamento social e o padrão de 70 (como média normal). Altera-se, assim, o termo anterior, considerado discriminatório e estigmatizante, esquecendo-se que essas questões são muito mais relativas ao momento histórico e à cultura em questão do que ao problema propriamente dito, bastando-se lembrar que o termo antigo “idiota” tinha como significado “cidadão privado, individual”, sendo usado para aqueles que não participavam da vida pública. Da mesma forma, a palavra “imbecil”(do latim imbecillis) tinha o significado literal de “sem bastão”, sem nenhuma conotação negativa e representando alguém frágil, débil, vulnerável e até enfermiço. Deve- se, assim, ter em mente que as modificações semânticas correspondem muito mais a um modismo específico do que a uma mudança de caráter técnico e bases científicas. A investigação diagnóstica é, portanto, complexa e custosa, embora deva ser realizada sempre que possível. Ela pode ser feita por etapas, com níveis crescentes de complexidade. Assinale o componente da investigação que deve ser realizado na etapa 2.",
           "options": [
             {
               "letter": "A",
@@ -13706,7 +13706,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2025.2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 66",
-          "text": "De acordo com a referência Nardi, A. E.; Silva, A. G.;Quevedo, J. (org.). TRATADO DE66 Quevedo, J. (org.). TRATADO DEPSIQUIATRIA DA ASSOCIAÇÃOBRASILEIRA DE PSIQUIATRIA. Porto Alegre: Artmed, 2022, o Hierarchical Taxonomy Of Psychopathology (Hi TOP), ou consórcio de taxonomia hierárquica da Psicopatologia, foi formado por nosologistas psiquiátricos com o intuito de se desenvolver um consenso de classificação dimensional clinicamente mais informativa do que os sistemas de diagnóstico tradicionais (DSM e CID). Esse grupo revisou estudos sobre a estrutura da Psicopatologia e desenvolveu um modelo consensual. O sistema resultante pretende resolver problemas de limites e de falta substancial de validade dos diagnósticos tradicionais, caracterizando a Psicopatologia em termos de dimensões, em vez de categorias. O sistema resolve, pelo menos parcialmente, problema de heterogeneidade dentro das categorias diagnósticas, construindo dimensões com base na covariação observada de sintomas e identificando construtos mais coerentes. Também aborda as comorbidades dentro de diferentes ordens de hierarquia, resume os padrões de comorbidade e permite que os profissionais estudem e tratem as características comuns a várias condições clínicas. A hierarquia HiTOP inclui cinco níveis. Combina sintomas, sinais e comportamentos desadaptativos com sintomas coesos (p. ex.,insônia) e traços desadaptativos (p. ex., labilidade emocional). Estes, por sua vez, são combinados com componentes /características intimamente relacionadas em síndromes dimensionais. Síndromes semelhantes são combinadas em subfatores, como a dimensão da angústia, que inclui depressão, ansiedade generalizada, transtorno de estresse pós-traumático e alguns traços de personalidade borderline. Constelações maiores de síndromes formam um amplo espectro, como uma dimensão de internalização que consiste em angústia, medo, distúrbio alimentar e problemas sexuais. Por fim, os espectros podem ser agregados em superespectros extremamente amplos, como of ator geral da Psicopatologia, que reflete características compartilhadas por todos os transtornos mentais. De acordo com esse modelo teórico, assinale o sintoma não neurovegetativo da depressão:",
+          "text": "De acordo com a referência Nardi, A. E.; Silva, A. G.;Quevedo, J. (org.). TRATADO DE66 Quevedo, J. (org.). TRATADO DEPSIQUIATRIA DA ASSOCIAÇÃOBRASILEIRA DE PSIQUIATRIA. Porto Alegre: Artmed, 2022, o Hierarchical Taxonomy Of Psychopathology (HiTOP), ou consórcio de taxonomia hierárquica da Psicopatologia, foi formado por nosologistas psiquiátricos com o intuito de se desenvolver um consenso de classificação dimensional clinicamente mais informativa do que os sistemas de diagnóstico tradicionais (DSM e CID). Esse grupo revisou estudos sobre a estrutura da Psicopatologia e desenvolveu um modelo consensual. O sistema resultante pretende resolver problemas de limites e de falta substancial de validade dos diagnósticos tradicionais, caracterizando a Psicopatologia em termos de dimensões, em vez de categorias. O sistema resolve, pelo menos parcialmente, problema de heterogeneidade dentro das categorias diagnósticas, construindo dimensões com base na covariação observada de sintomas e identificando construtos mais coerentes. Também aborda as comorbidades dentro de diferentes ordens de hierarquia, resume os padrões de comorbidade e permite que os profissionais estudem e tratem as características comuns a várias condições clínicas. A hierarquia HiTOP inclui cinco níveis. Combina sintomas, sinais e comportamentos desadaptativos com sintomas coesos (p. ex.,insônia) e traços desadaptativos (p. ex., labilidade emocional). Estes, por sua vez, são combinados com componentes /características intimamente relacionadas em síndromes dimensionais. Síndromes semelhantes são combinadas em subfatores, como a dimensão da angústia, que inclui depressão, ansiedade generalizada, transtorno de estresse pós-traumático e alguns traços de personalidade borderline. Constelações maiores de síndromes formam um amplo espectro, como uma dimensão de internalização que consiste em angústia, medo, distúrbio alimentar e problemas sexuais. Por fim, os espectros podem ser agregados em superespectros extremamente amplos, como of ator geral da Psicopatologia, que reflete características compartilhadas por todos os transtornos mentais. De acordo com esse modelo teórico, assinale o sintoma não neurovegetativo da depressão:",
           "options": [
             {
               "letter": "A",
@@ -13740,7 +13740,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2025.2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 67",
-          "text": "De acordo com a referência Nardi, A. E.; Silva, A. G.;Quevedo, J. (org.). TRATADO DEPSIQUIATRIA DA ASSOCIAÇÃO BRASILEIRA DE PSIQUIATRIA. Porto Alegre: Artmed, 2022, durante a fase ictal da crise convulsiva induzida pela ECT, pode ocorrer uma quebra transitória na continuidade de uma estrutura. Durante esse processo, certos neuroquímicos podem ser liberados dacirculação para o parênquima cerebral, o que estaria relacionado a alterações específicas (aumento dos níveis do fator neurotrófico derivado do cérebro [BDNF], angiogênese, neurogênese) no microambiente do cérebro. Assinale a estrutura citada:",
+          "text": "De acordo com a referência Nardi, A. E.; Silva, A. G.;Quevedo, J. (org.). TRATADO DEPSIQUIATRIA DA ASSOCIAÇÃO BRASILEIRA DE PSIQUIATRIA. Porto Alegre: Artmed, 2022, durante a fase ictal da crise convulsiva induzida pela ECT, pode ocorrer uma quebra transitória na continuidade de uma estrutura. Durante esse processo, certos neuroquímicos podem ser liberados dacirculação para o parênquima cerebral, o que estaria relacionado a alterações específicas (aumento dos níveis do fator neurotrófico derivado do cérebro [BDNF], angiogênese, neurogênese) no micro ambiente do cérebro. Assinale a estrutura citada:",
           "options": [
             {
               "letter": "A",
@@ -14080,7 +14080,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2025.2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 77",
-          "text": "De acordo com a referência Nardi, A. E.; Silva, A. G.;Quevedo, J. (org.). TRATADO DEPSIQUIATRIA DA ASSOCIAÇÃO BRASILEIRA DE PSIQUIATRIA. Porto Alegre: Artmed, 2022, o transtorno de acumulação (TA) é de difícil manejo, por envolver uma grande resistência do paciente em procurar tratamento, além de enorme prejuízo ao indivíduo, à sua família e à comunidade. O tratamento, muitas vezes, inicia-se apenas após o transtorno tornar-se um problema de saúde pública, por exemplo, quando autoridades são acionadas para resolver acúmulo de entulho ou infestação por roedores. O tratamento não medicamentoso consiste na aplicação de diversos componentes baseados na TCC. Na terapia, o paciente busca entender o processo de acumulação, suas crenças, e envolve o processo de classificar, organizar, resistir ao acúmulo de novos objetos e descartar suas posses. Embora a TCC seja a modalidade mais estudada e com maior evidência de melhora, ainda que modesta, dos sintomas de acumulação (14 a 40%), a remediação cognitiva e o tratamento medicamentoso alcançaram proporções semelhantes. Em metanálise publicada, a proporção de pacientes respondedores ao tratamento medicamentoso ficou entre 37 e 76%, e entre os fármacos comparados, os ISRSs e um IRSN foram os que apresentaram as melhores respostas. Foram testados medicamentos adjuvantes em número pequeno de indivíduos. Assinale a alternativa que se mostrou eficaz como adjuvante nesse estudo:",
+          "text": "De acordo com a referência Nardi, A. E.; Silva, A. G.;Quevedo, J. (org.). TRATADO DEPSIQUIATRIA DA ASSOCIAÇÃO BRASILEIRA DE PSIQUIATRIA. Porto Alegre: Artmed, 2022, o transtorno de acumulação (TA) é de difícil manejo, por envolver uma grande resistência do paciente em procurar tratamento, além de enorme prejuízo ao indivíduo, à sua família e à comunidade. O tratamento, muitas vezes, inicia-se apenas após o transtorno tornar-se um problema de saúde pública, por exemplo, quando autoridades são acionadas para resolver acúmulo de entulho ou infestação por roedores. O tratamento não medicamentoso consiste na aplicação de diversos componentes baseados na TCC. Na terapia, o paciente busca entender o processo de acumulação, suas crenças, e envolve o processo de classificar, organizar, resistir ao acúmulo de novos objetos e descartar suas posses. Embora a TCC seja a modalidade mais estudada e com maior evidência de melhora, ainda que modesta, dos sintomas de acumulação (14 a 40%), a remediação cognitiva e o tratamento medicamentoso alcançaram proporções semelhantes. Em metanálise publicada, a proporção de pacientes responde dores ao tratamento medicamentoso ficou entre 37 e 76%, e entre os fármacos comparados, os ISRSs e um IRSN foram os que apresentaram as melhores respostas. Foram testados medicamentos adjuvantes em número pequeno de indivíduos. Assinale a alternativa que se mostrou eficaz como adjuvante nesse estudo:",
           "options": [
             {
               "letter": "A",
@@ -14318,7 +14318,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2025.2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 84",
-          "text": "De acordo com a referência Nardi, A. E.; Silva, A. G.;Quevedo, J. (org.). TRATADO DEPSIQUIATRIA DA ASSOCIAÇÃO BRASILEIRA DE PSIQUIATRIA. Porto Alegre: Artmed, 2022, os sistemas neurais primordiais na promoção do sono são dois dos núcleos do hipotálamo anterior. Neurônios GABAérgicos nesses núcleos inervam a maioria dosc omponentes do sistema ativador, inibindo-os de modo coordenado. Neurônios GABAérgicos da zona parafacial no bulbo favorecem o sono pela inibição de neurônios ativadores. Neurônios concentradores de melanina (MCH) no hipotálamo lateral contêm GABA e glutamato liberados seletivamente para alvos distintos, inervando neurônios no tronco encefálico que controlam o sono REM. Embora neurônios monoaminérgicos e colinérgicos sejam potentes moduladores de REM, parecem não participar do mecanismo interruptor que liga/desliga o REM. Drogas promotoras de sono inibem sistemas ativadores por meio da ativação de receptores GABA-A, como benzodiazepínicos e drogas Z, ou pela inibição de hipocretina, como suvorexant e outros antagonistas duplos dos receptores de orexina. Assinale a alternativa que corresponde a um dos núcleos hipotalâmicos promotores do sono.",
+          "text": "De acordo com a referência Nardi, A. E.; Silva, A. G.;Quevedo, J. (org.). TRATADO DEPSIQUIATRIA DA ASSOCIAÇÃO BRASILEIRA DE PSIQUIATRIA. Porto Alegre: Artmed, 2022, os sistemas neurais primordiais na promoção do sono são dois dos núcleos do hipotálamo anterior. Neurônios GABAérgicos nesses núcleos inervam a maioria dosc omponentes do sistema ativador, inibindo-os de modo coordenado. Neurônios GABAérgicos da zona para facial no bulbo favorecem o sono pela inibição de neurônios ativadores. Neurônios concentradores de melanina (MCH) no hipotálamo lateral contêm GABA e glutamato liberados seletivamente para alvos distintos, inervando neurônios no tronco encefálico que controlam o sono REM. Embora neurônios monoaminérgicos e colinérgicos sejam potentes moduladores de REM, parecem não participar do mecanismo interruptor que liga/desliga o REM. Drogas promotoras de sono inibem sistemas ativadores por meio da ativação de receptores GABA-A, como benzodiazepínicos e drogas Z, ou pela inibição de hipocretina, como suvorexant e outros antagonistas duplos dos receptores de orexina. Assinale a alternativa que corresponde a um dos núcleos hipotalâmicos promotores do sono.",
           "options": [
             {
               "letter": "A",
@@ -14955,7 +14955,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "As alucinações hipnagógicas e hipnopômpicas são geralmen te uma manifestação do sono nãoREM."
+              "text": "As alucinações hipnagógicas e hipnopômpicas são geralmente uma manifestação do sono nãoREM."
             },
             {
               "letter": "D",
@@ -15113,7 +15113,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "AMRIGS 2015 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 7",
-          "text": "Paciente com 52 anos, hospitalizado após realização de cirur gia, desenvolve quadro de flutuação no nível de consciência, desorientação temporal, dificuldade de atenção, agitação psicomotora, delírios paranoides e alucinações visuais. Em relação ao quadro exposto, assinale a alternativa correta.",
+          "text": "Paciente com 52 anos, hospitalizado após realização de cirurgia, desenvolve quadro de flutuação no nível de consciência, desorientação temporal, dificuldade de atenção, agitação psicomotora, delírios paranoides e alucinações visuais. Em relação ao quadro exposto, assinale a alternativa correta.",
           "options": [
             {
               "letter": "A",
@@ -15181,7 +15181,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "AMRIGS 2015 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 9",
-          "text": "Um homem, adulto jovem, chega na emergência psiquiátrica trazido pelos familiares. Queixa -se de estar ouvindo vozes que lhe dão ordens para fazer “coisas más”. Também relata que frequentemente ouve duas ou mais vozes falando entre elas sobre seu comportamento. Ao exame, apresenta -se com má higiene e embotam ento afetivo. Das medicações abaixo, qual a mais indicada no manejo dos sintomas do paciente?",
+          "text": "Um homem, adulto jovem, chega na emergência psiquiátrica trazido pelos familiares. Queixa-se de estar ouvindo vozes que lhe dão ordens para fazer “coisas más”. Também relata que frequentemente ouve duas ou mais vozes falando entre elas sobre seu comportamento. Ao exame, apresenta-se com má higiene e embotam ento afetivo. Das medicações abaixo, qual a mais indicada no manejo dos sintomas do paciente?",
           "options": [
             {
               "letter": "A",
@@ -15291,7 +15291,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "B",
-              "text": "Sentir-se embaraçado por expor -se a situações em que possa ser avaliado ou criticado."
+              "text": "Sentir-se embaraçado por expor-se a situações em que possa ser avaliado ou criticado."
             },
             {
               "letter": "C",
@@ -15657,7 +15657,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "AMRIGS 2015 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 23",
-          "text": "Homem de 55 anos é trazido à emergência psiquiátrica por desconhecidos. Apresenta-se confuso, com dificuld ade para responder às perguntas e para deambular , oftalmoplegia e percebe -se facilmente que o paciente está com cheiro de álcool. Sobre essa situação, assinale a alternativa correta.",
+          "text": "Homem de 55 anos é trazido à emergência psiquiátrica por desconhecidos. Apresenta-se confuso, com dificuld ade para responder às perguntas e para deambular , oftalmoplegia e percebe-se facilmente que o paciente está com cheiro de álcool. Sobre essa situação, assinale a alternativa correta.",
           "options": [
             {
               "letter": "A",
@@ -16031,7 +16031,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "AMRIGS 2015 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 34",
-          "text": "Mulher de 30 anos procura atendimento com relato de há 6 meses sentir , na maioria dos dias , ansiedade e preocupação com seu desempenho no trabalho e no curso de pós-graduação. Considera suas preocupações exageradas e diz não conseguir controlá -las. Queixa-se também de cansaço, dificuldades de manter a concentração, dores musculares e irritação, além de referir episódios recorrentes de cefaleia e diarreia. Fez uso , algumas vezes, de clonazepam, com alívio parcial e temporário dos sintomas. Nega uso de álcool, drogas e outros medicamentos, além de negar a presença de outra condição médica conhecida. Qual o diagnóstico mais provável dessa paciente?",
+          "text": "Mulher de 30 anos procura atendimento com relato de há 6 meses sentir , na maioria dos dias , ansiedade e preocupação com seu desempenho no trabalho e no curso de pós-graduação. Considera suas preocupações exageradas e diz não conseguir controlá-las. Queixa-se também de cansaço, dificuldades de manter a concentração, dores musculares e irritação, além de referir episódios recorrentes de cefaleia e diarreia. Fez uso , algumas vezes, de clonazepam, com alívio parcial e temporário dos sintomas. Nega uso de álcool, drogas e outros medicamentos, além de negar a presença de outra condição médica conhecida. Qual o diagnóstico mais provável dessa paciente?",
           "options": [
             {
               "letter": "A",
@@ -16133,7 +16133,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "AMRIGS 2015 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 37",
-          "text": "Mulher de 20 anos consulta acompanhada pela mãe. Desde os 15 anos de idade, a paciente tem apresentado comportamentos recorrentes de automutilação, cortando-se nos braços e nas pernas. Sempre que se sente sozinha, tem vontade de se machucar, e, muitas vezes , obtém alívio temporário do sofrimento psíquico com as autoagressões. No entanto, queixa-se de um sentimento de vazio crônico. Tem o mesmo namorado há cerca de 3 anos, com quem já terminou e reatou “umas cem vezes”. A mãe conta que, sempre que o namorado fala em terminar a relação, ela ameaça se matar. A paciente diz que o namorado é “às vezes perfeito, mas às vezes um idiota”. Sua mãe conta que ela tem episódios de raiva e de agressividade durante os qua is é muito difícil controlá-la. A mãe fala ainda que , por vezes, a filha diz que todos estão contra ela e parece sentir-se perseguida. A paciente relata episódios de alimentação compulsiva, eventualmente seguidos de purgação por vômitos. Qual o diagnóstico provável dessa paciente?",
+          "text": "Mulher de 20 anos consulta acompanhada pela mãe. Desde os 15 anos de idade, a paciente tem apresentado comportamentos recorrentes de automutilação, cortando-se nos braços e nas pernas. Sempre que se sente sozinha, tem vontade de se machucar, e, muitas vezes , obtém alívio temporário do sofrimento psíquico com as autoagressões. No entanto, queixa-se de um sentimento de vazio crônico. Tem o mesmo namorado há cerca de 3 anos, com quem já terminou e reatou “umas cem vezes”. A mãe conta que, sempre que o namorado fala em terminar a relação, ela ameaça se matar. A paciente diz que o namorado é “às vezes perfeito, mas às vezes um idiota”. Sua mãe conta que ela tem episódios de raiva e de agressividade durante os quais é muito difícil controlá-la. A mãe fala ainda que , por vezes, a filha diz que todos estão contra ela e parece sentir-se perseguida. A paciente relata episódios de alimentação compulsiva, eventualmente seguidos de purgação por vômitos. Qual o diagnóstico provável dessa paciente?",
           "options": [
             {
               "letter": "A",
@@ -16235,7 +16235,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "AMRIGS 2015 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 40",
-          "text": "Visto que o suicídio é um problema de saúde pública, é importante identificar e tratar os pacientes que apresentam as maiores chances de cometê -lo. Analise as assertivas abaixo sobre o assunto: I. Ser homem, desemprego, etilismo e episódio depressivo são fatores de risco para suicídio. II. Tentativas de suicídio prévio é um dos maiores indicadores de risco. III. São fatores protetores contra o suicídio: suporte social, maternidade, gestação e religiosidade. IV. Não se deve perguntar ao paciente com depressão se ele tem pensamentos suicidas, pois isso pode incentivá-lo a tentar suicídio. Quais estão corretas?",
+          "text": "Visto que o suicídio é um problema de saúde pública, é importante identificar e tratar os pacientes que apresentam as maiores chances de cometê-lo. Analise as assertivas abaixo sobre o assunto: I. Ser homem, desemprego, etilismo e episódio depressivo são fatores de risco para suicídio. II. Tentativas de suicídio prévio é um dos maiores indicadores de risco. III. São fatores protetores contra o suicídio: suporte social, maternidade, gestação e religiosidade. IV. Não se deve perguntar ao paciente com depressão se ele tem pensamentos suicidas, pois isso pode incentivá-lo a tentar suicídio. Quais estão corretas?",
           "options": [
             {
               "letter": "A",
@@ -16269,7 +16269,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "AMRIGS 2015 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 41",
-          "text": "Um ataque de pânico é um surto abrupto de medo intenso ou desconforto intenso acompanhado de manifestações físicas e psíquicas com grande sofrimen to para a pessoa. Em relação a essa condição, analise as seguintes assertivas: I. Pode ser acompanhado dos segu intes sintomas: palpitações, sudorese, sensação de falta de ar, dor torácica, medo de morrer ou enlouquecer. II. Entre as técnicas psicoterápicas para o manejo de um ataque de pânico na emergência, está a respiração diafragmática e a psicoeducação a respeito da condição. III. O uso de inibidores seletivos da recaptação de serotonina é a melhor opção na emergência para cessação do ataque no momento agudo da crise. Quais são as corretas?",
+          "text": "Um ataque de pânico é um surto abrupto de medo intenso ou desconforto intenso acompanhado de manifestações físicas e psíquicas com grande sofrimen to para a pessoa. Em relação a essa condição, analise as seguintes assertivas: I. Pode ser acompanhado dos seguintes sintomas: palpitações, sudorese, sensação de falta de ar, dor torácica, medo de morrer ou enlouquecer. II. Entre as técnicas psicoterápicas para o manejo de um ataque de pânico na emergência, está a respiração diafragmática e a psicoeducação a respeito da condição. III. O uso de inibidores seletivos da recaptação de serotonina é a melhor opção na emergência para cessação do ataque no momento agudo da crise. Quais são as corretas?",
           "options": [
             {
               "letter": "A",
@@ -16443,7 +16443,7 @@ window.BANCO_RMAIS_EXAMS = {
           "options": [
             {
               "letter": "A",
-              "text": "O tratamento apresenta resultados positivos em curto prazo, mas não tem impacto no funcionamento do indivíduo em longoprazo."
+              "text": "O tratamento apresenta resultados positivos em curto prazo, mas não tem impacto no funcionamento do indivíduo em longo prazo."
             },
             {
               "letter": "B",
@@ -16451,7 +16451,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "Psicoterapias não apres entam eficácia em relação às alterações comportamentais."
+              "text": "Psicoterapias não apresentam eficácia em relação às alterações comportamentais."
             },
             {
               "letter": "D",
@@ -16583,11 +16583,11 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "B",
-              "text": "As pessoas com Transtorno de Personalidade Antissocial, geralmente, apresentam remorso por seus atos e ajustam -se facilmente às normas estabelecidas, levando em consideração as outras pessoas."
+              "text": "As pessoas com Transtorno de Personalidade Antissocial, geralmente, apresentam remorso por seus atos e ajustam-se facilmente às normas estabelecidas, levando em consideração as outras pessoas."
             },
             {
               "letter": "C",
-              "text": "O Transtorno de Personalidade Borderline é caracterizado por re lacionamentos interpessoais instáveis, perturbação da identidade, impulsividade, sentimentos de vazio e comportamento suicida e automutilante."
+              "text": "O Transtorno de Personalidade Borderline é caracterizado por relacionamentos interpessoais instáveis, perturbação da identidade, impulsividade, sentimentos de vazio e comportamento suicida e automutilante."
             },
             {
               "letter": "D",
@@ -16846,7 +16846,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "E",
-              "text": "Fobia social. Para responder às questões 08 e 09, considere o seguinte caso clínico: Paciente do sexo feminino com 16 anos , está muito magra e continua a perder peso. Levada ao clínico pela mãe, ela nega estar magra e que nunca esteve tão bem -disposta. No exame físico, além da magreza, nada importante. Altura 1,72 m e peso de 42 kg."
+              "text": "Fobia social. Para responder às questões 08 e 09, considere o seguinte caso clínico: Paciente do sexo feminino com 16 anos , está muito magra e continua a perder peso. Levada ao clínico pela mãe, ela nega estar magra e que nunca esteve tão bem-disposta. No exame físico, além da magreza, nada importante. Altura 1,72 m e peso de 42 kg."
             }
           ],
           "correctAnswer": "D",
@@ -16860,7 +16860,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "AMRIGS 2017 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 8",
-          "text": "Qual teste laboratoria l é de mais utilidade para o clínico avaliar o estágio da inanição?",
+          "text": "Qual teste laboratorial é de mais utilidade para o clínico avaliar o estágio da inanição?",
           "options": [
             {
               "letter": "A",
@@ -16928,7 +16928,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "AMRIGS 2017 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 10",
-          "text": "Seguidamente confunde -se ataques de pânico em fobia social com ataque de pânico em transtorno do pânico primário, já que ataques de pânico podem ocorrer nos dois transtornos. Qual situação, em que sua presença, melhor ajuda na diferenciação dos dois quadros?",
+          "text": "Seguidamente confunde-se ataques de pânico em fobia social com ataque de pânico em transtorno do pânico primário, já que ataques de pânico podem ocorrer nos dois transtornos. Qual situação, em que sua presença, melhor ajuda na diferenciação dos dois quadros?",
           "options": [
             {
               "letter": "A",
@@ -17004,7 +17004,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "B",
-              "text": "Planejamento, aval iando a percepção do paciente, recebendo o convite, abordar emoções, dando conhecimento e informação ao paciente, estratégia e resumo."
+              "text": "Planejamento, avaliando a percepção do paciente, recebendo o convite, abordar emoções, dando conhecimento e informação ao paciente, estratégia e resumo."
             },
             {
               "letter": "C",
@@ -17098,7 +17098,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "AMRIGS 2017 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 15",
-          "text": "Embora o DSM -5 não utilize mais os subtipos de esquizofrenia, eles ainda são listados na CID -10. Muitos autores acreditam que os subtipos de esquizofrenia possuam significância clínica e, em muitos países, ainda são utilizados para descrever a fenomenologia da esquizofre nia. A seguir, assinale a alternativa que corretamente descreve o subtipo de esquizofrenia.",
+          "text": "Embora o DSM -5 não utilize mais os subtipos de esquizofrenia, eles ainda são listados na CID -10. Muitos autores acreditam que os subtipos de esquizofrenia possuam significância clínica e, em muitos países, ainda são utilizados para descrever a fenomenologia da esquizofrenia. A seguir, assinale a alternativa que corretamente descreve o subtipo de esquizofrenia.",
           "options": [
             {
               "letter": "A",
@@ -17110,11 +17110,11 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "Bouf’ee d’elirante (ou psicose delir ante aguda) é um conceito diagnóstico francês que difere do diagnóstico de esquizofrenia , porque a duração dos sintomas é de menos de três meses. Ele se assemelha ao diagnóstico de transtorno esquizofrenifor me do DSM-5."
+              "text": "Bouf’ee d’elirante (ou psicose delirante aguda) é um conceito diagnóstico francês que difere do diagnóstico de esquizofrenia , porque a duração dos sintomas é de menos de três meses. Ele se assemelha ao diagnóstico de transtorno esquizofrenifor me do DSM-5."
             },
             {
               "letter": "D",
-              "text": "A esquizofrenia de início tardio é clinicamente indistinguível da esquizofrenia, poré m tem seu início após os 45 anos. Costuma apresentar co mo característica a predominância de sintomas paranoides e aparece com mais frequência em homens."
+              "text": "A esquizofrenia de início tardio é clinicamente indistinguível da esquizofrenia, porém tem seu início após os 45 anos. Costuma apresentar co mo característica a predominância de sintomas paranoides e aparece com mais frequência em homens."
             },
             {
               "letter": "E",
@@ -17132,7 +17132,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "AMRIGS 2017 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 16",
-          "text": "Os transtornos psicóticos são frequentes na clínica de um psiquiatra que atende pacientes graves. Abaix o, assinale a alternativa INCORRETA sobre a descrição de um transtorno psicótico.",
+          "text": "Os transtornos psicóticos são frequentes na clínica de um psiquiatra que atende pacientes graves. Abaixo, assinale a alternativa INCORRETA sobre a descrição de um transtorno psicótico.",
           "options": [
             {
               "letter": "A",
@@ -17166,7 +17166,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "AMRIGS 2017 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 17",
-          "text": "Em relação ao lítio, analise as assertivas abaixo: I. É um íon monovalente, membro do grupo 1 A dos metais alcalinos na tabela periódica. A maior parte do lítio usado nos Estados Unidos vem da mineração de lagos secos no Chile e na Argentina. II. Se liga fortemente a proteínas plasmáticas. Ele não é metabolizado e é excretado pelos rins. III. A meia-vida plasmática inicial é de 1,3 dia e passa para 2,4 dias após administração contínua superior a um ano. IV. A barreira hematoencefálica permite apenas a passagem lenta do lítio, motivo pelo qual uma ún ica superdosagem não causa necessariamente intoxicação e pelo qual a intoxicação de longo prazo acaba por demorar a se resolver. Quais estão corretas?",
+          "text": "Em relação ao lítio, analise as assertivas abaixo: I. É um íon monovalente, membro do grupo 1 A dos metais alcalinos na tabela periódica. A maior parte do lítio usado nos Estados Unidos vem da mineração de lagos secos no Chile e na Argentina. II. Se liga fortemente a proteínas plasmáticas. Ele não é metabolizado e é excretado pelos rins. III. A meia-vida plasmática inicial é de 1,3 dia e passa para 2,4 dias após administração contínua superior a um ano. IV. A barreira hematoencefálica permite apenas a passagem lenta do lítio, motivo pelo qual uma única superdosagem não causa necessariamente intoxicação e pelo qual a intoxicação de longo prazo acaba por demorar a se resolver. Quais estão corretas?",
           "options": [
             {
               "letter": "A",
@@ -17204,7 +17204,7 @@ window.BANCO_RMAIS_EXAMS = {
           "options": [
             {
               "letter": "A",
-              "text": "São exemplos de sinais e sintomas de intoxicação de leve a moderada (1,5 a 2 ,0 mEq/l): anorexia, fasciculaçõ es musculares, síncope e visão turva."
+              "text": "São exemplos de sinais e sintomas de intoxicação de leve a moderada (1,5 a 2 ,0 mEq/l): anorexia, fasciculações musculares, síncope e visão turva."
             },
             {
               "letter": "B",
@@ -17212,7 +17212,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "O risco teratogênico do lítio é mais alto do que para a po pulação em geral, mas parece ser o mesmo do que o associado ao uso de valproato e carbamazepina."
+              "text": "O risco teratogênico do lítio é mais alto do que para a população em geral, mas parece ser o mesmo do que o associado ao uso de valproato e carbamazepina."
             },
             {
               "letter": "D",
@@ -17220,7 +17220,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "E",
-              "text": "Os Anti-inflamatórios Não Esteroides (AINEs) podem aumentar a depuração do lítio e, por isso, deve -se observar de perto quando prescrito lítio com medicações como indometacina, diclofenaco, ibuprofeno e naproxeno, por exemplo."
+              "text": "Os Anti-inflamatórios Não Esteroides (AINEs) podem aumentar a depuração do lítio e, por isso, deve-se observar de perto quando prescrito lítio com medicações como indometacina, diclofenaco, ibuprofeno e naproxeno, por exemplo."
             }
           ],
           "correctAnswer": "D",
@@ -17234,7 +17234,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "AMRIGS 2017 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 19",
-          "text": "Em relação ao transtorno de pânico, analise as seguintes assertivas e assinale V, se verdadeiras, ou F, se falsas. ( ) Mesmo tendo havido grande interesse na associação entre Prolapso de Válvula Mitral (PVM) e Transtorno de Pânico (TP), estudos verificaram que a prevalênc ia de TP em pacientes com PVM é a mesma daqueles pacientes com TP sem PVM. ( ) Alguns estudos verificaram que o risco de suicídio durante a vida , em pacientes com TP, é mais alto do que em pessoas sem transtorno mental. ( ) O TP em geral é uma condição crônica, ainda que seu curso seja variável , tanto entre pacientes como em um único paciente. Apenas cerca de 10% dos pacientes parecem ficar livres de sintomas a longo prazo. ( ) Nem todos os ISRSs são eficientes para o TP. A fluvoxamina, por exemplo, deve ser evitada nesse tipo de paciente. ( ) Embora os ISRS s sejam considerados os agentes de primeira linha para o tratamento do TP, dados demonstram que, entre os tricíclicos, a clomipramina e a nortriptilina são os mais eficazes no tratamento desse transtorno. A ordem correta de preenchimento dos parênteses, de cima para baixo, é:",
+          "text": "Em relação ao transtorno de pânico, analise as seguintes assertivas e assinale V, se verdadeiras, ou F, se falsas. ( ) Mesmo tendo havido grande interesse na associação entre Prolapso de Válvula Mitral (PVM) e Transtorno de Pânico (TP), estudos verificaram que a prevalência de TP em pacientes com PVM é a mesma daqueles pacientes com TP sem PVM. ( ) Alguns estudos verificaram que o risco de suicídio durante a vida , em pacientes com TP, é mais alto do que em pessoas sem transtorno mental. ( ) O TP em geral é uma condição crônica, ainda que seu curso seja variável , tanto entre pacientes como em um único paciente. Apenas cerca de 10% dos pacientes parecem ficar livres de sintomas a longo prazo. ( ) Nem todos os ISRSs são eficientes para o TP. A fluvoxamina, por exemplo, deve ser evitada nesse tipo de paciente. ( ) Embora os ISRS s sejam considerados os agentes de primeira linha para o tratamento do TP, dados demonstram que, entre os tricíclicos, a clomipramina e a nortriptilina são os mais eficazes no tratamento desse transtorno. A ordem correta de preenchimento dos parênteses, de cima para baixo, é:",
           "options": [
             {
               "letter": "A",
@@ -17348,7 +17348,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "Os transtornos podem ocorrer em qualquer idade, mas são mais frequentes em adolescentes. Nessa faixa etária, fatores precipitantes comuns são problemas escolares, rejeição e divó rcio parental, e abuso de substância."
+              "text": "Os transtornos podem ocorrer em qualquer idade, mas são mais frequentes em adolescentes. Nessa faixa etária, fatores precipitantes comuns são problemas escolares, rejeição e divórcio parental, e abuso de substância."
             },
             {
               "letter": "D",
@@ -17424,7 +17424,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "E",
-              "text": "A principal dife rença entre ma nia e hipomania é a gravidade do comprometimento associado com a síndrome."
+              "text": "A principal diferença entre ma nia e hipomania é a gravidade do comprometimento associado com a síndrome."
             }
           ],
           "correctAnswer": "E",
@@ -17438,7 +17438,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "AMRIGS 2017 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 25",
-          "text": "Em relação aos transtornos demenciais na velhice, analise as seguintes assertivas e assinale V, se verdadeiras, ou F, se falsas. ( ) As alterações características da demência envolvem a cognição, a memória, a linguagem e as funções visuoespaciais, mas perturbações comportamentais também são comuns. ( ) Delírios e alucinações ocorrem durante o curso das demências em mais de 70% dos pacientes. ( ) A maior parte de todos os pacientes que exibem sintomas de demência possuem condições potencialmente tratáveis, como doença cardíaca, doença renal, transtornos endócrinos, mau uso da medicação, e transtornos mentais primários. ( ) As demências são classif icadas como corticais e subcorticais. Exemplos de demências corticais incluem doença de Huntington, doença de Parkinson, hidrocefalia de pressão normal, doença de Wilson, entre outros. Exemplos de demências subcorticais são a doença de Alzheimer, a doença de Creutzfeldt-Jacob e a doença de Pick. ( ) Os sintomas gerais de demência vascular são os mesmos de demência do tipo Alzheimer; por outro lado, a demência vascular apresenta maior probabilidade de exibir deterioração gradual e decrescente do que a doença de Alzheimer. A ordem correta de preenchimento dos parênteses, de cima para baixo, é:",
+          "text": "Em relação aos transtornos demenciais na velhice, analise as seguintes assertivas e assinale V, se verdadeiras, ou F, se falsas. ( ) As alterações características da demência envolvem a cognição, a memória, a linguagem e as funções visuoespaciais, mas perturbações comportamentais também são comuns. ( ) Delírios e alucinações ocorrem durante o curso das demências em mais de 70% dos pacientes. ( ) A maior parte de todos os pacientes que exibem sintomas de demência possuem condições potencialmente tratáveis, como doença cardíaca, doença renal, transtornos endócrinos, mau uso da medicação, e transtornos mentais primários. ( ) As demências são classif icadas como corticais e subcorticais. Exemplos de demências corticais incluem doença de Huntington, doença de Parkinson, hidrocefalia de pressão normal, doença de Wilson, entre outros. Exemplos de demências subcorticais são a doença de Alzheimer, a doença de Creutzfeldt-Jacob e a doença de Pick. ( ) Os sintomas gerais de demência vascular são os mesmos de demência do tipo Alzheimer; por outro lado, a demência vascular apresenta maior probabilidade de exibir deterioração gradual e de crescente do que a doença de Alzheimer. A ordem correta de preenchimento dos parênteses, de cima para baixo, é:",
           "options": [
             {
               "letter": "A",
@@ -17560,7 +17560,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "E",
-              "text": "Em 2011, um terremoto de magnitude 9.0 atingiu o nordeste do Japão, causando um tsunami de 10 metros que atingiu a costa oeste dos EUA, fazendo dele o quinto maior terremoto desde 1900, resultando em cerca de 16.000 mortes. Entre aqueles que o vivenciaram, estima -se que entre 50 e 70% dos sobreviventes experimentaram algum ou todos os sinais e sintomas de TEPT."
+              "text": "Em 2011, um terremoto de magnitude 9.0 atingiu o nordeste do Japão, causando um tsunami de 10 metros que atingiu a costa oeste dos EUA, fazendo dele o quinto maior terremoto desde 1900, resultando em cerca de 16.000 mortes. Entre aqueles que o vivenciaram, estima-se que entre 50 e 70% dos sobreviventes experimentaram algum ou todos os sinais e sintomas de TEPT."
             }
           ],
           "correctAnswer": "B",
@@ -17590,7 +17590,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Freud postulou um estado de narcisismo primário no nascimento, no qual a libido está armazenada no ego. Considerava o recém-nascido um ser completamente narcisista. Após, o estado infantil de autoabsorção muda de modo gradual e, através do desenvolvimento das relações objetais, ocorre o apego ao objeto (a figura da mãe). A essa segunda etapa, Freud chamou de narcisismo secundário."
+              "text": "Freud postulou um estado de narcisismo primário no nascimento, no qual a libido está armazenada no ego. Considerava o recém-nascido um ser completamente narcisista. Após, o estado infantil de auto absorção muda de modo gradual e, através do desenvolvimento das relações objetais, ocorre o apego ao objeto (a figura da mãe). A essa segunda etapa, Freud chamou de narcisismo secundário."
             },
             {
               "letter": "E",
@@ -17608,7 +17608,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "AMRIGS 2017 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 30",
-          "text": "Em relação ao Transtorno de Déficit de Atenção/Hiperatividade (TDAH), analise as seguintes assertivas e assinale V, se verdadeiras, ou F, se falsas. ( ) O DSM-5 faz várias alterações nos critérios diagnósticos de TDAH aplicáveis a jovens e adultos. Antes, se fazia necessária a presença de sintomas de TDAH na idade de 7 anos. Pelo DSM -5, é imprescindível a presença de “diversos sintomas de déficit de atenção e de hiperativid ade e impulsividade” aos 9 anos. ( ) Os parentes biológicos em primeiro grau (por exemplo, irmãos de probandos com TDAH) correm um risco bem mais elevado de desenvolver esse e outros transtornos psiquiátricos, incluindo os do comportamento disruptivo, os de ansiedade e os depressivos. ( ) Crianças com predominância de déficit de atenção possivelmente sejam encaminhadas para tratamento antes daquelas que tê m hiperatividade como sintoma principal. ( ) O curso do TDAH é variável. Os sin tomas persistem na adolescência em 60 a 85% dos casos e, a na vida adulta, em cerca de 60%. A maior parte dos pac ientes tem remissão parcial e é vulnerável a comportamentos antissociais, assim como a transtornos por uso de substâncias e do humor. ( ) A lisdexanfetamina possui menor probabilidade de risco de abuso ou de overdose do que o metilfenidato por permanecer inativa até a metabolização. A ordem correta de preenchimento dos parênteses, de cima para baixo, é:",
+          "text": "Em relação ao Transtorno de Déficit de Atenção/Hiperatividade (TDAH), analise as seguintes assertivas e assinale V, se verdadeiras, ou F, se falsas. ( ) O DSM-5 faz várias alterações nos critérios diagnósticos de TDAH aplicáveis a jovens e adultos. Antes, se fazia necessária a presença de sintomas de TDAH na idade de 7 anos. Pelo DSM -5, é imprescindível a presença de “diversos sintomas de déficit de atenção e de hiperatividade e impulsividade” aos 9 anos. ( ) Os parentes biológicos em primeiro grau (por exemplo, irmãos de probandos com TDAH) correm um risco bem mais elevado de desenvolver esse e outros transtornos psiquiátricos, incluindo os do comportamento disruptivo, os de ansiedade e os depressivos. ( ) Crianças com predominância de déficit de atenção possivelmente sejam encaminhadas para tratamento antes daquelas que tê m hiperatividade como sintoma principal. ( ) O curso do TDAH é variável. Os sin tomas persistem na adolescência em 60 a 85% dos casos e, a na vida adulta, em cerca de 60%. A maior parte dos pacientes tem remissão parcial e é vulnerável a comportamentos antissociais, assim como a transtornos por uso de substâncias e do humor. ( ) A lisdexanfetamina possui menor probabilidade de risco de abuso ou de overdose do que o metilfenidato por permanecer inativa até a metabolização. A ordem correta de preenchimento dos parênteses, de cima para baixo, é:",
           "options": [
             {
               "letter": "A",
@@ -17642,7 +17642,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "AMRIGS 2017 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 31",
-          "text": "A seguir, são descritos alguns transtornos que ocorrem na infância. Associe a descrição cl ínica com o nome do respectivo transtorno, relacionando a Coluna 1 à Coluna 2. Coluna 1 1. Transtorno bipolar de início precoce. 2. Enurese. 3. Transtorno de oposição desafiante. 4. Pica. 5. Transtorno diruptivo da desregulação do humor. Coluna 2 ( ) Esse transtorno é frequente no contexto do espectro autista ou da deficiência intelectual. O DSM-5 sugere um mínimo de 2 anos de idade para o diagnóstico. Podem surgir problemas médicos como obstrução intestinal, infecção intestinal ou intoxicações. ( ) Para que esse diagnó stico seja feito, a criança deve ter, pelo menos , 5 anos de idade. De acordo com o DSM -5, o comportamento que caracteriza esse transtorno deve ocorrer duas vezes por semana por um período de, pelo menos, 3 meses ou causar sofrimen to e prejuízo no funcionamento. ( ) Explosões de raiva apresentam -se como fúria verbal e/ou agressão física direcionada à pessoa ou propriedade e são inadequadas para o nível de desenvolvimento da criança. ( ) Caracterizado por irritabilidade extrema, grave e persistente, podendo incluir surtos agressivos e comportamento vio lento. A comorbidade com TDAH é extremamente comum. ( ) Via de regra, os sintomas desse transtorno ficam mais evidentes em interações com adultos ou pares que a criança conhece bem. Dessa forma, uma criança com esse transtorno pode não exibir sinais do problema quando examinada clinicamente. A ordem corr eta de preenchimento dos parênteses, de cima para baixo, é:",
+          "text": "A seguir, são descritos alguns transtornos que ocorrem na infância. Associe a descrição cl ínica com o nome do respectivo transtorno, relacionando a Coluna 1 à Coluna 2. Coluna 1 1. Transtorno bipolar de início precoce. 2. Enurese. 3. Transtorno de oposição desafiante. 4. Pica. 5. Transtorno diruptivo da desregulação do humor. Coluna 2 ( ) Esse transtorno é frequente no contexto do espectro autista ou da deficiência intelectual. O DSM-5 sugere um mínimo de 2 anos de idade para o diagnóstico. Podem surgir problemas médicos como obstrução intestinal, infecção intestinal ou intoxicações. ( ) Para que esse diagnó stico seja feito, a criança deve ter, pelo menos , 5 anos de idade. De acordo com o DSM -5, o comportamento que caracteriza esse transtorno deve ocorrer duas vezes por semana por um período de, pelo menos, 3 meses ou causar sofrimen to e prejuízo no funcionamento. ( ) Explosões de raiva apresentam-se como fúria verbal e/ou agressão física direcionada à pessoa ou propriedade e são inadequadas para o nível de desenvolvimento da criança. ( ) Caracterizado por irritabilidade extrema, grave e persistente, podendo incluir surtos agressivos e comportamento violento. A comorbidade com TDAH é extremamente comum. ( ) Via de regra, os sintomas desse transtorno ficam mais evidentes em interações com adultos ou pares que a criança conhece bem. Dessa forma, uma criança com esse transtorno pode não exibir sinais do problema quando examinada clinicamente. A ordem correta de preenchimento dos parênteses, de cima para baixo, é:",
           "options": [
             {
               "letter": "A",
@@ -17744,7 +17744,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "AMRIGS 2017 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 34",
-          "text": "Em relação aos transtornos de ansiedade, analise as assertivas abaixo: I. O medo, a ansiedade ou esquiva do transtorno de ansiedade de separação devem durar pelo menos 4 semanas em crianças e adolescentes. II. Em crianças com transtorno de ansiedad e social, o medo ou ansiedade pode ser expresso por crises de choro, ataques de raiva, ou imobilidade, comportamento de agarrar-se, encolhendo -se ou fracassando em falar em situações sociais. III. O transtorno do pânico costuma ser uma ocorrência frequente em crianças abaixo de 12 anos. IV. Um dos critérios do transtorno de ansiedade generalizada, segundo o DSM -5, é a presença de ansiedade e de preocupações excessivas que ocorrem na maior parte dos dias por pelo menos 3 meses. Quais estão corretas?",
+          "text": "Em relação aos transtornos de ansiedade, analise as assertivas abaixo: I. O medo, a ansiedade ou esquiva do transtorno de ansiedade de separação devem durar pelo menos 4 semanas em crianças e adolescentes. II. Em crianças com transtorno de ansiedad e social, o medo ou ansiedade pode ser expresso por crises de choro, ataques de raiva, ou imobilidade, comportamento de agarrar-se, encolhendo-se ou fracassando em falar em situações sociais. III. O transtorno do pânico costuma ser uma ocorrência frequente em crianças abaixo de 12 anos. IV. Um dos critérios do transtorno de ansiedade generalizada, segundo o DSM -5, é a presença de ansiedade e de preocupações excessivas que ocorrem na maior parte dos dias por pelo menos 3 meses. Quais estão corretas?",
           "options": [
             {
               "letter": "A",
@@ -17948,7 +17948,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "AMRIGS 2017 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 40",
-          "text": "Em relação ao Transtorno Disruptivo da Desregulação do H umor (TDDM), analise as assertivas abaixo: I. A característica central do TDDM é a irritabilidade crônica grave. II. As explosões de raiva ocorrem, em média, três vezes por semana. III. Estudos longitudinais d emonstram que crianças com irritabilidade crônica grave apresentam altas taxas de transtorno bipolar. Quais estão corretas?",
+          "text": "Em relação ao Transtorno Disruptivo da Desregulação do Humor (TDDM), analise as assertivas abaixo: I. A característica central do TDDM é a irritabilidade crônica grave. II. As explosões de raiva ocorrem, em média, três vezes por semana. III. Estudos longitudinais demonstram que crianças com irritabilidade crônica grave apresentam altas taxas de transtorno bipolar. Quais estão corretas?",
           "options": [
             {
               "letter": "A",
@@ -18118,7 +18118,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "AMRIGS 2017 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 45",
-          "text": "Um paciente de 60 anos procura atendimento por apresentar cognição flutuante, alucinações visuais recorrentes e detalhadas, delírios de cunho persecutório, episódios de quedas e parkinsonismo. Sem história de tratamento ou de transtornos psiquiátricos prév ios. Qual a hipótese diagnóstica mais provável associada a esse quadro?",
+          "text": "Um paciente de 60 anos procura atendimento por apresentar cognição flutuante, alucinações visuais recorrentes e detalhadas, delírios de cunho persecutório, episódios de quedas e parkinsonismo. Sem história de tratamento ou de transtornos psiquiátricos prévios. Qual a hipótese diagnóstica mais provável associada a esse quadro?",
           "options": [
             {
               "letter": "A",
@@ -18168,7 +18168,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Os testes laboratoriais quando da utilização de lítio devem incluir concentração sérica de creatinina, eletró litos, função da tireoide, hemograma completo, ECG e teste de gravidez para mulheres em idade fértil."
+              "text": "Os testes laboratoriais quando da utilização de lítio devem incluir concentração sérica de creatinina, eletrólitos, função da tireoide, hemograma completo, ECG e teste de gravidez para mulheres em idade fértil."
             },
             {
               "letter": "E",
@@ -18254,7 +18254,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "AMRIGS 2017 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 49",
-          "text": "Em relação aos transtornos de personalidade, analise as assertivas abaixo: I. Os transtornos de personalidade ocorrem em 10 a 20% da população geral. II. Aproximadamente 50% dos pacientes psiquiátricos apresentam comorbidade com pelo menos um transtorno de personalidade. III. Os transtornos da personalidade pertencentes ao Grupo C, de acordo com DSM-5, incluem os transtornos de personalidade esquizotípico, esqu izoide e paranoide. Quais estão corretas?",
+          "text": "Em relação aos transtornos de personalidade, analise as assertivas abaixo: I. Os transtornos de personalidade ocorrem em 10 a 20% da população geral. II. Aproximadamente 50% dos pacientes psiquiátricos apresentam comorbidade com pelo menos um transtorno de personalidade. III. Os transtornos da personalidade pertencentes ao Grupo C, de acordo com DSM-5, incluem os transtornos de personalidade esquizotípico, esquizoide e paranoide. Quais estão corretas?",
           "options": [
             {
               "letter": "A",
@@ -18288,7 +18288,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "AMRIGS 2017 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 50",
-          "text": "Sobre o transtorn o bipolar, assinale a alternativa correta.",
+          "text": "Sobre o transtorno bipolar, assinale a alternativa correta.",
           "options": [
             {
               "letter": "A",
@@ -18545,7 +18545,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "AMRIGS 2018 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 8",
-          "text": "Uma mulher de 35 anos com transtorno bipolar vem para uma consulta ambulatorial dois meses após internação por um episódio maníaco. Apresenta -se eutímica e retomou suas atividades laborativas, porém queixa -se de tremores afetando principalmente suas mãos. Qual dos medicamentos abaixo é provavelmente responsável pelos tremores da paciente?",
+          "text": "Uma mulher de 35 anos com transtorno bipolar vem para uma consulta ambulatorial dois meses após internação por um episódio maníaco. Apresenta-se eutímica e retomou suas atividades laborativas, porém queixa-se de tremores afetando principalmente suas mãos. Qual dos medicamentos abaixo é provavelmente responsável pelos tremores da paciente?",
           "options": [
             {
               "letter": "A",
@@ -18635,7 +18635,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "AMRIGS 2018 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 11",
-          "text": "Em relação ao Transtorno de Personalidade B orderline (TPB), analise as assertivas abaixo: I. A prevalência é em torno de 1 a 2% da população geral e acomete duas vezes mais mulheres do que homens. II. As características principais desse transtorno de personalidade são: autoestima variável e vulnerável, com tentativas de regulação por meio da busca de atenção e aprovação, grandiosidade declarada ou encoberta, ideação suicida crônica e comporta mento automutilatório. III. A terapia comportamental dialética mostrou -se claramente superior à psicoterapia focada na transferência e à terapia de mentalização no tratamento do TPB. Quais estão corretas?",
+          "text": "Em relação ao Transtorno de Personalidade B orderline (TPB), analise as assertivas abaixo: I. A prevalência é em torno de 1 a 2% da população geral e acomete duas vezes mais mulheres do que homens. II. As características principais desse transtorno de personalidade são: autoestima variável e vulnerável, com tentativas de regulação por meio da busca de atenção e aprovação, grandiosidade declarada ou encoberta, ideação suicida crônica e comporta mento automutilatório. III. A terapia comportamental dialética mostrou-se claramente superior à psicoterapia focada na transferência e à terapia de mentalização no tratamento do TPB. Quais estão corretas?",
           "options": [
             {
               "letter": "A",
@@ -18827,7 +18827,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "Os efeitos clínicos dos medicamentos são mais bem compre endidos em termos de farmacocinética que descrev e o que o fá rmaco faz com o corpo e da farmacodinâmica que descreve o que o corpo faz com o fármaco."
+              "text": "Os efeitos clínicos dos medicamentos são mais bem compreendidos em termos de farmacocinética que descrev e o que o fármaco faz com o corpo e da farmacodinâmica que descreve o que o corpo faz com o fármaco."
             },
             {
               "letter": "D",
@@ -18875,7 +18875,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "AMRIGS 2018 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 19",
-          "text": "A população idosa necessita de cuidados espec iais ao serem prescritos psicofármacos. Analise as assertivas abaixo que se referem à prescrição de psicofármacos em idosos: I. Os psicofá rmacos podem ter uma relação causal com quedas em idoso. A descontinuação desses medicamentos resulta em uma redução em quedas. II. Mudanças na depuração renal e no met abolismo hepático relac ionadas à idade sugerem ser importante adotar uma postura conservadora ao iniciar as doses de uma medicação. III. Fármacos que causam prejuízo cognitivo, como benzodiazepínicos e anticolinérgicos, podem imitar ou exacerbar sintomas de demência. IV. A síndrome de secreção inapropriada de hormônio antidiur ético associada aos inibidores seletivos da receptação de serotonina e à hiponatremia relacionada à o xcarbazepina, por exemplo, ocorrem com mais frequência em pacientes mais idosos. Quais estão corretas?",
+          "text": "A população idosa necessita de cuidados espec iais ao serem prescritos psicofármacos. Analise as assertivas abaixo que se referem à prescrição de psicofármacos em idosos: I. Os psicofá rmacos podem ter uma relação causal com quedas em idoso. A descontinuação desses medicamentos resulta em uma redução em quedas. II. Mudanças na depuração renal e no metabolismo hepático relacionadas à idade sugerem ser importante adotar uma postura conservadora ao iniciar as doses de uma medicação. III. Fármacos que causam prejuízo cognitivo, como benzodiazepínicos e anticolinérgicos, podem imitar ou exacerbar sintomas de demência. IV. A síndrome de secreção inapropriada de hormônio antidiur ético associada aos inibidores seletivos da receptação de serotonina e à hiponatremia relacionada à o xcarbazepina, por exemplo, ocorrem com mais frequência em pacientes mais idosos. Quais estão corretas?",
           "options": [
             {
               "letter": "A",
@@ -18935,7 +18935,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "AMRIGS 2018 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 21",
-          "text": "Em relação ao uso de anticonvulsivantes em transtornos psiquiátricos, analise as seguintes assertivas e assinale V, se verdadeiras, ou F, falsas. ( ) Grande parte da g abapentina circula no sangue sem ligações e não é metabolizada de forma considerável em seres humanos. Sua eliminação inalterada ocorre por excreção hepática. ( ) O t opiramato tem sido usado na prevenção de enxaquecas, interrupção do tabagismo, síndromes dolorosas, transtorno de estresse pós-traumático e tremor essencial. ( ) Os efei tos adversos mais comuns com o t opiramato incluem parestesias, perda de peso, sonolência, anorexia, tonturas e problemas de memória. ( ) O benefício da p regabalina foi verifi cado para alguns pacientes com t ranstorno de ansiedade generalizada. ( ) A pregabalina possui grande ligação a proteínas plasmáticas e deve ser necessária a redução da sua dose em pacientes com disfunção hepática. A ordem correta de preenchimento dos parênteses, de cima para baixo, é:",
+          "text": "Em relação ao uso de anticonvulsivantes em transtornos psiquiátricos, analise as seguintes assertivas e assinale V, se verdadeiras, ou F, falsas. ( ) Grande parte da g abapentina circula no sangue sem ligações e não é metabolizada de forma considerável em seres humanos. Sua eliminação inalterada ocorre por excreção hepática. ( ) O t opiramato tem sido usado na prevenção de enxaquecas, interrupção do tabagismo, síndromes dolorosas, transtorno de estresse pós-traumático e tremor essencial. ( ) Os efei tos adversos mais comuns com o t opiramato incluem parestesias, perda de peso, sonolência, anorexia, tonturas e problemas de memória. ( ) O benefício da p regabalina foi verificado para alguns pacientes com t ranstorno de ansiedade generalizada. ( ) A pregabalina possui grande ligação a proteínas plasmáticas e deve ser necessária a redução da sua dose em pacientes com disfunção hepática. A ordem correta de preenchimento dos parênteses, de cima para baixo, é:",
           "options": [
             {
               "letter": "A",
@@ -18965,7 +18965,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "AMRIGS 2018 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 22",
-          "text": "Sobre os Transtornos de movimento induzidos por medicamentos, analise as seguintes assertivas: I. Sintomas de pa rkinsonismo induzido por neurolé ptico e parkinsonismo induzido por outros medicamentos incluem rigidez muscular, ri gidez da roda denteada, marcha arrastada, postura curvada e sialorreia. II. A síndrome neuroléptica maligna é uma complicação potencialmente letal, na qual as mulheres são afetadas em maior frequência do que os homens, que pode ocorrer a qualquer momento durante o curso do tratamento com antipsicóticos. III. Embora seja mais comum com as d oses intramusculares de antipsicó ticos de alta potência, a distonia aguda pode ocorrer com qualquer antipsicótico. IV. A discinesia tardia é um efeito retardado de antipsicó ticos e raras vezes ocorre antes de seis meses de tratamento. Consiste em movimen tos c oreoatetóicos irregular es, involuntários e anormais dos músculos da cabeça, dos membros e do tronco. Quais estão corretas?",
+          "text": "Sobre os Transtornos de movimento induzidos por medicamentos, analise as seguintes assertivas: I. Sintomas de parkinsonismo induzido por neuroléptico e parkinsonismo induzido por outros medicamentos incluem rigidez muscular, rigidez da roda denteada, marcha arrastada, postura curvada e sialorreia. II. A síndrome neuroléptica maligna é uma complicação potencialmente letal, na qual as mulheres são afetadas em maior frequência do que os homens, que pode ocorrer a qualquer momento durante o curso do tratamento com antipsicóticos. III. Embora seja mais comum com as doses intramusculares de antipsicó ticos de alta potência, a distonia aguda pode ocorrer com qualquer antipsicótico. IV. A discinesia tardia é um efeito retardado de antipsicó ticos e raras vezes ocorre antes de seis meses de tratamento. Consiste em movimen tos c oreoatetóicos irregular es, involuntários e anormais dos músculos da cabeça, dos membros e do tronco. Quais estão corretas?",
           "options": [
             {
               "letter": "A",
@@ -19115,7 +19115,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "AMRIGS 2018 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 27",
-          "text": "O aspecto mais característico da distimia é a presença de um humor deprimido que dura a maior parte do dia e está presente quase continuamente. Em relação ao transtorno distímico, analise as seguintes assertivas e assinale V, se verdadeiras, ou F, falsas. ( ) A dist imia é mais comum entre aqueles que possuem parentes em primeiro grau com Transtorno Depressivo Maior (TDM). ( ) A redução da latência do sono REM e o aumento de sua densidade são dois marcadores de estado de depressão no TDM que també m ocorrem em uma proporção significativa de pacientes distímicos. ( ) Pacientes com distimia não costumam satisfazer os critérios para um transto rno relacionado ao uso de substâncias. ( ) Estima-se que apenas 10% dos pacientes com TDM também satisfaçam os critéri os para distimia. ( ) Em geral, os dados indicam que os inibidores da receptação da serotonina, a venlafaxina e a bupropiona são tratamentos eficazes para pacientes distímicos. A ordem correta de preenchimento dos parênteses, de cima para baixo, é:",
+          "text": "O aspecto mais característico da distimia é a presença de um humor deprimido que dura a maior parte do dia e está presente quase continuamente. Em relação ao transtorno distímico, analise as seguintes assertivas e assinale V, se verdadeiras, ou F, falsas. ( ) A dist imia é mais comum entre aqueles que possuem parentes em primeiro grau com Transtorno Depressivo Maior (TDM). ( ) A redução da latência do sono REM e o aumento de sua densidade são dois marcadores de estado de depressão no TDM que també m ocorrem em uma proporção significativa de pacientes distímicos. ( ) Pacientes com distimia não costumam satisfazer os critérios para um transtorno relacionado ao uso de substâncias. ( ) Estima-se que apenas 10% dos pacientes com TDM também satisfaçam os critéri os para distimia. ( ) Em geral, os dados indicam que os inibidores da receptação da serotonina, a venlafaxina e a bupropiona são tratamentos eficazes para pacientes distímicos. A ordem correta de preenchimento dos parênteses, de cima para baixo, é:",
           "options": [
             {
               "letter": "A",
@@ -19175,7 +19175,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "AMRIGS 2018 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 29",
-          "text": "O curso típico des sa modalidade de psicoterapia é de 12 a 20 sessões ao longo de um período de 4 ou 5 meses. Essa psicoterapia desenvolve -se em três etapas definidas: 1) A fase inicial em que é identificada a área -problema que será alvo do t ratamento; 2) A fase intermediá ria em que se trab alha a área problemática e 3) A fase de terminação que se concentra em consolidar os ganhos obtidos durante o tratamento. As áreas problemáticas são, ainda, identificadas como: 1) luto e perda; 2) transição de papeis; 3) disputa de papeis e 4) déficits. A descrição se refere a que modalidade de tratamento psicoterápico?",
+          "text": "O curso típico des sa modalidade de psicoterapia é de 12 a 20 sessões ao longo de um período de 4 ou 5 meses. Essa psicoterapia desenvolve-se em três etapas definidas: 1) A fase inicial em que é identificada a área -problema que será alvo do t ratamento; 2) A fase intermediária em que se trabalha a área problemática e 3) A fase de terminação que se concentra em consolidar os ganhos obtidos durante o tratamento. As áreas problemáticas são, ainda, identificadas como: 1) luto e perda; 2) transição de papeis; 3) disputa de papeis e 4) déficits. A descrição se refere a que modalidade de tratamento psicoterápico?",
           "options": [
             {
               "letter": "A",
@@ -19298,7 +19298,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Agonistas seletivos do receptor GABA -A (drogas Z) são indicados para utilização na insônia crônica (por mais de um ano)."
+              "text": "Agonistas seletivos do receptor GABA-A (drogas Z) são indicados para utilização na insônia crônica (por mais de um ano)."
             },
             {
               "letter": "E",
@@ -19370,7 +19370,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "E",
-              "text": "o PET Scan é incapaz de diferen ciar entre demências tipo Alzheimer e não Alzheimer."
+              "text": "o PET Scan é incapaz de diferenciar entre demências tipo Alzheimer e não Alzheimer."
             }
           ],
           "correctAnswer": "C",
@@ -19418,7 +19418,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2024 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 6",
-          "text": "Paciente do sexo feminino, estudante de curso pré-vestibular, 17 anos, foi atendida após uma primeira tentativa de suicídio com ingestão de 10 comprimidos de clon azepam 0,5 mg que estavam no armário da mãe. Sua mãe havia saído para trabalhar, mas esqueceu a bolsa e voltou para pegá-la em casa. Ao não ver a filha, foi ao banheiro que estava trancado, e a paciente não respondia. A mãe chamou um chaveiro às pressas para abrir a porta, e a paciente foi encontrada sem consciência deitada no chão com uma carta de despedida em mãos. A longa carta continha pedidos de desculpas a vários familiares e colegas. Enquanto levava a filha ao hospital, a mãe ligou para a melhor amig a da paciente, que informou que no dia anterior a paciente estava “estranha”, havia dito o quanto gostava da amiga, pediu desculpas por uma briga que tiveram há 2 anos e parecia emotiva, mas não achou que fosse nada de mais, pois a paciente havia terminado o namoro há 1 mês. No hospital, depois de acordar, a paciente afirmou estar decepcionada em não ter morrido, pois planejou não ser encontrada viva e achava que o remédio que a mãe tomava era “forte”. Na entrevista, faz -se o diagnóstico de um episódio depr essivo de início há 3 meses em tratamento psicoterápico há 2 semanas. Com base nas informações apresentadas, o que é possível afirmar a respeito do caso dessa paciente?",
+          "text": "Paciente do sexo feminino, estudante de curso pré-vestibular, 17 anos, foi atendida após uma primeira tentativa de suicídio com ingestão de 10 comprimidos de clonazepam 0,5 mg que estavam no armário da mãe. Sua mãe havia saído para trabalhar, mas esqueceu a bolsa e voltou para pegá-la em casa. Ao não ver a filha, foi ao banheiro que estava trancado, e a paciente não respondia. A mãe chamou um chaveiro às pressas para abrir a porta, e a paciente foi encontrada sem consciência deitada no chão com uma carta de despedida em mãos. A longa carta continha pedidos de desculpas a vários familiares e colegas. Enquanto levava a filha ao hospital, a mãe ligou para a melhor amig a da paciente, que informou que no dia anterior a paciente estava “estranha”, havia dito o quanto gostava da amiga, pediu desculpas por uma briga que tiveram há 2 anos e parecia emotiva, mas não achou que fosse nada de mais, pois a paciente havia terminado o namoro há 1 mês. No hospital, depois de acordar, a paciente afirmou estar decepcionada em não ter morrido, pois planejou não ser encontrada viva e achava que o remédio que a mãe tomava era “forte”. Na entrevista, faz-se o diagnóstico de um episódio depressivo de início há 3 meses em tratamento psicoterápico há 2 semanas. Com base nas informações apresentadas, o que é possível afirmar a respeito do caso dessa paciente?",
           "options": [
             {
               "letter": "A",
@@ -19486,7 +19486,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2024 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 8",
-          "text": "Uma jovem de 21 ano s é levada a um psiquiatra pela mãe, que ficou preocupada com seu comportamento. A paciente conta que, nos últimos dois anos, desde que entrou na faculdade, tem provocado vômitos enfiando os dedos na garganta. Esse comportamento ocorre com regularidade, 3 a 4 vezes por semana, e piora quando está estressada. Diz que regularmente perde o controle, ingere uma grande quantidade de comida e acha que vai engordar se não vomitar (menciona uma ocasião em que comeu sozinha um pote de sorvete de 1,5 L com uma caixa de bombons). Tem vergonha desse comportamento e se esforça ao máximo para esconder o quanto come. O exame físico mostra uma mulher jovem com 1,70 m de altura e 61 kg. Seus sinais vitais são normais. Dentre as alternativas a seguir, assinale aquela que apr esenta a atitude mais correta a ser tomada em relação a essa paciente.",
+          "text": "Uma jovem de 21 ano s é levada a um psiquiatra pela mãe, que ficou preocupada com seu comportamento. A paciente conta que, nos últimos dois anos, desde que entrou na faculdade, tem provocado vômitos enfiando os dedos na garganta. Esse comportamento ocorre com regular idade, 3 a 4 vezes por semana, e piora quando está estressada. Diz que regularmente perde o controle, ingere uma grande quantidade de comida e acha que vai engordar se não vomitar (menciona uma ocasião em que comeu sozinha um pote de sorvete de 1,5 L com uma caixa de bombons). Tem vergonha desse comportamento e se esforça ao máximo para esconder o quanto come. O exame físico mostra uma mulher jovem com 1,70 m de altura e 61 kg. Seus sinais vitais são normais. Dentre as alternativas a seguir, assinale aquela que apr esenta a atitude mais correta a ser tomada em relação a essa paciente.",
           "options": [
             {
               "letter": "A",
@@ -19520,7 +19520,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2024 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 9",
-          "text": "Um homem de 25 anos é levado ao setor de emergência depois de exibir um comportamento estranho e perigoso. Há pelo menos um ano, ele apresenta ideias de ser perseguido por entidades governamentais internacionais e ouve vozes comentando seu comportamento e lhe dando ordens. Esses sintomas o levaram a ter um progressivo isolamento social. Nega uso atual de drogas ou problemas clínicos. É observada negligência no cuidado com a aparência e na higiene, e seu afeto é embotado. Parece um pouco nervoso no ambiente e caminha em torno da sala de exame. Sua fala tem velocidade, ritmo e tom normais. Não tem tratamento prévio. Quais aspectos adiciona is do exame do estado mental são mais prováveis de serem encontrados nesse paciente considerando o quadro descrito?",
+          "text": "Um homem de 25 anos é levado ao setor de emergência depois de exibir um comportamento estranho e perigoso. Há pelo menos um ano, ele apresenta ideias de ser perseguido por entidades governamentais internacionais e ouve vozes comentando seu comportamento e lhe dando ordens. Esses sintomas o levaram a ter um progressivo isolamento social. Nega uso atual de drogas ou problemas clínicos. É observada negligência no cuidado com a aparência e na higiene, e seu afeto é embotado. Parece um pouco nervoso no ambiente e caminha em torno da sala de exame. Sua fala tem velocidade, ritmo e tom normais. Não tem tratamento prévio. Quais aspectos adicionais do exame do estado mental são mais prováveis de serem encontrados nesse paciente considerando o quadro descrito?",
           "options": [
             {
               "letter": "A",
@@ -19554,7 +19554,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2024 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 10",
-          "text": "Adolescente de 15 anos, afastada da escola desde o oitavo ano e morando com avó paterna, é encaminhada ao serviço de psiquiatria por apresentar episódios de autoagressividade (cortes no braço com gilete). A paciente apresenta desde os primeiros anos do ensino fundamental dificuldades sociais e acadêmicas – não tinha amigos e mostrava demora em executar as tarefas e responder o que era solicitado, segundo a própria paciente. Diz ter sofrido bullying e, por isso, não quer voltar à escola. De acordo com a avó, houve agravamento progre ssivo dos comportamentos autolesivos, incialmente frente tentativas de reinserção escolar, até chegar a tentativas de suicídio (com faca e atirando -se do alto da escada). Os pais são divorciados desde o nascimento da paciente. Após vários episódios de brigas entre filha e mãe, esta delegou os cuidados à avó paterna há oito anos. O pai da paciente a vê esporadicamente, mas tem outra família e não passa muito tempo com a filha. A paciente refere sensação de vazio crônico, insatisfação com o corpo e atitudes a gressivas impulsivas frente a rejeição de familiares e colegas. Mostra -se com humor irritável e atitude hostil especialmente quando a avó está presente. Já foi anteriormente medicada com venlafaxina 37,5 mg/dia por outro psiquiatra, sem resposta adequada. A respeito desse caso, assinale a alternativa correta.",
+          "text": "Adolescente de 15 anos, afastada da escola desde o oitavo ano e morando com avó paterna, é encaminhada ao serviço de psiquiatria por apresentar episódios de auto agressividade (cortes no braço com gilete). A paciente apresenta desde os primeiros anos do ensino fundamental dificuldades sociais e acadêmicas – não tinha amigos e mostrava demora em executar as tarefas e responder o que era solicitado, segundo a própria paciente. Diz ter sofrido bullying e, por isso, não quer voltar à escola. De acordo com a avó, houve agravamento progressivo dos comportamentos autolesivos, incialmente frente tentativas de reinserção escolar, até chegar a tentativas de suicídio (com faca e atirando-se do alto da escada). Os pais são divorciados desde o nascimento da paciente. Após vários episódios de brigas entre filha e mãe, esta delegou os cuidados à avó paterna há oito anos. O pai da paciente a vê esporadicamente, mas tem outra família e não passa muito tempo com a filha. A paciente refere sensação de vazio crônico, insatisfação com o corpo e atitudes a gressivas impulsivas frente a rejeição de familiares e colegas. Mostra-se com humor irritável e atitude hostil especialmente quando a avó está presente. Já foi anteriormente medicada com venlafaxina 37,5 mg/dia por outro psiquiatra, sem resposta adequada. A respeito desse caso, assinale a alternativa correta.",
           "options": [
             {
               "letter": "A",
@@ -19588,7 +19588,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2024 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 11",
-          "text": "Homem, 55 anos, engenheiro, foi levado pela esposa à consulta, a qual queixa do consumo exagerado de álcool do marido. O paciente mostra-se contrariado e diz que veio à consulta apenas por insistênc ia da esposa para tratar de “ansiedade”. A esposa diz que o marido toma bebidas alcoólicas desde a adolescência e, ao longo dos anos, em alguns eventos sociais ou atividades de lazer, bebia a ponto de ficar fortemente embriagado e não se lembrar no dia seguinte do que fez. Fala que, há 10 anos, o paciente vem gradualmente aumentando a frequência e quantidade de álcool ingerida. Já, há mais de um ano, o uso é “difícil o dia que não bebe” e costuma tomar no mínimo 6 latas de cerveja ou então 4 a 5 doses de uí sque. O paciente não vê problemas no seu padrão de uso, pois só bebe fora do trabalho e “nunca mistura” diferentes tipos de bebida alcoólica (exceto em festas e eventos sociais). Já a esposa diz que tanto ela quanto os filhos do casal incomodam -se muito com o quanto o paciente bebe e cita que ele costuma ficar irritado, agressivo verbalmente e inadequado socialmente. O paciente novamente discorda e diz que fica irritado porque falam para ele parar de beber. Ele também já teve alguns tremores de mãos se fica um dia sem beber. Para esse paciente, nesse momento, qual é a atitude ou intervenção mais correta a ser tomada pelo entrevistador?",
+          "text": "Homem, 55 anos, engenheiro, foi levado pela esposa à consulta, a qual queixa do consumo exagerado de álcool do marido. O paciente mostra-se contrariado e diz que veio à consulta apenas por insistência da esposa para tratar de “ansiedade”. A esposa diz que o marido toma bebidas alcoólicas desde a adolescência e, ao longo dos anos, em alguns eventos sociais ou atividades de lazer, bebia a ponto de ficar fortemente embriagado e não se lembrar no dia seguinte do que fez. Fala que, há 10 anos, o paciente vem gradualmente aumentando a frequência e quantidade de álcool ingerida. Já, há mais de um ano, o uso é “difícil o dia que não bebe” e costuma tomar no mínimo 6 latas de cerveja ou então 4 a 5 doses de uí sque. O paciente não vê problemas no seu padrão de uso, pois só bebe fora do trabalho e “nunca mistura” diferentes tipos de bebida alcoólica (exceto em festas e eventos sociais). Já a esposa diz que tanto ela quanto os filhos do casal incomodam-se muito com o quanto o paciente bebe e cita que ele costuma ficar irritado, agressivo verbalmente e inadequado socialmente. O paciente novamente discorda e diz que fica irritado porque falam para ele parar de beber. Ele também já teve alguns tremores de mãos se fica um dia sem beber. Para esse paciente, nesse momento, qual é a atitude ou intervenção mais correta a ser tomada pelo entrevistador?",
           "options": [
             {
               "letter": "A",
@@ -19608,7 +19608,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "E",
-              "text": "Aumentar a responsabilidade do paciente pela mudança e ajudá -lo na elaboração de um plano de ação específico, optando pela linha de ação mais aceitável, acessível, adequada e eficaz."
+              "text": "Aumentar a responsabilidade do paciente pela mudança e ajudá-lo na elaboração de um plano de ação específico, optando pela linha de ação mais aceitável, acessível, adequada e eficaz."
             }
           ],
           "correctAnswer": "A",
@@ -19770,7 +19770,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "melhoram o sono de forma q ue reduzem parassonias do sono REM e não -REM e comportamentos alterados durante o sono."
+              "text": "melhoram o sono de forma q ue reduzem parassonias do sono REM e não-REM e comportamentos alterados durante o sono."
             },
             {
               "letter": "D",
@@ -19812,7 +19812,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "E",
-              "text": "os recentes anticorpos anti -beta amiloide têm mostrado maior custo -efetividade que os anticolinesterásicos para a demência de Alzheimer. EXAME NACIONAL DE RESIDÊNCIA INSTITUTO AOCP PRM ÁRE DE ATU - PSI - PSI DA INF E ADO - PSIQUIATRIA FORENSE - PSICOGERIATRIA Tipo 01 – Página 8"
+              "text": "os recentes anticorpos anti-beta amiloide têm mostrado maior custo -efetividade que os anticolinesterásicos para a demência de Alzheimer. EXAME NACIONAL DE RESIDÊNCIA INSTITUTO AOCP PRM ÁRE DE ATU - PSI - PSI DA INF E ADO - PSIQUIATRIA FORENSE - PSICOGERIATRIA Tipo 01 – Página 8"
             }
           ],
           "correctAnswer": "C",
@@ -19826,7 +19826,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2024 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 18",
-          "text": "Jovem de 16 anos, sexo feminino, vem à consulta trazida pela mãe devido a início, há 3 meses, de comportamento repetitivo de automutilações superficiais nos braços (com as unhas e com gilete). A paciente refere ter sido sempre preocupada em não decepcionar os pais e amigos. Diante de falhas e queda no desempenho escolar, culpa -se e fica triste pensando ser incompetente. Muitas vezes tem crises de ansiedade durante provas na escola e, po r vezes, necessita ir embora para casa. Em relação ao caso descrito e quanto à avaliação de tristeza e comportamento suicida geral na adolescência, é correto afirmar que",
+          "text": "Jovem de 16 anos, sexo feminino, vem à consulta trazida pela mãe devido a início, há 3 meses, de comportamento repetitivo de automutilações superficiais nos braços (com as unhas e com gilete). A paciente refere ter sido sempre preocupada em não decepcionar os pais e amigos. Diante de falhas e queda no desempenho escolar, culpa-se e fica triste pensando ser incompetente. Muitas vezes tem crises de ansiedade durante provas na escola e, po r vezes, necessita ir embora para casa. Em relação ao caso descrito e quanto à avaliação de tristeza e comportamento suicida geral na adolescência, é correto afirmar que",
           "options": [
             {
               "letter": "A",
@@ -19846,7 +19846,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "E",
-              "text": "mídias sociais são grandes propagadoras, por contágio, de comportamento autolesivo e um dos responsáveis pelo aumento de tentativas de suicídio e autoles ões não suicidas entre os jovens."
+              "text": "mídias sociais são grandes propagadoras, por contágio, de comportamento autolesivo e um dos responsáveis pelo aumento de tentativas de suicídio e autolesões não suicidas entre os jovens."
             }
           ],
           "correctAnswer": "E",
@@ -19894,7 +19894,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2024 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 20",
-          "text": "Mulher de 35 anos é secretária, está casada há 5 anos e tem um filho de 2,5 anos. Ela chora em consulta de rotina com clínico geral, contando que tinha perdido sua mãe por infecção por influenza há 2 meses. Veio acompanhada de uma irmã e estava afastada das funções trabalhistas desde a perda da mãe, período no qual tem estado triste e com momentos de raiva a maior parte do tempo. Apresenta -se em estado de profunda dor, choque e raiva: “... só estou aqui porque minha irmã insistiu. Prefiro ficar em casa”. A maior parte da consulta apresenta -se apática ou chorando. Sente-se ultrajada e injustiçada por ter perdido sua mãe, acredita que perdeu tudo na vida e que, pelo bem de seu filho, seria melhor ela morrer logo para se juntar à mãe, chegando a pedir ao marido que saísse de casa, levando consigo o filho. Passa a maior parte dos dias na casa dos pais no quarto deles, deitada na cama da mãe vendo fotos e pertences pessoais dela. O sono e o apetite se desregularam e não está conseguindo mais experienciar prazer em suas atividades cotidianas. Sobre esse caso e as reações de luto conforme o DSM-5-TR, é correto afirmar que",
+          "text": "Mulher de 35 anos é secretária, está casada há 5 anos e tem um filho de 2,5 anos. Ela chora em consulta de rotina com clínico geral, contando que tinha perdido sua mãe por infecção por influenza há 2 meses. Veio acompanhada de uma irmã e estava afastada das funções trabalhistas desde a perda da mãe, período no qual tem estado triste e com momentos de raiva a maior parte do tempo. Apresenta-se em estado de profunda dor, choque e raiva: “... só estou aqui porque minha irmã insistiu. Prefiro ficar em casa”. A maior parte da consulta apresenta-se apática ou chorando. Sente-se ultrajada e injustiçada por ter perdido sua mãe, acredita que perdeu tudo na vida e que, pelo bem de seu filho, seria melhor ela morrer logo para se juntar à mãe, chegando a pedir ao marido que saísse de casa, levando consigo o filho. Passa a maior parte dos dias na casa dos pais no quarto deles, deitada na cama da mãe vendo fotos e pertences pessoais dela. O sono e o apetite se desregularam e não está conseguindo mais experienciar prazer em suas atividades cotidianas. Sobre esse caso e as reações de luto conforme o DSM-5-TR, é correto afirmar que",
           "options": [
             {
               "letter": "A",
@@ -19910,7 +19910,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "devido ao processo de luto, exclui -se o diagnóstico de transtorno depressivo maior."
+              "text": "devido ao processo de luto, exclui-se o diagnóstico de transtorno depressivo maior."
             },
             {
               "letter": "E",
@@ -19936,15 +19936,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "B",
-              "text": "O transtorno de apego reativo é c aracterizado por um padrão de comportamentos de vínculo extremamente perturbados e inapropriados, nos quais a criança, rara ou minimamente, recorre de preferência a uma figura de apego para obter conforto, apoio, proteção e carinho."
+              "text": "O transtorno de apego reativo é caracterizado por um padrão de comportamentos de vínculo extremamente perturbados e inapropriados, nos quais a criança, rara ou minimamente, recorre de preferência a uma figura de apego para obter conforto, apoio, proteção e carinho."
             },
             {
               "letter": "C",
-              "text": "Crianças com transt orno do espectro autista não devem receber diagnóstico de transtorno de apego reativo, já que os sintomas do segundo se justificariam pela sintomatologia da dificuldade social e de comunicação do autismo."
+              "text": "Crianças com transtorno do espectro autista não devem receber diagnóstico de transtorno de apego reativo, já que os sintomas do segundo se justificariam pela sintomatologia da dificuldade social e de comunicação do autismo."
             },
             {
               "letter": "D",
-              "text": "A partir de um dia de um evento traumático (episódio concreto ou ameaça de morte, lesão grave ou violência sexual) até um mês da ocorrência deste, pode -se aplicar o diagnóstico de transtorno de estresse agudo."
+              "text": "A partir de um dia de um evento traumático (episódio concreto ou ameaça de morte, lesão grave ou violência sexual) até um mês da ocorrência deste, pode-se aplicar o diagnóstico de transtorno de estresse agudo."
             },
             {
               "letter": "E",
@@ -19974,11 +19974,11 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "Para o paciente que sofre de ansiedade, pode -se fazer uma tentativa com técnicas de respiração diafragmática, meditação e relaxamento."
+              "text": "Para o paciente que sofre de ansiedade, pode-se fazer uma tentativa com técnicas de respiração diafragmática, meditação e relaxamento."
             },
             {
               "letter": "D",
-              "text": "O desenvolvimento de transtorno de ajustamento decorreria da dificuldade das pessoas em lidarem com as frustrações cotidianas a ponto de o fator estressor levar a sintomas depressivos e ansiosos."
+              "text": "O desenvolvimento de transtorno de ajustamento decorreria da dificuldade das pessoas em lidar em com as frustrações cotidianas a ponto de o fator estressor levar a sintomas depressivos e ansiosos."
             },
             {
               "letter": "E",
@@ -19996,7 +19996,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2024 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 23",
-          "text": "Mulher de 40 anos está internada em hospital geral por estar, há 3 dias, sem se alimentar e sem contactuar com familiares. O marido conta que há 4 meses a paciente veio gradualmente perdendo o ânimo para fazer atividades prazerosas de sua rotina, como pratic ar exercícios e cozinhar. Tinha dificuldade para iniciar o sono na maior parte das noites, e o sono estava fragmentado. Queixava -se de muita preguiça, demora para levantar da cama todas as manhãs e procrastinação nas tarefas do dia a dia, já relatando prej uízos no trabalho e na sua organização caseira. Sentia -se triste e chorosa facilmente. Nos últimos 30 dias, o quadro se agravou progressivamente: há uma semana, começou a repetir as frases ou últimas palavras das pessoas, ficava com olhar parado e permanecia várias horas sentada no sofá sem reação. Às vezes, fazia algum movimento repetitivo ou despropositado. Em seguida, passou a se negar a tomar banho, trocar de roupa, chegando ao quadro atual em que não se move, nem come ou toma líquidos. Em relação a es se caso clínico, assinale a alternativa correta.",
+          "text": "Mulher de 40 anos está internada em hospital geral por estar, há 3 dias, sem se alimentar e sem contactuar com familiares. O marido conta que há 4 meses a paciente veio gradualmente perdendo o ânimo para fazer atividades prazerosas de sua rotina, como pratic ar exercícios e cozinhar. Tinha dificuldade para iniciar o sono na maior parte das noites, e o sono estava fragmentado. Queixava-se de muita preguiça, demora para levantar da cama todas as manhãs e procrastinação nas tarefas do dia a dia, já relatando prejuízos no trabalho e na sua organização caseira. Sentia-se triste e chorosa facilmente. Nos últimos 30 dias, o quadro se agravou progressivamente: há uma semana, começou a repetir as frases ou últimas palavras das pessoas, ficava com olhar parado e permanecia várias horas sentada no sofá sem reação. Às vezes, fazia algum movimento repetitivo ou despropositado. Em seguida, passou a se negar a tomar banho, trocar de roupa, chegando ao quadro atual em que não se move, nem come ou toma líquidos. Em relação a es se caso clínico, assinale a alternativa correta.",
           "options": [
             {
               "letter": "A",
@@ -20004,7 +20004,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "B",
-              "text": "A eletroconvulsoterapia pode ser con siderada tratamento de primeira linha nesse caso."
+              "text": "A eletroconvulsoterapia pode ser considerada tratamento de primeira linha nesse caso."
             },
             {
               "letter": "C",
@@ -20016,7 +20016,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "E",
-              "text": "Como o qu adro clínico e o diagnóstico estão claros, dispensa -se a necessidade de quaisquer exames complementares."
+              "text": "Como o quadro clínico e o diagnóstico estão claros, dispensa-se a necessidade de quaisquer exames complementares."
             }
           ],
           "correctAnswer": "B",
@@ -20034,7 +20034,7 @@ window.BANCO_RMAIS_EXAMS = {
           "options": [
             {
               "letter": "A",
-              "text": "O TB apresenta herdabilidade méd ia de 80,3%. Parentes de primeiro grau de indivíduos com TB têm aproximadamente 20% de risco de apresentar o transtorno, quase 10 vezes o da população geral."
+              "text": "O TB apresenta herdabilidade média de 80,3%. Parentes de primeiro grau de indivíduos com TB têm aproximadamente 20% de risco de apresentar o transtorno, quase 10 vezes o da população geral."
             },
             {
               "letter": "B",
@@ -20098,7 +20098,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2024 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 26",
-          "text": "Um universitário solteiro de 22 anos é hospitalizado após um acidente de carro em que fraturou o fêmur direito. Uma jovem médica fo i designada para acompanhá -lo, mas, quando ela entra no quarto e se apresenta, o paciente diz: “Nem pensar! Não vou deixar que uma médica recém-formada toque em mim – preciso de alguém com muito mais experiência do que você”. Qual das seguintes afirmações por parte dessa médica provavelmente fará a entrevista com esse paciente ser bem-sucedida?",
+          "text": "Um universitário solteiro de 22 anos é hospitalizado após um acidente de carro em que fraturou o fêmur direito. Uma jovem médica fo i designada para acompanhá-lo, mas, quando ela entra no quarto e se apresenta, o paciente diz: “Nem pensar! Não vou deixar que uma médica recém-formada toque em mim – preciso de alguém com muito mais experiência do que você”. Qual das seguintes afirmações por parte dessa médica provavelmente fará a entrevista com esse paciente ser bem-sucedida?",
           "options": [
             {
               "letter": "A",
@@ -20118,7 +20118,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "E",
-              "text": "Por favor, não torn e as coisas mais difíceis, tenho de entrevistá -lo como parte de meu trabalho."
+              "text": "Por favor, não torn e as coisas mais difíceis, tenho de entrevistá-lo como parte de meu trabalho."
             }
           ],
           "correctAnswer": "C",
@@ -20132,7 +20132,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2024 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 27",
-          "text": "Na avaliação de um pedido de interconsulta psiquiátrica, dentro de um hospital geral, para avaliar possível transtorno depressivo de uma paciente de 30 anos, notou -se que a paciente foi diagnosticada recentemente com doença de Crohn. Recebeu o diagnóstico há 3 dias, com necessidade de internação por complicações clínicas. Desde então, a paciente passou a cursar com choro fácil durante as avaliações médicas, o que chamou atenç ão da equipe que a acompanhava na enfermaria. Mostrou -se surpresa em ser avaliada por psiquiatra, mas confessou ter ficado impactada com o diagnóstico de uma doença crônica e ter chorado em alguns momentos. Ela disse se preocupar com efeitos prolongados do uso de medicações e com o risco de complicações, mencionando o caso de um avô que teve câncer colorretal. Também queixou-se de dificuldades de dormir à noite no hospital por causa do barulho da enfermaria. No entanto não se sentia triste a maior parte do tempo, procurando no hospital alternar entre leituras sobre sua doença e outros livros, além de acessar a internet pelo celular. Antes da internação, vinha com bom funcionamento socio -ocupacional, limitado apenas pelos sintomas gastrointestinais. A pacient e negou também ideação suicida ou sintomas psicóticos. Ela tem histórico de um episódio depressivo aos 20 anos, tratado com sucesso com escitalopram 20 mg/dia, o qual foi mantido por um ano. Desde então, ela manteve -se sem sintomas depressivos identificáve is. Na avaliação, mostrou -se inicialmente um pouco ansiosa, mas logo acalmou -se, humor eutímico, pensamento coerente e linear, afeto congruente e sem alteração psicomotora. A melhor atitude em relação ao caso dessa paciente é",
+          "text": "Na avaliação de um pedido de interconsulta psiquiátrica, dentro de um hospital geral, para avaliar possível transtorno depressivo de uma paciente de 30 anos, notou-se que a paciente foi diagnosticada recentemente com doença de Crohn. Recebeu o diagnóstico há 3 dias, com necessidade de internação por complicações clínicas. Desde então, a paciente passou a cursar com choro fácil durante as avaliações médicas, o que chamou atenç ão da equipe que a acompanhava na enfermaria. Mostrou-se surpresa em ser avaliada por psiquiatra, mas confessou ter ficado impactada com o diagnóstico de uma doença crônica e ter chorado em alguns momentos. Ela disse se preocupar com efeitos prolongados do uso de medicações e com o risco de complicações, mencionando o caso de um avô que teve câncer colorretal. Também queixou-se de dificuldades de dormir à noite no hospital por causa do barulho da enfermaria. No entanto não se sentia triste a maior parte do tempo, procurando no hospital alternar entre leituras sobre sua doença e outros livros, além de acessar a internet pelo celular. Antes da internação, vinha com bom funcionamento socio-ocupacional, limitado apenas pelos sintomas gastrointestinais. A pacient e negou também ideação suicida ou sintomas psicóticos. Ela tem histórico de um episódio depressivo aos 20 anos, tratado com sucesso com escitalopram 20 mg/dia, o qual foi mantido por um ano. Desde então, ela manteve-se sem sintomas depressivos identificáveis. Na avaliação, mostrou-se inicialmente um pouco ansiosa, mas logo acalmou-se, humor eutímico, pensamento coerente e linear, afeto congruente e sem alteração psicomotora. A melhor atitude em relação ao caso dessa paciente é",
           "options": [
             {
               "letter": "A",
@@ -20148,7 +20148,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "como o quadro corresponde a uma exaberbação de um transtorno mental preexistente, exclui -se o diagnóstico de transtorno de ajustamento."
+              "text": "como o quadro corresponde a uma exaberbação de um transtorno mental preexistente, exclui-se o diagnóstico de transtorno de ajustamento."
             },
             {
               "letter": "E",
@@ -20200,7 +20200,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2024 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 29",
-          "text": "Leia o trecho do discurso de um paciente fictício: “Oi! Sou o Rafael. Tenho um primo que se chama Daniel. Mas n ão ca í do C éu. Adoro o azul. É a minha cor favorita. Lasanha é a minha comida favorita. Massa engorda muito. Estou pesando setenta quilos. No m ês passado, fiz dieta e andei muito de bicicleta. Eu sou um superatleta. Voc ê sabia que ganhei quinhentas medalhas nos Jogos Olímpicos?”. Diante desse discurso, assinale a alternativa que apresenta alterações psicopatológicas desse caso.",
+          "text": "Leia o trecho do discurso de um paciente fictício: “Oi! Sou o Rafael. Tenho um primo que se chama Daniel. Mas n ão ca í do C éu. Adoro o azul. É a minha cor favorita. Lasanha é a minha comida favorita. Massa engorda muito. Estou pesando setenta quilos. No m ês passado, fiz dieta e andei muito de bicicleta. Eu sou um superatleta. Você sabia que ganhei quinhentas medalhas nos Jogos Olímpicos?”. Diante desse discurso, assinale a alternativa que apresenta alterações psicopatológicas desse caso.",
           "options": [
             {
               "letter": "A",
@@ -20302,7 +20302,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2024 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 32",
-          "text": "Um rapaz de 20 ano s chega para avalia ção em um ambulatório de esquizofrenia. Aos 18 anos, ele começou a cursar engenharia, porém, ao iniciar o segundo ano da faculdade, come çou a ficar mais retraído do que de costume e a ter dificuldade em acompanhar as disciplinas. Ap ós dois meses, passou a desconfiar que os colegas estavam tramando uma “armadilha” contra ele. Achava que estavam querendo prejudicar suas notas e conta que chegou a ouvi -los, atrav és do receptor da internet de sua casa, conversando sobre um plano para mu dar sua prova por outra. Chegou a ficar agitado dentro de casa e contou aos pais que precisava mudar de faculdade. Foi levado a um pronto-socorro, onde fez exames laboratoriais e de neuroimagem que vieram sem altera ções. Foi, então, prescrita a risperid ona, e ele foi encaminhado para tratamento ambulatorial, em que a dose foi aumentada at é 6 mg/dia e tomado dessa forma durante dois meses. No entanto, após esse per íodo, ainda continuava afirmando que os colegas mantinham o mesmo plano contra ele. J á não conseguia estudar e precisou interromper a faculdade. Ficava o dia inteiro no quarto, mal saindo até para tomar banho. Passou em consulta com outro profissional, que substituiu a risperidona pela olanzapina, chegando at é a dose de 20 mg/dia. Fez uso d a medicação durante quatro meses e percebeu que vinha dormindo e se alimentando melhor e j á não tinha mais os tremores, além de sentir mais disposição. No entanto n ão conseguia voltar a estudar e continuava o tempo inteiro dentro de casa com medo dos amigos. Assinale a alternativa que apresenta a melhor conduta a ser realizada para esse caso.",
+          "text": "Um rapaz de 20 ano s chega para avalia ção em um ambulatório de esquizofrenia. Aos 18 anos, ele começou a cursar engenharia, porém, ao iniciar o segundo ano da faculdade, começou a ficar mais retraído do que de costume e a ter dificuldade em acompanhar as disciplinas. Ap ós dois meses, passou a desconfiar que os colegas estavam tramando uma “armadilha” contra ele. Achava que estavam querendo prejudicar suas notas e conta que chegou a ouvi-los, através do receptor da internet de sua casa, conversando sobre um plano para mu dar sua prova por outra. Chegou a ficar agitado dentro de casa e contou aos pais que precisava mudar de faculdade. Foi levado a um pronto-socorro, onde fez exames laboratoriais e de neuroimagem que vieram sem altera ções. Foi, então, prescrita a risperidona, e ele foi encaminhado para tratamento ambulatorial, em que a dose foi aumentada at é 6 mg/dia e tomado dessa forma durante dois meses. No entanto, após esse período, ainda continuava afirmando que os colegas mantinham o mesmo plano contra ele. J á não conseguia estudar e precisou interromper a faculdade. Ficava o dia inteiro no quarto, mal saindo até para tomar banho. Passou em consulta com outro profissional, que substituiu a risperidona pela olanzapina, chegando at é a dose de 20 mg/dia. Fez uso d a medicação durante quatro meses e percebeu que vinha dormindo e se alimentando melhor e j á não tinha mais os tremores, além de sentir mais disposição. No entanto n ão conseguia voltar a estudar e continuava o tempo inteiro dentro de casa com medo dos amigos. Assinale a alternativa que apresenta a melhor conduta a ser realizada para esse caso.",
           "options": [
             {
               "letter": "A",
@@ -20336,7 +20336,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2024 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 33",
-          "text": "Mulher de 19 anos, solteira, desempregada e evangélica, é levada pelos pais à consulta. No momento, a paciente nega queixas psiquiátricas ou história familiar de transtorno psiquiátrico. Durante a entrevista, refere que, há cer ca de 2 anos, começou a ouvir vozes chamando pelo seu nome, e que corria para fora de casa para checar se havia alguém no portão, voltando assustada e se trancando no quarto. Essas vozes ocorriam em diferentes momentos do dia, praticamente todos os dias, m as eram mais frequentes à noite. Negava alterações de humor ou uso de drogas. Passou a ficar muito tensa dentro de casa e a não dormir, com medo das vozes. Não sabia explicar o que era, mas estava certa de que ouvia de fato alguém a chamando, embora achass e estranho nunca ter confirmado isso. Ficava, porém, várias semanas sem ter esses sintomas, que retornavam sem motivo aparente em alguns momentos. Há seis meses, teve queda no funcionamento acadêmico, pois vinha fazendo curso pré-vestibular e disse que “não conseguia mais estudar”. Também ficou mais quieta e trancada no quarto, estranhamente lendo mais a Bíblia do que fazia antes, e parou de procurar amigos, pois não achava que tinham mais interesses em comum. No entanto nega sentir -se tris te ou ter pensamentos de cunho pessimista. A respeito do quadro clínico relatado, é correto afirmar que",
+          "text": "Mulher de 19 anos, solteira, desempregada e evangélica, é levada pelos pais à consulta. No momento, a paciente nega queixas psiquiátricas ou história familiar de transtorno psiquiátrico. Durante a entrevista, refere que, há cer ca de 2 anos, começou a ouvir vozes chamando pelo seu nome, e que corria para fora de casa para checar se havia alguém no portão, voltando assustada e se trancando no quarto. Essas vozes ocorriam em diferentes momentos do dia, praticamente todos os dias, m as eram mais frequentes à noite. Negava alterações de humor ou uso de drogas. Passou a ficar muito tensa dentro de casa e a não dormir, com medo das vozes. Não sabia explicar o que era, mas estava certa de que ouvia de fato alguém a chamando, embora achass e estranho nunca ter confirmado isso. Ficava, porém, várias semanas sem ter esses sintomas, que retornavam sem motivo aparente em alguns momentos. Há seis meses, teve queda no funcionamento acadêmico, pois vinha fazendo curso pré-vestibular e disse que “não conseguia mais estudar”. Também ficou mais quieta e trancada no quarto, estranhamente lendo mais a Bíblia do que fazia antes, e parou de procurar amigos, pois não achava que tinham mais interesses em comum. No entanto nega sentir-se tris te ou ter pensamentos de cunho pessimista. A respeito do quadro clínico relatado, é correto afirmar que",
           "options": [
             {
               "letter": "A",
@@ -20438,7 +20438,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2024 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 36",
-          "text": "Analise os dois casos clínicos a seguir: CASO 1 - Mulher de 35 anos com queixa de “problemas com vômitos” há 5 anos, quando começou a fazer dietas, apesar de um IMC normal. Aos 26 anos, após terminar a faculdade, começou a comer demais no contexto de exigências ocupacionais e sociais. Um ganho de 6,5 kg em um ano fez com que começasse a pular refeições, muitas vezes comendo exageradamente no final da tard e e à noite. Os episódios de ingestão demasiada de alimentos se intensificaram com o passar dos anos, tanto em frequência quanto em volume de alimentos, e a paciente se sentia cada vez mais sem controle. Preocupada em ter ganho de peso, começou a induzir vomito, uma prática que aprendera na internet. O padrão se enraizou: restrição alimentar pela manh ã̃, seguida por compulsão alimentar e, então, vômitos autoinduzidos. Por muito tempo, escondeu esses comportamentos, até do terapeuta com quem se consultava há alguns meses. Apresentava -se bem nutrida, com afeto triste, mas cooperativa e com insight preservado. CASO 2 – Mulher, 32 anos, consultou com clínico geral com queixa de cefaleias frequentes e fadiga crônica. O exame físico não revelou nada de interesse, exceto IMC de 14,5 kg/m 2. Preocupado com seu peso, o médico encaminhou -a a um psiquiatra. Durante a consulta para avaliação psiquiátrica, a paciente estava cooperativa e calma. Manifestou preocupação em relação ao baixo peso e negou medo de ganh o de peso ou perturbação da imagem corporal: “Sei que preciso ganhar peso. Estou magra demais”, afirmou. Apesar da aparente motivação para corrigir sua desnutrição, o diário alimentar revelou que ela consumia apenas 600 calorias por dia, o que justificava por falta de apetite, inchaço e sintomas gastrointestinais vagos. Diz que caminhava todo dia, além de alternar dias de subir escadas e correr por cerca de uma hora e nega que fosse para perder calorias, mas para manter -se saudável já que o avô havia infartado aos 65 anos. A família já vinha alertando sobre seu baixo peso, chegou a fazer uma consulta com endocrinologista há alguns meses, mas não seguiu acompanhamento. Parecia eutímica, mas com afeto ligeiramente aplainado. Considerando esses dois casos clíni cos, assinale a alternativa correta.",
+          "text": "Analise os dois casos clínicos a seguir: CASO 1 - Mulher de 35 anos com queixa de “problemas com vômitos” há 5 anos, quando começou a fazer dietas, apesar de um IMC normal. Aos 26 anos, após terminar a faculdade, começou a comer demais no contexto de exigências ocupacionais e sociais. Um ganho de 6,5 kg em um ano fez com que começasse a pular refeições, muitas vezes comendo exageradamente no final da tard e e à noite. Os episódios de ingestão demasiada de alimentos se intensificaram com o passar dos anos, tanto em frequência quanto em volume de alimentos, e a paciente se sentia cada vez mais sem controle. Preocupada em ter ganho de peso, começou a induzir vomito, uma prática que aprendera na internet. O padrão se enraizou: restrição alimentar pela manh ã̃, seguida por compulsão alimentar e, então, vômitos autoinduzidos. Por muito tempo, escondeu esses comportamentos, até do terapeuta com quem se consultava há alguns meses. Apresentava-se bem nutrida, com afeto triste, mas cooperativa e com insight preservado. CASO 2 – Mulher, 32 anos, consultou com clínico geral com queixa de cefaleias frequentes e fadiga crônica. O exame físico não revelou nada de interesse, exceto IMC de 14,5 kg/m 2. Preocupado com seu peso, o médico encaminhou-a a um psiquiatra. Durante a consulta para avaliação psiquiátrica, a paciente estava cooperativa e calma. Manifestou preocupação em relação ao baixo peso e negou medo de ganh o de peso ou perturbação da imagem corporal: “Sei que preciso ganhar peso. Estou magra demais”, afirmou. Apesar da aparente motivação para corrigir sua desnutrição, o diário alimentar revelou que ela consumia apenas 600 calorias por dia, o que justificava por falta de apetite, inchaço e sintomas gastrointestinais vagos. Diz que caminhava todo dia, além de alternar dias de subir escadas e correr por cerca de uma hora e nega que fosse para perder calorias, mas para manter-se saudável já que o avô havia infartado aos 65 anos. A família já vinha alertando sobre seu baixo peso, chegou a fazer uma consulta com endocrinologista há alguns meses, mas não seguiu acompanhamento. Parecia eutímica, mas com afeto ligeiramente aplainado. Considerando esses dois casos clíni cos, assinale a alternativa correta.",
           "options": [
             {
               "letter": "A",
@@ -20472,7 +20472,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2024 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 37",
-          "text": "Homem com queixa de se sentir muito angustiado em vários relacionamentos íntimos em sua vida e, mais recentemente, desenvolveu picos de ansiedade, o que o fez buscar ajuda profissional. Durante os primeiros encontros, o analista percebe que ele tem muita dificuldade em falar de sentimentos e frequentemente se atém apenas a descrever seus sintomas superficialmente, de forma objetiva. Em um caso como este, qual alternativa NÃO apresenta um exemplo de atitude ou técnica que seria empregada em psicoterapia de orientação analítica?",
+          "text": "Homem com queixa de se sentir muito angustiado em vários relacionamentos íntimos em sua vida e, mais recentemente, desenvolveu picos de ansiedade, o que o fez buscar ajuda profissional. Durante os primeiros encontros, o analista percebe que ele tem muita dificuldade em falar de sentimentos e frequentemente se atém apenas a descrever seus sintomas superficial mente, de forma objetiva. Em um caso como este, qual alternativa NÃO apresenta um exemplo de atitude ou técnica que seria empregada em psicoterapia de orientação analítica?",
           "options": [
             {
               "letter": "A",
@@ -20518,7 +20518,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "De acordo com o Manual diagnóstico e estatístico de transtornos mentais (DSM -5), dos 11 critérios para transtornos por uso de substâncias, os sintomas centrai s na síndrome de dependência de substâncias são a tolerância e a abstinência."
+              "text": "De acordo com o Manual diagnóstico e estatístico de transtornos mentais (DSM -5), dos 11 critérios para transtornos por uso de substâncias, os sintomas centrais na síndrome de dependência de substâncias são a tolerância e a abstinência."
             },
             {
               "letter": "D",
@@ -20574,7 +20574,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2024 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 40",
-          "text": "Um homem de 60 anos apresenta -se ao setor de emergência com queixas de ansiedade iniciada há dois dias, quando “largou totalmente a bebida”. Ele descreve uma longa história de uso diário e intenso de álcool. Está visivelmente trêmulo e diaforético; sua temperatura, pressão arterial e pulsação estão elevadas. Os resultados do exame físico são normais sob outros aspectos, mas os testes de laboratório revelam níveis baixos de albumina sérica, assim como um valor de tempo de protombina parcial elevado. Assinale a alternativa que apresenta a atitude mais correta a ser tomada em relação a esse caso.",
+          "text": "Um homem de 60 anos apresenta-se ao setor de emergência com queixas de ansiedade iniciada há dois dias, quando “largou totalmente a bebida”. Ele descreve uma longa história de uso diário e intenso de álcool. Está visivelmente trêmulo e diaforético; sua temperatura, pressão arterial e pulsação estão elevadas. Os resultados do exame físico são normais sob outros aspectos, mas os testes de laboratório revelam níveis baixos de albumina sérica, assim como um valor de tempo de protombina parcial elevado. Assinale a alternativa que apresenta a atitude mais correta a ser tomada em relação a esse caso.",
           "options": [
             {
               "letter": "A",
@@ -20608,7 +20608,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2024 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 41",
-          "text": "Um paciente de 45 anos apresenta -se em consulta relatando que faz tratamento psiquiátrico há anos por um quadro depressivo sem ter resolução sintomática. Disse ter passado por diferentes médicos e utilizado diferentes antidepressivos, com os quais obteve a lívio parcial e temporário dos sintomas, mas com efeitos colaterais ou piora concomitante de outros sintomas. Atualmente está em uso de vortioxetina 20 mg/dia e brexpiprazol 2 mg/dia, e, embora reconheça algum benefício, ainda relata vários sintomas como irritabilidade, inquietação, esquecimentos, falta de atenção e inapetência. Traz consigo um laudo de avaliação farmacogenética, pedido por clínico geral, relata ter visto que o laudo aponta que teria resposta satisfatória à bupropiona, medicação que só se l embra de ter usado por pouco tempo em 150 mg/dia, associada a outros antidepressivos, mas sem se recordar ao certo da resposta. A melhor conduta a ser tomada a respeito desse caso é",
+          "text": "Um paciente de 45 anos apresenta-se em consulta relatando que faz tratamento psiquiátrico há anos por um quadro depressivo sem ter resolução sintomática. Disse ter passado por diferentes médicos e utilizado diferentes antidepressivos, com os quais obteve a lívio parcial e temporário dos sintomas, mas com efeitos colaterais ou piora concomitante de outros sintomas. Atualmente está em uso de vortioxetina 20 mg/dia e brexpiprazol 2 mg/dia, e, embora reconheça algum benefício, ainda relata vários sintomas como irritabilidade, inquietação, esquecimentos, falta de atenção e inapetência. Traz consigo um laudo de avaliação farmacogenética, pedido por clínico geral, relata ter visto que o laudo aponta que teria resposta satisfatória à bupropiona, medicação que só se lembra de ter usado por pouco tempo em 150 mg/dia, associada a outros antidepressivos, mas sem se recordar ao certo da resposta. A melhor conduta a ser tomada a respeito desse caso é",
           "options": [
             {
               "letter": "A",
@@ -20676,7 +20676,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2024 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 43",
-          "text": "Uma estudante universitária de 20 anos de idade sofreu lesão cerebral com concussão. Sua personalidade pré -morbida era acentuadamente histriônica e teatral e, aos 13 anos, ela havia desenvolvido uma incapacidade histérica de andar durante algumas semanas. Durante a avaliação neurológica, ela demonstrou respostas aproximadas da seguinte forma: Pergunta: “Qual é a capital da Itália?” Resposta: “Nápoles.” Pergunta: “Quantas pernas tem uma centopeia?” Resposta: “Sete.” O conceito psicopatológico descrito no caso dessa paciente é",
+          "text": "Uma estudante universitária de 20 anos de idade sofreu lesão cerebral com concussão. Sua personalidade pré-morbida era acentuadamente histriônica e teatral e, aos 13 anos, ela havia desenvolvido uma incapacidade histérica de andar durante algumas semanas. Durante a avaliação neurológica, ela demonstrou respostas aproximadas da seguinte forma: Pergunta: “Qual é a capital da Itália?” Resposta: “Nápoles.” Pergunta: “Quantas pernas tem uma centopeia?” Resposta: “Sete.” O conceito psicopatológico descrito no caso dessa paciente é",
           "options": [
             {
               "letter": "A",
@@ -20718,7 +20718,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "B",
-              "text": "A tendência do homem a excitar -se sexualmente pela ideia ou imagem de si mesmo como mulher é característica do transexualismo."
+              "text": "A tendência do homem a excitar-se sexualmente pela ideia ou imagem de si mesmo como mulher é característica do transexualismo."
             },
             {
               "letter": "C",
@@ -20752,7 +20752,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "B",
-              "text": "A incongruência entre o gênero designado e o expressado pode ser manifestada por forte desejo de livrar -se das próprias características sexuais primárias e/ou secundárias em razão de incongruência acentuada com o gênero experienciado/expressado."
+              "text": "A incongruência entre o gênero designado e o expressado pode ser manifestada por forte desejo de livrar-se das próprias características sexuais primárias e/ou secundárias em razão de incongruência acentuada com o gênero experienciado/expressado."
             },
             {
               "letter": "C",
@@ -20790,7 +20790,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "O principal avanço nas classificações diagnósticas foi o entendimento de que as manifestações psicopatológicas são mais bem entendidas a partir da definição de dimensões sintomatológicas transdiagnósticas em contraposição à proposição de um conjunto de categorias distintas."
+              "text": "O principal avanço nas classificações diagnósticas foi o entendimento de que as manifestações psicopatológicas são mais bem entendidas a partir da definição de dimensões sintomatológicas transdiagnósticas em contra posição à proposição de um conjunto de categorias distintas."
             },
             {
               "letter": "D",
@@ -20798,7 +20798,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "E",
-              "text": "Os manuais diagnósticos em Psiquiatria utilizam um paradigma conceitual empírico, ateórico, sem incorporar aspectos etiopatogênicos. Apesar de manter uma essência categorial, o DSM -5 incorporou uma tentati va de avaliação mais dimensional."
+              "text": "Os manuais diagnósticos em Psiquiatria utilizam um paradigma conceitual empírico, ateórico, sem incorporar aspectos etiopatogênicos. Apesar de manter uma essência categorial, o DSM -5 incorporou uma tentativa de avaliação mais dimensional."
             }
           ],
           "correctAnswer": "E",
@@ -20922,7 +20922,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "B",
-              "text": "Na psicoterapia focada nos esquemas, o tratamento usa como técnicas a inte rpretação, o manejo da transferência e da agressividade, a descrição e a abordagem de mecanismos de defesa, tendo como uma de suas fortes bases teóricas as relações objetais."
+              "text": "Na psicoterapia focada nos esquemas, o tratamento usa como técnicas a interpretação, o manejo da transferência e da agressividade, a descrição e a abordagem de mecanismos de defesa, tendo como uma de suas fortes bases teóricas as relações objetais."
             },
             {
               "letter": "C",
@@ -20998,11 +20998,11 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "A melhora com farmacoterapia costuma ser percebida a partir do primeiro mês de tratamento. Não havendo melhora, recomenda -se aumentar a dose já no fim do primeiro mês até se atingir a máxima recomendada ou tolerada, por pelo menos oito semanas adicionais."
+              "text": "A melhora com farmacoterapia costuma ser percebida a partir do primeiro mês de tratamento. Não havendo melhora, recomenda-se aumentar a dose já no fim do primeiro mês até se atingir a máxima recomendada ou tolerada, por pelo menos oito semanas adicionais."
             },
             {
               "letter": "E",
-              "text": "Como a duração ideal para determinar a eficácia da medicação no TOC situa -se entre 8 e 12 semanas, a dose inicial só deve ser aumentada após completar 2 meses sem resposta visível. EXAME NACIONAL DE RESIDÊNCIA INSTITUTO AOCP PRM ÁRE DE ATU - PSI - PSI DA INF E ADO - PSIQUIATRIA FORENSE - PSICOGERIATRIA Tipo 01 – Página 21"
+              "text": "Como a duração ideal para determinar a eficácia da medicação no TOC situa-se entre 8 e 12 semanas, a dose inicial só deve ser aumentada após completar 2 meses sem resposta visível. EXAME NACIONAL DE RESIDÊNCIA INSTITUTO AOCP PRM ÁRE DE ATU - PSI - PSI DA INF E ADO - PSIQUIATRIA FORENSE - PSICOGERIATRIA Tipo 01 – Página 21"
             }
           ],
           "correctAnswer": "D",
@@ -21092,7 +21092,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "B",
-              "text": "A buspirona é eficaz em praticamente todos os transtornos de ansiedade, excetuando -se as fobias específicas."
+              "text": "A buspirona é eficaz em praticamente todos os transtornos de ansiedade, excetuando-se as fobias específicas."
             },
             {
               "letter": "C",
@@ -21118,7 +21118,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2024 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 56",
-          "text": "Mulher divorciada de 57 anos tem usado alprazolam (1 mg, 3 a 4 vezes/dia) há muitos anos (> 20 anos) para evitar “preocupações constantes”, principalmente quanto ao que acontecerá em sua vida. A paciente tem forte autocobrança, insegurança e insiste em dizer que “não se sente inteira ou completa” sem ter um relacionamento. Embora nunca tenha tentado suicídio, a paciente sempre se sentia como se não valesse a pena viver sozinha e achava insuportáveis seus estados emo cionais negativos. São diagnósticos prováveis para esse caso:",
+          "text": "Mulher divorciada de 57 anos tem usado alprazolam (1 mg, 3 a 4 vezes/dia) há muitos anos (> 20 anos) para evitar “preocupações constantes”, principalmente quanto ao que acontecerá em sua vida. A paciente tem forte autocobrança, insegurança e insiste em dizer que “não se sente inteira ou completa” sem ter um relacionamento. Embora nunca tenha tentado suicídio, a paciente sempre se sentia como se não valesse a pena viver sozinha e achava insuportáveis seus estados emocionais negativos. São diagnósticos prováveis para esse caso:",
           "options": [
             {
               "letter": "A",
@@ -21156,7 +21156,7 @@ window.BANCO_RMAIS_EXAMS = {
           "options": [
             {
               "letter": "A",
-              "text": "Medidas não farmacoló gicas, como psicoterapia, higiene do sono e atividade física."
+              "text": "Medidas não farmacológicas, como psicoterapia, higiene do sono e atividade física."
             },
             {
               "letter": "B",
@@ -21220,7 +21220,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2024 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 59",
-          "text": "Idosa de 76 anos foi levada à Unidade de Emergência por alteração do comportamento, com início há cinco dias. O marido relata que a paciente tem estado inquieta, não dorme e fala sozinha, com discurso desconexo. O acompanhante afirma que, em alguns momentos, ela parece mais “calma e lúcida”, alternando -se com outros de comportamento desorganizado e discurso incoerente, principalmente à noite. A família está assustada, com medo de que ela saia de casa sozinha. Durante a madrugada, a pa ciente fala que “vai ao mercado” ou relembra elementos de seu passado, associando as ideias de maneira desconexa. Antes da instalação do quadro, a paciente não tinha comprometimento grave da memória. Apresenta hipertensão arterial e diabetes tipo 2. Na ava liação, a paciente não colabora com o exame físico, embora não se mostre agitada, mas até lentificada, conseguindo permanecer deitada sem necessidade de contenções. Está obnubilada, confusa, perplexa e se assusta com sons do ambiente. Distrai -se com facilidade, não foca a atenção nas perguntas e, quando as responde, revela -se desorientada no tempo e no espaço, com ideias desconexas. A respeito desse caso, é correto afirmar que",
+          "text": "Idosa de 76 anos foi levada à Unidade de Emergência por alteração do comportamento, com início há cinco dias. O marido relata que a paciente tem estado inquieta, não dorme e fala sozinha, com discurso desconexo. O acompanhante afirma que, em alguns momentos, ela parece mais “calma e lúcida”, alternando-se com outros de comportamento desorganizado e discurso incoerente, principalmente à noite. A família está assustada, com medo de que ela saia de casa sozinha. Durante a madrugada, a pa ciente fala que “vai ao mercado” ou relembra elementos de seu passado, associando as ideias de maneira desconexa. Antes da instalação do quadro, a paciente não tinha comprometimento grave da memória. Apresenta hipertensão arterial e diabetes tipo 2. Na ava liação, a paciente não colabora com o exame físico, embora não se mostre agitada, mas até lentificada, conseguindo permanecer deitada sem necessidade de contenções. Está obnubilada, confusa, perplexa e se assusta com sons do ambiente. Distrai-se com facilidade, não foca a atenção nas perguntas e, quando as responde, revela-se desorientada no tempo e no espaço, com ideias desconexas. A respeito desse caso, é correto afirmar que",
           "options": [
             {
               "letter": "A",
@@ -21240,7 +21240,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "E",
-              "text": "o quadro apresentado pela paciente pode servir como sólido marcador de pacientes com reserva cognitiva baixa e risco aumen tado de perda cognitiva acelerada no seguimento de longo prazo."
+              "text": "o quadro apresentado pela paciente pode servir como sólido marcador de pacientes com reserva cognitiva baixa e risco aumentado de perda cognitiva acelerada no seguimento de longo prazo."
             }
           ],
           "correctAnswer": "E",
@@ -21288,7 +21288,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2024 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 61",
-          "text": "Assinale a alternativa que apresenta corretamente o mecanismo antidep ressivo da respectiva medicação.",
+          "text": "Assinale a alternativa que apresenta corretamente o mecanismo antidepressivo da respectiva medicação.",
           "options": [
             {
               "letter": "A",
@@ -21390,7 +21390,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2024 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 64",
-          "text": "Um homem de 30 anos com histórico de anos de dependência de álcool parou de beber por insistência da esposa. Após 2 dias, evoluiu com sintomas moderados de abstinência, com taquicardia e hipertensão, além de forte cefaleia. Foi prescrito paracetamol 750 mg de 8 /8 horas para controle da cefaleia. Porém, após outros dois dias, ele começou a apresentar -se ictérico, nauseado e com vômitos, precisando ser levado às pressas ao pronto -socorro. Sobre esse caso, é correto afirmar que",
+          "text": "Um homem de 30 anos com histórico de anos de dependência de álcool parou de beber por insistência da esposa. Após 2 dias, evoluiu com sintomas moderados de abstinência, com taquicardia e hipertensão, além de forte cefaleia. Foi prescrito paracetamol 750 mg de 8 /8 horas para controle da cefaleia. Porém, após outros dois dias, ele começou a apresentar-se ictérico, nauseado e com vômitos, precisando ser levado às pressas ao pronto -socorro. Sobre esse caso, é correto afirmar que",
           "options": [
             {
               "letter": "A",
@@ -21492,7 +21492,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2024 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 67",
-          "text": "Uma mulher de 45 anos, em processo de análise, teve o seguinte sonho: “Estou na cidade natal de me us pais. Há dois rios na cidade, um dos rios que corta a cidade está sendo canalizado e estão construindo uma estrada de ferro por cima da canalização. Há muitas pessoas trabalhando e há uma favela ao lado do rio e muita sujeira. O rio está muito sujo e há também muita terra, montes de terra. Estou indo de encontro àquela sujeira, àquela obra de canalização. Quando chego ao local me sinto mal com toda aquela sujeira. Decido retornar por onde vim e começo a subir em um daqueles montes de terra.” O sonho ini cialmente remete ao passado, à origem de tudo, à cidade natal dos pais. Parece haver uma elaboração da paciente sobre aspectos relacionados à sua origem e à história de seus pais e de seus familiares. Ela está indo de encontro à sua sombra, implícita na im agem da sujeira, da favela e das obras de canalização. O tipo da análise do sonho da paciente nesse caso, nos remete à psicoterapia",
+          "text": "Uma mulher de 45 anos, em processo de análise, teve o seguinte sonho: “Estou na cidade natal de me us pais. Há dois rios na cidade, um dos rios que corta a cidade está sendo canalizado e estão construindo uma estrada de ferro por cima da canalização. Há muitas pessoas trabalhando e há uma favela ao lado do rio e muita sujeira. O rio está muito sujo e há também muita terra, montes de terra. Estou indo de encontro àquela sujeira, àquela obra de canalização. Quando chego ao local me sinto mal com toda aquela sujeira. Decido retornar por onde vim e começo a subir em um daqueles montes de terra.” O sonho inicialmente remete ao passado, à origem de tudo, à cidade natal dos pais. Parece haver uma elaboração da paciente sobre aspectos relacionados à sua origem e à história de seus pais e de seus familiares. Ela está indo de encontro à sua sombra, implícita na im agem da sujeira, da favela e das obras de canalização. O tipo da análise do sonho da paciente nesse caso, nos remete à psicoterapia",
           "options": [
             {
               "letter": "A",
@@ -21534,7 +21534,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "B",
-              "text": "Clozapina e aripiprazol destacam -se como fármacos que menos provavelmente produzem hiperprolactinemia."
+              "text": "Clozapina e aripiprazol destacam-se como fármacos que menos provavelmente produzem hiperprolactinemia."
             },
             {
               "letter": "C",
@@ -21560,7 +21560,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2024 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 69",
-          "text": "Engenheiro de 32 anos se apresentou a um psiquiatra em busca de ajuda para lidar com sua raiva. Foi ao consultório com a esposa, mãe de seus dois filhos. O casal concordou que ele tornou a “convivência quase impossí vel” entre os dois. Sua esposa relatou que, embora sempre houvesse achado que o marido fosse “nervoso”, as explosões de raiva aumentaram tanto em frequência quanto em intensidade e preocupava-se que ele ficasse violento com ela. Sua discussão mais recen te começou quando o marido voltou para casa depois de um “dia duro de trabalho” e o jantar não estava pronto. Quando entrou na cozinha e viu a esposa sentada à mesa lendo o jornal, irritou -se e começou a falar impropérios, quebrou copos e uma cadeira da cozinha. Esposa e paciente acham que ele vinha tendo uma média de quatro explosões verbais por semana nos últimos anos, geralmente em reação à frustração, demandas inesperadas ou o que percebesse como ofensa. O marido descreve os episódios como breves, que atingem o auge em alguns segundos e dificilmente duram mais do que alguns minutos. Entre os episódios, descreveu a si mesmo como se sentindo “bem”, ele afirma ter dificuldade com o controle da raiva desde o início da adolescência. Costuma se sentir profundamente arrependido das explosões de raiva, principalmente em família. Assinale a alternativa correta em relação a esse caso.",
+          "text": "Engenheiro de 32 anos se apresentou a um psiquiatra em busca de ajuda para lidar com sua raiva. Foi ao consultório com a esposa, mãe de seus dois filhos. O casal concordou que ele tornou a “convivência quase impossível” entre os dois. Sua esposa relatou que, embora sempre houvesse achado que o marido fosse “nervoso”, as explosões de raiva aumentaram tanto em frequência quanto em intensidade e preocupava-se que ele ficasse violento com ela. Sua discussão mais recen te começou quando o marido voltou para casa depois de um “dia duro de trabalho” e o jantar não estava pronto. Quando entrou na cozinha e viu a esposa sentada à mesa lendo o jornal, irritou-se e começou a falar impropérios, quebrou copos e uma cadeira da cozinha. Esposa e paciente acham que ele vinha tendo uma média de quatro explosões verbais por semana nos últimos anos, geralmente em reação à frustração, demandas inesperadas ou o que percebesse como ofensa. O marido descreve os episódios como breves, que atingem o auge em alguns segundos e dificilmente duram mais do que alguns minutos. Entre os episódios, descreveu a si mesmo como se sentindo “bem”, ele afirma ter dificuldade com o controle da raiva desde o início da adolescência. Costuma se sentir profundamente arrependido das explosões de raiva, principalmente em família. Assinale a alternativa correta em relação a esse caso.",
           "options": [
             {
               "letter": "A",
@@ -21598,7 +21598,7 @@ window.BANCO_RMAIS_EXAMS = {
           "options": [
             {
               "letter": "A",
-              "text": "De modo claro, parece un ânime que as pessoas desenvolvem a depend ência em decorr ência dos aplicativos disponíveis na internet e n ão dela em si."
+              "text": "De modo claro, parece un ânime que as pessoas desenvolvem a dependência em decorrência dos aplicativos disponíveis na internet e n ão dela em si."
             },
             {
               "letter": "B",
@@ -21696,7 +21696,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2024 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 73",
-          "text": "Homem de 38 anos, operador de TI em multinacional, teve um episódio depressivo grave, sem sintoma s psicóticos de início há 1 ano. Relata ter tido burnout pela alta exigência do trabalho, o que contribuiu para sua depressão. Ficou afastado do trabalho, em licença para tratamento de saúde, há três meses. Está em acompanhamento especializado, com resposta ao tratamento e remissão parcial dos sintomas, atestados pelo psiquiatra assistente. Entretanto na perícia para retorno ao trabalho, queixa -se com mais intensidade dos mesmos sintomas da época do afastamento, porém, o exame do estado mental não é compatível com as queixas subjetivas do paciente. Inclusive re fere que, agora, “ouve vozes toda noite, convidando-o para o túmulo”. A respeito desse caso acima, considerando aspectos técnico-periciais, é correto afirmar que",
+          "text": "Homem de 38 anos, operador de TI em multinacional, teve um episódio depressivo grave, sem sintoma s psicóticos de início há 1 ano. Relata ter tido burnout pela alta exigência do trabalho, o que contribuiu para sua depressão. Ficou afastado do trabalho, em licença para tratamento de saúde, há três meses. Está em acompanhamento especializado, com resposta ao tratamento e remissão parcial dos sintomas, atestados pelo psiquiatra assistente. Entretanto na perícia para retorno ao trabalho, queixa-se com mais intensidade dos mesmos sintomas da época do afastamento, porém, o exame do estado mental não é compatível com as queixas subjetivas do paciente. Inclusive re fere que, agora, “ouve vozes toda noite, convidando-o para o túmulo”. A respeito desse caso acima, considerando aspectos técnico-periciais, é correto afirmar que",
           "options": [
             {
               "letter": "A",
@@ -21708,7 +21708,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "o quadro de burnout, se confirmado, impli ca necessariamente uma relação de nexo causal entre o trabalho e a doença, que passa a ser considerada semelhante a um acidente de trabalho."
+              "text": "o quadro de burnout, se confirmado, implica necessariamente uma relação de nexo causal entre o trabalho e a doença, que passa a ser considerada semelhante a um acidente de trabalho."
             },
             {
               "letter": "D",
@@ -21716,7 +21716,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "E",
-              "text": "em se tratando de uma perícia previdenciária, a melhor decisão do perito no caso seria de manter o afastamento laboral por pelo menos mais 3 meses, v isto que o periciando encontra -se em remissão parcial. EXAME NACIONAL DE RESIDÊNCIA INSTITUTO AOCP PRM ÁRE DE ATU - PSI - PSI DA INF E ADO - PSIQUIATRIA FORENSE - PSICOGERIATRIA Tipo 01 – Página 28"
+              "text": "em se tratando de uma perícia previdenciária, a melhor decisão do perito no caso seria de manter o afastamento laboral por pelo menos mais 3 meses, v isto que o periciando encontra-se em remissão parcial. EXAME NACIONAL DE RESIDÊNCIA INSTITUTO AOCP PRM ÁRE DE ATU - PSI - PSI DA INF E ADO - PSIQUIATRIA FORENSE - PSICOGERIATRIA Tipo 01 – Página 28"
             }
           ],
           "correctAnswer": "A",
@@ -21784,7 +21784,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "E",
-              "text": "hipoperfusão em regiões pré -frontais e estriado ventral no FDG-PET."
+              "text": "hipoperfusão em regiões pré-frontais e estriado ventral no FDG-PET."
             }
           ],
           "correctAnswer": "A",
@@ -21798,7 +21798,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2024 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 76",
-          "text": "Um paciente comparece ao consultório psiquiátrico aleg ando ter dificuldades com finanças. Já teve vários prejuízos em compras que faz em lojas, supermercados etc. e em contratos ou negociações. Explica que se compra mercadorias das quais se arrepende ou se elas têm algum defeito, não consegue voltar à loja pa ra devolvê-las ou reclamar. Quando algum vendedor é muito insistente tem dificuldades em “dizer não”, porque isso lhe gera tremendo desconforto. Já chegou a fechar um financiamento de automóvel após longa negociação apenas por ficar receoso de que o vended or ficasse chateado pelo tempo que dispendeu com o paciente. Diante dessa queixa, o psiquiatra deve ter, como principal hipótese diagnóstica,",
+          "text": "Um paciente comparece ao consultório psiquiátrico alegando ter dificuldades com finanças. Já teve vários prejuízos em compras que faz em lojas, supermercados etc. e em contratos ou negociações. Explica que se compra mercadorias das quais se arrepende ou se elas têm algum defeito, não consegue voltar à loja pa ra devolvê-las ou reclamar. Quando algum vendedor é muito insistente tem dificuldades em “dizer não”, porque isso lhe gera tremendo desconforto. Já chegou a fechar um financiamento de automóvel após longa negociação apenas por ficar receoso de que o vendedor ficasse chateado pelo tempo que dispendeu com o paciente. Diante dessa queixa, o psiquiatra deve ter, como principal hipótese diagnóstica,",
           "options": [
             {
               "letter": "A",
@@ -21844,7 +21844,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "evitar menções sobre a percepção do estado mental da paciente com frases como “Parece -me que você está se sentindo desconfortável”."
+              "text": "evitar menções sobre a percepção do estado mental da paciente com frases como “Parece-me que você está se sentindo desconfortável”."
             },
             {
               "letter": "D",
@@ -21981,7 +21981,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2025 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 1",
-          "text": "Uma paciente de 71 anos relata que há 4 meses vem se sentindo \"triste e sem esperança\". Em associação com esse quadro, parou de sair com seus amigos e de frequentar a academia, pois diz não sentir mais prazer nessas atividades. Queixa-se também de fadiga e ganho ponderal de 7 kg no período (peso anterior: 63 kg), porém o sintoma que mais a incomoda é uma dificuldade de concentração, com relato de seus familiares de que ela está ficando \"esque cida\". Esses sintomas ocorreram na maior parte dos dias desse período. Dentre as medicações a seguir, o tratamento mais adequado para esse caso é:",
+          "text": "Uma paciente de 71 anos relata que há 4 meses vem se sentindo \"triste e sem esperança\". Em associação com esse quadro, parou de sair com seus amigos e de frequentar a academia, pois diz não sentir mais prazer nessas atividades. Queixa-se também de fadiga e ganho ponderal de 7 kg no período (peso anterior: 63 kg), porém o sintoma que mais a incomoda é uma dificuldade de concentração, com relato de seus familiares de que ela está ficando \"esquecida\". Esses sintomas ocorreram na maior parte dos dias desse período. Dentre as medicações a seguir, o tratamento mais adequado para esse caso é:",
           "options": [
             {
               "letter": "A",
@@ -22015,7 +22015,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2025 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 2",
-          "text": "Um paciente de 54 anos foi atendido com queixa de lentidão e tremor nas mãos iniciado 7 meses antes. Ao exame, apresentava hipomimia facial, marcha em pequenos passos e quadro simétrico de rigidez em roda dentada, tremor de repouso e bradicinesia em membros s uperiores. Suspeitou -se de que o quadro poderia ter origem medicamentosa. A medicação que mais provavelmente está associada a essa clínica é:",
+          "text": "Um paciente de 54 anos foi atendido com queixa de lentidão e tremor nas mãos iniciado 7 meses antes. Ao exame, apresentava hipomimia facial, marcha em pequenos passos e quadro simétrico de rigidez em roda dentada, tremor de repouso e bradicinesia em membros s uperiores. Suspeitou-se de que o quadro poderia ter origem medicamentosa. A medicação que mais provavelmente está associada a essa clínica é:",
           "options": [
             {
               "letter": "A",
@@ -22049,7 +22049,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2025 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 3",
-          "text": "Uma paciente de 76 anos, em tratamento de longa data para diabetes mellitus tipo 2, dislipidemia e hipertensão arterial sistêmica, procura consultório psiquiátrico queixando -se de que há 1 ano liga para seus filhos várias vezes por dia com medo de que \"algo ruim possa acontecer a el es\". Relata também que anda \"com os nervos à flor da pele\", irritada e com muita dor muscular. Aproveitando a consulta, também se queixa de formigamento e dor em queimação em seus pés iniciados há 2 anos, com piora progressiva. Considerando as comorbidades da paciente, a melhor terapia medicamentosa nesse caso é:",
+          "text": "Uma paciente de 76 anos, em tratamento de longa data para diabetes mellitus tipo 2, dislipidemia e hipertensão arterial sistêmica, procura consultório psiquiátrico queixando-se de que há 1 ano liga para seus filhos várias vezes por dia com medo de que \"algo ruim possa acontecer a el es\". Relata também que anda \"com os nervos à flor da pele\", irritada e com muita dor muscular. Aproveitando a consulta, também se queixa de formigamento e dor em queimação em seus pés iniciados há 2 anos, com piora progressiva. Considerando as comorbidades da paciente, a melhor terapia medicamentosa nesse caso é:",
           "options": [
             {
               "letter": "A",
@@ -22083,7 +22083,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2025 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 4",
-          "text": "Um paciente de 48 anos é levado pelos filhos ao Centro de Atenção Psicossocial (CAPS) devido a quadro de etilis mo. Os filhos relatam que o paciente bebe destilados quase diariamente e pouco se alimenta, e há 5 dias encontra -se caindo e confuso. Negam traumatismo cranioencefálico. Está sem fazer o uso de bebidas alcoólicas há 3 dias, sem melhora do quadro. Ao exame , o médico nota o paciente bastante emagrecido, desorientado no tempo e no espaço, desatento, com dificuldade de manter o equilíbrio, marcha instável e com nistagmo horizontal bilateral. Frente a esse caso agudo, a principal hipótese diagnóstica é:",
+          "text": "Um paciente de 48 anos é levado pelos filhos ao Centro de Atenção Psicossocial (CAPS) devido a quadro de etilismo. Os filhos relatam que o paciente bebe destilados quase diariamente e pouco se alimenta, e há 5 dias encontra-se caindo e confuso. Negam traumatismo cranioencefálico. Está sem fazer o uso de bebidas alcoólicas há 3 dias, sem melhora do quadro. Ao exame , o médico nota o paciente bastante emagrecido, desorientado no tempo e no espaço, desatento, com dificuldade de manter o equilíbrio, marcha instável e com nistagmo horizontal bilateral. Frente a esse caso agudo, a principal hipótese diagnóstica é:",
           "options": [
             {
               "letter": "A",
@@ -22163,7 +22163,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "o tratamento dos sintomas po sitivos da esquizofrenia depende do adequado bloqueio dos receptores dopaminérgicos das vias nigroestriatal e tuberoinfundibular;"
+              "text": "o tratamento dos sintomas positivos da esquizofrenia depende do adequado bloqueio dos receptores dopaminérgicos das vias nigroestriatal e tuberoinfundibular;"
             },
             {
               "letter": "D",
@@ -22185,7 +22185,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2025 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 7",
-          "text": "Uma criança de 8 anos foi levada a consulta em uma unidade básica de saúde com queixa de baixo rendimento escolar e \"apagões\". Após colher a anamnese, e suspeitando de um diagnóstico, o médico fez a manobra de hiperventilação. Durante a manobra, a criança apresentou breves interrupções de consciência: ela ficava ausente e estática por alguns segundos e, em seguida, retornava ao ponto em que ocorrera a perda de consciência. Esses episódios breves eram acompanhados de discretos movimentos das pálpebras. Os pais relataram que esses episódios ocorriam várias vezes ao dia, mas que, devido à sua curta duração, tiveram dificuldade em observá -los. A paciente foi tratada com sucesso pelo médico da UBS com medicação antiepiléptica (etossuximida). No entanto, a mãe rel atou a ocorrência de um fenômeno estranho após o início da medicação: a criança passou a ver coisas que não existiam e acreditava nessas coisas que só ela via. A melhor conduta frente a esse caso é:",
+          "text": "Uma criança de 8 anos foi levada a consulta em uma unidade básica de saúde com queixa de baixo rendimento escolar e \"apagões\". Após colher a anamnese, e suspeitando de um diagnóstico, o médico fez a manobra de hiperventilação. Durante a manobra, a criança apresentou breves interrupções de consciência: ela ficava ausente e estática por alguns segundos e, em seguida, retornava ao ponto em que ocorrera a perda de consciência. Esses episódios breves eram acompanhados de discretos movimentos das pálpebras. Os pais relataram que esses episódios ocorriam várias vezes ao dia, mas que, devido à sua curta duração, tiveram dificuldade em observá-los. A paciente foi tratada com sucesso pelo médico da UBS com medicação antiepiléptica (etossuximida). No entanto, a mãe relatou a ocorrência de um fenômeno estranho após o início da medicação: a criança passou a ver coisas que não existiam e acreditava nessas coisas que só ela via. A melhor conduta frente a esse caso é:",
           "options": [
             {
               "letter": "A",
@@ -22231,7 +22231,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "os IMAOs são drogas antigas e encontram -se proscritas, portanto não devem ser mais utilizadas;"
+              "text": "os IMAOs são drogas antigas e encontram-se proscritas, portanto não devem ser mais utilizadas;"
             },
             {
               "letter": "D",
@@ -22457,7 +22457,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2025 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 15",
-          "text": "Quando ocorrem alterações na percepção, o indivíduo interpreta algo inexistente como parte da realidade. Quando uma pessoa afirma ouvir vozes conversando com elas, embora não haja ninguém presente, está -se diante do sintoma conhecido como:",
+          "text": "Quando ocorrem alterações na percepção, o indivíduo interpreta algo inexistente como parte da realidade. Quando uma pessoa afirma ouvir vozes conversando com elas, embora não haja ninguém presente, está-se diante do sintoma conhecido como:",
           "options": [
             {
               "letter": "A",
@@ -22627,7 +22627,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2025 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 20",
-          "text": "O transtorno do estresse pós -traumático (TEPT) pode ser analisado por instrumentos como a escala de impacto de evento revisada (IES-R). Essa escala permite identificar várias dimensões do TEPT. As dimensões avaliadas por essa escala são:",
+          "text": "O transtorno do estresse pós-traumático (TEPT) pode ser analisado por instrumentos como a escala de impacto de evento revisada (IES-R). Essa escala permite identificar várias dimensões do TEPT. As dimensões avaliadas por essa escala são:",
           "options": [
             {
               "letter": "A",
@@ -22695,7 +22695,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2025 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 22",
-          "text": "Um paciente de 70 anos, ensino superior, relata estar sendo furtado por sua esposa e afirma haver um complô para matá -lo. No miniexame do estado mental, encontra -se desorientado no tempo e no espaço e não consegue evocar as três palavras, embora as tenha repetido corretamente alguns min utos antes. Sua esposa relata que sua memória para fatos recentes vem piorando de maneira progressiva há 1 ano, levando a prejuízos significativos em suas atividades instrumentais da vida diária. O diagnóstico mais provável é:",
+          "text": "Um paciente de 70 anos, ensino superior, relata estar sendo furtado por sua esposa e afirma haver um complô para matá-lo. No miniexame do estado mental, encontra-se desorientado no tempo e no espaço e não consegue evocar as três palavras, embora as tenha repetido corretamente alguns minutos antes. Sua esposa relata que sua memória para fatos recentes vem piorando de maneira progressiva há 1 ano, levando a prejuízos significativos em suas atividades instrumentais da vida diária. O diagnóstico mais provável é:",
           "options": [
             {
               "letter": "A",
@@ -22899,7 +22899,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2025 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 28",
-          "text": "Um homem de 60 anos sem história de doença psiquiátrica prévia ou de alterações cognitivas, encontra -se na emergência em coma por intoxicação alcoólica aguda. A melhor conduta inicial é:",
+          "text": "Um homem de 60 anos sem história de doença psiquiátrica prévia ou de alterações cognitivas, encontra-se na emergência em coma por intoxicação alcoólica aguda. A melhor conduta inicial é:",
           "options": [
             {
               "letter": "A",
@@ -22983,7 +22983,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "fica caracterizada quando o paciente já teve ao menos três episódios depressivos gr aves e não responde satisfatoriamente ao tratamento inicial, após tentativas terapêuticas com três antidepressivos de classes diferentes por tempo superior a 6 semanas;"
+              "text": "fica caracterizada quando o paciente já teve ao menos três episódios depressivos graves e não responde satisfatoriamente ao tratamento inicial, após tentativas terapêuticas com três antidepressivos de classes diferentes por tempo superior a 6 semanas;"
             },
             {
               "letter": "E",
@@ -23001,7 +23001,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2025 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 31",
-          "text": "Considerando o caso clínico apresentado no te xto 2, o diagnóstico mais provável é:",
+          "text": "Considerando o caso clínico apresentado no texto 2, o diagnóstico mais provável é:",
           "options": [
             {
               "letter": "A",
@@ -23174,7 +23174,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2025 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 36",
-          "text": "Por insistência da família, Célio, 25 anos, comparece ao consultório, acompanhado de sua mãe. Já foi expulso d a escola 2 vezes aos 12 anos devido a comportamento agressivo e brigas recorrentes com os colegas, como em uma situação em que agrediu o professor ao ser pego \"colando\" em uma prova. Demonstra indiferença ao ser perguntado dessas situações. Aos 19 anos foi preso por furto. Tem dificuldade em permanecer nos empregos por muito tempo. Há 6 meses iniciou novo trabalho, mas foi demitido após várias faltas e atrasos injustificados. Teve seu direito de dirigir suspenso recentemente por exceder o limite de pontos d a carteira nacional de habilitação, com várias multas por excesso de velocidade e por ultrapassar o sinal vermelho. Ao ser indagado sobre o que achava da situação, Célio mostrava -se confiante em suas habilidades, dizendo que nunca causou um acidente e que essas leis serviam apenas para quem não sabia dirigir. O diagnóstico mais provável é:",
+          "text": "Por insistência da família, Célio, 25 anos, comparece ao consultório, acompanhado de sua mãe. Já foi expulso d a escola 2 vezes aos 12 anos devido a comportamento agressivo e brigas recorrentes com os colegas, como em uma situação em que agrediu o professor ao ser pego \"colando\" em uma prova. Demonstra indiferença ao ser perguntado dessas situações. Aos 19 anos foi preso por furto. Tem dificuldade em permanecer nos empregos por muito tempo. Há 6 meses iniciou novo trabalho, mas foi demitido após várias faltas e atrasos injustificados. Teve seu direito de dirigir suspenso recentemente por exceder o limite de pontos d a carteira nacional de habilitação, com várias multas por excesso de velocidade e por ultrapassar o sinal vermelho. Ao ser indagado sobre o que achava da situação, Célio mostrava-se confiante em suas habilidades, dizendo que nunca causou um acidente e que essas leis serviam apenas para quem não sabia dirigir. O diagnóstico mais provável é:",
           "options": [
             {
               "letter": "A",
@@ -23284,7 +23284,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "B",
-              "text": "auxilia o paci ente na identificação e na correção de crenças distorcidas e comportamentos disfuncionais;"
+              "text": "auxilia o paciente na identificação e na correção de crenças distorcidas e comportamentos disfuncionais;"
             },
             {
               "letter": "C",
@@ -23310,7 +23310,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2025 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 40",
-          "text": "Leonardo, 67 anos, comparece com a sua esposa a consulta médica. A esposa reclama que o paciente fica muito agitado no meio da madrugada, falando e chegando a chutá -la, inclusive já tendo a machucado. Afirma que isso ocorre enquanto ele está dormindo e que esse comportamento é recorrente. O provável diagnóstico é:",
+          "text": "Leonardo, 67 anos, comparece com a sua esposa a consulta médica. A esposa reclama que o paciente fica muito agitado no meio da madrugada, falando e chegando a chutá-la, inclusive já tendo a machucado. Afirma que isso ocorre enquanto ele está dormindo e que esse comportamento é recorrente. O provável diagnóstico é:",
           "options": [
             {
               "letter": "A",
@@ -23854,7 +23854,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2025 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 56",
-          "text": "Considerando os conceitos de psicoterapia, pode -se definir aliança terapêutica como:",
+          "text": "Considerando os conceitos de psicoterapia, pode-se definir aliança terapêutica como:",
           "options": [
             {
               "letter": "A",
@@ -23956,7 +23956,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2025 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 59",
-          "text": "O medo ou ansiedade intensa ao conhec er novas pessoas e falar em público, associados ao medo de situações em que possa haver julgamento negativo, são característicos do transtorno:",
+          "text": "O medo ou ansiedade intensa ao conhecer novas pessoas e falar em público, associados ao medo de situações em que possa haver julgamento negativo, são característicos do transtorno:",
           "options": [
             {
               "letter": "A",
@@ -24330,7 +24330,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2025 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 70",
-          "text": "O principal neurotransm issor envolvido na promoção ativa do sono é:",
+          "text": "O principal neurotransmissor envolvido na promoção ativa do sono é:",
           "options": [
             {
               "letter": "A",
@@ -24568,7 +24568,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2025 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 77",
-          "text": "Um paciente de 47 anos queixa -se de desejo de movimentar as pernas e sensação desagradável que ocorre com o repouso, ocorrendo principalmente à noite, mais de 3 vezes por semana. Os sintomas se aliviam parcialmente com o movimento. Considerando o provável diagnóstico, a melhor conduta é:",
+          "text": "Um paciente de 47 anos queixa-se de desejo de movimentar as pernas e sensação desagradável que ocorre com o repouso, ocorrendo principalmente à noite, mais de 3 vezes por semana. Os sintomas se aliviam parcialmente com o movimento. Considerando o provável diagnóstico, a melhor conduta é:",
           "options": [
             {
               "letter": "A",
@@ -24751,7 +24751,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2026 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 2",
-          "text": "Homem de 35 anos procura atendimento por apresentar, há aproximadamente 6 meses, tremores nas mãos e lentidão nos movimentos. Ao exame físico, observa -se rigidez em roda dentada, tremor de repouso, bradicinesia nos membros superiores e marcha em pequenos passos, com distribuição simétrica dos sinais. Levantou-se a hipótese de parkinson ismo de origem medicamentosa. Entre as medicações listadas a seguir, assinale a mais frequentemente associada ao quadro descrito.",
+          "text": "Homem de 35 anos procura atendimento por apresentar, há aproximadamente 6 meses, tremores nas mãos e lentidão nos movimentos. Ao exame físico, observa-se rigidez em roda dentada, tremor de repouso, bradicinesia nos membros superiores e marcha em pequenos passos, com distribuição simétrica dos sinais. Levantou-se a hipótese de parkinsonismo de origem medicamentosa. Entre as medicações listadas a seguir, assinale a mais frequentemente associada ao quadro descrito.",
           "options": [
             {
               "letter": "A",
@@ -24785,7 +24785,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2026 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 3",
-          "text": "Indivíduo dá entrada no pro nto-socorro com rebaixamento do nível de consciência, mutismo, rigidez muscular intensa temperatura axilar de 39,2 C, frequência cardíaca de 132 bpm, frequência respiratória de 26 irpm e pressão arterial de 172 × 100 mmHg. Há cerca de uma semana, iniciou uso de haloperidol devido a episódio psicótico. Relata -se ainda uso ocasional de cannabis. Diante desse quadro clínico agudo a principal hipótese diagnóstica é",
+          "text": "Indivíduo dá entrada no pro nto-socorro com rebaixamento do nível de consciência, mutismo, rigidez muscular intensa temperatura axilar de 39,2 C, frequência cardíaca de 132 bpm, frequência respiratória de 26 irpm e pressão arterial de 172 × 100 mmHg. Há cerca de uma semana, iniciou uso de haloperidol devido a episódio psicótico. Relata-se ainda uso ocasional de cannabis. Diante desse quadro clínico agudo a principal hipótese diagnóstica é",
           "options": [
             {
               "letter": "A",
@@ -24921,7 +24921,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2026 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 7",
-          "text": "Homem de 76 anos foi levado à consulta pela esposa, que relata episódios recorrentes, durante a madrugada, enquanto o marido dorme, nos quais ele fica muito agitado, fala e chega a chutá -la, causando-lhe ferimentos. O diagnóstico mais provável para esse quadro é",
+          "text": "Homem de 76 anos foi levado à consulta pela esposa, que relata episódios recorrentes, durante a madrugada, enquanto o marido dorme, nos quais ele fica muito agitado, fala e chega a chutá-la, causando-lhe ferimentos. O diagnóstico mais provável para esse quadro é",
           "options": [
             {
               "letter": "A",
@@ -25057,7 +25057,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2026 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 11",
-          "text": "Cada vez os polimorfismos genéticos são estudados como base para o tratamento. Assinale a opção que adequadamente apresenta a razão pela qual os polimorfismos g enéticos do sistema CYP450 podem influenciar a resposta terapêutica a fármacos psiquiátricos.",
+          "text": "Cada vez os polimorfismos genéticos são estudados como base para o tratamento. Assinale a opção que adequadamente apresenta a razão pela qual os polimorfismos genéticos do sistema CYP450 podem influenciar a resposta terapêutica a fármacos psiquiátricos.",
           "options": [
             {
               "letter": "A",
@@ -25159,7 +25159,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2026 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 14",
-          "text": "Pacientes com doença de Alzheimer podem apresentar quadros de psicose e agitação, sintomas que frequentemente exigem intervenção medicamentosa. Apesar do uso recorrente de antipsicóticos para controle dessas manifestações, poucos desses fármacos contam com aprovação esp ecífica do FDA ( Food and Drug Administration) para esse objetivo. Das opções a seguir, assinale o antipsicótico formalmente aprovado pelo FDA para tratar sintomas psicóticos em indivíduos com Alzheimer.",
+          "text": "Pacientes com doença de Alzheimer podem apresentar quadros de psicose e agitação, sintomas que frequentemente exigem intervenção medicamentosa. Apesar do uso recorrente de antipsicóticos para controle dessas manifestações, poucos desses fármacos contam com aprovação específica do FDA ( Food and Drug Administration) para esse objetivo. Das opções a seguir, assinale o antipsicótico formalmente aprovado pelo FDA para tratar sintomas psicóticos em indivíduos com Alzheimer.",
           "options": [
             {
               "letter": "A",
@@ -25281,7 +25281,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "E",
-              "text": "O paciente foi diagnosticado com acatisia e iniciou tratamento com clo zapina, o que agravou o controle dos impulsos."
+              "text": "O paciente foi diagnosticado com acatisia e iniciou tratamento com clozapina, o que agravou o controle dos impulsos."
             }
           ],
           "correctAnswer": "D",
@@ -25329,7 +25329,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2026 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 19",
-          "text": "Uma mulher de 74 anos, rec entemente diagnosticada com fibromialgia, busca orientação psiquiátrica devido a sintomas que começaram há 2 meses. Ela apresenta quadro de tristeza, anedonia, dificuldade de concentração, aumento do apetite e sentimento de culpa inadequados na maior parte dos dias. Com base nos sintomas descritos, assinale a melhor escolha medicamentosa para tratar essa paciente.",
+          "text": "Uma mulher de 74 anos, recentemente diagnosticada com fibromialgia, busca orientação psiquiátrica devido a sintomas que começaram há 2 meses. Ela apresenta quadro de tristeza, anedonia, dificuldade de concentração, aumento do apetite e sentimento de culpa inadequados na maior parte dos dias. Com base nos sintomas descritos, assinale a melhor escolha medicamentosa para tratar essa paciente.",
           "options": [
             {
               "letter": "A",
@@ -25363,7 +25363,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2026 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 20",
-          "text": "Um paciente de 60 anos apresenta um quadro demencial de progressão rápida, com comprometimento significativo da memória, alterações comportamentais e apraxia. Após seis meses de evolução, o paciente apresenta mutismo acinético. No exame físico, observam -se mioclonias espontâneas, hiporreflexias generalizada e sinal de Babinski. Considerando o quadro apresentado, assinale o diagnóstico mais provável.",
+          "text": "Um paciente de 60 anos apresenta um quadro demencial de progressão rápida, com comprometimento significativo da memória, alterações comportamentais e apraxia. Após seis meses de evolução, o paciente apresenta mutismo acinético. No exame físico, observam-se mioclonias espontâneas, hiporreflexias generalizada e sinal de Babinski. Considerando o quadro apresentado, assinale o diagnóstico mais provável.",
           "options": [
             {
               "letter": "A",
@@ -25397,7 +25397,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2026 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 21",
-          "text": "Um homem de 34 anos foi conduzido à consulta psiquiátrica pela esposa porque apresenta interpretações errôneas sobre acontecimentos cotidianos, que começaram há aproximadamente 3 anos. Ele descreve que, d urante conversas informais, percebe insinuações de que seus colegas de trabalho estariam conspirando contra ele, interpretando comentários neutros como ameaças disfarçadas. Além disso, está convencido de que sua esposa está tendo um caso, com base em peque nos comportamentos que, na realidade, não evidenciam concretamente uma traição. Embora mantenha sua rotina diária sem grandes prejuízos, sem alucinações, desorganização do pensamento ou variações bruscas de humor, essa crença fixa tem gerado sérios conflit os familiares. O paciente nega o uso de substâncias psicoativas ou de álcool. Considerando esse quadro clínico, assinale o diagnóstico mais adequado.",
+          "text": "Um homem de 34 anos foi conduzido à consulta psiquiátrica pela esposa porque apresenta interpretações errôneas sobre acontecimentos cotidianos, que começaram há aproximadamente 3 anos. Ele descreve que, durante conversas informais, percebe insinuações de que seus colegas de trabalho estariam conspirando contra ele, interpretando comentários neutros como ameaças disfarçadas. Além disso, está convencido de que sua esposa está tendo um caso, com base em peque nos comportamentos que, na realidade, não evidenciam concretamente uma traição. Embora mantenha sua rotina diária sem grandes prejuízos, sem alucinações, desorganização do pensamento ou variações bruscas de humor, essa crença fixa tem gerado sérios conflit os familiares. O paciente nega o uso de substâncias psicoativas ou de álcool. Considerando esse quadro clínico, assinale o diagnóstico mais adequado.",
           "options": [
             {
               "letter": "A",
@@ -25465,7 +25465,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2026 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 23",
-          "text": "Um paciente de 60 anos apresenta quadro demencial de progressão rápida, com comprometimento significativo da memória, alterações comportamentais e apraxia. Após seis meses de evolução, o paciente apresenta mutism o acinético. No exame físico, observam -se mioclonias espontâneas, hiporreflexias generalizada e sinal de Babinski. Considerando o diagnóstico mais provável, o seguinte exame é o mais específico para esse caso",
+          "text": "Um paciente de 60 anos apresenta quadro demencial de progressão rápida, com comprometimento significativo da memória, alterações comportamentais e apraxia. Após seis meses de evolução, o paciente apresenta mutism o acinético. No exame físico, observam-se mioclonias espontâneas, hiporreflexias generalizada e sinal de Babinski. Considerando o diagnóstico mais provável, o seguinte exame é o mais específico para esse caso",
           "options": [
             {
               "letter": "A",
@@ -25669,7 +25669,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2026 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 29",
-          "text": "Durante avaliação psiquiátrica infantil, a mãe de um menino de 8 anos apresenta relatório da escola que descreve postura resistente à autoridade escolar, frequentes discussões com adultos, irritabilidade acentuada e tendência a culpar terceiros por seu comportamento. Não há ind ícios de agressividade física ou destruição de propriedade. A mãe confirma contínuos episódios de “falta de respeito”. O diagnóstico que melhor se compatibiliza com esse quadro clínico é o transtorno",
+          "text": "Durante avaliação psiquiátrica infantil, a mãe de um menino de 8 anos apresenta relatório da escola que descreve postura resistente à autoridade escolar, frequentes discussões com adultos, irritabilidade acentuada e tendência a culpar terceiros por seu comportamento. Não há indícios de agressividade física ou destruição de propriedade. A mãe confirma contínuos episódios de “falta de respeito”. O diagnóstico que melhor se compatibiliza com esse quadro clínico é o transtorno",
           "options": [
             {
               "letter": "A",
@@ -25737,7 +25737,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2026 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 31",
-          "text": "Idoso com 67 anos e sem antecedentes psiquiátricos passou a apresentar alucinaç ões visuais ao longo dos últimos dois anos. Após uso de haloperidol, desenvolveu rigidez muscular progressiva, compatível com síndrome parkinsoniana e piora dos delírios e alucinações. Considerando a inexistência de causas infecciosas, tumorais ou tóxicas, o diagnóstico mais compatível com o quadro clínico e a conduta apropriada são, respectivamente,",
+          "text": "Idoso com 67 anos e sem antecedentes psiquiátricos passou a apresentar alucinações visuais ao longo dos últimos dois anos. Após uso de haloperidol, desenvolveu rigidez muscular progressiva, compatível com síndrome parkinsoniana e piora dos delírios e alucinações. Considerando a inexistência de causas infecciosas, tumorais ou tóxicas, o diagnóstico mais compatível com o quadro clínico e a conduta apropriada são, respectivamente,",
           "options": [
             {
               "letter": "A",
@@ -25805,7 +25805,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2026 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 33",
-          "text": "Homem de 48 anos é levado por seus filhos para a emergência de hospital municipal com histórico de etilismo crônico. Segundo os familiares, ele consome bebidas destiladas quase todos os dias e mantém alimentação bastante irregular. Há 5 dias, apresenta episódios de confusão mental e quedas frequentes. Está há 3 dias sem ingeri r álcool, mas sem melhora clínica. No exame físico, observa -se paciente caquético, desorientado no tempo e no espaço, com nistagmo horizontal bilateral, dificuldade de atenção, marcha instável e equilíbrio prejudicado. Não há relato de trauma craniano. Com base no quadro clínico agudo, a hipótese diagnóstica mais provável é",
+          "text": "Homem de 48 anos é levado por seus filhos para a emergência de hospital municipal com histórico de etilismo crônico. Segundo os familiares, ele consome bebidas destiladas quase todos os dias e mantém alimentação bastante irregular. Há 5 dias, apresenta episódios de confusão mental e quedas frequentes. Está há 3 dias sem ingerir álcool, mas sem melhora clínica. No exame físico, observa-se paciente caquético, desorientado no tempo e no espaço, com nistagmo horizontal bilateral, dificuldade de atenção, marcha instável e equilíbrio prejudicado. Não há relato de trauma craniano. Com base no quadro clínico agudo, a hipótese diagnóstica mais provável é",
           "options": [
             {
               "letter": "A",
@@ -25907,7 +25907,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2026 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 36",
-          "text": "Uma paciente de 36 anos apresenta sintomas suges tivos de desordem endócrina, incluindo ansiedade, insônia, agitação psicomotora e palpitações. Ao exame físico, destacam -se exoftalmia e tremores finos, mais evidentes com o movimento. O eletrocardiograma revela taquicardia sinusal. Diante desse quadro clínico, indique a melhor conduta inicial.",
+          "text": "Uma paciente de 36 anos apresenta sintomas suges tivos de desordem endócrina, incluindo ansiedade, insônia, agitação psicomotora e palpitações. Ao exame físico, destacam-se exoftalmia e tremores finos, mais evidentes com o movimento. O eletrocardiograma revela taquicardia sinusal. Diante desse quadro clínico, indique a melhor conduta inicial.",
           "options": [
             {
               "letter": "A",
@@ -25941,7 +25941,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2026 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 37",
-          "text": "Homem de 71 anos apresenta -se na consulta desorientado no tempo e no espaço, com incapacidade de recordar três palavras que havia repetido corretamente há poucos minutos. Sua esposa informa piora progressiva da memória recente ao longo do último ano, com prejuízos funcionais importantes nas atividades cotidianas. O diagnóstico mais provável é",
+          "text": "Homem de 71 anos apresenta-se na consulta desorientado no tempo e no espaço, com incapacidade de recordar três palavras que havia repetido corretamente há poucos minutos. Sua esposa informa piora progressiva da memória recente ao longo do último ano, com prejuízos funcionais importantes nas atividades cotidianas. O diagnóstico mais provável é",
           "options": [
             {
               "letter": "A",
@@ -26131,7 +26131,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "E",
-              "text": "É necessário associar um inibidor seletivo da recaptação de serotonina ao IMAO para potencializar a resposta terapêut ica em quadros refratários."
+              "text": "É necessário associar um inibidor seletivo da recaptação de serotonina ao IMAO para potencializar a resposta terapêutica em quadros refratários."
             }
           ],
           "correctAnswer": "A",
@@ -26247,7 +26247,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2026 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 46",
-          "text": "Homem de 47 anos procura atendimento relatando, de forma convicta, que existe um animal rastejante alojado em seu abdome. Ele afirma sen tir seus movimentos internos, apesar de múltiplas avaliações clínicas e exames complementares não apontarem qualquer anormalidade orgânica. Ele permanece firme nessa crença, sem qualquer crítica à ideia. Assinale a afirmativa que melhor descreve esse fenômeno clínico.",
+          "text": "Homem de 47 anos procura atendimento relatando, de forma convicta, que existe um animal rastejante alojado em seu abdome. Ele afirma sen tir seus movimentos internos, apesar de múltiplas avaliações clínicas e exames complementares não apontar em qualquer anormalidade orgânica. Ele permanece firme nessa crença, sem qualquer crítica à ideia. Assinale a afirmativa que melhor descreve esse fenômeno clínico.",
           "options": [
             {
               "letter": "A",
@@ -26735,7 +26735,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "Uma pessoa com transtorno bipolar poderá ser considerada no máximo semi -imputável no Brasil caso, no momento do crime, ela esteja em um episódio maníaco grave."
+              "text": "Uma pessoa com transtorno bipolar poderá ser considerada no máximo semi-imputável no Brasil caso, no momento do crime, ela esteja em um episódio maníaco grave."
             },
             {
               "letter": "D",
@@ -26743,7 +26743,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "E",
-              "text": "Uma pessoa com transtorno bipolar poderá ser considerada no máx imo semi -imputável no Brasil caso, no momento do crime, ela esteja em um episódio depressivo grave."
+              "text": "Uma pessoa com transtorno bipolar poderá ser considerada no máx imo semi-imputável no Brasil caso, no momento do crime, ela esteja em um episódio depressivo grave."
             }
           ],
           "correctAnswer": "A",
@@ -26761,11 +26761,11 @@ window.BANCO_RMAIS_EXAMS = {
           "options": [
             {
               "letter": "A",
-              "text": "No Brasil, considera -se que o pedófilo é sempre portador de transtorno mental de personalidade, o que, embora não anule completamente a responsabilidade penal, deve ser considerado como semi-imputável."
+              "text": "No Brasil, considera-se que o pedófilo é sempre portador de transtorno mental de personalidade, o que, embora não anule completamente a responsabilidade penal, deve ser considerado como semi-imputável."
             },
             {
               "letter": "B",
-              "text": "A avaliação psiquiátrica pericial irá subsidiar a decisão do magistrado ao analisar se, no momento do crime, a pessoa tinha condições de entender o caráter ilícito do ato e de se autodeterminar de acordo com esse entendimento."
+              "text": "A avaliação psiquiátrica pericial irá subsidiar a decisão do magistrado ao analisar se, no momento do crime, a pessoa tinha condições de entender o caráter ilícito do ato e de se auto determinar de acordo com esse entendimento."
             },
             {
               "letter": "C",
@@ -27063,7 +27063,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2026 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 70",
-          "text": "Paciente do sexo masculino 24 anos, apresenta sinais clínicos compatíveis com a Síndrome de Cushing, Apesar de múltiplas consultas, ele continua buscando outras explicações clínicas e reage com desconforto quando questionado. Considerando a ausência de gan hos secundários da doença de base, o diagnóstico mais provável é de",
+          "text": "Paciente do sexo masculino 24 anos, apresenta sinais clínicos compatíveis com a Síndrome de Cushing, Apesar de múltiplas consultas, ele continua buscando outras explicações clínicas e reage com desconforto quando questionado. Considerando a ausência de ganhos secundários da doença de base, o diagnóstico mais provável é de",
           "options": [
             {
               "letter": "A",
@@ -27165,7 +27165,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2026 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 73",
-          "text": "Paciente mulher, 28 anos, recentemente diagnosticada com transtorno bipolar do humor, iniciou tratamento com monoterapia de valproato de sódio. Considerando que a paciente relata vida sexual ativa sem uso de medidas de anticoncepção, o motivo pelo qual será necessário substituir o medicamento se deve",
+          "text": "Paciente mulher, 28 anos, recentemente diagnosticada com transtorno bipolar do humor, iniciou tratamento com monoterapia de valproato de sódio. Considerando que a paciente relata vida sexual ativa sem uso de medidas de anti concepção, o motivo pelo qual será necessário substituir o medicamento se deve",
           "options": [
             {
               "letter": "A",
@@ -27233,7 +27233,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2026 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 75",
-          "text": "Homem de 69 anos sem histórico psiquiátrico prévio apresenta, há cerca de um ano, alucinações visuais complexas e declínio cognitivo que compromete suas atividades instr umentais diárias. Ao exame, nota-se bradicinesia e rigidez em “roda dentada”. Considerando o diagnóstico mais provável, a seguinte classe de medicamentos é indicada para o início do tratamento:",
+          "text": "Homem de 69 anos sem histórico psiquiátrico prévio apresenta, há cerca de um ano, alucinações visuais complexas e declínio cognitivo que compromete suas atividades instrumentais diárias. Ao exame, nota-se bradicinesia e rigidez em “roda dentada”. Considerando o diagnóstico mais provável, a seguinte classe de medicamentos é indicada para o início do tratamento:",
           "options": [
             {
               "letter": "A",
@@ -27458,7 +27458,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "B",
-              "text": "Doenças físicas; transtornos do neurodesenvolvimento; transtorno obsessivo compulsivo e abstinência de morfina; ava liar sempre a gravidade do sintoma para definir o tratamento, se comportamento opositor com agressividade apenas verbal realizar manejo comportamental, adequação do ambiente e medicação antipsicótica."
+              "text": "Doenças físicas; transtornos do neurodesenvolvimento; transtorno obsessivo compulsivo e abstinência de morfina; avaliar sempre a gravidade do sintoma para definir o tratamento, se comportamento opositor com agressividade apenas verbal realizar manejo comportamental, adequação do ambiente e medicação antipsicótica."
             },
             {
               "letter": "C",
@@ -27548,7 +27548,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "B",
-              "text": "Em crianças e adolescentes mais novos, os comportamentos compensatórios para evitar o ganho de peso podem apresentar -se em brincar excessivo, pular refeições sem necessariamente ter objetivo claro “de perder calorias”."
+              "text": "Em crianças e adolescentes mais novos, os comportamentos compensatórios para evitar o ganho de peso podem apresentar-se em brincar excessivo, pular refeições sem necessariamente ter objetivo claro “de perder calorias”."
             },
             {
               "letter": "C",
@@ -27616,7 +27616,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "A conduta frente a comportamentos autolesivos é ampla e inclui a investigação e tratamento da presença de comorbidades, a mensuração do nível de desejo de automutilação para que possa ser proposto ao paciente comportamentos alternativos e a prescrição imediata de estabiliz adores de humor, que tem grande evidência científica de ação específica em tais comportamentos."
+              "text": "A conduta frente a comportamentos autolesivos é ampla e inclui a investigação e tratamento da presença de comorbidades, a mensuração do nível de desejo de automutilação para que possa ser proposto ao paciente comportamentos alternativos e a prescrição imediata de estabilizadores de humor, que tem grande evidência científica de ação específica em tais comportamentos."
             }
           ],
           "correctAnswer": "C",
@@ -27630,7 +27630,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "UNIFESP 2023 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 7",
-          "text": "Paciente de 10 anos mora com a mãe, a avó e 4 irmãos em casa de 3 cômodos. Não encontra seu pai há 1 ano, pois ele está preso. A mãe e avó trabalham fora a maior parte do dia, procuram ser rígidas e usam castigos frequentes, pois sentem -se sobrecarregadas e têm pouco tempo para cuidar das crianças, que permanecem a maior parte do dia na escola e no centro de convivência para crianças e adolescentes no contraturno. O paciente vinha apresentando recusa a cumprir tarefas e envolveu-se em desentendimentos com professores e colegas por 4 vezes nos últimos 3 meses. Há um mês e meio cabulou aula e presenciou assalto com arma a um colega mais velho que o estava acompanhando nessa situação. Desde então, passou a apresentar medo e raiva frequentes, pesadelos, maior imprudência e dificuldade de concentração. Além disso, comenta recorrentemente sobre a crueldade das pessoas e passou a brincar de forma violenta, quase sempre envolvendo temática de armas, embora evite comentar sobre a ocorrência que viveu com o colega. Dia nte disso, quais seriam, respectivamente, a hipótese diagnóstica mais adequada, o tratamento indicado e um importante fator de risco para o desenvolvimento de psicopatologia no caso?",
+          "text": "Paciente de 10 anos mora com a mãe, a avó e 4 irmãos em casa de 3 cômodos. Não encontra seu pai há 1 ano, pois ele está preso. A mãe e avó trabalham fora a maior parte do dia, procuram ser rígidas e usam castigos frequentes, pois sentem-se sobrecarregadas e têm pouco tempo para cuidar das crianças, que permanecem a maior parte do dia na escola e no centro de convivência para crianças e adolescentes no contraturno. O paciente vinha apresentando recusa a cumprir tarefas e envolveu-se em desentendimentos com professores e colegas por 4 vezes nos últimos 3 meses. Há um mês e meio cabulou aula e presenciou assalto com arma a um colega mais velho que o estava acompanhando nessa situação. Desde então, passou a apresentar medo e raiva frequentes, pesadelos, maior imprudência e dificuldade de concentração. Além disso, comenta recorrentemente sobre a crueldade das pessoas e passou a brincar de forma violenta, quase sempre envolvendo temática de armas, embora evite comentar sobre a ocorrência que viveu com o colega. Dia nte disso, quais seriam, respectivamente, a hipótese diagnóstica mais adequada, o tratamento indicado e um importante fator de risco para o desenvolvimento de psicopatologia no caso?",
           "options": [
             {
               "letter": "A",
@@ -27646,7 +27646,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Transtorno de Estresse Pós -Traumático; psicoterapia; estresse parental."
+              "text": "Transtorno de Estresse Pós-Traumático; psicoterapia; estresse parental."
             }
           ],
           "correctAnswer": "D",
@@ -27690,7 +27690,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "UNIFESP 2023 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 9",
-          "text": "A respeito da interconsulta em psiquiatria da infância e adolescência, leia as afirmações abaixo: I. É papel do psiquiatra interconsultor avaliar o pedido de interconsulta tendo em vista o conteúdo manifesto (ou explícito) e o conteúdo latente (ou mais profundo e, de início, não aparente). II. Para verificar com maior clareza os aspectos relacionados ao pedido latente, o psiquiatra deve evitar coletar informações diretamente com a equipe que solicitou a interconsulta, para não ser influenciado por informações possivelmente enviesadas pela relação contratranferencial. III. Não é papel do interconsultor em psiquiatria da infância e adolescên cia atender a demandas relacionadas as dificuldades de manejo e comunicação entre a equipe assistente e a família do paciente. IV. A avaliação e intervenção da interconsulta devem ser adequadas à idade, e devem abordar as preocupações dos pais e capacitar os cuidadores primários. V. É papel do interconsultor identificar e gerenciar as comorbidades psiquiátricas durante o tratamento clínico para otimizar os cuidados, minimizando comportamentos de saúde inadequados, como a não adesão às condutas clínicas.",
+          "text": "A respeito da interconsulta em psiquiatria da infância e adolescência, leia as afirmações abaixo: I. É papel do psiquiatra interconsultor avaliar o pedido de interconsulta tendo em vista o conteúdo manifesto (ou explícito) e o conteúdo latente (ou mais profundo e, de início, não aparente). II. Para verificar com maior clareza os aspectos relacionados ao pedido latente, o psiquiatra deve evitar coletar informações diretamente com a equipe que solicitou a interconsulta, para não ser influenciado por informações possivelmente enviesadas pela relação contratranferencial. III. Não é papel do interconsultor em psiquiatria da infância e adolescência atender a demandas relacionadas as dificuldades de manejo e comunicação entre a equipe assistente e a família do paciente. IV. A avaliação e intervenção da interconsulta devem ser adequadas à idade, e devem abordar as preocupações dos pais e capacitar os cuidadores primários. V. É papel do interconsultor identificar e gerenciar as comorbidades psiquiátricas durante o tratamento clínico para otimizar os cuidados, minimizando comportamentos de saúde inadequados, como a não adesão às condutas clínicas.",
           "options": [
             {
               "letter": "A",
@@ -27780,7 +27780,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "UNIFESP 2023 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 12",
-          "text": "Com relação ao Transtorno de Déficit de Atenção e Hiperatividade (TDAH), leia as afirmações abaixo (números I a V) e assinale qual opção (A, B, C ou D) apresenta apenas informações corretas. I. O TDAH é um transtorno do neurodesenvolvimento que pode ter as seguintes apresentações: predominantemente desatento, predominantemente hiperativo -impulsivo ou combinado. II. Crianças que são capazes de manter o foco em atividades específicas tais como jogar videogames ou assistir programas que gostam na televisão não Psiquiatria da Infância e Adolescência (Cód. 619) 4 RESIDÊNCIA MÉDICA – EPM/UNIFESP podem ser diagnosticadas como sendo portadoras de TDAH. III. O diagnóstico de TDAH não pode ser feito em crianças em idade pré-escolar pois impulsividade e hiperatividade fazem parte do desenvolvimento normal nesta faixa etária. IV. A prevalência mundial de TDAH em crianças e adolescentes está próxima de 5%. V. Os psicoestimulantes são considerados como primeira linha para o tratamento de criança s e adolescentes com TDAH. Em relação aos psicoestimulantes, sabe -se que crianças e adolescentes que não tiveram resposta adequada ao metilfenidato não responderão a lisdexanfetamina. Assinale qual a opção correta sobre as afirmações acima:",
+          "text": "Com relação ao Transtorno de Déficit de Atenção e Hiperatividade (TDAH), leia as afirmações abaixo (números I a V) e assinale qual opção (A, B, C ou D) apresenta apenas informações corretas. I. O TDAH é um transtorno do neurodesenvolvimento que pode ter as seguintes apresentações: predominantemente desatento, predominantemente hiperativo -impulsivo ou combinado. II. Crianças que são capazes de manter o foco em atividades específicas tais como jogar videogames ou assistir programas que gostam na televisão não Psiquiatria da Infância e Adolescência (Cód. 619) 4 RESIDÊNCIA MÉDICA – EPM/UNIFESP podem ser diagnosticadas como sendo portadoras de TDAH. III. O diagnóstico de TDAH não pode ser feito em crianças em idade pré-escolar pois impulsividade e hiperatividade fazem parte do desenvolvimento normal nesta faixa etária. IV. A prevalência mundial de TDAH em crianças e adolescentes está próxima de 5%. V. Os psicoestimulantes são considerados como primeira linha para o tratamento de criança s e adolescentes com TDAH. Em relação aos psicoestimulantes, sabe-se que crianças e adolescentes que não tiveram resposta adequada ao metilfenidato não responderão a lisdexanfetamina. Assinale qual a opção correta sobre as afirmações acima:",
           "options": [
             {
               "letter": "A",
@@ -27810,7 +27810,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "UNIFESP 2023 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 13",
-          "text": "Sobre o Transtorno Obsessivos Compulsivo (TOC) na infância e adolescência leia as afirmações abaixo (números I a V) e assinale qual opção (A, B, C ou D) apresenta apenas informações corretas. I- A incidência de TOC ao longo da vida tem 2 picos, com diferença na distribuição por gêneros. O primeiro pico ocorre na infância, com predominância no sexo masculino. O segundo pico ocorre no início da idade adulta, com ligeira predominância em mulheres. II- Quanto mais jovem for o paciente, maior a probabilidade de ter compulsões sem obsessões. III- A partir do diagnóstico de TOC em crianças e adolescentes, deve -se sempre iniciar o tratamento dos sintomas com farmacoterapia, independente da gravidade dos sintomas. IV- A prevalência mundial do TOC em crianças e adolescentes é de cerca de 3%. V- Crianças e adolescentes com TOC têm maior risco para ter comorbidades, psiquiátricas, sendo que as comorbidades mais frequentes na infância e adolescência são tiques, transtorno de déficit de atenção e/ou hiperatividade, e transtornos de ansiedade. Assinale qual a opção correta sobre as afirmações acima:",
+          "text": "Sobre o Transtorno Obsessivos Compulsivo (TOC) na infância e adolescência leia as afirmações abaixo (números I a V) e assinale qual opção (A, B, C ou D) apresenta apenas informações corretas. I- A incidência de TOC ao longo da vida tem 2 picos, com diferença na distribuição por gêneros. O primeiro pico ocorre na infância, com predominância no sexo masculino. O segundo pico ocorre no início da idade adulta, com ligeira predominância em mulheres. II- Quanto mais jovem for o paciente, maior a probabilidade de ter compulsões sem obsessões. III- A partir do diagnóstico de TOC em crianças e adolescentes, deve-se sempre iniciar o tratamento dos sintomas com farmacoterapia, independente da gravidade dos sintomas. IV- A prevalência mundial do TOC em crianças e adolescentes é de cerca de 3%. V- Crianças e adolescentes com TOC têm maior risco para ter comorbidades, psiquiátricas, sendo que as comorbidades mais frequentes na infância e adolescência são tiques, transtorno de déficit de atenção e/ou hiperatividade, e transtornos de ansiedade. Assinale qual a opção correta sobre as afirmações acima:",
           "options": [
             {
               "letter": "A",
@@ -27840,7 +27840,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "UNIFESP 2023 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 14",
-          "text": "Antônio tem 10 anos de idade e iniciou acompanhamento psiquiátrico ambu latorial há 6 meses por conta de quadro clínico de desatenção, hiperatividade/impulsividade desde os 5 anos de idade. A equipe médica concluiu tratar -se de um quadro de Transtorno de Déficit de Atenção/Hiperatividade (TDAH) e orientou o início da medicação metilfenidato 10mg, 01 comprimido às 7h e 01 comprimido às 13h. Nas primeiras duas semanas de uso da medicação, houve diminuição do comportamento desatento, agitado/impulsivo. No entanto, na terceira semana de uso da medicação, os pais procuraram a emergê ncia psiquiátrica porque Antônio passou a apresentar 4 despertares noturnos (antes não havia nenhum), comportamento agressivo (chutou o cachorro, gritou com os pais e ameaçou matá-los). Também houve 2 episódios em que os pais disseram que o filho ficou mui to assustado e disse que estava vendo um monstro que o xingava. Diante disso, qual a hipótese diagnóstica mais provável e conduta adequada?",
+          "text": "Antônio tem 10 anos de idade e iniciou acompanhamento psiquiátrico ambu latorial há 6 meses por conta de quadro clínico de desatenção, hiperatividade/impulsividade desde os 5 anos de idade. A equipe médica concluiu tratar-se de um quadro de Transtorno de Déficit de Atenção/Hiperatividade (TDAH) e orientou o início da medicação metilfenidato 10mg, 01 comprimido às 7h e 01 comprimido às 13h. Nas primeiras duas semanas de uso da medicação, houve diminuição do comportamento desatento, agitado/impulsivo. No entanto, na terceira semana de uso da medicação, os pais procuraram a emergência psiquiátrica porque Antônio passou a apresentar 4 despertares noturnos (antes não havia nenhum), comportamento agressivo (chutou o cachorro, gritou com os pais e ameaçou matá-los). Também houve 2 episódios em que os pais disseram que o filho ficou mui to assustado e disse que estava vendo um monstro que o xingava. Diante disso, qual a hipótese diagnóstica mais provável e conduta adequada?",
           "options": [
             {
               "letter": "A",
@@ -27904,11 +27904,11 @@ window.BANCO_RMAIS_EXAMS = {
           "options": [
             {
               "letter": "A",
-              "text": "O paciente apresenta tiques m otores e vocais e deve-se observar se os sintomas persistem por mais de um ano para ser dado o diagnóstico de Transtorno de Tourette."
+              "text": "O paciente apresenta tiques motores e vocais e deve-se observar se os sintomas persistem por mais de um ano para ser dado o diagnóstico de Transtorno de Tourette."
             },
             {
               "letter": "B",
-              "text": "O paciente apresenta Transtorno Obsessivo Compulsivo (TOC) e deve iniciar o tratamento com antidepressivos do grupo dos In ibidores de Recaptura de Serotonina (IRS)."
+              "text": "O paciente apresenta Transtorno Obsessivo Compulsivo (TOC) e deve iniciar o tratamento com antidepressivos do grupo dos Inibidores de Recaptura de Serotonina (IRS)."
             },
             {
               "letter": "C",
@@ -27930,7 +27930,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "UNIFESP 2023 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 17",
-          "text": "Menino, 9 anos de idade e está cursando o 2o ano do Ensino Fundamental. Ele é o filho único de Antônio e Clara. Esse é o primeiro atendimento psiquiátrico do garoto. Até a idade de 6 anos, os pais do garoto não identificavam quaisquer dificuldades ou alterações de comportamento. Ao iniciar o 1o ano, a escola comunicou aos pais que João não conseguia nomear todas as letras do alfabeto e os algarismos de 0 a 9. Por vezes, ele também apresentava um desempenho irregular na nomeação das cores. Além disso, a professora informou que João era agitado e desatento em sala de aula. No recreio, João busca interagir com as crianças do 1o ano. Ao ir ao banheiro, por vezes ele se suja ao fazer xixi e tem dificuldade em limpar -se depoi s de evacuar. Frente a isso, qual(is) a(s) possível(is) hipótese(s) diagnóstica(s) que devem ser consideradas no seu processo de avaliação:",
+          "text": "Menino, 9 anos de idade e está cursando o 2o ano do Ensino Fundamental. Ele é o filho único de Antônio e Clara. Esse é o primeiro atendimento psiquiátrico do garoto. Até a idade de 6 anos, os pais do garoto não identificavam quaisquer dificuldades ou alterações de comportamento. Ao iniciar o 1o ano, a escola comunicou aos pais que João não conseguia nomear todas as letras do alfabeto e os algarismos de 0 a 9. Por vezes, ele também apresentava um desempenho irregular na nomeação das cores. Além disso, a professora informou que João era agitado e desatento em sala de aula. No recreio, João busca interagir com as crianças do 1o ano. Ao ir ao banheiro, por vezes ele se suja ao fazer xixi e tem dificuldade em limpar-se depoi s de evacuar. Frente a isso, qual(is) a(s) possível(is) hipótese(s) diagnóstica(s) que devem ser consideradas no seu processo de avaliação:",
           "options": [
             {
               "letter": "A",
@@ -27994,7 +27994,7 @@ window.BANCO_RMAIS_EXAMS = {
           "options": [
             {
               "letter": "A",
-              "text": "Anorexia nervosa atípica, pois paciente p assou a ter comportamentos para perder peso, porém não atingiu IMC baixo para a idade."
+              "text": "Anorexia nervosa atípica, pois paciente passou a ter comportamentos para perder peso, porém não atingiu IMC baixo para a idade."
             },
             {
               "letter": "B",
@@ -28063,7 +28063,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "UNIFESP 2024 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 1",
-          "text": "Mulher, 69 anos de idade , publicitária aposentada, ensino superior completo, casada, sem filhos, evangélica. Paciente sem histórico de alterações prévias de comportamento, anteriormente era bastante produtiva, com diversas atividades comunitárias. Relata que, após falecimento de sua mãe há 3 anos, passou a se sentir muito desanimada, entristecida, sente -se “travada”, sem iniciativa e muito indecisa. Queixa de estar desatenta, esquecendo compromissos, tomadas de medicamentos e trajetos costumeiros pela cidade. Nega, no entanto, prejuízo de sua autonomia. Parou de sair e fazer exercícios. Perdeu um pouco de apetite, tendo perdido 3kg no período. Tem ficado inquieta ao tentar deitar-se, demorando cerca de 2h para iniciar sono, e dormindo das 02h às 08h. Foi realizado tratamento com uso de sertralina 150mg/dia, com melhora estimada em 60%. A paciente manteve o tratamento por 6 meses, sustentando principalmente sintomas de desatenção e esquecim entos. Na sequência, interrompeu o tratamento e passa por piora do quadro há 1 ano. Na ocasião atual, manifesta sintomas mais graves, com lentificação psíquica importante, desorientação temporal, discurso lacônico, com conteúdo do pensamento predominante de ruína. Não são observados ideação suicida ou sintomas psicóticos. Antecedentes pessoais: Hipertensão em uso de losartana 100mg/dia, hipotireoidismo em uso de levotiroxina 75mcg/dia. Testagem cognitiva na avaliação atual: Montreal Cognitive Assessment (Mo CA) = 16/30 pontos (perde 1 em trilhas, 2 em desenho do relógio, 3 em atenção, 1 em abstração, 3 em memória e 1 em linguagem e 3 em orientação temporal). Possui amplo rastreio laboratorial sem alterações. A ressonância magnética de crânio demonstra atrofia difusa e microangiopatia discreta em substância branca. Qual é a conduta adequada?",
+          "text": "Mulher, 69 anos de idade , publicitária aposentada, ensino superior completo, casada, sem filhos, evangélica. Paciente sem histórico de alterações prévias de comportamento, anteriormente era bastante produtiva, com diversas atividades comunitárias. Relata que, após falecimento de sua mãe há 3 anos, passou a se sentir muito desanimada, entristecida, sente-se “travada”, sem iniciativa e muito indecisa. Queixa de estar desatenta, esquecendo compromissos, tomadas de medicamentos e trajetos costumeiros pela cidade. Nega, no entanto, prejuízo de sua autonomia. Parou de sair e fazer exercícios. Perdeu um pouco de apetite, tendo perdido 3kg no período. Tem ficado inquieta ao tentar deitar-se, demorando cerca de 2h para iniciar sono, e dormindo das 02h às 08h. Foi realizado tratamento com uso de sertralina 150mg/dia, com melhora estimada em 60%. A paciente manteve o tratamento por 6 meses, sustentando principalmente sintomas de desatenção e esquecimentos. Na sequência, interrompeu o tratamento e passa por piora do quadro há 1 ano. Na ocasião atual, manifesta sintomas mais graves, com lentificação psíquica importante, desorientação temporal, discurso lacônico, com conteúdo do pensamento predominante de ruína. Não são observados ideação suicida ou sintomas psicóticos. Antecedentes pessoais: Hipertensão em uso de losartana 100mg/dia, hipotireoidismo em uso de levotiroxina 75mcg/dia. Testagem cognitiva na avaliação atual: Montreal Cognitive Assessment (Mo CA) = 16/30 pontos (perde 1 em trilhas, 2 em desenho do relógio, 3 em atenção, 1 em abstração, 3 em memória e 1 em linguagem e 3 em orientação temporal). Possui amplo rastreio laboratorial sem alterações. A ressonância magnética de crânio demonstra atrofia difusa e microangiopatia discreta em substância branca. Qual é a conduta adequada?",
           "options": [
             {
               "letter": "A",
@@ -28093,7 +28093,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "UNIFESP 2024 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 2",
-          "text": "Homem, 73 anos de idade, porteiro aposentado, ensino fundamental completo, casado, 2 filhos, mora com esposa, católico. O paciente comparece ao pronto socorro com queixa de “visões”. Filha relata que, há 6 anos, começou a ficar mais quieto, angustiado, apresentou algumas quedas e notaram tremores. Cerca de 3 meses depois, co meçou a apresentar períodos de “confusão”, não sabia onde estava e via pessoas em sua casa. Procurou atendimento médico, recebendo tratamento com rivastigmina 6mg 12/12h e levodopa/benserazida 200/50mg 3x/dia. Apresentou melhora dos períodos de confusão e cessou “visões”. Melhorou também discretamente dos tremores, mas ainda apresentava marcha lenta e quedas ocasionais. Ao longo dos últimos anos comportamento tem se mantido estável, com raras oscilações quando não compreende uma informação em momentos de confusão e fica irritado. Apresenta também agitação com movimentos complexos e vocalizações durante o sono em algumas noites. No entanto, sua funcionalidade está cada vez mais restrita, sendo dependente de seus familiares para quaisquer atividades instrument ais de vida diária. Há 6 meses, sua marcha vem piorando, de modo que o médico que o acompanha associou Pramipexol há 3 meses, chegando à dose de 0,25mg 3x/dia, e na sequência, Amantadina 100mg/dia, com benefício incerto. Há cerca de 1 mês, paciente voltou a apresentar “visões” mais importantes, vendo cenas ameaçadoras como fogo em seu quarto e ficando muito agitado, tentando agr edir esposa e atirando objetos. Nega comorbidades e uso de outras medicações, possui ressonância magnética de crânio com atrofia di fusa compatível com idade. Em testagem cognitiva de rastreio, pontua 20/30 pontos no Mini Exame do Estado Mental. Perde pontos em função visuoespacial e executiva, atenção, memória e orientação. Qual a conduta adequada?",
+          "text": "Homem, 73 anos de idade, porteiro aposentado, ensino fundamental completo, casado, 2 filhos, mora com esposa, católico. O paciente comparece ao pronto socorro com queixa de “visões”. Filha relata que, há 6 anos, começou a ficar mais quieto, angustiado, apresentou algumas quedas e notaram tremores. Cerca de 3 meses depois, começou a apresentar períodos de “confusão”, não sabia onde estava e via pessoas em sua casa. Procurou atendimento médico, recebendo tratamento com rivastigmina 6mg 12/12h e levodopa/benserazida 200/50mg 3x/dia. Apresentou melhora dos períodos de confusão e cessou “visões”. Melhorou também discretamente dos tremores, mas ainda apresentava marcha lenta e quedas ocasionais. Ao longo dos últimos anos comportamento tem se mantido estável, com raras oscilações quando não compreende uma informação em momentos de confusão e fica irritado. Apresenta também agitação com movimentos complexos e vocalizações durante o sono em algumas noites. No entanto, sua funcionalidade está cada vez mais restrita, sendo dependente de seus familiares para quaisquer atividades instrument ais de vida diária. Há 6 meses, sua marcha vem piorando, de modo que o médico que o acompanha associou Pramipexol há 3 meses, chegando à dose de 0,25mg 3x/dia, e na sequência, Amantadina 100mg/dia, com benefício incerto. Há cerca de 1 mês, paciente voltou a apresentar “visões” mais importantes, vendo cenas ameaçadoras como fogo em seu quarto e ficando muito agitado, tentando agr edir esposa e atirando objetos. Nega comorbidades e uso de outras medicações, possui ressonância magnética de crânio com atrofia di fusa compatível com idade. Em testagem cognitiva de rastreio, pontua 20/30 pontos no Mini Exame do Estado Mental. Perde pontos em função visuoespacial e executiva, atenção, memória e orientação. Qual a conduta adequada?",
           "options": [
             {
               "letter": "A",
@@ -28105,7 +28105,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "Manter paciente em observação ho spitalar, solicitar rastreio infeccioso e prescrever haloperidol se agitação com risco ao paciente, familiares ou equipe."
+              "text": "Manter paciente em observação hospitalar, solicitar rastreio infeccioso e prescrever haloperidol se agitação com risco ao paciente, familiares ou equipe."
             },
             {
               "letter": "D",
@@ -28139,7 +28139,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Os principais achados neuropatológicos da Doença de Alzheimer são agregados intracitoplasmáticos de proteína beta am iloide, chamados de emaranhados neurofibrilares, e placas extracelulares compostas de proteína tau."
+              "text": "Os principais achados neuropatológicos da Doença de Alzheimer são agregados intracitoplasmáticos de proteína beta amiloide, chamados de emaranhados neurofibrilares, e placas extracelulares compostas de proteína tau."
             }
           ],
           "correctAnswer": "C",
@@ -28303,7 +28303,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "UNIFESP 2024 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 9",
-          "text": "Paciente masculino de 13 anos apresentou depressão grave com tentativa de suicídio por overdose. Foi introduzido escitalopra m 10mg ao dia e após 20 dias, sua mãe liga contando que paciente vinha muito melhor, mais falante, rindo à toa, achando-se a pessoa mais inteligente e bonita do mundo. No entanto, nos últimos 5 dias não dormiu mais que 4 horas por noite, não consegue parar de se movimentar, dançou no meio da sala de aula, gastando muito dinheiro, e falando de muitos assuntos ao mesmo tempo. Qual a conduta apropriada?",
+          "text": "Paciente masculino de 13 anos apresentou depressão grave com tentativa de suicídio por overdose. Foi introduzido escitalopram 10mg ao dia e após 20 dias, sua mãe liga contando que paciente vinha muito melhor, mais falante, rindo à toa, achando-se a pessoa mais inteligente e bonita do mundo. No entanto, nos últimos 5 dias não dormiu mais que 4 horas por noite, não consegue parar de se movimentar, dançou no meio da sala de aula, gastando muito dinheiro, e falando de muitos assuntos ao mesmo tempo. Qual a conduta apropriada?",
           "options": [
             {
               "letter": "A",
@@ -28333,7 +28333,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "UNIFESP 2024 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 10",
-          "text": "João, 14 an os, iniciou acompanhamento psiquiátrico por estar apresentando dificuldades em frequentar a escola. Mãe e paciente referem que ele fica ansioso à noite, especialmente nas que antecedem os dias de prova. Chega a ter sintomas físicos, como falta de ar, e nes ses momentos fica andando “para lá e para cá”. Apresenta este mesmo comportamento quando está muito feliz e animado com algo. João refere que tem muita dificuldade na escola por conta de trabalhos em grupo, pois nunca sabe como se inserir em um. Também não gosta do recreio, prefere ficar na biblioteca. Falou em consulta que “adolescentes são muito complexos”, fica confuso quando fazem piadas ou em situações de paquera. Tem evitado também situações familiares, pois é solicitado que fale mais e que coma melho r, refere que gosta de comer sempre as mesmas coisas. A mãe refere que, desde criança, é muito difícil de entender o que ele está sentindo, parece sempre muito sério. Refere ainda que ele sempre precisou da ajuda dela para intermediar as relações com os pa res. Sempre se deu melhor com pessoas bem mais novas ou com adultos. Nasceu a termo, sem complicações ao nascimento. Mãe nega atraso de fala ou atraso dos marcos do desenvolvimento motor, apesar de sempre ter sido uma criança mais “desajeitada”. sobre o caso julgue alternativas como verdadeiro (v) ou falso (f): 1. Não há necessidade de investigação para transtornos do neurodesenvolvimento, pois não há relato de atraso de fala ou atraso motor. 2. Há indicação de investigação diagnóstica para transtorno do es pectro autista (TEA) e seu diagnóstico exclui a possibilidade de fobia social. 3. Para avaliação diagnóstica do paciente em questão se faz necessária a solicitação de avaliação neuropsicológica. 4. Na descrição do caso podemos identificar características s ugestivas de alteração em reciprocidade socioemocional, comunicação não verbal e no desenvolvimento, manutenção e compreensão das relações. 5. Durante a avaliação diagnóstica, a investigação de alterações no processamento sensorial é essencial, pois sua presença é imprescindível para o diagnóstico de TEA pelo DSM-5. 6. No caso em questão a piora de sintomas ansiosos na adolescência pode estar associada ao aumento de demandas sociais e funcionais que comumente acontece em momentos de transição de fase (Ex: Infância para adolescência ou adolescência para vida adulta) Assinale a alternativa correta:",
+          "text": "João, 14 an os, iniciou acompanhamento psiquiátrico por estar apresentando dificuldades em frequentar a escola. Mãe e paciente referem que ele fica ansioso à noite, especialmente nas que antecedem os dias de prova. Chega a ter sintomas físicos, como falta de ar, e nes ses momentos fica andando “para lá e para cá”. Apresenta este mesmo comportamento quando está muito feliz e animado com algo. João refere que tem muita dificuldade na escola por conta de trabalhos em grupo, pois nunca sabe como se inserir em um. Também não gosta do recreio, prefere ficar na biblioteca. Falou em consulta que “adolescentes são muito complexos”, fica confuso quando fazem piadas ou em situações de paquera. Tem evitado também situações familiares, pois é solicitado que fale mais e que coma melho r, refere que gosta de comer sempre as mesmas coisas. A mãe refere que, desde criança, é muito difícil de entender o que ele está sentindo, parece sempre muito sério. Refere ainda que ele sempre precisou da ajuda dela para intermediar as relações com os pa res. Sempre se deu melhor com pessoas bem mais novas ou com adultos. Nasceu a termo, sem complicações ao nascimento. Mãe nega atraso de fala ou atraso dos marcos do desenvolvimento motor, apesar de sempre ter sido uma criança mais “desajeitada”. sobre o caso julgue alternativas como verdadeiro (v) ou falso (f): 1. Não há necessidade de investigação para transtornos do neurodesenvolvimento, pois não há relato de atraso de fala ou atraso motor. 2. Há indicação de investigação diagnóstica para transtorno do espectro autista (TEA) e seu diagnóstico exclui a possibilidade de fobia social. 3. Para avaliação diagnóstica do paciente em questão se faz necessária a solicitação de avaliação neuropsicológica. 4. Na descrição do caso podemos identificar características s ugestivas de alteração em reciprocidade socioemocional, comunicação não verbal e no desenvolvimento, manutenção e compreensão das relações. 5. Durante a avaliação diagnóstica, a investigação de alterações no processamento sensorial é essencial, pois sua presença é imprescindível para o diagnóstico de TEA pelo DSM-5. 6. No caso em questão a piora de sintomas ansiosos na adolescência pode estar associada ao aumento de demandas sociais e funcionais que comumente acontece em momentos de transição de fase (Ex: Infância para adolescência ou adolescência para vida adulta) Assinale a alternativa correta:",
           "options": [
             {
               "letter": "A",
@@ -28487,7 +28487,7 @@ window.BANCO_RMAIS_EXAMS = {
           "options": [
             {
               "letter": "A",
-              "text": "Para um trial com antipsicótico ser considerado adequado, deve -se garantir 100% de tomada adequada das doses conforme prescritas."
+              "text": "Para um trial com antipsicótico ser considerado adequado, deve-se garantir 100% de tomada adequada das doses conforme prescritas."
             },
             {
               "letter": "B",
@@ -28619,7 +28619,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "A identificação projetiva é mais observada em quadros neuró ticos quando comparado a quadros psicóticos. Devido o TPB ser uma condição fronteiriça que se situa entre a neurose e a psicose, a identificação projetiva é uma boa representante dos aspectos neuróticos e por isso mais amadurecidos."
+              "text": "A identificação projetiva é mais observada em quadros neuróticos quando comparado a quadros psicóticos. Devido o TPB ser uma condição fronteiriça que se situa entre a neurose e a psicose, a identificação projetiva é uma boa representante dos aspectos neuróticos e por isso mais amadurecidos."
             }
           ],
           "correctAnswer": "A",
@@ -28676,7 +28676,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2021 - Ano Adicional",
           "topic": "Ano Adicional",
           "title": "Questao 1",
-          "text": "Adolescente, sexo masculino, 16 anos, so lteiro, estudante do 2º grau , iniciou o uso de tabaco há 2 meses. Entre os motivos abaixo, qual o efeito reforçador do uso?",
+          "text": "Adolescente, sexo masculino, 16 anos, solteiro, estudante do 2º grau , iniciou o uso de tabaco há 2 meses. Entre os motivos abaixo, qual o efeito reforçador do uso?",
           "options": [
             {
               "letter": "A",
@@ -28736,7 +28736,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2021 - Ano Adicional",
           "topic": "Ano Adicional",
           "title": "Questao 3",
-          "text": "Mulher, 23 anos, solteira, trabalha em casa lotérica. Queixa -se de tristeza intensa e diária. Refere ter perdido o interesse por atividades que antes eram motivo de satisfação. Nos últimos dois meses, quando começou a sentir essas dificuldades, também p erdeu o apetite e não tem conseguido dormir. Começou a fazer uso de clonazepam aos 16 anos, quando sentiu pela primeira vez falta de sono e tensão constante. Nos últimos dois anos, tem aumentado o número de gotas de clonazepam para dormir, chegando atualme nte a 60 gotas. Considerando os eventos descritos é possível afirmar que:",
+          "text": "Mulher, 23 anos, solteira, trabalha em casa lotérica. Queixa-se de tristeza intensa e diária. Refere ter perdido o interesse por atividades que antes eram motivo de satisfação. Nos últimos dois meses, quando começou a sentir essas dificuldades, também p erdeu o apetite e não tem conseguido dormir. Começou a fazer uso de clonazepam aos 16 anos, quando sentiu pela primeira vez falta de sono e tensão constante. Nos últimos dois anos, tem aumentado o número de gotas de clonazepam para dormir, chegando atualme nte a 60 gotas. Considerando os eventos descritos é possível afirmar que:",
           "options": [
             {
               "letter": "A",
@@ -28766,7 +28766,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2021 - Ano Adicional",
           "topic": "Ano Adicional",
           "title": "Questao 4",
-          "text": "A Síndrome coronária aguda é a doe nça cardíaca mais associada ao uso de cocaína. Entre a alternativas abaixo, qual é um dos possíveis mecanismos associados a esse desfecho?",
+          "text": "A Síndrome coronária aguda é a doença cardíaca mais associada ao uso de cocaína. Entre a alternativas abaixo, qual é um dos possíveis mecanismos associados a esse desfecho?",
           "options": [
             {
               "letter": "A",
@@ -28916,7 +28916,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2021 - Ano Adicional",
           "topic": "Ano Adicional",
           "title": "Questao 9",
-          "text": "Homem, 47 anos, casado, professor do ensino médio. Faz uso de álcool há mais de 25 anos e chega ao ambulatório com queixa de irritabilidade, cansaço recorrente e acha que o álco ol é um a das principais causas dos sintomas. Acha que chegou o momento de iniciar um tratamento, mas não quer parar de beber. Qual das medicações abaixo está indicada?",
+          "text": "Homem, 47 anos, casado, professor do ensino médio. Faz uso de álcool há mais de 25 anos e chega ao ambulatório com queixa de irritabilidade, cansaço recorrente e acha que o álcool é um a das principais causas dos sintomas. Acha que chegou o momento de iniciar um tratamento, mas não quer parar de beber. Qual das medicações abaixo está indicada?",
           "options": [
             {
               "letter": "A",
@@ -29036,7 +29036,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2021 - Ano Adicional",
           "topic": "Ano Adicional",
           "title": "Questao 13",
-          "text": "Entre as condições clínicas abaixo, quais estão associadas, respectivam ente, a consequências do beber pesado episódico; a riscos do uso nocivo de álcool; e ao uso frequente de álcool?",
+          "text": "Entre as condições clínicas abaixo, quais estão associadas, respectivamente, a consequências do beber pesado episódico; a riscos do uso nocivo de álcool; e ao uso frequente de álcool?",
           "options": [
             {
               "letter": "A",
@@ -29126,7 +29126,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2021 - Ano Adicional",
           "topic": "Ano Adicional",
           "title": "Questao 16",
-          "text": "O estado agudo de carência de tiamina é um dos principais fatores para a evoluç ão para qual dos quadros abaixo?",
+          "text": "O estado agudo de carência de tiamina é um dos principais fatores para a evolução para qual dos quadros abaixo?",
           "options": [
             {
               "letter": "A",
@@ -29289,7 +29289,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2021 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 1",
-          "text": "Homem, 84 anos, viúvo, aposentado. Chega ao Pronto-Socorro trazido pela filha. Vinha tendo esquecimentos há seis meses, com piora progressiva. No mês anterior perdeu -se perto de casa e depois disso deixou de sair desacompanhado. Três dias antes deixo u de tomar banho só e passou a ficar desorientado no tempo e espaço no período da tarde, quando relatava estar “vendo bichos ”. Na noite anterior não dormiu. Ao exame se encontrava desorientado no tempo e espaço, desatento, memória comprometida, lentificado. Ao exame físico mostrava -se desidratado. Qual é a hipótese diagnóstica mais provável e qual deve ser a conduta imediata?",
+          "text": "Homem, 84 anos, viúvo, aposentado. Chega ao Pronto-Socorro trazido pela filha. Vinha tendo esquecimentos há seis meses, com piora progressiva. No mês anterior perdeu-se perto de casa e depois disso deixou de sair desacompanhado. Três dias antes deixo u de tomar banho só e passou a ficar desorientado no tempo e espaço no período da tarde, quando relatava estar “vendo bichos ”. Na noite anterior não dormiu. Ao exame se encontrava desorientado no tempo e espaço, desatento, memória comprometida, lentificado. Ao exame físico mostrava-se desidratado. Qual é a hipótese diagnóstica mais provável e qual deve ser a conduta imediata?",
           "options": [
             {
               "letter": "A",
@@ -29319,7 +29319,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2021 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 2",
-          "text": "Mulher, 60 anos, solteira, chegou ao ambulatório trazida por uma colega de trabalho. Professora do ensino secundário, sem histórico de problemas adaptativos ou licenças médicas por causas psiquiátricas. A col ega conta que vinha tendo problemas no trabalho por dificuldade de relacionamento, se ndo esse desajuste de início recente. Também deixou de cuidar da casa, que estava desorganizada, suja e repleta de objetos inúteis e resíduos alimentares. No exame com tes te de rastreio cognitivo (MMSE) mostrava -se orientada, com memória discretamente comp rometida, algo desatenta, mas pontuou 27/30. Na entrevista, parecia visivelmente aflita e desconfiada, e disse estar irritada porque algumas pessoas estavam roubando os se us pertences. Também afirmava ter receio de que quisessem prejudicá -la, embora não soubesse referir o motivo. O psiquiatra solicitou exames gerais para esclarecimento. Com os dados disponíveis no momento, qual seria a sua hipótese diagnóstica e a conduta medicamentosa imediata?",
+          "text": "Mulher, 60 anos, solteira, chegou ao ambulatório trazida por uma colega de trabalho. Professora do ensino secundário, sem histórico de problemas adaptativos ou licenças médicas por causas psiquiátricas. A col ega conta que vinha tendo problemas no trabalho por dificuldade de relacionamento, se ndo esse desajuste de início recente. Também deixou de cuidar da casa, que estava desorganizada, suja e repleta de objetos inúteis e resíduos alimentares. No exame com tes te de rastreio cognitivo (MMSE) mostrava-se orientada, com memória discretamente comp rometida, algo desatenta, mas pontuou 27/30. Na entrevista, parecia visivelmente aflita e desconfiada, e disse estar irritada porque algumas pessoas estavam roubando os se us pertences. Também afirmava ter receio de que quisessem prejudicá-la, embora não soubesse referir o motivo. O psiquiatra solicitou exames gerais para esclarecimento. Com os dados disponíveis no momento, qual seria a sua hipótese diagnóstica e a conduta medicamentosa imediata?",
           "options": [
             {
               "letter": "A",
@@ -29349,7 +29349,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2021 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 3",
-          "text": "Identificação: Homem, 87 anos, viúvo, industrial aposentado, 3 filhos. Natural e procedente de São Paulo -SP. Mora em residência própria, contando com a ajuda de uma empregada. Os dados de anamnese baseiam -se em in formações providas por uma das filhas. QD: episódios de confusão principalmente à noite, há cerca de dois me ses; não tem dormido bem e fala coisas sem sentido sobre pessoas e acontecimentos, quando acorda no meio da noite. HPMA: A filha diz não ter notado alterações até recentemente. Explica que há 6 anos, após ficar viúvo, o paciente foi morar no interior e aca bou arrumando companheira bem mais jovem. Esta filha não tinha contato frequente com o pai até que, há aproximadamente 4 meses, ele voltou a morar e m São Paulo, pois a companheira disse não aguentar mais sua agressividade e suas crises de ciúmes. No início , as filhas não perceberam alterações significativas , mas, nos últimos 2 meses, perceberam que o pai passou a ter dificuldades com o sono; segundo r elato das mesmas, “parecia que via coisas”, mas afirmam também que isso aconteceu poucas vezes. Nas últimas 3 semanas esteve agressivo com a empregada e as confusões aumentaram substancialmente (sic). Por isso procuraram ajuda de um psiquiatra. AP: É cardi opata grave, com distúrbio importante do ritmo cardíaco (FA) e distúrbio da condução. Faz uso de Marevan, Carvedilol, Doxasozina e PuranT4. AF: é o 5º entre 9 irmãos. Apenas 4 estão vivos. Os outros faleceram em decorrência de IAM, câncer de próstata e AVC. Exame psíquico: Confuso, desorientado no tempo e no espaço. Irritado, impaciente, repetitivo e fabulando du rante a avaliação. Escore no Mini -exame do Estado Mental (MMSE) de 13 pontos. Fluência Verbal de 5 animais em um minuto. Não consegue fazer o teste do Relógio. Neuroimagem: tomografia de crânio com atrofia generalizada importante, com alterações compatíveis com glicose. O exame de imagem cerebral por ressonância magnética foi contraindicado pelo cardiologista. Sobre o caso clínico descrito acima, pe rgunta-se: qual o diagnóstico provável do paciente e a conduta imediata mais pertinente?",
+          "text": "Identificação: Homem, 87 anos, viúvo, industrial aposentado, 3 filhos. Natural e procedente de São Paulo -SP. Mora em residência própria, contando com a ajuda de uma empregada. Os dados de anamnese baseiam-se em informações providas por uma das filhas. QD: episódios de confusão principalmente à noite, há cerca de dois me ses; não tem dormido bem e fala coisas sem sentido sobre pessoas e acontecimentos, quando acorda no meio da noite. HPMA: A filha diz não ter notado alterações até recentemente. Explica que há 6 anos, após ficar viúvo, o paciente foi morar no interior e aca bou arrumando companheira bem mais jovem. Esta filha não tinha contato frequente com o pai até que, há aproximadamente 4 meses, ele voltou a morar e m São Paulo, pois a companheira disse não aguentar mais sua agressividade e suas crises de ciúmes. No início , as filhas não perceberam alterações significativas , mas, nos últimos 2 meses, perceberam que o pai passou a ter dificuldades com o sono; segundo r elato das mesmas, “parecia que via coisas”, mas afirmam também que isso aconteceu poucas vezes. Nas últimas 3 semanas esteve agressivo com a empregada e as confusões aumentaram substancialmente (sic). Por isso procuraram ajuda de um psiquiatra. AP: É cardi opata grave, com distúrbio importante do ritmo cardíaco (FA) e distúrbio da condução. Faz uso de Marevan, Carvedilol, Doxasozina e PuranT4. AF: é o 5º entre 9 irmãos. Apenas 4 estão vivos. Os outros faleceram em decorrência de IAM, câncer de próstata e AVC. Exame psíquico: Confuso, desorientado no tempo e no espaço. Irritado, impaciente, repetitivo e fabulando du rante a avaliação. Escore no Mini -exame do Estado Mental (MMSE) de 13 pontos. Fluência Verbal de 5 animais em um minuto. Não consegue fazer o teste do Relógio. Neuroimagem: tomografia de crânio com atrofia generalizada importante, com alterações compatíveis com glicose. O exame de imagem cerebral por ressonância magnética foi contraindicado pelo cardiologista. Sobre o caso clínico descrito acima, pergunta-se: qual o diagnóstico provável do paciente e a conduta imediata mais pertinente?",
           "options": [
             {
               "letter": "A",
@@ -29425,7 +29425,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "Ajustar a dose do antidepressivo em uso e trocá -lo futuramente se não houver resposta."
+              "text": "Ajustar a dose do antidepressivo em uso e trocá-lo futuramente se não houver resposta."
             },
             {
               "letter": "D",
@@ -29447,7 +29447,7 @@ window.BANCO_RMAIS_EXAMS = {
           "options": [
             {
               "letter": "A",
-              "text": "Embora a doença de Alzheimer seja inequivocamente a forma mais comum de demência em idosos, se considerarmos apenas as formas pré -senis, ela é menos prevalente do que doença de Pick."
+              "text": "Embora a doença de Alzheimer seja inequivocamente a forma mais comum de demência em idosos, se considerarmos apenas as formas pré-senis, ela é menos prevalente do que doença de Pick."
             },
             {
               "letter": "B",
@@ -29503,7 +29503,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2021 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 8",
-          "text": "Em 1880, um eminente neurologista francês re latou o caso de uma mulher de meia -idade que acreditava “não ter mais cérebro, nem seios, nem pulmões ou entranhas” restando-lhe apenas pele e os ossos em um corpo desorganizado”. Assinale a alternativa que associa a designação dessa síndrome e uma condição clínica onde pode ser encontrada.",
+          "text": "Em 1880, um eminente neurologista francês relatou o caso de uma mulher de meia -idade que acreditava “não ter mais cérebro, nem seios, nem pulmões ou entranhas” restando-lhe apenas pele e os ossos em um corpo desorganizado”. Assinale a alternativa que associa a designação dessa síndrome e uma condição clínica onde pode ser encontrada.",
           "options": [
             {
               "letter": "A",
@@ -29533,7 +29533,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2021 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 9",
-          "text": "Homem de 74 anos, com 8 anos de escolari dade, comerciante, queixa -se de que está tendo maior dificuldade para fixar informações novas; precisa anotar lembretes. Filha diz que ele tem estado mais repetitivo. Ambos negam que os lapsos de memória tenham prejudicado o desempenho no trabalho ou em at ividades em casa. O desempenho nos testes de rastreio cognitivo, realizados na consulta, foram os seguintes: MoCA, 23 pontos em 30; Fluência Verbal semântica 10 animais em um minuto; e Teste do Desenho do Relógio; 8 pontos em 10. Levando-se em conta esses dados, qual das alternativas abaixo é correta?",
+          "text": "Homem de 74 anos, com 8 anos de escolaridade, comerciante, queixa-se de que está tendo maior dificuldade para fixar informações novas; precisa anotar lembretes. Filha diz que ele tem estado mais repetitivo. Ambos negam que os lapsos de memória tenham prejudicado o desempenho no trabalho ou em at ividades em casa. O desempenho nos testes de rastreio cognitivo, realizados na consulta, foram os seguintes: MoCA, 23 pontos em 30; Fluência Verbal semântica 10 animais em um minuto; e Teste do Desenho do Relógio; 8 pontos em 10. Levando-se em conta esses dados, qual das alternativas abaixo é correta?",
           "options": [
             {
               "letter": "A",
@@ -29541,15 +29541,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "B",
-              "text": "Trata-se de diagnósti co de demência de Alzheimer devido à faixa etária típica, e à queixa predominantemente de memória. Deve -se solicitar exame de ressonância magnética de encéfalo e introduzir tratamento com medicamento inibidor das colinesterases."
+              "text": "Trata-se de diagnósti co de demência de Alzheimer devido à faixa etária típica, e à queixa predominantemente de memória. Deve-se solicitar exame de ressonância magnética de encéfalo e introduzir tratamento com medicamento inibidor das colinesterases."
             },
             {
               "letter": "C",
-              "text": "O diagnóstico pertinent e é de comprometimento cognitivo leve e, considerando -se que a queixa é predominantemente de memória, a hipótese etiológica é de doença de Alzheimer prodrômica, devendo -se introduzir de imediato o tratamento anticolinesterásico."
+              "text": "O diagnóstico pertinent e é de comprometimento cognitivo leve e, considerando-se que a queixa é predominantemente de memória, a hipótese etiológica é de doença de Alzheimer prodrômica, devendo-se introduzir de imediato o tratamento anticolinesterásico."
             },
             {
               "letter": "D",
-              "text": "Trata-se de um caso de comprometimento cognitivo leve; deve -se dar seguimento à investigação etiológica, com exames laboratoriais e de neuroimagem. Página 8/12 – Faculdade de Medicina da USP - Residência Médica 2021"
+              "text": "Trata-se de um caso de comprometimento cognitivo leve; deve-se dar seguimento à investigação etiológica, com exames laboratoriais e de neuroimagem. Página 8/12 – Faculdade de Medicina da USP - Residência Médica 2021"
             }
           ],
           "correctAnswer": "D",
@@ -29579,7 +29579,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Sobre o tratamento da depressão geriátrica, preconiza -se manter as doses dos antidepressivos 50% mais baixas que no adulto jovem devido às alterações farmacodinâmicas que ocorrem naturalmente com o envelhecimento."
+              "text": "Sobre o tratamento da depressão geriátrica, preconiza-se manter as doses dos antidepressivos 50% mais baixas que no adulto jovem devido às alterações farmacodinâmicas que ocorrem naturalmente com o envelhecimento."
             }
           ],
           "correctAnswer": "C",
@@ -29605,7 +29605,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "Sexo feminino, isolam ento social e antecedente familiar pos itivo para esquizofrenia de início precoce."
+              "text": "Sexo feminino, isolamento social e antecedente familiar positivo para esquizofrenia de início precoce."
             },
             {
               "letter": "D",
@@ -29657,7 +29657,7 @@ window.BANCO_RMAIS_EXAMS = {
           "options": [
             {
               "letter": "A",
-              "text": "É sabido atualmente que as alterações neuropatológicas da DA se iniciam décadas antes do aparecimento dos primeiros sintomas. Um achado neuropatológico é o definidor exclusivo dessa etiologia: as placa s neuríticas, resultant es de acúmulo e agregação do peptídeo beta-amiloide."
+              "text": "É sabido atualmente que as alterações neuropatológicas da DA se iniciam décadas antes do aparecimento dos primeiros sintomas. Um achado neuropatológico é o definidor exclusivo dessa etiologia: as placa s neuríticas, resultantes de acúmulo e agregação do peptídeo beta-amiloide."
             },
             {
               "letter": "B",
@@ -29669,7 +29669,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Os anticolinesterásicos rivastigmina, galantamina, donepezila e memantina atuam pelo aumento da disponibilidade da acetilcolina na fenda sináptica dos neurônios do hipocampo e do córtex cereb ral e são recomendadas como primeira linha para tratamento medicamentoso da DA leve a moderada, juntamente com intervenções não-farmacológicas."
+              "text": "Os anticolinesterásicos rivastigmina, galantamina, donepezila e memantina atuam pelo aumento da disponibilidade da acetilcolina na fenda sináptica dos neurônios do hipocampo e do córtex cerebral e são recomendadas como primeira linha para tratamento medicamentoso da DA leve a moderada, juntamente com intervenções não-farmacológicas."
             }
           ],
           "correctAnswer": "B",
@@ -29713,7 +29713,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2021 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 15",
-          "text": "Paciente de 75 anos, por tador de HAS e Demência Vascular leve. É internado na enfermaria para a realização de colonoscopia diagnóstica no contexto de anemia ferropriva com alteração do hábito intestinal. Por conta de preparo inadequado dos cólons, o endoscopista não conseguiu vis ualizar apropriadamente as áreas estudadas, optando - se por manter o paciente internado por mais 24 horas, realizando -se no preparo para colonoscopia marcada no dia seguinte. Porém, na noite que se segue ao primeiro exame o paciente começa a ficar inquieto, saca o acesso venoso periférico e fala para a cuidadora que quer ligar para a mãe (falecida há muitos anos) pois precisa ir à feira. Durante a visita médica na manhã seguinte, a cuidadora e a equipe de enfermagem referem que o paciente recusou o café da manhã e desejou continuar dormindo. Na escala de coma de Glasgow, o paciente pontua 3 na abertura ocular, 4 na resposta verbal e 6 na resposta motora. Qual a principal alteração a ser procurada neste momento para fazer o diagnóstico da principal hipótese para o caso?",
+          "text": "Paciente de 75 anos, por tador de HAS e Demência Vascular leve. É internado na enfermaria para a realização de colonoscopia diagnóstica no contexto de anemia ferropriva com alteração do hábito intestinal. Por conta de preparo inadequado dos cólons, o endoscopista não conseguiu visualizar apropriada mente as áreas estudadas, optando - se por manter o paciente internado por mais 24 horas, realizando-se no preparo para colonoscopia marcada no dia seguinte. Porém, na noite que se segue ao primeiro exame o paciente começa a ficar inquieto, saca o acesso venoso periférico e fala para a cuidadora que quer ligar para a mãe (falecida há muitos anos) pois precisa ir à feira. Durante a visita médica na manhã seguinte, a cuidadora e a equipe de enfermagem referem que o paciente recusou o café da manhã e desejou continuar dormindo. Na escala de coma de Glasgow, o paciente pontua 3 na abertura ocular, 4 na resposta verbal e 6 na resposta motora. Qual a principal alteração a ser procurada neste momento para fazer o diagnóstico da principal hipótese para o caso?",
           "options": [
             {
               "letter": "A",
@@ -29833,7 +29833,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2021 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 19",
-          "text": "Na terapia não -farmacológica da doença de Alzheimer em fase de demência leve, os benefícios sintomáticos correlacionam -se com a propriedade da técnica utilizada, com a indicação correta da intervenção e com a capacitação e experiência dos profissionais envolvidos. Pergunta-se então: como se pode medir a efetividade destas técnicas?",
+          "text": "Na terapia não-farmacológica da doença de Alzheimer em fase de demência leve, os benefícios sintomáticos correlacionam-se com a propriedade da técnica utilizada, com a indicação correta da intervenção e com a capacitação e experiência dos profissionais envolvidos. Pergunta-se então: como se pode medir a efetividade destas técnicas?",
           "options": [
             {
               "letter": "A",
@@ -29865,7 +29865,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2021 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 20",
-          "text": "Técnicas de reabilitação cognitiva devem ser empregadas, sempre que possível, como parte da terapê utica não -farmacológica de pacientes com demência, principalmente nas fases leve e moderada. Qual seria a melhor composição de um programa de int ervenção multimodal visando à reabilitação cognitiva em um paciente com doença de Alzheimer nesse estágio evolutivo?",
+          "text": "Técnicas de reabilitação cognitiva devem ser empregadas, sempre que possível, como parte da terapê utica não-farmacológica de pacientes com demência, principalmente nas fases leve e moderada. Qual seria a melhor composição de um programa de int ervenção multimodal visando à reabilitação cognitiva em um paciente com doença de Alzheimer nesse estágio evolutivo?",
           "options": [
             {
               "letter": "A",
@@ -29938,7 +29938,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2021 - Psicoterapia",
           "topic": "Psicoterapia",
           "title": "Questao 2",
-          "text": "Em uma consulta, a psiquiatra deparou -se com um paciente d e dezenove anos com um TOC grave e m que a mãe participava ativamente de seus rituais de higiene pessoal, chegando a realizar limpeza íntima nele. Além da psicoterapia individual, a psiquiatra recomendou psicoterapia familiar. Podemos dizer que ela estava p rimariamente atenta a fenômenos como:",
+          "text": "Em uma consulta, a psiquiatra deparou-se com um paciente d e dezenove anos com um TOC grave e m que a mãe participava ativamente de seus rituais de higiene pessoal, chegando a realizar limpeza íntima nele. Além da psicoterapia individual, a psiquiatra recomendou psicoterapia familiar. Podemos dizer que ela estava p rimariamente atenta a fenômenos como:",
           "options": [
             {
               "letter": "A",
@@ -30044,7 +30044,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Interpretar o sonho do p aciente com a segurança sustentad a por anos de formação e estudo dos símbolos mitológicos. Faculdade de Medicina da USP – Residência Médica 2021 - Página 5/12"
+              "text": "Interpretar o sonho do paciente com a segurança sustentad a por anos de formação e estudo dos símbolos mitológicos. Faculdade de Medicina da USP – Residência Médica 2021 - Página 5/12"
             }
           ],
           "correctAnswer": "B",
@@ -30160,7 +30160,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "Trata-se de comb inado dinâmico, ou seja, revela -se espontaneamente durante o processo de psicoterapia."
+              "text": "Trata-se de combinado dinâmico, ou seja, revela-se espontaneamente durante o processo de psicoterapia."
             },
             {
               "letter": "D",
@@ -30250,7 +30250,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "Um bom psicoterapeuta busca autoconhecer -se durante sua formação, pois sua personalidade é mais importante para seu trabalho do que a adesão a qualqu er teoria de forma doutrinária."
+              "text": "Um bom psicoterapeuta busca autoconhecer-se durante sua formação, pois sua personalidade é mais importante para seu trabalho do que a adesão a qualquer teoria de forma doutrinária."
             },
             {
               "letter": "D",
@@ -30268,7 +30268,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2021 - Psicoterapia",
           "topic": "Psicoterapia",
           "title": "Questao 13",
-          "text": "Os fundadores d as mais diversas linhagens psicoterápicas rapidamente perceberam que, durante as consultas de psicoterapia, os pacientes dirigia m ao psicoterapeuta uma série de emoções e fantasias que iam d a confiança e apego profundo à idealização ou até mesmo raiva. Sigmund Freud debruçou -se intensamente sobre esse fenômeno, fazendo dele um dos pilares de seu método. No entanto, trata -se de algo reconhecido por várias correntes da psicoterapia. Estamos falando de:",
+          "text": "Os fundadores d as mais diversas linhagens psicoterápicas rapidamente perceberam que, durante as consultas de psicoterapia, os pacientes dirigia m ao psicoterapeuta uma série de emoções e fantasias que iam d a confiança e apego profundo à idealização ou até mesmo raiva. Sigmund Freud debruçou-se intensamente sobre esse fenômeno, fazendo dele um dos pilares de seu método. No entanto, trata-se de algo reconhecido por várias correntes da psicoterapia. Estamos falando de:",
           "options": [
             {
               "letter": "A",
@@ -30298,7 +30298,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2021 - Psicoterapia",
           "topic": "Psicoterapia",
           "title": "Questao 14",
-          "text": "Um residente recebe para atendimento vincular uma famíli a composta de pai (45 anos), mãe (42 anos) e dois filhos do sexo masculino (17 e 14 anos). O filho mais velho está em tratamento no ambulatório de álcool e drogas do IPq por dependência de maconha. Durante o primeiro atendimento, relatam que as brigas fami liares são constantes há 4 anos, quando o filho mais velho passou a confrontar o pai mediante qualquer tentativa deste “colocar ordem na casa”. A mãe fica constantemente pre ocupada com o filho mais velho, com sua agressividade, com seu mal desempenho escol ar e seu uso de maconha. Durante a entrevista o filho mais novo fica sempre calado e, ao ser questionado sobre seu estado, diz não se importar com as brigas do irmão com os pais e que prefere “viver mais na sua”. Qual das seguintes alternativas estabelece uma boa hipótese e uma boa estratégia terapêutica para esta família?",
+          "text": "Um residente recebe para atendimento vincular uma famíli a composta de pai (45 anos), mãe (42 anos) e dois filhos do sexo masculino (17 e 14 anos). O filho mais velho está em tratamento no ambulatório de álcool e drogas do IPq por dependência de maconha. Durante o primeiro atendimento, relatam que as brigas familiares são constantes há 4 anos, quando o filho mais velho passou a confrontar o pai mediante qualquer tentativa deste “colocar ordem na casa”. A mãe fica constantemente preocupada com o filho mais velho, com sua agressividade, com seu mal desempenho escolar e seu uso de maconha. Durante a entrevista o filho mais novo fica sempre calado e, ao ser questionado sobre seu estado, diz não se importar com as brigas do irmão com os pais e que prefere “viver mais na sua”. Qual das seguintes alternativas estabelece uma boa hipótese e uma boa estratégia terapêutica para esta família?",
           "options": [
             {
               "letter": "A",
@@ -30400,7 +30400,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "Baixa disponibilidade psicol ógica, inteligência severamente prejudicada e baixo interesse em se autoconhecer e explorar seu mundo interno."
+              "text": "Baixa disponibilidade psicol ógica, inteligência severa mente prejudicada e baixo interesse em se autoconhecer e explorar seu mundo interno."
             },
             {
               "letter": "D",
@@ -30426,7 +30426,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "B",
-              "text": "As técnicas e teorias são ferramentas que o profissional de saúde mental acredita serem úteis, mas um foco excessivo nesses aspectos pode ofuscar a sensibilidade do terapeuta ao paciente e sua relação com o mesmo, aspe ctos fundamentais das psicoterapias."
+              "text": "As técnicas e teorias são ferramentas que o profissional de saúde mental acredita serem úteis, mas um foco excessivo nesses aspectos pode ofuscar a sensibilidade do terapeuta ao paciente e sua relação com o mesmo, aspectos fundamentais das psicoterapias."
             },
             {
               "letter": "C",
@@ -30434,7 +30434,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Sugere que técnicas e teorias são completamente inúteis em psicoterapia e podem até atrapalhar o processo psicoterápico. Uma atenção desprovida d e preconcepções teóricas pode dificultar as vicissitudes de cada caso, devendo -se priorizar a pessoalidade sobre a técnica."
+              "text": "Sugere que técnicas e teorias são completamente inúteis em psicoterapia e podem até atrapalhar o processo psicoterápico. Uma atenção desprovida d e preconcepções teóricas pode dificultar as vicissitudes de cada caso, devendo-se priorizar a pessoal idade sobre a técnica."
             }
           ],
           "correctAnswer": "B",
@@ -30521,7 +30521,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2021 - Psiquiatria Forense",
           "topic": "Psiquiatria Forense",
           "title": "Questao 1",
-          "text": "Psiquiatria é chamada para avaliar uma paciente que está internada na enfermaria da clínica médica por COVID e está se recusando a receber intubação orotraqueal , correndo o risco de morte. Ao avaliar a paciente percebe que se trata de uma senhora de 67 anos, previamente higida, que vem num processo de luto arrastado desde a morte do marido há um ano. Ela conta que o marido ficou algumas semanas internado com intu bação após complicações de câncer, e que veio a falecer. Os 3 filhos a levaram a um psiquiatra após 3 meses e ele recomendou uso d e lexapro 10mg, o qual vem fazendo uso desde então. Atualmente n ão se sente deprimida, tem bom sono e independ ência (mora sozi nha e é aposentada). Nao tem queixas cognitivas ou de mem ória, mas diz que sente muito a falta do marido até hoje porque ele era s eu \"grande companheiro\". Ao exame psíquico nota -se dispneia e tristeza, mas a paciente está consciente, orientad a e vigil, sem outras alterações. Os filhos estão presentes e confirmam as informações, mas não concordam com a decisão da mãe. Ao responder ao pedido de interconsulta você deve:",
+          "text": "Psiquiatria é chamada para avaliar uma paciente que está internada na enfermaria da clínica médica por COVID e está se recusando a receber intubação orotraqueal , correndo o risco de morte. Ao avaliar a paciente percebe que se trata de uma senhora de 67 anos, previamente higida, que vem num processo de luto arrastado desde a morte do marido há um ano. Ela conta que o marido ficou algumas semanas internado com intubação após complicações de câncer, e que veio a falecer. Os 3 filhos a levaram a um psiquiatra após 3 meses e ele recomendou uso d e lexapro 10mg, o qual vem fazendo uso desde então. Atualmente n ão se sente deprimida, tem bom sono e independência (mora sozi nha e é aposentada). Nao tem queixas cognitivas ou de mem ória, mas diz que sente muito a falta do marido até hoje porque ele era s eu \"grande companheiro\". Ao exame psíquico nota-se dispneia e tristeza, mas a paciente está consciente, orientad a e vigil, sem outras alterações. Os filhos estão presentes e confirmam as informações, mas não concordam com a decisão da mãe. Ao responder ao pedido de interconsulta você deve:",
           "options": [
             {
               "letter": "A",
@@ -30533,7 +30533,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "Responder que a paciente tem condi ções de tomar uma decis ão aut ônoma sobre seu tratamento."
+              "text": "Responder que a paciente tem condi ções de tomar uma decisão autônoma sobre seu tratamento."
             },
             {
               "letter": "D",
@@ -30673,7 +30673,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2021 - Psiquiatria Forense",
           "topic": "Psiquiatria Forense",
           "title": "Questao 6",
-          "text": "Com a divulgação da versão beta da 11ª edição da Classificaçã o Int ernacional de Doenças e problemas relacionados à saúde (CID -11), o burnout, caracterizado como síndrome do esgotamento profissional, ganhou destaque na imprensa internacional no ano de 2019. Sobre a condição mencionada, pode-se afirmar que:",
+          "text": "Com a divulgação da versão beta da 11ª edição da Classificaçã o Internacional de Doenças e problemas relacionados à saúde (CID -11), o burnout, caracterizado como síndrome do esgotamento profissional, ganhou destaque na imprensa internacional no ano de 2019. Sobre a condição mencionada, pode-se afirmar que:",
           "options": [
             {
               "letter": "A",
@@ -30763,7 +30763,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2021 - Psiquiatria Forense",
           "topic": "Psiquiatria Forense",
           "title": "Questao 9",
-          "text": "Sobre os motivos de internação e justificati vas de involuntariedade, assinale a alternativa INCORRETA:",
+          "text": "Sobre os motivos de internação e justificativas de involuntariedade, assinale a alternativa INCORRETA:",
           "options": [
             {
               "letter": "A",
@@ -30771,7 +30771,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "B",
-              "text": "Os motivos de internação i ncluem a avaliação do diagnóstico e d a gravidade do transtorno mental, além da capacidade de a família prover cuidados domiciliares."
+              "text": "Os motivos de internação incluem a avaliação do diagnóstico e d a gravidade do transtorno mental, além da capacidade de a família prover cuidados domiciliares."
             },
             {
               "letter": "C",
@@ -30853,11 +30853,11 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2021 - Psiquiatria Forense",
           "topic": "Psiquiatria Forense",
           "title": "Questao 12",
-          "text": "Homem de 43 anos é encaminhado para avaliação pericial psiquiátrica - incidente de insanidade mental. Periciado foi denunciado pelo crime de injúria racial, previsto no parágrafo 3º do artigo 140 do Código Penal (Decreto-Lei nº 2.848, de 7 de dezembro de 1940): “Art. 140 - Injuriar alguém, ofendendo-lhe a dignidade ou o decoro. § 3º Se a injúria consiste na utilização de elementos referentes a raça, cor, etnia, religião, origem ou a condição de pessoa idosa ou portadora de deficiência: (Redação dada pela Lei nº 10. 741, de 2003)”. A defesa do periciado solicitou abertura do incidente de insanidade mental, com a alegação de que o acusado faz tratamento desde a adolescência por esquizofrenia. Consta nos autos do processo que periciado ofendeu um taxista após uma discus são sobre o valor de uma corrida há cerca de 2 semanas. O taxista a firma q ue o periciado exaltou-se ao ser comunicado do valor e lhe xingou de “preto ladrão”. Na ocasião periciado estava acompanhado por seu pai, e a vítima conta que o pai não repreendeu o filho após o início da discussão e que inclusive afirmou que seu fi lho est ava certo. A polícia militar foi acionada por transeuntes. Após a chegada da polícia o periciado continuou a proferir insultos raciais, registrados pelos policiais e outras testemunh as, e gritava que “todo preto é ladrão mesmo” . Filho comparece acom panhado pelo pai na perícia. Apresentam diversos atestados médicos com diagnóstico de esquizofrenia, com acompanhamento desde a adolescência e uso atual de Zyprexa 10mg ao dia. Na avaliação foi constatado prejuízo cognitivo importante, nos domínios da ling uagem, atenção, funcionamento executivo e cognição social. Apresenta volição prejudicada amplamente, com tendência à impulsividade. Ao ser questionado sobre o ocorrido, afirma não ter feito nada de errado e, em um discurso claramente delirante, afirma que “os pretos são a causa de todo mal no Brasil” e que “foi assim que meu pai sempre me ensinou e assim que Deus quer”. Em entrevista com o pai, são confirmados os sintomas psicóticos do periciado desde a adolescência . Ao final da perícia o pai afirma, em tom exasperado, que tudo isso é um grande exagero “por causa de um preto folgado” , demonstrando irritação. Dentre as alternativas abaixo, assinale a correta:",
+          "text": "Homem de 43 anos é encaminhado para avaliação pericial psiquiátrica - incidente de insanidade mental. Periciado foi denunciado pelo crime de injúria racial, previsto no parágrafo 3º do artigo 140 do Código Penal (Decreto-Lei nº 2.848, de 7 de dezembro de 1940): “Art. 140 - Injuriar alguém, ofendendo-lhe a dignidade ou o decoro. § 3º Se a injúria consiste na utilização de elementos referentes a raça, cor, etnia, religião, origem ou a condição de pessoa idosa ou portadora de deficiência: (Redação dada pela Lei nº 10. 741, de 2003)”. A defesa do periciado solicitou abertura do incidente de insanidade mental, com a alegação de que o acusado faz tratamento desde a adolescência por esquizofrenia. Consta nos autos do processo que periciado ofendeu um taxista após uma discus são sobre o valor de uma corrida há cerca de 2 semanas. O taxista a firma q ue o periciado exaltou-se ao ser comunicado do valor e lhe xingou de “preto ladrão”. Na ocasião periciado estava acompanhado por seu pai, e a vítima conta que o pai não repreendeu o filho após o início da discussão e que inclusive afirmou que seu fi lho est ava certo. A polícia militar foi acionada por transeuntes. Após a chegada da polícia o periciado continuou a proferir insultos raciais, registrados pelos policiais e outras testemunh as, e gritava que “todo preto é ladrão mesmo” . Filho comparece acompanhado pelo pai na perícia. Apresentam diversos atestados médicos com diagnóstico de esquizofrenia, com acompanhamento desde a adolescência e uso atual de Zyprexa 10mg ao dia. Na avaliação foi constatado prejuízo cognitivo importante, nos domínios da ling uagem, atenção, funcionamento executivo e cognição social. Apresenta volição prejudicada amplamente, com tendência à impulsividade. Ao ser questionado sobre o ocorrido, afirma não ter feito nada de errado e, em um discurso claramente delirante, afirma que “os pretos são a causa de todo mal no Brasil” e que “foi assim que meu pai sempre me ensinou e assim que Deus quer”. Em entrevista com o pai, são confirmados os sintomas psicóticos do periciado desde a adolescência . Ao final da perícia o pai afirma, em tom exasperado, que tudo isso é um grande exagero “por causa de um preto folgado” , demonstrando irritação. Dentre as alternativas abaixo, assinale a correta:",
           "options": [
             {
               "letter": "A",
-              "text": "Independente do d iagnóstico, o exame psíquico é o elemento chave para avaliação da imputabilidade."
+              "text": "Independente do diagnóstico, o exame psíquico é o elemento chave para avaliação da imputabilidade."
             },
             {
               "letter": "B",
@@ -30891,7 +30891,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "B",
-              "text": "Deve ser aceita apenas quando solicitad a pelo f amiliar que assinou sua internação involuntária."
+              "text": "Deve ser aceita apenas quando solicitad a pelo familiar que assinou sua internação involuntária."
             },
             {
               "letter": "C",
@@ -30899,7 +30899,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Deve ser aceita desde que seja solicitada por um familiar responsável pelo paciente, mesmo que o paciente ai nda apre sente critérios de internação, porém não risco iminente de morte."
+              "text": "Deve ser aceita desde que seja solicitada por um familiar responsável pelo paciente, mesmo que o paciente ai nda apresente critérios de internação, porém não risco iminente de morte."
             }
           ],
           "correctAnswer": "D",
@@ -30921,7 +30921,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "B",
-              "text": "A dissimulação ocorre com frequência em p erícias previdenciárias onde o periciado tem a intenção de se afastar do trabalho."
+              "text": "A dissimulação ocorre com frequência em perícias previdenciárias onde o periciado tem a intenção de se afastar do trabalho."
             },
             {
               "letter": "C",
@@ -31136,7 +31136,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2021 - Psiquiatria da Infancia e Adolescencia",
           "topic": "Psiquiatria da Infancia e Adolescencia",
           "title": "Questao 1",
-          "text": "R., 16 anos, foi avaliada pela equi pe da Psiquiatria no PS, após ter tido quadro de provável catotonia resolvido. Apresenta provável diagnóstico de Esquizofrenia. A equipe do CAPSi vem acompanhando o caso durante o último ano. Realizou diversas vi sitas domiciliares, pois a mãe não levava a paciente ao local do CAPSi. Nestas visitas, puderam constatar que a paciente não recebe as medicações adequadamente, devido à resistência da mãe em administrá -las e que vive em condições precárias, com hábitos de higiene limitados. De acordo com relato da família da paciente, há grave suspeita de que a paciente foi abusada sexualmente por seu pai. Alguns vizinhos também relataram situações de maus tratos físicos (“batia com a cabeça das duas filhas contra a parede quando se irritava ” - sic). A equipe do CAP Si também constatou que a irmã de R. demonstrava medo de ficar perto do pai e que R. apresentava crises de agitação quando se conversava a respeito do pai perto dela (mesmo na ausência dele). Há quatro anos ele já não mora mais com a família, porém sempre tenta manter contato telefônico e já demonstrou, através de contato com a mãe da paciente, intenção de visitá -la ou mesmo de tentar encontrá -la na rua. A mãe da paciente, segundo informações de familiares, apresenta um quadro de epilepsia refratária tratad a cirurgicamente no passado. Desde a cirurgia, apresenta sintomas psiquiátricos variáveis, com tratamento instável e, por vezes, se recusa a seguir os tratamentos indicados.",
+          "text": "R., 16 anos, foi avaliada pela equi pe da Psiquiatria no PS, após ter tido quadro de provável catotonia resolvido. Apresenta provável diagnóstico de Esquizofrenia. A equipe do CAPSi vem acompanhando o caso durante o último ano. Realizou diversas visitas domiciliares, pois a mãe não levava a paciente ao local do CAPSi. Nestas visitas, puderam constatar que a paciente não recebe as medicações adequadamente, devido à resistência da mãe em administrá-las e que vive em condições precárias, com hábitos de higiene limitados. De acordo com relato da família da paciente, há grave suspeita de que a paciente foi abusada sexualmente por seu pai. Alguns vizinhos também relataram situações de maus tratos físicos (“batia com a cabeça das duas filhas contra a parede quando se irritava ” - sic). A equipe do CAP Si também constatou que a irmã de R. demonstrava medo de ficar perto do pai e que R. apresentava crises de agitação quando se conversava a respeito do pai perto dela (mesmo na ausência dele). Há quatro anos ele já não mora mais com a família, porém sempre tenta manter contato telefônico e já demonstrou, através de contato com a mãe da paciente, intenção de visitá-la ou mesmo de tentar encontrá-la na rua. A mãe da paciente, segundo informações de familiares, apresenta um quadro de epilepsia refratária tratad a cirurgicamente no passado. Desde a cirurgia, apresenta sintomas psiquiátricos variáveis, com tratamento instável e, por vezes, se recusa a seguir os tratamentos indicados.",
           "options": [
             {
               "letter": "A",
@@ -31148,11 +31148,11 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "A prioridade deve ser os cuidados de saúde de R. Para tanto, esta deve ser internada apenas se houver o consentimento da mãe, de forma que o v ínculo seja preservado. Assim, ap ós a sua internação, deve ser realizada avaliação detalhada sobre possíveis situações de negligência e abuso e, uma vez confirmadas, devem ser comunicadas ao Conselho Tutelar e Vara da Infância da região."
+              "text": "A prioridade deve ser os cuidados de saúde de R. Para tanto, esta deve ser internada apenas se houver o consentimento da mãe, de forma que o vínculo seja preservado. Assim, ap ós a sua internação, deve ser realizada avaliação detalhada sobre possíveis situações de negligência e abuso e, uma vez confirmadas, devem ser comunicadas ao Conselho Tutelar e Vara da Infância da região."
             },
             {
               "letter": "D",
-              "text": "A prioridade deve ser os cuidados de saúde de R. Para tanto, esta deve ser internada, ainda que contra a vontade da mãe, acionando-se a Vara da Infância e Juventude. Após sua internação, deve -se enviar manifestação técnica para o Conselho Tutelar e Vara da Infância da região para informar a s ituação de negligência materna e suspeita de abuso, para que as medidas protet ivas necessárias sejam tomadas. Faculdade de Medicina da USP – Residência Médica 2021 - Página 3/12"
+              "text": "A prioridade deve ser os cuidados de saúde de R. Para tanto, esta deve ser internada, ainda que contra a vontade da mãe, acionando-se a Vara da Infância e Juventude. Após sua internação, deve-se enviar manifestação técnica para o Conselho Tutelar e Vara da Infância da região para informar a s ituação de negligência materna e suspeita de abuso, para que as medidas protet ivas necessárias sejam tomadas. Faculdade de Medicina da USP – Residência Médica 2021 - Página 3/12"
             }
           ],
           "correctAnswer": "D",
@@ -31170,15 +31170,15 @@ window.BANCO_RMAIS_EXAMS = {
           "options": [
             {
               "letter": "A",
-              "text": "Como a dependência quím ica não se estabelece de imediato, sendo necessário a passagem do us o experimental, uso ocasional, uso regular, uso abusivo e daí a dependência, quando esta se instala na grande maioria das vezes o indivíduo é maior de 18 anos. É por esta razão que não exi stem critérios específicos para diagnóstico de dependência de substâncias para adolescentes."
+              "text": "Como a dependência quím ica não se estabelece de imediato, sendo necessário a passagem do us o experimental, uso ocasional, uso regular, uso abusivo e daí a dependência, quando esta se instala na grande maioria das vezes o indivíduo é maior de 18 anos. É por esta razão que não existem critérios específicos para diagnóstico de dependência de substâncias para adolescentes."
             },
             {
               "letter": "B",
-              "text": "Pelas novas dire trizes do DSM -5, não há mais a distinção entre uso abusivo e dependência. O diagnóstico de transtorno por uso de substâncias é feito pela intensidade de problemas apresentados: os onze crité rios (divididos em qu atro categorias – falta de controle; prejuízo social; uso arriscado; critérios farmacológicos) são listados todos juntos e de acordo com o número de critérios presentes, seria definida a gravidade do quadro clínico."
+              "text": "Pelas novas diretrizes do DSM -5, não há mais a distinção entre uso abusivo e dependência. O diagnóstico de transtorno por uso de substâncias é feito pela intensidade de problemas apresentados: os onze critérios (divididos em quatro categorias – falta de controle; prejuízo social; uso arriscado; critérios farmacológicos) são listados todos juntos e de acordo com o número de critérios presentes, seria definida a gravidade do quadro clínico."
             },
             {
               "letter": "C",
-              "text": "O adolescente é mais resistente às c onsequências físicas do uso de drogas, sendo raro o desenvolvimento de abstinência e tolerância nesta população. Esta é a r azão pela qual o número de leitos para internação de adolescentes dependentes químicos é significativamente menor do que para adultos."
+              "text": "O adolescente é mais resistente às consequências físicas do uso de drogas, sendo raro o desenvolvimento de abstinência e tolerância nesta população. Esta é a r azão pela qual o número de leitos para internação de adolescentes dependentes químicos é significativamente menor do que para adultos."
             },
             {
               "letter": "D",
@@ -31208,7 +31208,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "Transtorno Alimentar Restritivo Evitativo . Condutas: Psicoeducação sobre o diagnóstico e o tratamento ao paciente e aos pais; Psicoterapia com foco na motivação do paciente para o tratamento e estim ular os pais a ajud á-lo; Orientação nutricional com au mento do volume utilizando alimentos já aceitos e reduzir gasto energético."
+              "text": "Transtorno Alimentar Restritivo Evitativo . Condutas: Psicoeducação sobre o diagnóstico e o tratamento ao paciente e aos pais; Psicoterapia com foco na motivação do paciente para o tratamento e estim ular os pais a ajudá-lo; Orientação nutricional com au mento do volume utilizando alimentos já aceitos e reduzir gasto energético."
             },
             {
               "letter": "D",
@@ -31230,7 +31230,7 @@ window.BANCO_RMAIS_EXAMS = {
           "options": [
             {
               "letter": "A",
-              "text": "Apresenta funcionamento pré -mórbido bem marcado por alterações do neurodesenvolvimento: motor, linguagem e sociabilidade."
+              "text": "Apresenta funcionamento pré-mórbido bem marcado por alterações do neurodesenvolvimento: motor, linguagem e sociabilidade."
             },
             {
               "letter": "B",
@@ -31242,7 +31242,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Um pior funcionamento pré -mórbido está presente na psicose de início na vida adulta quando comparado com as alterações pré-psicóticas da esquizofrenia na infância e adolescência."
+              "text": "Um pior funcionamento pré-mórbido está presente na psicose de início na vida adulta quando comparado com as alterações pré-psicóticas da esquizofrenia na infância e adolescência."
             }
           ],
           "correctAnswer": "A",
@@ -31264,7 +31264,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "B",
-              "text": "Poliúria e polidipsia associada à terapia com lítio pode indicar diabe te insípido nefrogênico."
+              "text": "Poliúria e polidipsia associada à terapia com lítio pode indicar diabete insípido nefrogênico."
             },
             {
               "letter": "C",
@@ -31332,7 +31332,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Crianças respondem melhor aos antidepre ssivos tricíclicos, enquanto os adolescentes respondem melhor aos inibidores seletivos da recaptura de serotonina."
+              "text": "Crianças respondem melhor aos antidepressivos tricíclicos, enquanto os adolescentes respondem melhor aos inibidores seletivos da recaptura de serotonina."
             }
           ],
           "correctAnswer": "A",
@@ -31354,7 +31354,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "B",
-              "text": "No DSM-5, houve a retirada dos diagnósticos de Transtorno Obsessivo -Compulsivo e de Transtorno de Estresse Pós -Traumático da seção dos Transtornos de Ansiedade, além da criação de uma nova seção para os diagnósticos referentes aos “Transtornos geralmente diagnosticados na p rimeira vez na infância ou adolescência”, da qual passaram a fazer parte o Transtorno de Ansiedade de Separação e o Mutismo Seletivo."
+              "text": "No DSM-5, houve a retirada dos diagnósticos de Transtorno Obsessivo -Compulsivo e de Transtorno de Estresse Pós-Traumático da seção dos Transtornos de Ansiedade, além da criação de uma nova seção para os diagnósticos referentes aos “Transtornos geralmente diagnosticados na primeira vez na infância ou adolescência”, da qual passaram a fazer parte o Transtorno de Ansiedade de Separação e o Mutismo Seletivo."
             },
             {
               "letter": "C",
@@ -31362,7 +31362,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "O tratamento dos TAIA visa à redução dos sintomas ansiosos a um ponto em que deixem de interferir no funcionamento social ou escolar, no funcionamento familiar e no desenvolvimento no rmal. Abrange diversas modalidades, tais como intervenções de psicoeducação, terapia cognitivo -comportamental, terapia psicodinâmica, terapia familiar e/ou farmacoterapia. Faculdade de Medicina da USP – Residência Médica 2021 - Página 7/12"
+              "text": "O tratamento dos TAIA visa à redução dos sintomas ansiosos a um ponto em que deixem de interferir no funcionamento social ou escolar, no funcionamento familiar e no desenvolvimento normal. Abrange diversas modalidades, tais como intervenções de psicoeducação, terapia cognitivo -comportamental, terapia psicodinâmica, terapia familiar e/ou farmacoterapia. Faculdade de Medicina da USP – Residência Médica 2021 - Página 7/12"
             }
           ],
           "correctAnswer": "D",
@@ -31406,7 +31406,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2021 - Psiquiatria da Infancia e Adolescencia",
           "topic": "Psiquiatria da Infancia e Adolescencia",
           "title": "Questao 10",
-          "text": "Paciente Débo ra, 15 anos, é trazida à consulta ambulatorial acompanhada pela mãe. A mãe diz que filha é muito nervosa, tem crises de “explosão emocional” frequentes, nas quais chora muito e fica agressiva. Também refere que durante essas crises, que duram algumas horas , a paciente fica “fora de si”, sendo frequente Débora não lembrar das crises após ficar mais calma. O quadro começou aos 13 anos, quando a mãe percebeu autolesões na coxa da filha. Ao interrogar sobre o ambiente da adolescente, ela relata que tem dificuldades de fazer amigos na escola, onde sofre bullying por ser muito magra. O IMC de D ébora está dentro do esperado, na faixa inferior da normalidade. Ao exame físico, identifica -se uma série de cicatrizes lineares nacaradas na região das coxas e algumas inci sões superficiais com crostas sero -sanguinolentas. A mãe fala que não aguenta mais esse jeito “ansioso” da filha e sua baixa “autoestima”, que não respondem às medicações em uso. Ela traz a receita médica na qual consta sertralina 200 mg/dia e lorazepam 2 mg/dia. Escolha a alternativa que contenha melhor descrição da crise, hipótese diag nóstica mais provável e abordagens terapêuticas adequadas:",
+          "text": "Paciente Débo ra, 15 anos, é trazida à consulta ambulatorial acompanhada pela mãe. A mãe diz que filha é muito nervosa, tem crises de “explosão emocional” frequentes, nas quais chora muito e fica agressiva. Também refere que durante essas crises, que duram algumas horas , a paciente fica “fora de si”, sendo frequente Débora não lembrar das crises após ficar mais calma. O quadro começou aos 13 anos, quando a mãe percebeu autolesões na coxa da filha. Ao interrogar sobre o ambiente da adolescente, ela relata que tem dificuldades de fazer amigos na escola, onde sofre bullying por ser muito magra. O IMC de D ébora está dentro do esperado, na faixa inferior da normalidade. Ao exame físico, identifica-se uma série de cicatrizes lineares nacaradas na região das coxas e algumas inci sões superficiais com crostas sero -sanguinolentas. A mãe fala que não aguenta mais esse jeito “ansioso” da filha e sua baixa “autoestima”, que não respondem às medicações em uso. Ela traz a receita médica na qual consta sertralina 200 mg/dia e lorazepam 2 mg/dia. Escolha a alternativa que contenha melhor descrição da crise, hipótese diag nóstica mais provável e abordagens terapêuticas adequadas:",
           "options": [
             {
               "letter": "A",
@@ -31414,11 +31414,11 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "B",
-              "text": "Explosões comportamentais recorrentes / Tra nstorno explosivo intermitente / Suspensão de benzodiazepínico e man utenção de inibidor seletivo de recaptura de serotonina."
+              "text": "Explosões comportamentais recorrentes / Tra nstorno explosivo intermitente / Suspensão de benzodiazepínico e manutenção de inibidor seletivo de recaptura de serotonina."
             },
             {
               "letter": "C",
-              "text": "Crise de agressividade para confronto de autori dade / Transtorno de Oposição Desafiante / Suspensão gradual de benzodiazepínico e s ertralina. Introdução de lamotrigina. Terapia cognitivo-comportamental."
+              "text": "Crise de agressividade para confronto de autoridade / Transtorno de Oposição Desafiante / Suspensão gradual de benzodiazepínico e s ertralina. Introdução de lamotrigina. Terapia cognitivo-comportamental."
             },
             {
               "letter": "D",
@@ -31440,19 +31440,19 @@ window.BANCO_RMAIS_EXAMS = {
           "options": [
             {
               "letter": "A",
-              "text": "O diagnóstico de toxicidade serotoninérgica é clínico, a partir da identificação de, na vigência de tratamento com medicação serotoninérgica, clônus espontân eo o u clônus induzido e agitação ou diaforese, tremor e hiperreflexia, sendo a descontinuação do agente causal fundamental para o tratamento, assim como medidas de suporte e deve -se evitar o uso de benzodiazepínicos para controle da agitação."
+              "text": "O diagnóstico de toxicidade serotoninérgica é clínico, a partir da identificação de, na vigência de tratamento com medicação serotoninérgica, clônus espontân eo o u clônus induzido e agitação ou diaforese, tremor e hiperreflexia, sendo a descontinuação do agente causal fundamental para o tratamento, assim como medidas de suporte e deve-se evitar o uso de benzodiazepínicos para controle da agitação."
             },
             {
               "letter": "B",
-              "text": "Para o tr atamento da distonia aguda em crianças, recomenda -se o uso de difenidramina 5 mg/kg/dia a cada 6h ou 8h via endovenosa ou intramuscular profunda ou biperideno 0.04 mg/kg/dose intramuscular (máximo de 2 mg) a cada 30 minutos até 4 doses em 24 horas."
+              "text": "Para o tratamento da distonia aguda em crianças, recomenda-se o uso de difenidramina 5 mg/kg/dia a cada 6h ou 8h via endovenosa ou intramuscular profunda ou biperideno 0.04 mg/kg/dose intramuscular (máximo de 2 mg) a cada 30 minutos até 4 doses em 24 horas."
             },
             {
               "letter": "C",
-              "text": "Síndrome n euroléptica maligna envolve hipertermia, rigidez muscular, disfunção autonômica, taquicardia, taquipneia, labilidade de pressão arterial e níveis flutuantes de consciência, com início agudo e evoluindo em até 12h, com etiologia provavelmente secundá ria a n íveis elevados abruptos de bloqueio de receptores dopaminérgicos em vias nigroestriatais, hipotalâmicas, mesolímbicas e mesocorticais."
+              "text": "Síndrome n euroléptica maligna envolve hipertermia, rigidez muscular, disfunção autonômica, taquicardia, taquipneia, labilidade de pressão arterial e níveis flutuantes de consciência, com início agudo e evoluindo em até 12h, com etiologia provavelmente secundá ria a níveis elevados abruptos de bloqueio de receptores dopaminérgicos em vias nigroestriatais, hipotalâmicas, mesolímbicas e mesocorticais."
             },
             {
               "letter": "D",
-              "text": "Para o manejo da acatisia, recomenda -se o uso de anti -psicóticos de segunda geração, na menor dose possível, p odendo ser mantidas medicações como valproato e inibidores seletivos da recaptação da serotonina e eventualmente introduzindo anticolinérgico, clonazepam ou propranolol. Faculdade de Medicina da USP – Residência Médica 2021 - Página 9/12"
+              "text": "Para o manejo da acatisia, recomenda-se o uso de anti-psicóticos de segunda geração, na menor dose possível, podendo ser mantidas medicações como valproato e inibidores seletivos da recaptação da serotonina e eventualmente introduzindo anticolinérgico, clonazepam ou propranolol. Faculdade de Medicina da USP – Residência Médica 2021 - Página 9/12"
             }
           ],
           "correctAnswer": "B",
@@ -31466,7 +31466,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2021 - Psiquiatria da Infancia e Adolescencia",
           "topic": "Psiquiatria da Infancia e Adolescencia",
           "title": "Questao 12",
-          "text": "P. de 4 anos e 6 meses, vem para consulta de rotina, ac ompanhado de sua mãe. Mãe refere que está preocupada porque na escola, onde frequenta educação infantil, a professora relatou que P. tem apresentado comportamentos inadequados. De acordo com a professora, P. é inquieto, distrai -se por qualquer coisa, tem d ificuldade em se manter nas atividades propostas e, às vezes, chuta os colegas quando frustrado. Mãe descreve que a criança sempre foi muito cheia de energia. Desde que começou a andar, não parava quieto, não obedecia a seus comandos, se machucava com freq uência a ainda hoje não se atenta ao perigo (por exemplo, sobe em lugares altos, atravessa a rua sem prestar atenção, mesmo sabendo que não deve). Consegue sustentar a atenção quando está diante da televis ão ou jogando no celular. Tanto na escola quanto em casa, diante de regras ou limites, irrita -se, opondo -se à instrução dada. Quanto ao desenvolvimento neuropsicomotor, mãe diz que P. foi um pouco mais “devagar” que seu irmão: andou com 1 ano e 4 meses e f alou as primeiras palavras com 20 meses. Nessa époc a, chegou a fazer uma audiometria, cujo resultado foi normal. Atualmente, P. ainda apresenta trocas fonêmicas, sendo difícil a compreensão do que diz em alguns momentos, mas mãe e escola consideram que geralmente P. consegue se comunicar de forma adequada. Baseado no caso clínico acima, escolha a alternativa correta:",
+          "text": "P. de 4 anos e 6 meses, vem para consulta de rotina, acompanhado de sua mãe. Mãe refere que está preocupada porque na escola, onde frequenta educação infantil, a professora relatou que P. tem apresentado comportamentos inadequados. De acordo com a professora, P. é inquieto, distrai-se por qualquer coisa, tem d ificuldade em se manter nas atividades propostas e, às vezes, chuta os colegas quando frustrado. Mãe descreve que a criança sempre foi muito cheia de energia. Desde que começou a andar, não parava quieto, não obedecia a seus comandos, se machucava com freq uência a ainda hoje não se atenta ao perigo (por exemplo, sobe em lugares altos, atravessa a rua sem prestar atenção, mesmo sabendo que não deve). Consegue sustentar a atenção quando está diante da televisão ou jogando no celular. Tanto na escola quanto em casa, diante de regras ou limites, irrita-se, opondo-se à instrução dada. Quanto ao desenvolvimento neuropsicomotor, mãe diz que P. foi um pouco mais “devagar” que seu irmão: andou com 1 ano e 4 meses e falou as primeiras palavras com 20 meses. Nessa époc a, chegou a fazer uma audiometria, cujo resultado foi normal. Atualmente, P. ainda apresenta trocas fonêmicas, sendo difícil a compreensão do que diz em alguns momentos, mas mãe e escola consideram que geralmente P. consegue se comunicar de forma adequada. Baseado no caso clínico acima, escolha a alternativa correta:",
           "options": [
             {
               "letter": "A",
@@ -31496,7 +31496,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2021 - Psiquiatria da Infancia e Adolescencia",
           "topic": "Psiquiatria da Infancia e Adolescencia",
           "title": "Questao 13",
-          "text": "VMC, sexo feminino, 11 anos, pré-pubere, chega ao Pronto-Socorro trazida pelos pais em função de recusa alimentar há 72 horas, onde confessa ter ingerido somente água no período. Nas últimas 8 horas, os pais tentaram realizar realimentação sob supervisão, conforme orien tados por Nutricionista es pecialista em Transtornos Alimentares. Entretanto, sem sucesso. Há cerca de 1 mês, após ter descoberto que não era a mais magra do grupo de amigas, passou a pular refeições, aprendeu a contar calorias com aplicativos de celular e cortou a maioria dos alimentos ricos em gorduras. Contou que estava muito triste e achava que, se não fosse a mais magra, deixaria de ser a aluna mais querida da sala. Perdeu 4 kg nas últimas semanas, no entanto, ainda se sentia bastante insatisfeita com sua forma física e após as refeições d escreve sentir uma angústia intensa, muito medo de en gordar e as únicas coisas que a aliviavam era dançar ou fazer abdominais no seu quarto. Ao exame: Paciente chora copiosamente, falando que prefere morrer a comer algo que possa engordá -la. Pes o = 37 Kg; A ltura = 146 cm; IMC de 17.36 kg/m²; percentil de IMC/idade 51% (Z -escore de IMC/idade de +0,1); PA = 70x50 mmHg; FC = 70 bpm; Glicemia capilar = 36 mg/dL; ECG sem alterações; Potássio sérico= 3,7 mEq/L. No caso acima, após estabilização dos par âmetros clínicos na emergência, qual seria a modalidade de tratamento mais adequada? Qual os principais critérios que justificam a escolha?",
+          "text": "VMC, sexo feminino, 11 anos, pré-pubere, chega ao Pronto-Socorro trazida pelos pais em função de recusa alimentar há 72 horas, onde confessa ter ingerido somente água no período. Nas últimas 8 horas, os pais tentaram realizar realimentação sob supervisão, conforme orien tados por Nutricionista es pecialista em Transtornos Alimentares. Entretanto, sem sucesso. Há cerca de 1 mês, após ter descoberto que não era a mais magra do grupo de amigas, passou a pular refeições, aprendeu a contar calorias com aplicativos de celular e cortou a maioria dos alimentos ricos em gorduras. Contou que estava muito triste e achava que, se não fosse a mais magra, deixaria de ser a aluna mais querida da sala. Perdeu 4 kg nas últimas semanas, no entanto, ainda se sentia bastante insatisfeita com sua forma física e após as refeições d escreve sentir uma angústia intensa, muito medo de en gordar e as únicas coisas que a aliviavam era dançar ou fazer abdominais no seu quarto. Ao exame: Paciente chora copiosamente, falando que prefere morrer a comer algo que possa engordá-la. Peso = 37 Kg; A ltura = 146 cm; IMC de 17.36 kg/m²; percentil de IMC/idade 51% (Z -escore de IMC/idade de +0,1); PA = 70x50 mmHg; FC = 70 bpm; Glicemia capilar = 36 mg/dL; ECG sem alterações; Potássio sérico= 3,7 mEq/L. No caso acima, após estabilização dos par âmetros clínicos na emergência, qual seria a modalidade de tratamento mais adequada? Qual os principais critérios que justificam a escolha?",
           "options": [
             {
               "letter": "A",
@@ -31512,7 +31512,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Modalidade: Ambula torial com equipe especializada em Transtornos Alimentar es. Justificativa: Sintomatologia típica de anorexia nervosa e perda de 10% do peso corporal."
+              "text": "Modalidade: Ambulatorial com equipe especializada em Transtornos Alimentar es. Justificativa: Sintomatologia típica de anorexia nervosa e perda de 10% do peso corporal."
             }
           ],
           "correctAnswer": "A",
@@ -31538,7 +31538,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "O pior prognóstico relatado para pacientes de esquizofrenia de início precoce talvez possa ser explicado pelo tempo de psicose não tra tada e maior ass ociação com déficits cognitivos de base."
+              "text": "O pior prognóstico relatado para pacientes de esquizofrenia de início precoce talvez possa ser explicado pelo tempo de psicose não tra tada e maior associação com déficits cognitivos de base."
             },
             {
               "letter": "D",
@@ -31560,7 +31560,7 @@ window.BANCO_RMAIS_EXAMS = {
           "options": [
             {
               "letter": "A",
-              "text": "Na abordagem de adolescentes com TDAH, a terapia comport amental é a modalidade de tratamento preconizada. Os psicoest imulantes não devem ser usados, devido ao risco de abuso nesta população."
+              "text": "Na abordagem de adolescentes com TDAH, a terapia comportamental é a modalidade de tratamento preconizada. Os psicoest imulantes não devem ser usados, devido ao risco de abuso nesta população."
             },
             {
               "letter": "B",
@@ -31628,7 +31628,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "A principal diferença com o tra nstorno explosivo intermitente (TEI) é que no TDDH as explosões de raiva são mais frequentes (ocorrendo até 03 vezes na semana), por um período maior de tempo (12 meses) e com a presença de humor permanentemente irritado no intervalo entre as explosões."
+              "text": "A principal diferença com o tra nstorno explosivo intermitente (TEI) é que no TDDH as explosões de raiva são mais frequentes (ocorrendo até 03 vezes na semana), por um período maior de tempo (12 meses) e com a presença de humor permanente mente irritado no intervalo entre as explosões."
             },
             {
               "letter": "D",
@@ -31662,7 +31662,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "A taxa de TOC entre parent es de pri meiro grau de indivíduos com TOC na infância ou adolescência é 2 vezes maior do que entre parentes de primeiro grau daqueles sem o transtorno."
+              "text": "A taxa de TOC entre parent es de primeiro grau de indivíduos com TOC na infância ou adolescência é 2 vezes maior do que entre parentes de primeiro grau daqueles sem o transtorno."
             }
           ],
           "correctAnswer": "A",
@@ -31706,7 +31706,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2021 - Psiquiatria da Infancia e Adolescencia",
           "topic": "Psiquiatria da Infancia e Adolescencia",
           "title": "Questao 20",
-          "text": "É comum em serviços de pronto atendimento os médicos se deparem com adolescentes com alto risco de suicídio, alguns com relatos de múltiplas tentativas de suicídio desencadeadas por estressore s interpessoais. Essa caracterí stica, associada a um quadro frequente de desregulação emocional, alterações cognitivo -perceptual, comportamental e de identidade sob estresse, que ocorrem em diversos contextos, nos faz pensar em uma determinada hipótese diagnóstica. Sobre esta é possível afirmar que:",
+          "text": "É comum em serviços de pronto atendimento os médicos se deparem com adolescentes com alto risco de suicídio, alguns com relatos de múltiplas tentativas de suicídio desencadeadas por estressores interpessoais. Essa caracterí stica, associada a um quadro frequente de desregulação emocional, alterações cognitivo -perceptual, comportamental e de identidade sob estresse, que ocorrem em diversos contextos, nos faz pensar em uma determinada hipótese diagnóstica. Sobre esta é possível afirmar que:",
           "options": [
             {
               "letter": "A",
@@ -31779,7 +31779,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2023 - Ano Adicional",
           "topic": "Ano Adicional",
           "title": "Questao 2",
-          "text": "N o p l a n e j a m e n t o d e a ç õ e s v o ltadas para pacientes pré- adolescentes, qual das alternativas abaixo indica abordagens adequadas?",
+          "text": "No planejamento de ações voltadas para pacientes pré- adolescentes, qual das alternativas abaixo indica abordagens adequadas?",
           "options": [
             {
               "letter": "A",
@@ -31839,7 +31839,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2023 - Ano Adicional",
           "topic": "Ano Adicional",
           "title": "Questao 4",
-          "text": "D u r a n t e o a c o l h i m e n t o d e u m u s u á r i o d e 2 5 a n o s , h o m e m , solteiro e dependente de crack, foi feito um levantamento de demandas de carências e necessidades. Qual das alternativas abaixo indica esta etapa de ação específica?",
+          "text": "Durante o acolhimento de um usuário de 25 anos, homem, solteiro e dependente de crack, foi feito um levantamento de demandas de carências e necessidades. Qual das alternativas abaixo indica esta etapa de ação específica?",
           "options": [
             {
               "letter": "A",
@@ -31869,7 +31869,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2023 - Ano Adicional",
           "topic": "Ano Adicional",
           "title": "Questao 5",
-          "text": "Mulher, 30 anos, solteira. Entrou em conflito com outra usuária d o s e r v i ç o e a m e a ç o u a g r e d i - l a . A s t é c n i c a s d e r e d u ç ã o n a escalada de crise utilizadas no CAPS são condutas para o manejo de situações iminentes de comportamento agitado e ou agressivo. Assinale a alternativa que corresponde a uma técnica indicada para a crise descrita acima.",
+          "text": "Mulher, 30 anos, solteira. Entrou em conflito com outra usuária do serviço e ameaçou agredi - la. As técnicas de redução na escalada de crise utilizadas no CAPS são condutas para o manejo de situações iminentes de comportamento agitado e ou agressivo. Assinale a alternativa que corresponde a uma técnica indicada para a crise descrita acima.",
           "options": [
             {
               "letter": "A",
@@ -31899,7 +31899,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2023 - Ano Adicional",
           "topic": "Ano Adicional",
           "title": "Questao 6",
-          "text": "Homem de 31 anos é dependente de crack e vive em situação de rua. Ele percebe que o crack é um problema, mas não vê a possibilidade de parar de usar a substância, nem de controlar seu uso, e diz que “vai se jogar” no uso. Entre as ações abaixo q u e o p r o f i s s i o n a l t é c n i c o p o de realizar, indique a que representa uma estratégia de redução de danos.",
+          "text": "Homem de 31 anos é dependente de crack e vive em situação de rua. Ele percebe que o crack é um problema, mas não vê a possibilidade de parar de usar a substância, nem de controlar seu uso, e diz que “vai se jogar” no uso. Entre as ações abaixo que o profissional técnico po de realizar, indique a que representa uma estratégia de redução de danos.",
           "options": [
             {
               "letter": "A",
@@ -31915,7 +31915,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "A p r e s e n t a r o u s u á r i o c o m o p a r t i c i p a n t e d o C A P S p a r a a comunidade local."
+              "text": "Apresentar o usuário como participante do CAPS para a comunidade local."
             }
           ],
           "correctAnswer": "C",
@@ -31959,11 +31959,11 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2023 - Ano Adicional",
           "topic": "Ano Adicional",
           "title": "Questao 8",
-          "text": "No planejamento de ações preventivas para o uso de álcool e o u t r a s d r o g a s e m e s c o l a s d a r e g i ã o d e a t u a ç ã o d o C A P S , f o i solicitada uma sequência de passos fundamentais para a implantação das ações. Indique qual das alternativas abaixo apresenta uma sequência correta desses passos.",
+          "text": "No planejamento de ações preventivas para o uso de álcool e outras drogas em escolas da região de atuação do CAPS, foi solicitada uma sequência de passos fundamentais para a implantação das ações. Indique qual das alternativas abaixo apresenta uma sequência correta desses passos.",
           "options": [
             {
               "letter": "A",
-              "text": "1 º d e f i n i r o p r o b l e m a ; 2 º d e f i n i r o c o n t e x t o ; 3 º t o m a r decisões baseadas em resultados prévios."
+              "text": "1 º definir o problema; 2 º definir o contexto; 3 º t o m a r decisões baseadas em resultados prévios."
             },
             {
               "letter": "B",
@@ -31971,11 +31971,11 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "1 º d e f i n i r o c o n t e x t o ; 2 º d e f i n i r o p r o b l e m a ; 3 º p e s q u i s a r evidências sobre políticas e/ou ações anteriores."
+              "text": "1 º definir o contexto; 2 º definir o problema; 3 º pesquisar evidências sobre políticas e/ou ações anteriores."
             },
             {
               "letter": "D",
-              "text": "1 º p e s q u i s a r e v i d ê n c i a s s o b r e p o l í t i c a s e / o u a ç õ e s anteriores; 2º definir o contexto; 3º definir o problema. Processo Seletivo – Residência Médica – Psiquiatria – Ano Adicional (COREME/FM – 05/2022)"
+              "text": "1 º pesquisar evidências sobre políticas e / ou ações anteriores; 2º definir o contexto; 3º definir o problema. Processo Seletivo – Residência Médica – Psiquiatria – Ano Adicional (COREME/FM – 05/2022)"
             }
           ],
           "correctAnswer": "",
@@ -32109,7 +32109,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2023 - Ano Adicional",
           "topic": "Ano Adicional",
           "title": "Questao 13",
-          "text": "Mulher de 31 anos com quadro de sobrepeso, deseja parar de fumar sem ganhar peso. A proposta seria usar a bupropiona antidepressivo atípico, cujo mecanismo de ação envolve sistemas dopaminérgicos e noradrenérgicos com indícios de uma ação específica antitabágica. Assinale a alternativa que corresponde à referida ação?",
+          "text": "Mulher de 31 anos com quadro de sobrepeso, deseja parar de fumar sem ganhar peso. A proposta seria usar a bupropiona antidepressivo atípico, cujo mecanismo de ação envolve sistemas dopaminérgicos e noradrenérgicos com indícios de uma ação específica anti tabágica. Assinale a alternativa que corresponde à referida ação?",
           "options": [
             {
               "letter": "A",
@@ -32199,7 +32199,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2023 - Ano Adicional",
           "topic": "Ano Adicional",
           "title": "Questao 16",
-          "text": "A paciente tentou parar o remédio uma vez por apenas 2 semanas, tendo experimentado sintomas de abstinência importantes. Q u a n t o t e m p o p o d e d u r a r a abstinência de sedativos e hipnóticos?",
+          "text": "A paciente tentou parar o remédio uma vez por apenas 2 semanas, tendo experimentado sintomas de abstinência importantes. Quanto tempo pode durar a abstinência de sedativos e hipnóticos?",
           "options": [
             {
               "letter": "A",
@@ -32229,7 +32229,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2023 - Ano Adicional",
           "topic": "Ano Adicional",
           "title": "Questao 17",
-          "text": "Nos últimos tempos a paciente em questão tem aumentado a dose da medicação. Q u a l a r e c o m e n d a ç ã o g e r a l p a r a a R E D U Ç Ã O d a d o s e d o benzodiazepínico?",
+          "text": "Nos últimos tempos a paciente em questão tem aumentado a dose da medicação. Qual a recomendação geral para a REDUÇÃO dados e do benzodiazepínico?",
           "options": [
             {
               "letter": "A",
@@ -32319,7 +32319,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2023 - Ano Adicional",
           "topic": "Ano Adicional",
           "title": "Questao 20",
-          "text": "Homem de 27 anos, usuário de 4 cigarros de maconha por dia, c o m q u e i x a d e t o s s e , c h i a d o e f a l t a d e a r a o s e s f o r ç o s . A a s s o c i a ç ã o e n t r e f u m a r m a c o n h a e o d e s e n v o l v i m e n t o d e doença pulmonar obstrutiva crônica é bem conhecida. O padrão d e u s o i n d i c a d o a c i m a p o d e s e r r e s p o n s á v e l p o r a l t e r a ç õ e s histológicas equivalentes ao consumo de quantos cigarros de tabaco por dia?",
+          "text": "Homem de 27 anos, usuário de 4 cigarros de maconha por dia, com queixa de tosse, c hi a do e falta de ar aos esforços. A associação entre fumar maconha e o desenvolvimento de doença pulmonar obstrutiva crônica é bem conhecida. O padrão de uso indicado acima pode ser responsável por alterações histológicas equivalentes ao consumo de quantos cigarros de tabaco por dia?",
           "options": [
             {
               "letter": "A",
@@ -32362,7 +32362,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2023 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 1",
-          "text": "Uma das etapas cruciais da a v a l i a ç ã o d e u m p a c i e n t e idoso com queixas cognitivas consiste na entrevista clínica. Esta deve ser detalha da a ponto de permitir uma elaboração minuciosa da história relacionada às queixas trazidas pelo paciente e/ou por seus familiares. Nesse contexto, o clínico precis a ser capaz de distinguir alterações cognitivas próprias do envelhecimento daquelas que podem ser consideradas patológicas e que merecem investigação. Dentre as alternativas abaixo, aponte qual conjunto de queixas costuma ser uma alteração cognitiva própria do envelhecimento.",
+          "text": "Uma das etapas cruciais da avaliação de um paciente idoso com queixas cognitivas consiste na entrevista clínica. Esta deve ser detalha da a ponto de permitir uma elaboração minuciosa da história relacionada às queixas trazidas pelo paciente e/ou por seus familiares. Nesse contexto, o clínico precis a ser capaz de distinguir alterações cognitivas próprias do envelhecimento daquelas que podem ser consideradas patológicas e que merecem investigação. Dentre as alternativas abaixo, aponte qual conjunto de queixas costuma ser uma alteração cognitiva própria do envelhecimento.",
           "options": [
             {
               "letter": "A",
@@ -32456,7 +32456,7 @@ window.BANCO_RMAIS_EXAMS = {
           "options": [
             {
               "letter": "A",
-              "text": "Durante o exame psiquiátrico do paciente idoso com alterações comportamentais de início tardio, a caracterização da gravidade dos sintomas é imprescindível para a compreensão do quadro clínico; e , u m a v e z d e f i n i d a a m a g n i t u d e d a s m a n i f e s t a ç õ e s psicopatológicas, a adição de exames complementares para a identificação da etiologia da doença torna-se desnecessária."
+              "text": "Durante o exame psiquiátrico do paciente idoso com alterações comportamentais de início tardio, a caracterização da gravidade dos sintomas é imprescindível para a compreensão do quadro clínico; e, uma vez definida a magnitude das manifestações psicopatológicas, a adição de exames complementares para a identificação da etiologia da doença torna-se desnecessária."
             },
             {
               "letter": "B",
@@ -32464,11 +32464,11 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "A busca ativa de alteraçõe s de personalidade ou de comportamento de início tardio deve ser implementada no exame psiquiátrico do paciente com demência, mas ela não tem relevância nos indivíduos cognitivamente preservados, pois, quando presentes, essas alterações raramente estão associadas a mecanismos neurobiológicos subjacentes."
+              "text": "A busca ativa de alterações de personalidade ou de comportamento de início tardio deve ser implementada no exame psiquiátrico do paciente com demência, mas ela não tem relevância nos indivíduos cognitivamente preservados, pois, quando presentes, essas alterações raramente estão associadas a mecanismos neurobiológicos subjacentes."
             },
             {
               "letter": "D",
-              "text": "Durante a entrevista, a dif iculdade de compreensão das questões, por parte do idoso, pode indicar deficiências sensoriais e cognitivas, o que exige do clínico flexibilidade na formulação das perguntas, inicialmente com o uso de um estilo aberto e, adicionalmente, com a inse rção de informações do acompanhante e com a aplicação de testagem objetiva específica. Processo Seletivo – Residência Médica – Psicogeriatria – Áreas de Atuação (COREME/FM – 05/2022)"
+              "text": "Durante a entrevista, a dif iculdade de compreensão das questões, por parte do idoso, pode indicar deficiências sensoriais e cognitivas, o que exige do clínico flexibilidade na formulação das perguntas, inicialmente com o uso de um estilo aberto e, adicional mente, com a inserção de informações do acompanhante e com a aplicação de testagem objetiva específica. Processo Seletivo – Residência Médica – Psicogeriatria – Áreas de Atuação (COREME/FM – 05/2022)"
             }
           ],
           "correctAnswer": "D",
@@ -32490,7 +32490,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "B",
-              "text": "A prescrição de antipsicóticos para pacientes com demência deve ser direcionada prioritariamente para o t r a t a m e n t o d e d e c l í n i o c o g n i t i v o e m f a s e l e v e , insônia crônica, com ou sem agitação, e para depressão primária em fase moderada."
+              "text": "A prescrição de antipsicóticos para pacientes com demência deve ser direcionada prioritariamente para o tratamento de declínio cognitivo em fase leve, insônia crônica, com ou sem agitação, e para depressão primária em fase moderada."
             },
             {
               "letter": "C",
@@ -32520,15 +32520,15 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "B",
-              "text": "Em um paciente com suspeita de demência com c o r p o s d e L e w y , c o m a g n o s i a e c o m d e s o r i e n t a ç ã o espacial, espera-se que o exame de metabolismo glicolítico cerebral (FDG-PET ou PET-CT) aponte preservação relativa do metabolismo em regiões temporais mesiais e hipometabolismo em regiões corticais posteriores, com preservação relativa do cíngulo posterior, fenômeno este designado como “sinal da ilha do cíngulo”."
+              "text": "Em um paciente com suspeita de demência com corpos de Lewy, com agnosia e com desorientação espacial, espera-se que o exame de metabolismo glicolítico cerebral (FDG-PET ou PET-CT) aponte preservação relativa do metabolismo em regiões temporais mesiais e hipometabolismo em regiões corticais posteriores, com preservação relativa do cíngulo posterior, fenômeno este designado como “sinal da ilha do cíngulo”."
             },
             {
               "letter": "C",
-              "text": "Indivíduos idosos com comprometimento cognitivo l e v e q u e , n o e x a m e d e F D G - P E T o u P E T - C T , apresentam hipometabolismo glicolítico em regiões do precuneus e cíngulo posterior, têm baixas taxas de progressão para demência da doença de Alzheimer, uma vez que alterações nessas áreas corticais têm relevância apenas nas fases avançadas da deterioração clínica."
+              "text": "Indivíduos idosos com comprometimento cognitivo leve que, no exame de FDG - PET ou PET - C T , apresentam hipometabolismo glicolítico em regiões do precuneus e cíngulo posterior, têm baixas taxas de progressão para demência da doença de Alzheimer, uma vez que alterações nessas áreas corticais têm relevância apenas nas fases avançadas da deterioração clínica."
             },
             {
               "letter": "D",
-              "text": "Diante de um paciente com 75 anos, com declínio de memória episódica recente, disfunção executiva, distúrbios atencionais e redução da velocidade de processamento cognitivo, cuja ressonância magnética indique atrofia temporal mesial (MTA – escore 3) e d o e n ç a c e r e b r o v a s c u l a r ( F a z e k a s - e s c o r e 3 ) , o diagnóstico mais provável é de doença de Alzheimer."
+              "text": "Diante de um paciente com 75 anos, com declínio de memória episódica recente, disfunção executiva, distúrbios atencionais e redução da velocidade de processamento cognitivo, cuja ressonância magnética indique atrofia temporal mesial (MTA – escore 3) e doença cerebrovascular (Fazekas - escore 3), o diagnóstico mais provável é de doença de Alzheimer."
             }
           ],
           "correctAnswer": "B",
@@ -32546,11 +32546,11 @@ window.BANCO_RMAIS_EXAMS = {
           "options": [
             {
               "letter": "A",
-              "text": "O delirium pode estar associado a alterações no nível d e c o n s c i ê n c i a e é c a r a c t e r i z a d o p o r u m c u r s o flutuante. Pacientes com delirium podem apresentar- se agitados (tipo hiperativo) ou letárgicos (tipo hipoativo), ou apresentar uma combinação ou um intermediário entre os dois (tipo misto)."
+              "text": "O delirium pode estar associado a alterações no nível de consciência e é caracterizado por um curso flutuante. Pacientes com delirium podem apresentar- se agitados (tipo hiperativo) ou letárgicos (tipo hipoativo), ou apresentar uma combinação ou um intermediário entre os dois (tipo misto)."
             },
             {
               "letter": "B",
-              "text": "O delirium o c o r r e c o m m u i t a f r e q u ê n c i a e m i d o s o s , mas apenas quando há um prejuízo neurocognitivo pré-existente, após insulto clínico ou trauma. Pacientes idosos não costumam apresentar delirium como única manifestação de doença aguda."
+              "text": "O delirium ocorre com muita frequência em idosos, mas apenas quando há um prejuízo neurocognitivo pré-existente, após insulto clínico ou trauma. Pacientes idosos não costumam apresentar delirium como única manifestação de doença aguda."
             },
             {
               "letter": "C",
@@ -32602,11 +32602,11 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2023 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 9",
-          "text": "A definição de transtorno neurocognitivo (TNC) leve segundo DSM-5 refere-se às manifestações de declínio cognitivo pré-demencial, podendo resultar de diferentes processos patogênicos subjac entes. Uma das definições q u e co r r e s p o n d e a o T N C l e v e é a d e c o m p r o m e t i m e n t o cognitivo leve (CCL). Assinale a alternativa correta.",
+          "text": "A definição de transtorno neurocognitivo (TNC) leve segundo DSM-5 refere-se às manifestações de declínio cognitivo pré-demencial, podendo resultar de diferentes processos patogênicos subjacentes. Uma das definições q u e corresponde ao TNC leve é a de comprometimento cognitivo leve (CCL). Assinale a alternativa correta.",
           "options": [
             {
               "letter": "A",
-              "text": "O C C L é c a r a c t e r i z a d o p e l a p r e s e n ç a d e p r e j u í z o cognitivo leve, afetando um ou diversos domínios cognitivos, associado a comprometimento significativo da funcionalidade, demandando intervenção farmacológica específica precoce com anticolinesterásicos."
+              "text": "O CCL é caracterizado pela presença de prejuízo cognitivo leve, afetando um ou diversos domínios cognitivos, associado a comprometimento significativo da funcionalidade, demandando intervenção farmacológica específica precoce com anticolinesterásicos."
             },
             {
               "letter": "B",
@@ -32614,7 +32614,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "A depressão diagnosticada nos indivíduos com CCL aumenta o risco de progre ssão para demência, assim como a presença de doença cerebrovascular, a p r e s e n t a ç ã o a m n é s t i c a e a p r e s e n ç a d e a t r o f i a hipocampal em ressonância magnética."
+              "text": "A depressão diagnosticada nos indivíduos com CCL aumenta o risco de progre ssão para demência, assim como a presença de doença cerebrovascular, apresentação amnéstica e a presença de atrofia hipocampal em ressonância magnética."
             },
             {
               "letter": "D",
@@ -32666,7 +32666,7 @@ window.BANCO_RMAIS_EXAMS = {
           "options": [
             {
               "letter": "A",
-              "text": "A avaliação cognitiva feita por neuropsicólogo c a p a c i t a d o é o p a d r ã o - o u r o e p e r m i t e d e f i n i r c o m segurança o diagnóstico etiológico das demências."
+              "text": "A avaliação cognitiva feita por neuropsicólogo capa citado é o padrão - ouro e permite definir com segurança o diagnóstico etiológico das demências."
             },
             {
               "letter": "B",
@@ -32674,7 +32674,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "O M i n i - E x a m e d o E s t a d o M e n t a l ( M E E M ) é u m instrumento adequado para a avaliação de rastreio p a r a d e m ê n c i a s c o m o a d e A l z h e i m e r e a frontotemporal variante comportamental."
+              "text": "O M i n i - Exame do EstadoMental (MEEM) é um instrumento adequado para a avaliação de rastreio para demências como a de Alzheimer e a frontotemporal variante comportamental."
             },
             {
               "letter": "D",
@@ -32752,7 +32752,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2023 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 14",
-          "text": "A filha do seu paciente com demência de Alzheimer (DA) se chama Maria e está preocupada com o próprio risco de também desenvolver DA. Maria tem 48 anos, mora sozinha e passa a maior parte do tempo trabalhando em c a s a c o m o t r a d u t o r a d e l i v r o s . T e m d i a g n ó s t i c o s d e transtorno depressivo maior (uso irregular de sertralina), diabetes mellitus (insulino-dependente) e obesidade. Sua alimentação é abundante em carboidratos simples e produtos ultraprocessados. Ela não tem queixas cognitivas, mas pergunta o que poderia fazer para reduzir esse risco. Assinale a alternativa que contém apenas orientações adequadas para Maria.",
+          "text": "A filha do seu paciente com demência de Alzheimer (DA) se chama Maria e está preocupada com o próprio risco de também desenvolver DA. Maria tem 48 anos, mora sozinha e passa a maior parte do tempo trabalhando em casa como tr adu t ora de livros. Tem diagnósticos de transtorno depressivo maior (uso irregular de sertralina), diabetes mellitus (insulino-dependente) e obesidade. Sua alimentação é abundante em carboidratos simples e produtos ultraprocessados. Ela não tem queixas cognitivas, mas pergunta o que poderia fazer para reduzir esse risco. Assinale a alternativa que contém apenas orientações adequadas para Maria.",
           "options": [
             {
               "letter": "A",
@@ -32816,7 +32816,7 @@ window.BANCO_RMAIS_EXAMS = {
           "options": [
             {
               "letter": "A",
-              "text": "P s i c o t e r a p i a e m m o n o t e r a p i a d e v e s e r a p r i m e i r a estratégia terapêutica em pacientes virgens de tratamento."
+              "text": "Psicoterapia em monoterapia deveser a primeira estratégia terapêutica em pacientes virgens de tratamento."
             },
             {
               "letter": "B",
@@ -32828,7 +32828,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "A p r e g a b a l i n a é e f i c a z e t e m a v a n t a g e m d e t r a t a r comorbidades como fibromialgia e transtorno depressivo maior."
+              "text": "A pregabalina é eficaz e tem a vantagem de tratar comorbidades como fibromialgia e transtorno depressivo maior."
             }
           ],
           "correctAnswer": "C",
@@ -32886,7 +32886,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "Ocorre uma menor atividade metabólica via CYP como parte da senescência (enve lhecimento fisiológico), que pode ser mensurada através de teste farmacogenômico."
+              "text": "Ocorre uma menor atividade metabólica via CYP como parte da senescência (envelhecimento fisiológico), que pode ser mensurada através de teste farmacogenômico."
             },
             {
               "letter": "D",
@@ -32904,7 +32904,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2023 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 19",
-          "text": "Você recebe uma ligação dos familiares de seu paciente de 76 anos, que tem diagnóstico estabelecido de Demência na Doença de Alzheimer em fase moderada e já e s t á e m u s o d e D o n e p e z i l 1 0 m g / d i a e M e m a n t i n a 2 0 mg/dia. Nesta ligação, eles relatam que o paciente estava estável até 3 dias atrás, quando, subitamente, começou a ficar muito agitado, agressivo, sem dormir a “noite toda” e aparentemente com alucinações visuais. Qual é a conduta recomendada?",
+          "text": "Você recebe uma ligação dos familiares de seu paciente de 76 anos, que tem diagnóstico estabelecido de Demência na Doença de Alzheimer em fase moderada e já está em uso de Donepezil 10 mg / dia e Memantina 20 mg/dia. Nesta ligação, eles relatam que o paciente estava estável até 3 dias atrás, quando, subitamente, começou a ficar muito agitado, agressivo, sem dormir a “noite toda” e aparentemente com alucinações visuais. Qual é a conduta recomendada?",
           "options": [
             {
               "letter": "A",
@@ -32920,7 +32920,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Questionar sobre sinais e sintomas infecciosos e e n c a m i n h a r a u m a e m e r g ê n c i a p a r a p e s q u i s a c l í n i c a ativa."
+              "text": "Questionar sobre sinais e sintomas infecciosos e encaminhar a uma emergência para pesquisa clínica ativa."
             }
           ],
           "correctAnswer": "D",
@@ -32981,7 +32981,7 @@ window.BANCO_RMAIS_EXAMS = {
           "options": [
             {
               "letter": "A",
-              "text": "Terapia cognitiva e terapia cognitivo-comportamental tradicional, derivada do m odelo cognitivo de Aaron Beck."
+              "text": "Terapia cognitiva e terapia cognitivo-comportamental tradicional, derivada do modelo cognitivo de Aaron Beck."
             },
             {
               "letter": "B",
@@ -33023,7 +33023,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "As terapias contextuais visam fundamentalmente a l t e r a r a r e l a ç ã o d o i n d i v í d u o c o m s e u a m b i e n t e , através da reestruturação cognitiva."
+              "text": "As terapias contextuais visam fundamentalmente alterar a relação do indivíduo com seu ambiente, através da reestruturação cognitiva."
             }
           ],
           "correctAnswer": "B",
@@ -33083,7 +33083,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Pensar, sentir e se emocionar são fenômenos de natureza comportamental que devem ser compreendidos funcionalmente como formas de relação da pessoa com seus ambientes interno e externo. Processo Seletivo – Residência Médica – Psicoterapia – Áreas de Atuação (COREME/FM – 05/2022) Textos para as questões 05 e 06. TEXTO 1: Poema tirado de uma notícia de jornal João gostoso era carregador de feira livre e morava no morro da babilônia num barracão sem número. Uma noite ele chegou no bar vinte de novembro Bebeu Cantou Dançou Depois se atirou na lagoa Rodrigo de Freitas e morreu afogado. Manuel Bandeira 31/12/1925 TEXTO 2: Em 1921, Jacob Levy Moreno criou o “jornal vivo”, depois denominado “jornal dramatizado”, que pretendia ser uma síntese entre o jornal diário e o teatro. Moreno via nas redações dos jornais afinidades com o teatro espontâneo, pois ali chegavam, de modo dinâmico, os acontecimentos sociais e culturais em forma de notícias, sempre novas e variadas. Ele, então, usava a técnica do jornal vivo, não como repetição ou recitação das notícias, mas sim como dramatização a partir da notícia. Desde logo ficou claro que aquele modo de trabalhar as “manchetes” dos jornais diários junto ao grupo participante era maneira alternativa para a “crise” do teatro da espontaneidade. S e m o s a b e r , n a q u e l e m o m e n t o e s t a v a m l a n ç a d a s a s raízes do sociodrama. Lições de psicodrama: Introdução ao pensamento de J. L. Moreno - Camila Salles Gonçalves, José Roberto Wolff, Wilson Castello de Almeida."
+              "text": "Pensar, sentir e se emocionar são fenômenos de natureza comportamental que devem ser compreendidos funcionalmente como formas de relação da pessoa com seus ambientes interno e externo. Processo Seletivo – Residência Médica – Psicoterapia – Áreas de Atuação (COREME/FM – 05/2022) Textos para as questões 05 e 06. TEXTO 1: Poema tirado de uma notícia de jornal João gostoso era carregador de feira livre e morava no morro da babilônia num barracão sem número. Uma noite ele chegou no bar vinte de novembro Bebeu Cantou Dançou Depois se atirou na lagoa Rodrigo de Freitas e morreu afogado. Manuel Bandeira 31/12/1925 TEXTO 2: Em 1921, Jacob Levy Moreno criou o “jornal vivo”, depois denominado “jornal dramatizado”, que pretendia ser uma síntese entre o jornal diário e o teatro. Moreno via nas redações dos jornais afinidades com o teatro espontâneo, pois ali chegavam, de modo dinâmico, os acontecimentos sociais e culturais em forma de notícias, sempre novas e variadas. Ele, então, usava a técnica do jornal vivo, não como repetição ou recitação das notícias, mas sim como dramatização a partir da notícia. Desde logo ficou claro que aquele modo de trabalhar as “manchetes” dos jornais diários junto ao grupo participante era maneira alternativa para a “crise” do teatro da espontaneidade. Sem o saber, naquele momento estavam lançada s as raízes do sociodrama. Lições de psicodrama: Introdução ao pensamento de J. L. Moreno - Camila Salles Gonçalves, José Roberto Wolff, Wilson Castello de Almeida."
             }
           ],
           "correctAnswer": "D",
@@ -33127,7 +33127,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2023 - Psicoterapia",
           "topic": "Psicoterapia",
           "title": "Questao 6",
-          "text": "C o m p a r a n d o o p o e m a d e M a n u e l B a n d e i r a c o m a proposta do “jornal dramatiz ado” de Moreno, assinale a alternativa correta.",
+          "text": "Comparando o poema de Manuel Bandeira com a proposta do “jornal dramatiz ado” de Moreno, assinale a alternativa correta.",
           "options": [
             {
               "letter": "A",
@@ -33161,15 +33161,15 @@ window.BANCO_RMAIS_EXAMS = {
           "options": [
             {
               "letter": "A",
-              "text": "O psicodrama redimensiona a importância da b r i n c a d e i r a d e “ f a z d e c o n t a ” , m a s n ã o a c o l o c a e m ambientes terapêuticos. As histórias criadas servem apenas de aquecimento para assimilação da espontaneidade."
+              "text": "O psicodrama redimensiona a importância da brincadeira de “ faz de conta ” , mas não a coloca em ambientes terapêuticos. As histórias criadas servem apenas de aquecimento para assimilação da espontaneidade."
             },
             {
               "letter": "B",
-              "text": "A estratégia dos jogos em grupos terapêuticos p r o m o v e u m c a m p o d e a ç ã o c o m c o n s t r u ç õ e s racionalizadas. O papel social de cada um é protegido pelos principais mecanismos de defesa e permanece inconsciente durante o tratamento."
+              "text": "A estratégia dos jogos em grupos terapêuticos promove um campo de ação com construções racionalizadas. O papel social de cada um é protegido pelos principais mecanismos de defesa e permanece inconsciente durante o tratamento."
             },
             {
               "letter": "C",
-              "text": "A l g u m a s p e s s o a s n ã o c o n s e g u e m t o m a r o p a p e l d a outra no conflito. Na cena de inversão de papéis, continuam defendendo o seu ponto de vista com dificuldade de aceitar que exista outro lugar de fala que não o próprio."
+              "text": "Algumas pessoas não conseguem tomar o papel da outra no conflito. Na cena de inversão de papéis, continuam defendendo o seu ponto de vista com dificuldade de aceitar que exista outro lugar de fala que não o próprio."
             },
             {
               "letter": "D",
@@ -33199,7 +33199,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "Onirodrama é a técnica que permite examinar o sonho e m a ç ã o , o u s e j a , r e v i v ê - l o n a a ç ã o d r a m á t i c a . A dramatização e o sonho são categorias semelhantes para J. L. Moreno."
+              "text": "Onirodrama é a técnica que permite examinar o sonho em ação, ou seja, re vi vê - lo na ação dramática. A dramatização e o sonho são categorias semelhantes para J. L. Moreno."
             },
             {
               "letter": "D",
@@ -33221,7 +33221,7 @@ window.BANCO_RMAIS_EXAMS = {
           "options": [
             {
               "letter": "A",
-              "text": "É possível localizar um conte údo infantil recalcado na vida psíquica inconsciente."
+              "text": "É possível localizar um conteúdo infantil recalcado na vida psíquica inconsciente."
             },
             {
               "letter": "B",
@@ -33263,7 +33263,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "É criada pela terapia psicanalítica e faz obstáculo à cura; o tratamento psicana lítico consiste na extinção da transferência, consider ada o maior empecilho à cura."
+              "text": "É criada pela terapia psicanalítica e faz obstáculo à cura; o tratamento psicanalítico consiste na extinção da transferência, considerada o maior empecilho à cura."
             }
           ],
           "correctAnswer": "C",
@@ -33337,11 +33337,11 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2023 - Psicoterapia",
           "topic": "Psicoterapia",
           "title": "Questao 13",
-          "text": "Jung afirmava: “Todo psicoterapeuta não só tem o seu método: ele próprio é esse método. Ars totum requirit hominem ( a a r t e e x i g e o h o m e m t o d o ) d i z u m v e l h o mestre. O grande fator de cura, na psicoterapia, é a p e r s o n a l i d a d e d o m é d i c o – e s t a n ã o é d a d a a priori ; conquista-se com muito esforço, mas não é um esquema doutrinário.” Qual das sentenças abaixo interliga-se com esta colocação de Jung?",
+          "text": "Jung afirmava: “Todo psicoterapeuta não só tem o seu método: ele próprio é esse método. Ars totum requirit hominem (a arte exige o homem todo) diz um velho mestre. O grande fator de cura, na psicoterapia, é a personalidade do médico – esta não é da da a priori ; conquista-se com muito esforço, mas não é um esquema doutrinário.” Qual das sentenças abaixo interliga-se com esta colocação de Jung?",
           "options": [
             {
               "letter": "A",
-              "text": "P a r a a t u a r e m p s i c o t e r a p i a , o m é d i c o d e v e e s t a r constantemente à disposição de seu paciente."
+              "text": "Para atuar em psicoterapia, o médico deve estar constantemente à disposição de seu paciente."
             },
             {
               "letter": "B",
@@ -33353,7 +33353,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "U m b o m t e r a p e u t a j á n a s ce a p t o p a r a s e u o f í ci o , h á muito pouco a ser feito para que um médico seja um bom psicoterapeuta."
+              "text": "Um bom terapeuta já nas ce apto para seu of í ci o , h á muito pouco a ser feito para que um médico seja um bom psicoterapeuta."
             }
           ],
           "correctAnswer": "C",
@@ -33367,7 +33367,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2023 - Psicoterapia",
           "topic": "Psicoterapia",
           "title": "Questao 14",
-          "text": "“ N u n c a d e v e m o s e s q u e c e r q u e e x i s t e m , e m t o d a s a s pessoas, forças intensas contra a mudança, complexos que resistem a qualquer interferência nos velhos padrões familiares. Eles tentam matar tudo que é novo e torcê-lo d e v o l t a a o m o d e l o a n t i g o . Na mitologia e na religião a sobrevivência da criança divina, um símbolo de possibilidades futuras, está sempre ameaçada pelo velho guarda.” Processo Seletivo – Residência Médica – Psicoterapia – Áreas de Atuação (COREME/FM – 05/2022) Assinale a alternativa que co rresponde à melhor postura do terapeuta diante de uma situação como a apresentada.",
+          "text": "“ Nunca devemos esquecer que existem, em todas as pessoas, forças intensas contra a mudança, complexos que resistem a qualquer interferência nos velhos padrões familiares. Eles tentam matar tudo que é novo e torcê-lo de volta ao modelo antigo. Na mitologia e na religião a sobrevivência da criança divina, um símbolo de possibilidades futuras, está sempre ameaçada pelo velho guarda.” Processo Seletivo – Residência Médica – Psicoterapia – Áreas de Atuação (COREME/FM – 05/2022) Assinale a alternativa que corresponde à melhor postura do terapeuta diante de uma situação como a apresentada.",
           "options": [
             {
               "letter": "A",
@@ -33427,7 +33427,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2023 - Psicoterapia",
           "topic": "Psicoterapia",
           "title": "Questao 16",
-          "text": "Os sonhos são um fenômeno psíquico de grande interesse para diversas abordagens terapêuticas e certamente podem ser relatados para todos os analistas, independentemente de sua escola de formação. Q u a l d a s a l t e r n a t i v a s a b a i x o e x p r e s s a u m a a t i t u d e adequada de um terapeuta diante do relato espontâneo de um sonho de um paciente?",
+          "text": "Os sonhos são um fenômeno psíquico de grande interesse para diversas abordagens terapêuticas e certamente podem ser relatados para todos os analistas, independentemente de sua escola de formação. Qual das alternativas abaixo expressa uma atitude adequada de um terapeuta diante do relato espontâneo de um sonho de um paciente?",
           "options": [
             {
               "letter": "A",
@@ -33443,7 +33443,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Interpretar o sonho do paciente com a segurança s u s t e n t a d a p o r a n o s d e f o r m a ç ã o e e s t u d o d o s símbolos mitológicos."
+              "text": "Interpretar o sonho do paciente com a segurança sustentada por anos de formação e estudo dos símbolos mitológicos."
             }
           ],
           "correctAnswer": "C",
@@ -33487,7 +33487,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2023 - Psicoterapia",
           "topic": "Psicoterapia",
           "title": "Questao 18",
-          "text": "N a f a s e d o t é r m i n o d e u m a p s i c o t e r a p i a b r e v e d e orientação analítica espera-se que:",
+          "text": "Na fase do término de uma psicoterapia breve de orientação analítica espera-se que:",
           "options": [
             {
               "letter": "A",
@@ -33590,7 +33590,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2023 - Psiquiatria Forense",
           "topic": "Psiquiatria Forense",
           "title": "Questao 1",
-          "text": "Você é intimado por um juiz para realizar a perícia de um indivíduo do sexo masculino, 56 anos de idade, agente penitenciário há 25 anos e sem qualquer antecedente de seguimento psicológico ou psiquiátrico. No momento enco ntra-se pr eso por tentativa de homicídio em uma rebelião ocorrida durante a sua j ornada de trabalho. Após a leitura atenta dos autos, você encontra um relatório da médica do presídio em que o periciando se encontra, com dizeres: “Detento trazido para avaliação médica, após tentar suicídio por enforcamento dentro da cela; encontra-se estável, sem qualquer necessidade de intervenção clínica ou cirúrgica. No entanto , diz que seu suicídio tinha co mo objetivo atender a comandos do presidente da república, c o m q u e m c o n v e r s a d i a r i a m e n t e e p o r v e z e s l h e a m e a ç a e c o m e n t a as ações da rotina do paciente. Solicito avaliação psiquiátrica”. A avaliação pericial a ser realizada por você intitula-se:",
+          "text": "Você é intimado por um juiz para realizar a perícia de um indivíduo do sexo masculino, 56 anos de idade, agente penitenciário há 25 anos e sem qualquer antecedente de seguimento psicológico ou psiquiátrico. No momento encontra-se pr eso por tentativa de homicídio em uma rebelião ocorrida durante a sua j ornada de trabalho. Após a leitura atenta dos autos, você encontra um relatório da médica do presídio em que o periciando se encontra, com dizeres: “Detento trazido para avaliação médica, após tentar suicídio por enforcamento dentro da cela; encontra-se estável, sem qualquer necessidade de intervenção clínica ou cirúrgica. No entanto , diz que seu suicídio tinha co mo objetivo atender a comandos do presidente da república, com quem conversa diariamente e por vezes lhe ameaça e comenta as ações da rotina do paciente. Solicito avaliação psiquiátrica”. A avaliação pericial a ser realizada por você intitula-se:",
           "options": [
             {
               "letter": "A",
@@ -33602,11 +33602,11 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "superveniência de doença mental, devendo ter como objetivo prin cipal a avaliação do nexo causal entre o transtorno mental que surgiu e a tentativa de suicídio realizada pelo periciado, além de transferência para tratamento."
+              "text": "superveniência de doença mental, devendo ter como objetivo principal a avaliação do nexo causal entre o transtorno mental que surgiu e a tentativa de suicídio realizada pelo periciado, além de transferência para tratamento."
             },
             {
               "letter": "D",
-              "text": "superveniência de doença mental, com possível necessidade de re moção do paciente para um local adequado de tratamento psiquiátrico."
+              "text": "superveniência de doença mental, com possível necessidade de remoção do paciente para um local adequado de tratamento psiquiátrico."
             }
           ],
           "correctAnswer": "D",
@@ -33624,7 +33624,7 @@ window.BANCO_RMAIS_EXAMS = {
           "options": [
             {
               "letter": "A",
-              "text": "O paciente deve submeter-se à nova perícia, intitulada de Incid ente de insanidade mental, uma vez que os 05 meses anteriores foram destinados ao tratamento de um transtorno mental não existente previamente."
+              "text": "O paciente deve submeter-se à nova perícia, intitulada de Incidente de insanidade mental, uma vez que os 05 meses anteriores foram destinados ao tratamento de um transtorno mental não existente previamente."
             },
             {
               "letter": "B",
@@ -33680,7 +33680,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2023 - Psiquiatria Forense",
           "topic": "Psiquiatria Forense",
           "title": "Questao 4",
-          "text": "Você é nomeado para fazer a avaliação pericial de Juliana, em um processo de curatela, movido por sua mãe. A pericianda é natural de Osasco-SP e reside co m sua família em Campo Limpo Pa ulista-SP há 10 anos. Sua idade atual é de 18 anos, é solteira, não tem filhos, nunca trabalhou e é analfabeta funcio nal (frequenta a APAE). Mãe traz a informação de que a pericianda não teve um diagnóstico claro, mas que sua pediatra suspeita que tenha sido um erro inato do metabolismo. Em função do quadro em questão, houve um grave atraso do desenvolvimento neuropsicomotor (começou a andar com 2 anos e começou a falar 04 meses após). No momento da perícia escreve apenas o seu nome, com bastante dificuldade; tem coordenação motora prejudicada, com necessidade da mãe supervis ionar o banho e todos os outros cuidados de higiene. Nunca foi a um psiquiatra ou psicólogo. A o e x a m e p s í q u i c o a p r e s e n t a - s e v i g i l , m a s c o m a t e n ç ã o v o l u n t á r ia e espontâneas prejudicadas. Desorientada alopsiquicamente e parcialmente orientada autopsiquicamente (acertou o seu nome, mas disse que tinha 14 anos de idade). O Humor é eutímico e o afeto tem pouca modulação e ressonância. Não há delírios ou alterações de sensopercepção, nem mesmo sinais indiretos que sugiram tais condições. O pensamento é marcado por grande concretude e empobrecimento. Sua memória est á prejudicada. A volição está reduzida, assim como o pragmatismo. De acordo com o Código Civil, modificado pelo Estatuto da Pessoa com Deficiência, qual deve ser a conclusão do perito neste laudo?",
+          "text": "Você é nomeado para fazer a avaliação pericial de Juliana, em um processo de curatela, movido por sua mãe. A pericianda é natural de Osasco-SP e reside co m sua família em Campo Limpo Pa ulista-SP há 10 anos. Sua idade atual é de 18 anos, é solteira, não tem filhos, nunca trabalhou e é analfabeta funcio nal (frequenta a APAE). Mãe traz a informação de que a pericianda não teve um diagnóstico claro, mas que sua pediatra suspeita que tenha sido um erro inato do metabolismo. Em função do quadro em questão, houve um grave atraso do desenvolvimento neuropsicomotor (começou a andar com 2 anos e começou a falar 04 meses após). No momento da perícia escreve apenas o seu nome, com bastante dificuldade; tem coordenação motora prejudicada, com necessidade da mãe supervis ionar o banho e todos os outros cuidados de higiene. Nunca foi a um psiquiatra ou psicólogo. Ao exame psíquico apresenta - se vigil, mas com atenção volunt á r ia e espontâneas prejudicadas. Desorientada alopsiquicamente e parcialmente orientada autopsiquicamente (acertou o seu nome, mas disse que tinha 14 anos de idade). O Humor é eutímico e o afeto tem pouca modulação e ressonância. Não há delírios ou alterações de sensopercepção, nem mesmo sinais indiretos que sugiram tais condições. O pensamento é marcado por grande concretude e empobrecimento. Sua memória est á prejudicada. A volição está reduzida, assim como o pragmatismo. De acordo com o Código Civil, modificado pelo Estatuto da Pessoa com Deficiência, qual deve ser a conclusão do perito neste laudo?",
           "options": [
             {
               "letter": "A",
@@ -33740,7 +33740,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2023 - Psiquiatria Forense",
           "topic": "Psiquiatria Forense",
           "title": "Questao 6",
-          "text": "O Estatuto da Pessoa com Deficiên cia (Lei 13.146/2015) determin ou importantes alterações no Código Civil brasileiro (Lei 10.406/2002). A partir destas modificações, atualmente são cons iderados absolutamente incapazes de exercer os atos da vida civil:",
+          "text": "O Estatuto da Pessoa com Deficiên cia (Lei 13.146/2015) determin ou importantes alterações no Código Civil brasileiro (Lei 10.406/2002). A partir destas modificações, atualmente são considerados absolutamente incapazes de exercer os atos da vida civil:",
           "options": [
             {
               "letter": "A",
@@ -33770,7 +33770,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2023 - Psiquiatria Forense",
           "topic": "Psiquiatria Forense",
           "title": "Questao 7",
-          "text": "Em uma perícia de incidente de insanidade mental foi avaliado u m periciado de 32 anos, que evoluiu nos últimos anos com pensament o d elirante e au t orreferente, com cren ça até os dias atuais de estar sendo persegu ido por vizinhos e por seu irmão. Há cerca de um mês, após evoluir com quadro de agitação psicomotora e vozes de comando, atirou com arma de fogo em seu irmão e está sendo acusado por tentativa de homicídio. Processo Seletivo – Residência Médica – Psiquiatria Forense – Áreas de Atuação (COREME/FM – 05/2022) Durante avaliação pericial atual foi possível constatar alteraç ão do exame psíquico compatíve l com quadro psicótico e há relatórios médicos de outro psiquiatra descrevendo quadro semelhante à época dos fatos. Considerando que você é o perito que está avaliando o caso, é possível concluir que:",
+          "text": "Em uma perícia de incidente de insanidade mental foi avaliado u m periciado de 32 anos, que evoluiu nos últimos anos com pensament o d elirante e au t orreferente, com cren ça até os dias atuais de estar sendo perseguido por vizinhos e por seu irmão. Há cerca de um mês, após evoluir com quadro de agitação psicomotora e vozes de comando, atirou com arma de fogo em seu irmão e está sendo acusado por tentativa de homicídio. Processo Seletivo – Residência Médica – Psiquiatria Forense – Áreas de Atuação (COREME/FM – 05/2022) Durante avaliação pericial atual foi possível constatar alteraç ão do exame psíquico compatível com quadro psicótico e há relatórios médicos de outro psiquiatra descrevendo quadro semelhante à época dos fatos. Considerando que você é o perito que está avaliando o caso, é possível concluir que:",
           "options": [
             {
               "letter": "A",
@@ -33932,7 +33932,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "incentiva o uso de questionários e outros instrumentos para oti mizar o processo diagnósti c o n o s p a c i e n t e s e m l a r g a escala."
+              "text": "incentiva o uso de questionários e outros instrumentos para oti mizar o processo diagnósti con os pacientes em larga escala."
             },
             {
               "letter": "D",
@@ -34010,7 +34010,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2023 - Psiquiatria Forense",
           "topic": "Psiquiatria Forense",
           "title": "Questao 15",
-          "text": "No trabalho como psiquiatra dentro de contexto hospitalar não é incomum que sejamos acionados para avaliar a capacidade de um paciente de consentir com o tratamento proposto. Existem inúmeras ferramentas para conduzir uma avaliação da capacidade do paciente consentir com o tratamento, sendo uma de las o MacArthur Competenc e Assessment Tool for Treatment (MacCAT-T). Consiste em uma entrevista semiestruturada que considera as informações específicas para a decisão em questão. Nesse instrumento são avaliadas quais dimensões?",
+          "text": "No trabalho como psiquiatra dentro de contexto hospitalar não é incomum que sejam os acionados para avaliar a capacidade de um paciente de consentir com o tratamento proposto. Existem inúmeras ferramentas para conduzir uma avaliação da capacidade do paciente consentir com o tratamento, sendo uma de las o MacArthur Competenc e Assessment Tool for Treatment (MacCAT-T). Consiste em uma entrevista semi estruturada que considera as informações específicas para a decisão em questão. Nesse instrumento são avaliadas quais dimensões?",
           "options": [
             {
               "letter": "A",
@@ -34070,7 +34070,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2023 - Psiquiatria Forense",
           "topic": "Psiquiatria Forense",
           "title": "Questao 17",
-          "text": "Paciente de 19 anos, vem em seu consultório numa primeira consu lta com história de desde a infância apresentar tiques motores complexos e tiques vocais, com sons guturais e eventualmente com coprolalia, embora rara. Nunca fez tratamento, mas conta que durante uma aborda gem policial de rotina, ele xin gou o oficial que pedia seus documentos, sendo levado à delegacia por desacato à autoridade; embora tenha sido liberado, está respondendo em liberdade pelo crime de desacato e em audiência de instrução mas irá responder. Vem pedir um atest ado para apresentar no processo. O exame psíquico não deixa dúvida do diagnóstico. Assinale a alternativa que corresponde à sua conduta.",
+          "text": "Paciente de 19 anos, vem em seu consultório numa primeira consulta com história de desde a infância apresentar tiques motores complexos e tiques vocais, com sons guturais e eventualmente com coprolalia, embora rara. Nunca fez tratamento, mas conta que durante uma aborda gem policial de rotina, ele xin gou o oficial que pedia seus documentos, sendo levado à delegacia por desacato à autoridade; embora tenha sido liberado, está respondendo em liberdade pelo crime de desacato e em audiência de instrução mas irá responder. Vem pedir um atest ado para apresentar no processo. O exame psíquico não deixa dúvida do diagnóstico. Assinale a alternativa que corresponde à sua conduta.",
           "options": [
             {
               "letter": "A",
@@ -34267,7 +34267,7 @@ window.BANCO_RMAIS_EXAMS = {
           "options": [
             {
               "letter": "A",
-              "text": "Os transtornos de linguagem são confundidos muitas vezes com o transtorno do espectro autista, principalmente pelos preju ízos comuns da linguagem gestual e pragmática."
+              "text": "Os transtornos de linguagem são confundidos muitas vezes com o transtorno do espectro autista, principalmente pelos prejuízos comuns da linguagem gestual e pragmática."
             },
             {
               "letter": "B",
@@ -34275,7 +34275,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "O transtorno de tiques, no DSM-5, é um diagnóstico do neurodesenvolvimento, apesar de sua relação importante com o espectro obsessivo compulsivo, t e n d o s e u i n í c i o p o r v o l t a d e 4 a 6 a n o s , c o m p i o r a entre 10 e 12 anos. ( D ) O s t r a n s t o r n o s e s p e c í f i c o s d e a p r e n d i z a g e m n ã o podem ser dados em crianças com déficit de atenção e hiperatividade ou naquelas com dificuldades especificas de linguagem."
+              "text": "O transtorno de tiques, no DSM-5, é um diagnóstico do neurodesenvolvimento, apesar de sua relação importante com o espectro obsessivo compulsivo, tendo seu início por volta de 4 a 6 anos, com piora entre 10 e 12 anos. (D) Os transtornos específicos de aprendizagem não podem ser dados em crianças com déficit de atenção e hiperatividade ou naquelas com dificuldades especificas de linguagem."
             }
           ],
           "correctAnswer": "C",
@@ -34289,7 +34289,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2023 - Psiquiatria da Infancia e Adolescencia",
           "topic": "Psiquiatria da Infancia e Adolescencia",
           "title": "Questao 4",
-          "text": "Paciente de 17 anos apresenta quadro de autolesões repetidas em antebraço e coxas com início aos 13 anos de i d a d e . F o i t r a t a d a n a é p o c a c o m f l u o x e t i n a 4 0 m g / d i a devido a um quadro depressivo maior com melhora em alguns dias, tendo interrompido por vontade própria o uso da medicação 3 meses depois. As autolesões voltaram a ocorrer 2 anos depois, com frequência esporádica em momentos de provas escolares e de maior ansiedade. Há 2 meses, o quadro voltou a piorar, com ameaças suicidas, piora das autolesões e episódi os de instabilidade afetiva significativa, com crises de ansiedade e choro frequentes. A paciente não consegue prestar atenção nas aulas, refere pensamentos recorrentes e intrusivos de menos valia e de ser uma pessoa ruim. Tem dificuldade de indução de sono, tendo que dormir até o início da tarde. A paciente estava em um novo relacionamento, porém nunca mais recebeu notícias do namorado após o último final de semana. A paciente está no pronto atendimento acompanhada dos pais que estão discutindo entre si e com a própria paciente, com troca de acusações entre as partes. Assinale a alternativa correta.",
+          "text": "Paciente de 17 anos apresenta quadro de autolesões repetidas em antebraço e coxas com início aos 13 anos de idade. Foi tratada na época com fluoxetina 40 mg / d i a devido a um quadro depressivo maior com melhora em alguns dias, tendo interrompido por vontade própria o uso da medicação 3 meses depois. As autolesões voltaram a ocorrer 2 anos depois, com frequência esporádica em momentos de provas escolares e de maior ansiedade. Há 2 meses, o quadro voltou a piorar, com ameaças suicidas, piora das autolesões e episódios de instabilidade afetiva significativa, com crises de ansiedade e choro frequentes. A paciente não consegue prestar atenção nas aulas, refere pensamentos recorrentes e intrusivos de menos valia e de ser uma pessoa ruim. Tem dificuldade de indução de sono, tendo que dormir até o início da tarde. A paciente estava em um novo relacionamento, porém nunca mais recebeu notícias do namorado após o último final de semana. A paciente está no pronto atendimento acompanhada dos pais que estão discutindo entre si e com a própria paciente, com troca de acusações entre as partes. Assinale a alternativa correta.",
           "options": [
             {
               "letter": "A",
@@ -34297,7 +34297,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "B",
-              "text": "É importante deixar os pais “ventilarem a raiva” durante a consulta com a adolescente a fim dos ânimos se acalmarem."
+              "text": "É importante deixar os pais “ventilarem a raiva” durante a consulta com a adolescente a fim dos ânimos se acalmar em."
             },
             {
               "letter": "C",
@@ -34323,7 +34323,7 @@ window.BANCO_RMAIS_EXAMS = {
           "options": [
             {
               "letter": "A",
-              "text": "Crianças com padrão de comportamento introvertido e perfeccionista apresentam maior incidência de queixas somáticas. Processo Seletivo – Residência Médica – Psiquiatria da Infância e da Adolescência – Áreas de Atuação (COREME/FM – 05/2022) ( B ) A l t e r a ç õ e s m o t o r a s s ã o a p r i n c i p a l f o r m a d e somatização nos primeiros anos de vida."
+              "text": "Crianças com padrão de comportamento introvertido e perfeccionista apresentam maior incidência de queixas somáticas. Processo Seletivo – Residência Médica – Psiquiatria da Infância e da Adolescência – Áreas de Atuação (COREME/FM – 05/2022) (B) Alterações motoras são a principal forma de somatização nos primeiros anos de vida."
             },
             {
               "letter": "C",
@@ -34345,15 +34345,15 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2023 - Psiquiatria da Infancia e Adolescencia",
           "topic": "Psiquiatria da Infancia e Adolescencia",
           "title": "Questao 6",
-          "text": "J . , 1 0 a n o s , i n t e r n a d o e m u n i d a d e d e t e r a p i a i n t e n s i v a após um transplante de fígado por hepatite autoimune, passou a apresentar alterações comportamentais no 4º dia do pós-operatório, quando foi solicitada avaliação psiquiátrica. Segundo relato da equipe, na noite anterior, ele mostrava-se bastante agitado, querendo sair do leito. Dizia que estava vendo “monstros” que queriam pegá-lo. No momento da avaliação psiquiátrica, no início da tarde do dia seguinte, ele mostrava-se bastante desatento e sonolento, tendo dificuldade em responder às perguntas do examinador. Ele achava que estava em sua casa, e não conseguia recordar-se da data. Assinale a alternativa correta referente às alterações psiquiátricas deste caso.",
+          "text": "J., 10 anos, internado em unidade de terapia intensiva após um transplante de fígado por hepatite autoimune, passou a apresentar alterações comportamentais no 4º dia do pós-operatório, quando foi solicitada avaliação psiquiátrica. Segundo relato da equipe, na noite anterior, ele mostrava-se bastante agitado, querendo sair do leito. Dizia que estava vendo “monstros” que queriam pegá-lo. No momento da avaliação psiquiátrica, no início da tarde do dia seguinte, ele mostrava-se bastante desatento e sonolento, tendo dificuldade em responder às perguntas do examinador. Ele achava que estava em sua casa, e não conseguia recordar-se da data. Assinale a alternativa correta referente às alterações psiquiátricas deste caso.",
           "options": [
             {
               "letter": "A",
-              "text": "Medidas como melhorar o ambiente hospitalar ( e v i t a n d o a t r a p a l h a r o s o n o à n o i t e e p r o c u r a n d o estimular a criança durante o dia), reduzir sedação e melhorar controle de dor são importantes para reduzir o risco do surgimento do quadro relatado."
+              "text": "Medidas como melhorar o ambiente hospitalar (evitando atrapalhar o sono ànoite e procurando estimular a criança durante o dia), reduzir sedação e melhorar controle de dor são importantes para reduzir o risco do surgimento do quadro relatado."
             },
             {
               "letter": "B",
-              "text": "Quadro psicótico primár i o é a p r i n c i p a l h i p ó t e s e diagnóstica."
+              "text": "Quadro psicótico primár i o é a principal hipótese diagnóstica."
             },
             {
               "letter": "C",
@@ -34375,7 +34375,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2023 - Psiquiatria da Infancia e Adolescencia",
           "topic": "Psiquiatria da Infancia e Adolescencia",
           "title": "Questao 7",
-          "text": "Em relação a maus-tratos na infância, analise as afirmativas abaixo. I. Crianças vítimas de maus-tratos podem ter prejuízo no reconhecimento de emoções, com dificuldade na interpretação de faces neutras, frequentemente avaliando um estímulo emocional positivo ou negativo, como raiva ou medo, como um estímulo neutro, podendo prejudicar as relações interpessoais. II. O processo de adaptação positiva frente a adversidades significativa s é chamado de resiliência. Maior QI e boa competência social podem ser fatores associados a pior resiliência diante de situações de maus tratos, pela maior compreensão sobre os acontecimentos. III. Na Síndrome de Münchausen por procuração, os métodos de falsificação incluem exagero, simulação e indução de sintomas, e é importante que seja identificado o ganho secundário que leva à condição, compensação financeira, por exemplo, para que seja realizada uma intervenção direcionada aos fatores etiológicos. IV. No atendimento de uma criança com suspeita de estar sendo vítima de maus-tratos, é importante que o médico investigue se os episódios realmente ocorreram antes de denunciar aos órgãos de proteção, tendo em vista a dificuldade que outros profissionais t e r ã o p a r a o b t e r i n f o r m a ç õ e s c o n f i á v e i s n e s s a f a i x a etária. V. Na maioria dos casos de abuso sexual, podem ser identificadas lesões físicas na criança que não ficam evidentemente aparentes, reforçando a importância de uma coleta de história cuidadosa e exame físico minucioso. Assinale a alternativa correta.",
+          "text": "Em relação a maus-tratos na infância, analise as afirmativas abaixo. I. Crianças vítimas de maus-tratos podem ter prejuízo no reconhecimento de emoções, com dificuldade na interpretação de faces neutras, frequentemente avaliando um estímulo emocional positivo ou negativo, como raiva ou medo, como um estímulo neutro, podendo prejudicar as relações interpessoais. II. O processo de adaptação positiva frente a adversidades significativa s é chamado de resiliência. Maior QI e boa competência social podem ser fatores associados a pior resiliência diante de situações de maus tratos, pela maior compreensão sobre os acontecimentos. III. Na Síndrome de Münchausen por procuração, os métodos de falsificação incluem exagero, simulação e indução de sintomas, e é importante que seja identificado o ganho secundário que leva à condição, compensação financeira, por exemplo, para que seja realizada uma intervenção direcionada aos fatores etiológicos. IV. No atendimento de uma criança com suspeita de estar sendo vítima de maus-tratos, é importante que o médico investigue se os episódios realmente ocorreram antes de denunciar aos órgãos de proteção, tendo em vista a dificuldade que outros profissionais terão para obter informações confiáveis nessa faixa etária. V. Na maioria dos casos de abuso sexual, podem ser identificadas lesões físicas na criança que não ficam evidentemente aparentes, reforçando a importância de uma coleta de história cuidadosa e exame físico minucioso. Assinale a alternativa correta.",
           "options": [
             {
               "letter": "A",
@@ -34437,11 +34437,11 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2023 - Psiquiatria da Infancia e Adolescencia",
           "topic": "Psiquiatria da Infancia e Adolescencia",
           "title": "Questao 9",
-          "text": "N a co n s u lt a , os p a i s d e s cre ve m o m e ni n o Ca rl os , d e 10 a no s, como uma criança “levada e brava”. Relatam que ele é muito inquieto, não consegue permanecer sentado, e não sabe esperar, além de ser muito distraído e desorganizado. Por conta disso, sentem que precisam estar sempre atentos, para evitar que C se acidente. Além disso, os pais relatam que é uma criança que se irrita por qualquer coisa e, frequentemente, apresenta explosões de raiva. Nessas ocasiões, Carlos perde o controle, chora, grita e tem dificuldade para se acalmar. Reclamações da escola por conta do comportamento também são frequentes. Assinale a alternativa correta:",
+          "text": "N a co n s u lt a , os pais de s cre ve m o m e ni n o Ca rl os , d e 10 a no s, como uma criança “levada e brava”. Relatam que ele é muito inquieto, não consegue permanecer sentado, e não sabe esperar, além de ser muito distraído e desorganizado. Por conta disso, sentem que precisam estar sempre atentos, para evitar que C se acidente. Além disso, os pais relatam que é uma criança que se irrita por qualquer coisa e, frequentemente, apresenta explosões de raiva. Nessas ocasiões, Carlos perde o controle, chora, grita e tem dificuldade para se acalmar. Reclamações da escola por conta do comportamento também são frequentes. Assinale a alternativa correta:",
           "options": [
             {
               "letter": "A",
-              "text": "Em crianças com TDAH, sintomas de irritabilidade estão associados a maior gravidade e persistência de sintomas de T D A H , a s s i m c o m o e s t ã o a s s o c i a d o s à o c o r r ê n c i a d e transtornos disruptivos e não internalizantes ao longo da infância e adolescência."
+              "text": "Em crianças com TDAH, sintomas de irritabilidade estão associados a maior gravidade e persistência de sintomas de TDAH, assim como estão associados à ocorrência de transtornos disruptivos e não internalizantes ao longo da infância e adolescência."
             },
             {
               "letter": "B",
@@ -34449,7 +34449,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "Sintomas de irritabilidades são comuns em pacientes com T D A H e e s t u d o s g e n é t i c o s j á identificaram a associação entre irritabilidade e escore de risco poligênico para TDAH."
+              "text": "Sintomas de irritabilidades são comuns em pacientes com TDAH e estudos genéticos já identificaram a associação entre irritabilidade e escore de risco poligênico para TDAH."
             },
             {
               "letter": "D",
@@ -34471,7 +34471,7 @@ window.BANCO_RMAIS_EXAMS = {
           "options": [
             {
               "letter": "A",
-              "text": "O uso de substâncias psicoa tivas afeta, diretamente, a cognição, capacidade de julgamento e o humor, mas pode melhor a sociabilidade na fase da adolescência."
+              "text": "O uso de substâncias psicoativas afeta, diretamente, a cognição, capacidade de julgamento e o humor, mas pode melhor a sociabilidade na fase da adolescência."
             },
             {
               "letter": "B",
@@ -34479,7 +34479,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "O uso de substâncias na adolescência pode prejudicar a memória e capacidade de aprendizado, além de interferir no p r o c e s s o d e m i g r a ç ã o d e n e u r ô n i o s . E n t r e t a n t o , c o m a interrupção do uso e após período de abstinência, essas consequências são revertidas, retomando o funcionamento executivo normal."
+              "text": "O uso de substâncias na adolescência pode prejudicar a memória e capacidade de aprendizado, além de interferir no processo de migração de neurônios. Entretanto, com a interrupção do uso e após período de abstinência, essas consequências são revertidas, retomando o funcionamento executivo normal."
             },
             {
               "letter": "D",
@@ -34497,7 +34497,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2023 - Psiquiatria da Infancia e Adolescencia",
           "topic": "Psiquiatria da Infancia e Adolescencia",
           "title": "Questao 11",
-          "text": "Leia as afirmações a seguir. I. o comportamento suicida resulta da complexa interação entre fatores de diversas ordens - biológicos, psicológicos, relacionais, culturais. Raramente um único fator de risco ou de proteção pode, de maneira independente, determinar ou evitar a ocorrência de um evento suicida. II. o Columbia-Suicide Severity Rating Scale ( C - S S R S ) é u m questionário para avaliação do risco de suicídio baseado em evidências, disponível em diversos idiomas e que não questiona diretamente os pacientes quanto a ideação e comportamentos suicidas uma vez que falar abertamente sobre o tema especificamente para crianças e adolescentes pode induzi-los a considerarem o suicídio. III. as abordagens psicoterápicas com a melhor evidência científica disponível para m a n e j o d e c o m p o r t a m e n t o s suicidas são a TCC (terapia cognitivo-comportamental) e a DBT (terapia comportamental dialética), cujos focos de atenção devem incluir a identificação de emoções, as habilidades de comunicação e o desenvolvimento de e s t r a t é g i a s d e r e g u l a ç ã o e m o c i o n a l e r e s o l u ç ã o d e problemas. IV. desde os primeiros meses do isolamento social associado à pandemia de COVID-19, observa-se queda significativa na busca por atendimentos de urgência devido a tentativas de suicídio entre jovens de 12 e 17 anos nos Estados Unidos. V. estudos de autópsia psicológica indicam maior ocorrência de eventos de vida negativos, particularmente na semana anterior ao suicídio, e destacam os conflitos interpessoais como o principal gatilho entre adolescentes. Processo Seletivo – Residência Médica – Psiquiatria da Infância e da Adolescência – Áreas de Atuação (COREME/FM – 05/2022) A s s i n a l e a a l t e r n a t i v a q u e a s c l a s s i f i c a c o r r e t a m e n t e c o m o verdadeiras (V) ou falsas (F).",
+          "text": "Leia as afirmações a seguir. I. o comportamento suicida resulta da complexa interação entre fatores de diversas ordens - biológicos, psicológicos, relacionais, culturais. Raramente um único fator de risco ou de proteção pode, de maneira independente, determinar ou evitar a ocorrência de um evento suicida. II. o Columbia-Suicide Severity Rating Scale ( C - SSRS) é um questionário para avaliação do risco de suicídio baseado em evidências, disponível em diversos idiomas e que não questiona diretamente os pacientes quanto a ideação e comportamentos suicidas uma vez que falar abertamente sobre o tema especificamente para crianças e adolescentes pode induzi-los a considerarem o suicídio. III. as abordagens psicoterápicas com a melhor evidência científica disponível para manejo de comportamentos suicidas são a TCC (terapia cognitivo-comportamental) e a DBT (terapia comportamental dialética), cujos focos de atenção devem incluir a identificação de emoções, as habilidades de comunicação e o desenvolvimento de estratégias de regulação emocional e resolução de problemas. IV. desde os primeiros meses do isolamento social associado à pandemia de COVID-19, observa-se queda significativa na busca por atendimentos de urgência devido a tentativas de suicídio entre jovens de 12 e 17 anos nos Estados Unidos. V. estudos de autópsia psicológica indicam maior ocorrência de eventos de vida negativos, particularmente na semana anterior ao suicídio, e destacam os conflitos interpessoais como o principal gatilho entre adolescentes. Processo Seletivo – Residência Médica – Psiquiatria da Infância e da Adolescência – Áreas de Atuação (COREME/FM – 05/2022) Assinale a alternativa que as classifica corretamente como verdadeiras (V) ou falsas (F).",
           "options": [
             {
               "letter": "A",
@@ -34647,19 +34647,19 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2023 - Psiquiatria da Infancia e Adolescencia",
           "topic": "Psiquiatria da Infancia e Adolescencia",
           "title": "Questao 16",
-          "text": "E m r e l a ç ã o à e s q u i z o f r e n i a d e i n í c i o p r e c o c e , a s s i n a l e a resposta correta.",
+          "text": "Em relação à esquizofrenia de início precoce, assinale a resposta correta.",
           "options": [
             {
               "letter": "A",
-              "text": "A esquizofrenia de início precoce é definida com o s u r g i m e n t o d a d o e n ç a a n t e s d o s 1 6 a n o s e a esquizofrenia de início muito precoce com o surgimento antes dos 13 anos. Processo Seletivo – Residência Médica – Psiquiatria da Infância e da Adolescência – Áreas de Atuação (COREME/FM – 05/2022)"
+              "text": "A esquizofrenia de início precoce é definida com o surgimento da doença antes dos 16 anos e a esquizofrenia de início muito precoce com o surgimento antes dos 13 anos. Processo Seletivo – Residência Médica – Psiquiatria da Infância e da Adolescência – Áreas de Atuação (COREME/FM – 05/2022)"
             },
             {
               "letter": "B",
-              "text": "A sintomatologia obsessiva pode surgir na fase p r o d r ô m i c a e , q u a n d o p r e s e n t e , e l a e s t á a s s o c i a d a a sintomas negativos, sexo masculino, início insidioso e período prodrômico mais longo."
+              "text": "A sintomatologia obsessiva pode surgir na fase prodrômica e, quando presente, ela está associada a sintomas negativos, sexo masculino, início insidioso e período prodrômico mais longo."
             },
             {
               "letter": "C",
-              "text": "Os sintomas negativos, como afeto hipomodulado, alogia, diminuição da fluência verbal, redução da motivação, isolamento so c i a l e d e t e r i o r a ç ã o d o desempenho cognitivo, surgem apenas no curso crônico da doença."
+              "text": "Os sintomas negativos, como afeto hipomodulado, alogia, diminuição da fluência verbal, redução da motivação, isolamento so cial e deterioração do desempenho cognitivo, surgem apenas no curso crônico da doença."
             },
             {
               "letter": "D",
@@ -34685,7 +34685,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "B",
-              "text": "Embora não reportado como funcionamento pré- m ó r b i d o , c e r c a d e 3 0 % d o s p a c i e n t e s c o m esquizofrenia apresentam critérios para diagnóstico de autismo ou do espectro do autismo antes do surgimento dos sintomas psicóticos."
+              "text": "Embora não reportado como funcionamento pré- mórbido, cerca de 30 % dospacientes com esquizofrenia apresentam critérios para diagnóstico de autismo ou do espectro do autismo antes do surgimento dos sintomas psicóticos."
             },
             {
               "letter": "C",
@@ -34719,7 +34719,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "No Transtorno Alimentar Restritivo Evitativo é necessário que exista um fracasso persistente em satisfazer as necessidades nutricionais apropriadas a s s o c i a d o a u m ( o u m a i s ) d o s s e g u i n t e s a s p e c t o s : perda de peso significativa (ou atraso de crescimento em crianças), deficiência nutricional significativa; dependência de alimentação enteral ou suplementos nutricionais orais; interferência marcante no funcionamento psicossocial."
+              "text": "No Transtorno Alimentar Restritivo Evitativo é necessário que exista um fracasso persistente em satisfazer as necessidades nutricionais apropriadas associado a um (ou mais) dos seguintes aspectos: perda de peso significativa (ou atraso de crescimento em crianças), deficiência nutricional significativa; dependência de alimentação enteral ou suplementos nutricionais orais; interferência marcante no funcionamento psicossocial."
             },
             {
               "letter": "D",
@@ -34737,7 +34737,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2023 - Psiquiatria da Infancia e Adolescencia",
           "topic": "Psiquiatria da Infancia e Adolescencia",
           "title": "Questao 19",
-          "text": "C r i a n ç a d e 3 a n o s d e i d a d e é t r a z i d a p a r a a v a l i a ç ã o s e n d o relatado pela mãe que até 16 meses a mesma tinha uma boa interação, olhava nos olhos, chamava pais e irmã mais velha pa ra b rin car e fin gi a d ar comi di nh a p ar a o b eb ê, imi tav a a irmã em algumas brincadeiras, compartilhava atenção, já falava algumas palavras como “mama”, “papa”, “ága” para se referir a água, “dá” para pedir algo e “não” conjuntamente com movimento de negativa com a cabeça. Mãe relata então que num período de aproxim adamente 1 mês a mesma parou de fazer contato visual, de responder ao chamado, deixou de falar (parecia muda), deixou de se interessar por brinquedos e passou a rodar objetos, não tendo mais nenhum interesse por ninguém da casa. Mãe atribuiu esta regressão ao fato de terem perdido a avó materna e o pedido de demissão da babá, ambas ficavam em tempo integral com a c r i a n ç a p o i s m o r a v a m c o m e l e s , e a s p e r d a s o c o r r e r a m a p r o x i m a d a m e n t e 1 m ê s a n t e s d o i n í c i o d o s s i n t o m a s . H á aproximadamente 3 meses a mesma voltou a balbuciar, e na ú l t i m a s e m a n a v o l t o u a f a l a r a l g u m a s p a l a v r a s q u e m ã e percebeu são das falas de alguns desenhos que gosta de ver repetidamente. Assinale a alternativa correta.",
+          "text": "Criança de 3 anos de idade é trazida para avaliação sendo relatado pela mãe que até 16 meses a mesma tinha uma boa interação, olhava nos olhos, chamava pais e irmã mais velha pa ra b rin car e fin gi a d ar comi di nh a p ar a o b eb ê, imi tav a a irmã em algumas brincadeiras, compartilhava atenção, já falava algumas palavras como “mama”, “papa”, “ága” para se referir a água, “dá” para pedir algo e “não” conjuntamente com movimento de negativa com a cabeça. Mãe relata então que num período de aproxim adamente 1 mês a mesma parou de fazer contato visual, de responder ao chamado, deixou de falar (parecia muda), deixou de se interessar por brinquedos e passou a rodar objetos, não tendo mais nenhum interesse por ninguém da casa. Mãe atribuiu esta regressão ao fato de terem perdido a avó materna e o pedido de demissão da babá, ambas ficavam em tempo integral com a criança pois moravam com eles, e as perdas ocorreram aproximadamente 1 mês antes do início dos sintomas. Há aproximadamente 3 meses a mesma voltou a balbuciar, e na última semana voltou a falar algumas palavras que mãe percebeu são das falas de alguns desenhos que gosta de ver repetidamente. Assinale a alternativa correta.",
           "options": [
             {
               "letter": "A",
@@ -34745,7 +34745,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "B",
-              "text": "A criança apresenta quadro de TEA regressivo com perda da fala e por consequênc i a m u i t o p r o v a v e l m e n t e apresenta deficiência intelectual comórbida."
+              "text": "A criança apresenta quadro de TEA regressivo com perda da fala e por consequênc i a muito provavelmente apresenta deficiência intelectual comórbida."
             },
             {
               "letter": "C",
@@ -34753,7 +34753,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "O fato de haver perda de habilidades desenvolvimentais i n d i c a q u e h á a l g u m a p a t o l o g i a c o m ó r b i d a , c o m o encefalopatia epiléptica ou adrenoleucodistrofia. Processo Seletivo – Residência Médica – Psiquiatria da Infância e da Adolescência – Áreas de Atuação (COREME/FM – 05/2022)"
+              "text": "O fato de haver perda de habilidades desenvolvimentais indica que há alguma patologia comórbida, como encefalopatia epiléptica ou adrenoleucodistrofia. Processo Seletivo – Residência Médica – Psiquiatria da Infância e da Adolescência – Áreas de Atuação (COREME/FM – 05/2022)"
             }
           ],
           "correctAnswer": "C",
@@ -35727,7 +35727,7 @@ window.BANCO_RMAIS_EXAMS = {
           "options": [
             {
               "letter": "A",
-              "text": "Acontecem alterações biológ i c a s m ú l t i p l a s p o r a u m e n t o de citocinas inflamatórias e BDNF, levando a aumento do cortisol e diminuição do glutamato. Há alterações dos neurotransmissores e GABA."
+              "text": "Acontecem alterações biológicas múltiplas por aumento de citocinas inflamatórias e BDNF, levando a aumento do cortisol e diminuição do glutamato. Há alterações dos neurotransmissores e GABA."
             },
             {
               "letter": "B",
@@ -35739,7 +35739,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Ocorrem mudanças biológicas complexas no cérebro devido à neuroinflamação por aumento de interleucinas, T N F a l f a e c o r t i s o l , l e v a n d o à a l t e r a ç ã o d o e i x o hipotálamo-hipófise-adrenal. Há alterações de neurotransmissores e GABA."
+              "text": "Ocorrem mudanças biológicas complexas no cérebro devido à neuroinflamação por aumento de interleucinas, TNF alfa e cortisol, levando à alteração do eixo hipotálamo-hipófise-adrenal. Há alterações de neurotransmissores e GABA."
             }
           ],
           "correctAnswer": "D",
@@ -35757,15 +35757,15 @@ window.BANCO_RMAIS_EXAMS = {
           "options": [
             {
               "letter": "A",
-              "text": "Orientação/educação de familiares e cuidadores, execução de atividades criativas e recreativas, prática de atividade física, ori entação para a realid ade, pet-terapia, arteterapia e musicoterapia."
+              "text": "Orientação/educação de familiares e cuidadores, execução de atividades criativas e recreativas, prática de atividade física, orientação para a realidade, pet-terapia, arteterapia e musicoterapia."
             },
             {
               "letter": "B",
-              "text": "Orientação de familiares e cuidadores, atividade física, terapia cognitivo comporta mental, atividades grupais criativas e recreativas, ativi dade física, musicoterapia e arteterapia."
+              "text": "Orientação de familiares e cuidadores, atividade física, terapia cognitivo comporta mental, atividades grupais criativas e recreativas, atividade física, musicoterapia e arteterapia."
             },
             {
               "letter": "C",
-              "text": "Orientação e e ducação de cuidadores e familiares, atividade física, reabilitaç ão cognitiva, meditação, musicoterapia, atividades sociabilizadoras, pet-terapia e arteterapia."
+              "text": "Orientação e e ducação de cuidadores e familiares, atividade física, reabilitação cognitiva, meditação, musicoterapia, atividades sociabilizadoras, pet-terapia e arteterapia."
             },
             {
               "letter": "D",
@@ -35813,7 +35813,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2024 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 4",
-          "text": "P a c i e n t e d e 5 1 a n o s , c a s a d o , 2 f i l h o s , c a t ó l i c o p r a t i c a n t e , advogado, procedente de São Paulo, SP, sem antecedentes psiquiátricos, comparece para consulta trazido pela filha. Apresenta-se com comportamen to desinibido, indiferente, com comportamentos perseverativos e compulsivos; tem prejuízos em abstração, está com dificuldades no exercício profissional por se distrair muito facilmente e não conseguir se organizar no trabalho e isolando-se da família. Começou a fumar, beber e comer excessivamente há aproximadamente 5 m e s e s . A m e m ó r i a e s t á p r e s e r v a d a . H á 2 m e s e s t e m i d o diariamente a igreja e insiste em falar sobre religião com todas as pessoas. Não refere queixa alguma e não acha que seu comportamento mudou.Qual ou quais seriam as hipóteses (s) diagnóstica (s) apenas com as informações apresentadas?",
+          "text": "Paciente de 51 anos, casado, 2 filhos, católico praticante, advogado, procedente de São Paulo, SP, sem antecedentes psiquiátricos, comparece para consulta trazido pela filha. Apresenta-se com comportamento desinibido, indiferente, com comportamentos perseverativos e compulsivos; tem prejuízos em abstração, está com dificuldades no exercício profissional por se distrair muito facilmente e não conseguir se organizar no trabalho e isolando-se da família. Começou a fumar, beber e comer excessivamente há aproximadamente 5 meses. A memória está preservada. Há 2 meses temido diariamente a igreja e insiste em falar sobre religião com todas as pessoas. Não refere queixa alguma e não acha que seu comportamento mudou.Qual ou quais seriam as hipóteses (s) diagnóstica (s) apenas com as informações apresentadas?",
           "options": [
             {
               "letter": "A",
@@ -35825,7 +35825,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "Demência vascular + demênc ia frontotemporal, variante comportamental."
+              "text": "Demência vascular + demência frontotemporal, variante comportamental."
             },
             {
               "letter": "D",
@@ -35889,7 +35889,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Transtorno depressivo, escle rose lateral amiotrófica, a, paralisia supranuclear progressiva."
+              "text": "Transtorno depressivo, esclerose lateral amiotrófica, a, paralisia supranuclear progressiva."
             }
           ],
           "correctAnswer": "C",
@@ -35967,7 +35967,7 @@ window.BANCO_RMAIS_EXAMS = {
           "options": [
             {
               "letter": "A",
-              "text": "E n v o l v e u m a t e o r i a n e u r o i n f l a m a t ó r i a , co m l i b e r a ç ã o d e interleucina 1 beta (IL-1beta), fator de necrose tumoral alfa (TNF- alfa), fator de crescimento semelhante à insulina tipo 1 (IGF-1) e metalanoproteinases, e outras substâncias, causando disfunção neuroquímica e o quadro sindrômico relacionado ao delirium."
+              "text": "Envolve uma teoria neuroinflamatória, co m liberação de interleucina 1 beta (IL-1beta), fator de necrose tumoral alfa (TNF- alfa), fator de crescimento semelhante à insulina tipo 1 (IGF-1) e metalanoproteinases, e outras substâncias, causando disfunção neuroquímica e o quadro sindrômico relacionado ao delirium."
             },
             {
               "letter": "B",
@@ -36009,7 +36009,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "O envelhecimento da população está relacionado à menor taxa de natalidade e maior expectativa de vida, com consequente inversão da pirâmide etária no país."
+              "text": "O envelhecimento da população está relacionado à menor taxa de natal idade e maior expectativa de vida, com consequente inversão da pirâmide etária no país."
             }
           ],
           "correctAnswer": "D",
@@ -36023,7 +36023,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2024 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 11",
-          "text": "Assinale a alternativa que con tém apenas fatores de risco reconhecidos para psicose de início tardio.",
+          "text": "Assinale a alternativa que contém apenas fatores de risco reconhecidos para psicose de início tardio.",
           "options": [
             {
               "letter": "A",
@@ -36117,7 +36117,7 @@ window.BANCO_RMAIS_EXAMS = {
           "options": [
             {
               "letter": "A",
-              "text": "Assim como na população g eral, os transtornos mais comuns nessa população foram aqueles do cluster C."
+              "text": "Assim como na população geral, os transtornos mais comuns nessa população foram aqueles do cluster C."
             },
             {
               "letter": "B",
@@ -36129,7 +36129,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Os transtornos de personalidade borderline e h i s t r i ô n i ca são os mais comuns na terceira idade, apresentando-se com instabilidade de relacionamentos interpessoais, causando maior isolamento dessa população. Processo Seletivo aos Programas de Residência Médica – Áreas de Atuações – Psicogeriatria – Edital: COREME/FM/AA nº 06/2023 – PROVA F13"
+              "text": "Os transtornos de personalidade borderline e hist ri ô ni ca são os mais comuns na terceira idade, apresentando-se com instabilidade de relacionamentos interpessoais, causando maior isolamento dessa população. Processo Seletivo aos Programas de Residência Médica – Áreas de Atuações – Psicogeriatria – Edital: COREME/FM/AA nº 06/2023 – PROVA F13"
             }
           ],
           "correctAnswer": "A",
@@ -36173,7 +36173,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2024 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 16",
-          "text": "M u l h e r d e 7 2 a n o s , 1 1 a n o s de escolaridade, tabagista e hipertensa. Iniciou, há 1 ano, comportamentos não condizentes com a sua personalidade. Ofende familiares quando contrariada, chegando a agredi-los fisicamente em diversas ocasiões; comportamentos descritos como “egoístas” (por exemplo: a paciente não foi ao velório de um primo próximo, pois já tinha uma viagem agendada), tem pulado refeições para comer apenas pães e doces. Não está usando psicofármacos. MoCA: 2 0 em 30 pontos possíveis, com prejuízos marcados em funções executivas e memória tardia (com benefício de pista s). Ressonância magnética de crânio revela microangiopatia (FAZEKAS 2) e atrofia cortical de predomínio frontal, parietal e temporal, mais acentuados à direita. Exames de sangue para exclusão de causas potencialmente reversíveis de demência foram normais. Assinale a alternativa que contém condutas terapêuticas adequadas para o caso apresentado.",
+          "text": "Mulher de 72 anos, 11 anos de escolaridade, tabagista e hipertensa. Iniciou, há 1 ano, comportamentos não condizentes com a sua personalidade. Ofende familiares quando contrariada, chegando a agredi-los fisicamente em diversas ocasiões; comportamentos descritos como “egoístas” (por exemplo: a paciente não foi ao velório de um primo próximo, pois já tinha uma viagem agendada), tem pulado refeições para comer apenas pães e doces. Não está usando psicofármacos. MoCA: 2 0 em 30 pontos possíveis, com prejuízos marcados em funções executivas e memória tardia (com benefício de pista s). Ressonância magnética de crânio revela microangiopatia (FAZEKAS 2) e atrofia cortical de predomínio frontal, parietal e temporal, mais acentuados à direita. Exames de sangue para exclusão de causas potencialmente reversíveis de demência foram normais. Assinale a alternativa que contém condutas terapêuticas adequadas para o caso apresentado.",
           "options": [
             {
               "letter": "A",
@@ -36203,7 +36203,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2024 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 17",
-          "text": "Mulher de 71 anos, com transtorno bipolar desde jovem e histórico de refratariedade a diversos esquemas de associação de psicofármacos em tempo e doses adequadas. Entretanto, há 10 anos encon tra-se em remissão com ácido valproico 1 g/dia, quetiapina 150 mg/dia e sertralina 150 mg/dia. Também faz uso de valsartana 160 mg/dia (hipertensão arterial sistêmic a) e levotiroxina 88 μg/dia (hipotireoidismo). Estava co gnitiva e funcionalmente preservada, mas há 2 semanas, apresenta agitação psicomotora, delírios persecutórios envolvendo familiares, gerando irritabilidade, além de desorganização do comportamento (tentou usar o cartão do banco para abrir a porta de casa). No momento da avaliação, a paciente está vigil e c a l m a , m a s c o m a t i t u d e d e d e s c o n f i a n ç a e m r e l a ç ã o a o examinador. O pensamento tem fluxo normal, mas com pobreza de associação entre as ideias, entremeadas por excesso de assuntos irrelevantes. Perde-se no seu discurso ao se distrair com estímulos externos. Ao exame físico: PA 1 3 5 x 8 0 m m H g , e u p n e i c a , c o r a d a , h i d r a t a d a , a f e b r i l , F C 8 2 bpm, avaliação cardiopulmonar, abdominal, pele e cavidade oral sem alterações; presença de ataxia de marcha, tremores de intenção intensos, porém sem sinais de parkinsonismo. Assinale a alternativa que contém a principal hipótese diagnóstica e condutas adequadas para o caso apresentado.",
+          "text": "Mulher de 71 anos, com transtorno bipolar desde jovem e histórico de refratariedade a diversos esquemas de associação de psicofármacos em tempo e doses adequadas. Entretanto, há 10 anos encon tra-se em remissão com ácido valproico 1 g/dia, quetiapina 150 mg/dia e sertralina 150 mg/dia. Também faz uso de valsartana 160 mg/dia (hipertensão arterial sistêmic a) e levotiroxina 88 μg/dia (hipotireoidismo). Estava co gnitiva e funcionalmente preservada, mas há 2 semanas, apresenta agitação psicomotora, delírios persecutórios envolvendo familiares, gerando irritabilidade, além de desorganização do comportamento (tentou usar o cartão do banco para abrir a porta de casa). No momento da avaliação, a paciente está vigil e calma, mas com atitude de desconfiança em relação ao examinador. O pensamento tem fluxo normal, mas com pobreza de associação entre as ideias, entremeadas por excesso de assuntos irrelevantes. Perde-se no seu discurso ao se distrair com estímulos externos. Ao exame físico: PA 135 x 80 mmHg, eupneica, corada, hidratada, afebril, FC 82 bpm, avaliação cardiopulmonar, abdominal, pele e cavidade oral sem alterações; presença de ataxia de marcha, tremores de intenção intensos, porém sem sinais de parkinsonismo. Assinale a alternativa que contém a principal hipótese diagnóstica e condutas adequadas para o caso apresentado.",
           "options": [
             {
               "letter": "A",
@@ -36219,7 +36219,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Delirium; investigação com exames laboratoriais, pode-se utilizar haloperidol + prometa zina se agitação ou psicose graves."
+              "text": "Delirium; investigação com exames laboratoriais, pode-se utilizar haloperidol + prometazina se agitação ou psicose graves."
             }
           ],
           "correctAnswer": "C",
@@ -36305,11 +36305,11 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "E m u m p a c i e n t e c o m a t rofia mesial temporal bilateralmente, compatível c om escore 3 na escala MTA (mesial temporal atrophy ), com patologia Aβ42/40 confirmada, e com captação de proteína tau pelo PET-tau nessa região, pode-se consi derar a taupatia como uma condição primária, relacionada à idade."
+              "text": "Em um paciente com a t rofia mesial temporal bilateralmente, compatível c om escore 3 na escala MTA (mesial temporal atrophy ), com patologia Aβ42/40 confirmada, e com captação de proteína tau pelo PET-tau nessa região, pode-se consi derar a taupatia como uma condição primária, relacionada à idade."
             },
             {
               "letter": "D",
-              "text": "Quando a testagem por meio de biomarcadores específicos, como placas amiloides e emaranhados neurofibrilares, ainda não tenha sido efetuada, ou quando o resultado deste procedimen t o é i n c o n c l u s i v o , e m u m indivíduo com declínio cognitivo amnéstico a designação mais apropriada de sua co ndição é a de “Doença de Alzheimer”, ao invés de “Síndrome Clínica” do tipo Alzheimer."
+              "text": "Quando a testagem por meio de biomarcadores específicos, como placas amiloides e emaranhados neurofibrilares, ainda não tenha sido efetuada, ou quando o resultado deste procedimen to é in con cl us iv o, em um indivíduo com declínio cognitivo amnéstico a designação mais apropriada de sua co ndição é a de “Doença de Alzheimer”, ao invés de “Síndrome Clínica” do tipo Alzheimer."
             }
           ],
           "correctAnswer": "A",
@@ -36323,7 +36323,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2024 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 21",
-          "text": "Em relação à hipótese de depressão vascular, assinale a alternativa correta. ( A ) A d e p r e s s ã o v a s c u l a r s e m a n i f e s t a c o m o u m q u a d r o depressivo de início tardio. Histórico de depressão de início precoce exclui este diagnóstico.",
+          "text": "Em relação à hipótese de depressão vascular, assinale a alternativa correta. (A) A depressão vascular se manifesta como um quadro depressivo de início tardio. Histórico de depressão de início precoce exclui este diagnóstico.",
           "options": [
             {
               "letter": "B",
@@ -36349,7 +36349,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2024 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 22",
-          "text": "Paciente de 68 anos, sexo masculino, 4 anos de escolaridade, trabalhador rural aposentado, casado há 43 anos, sem antecedente psiquiátrico conhecido. Há cerca de 1 ano iniciou discurso de que sua esposa o está traindo com o jardineiro do sítio onde moram. Evoluiu com irritabilidade e hostilidade com a esposa, xingando-a e ameaçando o jardineiro. Tem controlado a rotina da parceira e sempre quer acompanhá-la quando sai de casa. Apesar das argumentações da esposa, o paciente é irredutível e tem certeza de que está sendo traído. Segue independente para atividades de vida diária, administra o sítio, faz compras, toma as m edicações sozinho, apesar de parecer mais desanimado. Sono e apetite preservados. A filha e a esposa demonstram grande preocupação.Paciente nega alucinações. Nega antecedente psiquiátrico familiar. Portador de hipertensão arterial sistêmica, diabetes melito e hipotireoidismo, em uso de losartana 50 mg/dia, metformina 1 . 0 0 0 m g / d i a e l e v o t i r o x i n a 7 5 μ g / d i a . P a s s o u e m c o n s u l t a com clínico geral há 6 semanas. Na avaliação, o exame físico não apresentava alterações, porém acreditou que o paciente poderia estar deprimido, introduziu sertralina 50 mg/dia, sem qualquer melhora até o momento. Em relação ao caso apresentado, assinale a alternativa correta.",
+          "text": "Paciente de 68 anos, sexo masculino, 4 anos de escolaridade, trabalhador rural aposentado, casado há 43 anos, sem antecedente psiquiátrico conhecido. Há cerca de 1 ano iniciou discurso de que sua esposa o está traindo com o jardineiro do sítio onde moram. Evoluiu com irritabilidade e hostilidade com a esposa, xingando-a e ameaçando o jardineiro. Tem controlado a rotina da parceira e sempre quer acompanhá-la quando sai de casa. Apesar das argumentações da esposa, o paciente é irredutível e tem certeza de que está sendo traído. Segue independente para atividades de vida diária, administra o sítio, faz compras, toma as medicações sozinho, apesar de parecer mais desanimado. Sono e apetite preservados. A filha e a esposa demonstram grande preocupação.Paciente nega alucinações. Nega antecedente psiquiátrico familiar. Portador de hipertensão arterial sistêmica, diabetes melito e hipotireoidismo, em uso de losartana 50 mg/dia, metformina 1 . 0 0 0 m g / dia e levotiroxina 75 μ g / dia. Passou em consulta com clínico geral há 6 semanas. Na avaliação, o exame físico não apresentava alterações, porém acreditou que o paciente poderia estar deprimido, introduziu sertralina 50 mg/dia, sem qualquer melhora até o momento. Em relação ao caso apresentado, assinale a alternativa correta.",
           "options": [
             {
               "letter": "A",
@@ -36379,7 +36379,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2024 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 23",
-          "text": "C o m r e l a ç ã o a o d i a g n ó s t i c o d e d e m ê n c i a n a d o e n ç a d e Alzheimer, assinale a alternativa correta.",
+          "text": "Com relação ao diagnóstico de demência na doença de Alzheimer, assinale a alternativa correta.",
           "options": [
             {
               "letter": "A",
@@ -36409,7 +36409,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2024 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 24",
-          "text": "Paciente do sexo feminino, 75 anos, hipertensa, Dm2, diagnóstico de demência de Alzheimer (CDR2 e katz 5). Usa donepezila 10 mg/dia, losartan a 50 mg 2x/dia, metformina 1.000 mg/dia. Vem para consulta em ambulatório de psicogeriatria acomp anhada do esposo e filha. Contam que tem ficado irritada quando au xiliam em seus autocuidados ( b a n h o e v e s t i r - s e ) o u q u a n d o é i m p e d i d a d e s a i r d e c a s a desacompanhada. Tem esquecido que se alimentou e deseja comer novamente. Assinale qual a melhor conduta para o momento.",
+          "text": "Paciente do sexo feminino, 75 anos, hipertensa, Dm2, diagnóstico de demência de Alzheimer (CDR2 e katz 5). Usa donepezila 10 mg/dia, losartan a 50 mg 2x/dia, metformina 1.000 mg/dia. Vem para consulta em ambulatório de psicogeriatria acomp anhada do esposo e filha. Contam que tem ficado irritada quando auxiliam em seus autocuidados (banho e vestir - se) ou quando é impedida de sair de casa desacompanhada. Tem esquecido que se alimentou e deseja comer novamente. Assinale qual a melhor conduta para o momento.",
           "options": [
             {
               "letter": "A",
@@ -36447,11 +36447,11 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "B",
-              "text": "Na demência com corpos de Lewy, o paciente apresenta as características clássicas, como flutuação do estado de vigilância e da atenção; alu cinações visuais detalhadas, bem estruturadas e persistentes principalmente de animais pequenos; distúrbio comportamental do sono R E M , d e c l í n i o c o g n i t i v o e parkinsonismo decorrente de alterações da atividade dopaminérgica, sendo que as alterações neuropsiquiátricas se manifestam no mínimo 1 ano após o início das alterações motoras."
+              "text": "Na demência com corpos de Lewy, o paciente apresenta as características clássicas, como flutuação do estado de vigilância e da atenção; alucinações visuais detalhadas, bem estruturadas e persistentes principalmente de animais pequenos; distúrbio comportamental do sono REM, declínio cognitivo e parkinsonismo decorrente de alterações da atividade dopaminérgica, sendo que as alterações neuropsiquiátricas se manifestam no mínimo 1 ano após o início das alterações motoras."
             },
             {
               "letter": "C",
-              "text": "O FDG-PET (t omografia por emissão de pósitrons para a avaliação do metabolismo g licolítico cerebral com fluordeoxiglicose) é uma técnica de neuroimagem utilizada para a d e t e c ç ã o d o s p a d r õ e s e a e x t e n s ã o d a disfunção neuronal de demência em fase inicial, ou quando há incerteza do diagnóstico clínico, por indicar hipometabolismo cerebral regio nal; entretanto, há falta de evidência que dê suporte e acurácia à sua aplicação em indivíduos em condições pré-clínicas."
+              "text": "O FDG-PET (tomografia por emissão de pósitrons para a avaliação do metabolismo g licolítico cerebral com fluordeoxiglicose) é uma técnica de neuroimagem utilizada para a detecção dos padrões e a extensão da disfunção neuronal de demência em fase inicial, ou quando há incerteza do diagnóstico clínico, por indicar hipometabolismo cerebral regional; entretanto, há falta de evidência que dê suporte e acurácia à sua aplicação em indivíduos em condições pré-clínicas."
             },
             {
               "letter": "D",
@@ -36469,7 +36469,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2024 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 26",
-          "text": "Assinale a alternativa que corre sponde, respectivamente, a u m f a t o r d e r i s c o e u m f a t o r p r o t e t o r p a r a d o e n ç a d e Alzheimer.",
+          "text": "Assinale a alternativa que corresponde, respectivamente, a um fator de risco e um fator protetor para doença de Alzheimer.",
           "options": [
             {
               "letter": "A",
@@ -36477,7 +36477,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "B",
-              "text": "Hiperhomocisteinemia e obesidade na meia idade. ( C ) M a i o r I M C n a t e r c e i r a i d a d e ( n ã o o b e s i d a d e ) e m a i o r escolaridade."
+              "text": "Hiperhomocisteinemia e obesidade na meia idade. (C) Maior IMC na terceira idade (não obesidade) e maior escolaridade."
             },
             {
               "letter": "D",
@@ -36495,7 +36495,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2024 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 27",
-          "text": "P a c i e n t e d o s e x o m a s c u l i n o , 70 anos, ensino superior completo, acompanhado pela esposa. Relatam que no último ano paciente bateu o carro duas vezes, está mais lento do que costumava ser e esquece itens do supermercado que a esposa solicita. Ele também repete com frequência as mesmas perguntas. Na última semana iniciou com discurso que vê uma criança em seu quarto, quando está sozinho. Contam que dormiam em camas separadas há anos, porque ele acordava à noite gritando ou batendo na esposa. Nega comorbidades e uso de medicações. Rea lizado teste cognitivo Montreal Cognitive Assessment (MoCA) e sua pontuação foi 22/30, com  pontos perdidos em trilhas (-1), desenho do cubo (-1),\nnúmeros e ponteiros do relógio (-2), dígitos inverso (-1),\nevocação (-3:-recuperando 2 com dicas) e dia do mês (-1 ). Ao exame apresentava marcha lentificada e postura levemente curvada, além de bradicinesia. Realizada polissonografia que mostrou “ausência de atonia em sono REM”. Em relação ao caso é correto afirmar:",
+          "text": "Paciente do sexo masculino, 70 anos, ensino superior completo, acompanhado pela esposa. Relatam que no último ano paciente bateu o carro duas vezes, está mais lento do que costumava ser e esquece itens do supermercado que a esposa solicita. Ele também repete com frequência as mesmas perguntas. Na última semana iniciou com discurso que vê uma criança em seu quarto, quando está sozinho. Contam que dormiam em camas separadas há anos, porque ele acordava à noite gritando ou batendo na esposa. Nega comorbidades e uso de medicações. Realizado teste cognitivo Montreal Cognitive Assessment (MoCA) e sua pontuação foi 22/30, com  pontos perdidos em trilhas (-1), desenho do cubo (-1),\nnúmeros e ponteiros do relógio (-2), dígitos inverso (-1),\nevocação (-3:-recuperando 2 com dicas) e dia do mês (-1 ). Ao exame apresentava marcha lentificada e postura levemente curvada, além de bradicinesia. Realizada polissonografia que mostrou “ausência de atonia em sono REM”. Em relação ao caso é correto afirmar:",
           "options": [
             {
               "letter": "A",
@@ -36531,15 +36531,15 @@ window.BANCO_RMAIS_EXAMS = {
           "options": [
             {
               "letter": "A",
-              "text": "Em pacientes com demência e que apresentam episódios de agitação e sintomas psicóticos, a prescrição de antipsicótico injetável de ação prolongada representa uma estratégia pertinente, que deve ser implementada na rotina de tratamento visando a uma melhor evolução clínica e mais facilidade de m anejo para os familiares e cuidadores."
+              "text": "Em pacientes com demência e que apresentam episódios de agitação e sintomas psicóticos, a prescrição de antipsicótico injetável de ação prolongada representa uma estratégia pertinente, que deve ser implementada na rotina de tratamento visando a uma melhor evolução clínica e mais facilidade de manejo para os familiares e cuidadores."
             },
             {
               "letter": "B",
-              "text": "No tratamento ambulatorial de um paciente com demência, e que apresente agitação grave ou psicose, com riscos clinicamente relevantes a si próprio e estresse excessivo, a prescrição de risperidona deve ser introduzida com doses inicialmente altas visando o imediato e pleno c o n t r o l e d o q u a d r o c l í n i c o , u m a v e z q u e d o s e s b a i x a s desta medicação causam sedação e não são efetivas."
+              "text": "No tratamento ambulatorial de um paciente com demência, e que apresente agitação grave ou psicose, com riscos clinicamente relevantes a si próprio e estresse excessivo, a prescrição de risperidona deve ser introduzida com doses inicialmente altas visando o imediato e pleno controle do quadro clínico, uma vez que doses baixas desta medicação causam sedação e não são efetivas."
             },
             {
               "letter": "C",
-              "text": "Na demência com corpos de Lewy, observam-se sintomas psicóticos, como alucinações visuais e delírios, além de declínio cognitivo e funciona l; por isso, a sequência do tratamento farmacológico envolve, inicialmente, a prescrição de risperidona pa r a o c o n t r o l e d a p s i c o s e , cronologicamente seguida de um anticolinesterásico para atenuação do declínio da cognição."
+              "text": "Na demência com corpos de Lewy, observam-se sintomas psicóticos, como alucinações visuais e delírios, além de declínio cognitivo e funciona l; por isso, a sequência do tratamento farmacológico envolve, inicialmente, a prescrição de risperidona pa r ao controle da psicose, cronologicamente seguida de um anticolinesterásico para atenuação do declínio da cognição."
             },
             {
               "letter": "D",
@@ -36587,7 +36587,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2024 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 30",
-          "text": "Sr. Horácio, 85 anos, foi internado na enfermaria para realização de colonoscopia diagnóstica em virtude de queda de hemoglobina com ferropenia. É portador de hipertensão arterial sistêmica, diabetes melito, doença renal crônica (estágio IIIb A2), insuficiência cardíaca com fração de ejeção preservada (ICFEP), hiperplasia prostática benigna, dislipidemia, obesidade, degeneração macular relacionada à idade (DMRI), presbiacusia e doença hepática gordurosa associada à síndrome metabólica. • Medicamentos em uso: Metoprolol 25 mg 12/12 h Rosuvastatina 20 mg 1x/dia Ezetimiba 10 mg 1x/dia Empaglifozina 25 mg 1x/dia Finasterida 5 mg 1x/dia Tansulosina 0,4 mg 1x/dia Valsartana 160 mg 1x/dia Insulina NPH 16UI bed-time Pioglitazona 30 mg 1x/dia Metformina 500 mg 1x/dia Seus remédios foram mantidos pelo médico que o recebeu na enfermaria, foram adicionados apenas os laxativos e soro fisiológico para preparo do exame, além de dieta líquida sem resíduos com jejum a partir das 22 h. Durante a madrugada, acorda repentinamente em um episódio de agitação intenso chamando pelos já falecidos pais, retira o acesso venoso p e r i f é r i c o ( A V P ) e e n c o n t r a - s e d e s o r i e n t a d o e m t e m p o e espaço. Considerando a princ ipal hipótese diagnóstica sindrômica, qual a principal medida a ser feita de imediato?",
+          "text": "Sr. Horácio, 85 anos, foi internado na enfermaria para realização de colonoscopia diagnóstica em virtude de queda de hemoglobina com ferropenia. É portador de hipertensão arterial sistêmica, diabetes melito, doença renal crônica (estágio IIIb A2), insuficiência cardíaca com fração de ejeção preservada (ICFEP), hiperplasia prostática benigna, dislipidemia, obesidade, degeneração macular relacionada à idade (DMRI), presbiacusia e doença hepática gordurosa associada à síndrome metabólica. • Medicamentos em uso: Metoprolol 25 mg 12/12 h Rosuvastatina 20 mg 1x/dia Ezetimiba 10 mg 1x/dia Empaglifozina 25 mg 1x/dia Finasterida 5 mg 1x/dia Tansulosina 0,4 mg 1x/dia Valsartana 160 mg 1x/dia Insulina NPH 16UI bed-time Pioglitazona 30 mg 1x/dia Metformina 500 mg 1x/dia Seus remédios foram mantidos pelo médico que o recebeu na enfermaria, foram adicionados apenas os laxativos e soro fisiológico para preparo do exame, além de dieta líquida sem resíduos com jejum a partir das 22 h. Durante a madrugada, acorda repentinamente em um episódio de agitação intenso chamando pelos já falecidos pais, retira o acesso venoso periférico (AVP) e encontra - se desorientado em tempo e espaço. Considerando a principal hipótese diagnóstica sindrômica, qual a principal medida a ser feita de imediato?",
           "options": [
             {
               "letter": "A",
@@ -36634,7 +36634,7 @@ window.BANCO_RMAIS_EXAMS = {
           "options": [
             {
               "letter": "A",
-              "text": "Por envolverem, quase que invariavelmente, algum grau de concepções inacessíveis direta e objetivamente, não podem ser consideradas científicas."
+              "text": "Por envolver em, quase que invariavelmente, algum grau de concepções inacessíveis direta e objetivamente, não podem ser consideradas científicas."
             },
             {
               "letter": "B",
@@ -36801,7 +36801,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Que o artigo “A eficácia simbólica” (1949), de Claude Lévi- Strauss, revelou detalhadamente o modo, através do qual, mitologias pessoais ou culturais modificam processos fisiológicos, elucidando, pela primeira vez, as conexões mente-corpo."
+              "text": "Que o artigo “A eficácia simbólica” (1949), de Claude Lévi- Strauss, revelou detalhada mente o modo, através do qual, mitologias pessoais ou culturais modificam processos fisiológicos, elucidando, pela primeira vez, as conexões mente-corpo."
             }
           ],
           "correctAnswer": "C",
@@ -37002,7 +37002,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2024 - Psicoterapia",
           "topic": "Psicoterapia",
           "title": "Questao 13",
-          "text": "Na mitologia grega há uma figura que passou a ser relacionada com a imagem arquetípica do curador ferido: Quiron. Quiron, centauro versado nas artes da cura, que fora ferido por uma flechada destinada, na verdade, a outros desses seres. A flecha feriu-o profunda e dolorosamente e sua ferida jamais cicatrizava. Em 1983 o psiquiatra e analista junguiano Groesbeck escreve o artigo A Imagem Arquetípica do Curador Ferido. Leia o trecho do artigo a seguir: “O paciente busca externamente alguém que o cure, um médico. O médico sai ao encontro dos pacientes, como sua vocação. Apresenta-se com todas as prerrogativas da sua profissão, treinamento específico, técnicas, reputação, autorização etc. No paciente, mobilizado por sua doença, ativa-se \"aquele que cura, ou médico interior”. Este, no entanto, não se integra a consciência, sendo projetado e constelado pela persona do médico. Da mesma forma, no médico ativa-se o seu lado interior ferido, sua própria doença - psíquica, somática, ou ambas - ainda não resolvida - ao entrar em contato com a pessoa enferma. Este outro polo da imagem arquetípica é mais projetado sobre o paciente do que vivido no plano interior, Se o relacionamento se dá nesse nível, mesmo com o emprego de remédios físicos ou psicológicos, o movimento em direção a uma cura de fato não chega a ocorrer. A verdadeira cura só pode acontecer quando o paciente entra em contato com o seu \"médico interior\" e dele recebe ajuda. E isto só pode se dar caso sejam retiradas as projeções feitas sobre a persona do médico. Para tanto, é necessário que o médico entre em contato com o seu próprio lado ferido. Na hipótese de as projeções serem mantidas, o que tanto o médico como o paciente vão tentar fazer é, conforme esclarece Guggenbihl, \"curar a dissociação por meio de poder\" (p. 94-95). Cada um manipulando o outro na tentativa de moldá-lo a um papel estereotipado. Existe, no entanto, um movimento espontâneo no sentido da restauração do equilíbrio (homeostase) interno da polaridade das imagens arquetípicas. Se isto de alguma forma não ocorrer, os problemas da sombra do médico podem ser ativados (p. 125- 126).\" Apesar de seu jargão específico, é possível considerar que este trecho contém conceitos relevantes, não apenas dentro da tradição junguiana, mas também para a pesquisa sobre os aspectos comuns das psicoterapias, e para a prática clínica de psicoterapeutas como um todo. Assinale a alternativa correta.",
+          "text": "Na mitologia grega há uma figura que passou a ser relacionada com a imagem arquetípica do curador ferido: Quiron. Quiron, centauro versado nas artes da cura, que fora ferido por uma flechada destinada, na verdade, a outros desses seres. A flecha feriu-o profunda e dolorosamente e sua ferida jamais cicatrizava. Em 1983 o psiquiatra e analista junguiano Groesbeck escreve o artigo A Imagem Arquetípica do Curador Ferido. Leia o trecho do artigo a seguir: “O paciente busca externa mente alguém que o cure, um médico. O médico sai ao encontro dos pacientes, como sua vocação. Apresenta-se com todas as prerrogativas da sua profissão, treinamento específico, técnicas, reputação, autorização etc. No paciente, mobilizado por sua doença, ativa-se \"aquele que cura, ou médico interior”. Este, no entanto, não se integra a consciência, sendo projetado e constelado pela persona do médico. Da mesma forma, no médico ativa-se o seu lado interior ferido, sua própria doença - psíquica, somática, ou ambas - ainda não resolvida - ao entrar em contato com a pessoa enferma. Este outro polo da imagem arquetípica é mais projetado sobre o paciente do que vivido no plano interior, Se o relacionamento se dá nesse nível, mesmo com o emprego de remédios físicos ou psicológicos, o movimento em direção a uma cura de fato não chega a ocorrer. A verdadeira cura só pode acontecer quando o paciente entra em contato com o seu \"médico interior\" e dele recebe ajuda. E isto só pode se dar caso sejam retiradas as projeções feitas sobre a persona do médico. Para tanto, é necessário que o médico entre em contato com o seu próprio lado ferido. Na hipótese de as projeções serem mantidas, o que tanto o médico como o paciente vão tentar fazer é, conforme esclarece Guggenbihl, \"curar a dissociação por meio de poder\" (p. 94-95). Cada um manipulando o outro na tentativa de moldá-lo a um papel estereotipado. Existe, no entanto, um movimento espontâneo no sentido da restauração do equilíbrio (homeostase) interno da polaridade das imagens arquetípicas. Se isto de alguma forma não ocorrer, os problemas da sombra do médico podem ser ativados (p. 125- 126).\" Apesar de seu jargão específico, é possível considerar que este trecho contém conceitos relevantes, não apenas dentro da tradição junguiana, mas também para a pesquisa sobre os aspectos comuns das psicoterapias, e para a prática clínica de psicoterapeutas como um todo. Assinale a alternativa correta.",
           "options": [
             {
               "letter": "A",
@@ -37014,7 +37014,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "Se as dores dos pacientes fazem seus médicos se lembrarem de suas próprias dores, o trabalho clínico se torna contaminado. A dupla irá tentar “curar a dissociação por meio de poder\", e ambos se tornarão estereotipados em seus papéis. Portanto, quando isto ocorre o trabalho precisa ser interrompido."
+              "text": "Se as dores dos pacientes fazem seus médicos se lembrar em de suas próprias dores, o trabalho clínico se torna contaminado. A dupla irá tentar “curar a dissociação por meio de poder\", e ambos se tornarão estereotipados em seus papéis. Portanto, quando isto ocorre o trabalho precisa ser interrompido."
             },
             {
               "letter": "D",
@@ -37949,7 +37949,7 @@ window.BANCO_RMAIS_EXAMS = {
           "options": [
             {
               "letter": "A",
-              "text": "Elas podem casar se expressarem sua vontade diretamente ou por meio de seus curadores."
+              "text": "Elas podem casar se expressarem sua vontade diretamente ou por meio de seus cura dores."
             },
             {
               "letter": "B",
@@ -38306,7 +38306,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "A American PsychiatricAssociation (APA) possui uma regra em seu código de ética conhecida como Goldwater Rule, que proíbe seus associados de fornecerem opiniões profissionais sobre figuras públicas sem que tenham feito uma avaliação formal de tal indivíduo."
+              "text": "A American PsychiatricAssociation (APA) possui uma regra em seu código de ética conhecida como Goldwater Rule, que proíbe seus associados de fornecer em opiniões profissionais sobre figuras públicas sem que tenham feito uma avaliação formal de tal indivíduo."
             }
           ],
           "correctAnswer": "D",
@@ -38480,7 +38480,7 @@ window.BANCO_RMAIS_EXAMS = {
           "options": [
             {
               "letter": "A",
-              "text": "Apesar da motivação inconsciente, trata-se de ato deliberado da genitora que deve ser responsabilizada penalmente imediatamente."
+              "text": "Apesar da motivação inconsciente, trata-se de ato deliberado da genitora que deve ser responsabilizada penal mente imediatamente."
             },
             {
               "letter": "B",
@@ -39615,7 +39615,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Ano Adicional",
           "topic": "Ano Adicional",
           "title": "Questao 6",
-          "text": "A cetamina é um depressor do sistema nervoso central. Entre as alterações a seguir, assinal e a alternativa que apresenta uma alteração importante.",
+          "text": "A cetamina é um depressor do sistema nervoso central. Entre as alterações a seguir, assinale a alternativa que apresenta uma alteração importante.",
           "options": [
             {
               "letter": "A",
@@ -39767,7 +39767,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Ano Adicional",
           "topic": "Ano Adicional",
           "title": "Questao 11",
-          "text": "#### TEXTO PARA AS QUESTÕES DE 11 A 14 \nHomem cis, 41 anos de idade, pardo, pintor, evangélico, natural de Salvador (BA), há 3 anos morando em São Paulo (SP). Apresenta-se no CAPS AD com a seguinte frase: “Vim me internar”. Paciente diz que quer se internar e deixar as drogas para voltar a Salvador. Iniciou uso de Cannabis sp. aos 9 anos de idade, avançando para outras drogas aos 14 anos de idade, juntamente com tabaco. Atualmente em uso compulsivo diário de crack (5-8 g); tabaco (40-60 cigarros). Uso eventual de Cannabis sp. em pequena quantidade Uso diário de álcool. Paciente esteve internado recentemente. Na alta, recaiu no mesmo dia. Tentativa de suicídio aos 39 anos de idade. Nega comorbidades; alergias; cirurgias prévias; nega IST ou DST; nega síndrome de abstinência do álcool. Tem uma ﬁlha de 12 anos de idade que mora com a mãe em Salvador - BA, atualmente sem contato com familiares (há 2 anos). Pai é etilista crônico e usuário de Cannabis sp. e mãe é etilista crônica. Com relação ao procedimento no CAPS, qual é o primeiro atendimento?",
+          "text": "#### TEXTO PARA AS QUESTÕES DE 11 A 14 \nHomem cis, 41 anos de idade, pardo, pintor, evangélico, natural de Salvador (BA), há 3 anos morando em São Paulo (SP). Apresenta-se no CAPS AD com a seguinte frase: “Vim me internar”. Paciente diz que quer se internar e deixar as drogas para voltar a Salvador. Iniciou uso de Cannabis sp. aos 9 anos de idade, avançando para outras drogas aos 14 anos de idade, juntamente com tabaco. Atualmente em uso compulsivo diário de crack (5-8 g); tabaco (40-60 cigarros). Uso eventual de Cannabis sp. em pequena quantidade Uso diário de álcool. Paciente esteve internado recentemente. Na alta, recaiu no mesmo dia. Tentativa de suicídio aos 39 anos de idade. Nega comorbidades; alergias; cirurgias prévias; nega IST ou DST; nega síndrome de abstinência do álcool. Tem uma filha de 12 anos de idade que mora com a mãe em Salvador - BA, atualmente sem contato com familiares (há 2 anos). Pai é etilista crônico e usuário de Cannabis sp. e mãe é etilista crônica. Com relação ao procedimento no CAPS, qual é o primeiro atendimento?",
           "options": [
             {
               "letter": "A",
@@ -39799,7 +39799,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Ano Adicional",
           "topic": "Ano Adicional",
           "title": "Questao 12",
-          "text": "#### TEXTO PARA AS QUESTÕES DE 11 A 14 \nHomem cis, 41 anos de idade, pardo, pintor, evangélico, natural de Salvador (BA), há 3 anos morando em São Paulo (SP). Apresenta-se no CAPS AD com a seguinte frase: “Vim me internar”. Paciente diz que quer se internar e deixar as drogas para voltar a Salvador. Iniciou uso de Cannabis sp. aos 9 anos de idade, avançando para outras drogas aos 14 anos de idade, juntamente com tabaco. Atualmente em uso compulsivo diário de crack (5-8 g); tabaco (40-60 cigarros). Uso eventual de Cannabis sp. em pequena quantidade Uso diário de álcool. Paciente esteve internado recentemente. Na alta, recaiu no mesmo dia. Tentativa de suicídio aos 39 anos de idade. Nega comorbidades; alergias; cirurgias prévias; nega IST ou DST; nega síndrome de abstinência do álcool. Tem uma ﬁlha de 12 anos de idade que mora com a mãe em Salvador - BA, atualmente sem contato com familiares (há 2 anos). Pai é etilista crônico e usuário de Cannabis sp. e mãe é etilista crônica. Com relação ao procedimento no CAPS, qual é o primeiro atendimento?\nA elaboração de um Projeto Terapêutico Singular (PTS) para esse paciente deve envolver quais das ações a seguir?",
+          "text": "#### TEXTO PARA AS QUESTÕES DE 11 A 14 \nHomem cis, 41 anos de idade, pardo, pintor, evangélico, natural de Salvador (BA), há 3 anos morando em São Paulo (SP). Apresenta-se no CAPS AD com a seguinte frase: “Vim me internar”. Paciente diz que quer se internar e deixar as drogas para voltar a Salvador. Iniciou uso de Cannabis sp. aos 9 anos de idade, avançando para outras drogas aos 14 anos de idade, juntamente com tabaco. Atualmente em uso compulsivo diário de crack (5-8 g); tabaco (40-60 cigarros). Uso eventual de Cannabis sp. em pequena quantidade Uso diário de álcool. Paciente esteve internado recentemente. Na alta, recaiu no mesmo dia. Tentativa de suicídio aos 39 anos de idade. Nega comorbidades; alergias; cirurgias prévias; nega IST ou DST; nega síndrome de abstinência do álcool. Tem uma filha de 12 anos de idade que mora com a mãe em Salvador - BA, atualmente sem contato com familiares (há 2 anos). Pai é etilista crônico e usuário de Cannabis sp. e mãe é etilista crônica. Com relação ao procedimento no CAPS, qual é o primeiro atendimento?\nA elaboração de um Projeto Terapêutico Singular (PTS) para esse paciente deve envolver quais das ações a seguir?",
           "options": [
             {
               "letter": "A",
@@ -39831,7 +39831,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Ano Adicional",
           "topic": "Ano Adicional",
           "title": "Questao 13",
-          "text": "#### TEXTO PARA AS QUESTÕES DE 11 A 14 \nHomem cis, 41 anos de idade, pardo, pintor, evangélico, natural de Salvador (BA), há 3 anos morando em São Paulo (SP). Apresenta-se no CAPS AD com a seguinte frase: “Vim me internar”. Paciente diz que quer se internar e deixar as drogas para voltar a Salvador. Iniciou uso de Cannabis sp. aos 9 anos de idade, avançando para outras drogas aos 14 anos de idade, juntamente com tabaco. Atualmente em uso compulsivo diário de crack (5-8 g); tabaco (40-60 cigarros). Uso eventual de Cannabis sp. em pequena quantidade Uso diário de álcool. Paciente esteve internado recentemente. Na alta, recaiu no mesmo dia. Tentativa de suicídio aos 39 anos de idade. Nega comorbidades; alergias; cirurgias prévias; nega IST ou DST; nega síndrome de abstinência do álcool. Tem uma ﬁlha de 12 anos de idade que mora com a mãe em Salvador - BA, atualmente sem contato com familiares (há 2 anos). Pai é etilista crônico e usuário de Cannabis sp. e mãe é etilista crônica. Com relação ao procedimento no CAPS, qual é o primeiro atendimento?.\nA presença de um transtorno depressivo tem sido associada ao uso precoce e regular de qual das substâncias a seguir?",
+          "text": "#### TEXTO PARA AS QUESTÕES DE 11 A 14 \nHomem cis, 41 anos de idade, pardo, pintor, evangélico, natural de Salvador (BA), há 3 anos morando em São Paulo (SP). Apresenta-se no CAPS AD com a seguinte frase: “Vim me internar”. Paciente diz que quer se internar e deixar as drogas para voltar a Salvador. Iniciou uso de Cannabis sp. aos 9 anos de idade, avançando para outras drogas aos 14 anos de idade, juntamente com tabaco. Atualmente em uso compulsivo diário de crack (5-8 g); tabaco (40-60 cigarros). Uso eventual de Cannabis sp. em pequena quantidade Uso diário de álcool. Paciente esteve internado recentemente. Na alta, recaiu no mesmo dia. Tentativa de suicídio aos 39 anos de idade. Nega comorbidades; alergias; cirurgias prévias; nega IST ou DST; nega síndrome de abstinência do álcool. Tem uma filha de 12 anos de idade que mora com a mãe em Salvador - BA, atualmente sem contato com familiares (há 2 anos). Pai é etilista crônico e usuário de Cannabis sp. e mãe é etilista crônica. Com relação ao procedimento no CAPS, qual é o primeiro atendimento?.\nA presença de um transtorno depressivo tem sido associada ao uso precoce e regular de qual das substâncias a seguir?",
           "options": [
             {
               "letter": "A",
@@ -39863,7 +39863,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Ano Adicional",
           "topic": "Ano Adicional",
           "title": "Questao 14",
-          "text": "#### TEXTO PARA AS QUESTÕES DE 11 A 14 \nHomem cis, 41 anos de idade, pardo, pintor, evangélico, natural de Salvador (BA), há 3 anos morando em São Paulo (SP). Apresenta-se no CAPS AD com a seguinte frase: “Vim me internar”. Paciente diz que quer se internar e deixar as drogas para voltar a Salvador. Iniciou uso de Cannabis sp. aos 9 anos de idade, avançando para outras drogas aos 14 anos de idade, juntamente com tabaco. Atualmente em uso compulsivo diário de crack (5-8 g); tabaco (40-60 cigarros). Uso eventual de Cannabis sp. em pequena quantidade Uso diário de álcool. Paciente esteve internado recentemente. Na alta, recaiu no mesmo dia. Tentativa de suicídio aos 39 anos de idade. Nega comorbidades; alergias; cirurgias prévias; nega IST ou DST; nega síndrome de abstinência do álcool. Tem uma ﬁlha de 12 anos de idade que mora com a mãe em Salvador - BA, atualmente sem contato com familiares (há 2 anos). Pai é etilista crônico e usuário de Cannabis sp. e mãe é etilista crônica. Com relação ao procedimento no CAPS, qual é o primeiro atendimento?.\nNa evolução do paciente, observou-se tosse seca recorrente. O paciente foi encaminhado ao pronto-socorro para avaliação e o raio X evidenciou opacidades pulmonares migratórias. No hemograma, constatou-se a pr esença de eosinofilia. Qual o diagnóstico mais provável?",
+          "text": "#### TEXTO PARA AS QUESTÕES DE 11 A 14 \nHomem cis, 41 anos de idade, pardo, pintor, evangélico, natural de Salvador (BA), há 3 anos morando em São Paulo (SP). Apresenta-se no CAPS AD com a seguinte frase: “Vim me internar”. Paciente diz que quer se internar e deixar as drogas para voltar a Salvador. Iniciou uso de Cannabis sp. aos 9 anos de idade, avançando para outras drogas aos 14 anos de idade, juntamente com tabaco. Atualmente em uso compulsivo diário de crack (5-8 g); tabaco (40-60 cigarros). Uso eventual de Cannabis sp. em pequena quantidade Uso diário de álcool. Paciente esteve internado recentemente. Na alta, recaiu no mesmo dia. Tentativa de suicídio aos 39 anos de idade. Nega comorbidades; alergias; cirurgias prévias; nega IST ou DST; nega síndrome de abstinência do álcool. Tem uma filha de 12 anos de idade que mora com a mãe em Salvador - BA, atualmente sem contato com familiares (há 2 anos). Pai é etilista crônico e usuário de Cannabis sp. e mãe é etilista crônica. Com relação ao procedimento no CAPS, qual é o primeiro atendimento?.\nNa evolução do paciente, observou-se tosse seca recorrente. O paciente foi encaminhado ao pronto-socorro para avaliação e o raio X evidenciou opacidades pulmonares migratórias. No hemograma, constatou-se a presença de eosinofilia. Qual o diagnóstico mais provável?",
           "options": [
             {
               "letter": "A",
@@ -40333,7 +40333,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Ano Adicional",
           "topic": "Ano Adicional",
           "title": "Questao 29",
-          "text": "Assinale a alternativa que aprese nta o mais frequente efeito adverso da vareniclina.",
+          "text": "Assinale a alternativa que apresenta o mais frequente efeito adverso da vareniclina.",
           "options": [
             {
               "letter": "A",
@@ -40724,7 +40724,7 @@ window.BANCO_RMAIS_EXAMS = {
           "options": [
             {
               "letter": "A",
-              "text": "Memória imediata, memó ria recente, memória de trabalho e memória explícita."
+              "text": "Memória imediata, memória recente, memória de trabalho e memória explícita."
             },
             {
               "letter": "B",
@@ -40814,7 +40814,7 @@ window.BANCO_RMAIS_EXAMS = {
           "options": [
             {
               "letter": "A",
-              "text": "Anedonia; cansaço fácil; fadiga; hipobulia; desânimo; alterações de sono e apet ite; redução da libido; constipação; palidez; pele fria."
+              "text": "Anedonia; cansaço fácil; fadiga; hipobulia; desânimo; alterações de sono e apetite; redução da libido; constipação; palidez; pele fria."
             },
             {
               "letter": "B",
@@ -40826,7 +40826,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Desânimo; ruminações; aned onia; alterações de sono e apetite; déficit de atenção e concentração; hipobulia; ideias de menos-valia e incapacidade."
+              "text": "Desânimo; ruminações; anedonia; alterações de sono e apetite; déficit de atenção e concentração; hipobulia; ideias de menos-valia e incapacidade."
             }
           ],
           "correctAnswer": "A",
@@ -40842,7 +40842,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 5",
-          "text": "Uma mulher de 80 anos de idade com diagnóstico recente de doença de Alzheimer (demência leve) é levada à consulta médica por sua filha, que se mudou para a casa da mãe para cuidar dela em tempo integral. A filha quer ajudar a paciente a preservar uma relativa autonomia e mantê-la confortável no dia a dia. Assinale a alte rnativa que apresenta a recomendação mais apropriada para dizer à filha com relação a essa preocupação.",
+          "text": "Uma mulher de 80 anos de idade com diagnóstico recente de doença de Alzheimer (demência leve) é levada à consulta médica por sua filha, que se mudou para a casa da mãe para cuidar dela em tempo integral. A filha quer ajudar a paciente a preservar uma relativa autonomia e mantê-la confortável no dia a dia. Assinale a alternativa que apresenta a recomendação mais apropriada para dizer à filha com relação a essa preocupação.",
           "options": [
             {
               "letter": "A",
@@ -40934,7 +40934,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 8",
-          "text": "Um homem de 78 anos de idad e, com demência consistente com a doença de Alzheimer (apresentação típica, em estágio inicial), é submetido a uma Tomografia por Emissão de Pósitrons (PET Amiloide) para avaliar a carga de amiloide cerebral. Assinale a alternativa que apresenta a área que provavelmente mostraria positividade amiloide em estágio inicial da doença.",
+          "text": "Um homem de 78 anos de idade, com demência consistente com a doença de Alzheimer (apresentação típica, em estágio inicial), é submetido a uma Tomografia por Emissão de Pósitrons (PET Amiloide) para avaliar a carga de amiloide cerebral. Assinale a alternativa que apresenta a área que provavelmente mostraria positividade amiloide em estágio inicial da doença.",
           "options": [
             {
               "letter": "A",
@@ -40974,7 +40974,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "B",
-              "text": "Indiferença afetiva; irri tabilidade; dificuldades de sequenciamento."
+              "text": "Indiferença afetiva; irritabilidade; dificuldades de sequenciamento."
             },
             {
               "letter": "C",
@@ -40998,7 +40998,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 10",
-          "text": "Funcionária do correio de 63 anos de idade foi encaminhada para avaliação médica porque, no último ano, vem cometendo lapsos no trabalho (“erros bobos”, conforme relato da paciente), com a impressão de que o problema está piorando progressivamente. Ela relata que sente “como se estivesse esquecendo como ler”, ou com “dificuldade para compreender o que vê”. O exame físico é inocente e apresenta acuidade e campos visuais normais; porém, quando submetida à avaliação cognitiva, mostra-se incapaz de narrar o que está acontecendo na figura do teste do “roubo de biscoitos”, concentrando-se em apenas uma pequena área de cada vez e não conseguindo conectar os componentes isolados. Seu exame neurológico é normal. Assinale a alternativa que apresenta o diagnóstico mais provável?",
+          "text": "Funcionária do correio de 63 anos de idade foi encaminhada para avaliação médica porque, no último ano, vem come tendo lapsos no trabalho (“erros bobos”, conforme relato da paciente), com a impressão de que o problema está piorando progressivamente. Ela relata que sente “como se estivesse esquecendo como ler”, ou com “dificuldade para compreender o que vê”. O exame físico é inocente e apresenta acuidade e campos visuais normais; porém, quando submetida à avaliação cognitiva, mostra-se incapaz de narrar o que está acontecendo na figura do teste do “roubo de biscoitos”, concentrando-se em apenas uma pequena área de cada vez e não conseguindo conectar os componentes isolados. Seu exame neurológico é normal. Assinale a alternativa que apresenta o diagnóstico mais provável?",
           "options": [
             {
               "letter": "A",
@@ -41106,7 +41106,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "O fato de o paciente ter tido benefício de pistas na evocação tardia sugere comp rometimento do circuito de Papez."
+              "text": "O fato de o paciente ter tido benefício de pistas na evocação tardia sugere comprometimento do circuito de Papez."
             },
             {
               "letter": "D",
@@ -41294,7 +41294,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "Na maioria dos casos exis te componente vascular, que pode ser diagnosticado por meio de exames de imagem cerebral (ressonância magnética ou 18F-FDG-PET)."
+              "text": "Na maioria dos casos existe componente vascular, que pode ser diagnosticado por meio de exames de imagem cerebral (ressonância magnética ou 18F-FDG-PET)."
             },
             {
               "letter": "D",
@@ -41314,7 +41314,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 20",
-          "text": "TEXTO PARA AS QUESTÕES 20 E 21 Homem de 60 anos de idade, professor aposentado, cujos filhos relatam mudanças do comportamento há 15 dias. Está dormindo menos, agitado, com certa euforia, muitas ideias ao mesmo tempo e “sem filtro”. Estão preocupados com gastos excessivos e suspeitam que ele está se relacionando com várias mulheres. Fez tratamento para episódio depressivo há 16 anos, após falecimento da esposa. Nega uso de substâncias psicoativas. Não há histórico de traumatismo cranioencefálico ou crises convulsivas. Hipert enso e com antecedente de infarto agudo do miocárdio há 5 anos. Nega história familiar de doenças psiquiátricas. Faz uso de enalapril 10 mg/dia, AAS 100 mg/dia, sertralina 50 mg/dia e clonazepam 0,5 mg/noite. Exame psíquico: vigil, parcialmente orientado em espaço e tempo, hipotenaz, humor eufórico, afeto expansivo, pensamento acelerado, discurso taquilálico com fuga de ideias, conteúdo grandioso. PA de 150x83mmhg FC de 82 bpm.\nAssinale a alternativa que apresenta a melhor hipótese diagnóstica para o caso descrito.",
+          "text": "TEXTO PARA AS QUESTÕES 20 E 21 Homem de 60 anos de idade, professor aposentado, cujos filhos relatam mudanças do comportamento há 15 dias. Está dormindo menos, agitado, com certa euforia, muitas ideias ao mesmo tempo e “sem filtro”. Estão preocupados com gastos excessivos e suspeitam que ele está se relacionando com várias mulheres. Fez tratamento para episódio depressivo há 16 anos, após falecimento da esposa. Nega uso de substâncias psicoativas. Não há histórico de traumatismo cranioencefálico ou crises convulsivas. Hipertenso e com antecedente de infarto agudo do miocárdio há 5 anos. Nega história familiar de doenças psiquiátricas. Faz uso de enalapril 10 mg/dia, AAS 100 mg/dia, sertralina 50 mg/dia e clonazepam 0,5 mg/noite. Exame psíquico: vigil, parcialmente orientado em espaço e tempo, hipotenaz, humor eufórico, afeto expansivo, pensamento acelerado, discurso taquilálico com fuga de ideias, conteúdo grandioso. PA de 150x83mmhg FC de 82 bpm.\nAssinale a alternativa que apresenta a melhor hipótese diagnóstica para o caso descrito.",
           "options": [
             {
               "letter": "A",
@@ -41354,7 +41354,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "B",
-              "text": "Iniciar, aripiprazol, suspen der sertralina e solicitar exame de neuroimagem."
+              "text": "Iniciar, aripiprazol, suspender sertralina e solicitar exame de neuroimagem."
             },
             {
               "letter": "C",
@@ -41378,7 +41378,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 22",
-          "text": "TEXTO PARA AS QUESTÕES 22 E 23 \nMulher de 77 anos de idade, com diagnósticos de demência na doença de Alzheimer (FAST 5), transtorno bipolar do tipo I (início aos 30 anos de idade, em remissão nos últimos seis anos), hipertensão arterial sistêmica, hipotireoidismo, dislipidemia, constipação crônica, osteoartrose de joelho, presbiacusia moderada bilateral (teve indicação de prótese auditiva). Há uma semana, ficou internada durante três dias em leito de UTI por sepse de foco urinário com injúria renal aguda (KDIGO 2). Com a antibioticoterapia e medidas de suporte clínico, evoluiu com melhora dos parâmetros infecciosos e da função renal. A paciente foi transferida para leito de enfermaria, onde se encontra atualmente. A paciente tem oscilado entre períodos de confusão mental, agitação psicomotora, delírios persecutórios e períodos de sonolência e apatia. A investigação inicial para distúrbios hidroeletrolíticos, desidrataçã o, infecções, desbalanços metabólicos foi negativa. A dosagem sérica de creatinofosfoquinase foi de 362 U/L (valor de referência: < 140 U/L) e a paciente se mantém afebril, estável hemodinamicamente e com boa saturação de oxigênio em ar ambiente. A paciente está contida mecanicamente no leito e pouco cooperativa com o exame clínico devido à sonolência, o que compromete a avaliação cognitiva. Força e reflexos tendinosos preservados nos quatro membros, sem alterações de nervos cranianos ou movime ntos discinéticos. Prescrição atual: carbonato de lítio 900 mg/dia, divalproato de sódio 1.000 mg/dia, cloridrato de sertralina 50 mg/dia, ceftriaxone, bisacodil, rosuvastatina, levoti roxina, losartana, dipirona a critério médico. Para o manejo da agitação, está prescrito resgates com haloperidol 2,5 mg e prometazina 50 mg por via intramuscular, que têm sido administrados 1-2 vezes/dia com boa resposta, apesar de apresentar sonolência nas horas seguintes.\nEm relação à investigação semiológica e exames complementares, assinale a alternativa correta.",
+          "text": "TEXTO PARA AS QUESTÕES 22 E 23 \nMulher de 77 anos de idade, com diagnósticos de demência na doença de Alzheimer (FAST 5), transtorno bipolar do tipo I (início aos 30 anos de idade, em remissão nos últimos seis anos), hipertensão arterial sistêmica, hipotireoidismo, dislipidemia, constipação crônica, osteoartrose de joelho, presbiacusia moderada bilateral (teve indicação de prótese auditiva). Há uma semana, ficou internada durante três dias em leito de UTI por sepse de foco urinário com injúria renal aguda (KDIGO 2). Com a antibioticoterapia e medidas de suporte clínico, evoluiu com melhora dos parâmetros infecciosos e da função renal. A paciente foi transferida para leito de enfermaria, onde se encontra atualmente. A paciente tem oscilado entre períodos de confusão mental, agitação psicomotora, delírios persecutórios e períodos de sonolência e apatia. A investigação inicial para distúrbios hidroeletrolíticos, desidrataçã o, infecções, desbalanços metabólicos foi negativa. A dosagem sérica de creatinofosfoquinase foi de 362 U/L (valor de referência: < 140 U/L) e a paciente se mantém afebril, estável hemodinamicamente e com boa saturação de oxigênio em ar ambiente. A paciente está contida mecanicamente no leito e pouco cooperativa com o exame clínico devido à sonolência, o que compromete a avaliação cognitiva. Força e reflexos tendinosos preservados nos quatro membros, sem alterações de nervos cranianos ou movimentos discinéticos. Prescrição atual: carbonato de lítio 900 mg/dia, divalproato de sódio 1.000 mg/dia, cloridrato de sertralina 50 mg/dia, ceftriaxone, bisacodil, rosuvastatina, levotiroxina, losartana, dipirona a critério médico. Para o manejo da agitação, está prescrito resgates com haloperidol 2,5 mg e prometazina 50 mg por via intramuscular, que têm sido administrados 1-2 vezes/dia com boa resposta, apesar de apresentar sonolência nas horas seguintes.\nEm relação à investigação semiológica e exames complementares, assinale a alternativa correta.",
           "options": [
             {
               "letter": "A",
@@ -41538,7 +41538,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 27",
-          "text": "Mulher de 64 anos de idade, professora aposentada há 2 anos. Comparece à consulta acompanhada dos filhos. Contam que há cerca de 3 anos, a mãe iniciou com falas inapropriadas, com palavras de baixo calão, e por repetidas vezes chegou a desrespeitar colegas de trabalho. Filhos descrevem que a mãe sempre teve uma personalidade dócil e costumava ser afável com todos. Pontuam que, ao longo dos últimos anos, passou a ficar mais repetitiva, e a não se lembrar de encontros sociais em família nos dias subseque ntes, mesmo estando presente nesses eventos. Também aprese ntou dificuldade para lidar com senhas dos cartões bancários e para organizar o pagamento das contas da casa. Passou a fazer uso de bebidas alcoólicas, hábito não presente no passado. Durante a consulta, observou-se que a paciente tinha movimentos repetitivos de levar a mão à boca, sem motivo aparente. Mostra-se lacônica no contato, desenvolvendo pouco as respostas às perguntas que lhe são feitas pelo examinador, com frases curtas. Do ponto de vista clínico, refere-se uso regular de atorvastatina 10 mg /dia; metformina 850 mg/dia. Realizada investigação laborato rial, estando os resultados dentro dos padrões de normalidade. Exame de imagem por ressonância magnética de crânio, feito 2 anos antes, mostrava discreta atrofia em regiões frontais e temporais (escalas de Fazekas: 1, MTA: 1 bilateralmente). Filhos dizem que a mãe foi aposentada por “demência não especificada” e questionam ativamente se há meios de saber a causa do problema. Em relação ao caso descrito, assinale a alternativa que apresenta a hipótese diagnóstica mais provável, uma hipótese diferencial e um exame que pode auxiliar na distinção destas condições, respectivamente.",
+          "text": "Mulher de 64 anos de idade, professora aposentada há 2 anos. Comparece à consulta acompanhada dos filhos. Contam que há cerca de 3 anos, a mãe iniciou com falas inapropriadas, com palavras de baixo calão, e por repetidas vezes chegou a desrespeitar colegas de trabalho. Filhos descrevem que a mãe sempre teve uma personalidade dócil e costumava ser afável com todos. Pontuam que, ao longo dos últimos anos, passou a ficar mais repetitiva, e a não se lembrar de encontros sociais em família nos dias subsequentes, mesmo estando presente nesses eventos. Também aprese ntou dificuldade para lidar com senhas dos cartões bancários e para organizar o pagamento das contas da casa. Passou a fazer uso de bebidas alcoólicas, hábito não presente no passado. Durante a consulta, observou-se que a paciente tinha movimentos repetitivos de levar a mão à boca, sem motivo aparente. Mostra-se lacônica no contato, desenvolvendo pouco as respostas às perguntas que lhe são feitas pelo examinador, com frases curtas. Do ponto de vista clínico, refere-se uso regular de atorvastatina 10 mg /dia; metformina 850 mg/dia. Realizada investigação laboratorial, estando os resultados dentro dos padrões de normalidade. Exame de imagem por ressonância magnética de crânio, feito 2 anos antes, mostrava discreta atrofia em regiões frontais e temporais (escalas de Fazekas: 1, MTA: 1 bilateralmente). Filhos dizem que a mãe foi aposentada por “demência não especificada” e questionam ativamente se há meios de saber a causa do problema. Em relação ao caso descrito, assinale a alternativa que apresenta a hipótese diagnóstica mais provável, uma hipótese diferencial e um exame que pode auxiliar na distinção destas condições, respectivamente.",
           "options": [
             {
               "letter": "A",
@@ -41570,7 +41570,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 28",
-          "text": "Homem de 81 anos de idade, economista aposentado, mora com esposa. Relata que tem notado dificuldade para se recordar de detalhes das notícias que lê no jornal e do cenário político-econômico atual, ass unto de seu interesse. Sempre foi ativo em discussões informais, mas isso tem atrapalhado a suas conversas com amigos, ficando inseguro para manifestar suas opiniões. Demora para recuperar nomes dos atuais ministros e outras informações, como valor do câmbio corrente e mudanças na taxa de juros que acompanha. Sente- se constrangido nestes momentos por necessitar buscar as informações na internet, usando o celular. Conta que consegue cuidar das contas da casa de forma autônoma, prepara pequenos lanches, faz pequenos preparos e faz uso do fogão para fazer o próprio café. Esposa cita que marido nunca se interessou por cozinhar e sempre foi ela que cuidou destas questões dentro de casa. Faz tratamento para depressão desde final da quinta década, com dificuldade de descontinuar a medicação. Sem queixas depressivas atualmente. Tem diabetes melito e hipotireoidismo. Faz uso de escitalopram 10 mg pela manhã; metformina 850 mg 1 vez ao dia; levotiroxina 75 μg em jejum pela manhã; AAS 100 mg uma vez ao dia. Na triagem cognitiva com o teste MoCA (Montreal Cognitive Assessment ), pontuou 28/30 (perdeu 1 ponto em atenção e 1 ponto em evocação tardia). Já no mini- exame do estado mental, obteve pontuação máxima. Considerando as queixas e sintomas cognitivos, qual a principal hipótese diagnóstica para este paciente, neste momento?",
+          "text": "Homem de 81 anos de idade, economista aposentado, mora com esposa. Relata que tem notado dificuldade para se recordar de detalhes das notícias que lê no jornal e do cenário político-econômico atual, assunto de seu interesse. Sempre foi ativo em discussões informais, mas isso tem atrapalhado a suas conversas com amigos, ficando inseguro para manifestar suas opiniões. Demora para recuperar nomes dos atuais ministros e outras informações, como valor do câmbio corrente e mudanças na taxa de juros que acompanha. Sente- se constrangido nestes momentos por necessitar buscar as informações na internet, usando o celular. Conta que consegue cuidar das contas da casa de forma autônoma, prepara pequenos lanches, faz pequenos preparos e faz uso do fogão para fazer o próprio café. Esposa cita que marido nunca se interessou por cozinhar e sempre foi ela que cuidou destas questões dentro de casa. Faz tratamento para depressão desde final da quinta década, com dificuldade de descontinuar a medicação. Sem queixas depressivas atualmente. Tem diabetes melito e hipotireoidismo. Faz uso de escitalopram 10 mg pela manhã; metformina 850 mg 1 vez ao dia; levotiroxina 75 μg em jejum pela manhã; AAS 100 mg uma vez ao dia. Na triagem cognitiva com o teste MoCA (Montreal Cognitive Assessment ), pontuou 28/30 (perdeu 1 ponto em atenção e 1 ponto em evocação tardia). Já no mini- exame do estado mental, obteve pontuação máxima. Considerando as queixas e sintomas cognitivos, qual a principal hipótese diagnóstica para este paciente, neste momento?",
           "options": [
             {
               "letter": "A",
@@ -41602,7 +41602,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 29",
-          "text": "Homem de 62 anos de idade, engenheiro civil, casado. Há 2 anos, vem apresentando queixa s cognitivas (principalmente esquecimentos), tem feito uso das medicações de forma irregular, preocupações exce ssivas com a saúde dos filhos, perda de apetite (chegou a emagrecer 6 kg), dores inespecíficas, insônia e prejuízo no autocuidado. Nega quadro semelhante ao longo da vida. Ao exame psíquico apresentava autocuidado prejudicado, hipotenaz, humor ansioso e hipotímico, curso de pensamento lentificado, sem alterações da forma e conteúdo do pensamento, sem alterações sensoperceptivas e crítica prejudicada em relação a sua morbidade. Foi realizado exame de imagem cerebral por ressonância magnética que evid enciou leucoencefalopatia discreta. Assinale a alternativa que se aplica ao caso.",
+          "text": "Homem de 62 anos de idade, engenheiro civil, casado. Há 2 anos, vem apresentando queixa s cognitivas (principalmente esquecimentos), tem feito uso das medicações de forma irregular, preocupações exce ssivas com a saúde dos filhos, perda de apetite (chegou a emagrecer 6 kg), dores inespecíficas, insônia e prejuízo no autocuidado. Nega quadro semelhante ao longo da vida. Ao exame psíquico apresentava autocuidado prejudicado, hipotenaz, humor ansioso e hipotímico, curso de pensamento lentificado, sem alterações da forma e conteúdo do pensamento, sem alterações sensoperceptivas e crítica prejudicada em relação a sua morbidade. Foi realizado exame de imagem cerebral por ressonância magnética que evidenciou leucoencefalopatia discreta. Assinale a alternativa que se aplica ao caso.",
           "options": [
             {
               "letter": "A",
@@ -41638,7 +41638,7 @@ window.BANCO_RMAIS_EXAMS = {
           "options": [
             {
               "letter": "A",
-              "text": "Não é necessária a investig ação complementar, pois o diagnóstico já está definido."
+              "text": "Não é necessária a investigação complementar, pois o diagnóstico já está definido."
             },
             {
               "letter": "B",
@@ -41856,7 +41856,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 37",
-          "text": "Homem, 72 anos de idade, ca sado, metalúrgico aposentado, 11 anos de escolaridade, sem antecedentes psiquiátricos. Tem apresentado mudanças de hábitos e comportamentos há cerca de 4 anos, quando decidiu parar de dirigir seu automóvel e de consumir cerveja com álcool. Cortou o consumo de pão e reduziu a ingesta alimentar em geral. Afirmava que estes alimentos poderiam fazer mal à saúde e ficava preocupado de forma desproporcional sobre os possíveis malefícios que os alimentos poderiam lhe causar. Passou a apresentar discurso de que tinha perdido todos os bens e que iria ficar sem condições de comprar alimentos e pagar as contas, rejeitando as evidências do contrário. Foi levado ao geriatra, que iniciou tratamento com escitalopram. Após uma semana, foi levado ao pronto-socorro com quadro de mal-estar, sendo constatada hiponatremia. O medicamento foi interrompido e feita a correção do distúrbio eletrolítico. Após avaliação com psiquiatra, foram tentados outros medicamentos como olanzapina, risperidona, quetiapina e venlafaxina. Porém, apresentou sintomas extrapiramidais com os três anti psicóticos e a família relatou “ausência de resposta” com o antidepressivo, que era administrado de forma macerada. O paciente evoluiu com piora do quadro, passando a recusar, quase totalmente, a ingerir líquidos e alimentos. Dizia que não tinha mais forças para se alimentar, para tomar banho e até mesmo para urinar. Perdeu aproximadamente 30 kg em um ano e meio até a internação hospitalar. Durante a internação foram realizados exames laboratoriais e ressonâ ncia magnética do encéfalo, sem a identificação de alterações significativas. Foi submetido à testagem cognitiva, pontuando abaixo do esperado para sua escolaridade: 22 pontos no mini-exame do estado mental, fluência verbal semântica 7 e fonêmica 5. Apresentava também prejuízo funcional em suas AIVDs. Em relação ao caso apresentado, qual a melhor conduta?",
+          "text": "Homem, 72 anos de idade, ca sado, metalúrgico aposentado, 11 anos de escolaridade, sem antecedentes psiquiátricos. Tem apresentado mudanças de hábitos e comportamentos há cerca de 4 anos, quando decidiu parar de dirigir seu automóvel e de consumir cerveja com álcool. Cortou o consumo de pão e reduziu a ingesta alimentar em geral. Afirmava que estes alimentos poderiam fazer mal à saúde e ficava preocupado de forma desproporcional sobre os possíveis malefícios que os alimentos poderiam lhe causar. Passou a apresentar discurso de que tinha perdido todos os bens e que iria ficar sem condições de comprar alimentos e pagar as contas, rejeitando as evidências do contrário. Foi levado ao geriatra, que iniciou tratamento com escitalopram. Após uma semana, foi levado ao pronto-socorro com quadro de mal-estar, sendo constatada hiponatremia. O medicamento foi interrompido e feita a correção do distúrbio eletrolítico. Após avaliação com psiquiatra, foram tentados outros medicamentos como olanzapina, risperidona, quetiapina e venlafaxina. Porém, apresentou sintomas extrapiramidais com os três anti psicóticos e a família relatou “ausência de resposta” com o antidepressivo, que era administrado de forma macerada. O paciente evoluiu com piora do quadro, passando a recusar, quase totalmente, a ingerir líquidos e alimentos. Dizia que não tinha mais forças para se alimentar, para tomar banho e até mesmo para urinar. Perdeu aproximadamente 30 kg em um ano e meio até a internação hospitalar. Durante a internação foram realizados exames laboratoriais e ressonância magnética do encéfalo, sem a identificação de alterações significativas. Foi submetido à testagem cognitiva, pontuando abaixo do esperado para sua escolaridade: 22 pontos no mini-exame do estado mental, fluência verbal semântica 7 e fonêmica 5. Apresentava também prejuízo funcional em suas AIVDs. Em relação ao caso apresentado, qual a melhor conduta?",
           "options": [
             {
               "letter": "A",
@@ -41918,7 +41918,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 39",
-          "text": "#### TEXTO PARA AS QUESTÕES 39 E 40 Mulher, 72 anos de idade, viúva, aposentada, vive sozinha em seu apartamento situado no mesmo prédio em que seu filho reside. História de episódios de humor instável, alternando entre períodos de euforia, aumento da energia e atividade (mania) e períodos de depressão profunda. Filho relata períodos em que se sente \"no topo do mundo\", com aumento da fala, gastos excessivos e envolvimento em atividades de risco, como investimentos fina nceiros impulsivos. Em outros momentos, sente-se extremamente desanimada, com baixa energia, dificuldade de concentração e pensamentos suicidas. Hipertensão arterial controlada com medicação. Não há histórico de uso de substâncias psicoativas.\nEm relação ao tratamento de Transtorno Afetivo Bipolar (TAB) no idoso, assinale a alternativa correta.",
+          "text": "#### TEXTO PARA AS QUESTÕES 39 E 40 Mulher, 72 anos de idade, viúva, aposentada, vive sozinha em seu apartamento situado no mesmo prédio em que seu filho reside. História de episódios de humor instável, alternando entre períodos de euforia, aumento da energia e atividade (mania) e períodos de depressão profunda. Filho relata períodos em que se sente \"no topo do mundo\", com aumento da fala, gastos excessivos e envolvimento em atividades de risco, como investimentos financeiros impulsivos. Em outros momentos, sente-se extremamente desanimada, com baixa energia, dificuldade de concentração e pensamentos suicidas. Hipertensão arterial controlada com medicação. Não há histórico de uso de substâncias psicoativas.\nEm relação ao tratamento de Transtorno Afetivo Bipolar (TAB) no idoso, assinale a alternativa correta.",
           "options": [
             {
               "letter": "A",
@@ -42003,7 +42003,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "B",
-              "text": "entender que se o paciente teve interesse e buscou o acompanhamento psicoterápico, quando diz não ter sintomas, queixas ou sofrim entos psicológicos, estamos diante da atuação da resist ência. Por isso, sugere-se aguardar que o paciente esteja mobilizado e com menos resistência para retornar à psicoterapia em outro momento."
+              "text": "entender que se o paciente teve interesse e buscou o acompanhamento psicoterápico, quando diz não ter sintomas, queixas ou sofrimentos psicológicos, estamos diante da atuação da resist ência. Por isso, sugere-se aguardar que o paciente esteja mobilizado e com menos resistência para retornar à psicoterapia em outro momento."
             },
             {
               "letter": "C",
@@ -42029,7 +42029,7 @@ window.BANCO_RMAIS_EXAMS = {
           "options": [
             {
               "letter": "A",
-              "text": "A IA não teria a capacidade de substituir as técnicas psicoterápicas, mas pode rea lizar diagnósticos precisos e prescrever medicamentos, de maneira que a troca da pessoa do médico pela IA nã o impactaria a resposta do paciente à terapêutica."
+              "text": "A IA não teria a capacidade de substituir as técnicas psicoterápicas, mas pode realizar diagnósticos precisos e prescrever medicamentos, de maneira que a troca da pessoa do médico pela IA nã o impactaria a resposta do paciente à terapêutica."
             },
             {
               "letter": "B",
@@ -42295,7 +42295,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Psicoterapia",
           "topic": "Psicoterapia",
           "title": "Questao 11",
-          "text": "“Disse-lhe: ‘Não acredito que essas sejam todas as razões para seu sentimento em relação as duas crianças; antes presumo que esteja apaixonada por seu patrão, o diretor, talvez sem se dar conta disso você̂ mesma, e que alimente em si a esperança de ocupar efetivamente o lugar da mãe. A isso acrescenta-se ainda o fato de ter-se tornado tão suscetível em relação aos empregados, com os quais convivera pacificamente durante anos. Você teme que eles percebam algo de sua esperança e zombem de você por isso.’ Re spondeu-me, no seu estilo lacônico - ‘Sim, creio que é isso.’ - ‘Mas se você sabia que ama o diretor, por que não me disse? ’ - ‘Não o sabia de fato, ou melhor, não queria sabê-lo, queria tirar isso da minha cabeça, nunca mais pensar a respeito; creio, aliás, tê-lo conseguido nesses últimos tempos.” Freud, S. Estudos sobre a Histeria, II. Casos Clínicos - Lucy R. (1895) No excerto apresentado, há um exemplo do seguinte mecanismo:",
+          "text": "“Disse-lhe: ‘Não acredito que essas sejam todas as razões para seu sentimento em relação as duas crianças; antes presumo que esteja apaixonada por seu patrão, o diretor, talvez sem se dar conta disso você̂ mesma, e que alimente em si a esperança de ocupar efetivamente o lugar da mãe. A isso acrescenta-se ainda o fato de ter-se tornado tão suscetível em relação aos empregados, com os quais convivera pacificamente durante anos. Você teme que eles percebam algo de sua esperança e zombem de você por isso.’ Respondeu-me, no seu estilo lacônico - ‘Sim, creio que é isso.’ - ‘Mas se você sabia que ama o diretor, por que não me disse? ’ - ‘Não o sabia de fato, ou melhor, não queria sabê-lo, queria tirar isso da minha cabeça, nunca mais pensar a respeito; creio, aliás, tê-lo conseguido nesses últimos tempos.” Freud, S. Estudos sobre a Histeria, II. Casos Clínicos - Lucy R. (1895) No excerto apresentado, há um exemplo do seguinte mecanismo:",
           "options": [
             {
               "letter": "A",
@@ -42333,7 +42333,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "B",
-              "text": "A tomada de consciência dos problemas sociais é importante, mas numa psic oterapia devem ganhar prioridade os processos intrapsíquicos."
+              "text": "A tomada de consciência dos problemas sociais é importante, mas numa psicoterapia devem ganhar prioridade os processos intrapsíquicos."
             },
             {
               "letter": "C",
@@ -42341,7 +42341,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "A consideração pelo ambiente e pela comunidade é fundamental numa psicoterapia, e não costuma produzir dificuldades quando tentamos observar sua contraparte, as forças intrapsíquicas singulares em cada paciente. ####"
+              "text": "A consideração pelo ambiente e pela comunidade é fundamental numa psicoterapia, e não costuma produzir dificuldades quando tentam os observar sua contraparte, as forças intrapsíquicas singulares em cada paciente. ####"
             }
           ],
           "correctAnswer": "C",
@@ -42459,7 +42459,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "O setting e a atitude de absoluta neutralidade do analista devem ser mantidos de form a inalterada ao longo do tratamento. Deve-se evitar comentários ou perguntas ao paciente para não atrapalhar o fluxo da fala, que deve transcorrer livremente durante todo o período. Em caso de interrupção, o analista deve sempre manter o silêncio."
+              "text": "O setting e a atitude de absoluta neutralidade do analista devem ser mantidos de forma inalterada ao longo do tratamento. Deve-se evitar comentários ou perguntas ao paciente para não atrapalhar o fluxo da fala, que deve transcorrer livremente durante todo o período. Em caso de interrupção, o analista deve sempre manter o silêncio."
             },
             {
               "letter": "D",
@@ -42507,11 +42507,11 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Psicoterapia",
           "topic": "Psicoterapia",
           "title": "Questao 18",
-          "text": "Em “A Interpretação dos Sonhos”, de 1900, Freud inaugura a psicanálise como método origin al ao se afastar dos modelos anteriores baseados em sugestão, hipnose e, posteriormente o método de catarse, que detalhou em “Estudos sobre a Histeria”, escrito com Josef Breuer em 1895. A respeito disso, assinale a alternativa correta.",
+          "text": "Em “A Interpretação dos Sonhos”, de 1900, Freud inaugura a psicanálise como método original ao se afastar dos modelos anteriores baseados em sugestão, hipnose e, posteriormente o método de catarse, que detalhou em “Estudos sobre a Histeria”, escrito com Josef Breuer em 1895. A respeito disso, assinale a alternativa correta.",
           "options": [
             {
               "letter": "A",
-              "text": "Sonhos contêm elementos que dão acesso privilegiado ao conteúdo de uma camada mais profunda da mente, o inconsciente, onde residem ideias que a parte consciente não tem acesso, mas cuja emer gência se torna facilitada durante o sono pelo afrouxamento da repressão."
+              "text": "Sonhos contêm elementos que dão acesso privilegiado ao conteúdo de uma camada mais profunda da mente, o inconsciente, onde residem ideias que a parte consciente não tem acesso, mas cuja emergência se torna facilitada durante o sono pelo afrouxamento da repressão."
             },
             {
               "letter": "B",
@@ -42583,7 +42583,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Por serem teorias contextualistas e adotarem o pragmatismo epistemológico, a eficácia de TCC é considerada uma evidência de que essas divergências teóricas são desprezíveis para a atuação clínica."
+              "text": "Por serem teorias contextualistas e adotar em o pragmatismo epistemológico, a eficácia de TCC é considerada uma evidência de que essas divergências teóricas são desprezíveis para a atuação clínica."
             }
           ],
           "correctAnswer": "C",
@@ -42641,7 +42641,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "Enfatizam mais a relevância do contexto em que os eventos clínicos releva ntes aparecem, mas não apresentam divergências te órico-filosóficas com a TCC tradicional (segunda onda)."
+              "text": "Enfatizam mais a relevância do contexto em que os eventos clínicos releva ntes aparecem, mas não apresentam divergências teórico-filosóficas com a TCC tradicional (segunda onda)."
             },
             {
               "letter": "D",
@@ -42689,7 +42689,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Psicoterapia",
           "topic": "Psicoterapia",
           "title": "Questao 24",
-          "text": "Assinale a alternativa que corre laciona corretamente datas e eventos. • Eventos: 1 - Moreno muda sua residência para os Estados Unidos. 2 - Moreno forma-se em medicina. 3 - Moreno publica a revista Improptu. 4 - Primeira sessão psicodramática oficial. • Datas: a. 1931 b. 1925 c. 1921 d.1917",
+          "text": "Assinale a alternativa que correlaciona corretamente datas e eventos. • Eventos: 1 - Moreno muda sua residência para os Estados Unidos. 2 - Moreno forma-se em medicina. 3 - Moreno publica a revista Improptu. 4 - Primeira sessão psicodramática oficial. • Datas: a. 1931 b. 1925 c. 1921 d.1917",
           "options": [
             {
               "letter": "A",
@@ -42795,7 +42795,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "É negada como processo p sicológico legítimo, entendida como invenção conceitual das teorias psicodinâmicas. ####"
+              "text": "É negada como processo psicológico legítimo, entendida como invenção conceitual das teorias psicodinâmicas. ####"
             }
           ],
           "correctAnswer": "A",
@@ -42813,7 +42813,7 @@ window.BANCO_RMAIS_EXAMS = {
           "options": [
             {
               "letter": "A",
-              "text": "O terapeuta está sempre atento aos padrões de comportamentos adequados e inadequados, reforçando diferencialmente de forma eficaz, arbitrariamente ou não, os comportamentos adaptados."
+              "text": "O terapeuta está sempre atento aos padrões de comportamentos adequados e inadequados, reforçando diferencial mente de forma eficaz, arbitrariamente ou não, os comportamentos adaptados."
             },
             {
               "letter": "B",
@@ -42899,7 +42899,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Psicoterapia",
           "topic": "Psicoterapia",
           "title": "Questao 31",
-          "text": "As terapias orientadas pela análise do comportamento têm, como uma de suas características, uma alternativa ao internalismo explicativo da p sicologia humana (mentalismo) mais típico de nossa cultura. Nesse sentido, assinale a alternativa que melhor descreve tais formas de terapia.",
+          "text": "As terapias orientadas pela análise do comportamento têm, como uma de suas características, uma alternativa ao internalismo explicativo da psicologia humana (mentalismo) mais típico de nossa cultura. Nesse sentido, assinale a alternativa que melhor descreve tais formas de terapia.",
           "options": [
             {
               "letter": "A",
@@ -43091,7 +43091,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "A concepção junguiana de inconsciente difere da concepção de Freud em três pontos principais: 1º - possui um curso autônomo de desenvolvimento; 2º - é complementar à consciência; 3º - é a sede de potencialidades psíquicas un iversais na espécie humana, os arquétipos."
+              "text": "A concepção junguiana de inconsciente difere da concepção de Freud em três pontos principais: 1º - possui um curso autônomo de desenvolvimento; 2º - é complementar à consciência; 3º - é a sede de potencialidades psíquicas universais na espécie humana, os arquétipos."
             },
             {
               "letter": "D",
@@ -43224,7 +43224,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "Marta é imputável, já que fez uso da droga intencionalmente."
+              "text": "Marta é imputável, já que fez uso da droga intencional mente."
             },
             {
               "letter": "D",
@@ -43336,7 +43336,7 @@ window.BANCO_RMAIS_EXAMS = {
           "options": [
             {
               "letter": "A",
-              "text": "Exame de cessação de peri culosidade, pois já há um diagnóstico psiquiátrico."
+              "text": "Exame de cessação de periculosidade, pois já há um diagnóstico psiquiátrico."
             },
             {
               "letter": "B",
@@ -43650,7 +43650,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Auxiliar a justiça no esclar ecimento dos fatos ocorridos, bem como na coerência das versões apresentadas. ####"
+              "text": "Auxiliar a justiça no esclarecimento dos fatos ocorridos, bem como na coerência das versões apresentadas. ####"
             }
           ],
           "correctAnswer": "B",
@@ -43844,7 +43844,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Psiquiatria Forense",
           "topic": "Psiquiatria Forense",
           "title": "Questao 22",
-          "text": "Flávia, uma mulher de 35 anos de idade, está sendo processada por deixar o filh o recém-nascido numa lixeira perto de sua casa. Durante o processo é determinada uma avaliação psiquiátrica. Em relação ao caso descrito, assinale a alternativa correta.",
+          "text": "Flávia, uma mulher de 35 anos de idade, está sendo processada por deixar o filho recém-nascido numa lixeira perto de sua casa. Durante o processo é determinada uma avaliação psiquiátrica. Em relação ao caso descrito, assinale a alternativa correta.",
           "options": [
             {
               "letter": "A",
@@ -43942,7 +43942,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "B",
-              "text": "O NTEP facilita o reconhecime nto do nexo causal ao dar ênfase aos relatórios médicos individuais de acompanhamento, considerando as particularidades caso a caso."
+              "text": "O NTEP facilita o reconhecimento do nexo causal ao dar ênfase aos relatórios médicos individuais de acompanhamento, considerando as particularidades caso a caso."
             },
             {
               "letter": "C",
@@ -43964,7 +43964,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Psiquiatria Forense",
           "topic": "Psiquiatria Forense",
           "title": "Questao 26",
-          "text": "Dexter Morgan, 35 anos de idade, analista forense, preso pelo assassinato de dezenas de pessoas, é avaliado por você em uma perícia criminal. Apresenta frieza emocional, falta de arrependimento, loquacidade, violência instrumental, manipulação, comportamento criminoso reiterado com racionalização para suas condutas, te levando ao diagnóstico de transtorno de personalid ade antissocial. Se o perito restringir sua avaliação estritamente aos termos do artigo 26 do Código Penal, considerando imputabilidade, semiimputabilidade, doença ment al e perturbação da saúde mental, qual alternativa é mais coerente?",
+          "text": "Dexter Morgan, 35 anos de idade, analista forense, preso pelo assassinato de dezenas de pessoas, é avaliado por você em uma perícia criminal. Apresenta frieza emocional, falta de arrependimento, loquacidade, violência instrumental, manipulação, comportamento criminoso reiterado com racionalização para suas condutas, te levando ao diagnóstico de transtorno de personalid ade antissocial. Se o perito restringir sua avaliação estritamente aos termos do artigo 26 do Código Penal, considerando imputabilidade, semi imputabilidade, doença ment al e perturbação da saúde mental, qual alternativa é mais coerente?",
           "options": [
             {
               "letter": "A",
@@ -44084,7 +44084,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Psiquiatria Forense",
           "topic": "Psiquiatria Forense",
           "title": "Questao 30",
-          "text": "Donny Dunn, um aspirante a comediante, trabalha como bartender em um pub em Londres. Certo dia, ele ofereceu uma xícara de chá a uma cliente chamada Martha Scott, na tentativa de animá-la. Martha desenvolveu um forte apego a Donny e começou a frequentar o bar todos os dias, além de mandar mensagens frequentes. Com o tempo Dunn passa a sentir-se incomodado, mas em outro momento encoraja o comportamento de Scott, que cresce até se configurar o crime de assédio. Em relação ao caso apresentado, assinale a alternativa correta.",
+          "text": "Donny Dunn, um aspirante a come diante, trabalha como bartender em um pub em Londres. Certo dia, ele ofereceu uma xícara de chá a uma cliente chamada Martha Scott, na tentativa de animá-la. Martha desenvolveu um forte apego a Donny e começou a frequentar o bar todos os dias, além de mandar mensagens frequentes. Com o tempo Dunn passa a sentir-se incomodado, mas em outro momento encoraja o comportamento de Scott, que cresce até se configurar o crime de assédio. Em relação ao caso apresentado, assinale a alternativa correta.",
           "options": [
             {
               "letter": "A",
@@ -44144,7 +44144,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Psiquiatria Forense",
           "topic": "Psiquiatria Forense",
           "title": "Questao 32",
-          "text": "Um homem de 35 anos de idade foi acusado de abuso sexual contra uma criança e está atualmente sendo avaliado em uma perícia criminal. Durante a invest igação, surgiram indícios de que ele apresenta sinais de parafilia. Foi então determinada uma perícia. Você verifica que ele tem um histórico de comportamentos sexuais desviantes que não foram tratados anteriormente, e sua família relata que ele teve problemas legais no passado por comportamentos similares. Durante a entrevista ele demonstra um comportamento ambivalente, reconhecendo seus impulsos, mas minimizando a gravidade das acusações atuais, mas você não tem dúvida de se tratar de um caso de parafilia. Em relação ao caso apresentado, assinale a alternativa correta.",
+          "text": "Um homem de 35 anos de idade foi acusado de abuso sexual contra uma criança e está atualmente sendo avaliado em uma perícia criminal. Durante a investigação, surgiram indícios de que ele apresenta sinais de parafilia. Foi então determinada uma perícia. Você verifica que ele tem um histórico de comportamentos sexuais desviantes que não foram tratados anteriormente, e sua família relata que ele teve problemas legais no passado por comportamentos similares. Durante a entrevista ele demonstra um comportamento ambivalente, reconhecendo seus impulsos, mas minimizando a gravidade das acusações atuais, mas você não tem dúvida de se tratar de um caso de parafilia. Em relação ao caso apresentado, assinale a alternativa correta.",
           "options": [
             {
               "letter": "A",
@@ -44160,7 +44160,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Pedofilia é um crime, i ndependente da classificação internacional de doenças. ####"
+              "text": "Pedofilia é um crime, independente da classificação internacional de doenças. ####"
             }
           ],
           "correctAnswer": "C",
@@ -44204,7 +44204,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Psiquiatria Forense",
           "topic": "Psiquiatria Forense",
           "title": "Questao 34",
-          "text": "Pedro e Laura estão em processo de divórcio e disputam a guarda de seus filhos. Pedro alega que Laura tem um transtorno mental que a incapacita de cuidar das crianças. Com base apenas nessas inform ações, como o perito deve proceder?",
+          "text": "Pedro e Laura estão em processo de divórcio e disputam a guarda de seus filhos. Pedro alega que Laura tem um transtorno mental que a incapacita de cuidar das crianças. Com base apenas nessas informações, como o perito deve proceder?",
           "options": [
             {
               "letter": "A",
@@ -44294,7 +44294,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Psiquiatria Forense",
           "topic": "Psiquiatria Forense",
           "title": "Questao 37",
-          "text": "Ricardo, 50 anos de idade, é um trabalhador que recentemente foi afastado do trabalho durante uma crise de ansiedade. Durante a perícia, você constata que se tratou de uma crise pontual e isolada, o periciando apresenta preocupação excessiva com divers os aspectos de sua vida, como trabalho, finanças e relacionamentos, que geralmente é desproporcional aos estímulos e difícil de controlar. Ele mesmo sente que exagera nas preocupações, mas em sua avaliação o trabalho é de fato estressante, requerendo muitas horas disponível e sempre com prazos exíguos e metas elevadas. Suas preocupações têm afetado o desempenho e qualidade de vida, mas não se manifestam em crises paroxísticas. Ricardo está em tratamento, mas a questão de sua capacidade de retornar ao trabalho ainda está sendo avaliada. Você estabelece o diagnóstico de transtorno de ansiedade generalizada durante a perícia. A partir daí, qual deve ser sua preocupação principal como perito?",
+          "text": "Ricardo, 50 anos de idade, é um trabalhador que recentemente foi afastado do trabalho durante uma crise de ansiedade. Durante a perícia, você constata que se tratou de uma crise pontual e isolada, o periciando apresenta preocupação excessiva com diversos aspectos de sua vida, como trabalho, finanças e relacionamentos, que geralmente é desproporcional aos estímulos e difícil de controlar. Ele mesmo sente que exagera nas preocupações, mas em sua avaliação o trabalho é de fato estressante, requerendo muitas horas disponível e sempre com prazos exíguos e metas elevadas. Suas preocupações têm afetado o desempenho e qualidade de vida, mas não se manifestam em crises paroxísticas. Ricardo está em tratamento, mas a questão de sua capacidade de retornar ao trabalho ainda está sendo avaliada. Você estabelece o diagnóstico de transtorno de ansiedade generalizada durante a perícia. A partir daí, qual deve ser sua preocupação principal como perito?",
           "options": [
             {
               "letter": "A",
@@ -44388,7 +44388,7 @@ window.BANCO_RMAIS_EXAMS = {
           "options": [
             {
               "letter": "A",
-              "text": "O nexo técnico epidemiológico estabelece uma relação de causalidade entre trabalho e agravo, que transcende a constatação pericial."
+              "text": "O nexo técnico epidemiológico estabelece uma relação de causal idade entre trabalho e agravo, que transcende a constatação pericial."
             },
             {
               "letter": "B",
@@ -45073,7 +45073,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "De acordo com o Instrutivo Técnico da Rede de Atenção Psicossocial (Raps) no Sist ema Único de Saúde (SUS), unidades de internação psiquiátrica específicas para crianças e adolescentes devem ter a necessária estrutura que atenda especificidades em conformidade com o ECA, entre elas: acompanhamento presencial por responsável legal durante todo período de permanência e procedimentos realizados, priv acidade, sigilo e medidas que assegurem a proteção da integridade da criança e adolescente. ####"
+              "text": "De acordo com o Instrutivo Técnico da Rede de Atenção Psicossocial (Raps) no Sist ema Único de Saúde (SUS), unidades de internação psiquiátrica específicas para crianças e adolescentes devem ter a necessária estrutura que atenda especificidades em conformidade com o ECA, entre elas: acompanhamento presencial por responsável legal durante todo período de permanência e procedimentos realizados, privacidade, sigilo e medidas que assegurem a proteção da integridade da criança e adolescente. ####"
             }
           ],
           "correctAnswer": "D",
@@ -45121,11 +45121,11 @@ window.BANCO_RMAIS_EXAMS = {
           "options": [
             {
               "letter": "A",
-              "text": "A pobreza já foi associada a piores condições de saúde física e mental. Por outro lado , já existem evidencias de que a participação da fa mília em programa de transferência de renda durante a infância pode ter efeitos positivos sobre a saúde mental."
+              "text": "A pobreza já foi associada a piores condições de saúde física e mental. Por outro lado , já existem evidencias de que a participação da família em programa de transferência de renda durante a infância pode ter efeitos positivos sobre a saúde mental."
             },
             {
               "letter": "B",
-              "text": "Os estudos mostram que o racismo está relacionado a problemas emocionais na ad olescência, período do desenvolvimento em que ocorre o estabelecimento da identidade do indivíduo. No entanto, na literatura não há evidencia de que o racismo tenha impacto negativo na saúde mental de crianças pré-púberes."
+              "text": "Os estudos mostram que o racismo está relacionado a problemas emocionais na adolescência, período do desenvolvimento em que ocorre o estabelecimento da identidade do indivíduo. No entanto, na literatura não há evidencia de que o racismo tenha impacto negativo na saúde mental de crianças pré-púberes."
             },
             {
               "letter": "C",
@@ -45177,7 +45177,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Psiquiatria da Infancia e Adolescencia",
           "topic": "Psiquiatria da Infancia e Adolescencia",
           "title": "Questao 26",
-          "text": "Os pais contam que Carlos, 10 anos de idade, desde pequeno é agitado, impulsivo e irritado. Apresenta explosões de raiva que acontecem de forma despropo rcional diante de pequenas frustrações. Quando tinha cinco anos de idade, Carlos recebeu diagnóstico de Transtorno de Déficit de Atenção e Hiperatividade (TDAH) e Transtorno Opositor Desafiante (TOD). Na época, os pais tiveram medo de dar qualquer tipo de medicação por ele ser muito novo. Ao longo do tempo, Carlos manteve sintomas de impulsivi dade e explosões de raiva intensas e frequentes. Há cerc a de 2 anos, estas explosões ocorrem quase que diariame nte e são acompanhadas de agressões verbais e físicas. O pai descreve que filho também é ranzinza e que se sente “pisando em ovos”. Nos últimos meses, os pais notam que Carlos tem se mostrado mais triste e se queixado de ter poucos amigos . Apresenta falas negativas sobre si, como “eu sou burro, ninguém gosta de mim”. Considerando o caso descrito, assinale a alternativa correta.",
+          "text": "Os pais contam que Carlos, 10 anos de idade, desde pequeno é agitado, impulsivo e irritado. Apresenta explosões de raiva que acontecem de forma desproporcional diante de pequenas frustrações. Quando tinha cinco anos de idade, Carlos recebeu diagnóstico de Transtorno de Déficit de Atenção e Hiperatividade (TDAH) e Transtorno Opositor Desafiante (TOD). Na época, os pais tiveram medo de dar qualquer tipo de medicação por ele ser muito novo. Ao longo do tempo, Carlos manteve sintomas de impulsividade e explosões de raiva intensas e frequentes. Há cerc a de 2 anos, estas explosões ocorrem quase que diariame nte e são acompanhadas de agressões verbais e físicas. O pai descreve que filho também é ranzinza e que se sente “pisando em ovos”. Nos últimos meses, os pais notam que Carlos tem se mostrado mais triste e se queixado de ter poucos amigos . Apresenta falas negativas sobre si, como “eu sou burro, ninguém gosta de mim”. Considerando o caso descrito, assinale a alternativa correta.",
           "options": [
             {
               "letter": "A",
@@ -45207,11 +45207,11 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Psiquiatria da Infancia e Adolescencia",
           "topic": "Psiquiatria da Infancia e Adolescencia",
           "title": "Questao 27",
-          "text": "Eduarda, 12 anos de idade, iniciou acompanhamento ambulatorial em serviço terciá rio por fugas frequentes de casa. A adolescente vive atualmente com a mãe e no início deste ano, contou na escola que vinha sofrendo episódios de abuso sexual de seu padrasto desde os 10 anos de idade. Houve a denúncia do agressor e ele foi preso. A genitora acolheu sua filha, mas evoluiu com episódio depressivo, com sentimento intenso de culpa devido aos acontecimentos. A paciente iniciou o acompanhamento ambulatorial com manifestação de apatia, irritabilidade, dificuldade para iniciar o sono e com pesadelos recorrentes de conteúdo violento. Além disso, relatou sobre taqui cardia ao ver homens com características semelhantes às do agressor. Queixou-se também de que enxergava vultos durante a noite. Ao ser questionada sobre as fugas, explicou que fazia isso por sentir desconforto ao estar em casa. Considerando o caso descrito, assinale a alternativa correta.",
+          "text": "Eduarda, 12 anos de idade, iniciou acompanhamento ambulatorial em serviço terciá rio por fugas frequentes de casa. A adolescente vive atualmente com a mãe e no início deste ano, contou na escola que vinha sofrendo episódios de abuso sexual de seu padrasto desde os 10 anos de idade. Houve a denúncia do agressor e ele foi preso. A genitora acolheu sua filha, mas evoluiu com episódio depressivo, com sentimento intenso de culpa devido aos acontecimentos. A paciente iniciou o acompanhamento ambulatorial com manifestação de apatia, irritabilidade, dificuldade para iniciar o sono e com pesadelos recorrentes de conteúdo violento. Além disso, relatou sobre taquicardia ao ver homens com características semelhantes às do agressor. Queixou-se também de que enxergava vultos durante a noite. Ao ser questionada sobre as fugas, explicou que fazia isso por sentir desconforto ao estar em casa. Considerando o caso descrito, assinale a alternativa correta.",
           "options": [
             {
               "letter": "A",
-              "text": "Negligência é a falha em fornecer um ambiente apropriado para o desenvolvimento. Neste caso, considera-se negligência a incapacidade que a genitora teve em proteger a criança, por não ter supervisionado adequadamente sua filha, po dendo resultar em medidas de afastamento com abrigamento como medida provisória."
+              "text": "Negligência é a falha em fornecer um ambiente apropriado para o desenvolvimento. Neste caso, considera-se negligência a incapacidade que a genitora teve em proteger a criança, por não ter supervisionado adequadamente sua filha, podendo resultar em medidas de afastamento com abrigamento como medida provisória."
             },
             {
               "letter": "B",
@@ -45249,7 +45249,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "Sintomas depressivos podem se sobrepor ou serem semelhantes às alterações negativas de cognição e humor que compõem o diagnóstico de TEPT. Como os Inibidores Seletivos de Recaptação de Serotonina (ISRS) não se mostraram eficazes em crianças e adolescentes com TEPT, o tratamento de um quadro depressivo associado deve ser realizado somente pela inte rvenção psicoterápica nesses casos."
+              "text": "Sintomas depressivos podem se sobre por ou serem semelhantes às alterações negativas de cognição e humor que compõem o diagnóstico de TEPT. Como os Inibidores Seletivos de Recaptação de Serotonina (ISRS) não se mostraram eficazes em crianças e adolescentes com TEPT, o tratamento de um quadro depressivo associado deve ser realizado somente pela intervenção psicoterápica nesses casos."
             },
             {
               "letter": "D",
@@ -45267,7 +45267,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Psiquiatria da Infancia e Adolescencia",
           "topic": "Psiquiatria da Infancia e Adolescencia",
           "title": "Questao 29",
-          "text": "Em relação aos transtornos an siosos, assinale a alternativa correta.",
+          "text": "Em relação aos transtornos ansiosos, assinale a alternativa correta.",
           "options": [
             {
               "letter": "A",
@@ -45309,7 +45309,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "A etiologia da incongruência de gênero e da disforia de gênero permanecem indefinidas. Os estudos sugerem que exista uma combinação de fatores biológicos, como fatores hormonais e psicossoci ais. No entanto, não há evidência de que fatores genéticos estejam envolvidos."
+              "text": "A etiologia da incongruência de gênero e da disforia de gênero permanecem indefinidas. Os estudos sugerem que exista uma combinação de fatores biológicos, como fatores hormonais e psicossociais. No entanto, não há evidência de que fatores genéticos estejam envolvidos."
             },
             {
               "letter": "D",
@@ -45335,7 +45335,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "B",
-              "text": "No SUS, a assistência à saúde mental é realizada através da rede de atenção psicossocial que é composta por três eixos: a atenção básica, real izada pelas unidades básicas de saúde, a atenção psicossocial, realizada pelos CAPS e a rede de atenção hospitalar que inclui leitos em hospitais gerais e hospitais psiquiátricos."
+              "text": "No SUS, a assistência à saúde mental é realizada através da rede de atenção psicossocial que é composta por três eixos: a atenção básica, realizada pelas unidades básicas de saúde, a atenção psicossocial, realizada pelos CAPS e a rede de atenção hospitalar que inclui leitos em hospitais gerais e hospitais psiquiátricos."
             },
             {
               "letter": "C",
@@ -45607,7 +45607,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "B",
-              "text": "Para pacientes que tem diagnóstico de TEA e Transtorno de Déficit de Atenção e Hiperatividade (TDAH), há evidências de que o tratamento de curto prazo com metilfenidato ou atomoxet ina reduzem sintomas de TDAH."
+              "text": "Para pacientes que tem diagnóstico de TEA e Transtorno de Déficit de Atenção e Hiperatividade (TDAH), há evidências de que o tratamento de curto prazo com metilfenidato ou atomoxetina reduzem sintomas de TDAH."
             },
             {
               "letter": "C",
@@ -45642,7 +45642,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2026 - Ano Adicional",
           "topic": "Ano Adicional",
           "title": "Questao 1",
-          "text": "Segundo diversos estudos epidemiológicos realizados no Brasil, cerca de 50% dos entrevistados se declararam abstinentes do álcool nos últimos doze mes es anteriores à pesquisa. Já em relação aos padrões de uso e sobre os aspectos demográficos de gênero, foram observadas diferenças importantes. Qual é essa diferença?",
+          "text": "Segundo diversos estudos epidemiológicos realizados no Brasil, cerca de 50% dos entrevistados se declararam abstinentes do álcool nos últimos doze meses anteriores à pesquisa. Já em relação aos padrões de uso e sobre os aspectos demográficos de gênero, foram observadas diferenças importantes. Qual é essa diferença?",
           "options": [
             {
               "letter": "A",
@@ -45654,7 +45654,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "Aumento de 34,5% de bebedores frequentes entre o gênero feminino."
+              "text": "Aumento de 34,5% de bebe dores frequentes entre o gênero feminino."
             },
             {
               "letter": "D",
@@ -45710,7 +45710,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "B",
-              "text": "Quanto mais rápido o consumo, maior o tempo de metabolização e eliminação do con teúdo alcoólico ingerido."
+              "text": "Quanto mais rápido o consumo, maior o tempo de metabolização e eliminação do conteúdo alcoólico ingerido."
             },
             {
               "letter": "C",
@@ -45898,7 +45898,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "A oxicodona tem ação analgésica inferior e menor risco de abuso que a morfina. ##### Processo Seletivo aos Programas de Residência Médica – Edital: COREME/FM/Nº 03/2025 – Anos Adicionais – Psiquiatria – PROVA AA8 Texto para as questões de 10 a 12 Homem, 32 anos de idade, u suário de cocaína há 14 anos. Atualmente, usa dois a três pinos por dia. Faz panfletagem e gasta todo o dinheiro com a substância. Teve uma internação há 4 meses. Sentiu muita dificuldade nos primeiros dias de internação. Sentia-se cansado, sem atitude, com vontade de ficar na cama. Ficava irritado com tudo , mas tinha muita vontade de usar a substância. Aceitou a internação porque percebeu que mesmo querendo parar de usar a cocaína, não conseguia evitar o uso."
+              "text": "A oxicodona tem ação analgésica inferior e menor risco de abuso que a morfina. ##### Processo Seletivo aos Programas de Residência Médica – Edital: COREME/FM/Nº 03/2025 – Anos Adicionais – Psiquiatria – PROVA AA8 Texto para as questões de 10 a 12 Homem, 32 anos de idade, usuário de cocaína há 14 anos. Atualmente, usa dois a três pinos por dia. Faz panfletagem e gasta todo o dinheiro com a substância. Teve uma internação há 4 meses. Sentiu muita dificuldade nos primeiros dias de internação. Sentia-se cansado, sem atitude, com vontade de ficar na cama. Ficava irritado com tudo , mas tinha muita vontade de usar a substância. Aceitou a internação porque percebeu que mesmo querendo parar de usar a cocaína, não conseguia evitar o uso."
             }
           ],
           "correctAnswer": "C",
@@ -45916,7 +45916,7 @@ window.BANCO_RMAIS_EXAMS = {
           "options": [
             {
               "letter": "A",
-              "text": "Aumento de disponibilidade de d opamina no sistema mesolímbico e sintomas de abstinência."
+              "text": "Aumento de disponibilidade de dopamina no sistema mesolímbico e sintomas de abstinência."
             },
             {
               "letter": "B",
@@ -45924,7 +45924,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "Hipomodulação do cór tex pré -frontal órbito -frontal e melhora na tomada de decisão."
+              "text": "Hipomodulação do córtex pré-frontal órbito -frontal e melhora na tomada de decisão."
             },
             {
               "letter": "D",
@@ -46212,7 +46212,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2026 - Ano Adicional",
           "topic": "Ano Adicional",
           "title": "Questao 20",
-          "text": "Um adolescente apresenta padrão de abuso de múltiplas substâncias e sintomas intensos de impulsividade. Considerando a associação entre impulsividade e Transtornos por Uso de S ubstâncias (TUS), assinale a alternativa que melhor expressa os achados sobre essa comorbidade.",
+          "text": "Um adolescente apresenta padrão de abuso de múltiplas substâncias e sintomas intensos de impulsividade. Considerando a associação entre impulsividade e Transtornos por Uso de Substâncias (TUS), assinale a alternativa que melhor expressa os achados sobre essa comorbidade.",
           "options": [
             {
               "letter": "A",
@@ -46224,7 +46224,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "A impulsividade elevada associa -se, estatisticamente, ao uso de estimulantes por adolescentes sem predisposição."
+              "text": "A impulsividade elevada associa-se, estatisticamente, ao uso de estimulantes por adolescentes sem predisposição."
             },
             {
               "letter": "D",
@@ -46242,7 +46242,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2026 - Ano Adicional",
           "topic": "Ano Adicional",
           "title": "Questao 21",
-          "text": "Qual alternativa ref lete a posição mais atualizada sobre a indicação de tratamento farmacológico para adolescentes com transtorno por uso de substâncias associado à impulsividade?",
+          "text": "Qual alternativa reflete a posição mais atualizada sobre a indicação de tratamento farmacológico para adolescentes com transtorno por uso de substâncias associado à impulsividade?",
           "options": [
             {
               "letter": "A",
@@ -46340,7 +46340,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "B",
-              "text": "O acompanhamento pré -natal deve ser realizado em serviços especializados e/ou de alta complexidade."
+              "text": "O acompanhamento pré-natal deve ser realizado em serviços especializados e/ou de alta complexidade."
             },
             {
               "letter": "C",
@@ -46392,7 +46392,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2026 - Ano Adicional",
           "topic": "Ano Adicional",
           "title": "Questao 26",
-          "text": "No manejo da dependência do zolpidem, devido à sua meia- vida curta e por ser administrado uma vez ao dia, pode -se observar menos dependência física do que ao diazepam (presente durante todo o dia). Assim, recomenda -se preferencialmente a redução gradual da dose do zolpidem. Caso o paciente descreva sintomas de abstinência entre doses, qual a medicação indicada?",
+          "text": "No manejo da dependência do zolpidem, devido à sua meia- vida curta e por ser administrado uma vez ao dia, pode-se observar menos dependência física do que ao diazepam (presente durante todo o dia). Assim, recomenda-se preferencialmente a redução gradual da dose do zolpidem. Caso o paciente descreva sintomas de abstinência entre doses, qual a medicação indicada?",
           "options": [
             {
               "letter": "A",
@@ -46542,7 +46542,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2026 - Ano Adicional",
           "topic": "Ano Adicional",
           "title": "Questao 31",
-          "text": "Segundo o DSM -5, pode -se considera r um sintoma de abstinência de Cannabis spp.:",
+          "text": "Segundo o DSM -5, pode-se considera r um sintoma de abstinência de Cannabis spp.:",
           "options": [
             {
               "letter": "A",
@@ -46602,7 +46602,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2026 - Ano Adicional",
           "topic": "Ano Adicional",
           "title": "Questao 33",
-          "text": "No atendimento a um paciente com um quadro clínico de intoxicação medicamentosa por opioide, observam -se os seguintes sintomas:",
+          "text": "No atendimento a um paciente com um quadro clínico de intoxicação medicamentosa por opioide, observam-se os seguintes sintomas:",
           "options": [
             {
               "letter": "A",
@@ -46722,7 +46722,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2026 - Ano Adicional",
           "topic": "Ano Adicional",
           "title": "Questao 37",
-          "text": "Homem, 29 anos de idade, faz uso de Cannabis spp. há mais de 11 anos. Refere aumento progressivo do consumo e do tempo gasto consumindo a substância. Reduziu significativamente seu convívio social e não está trabalhando há 5 meses. Refere ansiedade e irritabilidade, cansaço e pensa re correntemente em usar a droga. Qual medicação pode ser utilizada no tratamento da fissura em pacientes com transtornos relacionados ao uso de Cannabis spp.?",
+          "text": "Homem, 29 anos de idade, faz uso de Cannabis spp. há mais de 11 anos. Refere aumento progressivo do consumo e do tempo gasto consumindo a substância. Reduziu significativamente seu convívio social e não está trabalhando há 5 meses. Refere ansiedade e irritabilidade, cansaço e pensa re corrente mente em usar a droga. Qual medicação pode ser utilizada no tratamento da fissura em pacientes com transtornos relacionados ao uso de Cannabis spp.?",
           "options": [
             {
               "letter": "A",
@@ -46752,11 +46752,11 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2026 - Ano Adicional",
           "topic": "Ano Adicional",
           "title": "Questao 38",
-          "text": "Adolescente, 17 anos de idade, sexo masculino, iniciou o uso de Cannabis spp.aos 12 anos de idade e nos últimos 2 anos, tem feito uso diário, mais de dois cigarros de maconha por dia e uso quase semanal de haxixe. Há 1 ano e meio , tem apresentado conflitos na escola, que abandonou há 3 meses, e em sua casa. Recentemente, agrediu o pai que o recriminou por ter perdido dinheiro em aplicativos de jogos no celular. Assinale a alternativa que descreve com maior precisão os achados contempo râneos de neuroimagem funcional em adolescentes e adultos jovens usuários de Cannabis spp.",
+          "text": "Adolescente, 17 anos de idade, sexo masculino, iniciou o uso de Cannabis spp.aos 12 anos de idade e nos últimos 2 anos, tem feito uso diário, mais de dois cigarros de maconha por dia e uso quase semanal de haxixe. Há 1 ano e meio , tem apresentado conflitos na escola, que abandonou há 3 meses, e em sua casa. Recentemente, agrediu o pai que o recriminou por ter perdido dinheiro em aplicativos de jogos no celular. Assinale a alternativa que descreve com maior precisão os achados contemporâneos de neuroimagem funcional em adolescentes e adultos jovens usuários de Cannabis spp.",
           "options": [
             {
               "letter": "A",
-              "text": "Diminuição da conectividade entre o córtex pré -frontal dorsolateral e o estriado ventral."
+              "text": "Diminuição da conectividade entre o córtex pré-frontal dorsolateral e o estriado ventral."
             },
             {
               "letter": "B",
@@ -46786,7 +46786,7 @@ window.BANCO_RMAIS_EXAMS = {
           "options": [
             {
               "letter": "A",
-              "text": "O córtex pré -frontal em adolescentes encontra -se amadurecido, reduzindo o risco de tomada de decisão impulsiva relacionada ao uso de substâncias."
+              "text": "O córtex pré-frontal em adolescentes encontra-se amadurecido, reduzindo o risco de tomada de decisão impulsiva relacionada ao uso de substâncias."
             },
             {
               "letter": "B",
@@ -46798,7 +46798,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "A maturação precoce do sistema límbico e o desenvolvimento tardio do córtex pré -frontal aumentam o risco de comportamentos impulsivos. #####"
+              "text": "A maturação precoce do sistema límbico e o desenvolvimento tardio do córtex pré-frontal aumentam o risco de comportamentos impulsivos. #####"
             }
           ],
           "correctAnswer": "D",
@@ -46885,7 +46885,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2026 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 2",
-          "text": "Homem, 75 anos de idade, com histórico de parkinsonismo leve e progressivo é avaliado por declínio cognitivo iniciado há 1 ano, com flutuação da atenção, alucinações visuais bem formadas, rigidez muscular, e episódios de queda. O paciente apresenta boa memória episódica nos estágios iniciais, mas importantes p rejuízos visuoespaciais e executivos. Esposa relata que ele teve intensa sedação após uso de quetiapina. RM de crânio: atrofia leve difusa, preservação do hipocampo e SPECT com DaTscan: captação reduzida nos núcleos da base. Qual o diagnóstico mais prováve l e a principal implicação terapêutica?",
+          "text": "Homem, 75 anos de idade, com histórico de parkinsonismo leve e progressivo é avaliado por declínio cognitivo iniciado há 1 ano, com flutuação da atenção, alucinações visuais bem formadas, rigidez muscular, e episódios de queda. O paciente apresenta boa memória episódica nos estágios iniciais, mas importantes prejuízos visuoespaciais e executivos. Esposa relata que ele teve intensa sedação após uso de quetiapina. RM de crânio: atrofia leve difusa, preservação do hipocampo e SPECT com DaTscan: captação reduzida nos núcleos da base. Qual o diagnóstico mais provável e a principal implicação terapêutica?",
           "options": [
             {
               "letter": "A",
@@ -46915,7 +46915,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2026 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 3",
-          "text": "Homem, 73 anos de idade, sem história psiquiátrica prévia , apresenta episódio de euforia, taquilalia, redução da necessidade de son o, hiperatividade motora e ideias grandiosas, com duração de 12 dias. Não há uso de substâncias. Ressonância mostra atrofia frontotemporal discreta, e eletrólitos estão normais. Qual das hipóteses diagnósticas apresentadas a seguir é mais provável?",
+          "text": "Homem, 73 anos de idade, sem história psiquiátrica prévia , apresenta episódio de euforia, taquilalia, redução da necessidade de sono, hiperatividade motora e ideias grandiosas, com duração de 12 dias. Não há uso de substâncias. Ressonância mostra atrofia frontotemporal discreta, e eletrólitos estão normais. Qual das hipóteses diagnósticas apresentadas a seguir é mais provável?",
           "options": [
             {
               "letter": "A",
@@ -46979,7 +46979,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2026 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 5",
-          "text": "Texto para as questões 04 e 05 \nVocê é solicitado para avaliar, como interconsultor da psiquiatria, uma mulher de 63 anos de idade, internada eletivamente em hospital geral para realizar colecistectomia por colecistopatia calculosa. Entretanto, a cirurgia foi suspensa, pois a paciente inicia, após 12 horas da internação, quadro de crises de ansiedade, inquietação psicomotora leve e intermitente, náuseas, palpitações (taquicardia sinusal, FC de 104 bpm), além de tremores leves em extremidades de mãos. Perma nece bem orientada em tempo e espaço, atenção preservada, pensamento acelerado, com associação coerente entre as ideias, angustiada, com humor ansioso, sensações de formigamento nos braços, sem alterações de juízo de realidade. Sem alterações somáticas ao exame neurológico. Exame físico e exames complementares iniciais descartaram distúrbios metabólicos ou infecciosos que justificassem o quadro atual. Recebeu haloperidol 5 mg via intramuscular, com pouca eficácia. Antecedentes: transtorno de ansiedade generalizada (estava remitida com uso de sertralina 100 mg/dia e clonazepam 2 mg/dia, não conciliados na prescrição da internação), etilismo há 10 anos (refere consumo de 5 latas de cerveja por dia), cirurgia bariátrica com bypass, obesidade classe I, HAS.\nSobre o tratamento principal do quadro neuropsiquiátrico agudo da paciente, assinale a alternativa correta.",
+          "text": "Texto para as questões 04 e 05 \nVocê é solicitado para avaliar, como interconsultor da psiquiatria, uma mulher de 63 anos de idade, internada eletivamente em hospital geral para realizar colecistectomia por colecistopatia calculosa. Entretanto, a cirurgia foi suspensa, pois a paciente inicia, após 12 horas da internação, quadro de crises de ansiedade, inquietação psicomotora leve e intermitente, náuseas, palpitações (taquicardia sinusal, FC de 104 bpm), além de tremores leves em extremidades de mãos. Permanece bem orientada em tempo e espaço, atenção preservada, pensamento acelerado, com associação coerente entre as ideias, angustiada, com humor ansioso, sensações de formigamento nos braços, sem alterações de juízo de realidade. Sem alterações somáticas ao exame neurológico. Exame físico e exames complementares iniciais descartaram distúrbios metabólicos ou infecciosos que justificassem o quadro atual. Recebeu haloperidol 5 mg via intramuscular, com pouca eficácia. Antecedentes: transtorno de ansiedade generalizada (estava remitida com uso de sertralina 100 mg/dia e clonazepam 2 mg/dia, não conciliados na prescrição da internação), etilismo há 10 anos (refere consumo de 5 latas de cerveja por dia), cirurgia bariátrica com bypass, obesidade classe I, HAS.\nSobre o tratamento principal do quadro neuropsiquiátrico agudo da paciente, assinale a alternativa correta.",
           "options": [
             {
               "letter": "A",
@@ -47073,7 +47073,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2026 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 8",
-          "text": "Paciente, 83 anos de idade , previamente funcional, é internada após apresentar confusão mental, sonolência durante o dia e agitação noturna há cerca de 3 dias. Segundo familiares, a paciente vinha apresentando , há cerca de 6 meses, apatia, irritabilida de, desatenção, dificuldade para iniciar tarefas e na tomada de decisões, isolamento e lentificação. Durante a internação, apresenta flutuação do nível de consciência, desatenção, alucinações visuais e piora vespertina dos sintomas. •Exames laboratoriais: Hemograma: leucocitose com desvio à esquerda PCR: 12 mg/dL (ref.: 0,3 a 1,0 mg/dL) Na+: 128 mEq/L (ref.: 136 a 145 mEq/L) RM de crânio: atrofia difusa leve, sem lesões focais MEEM: 15 (aplicado durante crise) Em relação ao caso descrito, q ual é o diagnóstico mais provável e a conduta inicial mais apropriada?",
+          "text": "Paciente, 83 anos de idade , previamente funcional, é internada após apresentar confusão mental, sonolência durante o dia e agitação noturna há cerca de 3 dias. Segundo familiares, a paciente vinha apresentando , há cerca de 6 meses, apatia, irritabilida de, desatenção, dificuldade para iniciar tarefas e na tomada de decisões, isolamento e lentificação. Durante a internação, apresenta flutuação do nível de consciência, desatenção, alucinações visuais e piora vespertina dos sintomas. •Exames laboratoriais: Hemograma: leucocitose com desvio à esquerda PCR: 12 mg/dL (ref.: 0,3 a 1,0 mg/dL) Na+: 128 mEq/L (ref.: 136 a 145 mEq/L) RM de crânio: atrofia difusa leve, sem lesões focais MEEM: 15 (aplicado durante crise) Em relação ao caso descrito, qual é o diagnóstico mais provável e a conduta inicial mais apropriada?",
           "options": [
             {
               "letter": "A",
@@ -47185,7 +47185,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Recomenda-se a prescrição de estimuladores do apetite e polivitamínicos."
+              "text": "Recomenda-se a prescrição de estimula dores do apetite e polivitamínicos."
             }
           ],
           "correctAnswer": "A",
@@ -47325,23 +47325,23 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2026 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 16",
-          "text": "Texto para as questões de 16 a 19 \nHomem branco, 71 anos de idade, casado, engenheiro (sócio proprietário de empresa de construção civil), residente em São Paulo. Solicita uma consulta, em consultório particular, para obter uma terceira opinião sobre o seu caso. Comparece acompanhado da esposa, mas ele próprio fornece as informações de anamnese com boa precisão. Conta que , no último ano , tem notado lapsos de memória, particularmente para fatos recentes, e dificuldades para encontrar palavras durante uma conversa informal – sintomas que parecem ter se acentuado ao longo do tempo. Apesar disso, continua com capacidade plena para exercer atividades diárias, inclusive aquelas relacionadas ao exercício de sua profissão, embora hoje não tenha mais tantas atribuições, pois o trabalho operacional é realizado por sua equipe. Mantém suas rotinas esportivas (joga tênis, faz caminhadas) e sociais (frequenta concertos de música clássica e aprecia reunir -se com amigos em restaurantes). Não se considera deprimido, mas reconhece estar preocupado com os sintomas cognitivos . Sua esposa corrobora a impressão de que os esquecimentos não causam incapacitação, mas são perceptíveis em situações cotidianas. Em uma primeira consulta com seu médico generalista, foi assegurado de que estaria bem clinicamente, eutrófico e com parâmetros de saúde normais. Relata hipertensão leve e dislipidemia (cont roladas); nega diabetes melito , hipotireoidismo ou outras condições clínicas. Tem boa acuidade auditiva e visual, com lentes corretivas. Faz uso de metoprolol (50 mg/dia), ácido acetil salicí lico (100 mg/dia) e rosuvastatina (10 mg/dia). É filho único e sua mãe, com 94 anos de idade, tem boa saúde, mas já demonstra sinais de senilidade. Quando insistiu sobre sua preocupação com as falhas de memória, somadas ao fato de que seu pai faleceu com demência aos 82 anos de idade , o médico lhe recomendou consultar um neurologista. Nesta consulta, apesar de não identificar anormalidades no exame neurológico e de ter apresentado desempenho satisfatório em teste de rastreio cognitivo (28 pontos no teste cognitivo de Montreal), foram solicitados outros exames. A avaliação neuropsicológica foi compatível com a hipótese de comprometimento cognitivo leve amnéstico. O exame de imagem cerebral por ressonância magnética não mostrou alterações significativas em re lação aos parâmetros gerais; apenas mínimas alterações microangiopáticas (escore de zero na escala de Fazekas) e, à inspeção visual das porções mesiais dos lobos temporais, foram atribuídos os escores MTA (Medial Temporal Atrophy, ou Atrofia Medial Tempora l) pela escala de Scheltens, sendo MTA = 2 à esquerda e MTA = 1 à direita. Com base nessas informações, o médico tranquilizou o paciente, dizendo que sua condição não seria compatível com o diagnóstico de demência. Prescreveu um polivitamínico “para forta lecer a memória ” e sugeriu que ele retornasse em consulta de seguimento em 6 meses. Na consulta com você, psicogeriatra, são relatados os dados da história clínica e apresentados os exames realizados. Sua orientação foi de que a condição clínica descrita, como comprometimento cognitivo leve amnéstico pode ser indício de doença de Alzheimer em fase incipiente; contudo, seria precipitado estabelecer esse diagnóstico categoricamente com os dados atuais. E que, embora a conduta expectante não esteja incorreta, outros exames poderiam ser realizados para se obter uma melhor caracterização clínica e estabelecer o diagnóstico diferencial com a Doença de Alzheimer.\n\nConsiderando que o paciente tem condições financeiras para custear exames não providos pelo SUS, assinale a alternativa que apresenta os exames que você indicaria para completar a investigação clínica, tendo como objetivo estabelecer o “diagnóstico biológico ” da Doença de Alzheimer, considerando-se um possível encaminhamento para terapia modificadora da doença com drogas antiamiloide.",
+          "text": "Texto para as questões de 16 a 19 \nHomem branco, 71 anos de idade, casado, engenheiro (sócio proprietário de empresa de construção civil), residente em São Paulo. Solicita uma consulta, em consultório particular, para obter uma terceira opinião sobre o seu caso. Comparece acompanhado da esposa, mas ele próprio fornece as informações de anamnese com boa precisão. Conta que , no último ano , tem notado lapsos de memória, particularmente para fatos recentes, e dificuldades para encontrar palavras durante uma conversa informal – sintomas que parecem ter se acentuado ao longo do tempo. Apesar disso, continua com capacidade plena para exercer atividades diárias, inclusive aquelas relacionadas ao exercício de sua profissão, embora hoje não tenha mais tantas atribuições, pois o trabalho operacional é realizado por sua equipe. Mantém suas rotinas esportivas (joga tênis, faz caminhadas) e sociais (frequenta concertos de música clássica e aprecia reunir-se com amigos em restaurantes). Não se considera deprimido, mas reconhece estar preocupado com os sintomas cognitivos . Sua esposa corrobora a impressão de que os esquecimentos não causam incapacitação, mas são perceptíveis em situações cotidianas. Em uma primeira consulta com seu médico generalista, foi assegurado de que estaria bem clinicamente, eutrófico e com parâmetros de saúde normais. Relata hipertensão leve e dislipidemia (cont roladas); nega diabetes melito , hipotireoidismo ou outras condições clínicas. Tem boa acuidade auditiva e visual, com lentes corretivas. Faz uso de metoprolol (50 mg/dia), ácido acetil salicí lico (100 mg/dia) e rosuvastatina (10 mg/dia). É filho único e sua mãe, com 94 anos de idade, tem boa saúde, mas já demonstra sinais de senilidade. Quando insistiu sobre sua preocupação com as falhas de memória, somadas ao fato de que seu pai faleceu com demência aos 82 anos de idade , o médico lhe recomendou consultar um neurologista. Nesta consulta, apesar de não identificar anormalidades no exame neurológico e de ter apresentado desempenho satisfatório em teste de rastreio cognitivo (28 pontos no teste cognitivo de Montreal), foram solicitados outros exames. A avaliação neuropsicológica foi compatível com a hipótese de comprometimento cognitivo leve amnéstico. O exame de imagem cerebral por ressonância magnética não mostrou alterações significativas em re lação aos parâmetros gerais; apenas mínimas alterações microangiopáticas (escore de zero na escala de Fazekas) e, à inspeção visual das porções mesiais dos lobos temporais, foram atribuídos os escores MTA (Medial Temporal Atrophy, ou Atrofia Medial Tempora l) pela escala de Scheltens, sendo MTA = 2 à esquerda e MTA = 1 à direita. Com base nessas informações, o médico tranquilizou o paciente, dizendo que sua condição não seria compatível com o diagnóstico de demência. Prescreveu um polivitamínico “para forta lecer a memória ” e sugeriu que ele retornasse em consulta de seguimento em 6 meses. Na consulta com você, psicogeriatra, são relatados os dados da história clínica e apresentados os exames realizados. Sua orientação foi de que a condição clínica descrita, como comprometimento cognitivo leve amnéstico pode ser indício de doença de Alzheimer em fase incipiente; contudo, seria precipitado estabelecer esse diagnóstico categoricamente com os dados atuais. E que, embora a conduta expectante não esteja incorreta, outros exames poderiam ser realizados para se obter uma melhor caracterização clínica e estabelecer o diagnóstico diferencial com a Doença de Alzheimer.\n\nConsiderando que o paciente tem condições financeiras para custear exames não providos pelo SUS, assinale a alternativa que apresenta os exames que você indicaria para completar a investigação clínica, tendo como objetivo estabelecer o “diagnóstico biológico ” da Doença de Alzheimer, considerando-se um possível encaminhamento para terapia modificadora da doença com drogas antiamiloide.",
           "options": [
             {
               "letter": "A",
-              "text": "Avaliação funcional para confirmar o diagnóstico de comprometimento cognitivo leve (na ausência de déficits funcionais) ou refutá -lo, admitindo -se alternativamente o diagnóstico de demência; avaliação da linguagem, para caracterizar o acometimento das vias fonológicas de acesso lexical e semântico, o que permitiria avaliar a hipótese-diagnóstica de afasia logopênica, que representa uma forma variante da Doença de Alzheimer, biologicamente distinta das formas puramente amnésticas."
+              "text": "Avaliação funcional para confirmar o diagnóstico de comprometimento cognitivo leve (na ausência de déficits funcionais) ou refutá-lo, admitindo-se alternativamente o diagnóstico de demência; avaliação da linguagem, para caracterizar o acometimento das vias fonológicas de acesso lexical e semântico, o que permitiria avaliar a hipótese-diagnóstica de afasia logopênica, que representa uma forma variante da Doença de Alzheimer, biologicamente distinta das formas puramente amnésticas."
             },
             {
               "letter": "B",
-              "text": "Genotipagem da apolipop roteína E (alelos ε-2, ε-3 e ε-4), com o objetivo de comprovar o diagnóstico de doença de Alzheimer, e exame de imagem funcional por 18F-FDG- PET, que pode indicar padrões de acometimento metabólico regional pela redução da captação de glicose marcada. Essas informações, somadas à constatação de atrofia hipocampal, garantem o “diagnóstico biológico” da doença de Alzheimer."
+              "text": "Genotipagem da apolipoproteína E (alelos ε-2, ε-3 e ε-4), com o objetivo de comprovar o diagnóstico de doença de Alzheimer, e exame de imagem funcional por 18F-FDG- PET, que pode indicar padrões de acometimento metabólico regional pela redução da captação de glicose marcada. Essas informações, somadas à constatação de atrofia hipocampal, garantem o “diagnóstico biológico” da doença de Alzheimer."
             },
             {
               "letter": "C",
-              "text": "Repetir o exame de imagem por ressonância magnética, desta vez incluindo estudo volumétrico da formação hipocampal (para maior acurácia na mensuração da atrofia hipocampal) e aquisições em SWI, FLAIR e/ou GRE, para maior sensibilidade na identificação de microlesões vasculares, procedimento necessário para avaliar a ocorrência de angiopatia cerebral amiloide e indicar com segurança a imunoterapia."
+              "text": "Repetir o exame de imagem por ressonância magnética, desta vez incluindo estudo volumétrico da formação hipocampal (para maior acurácia na mensuração da atrofia hipocampal) e aquisições em SWI, FLAIR e/ou GRE, para maior sensibilidade na identificação de micro lesões vasculares, procedimento necessário para avaliar a ocorrência de angiopatia cerebral amiloide e indicar com segurança a imunoterapia."
             },
             {
               "letter": "D",
-              "text": "Exame de imagem molecular do amiloide por PET (11C-PIB ou 18F-florbetaben) e/ou biomarcadores plasmáticos (razão entre peptídeos Aβ42/40 e razão entre proteína Tau fosforilada/não fosforilada no resíduo de treonina-217) e/ou biomarcadores liqu óricos (pept ídeos A β42 e A β40, Tau total e fosfoTau-181)."
+              "text": "Exame de imagem molecular do amiloide por PET (11C-PIB ou 18F-florbetaben) e/ou biomarcadores plasmáticos (razão entre peptídeos Aβ42/40 e razão entre proteína Tau fosforilada/não fosforilada no resíduo de treonina-217) e/ou biomarcadores liquóricos (peptídeos A β42 e A β40, Tau total e fosfoTau-181)."
             }
           ],
           "correctAnswer": "D",
@@ -47357,7 +47357,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2026 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 17",
-          "text": "Texto para as questões de 16 a 19 \nHomem branco, 71 anos de idade, casado, engenheiro (sócio proprietário de empresa de construção civil), residente em São Paulo. Solicita uma consulta, em consultório particular, para obter uma terceira opinião sobre o seu caso. Comparece acompanhado da esposa, mas ele próprio fornece as informações de anamnese com boa precisão. Conta que , no último ano , tem notado lapsos de memória, particularmente para fatos recentes, e dificuldades para encontrar palavras durante uma conversa informal – sintomas que parecem ter se acentuado ao longo do tempo. Apesar disso, continua com capacidade plena para exercer atividades diárias, inclusive aquelas relacionadas ao exercício de sua profissão, embora hoje não tenha mais tantas atribuições, pois o trabalho operacional é realizado por sua equipe. Mantém suas rotinas esportivas (joga tênis, faz caminhadas) e sociais (frequenta concertos de música clássica e aprecia reunir -se com amigos em restaurantes). Não se considera deprimido, mas reconhece estar preocupado com os sintomas cognitivos . Sua esposa corrobora a impressão de que os esquecimentos não causam incapacitação, mas são perceptíveis em situações cotidianas. Em uma primeira consulta com seu médico generalista, foi assegurado de que estaria bem clinicamente, eutrófico e com parâmetros de saúde normais. Relata hipertensão leve e dislipidemia (cont roladas); nega diabetes melito , hipotireoidismo ou outras condições clínicas. Tem boa acuidade auditiva e visual, com lentes corretivas. Faz uso de metoprolol (50 mg/dia), ácido acetil salicí lico (100 mg/dia) e rosuvastatina (10 mg/dia). É filho único e sua mãe, com 94 anos de idade, tem boa saúde, mas já demonstra sinais de senilidade. Quando insistiu sobre sua preocupação com as falhas de memória, somadas ao fato de que seu pai faleceu com demência aos 82 anos de idade , o médico lhe recomendou consultar um neurologista. Nesta consulta, apesar de não identificar anormalidades no exame neurológico e de ter apresentado desempenho satisfatório em teste de rastreio cognitivo (28 pontos no teste cognitivo de Montreal), foram solicitados outros exames. A avaliação neuropsicológica foi compatível com a hipótese de comprometimento cognitivo leve amnéstico. O exame de imagem cerebral por ressonância magnética não mostrou alterações significativas em re lação aos parâmetros gerais; apenas mínimas alterações microangiopáticas (escore de zero na escala de Fazekas) e, à inspeção visual das porções mesiais dos lobos temporais, foram atribuídos os escores MTA (Medial Temporal Atrophy, ou Atrofia Medial Tempora l) pela escala de Scheltens, sendo MTA = 2 à esquerda e MTA = 1 à direita. Com base nessas informações, o médico tranquilizou o paciente, dizendo que sua condição não seria compatível com o diagnóstico de demência. Prescreveu um polivitamínico “para forta lecer a memória ” e sugeriu que ele retornasse em consulta de seguimento em 6 meses. Na consulta com você, psicogeriatra, são relatados os dados da história clínica e apresentados os exames realizados. Sua orientação foi de que a condição clínica descrita, como comprometimento cognitivo leve amnéstico pode ser indício de doença de Alzheimer em fase incipiente; contudo, seria precipitado estabelecer esse diagnóstico categoricamente com os dados atuais. E que, embora a conduta expectante não esteja incorreta, outros exames poderiam ser realizados para se obter uma melhor caracterização clínica e estabelecer o diagnóstico diferencial com a Doença de Alzheimer.\n\n\nO paciente aceitou a sua indicação sobre os exames subsidiários, e tomou providências para realizá -los da forma mais abrangente possível. Alguns exames já ficaram prontos e são apresentados a seguir: \n A avaliação da funcionalidade, feita por uma terapeuta ocupacional experiente, mostrou preservação total da capacidade de desempenhar atividades básicas da vida diária, mas identificou algumas dificuldades em tarefas instrumentais de maior complexidade, como lembrar-se de todos os itens de uma lista de compras e realizar cálculos mentais para determinar o troco em transações financeiras. \n A volumetria hipocampal por ressonância magnética mostrou volume hipocampal de 1,82 cm 3 à esquerda e 2,16 cm 3 a direita, sugerindo redução assimétrica do volume hipocampal. \n O exame de imagem funcional por 18F-FDG-PET revelou redução da atividade metabólica em região mesial dos lobos temporais, mais acentuada à esquerda, e também nos córtices de associação temporoparietais (pré-cúneo e cíngulo posterior) com predomínio à esquer da. As concentrações do radiofármaco em áreas subcorticais, como estriado e tálamo, bem como nos córtices sensoriomotores e no cerebelo estavam preservadas. \n A análise de biomarcadores plasmáticos (com base nas concentrações de peptídeos A β42 e A β40, proteí na Tau fosforilada e não fosforilada em treonina 217, e do genótipo ApoE) indicou um índice APS ( amyloid probability score ) de 75, sugerindo alta probabilidade da presença de placas de amiloide em tecidos cerebrais. \n Exame de imagem molecular por 11C-PIB-PET revelou captação do traçador em áreas corticais, com SUVR (Standardized Uptake Value Ratio ) de 2,05 sugerindo acúmulo de amiloide cerebral. \n Pesquisa de polimorfismos da apolipoproteína E indicou que o paciente é portador do genótipo heterozigoto ε-3/ε-4. \nCom base nessas informações, assinale a alternativa que melhor reflete (i) a classificação AT(N), onde A se refere à presunção do acúmulo de amiloide cerebral, T se refere à presunção de acúmulo de proteína tau fosforilada e N indica evidência de proces so neurodegenerativo; e (ii) como essa informação pode auxiliar no raciocínio clínico, para fins de esclarecimento diagnóstico e tomada de decisões terapêuticas.",
+          "text": "Texto para as questões de 16 a 19 \nHomem branco, 71 anos de idade, casado, engenheiro (sócio proprietário de empresa de construção civil), residente em São Paulo. Solicita uma consulta, em consultório particular, para obter uma terceira opinião sobre o seu caso. Comparece acompanhado da esposa, mas ele próprio fornece as informações de anamnese com boa precisão. Conta que , no último ano , tem notado lapsos de memória, particularmente para fatos recentes, e dificuldades para encontrar palavras durante uma conversa informal – sintomas que parecem ter se acentuado ao longo do tempo. Apesar disso, continua com capacidade plena para exercer atividades diárias, inclusive aquelas relacionadas ao exercício de sua profissão, embora hoje não tenha mais tantas atribuições, pois o trabalho operacional é realizado por sua equipe. Mantém suas rotinas esportivas (joga tênis, faz caminhadas) e sociais (frequenta concertos de música clássica e aprecia reunir-se com amigos em restaurantes). Não se considera deprimido, mas reconhece estar preocupado com os sintomas cognitivos . Sua esposa corrobora a impressão de que os esquecimentos não causam incapacitação, mas são perceptíveis em situações cotidianas. Em uma primeira consulta com seu médico generalista, foi assegurado de que estaria bem clinicamente, eutrófico e com parâmetros de saúde normais. Relata hipertensão leve e dislipidemia (cont roladas); nega diabetes melito , hipotireoidismo ou outras condições clínicas. Tem boa acuidade auditiva e visual, com lentes corretivas. Faz uso de metoprolol (50 mg/dia), ácido acetil salicí lico (100 mg/dia) e rosuvastatina (10 mg/dia). É filho único e sua mãe, com 94 anos de idade, tem boa saúde, mas já demonstra sinais de senilidade. Quando insistiu sobre sua preocupação com as falhas de memória, somadas ao fato de que seu pai faleceu com demência aos 82 anos de idade , o médico lhe recomendou consultar um neurologista. Nesta consulta, apesar de não identificar anormalidades no exame neurológico e de ter apresentado desempenho satisfatório em teste de rastreio cognitivo (28 pontos no teste cognitivo de Montreal), foram solicitados outros exames. A avaliação neuropsicológica foi compatível com a hipótese de comprometimento cognitivo leve amnéstico. O exame de imagem cerebral por ressonância magnética não mostrou alterações significativas em re lação aos parâmetros gerais; apenas mínimas alterações microangiopáticas (escore de zero na escala de Fazekas) e, à inspeção visual das porções mesiais dos lobos temporais, foram atribuídos os escores MTA (Medial Temporal Atrophy, ou Atrofia Medial Tempora l) pela escala de Scheltens, sendo MTA = 2 à esquerda e MTA = 1 à direita. Com base nessas informações, o médico tranquilizou o paciente, dizendo que sua condição não seria compatível com o diagnóstico de demência. Prescreveu um polivitamínico “para forta lecer a memória ” e sugeriu que ele retornasse em consulta de seguimento em 6 meses. Na consulta com você, psicogeriatra, são relatados os dados da história clínica e apresentados os exames realizados. Sua orientação foi de que a condição clínica descrita, como comprometimento cognitivo leve amnéstico pode ser indício de doença de Alzheimer em fase incipiente; contudo, seria precipitado estabelecer esse diagnóstico categoricamente com os dados atuais. E que, embora a conduta expectante não esteja incorreta, outros exames poderiam ser realizados para se obter uma melhor caracterização clínica e estabelecer o diagnóstico diferencial com a Doença de Alzheimer.\n\n\nO paciente aceitou a sua indicação sobre os exames subsidiários, e tomou providências para realizá-los da forma mais abrangente possível. Alguns exames já ficaram prontos e são apresentados a seguir: \n A avaliação da funcionalidade, feita por uma terapeuta ocupacional experiente, mostrou preservação total da capacidade de desempenhar atividades básicas da vida diária, mas identificou algumas dificuldades em tarefas instrumentais de maior complexidade, como lembrar-se de todos os itens de uma lista de compras e realizar cálculos mentais para determinar o troco em transações financeiras. \n A volumetria hipocampal por ressonância magnética mostrou volume hipocampal de 1,82 cm 3 à esquerda e 2,16 cm 3 a direita, sugerindo redução assimétrica do volume hipocampal. \n O exame de imagem funcional por 18F-FDG-PET revelou redução da atividade metabólica em região mesial dos lobos temporais, mais acentuada à esquerda, e também nos córtices de associação temporoparietais (pré-cúneo e cíngulo posterior) com predomínio à esquer da. As concentrações do radiofármaco em áreas subcorticais, como estriado e tálamo, bem como nos córtices sensoriomotores e no cerebelo estavam preservadas. \n A análise de biomarcadores plasmáticos (com base nas concentrações de peptídeos A β42 e A β40, proteí na Tau fosforilada e não fosforilada em treonina 217, e do genótipo ApoE) indicou um índice APS ( amyloid probability score ) de 75, sugerindo alta probabilidade da presença de placas de amiloide em tecidos cerebrais. \n Exame de imagem molecular por 11C-PIB-PET revelou captação do traçador em áreas corticais, com SUVR (Standardized Uptake Value Ratio ) de 2,05 sugerindo acúmulo de amiloide cerebral. \n Pesquisa de polimorfismos da apolipoproteína E indicou que o paciente é portador do genótipo heterozigoto ε-3/ε-4. \nCom base nessas informações, assinale a alternativa que melhor reflete (i) a classificação AT(N), onde A se refere à presunção do acúmulo de amiloide cerebral, T se refere à presunção de acúmulo de proteína tau fosforilada e N indica evidência de processo neurodegenerativo; e (ii) como essa informação pode auxiliar no raciocínio clínico, para fins de esclarecimento diagnóstico e tomada de decisões terapêuticas.",
           "options": [
             {
               "letter": "A",
@@ -47389,7 +47389,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2026 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 18",
-          "text": "Texto para as questões de 16 a 19 \nHomem branco, 71 anos de idade, casado, engenheiro (sócio proprietário de empresa de construção civil), residente em São Paulo. Solicita uma consulta, em consultório particular, para obter uma terceira opinião sobre o seu caso. Comparece acompanhado da esposa, mas ele próprio fornece as informações de anamnese com boa precisão. Conta que , no último ano , tem notado lapsos de memória, particularmente para fatos recentes, e dificuldades para encontrar palavras durante uma conversa informal – sintomas que parecem ter se acentuado ao longo do tempo. Apesar disso, continua com capacidade plena para exercer atividades diárias, inclusive aquelas relacionadas ao exercício de sua profissão, embora hoje não tenha mais tantas atribuições, pois o trabalho operacional é realizado por sua equipe. Mantém suas rotinas esportivas (joga tênis, faz caminhadas) e sociais (frequenta concertos de música clássica e aprecia reunir -se com amigos em restaurantes). Não se considera deprimido, mas reconhece estar preocupado com os sintomas cognitivos . Sua esposa corrobora a impressão de que os esquecimentos não causam incapacitação, mas são perceptíveis em situações cotidianas. Em uma primeira consulta com seu médico generalista, foi assegurado de que estaria bem clinicamente, eutrófico e com parâmetros de saúde normais. Relata hipertensão leve e dislipidemia (cont roladas); nega diabetes melito , hipotireoidismo ou outras condições clínicas. Tem boa acuidade auditiva e visual, com lentes corretivas. Faz uso de metoprolol (50 mg/dia), ácido acetil salicí lico (100 mg/dia) e rosuvastatina (10 mg/dia). É filho único e sua mãe, com 94 anos de idade, tem boa saúde, mas já demonstra sinais de senilidade. Quando insistiu sobre sua preocupação com as falhas de memória, somadas ao fato de que seu pai faleceu com demência aos 82 anos de idade , o médico lhe recomendou consultar um neurologista. Nesta consulta, apesar de não identificar anormalidades no exame neurológico e de ter apresentado desempenho satisfatório em teste de rastreio cognitivo (28 pontos no teste cognitivo de Montreal), foram solicitados outros exames. A avaliação neuropsicológica foi compatível com a hipótese de comprometimento cognitivo leve amnéstico. O exame de imagem cerebral por ressonância magnética não mostrou alterações significativas em re lação aos parâmetros gerais; apenas mínimas alterações microangiopáticas (escore de zero na escala de Fazekas) e, à inspeção visual das porções mesiais dos lobos temporais, foram atribuídos os escores MTA (Medial Temporal Atrophy, ou Atrofia Medial Tempora l) pela escala de Scheltens, sendo MTA = 2 à esquerda e MTA = 1 à direita. Com base nessas informações, o médico tranquilizou o paciente, dizendo que sua condição não seria compatível com o diagnóstico de demência. Prescreveu um polivitamínico “para forta lecer a memória ” e sugeriu que ele retornasse em consulta de seguimento em 6 meses. Na consulta com você, psicogeriatra, são relatados os dados da história clínica e apresentados os exames realizados. Sua orientação foi de que a condição clínica descrita, como comprometimento cognitivo leve amnéstico pode ser indício de doença de Alzheimer em fase incipiente; contudo, seria precipitado estabelecer esse diagnóstico categoricamente com os dados atuais. E que, embora a conduta expectante não esteja incorreta, outros exames poderiam ser realizados para se obter uma melhor caracterização clínica e estabelecer o diagnóstico diferencial com a Doença de Alzheimer.\n\nEm relação à terapia modificadora da Doença de Alzheimer (DA), assinale a alternativa correta.",
+          "text": "Texto para as questões de 16 a 19 \nHomem branco, 71 anos de idade, casado, engenheiro (sócio proprietário de empresa de construção civil), residente em São Paulo. Solicita uma consulta, em consultório particular, para obter uma terceira opinião sobre o seu caso. Comparece acompanhado da esposa, mas ele próprio fornece as informações de anamnese com boa precisão. Conta que , no último ano , tem notado lapsos de memória, particularmente para fatos recentes, e dificuldades para encontrar palavras durante uma conversa informal – sintomas que parecem ter se acentuado ao longo do tempo. Apesar disso, continua com capacidade plena para exercer atividades diárias, inclusive aquelas relacionadas ao exercício de sua profissão, embora hoje não tenha mais tantas atribuições, pois o trabalho operacional é realizado por sua equipe. Mantém suas rotinas esportivas (joga tênis, faz caminhadas) e sociais (frequenta concertos de música clássica e aprecia reunir-se com amigos em restaurantes). Não se considera deprimido, mas reconhece estar preocupado com os sintomas cognitivos . Sua esposa corrobora a impressão de que os esquecimentos não causam incapacitação, mas são perceptíveis em situações cotidianas. Em uma primeira consulta com seu médico generalista, foi assegurado de que estaria bem clinicamente, eutrófico e com parâmetros de saúde normais. Relata hipertensão leve e dislipidemia (cont roladas); nega diabetes melito , hipotireoidismo ou outras condições clínicas. Tem boa acuidade auditiva e visual, com lentes corretivas. Faz uso de metoprolol (50 mg/dia), ácido acetil salicí lico (100 mg/dia) e rosuvastatina (10 mg/dia). É filho único e sua mãe, com 94 anos de idade, tem boa saúde, mas já demonstra sinais de senilidade. Quando insistiu sobre sua preocupação com as falhas de memória, somadas ao fato de que seu pai faleceu com demência aos 82 anos de idade , o médico lhe recomendou consultar um neurologista. Nesta consulta, apesar de não identificar anormalidades no exame neurológico e de ter apresentado desempenho satisfatório em teste de rastreio cognitivo (28 pontos no teste cognitivo de Montreal), foram solicitados outros exames. A avaliação neuropsicológica foi compatível com a hipótese de comprometimento cognitivo leve amnéstico. O exame de imagem cerebral por ressonância magnética não mostrou alterações significativas em re lação aos parâmetros gerais; apenas mínimas alterações microangiopáticas (escore de zero na escala de Fazekas) e, à inspeção visual das porções mesiais dos lobos temporais, foram atribuídos os escores MTA (Medial Temporal Atrophy, ou Atrofia Medial Tempora l) pela escala de Scheltens, sendo MTA = 2 à esquerda e MTA = 1 à direita. Com base nessas informações, o médico tranquilizou o paciente, dizendo que sua condição não seria compatível com o diagnóstico de demência. Prescreveu um polivitamínico “para forta lecer a memória ” e sugeriu que ele retornasse em consulta de seguimento em 6 meses. Na consulta com você, psicogeriatra, são relatados os dados da história clínica e apresentados os exames realizados. Sua orientação foi de que a condição clínica descrita, como comprometimento cognitivo leve amnéstico pode ser indício de doença de Alzheimer em fase incipiente; contudo, seria precipitado estabelecer esse diagnóstico categoricamente com os dados atuais. E que, embora a conduta expectante não esteja incorreta, outros exames poderiam ser realizados para se obter uma melhor caracterização clínica e estabelecer o diagnóstico diferencial com a Doença de Alzheimer.\n\nEm relação à terapia modificadora da Doença de Alzheimer (DA), assinale a alternativa correta.",
           "options": [
             {
               "letter": "A",
@@ -47421,11 +47421,11 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2026 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 19",
-          "text": "Texto para as questões de 16 a 19 \nHomem branco, 71 anos de idade, casado, engenheiro (sócio proprietário de empresa de construção civil), residente em São Paulo. Solicita uma consulta, em consultório particular, para obter uma terceira opinião sobre o seu caso. Comparece acompanhado da esposa, mas ele próprio fornece as informações de anamnese com boa precisão. Conta que , no último ano , tem notado lapsos de memória, particularmente para fatos recentes, e dificuldades para encontrar palavras durante uma conversa informal – sintomas que parecem ter se acentuado ao longo do tempo. Apesar disso, continua com capacidade plena para exercer atividades diárias, inclusive aquelas relacionadas ao exercício de sua profissão, embora hoje não tenha mais tantas atribuições, pois o trabalho operacional é realizado por sua equipe. Mantém suas rotinas esportivas (joga tênis, faz caminhadas) e sociais (frequenta concertos de música clássica e aprecia reunir -se com amigos em restaurantes). Não se considera deprimido, mas reconhece estar preocupado com os sintomas cognitivos . Sua esposa corrobora a impressão de que os esquecimentos não causam incapacitação, mas são perceptíveis em situações cotidianas. Em uma primeira consulta com seu médico generalista, foi assegurado de que estaria bem clinicamente, eutrófico e com parâmetros de saúde normais. Relata hipertensão leve e dislipidemia (cont roladas); nega diabetes melito , hipotireoidismo ou outras condições clínicas. Tem boa acuidade auditiva e visual, com lentes corretivas. Faz uso de metoprolol (50 mg/dia), ácido acetil salicí lico (100 mg/dia) e rosuvastatina (10 mg/dia). É filho único e sua mãe, com 94 anos de idade, tem boa saúde, mas já demonstra sinais de senilidade. Quando insistiu sobre sua preocupação com as falhas de memória, somadas ao fato de que seu pai faleceu com demência aos 82 anos de idade , o médico lhe recomendou consultar um neurologista. Nesta consulta, apesar de não identificar anormalidades no exame neurológico e de ter apresentado desempenho satisfatório em teste de rastreio cognitivo (28 pontos no teste cognitivo de Montreal), foram solicitados outros exames. A avaliação neuropsicológica foi compatível com a hipótese de comprometimento cognitivo leve amnéstico. O exame de imagem cerebral por ressonância magnética não mostrou alterações significativas em re lação aos parâmetros gerais; apenas mínimas alterações microangiopáticas (escore de zero na escala de Fazekas) e, à inspeção visual das porções mesiais dos lobos temporais, foram atribuídos os escores MTA (Medial Temporal Atrophy, ou Atrofia Medial Tempora l) pela escala de Scheltens, sendo MTA = 2 à esquerda e MTA = 1 à direita. Com base nessas informações, o médico tranquilizou o paciente, dizendo que sua condição não seria compatível com o diagnóstico de demência. Prescreveu um polivitamínico “para forta lecer a memória ” e sugeriu que ele retornasse em consulta de seguimento em 6 meses. Na consulta com você, psicogeriatra, são relatados os dados da história clínica e apresentados os exames realizados. Sua orientação foi de que a condição clínica descrita, como comprometimento cognitivo leve amnéstico pode ser indício de doença de Alzheimer em fase incipiente; contudo, seria precipitado estabelecer esse diagnóstico categoricamente com os dados atuais. E que, embora a conduta expectante não esteja incorreta, outros exames poderiam ser realizados para se obter uma melhor caracterização clínica e estabelecer o diagnóstico diferencial com a Doença de Alzheimer.\n\nApós iniciar terapia de reposição colinérgica com cloridrato de donepezila e manter 10 mg/dia por três meses, você decide encaminhar o paciente para um serviço especializado , visando à implementação da imunoterapia antiamiloide por via infusional, utilizando -se o medicamento l ecanemab, importado dos Estados Unidos. A avaliação feita pela equipe especializada ratificou a indicação do tratamento, pelas premissas de: (i) adequação do diagnóstico biológico da doença de Alzheimer; (ii) estágio evolutivo compatível com a perspectiva de benefícios clínicos; e (iii) genótipo da apolipoproteína E compatível com a intervenção. Os exames prévios de ressonância magnética foram revisados pela equipe, que identificou: ausência de eventos vasculares corticais prévios, isquêmicos ou hemorrágicos; microangiopatia subcortical leve, sem lesões conf luentes; ausência de siderose superficial cortical ou de micro hemorragias sugestivas de angiopatia cerebral amiloide subjacente. Foram prescritas infusões quinzenais do medicamento na dose de 10 mg/kg e programados exames de imagem cerebral por ressonância magnética seriados para monitoramento de segurança. As infusões ocorreram sem intercorrências clínicas e não foram relatados sintomas sugestivos de eventos adversos. Após a 13ª infusão, foi feita uma ressonância magnética de controle que identificou a ocorrência de duas lesões compatíveis com ARIA ( Amyloid- Related Imaging Abnormalities) em região occipitotemporal esquerda, sugestivas de micro hemorragias de volume inferior a 1 cm 3 conforme mostra a imagem a seguir ( achado em destaque). O paciente foi convocado para reavaliação clínica, constatando-se que esse achado de imagem não era acompanhado de sintomas ou sinais clínicos. Com base nessas informações, assinale a alternativa que melhor corresponde ao diagnóstico e conduta neste caso.",
+          "text": "Texto para as questões de 16 a 19 \nHomem branco, 71 anos de idade, casado, engenheiro (sócio proprietário de empresa de construção civil), residente em São Paulo. Solicita uma consulta, em consultório particular, para obter uma terceira opinião sobre o seu caso. Comparece acompanhado da esposa, mas ele próprio fornece as informações de anamnese com boa precisão. Conta que , no último ano , tem notado lapsos de memória, particularmente para fatos recentes, e dificuldades para encontrar palavras durante uma conversa informal – sintomas que parecem ter se acentuado ao longo do tempo. Apesar disso, continua com capacidade plena para exercer atividades diárias, inclusive aquelas relacionadas ao exercício de sua profissão, embora hoje não tenha mais tantas atribuições, pois o trabalho operacional é realizado por sua equipe. Mantém suas rotinas esportivas (joga tênis, faz caminhadas) e sociais (frequenta concertos de música clássica e aprecia reunir-se com amigos em restaurantes). Não se considera deprimido, mas reconhece estar preocupado com os sintomas cognitivos . Sua esposa corrobora a impressão de que os esquecimentos não causam incapacitação, mas são perceptíveis em situações cotidianas. Em uma primeira consulta com seu médico generalista, foi assegurado de que estaria bem clinicamente, eutrófico e com parâmetros de saúde normais. Relata hipertensão leve e dislipidemia (cont roladas); nega diabetes melito , hipotireoidismo ou outras condições clínicas. Tem boa acuidade auditiva e visual, com lentes corretivas. Faz uso de metoprolol (50 mg/dia), ácido acetil salicí lico (100 mg/dia) e rosuvastatina (10 mg/dia). É filho único e sua mãe, com 94 anos de idade, tem boa saúde, mas já demonstra sinais de senilidade. Quando insistiu sobre sua preocupação com as falhas de memória, somadas ao fato de que seu pai faleceu com demência aos 82 anos de idade , o médico lhe recomendou consultar um neurologista. Nesta consulta, apesar de não identificar anormalidades no exame neurológico e de ter apresentado desempenho satisfatório em teste de rastreio cognitivo (28 pontos no teste cognitivo de Montreal), foram solicitados outros exames. A avaliação neuropsicológica foi compatível com a hipótese de comprometimento cognitivo leve amnéstico. O exame de imagem cerebral por ressonância magnética não mostrou alterações significativas em re lação aos parâmetros gerais; apenas mínimas alterações microangiopáticas (escore de zero na escala de Fazekas) e, à inspeção visual das porções mesiais dos lobos temporais, foram atribuídos os escores MTA (Medial Temporal Atrophy, ou Atrofia Medial Tempora l) pela escala de Scheltens, sendo MTA = 2 à esquerda e MTA = 1 à direita. Com base nessas informações, o médico tranquilizou o paciente, dizendo que sua condição não seria compatível com o diagnóstico de demência. Prescreveu um polivitamínico “para forta lecer a memória ” e sugeriu que ele retornasse em consulta de seguimento em 6 meses. Na consulta com você, psicogeriatra, são relatados os dados da história clínica e apresentados os exames realizados. Sua orientação foi de que a condição clínica descrita, como comprometimento cognitivo leve amnéstico pode ser indício de doença de Alzheimer em fase incipiente; contudo, seria precipitado estabelecer esse diagnóstico categoricamente com os dados atuais. E que, embora a conduta expectante não esteja incorreta, outros exames poderiam ser realizados para se obter uma melhor caracterização clínica e estabelecer o diagnóstico diferencial com a Doença de Alzheimer.\n\nApós iniciar terapia de reposição colinérgica com cloridrato de donepezila e manter 10 mg/dia por três meses, você decide encaminhar o paciente para um serviço especializado , visando à implementação da imunoterapia antiamiloide por via infusional, utilizando-se o medicamento l ecanemab, importado dos Estados Unidos. A avaliação feita pela equipe especializada ratificou a indicação do tratamento, pelas premissas de: (i) adequação do diagnóstico biológico da doença de Alzheimer; (ii) estágio evolutivo compatível com a perspectiva de benefícios clínicos; e (iii) genótipo da apolipoproteína E compatível com a intervenção. Os exames prévios de ressonância magnética foram revisados pela equipe, que identificou: ausência de eventos vasculares corticais prévios, isquêmicos ou hemorrágicos; microangiopatia subcortical leve, sem lesões conf luentes; ausência de siderose superficial cortical ou de micro hemorragias sugestivas de angiopatia cerebral amiloide subjacente. Foram prescritas infusões quinzenais do medicamento na dose de 10 mg/kg e programados exames de imagem cerebral por ressonância magnética seriados para monitoramento de segurança. As infusões ocorreram sem intercorrências clínicas e não foram relatados sintomas sugestivos de eventos adversos. Após a 13ª infusão, foi feita uma ressonância magnética de controle que identificou a ocorrência de duas lesões compatíveis com ARIA ( Amyloid- Related Imaging Abnormalities) em região occipitotemporal esquerda, sugestivas de micro hemorragias de volume inferior a 1 cm 3 conforme mostra a imagem a seguir ( achado em destaque). O paciente foi convocado para reavaliação clínica, constatando-se que esse achado de imagem não era acompanhado de sintomas ou sinais clínicos. Com base nessas informações, assinale a alternativa que melhor corresponde ao diagnóstico e conduta neste caso.",
           "options": [
             {
               "letter": "A",
-              "text": "Ocorrência de eventos de ARIA-E ou ARIA-H considerados leves e assintomát icos, durante o tratamento com lecanemab, não determina necessariamente a descontinuação do tratamento. Neste caso, o evento de ARIA-H é representado por micro hemorragias (microbleeds) de pequeno volume e em número inferior a 4, na ausência de sinais ou sintomas clínicos. O paciente pode prosseguir com o tratamento conforme programação inicial, com a recomendação de manter o monitoramento radiológico."
+              "text": "Ocorrência de eventos de ARIA-E ou ARIA-H considerados leves e assintomáticos, durante o tratamento com lecanemab, não determina necessariamente a descontinuação do tratamento. Neste caso, o evento de ARIA-H é representado por micro hemorragias (microbleeds) de pequeno volume e em número inferior a 4, na ausência de sinais ou sintomas clínicos. O paciente pode prosseguir com o tratamento conforme programação inicial, com a recomendação de manter o monitoramento radiológico."
             },
             {
               "letter": "B",
@@ -47453,7 +47453,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2026 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 20",
-          "text": "Homem, 76 anos de idade , com histórico de hipertensão e fibrilação atrial, é trazido ao ambulatório pelos filhos por apresentar, há 8 meses , dificuldade de memória, piora do equilíbrio e episódios de irritabilidade. Nas últimas semanas, passou a ter comportamento social inadequado, como rir sem motivo e retirar roupas em locais públicos, além de episódios de incontinência urinária. Ao exame físico, apresenta -se consciente, desinibido, com discurso tangencial. Marcha apraxia. MEEM: 20/30. O teste do desenho do relógio foi profundamente desorganizado. • RM de encéfalo (FLAIR e T2): múltiplas áreas hiperintensas na substância branca periventricular e nos núcleos da base, além de rarefação da substância branca frontoparietal. • EEG: ritmo de base desorganizado, sem atividade epileptiforme. • Líquor: pressão normal, sem pleocitose, proteínas e glicose normais. • Exames laboratoriais: TSH, B12 e VDRL não reagentes ou normais. Com base no quadro clínico descrito e nos achados complementares, qual o diagnóstico mais provável?",
+          "text": "Homem, 76 anos de idade , com histórico de hipertensão e fibrilação atrial, é trazido ao ambulatório pelos filhos por apresentar, há 8 meses , dificuldade de memória, piora do equilíbrio e episódios de irritabilidade. Nas últimas semanas, passou a ter comportamento social inadequado, como rir sem motivo e retirar roupas em locais públicos, além de episódios de incontinência urinária. Ao exame físico, apresenta-se consciente, desinibido, com discurso tangencial. Marcha apraxia. MEEM: 20/30. O teste do desenho do relógio foi profundamente desorganizado. • RM de encéfalo (FLAIR e T2): múltiplas áreas hiperintensas na substância branca periventricular e nos núcleos da base, além de rarefação da substância branca frontoparietal. • EEG: ritmo de base desorganizado, sem atividade epileptiforme. • Líquor: pressão normal, sem pleocitose, proteínas e glicose normais. • Exames laboratoriais: TSH, B12 e VDRL não reagentes ou normais. Com base no quadro clínico descrito e nos achados complementares, qual o diagnóstico mais provável?",
           "options": [
             {
               "letter": "A",
@@ -47461,7 +47461,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "B",
-              "text": "Hidrocefalia de pressão normal; dev e-se realizar teste terapêutico com punção lombar."
+              "text": "Hidrocefalia de pressão normal; deve-se realizar teste terapêutico com punção lombar."
             },
             {
               "letter": "C",
@@ -47676,7 +47676,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2026 - Psicoterapia",
           "topic": "Psicoterapia",
           "title": "Questao 7",
-          "text": "Homem, 38 anos de idade , inicia psicoterapia psicanalítica por queixas principais de ansiedade, insegurança e dependência emocional, especialmente relacionada ao medo de abandono. Nas primeiras sessões, ele comenta com frequência que valoriza muito a presença constante do terapeuta, que costuma responder rapidamente às suas mensagens entre os encontros e que tem lhe aju dado a lidar com as situações de insegurança e ansiedade quando essas ocorrem, o que lhe traz uma sensação de acolhimento e segurança. Relata sentir -se significativamente melhor, atribuindo essa melhora ao fato de saber que pode contar com o terapeuta quando necessário. Entretanto, evita aprofundar o discurso sobre suas emoções mais complexas ou discutir os padrões repetitivos que têm dificultado seus relacionamentos. No contexto do caso apresentado, em relação à melhora do paciente, assinale a alternativa correta.",
+          "text": "Homem, 38 anos de idade , inicia psicoterapia psicanalítica por queixas principais de ansiedade, insegurança e dependência emocional, especialmente relacionada ao medo de abandono. Nas primeiras sessões, ele comenta com frequência que valoriza muito a presença constante do terapeuta, que costuma responder rapidamente às suas mensagens entre os encontros e que tem lhe aju dado a lidar com as situações de insegurança e ansiedade quando essas ocorrem, o que lhe traz uma sensação de acolhimento e segurança. Relata sentir-se significativamente melhor, atribuindo essa melhora ao fato de saber que pode contar com o terapeuta quando necessário. Entretanto, evita aprofundar o discurso sobre suas emoções mais complexas ou discutir os padrões repetitivos que têm dificultado seus relacionamentos. No contexto do caso apresentado, em relação à melhora do paciente, assinale a alternativa correta.",
           "options": [
             {
               "letter": "A",
@@ -47742,7 +47742,7 @@ window.BANCO_RMAIS_EXAMS = {
           "options": [
             {
               "letter": "A",
-              "text": "Os arquétipos são imagens psíq uicas à priori, e um dos objetivos da psicoterapia analítica é permitir que o paciente entre em contato com tais imagens e seja instruído por elas."
+              "text": "Os arquétipos são imagens psíquicas à priori, e um dos objetivos da psicoterapia analítica é permitir que o paciente entre em contato com tais imagens e seja instruído por elas."
             },
             {
               "letter": "B",
@@ -47750,11 +47750,11 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "Se a interpretação unilateral do psicoterapeuta estiver apenas concordando com alguma te oria ou opinião preconcebida, o eventual assentimento do paciente, ou um certo êxito terapêutico, estarão essencialmente baseados na sugestão, e poderão ser puramente ilusórios."
+              "text": "Se a interpretação unilateral do psicoterapeuta estiver apenas concordando com alguma te oria ou opinião preconcebida, o eventual as sentimento do paciente, ou um certo êxito terapêutico, estarão essencialmente baseados na sugestão, e poderão ser puramente ilusórios."
             },
             {
               "letter": "D",
-              "text": "Do ponto de vista do amadurecimento da personalidade, o trabalho analítico situa -se em plano semelhante ao da sugestão, como uma espécie de recurso psíquico atuando no paciente. Assim, os complexos podem vir à tona e serem trabalhados. #####"
+              "text": "Do ponto de vista do amadurecimento da personalidade, o trabalho analítico situa-se em plano semelhante ao da sugestão, como uma espécie de recurso psíquico atuando no paciente. Assim, os complexos podem vir à tona e serem trabalhados. #####"
             }
           ],
           "correctAnswer": "C",
@@ -47768,7 +47768,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2026 - Psicoterapia",
           "topic": "Psicoterapia",
           "title": "Questao 10",
-          "text": "No curto artigo “Algumas observações sobre o conceito de inconsciente na psicanálise” (1912), Freud busca distinguir uma noção mais geral de “inconsciente” de uma compreensão mais específica e peculiar à psicanálise. Ele nota como é bem comum que certas ideias, ou outros processos psíquicos, podem estar acessíveis à consciência, ou momentaneamente indisponíveis a essa. Ou seja, uma primeira distinção entre “consciente” e “inconsciente” diz respeito apenas ao fato de certas atividades mentais estarem presentes ou aus entes de nossa percepção imediata. No entanto, há um segundo grupo de fenômenos e atividades anímicas que, apesar de também estarem indisponíveis à consciência imediata, possuem uma qualidade especial: “são prenhes de sentido e eficientes na produção de efeitos e consequências importantes em nossas vidas, moldando -as e estruturando -as”. Freud aqui está fazendo uma distinção:",
+          "text": "No curto artigo “Algumas observações sobre o conceito de inconsciente na psicanálise” (1912), Freud busca distinguir uma noção mais geral de “inconsciente” de uma compreensão mais específica e peculiar à psicanálise. Ele nota como é bem comum que certas ideias, ou outros processos psíquicos, podem estar acessíveis à consciência, ou momentaneamente indisponíveis a essa. Ou seja, uma primeira distinção entre “consciente” e “inconsciente” diz respeito apenas ao fato de certas atividades mentais estarem presentes ou ausentes de nossa percepção imediata. No entanto, há um segundo grupo de fenômenos e atividades anímicas que, apesar de também estarem indisponíveis à consciência imediata, possuem uma qualidade especial: “são prenhes de sentido e eficientes na produção de efeitos e consequências importantes em nossas vidas, moldando-as e estruturando-as”. Freud aqui está fazendo uma distinção:",
           "options": [
             {
               "letter": "A",
@@ -47834,7 +47834,7 @@ window.BANCO_RMAIS_EXAMS = {
           "options": [
             {
               "letter": "A",
-              "text": "A individuação, em última instância, objetiva a dissolução do ego, permitindo que o self assuma integralmente o controle da psique."
+              "text": "A individuação, em última instância, objetiva a dissolução do ego, permitindo que o self assuma integral mente o controle da psique."
             },
             {
               "letter": "B",
@@ -47868,7 +47868,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "B",
-              "text": "O tipo extrovertido é sempre tentado a desfazer -se de si mesmo, em benefício (aparentemente) do objeto. É de se esperar que a atitude compensatória do inconsciente seja valorizar o sujeito."
+              "text": "O tipo extrovertido é sempre tentado a desfazer-se de si mesmo, em benefício (aparentemente) do objeto. É de se esperar que a atitude compensatória do inconsciente seja valorizar o sujeito."
             },
             {
               "letter": "C",
@@ -47890,7 +47890,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2026 - Psicoterapia",
           "topic": "Psicoterapia",
           "title": "Questao 14",
-          "text": "São aspectos té cnicos próprios da PDB (Psicoterapia Dinâmica Breve):",
+          "text": "São aspectos técnicos próprios da PDB (Psicoterapia Dinâmica Breve):",
           "options": [
             {
               "letter": "A",
@@ -47924,11 +47924,11 @@ window.BANCO_RMAIS_EXAMS = {
           "options": [
             {
               "letter": "A",
-              "text": "A individuação significa precisamente a realização melhor e mais completa das qualidades coletivas do ser humano; é a consideração adequada e não o esquecimento das peculiaridades individuais, o fator determinante de um melhor rendimento social."
+              "text": "A individuação significa precisa mente a realização melhor e mais completa das qualidades coletivas do ser humano; é a consideração adequada e não o esquecimento das peculiaridades individuais, o fator determinante de um melhor rendimento social."
             },
             {
               "letter": "B",
-              "text": "Individuação significa tornar -se um ser único, na medida em que por “individualidade” entendermos nossa singularidade mais íntima, última e incompar ável, significando também que nos tornamos o nosso próprio si- mesmo. Podemos, pois, traduzir “individua ção” como “tornar-se si-mesmo” ou “o realizar-se do si-mesmo”."
+              "text": "Individuação significa tornar-se um ser único, na medida em que por “individualidade” entendermos nossa singularidade mais íntima, última e incompar ável, significando também que nos tornamos o nosso próprio si- mesmo. Podemos, pois, traduzir “individuação” como “tornar-se si-mesmo” ou “o realizar-se do si-mesmo”."
             },
             {
               "letter": "C",
@@ -47968,7 +47968,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Uma de suas funções é sublinhar o fato de que o supervisionando não atende seus pacientes como um observador que está “de fora ”, mas que participa ativamente dos fenômenos observados. A partir dessa premissa, tenta -se pensar sobre como a nos sa própria resposta inconsciente aos pacientes tem papel fundamental no desenrolar do processo analítico. #####"
+              "text": "Uma de suas funções é sublinhar o fato de que o supervisionando não atende seus pacientes como um observador que está “de fora ”, mas que participa ativamente dos fenômenos observados. A partir dessa premissa, tenta-se pensar sobre como a nos sa própria resposta inconsciente aos pacientes tem papel fundamental no desenrolar do processo analítico. #####"
             }
           ],
           "correctAnswer": "B",
@@ -48026,7 +48026,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "A busca de autoconhecimento é a base para um self bem definido e conceitualizado."
+              "text": "A busca de auto conhecimento é a base para um self bem definido e conceitualizado."
             },
             {
               "letter": "D",
@@ -48074,7 +48074,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2026 - Psicoterapia",
           "topic": "Psicoterapia",
           "title": "Questao 20",
-          "text": "Numa dramatização com um paciente com características psicóticas, que durante a dramatização encontra -se angustiado, confuso, como se estivesse naquele momento em contato com material de não -identidade, qual seria a técnica psicodramática mais apropriada a ser utilizada pelo diretor?",
+          "text": "Numa dramatização com um paciente com características psicóticas, que durante a dramatização encontra-se angustiado, confuso, como se estivesse naquele momento em contato com material de não-identidade, qual seria a técnica psicodramática mais apropriada a ser utilizada pelo diretor?",
           "options": [
             {
               "letter": "A",
@@ -48241,7 +48241,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2026 - Psiquiatria Forense",
           "topic": "Psiquiatria Forense",
           "title": "Questao 5",
-          "text": "Considerando que Dona Maria, mãe de Carlos, não tem um transtorno mental, com relação às doações financeiras, assinale a alternativa correta.",
+          "text": "Considerando que Dona Maria, mãe de Carlos, não tem um transtorno mental, com relação às do ações financeiras, assinale a alternativa correta.",
           "options": [
             {
               "letter": "A",
@@ -48601,7 +48601,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2026 - Psiquiatria Forense",
           "topic": "Psiquiatria Forense",
           "title": "Questao 17",
-          "text": "Numa perícia psiquiátrica no process o trabalhista, o perito deveria",
+          "text": "Numa perícia psiquiátrica no processo trabalhista, o perito deveria",
           "options": [
             {
               "letter": "A",
@@ -49068,7 +49068,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2026 - Psiquiatria da Infancia e Adolescencia",
           "topic": "Psiquiatria da Infancia e Adolescencia",
           "title": "Questao 12",
-          "text": "O Transtorno do Espectro Autista (TEA) afeta cerca de 2% das crianças, com uma proporção de 4:1 entre meninos e meninas com uma estimativa de herdabilidade entre 70 e 90%. A etiologia do TEA envolve uma interação complexa entr e herança genética e fatores ambientais influenciados pela epigenética. Mais de 800 genes e dezenas de síndromes genéticas estão associados ao TEA. Sobre os aspectos genéticos envolvendo o TEA, pode-se afirmar:",
+          "text": "O Transtorno do Espectro Autista (TEA) afeta cerca de 2% das crianças, com uma proporção de 4:1 entre meninos e meninas com uma estimativa de herdabilidade entre 70 e 90%. A etiologia do TEA envolve uma interação complexa entre herança genética e fatores ambientais influenciados pela epigenética. Mais de 800 genes e dezenas de síndromes genéticas estão associados ao TEA. Sobre os aspectos genéticos envolvendo o TEA, pode-se afirmar:",
           "options": [
             {
               "letter": "A",
@@ -49250,7 +49250,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2026 - Psiquiatria da Infancia e Adolescencia",
           "topic": "Psiquiatria da Infancia e Adolescencia",
           "title": "Questao 18",
-          "text": "Lucas, 12 anos de idade, é levado pelos pais à consulta com queixa de comportamentos repetitivos. Desde os 7 anos de idade, apresenta movimentos repetitivos como piscar os olhos, movimentos bruscos de cabeça e limpeza da garganta, os quais variam de intensidade e se agravam com estresse. Nos últimos dois anos, passou a apresentar comportamentos repetitivos mais complexos, como tocar superfícies em sequência e refazer movimentos corporais para que ambos os lados do corpo sintam a mesma coisa. Relata que precisa realizar essas ações para evitar que “algo ruim aconteça ”, como um familiar adoecer. Atualmente, os comportamentos que faz para “evitar que algo ruim aconteça” se intensificaram e Lucas gasta um tempo significativo com rituais de simetria e verificação. Os sintomas têm causado sofrimento emocional e impacto no rendimento escolar. Considerando o caso descrito, assinale a alternat iva que descreve o diagnóstico e a conduta de forma mais adequada.",
+          "text": "Lucas, 12 anos de idade, é levado pelos pais à consulta com queixa de comportamentos repetitivos. Desde os 7 anos de idade, apresenta movimentos repetitivos como piscar os olhos, movimentos bruscos de cabeça e limpeza da garganta, os quais variam de intensidade e se agravam com estresse. Nos últimos dois anos, passou a apresentar comportamentos repetitivos mais complexos, como tocar superfícies em sequência e refazer movimentos corporais para que ambos os lados do corpo sintam a mesma coisa. Relata que precisa realizar essas ações para evitar que “algo ruim aconteça ”, como um familiar adoecer. Atualmente, os comportamentos que faz para “evitar que algo ruim aconteça” se intensificaram e Lucas gasta um tempo significativo com rituais de simetria e verificação. Os sintomas têm causado sofrimento emocional e impacto no rendimento escolar. Considerando o caso descrito, assinale a alternativa que descreve o diagnóstico e a conduta de forma mais adequada.",
           "options": [
             {
               "letter": "A",
@@ -49280,7 +49280,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2026 - Psiquiatria da Infancia e Adolescencia",
           "topic": "Psiquiatria da Infancia e Adolescencia",
           "title": "Questao 19",
-          "text": "Uma meta -análise foi conduzida para avaliar a eficácia do medicamento A no tratamento da depressão em crianças e adolescentes, com base em 10 ensaios clínicos controlados randomizados duplo -cego independentes. Os tamanhos de efeito foram expressos como diferenças médias padronizadas (DMP) e analisados utilizando o modelo de efeitos aleatórios. O efeito combinado estimado foi de DMP = -0,25 (IC95%: -0,51 a -0,34). A análise de heterogeneidade indicou baixa variação entre os estudos, com Q = 9,32 (p = 0,41), I² = 3,5%, e Tau² = 0,0006. Na descrição dos resultados, os autores incluíram o gráfico a seguir: Com base nas informações fornecidas sobre o estudo, assinale a alternativa correta.",
+          "text": "Uma meta-análise foi conduzida para avaliar a eficácia do medicamento A no tratamento da depressão em crianças e adolescentes, com base em 10 ensaios clínicos controlados randomizados duplo -cego independentes. Os tamanhos de efeito foram expressos como diferenças médias padronizadas (DMP) e analisados utilizando o modelo de efeitos aleatórios. O efeito combinado estimado foi de DMP = -0,25 (IC95%: -0,51 a -0,34). A análise de heterogeneidade indicou baixa variação entre os estudos, com Q = 9,32 (p = 0,41), I² = 3,5%, e Tau² = 0,0006. Na descrição dos resultados, os autores incluíram o gráfico a seguir: Com base nas informações fornecidas sobre o estudo, assinale a alternativa correta.",
           "options": [
             {
               "letter": "A",
@@ -49288,7 +49288,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "B",
-              "text": "A meta -análise incluiu ensaios clínicos controlados randomizados duplo-cego. A randomização é importante, pois evita viés de expectativa; enquanto o desenho duplo- cego reduz viés de seleção."
+              "text": "A meta-análise incluiu ensaios clínicos controlados randomizados duplo-cego. A randomização é importante, pois evita viés de expectativa; enquanto o desenho duplo- cego reduz viés de seleção."
             },
             {
               "letter": "C",
@@ -49326,7 +49326,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "O TARE apresenta herdabilidade baixa (30%), sendo mais influenciado por fatores ambientais como experiências traumáticas com alimentos do que por p redisposição genética. #####"
+              "text": "O TARE apresenta herdabilidade baixa (30%), sendo mais influenciado por fatores ambientais como experiências traumáticas com alimentos do que por predisposição genética. #####"
             }
           ],
           "correctAnswer": "A",
@@ -49340,7 +49340,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2026 - Psiquiatria da Infancia e Adolescencia",
           "topic": "Psiquiatria da Infancia e Adolescencia",
           "title": "Questao 21",
-          "text": "André, 22 anos de idade, procurou atendimento psiquiátrico por achar que tem TDAH. Durante a consulta, relata que tem percebido dificuldades crescentes na faculdade, incluindo desatenção nas aulas, e tendência à procrast inação. Relata, também, sensação constante de inquietude mental, dificuldade em organizar tarefas e compromissos mesmo com uso de aplicativos e listas. Nos últimos meses, tem se sentido mais ansioso e com mais dificuldade para finalizar tarefas e cumprir p razos. Refere uso de álcool e cocaína. Quando questionado sobre sua infância, conta que era levado, não gostava de estudar, dava trabalho para os professores e para sua mãe, que precisava acompanhar de perto os seus estudos. Apesar disso, era considerado “inteligente e criativo” e nunca foi reprovado. Considerando seus conhecimentos e o caso apresentado, assinale a alternativa correta.",
+          "text": "André, 22 anos de idade, procurou atendimento psiquiátrico por achar que tem TDAH. Durante a consulta, relata que tem percebido dificuldades crescentes na faculdade, incluindo desatenção nas aulas, e tendência à procrast inação. Relata, também, sensação constante de inquietude mental, dificuldade em organizar tarefas e compromissos mesmo com uso de aplicativos e listas. Nos últimos meses, tem se sentido mais ansioso e com mais dificuldade para finalizar tarefas e cumprir prazos. Refere uso de álcool e cocaína. Quando questionado sobre sua infância, conta que era levado, não gostava de estudar, dava trabalho para os professores e para sua mãe, que precisava acompanhar de perto os seus estudos. Apesar disso, era considerado “inteligente e criativo” e nunca foi reprovado. Considerando seus conhecimentos e o caso apresentado, assinale a alternativa correta.",
           "options": [
             {
               "letter": "A",
@@ -49382,11 +49382,11 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "Além da comorbidade com outros transtornos mentais, o TDAH também ocorre de forma comórbida com condições somáticas. Meta -análises encontraram, em crianças e adolescentes, associação entre TDAH, dermatite, obesidade, asma e rinite."
+              "text": "Além da comorbidade com outros transtornos mentais, o TDAH também ocorre de forma comórbida com condições somáticas. Meta-análises encontraram, em crianças e adolescentes, associação entre TDAH, dermatite, obesidade, asma e rinite."
             },
             {
               "letter": "D",
-              "text": "Na literatura, os estudos indicam que, em países de baixa e média renda, observa -se um consumo excessivo de medicamentos estimulantes , que supera o consumo esperado pela prevalência do transtorno. Este fato pode estar relacionado a diferentes fatores, como d iagnósticos inadequados, e menor controle na prescrição e comercialização destes medicamentos. #####"
+              "text": "Na literatura, os estudos indicam que, em países de baixa e média renda, observa-se um consumo excessivo de medicamentos estimulantes , que supera o consumo esperado pela prevalência do transtorno. Este fato pode estar relacionado a diferentes fatores, como d iagnósticos inadequados, e menor controle na prescrição e comercialização destes medicamentos. #####"
             }
           ],
           "correctAnswer": "C",
@@ -49430,11 +49430,11 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2026 - Psiquiatria da Infancia e Adolescencia",
           "topic": "Psiquiatria da Infancia e Adolescencia",
           "title": "Questao 24",
-          "text": "Joana, 5 anos de idade, vive com a mesma família adotiva há 1 ano, após histórico de institucionalização prolongada por negligência grave nos primeiros anos de vida. A equipe da escola relata que Joana é bastante afetiva, mas notam que a criança aborda adultos desconhecidos com extrema familiaridade, ten ta abraçá -los, senta -se no colo e busca contato físico de forma inapropriada. Assim como é capaz de sair com um estranho sem hesitação. A mãe acha que a filha tem comportamentos que parecem refletir uma busca por atenção. A mãe fica preocupada, pois perceb e que estes comportamentos impactam negativamente na relação que a filha estabelece com os adultos e com outras crianças, tem receio de que este contato indiscriminado com a estranhos possa expor a filha a situações de risco e abusos. Assinale a alternativa correta.",
+          "text": "Joana, 5 anos de idade, vive com a mesma família adotiva há 1 ano, após histórico de institucionalização prolongada por negligência grave nos primeiros anos de vida. A equipe da escola relata que Joana é bastante afetiva, mas notam que a criança aborda adultos desconhecidos com extrema familiaridade, tenta abraçá-los, senta-se no colo e busca contato físico de forma inapropriada. Assim como é capaz de sair com um estranho sem hesitação. A mãe acha que a filha tem comportamentos que parecem refletir uma busca por atenção. A mãe fica preocupada, pois perceb e que estes comportamentos impactam negativamente na relação que a filha estabelece com os adultos e com outras crianças, tem receio de que este contato indiscriminado com a estranhos possa expor a filha a situações de risco e abusos. Assinale a alternativa correta.",
           "options": [
             {
               "letter": "A",
-              "text": "A principal hipótese diagnóstica para o caso descrito é Transtorno de Interação Social Desinibido (TISD). Estudos indicam que crianças com TISD, podem apresentar trajetórias variáveis dos sintomas, sendo que uma parcela destes pacientes pod e apresentar sintomas persistentes ao longo do desenvolvimento."
+              "text": "A principal hipótese diagnóstica para o caso descrito é Transtorno de Interação Social Desinibido (TISD). Estudos indicam que crianças com TISD, podem apresentar trajetórias variáveis dos sintomas, sendo que uma parcela destes pacientes pode apresentar sintomas persistentes ao longo do desenvolvimento."
             },
             {
               "letter": "B",
@@ -49476,7 +49476,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Nos casos de adolescentes com anorexia nervosa, o tratamento especializado em formato de hospital-dia após internação hospitalar breve para estabilização clínica mostra-se tão eficaz quanto a internação hospitala r continuada. #####"
+              "text": "Nos casos de adolescentes com anorexia nervosa, o tratamento especializado em formato de hospital-dia após internação hospitalar breve para estabilização clínica mostra-se tão eficaz quanto a internação hospitalar continuada. #####"
             }
           ],
           "correctAnswer": "D",
@@ -49552,7 +49552,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2026 - Psiquiatria da Infancia e Adolescencia",
           "topic": "Psiquiatria da Infancia e Adolescencia",
           "title": "Questao 28",
-          "text": "Paciente foi encaminhado para avaliação, devido sinais de agitação importante, queixas frequentes sobre comportamento na escola e comportamento opositor em casa. Pais suspeitam de que possa ter transtorno de d éficit de atenção e hiperatividade, e trazem relat ório de av aliação neuropsicológica feito recentemente. Este relatório diz: “De acordo com a escala WISC -IV, seu QI global situou-se na faixa superior quando comparado a indivíduos da mesma idade (QIT: 124 pts.). Além disso, o paciente apresentou recursos preservado em relação a resoluc ̧ão de problemas pela via verbal/compreens ão verbal (IF: 138 pts.), situada na faixa muito superior e, de forma discrepante, a velocidade de processamento das informações (IF: 111 pts.), as habilidades de planejamento, organiza ção e integra ção das informações/organização perceptual (IF: 110 pts.), situaram na faixa me ́dia-superior e a memo ́ria operacional/processos atencionais (IF: 106 pts.), situou -se na faixa me ́dia, quando comparado a indivi ́duos da mesma idade”. Considerando o caso clínic o descrito, assinale a alternativa correta.",
+          "text": "Paciente foi encaminhado para avaliação, devido sinais de agitação importante, queixas frequentes sobre comportamento na escola e comportamento opositor em casa. Pais suspeitam de que possa ter transtorno de d éficit de atenção e hiperatividade, e trazem relatório de avaliação neuropsicológica feito recentemente. Este relatório diz: “De acordo com a escala WISC -IV, seu QI global situou-se na faixa superior quando comparado a indivíduos da mesma idade (QIT: 124 pts.). Além disso, o paciente apresentou recursos preservado em relação a resoluc ̧ão de problemas pela via verbal/compreensão verbal (IF: 138 pts.), situada na faixa muito superior e, de forma discrepante, a velocidade de processamento das informações (IF: 111 pts.), as habilidades de planejamento, organiza ção e integra ção das informações/organização perceptual (IF: 110 pts.), situaram na faixa me ́dia-superior e a memo ́ria operacional/processos atencionais (IF: 106 pts.), situou-se na faixa me ́dia, quando comparado a indivi ́duos da mesma idade”. Considerando o caso clínic o descrito, assinale a alternativa correta.",
           "options": [
             {
               "letter": "A",
@@ -49582,7 +49582,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2026 - Psiquiatria da Infancia e Adolescencia",
           "topic": "Psiquiatria da Infancia e Adolescencia",
           "title": "Questao 29",
-          "text": "Henrique, 10 anos de idade, foi encaminhado ao ambulatório de psiquiatria infantil por dificuldades comportamentais e escolares. Segundo a mãe, desde os primeiros anos escolares, Henrique é inquieto e desatento. Frequentemente, se acidenta, perde objetos e tem dificuldade de manter o foco em atividades, mesmo quando motivado. Professores relatam que ele levanta diversas vezes da cadeira, interrompe os colegas e fala em momentos inapropriados. Além disso, desde a idade pré -escolar, Henrique apresenta episódios frequentes de explosões de raiva, geralmente em resposta a frustrações banais, como ser contrariado ou perder em jogos. As explosões envolvem gritos, palavrões, bater portas e, por vezes, agressividade física. Esses episódios ocorrem ao menos quatro vezes por semana, principalmente em casa, e são desproporcionais à situação por sua intensidade e duração. Além disso, entre os episódios, Henrique mantém um humor persistentemente irritável. Costuma ficar emburrado com facilidade para se envolver em conflitos com colegas e adultos. Os quais, muitas vezes ocorrem por comportamentos provocativos apresentados por Henrique. A mãe nega episódios de euforia, grand iosidade ou períodos de sono reduzido. Com base no caso apresentado, assinale a alternativa correta.",
+          "text": "Henrique, 10 anos de idade, foi encaminhado ao ambulatório de psiquiatria infantil por dificuldades comportamentais e escolares. Segundo a mãe, desde os primeiros anos escolares, Henrique é inquieto e desatento. Frequentemente, se acidenta, perde objetos e tem dificuldade de manter o foco em atividades, mesmo quando motivado. Professores relatam que ele levanta diversas vezes da cadeira, interrompe os colegas e fala em momentos inapropriados. Além disso, desde a idade pré-escolar, Henrique apresenta episódios frequentes de explosões de raiva, geralmente em resposta a frustrações banais, como ser contrariado ou perder em jogos. As explosões envolvem gritos, palavrões, bater portas e, por vezes, agressividade física. Esses episódios ocorrem ao menos quatro vezes por semana, principalmente em casa, e são desproporcionais à situação por sua intensidade e duração. Além disso, entre os episódios, Henrique mantém um humor persistentemente irritável. Costuma ficar emburrado com facilidade para se envolver em conflitos com colegas e adultos. Os quais, muitas vezes ocorrem por comportamentos provocativos apresentados por Henrique. A mãe nega episódios de euforia, grandiosidade ou períodos de sono reduzido. Com base no caso apresentado, assinale a alternativa correta.",
           "options": [
             {
               "letter": "A",
@@ -49590,11 +49590,11 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "B",
-              "text": "De acordo com o DSM -5, as hipóteses diagnósticas são: Transtorno de Déficit de Atenção/Hiperatividade (TDAH) e com Transtorno Disruptivo da Desregulação do Humor (TDDH). Nes te caso, além do encaminhamento para tratamento psicoterápico, deve -se indicar o uso de medicamentos não estimulantes, como atomoxetina, uma vez que os guidelines contra-indicam o uso de psicoestimulantes em pacientes com altos níveis de irritabilidade."
+              "text": "De acordo com o DSM -5, as hipóteses diagnósticas são: Transtorno de Déficit de Atenção/Hiperatividade (TDAH) e com Transtorno Disruptivo da Desregulação do Humor (TDDH). Nes te caso, além do encaminhamento para tratamento psicoterápico, deve-se indicar o uso de medicamentos não estimulantes, como atomoxetina, uma vez que os guidelines contra-indicam o uso de psicoestimulantes em pacientes com altos níveis de irritabilidade."
             },
             {
               "letter": "C",
-              "text": "De acordo com o DSM -5, as hipóteses diagnósticas são: Transtorno de Déficit de Atenção/Hiperatividade (TDAH) e transtorno disruptivo da desregulação do humor (TDDH). Neste caso, além do encaminhamento para tratamento psicoterápico, deve -se indicar o uso de metilfenidato, considerado pelos guidelines como primeira linha de tratamento para o TDAH."
+              "text": "De acordo com o DSM -5, as hipóteses diagnósticas são: Transtorno de Déficit de Atenção/Hiperatividade (TDAH) e transtorno disruptivo da desregulação do humor (TDDH). Neste caso, além do encaminhamento para tratamento psicoterápico, deve-se indicar o uso de metilfenidato, considerado pelos guidelines como primeira linha de tratamento para o TDAH."
             },
             {
               "letter": "D",
@@ -49628,7 +49628,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Os estudos demonstraram a eficácia d a estimulação magnética transcraniana repetitiva do córtex pré -frontal direito para o tratamento da mania aguda em adultos e adolescentes. #####"
+              "text": "Os estudos demonstraram a eficácia d a estimulação magnética transcraniana repetitiva do córtex pré-frontal direito para o tratamento da mania aguda em adultos e adolescentes. #####"
             }
           ],
           "correctAnswer": "C",
@@ -49642,7 +49642,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2026 - Psiquiatria da Infancia e Adolescencia",
           "topic": "Psiquiatria da Infancia e Adolescencia",
           "title": "Questao 31",
-          "text": "Lucas, de 8 anos de idade, foi levado à UBS por sua mãe, devido a preocupações em relação ao comportamento do filho e possíveis impactos em seu desenvolvimento. Segundo a mãe, diariamente o filho se recusa a obedecer, tem dificuldade em aceitar limites, é respondão, discute com adultos, perde a paciência e se descontrola com facilidade. A mãe diz que tenta c olocar limites, coloca -o de castigo, no entanto, Lucas culpa os outros por seus erros e não muda o seu comportamento. A mãe acha que estes comportamentos começaram por volta dos 5 anos de idade e se intensificaram nos últimos 12 meses. Na escola, o comportamento de Lucas é semelhante, e a mãe observa prejuízos no relacionamento do filho com professores e colegas. Ela mostra -se cansada, conta que cuida do filho sozinha e percebe um desgaste importante na relação entre os dois. Além disso, tem estado mais ner vosa, nos últimos meses, pois está passando por situação financeira difícil, desde que ficou desempregada. Tem tido dificuldade, inclusive, para comprar alimentos. Assinale a alternativa correta.",
+          "text": "Lucas, de 8 anos de idade, foi levado à UBS por sua mãe, devido a preocupações em relação ao comportamento do filho e possíveis impactos em seu desenvolvimento. Segundo a mãe, diariamente o filho se recusa a obedecer, tem dificuldade em aceitar limites, é respondão, discute com adultos, perde a paciência e se descontrola com facilidade. A mãe diz que tenta c olocar limites, coloca-o de castigo, no entanto, Lucas culpa os outros por seus erros e não muda o seu comportamento. A mãe acha que estes comportamentos começaram por volta dos 5 anos de idade e se intensificaram nos últimos 12 meses. Na escola, o comportamento de Lucas é semelhante, e a mãe observa prejuízos no relacionamento do filho com professores e colegas. Ela mostra-se cansada, conta que cuida do filho sozinha e percebe um desgaste importante na relação entre os dois. Além disso, tem estado mais ner vosa, nos últimos meses, pois está passando por situação financeira difícil, desde que ficou desempregada. Tem tido dificuldade, inclusive, para comprar alimentos. Assinale a alternativa correta.",
           "options": [
             {
               "letter": "A",
@@ -49672,7 +49672,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2026 - Psiquiatria da Infancia e Adolescencia",
           "topic": "Psiquiatria da Infancia e Adolescencia",
           "title": "Questao 32",
-          "text": "“Ele não tem Transtorno de Oposição Desafiante (TOD), ele é assim por causa dos pais que não dão limite”. Sobre essa fala que expõe a probl emática de diagnósticos na infância e adolescência, assinale a alternativa correta.",
+          "text": "“Ele não tem Transtorno de Oposição Desafiante (TOD), ele é assim por causa dos pais que não dão limite”. Sobre essa fala que expõe a problemática de diagnósticos na infância e adolescência, assinale a alternativa correta.",
           "options": [
             {
               "letter": "A",
@@ -49762,7 +49762,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2026 - Psiquiatria da Infancia e Adolescencia",
           "topic": "Psiquiatria da Infancia e Adolescencia",
           "title": "Questao 35",
-          "text": "Paciente do sexo masculino, 16 anos de idade, é trazido pelos pais à consulta devido a uso excessivo de jogos online (MMORPGs - Massively Multiplayer Online Role -Playing Game), com duração diária superior a 10 horas, inclusive durante a madrugada. Relatam importante prejuízo acadêmico, isolamento social progressivo, agressividade quando confrontado e recusa em participar de ativ idades offline. O paciente admite dificuldade de controle sobre o tempo de jogo, mesmo com tentativas prévias de limitação. Durante a avaliação, observa-se humor deprimido, anedonia, hipersonia, sentimentos de inutilidade e irritabilidade persistente há pelo menos dois meses. Não há história de uso de substâncias, sintomas psicóticos ou transtornos do neurodesenvolvimento. O paciente aceita iniciar acompanhamento, mas demonstra resistência à redução imediata do tempo de jogo. Os pais mostram -se dispostos a participar do tratamento. Com base nas evidências mais recentes, qual é a estratégia terapêutica inicial mais adequada para esse caso?",
+          "text": "Paciente do sexo masculino, 16 anos de idade, é trazido pelos pais à consulta devido a uso excessivo de jogos online (MMORPGs - Massively Multiplayer Online Role -Playing Game), com duração diária superior a 10 horas, inclusive durante a madrugada. Relatam importante prejuízo acadêmico, isolamento social progressivo, agressividade quando confrontado e recusa em participar de atividades offline. O paciente admite dificuldade de controle sobre o tempo de jogo, mesmo com tentativas prévias de limitação. Durante a avaliação, observa-se humor deprimido, anedonia, hipersonia, sentimentos de inutilidade e irritabilidade persistente há pelo menos dois meses. Não há história de uso de substâncias, sintomas psicóticos ou transtornos do neurodesenvolvimento. O paciente aceita iniciar acompanhamento, mas demonstra resistência à redução imediata do tempo de jogo. Os pais mostram-se dispostos a participar do tratamento. Com base nas evidências mais recentes, qual é a estratégia terapêutica inicial mais adequada para esse caso?",
           "options": [
             {
               "letter": "A",
@@ -49770,11 +49770,11 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "B",
-              "text": "Adotar, inicialmente, uma abordagem motivacional breve, com foco exclusivo no uso problemático da internet, postergando intervenções famili ares ou farmacológicas até que o adolescente aceite voluntariamente modificar seus hábitos digitais."
+              "text": "Adotar, inicialmente, uma abordagem motivacional breve, com foco exclusivo no uso problemático da internet, postergando intervenções familiares ou farmacológicas até que o adolescente aceite voluntariamente modificar seus hábitos digitais."
             },
             {
               "letter": "C",
-              "text": "Introduzir antidepressivo de primeira linha (como ISRS) de forma isolada, considerando que a remissão dos sintomas depressivos tende a reduzir o uso di sfuncional de eletrônicos secundariamente."
+              "text": "Introduzir antidepressivo de primeira linha (como ISRS) de forma isolada, considerando que a remissão dos sintomas depressivos tende a reduzir o uso disfuncional de eletrônicos secundariamente."
             },
             {
               "letter": "D",
@@ -49792,11 +49792,11 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2026 - Psiquiatria da Infancia e Adolescencia",
           "topic": "Psiquiatria da Infancia e Adolescencia",
           "title": "Questao 36",
-          "text": "Beatriz, 3 anos e 4 meses de idade, é trazida à consulta de puericultura por sua mãe. Durante a avaliação, observa -se que Beatriz:  Corre, pula com dois pés. Mas, não consegue pular com um pé só.  Empilha blocos, e traça linhas com o lápis.  Usa frases com 3 ou mais palavras, faz perguntas simples. Apresenta fala inteligível na maior parte do tempo. Compreende instruções simples de duas etapas (ex: “pegue o brinquedo e coloque na caixa”).  Tem um amigo imaginário. Em relação ao caso descrito, assinale a alternativa correta.",
+          "text": "Beatriz, 3 anos e 4 meses de idade, é trazida à consulta de puericultura por sua mãe. Durante a avaliação, observa-se que Beatriz:  Corre, pula com dois pés. Mas, não consegue pular com um pé só.  Empilha blocos, e traça linhas com o lápis.  Usa frases com 3 ou mais palavras, faz perguntas simples. Apresenta fala inteligível na maior parte do tempo. Compreende instruções simples de duas etapas (ex: “pegue o brinquedo e coloque na caixa”).  Tem um amigo imaginário. Em relação ao caso descrito, assinale a alternativa correta.",
           "options": [
             {
               "letter": "A",
-              "text": "Beatriz deve ser encaminhada para avaliação fonoaudiológica. Nessa faixa etária espera -se que a totalidade do discurso da criança seja inteligível."
+              "text": "Beatriz deve ser encaminhada para avaliação fonoaudiológica. Nessa faixa etária espera-se que a totalidade do discurso da criança seja inteligível."
             },
             {
               "letter": "B",
@@ -49860,7 +49860,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "B",
-              "text": "Diante da preocupação da mãe, é importante orientá -la que, com exceção do histórico familiar de recorrência da depressão, Carolina não apresenta em sua história outros fatores de risco associados a ocorrência de episódios depressivos recorrentes."
+              "text": "Diante da preocupação da mãe, é importante orientá-la que, com exceção do histórico familiar de recorrência da depressão, Carolina não apresenta em sua história outros fatores de risco associados a ocorrência de episódios depressivos recorrentes."
             },
             {
               "letter": "C",
@@ -49916,7 +49916,7 @@ window.BANCO_RMAIS_EXAMS = {
           "options": [
             {
               "letter": "A",
-              "text": "A testagem neuropsicológica é parte importante da avaliação diagnóstica de indivíduos com deficiência intelectual. Esses pacientes costumam apresentar escores em torno de um desvio -padrão ou mais abaixo da m édia populacional, incluindo uma margem de erro de medida (em geral, + 5 pontos)."
+              "text": "A testagem neuropsicológica é parte importante da avaliação diagnóstica de indivíduos com deficiência intelectual. Esses pacientes costumam apresentar escores em torno de um desvio -padrão ou mais abaixo da m édia populacional, incluindo uma margem de erro de medida (em geral, + 5 pontos)."
             },
             {
               "letter": "B",
@@ -49928,7 +49928,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Escores de QI são aproximações do func ionamento conceitual, mas podem ser insuficientes para a avaliação do raciocínio em situações da vida real e do domínio de tarefas práticas. Assim, o julgamento clínico e ́ necessário para a interpreta ção dos resultados de testes neuropsicológicos e a realização do diagn óstico de deficiência intelectual. ##### v2"
+              "text": "Escores de QI são aproximações do funcionamento conceitual, mas podem ser insuficientes para a avaliação do raciocínio em situações da vida real e do domínio de tarefas práticas. Assim, o julgamento clínico e ́ necessário para a interpreta ção dos resultados de testes neuropsicológicos e a realização do diagn óstico de deficiência intelectual. ##### v2"
             }
           ],
           "correctAnswer": "D",
