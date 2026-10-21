@@ -48,6 +48,8 @@
   /* Siglas curtas (caps, sus, cfm) só contam como palavra inteira. */
   const compileKeywords = (list) =>
     list.map(normalize).map((word) => (word.length <= 4 ? new RegExp(`\\b${word}\\b`) : word));
+  /* Muda sempre que as regras mudam: invalida a classificação guardada no navegador (classificationStore.js). */
+  const RULES_FINGERPRINT = JSON.stringify([TOPIC_KEYWORDS, RULE_TOPICS, KEYWORD_WEIGHT, LOW_CONFIDENCE, [...STOPWORDS]]);
   for (const key of Object.keys(TOPIC_KEYWORDS)) TOPIC_KEYWORDS[key] = compileKeywords(TOPIC_KEYWORDS[key]);
   for (const rule of RULE_TOPICS) rule[1] = compileKeywords(rule[1]);
 
@@ -160,6 +162,7 @@
 
   /* Usado pela administração para revisar as classificações duvidosas. */
   window.examTopicConfidence = (question) => examTopicInfo(question)?.confidence ?? null;
+  window.examTopicsFingerprint = RULES_FINGERPRINT + classify.toString() + predict.toString();
 
   topicForQuestion = function topicForQuestionWithExams(question) {
     const manual = manualStudyTopic(question);

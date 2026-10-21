@@ -236,11 +236,46 @@ const SUBTHEME_RULES = [
   },
 ].map((rule) => ({
   ...rule,
-  matchers: rule.keywords.map(normalize).map((keyword) => {
-    const escaped = keyword.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-    return new RegExp(`(?:^|[^a-z0-9])${escaped}${keyword.length <= 4 ? "(?:[^a-z0-9]|$)" : ""}`);
-  }),
+  /* Até 4 letras: palavra inteira; demais: início de palavra; com espaço: expressão. */
+  needles: rule.keywords.map(normalize).map((keyword) => ({
+    keyword,
+    phrase: keyword.includes(" "),
+    firstWord: keyword.split(" ")[0],
+    whole: keyword.length <= 4,
+  })),
 }));
+
+const SUBTHEME_NEEDLES = SUBTHEME_RULES.flatMap((rule) => rule.needles);
+const SUBTHEME_WHOLE_WORDS = new Set(SUBTHEME_NEEDLES.filter((n) => !n.phrase && n.whole).map((n) => n.keyword));
+/* Palavras-chave de início de palavra (5+ letras) agrupadas pelas 5 primeiras letras. */
+const SUBTHEME_PREFIX_BUCKETS = new Map();
+for (const needle of SUBTHEME_NEEDLES) {
+  if (needle.phrase || needle.whole) continue;
+  const bucket = needle.keyword.slice(0, 5);
+  if (!SUBTHEME_PREFIX_BUCKETS.has(bucket)) SUBTHEME_PREFIX_BUCKETS.set(bucket, []);
+  SUBTHEME_PREFIX_BUCKETS.get(bucket).push(needle.keyword);
+}
+const SUBTHEME_PHRASES = SUBTHEME_NEEDLES.filter((n) => n.phrase);
+
+/* Palavras-chave de subtema presentes no texto, calculadas numa passada só pelas palavras. */
+function subthemeKeywordsIn(text) {
+  const padded = ` ${normalize(text).replace(/[^a-z0-9]+/g, " ")} `;
+  const found = new Set();
+  const words = new Set();
+  for (const word of padded.split(" ")) {
+    if (!word || words.has(word)) continue;
+    words.add(word);
+    if (SUBTHEME_WHOLE_WORDS.has(word)) found.add(word);
+    if (word.length < 5) continue;
+    const candidates = SUBTHEME_PREFIX_BUCKETS.get(word.slice(0, 5));
+    if (candidates) for (const keyword of candidates) if (word.startsWith(keyword)) found.add(keyword);
+  }
+  for (const needle of SUBTHEME_PHRASES) {
+    if (!words.has(needle.firstWord)) continue;
+    if (padded.includes(` ${needle.keyword}${needle.whole ? " " : ""}`)) found.add(needle.keyword);
+  }
+  return found;
+}
 
 let classificationCache = {
   text: new Map(),
@@ -1728,15 +1763,15 @@ function questionSubtheme(question) {
   if (classificationCache.subtheme.has(cacheKey)) return classificationCache.subtheme.get(cacheKey);
   /* Enunciado vale o dobro das alternativas (que trazem distratores); o tema da questão desempata. */
   const view = effectiveQuestion(question);
-  const stem = normalize(String(view.text || "").replace(REFERENCE_CITATION, ""));
-  const options = normalize((view.options || []).map((option) => option.text).join(" "));
+  const stem = subthemeKeywordsIn(String(view.text || "").replace(REFERENCE_CITATION, ""));
+  const options = subthemeKeywordsIn((view.options || []).map((option) => option.text).join(" "));
   const topic = topicForQuestion(question);
   const scored = SUBTHEME_RULES.map((rule, index) => {
     let stemHits = 0;
     let optionHits = 0;
-    for (const matcher of rule.matchers) {
-      if (matcher.test(stem)) stemHits += 1;
-      else if (matcher.test(options)) optionHits += 1;
+    for (const needle of rule.needles) {
+      if (stem.has(needle.keyword)) stemHits += 1;
+      else if (options.has(needle.keyword)) optionHits += 1;
     }
     let score = 2 * stemHits + Math.min(optionHits, 2);
     if (score > 0 && rule.topics.includes(topic)) score += 1.5;
@@ -2556,11 +2591,13 @@ function confirmSelectedAnswer() {
   });
 }
 
+/* Minúsculas e sem acentos. A faixa de acentos combinados é bem mais rápida que \p{Diacritic}
+   (normalize roda milhões de vezes ao classificar o banco) e dá o mesmo resultado em português. */
 function normalize(value) {
   return String(value || "")
     .toLowerCase()
     .normalize("NFD")
-    .replace(/\p{Diacritic}/gu, "");
+    .replace(/[̀-ͯ]/g, "");
 }
 
 function escapeHtml(value) {
@@ -2772,7 +2809,8 @@ function renderStats() {
 }
 
 function renderPendingSummary() {
-  if (!el.pendingSummary) return;
+  /* Só a administração vê; poupa varrer o banco inteiro (e classificar provas) a cada abertura. */
+  if (!el.pendingSummary || !state.isAdmin) return;
   const counts = pendingCounts();
   el.pendingSummary.innerHTML = `
     <button data-pending-filter="needs-review"><strong>${counts.total}</strong><span>pendentes</span></button>
@@ -3167,7 +3205,7 @@ function gradeFlashcard(grade) {
 }
 
 function heavyAnalyticsVisible() {
-  return ["overview", "today", "history", "activity", "exams", "notes", "flashcards"].includes(state.activeTab);
+  return ["overview", "history", "activity", "exams", "notes", "flashcards", "topics"].includes(state.activeTab);
 }
 
 function renderDashboard() {
@@ -5353,13 +5391,8 @@ el.options.addEventListener("click", (event) => {
 setInterval(renderExamTimer, 1000);
 
 function loadPayload() {
-  if (window.BANCO_RMAIS_QUESTIONS) {
-    return Promise.resolve(window.BANCO_RMAIS_QUESTIONS);
-  }
-  return fetch("data/questions.json").then((response) => {
-    if (!response.ok) throw new Error("Banco de questões não encontrado.");
-    return response.json();
-  });
+  if (window.BANCO_RMAIS_QUESTIONS) return Promise.resolve(window.BANCO_RMAIS_QUESTIONS);
+  return Promise.reject(new Error("Banco de questões não encontrado (data/questions.js)."));
 }
 
 /* A inicialização espera o fim do carregamento da página para que os módulos
