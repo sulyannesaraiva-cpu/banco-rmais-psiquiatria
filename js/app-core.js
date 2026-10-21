@@ -313,6 +313,7 @@ const el = {
   resetEdit: document.querySelector("#resetEditBtn"),
   editText: document.querySelector("#editText"),
   editAnswer: document.querySelector("#editAnswer"),
+  editStudyTopic: document.querySelector("#editStudyTopic"),
   tabs: document.querySelectorAll("[data-tab]"),
   panels: {
     overview: document.querySelector("#overviewPanel"),
@@ -689,6 +690,7 @@ function normalizeCorrectionForCloud(correction = {}) {
   if (Object.prototype.hasOwnProperty.call(correction, "maintenanceFlagged")) {
     normalized.maintenanceFlagged = Boolean(correction.maintenanceFlagged);
   }
+  if (typeof correction.studyTopic === "string" && correction.studyTopic.trim()) normalized.studyTopic = correction.studyTopic.trim();
   normalized.reviewedAt = new Date().toISOString();
   return normalized;
 }
@@ -1648,80 +1650,43 @@ function questionSubthemeText(question) {
   return text;
 }
 
+const PSYCHOPHARM_DRUGS = [
+  "antidepress", "fluoxetina", "sertralina", "paroxetina", "citalopram", "escitalopram", "venlafaxina", "desvenlafaxina",
+  "duloxetina", "bupropiona", "mirtazapina", "trazodona", "vortioxetina", "agomelatina", "amitriptilina", "imipramina",
+  "clomipramina", "nortriptilina", "triciclico", "isrs", "irsn", "imao", "antipsicot", "neuroleptico", "haloperidol",
+  "clorpromazina", "risperidona", "olanzapina", "quetiapina", "clozapina", "aripiprazol", "ziprasidona", "paliperidona",
+  "lurasidona", "litio", "valproato", "divalproato", "carbamazepina", "oxcarbazepina", "lamotrigina", "topiramato",
+  "estabilizador", "benzodiazep", "diazepam", "clonazepam", "alprazolam", "lorazepam", "midazolam", "zolpidem", "zopiclona",
+  "donepezila", "rivastigmina", "galantamina", "memantina", "anticolinesteras", "metilfenidato", "atomoxetina",
+  "lisdexanfetamina", "psicoestimulante", "cetamina", "escetamina", "psicofarmac",
+].map(normalize);
+
+/* Termos que mostram que a pergunta é sobre o medicamento em si. */
+const PSYCHOPHARM_FOCUS = [
+  "efeito colateral", "efeitos colaterais", "efeito adverso", "efeitos adversos", "evento adverso", "reacao adversa",
+  "reacoes adversas", "mecanismo de acao", "farmacocinet", "farmacodinam", "meia-vida", "meia vida", "interacao medicamentosa",
+  "interacoes medicamentosas", "inibidor do citocromo", "cyp", "receptores", "toxicidade", "nivel serico", "niveis sericos",
+  "litemia", "dosagem serica", "sindrome neuroleptica", "sindrome serotoninergica", "discinesia", "acatisia", "distonia",
+  "extrapiramidal", "parkinsonismo induzido", "hiperprolactinemia", "agranulocitose", "neutropenia", "intervalo qt",
+  "prolongamento do qt", "ganho de peso", "sindrome metabolica", "dose maxima", "dose inicial", "dose terapeutica",
+  "doses terapeuticas", "posologia", "titulacao", "desmame", "descontinuacao", "teratogen", "lactacao", "psicofarmacolog",
+].map(normalize);
+
+const REFERENCE_CITATION = /^\s*(de acordo com|segundo|com base n[ao])\s+(a\s+)?refer[eê]ncia[\s\S]{0,260}?\b(19|20)\d{2}\b[.,;:]?\s*/i;
+
+/* Psicofarmacologia = o assunto principal é o medicamento. Olha só o enunciado: um remédio citado
+   numa alternativa, ou de passagem num caso clínico, não tira a questão do tema do transtorno.
+   Entra quando o enunciado cita 2+ psicofármacos, ou 1 com termo de farmacologia (efeito adverso,
+   mecanismo, nível sérico...), ou 1 num enunciado curto centrado nele ("Sobre o lítio, ..."). */
 function isPsychopharmacologyQuestion(question) {
   const cacheKey = question.id || `${question.source}-${question.number}`;
   if (classificationCache.psychopharm.has(cacheKey)) return classificationCache.psychopharm.get(cacheKey);
-  const haystack = questionSubthemeText(question);
-  const keywords = [
-    "antidepress",
-    "fluoxetina",
-    "sertralina",
-    "paroxetina",
-    "citalopram",
-    "escitalopram",
-    "venlafaxina",
-    "duloxetina",
-    "bupropiona",
-    "mirtazapina",
-    "trazodona",
-    "amitriptilina",
-    "imipramina",
-    "nortriptilina",
-    "triciclico",
-    "isrs",
-    "irsn",
-    "imao",
-    "antipsicot",
-    "neuroleptico",
-    "haloperidol",
-    "risperidona",
-    "olanzapina",
-    "quetiapina",
-    "clozapina",
-    "aripiprazol",
-    "ziprasidona",
-    "paliperidona",
-    "lurasidona",
-    "discinesia",
-    "acatisia",
-    "distonia",
-    "extrapiramidal",
-    "sindrome neuroleptica",
-    "litio",
-    "valproato",
-    "divalproato",
-    "carbamazepina",
-    "oxcarbazepina",
-    "lamotrigina",
-    "estabilizador do humor",
-    "benzodiazep",
-    "diazepam",
-    "clonazepam",
-    "alprazolam",
-    "lorazepam",
-    "midazolam",
-    "zolpidem",
-    "zopiclona",
-    "donepezila",
-    "rivastigmina",
-    "galantamina",
-    "memantina",
-    "colinesterase",
-    "metilfenidato",
-    "atomoxetina",
-    "lisdexanfetamina",
-    "psicoestimulante",
-    "naltrexona",
-    "acamprosato",
-    "dissulfiram",
-    "metadona",
-    "buprenorfina",
-    "naloxona",
-    "tiamina",
-    "serotoninergica",
-    "hiperprolactinemia",
-  ];
-  const result = keywords.some((keyword) => haystack.includes(normalize(keyword))) || question.source === "Psicofarmacologia";
+  let result = question.source === "Psicofarmacologia";
+  if (!result) {
+    const stem = normalize(String(question.text || "").replace(REFERENCE_CITATION, ""));
+    const drugsInStem = PSYCHOPHARM_DRUGS.filter((drug) => stem.includes(drug)).length;
+    result = drugsInStem >= 2 || (drugsInStem === 1 && (stem.length <= 260 || PSYCHOPHARM_FOCUS.some((term) => stem.includes(term))));
+  }
   classificationCache.psychopharm.set(cacheKey, result);
   return result;
 }
@@ -2682,7 +2647,7 @@ function applyFilters({ preserveCurrent = false } = {}) {
   const query = normalize(el.search.value);
   const topic = el.topic.value;
   const status = el.status.value;
-  const pendingStatuses = new Set(["needs-review", "missing-answer", "answer-mismatch", "incomplete-options", "duplicate-options"]);
+  const pendingStatuses = new Set(["needs-review", "missing-answer", "answer-mismatch", "incomplete-options", "duplicate-options", "uncertain-topic"]);
   const pendingAdminMode = pendingStatuses.has(status);
   const activeTopicIds = state.topicActive ? new Set(state.topicIds) : null;
   const selectedTopicIds = !state.topicActive && Array.isArray(state.selectedTopics) ? new Set(state.selectedTopics) : null;
@@ -2709,6 +2674,7 @@ function applyFilters({ preserveCurrent = false } = {}) {
       (status === "answer-mismatch" && readinessIssueKeys(view).includes("answer-mismatch")) ||
       (status === "incomplete-options" && readinessIssueKeys(view).includes("incomplete-options")) ||
       (status === "duplicate-options" && readinessIssueKeys(view).includes("duplicate-options")) ||
+      (status === "uncertain-topic" && hasUncertainStudyTopic(question)) ||
       (status === "unseen" && !progress.grade) ||
       (status === "correct" && progress.grade === "correct") ||
       (status === "wrong" && progress.grade === "wrong") ||
@@ -2771,7 +2737,20 @@ function renderPendingSummary() {
     <button data-pending-filter="answer-mismatch"><strong>${counts["answer-mismatch"]}</strong><span>gabarito inconsistente</span></button>
     <button data-pending-filter="incomplete-options"><strong>${counts["incomplete-options"]}</strong><span>alternativas incompletas</span></button>
     <button data-pending-filter="duplicate-options"><strong>${counts["duplicate-options"]}</strong><span>alternativas duplicadas</span></button>
+    <button data-pending-filter="uncertain-topic"><strong>${allStudyQuestions().filter((question) => !isExcluded(question.id) && hasUncertainStudyTopic(question)).length}</strong><span>tema incerto (provas)</span></button>
   `;
+}
+
+/* Tema escolhido à mão pela administração (Editar questão), que vale sobre a classificação automática. */
+function manualStudyTopic(question) {
+  return state.corrections[question?.id]?.studyTopic || state.globalCorrections[question?.id]?.studyTopic || "";
+}
+
+/* Questão de prova classificada automaticamente com pouca confiança e ainda sem tema escolhido à mão. */
+function hasUncertainStudyTopic(question) {
+  if (manualStudyTopic(question) || typeof examTopicConfidence !== "function") return false;
+  const confidence = examTopicConfidence(question);
+  return confidence !== null && confidence < 0.9;
 }
 
 function currentFlashcardDeck() {
@@ -4723,6 +4702,16 @@ function fillEditor(question) {
     const option = question.options.find((item) => item.letter === letter);
     el.editOptions[letter].value = option?.text || "";
   }
+  if (el.editStudyTopic) {
+    const topics = [...new Set([...state.questions, ...examStudyQuestions()].map((item) => topicForQuestion(item)))]
+      .sort((a, b) => a.localeCompare(b, "pt-BR"));
+    const manual = manualStudyTopic(question);
+    el.editStudyTopic.innerHTML = [
+      `<option value="">Automático (${escapeHtml(manual ? "" : topicForQuestion(question))})</option>`,
+      ...topics.map((topic) => `<option value="${escapeHtml(topic)}">${escapeHtml(topic)}</option>`),
+    ].join("");
+    el.editStudyTopic.value = manual;
+  }
 }
 
 function collectEditor() {
@@ -4736,6 +4725,7 @@ function collectEditor() {
     options,
     correctAnswer: el.editAnswer.value,
   };
+  if (el.editStudyTopic?.value) correction.studyTopic = el.editStudyTopic.value;
   const readyAfterEdit = Boolean(
     correction.correctAnswer &&
       correction.options.length >= 2 &&

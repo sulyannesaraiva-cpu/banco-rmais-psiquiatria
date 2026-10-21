@@ -20,8 +20,6 @@
       "afirmativa afirmativas respeito acordo quanto opcao item itens apenas todas todos exceto verdadeira falsa questao").split(" "),
   );
 
-  /* Muitas questões da ABP começam citando o livro-texto; isso não diz nada sobre o tema. */
-  const REFERENCE_PREFIX = /^\s*(de acordo com|segundo|com base n[ao])\s+(a\s+)?refer[eê]ncia[\s\S]{0,260}?\b(19|20)\d{2}\b[.,;:]?\s*(e\s+de\s+acordo\s+com[^,]*,)?/i;
 
   const TOPIC_KEYWORDS = {
     "Transtornos da Personalidade": ["personalidade", "borderline", "antissocial", "narcisis", "histrioni", "esquizotip", "esquizoide", "paranoide", "evitativ", "cluster"],
@@ -59,7 +57,8 @@
   const cache = new Map();
 
   function cleanText(text) {
-    return String(text || "").replace(REFERENCE_PREFIX, "");
+    /* Muitas questões da ABP começam citando o livro-texto; isso não diz nada sobre o tema. */
+    return String(text || "").replace(REFERENCE_CITATION, "");
   }
 
   function questionText(question) {
@@ -163,6 +162,8 @@
   window.examTopicConfidence = (question) => examTopicInfo(question)?.confidence ?? null;
 
   topicForQuestion = function topicForQuestionWithExams(question) {
+    const manual = manualStudyTopic(question);
+    if (manual) return manual;
     const info = examTopicInfo(question);
     return info ? info.topic : baseTopicForQuestion(question);
   };

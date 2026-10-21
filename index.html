@@ -155,6 +155,7 @@
                   <option value="answer-mismatch">Gabarito inconsistente</option>
                   <option value="incomplete-options">Alternativas incompletas</option>
                   <option value="duplicate-options">Alternativas duplicadas</option>
+                  <option value="uncertain-topic">Tema incerto (provas)</option>
                 </select>
               </label>
               <button id="confirmPendingBtn" class="primary-btn">Confirmar</button>
@@ -579,6 +580,10 @@
               <textarea id="editOptionE" rows="2"></textarea>
             </label>
           </div>
+          <label class="field">
+            <span>Tema (Estudo por temas)</span>
+            <select id="editStudyTopic"></select>
+          </label>
           <div class="editor-actions">
             <label class="field answer-field">
               <span>Gabarito</span>
