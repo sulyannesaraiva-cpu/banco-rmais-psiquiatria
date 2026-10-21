@@ -240,6 +240,10 @@
               <h3>Escolha os temas</h3>
               <p>Marque um ou mais temas e monte o bloco abaixo, ou toque em Continuar para seguir só as pendentes de um tema.</p>
             </header>
+            <section class="question-search" aria-label="Buscar questões">
+              <input id="questionSearchInput" type="search" placeholder="Buscar questões por palavra (ex.: clozapina, Capgras, Lei 10.216)" autocomplete="off" />
+              <div id="questionSearchResults"></div>
+            </section>
             <div class="topic-picker">
               <div class="segmented wide-segmented topic-source" id="topicSourceGroup" role="group" aria-label="Origem das questões">
                 <button data-topic-source="mixed" title="Didáticas e de provas">Todas</button>
@@ -548,6 +552,7 @@
     <script src="js/questionCards.js"></script>
     <script src="js/performance.js"></script>
     <script src="js/simulationHistory.js"></script>
+    <script src="js/questionSearch.js"></script>
     <script src="js/mobileNav.js"></script>
     <script src="js/globalBankCounter.js"></script>
   </body>

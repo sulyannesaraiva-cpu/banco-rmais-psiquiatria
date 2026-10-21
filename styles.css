@@ -2502,6 +2502,73 @@ body.theme-dark .exam-study-card {
   color: var(--ink);
 }
 
+/* Busca de questões (Estudo por temas). */
+.question-search {
+  display: grid;
+  gap: 10px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius, 12px);
+  background: var(--panel-soft, var(--panel));
+}
+
+.question-search input {
+  width: 100%;
+  min-width: 0;
+}
+
+#questionSearchResults:empty {
+  display: none;
+}
+
+#questionSearchResults .panel-line {
+  margin: 0;
+}
+
+.search-summary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 12px;
+  font-size: 14px;
+}
+
+.search-summary .primary-btn {
+  min-height: 36px;
+  padding: 0 14px;
+}
+
+.search-previews {
+  display: grid;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.search-preview {
+  padding: 8px 10px;
+  border-left: 3px solid var(--line);
+  background: var(--panel);
+}
+
+.search-preview small {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.search-preview p {
+  margin: 2px 0 0;
+  font-size: 13.5px;
+  line-height: 1.5;
+}
+
+.search-preview mark {
+  padding: 0 2px;
+  border-radius: 3px;
+  background: var(--warn-soft, #fff3c4);
+  color: inherit;
+}
+
 /* Histórico de simulados (aba Provas). */
 .sim-history {
   display: grid;
@@ -2915,6 +2982,7 @@ body.theme-dark .exam-study-card {
   }
 
   #activityPanel > .study-planner-head,
+  #activityPanel > .question-search,
   #activityPanel > .topic-picker,
   #activityPanel > .topic-list {
     grid-column: 1;
@@ -2922,7 +2990,7 @@ body.theme-dark .exam-study-card {
 
   #activityPanel > .block-builder {
     grid-column: 2;
-    grid-row: 1 / span 3;
+    grid-row: 1 / span 4;
     position: sticky;
     top: 16px;
   }
