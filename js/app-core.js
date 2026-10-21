@@ -733,6 +733,35 @@ async function loadUserProfile() {
   }
   state.isAdmin = Boolean(data);
   renderAdminAccess();
+  if (state.isAdmin) loadQuestionErrorStats();
+}
+
+/* Erros somados de todos os usuários, por questão (função question_error_stats no Supabase,
+   ver supabase/question_error_stats.sql). Só para a administração ordenar a fila de comentários.
+   Sem a função no banco, a fila usa os erros da própria pessoa. */
+async function loadQuestionErrorStats() {
+  if (!state.supabase || !state.isAdmin) return;
+  state.errorStatsStatus = "loading";
+  const stats = new Map();
+  const pageSize = 1000;
+  for (let from = 0; ; from += pageSize) {
+    const { data, error } = await state.supabase.rpc("question_error_stats").range(from, from + pageSize - 1);
+    if (error) {
+      console.warn("question_error_stats indisponível:", error.message);
+      state.errorStatsStatus = "unavailable";
+      renderPendingSummary();
+      return;
+    }
+    for (const row of data || []) {
+      stats.set(String(row.question_id), { users: Number(row.users) || 0, usersWrong: Number(row.users_wrong) || 0 });
+    }
+    if (!data || data.length < pageSize) break;
+  }
+  state.errorStats = stats;
+  state.errorStatsAverage = undefined;
+  state.errorStatsStatus = "ready";
+  renderPendingSummary();
+  if (el.status?.value === "no-explanation") applyFilters({ preserveCurrent: true });
 }
 
 function scheduleCloudProgressSync() {
@@ -2842,14 +2871,15 @@ function renderPendingSummary() {
     <button data-pending-filter="incomplete-options"><strong>${counts["incomplete-options"]}</strong><span>alternativas incompletas</span></button>
     <button data-pending-filter="duplicate-options"><strong>${counts["duplicate-options"]}</strong><span>alternativas duplicadas</span></button>
     <button data-pending-filter="uncertain-topic"><strong>${allStudyQuestions().filter((question) => !isExcluded(question.id) && hasUncertainStudyTopic(question)).length}</strong><span>tema incerto (provas)</span></button>
-    <button data-pending-filter="no-explanation"><strong>${allStudyQuestions().filter((question) => !isExcluded(question.id) && lacksExplanation(effectiveQuestion(question))).length}</strong><span>sem comentário</span></button>
+    <button data-pending-filter="no-explanation" title="${state.errorStatsStatus === "ready" ? "Ordenada pelos erros de todos os usuários" : "Ordenada pelos seus erros. Para usar os erros de todos, rode supabase/question_error_stats.sql no Supabase."}"><strong>${allStudyQuestions().filter((question) => !isExcluded(question.id) && lacksExplanation(effectiveQuestion(question))).length}</strong><span>sem comentário</span><small>${state.errorStatsStatus === "ready" ? "por erros de todos" : state.errorStatsStatus === "loading" ? "carregando erros…" : "por seus erros"}</small></button>
   `;
 }
 
 /* Fila "Sem comentário": primeiro o que mais rende comentar.
    - prova real antes de didática, e da banca do plano antes das outras;
    - subtema que mais cai na banca do plano (sem plano: frequência em todas as provas);
-   - questão que a pessoa errou;
+   - quanto os usuários erram a questão (proporção de pessoas, com 3+ respondendo);
+     sem esses totais, se a própria pessoa errou;
    - prova mais recente. */
 function sortByExplanationPriority(questions) {
   const examById = new Map();
@@ -2873,13 +2903,40 @@ function sortByExplanationPriority(questions) {
     return (exam ? 3 : 0)
       + (fromTarget ? 3 : 0)
       + Math.min(share(questionSubtheme(question)) * 25, 3)
-      + (getProgress(question.id).grade === "wrong" ? 2 : 0)
+      + errorPriority(question)
       + (year ? Math.max(0, Math.min(year - 2015, 10)) / 10 : 0);
   };
   return questions
     .map((question, order) => ({ question, order, score: score(question) }))
     .sort((a, b) => b.score - a.score || a.order - b.order)
     .map((item) => item.question);
+}
+
+const MIN_USERS_FOR_ERROR_RATE = 3;
+const ERROR_RATE_WEIGHT = 8;
+
+/* Com os totais de todos: proporção de pessoas que erraram (até +8). Questão com poucos dados
+   recebe a média do banco, para ficar acima das que quase todo mundo acerta. */
+function errorPriority(question) {
+  if (state.errorStatsStatus === "ready") {
+    const entry = state.errorStats.get(String(question.id));
+    const rate = entry && entry.users >= MIN_USERS_FOR_ERROR_RATE ? entry.usersWrong / entry.users : averageErrorRate();
+    return ERROR_RATE_WEIGHT * rate;
+  }
+  return getProgress(question.id).grade === "wrong" ? 2 : 0;
+}
+
+function averageErrorRate() {
+  if (state.errorStatsAverage !== undefined) return state.errorStatsAverage;
+  let users = 0;
+  let wrong = 0;
+  for (const entry of state.errorStats.values()) {
+    if (entry.users < MIN_USERS_FOR_ERROR_RATE) continue;
+    users += entry.users;
+    wrong += entry.usersWrong;
+  }
+  state.errorStatsAverage = users ? wrong / users : 0.3;
+  return state.errorStatsAverage;
 }
 
 /* Questão respondível que ainda não tem comentário (fila de trabalho da administração). */
