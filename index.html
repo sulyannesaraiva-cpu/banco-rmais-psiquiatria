@@ -20,7 +20,6 @@
 
       <nav class="tabs" aria-label="Painel do banco">
         <button class="tab active" data-tab="overview">Hoje</button>
-        <button class="tab" data-tab="today">Revis&atilde;o</button>
         <button class="tab" data-tab="activity">Estudo por temas</button>
         <button class="tab" data-tab="exams">Provas</button>
         <button class="tab" data-tab="flashcards">Flashcards</button>
@@ -77,6 +76,26 @@
         <section class="start-panel today-panel" id="startPanel">
           <div class="today-toolbar"><button id="editPlanBtn" type="button" class="link-btn" hidden>Editar plano</button></div>
           <div id="todayContent"></div>
+          <details class="today-card today-reviews" id="todayReviews">
+            <summary><h3>Outras revisões</h3><span>erros, temas que mais caem, flashcards</span></summary>
+            <div class="today-reviews-grid">
+              <button id="quickReviewBtn" type="button">Revisão rápida · 10 min</button>
+              <button id="repeatedErrorsReviewBtn" type="button">Meus erros repetidos</button>
+              <button id="examThemesReviewBtn" type="button">Temas que mais caem</button>
+              <button id="flashcardErrorsReviewBtn" type="button">Flashcards dos meus erros</button>
+            </div>
+            <div class="today-reviews-section">
+              <h4>Caderno de erros</h4>
+              <p class="panel-line">Revise só os erros de um tipo, como "Confundi conceito".</p>
+              <div class="error-notebook" id="errorNotebook"></div>
+            </div>
+            <div class="today-reviews-section">
+              <h4>Questões perigosas <small id="dangerousCount">0</small></h4>
+              <p class="panel-line" id="dangerousLine">Erro repetido, tempo excessivo ou troca de resposta certa para errada.</p>
+              <button id="startDangerousReviewBtn" type="button" class="outline-btn">Revisar perigosas</button>
+              <div class="dangerous-list" id="dangerousList"></div>
+            </div>
+          </details>
           <div class="today-more">
             <h3 class="today-more-title">Outras formas de estudar</h3>
             <div class="today-more-grid">
@@ -212,155 +231,6 @@
               <p class="panel-line">Priorize revis&otilde;es vencidas e cart&otilde;es ligados aos seus erros.</p>
               <div id="flashcardDeckList"></div>
             </section>
-          </div>
-
-          <div class="tab-panel" id="todayPanel">
-            <div class="study-section">
-              <header class="study-planner-head">
-                <span>Revisão inteligente</span>
-                <h3>Missão de hoje</h3>
-                <p id="todayMissionLine">Itens de maior impacto para sua aprovação, combinando erros, confiança, incidência em prova e importância do tema.</p>
-              </header>
-
-              <div class="review-controls">
-                <label>
-                  Banca-alvo
-                  <select id="reviewTargetExamSelect">
-                    <option value="Todas">Todas</option>
-                    <option value="USP">USP</option>
-                    <option value="UNIFESP">UNIFESP</option>
-                    <option value="UNICAMP">UNICAMP</option>
-                    <option value="SUS-SP">SUS-SP</option>
-                    <option value="ABP">ABP</option>
-                  </select>
-                </label>
-                <label>
-                  Tipo de revisão
-                  <select id="reviewModeSelect">
-                    <option value="mixed">Misto</option>
-                    <option value="high-priority">Alta prioridade</option>
-                    <option value="repeated-errors">Só erros repetidos</option>
-                    <option value="exam-themes">Só temas de prova</option>
-                    <option value="light">Revisão leve</option>
-                    <option value="flashcards">Flashcards</option>
-                    <option value="questions">Questões</option>
-                  </select>
-                </label>
-                <label>
-                  Tempo disponível
-                  <select id="reviewTimeSelect">
-                    <option value="10">10 min</option>
-                    <option value="20">20 min</option>
-                    <option value="40">40 min</option>
-                  </select>
-                </label>
-              </div>
-
-              <div class="review-box mission-box">
-                <div>
-                  <strong id="todayDueCount">0</strong>
-                  <span>itens na missão</span>
-                </div>
-                <div>
-                  <strong id="todayPriorityCount">0</strong>
-                  <span>críticos</span>
-                </div>
-              </div>
-
-              <div class="summary-grid review-impact-grid">
-                <div>
-                  <strong id="reviewCriticalCount">0</strong>
-                  <span>Críticas</span>
-                </div>
-                <div>
-                  <strong id="reviewImportantCount">0</strong>
-                  <span>Importantes</span>
-                </div>
-                <div>
-                  <strong id="reviewMaintenanceCount">0</strong>
-                  <span>Manutenção</span>
-                </div>
-              </div>
-
-              <div class="topic-toolbar">
-                <button id="startTodayReviewBtn" class="primary-btn">Começar revisão inteligente</button>
-                <button id="quickReviewBtn">Revisão rápida 10 min</button>
-                <button id="examThemesReviewBtn">Temas de maior incidência</button>
-                <button id="repeatedErrorsReviewBtn">Meus erros repetidos</button>
-                <button id="flashcardErrorsReviewBtn">Flashcards dos erros</button>
-                <button id="endTodayReviewBtn">Sair da revisão</button>
-              </div>
-              <p class="panel-line" id="todayReviewLine">A fila será montada por impacto esperado, não apenas por atraso.</p>
-              <div class="today-plan" id="todayPlan"></div>
-
-              <section class="smart-review-card flashcard-review-card">
-                <div>
-                  <span class="section-eyebrow">Flashcards</span>
-                  <h3>Revisão por cartões</h3>
-                  <p class="panel-line" id="flashcardReviewLine">Os flashcards marcados como Errei, Difícil, Bom ou Fácil entram aqui conforme o intervalo programado.</p>
-                </div>
-                <div class="summary-grid review-impact-grid">
-                  <div>
-                    <strong id="flashcardDueReviewCount">0</strong>
-                    <span>vencidos</span>
-                  </div>
-                  <div>
-                    <strong id="flashcardScheduledReviewCount">0</strong>
-                    <span>programados</span>
-                  </div>
-                  <div>
-                    <strong id="flashcardReviewedCount">0</strong>
-                    <span>já vistos</span>
-                  </div>
-                </div>
-                <div class="topic-toolbar">
-                  <button id="startDueFlashcardsBtn" class="primary-btn">Revisar flashcards vencidos</button>
-                  <button id="goFlashcardsBtn">Abrir banco de flashcards</button>
-                </div>
-                <div class="today-list" id="flashcardReviewList"></div>
-              </section>
-
-              <div class="study-section">
-                <h3>Cronograma de revisão</h3>
-                <div class="review-box">
-                  <div>
-                    <strong id="dueReviewCount">0</strong>
-                    <span>revisões vencidas</span>
-                  </div>
-                  <div>
-                    <strong id="scheduledReviewCount">0</strong>
-                    <span>programadas</span>
-                  </div>
-                </div>
-                <p class="panel-line" id="spacedReviewLine">As questões erradas entram automaticamente em revisão espaçada.</p>
-              </div>
-
-              <div class="study-section">
-                <h3>Caderno de erros</h3>
-                <p class="panel-line">Revise só os erros de um tipo, como "Confundi conceito".</p>
-                <div class="error-notebook" id="errorNotebook"></div>
-              </div>
-
-              <div class="study-section">
-                <h3>Questões perigosas</h3>
-                <div class="review-box">
-                  <div>
-                    <strong id="dangerousCount">0</strong>
-                    <span>na fila especial</span>
-                  </div>
-                  <div>
-                    <strong id="dangerousRecentCount">0</strong>
-                    <span>recentes</span>
-                  </div>
-                </div>
-                <div class="topic-toolbar">
-                  <button id="startDangerousReviewBtn" class="primary-btn">Revisar perigosas</button>
-                  <button id="endDangerousReviewBtn">Sair das perigosas</button>
-                </div>
-                <p class="panel-line" id="dangerousLine">Questões com erro repetido, tempo excessivo ou troca de resposta certa para errada entram aqui.</p>
-                <div class="dangerous-list" id="dangerousList"></div>
-              </div>
-            </div>
           </div>
 
           <div class="tab-panel" id="activityPanel">

@@ -357,7 +357,6 @@ const el = {
   tabs: document.querySelectorAll("[data-tab]"),
   panels: {
     overview: document.querySelector("#overviewPanel"),
-    today: document.querySelector("#todayPanel"),
     notes: document.querySelector("#notesPanel"),
     flashcards: document.querySelector("#flashcardsPanel"),
     topics: document.querySelector("#topicsPanel"),
@@ -405,13 +404,9 @@ const el = {
   examProgressAccuracy: document.querySelector("#examProgressAccuracy"),
   examProgressAnswered: document.querySelector("#examProgressAnswered"),
   examProgressSplit: document.querySelector("#examProgressSplit"),
-  dueReviewCount: document.querySelector("#dueReviewCount"),
-  scheduledReviewCount: document.querySelector("#scheduledReviewCount"),
   startSpacedReview: document.querySelector("#startSpacedReviewBtn"),
   endSpacedReview: document.querySelector("#endSpacedReviewBtn"),
-  spacedReviewLine: document.querySelector("#spacedReviewLine"),
   dangerousCount: document.querySelector("#dangerousCount"),
-  dangerousRecentCount: document.querySelector("#dangerousRecentCount"),
   dangerousLine: document.querySelector("#dangerousLine"),
   dangerousList: document.querySelector("#dangerousList"),
   startDangerousReview: document.querySelector("#startDangerousReviewBtn"),
@@ -3016,8 +3011,9 @@ function openFlashcardReviewItem(item) {
 function startDueFlashcardsReview() {
   const due = flashcardReviewItems({ dueOnly: true });
   if (!due.length) {
-    if (el.flashcardReviewLine) el.flashcardReviewLine.textContent = "Nenhum flashcard vencido no momento. Você pode abrir o banco de flashcards para estudar cartões novos.";
+    state.todayNotice = "Nenhum flashcard vencido no momento. Você pode abrir o banco de flashcards para estudar cartões novos.";
     setTab("today");
+    render();
     return;
   }
   openFlashcardReviewItem(due[0]);
@@ -3542,28 +3538,6 @@ function renderSessionSummary() {
 }
 
 function renderHistory() {
-  const dueQuestions = spacedReviewQuestions(true);
-  const scheduledQuestions = spacedReviewQuestions(false);
-  const dailyTarget = Math.min(dueQuestions.length, state.sessionSize || 30);
-  const estimatedMinutes = Math.max(5, Math.ceil(dailyTarget * 1.5));
-  const nextScheduled = scheduledQuestions
-    .map((question) => getProgress(question.id).nextReviewAt)
-    .filter(Boolean)
-    .sort((a, b) => a - b)[0];
-  const nextScheduledText = nextScheduled
-    ? new Date(nextScheduled).toLocaleDateString("pt-BR", { day: "2-digit", month: "2-digit" })
-    : "";
-  el.dueReviewCount.textContent = dueQuestions.length;
-  el.scheduledReviewCount.textContent = scheduledQuestions.length;
-  if (state.spacedReviewActive) {
-    el.spacedReviewLine.innerHTML = `<strong>Revisão ativa:</strong> ${pluralize(state.filtered.length, "questão vencida", "questões vencidas")}.<br>Ao responder, a próxima revisão será definida pelo tipo marcado: erro importante volta hoje ou em 1 dia; leitura/desatenção em 2 dias; acerto com dúvida em 3 dias; domínio sólido em 14 a 21 dias.`;
-  } else if (dueQuestions.length) {
-    el.spacedReviewLine.innerHTML = `<strong>Meta de hoje:</strong> resolver ${pluralize(dailyTarget, "questão vencida", "questões vencidas")} (${estimatedMinutes} min estimados).<br><strong>Próximo passo:</strong> depois das revisões, faça uma sessão de ${state.sessionSize} questões novas ou treine seus temas frágeis. Erros recorrentes voltam com prioridade; acertos seguros ficam mais espaçados.`;
-  } else if (scheduledQuestions.length) {
-    el.spacedReviewLine.innerHTML = `<strong>Hoje:</strong> não há revisões vencidas.<br>${pluralize(scheduledQuestions.length, "questão programada", "questões programadas")} para revisão futura${nextScheduledText ? `; próxima previsão: ${nextScheduledText}` : ""}. Sugestão: faça uma sessão inteligente ou avance em questões novas.`;
-  } else {
-    el.spacedReviewLine.innerHTML = `<strong>Nenhuma revisão programada ainda.</strong><br>Próximo passo: faça um bloco de ${state.sessionSize} questões; ao errar ou marcar acerto com dúvida, a plataforma criará automaticamente o calendário de revisão.`;
-  }
   renderErrorNotebook();
   const answered = allStudyQuestions()
     .filter((question) => !isExcluded(question.id) && getProgress(question.id).grade)
@@ -3668,12 +3642,9 @@ function renderFlashcardReviewPanel() {
 function renderDangerousQuestions() {
   if (!el.dangerousCount) return;
   const dangerous = dangerousQuestions();
-  const recentLimit = Date.now() - 7 * 24 * 60 * 60 * 1000;
-  const recent = dangerous.filter((question) => (getProgress(question.id).dangerousUpdatedAt || 0) >= recentLimit);
   el.dangerousCount.textContent = dangerous.length;
-  el.dangerousRecentCount.textContent = recent.length;
   el.startDangerousReview.disabled = !dangerous.length;
-  el.endDangerousReview.hidden = !state.dangerousReviewActive;
+  if (el.endDangerousReview) el.endDangerousReview.hidden = !state.dangerousReviewActive;
   if (state.dangerousReviewActive) {
     el.dangerousLine.innerHTML = `<strong>Fila ativa:</strong> ${pluralize(state.filtered.length, "questão perigosa", "questões perigosas")} para revisar.`;
   } else if (dangerous.length) {
@@ -4163,6 +4134,8 @@ function shuffleFiltered() {
 
 function setTab(tabName, options = {}) {
   if (tabName === "topics" && !state.isAdmin) tabName = "overview";
+  /* A antiga aba Revisão foi incorporada à tela Hoje. */
+  if (tabName === "today") tabName = "overview";
   const previousTab = state.activeTab;
   state.activeTab = tabName;
   const browsing = options.fromNav && (hasActiveQuestionFlow() || state.filtered.length > 0);
@@ -4338,11 +4311,12 @@ function startSpacedReview() {
     return;
   }
   if (!questions.length) {
-    if (el.todayReviewLine) el.todayReviewLine.textContent = "Nenhuma questão elegível na missão atual. Tente mudar o tipo de revisão ou iniciar pelos flashcards.";
-    if (el.spacedReviewLine) el.spacedReviewLine.textContent = "Nenhuma questão elegível na missão atual.";
+    state.todayNotice = "Não há questões para essa revisão agora. Tente outra opção em \"Outras revisões\".";
     setTab("today");
+    render();
     return;
   }
+  state.todayNotice = "";
   state.sessionActive = false;
   state.activeAnswers = {};
   state.topicActive = false;

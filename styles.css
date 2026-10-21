@@ -3872,6 +3872,85 @@ body.theme-dark .today-chip.good { background: #052e16; color: #86efac; }
   font-weight: 600;
 }
 
+/* "Só revisar agora" abaixo do Começar e o bloco "Outras revisões" (antiga aba Revisão). */
+.today-review-only {
+  width: 100%;
+  min-height: 44px;
+  border-radius: 14px;
+  font-weight: 600;
+}
+
+.today-reviews > summary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 12px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.today-reviews > summary::-webkit-details-marker {
+  display: none;
+}
+
+.today-reviews > summary::after {
+  content: "▾";
+  margin-left: auto;
+  color: var(--muted);
+  transition: transform 0.15s ease;
+}
+
+.today-reviews:not([open]) > summary::after {
+  transform: rotate(-90deg);
+}
+
+.today-reviews > summary h3 {
+  margin: 0;
+}
+
+.today-reviews > summary span {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.today-reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.today-reviews-grid button {
+  min-height: 48px;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.today-reviews-section {
+  display: grid;
+  gap: 8px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+
+.today-reviews-section h4 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.today-reviews-section h4 small {
+  margin-left: 6px;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.today-reviews-section .panel-line {
+  margin: 0;
+}
+
+.today-reviews-section > .outline-btn {
+  justify-self: start;
+}
+
 /* resumo do fim do estudo */
 .today-summary-head {
   display: grid;

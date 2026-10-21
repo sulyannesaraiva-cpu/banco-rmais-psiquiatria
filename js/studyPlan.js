@@ -10,6 +10,8 @@
 const STUDY_PLAN_KEY = "banco-rmais-study-plan";
 const STUDY_RUN_KEY = "banco-rmais-study-run";
 const PLAN_MINUTE_OPTIONS = [30, 60, 90, 120];
+/* "Só revisar agora": no máximo esta quantidade de revisões vencidas por bloco. */
+const REVIEW_ONLY_LIMIT = 40;
 const DAY_MS = 24 * 60 * 60 * 1000;
 const WEEKDAY_INITIALS = ["D", "S", "T", "Q", "Q", "S", "S"];
 
@@ -721,6 +723,7 @@ function renderTodayDashboard(data) {
             </div>`).join("")}
         </div>
         <button type="button" class="primary-btn today-cta" data-today-action="${goalDone ? "start-extra" : "start"}">${goalDone ? "Estudar mais 10 questões" : "Começar"} ${TODAY_ICONS.arrow}</button>
+        ${data.due.length ? `<button type="button" class="outline-btn today-review-only" data-today-action="review-due">Só revisar agora · ${pluralize(Math.min(data.due.length, REVIEW_ONLY_LIMIT), "questão vencida", "questões vencidas")}</button>` : ""}
       </section>
 
       <div class="today-columns">
@@ -800,6 +803,9 @@ function handleTodayClick(event) {
     startTodayRun();
   } else if (action === "start-extra") {
     startTodayRun({ extra: true });
+  } else if (action === "review-due") {
+    state.todayNotice = "";
+    startStudyRun(computeTodayData().due.slice(0, REVIEW_ONLY_LIMIT), { kind: "review", label: "Revisões vencidas" });
   } else if (action === "reinforce") {
     startReinforceRun(target.dataset.subtheme);
   } else if (action === "flashcards") {
