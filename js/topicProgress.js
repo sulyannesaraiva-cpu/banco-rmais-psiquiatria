@@ -1,10 +1,11 @@
-/* Estudo de um tema: "Continuar" abre só as pendentes daquele tema. */
+/* Estudo de um tema ou subtema pela lista de temas:
+   "Continuar" abre só as pendentes; "Ver todas" abre todas (e volta à última questão vista). */
 (function setupPersistentTopicProgress() {
   const TOPIC_MODE_KEY = "banco-rmais-topic-mode";
 
-  function topicSelectionKey(topics, mode = "all") {
+  function topicSelectionKey(topics, mode = "all", subtheme = "") {
     const cleanTopics = [...(topics || [])].map(String).sort((a, b) => a.localeCompare(b, "pt-BR"));
-    return `topic-progress:${mode}:${JSON.stringify({ topics: cleanTopics, subthemes: [] })}`;
+    return `topic-progress:${mode}:${JSON.stringify({ topics: cleanTopics, subthemes: subtheme ? [subtheme] : [] })}`;
   }
 
   function resetOtherStudyModes() {
@@ -22,14 +23,18 @@
     state.dangerousReviewIds = [];
   }
 
-  function topicQuestionList(topics) {
-    return topics
-      .flatMap((topic) => topicQuestions(topic))
-      .filter((question) => isReadyQuestion(effectiveQuestion(question)));
+  function topicQuestionList(topics, subtheme) {
+    return topics.flatMap((topic) => {
+      const questions = topicQuestions(topic);
+      const inGroup = subtheme
+        ? new Set((topicSubthemeGroups(topic, questions).find((group) => group.key === subtheme)?.questions || []).map((question) => question.id))
+        : null;
+      return questions.filter((question) => isReadyQuestion(effectiveQuestion(question)) && (!inGroup || inGroup.has(question.id)));
+    });
   }
 
-  /* Abre os temas pedidos sem mexer nos temas marcados para o bloco. */
-  function startSelectedTopics(mode = "pending", topics = topicsForTopicMode()) {
+  /* Abre os temas pedidos (e, se houver, só um subtema) sem mexer nos temas marcados para o bloco. */
+  function startSelectedTopics(mode = "pending", topics = topicsForTopicMode(), subtheme = "") {
     if (!topics.length) {
       if (el.topicModeLine) el.topicModeLine.textContent = "Selecione pelo menos um tema.";
       setTab("activity");
@@ -39,23 +44,24 @@
     resetOtherStudyModes();
     state.topicActive = true;
     state.topicIds = topics;
+    state.topicSubtheme = subtheme || "";
     state.activeAnswers = {};
 
-    const allQuestions = topicQuestionList(topics);
+    const allQuestions = topicQuestionList(topics, subtheme);
     const questions = mode === "pending"
       ? allQuestions.filter((question) => !getProgress(question.id).grade)
       : allQuestions;
 
     state.filtered = questions;
-    state.filterKey = topicSelectionKey(topics, mode);
+    state.filterKey = topicSelectionKey(topics, mode, subtheme);
     localStorage.setItem(TOPIC_MODE_KEY, mode);
 
     if (!questions.length) {
       state.index = 0;
       if (el.topicModeLine) {
         el.topicModeLine.textContent = mode === "pending"
-          ? "Tema concluído: não há questões pendentes neste recorte."
-          : "Nenhuma questão encontrada para este tema.";
+          ? "Concluído: não há questões pendentes neste recorte."
+          : "Nenhuma questão encontrada neste recorte.";
       }
       setTab("activity");
       render();
@@ -70,17 +76,22 @@
     render();
   }
 
-  function openTopic(topic, mode) {
-    startSelectedTopics(mode, [topic]);
-  }
-
-  /* "Continuar" fica em cada linha da lista de temas (renderTopicChecklist no núcleo). */
+  /* Botões "Continuar" / "Ver todas" de cada tema e subtema (renderTopicChecklist no núcleo). */
   el.topicChecklist?.addEventListener("click", (event) => {
-    const button = event.target.closest("[data-topic-continue]");
+    const button = event.target.closest("[data-run-topic]");
     if (!button || button.disabled) return;
     event.preventDefault();
-    openTopic(button.dataset.topicContinue, "pending");
+    startSelectedTopics(button.dataset.runMode, [button.dataset.runTopic], button.dataset.runSubtheme);
   });
+
+  /* Lembra quais temas estão com os subtemas abertos ("toggle" não borbulha: captura). */
+  el.topicChecklist?.addEventListener("toggle", (event) => {
+    const details = event.target.closest?.("[data-topic-subthemes]");
+    if (!details) return;
+    state.openTopicSubthemes ||= new Set();
+    if (details.open) state.openTopicSubthemes.add(details.dataset.topicSubthemes);
+    else state.openTopicSubthemes.delete(details.dataset.topicSubthemes);
+  }, true);
 
   if (el.startTopic) {
     el.startTopic.textContent = "Continuar pendentes";
@@ -99,9 +110,10 @@
       const mode = localStorage.getItem(TOPIC_MODE_KEY) || "all";
       const answeredInView = state.filtered.filter((question) => Boolean(getProgress(question.id).grade)).length;
       const remainingInView = Math.max(state.filtered.length - answeredInView, 0);
+      const scope = state.topicSubtheme ? `${topics.join(", ")} · ${state.topicSubtheme === OTHER_SUBTHEMES ? "Outros" : state.topicSubtheme}` : topics.join(", ");
       el.position.title = mode === "pending"
         ? `${state.filtered.length} questões pendentes neste recorte`
-        : `${answeredInView} respondidas · ${remainingInView} faltam em ${topics.join(", ")}`;
+        : `${answeredInView} respondidas · ${remainingInView} faltam em ${scope}`;
     }
     return result;
   };

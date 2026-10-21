@@ -39,6 +39,7 @@
       index: Math.max(0, Number(state.index || 0)),
       filterKey: state.filterKey || "",
       topicIds: [...(state.topicIds || [])],
+      topicSubtheme: state.topicSubtheme || "",
       sessionIds: [...(state.sessionIds || [])],
       spacedReviewIds: [...(state.spacedReviewIds || [])],
       dangerousReviewIds: [...(state.dangerousReviewIds || [])],
@@ -148,6 +149,7 @@
     if (saved.mode === "topic") {
       state.topicActive = true;
       state.topicIds = [...(saved.topicIds || saved.selectedTopics || [])];
+      state.topicSubtheme = saved.topicSubtheme || "";
     } else if (saved.mode === "session") {
       state.sessionActive = true;
       state.sessionIds = [...(saved.sessionIds || saved.filteredIds)];

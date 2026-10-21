@@ -2701,6 +2701,71 @@ body.theme-dark .exam-study-card {
   cursor: default;
 }
 
+.topic-row-actions {
+  display: grid;
+  justify-items: stretch;
+  gap: 2px;
+}
+
+.topic-row-all {
+  min-height: 26px;
+  padding: 0 6px;
+  font-size: 12.5px;
+  text-align: center;
+}
+
+.topic-subthemes {
+  grid-column: 1 / -1;
+  border-top: 1px solid var(--line);
+  padding-top: 8px;
+}
+
+.topic-subthemes > summary {
+  cursor: pointer;
+  color: var(--accent-strong);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.subtheme-rows {
+  display: grid;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.subtheme-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 0 6px 30px;
+}
+
+.subtheme-row + .subtheme-row {
+  border-top: 1px dashed var(--line);
+}
+
+.subtheme-row-text {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+
+.subtheme-row-text span {
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+.subtheme-row-text small {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.subtheme-row .topic-row-continue {
+  min-height: 30px;
+  font-size: 12.5px;
+}
+
 #activityPanel .block-builder {
   padding: 16px;
   border: 1px solid var(--line);
@@ -2757,11 +2822,16 @@ body.theme-dark .exam-study-card {
     grid-template-columns: minmax(0, 1fr) auto;
   }
 
-  #activityPanel .topic-row-continue {
+  #activityPanel .topic-row-continue,
+  #activityPanel .topic-row-all {
     width: auto;
     min-height: 32px;
     padding: 0 10px;
     font-size: 12.5px;
+  }
+
+  #activityPanel .subtheme-row {
+    padding-left: 12px;
   }
 }
 
@@ -4703,6 +4773,21 @@ body.theme-dark .perf-next {
   border-radius: 10px;
   font-size: 13px;
   font-weight: 600;
+}
+
+.run-progress-line {
+  flex-wrap: wrap;
+}
+
+.run-finish.run-pause {
+  border-color: transparent;
+  background: transparent;
+  color: var(--muted);
+}
+
+.run-finish.run-pause:hover {
+  border-color: var(--line);
+  color: var(--ink);
 }
 
 .run-finish.armed {

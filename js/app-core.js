@@ -2735,6 +2735,15 @@ function applyFilters({ preserveCurrent = false } = {}) {
     return;
   }
 
+  /* Estudo por tema/subtema: a lista foi montada ao abrir (pendentes ou todas); só tira excluídas.
+     Antes caía no filtro geral, que esvaziava a lista quando nenhum filtro administrativo estava ativo. */
+  if (state.topicActive && state.filtered.length) {
+    state.filtered = state.filtered.filter((question) => !isExcluded(question.id));
+    state.index = Math.min(state.index, Math.max(state.filtered.length - 1, 0));
+    render();
+    return;
+  }
+
   if (state.examActive || state.examSimulationActive) {
     const exam = currentExam();
     state.filtered = exam
@@ -2792,7 +2801,7 @@ function applyFilters({ preserveCurrent = false } = {}) {
     const matchesTopic = pendingAdminMode
       ? true
       : activeTopicIds
-        ? [...activeTopicIds].some((topicName) => questionBelongsToTopic(view, topicName))
+        ? [...activeTopicIds].some((topicName) => questionBelongsToTopic(view, topicName) && questionInTopicSubtheme(question, topicName, state.topicSubtheme))
         : selectedTopicIds
           ? [...selectedTopicIds].some((topicName) => questionBelongsToTopic(view, topicName))
           : topic === "all" || view.source === topic;
@@ -3480,27 +3489,108 @@ function openQuestionFromNote(questionId) {
 }
 
 
+/* Subtemas de um tema para a lista: os pequenos (menos de MIN_TOPIC_SUBTHEME questões no tema)
+   e os sem subtema viram um grupo só, "Outros" (chave OTHER_SUBTHEMES). */
+const MIN_TOPIC_SUBTHEME = 10;
+const OTHER_SUBTHEMES = "__outros__";
+
+function topicSubthemeGroups(topic, questions = topicQuestions(topic)) {
+  const byLabel = new Map();
+  for (const question of questions) {
+    const label = questionSubtheme(question);
+    if (!byLabel.has(label)) byLabel.set(label, []);
+    byLabel.get(label).push(question);
+  }
+  const groups = [];
+  const others = [];
+  for (const [label, items] of byLabel) {
+    if (items.length >= MIN_TOPIC_SUBTHEME && label !== "Subtema a revisar") groups.push({ key: label, label, questions: items });
+    else others.push(...items);
+  }
+  groups.sort((a, b) => b.questions.length - a.questions.length);
+  if (others.length) groups.push({ key: OTHER_SUBTHEMES, label: "Outros", questions: others });
+  return groups;
+}
+
+/* A questão pertence ao subtema escolhido (ou ao grupo "Outros") dentro do tema? */
+function questionInTopicSubtheme(question, topic, key) {
+  if (!key) return true;
+  if (key !== OTHER_SUBTHEMES) return questionSubtheme(question) === key;
+  const cache = questionInTopicSubtheme.others;
+  if (!cache || cache.topic !== topic || cache.source !== state.topicSource) {
+    const group = topicSubthemeGroups(topic).find((item) => item.key === OTHER_SUBTHEMES);
+    questionInTopicSubtheme.others = { topic, source: state.topicSource, ids: new Set((group?.questions || []).map((item) => item.id)) };
+  }
+  return questionInTopicSubtheme.others.ids.has(question.id);
+}
+
+function progressStats(questions) {
+  let answered = 0;
+  let correct = 0;
+  for (const question of questions) {
+    const grade = getProgress(question.id).grade;
+    if (grade) answered += 1;
+    if (grade === "correct") correct += 1;
+  }
+  return {
+    total: questions.length,
+    answered,
+    accuracy: answered ? correct / answered : 0,
+    percent: questions.length ? Math.round((answered / questions.length) * 100) : 0,
+  };
+}
+
+/* "Continuar" (só pendentes) e "Ver todas" de um tema ou de um subtema (tratados em topicProgress.js). */
+function topicRunButtons({ topic, subtheme = "", remaining }) {
+  const attrs = `data-run-topic="${escapeHtml(topic)}" data-run-subtheme="${escapeHtml(subtheme)}"`;
+  return `
+    <div class="topic-row-actions">
+      <button type="button" class="outline-btn topic-row-continue" ${attrs} data-run-mode="pending" ${remaining > 0 ? "" : "disabled"} title="${remaining > 0 ? `${remaining} pendentes` : "Tudo feito"}">${remaining > 0 ? "Continuar" : "Concluído"}</button>
+      <button type="button" class="link-btn topic-row-all" ${attrs} data-run-mode="all">Ver todas</button>
+    </div>`;
+}
+
 /* Lista única de temas: marcar para o bloco, ver progresso e acerto, ou "Continuar" as pendentes. */
 function renderTopicChecklist() {
   if (!el.topicChecklist || !state.questions.length) return;
   const selectedTopics = Array.isArray(state.selectedTopics) ? state.selectedTopics : [];
   const topicQuery = normalize(el.topicPanelSearch.value);
   const topics = allTopics().filter((topic) => !topicQuery || normalize(topic).includes(topicQuery));
+  state.openTopicSubthemes ||= new Set();
   el.topicChecklist.innerHTML = topics
     .map((topic) => {
-      const perf = topicPerformance(topic);
+      const questions = topicQuestions(topic);
+      const perf = progressStats(questions);
       const checked = selectedTopics.includes(topic) ? "checked" : "";
-      const percent = perf.total ? Math.round((perf.answered / perf.total) * 100) : 0;
-      const remaining = Math.max(perf.total - perf.answered, 0);
+      const subthemes = topicSubthemeGroups(topic, questions);
+      const subthemeRows = subthemes
+        .map((group) => {
+          const stats = progressStats(group.questions);
+          return `
+            <div class="subtheme-row">
+              <div class="subtheme-row-text">
+                <span>${escapeHtml(group.label)}</span>
+                <small>${stats.answered}/${stats.total} feitas${stats.answered ? ` · ${Math.round(stats.accuracy * 100)}%` : ""}</small>
+              </div>
+              ${topicRunButtons({ topic, subtheme: group.key, remaining: stats.total - stats.answered })}
+            </div>`;
+        })
+        .join("");
+      const open = state.openTopicSubthemes.has(topic) ? "open" : "";
       return `
         <div class="topic-row ${checked ? "selected" : ""}">
           <label class="topic-row-main">
             <input type="checkbox" value="${escapeHtml(topic)}" ${checked} />
             <span class="topic-row-name">${escapeHtml(topic)}</span>
             <span class="topic-row-meta">${perf.answered}/${perf.total} feitas · ${perf.answered ? `${Math.round(perf.accuracy * 100)}% de acerto` : "sem respostas"}</span>
-            <span class="topic-row-track" aria-hidden="true"><i style="width:${percent}%"></i></span>
+            <span class="topic-row-track" aria-hidden="true"><i style="width:${perf.percent}%"></i></span>
           </label>
-          <button type="button" class="outline-btn topic-row-continue" data-topic-continue="${escapeHtml(topic)}" ${remaining ? "" : "disabled"} title="${remaining ? `${remaining} pendentes` : "Tema concluído"}">${remaining ? "Continuar" : "Concluído"}</button>
+          ${topicRunButtons({ topic, remaining: perf.total - perf.answered })}
+          ${subthemes.length > 1 ? `
+          <details class="topic-subthemes" data-topic-subthemes="${escapeHtml(topic)}" ${open}>
+            <summary>Subtemas (${subthemes.length})</summary>
+            <div class="subtheme-rows">${subthemeRows}</div>
+          </details>` : ""}
         </div>
       `;
     })
@@ -4822,6 +4912,25 @@ function reviewExamSimulationErrors() {
   state.examActive = false;
   state.index = 0;
   applyFilters({ preserveCurrent: true });
+}
+
+/* "Sair da prova" (treino, não simulado): sai sem fechar a prova. A posição e as respostas ficam
+   guardadas e voltam ao abrir de novo a mesma prova ou o mesmo conjunto de provas filtradas. */
+function pauseExamStudy() {
+  if (!state.examActive && !state.examSetActive) return;
+  const snapshot = currentActiveStudyState();
+  const answered = currentRunAnsweredQuestions().length;
+  const total = state.filtered.length;
+  clearActiveStudyState(); // também apaga a cópia que reabriria a prova sozinha ao voltar à aba
+  if (snapshot) localStorage.setItem(ACTIVE_STUDY_KEY, JSON.stringify(snapshot));
+  state.examCompletionMessage = `Prova pausada em ${answered}/${total}. Abra a mesma prova para continuar de onde parou.`;
+  state.examActive = false;
+  state.examSetActive = false;
+  state.examSetIds = [];
+  state.activeAnswers = {};
+  state.index = 0;
+  applyFilters({ preserveCurrent: true });
+  setTab("exams");
 }
 
 function endExam() {
