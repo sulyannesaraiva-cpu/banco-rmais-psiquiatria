@@ -872,31 +872,12 @@ async function syncSettingsToCloud() {
 async function loadCloudState() {
   if (!state.authUser || !state.supabase) return;
 
+  /* Seleção de temas do bloco em andamento, para a da conta não trocá-la no meio do estudo. */
   const activeContext = hasActiveQuestionFlow() && Array.isArray(state.filtered) && state.filtered.length
     ? {
-        filtered: [...state.filtered],
-        index: state.index,
-        activeTab: state.activeTab,
-        filterKey: state.filterKey,
         selectedTopics: Array.isArray(state.selectedTopics) ? [...state.selectedTopics] : [],
         selectedSubthemes: Array.isArray(state.selectedSubthemes) ? [...state.selectedSubthemes] : [],
         refineSubthemes: Boolean(state.refineSubthemes),
-        activeAnswers: { ...(state.activeAnswers || {}) },
-        topicActive: state.topicActive,
-        topicIds: [...(state.topicIds || [])],
-        sessionActive: state.sessionActive,
-        sessionIds: [...(state.sessionIds || [])],
-        smartTrainingActive: state.smartTrainingActive,
-        smartTrainingIds: [...(state.smartTrainingIds || [])],
-        spacedReviewActive: state.spacedReviewActive,
-        spacedReviewIds: [...(state.spacedReviewIds || [])],
-        dangerousReviewActive: state.dangerousReviewActive,
-        dangerousReviewIds: [...(state.dangerousReviewIds || [])],
-        examActive: state.examActive,
-        examSimulationActive: state.examSimulationActive,
-        examSetActive: state.examSetActive,
-        examSetIds: [...(state.examSetIds || [])],
-        activeExamId: state.activeExamId,
       }
     : null;
 
@@ -922,35 +903,20 @@ async function loadCloudState() {
   await Promise.all([syncProgressToCloud(), syncSettingsToCloud()]);
   setSyncStatus(state.isAdmin ? "Conta sincronizada. Perfil administrador." : "Conta sincronizada.");
 
-  if (activeContext) {
-    state.filtered = activeContext.filtered;
-    state.index = Math.min(Math.max(0, Number(activeContext.index || 0)), Math.max(activeContext.filtered.length - 1, 0));
-    state.activeTab = activeContext.activeTab;
-    state.filterKey = activeContext.filterKey;
-    state.selectedTopics = activeContext.selectedTopics;
-    state.selectedSubthemes = activeContext.selectedSubthemes;
-    state.refineSubthemes = activeContext.refineSubthemes;
-    state.activeAnswers = activeContext.activeAnswers;
-    state.topicActive = activeContext.topicActive;
-    state.topicIds = activeContext.topicIds;
-    state.sessionActive = activeContext.sessionActive;
-    state.sessionIds = activeContext.sessionIds;
-    state.smartTrainingActive = activeContext.smartTrainingActive;
-    state.smartTrainingIds = activeContext.smartTrainingIds;
-    state.spacedReviewActive = activeContext.spacedReviewActive;
-    state.spacedReviewIds = activeContext.spacedReviewIds;
-    state.dangerousReviewActive = activeContext.dangerousReviewActive;
-    state.dangerousReviewIds = activeContext.dangerousReviewIds;
-    state.examActive = activeContext.examActive;
-    state.examSimulationActive = activeContext.examSimulationActive;
-    state.examSetActive = activeContext.examSetActive;
-    state.examSetIds = activeContext.examSetIds;
-    state.activeExamId = activeContext.activeExamId;
-
-    localStorage.setItem("banco-rmais-selected-topics", JSON.stringify(state.selectedTopics || []));
-    localStorage.setItem("banco-rmais-selected-subthemes", JSON.stringify(state.selectedSubthemes || []));
-    localStorage.setItem("banco-rmais-refine-subthemes", String(state.refineSubthemes));
-
+  /* A carga acima leva alguns segundos (rede) e roda de novo a cada renovação do login. Nada nela
+     encerra blocos, então vale o estado ATUAL: se a pessoa saiu da prova, trocou de bloco ou avançou
+     questões nesse meio-tempo, isso é respeitado (antes o bloco anotado no início era restaurado,
+     desfazendo o "Sair"). Com um bloco em andamento, só não reaplicamos o filtro geral, que o
+     esvaziaria, e a seleção de temas do bloco não é trocada pela que veio da conta. */
+  if (hasActiveQuestionFlow() && state.filtered.length) {
+    if (activeContext) {
+      state.selectedTopics = activeContext.selectedTopics;
+      state.selectedSubthemes = activeContext.selectedSubthemes;
+      state.refineSubthemes = activeContext.refineSubthemes;
+      localStorage.setItem("banco-rmais-selected-topics", JSON.stringify(state.selectedTopics || []));
+      localStorage.setItem("banco-rmais-selected-subthemes", JSON.stringify(state.selectedSubthemes || []));
+      localStorage.setItem("banco-rmais-refine-subthemes", String(state.refineSubthemes));
+    }
     renderTopics();
     render();
     if (typeof saveActiveStudyState === "function") saveActiveStudyState();
