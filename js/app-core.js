@@ -1540,6 +1540,7 @@ function applyQuestionCorrection(question, correction) {
     options: correction.options || question.options,
     correctAnswer: correction.correctAnswer ?? question.correctAnswer,
     explanation: correction.explanation ?? question.explanation,
+    image: correction.image || question.image,
     maintenanceFlagged: Boolean(correction.maintenanceFlagged || question.maintenanceFlagged),
     manuallyReviewed: Boolean(question.manuallyReviewed || correction.text || correction.options || correction.correctAnswer || correction.maintenanceFlagged),
     reviewedAt: correction.reviewedAt || correction.reviewed_at || question.reviewedAt,
@@ -1553,13 +1554,21 @@ function effectiveQuestion(question) {
   return applyQuestionCorrection(applyQuestionCorrection(question, globalCorrection), localCorrection);
 }
 
+/* Questões que dependem de uma figura que ainda não foi enviada (data/figureRequired.js). */
+const FIGURE_REQUIRED = new Set(window.BANCO_RMAIS_FIGURE_REQUIRED || []);
+
+function missingFigure(question) {
+  return Boolean(question && FIGURE_REQUIRED.has(question.id) && !question.image);
+}
+
 function isReadyQuestion(question) {
   const optionLetters = (question?.options || []).map((option) => option.letter);
   return Boolean(
     question?.correctAnswer &&
       question.options?.length >= 2 &&
       new Set(optionLetters).size === optionLetters.length &&
-      question.options.some((option) => option.letter === question.correctAnswer),
+      question.options.some((option) => option.letter === question.correctAnswer) &&
+      !missingFigure(question),
   );
 }
 
@@ -1582,6 +1591,7 @@ function readinessIssues(question) {
   } else if (!question.options?.some((option) => option.letter === question.correctAnswer)) {
     issues.push("gabarito sem alternativa correspondente");
   }
+  if (missingFigure(question)) issues.push("figura ausente (envie a imagem em Editar questão)");
   return issues;
 }
 
@@ -1599,6 +1609,7 @@ function readinessIssueKeys(question) {
   } else if (!question.options?.some((option) => option.letter === question.correctAnswer)) {
     issues.push("answer-mismatch");
   }
+  if (missingFigure(question)) issues.push("missing-figure");
   return issues;
 }
 
@@ -1617,6 +1628,8 @@ function pendingCounts() {
     "incomplete-options": 0,
     "duplicate-options": 0,
     "empty-text": 0,
+    "manual-review": 0,
+    "missing-figure": 0,
   };
   for (const question of pendingQuestions()) {
     counts.total += 1;
@@ -2809,7 +2822,7 @@ function applyFilters({ preserveCurrent = false } = {}) {
   const query = normalize(el.search.value);
   const topic = el.topic.value;
   const status = el.status.value;
-  const pendingStatuses = new Set(["needs-review", "missing-answer", "answer-mismatch", "incomplete-options", "duplicate-options", "uncertain-topic", "no-explanation"]);
+  const pendingStatuses = new Set(["needs-review", "missing-answer", "answer-mismatch", "incomplete-options", "duplicate-options", "uncertain-topic", "no-explanation", "missing-figure"]);
   const pendingAdminMode = pendingStatuses.has(status);
   const activeTopicIds = state.topicActive ? new Set(state.topicIds) : null;
   const selectedTopicIds = !state.topicActive && Array.isArray(state.selectedTopics) ? new Set(state.selectedTopics) : null;
@@ -2836,6 +2849,7 @@ function applyFilters({ preserveCurrent = false } = {}) {
       (status === "answer-mismatch" && readinessIssueKeys(view).includes("answer-mismatch")) ||
       (status === "incomplete-options" && readinessIssueKeys(view).includes("incomplete-options")) ||
       (status === "duplicate-options" && readinessIssueKeys(view).includes("duplicate-options")) ||
+      (status === "missing-figure" && missingFigure(view)) ||
       (status === "uncertain-topic" && hasUncertainStudyTopic(question)) ||
       (status === "no-explanation" && lacksExplanation(view)) ||
       (status === "unseen" && !progress.grade) ||
@@ -2902,6 +2916,7 @@ function renderPendingSummary() {
     <button data-pending-filter="answer-mismatch"><strong>${counts["answer-mismatch"]}</strong><span>gabarito inconsistente</span></button>
     <button data-pending-filter="incomplete-options"><strong>${counts["incomplete-options"]}</strong><span>alternativas incompletas</span></button>
     <button data-pending-filter="duplicate-options"><strong>${counts["duplicate-options"]}</strong><span>alternativas duplicadas</span></button>
+    <button data-pending-filter="missing-figure"><strong>${counts["missing-figure"]}</strong><span>figura ausente</span></button>
     <button data-pending-filter="uncertain-topic"><strong>${allStudyQuestions().filter((question) => !isExcluded(question.id) && hasUncertainStudyTopic(question)).length}</strong><span>tema incerto (provas)</span></button>
     <button data-pending-filter="no-explanation" title="${state.errorStatsStatus === "ready" ? "Ordenada pelos erros de todos os usuários" : "Ordenada pelos seus erros. Para usar os erros de todos, rode supabase/question_error_stats.sql no Supabase."}"><strong>${allStudyQuestions().filter((question) => !isExcluded(question.id) && lacksExplanation(effectiveQuestion(question))).length}</strong><span>sem comentário</span><small>${state.errorStatsStatus === "ready" ? "por erros de todos" : state.errorStatsStatus === "loading" ? "carregando erros…" : "por seus erros"}</small></button>
   `;
