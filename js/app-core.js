@@ -1,4 +1,4 @@
-﻿const SUPABASE_URL = "https://ejseesgzjdabsndtdung.supabase.co";
+const SUPABASE_URL = "https://ejseesgzjdabsndtdung.supabase.co";
 const SUPABASE_KEY = "sb_publishable_pLC5bh3LWUTi1w_7BoSCZg_ahBnuZ36";
 const storedSidebarState = localStorage.getItem("banco-rmais-sidebar-collapsed");
 const storedTheme = localStorage.getItem("banco-rmais-theme") || "light";
@@ -119,88 +119,128 @@ const SESSION_TOPIC_GROUPS = [
   },
 ];
 
+/* Subtemas (Mapa de temas do Desempenho, plano de estudo e incidência por banca).
+   Palavras-chave casam no início de palavra ("depress" pega "depressivo", mas "lei" não pega
+   "cefaleia"); as de até 4 letras (ect, toc, tea, tcc...) só como palavra inteira.
+   "topics" são os temas do Estudo por temas em que o subtema é esperado: servem de desempate. */
 const SUBTHEME_RULES = [
   {
     label: "Depressão e suicídio",
-    keywords: ["depress", "distimia", "luto", "suicid", "autoles", "eletroconvulsoterapia", "ect"],
+    topics: ["Transtornos do Humor"],
+    keywords: ["depress", "distimi", "luto", "suicid", "autoles", "autoexterm", "eletroconvulsoterapia", "ect", "anedonia", "melancol"],
   },
   {
     label: "Transtorno bipolar e mania",
-    keywords: ["bipolar", "mania", "maniaco", "maníaco", "hipomania", "ciclotim"],
+    topics: ["Transtornos do Humor"],
+    keywords: ["bipolar", "mania", "maniac", "hipomania", "ciclotim", "episodio misto"],
+  },
+  {
+    label: "Esquizofrenia e psicoses",
+    topics: ["Transtornos Psicóticos"],
+    keywords: ["esquizofren", "psicose", "psicotic", "esquizoafetiv", "esquizofreniform", "transtorno delirante", "primeiro episodio psicotico", "catatoni", "sintomas negativos"],
   },
   {
     label: "Antidepressivos",
-    keywords: ["antidepress", "ssri", "isrs", "fluoxetina", "sertralina", "paroxetina", "venlafaxina", "duloxetina", "bupropiona", "mirtazapina", "triciclico", "tricíclico"],
+    topics: ["Psicofarmacologia e terapêutica psiquiátrica"],
+    keywords: ["antidepress", "isrs", "irsn", "imao", "fluoxetina", "sertralina", "paroxetina", "citalopram", "escitalopram", "venlafaxina", "duloxetina", "bupropiona", "mirtazapina", "trazodona", "triciclic", "amitriptilina", "imipramina", "clomipramina", "nortriptilina", "sindrome serotoninergica"],
   },
   {
     label: "Antipsicóticos",
-    keywords: ["antipsicot", "clozapina", "olanzapina", "quetiapina", "risperidona", "haloperidol", "aripiprazol", "síndrome neuroléptica", "sindrome neuroleptica"],
+    topics: ["Psicofarmacologia e terapêutica psiquiátrica"],
+    keywords: ["antipsicot", "neuroleptic", "clozapina", "olanzapina", "quetiapina", "risperidona", "haloperidol", "aripiprazol", "ziprasidona", "paliperidona", "clorpromazina", "sindrome neuroleptica", "discinesia tardia", "acatisia", "extrapiramid"],
   },
   {
     label: "Estabilizadores do humor",
-    keywords: ["litio", "lítio", "valproato", "carbamazepina", "lamotrigina", "estabilizador"],
+    topics: ["Psicofarmacologia e terapêutica psiquiátrica"],
+    keywords: ["litio", "litemia", "valproato", "divalproato", "carbamazepina", "oxcarbazepina", "lamotrigina", "estabilizador"],
   },
   {
     label: "Benzodiazepínicos e sedativos",
-    keywords: ["benzodiazep", "diazepam", "clonazepam", "alprazolam", "zolpidem", "sedativo"],
+    topics: ["Psicofarmacologia e terapêutica psiquiátrica"],
+    keywords: ["benzodiazep", "diazepam", "clonazepam", "alprazolam", "lorazepam", "midazolam", "zolpidem", "zopiclona", "sedativo", "hipnotico"],
   },
   {
     label: "Álcool e abstinência",
-    keywords: ["alcool", "álcool", "abstinencia alcool", "abstinência alcool", "delirium tremens", "dependencia alcool", "dependência alcool"],
+    topics: ["Intoxicação por Drogas e Dependência Química"],
+    keywords: ["alcool", "etilis", "etilic", "alcoolis", "delirium tremens", "wernicke", "korsakoff", "naltrexona", "acamprosato", "dissulfiram"],
   },
   {
     label: "Drogas e intoxicações",
-    keywords: ["cocaina", "cocaína", "crack", "cannabis", "maconha", "opioide", "anfetamina", "intoxic", "dependencia quimica", "dependência química", "redução de danos", "reducao de danos"],
+    topics: ["Intoxicação por Drogas e Dependência Química"],
+    keywords: ["cocain", "crack", "cannabis", "maconha", "opioide", "opiaceo", "heroina", "anfetamina", "metanfetamina", "tabag", "nicotin", "dependencia quimica", "uso de substancia", "transtorno por uso", "reducao de danos", "metadona", "buprenorfina"],
   },
   {
     label: "TEA e neurodesenvolvimento",
-    keywords: ["autis", "tea", "espectro autista", "neurodesenvolvimento", "desenvolvimento neuropsicomotor"],
+    topics: ["Psiquiatria Infantil", "Desenvolvimento Neuropsicomotor"],
+    keywords: ["autis", "tea", "espectro autista", "neurodesenvolvimento", "desenvolvimento neuropsicomotor", "deficiencia intelectual", "marcos do desenvolvimento", "asperger"],
   },
   {
     label: "TDAH e comportamento disruptivo",
-    keywords: ["tdah", "hiperatividade", "déficit de atenção", "deficit de atencao", "oposição", "oposicao", "desafio", "conduta", "bullying"],
+    topics: ["Psiquiatria Infantil"],
+    keywords: ["tdah", "hiperatividade", "deficit de atencao", "desatencao", "transtorno opositor", "opositor desafiador", "transtorno de conduta", "disruptiv", "bullying", "metilfenidato", "lisdexanfetamina"],
   },
   {
     label: "Demências e rastreio cognitivo",
-    keywords: ["demencia", "demência", "alzheimer", "minimental", "mini mental", "comprometimento cognitivo", "neurocognitivo", "rastreio cognitivo"],
+    topics: ["Demências e transtornos neurocognitivos", "Saúde do Idoso"],
+    keywords: ["demencia", "demencial", "alzheimer", "corpos de lewy", "frontotemporal", "minimental", "mini mental", "meem", "comprometimento cognitivo", "neurocognitiv", "rastreio cognitivo", "donepezila", "rivastigmina", "galantamina", "memantina"],
   },
   {
     label: "Delirium e alterações da consciência",
-    keywords: ["delirium", "coma", "consciência", "consciencia", "rebaixamento", "estado confusional", "orientação", "orientacao"],
+    topics: ["Delirium, consciência e neuropsiquiatria clínica"],
+    keywords: ["delirium", "coma", "comatoso", "nivel de consciencia", "rebaixamento", "estado confusional", "encefalopatia", "morte encefalica", "glasgow"],
   },
   {
     label: "Psicopatologia e exame mental",
-    keywords: ["exame do estado mental", "psicopatologia", "delirio", "delírio", "alucin", "juízo", "juizo", "insight", "sensopercep", "pensamento"],
+    topics: ["Psicopatologia"],
+    keywords: ["exame do estado mental", "exame psiquico", "psicopatolog", "sensopercep", "pseudoalucin", "alucinacao", "alucinacoes", "ilusao", "juizo de realidade", "curso do pensamento", "forma do pensamento", "conteudo do pensamento", "fuga de ideias", "neologism", "despersonaliza", "desrealiza"],
   },
   {
     label: "Ansiedade, TOC e trauma",
-    keywords: ["ansiedade", "panico", "pânico", "fobia", "toc", "obsess", "compuls", "trauma", "tept", "estresse pós", "estresse pos"],
+    topics: ["Ansiedade, TOC, trauma e somatoformes"],
+    keywords: ["ansiedade", "ansios", "panico", "fobia", "agorafob", "toc", "obsess", "compulsiv", "trauma", "tept", "estresse pos", "estresse agudo", "somatiza", "conversiv", "dissociativ", "hipocondr"],
   },
   {
     label: "Sono",
-    keywords: ["sono", "insonia", "insônia", "apneia", "narcolepsia", "terror noturno", "pesadelo", "sonolência", "sonolencia"],
+    topics: ["Distúrbios do Sono"],
+    keywords: ["sono", "insonia", "apneia", "narcolepsia", "parassonia", "sonambul", "terror noturno", "pesadelo", "sonolencia", "circadian", "polissonograf"],
   },
   {
     label: "Alimentares",
-    keywords: ["anorexia", "bulimia", "compulsão alimentar", "compulsao alimentar", "transtorno alimentar", "imagem corporal"],
+    topics: ["Transtornos Alimentares"],
+    keywords: ["anorexia", "bulimia", "compulsao alimentar", "transtorno alimentar", "transtornos alimentares", "imagem corporal", "pica", "ruminacao", "arfid"],
   },
   {
     label: "Personalidade",
-    keywords: ["personalidade", "borderline", "antissocial", "narcis", "histri", "esquiva", "dependente"],
+    topics: ["Transtornos da Personalidade"],
+    keywords: ["personalidade", "borderline", "antissocial", "narcisis", "histrioni", "esquizotip", "esquizoide", "personalidade dependente", "personalidade esquiva", "personalidade evitativa"],
   },
   {
     label: "Forense, ética e legislação",
-    keywords: ["forense", "ética", "etica", "lei", "legislação", "legislacao", "inimput", "perícia", "pericia", "capacidade civil", "interdição", "interdicao", "sigilo", "internação involuntária", "internacao involuntaria"],
+    topics: ["Forense e Ética"],
+    keywords: ["forense", "etica medica", "codigo de etica", "bioetica", "lei", "legislacao", "inimput", "imputab", "pericia", "perito", "capacidade civil", "interdicao", "curatela", "sigilo", "internacao involuntaria", "internacao compulsoria", "cfm"],
   },
   {
     label: "Psicoterapia",
-    keywords: ["psicoterapia", "terapia cognitiva", "tcc", "psican", "transferência", "transferencia", "contratransfer", "terapia familiar", "terapia de grupo"],
+    topics: ["Psicoterapias"],
+    keywords: ["psicoterap", "terapia cognitiv", "tcc", "psicanal", "freud", "contratransfer", "terapia familiar", "terapia de grupo", "psicodinamic", "mecanismo de defesa", "mecanismos de defesa", "entrevista motivacional"],
   },
   {
     label: "Psicogeriatria e saúde do idoso",
-    keywords: ["idoso", "geriatr", "fragilidade", "quedas", "polifarm", "envelhecimento", "cuidador", "funcionalidade"],
+    topics: ["Saúde do Idoso"],
+    keywords: ["idoso", "idosa", "geriatr", "fragilidade", "quedas", "polifarm", "envelhecimento", "cuidador", "senescen"],
   },
-];
+  {
+    label: "Saúde mental coletiva",
+    topics: ["Saúde Mental Coletiva e Políticas"],
+    keywords: ["caps", "raps", "rede de atencao psicossocial", "reforma psiquiatrica", "consultorio na rua", "matriciamento", "atencao primaria", "atencao basica", "epidemiolog", "prevalencia", "sus"],
+  },
+].map((rule) => ({
+  ...rule,
+  matchers: rule.keywords.map(normalize).map((keyword) => {
+    const escaped = keyword.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    return new RegExp(`(?:^|[^a-z0-9])${escaped}${keyword.length <= 4 ? "(?:[^a-z0-9]|$)" : ""}`);
+  }),
+}));
 
 let classificationCache = {
   text: new Map(),
@@ -1634,21 +1674,6 @@ function subthemeMinorKey(topic) {
   return subthemeKey(topic, "__minor__");
 }
 
-function questionSubthemeText(question) {
-  const cacheKey = question.id || `${question.source}-${question.number}`;
-  if (classificationCache.text.has(cacheKey)) return classificationCache.text.get(cacheKey);
-  const text = normalize(
-    [
-      question.source,
-      question.topic,
-      question.title,
-      question.text,
-      ...(question.options || []).map((option) => option.text),
-    ].join(" "),
-  );
-  classificationCache.text.set(cacheKey, text);
-  return text;
-}
 
 const PSYCHOPHARM_DRUGS = [
   "antidepress", "fluoxetina", "sertralina", "paroxetina", "citalopram", "escitalopram", "venlafaxina", "desvenlafaxina",
@@ -1691,17 +1716,40 @@ function isPsychopharmacologyQuestion(question) {
   return result;
 }
 
+/* Sem palavra-chave: usa o subtema do próprio tema quando ele é óbvio. */
+const DEFAULT_SUBTHEME_BY_TOPIC = {
+  "Intoxicação por Drogas e Dependência Química": "Drogas e intoxicações",
+  "Saúde do Idoso": "Psicogeriatria e saúde do idoso",
+};
+
+function defaultSubthemeForTopic(topic) {
+  if (DEFAULT_SUBTHEME_BY_TOPIC[topic]) return DEFAULT_SUBTHEME_BY_TOPIC[topic];
+  const rules = SUBTHEME_RULES.filter((rule) => rule.topics.includes(topic));
+  return rules.length === 1 ? rules[0].label : "";
+}
+
 function questionSubtheme(question) {
   const cacheKey = question.id || `${question.source}-${question.number}`;
   if (classificationCache.subtheme.has(cacheKey)) return classificationCache.subtheme.get(cacheKey);
-  const haystack = questionSubthemeText(effectiveQuestion(question));
+  /* Enunciado vale o dobro das alternativas (que trazem distratores); o tema da questão desempata. */
+  const view = effectiveQuestion(question);
+  const stem = normalize(String(view.text || "").replace(REFERENCE_CITATION, ""));
+  const options = normalize((view.options || []).map((option) => option.text).join(" "));
+  const topic = topicForQuestion(question);
   const scored = SUBTHEME_RULES.map((rule, index) => {
-    const score = rule.keywords.reduce((total, keyword) => total + (haystack.includes(normalize(keyword)) ? 1 : 0), 0);
+    let stemHits = 0;
+    let optionHits = 0;
+    for (const matcher of rule.matchers) {
+      if (matcher.test(stem)) stemHits += 1;
+      else if (matcher.test(options)) optionHits += 1;
+    }
+    let score = 2 * stemHits + Math.min(optionHits, 2);
+    if (score > 0 && rule.topics.includes(topic)) score += 1.5;
     return { label: rule.label, score, index };
   })
     .filter((item) => item.score > 0)
     .sort((a, b) => b.score - a.score || a.index - b.index);
-  const result = scored[0]?.label || "Subtema a revisar";
+  const result = scored[0]?.label || defaultSubthemeForTopic(topic) || "Subtema a revisar";
   classificationCache.subtheme.set(cacheKey, result);
   return result;
 }

@@ -506,12 +506,18 @@ function subthemeImprovement(answeredQuestions) {
   const touched = new Set(answeredQuestions.map((question) => questionSubtheme(question)));
   const weekStart = Date.now() - 7 * DAY_MS;
   const monthStart = Date.now() - 37 * DAY_MS;
+  /* Subtema recalculado pelo banco atual (o gravado na tentativa pode ser de uma regra antiga). */
+  const questionsById = new Map(allStudyQuestions().map((question) => [question.id, question]));
+  const subthemeOf = (attempt) => {
+    const question = questionsById.get(attempt.question_id);
+    return question ? questionSubtheme(question) : attempt.subtema;
+  };
   let best = null;
   for (const subtheme of touched) {
     const recent = { total: 0, correct: 0 };
     const before = { total: 0, correct: 0 };
     for (const attempt of state.attempts || []) {
-      if (attempt.subtema !== subtheme) continue;
+      if (subthemeOf(attempt) !== subtheme) continue;
       const ts = attemptTimestamp(attempt);
       if (!ts || ts < monthStart) continue;
       const bucket = ts >= weekStart ? recent : before;

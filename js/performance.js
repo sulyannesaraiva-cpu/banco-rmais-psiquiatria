@@ -159,7 +159,9 @@ function computePerformanceData() {
 
   const subthemes = new Map();
   for (const attempt of attempts) {
-    const label = attempt.subtema || (index.get(attempt.question_id) ? questionSubtheme(index.get(attempt.question_id).question) : "");
+    /* Recalcula pelo banco atual: o subtema gravado na tentativa pode ser de uma regra antiga. */
+    const entry = index.get(attempt.question_id);
+    const label = entry ? questionSubtheme(entry.question) : attempt.subtema || "";
     if (!label || label === "Subtema a revisar") continue;
     const item = subthemes.get(label) || { label, total: 0, correct: 0 };
     item.total += 1;
