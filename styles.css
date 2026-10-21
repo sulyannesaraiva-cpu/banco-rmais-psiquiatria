@@ -2502,6 +2502,49 @@ body.theme-dark .exam-study-card {
   color: var(--ink);
 }
 
+/* Enunciado: citação do livro recolhida e caso clínico da SES-DF num quadro. */
+.question-citation {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  margin-bottom: 10px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.4;
+  white-space: normal;
+  cursor: help;
+}
+
+.question-case {
+  margin-bottom: 16px;
+  padding: 10px 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm, 10px);
+  background: var(--panel-soft, var(--panel));
+  font-size: 0.86em;
+  line-height: 1.65;
+}
+
+.question-case > summary {
+  cursor: pointer;
+  color: var(--accent-strong);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  white-space: normal;
+}
+
+.question-case-text {
+  margin-top: 8px;
+  white-space: pre-wrap;
+}
+
+.question-statement {
+  display: block;
+  font-weight: 600;
+}
+
 /* Comentário da questão, depois do gabarito. */
 .explanation-panel {
   display: grid;

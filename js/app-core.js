@@ -2610,6 +2610,61 @@ function escapeHtml(value) {
     .replace(/'/g, "&#039;");
 }
 
+/* Enunciado na tela:
+   - a citação do livro no início ("De acordo com a referência ... 2022,") vira uma linha pequena
+     ("Referência: Tratado de Psiquiatria da ABP · 2022", citação completa ao passar o mouse);
+   - na SES-DF, cada item repete o caso clínico antes da afirmação (separados por linha em branco):
+     o caso vai para um quadro recolhível, fechado quando é o mesmo da questão anterior da lista. */
+function renderQuestionText(question) {
+  let text = String(question.text || "");
+  let citationHtml = "";
+  const citation = text.match(REFERENCE_CITATION);
+  if (citation && text.length - citation[0].length > 20) {
+    const full = citation[0].trim().replace(/[,;:]$/, "");
+    text = text.slice(citation[0].length);
+    text = text.charAt(0).toUpperCase() + text.slice(1);
+    citationHtml = `<span class="question-citation" title="${escapeHtml(full)}">Referência: ${escapeHtml(citationLabel(full))}</span>`;
+  }
+  const parts = sharedCaseParts(question, text);
+  let html;
+  if (!parts) {
+    html = `${citationHtml}<span class="question-body">${escapeHtml(text)}</span>`;
+  } else {
+    const previous = state.filtered[state.index - 1];
+    const sameAsPrevious = previous && sharedCaseParts(previous, String(previous.text || ""))?.caseText === parts.caseText;
+    /* Sem espaços entre as tags: o enunciado usa white-space: pre-wrap. */
+    html = [
+      citationHtml,
+      `<details class="question-case"${sameAsPrevious ? "" : " open"}>`,
+      `<summary>Caso clínico${sameAsPrevious ? " (o mesmo da questão anterior)" : ""}</summary>`,
+      `<div class="question-case-text">${escapeHtml(parts.caseText)}</div>`,
+      "</details>",
+      `<span class="question-body question-statement">${escapeHtml(parts.statement)}</span>`,
+    ].join("");
+  }
+  /* Mesmo enunciado (ex.: só marcou uma alternativa): não redesenha, para não fechar o caso aberto. */
+  if (el.text.dataset.rendered === html && el.text.innerHTML) return;
+  el.text.innerHTML = html;
+  el.text.dataset.rendered = html;
+}
+
+function citationLabel(full) {
+  const year = full.match(/\b(?:19|20)\d{2}\b/)?.[0];
+  let label = /tratado de psiquiatria da associa/i.test(full)
+    ? "Tratado de Psiquiatria da ABP"
+    : full.replace(/^\s*(de acordo com|segundo|com base n[ao])\s+(a\s+)?refer[eê]ncia\s*/i, "");
+  if (label.length > 70) label = `${label.slice(0, 67).trim()}…`;
+  return year && !label.includes(year) ? `${label} · ${year}` : label;
+}
+
+/* Caso clínico + afirmação dos itens da SES-DF (o caso vem antes da última linha em branco). */
+function sharedCaseParts(question, text) {
+  if (!String(question?.id || "").startsWith("sesdf")) return null;
+  const split = text.lastIndexOf("\n\n");
+  if (split < 200) return null;
+  return { caseText: text.slice(0, split).trim(), statement: text.slice(split + 2).trim() };
+}
+
 /* Comentário da questão (escrito pela administração em Editar questão): aparece depois de
    responder, nunca durante simulado. Sem comentário, só a administração vê o convite para escrever. */
 function renderExplanation(question, answered) {
@@ -4269,7 +4324,7 @@ function render() {
   const tags = [runTag, examTag, dangerousTag, ...trainingReasons].filter(Boolean);
   el.tags.innerHTML = tags.map((tag) => `<span>${escapeHtml(tag)}</span>`).join("");
   el.tags.classList.toggle("visible", Boolean(tags.length));
-  el.text.textContent = question.text;
+  renderQuestionText(question);
   renderQuestionImage(question);
   const discarded = discardedFor(question.id);
   el.options.innerHTML = question.options.length
