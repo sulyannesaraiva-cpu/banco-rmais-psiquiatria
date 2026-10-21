@@ -2502,6 +2502,45 @@ body.theme-dark .exam-study-card {
   color: var(--ink);
 }
 
+/* Comentário da questão, depois do gabarito. */
+.explanation-panel {
+  display: grid;
+  gap: 8px;
+  margin-top: 14px;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius-sm, 10px);
+  background: var(--accent-soft, var(--panel));
+}
+
+.explanation-panel.empty {
+  border-left-color: var(--line);
+  background: var(--panel);
+}
+
+.explanation-panel h3 {
+  margin: 0;
+  color: var(--accent-strong);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.explanation-panel .markdown-content p {
+  margin: 0 0 8px;
+  line-height: 1.6;
+}
+
+.explanation-panel .markdown-content p:last-child {
+  margin-bottom: 0;
+}
+
+.explanation-panel .link-btn {
+  justify-self: start;
+}
+
 /* Botões do topo da questão (ícones). */
 .icon-btn {
   display: inline-grid;

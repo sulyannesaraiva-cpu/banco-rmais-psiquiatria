@@ -389,6 +389,10 @@ const el = {
   editText: document.querySelector("#editText"),
   editAnswer: document.querySelector("#editAnswer"),
   editStudyTopic: document.querySelector("#editStudyTopic"),
+  editExplanation: document.querySelector("#editExplanation"),
+  explanationPanel: document.querySelector("#explanationPanel"),
+  explanationText: document.querySelector("#explanationText"),
+  addExplanation: document.querySelector("#addExplanationBtn"),
   tabs: document.querySelectorAll("[data-tab]"),
   panels: {
     overview: document.querySelector("#overviewPanel"),
@@ -761,6 +765,7 @@ function normalizeCorrectionForCloud(correction = {}) {
     normalized.maintenanceFlagged = Boolean(correction.maintenanceFlagged);
   }
   if (typeof correction.studyTopic === "string" && correction.studyTopic.trim()) normalized.studyTopic = correction.studyTopic.trim();
+  if (typeof correction.explanation === "string" && correction.explanation.trim()) normalized.explanation = correction.explanation.trim();
   normalized.reviewedAt = new Date().toISOString();
   return normalized;
 }
@@ -1537,6 +1542,7 @@ function applyQuestionCorrection(question, correction) {
     text: correction.text || question.text,
     options: correction.options || question.options,
     correctAnswer: correction.correctAnswer ?? question.correctAnswer,
+    explanation: correction.explanation ?? question.explanation,
     maintenanceFlagged: Boolean(correction.maintenanceFlagged || question.maintenanceFlagged),
     manuallyReviewed: Boolean(question.manuallyReviewed || correction.text || correction.options || correction.correctAnswer || correction.maintenanceFlagged),
     reviewedAt: correction.reviewedAt || correction.reviewed_at || question.reviewedAt,
@@ -2609,6 +2615,21 @@ function escapeHtml(value) {
     .replace(/'/g, "&#039;");
 }
 
+/* Comentário da questão (escrito pela administração em Editar questão): aparece depois de
+   responder, nunca durante simulado. Sem comentário, só a administração vê o convite para escrever. */
+function renderExplanation(question, answered) {
+  if (!el.explanationPanel) return;
+  const text = answered ? String(question?.explanation || "").trim() : "";
+  const showInvite = answered && !text && state.isAdmin;
+  el.explanationPanel.hidden = !text && !showInvite;
+  el.explanationPanel.classList.toggle("empty", !text);
+  el.explanationText.innerHTML = text ? renderSafeMarkdown(text) : showInvite ? '<p class="panel-line">Esta questão ainda não tem comentário.</p>' : "";
+  if (el.addExplanation) {
+    el.addExplanation.hidden = !state.isAdmin || !answered;
+    el.addExplanation.textContent = text ? "Editar comentário" : "Adicionar comentário";
+  }
+}
+
 function renderSafeMarkdown(value) {
   const normalized = String(value ?? "")
     .replace(/\r\n/g, "\n")
@@ -2727,7 +2748,7 @@ function applyFilters({ preserveCurrent = false } = {}) {
   const query = normalize(el.search.value);
   const topic = el.topic.value;
   const status = el.status.value;
-  const pendingStatuses = new Set(["needs-review", "missing-answer", "answer-mismatch", "incomplete-options", "duplicate-options", "uncertain-topic"]);
+  const pendingStatuses = new Set(["needs-review", "missing-answer", "answer-mismatch", "incomplete-options", "duplicate-options", "uncertain-topic", "no-explanation"]);
   const pendingAdminMode = pendingStatuses.has(status);
   const activeTopicIds = state.topicActive ? new Set(state.topicIds) : null;
   const selectedTopicIds = !state.topicActive && Array.isArray(state.selectedTopics) ? new Set(state.selectedTopics) : null;
@@ -2755,6 +2776,7 @@ function applyFilters({ preserveCurrent = false } = {}) {
       (status === "incomplete-options" && readinessIssueKeys(view).includes("incomplete-options")) ||
       (status === "duplicate-options" && readinessIssueKeys(view).includes("duplicate-options")) ||
       (status === "uncertain-topic" && hasUncertainStudyTopic(question)) ||
+      (status === "no-explanation" && lacksExplanation(view)) ||
       (status === "unseen" && !progress.grade) ||
       (status === "correct" && progress.grade === "correct") ||
       (status === "wrong" && progress.grade === "wrong") ||
@@ -2819,7 +2841,13 @@ function renderPendingSummary() {
     <button data-pending-filter="incomplete-options"><strong>${counts["incomplete-options"]}</strong><span>alternativas incompletas</span></button>
     <button data-pending-filter="duplicate-options"><strong>${counts["duplicate-options"]}</strong><span>alternativas duplicadas</span></button>
     <button data-pending-filter="uncertain-topic"><strong>${allStudyQuestions().filter((question) => !isExcluded(question.id) && hasUncertainStudyTopic(question)).length}</strong><span>tema incerto (provas)</span></button>
+    <button data-pending-filter="no-explanation"><strong>${allStudyQuestions().filter((question) => !isExcluded(question.id) && lacksExplanation(effectiveQuestion(question))).length}</strong><span>sem comentário</span></button>
   `;
+}
+
+/* Questão respondível que ainda não tem comentário (fila de trabalho da administração). */
+function lacksExplanation(question) {
+  return !question?.annulled && !String(question?.explanation || "").trim() && isReadyQuestion(question);
 }
 
 /* Tema escolhido à mão pela administração (Editar questão), que vale sobre a classificação automática. */
@@ -4022,6 +4050,7 @@ function render() {
       el.options.innerHTML = "";
       el.answer.textContent = "";
       el.answer.classList.remove("visible");
+      renderExplanation(null, false);
       el.pendingReviewPanel.hidden = true;
       el.position.textContent = "0 / 0";
       el.manualGradePanel.hidden = true;
@@ -4041,6 +4070,7 @@ function render() {
     el.options.innerHTML = "";
     el.answer.textContent = "";
     el.answer.classList.remove("visible");
+    renderExplanation(null, false);
     el.pendingReviewPanel.hidden = true;
     el.position.textContent = "0 / 0";
     el.manualGradePanel.hidden = false;
@@ -4115,6 +4145,7 @@ function render() {
   const showAnswer = question.correctAnswer && !examLocked && (progress.revealed || progress.grade || progress.confirmed);
   el.answer.textContent = showAnswer ? `Gabarito: alternativa ${question.correctAnswer}` : "";
   el.answer.classList.toggle("visible", Boolean(showAnswer));
+  renderExplanation(question, Boolean(showAnswer));
   const needsReview = needsBankReview(question);
   el.pendingReviewPanel.hidden = !state.isAdmin || !needsReview || examLocked;
   if (state.isAdmin && needsReview) {
@@ -4762,6 +4793,7 @@ function fillEditor(question) {
     const option = question.options.find((item) => item.letter === letter);
     el.editOptions[letter].value = option?.text || "";
   }
+  if (el.editExplanation) el.editExplanation.value = question.explanation || "";
   if (el.editStudyTopic) {
     const topics = [...new Set([...state.questions, ...examStudyQuestions()].map((item) => topicForQuestion(item)))]
       .sort((a, b) => a.localeCompare(b, "pt-BR"));
@@ -4786,6 +4818,7 @@ function collectEditor() {
     correctAnswer: el.editAnswer.value,
   };
   if (el.editStudyTopic?.value) correction.studyTopic = el.editStudyTopic.value;
+  if (el.editExplanation?.value.trim()) correction.explanation = el.editExplanation.value.trim();
   const readyAfterEdit = Boolean(
     correction.correctAnswer &&
       correction.options.length >= 2 &&
@@ -5249,6 +5282,11 @@ el.review.addEventListener("click", () => {
 });
 el.exclude.addEventListener("click", excludeCurrentQuestion);
 el.edit.addEventListener("click", openEditor);
+el.addExplanation?.addEventListener("click", () => {
+  openEditor();
+  el.editExplanation?.scrollIntoView({ block: "center" });
+  el.editExplanation?.focus();
+});
 el.sendMaintenance?.addEventListener("click", sendCurrentQuestionToMaintenance);
 el.editPending.addEventListener("click", openEditor);
 el.cancelEdit.addEventListener("click", closeEditor);

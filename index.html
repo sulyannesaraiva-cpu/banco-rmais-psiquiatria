@@ -175,6 +175,7 @@
                   <option value="incomplete-options">Alternativas incompletas</option>
                   <option value="duplicate-options">Alternativas duplicadas</option>
                   <option value="uncertain-topic">Tema incerto (provas)</option>
+                  <option value="no-explanation">Sem comentário</option>
                 </select>
               </label>
               <button id="confirmPendingBtn" class="primary-btn">Confirmar</button>
@@ -370,6 +371,11 @@
           <p id="questionText" class="question-text"></p>
           <div id="optionsList" class="options"></div>
           <p id="answerBox" class="answer-box"></p>
+          <section class="explanation-panel" id="explanationPanel" hidden aria-label="Comentário da questão">
+            <h3>Comentário</h3>
+            <div class="markdown-content" id="explanationText"></div>
+            <button id="addExplanationBtn" type="button" class="link-btn" hidden>Adicionar comentário</button>
+          </section>
           <div class="pending-review-panel" id="pendingReviewPanel" hidden>
             <div>
               <strong>Questão precisa de revisão</strong>
@@ -450,6 +456,10 @@
               <textarea id="editOptionE" rows="2"></textarea>
             </label>
           </div>
+          <label class="field">
+            <span>Comentário (aparece depois de responder)</span>
+            <textarea id="editExplanation" rows="7" placeholder="Por que a alternativa correta está certa e as outras erradas. **negrito**, linha em branco separa parágrafos."></textarea>
+          </label>
           <label class="field">
             <span>Tema (Estudo por temas)</span>
             <select id="editStudyTopic"></select>
