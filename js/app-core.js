@@ -646,6 +646,7 @@ function currentSettingsPayload() {
     customFlashcards: typeof customFlashcardsForSync === "function" ? customFlashcardsForSync() : [],
     studyLog: typeof studyLogForSync === "function" ? studyLogForSync() : {},
     flashcardProgress: flashcardProgressForSync(),
+    simulationHistory: typeof simulationHistoryForSync === "function" ? simulationHistoryForSync() : [],
   };
 }
 
@@ -674,6 +675,7 @@ function applySettingsPayload(settings = {}) {
   if (Array.isArray(settings.customFlashcards) && typeof applyCustomFlashcardsFromCloud === "function") applyCustomFlashcardsFromCloud(settings.customFlashcards);
   if (settings.studyLog && typeof applyStudyLogFromCloud === "function") applyStudyLogFromCloud(settings.studyLog);
   if (settings.flashcardProgress) mergeFlashcardProgressFromCloud(settings.flashcardProgress);
+  if (Array.isArray(settings.simulationHistory) && typeof applySimulationHistoryFromCloud === "function") applySimulationHistoryFromCloud(settings.simulationHistory);
   if (Object.prototype.hasOwnProperty.call(settings, "sessionSource")) {
     state.sessionSource = settings.sessionSource || "content";
     localStorage.setItem("banco-rmais-session-source", state.sessionSource);
@@ -4896,11 +4898,14 @@ function finishExamSimulation() {
       ...reviewPatch,
       updatedAt: Date.now(),
     };
+    /* Conta no Desempenho como as demais respostas (antes o simulado não gerava tentativas). */
+    saveAttempt(question, state.progress[question.id]);
     if (grade === "wrong") errorIds.push(question.id);
   }
   state.examSimulationErrorIds = errorIds;
   state.examSimulationFinished = true;
   saveProgress();
+  if (typeof recordSimulationResult === "function") recordSimulationResult();
   render();
 }
 

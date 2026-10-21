@@ -2502,6 +2502,83 @@ body.theme-dark .exam-study-card {
   color: var(--ink);
 }
 
+/* Histórico de simulados (aba Provas). */
+.sim-history {
+  display: grid;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.sim-history h4 {
+  margin: 0;
+}
+
+.sim-list {
+  display: grid;
+  gap: 8px;
+}
+
+.sim-item {
+  display: grid;
+  gap: 6px;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm, 10px);
+  background: var(--panel);
+}
+
+.sim-item-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 4px 12px;
+}
+
+.sim-item-head strong {
+  font-size: 14px;
+}
+
+.sim-item-head span,
+.sim-item-score span {
+  color: var(--muted);
+  font-size: 12.5px;
+}
+
+.sim-item-score {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 10px;
+}
+
+.sim-item-score strong {
+  font-size: 20px;
+}
+
+.sim-delta {
+  padding: 1px 7px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.sim-delta.good { background: var(--good-soft, #f0fdf4); color: var(--good); }
+.sim-delta.bad { background: var(--bad-soft, #fef2f2); color: var(--bad); }
+.sim-delta.same { background: var(--panel-soft, #f4f4f5); color: var(--muted); }
+
+.sim-item-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 14px;
+}
+
+.sim-item-actions .outline-btn {
+  min-height: 34px;
+  padding: 0 12px;
+  font-size: 13px;
+}
+
 /* Enunciado: citação do livro recolhida e caso clínico da SES-DF num quadro. */
 .question-citation {
   display: block;
