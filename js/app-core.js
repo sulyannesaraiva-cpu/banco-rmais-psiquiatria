@@ -2784,6 +2784,7 @@ function applyFilters({ preserveCurrent = false } = {}) {
       (status === "favorite" && progress.favorite);
     return matchesQuery && matchesTopic && matchesStatus;
   });
+  if (status === "no-explanation") state.filtered = sortByExplanationPriority(state.filtered);
 
   if (filterChanged && !preserveCurrent) {
     restorePosition(nextFilterKey);
@@ -2843,6 +2844,42 @@ function renderPendingSummary() {
     <button data-pending-filter="uncertain-topic"><strong>${allStudyQuestions().filter((question) => !isExcluded(question.id) && hasUncertainStudyTopic(question)).length}</strong><span>tema incerto (provas)</span></button>
     <button data-pending-filter="no-explanation"><strong>${allStudyQuestions().filter((question) => !isExcluded(question.id) && lacksExplanation(effectiveQuestion(question))).length}</strong><span>sem comentário</span></button>
   `;
+}
+
+/* Fila "Sem comentário": primeiro o que mais rende comentar.
+   - prova real antes de didática, e da banca do plano antes das outras;
+   - subtema que mais cai na banca do plano (sem plano: frequência em todas as provas);
+   - questão que a pessoa errou;
+   - prova mais recente. */
+function sortByExplanationPriority(questions) {
+  const examById = new Map();
+  for (const exam of state.exams) for (const question of exam.questions || []) examById.set(question.id, exam);
+  let share = typeof examFrequencyShare === "function" ? examFrequencyShare(state.studyPlan) : null;
+  if (!share) {
+    const counts = new Map();
+    for (const exam of state.exams) {
+      for (const question of exam.questions || []) {
+        const subtheme = questionSubtheme(question);
+        counts.set(subtheme, (counts.get(subtheme) || 0) + 1);
+      }
+    }
+    share = (subtheme) => (counts.get(subtheme) || 0) / Math.max(examById.size, 1);
+  }
+  const targetExam = state.studyPlan?.targetExam && state.studyPlan.targetExam !== "Todas" ? state.studyPlan.targetExam : "";
+  const score = (question) => {
+    const exam = examById.get(question.id);
+    const year = Number(question.year || exam?.year) || 0;
+    const fromTarget = targetExam && String(exam?.institution || exam?.provider || "").trim() === targetExam;
+    return (exam ? 3 : 0)
+      + (fromTarget ? 3 : 0)
+      + Math.min(share(questionSubtheme(question)) * 25, 3)
+      + (getProgress(question.id).grade === "wrong" ? 2 : 0)
+      + (year ? Math.max(0, Math.min(year - 2015, 10)) / 10 : 0);
+  };
+  return questions
+    .map((question, order) => ({ question, order, score: score(question) }))
+    .sort((a, b) => b.score - a.score || a.order - b.order)
+    .map((item) => item.question);
 }
 
 /* Questão respondível que ainda não tem comentário (fila de trabalho da administração). */
