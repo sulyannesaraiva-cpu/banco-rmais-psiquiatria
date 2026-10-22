@@ -95,7 +95,6 @@ const state = {
     window.matchMedia(MOBILE_LAYOUT_QUERY).matches || storedSidebarState === "true",
 };
 
-const MIN_SUBTHEME_COUNT = 10;
 localStorage.removeItem("banco-rmais-discarded-options");
 const PSYCHOPHARM_SESSION_TOPIC = "Psicofarmacologia e terapêutica psiquiátrica";
 
@@ -327,19 +326,6 @@ const el = {
   pendingSummary: document.querySelector("#pendingSummary"),
   exportCorrections: document.querySelector("#exportCorrectionsBtn"),
   correctionExportLine: document.querySelector("#correctionExportLine"),
-  total: document.querySelector("#totalCount"),
-  answered: document.querySelector("#answeredCount"),
-  ready: document.querySelector("#readyCount"),
-  accuracy: document.querySelector("#accuracyCount"),
-  performanceTotal: document.querySelector("#performanceTotalCount"),
-  performanceAnswered: document.querySelector("#performanceAnsweredCount"),
-  performanceReady: document.querySelector("#performanceReadyCount"),
-  performanceAccuracy: document.querySelector("#performanceAccuracyCount"),
-  dashboardDueCount: document.querySelector("#dashboardDueCount"),
-  dashboardPriorityCount: document.querySelector("#dashboardPriorityCount"),
-  dashboardReviewCount: document.querySelector("#dashboardReviewCount"),
-  dashboardFocusList: document.querySelector("#dashboardFocusList"),
-  dashboardRecommendationLine: document.querySelector("#dashboardRecommendationLine"),
   source: document.querySelector("#sourceLabel"),
   title: document.querySelector("#questionTitle"),
   tags: document.querySelector("#tagList"),
@@ -400,7 +386,6 @@ const el = {
   addExplanation: document.querySelector("#addExplanationBtn"),
   tabs: document.querySelectorAll("[data-tab]"),
   panels: {
-    overview: document.querySelector("#overviewPanel"),
     notes: document.querySelector("#notesPanel"),
     flashcards: document.querySelector("#flashcardsPanel"),
     topics: document.querySelector("#topicsPanel"),
@@ -448,37 +433,15 @@ const el = {
   examProgressAccuracy: document.querySelector("#examProgressAccuracy"),
   examProgressAnswered: document.querySelector("#examProgressAnswered"),
   examProgressSplit: document.querySelector("#examProgressSplit"),
-  startSpacedReview: document.querySelector("#startSpacedReviewBtn"),
-  endSpacedReview: document.querySelector("#endSpacedReviewBtn"),
   dangerousCount: document.querySelector("#dangerousCount"),
   dangerousLine: document.querySelector("#dangerousLine"),
   dangerousList: document.querySelector("#dangerousList"),
   startDangerousReview: document.querySelector("#startDangerousReviewBtn"),
   endDangerousReview: document.querySelector("#endDangerousReviewBtn"),
-  todayDueCount: document.querySelector("#todayDueCount"),
-  todayPriorityCount: document.querySelector("#todayPriorityCount"),
-  todayMissionLine: document.querySelector("#todayMissionLine"),
-  todayReviewLine: document.querySelector("#todayReviewLine"),
-  todayPlan: document.querySelector("#todayPlan"),
-  reviewTargetExam: document.querySelector("#reviewTargetExamSelect"),
-  reviewMode: document.querySelector("#reviewModeSelect"),
-  reviewTime: document.querySelector("#reviewTimeSelect"),
-  reviewCriticalCount: document.querySelector("#reviewCriticalCount"),
-  reviewImportantCount: document.querySelector("#reviewImportantCount"),
-  reviewMaintenanceCount: document.querySelector("#reviewMaintenanceCount"),
-  startTodayReview: document.querySelector("#startTodayReviewBtn"),
   quickReview: document.querySelector("#quickReviewBtn"),
   examThemesReview: document.querySelector("#examThemesReviewBtn"),
   repeatedErrorsReview: document.querySelector("#repeatedErrorsReviewBtn"),
   flashcardErrorsReview: document.querySelector("#flashcardErrorsReviewBtn"),
-  endTodayReview: document.querySelector("#endTodayReviewBtn"),
-  flashcardDueReviewCount: document.querySelector("#flashcardDueReviewCount"),
-  flashcardScheduledReviewCount: document.querySelector("#flashcardScheduledReviewCount"),
-  flashcardReviewedCount: document.querySelector("#flashcardReviewedCount"),
-  flashcardReviewLine: document.querySelector("#flashcardReviewLine"),
-  flashcardReviewList: document.querySelector("#flashcardReviewList"),
-  startDueFlashcards: document.querySelector("#startDueFlashcardsBtn"),
-  goFlashcards: document.querySelector("#goFlashcardsBtn"),
   flashcardDeckList: document.querySelector("#flashcardDeckList"),
   flashcardCategorySelect: document.querySelector("#flashcardCategorySelect"),
   flashcardPriorityGroup: document.querySelector("#flashcardPriorityGroup"),
@@ -582,12 +545,6 @@ function saveFlashcardState() {
 
 function saveSelectedTopics() {
   localStorage.setItem("banco-rmais-selected-topics", JSON.stringify(state.selectedTopics));
-  scheduleCloudSettingsSync();
-}
-
-function saveSubthemeSettings() {
-  localStorage.setItem("banco-rmais-selected-subthemes", JSON.stringify(state.selectedSubthemes));
-  localStorage.setItem("banco-rmais-refine-subthemes", String(state.refineSubthemes));
   scheduleCloudSettingsSync();
 }
 
@@ -1667,11 +1624,6 @@ function allTopics() {
   ].sort((a, b) => a.localeCompare(b, "pt-BR"));
 }
 
-function sourcesForTopic(topic) {
-  const group = SESSION_TOPIC_GROUPS.find((item) => item.label === topic);
-  return group ? group.sources : [topic];
-}
-
 function questionBelongsToTopic(question, topic) {
   return topicForQuestion(question) === topic;
 }
@@ -1716,14 +1668,6 @@ function topicStatus(topic) {
   if (perf.answered >= 5 && perf.accuracy >= 0.7) return "consolidated";
   if (perf.accuracy >= 0.5) return "building";
   return "fragile";
-}
-
-function subthemeKey(topic, label) {
-  return `${topic}::${label}`;
-}
-
-function subthemeMinorKey(topic) {
-  return subthemeKey(topic, "__minor__");
 }
 
 
@@ -1804,50 +1748,6 @@ function questionSubtheme(question) {
   const result = scored[0]?.label || defaultSubthemeForTopic(topic) || "Subtema a revisar";
   classificationCache.subtheme.set(cacheKey, result);
   return result;
-}
-
-function subthemeCatalogForTopics(topics = topicsForStats()) {
-  const catalogKey = [...topics].sort().join("||");
-  if (classificationCache.catalog.has(catalogKey)) return classificationCache.catalog.get(catalogKey);
-  const catalog = new Map();
-  for (const topic of topics) {
-    const questions = topicQuestions(topic).filter((question) => isReadyQuestion(effectiveQuestion(question)));
-    const counts = new Map();
-    for (const question of questions) {
-      const label = questionSubtheme(question);
-      counts.set(label, (counts.get(label) || 0) + 1);
-    }
-    const visible = [...counts.entries()]
-      .filter(([, count]) => count >= MIN_SUBTHEME_COUNT)
-      .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
-    const minorLabels = [...counts.entries()]
-      .filter(([, count]) => count < MIN_SUBTHEME_COUNT)
-      .map(([label]) => label);
-    const minorCount = questions.filter((question) => minorLabels.includes(questionSubtheme(question))).length;
-    catalog.set(topic, { visible, minorLabels, minorCount });
-  }
-  classificationCache.catalog.set(catalogKey, catalog);
-  return catalog;
-}
-
-/* O filtro por subtema saiu da tela de estudo por temas (repetia os próprios temas).
-   Fica sempre vazio para que uma escolha antiga salva no navegador ou na conta não esconda questões. */
-function activeSubthemeKeys() {
-  return new Set();
-}
-
-function questionMatchesSelectedSubthemes(question) {
-  const keys = activeSubthemeKeys();
-  if (!keys.size) return true;
-  const topic = topicForQuestion(question);
-  const catalog = subthemeCatalogForTopics([topic]).get(topic);
-  const label = questionSubtheme(question);
-  const selectedLabels = [...keys]
-    .filter((key) => !key.endsWith("::__minor__"))
-    .map((key) => key.split("::").slice(1).join("::"));
-  return selectedLabels.includes(label) || keys.has(subthemeKey(topic, label)) || Boolean(
-    catalog?.minorLabels.includes(label) && keys.has(subthemeMinorKey(topic)),
-  );
 }
 
 function shuffle(items) {
@@ -2501,17 +2401,6 @@ const REVIEW_FALLBACK_NOTICES = {
   flashcards: "Revisão geral: nenhum flashcard pendente no momento",
 };
 
-function reviewSessionSummary(session) {
-  return {
-    total: session.length,
-    critical: session.filter((item) => item.category === "critical").length,
-    important: session.filter((item) => item.category === "important").length,
-    maintenance: session.filter((item) => item.category === "maintenance").length,
-    questions: session.filter((item) => item.kind === "question").length,
-    flashcards: session.filter((item) => item.kind === "flashcard").length,
-  };
-}
-
 function updateReviewSchedule(question, progress) {
   if (!question || !progress?.nextReviewAt) return;
   const row = {
@@ -2889,27 +2778,6 @@ function renderTopics() {
     ...sources.map((source) => `<option value="${escapeHtml(source)}">${escapeHtml(source)}</option>`),
   ].join("");
   renderTopicChecklist();
-}
-
-function renderStats() {
-  /* Evita recomputações analíticas pesadas durante fluxos ativos de questões. */
-  if (hasActiveQuestionFlow()) return;
-  const visibleQuestions = allStudyQuestions().filter((question) => !isExcluded(question.id));
-  const answered = visibleQuestions.filter((question) => getProgress(question.id).grade).length;
-  const correct = visibleQuestions.filter((question) => getProgress(question.id).grade === "correct").length;
-  const ready = visibleQuestions.filter((question) => {
-    const view = effectiveQuestion(question);
-    return isReadyQuestion(view);
-  }).length;
-  const accuracy = answered ? `${Math.round((correct / answered) * 100)}%` : "0%";
-  if (el.total) el.total.textContent = visibleQuestions.length;
-  if (el.answered) el.answered.textContent = answered;
-  if (el.ready) el.ready.textContent = ready;
-  if (el.accuracy) el.accuracy.textContent = accuracy;
-  if (el.performanceTotal) el.performanceTotal.textContent = visibleQuestions.length;
-  if (el.performanceAnswered) el.performanceAnswered.textContent = answered;
-  if (el.performanceReady) el.performanceReady.textContent = ready;
-  if (el.performanceAccuracy) el.performanceAccuracy.textContent = accuracy;
 }
 
 function renderPendingSummary() {
@@ -3387,53 +3255,15 @@ function renderDashboard() {
   /* Evita recomputações analíticas pesadas durante fluxos ativos de questões. */
   if (hasActiveQuestionFlow() && !state.tabViewOpen) return;
   if (!heavyAnalyticsVisible()) return;
-  renderQuickDashboard();
   renderPendingSummary();
   renderTopicChecklist();
   renderExamStudyFilters();
   renderActivity();
   renderHistory();
   renderDangerousQuestions();
-  renderTodayReview();
   renderSavedNotesPanel();
   renderExams();
   renderFlashcards();
-}
-
-function renderQuickDashboard() {
-  if (!el.dashboardDueCount) return;
-  const due = spacedReviewQuestions(true);
-  const priorityCount = due.filter((question) => priorityScoreFor(question) >= 6).length;
-  const reviewTotal = allStudyQuestions().filter((question) => !isExcluded(question.id) && getProgress(question.id).review).length;
-  el.dashboardDueCount.textContent = due.length;
-  el.dashboardPriorityCount.textContent = priorityCount;
-  el.dashboardReviewCount.textContent = reviewTotal;
-
-  const weakTopics = topicsForStats()
-    .map((topic) => ({ topic, perf: topicPerformance(topic) }))
-    .filter((item) => item.perf.answered >= 3)
-    .sort((a, b) => a.perf.accuracy - b.perf.accuracy)
-    .slice(0, 3);
-  el.dashboardFocusList.innerHTML = weakTopics.length
-    ? weakTopics
-        .map(
-          ({ topic, perf }) => `
-            <div class="focus-item">
-              <strong>${escapeHtml(topic)}</strong>
-              <span>${Math.round(perf.accuracy * 100)}% de acerto · ${perf.answered} feitas</span>
-            </div>
-          `,
-        )
-        .join("")
-    : `<p class="panel-line">Responda mais questões para mapear temas frágeis.</p>`;
-
-  if (due.length) {
-    el.dashboardRecommendationLine.textContent = `Comece pela Revisão: há ${pluralize(due.length, "questão vencida", "questões vencidas")} hoje.`;
-  } else if (weakTopics.length) {
-    el.dashboardRecommendationLine.textContent = `Faça uma sessão focada em ${weakTopics[0].topic}.`;
-  } else {
-    el.dashboardRecommendationLine.textContent = "Faça uma sessão personalizada para gerar novas estatísticas de estudo.";
-  }
 }
 
 function noteQuestionById(questionId) {
@@ -3854,85 +3684,6 @@ function renderHistory() {
     : `<p class="panel-line">Nenhuma questão respondida ainda.</p>`;
 }
 
-function renderTodayReview() {
-  if (!el.todayPlan) return;
-  if (el.reviewTargetExam) el.reviewTargetExam.value = state.reviewTargetExam;
-  if (el.reviewMode) el.reviewMode.value = state.reviewMode;
-  if (el.reviewTime) el.reviewTime.value = String(state.reviewAvailableMinutes);
-  const session = getTodayReviewSession();
-  const summary = reviewSessionSummary(session);
-  el.todayDueCount.textContent = summary.total;
-  el.todayPriorityCount.textContent = summary.critical;
-  if (el.reviewCriticalCount) el.reviewCriticalCount.textContent = summary.critical;
-  if (el.reviewImportantCount) el.reviewImportantCount.textContent = summary.important;
-  if (el.reviewMaintenanceCount) el.reviewMaintenanceCount.textContent = summary.maintenance;
-  if (el.todayMissionLine) {
-    el.todayMissionLine.textContent = `${summary.total || maxItemsForMinutes(state.reviewAvailableMinutes)} itens de maior impacto para sua aprovação. Banca-alvo: ${state.reviewTargetExam}.`;
-  }
-  if (!session.length) {
-    el.todayReviewLine.textContent = "Ainda não há dados suficientes para montar uma missão inteligente. Responda algumas questões ou flashcards para alimentar o algoritmo.";
-    el.todayPlan.innerHTML = "";
-    renderFlashcardReviewPanel();
-    return;
-  }
-  el.todayReviewLine.textContent = `Missão sugerida: ${pluralize(summary.questions, "questão", "questões")} e ${pluralize(summary.flashcards, "flashcard", "flashcards")}, ordenados por impacto esperado.`;
-  el.todayPlan.innerHTML = `
-    <div class="smart-review-card">
-      <strong>Como a missão foi montada</strong>
-      <p>O score cruza frequência em prova, erros pessoais, baixa confiança, atraso de revisão, importância do tema, questões perigosas e desempenho por conceito.</p>
-    </div>
-    <div class="today-list">
-      ${session
-        .slice(0, 12)
-        .map((item) => {
-          return `
-            <div class="today-item review-priority-${escapeHtml(item.category)}">
-              <strong>${escapeHtml(reviewItemTitle(item))}</strong>
-              <span>${escapeHtml(item.kind === "flashcard" ? "Flashcard" : "Questão")} · ${escapeHtml(reviewCategoryLabel(item.category))} · score ${item.score}/100</span>
-              <small><strong>Por que revisar:</strong> ${escapeHtml(item.explanation)}</small>
-            </div>
-          `;
-        })
-        .join("")}
-    </div>
-  `;
-  renderFlashcardReviewPanel();
-}
-
-function renderFlashcardReviewPanel() {
-  if (!el.flashcardDueReviewCount) return;
-  const due = flashcardReviewItems({ dueOnly: true });
-  const scheduled = flashcardReviewItems({ scheduledOnly: true });
-  const reviewed = flashcardReviewItems();
-  el.flashcardDueReviewCount.textContent = due.length;
-  el.flashcardScheduledReviewCount.textContent = scheduled.length;
-  el.flashcardReviewedCount.textContent = reviewed.length;
-  if (el.startDueFlashcards) el.startDueFlashcards.disabled = !due.length;
-  if (el.flashcardReviewLine) {
-    el.flashcardReviewLine.textContent = due.length
-      ? `${pluralize(due.length, "flashcard vencido", "flashcards vencidos")} para revisar hoje. A fila usa a dificuldade marcada após virar o card.`
-      : scheduled.length
-        ? `Nenhum vencido agora. Existem ${pluralize(scheduled.length, "flashcard programado", "flashcards programados")} para os próximos dias.`
-        : "Ainda não há flashcards classificados. Vire um card e marque Errei, Difícil, Bom ou Fácil para criar a revisão.";
-  }
-  if (!el.flashcardReviewList) return;
-  el.flashcardReviewList.innerHTML = due.length
-    ? due
-        .slice(0, 8)
-        .map((item) => {
-          const dateLabel = item.nextReviewAt ? new Date(item.nextReviewAt).toLocaleDateString("pt-BR", { day: "2-digit", month: "2-digit" }) : "sem data";
-          return `
-            <button class="today-item flashcard-review-item" data-review-flashcard="${escapeHtml(item.card.id)}">
-              <strong>${escapeHtml(item.card.front)}</strong>
-              <span>${escapeHtml(item.deck.title)} · ${escapeHtml(flashcardGradeLabel(item.progress.lastGrade))} · vencido em ${escapeHtml(dateLabel)}</span>
-              <small>${escapeHtml(item.card.topic || item.card.module || "Flashcard")}</small>
-            </button>
-          `;
-        })
-        .join("")
-    : `<p class="panel-line">Sem flashcards vencidos na fila.</p>`;
-}
-
 function renderDangerousQuestions() {
   if (!el.dangerousCount) return;
   const dangerous = dangerousQuestions();
@@ -4053,60 +3804,17 @@ function spacedReviewQuestions(onlyDue) {
     .sort((a, b) => priorityScoreFor(b) - priorityScoreFor(a) || (getProgress(a.id).nextReviewAt || 0) - (getProgress(b.id).nextReviewAt || 0));
 }
 
-function smartTrainingQuestions() {
-  const now = Date.now();
-  const selectedTopics = new Set(topicsForStats());
-  const bankQuestions = selectedContentQuestions();
-  const examQuestions = state.exams.flatMap((exam) => exam.questions || []);
-  const pool = [...bankQuestions, ...examQuestions].filter(
-    (question) => !isExcluded(question.id) && isReadyQuestion(effectiveQuestion(question)) && questionMatchesSelectedSubthemes(question),
-  );
-  const seen = new Set();
-  const scored = pool
-    .filter((question) => {
-      if (seen.has(question.id)) return false;
-      seen.add(question.id);
-      return true;
-    })
-    .map((question) => {
-      const progress = getProgress(question.id);
-      let score = Math.random();
-      if (progress.nextReviewAt && progress.nextReviewAt <= now) score += 120;
-      else if (progress.nextReviewAt) score += Math.max(0, 35 - Math.ceil((progress.nextReviewAt - now) / (24 * 60 * 60 * 1000)));
-      if (progress.grade === "wrong") score += 85 + (progress.wrongCount || 0) * 10;
-      if (!progress.grade) score += 42;
-      if (["knowledge", "concept", "two-options", "guess"].includes(progress.errorType)) score += 65;
-      if (["reading", "attention"].includes(progress.errorType)) score += 25;
-      if (progress.successType === "guess-correct") score += 65;
-      if (progress.successType === "doubt") score += 45;
-      if (progress.successType === "partial") score += 25;
-      if (progress.favorite) score += 8;
-      const matchedTopic = [...selectedTopics].find((topicName) => questionBelongsToTopic(question, topicName));
-      if (matchedTopic) {
-        const status = topicStatus(matchedTopic);
-        if (status === "fragile") score += 42;
-        if (status === "building") score += 26;
-        if (status === "unseen") score += 18;
-      }
-      return { question, score };
-    })
-    .sort((a, b) => b.score - a.score);
-  return scored.slice(0, state.sessionSize).map((item) => item.question);
-}
-
-function selectedContentQuestions({ ignoreSubthemes = false } = {}) {
+function selectedContentQuestions() {
   const topics = new Set(topicsForStats());
   return topicStudyPool().filter(
     (question) =>
       topics.has(topicForQuestion(question)) &&
       !isExcluded(question.id) &&
-      isReadyQuestion(effectiveQuestion(question)) &&
-      (ignoreSubthemes || questionMatchesSelectedSubthemes(question)),
+      isReadyQuestion(effectiveQuestion(question)),
   );
 }
 
-/* O estudo por temas usa só as questões didáticas: as de provas não estão classificadas
-   nestes temas e ficam na aba Provas. */
+/* Questões dos temas marcados, na origem escolhida (didáticas, provas ou ambas). */
 function sessionPoolQuestions() {
   return selectedContentQuestions();
 }
@@ -4236,7 +3944,6 @@ function render() {
   syncTabViewWithFlow();
   closeSidebarWhenMobileFlowStarts();
   renderAdminAccess();
-  renderStats();
   renderDashboard();
   renderFlowControls();
   const flashcardMode = state.activeTab === "flashcards";
@@ -4635,7 +4342,6 @@ function startPresetReview({ mode, minutes }) {
   if (mode) state.reviewMode = mode;
   if (minutes) state.reviewAvailableMinutes = minutes;
   saveReviewPreferences();
-  renderTodayReview();
   startSpacedReview();
 }
 
@@ -4728,31 +4434,6 @@ function startSession() {
   }
   state.sessionActive = true;
   state.sessionIds = session.map((question) => question.id);
-  state.index = 0;
-  state.filtered = session;
-  setTab("activity");
-  render();
-}
-
-function startSmartTraining() {
-  state.sessionCompletionMessage = "";
-  state.activeAnswers = {};
-  state.topicActive = false;
-  state.examActive = false;
-  clearExamSimulationState();
-  state.examSetActive = false;
-  state.spacedReviewActive = false;
-  state.sessionActive = false;
-  state.dangerousReviewActive = false;
-  state.dangerousReviewIds = [];
-  const session = smartTrainingQuestions();
-  if (!session.length) {
-    el.sessionLine.textContent = "Não encontrei questões corrigíveis para montar o treino.";
-    setTab("activity");
-    return;
-  }
-  state.smartTrainingActive = true;
-  state.smartTrainingIds = session.map((question) => question.id);
   state.index = 0;
   state.filtered = session;
   setTab("activity");
@@ -5333,9 +5014,6 @@ el.tabs.forEach((button) => button.addEventListener("click", () => {
   /* No celular a gaveta é só o menu: escolhida a aba, ela fecha e mostra o conteúdo. */
   if (isMobileLayout()) setSidebarCollapsed(true);
 }));
-document.querySelectorAll("[data-dashboard-tab]").forEach((button) => {
-  button.addEventListener("click", () => setTab(button.dataset.dashboardTab, { fromNav: true }));
-});
 el.tabViewBackBtn?.addEventListener("click", returnToQuestion);
 el.sidebarToggle.addEventListener("click", () => setSidebarCollapsed(!state.sidebarCollapsed));
 el.sidebarBackdrop?.addEventListener("click", () => setSidebarCollapsed(true));
@@ -5388,39 +5066,12 @@ el.examArea.addEventListener("change", () => {
 });
 el.startExamSet.addEventListener("click", startExamSet);
 el.endExamSet.addEventListener("click", endExamSet);
-el.startSpacedReview?.addEventListener("click", startSpacedReview);
-el.endSpacedReview?.addEventListener("click", endSpacedReview);
 el.startDangerousReview?.addEventListener("click", startDangerousReview);
 el.endDangerousReview?.addEventListener("click", endDangerousReview);
-el.startTodayReview?.addEventListener("click", startSpacedReview);
-el.endTodayReview?.addEventListener("click", endSpacedReview);
-el.reviewTargetExam?.addEventListener("change", () => {
-  state.reviewTargetExam = el.reviewTargetExam.value;
-  saveReviewPreferences();
-  renderTodayReview();
-});
-el.reviewMode?.addEventListener("change", () => {
-  state.reviewMode = el.reviewMode.value;
-  saveReviewPreferences();
-  renderTodayReview();
-});
-el.reviewTime?.addEventListener("change", () => {
-  state.reviewAvailableMinutes = Number(el.reviewTime.value || 20);
-  saveReviewPreferences();
-  renderTodayReview();
-});
 el.quickReview?.addEventListener("click", () => startPresetReview({ mode: "mixed", minutes: 10 }));
 el.examThemesReview?.addEventListener("click", () => startPresetReview({ mode: "exam-themes", minutes: state.reviewAvailableMinutes }));
 el.repeatedErrorsReview?.addEventListener("click", () => startPresetReview({ mode: "repeated-errors", minutes: state.reviewAvailableMinutes }));
 el.flashcardErrorsReview?.addEventListener("click", () => startPresetReview({ mode: "flashcards", minutes: state.reviewAvailableMinutes }));
-el.startDueFlashcards?.addEventListener("click", startDueFlashcardsReview);
-el.goFlashcards?.addEventListener("click", () => setTab("flashcards"));
-el.flashcardReviewList?.addEventListener("click", (event) => {
-  const button = event.target.closest("[data-review-flashcard]");
-  if (!button) return;
-  const item = flashcardReviewItems().find((entry) => entry.card.id === button.dataset.reviewFlashcard);
-  openFlashcardReviewItem(item);
-});
 el.topicSourceGroup.addEventListener("click", (event) => {
   const button = event.target.closest("[data-topic-source]");
   if (!button) return;

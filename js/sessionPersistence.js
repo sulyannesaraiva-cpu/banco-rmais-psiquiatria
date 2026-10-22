@@ -217,7 +217,7 @@
 
   // Os botões de encerramento de bloco foram vinculados antes desta extensão;
   // usamos captura apenas para limpar o snapshot antes do handler original.
-  [el.endTopic, el.endSession, el.finishSession, el.endSpacedReview, el.endDangerousReview]
+  [el.endTopic, el.endSession, el.finishSession, el.endDangerousReview]
     .filter(Boolean)
     .forEach((button) => button.addEventListener("click", clearSnapshot, true));
 
