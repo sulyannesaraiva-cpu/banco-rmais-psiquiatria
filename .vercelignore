@@ -1,0 +1,4 @@
+# Não publicar no site: testes, automação do GitHub e scripts do banco de dados.
+tests
+.github
+supabase

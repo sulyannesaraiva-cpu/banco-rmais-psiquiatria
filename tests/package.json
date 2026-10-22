@@ -1,0 +1,11 @@
+{
+  "name": "banco-rmais-smoke-tests",
+  "private": true,
+  "description": "Testes automáticos do Banco R+ (rodam no GitHub a cada envio; ver .github/workflows/smoke.yml).",
+  "scripts": {
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.49.1"
+  }
+}
