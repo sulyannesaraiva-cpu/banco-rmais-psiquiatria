@@ -283,6 +283,32 @@
                 <button id="endExamSetBtn" class="tertiary-btn">Sair do treino</button>
                 <p class="panel-line" id="examSetLine">Filtre por instituição ou área para resolver várias provas em sequência.</p>
               </div>
+              <section class="exam-study-card custom-sim" id="customSimulation" aria-label="Simulado personalizado">
+                <h4>Simulado personalizado</h4>
+                <p class="panel-line">Sorteia questões de provas reais e roda como um simulado: cronômetro, gabarito só no fim e histórico.</p>
+                <label class="field compact-field">
+                  <span>Banca</span>
+                  <select id="customSimExam"></select>
+                </label>
+                <label class="field compact-field">
+                  <span>Tema</span>
+                  <select id="customSimTopic"></select>
+                </label>
+                <span class="custom-sim-label">Quantidade</span>
+                <div class="segmented" id="customSimSize">
+                  <button type="button" data-sim-size="20">20</button>
+                  <button type="button" data-sim-size="30">30</button>
+                  <button type="button" data-sim-size="50">50</button>
+                  <button type="button" data-sim-size="80">80</button>
+                  <button type="button" data-sim-size="100">100</button>
+                </div>
+                <label class="session-toggle">
+                  <input id="customSimUnseen" type="checkbox" checked />
+                  <span>Priorizar questões que nunca fiz</span>
+                </label>
+                <p class="panel-line" id="customSimLine"></p>
+                <button id="customSimStart" type="button" class="primary-btn">Começar simulado personalizado</button>
+              </section>
               <h4>Prova específica</h4>
               <label class="field compact-field">
                 <span>Prova</span>
@@ -534,6 +560,7 @@
     <script src="js/questionCards.js"></script>
     <script src="js/performance.js"></script>
     <script src="js/simulationHistory.js"></script>
+    <script src="js/customSimulation.js"></script>
     <script src="js/questionSearch.js"></script>
     <script>
       /* Aplicativo/offline: registra o service worker (sw.js) depois que a página carregou. */

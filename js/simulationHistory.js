@@ -33,6 +33,9 @@ function recordSimulationResult() {
     id: `${Date.now()}-${exam.id}`,
     examId: exam.id,
     title: exam.title || exam.id,
+    institution: exam.institution || "",
+    /* Simulado personalizado: guarda o conjunto sorteado para "Refazer prova" repetir as mesmas questões. */
+    questionIds: exam.custom ? exam.questions.map((question) => question.id) : undefined,
     finishedAt: Date.now(),
     durationMs: Math.round(state.examSimulationElapsedMs || 0),
     total: stats.questions.length,
@@ -136,6 +139,11 @@ function startSimulationErrorsReview(entryId) {
 }
 
 function retakeSimulation(examId) {
+  if (String(examId).startsWith("custom-") && typeof startCustomSimulation === "function") {
+    const entry = state.simulationHistory.find((item) => item.examId === examId && item.questionIds?.length);
+    if (entry) startCustomSimulation({ institution: entry.institution || "Todas", topic: "Todos", questionIds: entry.questionIds, id: examId });
+    return;
+  }
   if (!el.examSelect) return;
   el.examSelect.value = examId;
   el.examSelect.dispatchEvent(new Event("change", { bubbles: true }));

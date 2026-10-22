@@ -221,6 +221,7 @@ function simulationChartHtml(data) {
   if (!Array.isArray(state.simulationHistory) || !state.simulationHistory.length) return "";
   const since = periodStart(data.periodId);
   const institutionOf = (entry) => {
+    if (entry.institution !== undefined) return entry.institution;
     const exam = (state.exams || []).find((item) => item.id === entry.examId);
     return exam ? exam.institution || exam.provider || "" : "";
   };

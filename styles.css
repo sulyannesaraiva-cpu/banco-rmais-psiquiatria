@@ -2105,6 +2105,29 @@ body.theme-dark .exam-study-card {
   color: inherit;
 }
 
+/* Simulado personalizado (aba Provas). */
+.custom-sim {
+  display: grid;
+  gap: 10px;
+}
+
+.custom-sim .panel-line {
+  margin: 0;
+}
+
+.custom-sim-label {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.custom-sim .segmented {
+  width: fit-content;
+  max-width: 100%;
+}
+
 /* Histórico de simulados (aba Provas). */
 .sim-history {
   display: grid;

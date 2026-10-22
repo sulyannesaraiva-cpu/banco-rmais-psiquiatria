@@ -169,6 +169,28 @@ test("tentativas feitas sem internet sobem para a conta sem duplicar", async ({ 
   expect(result.second).toBe(0);
 });
 
+test("simulado personalizado: filtros, histórico e refazer o mesmo conjunto", async ({ page }) => {
+  await openSite(page);
+  await goTab(page, "exams");
+  await page.locator("#customSimExam").selectOption("USP");
+  await page.locator('[data-sim-size="20"]').click();
+  await page.locator("#customSimStart").click();
+  const run = await page.evaluate(() => {
+    const institutionOf = new Map();
+    state.exams.forEach((exam) => (exam.questions || []).forEach((q) => institutionOf.set(q.id, exam.institution)));
+    return { simulation: state.examSimulationActive, n: state.filtered.length, allUSP: state.filtered.every((q) => institutionOf.get(q.id) === "USP"), ids: state.filtered.map((q) => q.id) };
+  });
+  expect(run.simulation).toBe(true);
+  expect(run.n).toBe(20);
+  expect(run.allUSP).toBe(true);
+  await page.evaluate(() => { finishExamSimulation(); endExam(); });
+  const entry = await page.evaluate(() => state.simulationHistory[0]);
+  expect(entry.institution).toBe("USP");
+  expect(entry.questionIds).toEqual(run.ids);
+  await page.locator("[data-sim-retake]").first().click();
+  expect(await page.evaluate(() => state.filtered.map((q) => q.id))).toEqual(run.ids);
+});
+
 test("busca de questões abre um bloco", async ({ page }) => {
   await openSite(page);
   await goTab(page, "activity");
