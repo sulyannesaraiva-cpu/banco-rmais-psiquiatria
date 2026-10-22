@@ -215,6 +215,39 @@ function topicTileClass(accuracy) {
   return "perf-tile weak";
 }
 
+/* Nota de cada simulado ao longo do tempo (histórico em simulationHistory.js), no período e
+   na banca escolhidos no topo do painel. */
+function simulationChartHtml(data) {
+  if (!Array.isArray(state.simulationHistory) || !state.simulationHistory.length) return "";
+  const since = periodStart(data.periodId);
+  const institutionOf = (entry) => {
+    const exam = (state.exams || []).find((item) => item.id === entry.examId);
+    return exam ? exam.institution || exam.provider || "" : "";
+  };
+  const entries = state.simulationHistory
+    .filter((entry) => entry.finishedAt >= since && (data.exam === "Todas" || institutionOf(entry) === data.exam))
+    .sort((a, b) => a.finishedAt - b.finishedAt)
+    .slice(-12);
+  if (!entries.length) return "";
+  const average = Math.round(entries.reduce((sum, entry) => sum + entry.score, 0) / entries.length);
+  const change = entries.length > 1 ? entries[entries.length - 1].score - entries[0].score : null;
+  return `
+    <section class="today-card">
+      <div class="today-card-head"><h3>Simulados</h3><span>média ${average}%${change === null ? "" : ` · do primeiro ao último: ${change > 0 ? "+" : ""}${change} pts`}</span></div>
+      <div class="perf-chart" style="grid-template-columns: repeat(${entries.length}, minmax(0, 1fr))">
+        ${entries.map((entry, i) => {
+          const last = i === entries.length - 1;
+          const date = new Date(entry.finishedAt);
+          return `<div class="perf-col" title="${escapeHtml(entry.title)} · ${date.toLocaleDateString("pt-BR")} · ${entry.correct}/${entry.total}">
+            <span class="perf-col-acc ${last ? "current" : ""}">${entry.score}</span>
+            <div class="perf-bar ${last ? "current" : ""}" style="height:${Math.max(4, Math.round((entry.score / 100) * 132))}px"></div>
+            <span class="perf-col-label">${String(date.getDate()).padStart(2, "0")}/${String(date.getMonth() + 1).padStart(2, "0")}</span>
+          </div>`;
+        }).join("")}
+      </div>
+    </section>`;
+}
+
 function renderPerformancePanel() {
   const panel = document.querySelector("#performancePanel");
   if (!panel) return;
@@ -246,6 +279,8 @@ function renderPerformancePanel() {
       <div class="perf-card"><span>Tempo líquido</span><strong>${data.timeMs ? formatMinutes(data.timeMs) : "—"}</strong><small>${data.exam !== "Todas" ? "total, todas as bancas" : logSince ? `registrado desde ${logSince}` : "começa a contar hoje"}</small></div>
       <div class="perf-card"><span>Sequência</span><strong>${pluralize(data.streak.current, "dia", "dias")}</strong><small>recorde: ${data.streak.best}</small></div>
     </section>
+
+    ${simulationChartHtml(data)}
 
     ${empty ? `<section class="today-card"><p class="today-muted">Nenhuma questão respondida ${data.exam !== "Todas" ? `de provas da ${escapeHtml(data.exam)} ` : ""}neste período. Responda algumas questões e volte aqui para ver sua evolução.</p></section>` : `
     <section class="today-card">
