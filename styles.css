@@ -2105,6 +2105,13 @@ body.theme-dark .exam-study-card {
   color: inherit;
 }
 
+/* Comparação com os outros usuários. */
+#communityLine {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
 /* Simulado personalizado (aba Provas). */
 .custom-sim {
   display: grid;
