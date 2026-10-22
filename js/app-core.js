@@ -5115,7 +5115,8 @@ el.examArea.addEventListener("change", () => {
   renderExamStudyFilters();
   renderExams();
 });
-el.startExamSet.addEventListener("click", startExamSet);
+/* Chamadas pelo nome (e não passando a função) para valer a versão estendida pelos módulos. */
+el.startExamSet.addEventListener("click", () => startExamSet());
 el.endExamSet.addEventListener("click", endExamSet);
 el.startDangerousReview?.addEventListener("click", startDangerousReview);
 el.endDangerousReview?.addEventListener("click", endDangerousReview);
@@ -5150,7 +5151,7 @@ el.includeReviews.addEventListener("change", () => {
   saveIncludeReviews();
   renderActivity();
 });
-el.startSession.addEventListener("click", startSession);
+el.startSession.addEventListener("click", () => startSession());
 el.finishSession.addEventListener("click", finishSession);
 el.endSession.addEventListener("click", endSession);
 el.resetProgress.addEventListener("click", resetUserProgress);
@@ -5220,10 +5221,10 @@ el.examSelect.addEventListener("change", () => {
   renderExams();
 });
 el.startExam.addEventListener("click", startExam);
-el.startExamSimulation.addEventListener("click", startExamSimulation);
+el.startExamSimulation.addEventListener("click", () => startExamSimulation());
 el.finishExamStudy.addEventListener("click", finishExamStudy);
-el.finishExamSimulation.addEventListener("click", finishExamSimulation);
-el.endExam.addEventListener("click", endExam);
+el.finishExamSimulation.addEventListener("click", () => finishExamSimulation());
+el.endExam.addEventListener("click", () => endExam());
 el.examResult.addEventListener("click", (event) => {
   const button = event.target.closest("[data-review-exam-errors]");
   if (!button) return;
