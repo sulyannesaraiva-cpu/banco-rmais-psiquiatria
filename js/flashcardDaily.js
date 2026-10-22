@@ -124,7 +124,21 @@ function startDailyFlashcardSession() {
     render();
     return;
   }
-  state.flashcardSession = { date: localDayKey(), ids: items.map((item) => item.card.id), index: 0, newIds: queue.fresh.map((item) => item.card.id), graded: 0 };
+  startFlashcardSession(items, { label: "Flashcards de hoje" });
+}
+
+/* Sessão com uma lista própria de cartões (de qualquer deck): a de hoje ou a de um tema. */
+function startFlashcardSession(items, { label, returnTab = "overview" } = {}) {
+  if (!items.length) return;
+  state.flashcardSession = {
+    date: localDayKey(),
+    label,
+    returnTab,
+    ids: items.map((item) => item.card.id),
+    index: 0,
+    newIds: items.filter((item) => isNewFlashcard(item.card.id)).map((item) => item.card.id),
+    graded: 0,
+  };
   saveFlashcardSession();
   openFlashcardReviewItem(items[0]);
 }
@@ -142,11 +156,17 @@ function advanceFlashcardSession() {
   saveFlashcardSession();
   if (session.index >= session.ids.length) {
     const total = session.graded;
+    const label = session.label || "Flashcards de hoje";
+    const returnTab = session.returnTab || "overview";
     state.flashcardSession = null;
     saveFlashcardSession();
-    state.todayNotice = `Flashcards de hoje concluídos: ${pluralize(total, "cartão", "cartões")}.`;
+    const message = returnTab === "overview"
+      ? `${label} concluídos: ${pluralize(total, "cartão", "cartões")}.`
+      : `${label}: ${pluralize(total, "cartão estudado", "cartões estudados")}. Eles voltam na revisão de hoje quando vencerem.`;
+    if (returnTab === "overview") state.todayNotice = message;
+    else state.flashcardTopicNotice = message;
     state.flashcardRevealed = false;
-    setTab("overview");
+    setTab(returnTab);
     render();
     return;
   }
@@ -163,7 +183,7 @@ function renderFlashcardSessionBar() {
   const session = state.flashcardSession;
   const current = session.ids[session.index];
   const isNew = session.newIds.includes(current);
-  const html = `<strong>Flashcards de hoje · ${session.index + 1} de ${session.ids.length}</strong><span>${isNew ? "cartão novo" : "revisão"}</span><button type="button" class="link-btn" data-flashcard-session="stop">Parar</button>`;
+  const html = `<strong>${escapeHtml(session.label || "Flashcards de hoje")} · ${session.index + 1} de ${session.ids.length}</strong><span>${isNew ? "cartão novo" : "revisão"}</span><button type="button" class="link-btn" data-flashcard-session="stop">Parar</button>`;
   if (bar.dataset.renderedHtml !== html) {
     bar.innerHTML = html;
     bar.dataset.renderedHtml = html;

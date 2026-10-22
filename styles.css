@@ -5319,3 +5319,101 @@ body.reading-serif .my-note-text,
 .flashcard-session-bar .link-btn {
   margin-left: auto;
 }
+
+/* Flashcards por tema (js/flashcardTopics.js). */
+.flashcard-view-toggle {
+  margin: 0 0 12px;
+}
+
+.flashcard-topics {
+  display: grid;
+  gap: 8px;
+}
+
+.flashcard-topic {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--panel);
+}
+
+.flashcard-topic summary {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.flashcard-topic summary::-webkit-details-marker {
+  display: none;
+}
+
+.flashcard-topic-text {
+  display: grid;
+  flex: 1;
+  gap: 2px;
+  min-width: 0;
+}
+
+.flashcard-topic-text strong {
+  font-size: 15px;
+}
+
+.flashcard-topic-text span,
+.flashcard-topic.empty span {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.flashcard-topic summary .outline-btn {
+  flex: 0 0 auto;
+  min-height: 36px;
+  padding: 0 14px;
+}
+
+.flashcard-topic.empty {
+  display: grid;
+  gap: 2px;
+  padding: 10px 14px;
+  opacity: 0.7;
+}
+
+.flashcard-subtopics {
+  display: grid;
+  gap: 2px;
+  padding: 0 14px 10px;
+  border-top: 1px solid var(--line);
+}
+
+.flashcard-subtopic {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 2px 10px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.flashcard-subtopic:last-child {
+  border-bottom: 0;
+}
+
+.flashcard-subtopic span {
+  flex: 1 1 180px;
+  font-size: 14px;
+}
+
+.flashcard-subtopic small {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.flashcard-topic-notice {
+  margin: 0 0 4px;
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  background: var(--good-soft);
+  color: var(--good);
+  font-weight: 600;
+}

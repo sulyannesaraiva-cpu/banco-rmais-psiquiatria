@@ -333,3 +333,15 @@ test("flashcards de hoje: vencidos de vários decks + limite de novos", async ({
   expect(after).toEqual({ session: null, remaining: 0, tab: "overview" });
   expect(errors).toEqual([]);
 });
+
+test("flashcards por tema: mesmos temas do estudo e sessão do tema", async ({ page }) => {
+  const errors = await openSite(page);
+  await goTab(page, "flashcards");
+  await expect(page.locator('[data-flashcard-topic="Transtornos Psicóticos"]')).toBeVisible();
+  const topics = await page.evaluate(() => [...flashcardTopicIndex().topics.keys()].every((topic) => allTopics().includes(topic) || topic === "Outros cartões"));
+  expect(topics).toBe(true);
+  await page.locator('[data-flashcard-topic="Transtornos Psicóticos"] summary [data-flashcard-study-topic]').click();
+  await expect(page.locator("#flashcardSessionBar")).toContainText("Transtornos Psicóticos");
+  expect(await page.evaluate(() => /esquizofrenia/i.test(currentFlashcard().front))).toBe(true);
+  expect(errors).toEqual([]);
+});

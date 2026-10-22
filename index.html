@@ -214,7 +214,7 @@
             <header class="study-planner-head">
               <span>Flashcards</span>
               <h3>Banco de cart&otilde;es</h3>
-              <p>Escolha uma categoria e uma prioridade para estudar com revis&atilde;o ativa.</p>
+              <p>Os mesmos temas do Estudo por temas, com revis&atilde;o espa&ccedil;ada.</p>
             </header>
             <section class="flashcard-daily" aria-label="Flashcards de hoje">
               <div>
@@ -232,6 +232,12 @@
               </div>
               <button type="button" class="primary-btn" id="flashcardDailyStart">Estudar os de hoje</button>
             </section>
+            <div class="segmented flashcard-view-toggle" id="flashcardViewToggle" role="group" aria-label="Organizar flashcards">
+              <button type="button" data-flashcard-view="topics">Por tema</button>
+              <button type="button" data-flashcard-view="decks">Por deck</button>
+            </div>
+            <section class="flashcard-topics" id="flashcardTopicList" aria-label="Flashcards por tema"></section>
+            <div id="flashcardDeckView">
             <label class="field">
               <span>Categoria</span>
               <select id="flashcardCategorySelect">
@@ -260,6 +266,7 @@
               <p class="panel-line">Priorize revis&otilde;es vencidas e cart&otilde;es ligados aos seus erros.</p>
               <div id="flashcardDeckList"></div>
             </section>
+            </div>
           </div>
 
           <div class="tab-panel" id="activityPanel">
@@ -682,6 +689,7 @@
     <script src="js/similarQuestions.js"></script>
     <script src="js/readingSettings.js"></script>
     <script src="js/flashcardDaily.js"></script>
+    <script src="js/flashcardTopics.js"></script>
     <script src="js/questionSearch.js"></script>
     <script>
       /* Aplicativo/offline: registra o service worker (sw.js) depois que a página carregou. */
