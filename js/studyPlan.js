@@ -407,9 +407,9 @@ function renderRunProgress() {
     if (state.runFinishArmedAt && Date.now() - state.runFinishArmedAt < 4000) {
       state.runFinishArmedAt = 0;
       action.run();
-      // Bloco encerrado: limpa também a cópia usada para retomar a sessão ao recarregar
-      // (os botões da barra lateral fazem isso por um ouvinte próprio).
-      if (!hasActiveQuestionFlow() && typeof clearActiveStudyState === "function") clearActiveStudyState();
+      // Bloco encerrado: limpa a cópia de recuperação, que o reabriria ao recarregar. Não usa
+      // clearActiveStudyState, que apagaria também a posição de uma prova pausada.
+      if (!hasActiveQuestionFlow()) clearRecoverySnapshot();
       render();
       return;
     }

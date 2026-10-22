@@ -4286,7 +4286,14 @@ function startTopic() {
   applyFilters({ preserveCurrent: true });
 }
 
+/* Ao encerrar um bloco, apaga a cópia de recuperação (sessionPersistence.js); sem isso, nos primeiros
+   segundos após abrir o site o bloco encerrado podia ser reaberto sozinho. */
+function clearRecoverySnapshot() {
+  if (typeof clearStudySnapshot === "function") clearStudySnapshot();
+}
+
 function endTopic() {
+  clearRecoverySnapshot();
   state.topicActive = false;
   state.topicIds = [];
   state.index = 0;
@@ -4406,6 +4413,7 @@ function startDangerousReview() {
 }
 
 function endDangerousReview() {
+  clearRecoverySnapshot();
   state.dangerousReviewActive = false;
   state.dangerousReviewIds = [];
   state.activeAnswers = {};
@@ -4434,6 +4442,7 @@ function openDangerousQuestion(questionId) {
 }
 
 function endSpacedReview() {
+  clearRecoverySnapshot();
   state.spacedReviewActive = false;
   state.spacedReviewIds = [];
   state.activeAnswers = {};
@@ -4522,6 +4531,7 @@ function startCurrentBlockErrors() {
 }
 
 function endSession() {
+  clearRecoverySnapshot();
   if (typeof handleStudyRunExit === "function") handleStudyRunExit();
   state.sessionCompletionMessage = "";
   /* "Sair do bloco" é a saída visível também no estudo por tema ("Continuar" no progresso por tema). */
@@ -4540,6 +4550,7 @@ function endSession() {
 
 function finishSession() {
   if (!state.sessionActive && !state.smartTrainingActive) return;
+  clearRecoverySnapshot();
   if (typeof handleStudyRunFinish === "function") handleStudyRunFinish();
   const total = state.filtered.length;
   const answered = currentRunAnsweredQuestions();

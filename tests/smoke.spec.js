@@ -71,6 +71,26 @@ test("prova: sair guarda a posição e não reabre sozinha", async ({ page }) =>
   expect(await page.evaluate(() => state.index)).toBe(indexBefore);
 });
 
+test("prova pausada mantém a posição depois de fazer e finalizar outro bloco", async ({ page }) => {
+  await openSite(page);
+  await goTab(page, "exams");
+  await page.locator("#examSelect").selectOption("abp-2022-2022-2");
+  await page.locator("#startExamBtn").click();
+  for (let i = 0; i < 3; i += 1) await page.locator("#nextBtn").click();
+  const indexBefore = await page.evaluate(() => state.index);
+  await page.locator("[data-run-pause]").click();
+  await goTab(page, "activity");
+  await page.locator("#startSessionBtn").click();
+  await answerCurrent(page);
+  await page.locator("[data-run-finish]").click();
+  await page.locator("[data-run-finish]").click();
+  expect(await page.evaluate(() => hasActiveQuestionFlow())).toBe(false);
+  await goTab(page, "exams");
+  await page.locator("#examSelect").selectOption("abp-2022-2022-2");
+  await page.locator("#startExamBtn").click();
+  expect(await page.evaluate(() => state.index)).toBe(indexBefore);
+});
+
 test("prova: sair durante a carga da conta (logada) não reabre a prova", async ({ page }) => {
   await openSite(page);
   /* Conta simulada com rede lenta (1,5 s), como a renovação do login. */

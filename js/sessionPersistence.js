@@ -72,6 +72,10 @@
     localStorage.removeItem(LEGACY_SESSION_KEY);
   }
 
+  /* Usado pelas saídas de bloco no núcleo: apaga só a cópia de recuperação (que reabriria o bloco
+     encerrado), sem mexer na posição guardada de uma prova pausada. */
+  window.clearStudySnapshot = clearSnapshot;
+
   function loadSnapshot() {
     try {
       const raw = localStorage.getItem(SESSION_KEY) || localStorage.getItem(LEGACY_SESSION_KEY);
