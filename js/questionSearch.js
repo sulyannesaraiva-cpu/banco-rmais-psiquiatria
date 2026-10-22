@@ -101,10 +101,14 @@
     const examIds = new Set(examStudyQuestions().map((question) => question.id));
     const fromExams = lastMatches.filter((question) => examIds.has(question.id)).length;
     const done = lastMatches.filter((question) => getProgress(question.id).grade).length;
+    const studyCount = blockQuestions().length;
+    const studyLabel = state.unseenOnly
+      ? studyCount ? `Estudar ${studyCount === 1 ? "a inédita" : `as ${studyCount} inéditas`}` : "Todas já feitas"
+      : `Estudar ${lastMatches.length > MAX_BLOCK ? `as primeiras ${MAX_BLOCK}` : lastMatches.length === 1 ? "esta" : "estas"}`;
     results.innerHTML = `
       <div class="search-summary">
         <span><strong>${lastMatches.length}</strong> ${lastMatches.length === 1 ? "questão" : "questões"} · ${fromExams} de provas · ${done} já feitas</span>
-        <button type="button" class="primary-btn" data-search-study>Estudar ${lastMatches.length > MAX_BLOCK ? `as primeiras ${MAX_BLOCK}` : lastMatches.length === 1 ? "esta" : "estas"}</button>
+        <button type="button" class="primary-btn" data-search-study ${studyCount ? "" : "disabled"}>${studyLabel}</button>
       </div>
       <div class="search-previews">
         ${lastMatches.slice(0, PREVIEWS).map((question) => `
@@ -126,8 +130,14 @@
     if (event.target.closest("[data-search-study]")) startSearchBlock();
   });
 
+  /* Com "Só questões inéditas" ligado (js/unseenMode.js), só as ainda não feitas. */
+  function blockQuestions() {
+    const pool = state.unseenOnly ? lastMatches.filter((question) => !getProgress(question.id).grade) : lastMatches;
+    return pool.slice(0, MAX_BLOCK);
+  }
+
   function startSearchBlock() {
-    const questions = lastMatches.slice(0, MAX_BLOCK);
+    const questions = blockQuestions();
     if (!questions.length) return;
     startStudyRun(questions, { kind: "search", label: `Busca: ${input.value.trim()}` });
   }

@@ -257,3 +257,22 @@ test("etiquetas, cartões dos erros e reportar sem login", async ({ page }) => {
   expect(await page.evaluate(() => ({ active: state.sessionActive, n: state.filtered.length }))).toEqual({ active: true, n: 1 });
   expect(errors).toEqual([]);
 });
+
+test("só inéditas e ranking de temas por banca", async ({ page }) => {
+  const errors = await openSite(page);
+  await page.evaluate(() => {
+    state.exams.flatMap((e) => e.questions || []).slice(0, 30).forEach((q) => (state.progress[q.id] = { grade: "correct", selected: q.correctAnswer }));
+    saveProgress();
+  });
+  await goTab(page, "exams");
+  await page.locator(".exam-study-card [data-unseen-toggle]").check();
+  await page.locator("#startExamSetBtn").click();
+  const run = await page.evaluate(() => ({ n: state.filtered.length, anyDone: state.filtered.some((q) => getProgress(q.id).grade) }));
+  expect(run.n).toBeGreaterThan(100);
+  expect(run.anyDone).toBe(false);
+  await page.evaluate(() => { endSession(); setTab("exams"); render(); });
+  await expect(page.locator("#examTopicRanking .ranking-list li").first()).toBeVisible();
+  await page.locator("[data-ranking-train]").first().click();
+  expect(await page.evaluate(() => state.sessionActive && state.filtered.length > 0)).toBe(true);
+  expect(errors).toEqual([]);
+});

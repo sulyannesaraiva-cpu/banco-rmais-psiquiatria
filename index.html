@@ -234,6 +234,13 @@
               <input id="questionSearchInput" type="search" placeholder="Buscar questões por palavra (ex.: clozapina, Capgras, Lei 10.216)" autocomplete="off" />
               <div id="questionSearchResults"></div>
             </section>
+            <section class="unseen-mode" aria-label="Só questões inéditas">
+              <label class="session-toggle">
+                <input type="checkbox" data-unseen-toggle />
+                <span><strong>Só questões inéditas</strong> · os blocos, a busca e os treinos de prova não repetem questão já feita</span>
+              </label>
+              <p class="panel-line" data-unseen-line="bank"></p>
+            </section>
             <div class="topic-picker">
               <div class="segmented wide-segmented topic-source" id="topicSourceGroup" role="group" aria-label="Origem das questões">
                 <button data-topic-source="mixed" title="Didáticas e de provas">Todas</button>
@@ -300,10 +307,23 @@
                   <div><strong id="examFilteredQuestionCount">0</strong><span>questões</span></div>
                 </div>
                 <p class="panel-line">Resolva questões misturadas de acordo com os filtros selecionados.</p>
+                <label class="session-toggle">
+                  <input type="checkbox" data-unseen-toggle />
+                  <span><strong>Só questões inéditas</strong> · treino e simulado personalizado sem repetir questão já feita</span>
+                </label>
+                <p class="panel-line" data-unseen-line="exams"></p>
                 <button id="startExamSetBtn" class="primary-btn">Treinar questões</button>
                 <button id="endExamSetBtn" class="tertiary-btn">Sair do treino</button>
                 <p class="panel-line" id="examSetLine">Filtre por instituição ou área para resolver várias provas em sequência.</p>
               </div>
+              <details class="exam-study-card ranking-card" id="examTopicRankingCard" open>
+                <summary><h4>Temas que mais caem por banca</h4></summary>
+                <label class="field compact-field">
+                  <span>Banca</span>
+                  <select id="rankingInstitution"></select>
+                </label>
+                <div id="examTopicRanking"></div>
+              </details>
               <section class="exam-study-card custom-sim" id="customSimulation" aria-label="Simulado personalizado">
                 <h4>Simulado personalizado</h4>
                 <p class="panel-line">Sorteia questões de provas reais e roda como um simulado: cronômetro, gabarito só no fim e histórico.</p>
@@ -616,6 +636,8 @@
     <script src="js/simulationTimer.js"></script>
     <script src="js/questionLabels.js"></script>
     <script src="js/errorFlashcards.js"></script>
+    <script src="js/unseenMode.js"></script>
+    <script src="js/examTopicRanking.js"></script>
     <script src="js/questionSearch.js"></script>
     <script>
       /* Aplicativo/offline: registra o service worker (sw.js) depois que a página carregou. */
