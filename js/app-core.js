@@ -390,6 +390,11 @@ const el = {
   editAnswer: document.querySelector("#editAnswer"),
   editStudyTopic: document.querySelector("#editStudyTopic"),
   editExplanation: document.querySelector("#editExplanation"),
+  editImageFile: document.querySelector("#editImageFile"),
+  editImagePreview: document.querySelector("#editImagePreview"),
+  editImageRemove: document.querySelector("#editImageRemove"),
+  editImagePickLabel: document.querySelector("#editImagePickLabel"),
+  editImageStatus: document.querySelector("#editImageStatus"),
   explanationPanel: document.querySelector("#explanationPanel"),
   explanationText: document.querySelector("#explanationText"),
   addExplanation: document.querySelector("#addExplanationBtn"),
@@ -797,6 +802,7 @@ function normalizeCorrectionForCloud(correction = {}) {
   }
   if (typeof correction.studyTopic === "string" && correction.studyTopic.trim()) normalized.studyTopic = correction.studyTopic.trim();
   if (typeof correction.explanation === "string" && correction.explanation.trim()) normalized.explanation = correction.explanation.trim();
+  if (typeof correction.image === "string" && correction.image.startsWith("data:image/")) normalized.image = correction.image;
   normalized.reviewedAt = new Date().toISOString();
   return normalized;
 }
@@ -5038,6 +5044,13 @@ function fillEditor(question) {
     el.editOptions[letter].value = option?.text || "";
   }
   if (el.editExplanation) el.editExplanation.value = question.explanation || "";
+  /* fillEditor roda a cada redesenho durante a edição: só reinicia a imagem ao trocar de questão. */
+  if (state.editImageFor !== question.id) {
+    state.editImageFor = question.id;
+    state.editImage = question.image || "";
+    if (el.editImageStatus) el.editImageStatus.textContent = "";
+  }
+  renderEditImage();
   if (el.editStudyTopic) {
     const topics = [...new Set([...state.questions, ...examStudyQuestions()].map((item) => topicForQuestion(item)))]
       .sort((a, b) => a.localeCompare(b, "pt-BR"));
@@ -5063,6 +5076,8 @@ function collectEditor() {
   };
   if (el.editStudyTopic?.value) correction.studyTopic = el.editStudyTopic.value;
   if (el.editExplanation?.value.trim()) correction.explanation = el.editExplanation.value.trim();
+  /* Só imagens enviadas pela edição vão na correção; as que vieram com o banco ficam no próprio dado. */
+  if (String(state.editImage || "").startsWith("data:image/")) correction.image = state.editImage;
   const readyAfterEdit = Boolean(
     correction.correctAnswer &&
       correction.options.length >= 2 &&
@@ -5072,6 +5087,62 @@ function collectEditor() {
   correction.maintenanceFlagged = !readyAfterEdit;
   return correction;
 }
+
+function renderEditImage() {
+  if (!el.editImagePreview) return;
+  const image = state.editImage || "";
+  el.editImagePreview.hidden = !image;
+  if (image && el.editImagePreview.getAttribute("src") !== image) el.editImagePreview.src = image;
+  if (el.editImageRemove) el.editImageRemove.hidden = !image.startsWith("data:image/");
+  if (el.editImagePickLabel) el.editImagePickLabel.textContent = image ? "Trocar imagem" : "Enviar imagem";
+}
+
+/* Reduz a imagem enviada (até 1400 px de largura) e guarda como data URL na correção da questão. */
+const EDIT_IMAGE_MAX_WIDTH = 1400;
+
+function readEditImage(file) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onerror = () => reject(new Error("Não foi possível ler o arquivo."));
+    reader.onload = () => {
+      const img = new Image();
+      img.onerror = () => reject(new Error("O arquivo não é uma imagem válida."));
+      img.onload = () => {
+        const scale = Math.min(1, EDIT_IMAGE_MAX_WIDTH / img.naturalWidth);
+        const canvas = document.createElement("canvas");
+        canvas.width = Math.round(img.naturalWidth * scale);
+        canvas.height = Math.round(img.naturalHeight * scale);
+        const context = canvas.getContext("2d");
+        context.fillStyle = "#ffffff";
+        context.fillRect(0, 0, canvas.width, canvas.height);
+        context.drawImage(img, 0, 0, canvas.width, canvas.height);
+        resolve(canvas.toDataURL("image/jpeg", 0.85));
+      };
+      img.src = reader.result;
+    };
+    reader.readAsDataURL(file);
+  });
+}
+
+el.editImageFile?.addEventListener("change", async () => {
+  const file = el.editImageFile.files?.[0];
+  el.editImageFile.value = "";
+  if (!file) return;
+  try {
+    state.editImage = await readEditImage(file);
+    if (el.editImageStatus) el.editImageStatus.textContent = `Imagem pronta (${Math.round((state.editImage.length * 0.75) / 1024)} KB). Toque em "Salvar revisão" para publicar.`;
+  } catch (error) {
+    if (el.editImageStatus) el.editImageStatus.textContent = error.message;
+  }
+  renderEditImage();
+});
+
+el.editImageRemove?.addEventListener("click", () => {
+  const base = allStudyQuestions().find((question) => question.id === state.editImageFor);
+  state.editImage = base?.image || "";
+  if (el.editImageStatus) el.editImageStatus.textContent = 'Imagem removida. Toque em "Salvar revisão" para publicar.';
+  renderEditImage();
+});
 
 function openEditor() {
   if (!state.isAdmin) return;

@@ -174,6 +174,7 @@
                   <option value="answer-mismatch">Gabarito inconsistente</option>
                   <option value="incomplete-options">Alternativas incompletas</option>
                   <option value="duplicate-options">Alternativas duplicadas</option>
+                  <option value="missing-figure">Figura ausente</option>
                   <option value="uncertain-topic">Tema incerto (provas)</option>
                   <option value="no-explanation">Sem comentário</option>
                 </select>
@@ -465,6 +466,18 @@
             <span>Comentário (aparece depois de responder)</span>
             <textarea id="editExplanation" rows="7" placeholder="Por que a alternativa correta está certa e as outras erradas. **negrito**, linha em branco separa parágrafos."></textarea>
           </label>
+          <div class="field edit-image">
+            <span>Imagem da questão (figura, gráfico, exame)</span>
+            <img id="editImagePreview" alt="Imagem da questão" hidden />
+            <div class="edit-image-actions">
+              <label class="outline-btn edit-image-pick">
+                <input id="editImageFile" type="file" accept="image/*" hidden />
+                <span id="editImagePickLabel">Enviar imagem</span>
+              </label>
+              <button id="editImageRemove" type="button" class="link-btn" hidden>Remover imagem enviada</button>
+            </div>
+            <small id="editImageStatus" class="panel-line"></small>
+          </div>
           <label class="field">
             <span>Tema (Estudo por temas)</span>
             <select id="editStudyTopic"></select>

@@ -2502,6 +2502,37 @@ body.theme-dark .exam-study-card {
   color: var(--ink);
 }
 
+/* Imagem da questão no editor. */
+.edit-image {
+  display: grid;
+  gap: 8px;
+}
+
+.edit-image img {
+  max-width: 100%;
+  max-height: 320px;
+  object-fit: contain;
+  justify-self: start;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.edit-image-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 14px;
+}
+
+.edit-image-pick {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 0 14px;
+  cursor: pointer;
+}
+
 /* Busca de questões (Estudo por temas). */
 .question-search {
   display: grid;
