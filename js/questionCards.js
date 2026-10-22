@@ -163,16 +163,33 @@ function conceptIndex() {
   const key = `${items.length}`;
   if (conceptIndexCache.key === key) return conceptIndexCache.bySubtheme;
   const bySubtheme = new Map();
+  const deckSubthemes = new Map();
   for (const item of items) {
     const subtheme = flashcardSubtheme(item);
     if (!subtheme || subtheme === "Subtema a revisar") continue;
     const list = bySubtheme.get(subtheme) || [];
-    list.push({ ...item, words: conceptWords(`${item.card.front || ""} ${item.card.back || ""} ${(item.card.tags || []).join(" ")}`) });
+    list.push({ ...item, subtheme, words: conceptWords(`${item.card.front || ""} ${item.card.back || ""} ${(item.card.tags || []).join(" ")}`) });
     bySubtheme.set(subtheme, list);
+    const counts = deckSubthemes.get(item.deck.id) || new Map();
+    counts.set(subtheme, (counts.get(subtheme) || 0) + 1);
+    deckSubthemes.set(item.deck.id, counts);
+  }
+  /* Assunto principal de cada deck: o subtema da maioria dos cartões. Um cartão classificado num
+     subtema diferente do do seu deck (ex.: "delirium x psicose" no deck de Delirium) só entra
+     quando tem bastante coisa em comum com a questão. */
+  for (const list of bySubtheme.values()) {
+    for (const item of list) {
+      const counts = deckSubthemes.get(item.deck.id);
+      const main = counts ? [...counts.entries()].sort((a, b) => b[1] - a[1])[0][0] : item.subtheme;
+      item.offDeck = item.deck.id !== CUSTOM_DECK_ID && main !== item.subtheme;
+    }
   }
   conceptIndexCache = { key, bySubtheme };
   return bySubtheme;
 }
+
+const CONCEPT_MIN_OVERLAP = 2;
+const CONCEPT_MIN_OVERLAP_OFF_DECK = 4;
 
 function relatedFlashcards(question, limit = 3) {
   const subtheme = questionSubtheme(question);
@@ -186,6 +203,9 @@ function relatedFlashcards(question, limit = 3) {
       for (const word of item.words) if (words.has(word)) overlap += 1;
       return { item, overlap };
     })
+    /* Só cartões que de fato falam do assunto da questão (antes entrava qualquer cartão do subtema,
+       mesmo sem nenhuma palavra em comum). */
+    .filter(({ item, overlap }) => overlap >= (item.offDeck ? CONCEPT_MIN_OVERLAP_OFF_DECK : CONCEPT_MIN_OVERLAP))
     .sort((a, b) => b.overlap - a.overlap || String(a.item.card.id).localeCompare(String(b.item.card.id), "pt-BR"))
     .slice(0, limit)
     .map((entry) => entry.item);
