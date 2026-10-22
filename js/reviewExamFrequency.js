@@ -101,6 +101,8 @@ function itemSubthemeForExamFrequency(item) {
   if (item.kind === "question") return questionSubtheme(item.question);
   const card = item.card || {};
   const deck = item.deck || {};
+  /* Cartões escritos para um subtema declaram o subtema (data/generalFlashcards.js). */
+  if (card.subtheme) return card.subtheme;
   return questionSubtheme({
     id: `flashcard-frequency:${card.id || item.id || "unknown"}`,
     source: card.module || deck.module || deck.title || "Flashcards",
