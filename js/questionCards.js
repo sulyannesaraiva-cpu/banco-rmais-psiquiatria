@@ -92,15 +92,23 @@ function flashcardBackFromQuestion(question) {
   return `${answer}${keyPoint ? ` · Ponto-chave: ${keyPoint}` : ""}${source ? ` — da questão ${source}` : ""}`;
 }
 
-/* Primeira frase do comentário da questão (sem a marcação de negrito), para o verso do cartão. */
+/* Primeira frase com conteúdo do comentário da questão, para o verso do cartão: sem Markdown e
+   pulando frases que só anunciam o gabarito ("Alternativa D – correta.", "A alternativa correta é a B."). */
 function flashcardKeyPoint(explanation) {
   const text = String(explanation || "")
-    .replace(/\*\*/g, "")
-    .replace(/^\s*(gabarito|resposta)( correta)?\s*:?\s*(alternativa\s*|letra\s*)?[A-E]?\s*[.:)–-]?\s*/i, "")
+    .split("\n")
+    .map((line) => line.replace(/^\s*(>\s*)+/, "").replace(/^\s*#{1,3}\s*/, "").replace(/^\s*[-*•]\s+/, ""))
+    .join(" ")
+    .replace(/\*/g, "")
     .replace(/\s+/g, " ")
     .trim();
   if (!text) return "";
-  const sentence = text.match(/^.{20,}?[.!?](?=\s|$)/)?.[0] || text;
+  const sentences = text.match(/[^.!?]+[.!?]+(?=\s|$)|[^.!?]+$/g) || [text];
+  const announcesAnswer = (sentence) =>
+    /^\s*(coment[aá]rio\s*:?\s*)?((a\s+)?(alternativa|resposta|letra)\b|gabarito\b)/i.test(sentence) && sentence.length < 120;
+  const sentence = (sentences.find((item) => item.trim().length >= 30 && !announcesAnswer(item)) || sentences[0])
+    .trim()
+    .replace(/^coment[aá]rio\s*:?\s*/i, "");
   return sentence.length > 260 ? `${sentence.slice(0, 257).trimEnd()}…` : sentence;
 }
 
