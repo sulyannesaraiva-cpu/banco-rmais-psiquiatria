@@ -7,20 +7,22 @@ on:
 
 jobs:
   smoke:
-    runs-on: ubuntu-latest
+    # Versão fixa: o Playwright do projeto (1.49) instala as dependências do Chromium no Ubuntu 24.04;
+    # o "ubuntu-latest" passa para o Ubuntu 26 a partir de outubro de 2026.
+    runs-on: ubuntu-24.04
     timeout-minutes: 15
     defaults:
       run:
         working-directory: tests
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
         with:
-          node-version: 20
+          node-version: 22
       - run: npm install --no-audit --no-fund
       - run: npx playwright install --with-deps chromium
       - run: npx playwright test
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v6
         if: failure()
         with:
           name: playwright-traces
