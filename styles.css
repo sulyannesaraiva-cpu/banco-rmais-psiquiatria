@@ -5259,3 +5259,63 @@ body.reading-serif .my-note-text,
 .markdown-content li::marker {
   color: var(--muted);
 }
+
+/* Flashcards de hoje (js/flashcardDaily.js). */
+.flashcard-daily {
+  display: grid;
+  gap: 10px;
+  margin: 4px 0 16px;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--panel);
+}
+
+.flashcard-daily h4 {
+  margin: 0 0 2px;
+}
+
+.flashcard-daily .panel-line {
+  margin: 0;
+}
+
+.flashcard-daily-limit {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+}
+
+.flashcard-daily-limit > span {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.flashcard-daily .primary-btn {
+  justify-self: start;
+}
+
+.flashcard-session-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 12px;
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+  font-size: 14px;
+}
+
+.flashcard-session-bar span {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.flashcard-session-bar .link-btn {
+  margin-left: auto;
+}

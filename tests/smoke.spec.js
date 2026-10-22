@@ -312,3 +312,24 @@ test("ajuste de leitura: tamanho, espaçamento e fonte ficam salvos", async ({ p
   expect(await page.evaluate(() => state.reading)).toEqual({ size: 2, spacing: "airy", font: "serif" });
   expect(errors).toEqual([]);
 });
+
+test("flashcards de hoje: vencidos de vários decks + limite de novos", async ({ page }) => {
+  const errors = await openSite(page);
+  const queue = await page.evaluate(() => {
+    const past = new Date(Date.now() - 86400e3).toISOString();
+    state.flashcards.slice(0, 3).forEach((deck) => (state.flashcardProgress[deck.cards[0].id] = { reviewedAt: past, nextReviewAt: past, lastGrade: "good", streak: 1 }));
+    saveFlashcardState();
+    const q = dailyFlashcardQueue();
+    return { due: q.due.length, fresh: q.fresh.length };
+  });
+  expect(queue).toEqual({ due: 3, fresh: 10 });
+  await page.evaluate(() => startDueFlashcardsReview());
+  await expect(page.locator("#flashcardSessionBar")).toContainText("1 de 13");
+  for (let i = 0; i < 13; i += 1) {
+    await page.locator("#showFlashcardAnswerBtn").click();
+    await page.locator('[data-flashcard-grade="good"]').click();
+  }
+  const after = await page.evaluate(() => ({ session: state.flashcardSession, remaining: dailyFlashcardCount(), tab: state.activeTab }));
+  expect(after).toEqual({ session: null, remaining: 0, tab: "overview" });
+  expect(errors).toEqual([]);
+});

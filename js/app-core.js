@@ -3100,13 +3100,18 @@ function currentFlashcard() {
   return cards[safeIndex];
 }
 
+/* Cartões já estudados que venceram (os nunca estudados contam à parte, como novos). */
 function flashcardDueCount(deck) {
   const today = Date.now();
   return flashcardCardsForDeck(deck).filter((card) => {
     const progress = state.flashcardProgress[card.id];
-    if (!progress?.nextReviewAt) return true;
+    if (!progress?.nextReviewAt) return false;
     return new Date(progress.nextReviewAt).getTime() <= today;
   }).length;
+}
+
+function flashcardNewCount(deck) {
+  return flashcardCardsForDeck(deck).filter((card) => !state.flashcardProgress[card.id]?.nextReviewAt).length;
 }
 
 function flashcardNextReviewLabel(card) {
@@ -3211,11 +3216,12 @@ function renderFlashcards() {
     .map((item) => {
       const active = item.id === deck.id ? " active" : "";
       const dueCount = flashcardDueCount(item);
+      const newCount = flashcardNewCount(item);
       const visibleCards = flashcardCardsForDeck(item);
       return `
         <button class="flashcard-deck-row${active}" data-flashcard-deck="${escapeHtml(item.id)}">
           <strong>${escapeHtml(item.title)}</strong>
-          <span>${escapeHtml(item.area)} \u00b7 ${visibleCards.length} cartoes \u00b7 ${dueCount} para revisar</span>
+          <span>${escapeHtml(item.area)} \u00b7 ${visibleCards.length} cart\u00f5es \u00b7 ${newCount} novos \u00b7 ${dueCount} para revisar</span>
           <em class="importance-badge">${escapeHtml(getImportanceLabel(getDeckImportance(item)))}</em>
         </button>
       `;

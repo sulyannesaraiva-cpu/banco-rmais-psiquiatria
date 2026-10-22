@@ -216,6 +216,22 @@
               <h3>Banco de cart&otilde;es</h3>
               <p>Escolha uma categoria e uma prioridade para estudar com revis&atilde;o ativa.</p>
             </header>
+            <section class="flashcard-daily" aria-label="Flashcards de hoje">
+              <div>
+                <h4>Flashcards de hoje</h4>
+                <p class="panel-line" id="flashcardDailyLine"></p>
+              </div>
+              <div class="flashcard-daily-limit">
+                <span>Cartões novos por dia</span>
+                <div class="segmented" id="flashcardNewLimit">
+                  <button type="button" data-flashcard-new="0">0</button>
+                  <button type="button" data-flashcard-new="10">10</button>
+                  <button type="button" data-flashcard-new="20">20</button>
+                  <button type="button" data-flashcard-new="30">30</button>
+                </div>
+              </div>
+              <button type="button" class="primary-btn" id="flashcardDailyStart">Estudar os de hoje</button>
+            </section>
             <label class="field">
               <span>Categoria</span>
               <select id="flashcardCategorySelect">
@@ -404,6 +420,7 @@
             </div>
           </div>
         </section>
+        <div class="flashcard-session-bar" id="flashcardSessionBar" hidden></div>
         <section class="flashcard-study-panel" id="flashcardStudyPanel" hidden>
           <div class="flashcard-study-head">
             <div>
@@ -664,6 +681,7 @@
     <script src="js/examTopicRanking.js"></script>
     <script src="js/similarQuestions.js"></script>
     <script src="js/readingSettings.js"></script>
+    <script src="js/flashcardDaily.js"></script>
     <script src="js/questionSearch.js"></script>
     <script>
       /* Aplicativo/offline: registra o service worker (sw.js) depois que a página carregou. */

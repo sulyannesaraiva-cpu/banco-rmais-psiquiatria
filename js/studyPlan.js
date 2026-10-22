@@ -228,7 +228,11 @@ function computeTodayData() {
   const remainingGoal = Math.max(goal - doneToday.size, 0);
   const reviewCount = Math.min(due.length, Math.ceil(remainingGoal * 0.6));
   const newCount = Math.min(Math.max(remainingGoal - reviewCount, 0), fresh.length);
-  const flashcardsDue = typeof flashcardReviewItems === "function" ? flashcardReviewItems({ dueOnly: true }).length : 0;
+  /* Flashcards de hoje (js/flashcardDaily.js): vencidos + novos do limite diário. */
+  const flashcardQueue = typeof dailyFlashcardQueue === "function" ? dailyFlashcardQueue() : null;
+  const flashcardsReview = flashcardQueue ? flashcardQueue.due.length : typeof flashcardReviewItems === "function" ? flashcardReviewItems({ dueOnly: true }).length : 0;
+  const flashcardsNew = flashcardQueue ? flashcardQueue.fresh.length : 0;
+  const flashcardsDue = flashcardsReview + flashcardsNew;
 
   const weak = [...subthemes.values()]
     .filter((item) => item.label !== "Subtema a revisar" && item.answered >= 5)
@@ -238,7 +242,7 @@ function computeTodayData() {
     .slice(0, 3);
 
   const data = {
-    plan, goal, doneToday: doneToday.size, remainingGoal, due, fresh, reviewCount, newCount, flashcardsDue,
+    plan, goal, doneToday: doneToday.size, remainingGoal, due, fresh, reviewCount, newCount, flashcardsDue, flashcardsReview, flashcardsNew,
     subthemes, weak, share, streak: studyStreak(), daysLeft: daysUntilExam(plan),
     estimatedMinutes: Math.round((reviewCount + newCount) * 1.5 + Math.min(flashcardsDue, 20) * 0.5),
   };
@@ -443,6 +447,11 @@ function startTodayRun({ extra = false } = {}) {
     if (short > 0) reviews = data.due.slice(0, data.reviewCount + short);
   }
   const queue = [...reviews, ...fresh];
+  if (!queue.length && typeof dailyFlashcardCount === "function" && dailyFlashcardCount()) {
+    state.todayNotice = "";
+    startDueFlashcardsReview();
+    return;
+  }
   if (!queue.length) {
     state.todayNotice = "Você já respondeu todas as questões disponíveis por enquanto. Que tal revisar flashcards ou fazer um simulado?";
     render();
@@ -635,7 +644,7 @@ function renderPlanForm() {
 
 function renderTodaySummary(summary) {
   const streak = studyStreak();
-  const flashcardsDue = typeof flashcardReviewItems === "function" ? flashcardReviewItems({ dueOnly: true }).length : 0;
+  const flashcardsDue = typeof dailyFlashcardCount === "function" ? dailyFlashcardCount() : typeof flashcardReviewItems === "function" ? flashcardReviewItems({ dueOnly: true }).length : 0;
   const title = summary.kind === "today" ? "Estudo de hoje concluído" : "Bloco concluído";
   const streakLine = streak.current > 1
     ? `${streak.current} dias seguidos.${streak.best > streak.current ? ` Seu recorde é ${streak.best}.` : " É o seu recorde!"}`
@@ -669,7 +678,7 @@ function renderTodaySummary(summary) {
         <div><strong>Amanhã</strong><span>${pluralize(summary.tomorrowReviews, "revisão programada", "revisões programadas")}${state.studyPlan ? ` · meta de ${questionsGoalForMinutes(state.studyPlan.minutesPerDay)} questões` : ""}</span></div>
       </div>
       <div class="today-actions-stack">
-        ${flashcardsDue ? `<button type="button" class="primary-btn today-cta" data-today-action="flashcards">Revisar ${pluralize(flashcardsDue, "flashcard", "flashcards")}</button>` : ""}
+        ${flashcardsDue ? `<button type="button" class="primary-btn today-cta" data-today-action="flashcards">Continuar: ${pluralize(flashcardsDue, "flashcard", "flashcards")} de hoje</button>` : ""}
         <button type="button" class="${flashcardsDue ? "outline-btn" : "primary-btn today-cta"}" data-today-action="close-summary">Voltar para Hoje</button>
       </div>
     </div>`;
@@ -683,7 +692,10 @@ function renderTodayDashboard(data) {
   const rows = [];
   if (!goalDone && data.reviewCount) rows.push({ icon: "review", tone: "warn", title: pluralize(data.reviewCount, "revisão vencida", "revisões vencidas"), text: "Questões que você errou ou estão no ponto de rever" });
   if (!goalDone && data.newCount) rows.push({ icon: "target", tone: "good", title: pluralize(data.newCount, "questão nova", "questões novas"), text: plan?.targetExam && plan.targetExam !== "Todas" ? `Dos temas que mais caem na ${plan.targetExam} e dos seus pontos fracos` : "Dos seus pontos fracos, variando os temas" });
-  if (data.flashcardsDue) rows.push({ icon: "cards", tone: "info", title: pluralize(Math.min(data.flashcardsDue, 99), "flashcard para revisar", "flashcards para revisar"), text: "Cartões que chegaram no dia de revisão", action: "flashcards", actionLabel: "Revisar" });
+  if (data.flashcardsDue) {
+    const parts = [data.flashcardsReview ? pluralize(data.flashcardsReview, "para revisar", "para revisar") : "", data.flashcardsNew ? pluralize(data.flashcardsNew, "novo", "novos") : ""].filter(Boolean).join(" · ");
+    rows.push({ icon: "cards", tone: "info", title: `${pluralize(data.flashcardsDue, "flashcard", "flashcards")} hoje`, text: `${parts}${goalDone ? "" : " · depois das questões"}`, action: "flashcards", actionLabel: goalDone ? "Revisar" : "Só flashcards" });
+  }
   const weakHtml = data.weak.length
     ? data.weak.map((item) => {
         const pending = item.unanswered + item.due;
