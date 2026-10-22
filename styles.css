@@ -5243,3 +5243,19 @@ body.reading-serif .my-note-text,
   height: 18px;
   font-size: 10px;
 }
+
+/* Listas nos comentários em Markdown (renderSafeMarkdown). */
+.markdown-content ul,
+.markdown-content ol {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.markdown-content li {
+  margin: 3px 0;
+  line-height: 1.55;
+}
+
+.markdown-content li::marker {
+  color: var(--muted);
+}

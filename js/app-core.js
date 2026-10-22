@@ -2635,16 +2635,52 @@ function renderSafeMarkdown(value) {
     .trim();
   if (!normalized) return "";
   const escaped = escapeHtml(normalized);
+  const inline = (text) =>
+    text
+      .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
+      .replace(/(^|[^*\w])\*(?!\s)([^*\n]+?)\*(?!\w)/g, "$1<em>$2</em>");
+  /* Parágrafos (linha em branco separa), títulos (#, ##, ###) e listas (- ou * e 1.) em qualquer
+     linha do bloco: os comentários costumam vir escritos em Markdown. */
   return escaped
     .split(/\n{2,}/)
     .map((block) => {
-      const lines = block.split("\n");
-      const firstLine = lines[0]?.trim() || "";
-      const heading = firstLine.match(/^#{1,3}\s*(.+)$/);
-      const content = heading ? [heading[1], ...lines.slice(1)].join("\n") : block;
-      const withBold = content.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
-      const html = withBold.replace(/\n/g, "<br>");
-      return heading ? `<p class="markdown-heading">${html}</p>` : `<p>${html}</p>`;
+      const out = [];
+      let paragraph = [];
+      let list = null;
+      const flushParagraph = () => {
+        if (paragraph.length) out.push(`<p>${inline(paragraph.join("<br>"))}</p>`);
+        paragraph = [];
+      };
+      const flushList = () => {
+        if (list) out.push(`<${list.tag}>${list.items.map((item) => `<li>${inline(item)}</li>`).join("")}</${list.tag}>`);
+        list = null;
+      };
+      for (const line of block.split("\n")) {
+        const heading = line.match(/^\s*#{1,3}\s*#?\s*(.+)$/);
+        const bullet = line.match(/^\s*[-*•]\s+(.+)$/);
+        const numbered = line.match(/^\s*\d+[.)]\s+(.+)$/);
+        if (heading) {
+          flushParagraph();
+          flushList();
+          out.push(`<p class="markdown-heading">${inline(heading[1])}</p>`);
+        } else if (bullet || numbered) {
+          flushParagraph();
+          const tag = bullet ? "ul" : "ol";
+          if (list?.tag !== tag) {
+            flushList();
+            list = { tag, items: [] };
+          }
+          list.items.push((bullet || numbered)[1]);
+        } else if (list && /^\s{2,}\S/.test(line)) {
+          list.items[list.items.length - 1] += `<br>${line.trim()}`;
+        } else {
+          flushList();
+          paragraph.push(line);
+        }
+      }
+      flushParagraph();
+      flushList();
+      return out.join("");
     })
     .join("");
 }
