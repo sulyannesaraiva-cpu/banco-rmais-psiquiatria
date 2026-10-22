@@ -2105,6 +2105,24 @@ body.theme-dark .exam-study-card {
   color: inherit;
 }
 
+/* Caderno de erros para imprimir (Hoje > Outras revisões). */
+.print-errors {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.print-errors select {
+  flex: 1 1 200px;
+  min-width: 0;
+}
+
+.print-errors .outline-btn {
+  min-height: 38px;
+  padding: 0 14px;
+}
+
 /* Comparação com os outros usuários. */
 #communityLine {
   margin: 8px 0 0;
