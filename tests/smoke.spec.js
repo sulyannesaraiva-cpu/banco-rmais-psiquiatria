@@ -270,7 +270,8 @@ test("só inéditas e ranking de temas por banca", async ({ page }) => {
   const run = await page.evaluate(() => ({ n: state.filtered.length, anyDone: state.filtered.some((q) => getProgress(q.id).grade) }));
   expect(run.n).toBeGreaterThan(100);
   expect(run.anyDone).toBe(false);
-  await page.evaluate(() => { endSession(); setTab("exams"); render(); });
+  await page.evaluate(() => endSession());
+  await goTab(page, "exams");
   await expect(page.locator("#examTopicRanking .ranking-list li").first()).toBeVisible();
   await page.locator("[data-ranking-train]").first().click();
   expect(await page.evaluate(() => state.sessionActive && state.filtered.length > 0)).toBe(true);
