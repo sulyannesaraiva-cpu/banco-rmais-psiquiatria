@@ -277,3 +277,21 @@ test("só inéditas e ranking de temas por banca", async ({ page }) => {
   expect(await page.evaluate(() => state.sessionActive && state.filtered.length > 0)).toBe(true);
   expect(errors).toEqual([]);
 });
+
+test("questões parecidas ao errar entram no bloco", async ({ page }) => {
+  const errors = await openSite(page);
+  await goTab(page, "activity");
+  await page.locator("#startSessionBtn").click();
+  const letter = await page.evaluate(() => {
+    const q = effectiveQuestion(currentQuestion());
+    return q.options.find((o) => o.letter !== q.correctAnswer).letter;
+  });
+  await page.locator(`#optionsList [data-option="${letter}"]`).click();
+  await page.locator("#confirmAnswerBtn").click();
+  await expect(page.locator("#similarPanel")).toContainText("Questões parecidas");
+  const before = await page.evaluate(() => state.filtered.length);
+  await page.locator('[data-similar-action="insert"]').click();
+  await expect(page.locator("#similarPanel")).toContainText("logo depois desta");
+  expect(await page.evaluate(() => state.filtered.length)).toBeGreaterThan(before);
+  expect(errors).toEqual([]);
+});

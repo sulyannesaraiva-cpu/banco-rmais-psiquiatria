@@ -5033,3 +5033,83 @@ body.sidebar-collapsed {
   color: var(--muted);
   font-size: 12px;
 }
+
+/* ===== Questões parecidas ao errar (js/similarQuestions.js) ===== */
+.similar-panel {
+  display: grid;
+  gap: 12px;
+  margin-top: 14px;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--panel-soft);
+}
+
+.similar-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.similar-head strong {
+  font-size: 15px;
+}
+
+.similar-head span {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.similar-list {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.similar-list li {
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: var(--panel);
+}
+
+.similar-list small {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.similar-list em {
+  font-style: normal;
+  font-weight: 600;
+}
+
+.similar-list em.new { color: var(--accent-strong); }
+.similar-list em.good { color: var(--good); }
+.similar-list em.bad { color: var(--bad); }
+
+.similar-list p {
+  margin: 4px 0 0;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.similar-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.similar-actions .concept-btn {
+  padding: 0 16px;
+}
+
+.similar-actions span,
+.similar-done {
+  flex: 1 1 200px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
