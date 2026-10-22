@@ -298,7 +298,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Coma e alterações",
       "topic": "Coma e alterações",
       "title": "Questão 4",
-      "text": "Mulher, 83 anos, é trazida ao pronto-socorro com queixa de sonolência excessiva há três dias.Apresenta antecedente de hipertensão arterial, dislipidemia e síndrome demencial, com dependência parcial para atividades básicas, e total para atividades instrumentais de vida diária. Sua filha conta que, ao longo do último mês, sua mãe se tornou mais apática, apresentou edema progressivo de membros inferiores e, há 1 semana, está confusa, estando há 3 dias bastante sonolenta, com piora no dia de hoje.Ao exame clínico, nota-se que a paciente tem pontuação zero na Richmond Agitation Sedation Scale (RASS),está desatenta e, em alguns momentos, apresenta pensamento desorganizado. Além disso, tem edema de membrosinferiores 3+/4+ e apresenta estertores finos em base direita.Considerando as hipóteses clínicas e a linha de cuidado, qual é a alternativa melhor associada ao caso clínico?",
+      "text": "Mulher, 83 anos, é trazida ao pronto-socorro com queixa de sonolência excessiva há três dias. Apresenta antecedente de hipertensão arterial, dislipidemia e síndrome demencial, com dependência parcial para atividades básicas, e total para atividades instrumentais de vida diária. Sua filha conta que, ao longo do último mês, sua mãe se tornou mais apática, apresentou edema progressivo de membros inferiores e, há 1 semana, está confusa, estando há 3 dias bastante sonolenta, com piora no dia de hoje. Ao exame clínico, nota-se que a paciente tem pontuação zero na Richmond Agitation Sedation Scale (RASS),está desatenta e, em alguns momentos, apresenta pensamento desorganizado. Além disso, tem edema de membrosinferiores 3+/4+ e apresenta estertores finos em base direita. Considerando as hipóteses clínicas e a linha de cuidado, qual é a alternativa melhor associada ao caso clínico?",
       "options": [
         {
           "letter": "A",
@@ -403,7 +403,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Coma e alterações",
       "topic": "Coma e alterações",
       "title": "Questão 7",
-      "text": "Um homem de quarenta anos de idade, em situação de rua, foi levado pelo SAMU ao hospital, devido a rebaixamento do nível de consciência em via pública. Na admissão, foram verificados sinais de desnutrição importante, hálito etílico e glicemia de 25 mg/dL. O paciente foi tratado exclusivamente com glicose endovenosa, evoluindo com melhora do nível deconsciência e surgimento de confusão mental, nistagmo e ataxia. Foi realizada uma tomografia de crânio, cujo resultado está representado abaixo.Com relação ao caso clínico acima, assinale a alternativa que apresenta, respectivamente, o diagnóstico mais provável eo tratamento indicado ao paciente",
+      "text": "Um homem de quarenta anos de idade, em situação de rua, foi levado pelo SAMU ao hospital, devido a rebaixamento do nível de consciência em via pública. Na admissão, foram verificados sinais de desnutrição importante, hálito etílico e glicemia de 25 mg/dL. O paciente foi tratado exclusivamente com glicose endovenosa, evoluindo com melhora do nível deconsciência e surgimento de confusão mental, nistagmo e ataxia. Foi realizada uma tomografia de crânio, cujo resultado está representado abaixo. Com relação ao caso clínico acima, assinale a alternativa que apresenta, respectivamente, o diagnóstico mais provável eo tratamento indicado ao paciente",
       "options": [
         {
           "letter": "A",
@@ -478,7 +478,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Coma e alterações",
       "topic": "Coma e alterações",
       "title": "Questão 9",
-      "text": "Idoso, 87 anos, institucionalizado, é levado ao pronto- -atendimento com quadro de agitação, agressividade e piora de alucinações há dois dias. Tem antecedente de síndrome demencial, hipertensão, dislipidemia e hipotireoidismo. Em sua chegada ao serviço hospitalar, encontra-se extremamente agitado e bastante agressivo, sendo impossível o exame físico ou a coleta de exames.Assinale a alternativa que apresenta a conduta mais apropriada nesse momento",
+      "text": "Idoso, 87 anos, institucionalizado, é levado ao pronto- -atendimento com quadro de agitação, agressividade e piora de alucinações há dois dias. Tem antecedente de síndrome demencial, hipertensão, dislipidemia e hipotireoidismo. Em sua chegada ao serviço hospitalar, encontra-se extremamente agitado e bastante agressivo, sendo impossível o exame físico ou a coleta de exames. Assinale a alternativa que apresenta a conduta mais apropriada nesse momento",
       "options": [
         {
           "letter": "A",
@@ -524,7 +524,7 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "C",
-          "text": "entro de Tratamento Intensivo (CTI)por complicações infecciosas após vários dias de internação em decorrência de fraturas múltiplas não esclarecidas tem amparo no Código de Ética Médica.CA não abertura de protocolo de morte encefálica em paciente admitido no CTI com quadro clínico sugestivo ecompatível com morte encefálica está justificada se o paciente for sabidamente portador de covid-19, não podendo, portanto, ser potencial doador de órgãos para transplante"
+          "text": "entro de Tratamento Intensivo (CTI)por complicações infecciosas após vários dias de internação em decorrência de fraturas múltiplas não esclarecidas tem amparo no Código de Ética Médica. CA não abertura de protocolo de morte encefálica em paciente admitido no CTI com quadro clínico sugestivo ecompatível com morte encefálica está justificada se o paciente for sabidamente portador de covid-19, não podendo, portanto, ser potencial doador de órgãos para transplante"
         },
         {
           "letter": "D",
@@ -572,7 +572,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Coma e alterações",
       "topic": "Coma e alterações",
       "title": "Questão 12",
-      "text": "Uma paciente de 13 anos foi levada ao pronto-socorro com rebaixamento do nível de consciência. A mãe relata que, no diaanterior, percebeu a filha mais lenta ao se deitar. Acordou com o barulho dela se “debatendo” de madrugada por cerca de cinco minutos, após os quais ela ficou muito sonolenta. Foi admitida sonolenta, com resposta inespecí>ca motora ao estímulo doloroso, falando palavras desconexas e abrindo os olhos ao ouvir seu nome. O exame neurológico >couprejudicado pela sonolência, mas apresentava discreta rigidez de nuca, sem outras alterações relevantes. Foi realizada uma tomografia computadorizada de crânio que veio sem alterações. O liquor foi colhido e estava límpido, com 10 células, 100%linfócitos, proteína e glicose normais. Optou-se por realizar uma ressonância magnética cerebral que apresentou discretohiper-sinal em T2 e FLAIR nas regiões temporais.Qual o valor da escala de coma de Glasgow na admissão do paciente?",
+      "text": "Uma paciente de 13 anos foi levada ao pronto-socorro com rebaixamento do nível de consciência. A mãe relata que, no diaanterior, percebeu a filha mais lenta ao se deitar. Acordou com o barulho dela se “debatendo” de madrugada por cerca de cinco minutos, após os quais ela ficou muito sonolenta. Foi admitida sonolenta, com resposta inespecí>ca motora ao estímulo doloroso, falando palavras desconexas e abrindo os olhos ao ouvir seu nome. O exame neurológico >couprejudicado pela sonolência, mas apresentava discreta rigidez de nuca, sem outras alterações relevantes. Foi realizada uma tomografia computadorizada de crânio que veio sem alterações. O liquor foi colhido e estava límpido, com 10 células, 100%linfócitos, proteína e glicose normais. Optou-se por realizar uma ressonância magnética cerebral que apresentou discretohiper-sinal em T2 e FLAIR nas regiões temporais. Qual o valor da escala de coma de Glasgow na admissão do paciente?",
       "options": [
         {
           "letter": "A",
@@ -639,7 +639,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Coma e alterações",
       "topic": "Coma e alterações",
       "title": "Questão 14",
-      "text": "Um paciente masculino, 21 anos, é admitido na emergência intubado após acidente de trânsito. Colisão de moto × carro.Apresenta-se com hematoma periorbital bilateral, otorragia esquerda, escala de coma de Glasgow com três pontos, pupilasmédias e não reativas à luz, ausência de reflexo córneo-palpebral e da tosse e sem respiração espontânea detectável. Sinaisvitais: pressão arterial de 110/70 mmHg, frequência cardíaca de 112 bpm, frequência respiratória determinada pelo ventiladorde 16 irpm, saturação e oxigênio de 92% com fração inspirada de 35% e temperatura axilar de 34,5°C.Assinale a alternativa correta em relação ao caso clínico apresentado",
+      "text": "Um paciente masculino, 21 anos, é admitido na emergência intubado após acidente de trânsito. Colisão de moto × carro. Apresenta-se com hematoma periorbital bilateral, otorragia esquerda, escala de coma de Glasgow com três pontos, pupilasmédias e não reativas à luz, ausência de reflexo córneo-palpebral e da tosse e sem respiração espontânea detectável. Sinaisvitais: pressão arterial de 110/70 mmHg, frequência cardíaca de 112 bpm, frequência respiratória determinada pelo ventiladorde 16 irpm, saturação e oxigênio de 92% com fração inspirada de 35% e temperatura axilar de 34,5°C.Assinale a alternativa correta em relação ao caso clínico apresentado",
       "options": [
         {
           "letter": "A",
@@ -744,7 +744,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Coma e alterações",
       "topic": "Coma e alterações",
       "title": "Questão 17",
-      "text": "Mulher, 85 anos, portadora de síndrome da fragilidade e hipertensão arterial sistêmica. Interna devido a pneumonia e evolui,no segundo dia de internação, com agitação e confusão mental. Ao exame físico: REG, confusa, desidratada 1+/4+. PA: 149x 68 mmHg, FC 92 bpm, FR: 18 irpm, satO₂: 94% com cateter nasal a 2 L/min. Ausculta pulmonar: MV presente, com roncos de transmissão difusos. Ausculta cardíaca sem alterações. Abdome doloroso à palpação difusa, sem massas ouvisceromegalias palpáveis.Em relação à alteração comportamental, qual é o tratamento medicamentoso mais adequado?",
+      "text": "Mulher, 85 anos, portadora de síndrome da fragilidade e hipertensão arterial sistêmica. Interna devido a pneumonia e evolui,no segundo dia de internação, com agitação e confusão mental. Ao exame físico: REG, confusa, desidratada 1+/4+. PA: 149x 68 mmHg, FC 92 bpm, FR: 18 irpm, satO₂: 94% com cateter nasal a 2 L/min. Ausculta pulmonar: MV presente, com roncos de transmissão difusos. Ausculta cardíaca sem alterações. Abdome doloroso à palpação difusa, sem massas ouvisceromegalias palpáveis. Em relação à alteração comportamental, qual é o tratamento medicamentoso mais adequado?",
       "options": [
         {
           "letter": "A",
@@ -781,7 +781,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Coma e alterações",
       "topic": "Coma e alterações",
       "title": "Questão 18",
-      "text": "Criança de 2 meses, admitida após traumatismo crânio-encefálico por acidente automobilístico (capotamento), com duas mortes na cena. Foi submetido a drenagem de hematoma subdural e craniectomia descompressiva. No segundo dia pós-operatório, encontra-se intubada, com escala de coma de Glasgow de 3, midríase fixa bilateral e ausência bilateralmente dos reflexos córneo-palpebrais, óculo-cefálicos, e vestíbulo-calóricos, além de ausência do reflexo de tosse. Sua pressãoarterial é de 70 x 52 mmHg, sua temperatura é de 37°C e seus exames de sangue mostram eletrólitos, função renal ehepática dentro dos valores normais. Retirados os sedativos (midazolam e fentanil) há 20 horas.Com relação ao diagnóstico de morte encefálica (ME), qual das condutas abaixo é a mais adequada neste momento?",
+      "text": "Criança de 2 meses, admitida após traumatismo crânio-encefálico por acidente automobilístico (capotamento), com duas mortes na cena. Foi submetido a drenagem de hematoma subdural e craniectomia descompressiva. No segundo dia pós-operatório, encontra-se intubada, com escala de coma de Glasgow de 3, midríase fixa bilateral e ausência bilateralmente dos reflexos córneo-palpebrais, óculo-cefálicos, e vestíbulo-calóricos, além de ausência do reflexo de tosse. Sua pressãoarterial é de 70 x 52 mmHg, sua temperatura é de 37°C e seus exames de sangue mostram eletrólitos, função renal ehepática dentro dos valores normais. Retirados os sedativos (midazolam e fentanil) há 20 horas. Com relação ao diagnóstico de morte encefálica (ME), qual das condutas abaixo é a mais adequada neste momento?",
       "options": [
         {
           "letter": "A",
@@ -841,7 +841,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Coma e alterações",
       "topic": "Coma e alterações",
       "title": "Questão 20",
-      "text": "Homem de 58 anos é levado ao pronto atendimento devido a dificuldade de deambulação. Sua esposa relata que o quadro teve início abrupto há três dias. Sem outros sintomas. Nega comorbidades ou uso regular de medicamentos. Pacienteconsome bebida alcoólica diariamente há mais de 5 anos; atualmente, média de 1/2 garrafa de cachaça ao dia. Ao examefísico, apresenta-se em regular estado geral, emagrecido, musculatura hipotrófica, hipocorado +/4+, hidratado, anictérico.PA 130X90mmHg, FC 90bpm, FR 20ipm, Tax 36,6°C. Exame dos aparelhos cardiovascular, respiratório e digestivo semalterações. Ao exame neurológico, apresenta-se alerta e orientado em relação a tempo, pessoa e lugar. Exame de parescranianos revela prova calórica negativa e nistagmo à mirada horizontal bilateral. Reflexo aquileu 1/1. Marcha lentificada, debase ampla e passos curtos. Realizou tomografia computadorizada de crânio sem contraste, à admissão, sem alterações.Quanto ao manejo deste paciente, é CORRETO afirmar que está indicado",
+      "text": "Homem de 58 anos é levado ao pronto atendimento devido a dificuldade de deambulação. Sua esposa relata que o quadro teve início abrupto há três dias. Sem outros sintomas. Nega comorbidades ou uso regular de medicamentos. Pacienteconsome bebida alcoólica diariamente há mais de 5 anos; atualmente, média de 1/2 garrafa de cachaça ao dia. Ao examefísico, apresenta-se em regular estado geral, emagrecido, musculatura hipotrófica, hipocorado +/4+, hidratado, anictérico. PA 130X90mmHg, FC 90bpm, FR 20ipm, Tax 36,6°C. Exame dos aparelhos cardiovascular, respiratório e digestivo semalterações. Ao exame neurológico, apresenta-se alerta e orientado em relação a tempo, pessoa e lugar. Exame de parescranianos revela prova calórica negativa e nistagmo à mirada horizontal bilateral. Reflexo aquileu 1/1. Marcha lentificada, debase ampla e passos curtos. Realizou tomografia computadorizada de crânio sem contraste, à admissão, sem alterações. Quanto ao manejo deste paciente, é CORRETO afirmar que está indicado",
       "options": [
         {
           "letter": "A",
@@ -961,7 +961,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Coma e alterações",
       "topic": "Coma e alterações",
       "title": "Questão 24",
-      "text": "Homem, 55 anos, etilista crônico de 1 litro de destilado/dia, apresenta perda da memória e quedas frequentes. Exame físico:ataxia de marcha e nistagmo, sem alterações de sensibilidade periférica. Exames laboratoriais: hemograma [Hb: 12 g/dl, Ht:36%, VCM: 93 * (VN: 80-95), HCM: 32 pg (VN: 27-33), plaquetas: 160.000/mm³ ], bilirrubina total 1,2 mg/dl (VN: 0,2-1,2).Qual é a deficiência vitamínica mais provável?",
+      "text": "Homem, 55 anos, etilista crônico de 1 litro de destilado/dia, apresenta perda da memória e quedas frequentes. Exame físico:ataxia de marcha e nistagmo, sem alterações de sensibilidade periférica. Exames laboratoriais: hemograma [Hb: 12 g/dl, Ht:36%, VCM: 93 * (VN: 80-95), HCM: 32 pg (VN: 27-33), plaquetas: 160.000/mm³ ], bilirrubina total 1,2 mg/dl (VN: 0,2-1,2). Qual é a deficiência vitamínica mais provável?",
       "options": [
         {
           "letter": "A",
@@ -998,7 +998,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Coma e alterações",
       "topic": "Coma e alterações",
       "title": "Questão 25",
-      "text": "Paciente de 34 anos, sexo feminino, deu entrada na emergência com queixa de cefaleia e embaçamento visual há 1 dia, semmelhora com o uso de analgésicos, evoluindo há algumas horas com confusão mental. Sem comorbidades prévias. Naadmissão, PA de 220/170mmHg, sendo realizada fundoscopia que demonstrou papiledema. Exame físico resumido: FC115bpm; FR 20irpm; respiratório: murmúrios simétricos e sem ruídos adventícios; cardiovascular: bulhas rítmicas,normofonéticas em 2 tempos, sem sopros; gastrointestinal: abdome globoso, flácido e indolor à palpação; membrosinferiores: pulsos cheios, edema simétrico +/IV; neurológico: Glasgow 14 (AO: 4 RM: 6 RV: 4), sem déficits focais.Tomografia de crânio de admissão normal. Sobre o caso clínico é INCORRETO afirmar:AA tomografia de crânio deve ser feita para descartar causa hemorrágica para o quadro",
+      "text": "Paciente de 34 anos, sexo feminino, deu entrada na emergência com queixa de cefaleia e embaçamento visual há 1 dia, semmelhora com o uso de analgésicos, evoluindo há algumas horas com confusão mental. Sem comorbidades prévias. Naadmissão, PA de 220/170mmHg, sendo realizada fundoscopia que demonstrou papiledema. Exame físico resumido: FC115bpm; FR 20irpm; respiratório: murmúrios simétricos e sem ruídos adventícios; cardiovascular: bulhas rítmicas,normofonéticas em 2 tempos, sem sopros; gastrointestinal: abdome globoso, flácido e indolor à palpação; membrosinferiores: pulsos cheios, edema simétrico +/IV; neurológico: Glasgow 14 (AO: 4 RM: 6 RV: 4), sem déficits focais. Tomografia de crânio de admissão normal. Sobre o caso clínico é INCORRETO afirmar:AA tomografia de crânio deve ser feita para descartar causa hemorrágica para o quadro",
       "options": [
         {
           "letter": "A",
@@ -1126,7 +1126,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Coma e alterações",
       "topic": "Coma e alterações",
       "title": "Questão 29",
-      "text": "Paciente, sexo feminino, 80 anos, é internada na enfermaria de clínica médica com quadro de pneumonia bacteriana grave.Tem antecedente de Hipertensão Arterial Sistêmica (HAS) em uso de losartana 50 mg/dia. É lúcida, independente para asatividades básicas de vida diária e reside sozinha. No período noturno do primeiro dia de internação, apresenta quadro de agitação, retira o acesso venoso, desesperando-se de medo e não respondendo às perguntas.Em relação ao quadro apresentado, assinale a afirmativa correta",
+      "text": "Paciente, sexo feminino, 80 anos, é internada na enfermaria de clínica médica com quadro de pneumonia bacteriana grave. Tem antecedente de Hipertensão Arterial Sistêmica (HAS) em uso de losartana 50 mg/dia. É lúcida, independente para asatividades básicas de vida diária e reside sozinha. No período noturno do primeiro dia de internação, apresenta quadro de agitação, retira o acesso venoso, desesperando-se de medo e não respondendo às perguntas. Em relação ao quadro apresentado, assinale a afirmativa correta",
       "options": [
         {
           "letter": "A",
@@ -1197,7 +1197,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Coma e alterações",
       "topic": "Coma e alterações",
       "title": "Questão 31",
-      "text": "A síndrome confusional aguda (delirium) é um diagnóstico psiquiátrico comum nos hospitais gerais.Quanto ao tratamento do delirium, é correto afirmar: A",
+      "text": "A síndrome confusional aguda (delirium) é um diagnóstico psiquiátrico comum nos hospitais gerais. Quanto ao tratamento do delirium, é correto afirmar: A",
       "options": [
         {
           "letter": "A",
@@ -1976,7 +1976,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Coma e alterações",
       "topic": "Coma e alterações",
       "title": "Questão 55",
-      "text": "Paciente de 90 anos dá entrada no pronto-socorro com quadro de agitação, agressividade e piora de alucinações, relatado pela cuidadora, com início há 2 dias. Tem antecedente de síndrome demencial, hipertensão, dislipidemia e hipotireodismo.Paciente muito agitado ao exame físico, difícil de examinar, agressivo com equipe assistencial. Qual melhor conduta nesse momento?",
+      "text": "Paciente de 90 anos dá entrada no pronto-socorro com quadro de agitação, agressividade e piora de alucinações, relatado pela cuidadora, com início há 2 dias. Tem antecedente de síndrome demencial, hipertensão, dislipidemia e hipotireodismo. Paciente muito agitado ao exame físico, difícil de examinar, agressivo com equipe assistencial. Qual melhor conduta nesse momento?",
       "options": [
         {
           "letter": "A",
@@ -2047,7 +2047,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Coma e alterações",
       "topic": "Coma e alterações",
       "title": "Questão 57",
-      "text": "Homem, 41 anos, hipertenso e etilista crônico. Há 20 dias apresenta lesões de pele (ver figuras) associadas à diarreia.Familiares relatam que o paciente apresenta episódios de desorientação no tempo e espaço. Nega uso de medicações.Qual o tratamento mais adequado?",
+      "text": "Homem, 41 anos, hipertenso e etilista crônico. Há 20 dias apresenta lesões de pele (ver figuras) associadas à diarreia. Familiares relatam que o paciente apresenta episódios de desorientação no tempo e espaço. Nega uso de medicações. Qual o tratamento mais adequado?",
       "options": [
         {
           "letter": "A",
@@ -2077,7 +2077,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Coma e alterações",
       "topic": "Coma e alterações",
       "title": "Questão 58",
-      "text": "Homem, 28 anos de idade, recebeu 20 ml de glicose 50% endovenosa em atendimento por intoxicação alcoólica aguda.Após 20 minutos, o paciente evoluiu com confusão mental. Neste momento, o paciente encontrava-se com glicemia capilar de 100 mg/dl, afebril, descorado, desnutrido, sem sinais de comprometimento respiratório ou cardíaco. Ao exame neurológico observa-se marcha com base alargada, dismetria à manobra índex-nariz bilateralmente, nistagmo horizontal quebate para a esquerda ao olhar para a esquerda e bate para direita ao olhar para a direita; paresia do músculo ocular retolateral bilateralmente. Qual é a principal hipótese diagnóstica para o quadro neurológico?",
+      "text": "Homem, 28 anos de idade, recebeu 20 ml de glicose 50% endovenosa em atendimento por intoxicação alcoólica aguda. Após 20 minutos, o paciente evoluiu com confusão mental. Neste momento, o paciente encontrava-se com glicemia capilar de 100 mg/dl, afebril, descorado, desnutrido, sem sinais de comprometimento respiratório ou cardíaco. Ao exame neurológico observa-se marcha com base alargada, dismetria à manobra índex-nariz bilateralmente, nistagmo horizontal quebate para a esquerda ao olhar para a esquerda e bate para direita ao olhar para a direita; paresia do músculo ocular retolateral bilateralmente. Qual é a principal hipótese diagnóstica para o quadro neurológico?",
       "options": [
         {
           "letter": "A",
@@ -2208,7 +2208,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Coma e alterações",
       "topic": "Coma e alterações",
       "title": "Questão 62",
-      "text": "Mulher, 78 anos, com história de diabete melito e hipertensão arterial, foi encontrada por familiares desacordada em casa. No momento, está internada em Unidade de Tratamento Intensivo, em ventilação mecânica, em coma arreceptivo,Glasgow 3, com PA 70/30 mmHg em uso de noradrenalina (0,8 mcg/Kg/min) e diurese de 100 ml nas últimas 6 horas.Tomografia computadorizada de crânio sem alterações, hemograma com 18.000 leucócitos/mm³ com 10% de bastonados,sódio de 159 mEq/L e creatinina de 2,4 mg/dl. Na suspeita de morte encefálica, o plantonista da unidade decide realizar oprotocolo de diagnóstico. Considerando o caso, assinale a alternativa CORRETA",
+      "text": "Mulher, 78 anos, com história de diabete melito e hipertensão arterial, foi encontrada por familiares desacordada em casa. No momento, está internada em Unidade de Tratamento Intensivo, em ventilação mecânica, em coma arreceptivo,Glasgow 3, com PA 70/30 mmHg em uso de noradrenalina (0,8 mcg/Kg/min) e diurese de 100 ml nas últimas 6 horas. Tomografia computadorizada de crânio sem alterações, hemograma com 18.000 leucócitos/mm³ com 10% de bastonados,sódio de 159 mEq/L e creatinina de 2,4 mg/dl. Na suspeita de morte encefálica, o plantonista da unidade decide realizar oprotocolo de diagnóstico. Considerando o caso, assinale a alternativa CORRETA",
       "options": [
         {
           "letter": "A",
@@ -2404,7 +2404,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Coma e alterações",
       "topic": "Coma e alterações",
       "title": "Questão 68",
-      "text": "Paciente de 80 anos, independente para atividades básicas de vida diária, hipertenso, em uso de Enalapril 5mg ao dia.Encaminhado à enfermaria de clínica médica para tratamento de infecção urinária. Chegou desidratado e oligúrico, sendopassada sonda vesical de demora para controle de diurese. Segundo familiar no segundo dia de internação começou aapresentar desatenção, alternância de períodos de sonolência com períodos de agitação e pensamento desorganizado.Dentre as alternativas abaixo, qual NÃO representa fator predisponente para o diagnóstico feito após a admissão dopaciente",
+      "text": "Paciente de 80 anos, independente para atividades básicas de vida diária, hipertenso, em uso de Enalapril 5mg ao dia. Encaminhado à enfermaria de clínica médica para tratamento de infecção urinária. Chegou desidratado e oligúrico, sendopassada sonda vesical de demora para controle de diurese. Segundo familiar no segundo dia de internação começou aapresentar desatenção, alternância de períodos de sonolência com períodos de agitação e pensamento desorganizado. Dentre as alternativas abaixo, qual NÃO representa fator predisponente para o diagnóstico feito após a admissão dopaciente",
       "options": [
         {
           "letter": "A",
@@ -2916,7 +2916,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Coma e alterações",
       "topic": "Coma e alterações",
       "title": "Questão 84",
-      "text": "Um paciente, de 50 anos, foi internado para colocação de uma prótese total do joelho esquerdo devido à uma osteoartrite.Estava assintomático no leito da enfermaria, todavia, no 5º dia de PO, o paciente iniciou um quadro de confusão mental,choro sem motivo aparente, desorientação temporal e espacial e delírio persecutório. Sobre esse caso clinico, assinale aalternativa correta:A",
+      "text": "Um paciente, de 50 anos, foi internado para colocação de uma prótese total do joelho esquerdo devido à uma osteoartrite. Estava assintomático no leito da enfermaria, todavia, no 5º dia de PO, o paciente iniciou um quadro de confusão mental,choro sem motivo aparente, desorientação temporal e espacial e delírio persecutório. Sobre esse caso clinico, assinale aalternativa correta:A",
       "options": [
         {
           "letter": "A",
@@ -3243,7 +3243,7 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "C",
-          "text": "ontralateral.BMidríase Ipsilateral e Paresia Contralateral.CMiose Ipsilateral e Paresia Contralateral"
+          "text": "ontralateral. BMidríase Ipsilateral e Paresia Contralateral. CMiose Ipsilateral e Paresia Contralateral"
         },
         {
           "letter": "D",
@@ -3332,7 +3332,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Coma e alterações",
       "topic": "Coma e alterações",
       "title": "Questão 98",
-      "text": "Criança de cinco anos de idade chega à emergência com alteração do estado mental, em coma. Quais os passos fundamentais da avaliação neurológica para essa criança, além do nível de consciência e do padrão respiratório?A",
+      "text": "Criança de cinco anos de idade chega à emergência com alteração do estado mental, em coma. Quais os passos fundamentais da avaliação neurológica para essa criança, além do nível de consciência e do padrão respiratório? A",
       "options": [
         {
           "letter": "A",
@@ -3399,7 +3399,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Coma e alterações",
       "topic": "Coma e alterações",
       "title": "Questão 100",
-      "text": "Mulher, setenta anos, hígida, lúcida, apresentou queda da própria altura com fratura de fêmur. Foi internada para tratamento.Após o procedimento cirúrgico, durante a internação, apresentou confusão mental com inversão do ciclo sono-vigília. Nãoreconhecia os filhos e apresentava irritação intensa. A principal hipótese nesse caso seria:Adelirium; Bacidente vascular encefálico;Cdemência;Dchoque hipovolêmico. 4000003092 Respostas:1D2 3C4A5B6C7A8C9C10C11B12C13C14B15B16B17D18A19D20B21A22C23A24C25C26D27C28D29D30A31A32B33B34B35E36B37B38C39E40D41B42B43B44E45C46A47B48D49D50A51E52C53",
+      "text": "Mulher, setenta anos, hígida, lúcida, apresentou queda da própria altura com fratura de fêmur. Foi internada para tratamento. Após o procedimento cirúrgico, durante a internação, apresentou confusão mental com inversão do ciclo sono-vigília. Nãoreconhecia os filhos e apresentava irritação intensa. A principal hipótese nesse caso seria: Adelirium; Bacidente vascular encefálico; Cdemência; Dchoque hipovolêmico. 4000003092 Respostas:1D2 3C4A5B6C7A8C9C10C11B12C13C14B15B16B17D18A19D20B21A22C23A24C25C26D27C28D29D30A31A32B33B34B35E36B37B38C39E40D41B42B43B44E45C46A47B48D49D50A51E52C53",
       "options": [
         {
           "letter": "A",
@@ -3534,7 +3534,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Demências",
       "topic": "Demências",
       "title": "Questão 4",
-      "text": "Demência FrontotemporalSeu Edinaílson, de 60 anos, é trazido para consulta por seus dois Elhos: Edberto e Ednardo. Ele vem em cadeira de rodas,mas está com punhos e tornozelos contidos. Segue o relato dos Elhos - Papai sempre foi um mecânico de referência aquino bairro, mas tem dois anos que as coisas desandaram. A gente foi vendo ele Ecar cada vez mais magro e não entendia oque estava acontecendo. Depois, o salário começou a diminuir, mas quando a gente perguntava, ele Ecava muito irritado.Levamos numa clínica popular, onde ele fez uma bateria de exames para diabetes, pressão, hepatite e até sífilis e HIV, masnunca deu nada. Ele começou a perder o prazo dos serviços e começou a fazer os serviços pela metade, mas o pior foique ele começou a destratar todo mundo. Ele sempre foi uma pessoa calma, mas começou a falar palavrão e querer bater nos outros. A gente só foi saber disso depois de um ano, porque ele chegou em casa machucado porque tinha se envolvido em briga. A gente foi na oEcina e o dono falou que ele não tinha mais condições de trabalhar. Ele disse que papai começoua urinar no chão do banheiro, que não comia mais e que não se vestia mais direito. Levamos ele para cuidar em casa, masele estava muito teimoso e briguento. Não queria comer, não queria tomar banho e não queria se vestir. Estamos levando do jeito que dá, mas quando ele começou a se urinar e se sujar, a gente viu que precisava vir pedir ajuda de novo. Ele nãoestá mais sabendo mexer em dinheiro, não toma mais banho sem ajuda e agora começou a engasgar com a comida. Eleconsegue andar e tem força, mas a gente teve que amarrar ele nessa cadeira, porque ele Eca querendo pegar nas mulheres,é horrível. Ele lembra da gente, lembra da nossa mãe, lembra dos irmãos, mas a gente não reconhece mais ele.Os Elhos trouxeram exames laboratoriais recentes. Não havia alteração endócrino-metabólica significativa, nem hidroeletrolítica ou autoimune. Os exames de rastreamento de ISTs (HIV, sífilis e hepatites) também estavam sem alteraçõessigniEcativas. Ao se aproximar para realizar o exame físico de Seu Edinaílson, ele se mostrava calmo, mas poucocooperativo. Ele soube dizer o nome completo e reconheceu os Elhos. Estava desorientado em espaço. O exame físico não revelou alterações clínicas significantes.Assinale a alternativa com o diagnóstico etiológico mais provável para a síndrome demencial apresentada no quadro",
+      "text": "Demência FrontotemporalSeu Edinaílson, de 60 anos, é trazido para consulta por seus dois Elhos: Edberto e Ednardo. Ele vem em cadeira de rodas,mas está com punhos e tornozelos contidos. Segue o relato dos Elhos - Papai sempre foi um mecânico de referência aquino bairro, mas tem dois anos que as coisas desandaram. A gente foi vendo ele Ecar cada vez mais magro e não entendia oque estava acontecendo. Depois, o salário começou a diminuir, mas quando a gente perguntava, ele Ecava muito irritado. Levamos numa clínica popular, onde ele fez uma bateria de exames para diabetes, pressão, hepatite e até sífilis e HIV, masnunca deu nada. Ele começou a perder o prazo dos serviços e começou a fazer os serviços pela metade, mas o pior foique ele começou a destratar todo mundo. Ele sempre foi uma pessoa calma, mas começou a falar palavrão e querer bater nos outros. A gente só foi saber disso depois de um ano, porque ele chegou em casa machucado porque tinha se envolvido em briga. A gente foi na oEcina e o dono falou que ele não tinha mais condições de trabalhar. Ele disse que papai começoua urinar no chão do banheiro, que não comia mais e que não se vestia mais direito. Levamos ele para cuidar em casa, masele estava muito teimoso e briguento. Não queria comer, não queria tomar banho e não queria se vestir. Estamos levando do jeito que dá, mas quando ele começou a se urinar e se sujar, a gente viu que precisava vir pedir ajuda de novo. Ele nãoestá mais sabendo mexer em dinheiro, não toma mais banho sem ajuda e agora começou a engasgar com a comida. Eleconsegue andar e tem força, mas a gente teve que amarrar ele nessa cadeira, porque ele Eca querendo pegar nas mulheres,é horrível. Ele lembra da gente, lembra da nossa mãe, lembra dos irmãos, mas a gente não reconhece mais ele. Os Elhos trouxeram exames laboratoriais recentes. Não havia alteração endócrino-metabólica significativa, nem hidroeletrolítica ou autoimune. Os exames de rastreamento de ISTs (HIV, sífilis e hepatites) também estavam sem alteraçõessigniEcativas. Ao se aproximar para realizar o exame físico de Seu Edinaílson, ele se mostrava calmo, mas poucocooperativo. Ele soube dizer o nome completo e reconheceu os Elhos. Estava desorientado em espaço. O exame físico não revelou alterações clínicas significantes. Assinale a alternativa com o diagnóstico etiológico mais provável para a síndrome demencial apresentada no quadro",
       "options": [
         {
           "letter": "A",
@@ -3564,7 +3564,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Demências",
       "topic": "Demências",
       "title": "Questão 5",
-      "text": "SM, 78 anos, físico, antecedente de HAS e episódio prévio de hemorragia subaracnóidea há 10 anos, informa que há 6meses vem apresentando alteração de marcha caracterizada por uma base de sustentação alargada, com os artelhosdesviados lateralmente, postura ligeiramente Ketida, aumento do balanço do tronco durante a marcha e diminuição da alturae comprimento dos passos. Há lentidão e hesitação ao iniciar a marcha com os pés parecendo grudados ao chão. Nesseperíodo, também passou a apresentar incontinência urinária. A esposa relata que tem percebido o paciente com déficit deatenção, alterações de comportamento e de personalidade e disfunção executiva manifestada por diminuição do processamento de informações complexas, e dificuldade para manipular novos conhecimentos. O paciente traz exameslaboratoriais normais, recentes, incluindo hemograma, eletrólitos, função renal e tireoidiana, enzimas hepáticas, glicemia ehemoglobina glicada, dosagem de vitaminas B12 e ácido fólico, lipidograma, VDRL e anti-HIV. A RM de crânio mostrouatroEa global leve e escala de atroEa mesial temporal (MTA) de 1; microangiopatia periventricular Fazekas 1, além de aumento dos ventrículos, acompanhado de arredondamento dos cornos frontais e alargamento dos cornos temporais.Assinale, dentre as alternativas abaixo, a hipótese diagnóstica adequada para o caso clínico acima",
+      "text": "SM, 78 anos, físico, antecedente de HAS e episódio prévio de hemorragia subaracnóidea há 10 anos, informa que há 6meses vem apresentando alteração de marcha caracterizada por uma base de sustentação alargada, com os artelhosdesviados lateralmente, postura ligeiramente Ketida, aumento do balanço do tronco durante a marcha e diminuição da alturae comprimento dos passos. Há lentidão e hesitação ao iniciar a marcha com os pés parecendo grudados ao chão. Nesseperíodo, também passou a apresentar incontinência urinária. A esposa relata que tem percebido o paciente com déficit deatenção, alterações de comportamento e de personalidade e disfunção executiva manifestada por diminuição do processamento de informações complexas, e dificuldade para manipular novos conhecimentos. O paciente traz exameslaboratoriais normais, recentes, incluindo hemograma, eletrólitos, função renal e tireoidiana, enzimas hepáticas, glicemia ehemoglobina glicada, dosagem de vitaminas B12 e ácido fólico, lipidograma, VDRL e anti-HIV. A RM de crânio mostrouatroEa global leve e escala de atroEa mesial temporal (MTA) de 1; microangiopatia periventricular Fazekas 1, além de aumento dos ventrículos, acompanhado de arredondamento dos cornos frontais e alargamento dos cornos temporais. Assinale, dentre as alternativas abaixo, a hipótese diagnóstica adequada para o caso clínico acima",
       "options": [
         {
           "letter": "A",
@@ -3640,7 +3640,7 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "D",
-          "text": "NA, sódio e potássio, função hepática, creatinina, sorologia para HIV, VDRL, Vitamina B12, ácido fólico, exame de imagem (tomografia ou ressonância de encéfalo).DVitamina B12, ácido fólico, tempo de protrombina, DHL, TSH, creatinina, urina I, FAN, exame deimagem (tomografia ou ressonância de encéfalo), função hepática"
+          "text": "NA, sódio e potássio, função hepática, creatinina, sorologia para HIV, VDRL, Vitamina B12, ácido fólico, exame de imagem (tomografia ou ressonância de encéfalo). DVitamina B12, ácido fólico, tempo de protrombina, DHL, TSH, creatinina, urina I, FAN, exame deimagem (tomografia ou ressonância de encéfalo), função hepática"
         }
       ],
       "sourceId": "4000169683",
@@ -3876,7 +3876,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Demências",
       "topic": "Demências",
       "title": "Questão 15",
-      "text": "Analise as seguintes assertivas em relação ao diagnóstico das demências: I. A avaliação da depressão é recomendável, pois frequentemente mascara um quadro demencial.II. A etiologia não é importante, já que os processos demenciais são inexoráveis e progressivos.III. O diagnóstico é essencialmente clínico, mas pode ser dificultado pela presença de múltiplas comorbidades.Quais estão corretas?A",
+      "text": "Analise as seguintes assertivas em relação ao diagnóstico das demências: I. A avaliação da depressão é recomendável, pois frequentemente mascara um quadro demencial. II. A etiologia não é importante, já que os processos demenciais são inexoráveis e progressivos. III. O diagnóstico é essencialmente clínico, mas pode ser dificultado pela presença de múltiplas comorbidades. Quais estão corretas? A",
       "options": [
         {
           "letter": "A",
@@ -3913,7 +3913,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Demências",
       "topic": "Demências",
       "title": "Questão 16",
-      "text": "Considere o caso clínico abaixo e os personagens nele ilustrados para responder. \nApós ser aprovado e ingressar no Programa de Residência Médica em Medicina de Família e Comunidade, você é direcionado para uma Unidade de Atenção Primária à Saúde (UAPS) para ser recebido pelo médico preceptor da unidade. Em sua primeira participação de reunião de equipe, uma das agentes comunitárias de saúde (ACS) da equipe do médico preceptor traz o relato de uma gestante de sua micro área que não procurou a Unidade de Saúde para começar o pré-natal. A gestante era Vanessa e ela era antiga conhecida da equipe, porque seu Enado pai, Seu Odair, fora uma liderança comunitária e era muito querido por todos. Vanessa tinha a primeira consulta de pré-natal agendada para o primeiro horário depois da reunião de equipe. Dr. Marcos Júlio, seu preceptor, relata que Vanessa nunca teve boa relação com os pais e saiude casa cedo, passando a morar, aos 14 anos, na casa de Ubiratan, seu primeiro parceiro. Após alguns anos morando juntos, Vanessa engravidou e chegou a ser acompanhada pela UAPS no pré-natal, mas teve perda gravídica com aproximadamente 12 semanas de seguimento. Durante esse acompanhamento pré-natal, a equipe ficou ciente de que Vanessa vivia em contexto de violência doméstica, mas continuava vivendo com Ubiratan, porque não aceitava voltar para a casa dos pais. Por volta de seus 24 anos, Vanessa teve episódio de hemiplegia desproporcional em dimídio esquerdo, desvio de rima labial e disartria, enquanto trabalhava em uma casa como diarista. Foi levada à urgência e hospitalizada. Durante a hospitalização, confirmou-se um infarto cerebral. A família de Vanessa possui histórico de AVCs em idades precoces: Vanusa apresentou episódio de AVC durante uma de suas gestações e Dona Enzarina teria apresentado o primeiro AVC antes da menopausa.Segundo a assistente social do hospital em que Vanessa ficou internada por quase dois meses, Ubiratan nunca teria realizado uma visita, mas Edberto, um ex-namorado, foi companhia assídua. Após a alta hospitalar, Vanessa descobriu que Ubiratan estava vivendo com outra mulher e se mudou para casa de Edberto, que a acolheu, a despeito da não-aceitação do pai de Edberto, Seu Eduardo. Depois de seis anos morando juntos, Vanessa engravidou novamente, mas não procurou a UAPS A ACS fazia visitas domiciliares na mesma rua em que Edberto e Vanessa moram; quando viu Vanessa, já com barriga grávida, varrendo a calçada. Após breve conversa, a ACS agenda atendimento para Vanessa na UAPS. Em um turno de demanda programada na Unidade, Vanusa, irmã de Vanessa, traz dona Benzarina para atendimento. A consulta é para mostrar exames solicitados há seis meses. O registro no prontuário traz “síndrome demencial com predominânciaa de disfunção executiva, sintomas neurológicos focais, síndrome pseudobulbar e início precoce de alteração de marcha”. A ressonância nuclear magnética de crânio evidencia acometimento extenso de substância branca, no gdo cíngulogulo, no lobo temporal medial e no tálamo. Assinale a alternativa com o diagnóstico mais provável.",
+      "text": "Considere o caso clínico abaixo e os personagens nele ilustrados para responder. \nApós ser aprovado e ingressar no Programa de Residência Médica em Medicina de Família e Comunidade, você é direcionado para uma Unidade de Atenção Primária à Saúde (UAPS) para ser recebido pelo médico preceptor da unidade. Em sua primeira participação de reunião de equipe, uma das agentes comunitárias de saúde (ACS) da equipe do médico preceptor traz o relato de uma gestante de sua micro área que não procurou a Unidade de Saúde para começar o pré-natal. A gestante era Vanessa e ela era antiga conhecida da equipe, porque seu Enado pai, Seu Odair, fora uma liderança comunitária e era muito querido por todos. Vanessa tinha a primeira consulta de pré-natal agendada para o primeiro horário depois da reunião de equipe. Dr. Marcos Júlio, seu preceptor, relata que Vanessa nunca teve boa relação com os pais e saiude casa cedo, passando a morar, aos 14 anos, na casa de Ubiratan, seu primeiro parceiro. Após alguns anos morando juntos, Vanessa engravidou e chegou a ser acompanhada pela UAPS no pré-natal, mas teve perda gravídica com aproximadamente 12 semanas de seguimento. Durante esse acompanhamento pré-natal, a equipe ficou ciente de que Vanessa vivia em contexto de violência doméstica, mas continuava vivendo com Ubiratan, porque não aceitava voltar para a casa dos pais. Por volta de seus 24 anos, Vanessa teve episódio de hemiplegia desproporcional em dimídio esquerdo, desvio de rima labial e disartria, enquanto trabalhava em uma casa como diarista. Foi levada à urgência e hospitalizada. Durante a hospitalização, confirmou-se um infarto cerebral. A família de Vanessa possui histórico de AVCs em idades precoces: Vanusa apresentou episódio de AVC durante uma de suas gestações e Dona Enzarina teria apresentado o primeiro AVC antes da menopausa. Segundo a assistente social do hospital em que Vanessa ficou internada por quase dois meses, Ubiratan nunca teria realizado uma visita, mas Edberto, um ex-namorado, foi companhia assídua. Após a alta hospitalar, Vanessa descobriu que Ubiratan estava vivendo com outra mulher e se mudou para casa de Edberto, que a acolheu, a despeito da não-aceitação do pai de Edberto, Seu Eduardo. Depois de seis anos morando juntos, Vanessa engravidou novamente, mas não procurou a UAPS A ACS fazia visitas domiciliares na mesma rua em que Edberto e Vanessa moram; quando viu Vanessa, já com barriga grávida, varrendo a calçada. Após breve conversa, a ACS agenda atendimento para Vanessa na UAPS. Em um turno de demanda programada na Unidade, Vanusa, irmã de Vanessa, traz dona Benzarina para atendimento. A consulta é para mostrar exames solicitados há seis meses. O registro no prontuário traz “síndrome demencial com predominânciaa de disfunção executiva, sintomas neurológicos focais, síndrome pseudobulbar e início precoce de alteração de marcha”. A ressonância nuclear magnética de crânio evidencia acometimento extenso de substância branca, no gdo cíngulogulo, no lobo temporal medial e no tálamo. Assinale a alternativa com o diagnóstico mais provável.",
       "options": [
         {
           "letter": "A",
@@ -3957,7 +3957,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Demências",
       "topic": "Demências",
       "title": "Questão 17",
-      "text": "ACR, 82 anos, advogado aposentado, há 6 meses passou a apresentar esquecimento para fatos recentes, tendo passado aesquecer de pagar as contas da casa e teve sua energia cortada pela companhia elétrica. Relata que no Em da tarde écomum ver uma criança desconhecida brincando na varanda de sua casa. Relata também sono agitado com muitos pesadelos frequentes. A esposa informa que há dias em que ele está muito apático, Ecando isolado, sem se comunicar. Oexame físico é normal exceto pela presença de rigidez em roda denteada em punho direito. Mini-exame do estado mental(MEEM) foi 25/30. Durante o MEEM respondeu que estava no consultório de seu dentista, lembrou duas das três palavrassolicitadas na evocação e errou três cálculos. Os exames laboratoriais são normais, exceto por anemia leve observada no hemograma (Hb = 11g/dl; Ht 38%; VCM 100 K; HCM 31 pg). A dosagem de vitamina B12 foi 259 pg/ml (VR: 239 a 931pg/ml). A Ressonância magnética de crânio mostrou atrofia global leve e escala de atrofia mesial temporal (MTA) de 1.Qual a principal hipótese diagnóstica para o caso clínico?ADoença de",
+      "text": "ACR, 82 anos, advogado aposentado, há 6 meses passou a apresentar esquecimento para fatos recentes, tendo passado aesquecer de pagar as contas da casa e teve sua energia cortada pela companhia elétrica. Relata que no Em da tarde écomum ver uma criança desconhecida brincando na varanda de sua casa. Relata também sono agitado com muitos pesadelos frequentes. A esposa informa que há dias em que ele está muito apático, Ecando isolado, sem se comunicar. Oexame físico é normal exceto pela presença de rigidez em roda denteada em punho direito. Mini-exame do estado mental(MEEM) foi 25/30. Durante o MEEM respondeu que estava no consultório de seu dentista, lembrou duas das três palavrassolicitadas na evocação e errou três cálculos. Os exames laboratoriais são normais, exceto por anemia leve observada no hemograma (Hb = 11g/dl; Ht 38%; VCM 100 K; HCM 31 pg). A dosagem de vitamina B12 foi 259 pg/ml (VR: 239 a 931pg/ml). A Ressonância magnética de crânio mostrou atrofia global leve e escala de atrofia mesial temporal (MTA) de 1.Qual a principal hipótese diagnóstica para o caso clínico? ADoença de",
       "options": [
         {
           "letter": "A",
@@ -4097,7 +4097,7 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "E",
-          "text": "nanças no lar e saber os horários das medicações fazem parte de atividades INSTRUMENTAIS da vida diária. IV. Atividades ocupacionais, atividades sociais, participação na comunidade, atividades recreativas, direção veicular,desempenho de papéis na família como, por exemplo, cuidador fazem parte das atividades AVANÇADAS da vida diária.ATodas estão corretas.BI e II estão corretas.CII, III e IV estão corretas.DTodas estão erradas"
+          "text": "nanças no lar e saber os horários das medicações fazem parte de atividades INSTRUMENTAIS da vida diária. IV. Atividades ocupacionais, atividades sociais, participação na comunidade, atividades recreativas, direção veicular,desempenho de papéis na família como, por exemplo, cuidador fazem parte das atividades AVANÇADAS da vida diária. ATodas estão corretas. BI e II estão corretas. CII, III e IV estão corretas. DTodas estão erradas"
         }
       ],
       "sourceId": "4000171633",
@@ -4141,7 +4141,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Demências",
       "topic": "Demências",
       "title": "Questão 23",
-      "text": "A presença do idoso na atenção primária está cada vez mais prevalente, como reKexo do aumento da expectativa de vidade toda população brasileira. o médico de mfc, por isso, necessita cada vez mais de conhecimentos sobre essa faixa etária.O diagnóstico provável de doença de alzheimer inclui, EXCETO",
+      "text": "A presença do idoso na atenção primária está cada vez mais prevalente, como reKexo do aumento da expectativa de vidade toda população brasileira. o médico de mfc, por isso, necessita cada vez mais de conhecimentos sobre essa faixa etária. O diagnóstico provável de doença de alzheimer inclui, EXCETO",
       "options": [
         {
           "letter": "A",
@@ -4171,7 +4171,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Demências",
       "topic": "Demências",
       "title": "Questão 24",
-      "text": "A respeito das demências secundárias, ou aquelas que têm lesão estrutural do sistema nervoso central, assinale a alternativacorreta. AA infecção pelo HIV é a causa mais comum.B",
+      "text": "A respeito das demências secundárias, ou aquelas que têm lesão estrutural do sistema nervoso central, assinale a alternativacorreta. AA infecção pelo HIV é a causa mais comum. B",
       "options": [
         {
           "letter": "A",
@@ -4217,7 +4217,7 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "C",
-          "text": "omputadorizada de Crânio.CV"
+          "text": "omputadorizada de Crânio. CV"
         },
         {
           "letter": "D",
@@ -4239,7 +4239,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Demências",
       "topic": "Demências",
       "title": "Questão 26",
-      "text": "Homem, 74 anos, professor aposentado, comparece à consulta médica acompanhado do Elho, queixando-se deesquecimento progressivo há um ano. Relata que tem se esquecido de dar recados, pagar contas e senhas dos cartões decrédito. Há uma semana se perdeu na rua quando foi pegar a neta na escola. Exame físico: bom estado geral, consciente eorientado no tempo e no espaço; neurológico: sem alterações; mini-exame do estado mental: 24/30; aparelhos cardiovascular e respiratório: normal. Exames laboratoriais: TSH = 2,9 μUI/mL (VN: 0,4-4,5); vitamina B12 = 742 pg/mL (VN:174,0-878,0); VDRL não reagente; anti-HIV não reagente; hemograma, função renal, eletrólitos e transaminases normais.Realizada tomograEa de crânio sem contraste que evidenciou redução difusa do volume encefálico, proporcional para afaixa etária. Assinale a alternativa que apresenta o diagnóstico mais provável",
+      "text": "Homem, 74 anos, professor aposentado, comparece à consulta médica acompanhado do Elho, queixando-se deesquecimento progressivo há um ano. Relata que tem se esquecido de dar recados, pagar contas e senhas dos cartões decrédito. Há uma semana se perdeu na rua quando foi pegar a neta na escola. Exame físico: bom estado geral, consciente eorientado no tempo e no espaço; neurológico: sem alterações; mini-exame do estado mental: 24/30; aparelhos cardiovascular e respiratório: normal. Exames laboratoriais: TSH = 2,9 μUI/mL (VN: 0,4-4,5); vitamina B12 = 742 pg/mL (VN:174,0-878,0); VDRL não reagente; anti-HIV não reagente; hemograma, função renal, eletrólitos e transaminases normais. Realizada tomograEa de crânio sem contraste que evidenciou redução difusa do volume encefálico, proporcional para afaixa etária. Assinale a alternativa que apresenta o diagnóstico mais provável",
       "options": [
         {
           "letter": "A",
@@ -4307,7 +4307,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Demências",
       "topic": "Demências",
       "title": "Questão 28",
-      "text": "Mulher de 72 anos é levada a consulta pelo marido devido a \"\"esquecimento frequente\"\". O quadro se iniciou há 1 ano e vemevoluindo de forma progressiva com esquecimento de eventos recentes e cotidianos, tais como quais foram as refeições feitas no dia. A memória está preservada para fatos de sua juventude. Neste período, tem Ecado mais restrita em casa,saindo menos e apresentou um episódio de queda da própria altura. Está parcialmente dependente para atividadesinstrumentais, e independente para atividades básicas. Sem alterações de humor. Sem dados patológicos pregressosrelevantes. Exame físico sem alterações. Mini-exame do estado mental: 17 pontos (em um total de 30 pontos avaliados).Sobre a investigação do quadro acima descrito, é CORRETO afirmar",
+      "text": "Mulher de 72 anos é levada a consulta pelo marido devido a \"\"esquecimento frequente\"\". O quadro se iniciou há 1 ano e vemevoluindo de forma progressiva com esquecimento de eventos recentes e cotidianos, tais como quais foram as refeições feitas no dia. A memória está preservada para fatos de sua juventude. Neste período, tem Ecado mais restrita em casa,saindo menos e apresentou um episódio de queda da própria altura. Está parcialmente dependente para atividadesinstrumentais, e independente para atividades básicas. Sem alterações de humor. Sem dados patológicos pregressosrelevantes. Exame físico sem alterações. Mini-exame do estado mental: 17 pontos (em um total de 30 pontos avaliados). Sobre a investigação do quadro acima descrito, é CORRETO afirmar",
       "options": [
         {
           "letter": "A",
@@ -4481,7 +4481,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Demências",
       "topic": "Demências",
       "title": "Questão 33",
-      "text": "A história clínica, relatada pelo paciente ou por familiares, e o exame físico são fundamentais no diagnóstico diferencial dos quadros demenciais. Na maioria dos casos a descrição da evolução do quadro clínico é o principal determinante dodiagnóstico Enal, podendo, inclusive, ser dado de forma retrospectiva. Quanto ao diagnóstico diferencial das demências,analise o caso clínico a seguir:Homem, 72 anos, há 2 anos iniciou com episódios de confusão mental, incluindo episódios nos quais se perdeu em viapública. Inicialmente os episódios foram atribuídos a um quadro depressivo, pois o senhor apresentava irritabilidade edesinteresse nas atividades previamente prazerosas. No decorrer do tempo cessou as atividades fora do domicílio e temnecessitado cada vez mais da assistência de familiares para a realização de atividades cotidianas. Tem apresentado alucinações visuais, relata ver insetos nas paredes e pessoas desconhecidas em seu quarto. Apresentou 4 quedas no período de 1 ano e seus familiares observam que seus movimentos estão cada vez mais lentos, como se o seu corpo estivesse “congelado”.Qual a principal hipótese diagnóstica? ADemência de",
+      "text": "A história clínica, relatada pelo paciente ou por familiares, e o exame físico são fundamentais no diagnóstico diferencial dos quadros demenciais. Na maioria dos casos a descrição da evolução do quadro clínico é o principal determinante dodiagnóstico Enal, podendo, inclusive, ser dado de forma retrospectiva. Quanto ao diagnóstico diferencial das demências,analise o caso clínico a seguir: Homem, 72 anos, há 2 anos iniciou com episódios de confusão mental, incluindo episódios nos quais se perdeu em viapública. Inicialmente os episódios foram atribuídos a um quadro depressivo, pois o senhor apresentava irritabilidade edesinteresse nas atividades previamente prazerosas. No decorrer do tempo cessou as atividades fora do domicílio e temnecessitado cada vez mais da assistência de familiares para a realização de atividades cotidianas. Tem apresentado alucinações visuais, relata ver insetos nas paredes e pessoas desconhecidas em seu quarto. Apresentou 4 quedas no período de 1 ano e seus familiares observam que seus movimentos estão cada vez mais lentos, como se o seu corpo estivesse “congelado”.Qual a principal hipótese diagnóstica? ADemência de",
       "options": [
         {
           "letter": "A",
@@ -4553,7 +4553,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Demências",
       "topic": "Demências",
       "title": "Questão 35",
-      "text": "Homem, 54 anos, comparece ao ambulatório de Neurologia em cadeira de rodas. Estava assintomático até 6 meses atrás, quando começou a evoluir progressivamente com: mudança de humor; esquecimento e crise convulsiva (mioclonias).Ressonância nuclear magnética (RNM): em Kair, hiperintensidade em tálamo e núcleos da base. A hipótese diagnóstica maisprovável para este paciente é",
+      "text": "Homem, 54 anos, comparece ao ambulatório de Neurologia em cadeira de rodas. Estava assintomático até 6 meses atrás, quando começou a evoluir progressivamente com: mudança de humor; esquecimento e crise convulsiva (mioclonias). Ressonância nuclear magnética (RNM): em Kair, hiperintensidade em tálamo e núcleos da base. A hipótese diagnóstica maisprovável para este paciente é",
       "options": [
         {
           "letter": "A",
@@ -4590,7 +4590,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Demências",
       "topic": "Demências",
       "title": "Questão 36",
-      "text": "Demência FrontotemporalPsiquiatriaMédico de 57 anos de idade veio trazido pela esposa à unidade básica de saúde por alteração do comportamento há doisanos. Antes disso era uma pessoa funcional, e não tinha doenças prévias diagnosticadas. O quadro iniciou com irritabilidadee impulsividade, às vezes parecendo que tinha “perdido o freio mental”, falando o que “vinha na cabeça”. Também passou acomer muito doce, algo que não era comum. Durante toda a consulta, o paciente demonstrava-se inquieto, e às vezes fazia comentários jocosos. Na avaliação cognitiva, apresentava respostas impulsivas e estava um pouco desatento. No miniexame do estado mental, ele fez 26 pontos (perdeu três pontos nas subtrações seriadas e um no comando verbal). Oexame clínico não tem outras alterações. Qual é a hipótese diagnóstica mais provável?ADemência da doença de Alzheimer.BTranstorno",
+      "text": "Demência FrontotemporalPsiquiatriaMédico de 57 anos de idade veio trazido pela esposa à unidade básica de saúde por alteração do comportamento há doisanos. Antes disso era uma pessoa funcional, e não tinha doenças prévias diagnosticadas. O quadro iniciou com irritabilidadee impulsividade, às vezes parecendo que tinha “perdido o freio mental”, falando o que “vinha na cabeça”. Também passou acomer muito doce, algo que não era comum. Durante toda a consulta, o paciente demonstrava-se inquieto, e às vezes fazia comentários jocosos. Na avaliação cognitiva, apresentava respostas impulsivas e estava um pouco desatento. No miniexame do estado mental, ele fez 26 pontos (perdeu três pontos nas subtrações seriadas e um no comando verbal). Oexame clínico não tem outras alterações. Qual é a hipótese diagnóstica mais provável? ADemência da doença de Alzheimer. BTranstorno",
       "options": [
         {
           "letter": "A",
@@ -4748,7 +4748,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Demências",
       "topic": "Demências",
       "title": "Questão 43",
-      "text": "Homem, 75 anos, professor universitário aposentado. Veio na consulta acompanhado do Elho, queixando-se deesquecimento progressivo há um ano. Esquece de dar recados, pagar contas e senhas dos cartões de crédito e se perdeu na rua há uma semana quando foi pegar a neta na escola. Exame físico: BEG, consciente e orientado no tempo e no espaço.Neurológico: sem alterações. Mini-exame do estado mental: 29/30. Escala de depressão geriátrica: 2/15. Exameslaboratoriais: TSH = 2,5 µIU/mL (VN: 0,4-4,5); vitamina B12 = 756 pg/mL (VN: 174,0-878,0), VDRL não reagente, anti-HIVnão reagente. Hemograma, função renal, eletrólitos e transaminases normais. TomograEa de crânio: redução difusa do volume encefálico, proporcionada para a faixa etária. Qual é o diagnóstico mais provável?",
+      "text": "Homem, 75 anos, professor universitário aposentado. Veio na consulta acompanhado do Elho, queixando-se deesquecimento progressivo há um ano. Esquece de dar recados, pagar contas e senhas dos cartões de crédito e se perdeu na rua há uma semana quando foi pegar a neta na escola. Exame físico: BEG, consciente e orientado no tempo e no espaço. Neurológico: sem alterações. Mini-exame do estado mental: 29/30. Escala de depressão geriátrica: 2/15. Exameslaboratoriais: TSH = 2,5 µIU/mL (VN: 0,4-4,5); vitamina B12 = 756 pg/mL (VN: 174,0-878,0), VDRL não reagente, anti-HIVnão reagente. Hemograma, função renal, eletrólitos e transaminases normais. TomograEa de crânio: redução difusa do volume encefálico, proporcionada para a faixa etária. Qual é o diagnóstico mais provável?",
       "options": [
         {
           "letter": "A",
@@ -5447,7 +5447,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Demências",
       "topic": "Demências",
       "title": "Questão 64",
-      "text": "Mulher leva seu marido de 60 anos ao ambulatório devido à perda progressiva da memória, de evolução há dois anos.Existe interferência nas atividades de vida diárias, como esquecer nome dos Elhos, mas ele não erra nas contas e não temdiEculdade de escrita. A apatia é um achado importante, além do hábito de andar sem roupa dentro de casa e procurar amulher com mais frêquencia, querendo manter relações sexuais. O apetite melhorou e procura comida com muita frequência. Na consulta, o Mini Mental = 22, (escolaridade de nível superior), não havia alterações motoras ou sensitivas aoexame físico e os pares cranianos estavam normais. Nesse caso, o diagnóstico mais provável deve ser de demência",
+      "text": "Mulher leva seu marido de 60 anos ao ambulatório devido à perda progressiva da memória, de evolução há dois anos. Existe interferência nas atividades de vida diárias, como esquecer nome dos Elhos, mas ele não erra nas contas e não temdiEculdade de escrita. A apatia é um achado importante, além do hábito de andar sem roupa dentro de casa e procurar amulher com mais frêquencia, querendo manter relações sexuais. O apetite melhorou e procura comida com muita frequência. Na consulta, o Mini Mental = 22, (escolaridade de nível superior), não havia alterações motoras ou sensitivas aoexame físico e os pares cranianos estavam normais. Nesse caso, o diagnóstico mais provável deve ser de demência",
       "options": [
         {
           "letter": "A",
@@ -5547,7 +5547,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Demências",
       "topic": "Demências",
       "title": "Questão 67",
-      "text": "Alterações do desempenho cognitivo podem ser observadas como consequência de uma grande variedade de condiçõese em qualquer faixa etária; no entanto, as habilidades cognitivas são muito mais susceptíveis a transtornos durante a velhice.Nesse sentido a alternativa correta, é",
+      "text": "Alterações do desempenho cognitivo podem ser observadas como consequência de uma grande variedade de condiçõese em qualquer faixa etária; no entanto, as habilidades cognitivas são muito mais susceptíveis a transtornos durante a velhice. Nesse sentido a alternativa correta, é",
       "options": [
         {
           "letter": "A",
@@ -5581,7 +5581,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Demências",
       "topic": "Demências",
       "title": "Questão 68",
-      "text": "Filha leva sua mãe ao neurologista preocupada com sua perda de memória e dificuldade para atividades de vida diária.Segundo ela, sua mãe de 78 anos, mora sozinha desde que Ecou viúva há 5 anos. É uma senhora ativa e sem comorbidades.Na época Ecou depressiva mas não realizou nenhum tratamento. Há mais ou menos dois anos começou a ter diEculdadepara lembrar de compromissos. Há mais ou menos um ano, a Elha veio visitá-la no Natal e percebeu que sua memória haviapiorado contratando uma cuidadora período integral. A paciente refere que está bem e não entende o motivo pelo qual afilha insistiu para que fosse realizada a consulta. Caso você fosse o (a) neurologista, o que faria neste primeiro momento?AIniciaria",
+      "text": "Filha leva sua mãe ao neurologista preocupada com sua perda de memória e dificuldade para atividades de vida diária. Segundo ela, sua mãe de 78 anos, mora sozinha desde que Ecou viúva há 5 anos. É uma senhora ativa e sem comorbidades. Na época Ecou depressiva mas não realizou nenhum tratamento. Há mais ou menos dois anos começou a ter diEculdadepara lembrar de compromissos. Há mais ou menos um ano, a Elha veio visitá-la no Natal e percebeu que sua memória haviapiorado contratando uma cuidadora período integral. A paciente refere que está bem e não entende o motivo pelo qual afilha insistiu para que fosse realizada a consulta. Caso você fosse o (a) neurologista, o que faria neste primeiro momento? AIniciaria",
       "options": [
         {
           "letter": "A",
@@ -5705,7 +5705,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Demências",
       "topic": "Demências",
       "title": "Questão 72",
-      "text": "Paciente A.B.S., 75 anos, sexo feminino, foi à consulta médica acompanhada da Elha primogênita, que relata que a mãeiniciou quadro de esquecimento há 2 anos, principalmente para acontecimentos recentes. O quadro foi piorando de formaprogressiva e, no momento, apresenta incapacidade de executar as atividades diárias, realizadas previamente. Apósavaliação clínica, o médico suspeitou de um quadro de demência. Dadas as aErmativas em relação ao diagnósticodiferencial das demências, I. A hidrocefalia comunicante normobárica é uma causa de demência não tratável. II. A principal hipótese diagnóstica para o quadro clínico descrito acima é a doença de Pick. III. A doença de Alzheimer é a causa mais comum de demência e ocorre em mais de 50% dos casos. IV. Deve ser solicitado inicialmente TSH, T4L, VDRL, dosagem sérica de vitamina B12 e TC de crânio, para exclusão de causas tratáveis.Verifica-se que está(ão) correta(s)",
+      "text": "Paciente A.B.S., 75 anos, sexo feminino, foi à consulta médica acompanhada da Elha primogênita, que relata que a mãeiniciou quadro de esquecimento há 2 anos, principalmente para acontecimentos recentes. O quadro foi piorando de formaprogressiva e, no momento, apresenta incapacidade de executar as atividades diárias, realizadas previamente. Apósavaliação clínica, o médico suspeitou de um quadro de demência. Dadas as aErmativas em relação ao diagnósticodiferencial das demências, I. A hidrocefalia comunicante normobárica é uma causa de demência não tratável. II. A principal hipótese diagnóstica para o quadro clínico descrito acima é a doença de Pick. III. A doença de Alzheimer é a causa mais comum de demência e ocorre em mais de 50% dos casos. IV. Deve ser solicitado inicialmente TSH, T4L, VDRL, dosagem sérica de vitamina B12 e TC de crânio, para exclusão de causas tratáveis. Verifica-se que está(ão) correta(s)",
       "options": [
         {
           "letter": "A",
@@ -5807,7 +5807,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Demências",
       "topic": "Demências",
       "title": "Questão 75",
-      "text": "Paciente portador da doença de Alzheimer apresenta piora cognitiva súbita, caracterizada por sonolência excessiva,alucinações visuais e auditivas. Qual das condutas abaixo é a mais adequada nesta situação?A",
+      "text": "Paciente portador da doença de Alzheimer apresenta piora cognitiva súbita, caracterizada por sonolência excessiva,alucinações visuais e auditivas. Qual das condutas abaixo é a mais adequada nesta situação? A",
       "options": [
         {
           "letter": "A",
@@ -6143,7 +6143,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Demências",
       "topic": "Demências",
       "title": "Questão 85",
-      "text": "Dona Genina tem 69 anos e vem apresentando quadro de esquecimento progressivo importante nos últimos 8 meses.Atualmente a Elha aErma que a paciente se perde na casa, e já chegou a colocar o ferro de passar roupa na geladeira e adormir na casa do vizinho por se confundir com a própria casa. A paciente tem ensino superior completo e apresenta ummini-mental de 15 pontos. Para esta paciente, a melhor conduta é:ADar o diagnóstico de",
+      "text": "Dona Genina tem 69 anos e vem apresentando quadro de esquecimento progressivo importante nos últimos 8 meses. Atualmente a Elha aErma que a paciente se perde na casa, e já chegou a colocar o ferro de passar roupa na geladeira e adormir na casa do vizinho por se confundir com a própria casa. A paciente tem ensino superior completo e apresenta ummini-mental de 15 pontos. Para esta paciente, a melhor conduta é:ADar o diagnóstico de",
       "options": [
         {
           "letter": "A",
@@ -6374,7 +6374,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Demências",
       "topic": "Demências",
       "title": "Questão 92",
-      "text": "Síndrome DemencialInsôniaDiagnóstico da DepressãoFaça a correlação entre a situação clínica e a conduta recomendada. Situação clínica: pacientes idosos, com quadro dedeficit cognitivo. 1. Primeiro paciente: evolução de 1 ano, apresentando Atividades de Vida Diárias (AVDs) anormais e exame de mini examedo estado mental (mini-mental) 12, para escolaridade de 8 anos. HPP: sem doenças prévias e em uso de Ginkgo biloba há 3meses, indicado por um médico do serviço básico de saúde. Exames laboratoriais e TC de crânio normais; 2. Segundo paciente: evolução de 9 meses, apresentando AVDs anormais e exame de mini-mental 28, para escolaridade de8 anos. Apresenta-se com labilidade emocional e anedonia. Exames laboratoriais e TC de crânio normais; 3. Terceiro paciente: evolução de 10 dias, com deficit de atenção, desorientação importante, alteração do ciclo sono vigília.AVDs anormais. Foi impossível aplicar o mini-mental devido ao deficit de atenção. Exames laboratoriais: hemograma: Hb =14; VCM = 87; leucócitos = 12.000; plaquetas = 250.000; urina tipo1 pH = 7.0; densidade = 1026; leucócitos = 500.000;hemácias = 15.000; bacteriúria intensa; 4. Quarto paciente: evolução de 9 meses, após uso de benzodiazepínico devido à insônia, apresentando AVDs normais emini-mental 26, para escolaridade de 8 anos. Exames laboratoriais e TC de crânio normais. Condutas recomendadas: a. Suspender o medicamento em uso, devido ao deficit cognitivo; b. Tratar especificamente a causa desencadeante, por se tratar de um quadro de delirium; c. Iniciar com anticolinesterásico, devido ao quadro sugestivo de Alzheimer; d. Iniciar o tratamento com citalopram, devido ao quadro sugestivo de depressão. Assinale a alternativa que apresenta as correlações CORRETAS",
+      "text": "Síndrome DemencialInsôniaDiagnóstico da DepressãoFaça a correlação entre a situação clínica e a conduta recomendada. Situação clínica: pacientes idosos, com quadro dedeficit cognitivo. 1. Primeiro paciente: evolução de 1 ano, apresentando Atividades de Vida Diárias (AVDs) anormais e exame de mini examedo estado mental (mini-mental) 12, para escolaridade de 8 anos. HPP: sem doenças prévias e em uso de Ginkgo biloba há 3meses, indicado por um médico do serviço básico de saúde. Exames laboratoriais e TC de crânio normais; 2. Segundo paciente: evolução de 9 meses, apresentando AVDs anormais e exame de mini-mental 28, para escolaridade de8 anos. Apresenta-se com labilidade emocional e anedonia. Exames laboratoriais e TC de crânio normais; 3. Terceiro paciente: evolução de 10 dias, com deficit de atenção, desorientação importante, alteração do ciclo sono vigília. AVDs anormais. Foi impossível aplicar o mini-mental devido ao deficit de atenção. Exames laboratoriais: hemograma: Hb =14; VCM = 87; leucócitos = 12.000; plaquetas = 250.000; urina tipo1 pH = 7.0; densidade = 1026; leucócitos = 500.000;hemácias = 15.000; bacteriúria intensa; 4. Quarto paciente: evolução de 9 meses, após uso de benzodiazepínico devido à insônia, apresentando AVDs normais emini-mental 26, para escolaridade de 8 anos. Exames laboratoriais e TC de crânio normais. Condutas recomendadas: a. Suspender o medicamento em uso, devido ao deficit cognitivo; b. Tratar especificamente a causa desencadeante, por se tratar de um quadro de delirium; c. Iniciar com anticolinesterásico, devido ao quadro sugestivo de Alzheimer; d. Iniciar o tratamento com citalopram, devido ao quadro sugestivo de depressão. Assinale a alternativa que apresenta as correlações CORRETAS",
       "options": [
         {
           "letter": "A",
@@ -6408,7 +6408,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Demências",
       "topic": "Demências",
       "title": "Questão 93",
-      "text": "Homem, 70 anos, engenheiro, foi trazido ao consultório pelo Elho que relatou que o pai sempre foi muito discreto e polido.Há seis meses, em reunião familiar, observou que o pai estava agitado, gritando e gesticulando muito, inclusive com gestosobscenos. Há 2 meses, ao visitar o pai, este estava nu. O paciente vem apresentando dificuldades para realizar cálculossimples e, por isso, deixou de trabalhar. Não usa medicamentos e não tem relato de doenças psiquiátricas prévias. Examefísico normal. Ressonância magnética de encéfalo: Qual é o diagnóstico mais provável?",
+      "text": "Homem, 70 anos, engenheiro, foi trazido ao consultório pelo Elho que relatou que o pai sempre foi muito discreto e polido. Há seis meses, em reunião familiar, observou que o pai estava agitado, gritando e gesticulando muito, inclusive com gestosobscenos. Há 2 meses, ao visitar o pai, este estava nu. O paciente vem apresentando dificuldades para realizar cálculossimples e, por isso, deixou de trabalhar. Não usa medicamentos e não tem relato de doenças psiquiátricas prévias. Examefísico normal. Ressonância magnética de encéfalo: Qual é o diagnóstico mais provável?",
       "options": [
         {
           "letter": "A",
@@ -6637,7 +6637,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Demências",
       "topic": "Demências",
       "title": "Questão 100",
-      "text": "Paciente masculino, 78 anos, comparece ao consultório do geriatra acompanhado pela Elha. Tem diagnósticos prévios de hipertensão arterial sistêmica, diabetes mellitus tipo II não insulina dependente e histórico de tabagismo, tendo cessado hácerca de 10 anos com carga tabágica total de 55 maços/ano. Está em uso de losartan 50 mg a cada 12 horas,hidroclorotiazada 25 mg ao dia, AAS 100 mg ao dia, metformina 500 mg pós almoço e jantar e gliclazida 30 mg em jejum.Filha relata que o paciente vem apresentando esquecimentos, mas não sabe precisar início da queixa. Há alguns meses temapresentado maior irritabilidade, Eca desorientado em locais desconhecidos e perambula pela casa no período noturno.Familiares observam que está mais lento para a realização de tarefas como vestuário e alimentação, necessitando de supervisão e por vezes assistência. Há 2 meses apresentou queda de mesmo nível em domicílio, sem traumatismos associados. O paciente traz como queixa principal para a consulta o uso de muitos comprimidos ao dia. Avaliação clínica elaboratorial inicial mostrou: pontuação no mini exame do estado mental 21 (ensino fundamental completo), hemoglobina 13,2g/dl, creatinina 1,23 mg/dl, TSH 4,75 mU/L, vitamina B12 486 pg/ml, TGO 35 U/L, TGP 27 U/L, VDRL não reagente,sorologia para HIV não reagente, tomograEa computadorizada de crânio com presença de alteração de substância branca sugestiva de microangiopatia e redução volumétrica encefálica compatível com idade. Qual o diagnóstico mais provável?AEpisódio depressivo associado a queixas cognitivas, pois paciente apresenta irritabilidade como sintoma de alteração do humor.BDemência vascular, pois paciente com fatores de risco cardiovascular presentes e alteração de substância branca na tomografia de crânio.CDemência associada a doença de Parkinson, pois paciente apresenta bradicinesia (“está mais lento para arealização de tarefas”) e instabilidade postural (“apresentou queda de mesmo nível”).DDemência de Alzheimer, pois cursou inicialmente com queixa de memória progredindo com comprometimento funcional. 4000059252Respostas:1D2B3A4B5D6C7B8A9C10C11E12D13C14A15B16A17C18C19C20B21C22B23C24B25E26A27B28D29A30D31B32C33C34D35D36D37C38D39D40D41B42C43D44D45D46B47C48C49D50A51A52A53E54C55D56C57",
+      "text": "Paciente masculino, 78 anos, comparece ao consultório do geriatra acompanhado pela Elha. Tem diagnósticos prévios de hipertensão arterial sistêmica, diabetes mellitus tipo II não insulina dependente e histórico de tabagismo, tendo cessado hácerca de 10 anos com carga tabágica total de 55 maços/ano. Está em uso de losartan 50 mg a cada 12 horas,hidroclorotiazada 25 mg ao dia, AAS 100 mg ao dia, metformina 500 mg pós almoço e jantar e gliclazida 30 mg em jejum. Filha relata que o paciente vem apresentando esquecimentos, mas não sabe precisar início da queixa. Há alguns meses temapresentado maior irritabilidade, Eca desorientado em locais desconhecidos e perambula pela casa no período noturno. Familiares observam que está mais lento para a realização de tarefas como vestuário e alimentação, necessitando de supervisão e por vezes assistência. Há 2 meses apresentou queda de mesmo nível em domicílio, sem traumatismos associados. O paciente traz como queixa principal para a consulta o uso de muitos comprimidos ao dia. Avaliação clínica elaboratorial inicial mostrou: pontuação no mini exame do estado mental 21 (ensino fundamental completo), hemoglobina 13,2g/dl, creatinina 1,23 mg/dl, TSH 4,75 mU/L, vitamina B12 486 pg/ml, TGO 35 U/L, TGP 27 U/L, VDRL não reagente,sorologia para HIV não reagente, tomograEa computadorizada de crânio com presença de alteração de substância branca sugestiva de microangiopatia e redução volumétrica encefálica compatível com idade. Qual o diagnóstico mais provável? AEpisódio depressivo associado a queixas cognitivas, pois paciente apresenta irritabilidade como sintoma de alteração do humor. BDemência vascular, pois paciente com fatores de risco cardiovascular presentes e alteração de substância branca na tomografia de crânio. CDemência associada a doença de Parkinson, pois paciente apresenta bradicinesia (“está mais lento para arealização de tarefas”) e instabilidade postural (“apresentou queda de mesmo nível”). DDemência de Alzheimer, pois cursou inicialmente com queixa de memória progredindo com comprometimento funcional. 4000059252Respostas:1D2B3A4B5D6C7B8A9C10C11E12D13C14A15B16A17C18C19C20B21C22B23C24B25E26A27B28D29A30D31B32C33C34D35D36D37C38D39D40D41B42C43D44D45D46B47C48C49D50A51A52A53E54C55D56C57",
       "options": [
         {
           "letter": "A",
@@ -6869,7 +6869,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Distúrbios do Sono",
       "topic": "Distúrbios do Sono",
       "title": "Questão 7",
-      "text": "Homem de 62 anos apresenta cansaço intenso diário e episódios de esquecimentos há 5 anos. AP: doença dorePuxo gastroesofágico (DRGE), HAS e consumo de duas doses de cerveja/dia. Nega tabagismo. Faz uso contínuo de omeprazol, hidroclorotiazida, losartana e propranolol. Exame físico: altura 1,60 m; peso 98 kg; circunferência cervical 41 cm;PA 180/90 mmHg; FC 89 bpm; FR 18 ipm. Hipoplasia mandibular; 2 bulhas rítmicas hipofonéticas; pulmonar:murmúrio vesicular presente, sem ruídos adventícios; abdome globoso. Dentre os exames complementares relacionados, omais adequado a ser solicitado nesse momento é",
+      "text": "Homem de 62 anos apresenta cansaço intenso diário e episódios de esquecimentos há 5 anos. AP: doença dorePuxo gastroesofágico (DRGE), HAS e consumo de duas doses de cerveja/dia. Nega tabagismo. Faz uso contínuo de omeprazol, hidroclorotiazida, losartana e propranolol. Exame físico: altura 1,60 m; peso 98 kg; circunferência cervical 41 cm; PA 180/90 mmHg; FC 89 bpm; FR 18 ipm. Hipoplasia mandibular; 2 bulhas rítmicas hipofonéticas; pulmonar:murmúrio vesicular presente, sem ruídos adventícios; abdome globoso. Dentre os exames complementares relacionados, omais adequado a ser solicitado nesse momento é",
       "options": [
         {
           "letter": "A",
@@ -6975,7 +6975,7 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "C",
-          "text": "irurgia Ortognática.CModerada / CPAP (Continuous Positive Airway Pressure"
+          "text": "irurgia Ortognática. CModerada / CPAP (Continuous Positive Airway Pressure"
         },
         {
           "letter": "D",
@@ -6997,7 +6997,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Distúrbios do Sono",
       "topic": "Distúrbios do Sono",
       "title": "Questão 11",
-      "text": "Um paciente de 35 anos, obeso apresenta níveis de pressão arterial elevados e pouco responsivos às medicações usuais.Como sintoma, ele refere, apenas, fadiga e sonolência.Sabendo que ureia, creatinina e eletrólitos estão dentro da normalidade, qual seria o diagnóstico mais provável para o caso?",
+      "text": "Um paciente de 35 anos, obeso apresenta níveis de pressão arterial elevados e pouco responsivos às medicações usuais. Como sintoma, ele refere, apenas, fadiga e sonolência. Sabendo que ureia, creatinina e eletrólitos estão dentro da normalidade, qual seria o diagnóstico mais provável para o caso?",
       "options": [
         {
           "letter": "A",
@@ -7031,7 +7031,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Distúrbios do Sono",
       "topic": "Distúrbios do Sono",
       "title": "Questão 12",
-      "text": "Mulher, 62a, comparece para consulta médica com queixa de dispneia aos moderados esforços (NYHA II), fadiga crônica,sonolência diurna. Antecedentes pessoais: hipertensão arterial e diabetes há 20 anos, em uso de metformina 850mg/dia elosartana 50 mg/dia. Nega tabagismo, etilismo ou doença pulmonar prévia. Exame físico: Peso= 106 kg, altura= 1,60 m,oximetria de pulso (ar ambiente)= 88%, FC= 90 bpm, PA= 156x98 mmHg. Pletórica; Pulmões: murmúrio vesicular reduzido globalmente. Gasometria arterial (ar ambiente): pH= 7,38; paO₂= 52 mmHg, paC₂2= 56 mmHg, HCO₃= 30 mmol/L, sat O₂=88%. Espirometria= distúrbio misto de grau leve.A HIPÓTESE DIAGNÓSTICA É",
+      "text": "Mulher, 62a, comparece para consulta médica com queixa de dispneia aos moderados esforços (NYHA II), fadiga crônica,sonolência diurna. Antecedentes pessoais: hipertensão arterial e diabetes há 20 anos, em uso de metformina 850mg/dia elosartana 50 mg/dia. Nega tabagismo, etilismo ou doença pulmonar prévia. Exame físico: Peso= 106 kg, altura= 1,60 m,oximetria de pulso (ar ambiente)= 88%, FC= 90 bpm, PA= 156x98 mmHg. Pletórica; Pulmões: murmúrio vesicular reduzido globalmente. Gasometria arterial (ar ambiente): pH= 7,38; paO₂= 52 mmHg, paC₂2= 56 mmHg, HCO₃= 30 mmol/L, sat O₂=88%. Espirometria= distúrbio misto de grau leve. A HIPÓTESE DIAGNÓSTICA É",
       "options": [
         {
           "letter": "A",
@@ -7085,7 +7085,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Distúrbios do Sono",
       "topic": "Distúrbios do Sono",
       "title": "Questão 14",
-      "text": "Um paciente de 37 anos de idade, bancário, procura um serviço de saúde mental, encaminhado pelo médico do banco. Naentrevista inicial, relata que, há um mês, recebeu uma promoção no trabalho, mediante a qual terá que mudar de cidade epassará a cheFar uma equipe de 20 pessoas. Soube também que terá como superior imediato o gerente geral, uma pessoamuito severa e que impõe metas que são quase impossíveis de alcançar. Desde então, vem apresentando tristeza, choracom facilidade, sente desânimo, ansiedade, insônia, o coração “dispara” e mostra-se agitado quando está em casa e pensaque tem de trabalhar, que terá que se mudar, assim como que precisará ter contato frequente com seu futuro chefe. Estáconsumindo grande quantidade de bebidas alcoólicas para sentir-se mais calmo e conseguir dormir.A respeito desse caso clínico e com base nos conhecimentos médicos correlatos, julgue os itens a seguir.A insônia persistente no transtorno de insônia envolve dois problemas: tensão e ansiedade somatizadas e uma respostaassociativa condicionada",
+      "text": "Um paciente de 37 anos de idade, bancário, procura um serviço de saúde mental, encaminhado pelo médico do banco. Naentrevista inicial, relata que, há um mês, recebeu uma promoção no trabalho, mediante a qual terá que mudar de cidade epassará a cheFar uma equipe de 20 pessoas. Soube também que terá como superior imediato o gerente geral, uma pessoamuito severa e que impõe metas que são quase impossíveis de alcançar. Desde então, vem apresentando tristeza, choracom facilidade, sente desânimo, ansiedade, insônia, o coração “dispara” e mostra-se agitado quando está em casa e pensaque tem de trabalhar, que terá que se mudar, assim como que precisará ter contato frequente com seu futuro chefe. Estáconsumindo grande quantidade de bebidas alcoólicas para sentir-se mais calmo e conseguir dormir. A respeito desse caso clínico e com base nos conhecimentos médicos correlatos, julgue os itens a seguir. A insônia persistente no transtorno de insônia envolve dois problemas: tensão e ansiedade somatizadas e uma respostaassociativa condicionada",
       "options": [
         {
           "letter": "A",
@@ -7107,7 +7107,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Distúrbios do Sono",
       "topic": "Distúrbios do Sono",
       "title": "Questão 15",
-      "text": "Um paciente de 37 anos de idade, bancário, procura um serviço de saúde mental, encaminhado pelo médico do banco. Naentrevista inicial, relata que, há um mês, recebeu uma promoção no trabalho, mediante a qual terá que mudar de cidade epassará a cheFar uma equipe de 20 pessoas. Soube também que terá como superior imediato o gerente geral, uma pessoamuito severa e que impõe metas que são quase impossíveis de alcançar. Desde então, vem apresentando tristeza, choracom facilidade, sente desânimo, ansiedade, insônia, o coração “dispara” e mostra-se agitado quando está em casa e pensaque tem de trabalhar, que terá que se mudar, assim como que precisará ter contato frequente com seu futuro chefe. Estáconsumindo grande quantidade de bebidas alcoólicas para sentir-se mais calmo e conseguir dormir.A respeito desse caso clínico e com base nos conhecimentos médicos correlatos, julgue os itens a seguir.Para o diagnóstico de transtorno de insônia, é importante considerar, entre outros fatores, a frequência das diFculdadesrelacionadas ao sono, pois elas precisam estar presente pelo menos em uma noite por semana, por pelo menos um mês",
+      "text": "Um paciente de 37 anos de idade, bancário, procura um serviço de saúde mental, encaminhado pelo médico do banco. Naentrevista inicial, relata que, há um mês, recebeu uma promoção no trabalho, mediante a qual terá que mudar de cidade epassará a cheFar uma equipe de 20 pessoas. Soube também que terá como superior imediato o gerente geral, uma pessoamuito severa e que impõe metas que são quase impossíveis de alcançar. Desde então, vem apresentando tristeza, choracom facilidade, sente desânimo, ansiedade, insônia, o coração “dispara” e mostra-se agitado quando está em casa e pensaque tem de trabalhar, que terá que se mudar, assim como que precisará ter contato frequente com seu futuro chefe. Estáconsumindo grande quantidade de bebidas alcoólicas para sentir-se mais calmo e conseguir dormir. A respeito desse caso clínico e com base nos conhecimentos médicos correlatos, julgue os itens a seguir. Para o diagnóstico de transtorno de insônia, é importante considerar, entre outros fatores, a frequência das diFculdadesrelacionadas ao sono, pois elas precisam estar presente pelo menos em uma noite por semana, por pelo menos um mês",
       "options": [
         {
           "letter": "A",
@@ -7129,7 +7129,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Distúrbios do Sono",
       "topic": "Distúrbios do Sono",
       "title": "Questão 16",
-      "text": "Um paciente de 37 anos de idade, bancário, procura um serviço de saúde mental, encaminhado pelo médico do banco. Naentrevista inicial, relata que, há um mês, recebeu uma promoção no trabalho, mediante a qual terá que mudar de cidade epassará a cheFar uma equipe de 20 pessoas. Soube também que terá como superior imediato o gerente geral, uma pessoamuito severa e que impõe metas que são quase impossíveis de alcançar. Desde então, vem apresentando tristeza, choracom facilidade, sente desânimo, ansiedade, insônia, o coração “dispara” e mostra-se agitado quando está em casa e pensaque tem de trabalhar, que terá que se mudar, assim como que precisará ter contato frequente com seu futuro chefe. Estáconsumindo grande quantidade de bebidas alcoólicas para sentir-se mais calmo e conseguir dormir.A respeito desse caso clínico e com base nos conhecimentos médicos correlatos, julgue os itens a seguir.Na história clínica do paciente, a presença de insônia remete à necessidade de avaliar se ela é um sintoma dentro dodiagnóstico principal ou se constitui um transtorno de insônia",
+      "text": "Um paciente de 37 anos de idade, bancário, procura um serviço de saúde mental, encaminhado pelo médico do banco. Naentrevista inicial, relata que, há um mês, recebeu uma promoção no trabalho, mediante a qual terá que mudar de cidade epassará a cheFar uma equipe de 20 pessoas. Soube também que terá como superior imediato o gerente geral, uma pessoamuito severa e que impõe metas que são quase impossíveis de alcançar. Desde então, vem apresentando tristeza, choracom facilidade, sente desânimo, ansiedade, insônia, o coração “dispara” e mostra-se agitado quando está em casa e pensaque tem de trabalhar, que terá que se mudar, assim como que precisará ter contato frequente com seu futuro chefe. Estáconsumindo grande quantidade de bebidas alcoólicas para sentir-se mais calmo e conseguir dormir. A respeito desse caso clínico e com base nos conhecimentos médicos correlatos, julgue os itens a seguir. Na história clínica do paciente, a presença de insônia remete à necessidade de avaliar se ela é um sintoma dentro dodiagnóstico principal ou se constitui um transtorno de insônia",
       "options": [
         {
           "letter": "A",
@@ -7151,7 +7151,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Distúrbios do Sono",
       "topic": "Distúrbios do Sono",
       "title": "Questão 17",
-      "text": "Idosa de 75 anos portadora de hipertensão arterial sistêmica, diabetes, dislipidemia, osteoartrose, depressão e osteoporosevem ao Posto de Saúde para atendimento médico com queixa de insônia. Refere que dorme de 22 até 4 horas da manhã edurante o dia tem um cochilo após o almoço por volta de 13h até as 15 horas. É independente para atividades básicas devida diária e está em uso de: losartana 100mg/d, hidroclorotiazida 25mg/d, AAS 100mg/d, omeprazol 20mg/d,glibenclamida 5mg/d, amitriptilina 10mg/d e bromazepan 3mg/d. Nega queixas e apresenta exame físico sem alterações.Relata 3 episódios de queda no último ano. Qual o ajuste farmacológico prioritário para a paciente?",
+      "text": "Idosa de 75 anos portadora de hipertensão arterial sistêmica, diabetes, dislipidemia, osteoartrose, depressão e osteoporosevem ao Posto de Saúde para atendimento médico com queixa de insônia. Refere que dorme de 22 até 4 horas da manhã edurante o dia tem um cochilo após o almoço por volta de 13h até as 15 horas. É independente para atividades básicas devida diária e está em uso de: losartana 100mg/d, hidroclorotiazida 25mg/d, AAS 100mg/d, omeprazol 20mg/d,glibenclamida 5mg/d, amitriptilina 10mg/d e bromazepan 3mg/d. Nega queixas e apresenta exame físico sem alterações. Relata 3 episódios de queda no último ano. Qual o ajuste farmacológico prioritário para a paciente?",
       "options": [
         {
           "letter": "A",
@@ -7181,7 +7181,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Distúrbios do Sono",
       "topic": "Distúrbios do Sono",
       "title": "Questão 18",
-      "text": "Homem de 52 anos foi avaliado por queixa de cefaleia occipital frequente, fadiga e sonolência diurna. Sedentário, tambémreferia dispneia aos esforços mais acentuados como correr ou subir escadas. Ao exame, apresentava IMC 32,5 kg/m2,circunferência abdominal 102 cm, PA: 150 x 100 mmHg, pulso 95 bpm. Abdômen: globoso por adiposidade e sem estrias.Exames bioquímicos: Glicemia 118 mg/dL, A1C: 5,5%, Colesterol: 225 mg/dL, HDL: 32 mg/dL, Triglicerides: 335 mg/dL, LDL: 126 mg/dL. Foi prescrito losartana e recomendado mudanças no estilo de vida. LEGENDA: IMC: índice de massacorporal; PA: pressão arterial; bpm: batimentos por minuto; A1C: hemoglobina glicada. Qual conduta adicional seria a mais indicada?",
+      "text": "Homem de 52 anos foi avaliado por queixa de cefaleia occipital frequente, fadiga e sonolência diurna. Sedentário, tambémreferia dispneia aos esforços mais acentuados como correr ou subir escadas. Ao exame, apresentava IMC 32,5 kg/m2,circunferência abdominal 102 cm, PA: 150 x 100 mmHg, pulso 95 bpm. Abdômen: globoso por adiposidade e sem estrias. Exames bioquímicos: Glicemia 118 mg/dL, A1C: 5,5%, Colesterol: 225 mg/dL, HDL: 32 mg/dL, Triglicerides: 335 mg/dL, LDL: 126 mg/dL. Foi prescrito losartana e recomendado mudanças no estilo de vida. LEGENDA: IMC: índice de massacorporal; PA: pressão arterial; bpm: batimentos por minuto; A1C: hemoglobina glicada. Qual conduta adicional seria a mais indicada?",
       "options": [
         {
           "letter": "A",
@@ -7883,7 +7883,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Distúrbios do Sono",
       "topic": "Distúrbios do Sono",
       "title": "Questão 41",
-      "text": "Homem de 42 anos, apresenta queixa de roncos e sonolência diurna, com facilidade para cochilar durante o dia. Portadorde síndrome metabólica, em programação de cirurgia bariátrica. Diante da possibilidade diagnóstica de Síndrome da ApneiaObstrutiva do Sono (SAOS), é correto afirmar que o paciente:Atem indicação de realizar polissonografia noturna diagnóstica e deve usar o CP",
+      "text": "Homem de 42 anos, apresenta queixa de roncos e sonolência diurna, com facilidade para cochilar durante o dia. Portadorde síndrome metabólica, em programação de cirurgia bariátrica. Diante da possibilidade diagnóstica de Síndrome da ApneiaObstrutiva do Sono (SAOS), é correto afirmar que o paciente: Atem indicação de realizar polissonografia noturna diagnóstica e deve usar o CP",
       "options": [
         {
           "letter": "A",
@@ -7895,7 +7895,7 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "C",
-          "text": "PAP à noite.Cdeve realizar a polissonografia diagnóstica após a cirurgia, no momento de perda de peso máxima"
+          "text": "PAP à noite. Cdeve realizar a polissonografia diagnóstica após a cirurgia, no momento de perda de peso máxima"
         },
         {
           "letter": "D",
@@ -7913,7 +7913,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Distúrbios do Sono",
       "topic": "Distúrbios do Sono",
       "title": "Questão 42",
-      "text": "Síndrome DemencialInsôniaDiagnóstico da DepressãoFaça a correlação entre a situação clínica e a conduta recomendada. Situação clínica: pacientes idosos, com quadro dedeficit cognitivo. 1. Primeiro paciente: evolução de 1 ano, apresentando Atividades de Vida Diárias (AVDs) anormais e exame de mini examedo estado mental (mini-mental) 12, para escolaridade de 8 anos. HPP: sem doenças prévias e em uso de Ginkgo biloba há 3meses, indicado por um médico do serviço básico de saúde. Exames laboratoriais e TC de crânio normais; 2. Segundo paciente: evolução de 9 meses, apresentando AVDs anormais e exame de mini-mental 28, para escolaridade de8 anos. Apresenta-se com labilidade emocional e anedonia. Exames laboratoriais e TC de crânio normais; 3. Terceiro paciente: evolução de 10 dias, com deficit de atenção, desorientação importante, alteração do ciclo sono vigília.AVDs anormais. Foi impossível aplicar o mini-mental devido ao deficit de atenção. Exames laboratoriais: hemograma: Hb =14; VCM = 87; leucócitos = 12.000; plaquetas = 250.000; urina tipo1 pH = 7.0; densidade = 1026; leucócitos = 500.000;hemácias = 15.000; bacteriúria intensa; 4. Quarto paciente: evolução de 9 meses, após uso de benzodiazepínico devido à insônia, apresentando AVDs normais emini-mental 26, para escolaridade de 8 anos. Exames laboratoriais e TC de crânio normais. Condutas recomendadas: a. Suspender o medicamento em uso, devido ao deficit cognitivo; b. Tratar especificamente a causa desencadeante, por se tratar de um quadro de delirium; c. Iniciar com anticolinesterásico, devido ao quadro sugestivo de Alzheimer; d. Iniciar o tratamento com citalopram, devido ao quadro sugestivo de depressão. Assinale a alternativa que apresenta as correlações CORRETAS",
+      "text": "Síndrome DemencialInsôniaDiagnóstico da DepressãoFaça a correlação entre a situação clínica e a conduta recomendada. Situação clínica: pacientes idosos, com quadro dedeficit cognitivo. 1. Primeiro paciente: evolução de 1 ano, apresentando Atividades de Vida Diárias (AVDs) anormais e exame de mini examedo estado mental (mini-mental) 12, para escolaridade de 8 anos. HPP: sem doenças prévias e em uso de Ginkgo biloba há 3meses, indicado por um médico do serviço básico de saúde. Exames laboratoriais e TC de crânio normais; 2. Segundo paciente: evolução de 9 meses, apresentando AVDs anormais e exame de mini-mental 28, para escolaridade de8 anos. Apresenta-se com labilidade emocional e anedonia. Exames laboratoriais e TC de crânio normais; 3. Terceiro paciente: evolução de 10 dias, com deficit de atenção, desorientação importante, alteração do ciclo sono vigília. AVDs anormais. Foi impossível aplicar o mini-mental devido ao deficit de atenção. Exames laboratoriais: hemograma: Hb =14; VCM = 87; leucócitos = 12.000; plaquetas = 250.000; urina tipo1 pH = 7.0; densidade = 1026; leucócitos = 500.000;hemácias = 15.000; bacteriúria intensa; 4. Quarto paciente: evolução de 9 meses, após uso de benzodiazepínico devido à insônia, apresentando AVDs normais emini-mental 26, para escolaridade de 8 anos. Exames laboratoriais e TC de crânio normais. Condutas recomendadas: a. Suspender o medicamento em uso, devido ao deficit cognitivo; b. Tratar especificamente a causa desencadeante, por se tratar de um quadro de delirium; c. Iniciar com anticolinesterásico, devido ao quadro sugestivo de Alzheimer; d. Iniciar o tratamento com citalopram, devido ao quadro sugestivo de depressão. Assinale a alternativa que apresenta as correlações CORRETAS",
       "options": [
         {
           "letter": "A",
@@ -7977,7 +7977,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Distúrbios do Sono",
       "topic": "Distúrbios do Sono",
       "title": "Questão 44",
-      "text": "Síndrome da Apneia Obstrutiva do SonoDentre os fatores clínicos predisponentes, as doenças cardiovasculares destacam-se a presença de Apneia Obstrutiva do Sono (AOS). Marque a opção que NÃO é compatível com essa situação clínica.AA influência da",
+      "text": "Síndrome da Apneia Obstrutiva do SonoDentre os fatores clínicos predisponentes, as doenças cardiovasculares destacam-se a presença de Apneia Obstrutiva do Sono (AOS). Marque a opção que NÃO é compatível com essa situação clínica. AA influência da",
       "options": [
         {
           "letter": "A",
@@ -8210,7 +8210,7 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "C",
-          "text": "om base no caso clínico apresentado, julgue o seguinte item. Após a primeira avaliação e a contenção do sangramento, a hipótese diagnóstica a ser levantada pelo médico é a de que opaciente seja portador de síndrome de apneia obstrutiva do sono (SAOS), convulsão e depressão.ACerto.BErrado"
+          "text": "om base no caso clínico apresentado, julgue o seguinte item. Após a primeira avaliação e a contenção do sangramento, a hipótese diagnóstica a ser levantada pelo médico é a de que opaciente seja portador de síndrome de apneia obstrutiva do sono (SAOS), convulsão e depressão. ACerto. BErrado"
         }
       ],
       "sourceId": "4000018846",
@@ -8246,7 +8246,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Distúrbios do Sono",
       "topic": "Distúrbios do Sono",
       "title": "Questão 53",
-      "text": "Um paciente de quarenta e oito anos de idade procurou atendimento médico queixando-se de sonolência diurna excessiva,ronco alto, pausas respiratórias testemunhadas, engasgos e sono agitado. O exame físico revelou pressão arterial de 150mmHg x 100 mmHg; frequência cardíaca de 85 bpm; 1,70 m de altura; peso corporal de 118 kg; e palato ogival, sem outrasalterações. O exame de polissonograFa mostrou Índice de Apneia-hipopneia por Hora (IAH) igual a 25 eventos/hora.Tendo como referência esse caso clínico, julgue o item que se segue. No caso em consideração, recomenda-se, como principal tratamento, a realização de pressão positiva contínua nas vias respiratórias",
+      "text": "Um paciente de quarenta e oito anos de idade procurou atendimento médico queixando-se de sonolência diurna excessiva,ronco alto, pausas respiratórias testemunhadas, engasgos e sono agitado. O exame físico revelou pressão arterial de 150mmHg x 100 mmHg; frequência cardíaca de 85 bpm; 1,70 m de altura; peso corporal de 118 kg; e palato ogival, sem outrasalterações. O exame de polissonograFa mostrou Índice de Apneia-hipopneia por Hora (IAH) igual a 25 eventos/hora. Tendo como referência esse caso clínico, julgue o item que se segue. No caso em consideração, recomenda-se, como principal tratamento, a realização de pressão positiva contínua nas vias respiratórias",
       "options": [
         {
           "letter": "A",
@@ -8422,7 +8422,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Distúrbios do Sono",
       "topic": "Distúrbios do Sono",
       "title": "Questão 59",
-      "text": "Terror NoturnoPré-escolar, 18 meses de idade, sexo masculino, é trazido à consulta, pois sua mãe está preocupada com o sono da criança.Está apresentando, frequentemente, durante a noite, gritos e choro contínuo súbito, inconsolável, não relacionado com fome, \"parecendo não reconhecer os pais e não respondendo ao chamado\". O episódio tem duração de até 15 minutos edepois a criança volta a dormir. Na manhã seguinte, acorda bem e não recorda o ocorrido. A manifestação é compatívelcom",
+      "text": "Terror NoturnoPré-escolar, 18 meses de idade, sexo masculino, é trazido à consulta, pois sua mãe está preocupada com o sono da criança. Está apresentando, frequentemente, durante a noite, gritos e choro contínuo súbito, inconsolável, não relacionado com fome, \"parecendo não reconhecer os pais e não respondendo ao chamado\". O episódio tem duração de até 15 minutos edepois a criança volta a dormir. Na manhã seguinte, acorda bem e não recorda o ocorrido. A manifestação é compatívelcom",
       "options": [
         {
           "letter": "A",
@@ -8684,7 +8684,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Distúrbios do Sono",
       "topic": "Distúrbios do Sono",
       "title": "Questão 68",
-      "text": "Mulher, 36 anos de idade, vem à consulta com endocrinologista por causa da obesidade, presente desde a adolescência.Diz que come muito, principalmente carboidratos. Já tentou todo tipo de dieta e fez uso de medicações com prescrição médica, sem sucesso. No interrogatório sistemático, queixa-se de sonolência diurna inexplicada e desperta frequentementeà noite. Nega etilismo ou tabagismo. Não faz exercícios porque sente muitas dores em joelhos e tornozelos. Ao examefísico, apresenta bom estado geral. Altura 1,50m, peso 85 kg, circunferência abdominal 89 cm, PA: 150 X 100mmHg, FC: 80bpm, FR:14 irpm. Apresenta acantose nigricans em região cervical e crepitações em joelhos. Demais exames sem alteraçõessigniFcativas. Exames laboratoriais solicitados pelo clínico geral apresentam glicemia de jejum: 205 mg/dl, triglicérides: 100mg/dl, CT: 152 mg/dl, HDL: 55 mg/dl, LDL: 77 mg/dl, Hb: 13 g/dl, Ur: 23 mg/dl, Cr: 0,69 mg/dl, AST: 18 U/l,",
+      "text": "Mulher, 36 anos de idade, vem à consulta com endocrinologista por causa da obesidade, presente desde a adolescência. Diz que come muito, principalmente carboidratos. Já tentou todo tipo de dieta e fez uso de medicações com prescrição médica, sem sucesso. No interrogatório sistemático, queixa-se de sonolência diurna inexplicada e desperta frequentementeà noite. Nega etilismo ou tabagismo. Não faz exercícios porque sente muitas dores em joelhos e tornozelos. Ao examefísico, apresenta bom estado geral. Altura 1,50m, peso 85 kg, circunferência abdominal 89 cm, PA: 150 X 100mmHg, FC: 80bpm, FR:14 irpm. Apresenta acantose nigricans em região cervical e crepitações em joelhos. Demais exames sem alteraçõessigniFcativas. Exames laboratoriais solicitados pelo clínico geral apresentam glicemia de jejum: 205 mg/dl, triglicérides: 100mg/dl, CT: 152 mg/dl, HDL: 55 mg/dl, LDL: 77 mg/dl, Hb: 13 g/dl, Ur: 23 mg/dl, Cr: 0,69 mg/dl, AST: 18 U/l,",
       "options": [
         {
           "letter": "A",
@@ -9289,7 +9289,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Intoxicação por Drogas e Dependência Química",
       "topic": "Intoxicação por Drogas e Dependência Química",
       "title": "Questão 1",
-      "text": "Quanto à intoxicação exógena, considere as seguintes possibilidades de quadros clínicos, agentes causadores e medidas de tratamento específicas.A partir dessas informações, assinale a alternativa que apresenta a correlação mais adequada entre o quadro clínico, oagente causador e a medida de tratamento",
+      "text": "Quanto à intoxicação exógena, considere as seguintes possibilidades de quadros clínicos, agentes causadores e medidas de tratamento específicas. A partir dessas informações, assinale a alternativa que apresenta a correlação mais adequada entre o quadro clínico, oagente causador e a medida de tratamento",
       "options": [
         {
           "letter": "A",
@@ -9323,7 +9323,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Intoxicação por Drogas e Dependência Química",
       "topic": "Intoxicação por Drogas e Dependência Química",
       "title": "Questão 2",
-      "text": "Homem, 55 anos, é trazido ao pronto-socorro após ingerir grande quantidade de uma substância que causou quadro de sudorese profusa, bradicardia, miose, hipotensão e broncorreia.Qual é a substância que apresentaria efeito similar quando ingerida em grande quantidade?",
+      "text": "Homem, 55 anos, é trazido ao pronto-socorro após ingerir grande quantidade de uma substância que causou quadro de sudorese profusa, bradicardia, miose, hipotensão e broncorreia. Qual é a substância que apresentaria efeito similar quando ingerida em grande quantidade?",
       "options": [
         {
           "letter": "A",
@@ -9423,7 +9423,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Intoxicação por Drogas e Dependência Química",
       "topic": "Intoxicação por Drogas e Dependência Química",
       "title": "Questão 5",
-      "text": "Menino, 2 anos de idade, é levado à UPA com relato de sonolência, naúseas e vômitos há 50 minutos. Após inicio doquadro, foi constatado que o menor ingeriu bolinhas de naftalina. A genitora informa ter colocado o produto, há dois dias, nagaveta que se encontrava aberta; que as bolinhas estavam em um pacote com 5 unidades, de menos de 1cm de diâmetro, eque 3 delas foram encontradas. Ao exame, criança hipoativa, hidratada, eupneica, corada, afebril. Observa-se hipersalivação. Sem outros achados anormaisno momento.No caso de ocorrer a complicação, considere as opções abaixo e indique a conduta adequada",
+      "text": "Menino, 2 anos de idade, é levado à UPA com relato de sonolência, naúseas e vômitos há 50 minutos. Após inicio doquadro, foi constatado que o menor ingeriu bolinhas de naftalina. A genitora informa ter colocado o produto, há dois dias, nagaveta que se encontrava aberta; que as bolinhas estavam em um pacote com 5 unidades, de menos de 1cm de diâmetro, eque 3 delas foram encontradas. Ao exame, criança hipoativa, hidratada, eupneica, corada, afebril. Observa-se hipersalivação. Sem outros achados anormaisno momento. No caso de ocorrer a complicação, considere as opções abaixo e indique a conduta adequada",
       "options": [
         {
           "letter": "A",
@@ -9453,7 +9453,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Intoxicação por Drogas e Dependência Química",
       "topic": "Intoxicação por Drogas e Dependência Química",
       "title": "Questão 6",
-      "text": "Menino, 2 anos de idade, é levado à UPA com relato de sonolência, naúseas e vômitos há 50 minutos. Após inicio doquadro, foi constatado que o menor ingeriu bolinhas de naftalina. A genitora informa ter colocado o produto, há dois dias, nagaveta que se encontrava aberta; que as bolinhas estavam em um pacote com 5 unidades, de menos de 1cm de diâmetro, eque 3 delas foram encontradas. Ao exame, criança hipoativa, hidratada, eupneica, corada, afebril. Observa-se hipersalivação. Sem outros achados anormaisno momento.O paciente, em questão, pode apresentar complicação decorrente de",
+      "text": "Menino, 2 anos de idade, é levado à UPA com relato de sonolência, naúseas e vômitos há 50 minutos. Após inicio doquadro, foi constatado que o menor ingeriu bolinhas de naftalina. A genitora informa ter colocado o produto, há dois dias, nagaveta que se encontrava aberta; que as bolinhas estavam em um pacote com 5 unidades, de menos de 1cm de diâmetro, eque 3 delas foram encontradas. Ao exame, criança hipoativa, hidratada, eupneica, corada, afebril. Observa-se hipersalivação. Sem outros achados anormaisno momento. O paciente, em questão, pode apresentar complicação decorrente de",
       "options": [
         {
           "letter": "A",
@@ -9483,7 +9483,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Intoxicação por Drogas e Dependência Química",
       "topic": "Intoxicação por Drogas e Dependência Química",
       "title": "Questão 7",
-      "text": "Menino, 2 anos de idade, é levado à UPA com relato de sonolência, naúseas e vômitos há 50 minutos. Após inicio doquadro, foi constatado que o menor ingeriu bolinhas de naftalina. A genitora informa ter colocado o produto, há dois dias, nagaveta que se encontrava aberta; que as bolinhas estavam em um pacote com 5 unidades, de menos de 1cm de diâmetro, eque 3 delas foram encontradas.Ao exame, criança hipoativa, hidratada, eupneica, corada, afebril. Observa-se hipersalivação. Sem outros achados anormaisno momento.Considerando o potencial tóxico do produto, e que a criança permaneceu por 8 horas em observação, sem sintomas,indique a conduta correta",
+      "text": "Menino, 2 anos de idade, é levado à UPA com relato de sonolência, naúseas e vômitos há 50 minutos. Após inicio doquadro, foi constatado que o menor ingeriu bolinhas de naftalina. A genitora informa ter colocado o produto, há dois dias, nagaveta que se encontrava aberta; que as bolinhas estavam em um pacote com 5 unidades, de menos de 1cm de diâmetro, eque 3 delas foram encontradas. Ao exame, criança hipoativa, hidratada, eupneica, corada, afebril. Observa-se hipersalivação. Sem outros achados anormaisno momento. Considerando o potencial tóxico do produto, e que a criança permaneceu por 8 horas em observação, sem sintomas,indique a conduta correta",
       "options": [
         {
           "letter": "A",
@@ -9513,7 +9513,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Intoxicação por Drogas e Dependência Química",
       "topic": "Intoxicação por Drogas e Dependência Química",
       "title": "Questão 8",
-      "text": "Um pré-escolar de 4 anos e 12 kg foi submetido a cirurgia abdominal de baixa complexidade com anestesia geral, semintercorrências. Ao final do procedimento, recebeu uma dose adicional endovenosa de fentanil e cetoprofeno paraanalgesia. Veio direto para enfermaria pediátrica, 1 hora após o final da cirurgia. Após 30 minutos, você é chamado para avaliar a criança, pois a mãe diz que ela não acorda. Ao exame físico: corada, hidratada, acianótica, anictérica e afebril.Frequência cardíaca 110 bpm, frequência respiratória 10 irpm, pressão arterial 95 x 55 mmHg, saturação periférica deoxigênio 90% em ar ambiente. Ausculta respiratória mostra murmurio vesicular simétrico, sem ruídos adventícios. Auscultacardíaca revela ritmo regular, duas bulhas normofonéticas, sem sopros, pulsos centrais e periféricos fortes, tempo deenchimento capilar 2 segundos. Abdome sem anormalidades. Pupilas mióticas e isocóricas. Com base no quadro clinicoacima, qual o tratamento farmacológico imediato mais adequado para esta situação clínica?",
+      "text": "Um pré-escolar de 4 anos e 12 kg foi submetido a cirurgia abdominal de baixa complexidade com anestesia geral, semintercorrências. Ao final do procedimento, recebeu uma dose adicional endovenosa de fentanil e cetoprofeno paraanalgesia. Veio direto para enfermaria pediátrica, 1 hora após o final da cirurgia. Após 30 minutos, você é chamado para avaliar a criança, pois a mãe diz que ela não acorda. Ao exame físico: corada, hidratada, acianótica, anictérica e afebril. Frequência cardíaca 110 bpm, frequência respiratória 10 irpm, pressão arterial 95 x 55 mmHg, saturação periférica deoxigênio 90% em ar ambiente. Ausculta respiratória mostra murmurio vesicular simétrico, sem ruídos adventícios. Auscultacardíaca revela ritmo regular, duas bulhas normofonéticas, sem sopros, pulsos centrais e periféricos fortes, tempo deenchimento capilar 2 segundos. Abdome sem anormalidades. Pupilas mióticas e isocóricas. Com base no quadro clinicoacima, qual o tratamento farmacológico imediato mais adequado para esta situação clínica?",
       "options": [
         {
           "letter": "A",
@@ -9543,7 +9543,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Intoxicação por Drogas e Dependência Química",
       "topic": "Intoxicação por Drogas e Dependência Química",
       "title": "Questão 9",
-      "text": "Intoxicações ExógenasA “crise dos opioides”, muito citada na literatura estadunidense, decorre do uso abusivo e indevido desta classe de drogas.Com casos de intoxicação cada vez mais frequentes, cabe ao profissional de saúde estar apto a reconhecer as manifestações inerentes ao quadro. O melhor preditor da toxicidade por opioides é",
+      "text": "Intoxicações ExógenasA “crise dos opioides”, muito citada na literatura estadunidense, decorre do uso abusivo e indevido desta classe de drogas. Com casos de intoxicação cada vez mais frequentes, cabe ao profissional de saúde estar apto a reconhecer as manifestações inerentes ao quadro. O melhor preditor da toxicidade por opioides é",
       "options": [
         {
           "letter": "A",
@@ -9607,7 +9607,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Intoxicação por Drogas e Dependência Química",
       "topic": "Intoxicação por Drogas e Dependência Química",
       "title": "Questão 11",
-      "text": "Jovem, 21 anos, é admitido no pronto atendimento com suspeita de intoxicação exógena por droga anticolinérgica.Acompanhantes que o trouxeram referem que estavam em uma festa tomando chá alucinógeno.Assinale a alternativa que apresenta o quadro clínico mais compatível",
+      "text": "Jovem, 21 anos, é admitido no pronto atendimento com suspeita de intoxicação exógena por droga anticolinérgica. Acompanhantes que o trouxeram referem que estavam em uma festa tomando chá alucinógeno. Assinale a alternativa que apresenta o quadro clínico mais compatível",
       "options": [
         {
           "letter": "A",
@@ -9678,7 +9678,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Intoxicação por Drogas e Dependência Química",
       "topic": "Intoxicação por Drogas e Dependência Química",
       "title": "Questão 13",
-      "text": "Síndrome Extrapiraminal SEPIntoxicações ExógenasPré-escolar de 3 anos e 4 meses de idade deu entrada no pronto-socorro apresentando rigidez e espasmos musculares ehipertermia. Não apresentava dificuldade respiratória. Ausculta cardíaca sem anormalidades. Sem história prévia de doença cardíaca. O paciente estava recebendo oxigenoterapia quando um primo dele, de quatro anos, deu entrada no mesmo hospital, com quadro semelhante. Ambos haviam passado as últimas 12 horas na casa da avó materna, que há anos faztratamento de esquizofrenia e hipertensão arterial.As evidências clínicas dessa história induzem a necessidade de o médico investigar",
+      "text": "Síndrome Extrapiraminal SEPIntoxicações ExógenasPré-escolar de 3 anos e 4 meses de idade deu entrada no pronto-socorro apresentando rigidez e espasmos musculares ehipertermia. Não apresentava dificuldade respiratória. Ausculta cardíaca sem anormalidades. Sem história prévia de doença cardíaca. O paciente estava recebendo oxigenoterapia quando um primo dele, de quatro anos, deu entrada no mesmo hospital, com quadro semelhante. Ambos haviam passado as últimas 12 horas na casa da avó materna, que há anos faztratamento de esquizofrenia e hipertensão arterial. As evidências clínicas dessa história induzem a necessidade de o médico investigar",
       "options": [
         {
           "letter": "A",
@@ -9865,7 +9865,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Intoxicação por Drogas e Dependência Química",
       "topic": "Intoxicação por Drogas e Dependência Química",
       "title": "Questão 19",
-      "text": "Homem, 39a, chega à emergência com confusão mental, náuseas e vômitos há 4 horas. Esposa o encontrou sonolento nobanheiro, ao lado de carteias de medicação aparentemente vazias jogadas no vaso sanitário. Antecedentes: depressão; usaamitriptilina. Exame físico: PA=124x78 mmHg, FC=108 bpm, FR=29 irpm, oximetria de pulso (ar ambiente)= 97%, T= 36,5°C.Glasgow 14, pupilas normais, sem déficits focais. Sem sinais de desconforto respiratório e ausculta respiratória normal.Eletrocardiograma: taquicardia sinusal. Glicemia capilar= 110mg/dL. Gasometria arterial: pH= 7,23; pO₂= 91 mmHg; pCO₂= 15mmHg; HCO₃= 10 mEq/L; BE= -7 mEq/L, SaO₂= 97%; sódio= 135 mEq/L; creatinina=0,92 mg/dL; lactato= 3,0 mmol/Le cloro= 98 mMol/L. A HIPÓTESE DIAGNÓSTICA É",
+      "text": "Homem, 39a, chega à emergência com confusão mental, náuseas e vômitos há 4 horas. Esposa o encontrou sonolento nobanheiro, ao lado de carteias de medicação aparentemente vazias jogadas no vaso sanitário. Antecedentes: depressão; usaamitriptilina. Exame físico: PA=124x78 mmHg, FC=108 bpm, FR=29 irpm, oximetria de pulso (ar ambiente)= 97%, T= 36,5°C.Glasgow 14, pupilas normais, sem déficits focais. Sem sinais de desconforto respiratório e ausculta respiratória normal. Eletrocardiograma: taquicardia sinusal. Glicemia capilar= 110mg/dL. Gasometria arterial: pH= 7,23; pO₂= 91 mmHg; pCO₂= 15mmHg; HCO₃= 10 mEq/L; BE= -7 mEq/L, SaO₂= 97%; sódio= 135 mEq/L; creatinina=0,92 mg/dL; lactato= 3,0 mmol/Le cloro= 98 mMol/L. A HIPÓTESE DIAGNÓSTICA É",
       "options": [
         {
           "letter": "A",
@@ -9993,7 +9993,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Intoxicação por Drogas e Dependência Química",
       "topic": "Intoxicação por Drogas e Dependência Química",
       "title": "Questão 24",
-      "text": "Qual é a hipótese diagnóstica mais provável para paciente com história de uso de várias substâncias de abuso e que seapresenta com taquicardia, midríase e hipertensão arterial?A",
+      "text": "Qual é a hipótese diagnóstica mais provável para paciente com história de uso de várias substâncias de abuso e que seapresenta com taquicardia, midríase e hipertensão arterial? A",
       "options": [
         {
           "letter": "A",
@@ -10185,7 +10185,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Intoxicação por Drogas e Dependência Química",
       "topic": "Intoxicação por Drogas e Dependência Química",
       "title": "Questão 30",
-      "text": "Considere as assertivas abaixo em relação às intoxicações exógenas.I - Salvo poucas exceções, administração de carvão ativado isoladamente é a intervenção adequada em caso deintoxicação por ingestão de medicamentos.II - Lavagem gástrica está contraindicada em caso de ingestão de substâncias cáusticas.III - Xarope de Ipeca (para induzir vômitos) está indicado para pacientes que apresentam piora progressiva de sensório.Quais as CORRETAS?A",
+      "text": "Considere as assertivas abaixo em relação às intoxicações exógenas. I - Salvo poucas exceções, administração de carvão ativado isoladamente é a intervenção adequada em caso deintoxicação por ingestão de medicamentos. II - Lavagem gástrica está contraindicada em caso de ingestão de substâncias cáusticas. III - Xarope de Ipeca (para induzir vômitos) está indicado para pacientes que apresentam piora progressiva de sensório. Quais as CORRETAS?A",
       "options": [
         {
           "letter": "A",
@@ -10249,7 +10249,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Intoxicação por Drogas e Dependência Química",
       "topic": "Intoxicação por Drogas e Dependência Química",
       "title": "Questão 32",
-      "text": "Homem de 30 anos tira uma lata de cerveja da geladeira e rapidamente engole um bocado do seu conteúdo antes de perceber que não era cerveja. Dentro de alguns minutos ele apresenta cólicas abdominais graves, visão turva, espasmos eperda de consciência. A esposa refere a equipe médica que colocou spray de barata na lata de cerveja e tinha deixado nageladeira para tentar eliminar as baratas e esqueceu de avisar ao marido. O pessoal da emergência verifica a embalagem edetermina que é um Organofosforado.Para neutralizar a atividade de inibição da colinesterase do veneno de organofosforado, o homem deve receber qual dos seguintes antídotos",
+      "text": "Homem de 30 anos tira uma lata de cerveja da geladeira e rapidamente engole um bocado do seu conteúdo antes de perceber que não era cerveja. Dentro de alguns minutos ele apresenta cólicas abdominais graves, visão turva, espasmos eperda de consciência. A esposa refere a equipe médica que colocou spray de barata na lata de cerveja e tinha deixado nageladeira para tentar eliminar as baratas e esqueceu de avisar ao marido. O pessoal da emergência verifica a embalagem edetermina que é um Organofosforado. Para neutralizar a atividade de inibição da colinesterase do veneno de organofosforado, o homem deve receber qual dos seguintes antídotos",
       "options": [
         {
           "letter": "A",
@@ -10279,7 +10279,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Intoxicação por Drogas e Dependência Química",
       "topic": "Intoxicação por Drogas e Dependência Química",
       "title": "Questão 33",
-      "text": "Um paciente de 68 anos começou a desenvolver sintomas neurológicos após episódio de diarreia e vômitos, associados aintoxicação alimentar. Inicialmente seus familiares o notaram lentificado, evoluindo com dificuldade para deambular esonolência. Ao ser trazido para a emergência, apresentava fasciculações e mioclonias, evoluindo para episódio convulsivo.Tinha antecedente de transtorno bipolar para o qual usava carbonato de lítio há anos. Não havia relato de outras comorbidades.Com relação ao caso, assinale a alternativa INCORRETA",
+      "text": "Um paciente de 68 anos começou a desenvolver sintomas neurológicos após episódio de diarreia e vômitos, associados aintoxicação alimentar. Inicialmente seus familiares o notaram lentificado, evoluindo com dificuldade para deambular esonolência. Ao ser trazido para a emergência, apresentava fasciculações e mioclonias, evoluindo para episódio convulsivo. Tinha antecedente de transtorno bipolar para o qual usava carbonato de lítio há anos. Não havia relato de outras comorbidades. Com relação ao caso, assinale a alternativa INCORRETA",
       "options": [
         {
           "letter": "A",
@@ -10343,7 +10343,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Intoxicação por Drogas e Dependência Química",
       "topic": "Intoxicação por Drogas e Dependência Química",
       "title": "Questão 35",
-      "text": "Menino de 2 anos deu entrada no pronto-socorro após ter ingerido um frasco de paracetamol.O pediatra de plantão deverá estar atento para o risco de a criança apresenta",
+      "text": "Menino de 2 anos deu entrada no pronto-socorro após ter ingerido um frasco de paracetamol. O pediatra de plantão deverá estar atento para o risco de a criança apresenta",
       "options": [
         {
           "letter": "A",
@@ -10471,7 +10471,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Intoxicação por Drogas e Dependência Química",
       "topic": "Intoxicação por Drogas e Dependência Química",
       "title": "Questão 39",
-      "text": "Leia o caso clínico a seguir.A mãe, inadvertidamente, enquanto falava ao celular, pegou um solvente na dispensa de sua casa (pensando ser águamineral), colocou-o na mamadeira e deu-o ao seu filho lactente. Logo em seguida (ainda sem ver o que tinha dado) elaobservou sonolência excessiva, cianose, hipotermia e bradicardia, levando-o imediatamente ao prontosocorro, onde opediatra fez diagnóstico de intoxicação exógena.Nesse caso, deve ser prescrito ao lactente",
+      "text": "Leia o caso clínico a seguir. A mãe, inadvertidamente, enquanto falava ao celular, pegou um solvente na dispensa de sua casa (pensando ser águamineral), colocou-o na mamadeira e deu-o ao seu filho lactente. Logo em seguida (ainda sem ver o que tinha dado) elaobservou sonolência excessiva, cianose, hipotermia e bradicardia, levando-o imediatamente ao prontosocorro, onde opediatra fez diagnóstico de intoxicação exógena. Nesse caso, deve ser prescrito ao lactente",
       "options": [
         {
           "letter": "A",
@@ -10508,7 +10508,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Intoxicação por Drogas e Dependência Química",
       "topic": "Intoxicação por Drogas e Dependência Química",
       "title": "Questão 40",
-      "text": "Leia o caso clínico a seguir.Garoto de cinco anos, cerca de três horas depois que voltou da fazenda com seus avós, inicia quadro de sudorese,lacrimejamento de ambos os olhos, salivação, náuseas e diarreia. Imediatamente, os pais o levam ao pronto-socorro, ondeo pediatra colhe a história e observa ao exame físico: bradicardia, miose, broncoespasmo e convulsão. Diante disso, ele faz diagnóstico de intoxicação por",
+      "text": "Leia o caso clínico a seguir. Garoto de cinco anos, cerca de três horas depois que voltou da fazenda com seus avós, inicia quadro de sudorese,lacrimejamento de ambos os olhos, salivação, náuseas e diarreia. Imediatamente, os pais o levam ao pronto-socorro, ondeo pediatra colhe a história e observa ao exame físico: bradicardia, miose, broncoespasmo e convulsão. Diante disso, ele faz diagnóstico de intoxicação por",
       "options": [
         {
           "letter": "A",
@@ -10538,7 +10538,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Intoxicação por Drogas e Dependência Química",
       "topic": "Intoxicação por Drogas e Dependência Química",
       "title": "Questão 41",
-      "text": "Avalie o conjunto de manifestações descrito abaixo:1. Sudorese profusa, sialorreia, hipersecreção brônquica; miose e bradicardia.2. Euforia, hipertensão arterial, taquicardia e midríase.3. Mucosas secas, hiperreflexia tendinosa, agitação psico-motora e hipertermia.4. Náuseas, tremores de extremidades, polidipsia, poliúria e disfunção renal.Assinale a alternativa com a respectiva droga (ou classe farmacológica) que se associa a cada conjunto de manifestações acima",
+      "text": "Avalie o conjunto de manifestações descrito abaixo:1. Sudorese profusa, sialorreia, hipersecreção brônquica; miose e bradicardia.2. Euforia, hipertensão arterial, taquicardia e midríase.3. Mucosas secas, hiperreflexia tendinosa, agitação psico-motora e hipertermia.4. Náuseas, tremores de extremidades, polidipsia, poliúria e disfunção renal. Assinale a alternativa com a respectiva droga (ou classe farmacológica) que se associa a cada conjunto de manifestações acima",
       "options": [
         {
           "letter": "A",
@@ -10572,7 +10572,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Intoxicação por Drogas e Dependência Química",
       "topic": "Intoxicação por Drogas e Dependência Química",
       "title": "Questão 43",
-      "text": "Leia a situação clínica a seguir.Um médico da Estratégia Saúde da Família, em zona rural de um pequeno município do interior de Goiás até o fim de janeirode 2020, atendeu um paciente proveniente desse local, que chegou com quadro clínico grave, caracterizado por miose,hipotensão, arritmias cardíacas, insuficiência respiratória, edema agudo de pulmão, pneumonite química, convulsões,alterações da consciência, choque, coma, que poderia ter evoluído para óbito, caso não fosse devidamente atendido.Seguindo os protocolos do Ministério da Saúde do Brasil, a principal suspeita diagnóstica que deve ser levantada é",
+      "text": "Leia a situação clínica a seguir. Um médico da Estratégia Saúde da Família, em zona rural de um pequeno município do interior de Goiás até o fim de janeirode 2020, atendeu um paciente proveniente desse local, que chegou com quadro clínico grave, caracterizado por miose,hipotensão, arritmias cardíacas, insuficiência respiratória, edema agudo de pulmão, pneumonite química, convulsões,alterações da consciência, choque, coma, que poderia ter evoluído para óbito, caso não fosse devidamente atendido. Seguindo os protocolos do Ministério da Saúde do Brasil, a principal suspeita diagnóstica que deve ser levantada é",
       "options": [
         {
           "letter": "A",
@@ -10979,7 +10979,7 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "B",
-          "text": "Tremores grosseiros de extremidades, hiporreflexia, alteração do nível de consciência, dor abdominal e ataxia.Manejo: coleta de litemia (parâmetro para acompanhamento), suspensão imediata do lítio, hidratação viaendovenos, controle dos sinais vitais, monitoramento cardíaco e respiratório"
+          "text": "Tremores grosseiros de extremidades, hiporreflexia, alteração do nível de consciência, dor abdominal e ataxia. Manejo: coleta de litemia (parâmetro para acompanhamento), suspensão imediata do lítio, hidratação viaendovenos, controle dos sinais vitais, monitoramento cardíaco e respiratório"
         },
         {
           "letter": "C",
@@ -11495,7 +11495,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Intoxicação por Drogas e Dependência Química",
       "topic": "Intoxicação por Drogas e Dependência Química",
       "title": "Questão 72",
-      "text": "Sumário dos Tóxicos e AntídotosCorrelacione corretamente os agentes de intoxicações agudas com seus respectivos antídotos: I. Veneno de rato cumarínico;II. Benzoadiazepínico; III. Opioides; IV. Antidiabéticos orais; ( ) Flumazenil;( ) Naloxone; ( ) Octreotida; ( ) Vitamina K. Assinale a alternativa que demonstra a relação CORRETA entre elas",
+      "text": "Sumário dos Tóxicos e AntídotosCorrelacione corretamente os agentes de intoxicações agudas com seus respectivos antídotos: I. Veneno de rato cumarínico; II. Benzoadiazepínico; III. Opioides; IV. Antidiabéticos orais; ( ) Flumazenil;( ) Naloxone; ( ) Octreotida; ( ) Vitamina K. Assinale a alternativa que demonstra a relação CORRETA entre elas",
       "options": [
         {
           "letter": "A",
@@ -11585,7 +11585,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Intoxicação por Drogas e Dependência Química",
       "topic": "Intoxicação por Drogas e Dependência Química",
       "title": "Questão 75",
-      "text": "Intoxicações ExógenasMedidas geraisPre-escolar, 4 anos de idade, encontrado desacordado ao lado de cartela de verapamil da avó, que estava vazia. Noscasos de intoxicação exógena por bloqueador de canal de cálcio em pediatria, quanto a sua condução, deve-se: I. Realizar a remoção de agente toxicológico, reduzindo assim, a diminuição da exposição do organismo, reduzindo otempo e/ou superfície de exposição. II. A lavagem gástica e o uso do carvão ativado pode ser uma alternativa no caso acima, por se tratar de intoxicação porverapamil em criança. III. Realizar medidas que promovam a excreção rápida do agente toxicológico absorvido pelo organismo, como diureseforçada pelo uso de diuréticos. IV. Gluconato de cálcio pode fazer parte do arsenal terapêutico no caso em questão.A alternativa que contém todas as afirmativas corretas é",
+      "text": "Intoxicações ExógenasMedidas geraisPre-escolar, 4 anos de idade, encontrado desacordado ao lado de cartela de verapamil da avó, que estava vazia. Noscasos de intoxicação exógena por bloqueador de canal de cálcio em pediatria, quanto a sua condução, deve-se: I. Realizar a remoção de agente toxicológico, reduzindo assim, a diminuição da exposição do organismo, reduzindo otempo e/ou superfície de exposição. II. A lavagem gástica e o uso do carvão ativado pode ser uma alternativa no caso acima, por se tratar de intoxicação porverapamil em criança. III. Realizar medidas que promovam a excreção rápida do agente toxicológico absorvido pelo organismo, como diureseforçada pelo uso de diuréticos. IV. Gluconato de cálcio pode fazer parte do arsenal terapêutico no caso em questão. A alternativa que contém todas as afirmativas corretas é",
       "options": [
         {
           "letter": "A",
@@ -11649,7 +11649,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Intoxicação por Drogas e Dependência Química",
       "topic": "Intoxicação por Drogas e Dependência Química",
       "title": "Questão 77",
-      "text": "Intoxicações ExógenasDas alternativas citadas abaixo, qual é a que NÃO representa uma suspeita de intoxicação exógena?A",
+      "text": "Intoxicações ExógenasDas alternativas citadas abaixo, qual é a que NÃO representa uma suspeita de intoxicação exógena? A",
       "options": [
         {
           "letter": "A",
@@ -12067,7 +12067,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Intoxicação por Drogas e Dependência Química",
       "topic": "Intoxicação por Drogas e Dependência Química",
       "title": "Questão 91",
-      "text": "Lactente, 3m, encaminhado para investigação de meningite, chega à emergência com quadro de choro inconsolável.Exame físico: chorosa; sudoreica; FC = 190 bpm; TAx. = 39°C. Neurológico: hiper-rebexia global e pupilas midriáticas. Atoxíndrome a ser pensada é",
+      "text": "Lactente, 3m, encaminhado para investigação de meningite, chega à emergência com quadro de choro inconsolável. Exame físico: chorosa; sudoreica; FC = 190 bpm; TAx. = 39°C. Neurológico: hiper-rebexia global e pupilas midriáticas. Atoxíndrome a ser pensada é",
       "options": [
         {
           "letter": "A",
@@ -12127,7 +12127,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Intoxicação por Drogas e Dependência Química",
       "topic": "Intoxicação por Drogas e Dependência Química",
       "title": "Questão 93",
-      "text": "Qual das intoxicações medicamentosas abaixo pode cursar com taquicardia ventricular?A",
+      "text": "Qual das intoxicações medicamentosas abaixo pode cursar com taquicardia ventricular? A",
       "options": [
         {
           "letter": "A",
@@ -12289,7 +12289,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Intoxicação por Drogas e Dependência Química",
       "topic": "Intoxicação por Drogas e Dependência Química",
       "title": "Questão 98",
-      "text": "Paciente P.A.D, 20 anos é trazido pelos familiares à unidade básica de saúde devido a quadro súbito de agitaçãopsicomotora, associada a alucinações táteis (sensação de insetos andando pelo corpo) e paranóia (idéias de perseguição).Ao exame: Pupilas midriáticas, sudorese e calafrios. ACV: Bulhas rítmicas c/ Extrassístoles, taquicárdico (FC: 125 bpm) PA:170/110mmHg. Através das alterações encontradas nos parâmetros acima podemos caracterizar a síndrome tóxica e os prováveis agentes envolvidos como",
+      "text": "Paciente P.A.D, 20 anos é trazido pelos familiares à unidade básica de saúde devido a quadro súbito de agitaçãopsicomotora, associada a alucinações táteis (sensação de insetos andando pelo corpo) e paranóia (idéias de perseguição). Ao exame: Pupilas midriáticas, sudorese e calafrios. ACV: Bulhas rítmicas c/ Extrassístoles, taquicárdico (FC: 125 bpm) PA:170/110mmHg. Através das alterações encontradas nos parâmetros acima podemos caracterizar a síndrome tóxica e os prováveis agentes envolvidos como",
       "options": [
         {
           "letter": "A",
@@ -12297,11 +12297,11 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "B",
-          "text": "enzodiazepínicos, Barbitúricos e Opióides.BSd"
+          "text": "enzodiazepínicos, Barbitúricos e Opióides. BSd"
         },
         {
           "letter": "C",
-          "text": "olinérgica / Agrotóxicos organofosforados e Carbamatos.CSd. Anticolinérgica / LSD, Inibidores de MAO e Venlafaxina"
+          "text": "olinérgica / Agrotóxicos organofosforados e Carbamatos. CSd. Anticolinérgica / LSD, Inibidores de MAO e Venlafaxina"
         },
         {
           "letter": "D",
@@ -12492,7 +12492,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Psicopatologia",
       "topic": "Psicopatologia",
       "title": "Questão 4",
-      "text": "Leia o caso clínico a seguir.Benício, de 24 anos, a8rma estar tendo intenso sofrimento por não conseguir ter controle sobre algumas imagens que lhevêm à consciência a “quase todo momento”. Diz que vê, em seu pensamento, repetidas vezes, a imagem de sua esposamorta e ensaguentada no chão. Tal visualização o faz entrar em estado de “quase desespero” e vê a necessidade deimaginar uma cena agradável dos dois na praia para “anular” esse pensamento. Muitas vezes, acha que, se não 8zer isso, sua esposa irá morrer antes de chegar em casa. Frequentemente, tem impulsos de agredir alguém com faca ou socos. Essesimpulsos são vivenciados como sem contexto, inadequados, contra sua vontade ou seus princípios. No entanto,acontecem repetidas vezes, e ele acha que acontecerá uma catástrofe se não tentar isolar esse impulso repetindo a palavra‘paz’ sete vezes. Tais sintomas se iniciaram de forma leve há cerca de sete anos e pioraram há um ano. No momento, opaciente apresenta-se altamente disfuncional e em intenso sofrimento. Os sintomas apresentados são característicos de",
+      "text": "Leia o caso clínico a seguir. Benício, de 24 anos, a8rma estar tendo intenso sofrimento por não conseguir ter controle sobre algumas imagens que lhevêm à consciência a “quase todo momento”. Diz que vê, em seu pensamento, repetidas vezes, a imagem de sua esposamorta e ensaguentada no chão. Tal visualização o faz entrar em estado de “quase desespero” e vê a necessidade deimaginar uma cena agradável dos dois na praia para “anular” esse pensamento. Muitas vezes, acha que, se não 8zer isso, sua esposa irá morrer antes de chegar em casa. Frequentemente, tem impulsos de agredir alguém com faca ou socos. Essesimpulsos são vivenciados como sem contexto, inadequados, contra sua vontade ou seus princípios. No entanto,acontecem repetidas vezes, e ele acha que acontecerá uma catástrofe se não tentar isolar esse impulso repetindo a palavra‘paz’ sete vezes. Tais sintomas se iniciaram de forma leve há cerca de sete anos e pioraram há um ano. No momento, opaciente apresenta-se altamente disfuncional e em intenso sofrimento. Os sintomas apresentados são característicos de",
       "options": [
         {
           "letter": "A",
@@ -12814,7 +12814,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Psicopatologia",
       "topic": "Psicopatologia",
       "title": "Questão 13",
-      "text": "Uma mãe encaminha o 8lho de 22 anos de idade para atendimento. Ele está com excesso de peso, descuidado com aaparência e a higiene corporal, e veste roupas pretas, desgrenhadas e inadequadas para a estação. Ele fala que não sabe omotivo de ter sido levado para consulta psiquiátrica, pois não está acontecendo nada de errado com ele. Acha que quemprecisa de tratamento é a mãe. “Ela é que é a louca”. No entanto, a mãe conta que, há mais ou menos 15 dias, o 8lho tentouamputar o próprio pênis com uma faca. Foi atendido na emergência e realizada a sutura do ferimento. Apesar de nunca tersido muito sociável, no último ano tem permanecido, a maior parte do tempo, trancado no quarto e indiferente a tudo.Mostrase cada vez mais estranho. Não aceita a comida que a mãe faz, pois fala que enxerga e sente o cheiro do venenoque ela põe. Come apenas alimentos industrializados e lacrados, como pão, margarina e refrigerante.Acerca desse caso clínico e tendo em vista os conhecimentos médicos correlatos, julgue os itens a seguir.Tipicamente na esquizofrenia, o delírio é bizarro e mal sistematizado, podendo ser primário ou secundário",
+      "text": "Uma mãe encaminha o 8lho de 22 anos de idade para atendimento. Ele está com excesso de peso, descuidado com aaparência e a higiene corporal, e veste roupas pretas, desgrenhadas e inadequadas para a estação. Ele fala que não sabe omotivo de ter sido levado para consulta psiquiátrica, pois não está acontecendo nada de errado com ele. Acha que quemprecisa de tratamento é a mãe. “Ela é que é a louca”. No entanto, a mãe conta que, há mais ou menos 15 dias, o 8lho tentouamputar o próprio pênis com uma faca. Foi atendido na emergência e realizada a sutura do ferimento. Apesar de nunca tersido muito sociável, no último ano tem permanecido, a maior parte do tempo, trancado no quarto e indiferente a tudo. Mostrase cada vez mais estranho. Não aceita a comida que a mãe faz, pois fala que enxerga e sente o cheiro do venenoque ela põe. Come apenas alimentos industrializados e lacrados, como pão, margarina e refrigerante. Acerca desse caso clínico e tendo em vista os conhecimentos médicos correlatos, julgue os itens a seguir. Tipicamente na esquizofrenia, o delírio é bizarro e mal sistematizado, podendo ser primário ou secundário",
       "options": [
         {
           "letter": "A",
@@ -12836,7 +12836,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Psicopatologia",
       "topic": "Psicopatologia",
       "title": "Questão 14",
-      "text": "Um homem de 18 anos de idade é encaminhado a consulta pela mãe, a qual está preocupada com o grande medo do 8lhode relacionar-se com as pessoas, evitando, a todo custo, envolver-se em atividades sociais e de lazer. Apresenta bomrendimento escolar, porém sofre muito quando tem que desenvolver as atividades escolares, por medo dos julgamentosnegativos dos professores quanto ao desempenho dele. Fará vestibular, mas está pensando em desistir, com receio de serreprovado e, por isso, ser julgado pela família. Nos momentos em que 8ca “nervoso”, sente taquicardia, náuseas, sudorese,boca seca e formigamento ao redor da boca e nas extremidades das mãos. Mesmo percebendo que o que sente éexagerado e sem sentido, não consegue evitar tais pensamentos.Com base nesse caso clínico e nos conhecimentos médicos correlatos, julgue os itens a seguir.Na parte da atenção que deveria estar voltada para o ambiente, evidencia-se comprometimento no caso descrito, poisdesvia para si, em uma monitoração detalhada de seus comportamentos, sentimentos e sensações corporais. O paciente está com di8culdades de perceber estímulos que não reforcem seus temores. Assim, pode-se dizer que ele apresenta hipervigilância",
+      "text": "Um homem de 18 anos de idade é encaminhado a consulta pela mãe, a qual está preocupada com o grande medo do 8lhode relacionar-se com as pessoas, evitando, a todo custo, envolver-se em atividades sociais e de lazer. Apresenta bomrendimento escolar, porém sofre muito quando tem que desenvolver as atividades escolares, por medo dos julgamentosnegativos dos professores quanto ao desempenho dele. Fará vestibular, mas está pensando em desistir, com receio de serreprovado e, por isso, ser julgado pela família. Nos momentos em que 8ca “nervoso”, sente taquicardia, náuseas, sudorese,boca seca e formigamento ao redor da boca e nas extremidades das mãos. Mesmo percebendo que o que sente éexagerado e sem sentido, não consegue evitar tais pensamentos. Com base nesse caso clínico e nos conhecimentos médicos correlatos, julgue os itens a seguir. Na parte da atenção que deveria estar voltada para o ambiente, evidencia-se comprometimento no caso descrito, poisdesvia para si, em uma monitoração detalhada de seus comportamentos, sentimentos e sensações corporais. O paciente está com di8culdades de perceber estímulos que não reforcem seus temores. Assim, pode-se dizer que ele apresenta hipervigilância",
       "options": [
         {
           "letter": "A",
@@ -12858,7 +12858,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Psicopatologia",
       "topic": "Psicopatologia",
       "title": "Questão 15",
-      "text": "Um homem de 18 anos de idade é encaminhado a consulta pela mãe, a qual está preocupada com o grande medo do 8lhode relacionar-se com as pessoas, evitando, a todo custo, envolver-se em atividades sociais e de lazer. Apresenta bomrendimento escolar, porém sofre muito quando tem que desenvolver as atividades escolares, por medo dos julgamentosnegativos dos professores quanto ao desempenho dele. Fará vestibular, mas está pensando em desistir, com receio de serreprovado e, por isso, ser julgado pela família. Nos momentos em que 8ca “nervoso”, sente taquicardia, náuseas, sudorese,boca seca e formigamento ao redor da boca e nas extremidades das mãos. Mesmo percebendo que o que sente éexagerado e sem sentido, não consegue evitar tais pensamentos.Com base nesse caso clínico e nos conhecimentos médicos correlatos, julgue os itens a seguir.No caso relatado, a atenção está alterada e apresenta-se auto focada; dessa forma, fala-se em hipertenacidade",
+      "text": "Um homem de 18 anos de idade é encaminhado a consulta pela mãe, a qual está preocupada com o grande medo do 8lhode relacionar-se com as pessoas, evitando, a todo custo, envolver-se em atividades sociais e de lazer. Apresenta bomrendimento escolar, porém sofre muito quando tem que desenvolver as atividades escolares, por medo dos julgamentosnegativos dos professores quanto ao desempenho dele. Fará vestibular, mas está pensando em desistir, com receio de serreprovado e, por isso, ser julgado pela família. Nos momentos em que 8ca “nervoso”, sente taquicardia, náuseas, sudorese,boca seca e formigamento ao redor da boca e nas extremidades das mãos. Mesmo percebendo que o que sente éexagerado e sem sentido, não consegue evitar tais pensamentos. Com base nesse caso clínico e nos conhecimentos médicos correlatos, julgue os itens a seguir. No caso relatado, a atenção está alterada e apresenta-se auto focada; dessa forma, fala-se em hipertenacidade",
       "options": [
         {
           "letter": "A",
@@ -12880,7 +12880,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Psicopatologia",
       "topic": "Psicopatologia",
       "title": "Questão 16",
-      "text": "Um homem de 18 anos de idade é encaminhado a consulta pela mãe, a qual está preocupada com o grande medo do 8lhode relacionar-se com as pessoas, evitando, a todo custo, envolver-se em atividades sociais e de lazer. Apresenta bomrendimento escolar, porém sofre muito quando tem que desenvolver as atividades escolares, por medo dos julgamentosnegativos dos professores quanto ao desempenho dele. Fará vestibular, mas está pensando em desistir, com receio de serreprovado e, por isso, ser julgado pela família. Nos momentos em que 8ca “nervoso”, sente taquicardia, náuseas, sudorese,boca seca e formigamento ao redor da boca e nas extremidades das mãos. Mesmo percebendo que o que sente éexagerado e sem sentido, não consegue evitar tais pensamentos.Com base nesse caso clínico e nos conhecimentos médicos correlatos, julgue os itens a seguir.No exame do estado mental, observa-se obnubilação ou turvação da consciência, pois há um claro rebaixamento da consciência de forma leve a moderada",
+      "text": "Um homem de 18 anos de idade é encaminhado a consulta pela mãe, a qual está preocupada com o grande medo do 8lhode relacionar-se com as pessoas, evitando, a todo custo, envolver-se em atividades sociais e de lazer. Apresenta bomrendimento escolar, porém sofre muito quando tem que desenvolver as atividades escolares, por medo dos julgamentosnegativos dos professores quanto ao desempenho dele. Fará vestibular, mas está pensando em desistir, com receio de serreprovado e, por isso, ser julgado pela família. Nos momentos em que 8ca “nervoso”, sente taquicardia, náuseas, sudorese,boca seca e formigamento ao redor da boca e nas extremidades das mãos. Mesmo percebendo que o que sente éexagerado e sem sentido, não consegue evitar tais pensamentos. Com base nesse caso clínico e nos conhecimentos médicos correlatos, julgue os itens a seguir. No exame do estado mental, observa-se obnubilação ou turvação da consciência, pois há um claro rebaixamento da consciência de forma leve a moderada",
       "options": [
         {
           "letter": "A",
@@ -12902,7 +12902,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Psicopatologia",
       "topic": "Psicopatologia",
       "title": "Questão 17",
-      "text": "Uma mulher de 39 anos de idade começou a apresentar um comportamento estranho, referido pela família, que surgiu deforma rápida e aguda. Os familiares contam que, há aproximadamente seis semanas, ela começou a sentir tristeza,desânimo, diminuição do apetite, falta de interesse e insônia. Na última semana, tem estado intensamente descon8ada e falaque estão mudando o seu sexo biológico. Enxerga o próprio corpo sendo mudado para o sexo masculino. Ouve vozesdizendo-lhe que deve cortar os seios com uma faca, pois eles cresceram por ter tomado hormônios de forma involuntária,dada por seres estranhos. Acredita que a família dela também foi possuída por tais seres que colocam hormônio na comida.Por isso, come apenas alimentos que estão embalados.Acerca desse caso clínico e com base nos conhecimentos médicos correlatos, julgue os itens a seguir.As síndromes psiquiátricas são definidas como um conjunto de sinais e sintomas que se agrupam de forma recorrente",
+      "text": "Uma mulher de 39 anos de idade começou a apresentar um comportamento estranho, referido pela família, que surgiu deforma rápida e aguda. Os familiares contam que, há aproximadamente seis semanas, ela começou a sentir tristeza,desânimo, diminuição do apetite, falta de interesse e insônia. Na última semana, tem estado intensamente descon8ada e falaque estão mudando o seu sexo biológico. Enxerga o próprio corpo sendo mudado para o sexo masculino. Ouve vozesdizendo-lhe que deve cortar os seios com uma faca, pois eles cresceram por ter tomado hormônios de forma involuntária,dada por seres estranhos. Acredita que a família dela também foi possuída por tais seres que colocam hormônio na comida. Por isso, come apenas alimentos que estão embalados. Acerca desse caso clínico e com base nos conhecimentos médicos correlatos, julgue os itens a seguir. As síndromes psiquiátricas são definidas como um conjunto de sinais e sintomas que se agrupam de forma recorrente",
       "options": [
         {
           "letter": "A",
@@ -12924,7 +12924,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Psicopatologia",
       "topic": "Psicopatologia",
       "title": "Questão 18",
-      "text": "Uma mulher de 39 anos de idade começou a apresentar um comportamento estranho, referido pela família, que surgiu deforma rápida e aguda. Os familiares contam que, há aproximadamente seis semanas, ela começou a sentir tristeza,desânimo, diminuição do apetite, falta de interesse e insônia. Na última semana, tem estado intensamente descon8ada e falaque estão mudando o seu sexo biológico. Enxerga o próprio corpo sendo mudado para o sexo masculino. Ouve vozesdizendo-lhe que deve cortar os seios com uma faca, pois eles cresceram por ter tomado hormônios de forma involuntária,dada por seres estranhos. Acredita que a família dela também foi possuída por tais seres que colocam hormônio na comida.Por isso, come apenas alimentos que estão embalados.Acerca desse caso clínico e com base nos conhecimentos médicos correlatos, julgue os itens a seguir.Para o diagnóstico da esquizofrenia, considera-se um grupo de sintomas denominados negativos, que se caracterizam poralexitimia, a qual se refere à diminuição da expressão emocional",
+      "text": "Uma mulher de 39 anos de idade começou a apresentar um comportamento estranho, referido pela família, que surgiu deforma rápida e aguda. Os familiares contam que, há aproximadamente seis semanas, ela começou a sentir tristeza,desânimo, diminuição do apetite, falta de interesse e insônia. Na última semana, tem estado intensamente descon8ada e falaque estão mudando o seu sexo biológico. Enxerga o próprio corpo sendo mudado para o sexo masculino. Ouve vozesdizendo-lhe que deve cortar os seios com uma faca, pois eles cresceram por ter tomado hormônios de forma involuntária,dada por seres estranhos. Acredita que a família dela também foi possuída por tais seres que colocam hormônio na comida. Por isso, come apenas alimentos que estão embalados. Acerca desse caso clínico e com base nos conhecimentos médicos correlatos, julgue os itens a seguir. Para o diagnóstico da esquizofrenia, considera-se um grupo de sintomas denominados negativos, que se caracterizam poralexitimia, a qual se refere à diminuição da expressão emocional",
       "options": [
         {
           "letter": "A",
@@ -12953,7 +12953,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Psicopatologia",
       "topic": "Psicopatologia",
       "title": "Questão 19",
-      "text": "Um jovem de 26 anos de idade, andando pela rua por volta das 18 horas, viu pessoas mortas de baixo do viaduto próximo àcasa onde mora. Voltou ao local no dia seguinte, ainda assustado, e não viu mais os corpos, apenas papelões amontoados.Ele fez uma cirurgia recentemente e, depois da cirurgia, tem se mostrado mais deprimido, sem energia e sem prazer.Na perspectiva psicopatológica, a experiência vivida pelo jovem se trata de",
+      "text": "Um jovem de 26 anos de idade, andando pela rua por volta das 18 horas, viu pessoas mortas de baixo do viaduto próximo àcasa onde mora. Voltou ao local no dia seguinte, ainda assustado, e não viu mais os corpos, apenas papelões amontoados. Ele fez uma cirurgia recentemente e, depois da cirurgia, tem se mostrado mais deprimido, sem energia e sem prazer. Na perspectiva psicopatológica, a experiência vivida pelo jovem se trata de",
       "options": [
         {
           "letter": "A",
@@ -12983,7 +12983,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Psicopatologia",
       "topic": "Psicopatologia",
       "title": "Questão 20",
-      "text": "Considerando que o conceito de esquizofrenia é politético, ou seja, muitas frases distintas são usadas para de8nir uma entidade clínica, analise as afirmativas a seguir.I. Na perspectiva de Bleuler, delírio e alucinação são considerados sintomas secundários.II. Na perspectiva de Schneider, alterações da consciência de atividade do eu e alucinações auditivas estão entre ossintomas de primeira ordem.III. Na primeira perspectiva de Kraepelin, a evolução de8citária seria o mais importante para o conceito, mas as classificações diagnósticas nunca se livraram dessa premissa para pensar o transtorno.Estão corretas as afirmativas",
+      "text": "Considerando que o conceito de esquizofrenia é politético, ou seja, muitas frases distintas são usadas para de8nir uma entidade clínica, analise as afirmativas a seguir. I. Na perspectiva de Bleuler, delírio e alucinação são considerados sintomas secundários. II. Na perspectiva de Schneider, alterações da consciência de atividade do eu e alucinações auditivas estão entre ossintomas de primeira ordem. III. Na primeira perspectiva de Kraepelin, a evolução de8citária seria o mais importante para o conceito, mas as classificações diagnósticas nunca se livraram dessa premissa para pensar o transtorno. Estão corretas as afirmativas",
       "options": [
         {
           "letter": "A",
@@ -13013,7 +13013,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Psicopatologia",
       "topic": "Psicopatologia",
       "title": "Questão 21",
-      "text": "Em agosto de 2020, um homem saiu de casa e foi buscar uma criança, neta de sua esposa, na escola. O homem estuprou ematou a menina e foi para casa como se nada tivesse ocorrido, permanecendo silencioso, como era de seu costume.Como a criança não chagava em casa, a família foi à escola e soube que o avô havia pegado a criança depois da aula para levá-la para casa. Ele negou para a família e a polícia que tivesse ido à escola. No transcorrer dos dias, disse à polícia que sabia o que tinha acontecido, mas a8rmava ainda não ser ele o autor dos fatos. Foi preso. A família não quer mais contato com o homem, mas o Ministério Público quer saber se ele tem algum transtorno mental que possa atuar na redução daculpabilidade. Cabe ao perito investigar, elucidando a difícil questão relacionada ao risco de crime sexual.Com relação à avaliação da possibilidade de autocontrole do transgressor, analise as afirmativas a seguir:I. Presença de transtorno mental que esteja relacionado ao ato ilícito.II. Inexistência de premeditação ou planejamento, caracterizando o ato como impulsivo.III. Ato de caráter isolado ou infrequente.IV. Tendência prévia de lidar com o impulso patológico de forma adequada, evidenciadas por tentativas deautoimpedimento de conduta criminosa.Estão corretas as afirmativas",
+      "text": "Em agosto de 2020, um homem saiu de casa e foi buscar uma criança, neta de sua esposa, na escola. O homem estuprou ematou a menina e foi para casa como se nada tivesse ocorrido, permanecendo silencioso, como era de seu costume. Como a criança não chagava em casa, a família foi à escola e soube que o avô havia pegado a criança depois da aula para levá-la para casa. Ele negou para a família e a polícia que tivesse ido à escola. No transcorrer dos dias, disse à polícia que sabia o que tinha acontecido, mas a8rmava ainda não ser ele o autor dos fatos. Foi preso. A família não quer mais contato com o homem, mas o Ministério Público quer saber se ele tem algum transtorno mental que possa atuar na redução daculpabilidade. Cabe ao perito investigar, elucidando a difícil questão relacionada ao risco de crime sexual. Com relação à avaliação da possibilidade de autocontrole do transgressor, analise as afirmativas a seguir:I. Presença de transtorno mental que esteja relacionado ao ato ilícito. II. Inexistência de premeditação ou planejamento, caracterizando o ato como impulsivo. III. Ato de caráter isolado ou infrequente. IV. Tendência prévia de lidar com o impulso patológico de forma adequada, evidenciadas por tentativas deautoimpedimento de conduta criminosa. Estão corretas as afirmativas",
       "options": [
         {
           "letter": "A",
@@ -13043,7 +13043,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Psicopatologia",
       "topic": "Psicopatologia",
       "title": "Questão 22",
-      "text": "Para avaliar a capacidade mental de um candidato a habilitação para dirigir veículos auto motores, o psiquiatra deve conhecer os artigos 140 e seguintes do Código de Transito Brasileiro e a Resolução nº 267/08 do Conselho Nacional deTrânsito.Na avaliação psicológica, segundo a legislação, não se deve avaliar",
+      "text": "Para avaliar a capacidade mental de um candidato a habilitação para dirigir veículos auto motores, o psiquiatra deve conhecer os artigos 140 e seguintes do Código de Transito Brasileiro e a Resolução nº 267/08 do Conselho Nacional deTrânsito. Na avaliação psicológica, segundo a legislação, não se deve avaliar",
       "options": [
         {
           "letter": "A",
@@ -13073,7 +13073,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Psicopatologia",
       "topic": "Psicopatologia",
       "title": "Questão 23",
-      "text": "A avaliação do risco de violência por meio do HCR 20 leva em consideração três grandes categorias de avaliação: itenshistóricos (passado), itens clínicos (presente), itens de manejo de risco (futuro).Não faz(em) parte dos itens de manejo de risco",
+      "text": "A avaliação do risco de violência por meio do HCR 20 leva em consideração três grandes categorias de avaliação: itenshistóricos (passado), itens clínicos (presente), itens de manejo de risco (futuro). Não faz(em) parte dos itens de manejo de risco",
       "options": [
         {
           "letter": "A",
@@ -13163,7 +13163,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Psicopatologia",
       "topic": "Psicopatologia",
       "title": "Questão 26",
-      "text": "Sobre os fenômenos sensoperceptivos, assinale a alternativa incorreta.A",
+      "text": "Sobre os fenômenos sensoperceptivos, assinale a alternativa incorreta. A",
       "options": [
         {
           "letter": "A",
@@ -13230,7 +13230,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Psicopatologia",
       "topic": "Psicopatologia",
       "title": "Questão 28",
-      "text": "Sobre o conceito de consciência do eu em Jarpers, assinale a alternativa correta.A",
+      "text": "Sobre o conceito de consciência do eu em Jarpers, assinale a alternativa correta. A",
       "options": [
         {
           "letter": "A",
@@ -13294,7 +13294,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Psicopatologia",
       "topic": "Psicopatologia",
       "title": "Questão 30",
-      "text": "No distúrbio de consciência caracterizado como estado vegetativo, o paciente apresenta:I. Ausência de consciência de si mesmo e do ambiente.II. Vigília intermitente manifestada pela presença de ciclos de sono-vigília intactos.III. Potencial evocado auditivo de tronco encefálico preservado.Quais estão corretas?A",
+      "text": "No distúrbio de consciência caracterizado como estado vegetativo, o paciente apresenta:I. Ausência de consciência de si mesmo e do ambiente. II. Vigília intermitente manifestada pela presença de ciclos de sono-vigília intactos. III. Potencial evocado auditivo de tronco encefálico preservado. Quais estão corretas? A",
       "options": [
         {
           "letter": "A",
@@ -13374,7 +13374,7 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "E",
-          "text": "stratégia de Saúde daFamília.EA fuga de ideias e o pensamento vago são sinônimos para descrever as alterações do pensamento"
+          "text": "stratégia de Saúde daFamília. EA fuga de ideias e o pensamento vago são sinônimos para descrever as alterações do pensamento"
         }
       ],
       "sourceId": "4000030373",
@@ -13921,7 +13921,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Psicopatologia",
       "topic": "Psicopatologia",
       "title": "Questão 49",
-      "text": "Com relação a doenças crônicas degenerativas, problemas de saúde mental, violência e obesidade, julgue o item que se segue. A reabilitação do traumatismo cranioencefálico engloba quatro categorias de função: física, mental, afetiva e social.Enquanto a função física relaciona-se à capacidade intelectual e cognitiva do indivíduo, a função afetiva se refere àcapacidade de interagir com outras pessoas de forma bem sucedida, ao desempenho dos papéis e obrigações sociais",
+      "text": "Com relação a doenças crônicas degenerativas, problemas de saúde mental, violência e obesidade, julgue o item que se segue. A reabilitação do traumatismo cranioencefálico engloba quatro categorias de função: física, mental, afetiva e social. Enquanto a função física relaciona-se à capacidade intelectual e cognitiva do indivíduo, a função afetiva se refere àcapacidade de interagir com outras pessoas de forma bem sucedida, ao desempenho dos papéis e obrigações sociais",
       "options": [
         {
           "letter": "A",
@@ -14332,7 +14332,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Psicopatologia",
       "topic": "Psicopatologia",
       "title": "Questão 61",
-      "text": "Numa entrevista psiquiátrica, o paciente disse que estava acima de tudo e de todas as coisas, que percorreu o mundointeiro numa estrada Duvial, que sabia o que as pessoas pensavam e que tinha visto um monstro (localizado no espaço real)tentando arrancar seu coração. Além disso, em certo momento, chorou e se achou desanimado, sem prazer de fazer nada.Queixou-se de insônia e inapetência. Ao exame, sabia seu nome e de familiares, tinha real noção do tempo e do espaço efalou um pouco sobre sua história pessoal, mas não reconheceu, em nenhum momento, seu estado psíquico doentio.Em relação à situação descrita, é correto afirmar",
+      "text": "Numa entrevista psiquiátrica, o paciente disse que estava acima de tudo e de todas as coisas, que percorreu o mundointeiro numa estrada Duvial, que sabia o que as pessoas pensavam e que tinha visto um monstro (localizado no espaço real)tentando arrancar seu coração. Além disso, em certo momento, chorou e se achou desanimado, sem prazer de fazer nada. Queixou-se de insônia e inapetência. Ao exame, sabia seu nome e de familiares, tinha real noção do tempo e do espaço efalou um pouco sobre sua história pessoal, mas não reconheceu, em nenhum momento, seu estado psíquico doentio. Em relação à situação descrita, é correto afirmar",
       "options": [
         {
           "letter": "A",
@@ -14362,7 +14362,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Psicopatologia",
       "topic": "Psicopatologia",
       "title": "Questão 62",
-      "text": "Após vários dias de caminhada extenuante pelos Caminhos de Santiago de Compostela, um peregrino repara, vendo umaplaca, que está quase chegando a um confortável ponto de descanso à beira da estrada, onde acredita que poderá 8nalmente repousar. Ao comentar com seus companheiros de peregrinação sobre a parada que se aproxima, os demaisriram dele, pois o que viram não passava de uma placa publicitária mal iluminada sobre móveis planejados. Após mais alguns minutos de caminhada e com a placa mais próxima, o homem, envergonhado, percebe seu equívoco. Qual é o fenômeno psicopatológico descrito no enunciado?AAlucinaçãoBDelírioCPseudoalucinaçãoDIlusão 4000176898Respostas:1B2E3C4A5B6C7D8C9D10C11B12B13A14B15A16B17A18B19C20D21C22C23B24C25D26C27A28A29B30D31D32B33B34B35D36C37B38D39C40B41A42C43B44D45C46C47",
+      "text": "Após vários dias de caminhada extenuante pelos Caminhos de Santiago de Compostela, um peregrino repara, vendo umaplaca, que está quase chegando a um confortável ponto de descanso à beira da estrada, onde acredita que poderá 8nalmente repousar. Ao comentar com seus companheiros de peregrinação sobre a parada que se aproxima, os demaisriram dele, pois o que viram não passava de uma placa publicitária mal iluminada sobre móveis planejados. Após mais alguns minutos de caminhada e com a placa mais próxima, o homem, envergonhado, percebe seu equívoco. Qual é o fenômeno psicopatológico descrito no enunciado? AAlucinaçãoBDelírioCPseudoalucinaçãoDIlusão 4000176898Respostas:1B2E3C4A5B6C7D8C9D10C11B12B13A14B15A16B17A18B19C20D21C22C23B24C25D26C27A28A29B30D31D32B33B34B35D36C37B38D39C40B41A42C43B44D45C46C47",
       "options": [
         {
           "letter": "A",
@@ -14561,7 +14561,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Psiquiatria Infantil",
       "topic": "Psiquiatria Infantil",
       "title": "Questão 6",
-      "text": "Uma criança de quatro anos com deficiência intelectual e diagnóstico de síndrome de Down é avaliada por atraso de falo.Apresenta déficit de comunicação, socialização, estereotipias motoras e hipersensibilidade aos estímulos auditivos e táteis.Qual a provável comorbidade dessa criança?",
+      "text": "Uma criança de quatro anos com deficiência intelectual e diagnóstico de síndrome de Down é avaliada por atraso de falo. Apresenta déficit de comunicação, socialização, estereotipias motoras e hipersensibilidade aos estímulos auditivos e táteis. Qual a provável comorbidade dessa criança?",
       "options": [
         {
           "letter": "A",
@@ -14637,7 +14637,7 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "C",
-          "text": "ompulsivo.CTranstorno do Espectro Autista"
+          "text": "ompulsivo. CTranstorno do Espectro Autista"
         },
         {
           "letter": "D",
@@ -14793,7 +14793,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Psiquiatria Infantil",
       "topic": "Psiquiatria Infantil",
       "title": "Questão 13",
-      "text": "A Lei n 13.185, de 6 de novembro de 2015, instituiu o Programa de Combate à Intimidação Sistemática (Bullying) no Brasil.Na referida lei, o Bullying é definido como \"todo ato de violência física ou psicológica, intencional e repetitivo que ocorresem motivação evidente, praticado por individuo ou grupo, contra uma ou mais pessoas, com o objetivo de intimidá-la ouagredi-la, causando dor e angustia à vitima, em uma relação de desequilíbrio de poder entre as partes envolvidas (Artigo 1\",inciso 1) Espaços como o ambiente i escolar são mais propícios para esse tipo de violência entre crianças e adolescentes eque podem desencadear problemas de aprendizagem e traumas psíquicos entre as vitimas e os envolvidos. Analise as afirmativas abaixo e marque a alternativa CORRETA:I. As vitimas de bullying têm dificuldade de reconhecer emoções sentem mais modo a mais estresse, o que gera di:culdade no aprendizado e vulnerabilidade aos transtornos de ansiedade e humor. II. Dependendo do grau de sofrimento vivido pela criança, ela poderá sentir-se ancorada a construções inconscientes de pensamentos de vingança e de suicídio, ou manifestar determinados tipos de comportamentos agressivos ou violentos,prejudicais a si mesmo e à sociedade; III. As vitimas de bullying apresentam resultados escolares piores, maiores chances de abandonar os estudos após o ensino médio, além de, durante o período escolar comum, tenderem duas vezes mais a faltar a três vezes mais a se sentir em estranhas; IV. Não é considerado como bullying atos praticados contra alunos por professores e outros profissionais integrantes da escola e da comunidade escolar",
+      "text": "A Lei n 13.185, de 6 de novembro de 2015, instituiu o Programa de Combate à Intimidação Sistemática (Bullying) no Brasil. Na referida lei, o Bullying é definido como \"todo ato de violência física ou psicológica, intencional e repetitivo que ocorresem motivação evidente, praticado por individuo ou grupo, contra uma ou mais pessoas, com o objetivo de intimidá-la ouagredi-la, causando dor e angustia à vitima, em uma relação de desequilíbrio de poder entre as partes envolvidas (Artigo 1\",inciso 1) Espaços como o ambiente i escolar são mais propícios para esse tipo de violência entre crianças e adolescentes eque podem desencadear problemas de aprendizagem e traumas psíquicos entre as vitimas e os envolvidos. Analise as afirmativas abaixo e marque a alternativa CORRETA:I. As vitimas de bullying têm dificuldade de reconhecer emoções sentem mais modo a mais estresse, o que gera di:culdade no aprendizado e vulnerabilidade aos transtornos de ansiedade e humor. II. Dependendo do grau de sofrimento vivido pela criança, ela poderá sentir-se ancorada a construções inconscientes de pensamentos de vingança e de suicídio, ou manifestar determinados tipos de comportamentos agressivos ou violentos,prejudicais a si mesmo e à sociedade; III. As vitimas de bullying apresentam resultados escolares piores, maiores chances de abandonar os estudos após o ensino médio, além de, durante o período escolar comum, tenderem duas vezes mais a faltar a três vezes mais a se sentir em estranhas; IV. Não é considerado como bullying atos praticados contra alunos por professores e outros profissionais integrantes da escola e da comunidade escolar",
       "options": [
         {
           "letter": "A",
@@ -14865,7 +14865,7 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "C",
-          "text": "om base nesse caso clínico e nos conhecimentos médicos correlatos, julgue o item a seguir.Investigação de autismo deve ser realizada em crianças que não falam aos 18 meses de idade e, entre os métodos de avaliação, está a escala M-CHAT. ACerto.BErrado"
+          "text": "om base nesse caso clínico e nos conhecimentos médicos correlatos, julgue o item a seguir. Investigação de autismo deve ser realizada em crianças que não falam aos 18 meses de idade e, entre os métodos de avaliação, está a escala M-CHAT. ACerto. BErrado"
         }
       ],
       "sourceId": "4000167818",
@@ -14946,7 +14946,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Psiquiatria Infantil",
       "topic": "Psiquiatria Infantil",
       "title": "Questão 18",
-      "text": "No ambulatório, uma criança de 30 meses de idade apresenta alterações compatíveis com Transtorno do Espectro Autista.Qual dos critérios abaixo certamente foram considerados como os mais importantes na definição da hipótese diagnóstica?",
+      "text": "No ambulatório, uma criança de 30 meses de idade apresenta alterações compatíveis com Transtorno do Espectro Autista. Qual dos critérios abaixo certamente foram considerados como os mais importantes na definição da hipótese diagnóstica?",
       "options": [
         {
           "letter": "A",
@@ -14983,7 +14983,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Psiquiatria Infantil",
       "topic": "Psiquiatria Infantil",
       "title": "Questão 19",
-      "text": "Escolar, sexo masculino, 10 anos, vem à consulta com o pediatra por dificuldades de relacionamento social na família e naescola. Mostra um desempenho escolar errático com alguns bons resultados mesclados com resultados ruins. A família recebe bilhetes da escola, quase diariamente, com queixas de que o paciente atrapalha o andamento da aula com piadas,conversas ou discussões. Segundo a mãe, o filho é bastante inteligente, mas vem deteriorando o seu desempenho ao longo dos anos com piora acentuada nas últimas séries do ensino fundamental. Não consegue se concentrar nos trabalhos etermina as tarefas muito rápido, com uma qualidade baixa. Frequentemente, perde o material necessário para fazer as liçõesde casa. De acordo com a família, isso sempre aconteceu, mas nos últimos anos os sintomas têm ficado mais significativos.Com base nessa história, o diagnóstico mais provável é",
+      "text": "Escolar, sexo masculino, 10 anos, vem à consulta com o pediatra por dificuldades de relacionamento social na família e naescola. Mostra um desempenho escolar errático com alguns bons resultados mesclados com resultados ruins. A família recebe bilhetes da escola, quase diariamente, com queixas de que o paciente atrapalha o andamento da aula com piadas,conversas ou discussões. Segundo a mãe, o filho é bastante inteligente, mas vem deteriorando o seu desempenho ao longo dos anos com piora acentuada nas últimas séries do ensino fundamental. Não consegue se concentrar nos trabalhos etermina as tarefas muito rápido, com uma qualidade baixa. Frequentemente, perde o material necessário para fazer as liçõesde casa. De acordo com a família, isso sempre aconteceu, mas nos últimos anos os sintomas têm ficado mais significativos. Com base nessa história, o diagnóstico mais provável é",
       "options": [
         {
           "letter": "A",
@@ -15051,7 +15051,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Psiquiatria Infantil",
       "topic": "Psiquiatria Infantil",
       "title": "Questão 21",
-      "text": "Tratamento do AustismoA avaliação formal do Desenvolvimento Neuropsicomotor é fundamental e indispensável e faz parte da consulta pediátrica.O TEA (Transtorno do Espectro Autista) é causado por uma combinação de fatores genéticos e fatores ambientais. Emrelação ao TEA, qual a alternativa está INCORRETA?",
+      "text": "Tratamento do AustismoA avaliação formal do Desenvolvimento Neuropsicomotor é fundamental e indispensável e faz parte da consulta pediátrica. O TEA (Transtorno do Espectro Autista) é causado por uma combinação de fatores genéticos e fatores ambientais. Emrelação ao TEA, qual a alternativa está INCORRETA?",
       "options": [
         {
           "letter": "A",
@@ -15371,7 +15371,7 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "E",
-          "text": "EG).EA perda de habilidades deve ser investigada em qualquer idade que tenha ocorrido, devendo-se fazer diagnósticodiferencial com outras causas de atraso no desenvolvimento"
+          "text": "EG). EA perda de habilidades deve ser investigada em qualquer idade que tenha ocorrido, devendo-se fazer diagnósticodiferencial com outras causas de atraso no desenvolvimento"
         }
       ],
       "sourceId": "4000142555",
@@ -15385,7 +15385,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Psiquiatria Infantil",
       "topic": "Psiquiatria Infantil",
       "title": "Questão 31",
-      "text": "Sobre o transtorno de conduta, considere as seguintes afirmativas:1. O início do quadro de transtorno de conduta na adolescência acarreta um prognóstico mais grave e com mais violência nos atos antissociais.2. Exposição a tabaco e álcool na gestação está associada a comportamentos antissociais na prole.3. Os déficits em função executiva nos pacientes com transtorno de conduta são causados pela comorbidade dotranstorno de déficit de atenção e hiperatividade.4. Dificuldade na leitura e baixa performance acadêmica são comuns em jovens com transtorno de conduta.Assinale a alternativa correta",
+      "text": "Sobre o transtorno de conduta, considere as seguintes afirmativas:1. O início do quadro de transtorno de conduta na adolescência acarreta um prognóstico mais grave e com mais violência nos atos antissociais.2. Exposição a tabaco e álcool na gestação está associada a comportamentos antissociais na prole.3. Os déficits em função executiva nos pacientes com transtorno de conduta são causados pela comorbidade dotranstorno de déficit de atenção e hiperatividade.4. Dificuldade na leitura e baixa performance acadêmica são comuns em jovens com transtorno de conduta. Assinale a alternativa correta",
       "options": [
         {
           "letter": "A",
@@ -15419,7 +15419,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Psiquiatria Infantil",
       "topic": "Psiquiatria Infantil",
       "title": "Questão 32",
-      "text": "Tratamento do TDAHDiagnóstico do TDAHTranstorno do Déficit de Atenção e Hiperatividade TDAHA respeito do transtorno de déficit de atenção e hiperatividade (TDAH), considere as seguintes afirmativas:1. Esse transtorno apresenta uma herdabilidade alta.2. Cerca de 60% de crianças com TDAH persistem com prejuízos na idade adulta.3. Os estimulantes são considerados medicamentos de primeira linha para o TDAH.4. O uso de estimulante em crianças está associado à supressão do crescimento.Assinale a alternativa correta",
+      "text": "Tratamento do TDAHDiagnóstico do TDAHTranstorno do Déficit de Atenção e Hiperatividade TDAHA respeito do transtorno de déficit de atenção e hiperatividade (TDAH), considere as seguintes afirmativas:1. Esse transtorno apresenta uma herdabilidade alta.2. Cerca de 60% de crianças com TDAH persistem com prejuízos na idade adulta.3. Os estimulantes são considerados medicamentos de primeira linha para o TDAH.4. O uso de estimulante em crianças está associado à supressão do crescimento. Assinale a alternativa correta",
       "options": [
         {
           "letter": "A",
@@ -15521,7 +15521,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Psiquiatria Infantil",
       "topic": "Psiquiatria Infantil",
       "title": "Questão 35",
-      "text": "Um jovem de 18 anos de idade, depois de começar a trabalhar em uma agência de viagens, procura atendimentopsiquiátrico por aconselhamento da gerente que observou suas dificuldades em completar uma tarefa, seguir uma instruçãoe escutar quando alguém está falando com ele. Tem impulsividade e agitação. É desorganizado, distraído e demonstramuitas dificuldades escolares desde a infância, pois é difícil para ele conseguir se concentrar. Há quatro anos, usa álcool emaconha diariamente, várias vezes ao dia, inclusive no horário do trabalho. Sente-se também muito triste, com baixaautoestima, desesperançoso e com vontade de morrer. Para ele, parece que nunca vai conseguir ser feliz. Sua famíliasempre considerou que ele era “malcriado” e “preguiçoso”, por isso nunca procurou atendimento médico para ele.Com base nesse caso clínico e nos conhecimentos médicos correlatos, julgue os itens a seguir.A grande diversidade de sinais e sintomas de transtorno do espectro autista (TEA) rePete a multiplicidade de anormalidades observadas em estudos patológicos e funcionais e inclui regiões do prosencéfalo e do romboencéfalo",
+      "text": "Um jovem de 18 anos de idade, depois de começar a trabalhar em uma agência de viagens, procura atendimentopsiquiátrico por aconselhamento da gerente que observou suas dificuldades em completar uma tarefa, seguir uma instruçãoe escutar quando alguém está falando com ele. Tem impulsividade e agitação. É desorganizado, distraído e demonstramuitas dificuldades escolares desde a infância, pois é difícil para ele conseguir se concentrar. Há quatro anos, usa álcool emaconha diariamente, várias vezes ao dia, inclusive no horário do trabalho. Sente-se também muito triste, com baixaautoestima, desesperançoso e com vontade de morrer. Para ele, parece que nunca vai conseguir ser feliz. Sua famíliasempre considerou que ele era “malcriado” e “preguiçoso”, por isso nunca procurou atendimento médico para ele. Com base nesse caso clínico e nos conhecimentos médicos correlatos, julgue os itens a seguir. A grande diversidade de sinais e sintomas de transtorno do espectro autista (TEA) rePete a multiplicidade de anormalidades observadas em estudos patológicos e funcionais e inclui regiões do prosencéfalo e do romboencéfalo",
       "options": [
         {
           "letter": "A",
@@ -15543,7 +15543,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Psiquiatria Infantil",
       "topic": "Psiquiatria Infantil",
       "title": "Questão 36",
-      "text": "Um jovem de 18 anos de idade, depois de começar a trabalhar em uma agência de viagens, procura atendimentopsiquiátrico por aconselhamento da gerente que observou suas dificuldades em completar uma tarefa, seguir uma instruçãoe escutar quando alguém está falando com ele. Tem impulsividade e agitação. É desorganizado, distraído e demonstra muitas dificuldades escolares desde a infância, pois é difícil para ele conseguir se concentrar. Há quatro anos, usa álcool emaconha diariamente, várias vezes ao dia, inclusive no horário do trabalho. Sente-se também muito triste, com baixaautoestima, desesperançoso e com vontade de morrer. Para ele, parece que nunca vai conseguir ser feliz. Sua famíliasempre considerou que ele era “malcriado” e “preguiçoso”, por isso nunca procurou atendimento médico para ele.Com base nesse caso clínico e nos conhecimentos médicos correlatos, julgue os itens a seguir.TDAH e transtorno do espectro autista podem ser diagnosticados concomitantemente",
+      "text": "Um jovem de 18 anos de idade, depois de começar a trabalhar em uma agência de viagens, procura atendimentopsiquiátrico por aconselhamento da gerente que observou suas dificuldades em completar uma tarefa, seguir uma instruçãoe escutar quando alguém está falando com ele. Tem impulsividade e agitação. É desorganizado, distraído e demonstra muitas dificuldades escolares desde a infância, pois é difícil para ele conseguir se concentrar. Há quatro anos, usa álcool emaconha diariamente, várias vezes ao dia, inclusive no horário do trabalho. Sente-se também muito triste, com baixaautoestima, desesperançoso e com vontade de morrer. Para ele, parece que nunca vai conseguir ser feliz. Sua famíliasempre considerou que ele era “malcriado” e “preguiçoso”, por isso nunca procurou atendimento médico para ele. Com base nesse caso clínico e nos conhecimentos médicos correlatos, julgue os itens a seguir. TDAH e transtorno do espectro autista podem ser diagnosticados concomitantemente",
       "options": [
         {
           "letter": "A",
@@ -15565,7 +15565,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Psiquiatria Infantil",
       "topic": "Psiquiatria Infantil",
       "title": "Questão 37",
-      "text": "Um jovem de 18 anos de idade, depois de começar a trabalhar em uma agência de viagens, procura atendimentopsiquiátrico por aconselhamento da gerente que observou suas dificuldades em completar uma tarefa, seguir uma instruçãoe escutar quando alguém está falando com ele. Tem impulsividade e agitação. É desorganizado, distraído e demonstramuitas dificuldades escolares desde a infância, pois é difícil para ele conseguir se concentrar. Há quatro anos, usa álcool emaconha diariamente, várias vezes ao dia, inclusive no horário do trabalho. Sente-se também muito triste, com baixaautoestima, desesperançoso e com vontade de morrer. Para ele, parece que nunca vai conseguir ser feliz. Sua famíliasempre considerou que ele era “malcriado” e “preguiçoso”, por isso nunca procurou atendimento médico para ele.Com base nesse caso clínico e nos conhecimentos médicos correlatos, julgue os itens a seguir.Deve ser solicitado, como exame complementar, o eletroencefalograma (EEG), pois o transtorno do deficit de atenção com hiperatividade (TDAH) possui, como marcador biológico, o aumento de ondas lentas",
+      "text": "Um jovem de 18 anos de idade, depois de começar a trabalhar em uma agência de viagens, procura atendimentopsiquiátrico por aconselhamento da gerente que observou suas dificuldades em completar uma tarefa, seguir uma instruçãoe escutar quando alguém está falando com ele. Tem impulsividade e agitação. É desorganizado, distraído e demonstramuitas dificuldades escolares desde a infância, pois é difícil para ele conseguir se concentrar. Há quatro anos, usa álcool emaconha diariamente, várias vezes ao dia, inclusive no horário do trabalho. Sente-se também muito triste, com baixaautoestima, desesperançoso e com vontade de morrer. Para ele, parece que nunca vai conseguir ser feliz. Sua famíliasempre considerou que ele era “malcriado” e “preguiçoso”, por isso nunca procurou atendimento médico para ele. Com base nesse caso clínico e nos conhecimentos médicos correlatos, julgue os itens a seguir. Deve ser solicitado, como exame complementar, o eletroencefalograma (EEG), pois o transtorno do deficit de atenção com hiperatividade (TDAH) possui, como marcador biológico, o aumento de ondas lentas",
       "options": [
         {
           "letter": "A",
@@ -15587,7 +15587,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Psiquiatria Infantil",
       "topic": "Psiquiatria Infantil",
       "title": "Questão 38",
-      "text": "Um jovem de 18 anos de idade, depois de começar a trabalhar em uma agência de viagens, procura atendimentopsiquiátrico por aconselhamento da gerente que observou suas dificuldades em completar uma tarefa, seguir uma instruçãoe escutar quando alguém está falando com ele. Tem impulsividade e agitação. É desorganizado, distraído e demonstramuitas dificuldades escolares desde a infância, pois é difícil para ele conseguir se concentrar. Há quatro anos, usa álcool emaconha diariamente, várias vezes ao dia, inclusive no horário do trabalho. Sente-se também muito triste, com baixaautoestima, desesperançoso e com vontade de morrer. Para ele, parece que nunca vai conseguir ser feliz. Sua famíliasempre considerou que ele era “malcriado” e “preguiçoso”, por isso nunca procurou atendimento médico para ele.Com base nesse caso clínico e nos conhecimentos médicos correlatos, julgue os itens a seguir.Para esse paciente, indica-se a prescrição de metilfenidato de liberação imediata às 8 h, às 12 h, às 16 h e às 22 h",
+      "text": "Um jovem de 18 anos de idade, depois de começar a trabalhar em uma agência de viagens, procura atendimentopsiquiátrico por aconselhamento da gerente que observou suas dificuldades em completar uma tarefa, seguir uma instruçãoe escutar quando alguém está falando com ele. Tem impulsividade e agitação. É desorganizado, distraído e demonstramuitas dificuldades escolares desde a infância, pois é difícil para ele conseguir se concentrar. Há quatro anos, usa álcool emaconha diariamente, várias vezes ao dia, inclusive no horário do trabalho. Sente-se também muito triste, com baixaautoestima, desesperançoso e com vontade de morrer. Para ele, parece que nunca vai conseguir ser feliz. Sua famíliasempre considerou que ele era “malcriado” e “preguiçoso”, por isso nunca procurou atendimento médico para ele. Com base nesse caso clínico e nos conhecimentos médicos correlatos, julgue os itens a seguir. Para esse paciente, indica-se a prescrição de metilfenidato de liberação imediata às 8 h, às 12 h, às 16 h e às 22 h",
       "options": [
         {
           "letter": "A",
@@ -15740,7 +15740,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Psiquiatria Infantil",
       "topic": "Psiquiatria Infantil",
       "title": "Questão 43",
-      "text": "Considerando o DSM-5, assinale a alternativa correta.AO Transtorno de",
+      "text": "Considerando o DSM-5, assinale a alternativa correta. AO Transtorno de",
       "options": [
         {
           "letter": "A",
@@ -15800,7 +15800,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Psiquiatria Infantil",
       "topic": "Psiquiatria Infantil",
       "title": "Questão 45",
-      "text": "Leia o texto a seguir.Nossos adolescentes atuais parecem amar o luxo. Têm maus modos e desprezam autoridade. São desrespeitosos com os adultos e passam o tempo vagando nas praças… São propensos a ofender seus pais, monopolizam a conversa quando estão em companhia de pessoas mais velhas; comem com voracidade e tiranizam seus mestres.SÓCRATES, filósofo do século V a.C. In: OUTEIRAL, J. Adolescer - Estudos revisados sobre adolescência. 2.ed. Rio deJaneiro: Revinter, 2003.Essa descrição do comportamento dos adolescentes na idade antiga parece ser muito atual. As grandes transformaçõesdessa faixa etária levam a uma crise normativa na busca da própria identidade e autonomia. A crise normal da adolescência,antes denominada síndrome, descrita por Aberastury e Knobel, elenca comportamentos e atitudes emocionais dos adolescentes. Entre esses comportamentos da crise normal da adolescência está",
+      "text": "Leia o texto a seguir. Nossos adolescentes atuais parecem amar o luxo. Têm maus modos e desprezam autoridade. São desrespeitosos com os adultos e passam o tempo vagando nas praças… São propensos a ofender seus pais, monopolizam a conversa quando estão em companhia de pessoas mais velhas; comem com voracidade e tiranizam seus mestres. SÓCRATES, filósofo do século V a.C. In: OUTEIRAL, J. Adolescer - Estudos revisados sobre adolescência. 2.ed. Rio deJaneiro: Revinter, 2003.Essa descrição do comportamento dos adolescentes na idade antiga parece ser muito atual. As grandes transformaçõesdessa faixa etária levam a uma crise normativa na busca da própria identidade e autonomia. A crise normal da adolescência,antes denominada síndrome, descrita por Aberastury e Knobel, elenca comportamentos e atitudes emocionais dos adolescentes. Entre esses comportamentos da crise normal da adolescência está",
       "options": [
         {
           "letter": "A",
@@ -15933,7 +15933,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Psiquiatria Infantil",
       "topic": "Psiquiatria Infantil",
       "title": "Questão 49",
-      "text": "Adolescente de 12 anos, apresenta dificuldade escolar, difícil conseguir que faça a lição de casa, tem \"crises nervosas\" e \"fazbirra\". O que ele mais gosta de fazer é jogar vídeo game. Os pais também observaram que ele pode ser muito distraído.Além disso, embora goste de ajudar o pai nos trabalhos com máquinas, ele frequentemente esquece as ferramentas que ésolicitado a buscar. O exame do estado mental, revelou ansiedade relativamente alta, o paciente estava orientado no tempoe espaço, tinha pensamentos coerentes e afeto congruente. A memória, de curto e longo prazo, também estava preservada. Nenhuma alucinação, delírio ou comportamento violento foram relatados. Ele não relatou pensamentos deautoagressão, não tem história de trauma na cabeça nem apresenta patologias importantes. Os exames laboratoriais e oexame físico de rotina não mostraram alterações, e revelaram que ele não tem problemas de audição ou visão, começou afalar e a andar cedo. Ele admite que se sente \"burro\" na escola e que desconta suas frustrações em crianças que considerainteligentes, sabotando o aprendizado. Com base na anamnese e na avaliação do paciente, qual é o diagnóstico mais provável?",
+      "text": "Adolescente de 12 anos, apresenta dificuldade escolar, difícil conseguir que faça a lição de casa, tem \"crises nervosas\" e \"fazbirra\". O que ele mais gosta de fazer é jogar vídeo game. Os pais também observaram que ele pode ser muito distraído. Além disso, embora goste de ajudar o pai nos trabalhos com máquinas, ele frequentemente esquece as ferramentas que ésolicitado a buscar. O exame do estado mental, revelou ansiedade relativamente alta, o paciente estava orientado no tempoe espaço, tinha pensamentos coerentes e afeto congruente. A memória, de curto e longo prazo, também estava preservada. Nenhuma alucinação, delírio ou comportamento violento foram relatados. Ele não relatou pensamentos deautoagressão, não tem história de trauma na cabeça nem apresenta patologias importantes. Os exames laboratoriais e oexame físico de rotina não mostraram alterações, e revelaram que ele não tem problemas de audição ou visão, começou afalar e a andar cedo. Ele admite que se sente \"burro\" na escola e que desconta suas frustrações em crianças que considerainteligentes, sabotando o aprendizado. Com base na anamnese e na avaliação do paciente, qual é o diagnóstico mais provável?",
       "options": [
         {
           "letter": "A",
@@ -16138,7 +16138,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Psiquiatria Infantil",
       "topic": "Psiquiatria Infantil",
       "title": "Questão 55",
-      "text": "Criança de 6 anos é levada à consulta ambulatorial com queixa de baixo rendimento escolar e mudança recente decomportamento. Os relatórios escolares dos anos anteriores registram um garoto tímido, de poucos amigos, contudo, combom relacionamento com todos na classe. As observações no período pré-escolar relatam dificuldade na elaboração derimas e na pronúncia de palavras, em especial aquelas com sons semelhantes (exemplo: faca/vaca), e dificuldade desoletração. Nesse momento de fase escolar, apresenta leitura lenta, com muitos erros, além de vários erros de escrita.Frequentemente, o próprio paciente não entende o que escreveu. Há relato de aumento da agressividade com seus amigosde turma e professores, em especial no ano vigente, em que está sendo alfabetizado. Sobre o aprendizado, refere-se que opaciente “aprende melhor ouvindo do que escrevendo”. Ao exame, apresenta-se um pouco retraído ao início da consulta,ficando descontraído com o passar do tempo, respondendo às perguntas que lhe são feitas e demonstrando bom grau de raciocínio lógico e abstrato. O diagnóstico mais provável e a terapêutica indicada para o transtorno apresentado,respectivamente, são",
+      "text": "Criança de 6 anos é levada à consulta ambulatorial com queixa de baixo rendimento escolar e mudança recente decomportamento. Os relatórios escolares dos anos anteriores registram um garoto tímido, de poucos amigos, contudo, combom relacionamento com todos na classe. As observações no período pré-escolar relatam dificuldade na elaboração derimas e na pronúncia de palavras, em especial aquelas com sons semelhantes (exemplo: faca/vaca), e dificuldade desoletração. Nesse momento de fase escolar, apresenta leitura lenta, com muitos erros, além de vários erros de escrita. Frequentemente, o próprio paciente não entende o que escreveu. Há relato de aumento da agressividade com seus amigosde turma e professores, em especial no ano vigente, em que está sendo alfabetizado. Sobre o aprendizado, refere-se que opaciente “aprende melhor ouvindo do que escrevendo”. Ao exame, apresenta-se um pouco retraído ao início da consulta,ficando descontraído com o passar do tempo, respondendo às perguntas que lhe são feitas e demonstrando bom grau de raciocínio lógico e abstrato. O diagnóstico mais provável e a terapêutica indicada para o transtorno apresentado,respectivamente, são",
       "options": [
         {
           "letter": "A",
@@ -16273,7 +16273,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Psiquiatria Infantil",
       "topic": "Psiquiatria Infantil",
       "title": "Questão 59",
-      "text": "Criança do sexo masculino, com dois anos e meio de idade, é levada para consulta na UBS com queixa de comportamento agitado e irritabilidade. Trata-se do terceiro filho do casal, mãe com 43 anos e pai com 50 anos. Os pais relatam que noprimeiro ano de vida era um bebê tranquilo e gostava de dormir sozinho. No segundo ano de vida, os pais começaram a sepreocupar com ataques de agitação e choro incontrolável em situações de frustração ou com barulho intenso (festas,trovões). Acham que fala menos que os irmãos na mesma idade e não diz frases. Desconfiam que ele possa ter algum problema de audição pois não responde quando chamam seu nome e não presta atenção quando conversam com ele.Algumas pessoas dizem que ele é uma criança triste pois não gosta de brincar com outras crianças e fica irritado aosugerirem que compartilhe seus brinquedos. Neste momento, a conduta MAIS ADEQUADA é",
+      "text": "Criança do sexo masculino, com dois anos e meio de idade, é levada para consulta na UBS com queixa de comportamento agitado e irritabilidade. Trata-se do terceiro filho do casal, mãe com 43 anos e pai com 50 anos. Os pais relatam que noprimeiro ano de vida era um bebê tranquilo e gostava de dormir sozinho. No segundo ano de vida, os pais começaram a sepreocupar com ataques de agitação e choro incontrolável em situações de frustração ou com barulho intenso (festas,trovões). Acham que fala menos que os irmãos na mesma idade e não diz frases. Desconfiam que ele possa ter algum problema de audição pois não responde quando chamam seu nome e não presta atenção quando conversam com ele. Algumas pessoas dizem que ele é uma criança triste pois não gosta de brincar com outras crianças e fica irritado aosugerirem que compartilhe seus brinquedos. Neste momento, a conduta MAIS ADEQUADA é",
       "options": [
         {
           "letter": "A",
@@ -16858,7 +16858,7 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "D",
-          "text": "I em meninos, em torno de 30% mais que em meninas.DA idade materna ao engravidar é fator de risco para DI nas crianças; já a idade paterna não tem influência sobre aocorrência de DI"
+          "text": "I em meninos, em torno de 30% mais que em meninas. DA idade materna ao engravidar é fator de risco para DI nas crianças; já a idade paterna não tem influência sobre aocorrência de DI"
         },
         {
           "letter": "E",
@@ -17096,7 +17096,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Psiquiatria Infantil",
       "topic": "Psiquiatria Infantil",
       "title": "Questão 85",
-      "text": "Adolescente, feminino, 11 anos, vem encaminhada por dificuldade escolar. Atualmente cursa o 6° ano do ensino fundamentalem uma instituição pública de ensino. Os professores relatam frequentemente que a adolescente tem dificuldades de mantero foco durante as aulas e de iniciar as tarefas propostas, evitando se envolver em atividades que exijam maior esforço mental. A gestação e o período neonatal ocorreram sem intercorrências. Desenvolvimento neuropsicomotor adequado.Mãe informa que a adolescente teve dificuldades no processo de alfabetização, sempre perde materiais escolares eesquece de realizar os deveres. A hipótese diagnóstica e a conduta indicada são",
+      "text": "Adolescente, feminino, 11 anos, vem encaminhada por dificuldade escolar. Atualmente cursa o 6° ano do ensino fundamentalem uma instituição pública de ensino. Os professores relatam frequentemente que a adolescente tem dificuldades de mantero foco durante as aulas e de iniciar as tarefas propostas, evitando se envolver em atividades que exijam maior esforço mental. A gestação e o período neonatal ocorreram sem intercorrências. Desenvolvimento neuropsicomotor adequado. Mãe informa que a adolescente teve dificuldades no processo de alfabetização, sempre perde materiais escolares eesquece de realizar os deveres. A hipótese diagnóstica e a conduta indicada são",
       "options": [
         {
           "letter": "A",
@@ -17295,7 +17295,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Psiquiatria Infantil",
       "topic": "Psiquiatria Infantil",
       "title": "Questão 91",
-      "text": "Sobre o TDAH (transtorno de déficit de atenção / hiperatividade):I. Acomete mais meninos que meninas em uma proporção de 2,4:1 até 6:1.;II. Os sintomas são persistentes e surgem nos primeiros 12 anos de idade.;III. Caracteriza-se sempre pela presença de desatenção e/ou impulsividade / hiperatividade.Quais afirmações estão corretas?A",
+      "text": "Sobre o TDAH (transtorno de déficit de atenção / hiperatividade):I. Acomete mais meninos que meninas em uma proporção de 2,4:1 até 6:1.;II. Os sintomas são persistentes e surgem nos primeiros 12 anos de idade.;III. Caracteriza-se sempre pela presença de desatenção e/ou impulsividade / hiperatividade. Quais afirmações estão corretas? A",
       "options": [
         {
           "letter": "A",
@@ -17419,7 +17419,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Psiquiatria Infantil",
       "topic": "Psiquiatria Infantil",
       "title": "Questão 95",
-      "text": "No ambulatório, os pais de uma criança de 3 anos de idade trazem preocupações do tipo \"nosso filho parece não estar sedesenvolvendo bem\". Após dois encontros com a família e a criança, o médico formula a hipótese de Transtorno doEspectro Autista. Da extensa avaliação realizada, qual dos critérios diagnósticos abaixo são coerentes com a suspeita clínica do médico?A",
+      "text": "No ambulatório, os pais de uma criança de 3 anos de idade trazem preocupações do tipo \"nosso filho parece não estar sedesenvolvendo bem\". Após dois encontros com a família e a criança, o médico formula a hipótese de Transtorno doEspectro Autista. Da extensa avaliação realizada, qual dos critérios diagnósticos abaixo são coerentes com a suspeita clínica do médico? A",
       "options": [
         {
           "letter": "A",
@@ -17583,7 +17583,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Psiquiatria Infantil",
       "topic": "Psiquiatria Infantil",
       "title": "Questão 100",
-      "text": "Um menino de 11 anos é encaminhado para consulta médica pela escola por apresentar indisciplina no ambiente escolar. Osprofessores relatam que o aprendizado está prejudicado. Acreditam que o menor não aprende devido à inquietação motora, ao excesso de “conversas paralelas” e à “ansiedade”. Sua professora de matemática também se queixa que ogaroto parece não ouvir quando chamado e frequentemente parece estar “no mundo da lua”. Esses comportamentos serepetem em casa e na vida social do menor, o que deixa seus pais preocupados.Diante desse cenário, qual é a principal hipótese diagnóstica e indicação terapêutica?AAutismo – risperidona.BTranstorno de aprendizagem (discalculia) – apoio psicopedagógico.CTranstorno do déficit de atenção e hiperatividade – lisdexanfetamina.DAnsiedade – fluoxetina.4000154412Respostas:1A2A3D4B5C6C7B8C9A10C11C12C13C14B15A16A17C18C19E20E21D22C23E24B25C26D27D28B29B30E31C32E33A34C35A36A37B38B39B40C41A42C43B44B45C46A47C48B49C50A51A52D53C54D55A56C57B58B59A60B61A62A63B64A65C66B67C68E69C70A71B72C73D74",
+      "text": "Um menino de 11 anos é encaminhado para consulta médica pela escola por apresentar indisciplina no ambiente escolar. Osprofessores relatam que o aprendizado está prejudicado. Acreditam que o menor não aprende devido à inquietação motora, ao excesso de “conversas paralelas” e à “ansiedade”. Sua professora de matemática também se queixa que ogaroto parece não ouvir quando chamado e frequentemente parece estar “no mundo da lua”. Esses comportamentos serepetem em casa e na vida social do menor, o que deixa seus pais preocupados. Diante desse cenário, qual é a principal hipótese diagnóstica e indicação terapêutica? AAutismo – risperidona. BTranstorno de aprendizagem (discalculia) – apoio psicopedagógico. CTranstorno do déficit de atenção e hiperatividade – lisdexanfetamina. DAnsiedade – fluoxetina.4000154412Respostas:1A2A3D4B5C6C7B8C9A10C11C12C13C14B15A16A17C18C19E20E21D22C23E24B25C26D27D28B29B30E31C32E33A34C35A36A37B38B39B40C41A42C43B44B45C46A47C48B49C50A51A52D53C54D55A56C57B58B59A60B61A62A63B64A65C66B67C68E69C70A71B72C73D74",
       "options": [
         {
           "letter": "A",
@@ -17663,7 +17663,7 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "D",
-          "text": "L-c tendem a subir com o avançar da idade, principalmente após a menopausa, enquanto, noshomens, os níveis de LDL-c tendem a diminuir após 55 anos de idade.DOs níveis de LDL-c não tendem a subir com o avançar da idade, principalmente após a menopausa, enquanto, noshomens, os níveis de LDL-c tendem a diminuir após 55 anos de idade"
+          "text": "L-c tendem a subir com o avançar da idade, principalmente após a menopausa, enquanto, noshomens, os níveis de LDL-c tendem a diminuir após 55 anos de idade. DOs níveis de LDL-c não tendem a subir com o avançar da idade, principalmente após a menopausa, enquanto, noshomens, os níveis de LDL-c tendem a diminuir após 55 anos de idade"
         }
       ],
       "sourceId": "4000187317",
@@ -17771,7 +17771,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Saúde do Idoso",
       "topic": "Saúde do Idoso",
       "title": "Questão 6",
-      "text": "Mulher, 86 anos, vem à consulta referindo dores nas costas após queda no banheiro. Hipertensa prévia com controle inadequado dos níveis pressóricos, esquece de tomar as medicações, tem insônia e dificuldades para realizar as atividadesda vida diária. Quando questionada sobre a rede de apoio, responde evasivamente. A vizinha que acompanha explica que apaciente mora com o Glho de 45 anos, alcoolista, antissocial e desempregado, e que os dois sobrevivem com aaposentadoria da paciente. Ao exame físico: lúcida, orientada e coerente, PA 185/110 mmHg, desnutrida, apresentando higiene inadequada e hematomas em região de dorso incompatíveis com sua história de queda. Em relação ao caso, aGrma-se:I. Abuso e maus-tratos estão presentes na forma de violência física e negligência.II. O suporte familiar ausente é um dos fatores de risco associados ao agressor. III. As decisões da idosa devem ser sempre respeitadas, mesmo que contrárias às orientações da equipe, considerandoválida a abordagem do agressor como parte do problema. Está/Estão correta(s) a(s) afirmativa(s)",
+      "text": "Mulher, 86 anos, vem à consulta referindo dores nas costas após queda no banheiro. Hipertensa prévia com controle inadequado dos níveis pressóricos, esquece de tomar as medicações, tem insônia e dificuldades para realizar as atividadesda vida diária. Quando questionada sobre a rede de apoio, responde evasivamente. A vizinha que acompanha explica que apaciente mora com o Glho de 45 anos, alcoolista, antissocial e desempregado, e que os dois sobrevivem com aaposentadoria da paciente. Ao exame físico: lúcida, orientada e coerente, PA 185/110 mmHg, desnutrida, apresentando higiene inadequada e hematomas em região de dorso incompatíveis com sua história de queda. Em relação ao caso, aGrma-se:I. Abuso e maus-tratos estão presentes na forma de violência física e negligência. II. O suporte familiar ausente é um dos fatores de risco associados ao agressor. III. As decisões da idosa devem ser sempre respeitadas, mesmo que contrárias às orientações da equipe, considerandoválida a abordagem do agressor como parte do problema. Está/Estão correta(s) a(s) afirmativa(s)",
       "options": [
         {
           "letter": "A",
@@ -17967,7 +17967,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Saúde do Idoso",
       "topic": "Saúde do Idoso",
       "title": "Questão 12",
-      "text": "Uma grande empresa com muitos adoecimentos do sistema musculoesquelético e da esfera psíquica decide implementaruma política de corte de pessoal e decide começar pelas pessoas com mais idade, em particular aquelas com mais de 60anos de idade.Assinale a alternativa correta sobre essa situação",
+      "text": "Uma grande empresa com muitos adoecimentos do sistema musculoesquelético e da esfera psíquica decide implementaruma política de corte de pessoal e decide começar pelas pessoas com mais idade, em particular aquelas com mais de 60anos de idade. Assinale a alternativa correta sobre essa situação",
       "options": [
         {
           "letter": "A",
@@ -18091,7 +18091,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Saúde do Idoso",
       "topic": "Saúde do Idoso",
       "title": "Questão 16",
-      "text": "Uma paciente de 92 anos, diabética e hipertensa, com um grau leve de declínio cognitivo, sofreu fratura do colo do fêmur após queda da própria altura. No segundo dia pós-operatório de artroplastia do quadril, quando ainda estava em regime de terapia intensiva, começou a apresentar desorientação e agitação que piorava muito durante a noite. Ao exame, percebia-se desorganização do raciocínio, desatenção e alternância de sonolência com agitação. A tomograGa de crânio foi normal.Qual das medidas abaixo relacionadas seria benéfica para essa paciente?",
+      "text": "Uma paciente de 92 anos, diabética e hipertensa, com um grau leve de declínio cognitivo, sofreu fratura do colo do fêmur após queda da própria altura. No segundo dia pós-operatório de artroplastia do quadril, quando ainda estava em regime de terapia intensiva, começou a apresentar desorientação e agitação que piorava muito durante a noite. Ao exame, percebia-se desorganização do raciocínio, desatenção e alternância de sonolência com agitação. A tomograGa de crânio foi normal. Qual das medidas abaixo relacionadas seria benéfica para essa paciente?",
       "options": [
         {
           "letter": "A",
@@ -18137,7 +18137,7 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "C",
-          "text": "onfusion Assessment Method, o diagnóstico é firmado quando há alteração aguda doestado mental e flutuação cognitiva, associados a alucinações ou alteração do nível de consciência.Cas medidas de prevenção incluem estimular a mobilidade e a ingestão hídrica, orientá-los no tempo e no espaçoe otimizar o sono à noite com medidas não farmacológicas"
+          "text": "onfusion Assessment Method, o diagnóstico é firmado quando há alteração aguda doestado mental e flutuação cognitiva, associados a alucinações ou alteração do nível de consciência. Cas medidas de prevenção incluem estimular a mobilidade e a ingestão hídrica, orientá-los no tempo e no espaçoe otimizar o sono à noite com medidas não farmacológicas"
         },
         {
           "letter": "D",
@@ -18353,7 +18353,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Saúde do Idoso",
       "topic": "Saúde do Idoso",
       "title": "Questão 24",
-      "text": "Considerando os riscos decorrentes de polifarmácia e os benefícios da suspensão ativa de medicamentos, assinale os itensa seguir como verdadeiros (V) ou falsos (F).I - Cada pessoa que utiliza cinco ou mais fármacos deveria ter revisão de seu plano terapêutico para avaliar a possibilidade de suspensão de fármacos e/ou redução de doses.II - Bifosfonados têm efeito que se estende além do momento em que são suspensos, sendo razoável considerar sua desprescrição após 5 ano de uso.III - A levotiroxina de uso contínuo deve ter sua dose ajustada, mas não suspensa em pacientes idosos, mesmo em caso dehipotiroidismo subclínico. IV - Em pacientes que se encontram em quadros de menor expectativa de vida, é recomendado priorizar os fármacospreventivos em reavaliações visando desprescrição.V - Como a suspensão de inibidores de bomba de prótons não causa rebote, pode-se encerrar seu uso de forma súbita,independentemente da dose, quando atingido o prazo indicado.Escolha a alternativa com a sequência correta",
+      "text": "Considerando os riscos decorrentes de polifarmácia e os benefícios da suspensão ativa de medicamentos, assinale os itensa seguir como verdadeiros (V) ou falsos (F). I - Cada pessoa que utiliza cinco ou mais fármacos deveria ter revisão de seu plano terapêutico para avaliar a possibilidade de suspensão de fármacos e/ou redução de doses. II - Bifosfonados têm efeito que se estende além do momento em que são suspensos, sendo razoável considerar sua desprescrição após 5 ano de uso. III - A levotiroxina de uso contínuo deve ter sua dose ajustada, mas não suspensa em pacientes idosos, mesmo em caso dehipotiroidismo subclínico. IV - Em pacientes que se encontram em quadros de menor expectativa de vida, é recomendado priorizar os fármacospreventivos em reavaliações visando desprescrição. V - Como a suspensão de inibidores de bomba de prótons não causa rebote, pode-se encerrar seu uso de forma súbita,independentemente da dose, quando atingido o prazo indicado. Escolha a alternativa com a sequência correta",
       "options": [
         {
           "letter": "A",
@@ -18387,7 +18387,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Saúde do Idoso",
       "topic": "Saúde do Idoso",
       "title": "Questão 25",
-      "text": "Lucilene, 79 anos, veio à consulta preocupada com sua alimentação, especialmente por acreditar que consome poucasvitaminas e por não conseguir perder peso, apesar de ter aumentado suas caminhadas para 40 minutos cinco dias por semana. Hoje está com 81kg e 1,75m (IMC= 26,45).Para conduzir esta consulta, analise as afirmativas abaixo.I - Nessa faixa etária, esse IMC não é um foco para ser enfatizado nos cuidados de saúde.II - Antes de apresentar recomendações dietéticas, é necessário averiguar qual o tipo de processamento de alimentos elahabitualmente consome.III - Caso o recordatório alimentar sugira consumo de cálcio inferior à recomendação diária, é necessário garantir suplementação, por ser mais efetiva e mais segura.Assinale a alternativa com as afirmativas corretas",
+      "text": "Lucilene, 79 anos, veio à consulta preocupada com sua alimentação, especialmente por acreditar que consome poucasvitaminas e por não conseguir perder peso, apesar de ter aumentado suas caminhadas para 40 minutos cinco dias por semana. Hoje está com 81kg e 1,75m (IMC= 26,45). Para conduzir esta consulta, analise as afirmativas abaixo. I - Nessa faixa etária, esse IMC não é um foco para ser enfatizado nos cuidados de saúde. II - Antes de apresentar recomendações dietéticas, é necessário averiguar qual o tipo de processamento de alimentos elahabitualmente consome. III - Caso o recordatório alimentar sugira consumo de cálcio inferior à recomendação diária, é necessário garantir suplementação, por ser mais efetiva e mais segura. Assinale a alternativa com as afirmativas corretas",
       "options": [
         {
           "letter": "A",
@@ -18421,7 +18421,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Saúde do Idoso",
       "topic": "Saúde do Idoso",
       "title": "Questão 26",
-      "text": "Analise as seguintes assertivas em relação às quedas no idoso:I. Mudanças posturais relacionadas à idade, déficit visual, uso de medicações e doenças que afetam a força muscular e acoordenação motora são fatores que contribuem para índices tão altos.II. Os pacientes raramente mencionam o evento ao seu médico se não houve lesão por ocasião da queda, e o proGssionalde saúde não tem por hábito perguntar sobre a história pregressa de quedas.III. Mesmo quando resultam em algum agravo que necessite tratamento, raramente as causas das quedas são investigadasde forma a identificar possíveis causas evitáveis.Quais estão corretas?A",
+      "text": "Analise as seguintes assertivas em relação às quedas no idoso:I. Mudanças posturais relacionadas à idade, déficit visual, uso de medicações e doenças que afetam a força muscular e acoordenação motora são fatores que contribuem para índices tão altos. II. Os pacientes raramente mencionam o evento ao seu médico se não houve lesão por ocasião da queda, e o proGssionalde saúde não tem por hábito perguntar sobre a história pregressa de quedas. III. Mesmo quando resultam em algum agravo que necessite tratamento, raramente as causas das quedas são investigadasde forma a identificar possíveis causas evitáveis. Quais estão corretas? A",
       "options": [
         {
           "letter": "A",
@@ -18497,7 +18497,7 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "D",
-          "text": "upla Adulto (DT).DVaricela e dTpa(adulto"
+          "text": "upla Adulto (DT). DVaricela e dTpa(adulto"
         }
       ],
       "sourceId": "4000173943",
@@ -18541,7 +18541,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Saúde do Idoso",
       "topic": "Saúde do Idoso",
       "title": "Questão 31",
-      "text": "Dependência de ÁlcoolExame físico e Avaliação Funcional do IdosoJosé comemorou seu aniversário no último mês e decidiu que precisava fazer uns exames. Procurou a UBS perto da sua casa para conversar com a enfermeira que, analisando sua história familiar, sua idade e seu estilo de vida, achou melhor passar por consulta médica. José tem 60 anos, hipertenso há 10 anos e desde então faz uso de Losartana 50mg 2x ao dia.Na consulta com a enfermeira, pesou 100kg, IMC*: 32, PA**: 130x80. Últimos exames realizados há mais de 2 anos, quandoGcou internado devido a uma pneumonia. José é tabagista (30 maços/ano) e sedentário, e relata que bebe uma\"\"cervejinha\"\" no final de semana. A médica opta por realizar exames de rotina para hipertensão e tem como resultado:creatinina: 1,0; glicemia: 142; colesterol total: 250, Colesterol HDL: 50; colesterol LDL: 130; triglicérides: 350. (\"\"IMC: Índicede massa corporal: **PA: Pressão arterial) Levando em consideração o caso clínico acima, quais escores seriam possíveis calcular com esse paciente?AFramingham, CAGE, Fagerstrom e Avaliação Geriátrica",
+      "text": "Dependência de ÁlcoolExame físico e Avaliação Funcional do IdosoJosé comemorou seu aniversário no último mês e decidiu que precisava fazer uns exames. Procurou a UBS perto da sua casa para conversar com a enfermeira que, analisando sua história familiar, sua idade e seu estilo de vida, achou melhor passar por consulta médica. José tem 60 anos, hipertenso há 10 anos e desde então faz uso de Losartana 50mg 2x ao dia. Na consulta com a enfermeira, pesou 100kg, IMC*: 32, PA**: 130x80. Últimos exames realizados há mais de 2 anos, quandoGcou internado devido a uma pneumonia. José é tabagista (30 maços/ano) e sedentário, e relata que bebe uma\"\"cervejinha\"\" no final de semana. A médica opta por realizar exames de rotina para hipertensão e tem como resultado:creatinina: 1,0; glicemia: 142; colesterol total: 250, Colesterol HDL: 50; colesterol LDL: 130; triglicérides: 350. (\"\"IMC: Índicede massa corporal: **PA: Pressão arterial) Levando em consideração o caso clínico acima, quais escores seriam possíveis calcular com esse paciente? AFramingham, CAGE, Fagerstrom e Avaliação Geriátrica",
       "options": [
         {
           "letter": "A",
@@ -18557,11 +18557,11 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "D",
-          "text": "IT, Avaliação Geriátrica Ampla.CFramingham, CAG"
+          "text": "IT, Avaliação Geriátrica Ampla. CFramingham, CAG"
         },
         {
           "letter": "E",
-          "text": "(se triagem positiva, AUDIT), Fagerstrom e Avaliação Geriátrica Ampla.DApenas a Avaliação Geriátrica Ampla, visto que já avalia todos os escores acima descritos"
+          "text": "(se triagem positiva, AUDIT), Fagerstrom e Avaliação Geriátrica Ampla. DApenas a Avaliação Geriátrica Ampla, visto que já avalia todos os escores acima descritos"
         }
       ],
       "sourceId": "4000171621",
@@ -18575,7 +18575,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Saúde do Idoso",
       "topic": "Saúde do Idoso",
       "title": "Questão 32",
-      "text": "Dona Maria Inês, 92 anos, está acamada, totalmente dependente para atividades diárias, confusa, com quadro avançado deAlzheimer. É obesa, hipertensa (em uso de Anlodipina, Propranolol e Losartana), diabética (em uso de Metformina eGlicazida), além de tomar medicações para dislipidemia (Sinvastatina), hipotiroidismo (Puran T4), insuGciênciavenosa (Diosmina - Hesperidina) e labirintite (Betaistina). Faz uso, ainda, de medicações para o Alzheimer (Memantina eGalantamina) e de um remédio para dormir (Bromazepam). A família da paciente solicitou uma visita domiciliar de rotina, e aprincipal queixa foi a alimentação inadequada de dona Maria Inês, que não está aceitando nada além de pizza e empadas.Você, como médico da Atenção Primária que acompanha esta paciente, deve ter como principal foco de atenção durantea consulta da paciente, e como conduta mais adequada, respectivamente",
+      "text": "Dona Maria Inês, 92 anos, está acamada, totalmente dependente para atividades diárias, confusa, com quadro avançado deAlzheimer. É obesa, hipertensa (em uso de Anlodipina, Propranolol e Losartana), diabética (em uso de Metformina eGlicazida), além de tomar medicações para dislipidemia (Sinvastatina), hipotiroidismo (Puran T4), insuGciênciavenosa (Diosmina - Hesperidina) e labirintite (Betaistina). Faz uso, ainda, de medicações para o Alzheimer (Memantina eGalantamina) e de um remédio para dormir (Bromazepam). A família da paciente solicitou uma visita domiciliar de rotina, e aprincipal queixa foi a alimentação inadequada de dona Maria Inês, que não está aceitando nada além de pizza e empadas. Você, como médico da Atenção Primária que acompanha esta paciente, deve ter como principal foco de atenção durantea consulta da paciente, e como conduta mais adequada, respectivamente",
       "options": [
         {
           "letter": "A",
@@ -18695,7 +18695,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Saúde do Idoso",
       "topic": "Saúde do Idoso",
       "title": "Questão 36",
-      "text": "É fundamental, além do rastreamento para complicações, uma avaliação multidimensional do indivíduo idoso diabético.Sendo correto o item",
+      "text": "É fundamental, além do rastreamento para complicações, uma avaliação multidimensional do indivíduo idoso diabético. Sendo correto o item",
       "options": [
         {
           "letter": "A",
@@ -18966,7 +18966,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Saúde do Idoso",
       "topic": "Saúde do Idoso",
       "title": "Questão 44",
-      "text": "Segundo a Organização Mundial da Saúde, ao se considerar a epidemiologia do envelhecimento, deve-se analisar a saúdedos idosos considerando alguns aspectos. Sendo assim, assinale V, se verdadeiras, ou F, se falsas para as assertivas a seguir.( ) O gênero.( ) A cultura.( ) Os determinantes da saúde.( ) O ambiente físico.A ordem correta de preenchimento dos parênteses, de cima para baixo, é",
+      "text": "Segundo a Organização Mundial da Saúde, ao se considerar a epidemiologia do envelhecimento, deve-se analisar a saúdedos idosos considerando alguns aspectos. Sendo assim, assinale V, se verdadeiras, ou F, se falsas para as assertivas a seguir.( ) O gênero.( ) A cultura.( ) Os determinantes da saúde.( ) O ambiente físico. A ordem correta de preenchimento dos parênteses, de cima para baixo, é",
       "options": [
         {
           "letter": "A",
@@ -19349,7 +19349,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Saúde do Idoso",
       "topic": "Saúde do Idoso",
       "title": "Questão 57",
-      "text": "A desprescrição de medicamentos é definida como a retirada de um fármaco inadequado de um paciente.Sobre a desprescrição de medicamentos assinale a afirmativa CORRETA",
+      "text": "A desprescrição de medicamentos é definida como a retirada de um fármaco inadequado de um paciente. Sobre a desprescrição de medicamentos assinale a afirmativa CORRETA",
       "options": [
         {
           "letter": "A",
@@ -19379,7 +19379,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Saúde do Idoso",
       "topic": "Saúde do Idoso",
       "title": "Questão 58",
-      "text": "Mulher de 83 anos apresenta sensação de cansaço, fraqueza e fadiga, com perda de peso não intencional de 6 kg em 6meses (peso anterior era de 60 kg); não consegue andar uma quadra. AP: tem escolaridade universitária e utiliza 8medicações ao dia. Exame físico: IMC 17,9 kg/m2; caminha com passos curtos e gastou 40 segundos para percorrer 4,6metros; escala de Katz com 4 dependências para atividades básicas de vida diária; miniexame do estado mental com 27pontos; escala de depressão geriátrica com 9 pontos; inabilidade de levantar-se 5 vezes da cadeira sem ajuda dos braços.Essa paciente tem diagnóstico de síndrome da fragilidade, pois apresenta",
+      "text": "Mulher de 83 anos apresenta sensação de cansaço, fraqueza e fadiga, com perda de peso não intencional de 6 kg em 6meses (peso anterior era de 60 kg); não consegue andar uma quadra. AP: tem escolaridade universitária e utiliza 8medicações ao dia. Exame físico: IMC 17,9 kg/m2; caminha com passos curtos e gastou 40 segundos para percorrer 4,6metros; escala de Katz com 4 dependências para atividades básicas de vida diária; miniexame do estado mental com 27pontos; escala de depressão geriátrica com 9 pontos; inabilidade de levantar-se 5 vezes da cadeira sem ajuda dos braços. Essa paciente tem diagnóstico de síndrome da fragilidade, pois apresenta",
       "options": [
         {
           "letter": "A",
@@ -19409,7 +19409,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Saúde do Idoso",
       "topic": "Saúde do Idoso",
       "title": "Questão 59",
-      "text": "Um senhor de 78 anos mora com seu Glho, sua nora e dois netos. Em uma das visitas domiciliares de Agentes Comunitáriosde Saúde (ACS), ele se queixa de dificuldade de participar de conversas familiares, pois frequentemente não entende o quefalam.Em face do exposto, assinale a alternativa correta.AOs idosos costumam evoluir com depressão, sendo necessária uma avaliação de um psiquiatra especializado em geriatria.B",
+      "text": "Um senhor de 78 anos mora com seu Glho, sua nora e dois netos. Em uma das visitas domiciliares de Agentes Comunitáriosde Saúde (ACS), ele se queixa de dificuldade de participar de conversas familiares, pois frequentemente não entende o quefalam. Em face do exposto, assinale a alternativa correta. AOs idosos costumam evoluir com depressão, sendo necessária uma avaliação de um psiquiatra especializado em geriatria. B",
       "options": [
         {
           "letter": "A",
@@ -19608,7 +19608,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Saúde do Idoso",
       "topic": "Saúde do Idoso",
       "title": "Questão 66",
-      "text": "Idoso de 87 anos, acamado após fratura do fêmur, reside com Glha de 65 anos e recebe a visita domiciliar de equipe desaúde da Clínica de Família. Após anamnese e exame físico completo, o médico se mostra preocupado pelo risco aumentado de efeitos colaterais aos medicamentos em uso pelo paciente.As condições mais prováveis de causar reações adversas nos idosos são",
+      "text": "Idoso de 87 anos, acamado após fratura do fêmur, reside com Glha de 65 anos e recebe a visita domiciliar de equipe desaúde da Clínica de Família. Após anamnese e exame físico completo, o médico se mostra preocupado pelo risco aumentado de efeitos colaterais aos medicamentos em uso pelo paciente. As condições mais prováveis de causar reações adversas nos idosos são",
       "options": [
         {
           "letter": "A",
@@ -19748,7 +19748,7 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "D",
-          "text": "elirium.DInsuficiência Familiar e Desnutrição"
+          "text": "elirium. DInsuficiência Familiar e Desnutrição"
         }
       ],
       "sourceId": "4000142320",
@@ -19762,7 +19762,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Saúde do Idoso",
       "topic": "Saúde do Idoso",
       "title": "Questão 71",
-      "text": "Em reunião de equipe, foi solicitada uma visita domiciliar pelo agente comunitário de saúde para uma paciente idosa devidoàs dificuldades físicas de locomoção e de ausência de meios de transporte próprios. Durante a visita, o médico de famíliaconheceu a paciente de 75 anos e a Glha. Ela informou que a mãe não consegue caminhar longas distâncias e que faz usodas seguintes medicações: hidroclorotiazida 25 mg/dia; losartana 50 mg de 12 em 12 horas; anlodipino 5 mg de 12 em 12horas; enalapril 20 mg de 12 em 12 horas; clonidina 0,150 mg de 12 em 12 horas; metformina 850 mg 3 comprimidos/dia;insulina NPH 22 UI pela manhã e 22 UI à noite e sinvastatina 20 mg à noite. A paciente referiu estar se sentindo triste, semdisposição e com esquecimentos há cerca de 2 meses. A Glha relatou compartilhar diazepam 5 mg e amitriptilina 25 mg, deuso próprio, com a mãe, para melhora do desânimo e da insônia. O médico também constatou que a paciente faz usofrequente de diclofenaco 50 mg para dores no joelho e de flunarizina 10 mg para tontura que a acomete principalmente pela manhã. Ao exame físico, constatou-se que a paciente estava em bom estado geral, corada, hidratada, FC = 82 bpm, FR = 18irpm, SpO₂ = 95 %, PA = 140 x 80 mmHg e ausência de alterações à ausculta cardíaca e pulmonar e ao exame de abdome.Foi realizada glicemia capilar com resultado de 66 mg /dL (valor de referência: 60 a 100 mg /dL).Em relação ao caso clínico, responda às questões a seguir.(",
+      "text": "Em reunião de equipe, foi solicitada uma visita domiciliar pelo agente comunitário de saúde para uma paciente idosa devidoàs dificuldades físicas de locomoção e de ausência de meios de transporte próprios. Durante a visita, o médico de famíliaconheceu a paciente de 75 anos e a Glha. Ela informou que a mãe não consegue caminhar longas distâncias e que faz usodas seguintes medicações: hidroclorotiazida 25 mg/dia; losartana 50 mg de 12 em 12 horas; anlodipino 5 mg de 12 em 12horas; enalapril 20 mg de 12 em 12 horas; clonidina 0,150 mg de 12 em 12 horas; metformina 850 mg 3 comprimidos/dia;insulina NPH 22 UI pela manhã e 22 UI à noite e sinvastatina 20 mg à noite. A paciente referiu estar se sentindo triste, semdisposição e com esquecimentos há cerca de 2 meses. A Glha relatou compartilhar diazepam 5 mg e amitriptilina 25 mg, deuso próprio, com a mãe, para melhora do desânimo e da insônia. O médico também constatou que a paciente faz usofrequente de diclofenaco 50 mg para dores no joelho e de flunarizina 10 mg para tontura que a acomete principalmente pela manhã. Ao exame físico, constatou-se que a paciente estava em bom estado geral, corada, hidratada, FC = 82 bpm, FR = 18irpm, SpO₂ = 95 %, PA = 140 x 80 mmHg e ausência de alterações à ausculta cardíaca e pulmonar e ao exame de abdome. Foi realizada glicemia capilar com resultado de 66 mg /dL (valor de referência: 60 a 100 mg /dL). Em relação ao caso clínico, responda às questões a seguir.(",
       "options": [
         {
           "letter": "A",
@@ -19831,7 +19831,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Saúde do Idoso",
       "topic": "Saúde do Idoso",
       "title": "Questão 73",
-      "text": "Considere as assertivas abaixo sobre desnutrição em idosos. I - Perda de peso involuntária pode ocorrer por atroGa muscular, inapetência, inflamação ou por uma combinação desses fatores.II. - Sarcopenia, síndrome caracterizada por perda de massa, força e função musculares, ocorre primariamente por desnutrição nesses pacientes.III. - Suplementação de multivitamínicos deve ser recomendada a todo paciente idoso.Quais são as corretas?A",
+      "text": "Considere as assertivas abaixo sobre desnutrição em idosos. I - Perda de peso involuntária pode ocorrer por atroGa muscular, inapetência, inflamação ou por uma combinação desses fatores. II. - Sarcopenia, síndrome caracterizada por perda de massa, força e função musculares, ocorre primariamente por desnutrição nesses pacientes. III. - Suplementação de multivitamínicos deve ser recomendada a todo paciente idoso. Quais são as corretas? A",
       "options": [
         {
           "letter": "A",
@@ -19899,7 +19899,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Saúde do Idoso",
       "topic": "Saúde do Idoso",
       "title": "Questão 75",
-      "text": "Mulher de 81 anos relata tontura quando fica em pé e medo de cair. AP: HAS, incontinência urinária e osteoartrite de joelhos.Medicações em uso regular: captopril, anlodipino, hidroclorotiazida, paracetamol e oxibutinina. Exame físico: PA 120/70mmHg (deitada), FC 76 bpm, pulso regular, levanta-se da cadeira sem utilizar apoio, teste time up and go 10 s. A conduta mais adequada para avaliar o risco de queda dessa paciente é",
+      "text": "Mulher de 81 anos relata tontura quando fica em pé e medo de cair. AP: HAS, incontinência urinária e osteoartrite de joelhos. Medicações em uso regular: captopril, anlodipino, hidroclorotiazida, paracetamol e oxibutinina. Exame físico: PA 120/70mmHg (deitada), FC 76 bpm, pulso regular, levanta-se da cadeira sem utilizar apoio, teste time up and go 10 s. A conduta mais adequada para avaliar o risco de queda dessa paciente é",
       "options": [
         {
           "letter": "A",
@@ -20031,7 +20031,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Saúde do Idoso",
       "topic": "Saúde do Idoso",
       "title": "Questão 79",
-      "text": "Protocolos de prevenção de quedas Quedas de pacientes dentro do ambiente hospitalar são eventos de causas multifatoriais que podem causar danos graves eaté óbito quando ocorrem em grupos vulneráveis como os idosos. Por isso, a prevenção da queda tem sido apontadainternacionalmente como um indicador importante de segurança do paciente. Neste contexto, assinale a alternativa correta.A",
+      "text": "Protocolos de prevenção de quedas Quedas de pacientes dentro do ambiente hospitalar são eventos de causas multifatoriais que podem causar danos graves eaté óbito quando ocorrem em grupos vulneráveis como os idosos. Por isso, a prevenção da queda tem sido apontadainternacionalmente como um indicador importante de segurança do paciente. Neste contexto, assinale a alternativa correta. A",
       "options": [
         {
           "letter": "A",
@@ -20411,7 +20411,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Saúde do Idoso",
       "topic": "Saúde do Idoso",
       "title": "Questão 91",
-      "text": "A redução da polifarmácia podem diminuir o nível de fragilidade e os desfechos adversos e os riscos das intervenções.Podemos apenas CONCORDAR que:A",
+      "text": "A redução da polifarmácia podem diminuir o nível de fragilidade e os desfechos adversos e os riscos das intervenções. Podemos apenas CONCORDAR que:A",
       "options": [
         {
           "letter": "A",
@@ -21108,7 +21108,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Saúde do Idoso",
       "topic": "Saúde do Idoso",
       "title": "Questão 113",
-      "text": "Idoso e/ou no prontuário seja semestral, permitindo o monitoramento de seu estado nutricional e a determinação detendências de aumento ou perda de peso, associando possíveis variações às demais condições de saúde da pessoa idosa.Assinale a alternativa que correlaciona corretamente os limites de IMC com o estado nutricional do idoso",
+      "text": "Idoso e/ou no prontuário seja semestral, permitindo o monitoramento de seu estado nutricional e a determinação detendências de aumento ou perda de peso, associando possíveis variações às demais condições de saúde da pessoa idosa. Assinale a alternativa que correlaciona corretamente os limites de IMC com o estado nutricional do idoso",
       "options": [
         {
           "letter": "A",
@@ -21172,7 +21172,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Saúde do Idoso",
       "topic": "Saúde do Idoso",
       "title": "Questão 115",
-      "text": "Conceituação e epidemiologia Fisiologia do EnvelhecimentoNo idoso, sobretudo após os 70 anos, hipertensão arterial sistólica isolada é uma condição clínica prevalente. Que alteração do sistema cardiovascular associada ao envelhecimento, dentre as abaixo, não contribui para a patogênesedessa condição?A",
+      "text": "Conceituação e epidemiologia Fisiologia do EnvelhecimentoNo idoso, sobretudo após os 70 anos, hipertensão arterial sistólica isolada é uma condição clínica prevalente. Que alteração do sistema cardiovascular associada ao envelhecimento, dentre as abaixo, não contribui para a patogênesedessa condição? A",
       "options": [
         {
           "letter": "A",
@@ -21284,7 +21284,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Saúde do Idoso",
       "topic": "Saúde do Idoso",
       "title": "Questão 118",
-      "text": "Quedas em idososA queda representa um grande problema para as pessoas idosas dadas as suas consequências (injúria, incapacidade,institucionalização e morte) que são resultados da combinação de alta incidência com alta susceptibilidade às lesões. (MS).As medidas práticas que visam minimizar as quedas e suas consequências entre as pessoas idosas incluem",
+      "text": "Quedas em idososA queda representa um grande problema para as pessoas idosas dadas as suas consequências (injúria, incapacidade,institucionalização e morte) que são resultados da combinação de alta incidência com alta susceptibilidade às lesões. (MS). As medidas práticas que visam minimizar as quedas e suas consequências entre as pessoas idosas incluem",
       "options": [
         {
           "letter": "A",
@@ -21352,7 +21352,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Saúde do Idoso",
       "topic": "Saúde do Idoso",
       "title": "Questão 120",
-      "text": "Espera-se declínio no desempenho em testes cognitivos como memória, velocidade de reação ou diversas funções executivas e, até certo ponto, pode ser visto como consequência quase inevitável do envelhecimento.Sobre isso, assinale a alternativa INCORRETA",
+      "text": "Espera-se declínio no desempenho em testes cognitivos como memória, velocidade de reação ou diversas funções executivas e, até certo ponto, pode ser visto como consequência quase inevitável do envelhecimento. Sobre isso, assinale a alternativa INCORRETA",
       "options": [
         {
           "letter": "A",
@@ -21412,7 +21412,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Saúde do Idoso",
       "topic": "Saúde do Idoso",
       "title": "Questão 122",
-      "text": "Idosa de 72 anos, viúva, mora com o Glho que está desempregado há um ano e forneceu a ele seu cartão bancário e senha.Seu Glho suspendeu o plano de saúde da mãe porque, segundo ele, ficou muito caro, e fez um crédito consignado paracomprar um carro novo para ele. Nesse caso, é CORRETO afirmar que",
+      "text": "Idosa de 72 anos, viúva, mora com o Glho que está desempregado há um ano e forneceu a ele seu cartão bancário e senha. Seu Glho suspendeu o plano de saúde da mãe porque, segundo ele, ficou muito caro, e fez um crédito consignado paracomprar um carro novo para ele. Nesse caso, é CORRETO afirmar que",
       "options": [
         {
           "letter": "A",
@@ -21689,7 +21689,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Saúde do Idoso",
       "topic": "Saúde do Idoso",
       "title": "Questão 131",
-      "text": "O perGl demográfico modificou-se nas últimas décadas, principalmente em decorrência do aumento da longevidade e da redução das taxas de mortalidade. Segundo o último censo demográfico do IBGE, a quantidade de pessoas com idade acima de 60 anos no Brasil é de mais de 20 milhões (10,8% da população). Assinale a alternativa CORRETA sobre o idoso. AA pele do idoso tem mais elasticidade e menos flexibilidade.BHá aumento da sensibilidade respiratória à hipóxia e hipercapnia.CHá aumento da complacência da parede torácica e redução da complacência pulmonar.DTestes de função hepática normais significam necessariamente metabolismo normal das drogas.EO clearance de creatinina diminui com a idade. A creatinina não aumenta, uma vez que o metabolismo muscular também está reduzido. 4000001547Respostas:1B2C3A4B5E6C7B8A9B10E11D12A13A14C15B16D17C18C19B20B21B22A23E24B25B26D27D28C29C30B31C32C33D34C35A36A37C38D39D40C41C42A43C44D45C46D47B48D49B50B51C52D53C54B55B56B57D58A59D60A61A62A63C64D65D66C67B68B69D70B71 72A73A74A75A76E77B78E79A80B81A82E83E84D85B86B87A88",
+      "text": "O perGl demográfico modificou-se nas últimas décadas, principalmente em decorrência do aumento da longevidade e da redução das taxas de mortalidade. Segundo o último censo demográfico do IBGE, a quantidade de pessoas com idade acima de 60 anos no Brasil é de mais de 20 milhões (10,8% da população). Assinale a alternativa CORRETA sobre o idoso. AA pele do idoso tem mais elasticidade e menos flexibilidade. BHá aumento da sensibilidade respiratória à hipóxia e hipercapnia. CHá aumento da complacência da parede torácica e redução da complacência pulmonar. DTestes de função hepática normais significam necessariamente metabolismo normal das drogas. EO clearance de creatinina diminui com a idade. A creatinina não aumenta, uma vez que o metabolismo muscular também está reduzido. 4000001547Respostas:1B2C3A4B5E6C7B8A9B10E11D12A13A14C15B16D17C18C19B20B21B22A23E24B25B26D27D28C29C30B31C32C33D34C35A36A37C38D39D40C41C42A43C44D45C46D47B48D49B50B51C52D53C54B55B56B57D58A59D60A61A62A63C64D65D66C67B68B69D70B71 72A73A74A75A76E77B78E79A80B81A82E83E84D85B86B87A88",
       "options": [
         {
           "letter": "A",
@@ -21815,7 +21815,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtorno Obsessivo-Compulsivo",
       "topic": "Transtorno Obsessivo-Compulsivo",
       "title": "Questão 4",
-      "text": "Transtornos SomáticosMétodo Clínico Centrado na PessoaPsiquiatriaFábio, 19 anos, homem transgênero, negro, estudante cotista de administração em uma faculdade particular. Acompanhadopela mãe, vai à consulta em UBS com Médico de Família e Comunidade (MFC) por queixa de dor abdominal intensa em crises, há 6 meses. Procurou a emergência 3 vezes neste período e foi medicado com soro e analgésicos endovenososcom melhora parcial dos sintomas. Refere dor em pontada em regiões diferentes do abdome, acompanhadas de náuseas.Nega febre, vômitos, alterações urinárias. Realizou exames de sangue, ultrassom abdominal e exames de urina semalterações. Está muito preocupado, com medo de ter alguma doença grave. Sente-se culpado porque sua mãe está preocupada e perde o sono por isso. Não tem histórico pessoal de doenças, seus pais são vivos e saudáveis e não temirmãos. O médico de família investiga alimentação, hábitos, prática de exercícios físicos e percebe que desde que começoua faculdade, há 9 meses, parou de ter hábitos saudáveis, embora praticasse corrida e futebol antes. O paciente considera que deveria estar feliz na faculdade, que era um sonho realizado poder estudar, mas tem se sentido rejeitado pelos colega se não sabe se vai conseguir continuar, refere tristeza maior parte do tempo. Exame físico normal. Entre os seguintes planos de tratamento e seguimento o melhor a ser oferecido pelo MFC é",
+      "text": "Transtornos SomáticosMétodo Clínico Centrado na PessoaPsiquiatriaFábio, 19 anos, homem transgênero, negro, estudante cotista de administração em uma faculdade particular. Acompanhadopela mãe, vai à consulta em UBS com Médico de Família e Comunidade (MFC) por queixa de dor abdominal intensa em crises, há 6 meses. Procurou a emergência 3 vezes neste período e foi medicado com soro e analgésicos endovenososcom melhora parcial dos sintomas. Refere dor em pontada em regiões diferentes do abdome, acompanhadas de náuseas. Nega febre, vômitos, alterações urinárias. Realizou exames de sangue, ultrassom abdominal e exames de urina semalterações. Está muito preocupado, com medo de ter alguma doença grave. Sente-se culpado porque sua mãe está preocupada e perde o sono por isso. Não tem histórico pessoal de doenças, seus pais são vivos e saudáveis e não temirmãos. O médico de família investiga alimentação, hábitos, prática de exercícios físicos e percebe que desde que começoua faculdade, há 9 meses, parou de ter hábitos saudáveis, embora praticasse corrida e futebol antes. O paciente considera que deveria estar feliz na faculdade, que era um sonho realizado poder estudar, mas tem se sentido rejeitado pelos colega se não sabe se vai conseguir continuar, refere tristeza maior parte do tempo. Exame físico normal. Entre os seguintes planos de tratamento e seguimento o melhor a ser oferecido pelo MFC é",
       "options": [
         {
           "letter": "A",
@@ -21845,7 +21845,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtorno Obsessivo-Compulsivo",
       "topic": "Transtorno Obsessivo-Compulsivo",
       "title": "Questão 5",
-      "text": "Adolescente, 12 anos, encaminhada pela psicóloga de sua escola com queixa de arrancar os cabelos. Os pais contam que,sem nenhum desencadeante ambiental, há sete meses a menina começou a arrancar 6os de cabelo, apresentando extensasáreas de alopecia em todo o couro cabeludo. A menina refere sentir uma necessidade urgente e incontrolável de arrancaros cabelos, seguida de alívio momentâneo. A mãe nota que ela arranca mais cabelos quando fica ansiosa por algum motivo.Também relata que a filha engole os pedacinhos da raíz dos cabelos, bem como aparenta escoriações próximas das unhasdas mãos. Relaciona-se bem com seus amigos e, embora não deixe de frequentar a escola, fica mais isolada do que ohabitual, pois incomoda-se com as perguntas a respeito de seu cabelo. Nega, porém, sintomas gastrintestinais. A família nega qualquer dificuldade de relacionamento em casa ou em outros contextos sociais. Em relação ao caso, qual é otranstorno mais provável?",
+      "text": "Adolescente, 12 anos, encaminhada pela psicóloga de sua escola com queixa de arrancar os cabelos. Os pais contam que,sem nenhum desencadeante ambiental, há sete meses a menina começou a arrancar 6os de cabelo, apresentando extensasáreas de alopecia em todo o couro cabeludo. A menina refere sentir uma necessidade urgente e incontrolável de arrancaros cabelos, seguida de alívio momentâneo. A mãe nota que ela arranca mais cabelos quando fica ansiosa por algum motivo. Também relata que a filha engole os pedacinhos da raíz dos cabelos, bem como aparenta escoriações próximas das unhasdas mãos. Relaciona-se bem com seus amigos e, embora não deixe de frequentar a escola, fica mais isolada do que ohabitual, pois incomoda-se com as perguntas a respeito de seu cabelo. Nega, porém, sintomas gastrintestinais. A família nega qualquer dificuldade de relacionamento em casa ou em outros contextos sociais. Em relação ao caso, qual é otranstorno mais provável?",
       "options": [
         {
           "letter": "A",
@@ -21965,7 +21965,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtorno Obsessivo-Compulsivo",
       "topic": "Transtorno Obsessivo-Compulsivo",
       "title": "Questão 10",
-      "text": "Paciente do sexo masculino com 19 anos de idade procura seu consultório relatando dificuldade em sua vida devida apensamentos repetitivos e persistentes de contaminação, que o impelem a realizar a higienização de suas mãos e desuperfícies, várias vezes sequencialmente. Relata também pensamentos de ter deixado de fazer algo, com comportamentos repetitivos de conferência (relata conferir se sua casa está fechada por muitas vezes). Tais pensamentos e atividadesocupam grande parte do seu dia (em torno de 1h e 30 minutos). Relata ter feito um “check-up” recentemente e nãoapresenta comorbidades. O paciente percebe que os pensamentos não são compatíveis com a realidade e interferem com suas atividades.Considerando o diagnóstico mais provável, analise as assertivas.I – Comorbidades são comuns, entre as mais frequentes estão depressão, tiques e transtornos alimentares.II – A doença sempre apresenta evolução progressiva e deterioração constante da função psicossocial.III – A fluvoxamina é aprovada para o tratamento desta doença em adultos e crianças.IV – A clomipramina é eficaz nesta doença e bem tolerada.Assinale a alternativa correta.A",
+      "text": "Paciente do sexo masculino com 19 anos de idade procura seu consultório relatando dificuldade em sua vida devida apensamentos repetitivos e persistentes de contaminação, que o impelem a realizar a higienização de suas mãos e desuperfícies, várias vezes sequencialmente. Relata também pensamentos de ter deixado de fazer algo, com comportamentos repetitivos de conferência (relata conferir se sua casa está fechada por muitas vezes). Tais pensamentos e atividadesocupam grande parte do seu dia (em torno de 1h e 30 minutos). Relata ter feito um “check-up” recentemente e nãoapresenta comorbidades. O paciente percebe que os pensamentos não são compatíveis com a realidade e interferem com suas atividades. Considerando o diagnóstico mais provável, analise as assertivas. I – Comorbidades são comuns, entre as mais frequentes estão depressão, tiques e transtornos alimentares. II – A doença sempre apresenta evolução progressiva e deterioração constante da função psicossocial. III – A fluvoxamina é aprovada para o tratamento desta doença em adultos e crianças. IV – A clomipramina é eficaz nesta doença e bem tolerada. Assinale a alternativa correta. A",
       "options": [
         {
           "letter": "A",
@@ -22006,7 +22006,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtorno Obsessivo-Compulsivo",
       "topic": "Transtorno Obsessivo-Compulsivo",
       "title": "Questão 11",
-      "text": "Durante seu atendimento na demanda espontânea em uma UBS, você atende Dona Marta, de 52 anos. Dona Marta vemcom queixa de \"angústia\" e traz o seguinte relato: \"Doutor, desde agosto de 2019, quando minha filha terminou o namorocom um rapaz, eu não consigo superar o fim do relacionamento dela, porque ela perdeu a virgindade com esse rapaz.Doutor, eu durmo e acordo pensando nisso, eu não consigo tirar esse problema da minha cabeça. Eu já perdi 7 quilos,desde o fim desse relacionamento deles dois. Eu reconheço que isso é ridículo, que não faz sentido, que não me faz bem,mas eu não consigo nem mais ter relação com meu marido desde então. Eu não consigo tirar esses pensamentos da cabeça. Eu cheguei ao ponto de escrever cartas sobre como a vida dele e da minha filha poderia ser. Eu só consigo melhorar essa angústia se eu escrever. Eu já escrevi mais de 30 cartas.\" Considerando o relato de Dona Marta, assinale a alternativa com hipótese diagnóstica mais provável",
+      "text": "Durante seu atendimento na demanda espontânea em uma UBS, você atende Dona Marta, de 52 anos. Dona Marta vemcom queixa de \"angústia\" e traz o seguinte relato: \"Doutor, desde agosto de 2019, quando minha filha terminou o namorocom um rapaz, eu não consigo superar o fim do relacionamento dela, porque ela perdeu a virgindade com esse rapaz. Doutor, eu durmo e acordo pensando nisso, eu não consigo tirar esse problema da minha cabeça. Eu já perdi 7 quilos,desde o fim desse relacionamento deles dois. Eu reconheço que isso é ridículo, que não faz sentido, que não me faz bem,mas eu não consigo nem mais ter relação com meu marido desde então. Eu não consigo tirar esses pensamentos da cabeça. Eu cheguei ao ponto de escrever cartas sobre como a vida dele e da minha filha poderia ser. Eu só consigo melhorar essa angústia se eu escrever. Eu já escrevi mais de 30 cartas.\" Considerando o relato de Dona Marta, assinale a alternativa com hipótese diagnóstica mais provável",
       "options": [
         {
           "letter": "A",
@@ -22237,7 +22237,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtorno Obsessivo-Compulsivo",
       "topic": "Transtorno Obsessivo-Compulsivo",
       "title": "Questão 19",
-      "text": "Paciente com dor abdominal crônica, nauseas, vômitos, anorexia, saciedade precoce, emagrecimento e áreas de falha emcouro cabeludo. Ao exame físico, não há sinais dignos de nota. RX de abdômen acusa presença de bezoar no estômago.Esse quadro deve-se provavelmente a",
+      "text": "Paciente com dor abdominal crônica, nauseas, vômitos, anorexia, saciedade precoce, emagrecimento e áreas de falha emcouro cabeludo. Ao exame físico, não há sinais dignos de nota. RX de abdômen acusa presença de bezoar no estômago. Esse quadro deve-se provavelmente a",
       "options": [
         {
           "letter": "A",
@@ -22335,7 +22335,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtorno Obsessivo-Compulsivo",
       "topic": "Transtorno Obsessivo-Compulsivo",
       "title": "Questão 22",
-      "text": "Uma equipe de saúde de certa unidade básica está preocupada com os altos índices de solicitações de atestados médicos com diagnósticos de transtornos mentais, para fins de perícia médica, e de pedidos de benefício saúde. Grande parte daspessoas solicitantes são mulheres desempregadas, em uso de inibidores seletivos de serotonina e benzodiazepínicos. Essecenário piorou com a pandemia da Covid-19. Diante desse quadro, o serviço deseja desenvolver ações com base naPolítica Nacional de Saúde Mental para reverter essa situação.Tendo em vista esse caso e os conhecimentos médicos correlatos, julgue os itens a seguir.Uma atividade terapêutica, para a população em questão, é a terapia de solução de problemas, que se refere a um processo de abordagem de pacientes com sofrimento emocional/transtornos psíquicos, que buscam cuidados na atenção primária,geralmente com sintomas físicos sem explicação médica",
+      "text": "Uma equipe de saúde de certa unidade básica está preocupada com os altos índices de solicitações de atestados médicos com diagnósticos de transtornos mentais, para fins de perícia médica, e de pedidos de benefício saúde. Grande parte daspessoas solicitantes são mulheres desempregadas, em uso de inibidores seletivos de serotonina e benzodiazepínicos. Essecenário piorou com a pandemia da Covid-19. Diante desse quadro, o serviço deseja desenvolver ações com base naPolítica Nacional de Saúde Mental para reverter essa situação. Tendo em vista esse caso e os conhecimentos médicos correlatos, julgue os itens a seguir. Uma atividade terapêutica, para a população em questão, é a terapia de solução de problemas, que se refere a um processo de abordagem de pacientes com sofrimento emocional/transtornos psíquicos, que buscam cuidados na atenção primária,geralmente com sintomas físicos sem explicação médica",
       "options": [
         {
           "letter": "A",
@@ -22369,7 +22369,7 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "C",
-          "text": "omputadorizada quanto a Ressonância Magnética em crianças sem tratamento revelamvolumes maiores de segmentos dos gânglios da base, em comparação com controles sadios.CAs obsessões mais relatadas nessa faixa etária incluem medos extremos de contaminação (exposição a sujeira,germes ou doença"
+          "text": "omputadorizada quanto a Ressonância Magnética em crianças sem tratamento revelamvolumes maiores de segmentos dos gânglios da base, em comparação com controles sadios. CAs obsessões mais relatadas nessa faixa etária incluem medos extremos de contaminação (exposição a sujeira,germes ou doença"
         },
         {
           "letter": "D",
@@ -22387,7 +22387,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtorno Obsessivo-Compulsivo",
       "topic": "Transtorno Obsessivo-Compulsivo",
       "title": "Questão 24",
-      "text": "São características gerais da Síndrome de Münchhausen por procuração:I. Queixas constantes de sinais e sintomas de doenças, de várias localizações, associadas com patologias habituais, porém,sem resposta aos tratamentos.II. Busca de atendimento médico frequente, por parte do agressor, por queixas de sintomas fixos e sem resposta aos tratamentos convencionais, ou com sintomas variados e procura de consultas em especialistas de diversas áreas, semobtenção de melhora.III. Da parte da criança, a vítima, há uma colagem no discurso do agressor, muitas vezes repetindo com as mesmas palavrasa queixa de ter sintomas dos quais não sabe nem o significado.Quais estão corretas?A",
+      "text": "São características gerais da Síndrome de Münchhausen por procuração:I. Queixas constantes de sinais e sintomas de doenças, de várias localizações, associadas com patologias habituais, porém,sem resposta aos tratamentos. II. Busca de atendimento médico frequente, por parte do agressor, por queixas de sintomas fixos e sem resposta aos tratamentos convencionais, ou com sintomas variados e procura de consultas em especialistas de diversas áreas, semobtenção de melhora. III. Da parte da criança, a vítima, há uma colagem no discurso do agressor, muitas vezes repetindo com as mesmas palavrasa queixa de ter sintomas dos quais não sabe nem o significado. Quais estão corretas? A",
       "options": [
         {
           "letter": "A",
@@ -22417,7 +22417,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtorno Obsessivo-Compulsivo",
       "topic": "Transtorno Obsessivo-Compulsivo",
       "title": "Questão 25",
-      "text": "Sobre o caso clínico a seguir:Paciente 14 anos apresentando quadro de desmaios, as vezes se debate quando cai, fraqueza, hipotonia muscular semliberação esfincteriana ou quadro pós ictal. Esses sintomas iniciaram há cerca de 7 meses após episódio de bullying naescola e outros eventos estressores. Tem apresentado prejuízo em sua vida. Não está mais frequentado escola há cerca de3 semanas, nem o curso de dança que tanto gostava. Já passou por diversas especialidades médicas e foram realizados diversos exames sem alterações que justifiquem o quadro. Exames laboratoriais e de imagem são sempre normais. Pacientesem comorbidades e sem uso de substâncias psicoativas.Qual o provável diagnóstico?",
+      "text": "Sobre o caso clínico a seguir: Paciente 14 anos apresentando quadro de desmaios, as vezes se debate quando cai, fraqueza, hipotonia muscular semliberação esfincteriana ou quadro pós ictal. Esses sintomas iniciaram há cerca de 7 meses após episódio de bullying naescola e outros eventos estressores. Tem apresentado prejuízo em sua vida. Não está mais frequentado escola há cerca de3 semanas, nem o curso de dança que tanto gostava. Já passou por diversas especialidades médicas e foram realizados diversos exames sem alterações que justifiquem o quadro. Exames laboratoriais e de imagem são sempre normais. Pacientesem comorbidades e sem uso de substâncias psicoativas. Qual o provável diagnóstico?",
       "options": [
         {
           "letter": "A",
@@ -22454,7 +22454,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtorno Obsessivo-Compulsivo",
       "topic": "Transtorno Obsessivo-Compulsivo",
       "title": "Questão 26",
-      "text": "Em relação ao Transtorno Obsessivo Compulsivo, considere as seguintes afirmativas:I- As obsessões são definidas por pensamentos, impulsos ou imagens recorrentes e persistentes, que em algum momento,são experimentados como intrusivos e indesejados e na maioria dos indivíduos, causam acentuada ansiedade ou sofrimento.II- Nas obsessões o indivíduo tenta ignorar ou suprimir tais pensamentos e impulsos ou neutralizá-los com algum outro pensamento ou ação.III- As compulsões são definidas por comportamentos repetitivos (p. ex., lavar as mãos, organizar, verificar) ou atos mentais(p. ex., orar, contar ou repetir palavras em silêncio) que o indivíduo se sente compelido a executar em resposta a uma obsessão ou de acordo com regras que devem ser rigidamente aplicadas.IV- Nas compulsões, os comportamentos ou os atos repetitivos, visam prevenir ou reduzir a ansiedade ou o sofrimento,evitar algum evento ou situação temida; entretanto, esses comportamentos ou atos mentais não têm uma conexão com arealidade e são claramente excessivos.Pode-se afirmar que",
+      "text": "Em relação ao Transtorno Obsessivo Compulsivo, considere as seguintes afirmativas:I- As obsessões são definidas por pensamentos, impulsos ou imagens recorrentes e persistentes, que em algum momento,são experimentados como intrusivos e indesejados e na maioria dos indivíduos, causam acentuada ansiedade ou sofrimento. II- Nas obsessões o indivíduo tenta ignorar ou suprimir tais pensamentos e impulsos ou neutralizá-los com algum outro pensamento ou ação. III- As compulsões são definidas por comportamentos repetitivos (p. ex., lavar as mãos, organizar, verificar) ou atos mentais(p. ex., orar, contar ou repetir palavras em silêncio) que o indivíduo se sente compelido a executar em resposta a uma obsessão ou de acordo com regras que devem ser rigidamente aplicadas. IV- Nas compulsões, os comportamentos ou os atos repetitivos, visam prevenir ou reduzir a ansiedade ou o sofrimento,evitar algum evento ou situação temida; entretanto, esses comportamentos ou atos mentais não têm uma conexão com arealidade e são claramente excessivos. Pode-se afirmar que",
       "options": [
         {
           "letter": "A",
@@ -22484,7 +22484,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtorno Obsessivo-Compulsivo",
       "topic": "Transtorno Obsessivo-Compulsivo",
       "title": "Questão 27",
-      "text": "Leia o caso clínico a seguir.Magda, de 35 anos, previamente hígida e sem prévio diagnóstico psiquiátrico, estava aparentemente bem até dois dias atrás. Ontem foi trazida ao pronto-socorro por ter tentado engolir água sanitária. Magda recebeu notícia sobre o assassinatodo noivo em uma briga de trânsito. Inicialmente, a família notou que ela reagira com uma tranquilidade incomum, não falava ededicava-se a atividades repetitivas, como dobrar e desdobrar roupas. Algumas horas depois, deu um grito, pegou uma garrafa de água sanitária e tentou bebê-la, sendo impedida pelo irmão. Ela caiu no chão tremendo, chorando e gritando e,depois, ficou parada “como se estivesse morta”. A família não notou movimentos tônico-clônicos ou liberação esfincteriana.Após ser levada ao hospital, foi se tornando mais responsiva, mas diz não se lembrar de nada que ocorreu após receber anotícia da morte de seu noivo. Foi mantida em observação e teve vários episódios de agitação repentina, choro e gritos,durante os quais tentou arranhar o rosto e sair do quarto. Ao exame, mostrava-se chorosa, triste e relatando desrealização eamnésia para o episódio em que tentou beber água sanitária. Os exames laboratoriais de screening e o exame físico não constataram alterações.Nesse caso, qual é o diagnóstico e o tratamento mais adequado para o quadro apresentado por Magda?",
+      "text": "Leia o caso clínico a seguir. Magda, de 35 anos, previamente hígida e sem prévio diagnóstico psiquiátrico, estava aparentemente bem até dois dias atrás. Ontem foi trazida ao pronto-socorro por ter tentado engolir água sanitária. Magda recebeu notícia sobre o assassinatodo noivo em uma briga de trânsito. Inicialmente, a família notou que ela reagira com uma tranquilidade incomum, não falava ededicava-se a atividades repetitivas, como dobrar e desdobrar roupas. Algumas horas depois, deu um grito, pegou uma garrafa de água sanitária e tentou bebê-la, sendo impedida pelo irmão. Ela caiu no chão tremendo, chorando e gritando e,depois, ficou parada “como se estivesse morta”. A família não notou movimentos tônico-clônicos ou liberação esfincteriana. Após ser levada ao hospital, foi se tornando mais responsiva, mas diz não se lembrar de nada que ocorreu após receber anotícia da morte de seu noivo. Foi mantida em observação e teve vários episódios de agitação repentina, choro e gritos,durante os quais tentou arranhar o rosto e sair do quarto. Ao exame, mostrava-se chorosa, triste e relatando desrealização eamnésia para o episódio em que tentou beber água sanitária. Os exames laboratoriais de screening e o exame físico não constataram alterações. Nesse caso, qual é o diagnóstico e o tratamento mais adequado para o quadro apresentado por Magda?",
       "options": [
         {
           "letter": "A",
@@ -22619,7 +22619,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtorno Obsessivo-Compulsivo",
       "topic": "Transtorno Obsessivo-Compulsivo",
       "title": "Questão 31",
-      "text": "Mulher de 54 anos apresenta diminuição da concentração e rendimento no trabalho, desânimo, piora do sono e despertarmatinal precoce, há dois meses, com piora há 15 dias. Os sintomas são piores pela manhã melhorando no período da tarde.Emagreceu 4 kg nesse período. Seus sintomas começaram logo após ter sofrido infarto do miocárdio. AP: menopausa aos50 anos sem terapia hormonal. O diagnóstico e a conduta são",
+      "text": "Mulher de 54 anos apresenta diminuição da concentração e rendimento no trabalho, desânimo, piora do sono e despertarmatinal precoce, há dois meses, com piora há 15 dias. Os sintomas são piores pela manhã melhorando no período da tarde. Emagreceu 4 kg nesse período. Seus sintomas começaram logo após ter sofrido infarto do miocárdio. AP: menopausa aos50 anos sem terapia hormonal. O diagnóstico e a conduta são",
       "options": [
         {
           "letter": "A",
@@ -22721,7 +22721,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtorno Obsessivo-Compulsivo",
       "topic": "Transtorno Obsessivo-Compulsivo",
       "title": "Questão 34",
-      "text": "Transtorno dos Sintomas SomáticosMaria, de 57 anos, procura consulta médica na UBS carregando uma sacola repleta de exames, alegando que médico nenhum consegue resolver o problema dela. Refere que já passou por vários especialistas, fez uso de várias medicações,mas permanece com dores no corpo todo. Começa descrevendo \"\"o queimor\"\" nas pernas, depois as 6ncadas nos quadrise segue explicando a dor que mais a preocupa, a dor no peito, que irradia para as costas, o pescoço e a cabeça.Associadas a isso ela descreve ainda fadiga, dispneia e palpitações. Não se conforma que os resultados dos examesestejam normais e deseja fazer \"\"exames mais específicos\"\". Tira da sacola o frasco da medicação manipulada que lhe foi prescrita por último, uma associação de meloxicam, ciclobenzaprina, amitriptilina, prednisona e ranitidina. Assinale aalternativa correta",
+      "text": "Transtorno dos Sintomas SomáticosMaria, de 57 anos, procura consulta médica na UBS carregando uma sacola repleta de exames, alegando que médico nenhum consegue resolver o problema dela. Refere que já passou por vários especialistas, fez uso de várias medicações,mas permanece com dores no corpo todo. Começa descrevendo \"\"o queimor\"\" nas pernas, depois as 6ncadas nos quadrise segue explicando a dor que mais a preocupa, a dor no peito, que irradia para as costas, o pescoço e a cabeça. Associadas a isso ela descreve ainda fadiga, dispneia e palpitações. Não se conforma que os resultados dos examesestejam normais e deseja fazer \"\"exames mais específicos\"\". Tira da sacola o frasco da medicação manipulada que lhe foi prescrita por último, uma associação de meloxicam, ciclobenzaprina, amitriptilina, prednisona e ranitidina. Assinale aalternativa correta",
       "options": [
         {
           "letter": "A",
@@ -22785,7 +22785,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtorno Obsessivo-Compulsivo",
       "topic": "Transtorno Obsessivo-Compulsivo",
       "title": "Questão 38",
-      "text": "Estado de Estresse PósTraumático Transtorno de Estresse PósTraumático TEPTTranstorno do Estresse PósTraumático TEPTNa saída de um plantão uma enfermeira de sua equipe pede para você acompanhá-la até o estacionamento do hospital.Durante o trajeto ela fica apreensiva, assustada e revela que não consegue andar sozinha porque revive pensamentos do assalto que sofreu há cerca de sete meses, no mesmo estacionamento, quando saia do plantão. O DIAGNÓSTICO E ACONDUTA SÃO",
+      "text": "Estado de Estresse PósTraumático Transtorno de Estresse PósTraumático TEPTTranstorno do Estresse PósTraumático TEPTNa saída de um plantão uma enfermeira de sua equipe pede para você acompanhá-la até o estacionamento do hospital. Durante o trajeto ela fica apreensiva, assustada e revela que não consegue andar sozinha porque revive pensamentos do assalto que sofreu há cerca de sete meses, no mesmo estacionamento, quando saia do plantão. O DIAGNÓSTICO E ACONDUTA SÃO",
       "options": [
         {
           "letter": "A",
@@ -22815,7 +22815,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtorno Obsessivo-Compulsivo",
       "topic": "Transtorno Obsessivo-Compulsivo",
       "title": "Questão 39",
-      "text": "Mulher, 17 anos, procura a Unidade Básica de Saúde acompanhada pelos pais, que relatam alteração de comportamento.Notaram ansiedade crescente nas últimas semanas manifestada por preocupações exageradas com violência, morte, e por medo ter contraído uma doença sexualmente transmissível ou de estar grávida. Também apresenta perturbação do sono,falta de apetite e gagueira de início súbito. Frente ao quadro clínico, qual é a suspeita diagnóstica mais provável?",
+      "text": "Mulher, 17 anos, procura a Unidade Básica de Saúde acompanhada pelos pais, que relatam alteração de comportamento. Notaram ansiedade crescente nas últimas semanas manifestada por preocupações exageradas com violência, morte, e por medo ter contraído uma doença sexualmente transmissível ou de estar grávida. Também apresenta perturbação do sono,falta de apetite e gagueira de início súbito. Frente ao quadro clínico, qual é a suspeita diagnóstica mais provável?",
       "options": [
         {
           "letter": "A",
@@ -22882,7 +22882,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtorno Obsessivo-Compulsivo",
       "topic": "Transtorno Obsessivo-Compulsivo",
       "title": "Questão 41",
-      "text": "Diagnóstico do TOCA ansiedade é um estado de humor desconfortável, uma apreensão negativa em relação ao futuro ou uma inquietação interna desagradável, A ansiedade passa a ser patológica quando se torna uma emoção desagradável e incômoda, quesurge sem estímulos externos apropriados para justificá-la, prejudicando o desempenho social e/ou profissional do indivíduo.Existem vários tipo de transtorno de ansiedade. P.S.T., empresário, 45 anos, foi ao médico de família em virtude de estarpreocupado devido considerar que a maior frequência de determinados atos repetidos estão trazendo problemas atéconstrangedores em suas relações sociais e familiares. Refere o paciente a existência de pensamentos obsessivos edescreve atos repetidos e recorrentes. O diagnóstico deste caso é",
+      "text": "Diagnóstico do TOCA ansiedade é um estado de humor desconfortável, uma apreensão negativa em relação ao futuro ou uma inquietação interna desagradável, A ansiedade passa a ser patológica quando se torna uma emoção desagradável e incômoda, quesurge sem estímulos externos apropriados para justificá-la, prejudicando o desempenho social e/ou profissional do indivíduo. Existem vários tipo de transtorno de ansiedade. P.S.T., empresário, 45 anos, foi ao médico de família em virtude de estarpreocupado devido considerar que a maior frequência de determinados atos repetidos estão trazendo problemas atéconstrangedores em suas relações sociais e familiares. Refere o paciente a existência de pensamentos obsessivos edescreve atos repetidos e recorrentes. O diagnóstico deste caso é",
       "options": [
         {
           "letter": "A",
@@ -23080,7 +23080,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtorno Obsessivo-Compulsivo",
       "topic": "Transtorno Obsessivo-Compulsivo",
       "title": "Questão 47",
-      "text": "Pré-escolar, 2 anos, é trazido pela mãe com quadro de anorexia, febre e diarreia com sangue, há mais de 3 meses. Avô em tratamento para tuberculose. A criança teve 4 internações hospitalares no último ano pela mesma queixa. Gravidez nãodesejada, mãe G6P5, pais separados, sendo a mãe a única cuidadora da criança. Exames laboratoriais: anemia ferroprivaleve RX de tórax normal, 2 lavados gástricos negativos para BAAR, exames fezes (incluindo parasitológico e pesquisa de sangue oculto) normais. Durante a internação (15 dias) não apresentou febre ou diarreia, boa aceitação alimentar com ganhode 380 gramas de peso neste período. Mãe presente durante toda a internação e insiste na realização de novos exames.Qual é a conduta CORRETA?",
+      "text": "Pré-escolar, 2 anos, é trazido pela mãe com quadro de anorexia, febre e diarreia com sangue, há mais de 3 meses. Avô em tratamento para tuberculose. A criança teve 4 internações hospitalares no último ano pela mesma queixa. Gravidez nãodesejada, mãe G6P5, pais separados, sendo a mãe a única cuidadora da criança. Exames laboratoriais: anemia ferroprivaleve RX de tórax normal, 2 lavados gástricos negativos para BAAR, exames fezes (incluindo parasitológico e pesquisa de sangue oculto) normais. Durante a internação (15 dias) não apresentou febre ou diarreia, boa aceitação alimentar com ganhode 380 gramas de peso neste período. Mãe presente durante toda a internação e insiste na realização de novos exames. Qual é a conduta CORRETA?",
       "options": [
         {
           "letter": "A",
@@ -23118,7 +23118,7 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "B",
-          "text": "urnout.Bsindrome de Münchausen por procuração"
+          "text": "urnout. Bsindrome de Münchausen por procuração"
         },
         {
           "letter": "C",
@@ -23174,7 +23174,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtorno Obsessivo-Compulsivo",
       "topic": "Transtorno Obsessivo-Compulsivo",
       "title": "Questão 50",
-      "text": "Paciente do sexo masculino, 17 anos, refere que ouve “vozes” dentro da sua cabeça que mandam dar três passos para trás acada vez que visualizar um carro vermelho; essas “vozes” também mandam repetir “não, não, não” diante de notíciascatastró6cas que ouça, a fim de evitar que essas situações noticiadas aconteçam com ele ou membros de sua família.Diante do caso exposto, qual o diagnóstico pensado pelo psiquiatra que atendeu este paciente, bem como a terapêutica indicada?",
+      "text": "Paciente do sexo masculino, 17 anos, refere que ouve “vozes” dentro da sua cabeça que mandam dar três passos para trás acada vez que visualizar um carro vermelho; essas “vozes” também mandam repetir “não, não, não” diante de notíciascatastró6cas que ouça, a fim de evitar que essas situações noticiadas aconteçam com ele ou membros de sua família. Diante do caso exposto, qual o diagnóstico pensado pelo psiquiatra que atendeu este paciente, bem como a terapêutica indicada?",
       "options": [
         {
           "letter": "A",
@@ -23215,7 +23215,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtorno Obsessivo-Compulsivo",
       "topic": "Transtorno Obsessivo-Compulsivo",
       "title": "Questão 51",
-      "text": "Uma mulher bastante ativa de 79 anos consulta o clínico geral com fadiga e palpitações. Ela está preocupada com aspalpitações, que costumam iniciar quando ela usa o aspirador de pó. Após realizar anamnese e o exame físico, o médicodecide solicitar um eletrocardiograma e exames de sangue para excluir algum problema cardíaco ou hipertireoidismo.Ambos os testes são normais. Nas consultas de seguimento, a paciente comenta repetidas vezes sobre suas palpitações.Ela pergunta se o problema tem alguma relação com sua glândula tireóide. O médico responde que realizou exames daglândula e que está bem. Ela parece aceitar isso e diz: \"Bem, doutor, tudo depende de como a vida é vivida\". O médicoresponde: \"O que você quer dizer com isso?\". E a mulher fala, então, sobre uma história importante em sua vida. Ela contater ido para um convento aos 16 anos de idade e sobre os momentos ruins pelos quais passou ali. A madre superiora atribuíaa ela todas as tarefas desagradáveis e a rebaixava à condição de faxineira. Ela sofria bullying por parte de suas colegas. Apósvários anos, ela teve que deixar o convento. Por fim, ela conta ao médico: \"Pode ser por isso que eu tenho essas palpitações quando eu uso o aspirador de pó\". Durante uma consulta de seguimento, por outra queixa clínica, cerca de meioano mais tarde, a paciente diz que suas palpitações desapareceram completamente desde a sua última consulta. A melhor maneira de manejar as pessoas com sintomas sem explicação médica é",
+      "text": "Uma mulher bastante ativa de 79 anos consulta o clínico geral com fadiga e palpitações. Ela está preocupada com aspalpitações, que costumam iniciar quando ela usa o aspirador de pó. Após realizar anamnese e o exame físico, o médicodecide solicitar um eletrocardiograma e exames de sangue para excluir algum problema cardíaco ou hipertireoidismo. Ambos os testes são normais. Nas consultas de seguimento, a paciente comenta repetidas vezes sobre suas palpitações. Ela pergunta se o problema tem alguma relação com sua glândula tireóide. O médico responde que realizou exames daglândula e que está bem. Ela parece aceitar isso e diz: \"Bem, doutor, tudo depende de como a vida é vivida\". O médicoresponde: \"O que você quer dizer com isso?\". E a mulher fala, então, sobre uma história importante em sua vida. Ela contater ido para um convento aos 16 anos de idade e sobre os momentos ruins pelos quais passou ali. A madre superiora atribuíaa ela todas as tarefas desagradáveis e a rebaixava à condição de faxineira. Ela sofria bullying por parte de suas colegas. Apósvários anos, ela teve que deixar o convento. Por fim, ela conta ao médico: \"Pode ser por isso que eu tenho essas palpitações quando eu uso o aspirador de pó\". Durante uma consulta de seguimento, por outra queixa clínica, cerca de meioano mais tarde, a paciente diz que suas palpitações desapareceram completamente desde a sua última consulta. A melhor maneira de manejar as pessoas com sintomas sem explicação médica é",
       "options": [
         {
           "letter": "A",
@@ -23297,7 +23297,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtorno Obsessivo-Compulsivo",
       "topic": "Transtorno Obsessivo-Compulsivo",
       "title": "Questão 54",
-      "text": "Uma mulher bastante ativa de 79 anos consulta o clínico geral com fadiga e palpitações. Ela está preocupada com aspalpitações, que costumam iniciar quando ela usa o aspirador de pó. Após realizar a anamnese e o exame físico, o médicodecide solicitar um eletrocardiograma e exames de sangue para excluir algum problema cardíaco ou hipertireoidismo.Ambos os testes são normais. Nas consultas de seguimento, a paciente comenta repetidas vezes sobre suas palpitações.Ela pergunta se o problema tem alguma relação com a sua glândula tireóide. O médico responde que realizou exames daglândula e que está bem. Ela parece aceitar isso e diz: \"Bem, doutor, tudo depende de como a vida é vivida\". O médicoresponde: \" O que você quer dizer com isso?\". E a mulher fala, então, sobre uma história importante em sua vida. Ela conta sobre ter ido para um convento com 16 anos de idade e sobre os momentos ruins pelos quais passou ali. A madre superioraatribuía a ela todas as tarefas desagradáveis e a rebaixava à condição de faxineira. Ela sofria bullying por parte de suas colegas. Após vários anos, ela teve que deixar o convento. Por fim, ela conta ao médico: \"Pode ser por isso que eu tenho essas palpitações quando uso o aspirador de pó\". Durante uma consulta de seguimento por outra queixa clínica, cerca demeio ano mais tarde, a paciente diz que suas palpitações desapareceram completamente desde a sua última consulta. Commuita frequência uma porcentagem das pessoas em atenção primária apresenta sintomas sem explicação médica, isto é,sintomas não relacionados a uma doença. Que porcentagem de todos as pessoas em atenção primária apresenta com muita frequência sintomas sem explicação médica?",
+      "text": "Uma mulher bastante ativa de 79 anos consulta o clínico geral com fadiga e palpitações. Ela está preocupada com aspalpitações, que costumam iniciar quando ela usa o aspirador de pó. Após realizar a anamnese e o exame físico, o médicodecide solicitar um eletrocardiograma e exames de sangue para excluir algum problema cardíaco ou hipertireoidismo. Ambos os testes são normais. Nas consultas de seguimento, a paciente comenta repetidas vezes sobre suas palpitações. Ela pergunta se o problema tem alguma relação com a sua glândula tireóide. O médico responde que realizou exames daglândula e que está bem. Ela parece aceitar isso e diz: \"Bem, doutor, tudo depende de como a vida é vivida\". O médicoresponde: \" O que você quer dizer com isso?\". E a mulher fala, então, sobre uma história importante em sua vida. Ela conta sobre ter ido para um convento com 16 anos de idade e sobre os momentos ruins pelos quais passou ali. A madre superioraatribuía a ela todas as tarefas desagradáveis e a rebaixava à condição de faxineira. Ela sofria bullying por parte de suas colegas. Após vários anos, ela teve que deixar o convento. Por fim, ela conta ao médico: \"Pode ser por isso que eu tenho essas palpitações quando uso o aspirador de pó\". Durante uma consulta de seguimento por outra queixa clínica, cerca demeio ano mais tarde, a paciente diz que suas palpitações desapareceram completamente desde a sua última consulta. Commuita frequência uma porcentagem das pessoas em atenção primária apresenta sintomas sem explicação médica, isto é,sintomas não relacionados a uma doença. Que porcentagem de todos as pessoas em atenção primária apresenta com muita frequência sintomas sem explicação médica?",
       "options": [
         {
           "letter": "A",
@@ -23496,7 +23496,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtorno Obsessivo-Compulsivo",
       "topic": "Transtorno Obsessivo-Compulsivo",
       "title": "Questão 60",
-      "text": "Mulher de 22 anos é admitida no hospital devido à anestesia da mão direita, que se desenvolveu após uma discussão comseu irmão. Ela está bem-disposta e parece despreocupada quanto ao seu problema. Não há história de trauma físico. Oexame neurológico é negativo, exceto pela sensibilidade à dor diminuída em uma distribuição de luva sobre a mão direita.Sua família inteira está presente e expressando grande preocupação e atenção. Ela ignora seu irmão e parece alheia aociúme e à rivalidade crônica descrita por sua família.O diagnóstico mais provável é",
+      "text": "Mulher de 22 anos é admitida no hospital devido à anestesia da mão direita, que se desenvolveu após uma discussão comseu irmão. Ela está bem-disposta e parece despreocupada quanto ao seu problema. Não há história de trauma físico. Oexame neurológico é negativo, exceto pela sensibilidade à dor diminuída em uma distribuição de luva sobre a mão direita. Sua família inteira está presente e expressando grande preocupação e atenção. Ela ignora seu irmão e parece alheia aociúme e à rivalidade crônica descrita por sua família. O diagnóstico mais provável é",
       "options": [
         {
           "letter": "A",
@@ -23598,7 +23598,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtorno Obsessivo-Compulsivo",
       "topic": "Transtorno Obsessivo-Compulsivo",
       "title": "Questão 63",
-      "text": "Menino de 10 anos apresenta múltiplos tiques associados a tiques vocais, evoluindo com períodos de exacerbação eremissão, com manifestações de Transtorno Obsessivo Compulsivo (TOC), o que acarreta prejuízos acadêmicos e sociais.Esse quadro clínico sugere a hipótese diagnóstica de:ATranstorno do Déficit de Atenção com Hiperatividade (TD",
+      "text": "Menino de 10 anos apresenta múltiplos tiques associados a tiques vocais, evoluindo com períodos de exacerbação eremissão, com manifestações de Transtorno Obsessivo Compulsivo (TOC), o que acarreta prejuízos acadêmicos e sociais. Esse quadro clínico sugere a hipótese diagnóstica de:ATranstorno do Déficit de Atenção com Hiperatividade (TD",
       "options": [
         {
           "letter": "A",
@@ -24344,7 +24344,7 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "B",
-          "text": "O transtorno deve ser tratado como uma doença crônica, com foco na função ao invés da cura dos sintomas.Deve-se esperar uma mudança gradual, com períodos de melhora e recidiva"
+          "text": "O transtorno deve ser tratado como uma doença crônica, com foco na função ao invés da cura dos sintomas. Deve-se esperar uma mudança gradual, com períodos de melhora e recidiva"
         },
         {
           "letter": "C",
@@ -24566,7 +24566,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtorno Obsessivo-Compulsivo",
       "topic": "Transtorno Obsessivo-Compulsivo",
       "title": "Questão 94",
-      "text": "Em relação ao Transtorno Obsessivo-Compulsivo (TOC), confira a veracidade das seguintes afirmações. I - As obsessões são definidas como pensamentos egodistônicos recorrentes, enquanto as compulsões são açõesritualizadas que devem ser realizadas para aliviar a ansiedade. II - O TOC é, com frequência, complicado por depressão e por sério prejuízo no funcionamento ocupacional e social. III - Na maioria das vezes, não são identificados os fatores relacionados ao início ou agravamento dos sintomas. Assinale a alternativa correta.A",
+      "text": "Em relação ao Transtorno Obsessivo-Compulsivo (TOC), confira a veracidade das seguintes afirmações. I - As obsessões são definidas como pensamentos egodistônicos recorrentes, enquanto as compulsões são açõesritualizadas que devem ser realizadas para aliviar a ansiedade. II - O TOC é, com frequência, complicado por depressão e por sério prejuízo no funcionamento ocupacional e social. III - Na maioria das vezes, não são identificados os fatores relacionados ao início ou agravamento dos sintomas. Assinale a alternativa correta. A",
       "options": [
         {
           "letter": "A",
@@ -24728,7 +24728,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtorno Obsessivo-Compulsivo",
       "topic": "Transtorno Obsessivo-Compulsivo",
       "title": "Questão 100",
-      "text": "A síndrome de Munchausen por procuração é uma forma complexa de maus-tratos infantis, de difícil con6rmaçãodiagnóstica. É importante seu reconhecimento precoce principalmente por: Aapresentar altas taxas de recidiva e de óbito.Bapresentar altos custos com exames e internações desnecessárias.Cfacilitar que a mãe (ou o pai) reconheçam sua situação e sejam tratados o mais precocemente possível. Dsua alta taxa de interação com neoplasia maligna de sistema nervoso central.Epermitir uma abordagem conservadora, já que é uma entidade sem maiores riscos.4000050308Respostas:1A2B3D4B5B6B7C8D9A10B11C12C13B14C15D16B17B18C19C20A21D22B23B24D25A26D27D28A29A30B31A32B33A34D35B36C37A38B39D40C41D42A43C44C45C46B47D48B49A50C51C52D53A54B55E56D57A58B59C60D61C62E63C64D65C66B67",
+      "text": "A síndrome de Munchausen por procuração é uma forma complexa de maus-tratos infantis, de difícil con6rmaçãodiagnóstica. É importante seu reconhecimento precoce principalmente por: Aapresentar altas taxas de recidiva e de óbito. Bapresentar altos custos com exames e internações desnecessárias. Cfacilitar que a mãe (ou o pai) reconheçam sua situação e sejam tratados o mais precocemente possível. Dsua alta taxa de interação com neoplasia maligna de sistema nervoso central. Epermitir uma abordagem conservadora, já que é uma entidade sem maiores riscos.4000050308Respostas:1A2B3D4B5B6B7C8D9A10B11C12C13B14C15D16B17B18C19C20A21D22B23B24D25A26D27D28A29A30B31A32B33A34D35B36C37A38B39D40C41D42A43C44C45C46B47D48B49A50C51C52D53A54B55E56D57A58B59C60D61C62E63C64D65C66B67",
       "options": [
         {
           "letter": "A",
@@ -24904,7 +24904,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Alimentares",
       "topic": "Transtornos Alimentares",
       "title": "Questão 5",
-      "text": "Adolescente de 16 anos de idade, em amenorreia há seis meses, apresenta histórico de distúrbio de autoimagem,compulsão alimentar episódica seguida de vômitos autoinduzidos, que ocorre em média três a quatro vezes por semana.Apresenta IMC de 19 kg/m², FSH = 5,0 UI/L, LH = 8,0 UI/L, Prolactina e TSH normais e elevação discreta dos níveis de cortisol.Além da abordagem multidisciplinar, o tratamento medicamentoso dessa paciente deverá incluir",
+      "text": "Adolescente de 16 anos de idade, em amenorreia há seis meses, apresenta histórico de distúrbio de autoimagem,compulsão alimentar episódica seguida de vômitos autoinduzidos, que ocorre em média três a quatro vezes por semana. Apresenta IMC de 19 kg/m², FSH = 5,0 UI/L, LH = 8,0 UI/L, Prolactina e TSH normais e elevação discreta dos níveis de cortisol. Além da abordagem multidisciplinar, o tratamento medicamentoso dessa paciente deverá incluir",
       "options": [
         {
           "letter": "A",
@@ -24934,7 +24934,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Alimentares",
       "topic": "Transtornos Alimentares",
       "title": "Questão 6",
-      "text": "Paciente do sexo feminino, de 23 anos, foi encaminhada para serviço ambulatorial especializado após ter sido estabilizadaem atendimento de urgência em internação ocasionada por fraqueza generalizada e lipotimia. Durante a avaliação clínica na urgência, foi constatado que a paciente apresentava hipertroOa de glândulas parótidas, dentes em regular estado deconservação e sinal de Russel nas mãos. Na consulta ambulatorial, foi veriOcado que a paciente atendia aos critérios dodiagnóstico de bulimia nervosa, por apresentar episódios recorrentes de compulsão alimentar, seguidos de comportamentos compensatórios e inapropriados para evitar o ganho de peso (no caso, auto indução de vômitos). Comoproposta terapêutica não farmacológica, foi planejada a terapia cognitiva comportamental, em 20 sessões em grupo,durante 5 meses.Em relação à proposta de terapêutica farmacológica para essa paciente, é correto afirmar que,",
+      "text": "Paciente do sexo feminino, de 23 anos, foi encaminhada para serviço ambulatorial especializado após ter sido estabilizadaem atendimento de urgência em internação ocasionada por fraqueza generalizada e lipotimia. Durante a avaliação clínica na urgência, foi constatado que a paciente apresentava hipertroOa de glândulas parótidas, dentes em regular estado deconservação e sinal de Russel nas mãos. Na consulta ambulatorial, foi veriOcado que a paciente atendia aos critérios dodiagnóstico de bulimia nervosa, por apresentar episódios recorrentes de compulsão alimentar, seguidos de comportamentos compensatórios e inapropriados para evitar o ganho de peso (no caso, auto indução de vômitos). Comoproposta terapêutica não farmacológica, foi planejada a terapia cognitiva comportamental, em 20 sessões em grupo,durante 5 meses. Em relação à proposta de terapêutica farmacológica para essa paciente, é correto afirmar que,",
       "options": [
         {
           "letter": "A",
@@ -24971,7 +24971,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Alimentares",
       "topic": "Transtornos Alimentares",
       "title": "Questão 7",
-      "text": "Adolescente do sexo feminino, de 12 anos, procura ambulatório com queixas de perda de peso, apesar de grande apetite há três meses. Relata também intensa labilidade emocional (irritável e chorando sem motivo) e mau rendimento escolar, pois não consegue prestar atenção nas aulas. A anamnese familiar revela que o pai tem antecedentes pessoais psiquiátricos.Exame físico: discreta protusão dos globos oculares, sudorese excessiva e taquicardia. O diagnóstico mais provável é",
+      "text": "Adolescente do sexo feminino, de 12 anos, procura ambulatório com queixas de perda de peso, apesar de grande apetite há três meses. Relata também intensa labilidade emocional (irritável e chorando sem motivo) e mau rendimento escolar, pois não consegue prestar atenção nas aulas. A anamnese familiar revela que o pai tem antecedentes pessoais psiquiátricos. Exame físico: discreta protusão dos globos oculares, sudorese excessiva e taquicardia. O diagnóstico mais provável é",
       "options": [
         {
           "letter": "A",
@@ -25073,7 +25073,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Alimentares",
       "topic": "Transtornos Alimentares",
       "title": "Questão 10",
-      "text": "Mulher, 33 anos de idade, foi submetida a gastroplastia em Y de Roux para tratamento de obesidade mórbida, há 2 meses.Procura o serviço de urgência com queixa de disfagia, regurgitação de alimentos sólidos, há 1 mês, com piora progressiva.Ao exame físico: bom estado geral, desidratada, corada, abdome flácido e indolor à palpação. Qual é a principal hipótese diagnóstica?",
+      "text": "Mulher, 33 anos de idade, foi submetida a gastroplastia em Y de Roux para tratamento de obesidade mórbida, há 2 meses. Procura o serviço de urgência com queixa de disfagia, regurgitação de alimentos sólidos, há 1 mês, com piora progressiva. Ao exame físico: bom estado geral, desidratada, corada, abdome flácido e indolor à palpação. Qual é a principal hipótese diagnóstica?",
       "options": [
         {
           "letter": "A",
@@ -25283,7 +25283,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Alimentares",
       "topic": "Transtornos Alimentares",
       "title": "Questão 16",
-      "text": "Adolescente, 15 anos de idade, estudante, é levada pela mãe para uma avaliação com um médico clínico. Na consulta, apaciente se apresenta bastante emagrecida (peso 38 kg, altura 1,61 m) contrariada, relatando não apresentar qualquer tipode queixa. A mãe relata que, há aproximadamente oito meses, a Olha, que então apresentava cerca de 53 Kg, iniciou uma dieta bastante rigorosa após o término de um namoro e por acreditar que o motivo da separação foi ela estar acima dopeso. Além disso, conta que sempre foi muito perfeccionista, preocupada com a sua aparência e seu rendimento escolar.Logo após o início da dieta, começou a frequentar a academia diariamente, inclusive nos Onas de semana. Rapidamente,intensiOcou a restrição alimentar e atividade física, chegando a ir mais de duas vezes por dia à academia, evoluindo com rápida e evidente perda de peso. A mãe relata, que apesar disso, a Olha ainda mantém queixa de estar gorda e de que a meta agora é chegar aos 35 quilos. Nega tratamento psiquiátrico ou psicológico prévio. Segundo a mãe, a adolescente temOcado muito tempo na internet pesquisando sobre formas de emagrecimento, dietas, exercícios físicos e atémedicamentos. Sobre a anorexia nervosa (AN) pode-se afirmar que",
+      "text": "Adolescente, 15 anos de idade, estudante, é levada pela mãe para uma avaliação com um médico clínico. Na consulta, apaciente se apresenta bastante emagrecida (peso 38 kg, altura 1,61 m) contrariada, relatando não apresentar qualquer tipode queixa. A mãe relata que, há aproximadamente oito meses, a Olha, que então apresentava cerca de 53 Kg, iniciou uma dieta bastante rigorosa após o término de um namoro e por acreditar que o motivo da separação foi ela estar acima dopeso. Além disso, conta que sempre foi muito perfeccionista, preocupada com a sua aparência e seu rendimento escolar. Logo após o início da dieta, começou a frequentar a academia diariamente, inclusive nos Onas de semana. Rapidamente,intensiOcou a restrição alimentar e atividade física, chegando a ir mais de duas vezes por dia à academia, evoluindo com rápida e evidente perda de peso. A mãe relata, que apesar disso, a Olha ainda mantém queixa de estar gorda e de que a meta agora é chegar aos 35 quilos. Nega tratamento psiquiátrico ou psicológico prévio. Segundo a mãe, a adolescente temOcado muito tempo na internet pesquisando sobre formas de emagrecimento, dietas, exercícios físicos e atémedicamentos. Sobre a anorexia nervosa (AN) pode-se afirmar que",
       "options": [
         {
           "letter": "A",
@@ -25313,7 +25313,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Alimentares",
       "topic": "Transtornos Alimentares",
       "title": "Questão 18",
-      "text": "Menina, 11 meses, é trazida a unidade Básica de Saúde com história de picacismo há um mês. Alimentação: leite Materno,leite de vaca, baixa ingesta de alimentação sólida (carne e frutas raramente). Nega antecedente de anemia na família. Examefísico: mucosas descoradas ++/4+ e palidez cutânea. Hb=8,5g/dL; Htc=29%; Rtc=1,7%; VCM=62W; HCM=22pg;RDW=19%; Ferritina=8ng/mg.A CONDUTA É PRESCREVER",
+      "text": "Menina, 11 meses, é trazida a unidade Básica de Saúde com história de picacismo há um mês. Alimentação: leite Materno,leite de vaca, baixa ingesta de alimentação sólida (carne e frutas raramente). Nega antecedente de anemia na família. Examefísico: mucosas descoradas ++/4+ e palidez cutânea. Hb=8,5g/dL; Htc=29%; Rtc=1,7%; VCM=62W; HCM=22pg; RDW=19%; Ferritina=8ng/mg. A CONDUTA É PRESCREVER",
       "options": [
         {
           "letter": "A",
@@ -25351,11 +25351,11 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "B",
-          "text": "ulimia NervosaUma paciente de 19 anos de idade refere ser bastante preocupada com o peso, mas tem muita diOculdade em controlar suavontade de comer. Faz dieta por conta própria para emagrecer, com grandes períodos de jejum. Mas também há váriosmomentos em que se desespera e consome grandes quantidades de alimento, mesmo que não lhe agrade ao paladar;depois vai ao banheiro para vomitar, sentindo-se muito culpada por ter comido compulsivamente e provocado o vômito.Nos últimos tempos, esse comportamento tem aumentado. Também utiliza, sem orientação médica, medicações do tipolaxantes e diuréticos. Sua preocupação com o peso tem piorado, e ela está um pouco acima do peso consideradoadequado para sua idade e altura.Em relação a esse caso clínico e com base nos conhecimentos médicos correlatos, julgue os itens a seguir"
+          "text": "ulimia NervosaUma paciente de 19 anos de idade refere ser bastante preocupada com o peso, mas tem muita diOculdade em controlar suavontade de comer. Faz dieta por conta própria para emagrecer, com grandes períodos de jejum. Mas também há váriosmomentos em que se desespera e consome grandes quantidades de alimento, mesmo que não lhe agrade ao paladar;depois vai ao banheiro para vomitar, sentindo-se muito culpada por ter comido compulsivamente e provocado o vômito. Nos últimos tempos, esse comportamento tem aumentado. Também utiliza, sem orientação médica, medicações do tipolaxantes e diuréticos. Sua preocupação com o peso tem piorado, e ela está um pouco acima do peso consideradoadequado para sua idade e altura. Em relação a esse caso clínico e com base nos conhecimentos médicos correlatos, julgue os itens a seguir"
         },
         {
           "letter": "C",
-          "text": "omo um dos fatores psicológicos relacionados com o transtorno exempliOcado no caso clínico, pode-se aOrmar que tais pacientes experenciam os episódios de comer compulsivamente como egodistônico.ACerto.BErrado"
+          "text": "omo um dos fatores psicológicos relacionados com o transtorno exempliOcado no caso clínico, pode-se aOrmar que tais pacientes experenciam os episódios de comer compulsivamente como egodistônico. ACerto. BErrado"
         }
       ],
       "sourceId": "4000135692",
@@ -25381,7 +25381,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Alimentares",
       "topic": "Transtornos Alimentares",
       "title": "Questão 21",
-      "text": "Uma paciente de 19 anos de idade refere ser bastante preocupada com o peso, mas tem muita diOculdade em controlar suavontade de comer. Faz dieta por conta própria para emagrecer, com grandes períodos de jejum. Mas também há váriosmomentos em que se desespera e consome grandes quantidades de alimento, mesmo que não lhe agrade ao paladar;depois vai ao banheiro para vomitar, sentindo-se muito culpada por ter comido compulsivamente e provocado o vômito.Nos últimos tempos, esse comportamento tem aumentado. Também utiliza, sem orientação médica, medicações do tipolaxantes e diuréticos. Sua preocupação com o peso tem piorado, e ela está um pouco acima do peso consideradoadequado para sua idade e altura.Em relação a esse caso clínico e com base nos conhecimentos médicos correlatos, julgue os itens a seguir.Os exames laboratoriais para o transtorno que a paciente mencionada possui devem incluir as dosagens de eletrólitos.Pacientes com rituais purgativos frequentes devem apresentar hipermagnesemia e hipoamilasemia",
+      "text": "Uma paciente de 19 anos de idade refere ser bastante preocupada com o peso, mas tem muita diOculdade em controlar suavontade de comer. Faz dieta por conta própria para emagrecer, com grandes períodos de jejum. Mas também há váriosmomentos em que se desespera e consome grandes quantidades de alimento, mesmo que não lhe agrade ao paladar;depois vai ao banheiro para vomitar, sentindo-se muito culpada por ter comido compulsivamente e provocado o vômito. Nos últimos tempos, esse comportamento tem aumentado. Também utiliza, sem orientação médica, medicações do tipolaxantes e diuréticos. Sua preocupação com o peso tem piorado, e ela está um pouco acima do peso consideradoadequado para sua idade e altura. Em relação a esse caso clínico e com base nos conhecimentos médicos correlatos, julgue os itens a seguir. Os exames laboratoriais para o transtorno que a paciente mencionada possui devem incluir as dosagens de eletrólitos. Pacientes com rituais purgativos frequentes devem apresentar hipermagnesemia e hipoamilasemia",
       "options": [
         {
           "letter": "A",
@@ -25403,7 +25403,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Alimentares",
       "topic": "Transtornos Alimentares",
       "title": "Questão 22",
-      "text": "Uma paciente de 19 anos de idade refere ser bastante preocupada com o peso, mas tem muita diOculdade em controlar suavontade de comer. Faz dieta por conta própria para emagrecer, com grandes períodos de jejum. Mas também há váriosmomentos em que se desespera e consome grandes quantidades de alimento, mesmo que não lhe agrade ao paladar;depois vai ao banheiro para vomitar, sentindo-se muito culpada por ter comido compulsivamente e provocado o vômito.Nos últimos tempos, esse comportamento tem aumentado. Também utiliza, sem orientação médica, medicações do tipolaxantes e diuréticos. Sua preocupação com o peso tem piorado, e ela está um pouco acima do peso consideradoadequado para sua idade e altura.Em relação a esse caso clínico e com base nos conhecimentos médicos correlatos, julgue os itens a seguir.No diagnóstico diferencial do transtorno em questão, é importante considerar a ausência de doença neurológica, como epilepsia, tumores do sistema nervoso central, síndrome de Klüver-Bucy ou síndrome de Kleine-Levin",
+      "text": "Uma paciente de 19 anos de idade refere ser bastante preocupada com o peso, mas tem muita diOculdade em controlar suavontade de comer. Faz dieta por conta própria para emagrecer, com grandes períodos de jejum. Mas também há váriosmomentos em que se desespera e consome grandes quantidades de alimento, mesmo que não lhe agrade ao paladar;depois vai ao banheiro para vomitar, sentindo-se muito culpada por ter comido compulsivamente e provocado o vômito. Nos últimos tempos, esse comportamento tem aumentado. Também utiliza, sem orientação médica, medicações do tipolaxantes e diuréticos. Sua preocupação com o peso tem piorado, e ela está um pouco acima do peso consideradoadequado para sua idade e altura. Em relação a esse caso clínico e com base nos conhecimentos médicos correlatos, julgue os itens a seguir. No diagnóstico diferencial do transtorno em questão, é importante considerar a ausência de doença neurológica, como epilepsia, tumores do sistema nervoso central, síndrome de Klüver-Bucy ou síndrome de Kleine-Levin",
       "options": [
         {
           "letter": "A",
@@ -25425,7 +25425,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Alimentares",
       "topic": "Transtornos Alimentares",
       "title": "Questão 23",
-      "text": "Uma paciente de 19 anos de idade refere ser bastante preocupada com o peso, mas tem muita diOculdade em controlar suavontade de comer. Faz dieta por conta própria para emagrecer, com grandes períodos de jejum. Mas também há váriosmomentos em que se desespera e consome grandes quantidades de alimento, mesmo que não lhe agrade ao paladar;depois vai ao banheiro para vomitar, sentindo-se muito culpada por ter comido compulsivamente e provocado o vômito.Nos últimos tempos, esse comportamento tem aumentado. Também utiliza, sem orientação médica, medicações do tipolaxantes e diuréticos. Sua preocupação com o peso tem piorado, e ela está um pouco acima do peso consideradoadequado para sua idade e altura.Em relação a esse caso clínico e com base nos conhecimentos médicos correlatos, julgue os itens a seguir.O tratamento farmacológico do transtorno apresentado deve evitar a utilização dos inibidores da recaptação da serotonina,pois eles aumentam o apetite e a compulsão alimentar na maioria dos pacientes",
+      "text": "Uma paciente de 19 anos de idade refere ser bastante preocupada com o peso, mas tem muita diOculdade em controlar suavontade de comer. Faz dieta por conta própria para emagrecer, com grandes períodos de jejum. Mas também há váriosmomentos em que se desespera e consome grandes quantidades de alimento, mesmo que não lhe agrade ao paladar;depois vai ao banheiro para vomitar, sentindo-se muito culpada por ter comido compulsivamente e provocado o vômito. Nos últimos tempos, esse comportamento tem aumentado. Também utiliza, sem orientação médica, medicações do tipolaxantes e diuréticos. Sua preocupação com o peso tem piorado, e ela está um pouco acima do peso consideradoadequado para sua idade e altura. Em relação a esse caso clínico e com base nos conhecimentos médicos correlatos, julgue os itens a seguir. O tratamento farmacológico do transtorno apresentado deve evitar a utilização dos inibidores da recaptação da serotonina,pois eles aumentam o apetite e a compulsão alimentar na maioria dos pacientes",
       "options": [
         {
           "letter": "A",
@@ -25447,7 +25447,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Alimentares",
       "topic": "Transtornos Alimentares",
       "title": "Questão 24",
-      "text": "Uma paciente de 19 anos de idade refere ser bastante preocupada com o peso, mas tem muita diOculdade em controlar suavontade de comer. Faz dieta por conta própria para emagrecer, com grandes períodos de jejum. Mas também há váriosmomentos em que se desespera e consome grandes quantidades de alimento, mesmo que não lhe agrade ao paladar;depois vai ao banheiro para vomitar, sentindo-se muito culpada por ter comido compulsivamente e provocado o vômito.Nos últimos tempos, esse comportamento tem aumentado. Também utiliza, sem orientação médica, medicações do tipolaxantes e diuréticos. Sua preocupação com o peso tem piorado, e ela está um pouco acima do peso consideradoadequado para sua idade e altura.Em relação a esse caso clínico e com base nos conhecimentos médicos correlatos, julgue os itens a seguir.A indicação de tratamento hospitalar é o plano terapêutico preferencial para o tipo de transtorno demonstrado pela paciente, em razão do comprometimento da sobrevida, situação frequente nesse tipo de diagnóstico",
+      "text": "Uma paciente de 19 anos de idade refere ser bastante preocupada com o peso, mas tem muita diOculdade em controlar suavontade de comer. Faz dieta por conta própria para emagrecer, com grandes períodos de jejum. Mas também há váriosmomentos em que se desespera e consome grandes quantidades de alimento, mesmo que não lhe agrade ao paladar;depois vai ao banheiro para vomitar, sentindo-se muito culpada por ter comido compulsivamente e provocado o vômito. Nos últimos tempos, esse comportamento tem aumentado. Também utiliza, sem orientação médica, medicações do tipolaxantes e diuréticos. Sua preocupação com o peso tem piorado, e ela está um pouco acima do peso consideradoadequado para sua idade e altura. Em relação a esse caso clínico e com base nos conhecimentos médicos correlatos, julgue os itens a seguir. A indicação de tratamento hospitalar é o plano terapêutico preferencial para o tipo de transtorno demonstrado pela paciente, em razão do comprometimento da sobrevida, situação frequente nesse tipo de diagnóstico",
       "options": [
         {
           "letter": "A",
@@ -25469,7 +25469,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Alimentares",
       "topic": "Transtornos Alimentares",
       "title": "Questão 26",
-      "text": "Uma paciente do sexo feminino tem 26 anos de idade e estuda design. Recentemente teve um episódio de síncope no Onalda aula, sendo levada a um serviço de urgência clínica. Diz que cuida bem da sua saúde e que não sabe porque desmaiou.Informa que é frequentadora assídua na academia e que tem rígido controle alimentar, fazendo dieta desde os 14 anos de idade. Sempre foi organizada com suas coisas e, em especial, com sua alimentação e saúde. Frequentemente se preocupacom o que vai comer e deixa tudo separado, de forma a manter seu corpo no desenho estético de que gosta. Fazexercícios físicos com muita atenção e sob orientação, preferencialmente os que exigem muito gasto calórico. Está semmenstruar há cerca de quatro meses, mas alega que isso já aconteceu outras vezes. Ao exame, apresentava IMC de 19kg/m quadrado.Qual é o melhor diagnóstico para essa situação?A",
+      "text": "Uma paciente do sexo feminino tem 26 anos de idade e estuda design. Recentemente teve um episódio de síncope no Onalda aula, sendo levada a um serviço de urgência clínica. Diz que cuida bem da sua saúde e que não sabe porque desmaiou. Informa que é frequentadora assídua na academia e que tem rígido controle alimentar, fazendo dieta desde os 14 anos de idade. Sempre foi organizada com suas coisas e, em especial, com sua alimentação e saúde. Frequentemente se preocupacom o que vai comer e deixa tudo separado, de forma a manter seu corpo no desenho estético de que gosta. Fazexercícios físicos com muita atenção e sob orientação, preferencialmente os que exigem muito gasto calórico. Está semmenstruar há cerca de quatro meses, mas alega que isso já aconteceu outras vezes. Ao exame, apresentava IMC de 19kg/m quadrado. Qual é o melhor diagnóstico para essa situação? A",
       "options": [
         {
           "letter": "A",
@@ -25499,7 +25499,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Alimentares",
       "topic": "Transtornos Alimentares",
       "title": "Questão 27",
-      "text": "Analise as afirmativas a seguir relativas à anorexia nervosa.I. A anorexia nervosa caracteriza-se por um padrão de redução extrema da alimentação ingerida, de forma consciente edeliberada, em busca de um ideal de corpo esquio e medo exagerado e engordar, levando a vários graus de emagrecimento.II. A anorexia é dividida em dois subtipos clínicos de acordo com a presença ou a ausência de compulsão alimentar ecomportamentos purgativos tipo purgativo / compulsão periódica e tipo restritivo.III. A presença de amenorreia e o ponto de corte da perda de peso são itens ainda questionáveis para o diagnóstico.Estão corretas as afirmativas",
+      "text": "Analise as afirmativas a seguir relativas à anorexia nervosa. I. A anorexia nervosa caracteriza-se por um padrão de redução extrema da alimentação ingerida, de forma consciente edeliberada, em busca de um ideal de corpo esquio e medo exagerado e engordar, levando a vários graus de emagrecimento. II. A anorexia é dividida em dois subtipos clínicos de acordo com a presença ou a ausência de compulsão alimentar ecomportamentos purgativos tipo purgativo / compulsão periódica e tipo restritivo. III. A presença de amenorreia e o ponto de corte da perda de peso são itens ainda questionáveis para o diagnóstico. Estão corretas as afirmativas",
       "options": [
         {
           "letter": "A",
@@ -25529,7 +25529,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Alimentares",
       "topic": "Transtornos Alimentares",
       "title": "Questão 28",
-      "text": "São critérios necessários para o diagnóstico de PICA (alimentação de substâncias não nutritivas e não alimentares):I. Ocorrer a alimentação de substâncias não nutritivas e não alimentares persistente durante um período de, pelo menos, ummês.II. Presença de comportamento alimentar inadequado para o nível de desenvolvimento, sendo sugerida uma idade mínima de 2 anos.III. Associação com deficiência dos micronutrientes ferro e zinco.Quais estão corretas?A",
+      "text": "São critérios necessários para o diagnóstico de PICA (alimentação de substâncias não nutritivas e não alimentares):I. Ocorrer a alimentação de substâncias não nutritivas e não alimentares persistente durante um período de, pelo menos, ummês. II. Presença de comportamento alimentar inadequado para o nível de desenvolvimento, sendo sugerida uma idade mínima de 2 anos. III. Associação com deficiência dos micronutrientes ferro e zinco. Quais estão corretas? A",
       "options": [
         {
           "letter": "A",
@@ -25594,7 +25594,7 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "B",
-          "text": "ulimia Nervosa é mais comum em adultos jovens.BO tratamento é um processo complexo que envolve atendimento não só de uso de medicações, mas também orientação nutricional, psicoterapia e tratamento às complicações clínicas, quando presentes"
+          "text": "ulimia Nervosa é mais comum em adultos jovens. BO tratamento é um processo complexo que envolve atendimento não só de uso de medicações, mas também orientação nutricional, psicoterapia e tratamento às complicações clínicas, quando presentes"
         },
         {
           "letter": "C",
@@ -25616,7 +25616,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Alimentares",
       "topic": "Transtornos Alimentares",
       "title": "Questão 34",
-      "text": "Em relação aos transtornos alimentares, no que se refere à anorexia nervosa, considere as seguintes aOrmações conformeo DSM-5:I- Restrição da ingesta calórica em relação às necessidades, levando a um peso corporal signiOcativamente baixo no contexto de idade, gênero, trajetória do desenvolvimento e saúde física. Peso signiOcativamente baixo é deOnido como umpeso inferior ao peso mínimo normal ou, no caso de crianças e adolescentes, menor do que o minimamente esperado.II- Medo intenso de ganhar peso ou de engordar, ou comportamento persistente que interfere no ganho de peso, mesmo estando com peso significativamente baixo.III- Perturbação no modo como o próprio peso ou a forma corporal são vivenciados, ausência persistente de reconhecimento da gravidade do baixo peso corporal atual.IV- Não há medo intenso de ganhar peso e o adolescente sente-se bem, não considerando seu índice de massa corporal.Pode-se afirmar: A",
+      "text": "Em relação aos transtornos alimentares, no que se refere à anorexia nervosa, considere as seguintes aOrmações conformeo DSM-5:I- Restrição da ingesta calórica em relação às necessidades, levando a um peso corporal signiOcativamente baixo no contexto de idade, gênero, trajetória do desenvolvimento e saúde física. Peso signiOcativamente baixo é deOnido como umpeso inferior ao peso mínimo normal ou, no caso de crianças e adolescentes, menor do que o minimamente esperado. II- Medo intenso de ganhar peso ou de engordar, ou comportamento persistente que interfere no ganho de peso, mesmo estando com peso significativamente baixo. III- Perturbação no modo como o próprio peso ou a forma corporal são vivenciados, ausência persistente de reconhecimento da gravidade do baixo peso corporal atual. IV- Não há medo intenso de ganhar peso e o adolescente sente-se bem, não considerando seu índice de massa corporal. Pode-se afirmar: A",
       "options": [
         {
           "letter": "A",
@@ -25646,7 +25646,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Alimentares",
       "topic": "Transtornos Alimentares",
       "title": "Questão 35",
-      "text": "Em relação aos transtornos alimentares, no que se refere à Pica, considere as seguintes afirmações conforme o DSM-5:I- Há ingestão persistente de substâncias não nutritivas, não alimentares, durante um período mínimo de um mês.II- A ingestão de substâncias não nutritivas, não alimentares, é inapropriada ao estágio de desenvolvimento do indivíduo.III- O comportamento alimentar não faz parte de uma prática culturalmente aceita.IV- Se o comportamento alimentar ocorrer no contexto de outro transtorno mental (p. ex., deOciência intelectual [transtorno do desenvolvimento intelectual], transtorno do espectro autista, esquizofrenia) ou condição médica (incluindo gestação), ésuficientemente grave a ponto de necessitar de atenção clínica adicional.Pode-se afirmar que",
+      "text": "Em relação aos transtornos alimentares, no que se refere à Pica, considere as seguintes afirmações conforme o DSM-5:I- Há ingestão persistente de substâncias não nutritivas, não alimentares, durante um período mínimo de um mês. II- A ingestão de substâncias não nutritivas, não alimentares, é inapropriada ao estágio de desenvolvimento do indivíduo. III- O comportamento alimentar não faz parte de uma prática culturalmente aceita. IV- Se o comportamento alimentar ocorrer no contexto de outro transtorno mental (p. ex., deOciência intelectual [transtorno do desenvolvimento intelectual], transtorno do espectro autista, esquizofrenia) ou condição médica (incluindo gestação), ésuficientemente grave a ponto de necessitar de atenção clínica adicional. Pode-se afirmar que",
       "options": [
         {
           "letter": "A",
@@ -25804,7 +25804,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Alimentares",
       "topic": "Transtornos Alimentares",
       "title": "Questão 41",
-      "text": "Mulher, 24 anos, com anorexia nervosa há 10 anos, internou para investigação de episódio de síncope. Seu IMC é de 12Kg/m 2 (estatura=1,62 m; peso=31,5 Kg); a ingestão alimentar é de 250 Kcal/dia. A nutrição enteral foi iniciada no primeirodia de internação, com oferta energética de 1200 Kcal/dia e 48 gramas de proteínas. No terceiro dia de internação,apresentou dispneia, congestão pulmonar, edema discreto de membros inferiores, PA: 70/30 mmHg, confusão mental,hipofosfatemia, hipomagnesemia e hipocalcemia.Qual a conduta imediata mais adequada?",
+      "text": "Mulher, 24 anos, com anorexia nervosa há 10 anos, internou para investigação de episódio de síncope. Seu IMC é de 12Kg/m 2 (estatura=1,62 m; peso=31,5 Kg); a ingestão alimentar é de 250 Kcal/dia. A nutrição enteral foi iniciada no primeirodia de internação, com oferta energética de 1200 Kcal/dia e 48 gramas de proteínas. No terceiro dia de internação,apresentou dispneia, congestão pulmonar, edema discreto de membros inferiores, PA: 70/30 mmHg, confusão mental,hipofosfatemia, hipomagnesemia e hipocalcemia. Qual a conduta imediata mais adequada?",
       "options": [
         {
           "letter": "A",
@@ -26324,7 +26324,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Alimentares",
       "topic": "Transtornos Alimentares",
       "title": "Questão 57",
-      "text": "Você diagnostica anorexia nervosa em uma de suas novas pacientes. Ao coordenar um programa de tratamento com opsiquiatra, que características clínicas devem ser consideradas para um tratamento em regime de internação, em vez de ambulatorial?A",
+      "text": "Você diagnostica anorexia nervosa em uma de suas novas pacientes. Ao coordenar um programa de tratamento com opsiquiatra, que características clínicas devem ser consideradas para um tratamento em regime de internação, em vez de ambulatorial? A",
       "options": [
         {
           "letter": "A",
@@ -26839,7 +26839,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Alimentares",
       "topic": "Transtornos Alimentares",
       "title": "Questão 72",
-      "text": "Mulher, 18 anos, vai ao consultório médico acompanhada por sua mãe. Esta relata ter marcado a consulta por estarpreocupada com a crescente sensação de cansaço da Olha, que a impede de realizar atividades que antes desempenhavacom facilidade, como ir às aulas da faculdade, e também com a ausência de menstruações nos últimos 5 ciclos menstruais.A paciente relata sentir-se cansada e constipada. Exame físico: emagrecida, com índice de massa corporal (IMC) = 16,5kg/m², hipocorada, com lanugo, frequência cardíaca (FC) = 56 bpm e pressão arterial (PA) = 100 x 50 mmHg. Perguntada sobre sua magreza, a paciente relata ter muito medo de que sua barriga Oque grande e seja evidenciada pelo contorno desuas roupas. A mãe complementa, dizendo que desde os 15 anos de idade, a paciente tem se submetido a diversas dietas,especialmente no verão. Não há, na história clínica, registro de vômitos provocados ou outras atividades compensatórias. Odiagnóstico mais provável para a paciente é",
+      "text": "Mulher, 18 anos, vai ao consultório médico acompanhada por sua mãe. Esta relata ter marcado a consulta por estarpreocupada com a crescente sensação de cansaço da Olha, que a impede de realizar atividades que antes desempenhavacom facilidade, como ir às aulas da faculdade, e também com a ausência de menstruações nos últimos 5 ciclos menstruais. A paciente relata sentir-se cansada e constipada. Exame físico: emagrecida, com índice de massa corporal (IMC) = 16,5kg/m², hipocorada, com lanugo, frequência cardíaca (FC) = 56 bpm e pressão arterial (PA) = 100 x 50 mmHg. Perguntada sobre sua magreza, a paciente relata ter muito medo de que sua barriga Oque grande e seja evidenciada pelo contorno desuas roupas. A mãe complementa, dizendo que desde os 15 anos de idade, a paciente tem se submetido a diversas dietas,especialmente no verão. Não há, na história clínica, registro de vômitos provocados ou outras atividades compensatórias. Odiagnóstico mais provável para a paciente é",
       "options": [
         {
           "letter": "A",
@@ -26903,7 +26903,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Alimentares",
       "topic": "Transtornos Alimentares",
       "title": "Questão 74",
-      "text": "Durante o exame físico de uma paciente com 12 anos, o pediatra detectou \"Sinal de Russel\". Esse sinal está presente em qual das doenças a seguir?A",
+      "text": "Durante o exame físico de uma paciente com 12 anos, o pediatra detectou \"Sinal de Russel\". Esse sinal está presente em qual das doenças a seguir? A",
       "options": [
         {
           "letter": "A",
@@ -27001,7 +27001,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Alimentares",
       "topic": "Transtornos Alimentares",
       "title": "Questão 77",
-      "text": "Diagnóstico da Anorexia NervosaOs transtornos alimentares na adolescência, em particular a anorexia nervosa e a bulimia, são cada vez mais diagnosticados.Qual dentre as características abaixo é encontrada, principalmente, nos anoréxicos?",
+      "text": "Diagnóstico da Anorexia NervosaOs transtornos alimentares na adolescência, em particular a anorexia nervosa e a bulimia, são cada vez mais diagnosticados. Qual dentre as características abaixo é encontrada, principalmente, nos anoréxicos?",
       "options": [
         {
           "letter": "A",
@@ -27458,7 +27458,7 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "D",
-          "text": "isorder).DTranstorno de hábitos e impulsos"
+          "text": "isorder). DTranstorno de hábitos e impulsos"
         },
         {
           "letter": "E",
@@ -27476,7 +27476,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Alimentares",
       "topic": "Transtornos Alimentares",
       "title": "Questão 93",
-      "text": "Sheila Carla de 15 anos é levada à UBS porque seus pais notaram que ela está participando cada vez menos das refeições em família, tem aderido a dietas da moda, mas sempre por curtos períodos, e, apesar disso, segue acima do peso. A família também percebeu diversas vezes em que a paciente se envolve em episódios em que come “como se não houvesseamanhã” , especialmente durante a noite, quando pratica “ataques à geladeira”. Nas manhãs seguintes aos “ataques”, passa horas na academia de seu condomínio. O diagnóstico mais provável é: AAutismo.BAnorexia nervosa.CCompulsão alimentar.DBulimia nervosa. 4000176752Respostas:1C2A3A4D5D6C7C8B9A10D11C12D13D14B15C16C17B18C19A20A21B22A23B24B25A26C27D28A29A30A31A32A33D34B35D36D37D38A39A40E41B42A43C44D45A46",
+      "text": "Sheila Carla de 15 anos é levada à UBS porque seus pais notaram que ela está participando cada vez menos das refeições em família, tem aderido a dietas da moda, mas sempre por curtos períodos, e, apesar disso, segue acima do peso. A família também percebeu diversas vezes em que a paciente se envolve em episódios em que come “como se não houvesseamanhã” , especialmente durante a noite, quando pratica “ataques à geladeira”. Nas manhãs seguintes aos “ataques”, passa horas na academia de seu condomínio. O diagnóstico mais provável é: AAutismo. BAnorexia nervosa. CCompulsão alimentar. DBulimia nervosa. 4000176752Respostas:1C2A3A4D5D6C7C8B9A10D11C12D13D14B15C16C17B18C19A20A21B22A23B24B25A26C27D28A29A30A31A32A33D34B35D36D37D38A39A40E41B42A43C44D45A46",
       "options": [
         {
           "letter": "A",
@@ -27623,7 +27623,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos do Humor",
       "topic": "Transtornos do Humor",
       "title": "Questão 4",
-      "text": "Paciente masculino, 20 anos, estudante do 2º ano do curso de economia, é levado ao pronto-socorro psiquiátrico após uma mudança de comportamento nos últimos sete dias.De acordo com os familiares, começou a ficar progressivamente mais agitado, querendo fazer várias coisas ao mesmo tempo; houve aumento na velocidade da fala, por vezes elaborando frases sem nexo; houve diminuição do sono; e estavaalimentando-se muito mal e em pouca quantidade. Relatam também que, há uns quatro meses, o paciente ficou muito triste com o falecimento da avó, pois eram muito próximos. Chorou muito e, por semanas, não queria sair do quarto, tendo emagrecido 6 kg.O paciente sempre teve boa saúde e é responsável, bom aluno e sociável. Não tem história prévia de transtorno mental.Antecedentes familiares: mãe, 44 anos, teve depressão depois do nascimento do último filho – que durou mais de um ano,mas “foi passando aos poucos, sem tratamento”; tio materno bebia bastante e cometeu suicídio aos 40 anos de idade.Qual a hipótese diagnóstica provável para o caso descrito acima?",
+      "text": "Paciente masculino, 20 anos, estudante do 2º ano do curso de economia, é levado ao pronto-socorro psiquiátrico após uma mudança de comportamento nos últimos sete dias. De acordo com os familiares, começou a ficar progressivamente mais agitado, querendo fazer várias coisas ao mesmo tempo; houve aumento na velocidade da fala, por vezes elaborando frases sem nexo; houve diminuição do sono; e estavaalimentando-se muito mal e em pouca quantidade. Relatam também que, há uns quatro meses, o paciente ficou muito triste com o falecimento da avó, pois eram muito próximos. Chorou muito e, por semanas, não queria sair do quarto, tendo emagrecido 6 kg. O paciente sempre teve boa saúde e é responsável, bom aluno e sociável. Não tem história prévia de transtorno mental. Antecedentes familiares: mãe, 44 anos, teve depressão depois do nascimento do último filho – que durou mais de um ano,mas “foi passando aos poucos, sem tratamento”; tio materno bebia bastante e cometeu suicídio aos 40 anos de idade. Qual a hipótese diagnóstica provável para o caso descrito acima?",
       "options": [
         {
           "letter": "A",
@@ -27840,7 +27840,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos do Humor",
       "topic": "Transtornos do Humor",
       "title": "Questão 11",
-      "text": "Leia o caso clínico. Paciente masculino, adulto jovem, sem antecedentes patológicos ou psiquiátricos prévios, apresentando, há vinte dias,sentimento de vazio emocional a maior parte do tempo, anedonia, hipersonia, sensação de fraqueza muscular e aumento doapetite. Relata estar bastante sensível a frustrações e eventos cotidianos interpretados como adversos, embora noteamenização dos sintomas quando recebe notícias positivas.O diagnóstico mais provável é o de",
+      "text": "Leia o caso clínico. Paciente masculino, adulto jovem, sem antecedentes patológicos ou psiquiátricos prévios, apresentando, há vinte dias,sentimento de vazio emocional a maior parte do tempo, anedonia, hipersonia, sensação de fraqueza muscular e aumento doapetite. Relata estar bastante sensível a frustrações e eventos cotidianos interpretados como adversos, embora noteamenização dos sintomas quando recebe notícias positivas. O diagnóstico mais provável é o de",
       "options": [
         {
           "letter": "A",
@@ -27856,7 +27856,7 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "D",
-          "text": "epressivo Maior com características melancólicas.DTranstorno de Ajustamento com humor deprimido"
+          "text": "epressivo Maior com características melancólicas. DTranstorno de Ajustamento com humor deprimido"
         }
       ],
       "sourceId": "4000181822",
@@ -28002,7 +28002,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos do Humor",
       "topic": "Transtornos do Humor",
       "title": "Questão 16",
-      "text": "Uma mulher de 34 anos com diagnóstico de depressão procurou a unidade de saúde da família (UBS) onde você trabalha.Com base no prontuário da paciente, você observou que ela faz acompanhamento na unidade há 10 meses com outromédico da unidade. A paciente consulta sozinha, mas chegou à unidade acompanhada da irmã, com quem ela mora e que está bastante preocupada. A paciente tem sintomas de humor deprimido, fatigabilidade e choro fácil; está em uso de 40mg/dia de Quoxetina nos últimos 6 meses, tendo apresentado discreta melhora. Segundo a paciente, há 1 mês,aproximadamente, começou a ouvir vozes e ver alguns vultos, e tem pensado em se matar, mas sem plano.Nesse caso, qual é a conduta adequada?",
+      "text": "Uma mulher de 34 anos com diagnóstico de depressão procurou a unidade de saúde da família (UBS) onde você trabalha. Com base no prontuário da paciente, você observou que ela faz acompanhamento na unidade há 10 meses com outromédico da unidade. A paciente consulta sozinha, mas chegou à unidade acompanhada da irmã, com quem ela mora e que está bastante preocupada. A paciente tem sintomas de humor deprimido, fatigabilidade e choro fácil; está em uso de 40mg/dia de Quoxetina nos últimos 6 meses, tendo apresentado discreta melhora. Segundo a paciente, há 1 mês,aproximadamente, começou a ouvir vozes e ver alguns vultos, e tem pensado em se matar, mas sem plano. Nesse caso, qual é a conduta adequada?",
       "options": [
         {
           "letter": "A",
@@ -28010,7 +28010,7 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "B",
-          "text": "S e trocar o tratamento.BEncaminhar a paciente para internação em hospital psiquiátrico"
+          "text": "S e trocar o tratamento. BEncaminhar a paciente para internação em hospital psiquiátrico"
         },
         {
           "letter": "C",
@@ -28069,7 +28069,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos do Humor",
       "topic": "Transtornos do Humor",
       "title": "Questão 18",
-      "text": "Transtorno do Humor Bipolar Tipo 2Diagnóstico do Transtorno do Humor Bipolar THBTranstorno do Humor Bipolar Tipo 1O Transtorno Bipolar do Humor (TBH) é uma doença crônica e grave caracterizada por alternância de episódios depressivos, com ou sem sintomas psicóticos, e episódios de hipomania ou mania, com ou sem sintomas psicóticos. OTBH é classificado em três subtipos, segundo o Manual Diagnóstico e Estatístico de Transtornos Mentais, 5ª edição (DSM-5).Com base nessa classificação, assinale a afirmativa correta",
+      "text": "Transtorno do Humor Bipolar Tipo 2Diagnóstico do Transtorno do Humor Bipolar THBTranstorno do Humor Bipolar Tipo 1O Transtorno Bipolar do Humor (TBH) é uma doença crônica e grave caracterizada por alternância de episódios depressivos, com ou sem sintomas psicóticos, e episódios de hipomania ou mania, com ou sem sintomas psicóticos. OTBH é classificado em três subtipos, segundo o Manual Diagnóstico e Estatístico de Transtornos Mentais, 5ª edição (DSM-5). Com base nessa classificação, assinale a afirmativa correta",
       "options": [
         {
           "letter": "A",
@@ -28077,7 +28077,7 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "B",
-          "text": "H tipo II compreende os casos nos quais ocorrem manias, hipomanias e depressões.BO TBH tipo I compreende os casos nos quais ocorrem hipomanias e depressões"
+          "text": "H tipo II compreende os casos nos quais ocorrem manias, hipomanias e depressões. BO TBH tipo I compreende os casos nos quais ocorrem hipomanias e depressões"
         },
         {
           "letter": "C",
@@ -28159,7 +28159,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos do Humor",
       "topic": "Transtornos do Humor",
       "title": "Questão 21",
-      "text": "Paciente do sexo feminino, 23 anos, relata tristeza intensa, pois foi demitida devido a repetidas faltas no trabalho. Diz que,desde seus 22 anos, na maioria dos meses, sente uma mudança em ciclos, com um período de alguns dias deirritabilidade, labilidade, letargia, avidez por doce e uma \"\"sensação de inchaço\"\", que ocorrem quase todos os meses.Percebe que, logo após a menstruação, a \"\"vida volta a ficar leve e colorida\"\". Associa suas faltas ao trabalho a esses períodos de \"\"mudança do humor e inchaços\"\". Assinalar a alternativa que apresenta o diagnóstico mais provável",
+      "text": "Paciente do sexo feminino, 23 anos, relata tristeza intensa, pois foi demitida devido a repetidas faltas no trabalho. Diz que,desde seus 22 anos, na maioria dos meses, sente uma mudança em ciclos, com um período de alguns dias deirritabilidade, labilidade, letargia, avidez por doce e uma \"\"sensação de inchaço\"\", que ocorrem quase todos os meses. Percebe que, logo após a menstruação, a \"\"vida volta a ficar leve e colorida\"\". Associa suas faltas ao trabalho a esses períodos de \"\"mudança do humor e inchaços\"\". Assinalar a alternativa que apresenta o diagnóstico mais provável",
       "options": [
         {
           "letter": "A",
@@ -28189,7 +28189,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos do Humor",
       "topic": "Transtornos do Humor",
       "title": "Questão 22",
-      "text": "DepressãoSo6a mulher, 39 anos, cabelereira, casada, G2A0P2, chega a Unidade Básica de Saúde para consulta de rotina. Relataperceber, há cerca de 3 meses, dores pelo corpo com sensação de fadiga e falta de energia para realizar, tarefas habituais.Percebeu aumento de irritabilidade, Insônia de manutenção e aumento da apetite com ganho ponderal de 6 kg, algo que aincomoda muito porque tem medo de engordar. Observa que esse quadro piorou nos últimos 20 dias e não temconseguido realizar as atividades que antes gostava, como caminhar ou cozinhar, diz não ver mais graça. Não relaciona sua situação a nenhum fator ambiental. Informa episódio semelhante aos 30 anos mas, na época, não buscou ajuda. A hipótesediagnóstica mais provável e a conduta que deve ser sugerida são",
+      "text": "DepressãoSo6a mulher, 39 anos, cabelereira, casada, G2A0P2, chega a Unidade Básica de Saúde para consulta de rotina. Relataperceber, há cerca de 3 meses, dores pelo corpo com sensação de fadiga e falta de energia para realizar, tarefas habituais. Percebeu aumento de irritabilidade, Insônia de manutenção e aumento da apetite com ganho ponderal de 6 kg, algo que aincomoda muito porque tem medo de engordar. Observa que esse quadro piorou nos últimos 20 dias e não temconseguido realizar as atividades que antes gostava, como caminhar ou cozinhar, diz não ver mais graça. Não relaciona sua situação a nenhum fator ambiental. Informa episódio semelhante aos 30 anos mas, na época, não buscou ajuda. A hipótesediagnóstica mais provável e a conduta que deve ser sugerida são",
       "options": [
         {
           "letter": "A",
@@ -28383,7 +28383,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos do Humor",
       "topic": "Transtornos do Humor",
       "title": "Questão 28",
-      "text": "Homem de 70 anos, viúvo, aposentado e alcoolista diário, vai à consulta médica para acompanhar Hipertensão ArterialSistêmica e Diabetes anteriormente conhecidas e controladas. Durante a consulta, fica evidente humor deprimido constante, fala em volume baixo e pouco espontâneo. Relata perda do interesse na convivência com os netos e nos jogos de futebol que costuma acompanhar, insônia intermediária, perda de peso involuntária por redução do apetite, e ideias deque é um fardo para a família. Tem ideia de morte, achando que pode ser um alívio, inclusive com pensamentos sobre suicídio, mas sem planejamento no momento.Qual a opção correta em relação ao manejo do paciente no contexto descrito acima?",
+      "text": "Homem de 70 anos, viúvo, aposentado e alcoolista diário, vai à consulta médica para acompanhar Hipertensão ArterialSistêmica e Diabetes anteriormente conhecidas e controladas. Durante a consulta, fica evidente humor deprimido constante, fala em volume baixo e pouco espontâneo. Relata perda do interesse na convivência com os netos e nos jogos de futebol que costuma acompanhar, insônia intermediária, perda de peso involuntária por redução do apetite, e ideias deque é um fardo para a família. Tem ideia de morte, achando que pode ser um alívio, inclusive com pensamentos sobre suicídio, mas sem planejamento no momento. Qual a opção correta em relação ao manejo do paciente no contexto descrito acima?",
       "options": [
         {
           "letter": "A",
@@ -28413,7 +28413,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos do Humor",
       "topic": "Transtornos do Humor",
       "title": "Questão 29",
-      "text": "Em relação ao risco de suicídio e à avaliação do paciente com risco suicida, considere as afirmativas a seguir.I. Mulheres cometem quatro vezes mais suicídios que homens.II. O método empregado ou planejado na tentativa de suicídio é irrelevante na avaliação, já que toda tentativa de suicídio deve ser levada a sério.III. Tentativa prévia de suicídio é o principal fator de risco para suicídio consumado no futuro.IV. Mesmo diante de recusa de um paciente, com alto risco de suicídio, em aceitar tratamento, a internação psiquiátrica deve ser considerada e discutida com o paciente e os familiares.Assinale a alternativa correta",
+      "text": "Em relação ao risco de suicídio e à avaliação do paciente com risco suicida, considere as afirmativas a seguir. I. Mulheres cometem quatro vezes mais suicídios que homens. II. O método empregado ou planejado na tentativa de suicídio é irrelevante na avaliação, já que toda tentativa de suicídio deve ser levada a sério. III. Tentativa prévia de suicídio é o principal fator de risco para suicídio consumado no futuro. IV. Mesmo diante de recusa de um paciente, com alto risco de suicídio, em aceitar tratamento, a internação psiquiátrica deve ser considerada e discutida com o paciente e os familiares. Assinale a alternativa correta",
       "options": [
         {
           "letter": "A",
@@ -28447,7 +28447,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos do Humor",
       "topic": "Transtornos do Humor",
       "title": "Questão 30",
-      "text": "Síndrome prémenstrualNo Transtorno Disfórico Pré-menstrual, segundo o DSM-V, um (ou mais) dos seguintes sintomas deve estar presente.Assinale a alternativa incorreta",
+      "text": "Síndrome prémenstrualNo Transtorno Disfórico Pré-menstrual, segundo o DSM-V, um (ou mais) dos seguintes sintomas deve estar presente. Assinale a alternativa incorreta",
       "options": [
         {
           "letter": "A",
@@ -28527,11 +28527,11 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "D",
-          "text": "epressivo Recorrente – quetiapina 300mg/manhã.D"
+          "text": "epressivo Recorrente – quetiapina 300mg/manhã. D"
         },
         {
           "letter": "E",
-          "text": "pisódio depressivo Bipolar – Lítio 600mg + diazepam 10mg.ETranstorno depressivo Recorrente – Mirtazapina 15mg/noite"
+          "text": "pisódio depressivo Bipolar – Lítio 600mg + diazepam 10mg. ETranstorno depressivo Recorrente – Mirtazapina 15mg/noite"
         }
       ],
       "sourceId": "4000147674",
@@ -28545,7 +28545,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos do Humor",
       "topic": "Transtornos do Humor",
       "title": "Questão 33",
-      "text": "3 horas da manhã, Gilson, de 29 anos de idade, durante seu plantão na emergência. O paciente foi levado pelo SAMU, contido em uma maca rígida devido à intensa agitação psicomotora e gritaria incontrolável. Quem oacompanha é sua namorada, Fátima, que, muito assustada, conta que conheceu o paciente há cerca de 1 mês e meio durante um jantar na casa de amigos em comum. Fátima relata que tem notado que seu namorado está agitado há 2semanas, mais falante, inclusive dizendo coisas sem sentido, como frases do tipo “eu sou o messias”, “eu vou salvar a terrado apocalipse zumbi”, está muito descon6ado, olhando para os lados a todo o momento, está dormindo pouco, menos de4 horas por dia, e quando acorda já parece estar cheio de energia; inclusive, o casal tem tido cerca de 5 relações sexuais diariamente desde então, e ele tem gastado todo seu salário em acessórios de pesca esportiva (apesar de jamais terpescado na vida). Fátima sabe pouco da história pregressa de Gilson, apenas que é um rapaz que já apresentou 2 episódios graves de depressão previamente e recebeu tratamento com algum antidepressivo. Atualmente, o paciente não tem usado nenhuma medicação de uso contínuo, não usa drogas nem álcool, e também não tem uma doença crônica conhecida,contudo é obeso e sedentário.Após a estabilidade clínica do paciente, você decide iniciar um tratamento de base para seu transtorno psiquiátrico. Assinalea melhor escolha terapêutica para seu paciente",
+      "text": "3 horas da manhã, Gilson, de 29 anos de idade, durante seu plantão na emergência. O paciente foi levado pelo SAMU, contido em uma maca rígida devido à intensa agitação psicomotora e gritaria incontrolável. Quem oacompanha é sua namorada, Fátima, que, muito assustada, conta que conheceu o paciente há cerca de 1 mês e meio durante um jantar na casa de amigos em comum. Fátima relata que tem notado que seu namorado está agitado há 2semanas, mais falante, inclusive dizendo coisas sem sentido, como frases do tipo “eu sou o messias”, “eu vou salvar a terrado apocalipse zumbi”, está muito descon6ado, olhando para os lados a todo o momento, está dormindo pouco, menos de4 horas por dia, e quando acorda já parece estar cheio de energia; inclusive, o casal tem tido cerca de 5 relações sexuais diariamente desde então, e ele tem gastado todo seu salário em acessórios de pesca esportiva (apesar de jamais terpescado na vida). Fátima sabe pouco da história pregressa de Gilson, apenas que é um rapaz que já apresentou 2 episódios graves de depressão previamente e recebeu tratamento com algum antidepressivo. Atualmente, o paciente não tem usado nenhuma medicação de uso contínuo, não usa drogas nem álcool, e também não tem uma doença crônica conhecida,contudo é obeso e sedentário. Após a estabilidade clínica do paciente, você decide iniciar um tratamento de base para seu transtorno psiquiátrico. Assinalea melhor escolha terapêutica para seu paciente",
       "options": [
         {
           "letter": "A",
@@ -28579,7 +28579,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos do Humor",
       "topic": "Transtornos do Humor",
       "title": "Questão 34",
-      "text": "Síndrome do Esgotamento Profissional BurnoutPsiquiatriaOs profissionais de saúde tem observado aumento do número de transtornos mentais relacionados ao trabalho,particularmente de casos que se manifestam por um estado físico, emocional e mental de exaustão extrema, diminuição do envolvimento pessoal no trabalho ou afastamento do público que deveria receber os serviços, resultantes do acúmulo de situações de trabalho emocionalmente exigentes e estressantes, que demandam muita competitividade ou responsabilidade.Assinale, dentre as alternativas a seguir, aquela que CORRETAMENTE corresponde ao quadro clínico descrito",
+      "text": "Síndrome do Esgotamento Profissional BurnoutPsiquiatriaOs profissionais de saúde tem observado aumento do número de transtornos mentais relacionados ao trabalho,particularmente de casos que se manifestam por um estado físico, emocional e mental de exaustão extrema, diminuição do envolvimento pessoal no trabalho ou afastamento do público que deveria receber os serviços, resultantes do acúmulo de situações de trabalho emocionalmente exigentes e estressantes, que demandam muita competitividade ou responsabilidade. Assinale, dentre as alternativas a seguir, aquela que CORRETAMENTE corresponde ao quadro clínico descrito",
       "options": [
         {
           "letter": "A",
@@ -28669,7 +28669,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos do Humor",
       "topic": "Transtornos do Humor",
       "title": "Questão 37",
-      "text": "Dona Helena, 67 anos, secretária aposentada, vem pela primeira vez a consulta na Unidade Básica do bairro desde que se mudou para morar com sua filha. Seu esposo faleceu de Infarto Agudo do Miocárdio há 4 meses, e, desde então, veioresidir com a filha mais velha, o genro e um neto. Tem outra filha que mora em outro estado, mas que não vê há 5 anos,embora conversem por telefone ou aplicativos de vídeo online frequentemente.É sabidamente hipertensa, tem hipotireoidismo e osteoartrite. Refere dores nas articulações das mãos, joelhos e ombro direito, há anos, que pioram com alterações do clima. Apresenta ainda insônia e gostaria de uma medicação para dormir melhor.Mudou-se contra a vontade, embora reconheça que será mais bem cuidada perto da filha.Faz uso de enalapril 20 mg ao dia, levotiroxina 75 mcg em jejum e condroitina-glucosamina. Quando foi questionada sobre seu estado de humor, afirma desinteresse em atividades que antes lhe davam satisfação, por causa das dores intensas.Mesmo morando com a família, sente-se sozinha. Visivelmente emocionada, com fala pausada pelo choro. Relata episódio de depressão no passado, quando as filhas foram morar em outros estados. Usou Quoxetina por um tempo, mas quando sentiu que estava melhor, suspendeu por conta própria.Ao exame físico: paciente entristecida, tendendo ao choro, humor deprimido, embora lúcida, orientada no tempo e espaço,atenta, com discurso coerente. Pressão 160x80 mmHg, Frequência Cardíaca (FC) 85 bpm. Ausculta cardiopulmonar semalterações dignas de nota. Redução da amplitude do movimento e da força envolvendo todas as manobras do manguitorotador direito. Nódulos de Hederben nos dedos da mão direita. Com relação ao quadro clínico apresentado, assinale aalternativa CORRETA",
+      "text": "Dona Helena, 67 anos, secretária aposentada, vem pela primeira vez a consulta na Unidade Básica do bairro desde que se mudou para morar com sua filha. Seu esposo faleceu de Infarto Agudo do Miocárdio há 4 meses, e, desde então, veioresidir com a filha mais velha, o genro e um neto. Tem outra filha que mora em outro estado, mas que não vê há 5 anos,embora conversem por telefone ou aplicativos de vídeo online frequentemente. É sabidamente hipertensa, tem hipotireoidismo e osteoartrite. Refere dores nas articulações das mãos, joelhos e ombro direito, há anos, que pioram com alterações do clima. Apresenta ainda insônia e gostaria de uma medicação para dormir melhor. Mudou-se contra a vontade, embora reconheça que será mais bem cuidada perto da filha. Faz uso de enalapril 20 mg ao dia, levotiroxina 75 mcg em jejum e condroitina-glucosamina. Quando foi questionada sobre seu estado de humor, afirma desinteresse em atividades que antes lhe davam satisfação, por causa das dores intensas. Mesmo morando com a família, sente-se sozinha. Visivelmente emocionada, com fala pausada pelo choro. Relata episódio de depressão no passado, quando as filhas foram morar em outros estados. Usou Quoxetina por um tempo, mas quando sentiu que estava melhor, suspendeu por conta própria. Ao exame físico: paciente entristecida, tendendo ao choro, humor deprimido, embora lúcida, orientada no tempo e espaço,atenta, com discurso coerente. Pressão 160x80 mmHg, Frequência Cardíaca (FC) 85 bpm. Ausculta cardiopulmonar semalterações dignas de nota. Redução da amplitude do movimento e da força envolvendo todas as manobras do manguitorotador direito. Nódulos de Hederben nos dedos da mão direita. Com relação ao quadro clínico apresentado, assinale aalternativa CORRETA",
       "options": [
         {
           "letter": "A",
@@ -28703,7 +28703,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos do Humor",
       "topic": "Transtornos do Humor",
       "title": "Questão 38",
-      "text": "Mulher, 28 anos de idade, é levada pela polícia a uma Unidade de Pronto Atendimento, UPA, por quadro decomportamento violento (estava atirando pedras nos carros que passavam). Vem acompanhada da genitora que referealteração do comportamento, há dois dias. Relata que nos últimos meses a paciente vinha apresentando episódios deirritabilidade, dormindo cerca de 3 horas por dia e fez compras não condizentes com a situação econômica da família. Negacomorbidades, uso de medicações, drogas ou quedas. A paciente apresenta-se com comportamento violento, ameaçandoa equipe de saúde, e fazendo gestos obscenos. Diz que os familiares querem interná-la para ficar com todo o dinheiro delae que é muito rica. Se recusa a receber atendimento médico, não permite ser examinada e não aceita tomar nenhumamedicação.Considerando o provável quadro de base, identifique o principal tratamento farmacológico de manutenção.A",
+      "text": "Mulher, 28 anos de idade, é levada pela polícia a uma Unidade de Pronto Atendimento, UPA, por quadro decomportamento violento (estava atirando pedras nos carros que passavam). Vem acompanhada da genitora que referealteração do comportamento, há dois dias. Relata que nos últimos meses a paciente vinha apresentando episódios deirritabilidade, dormindo cerca de 3 horas por dia e fez compras não condizentes com a situação econômica da família. Negacomorbidades, uso de medicações, drogas ou quedas. A paciente apresenta-se com comportamento violento, ameaçandoa equipe de saúde, e fazendo gestos obscenos. Diz que os familiares querem interná-la para ficar com todo o dinheiro delae que é muito rica. Se recusa a receber atendimento médico, não permite ser examinada e não aceita tomar nenhumamedicação. Considerando o provável quadro de base, identifique o principal tratamento farmacológico de manutenção. A",
       "options": [
         {
           "letter": "A",
@@ -28733,7 +28733,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos do Humor",
       "topic": "Transtornos do Humor",
       "title": "Questão 39",
-      "text": "Mulher, 28 anos de idade, é levada pela polícia a uma Unidade de Pronto Atendimento, UPA, por quadro decomportamento violento (estava atirando pedras nos carros que passavam). Vem acompanhada da genitora que referealteração do comportamento, há dois dias. Relata que nos últimos meses a paciente vinha apresentando episódios deirritabilidade, dormindo cerca de 3 horas por dia e fez compras não condizentes com a situação econômica da família. Negacomorbidades, uso de medicações, drogas ou quedas. A paciente apresenta-se com comportamento violento, ameaçandoa equipe de saúde, e fazendo gestos obscenos. Diz que os familiares querem interná-la para ficar com todo o dinheiro delae que é muito rica. Se recusa a receber atendimento médico, não permite ser examinada e não aceita tomar nenhumamedicação.Em relação ao quadro de base da paciente, é correto afirmar",
+      "text": "Mulher, 28 anos de idade, é levada pela polícia a uma Unidade de Pronto Atendimento, UPA, por quadro decomportamento violento (estava atirando pedras nos carros que passavam). Vem acompanhada da genitora que referealteração do comportamento, há dois dias. Relata que nos últimos meses a paciente vinha apresentando episódios deirritabilidade, dormindo cerca de 3 horas por dia e fez compras não condizentes com a situação econômica da família. Negacomorbidades, uso de medicações, drogas ou quedas. A paciente apresenta-se com comportamento violento, ameaçandoa equipe de saúde, e fazendo gestos obscenos. Diz que os familiares querem interná-la para ficar com todo o dinheiro delae que é muito rica. Se recusa a receber atendimento médico, não permite ser examinada e não aceita tomar nenhumamedicação. Em relação ao quadro de base da paciente, é correto afirmar",
       "options": [
         {
           "letter": "A",
@@ -28800,7 +28800,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos do Humor",
       "topic": "Transtornos do Humor",
       "title": "Questão 42",
-      "text": "Uma das mudanças diagnósticas no DSM-5 foi criar o especificador de sintomas mistos para o transtorno depressivo maior.Uma medicação que se mostrou eficaz em estudo controlado para esse tipo de depressão foi",
+      "text": "Uma das mudanças diagnósticas no DSM-5 foi criar o especificador de sintomas mistos para o transtorno depressivo maior. Uma medicação que se mostrou eficaz em estudo controlado para esse tipo de depressão foi",
       "options": [
         {
           "letter": "A",
@@ -28902,7 +28902,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos do Humor",
       "topic": "Transtornos do Humor",
       "title": "Questão 45",
-      "text": "Leia o caso clínico a seguir.Você atende um paciente de 27 anos, do sexo masculino, com episódio depressivo grave e risco de suicídio. Ele temhistória prévia de episódios depressivos com sintomas atípicos (hipersonia, aumento de apetite, labilidade do humor eausência de anedonia) e delírios de ruína. Já fez muito abuso de álcool, maconha e cocaína, e relatou episódios de francairritabilidade, comportamento agressivo, logorreia e aumento da impulsividade sexual e pensamentos acelerados comduração de vários dias, mesmo sem estar intoxicado por drogas. Na família, há vários casos de suicídio e internações psiquiátricas por surtos de agressividade e agitação psicomotora.Em relação à conduta medicamentosa, a prescrição adequada é",
+      "text": "Leia o caso clínico a seguir. Você atende um paciente de 27 anos, do sexo masculino, com episódio depressivo grave e risco de suicídio. Ele temhistória prévia de episódios depressivos com sintomas atípicos (hipersonia, aumento de apetite, labilidade do humor eausência de anedonia) e delírios de ruína. Já fez muito abuso de álcool, maconha e cocaína, e relatou episódios de francairritabilidade, comportamento agressivo, logorreia e aumento da impulsividade sexual e pensamentos acelerados comduração de vários dias, mesmo sem estar intoxicado por drogas. Na família, há vários casos de suicídio e internações psiquiátricas por surtos de agressividade e agitação psicomotora. Em relação à conduta medicamentosa, a prescrição adequada é",
       "options": [
         {
           "letter": "A",
@@ -28932,7 +28932,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos do Humor",
       "topic": "Transtornos do Humor",
       "title": "Questão 46",
-      "text": "Método Clínico Centrado na PessoaDistimiaSra. Cleide, 50 anos, motorista de ônibus, mora com o esposo. Tem 3 filhos adultos e 2 netos. É conhecida na Unidade deSaúde por ter cuidado de seu pai, acamado durante 2 anos, até o seu falecimento há 3 anos. Em suas consultas de rotina sempre foi ativa e bem humorada. Desta vez, chega abatida e desanimada. Há um mês sente-se triste e irritada, sem amesma disposição para realizar as atividades diárias. Acha que seus sintomas podem ser de menopausa, já que o seu ciclo menstrual está irregular há 6 meses, mas teme estar com depressão.Escolha a alternativa mais adequada para a abordagem inicial da Sra. Cleide",
+      "text": "Método Clínico Centrado na PessoaDistimiaSra. Cleide, 50 anos, motorista de ônibus, mora com o esposo. Tem 3 filhos adultos e 2 netos. É conhecida na Unidade deSaúde por ter cuidado de seu pai, acamado durante 2 anos, até o seu falecimento há 3 anos. Em suas consultas de rotina sempre foi ativa e bem humorada. Desta vez, chega abatida e desanimada. Há um mês sente-se triste e irritada, sem amesma disposição para realizar as atividades diárias. Acha que seus sintomas podem ser de menopausa, já que o seu ciclo menstrual está irregular há 6 meses, mas teme estar com depressão. Escolha a alternativa mais adequada para a abordagem inicial da Sra. Cleide",
       "options": [
         {
           "letter": "A",
@@ -29035,7 +29035,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos do Humor",
       "topic": "Transtornos do Humor",
       "title": "Questão 49",
-      "text": "Homem, afrodescendente, 70 anos, viúvo. É portador de um quadro de Hipertensão Arterial Sistêmica, atualmente controlado pelo uso de um inibidor dos receptores de angiotensina II associado a um diurético tiazídico. Apresentaeventuais episódios de arritmia, demonstrados por um intervalo QT longo no seu último eletrocardiograma. Além disso, temhistórico de úlcera gástrica e, por isso, faz uso de cimetidina; também apresenta alterações nos exames de função hepática.Na consulta, conta que, em função da pandemia da COVID-19, permaneceu, desde março, completamente sozinho emcasa, apenas tendo contato, por via remota, com seus familiares. Aos poucos, foi se sentido cada vez mais triste,desanimado, sem perspectiva, pensando que não vale mais a pena viver, sem prazer no seu cotidiano, insone, inapetente(tendo perdido 6 kg nos últimos três meses), se culpando por muitas condutas tomadas ao longo de sua vida e com uma preocupação extrema de se manter 6nanceiramente (o que não condiz com sua realidade). Essa sintomatologia já dura cerca de três meses e, aplicando uma escala que avalia depressão, o quadro é classificado como grave. Assinale aalternativa que apresenta o antidepressivo mais indicado para esse caso",
+      "text": "Homem, afrodescendente, 70 anos, viúvo. É portador de um quadro de Hipertensão Arterial Sistêmica, atualmente controlado pelo uso de um inibidor dos receptores de angiotensina II associado a um diurético tiazídico. Apresentaeventuais episódios de arritmia, demonstrados por um intervalo QT longo no seu último eletrocardiograma. Além disso, temhistórico de úlcera gástrica e, por isso, faz uso de cimetidina; também apresenta alterações nos exames de função hepática. Na consulta, conta que, em função da pandemia da COVID-19, permaneceu, desde março, completamente sozinho emcasa, apenas tendo contato, por via remota, com seus familiares. Aos poucos, foi se sentido cada vez mais triste,desanimado, sem perspectiva, pensando que não vale mais a pena viver, sem prazer no seu cotidiano, insone, inapetente(tendo perdido 6 kg nos últimos três meses), se culpando por muitas condutas tomadas ao longo de sua vida e com uma preocupação extrema de se manter 6nanceiramente (o que não condiz com sua realidade). Essa sintomatologia já dura cerca de três meses e, aplicando uma escala que avalia depressão, o quadro é classificado como grave. Assinale aalternativa que apresenta o antidepressivo mais indicado para esse caso",
       "options": [
         {
           "letter": "A",
@@ -29167,7 +29167,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos do Humor",
       "topic": "Transtornos do Humor",
       "title": "Questão 54",
-      "text": "Márcia, 46 anos, trabalha como caixa de supermercado e mora em uma comunidade vulnerável de Florianópolis. Procuroua Unidade Básica de Saúde do seu bairro e conseguiu ser consultada no mesmo dia. Durante a consulta, Márcia se queixa de cansaço, fraqueza, sentimento de tristeza e dores pelo corpo, sintomas que já tem ocorrido há cerca de 5 meses.Recentemente, também está com muita dificuldade para dormir, algo que tem lhe incomodado, pois sempre dormiu muito bem, e dificuldade para se concentrar no trabalho. Quando você pergunta se ela relacionou algo aos sentimentos detristeza, Márcia começa a chorar e relata que está com problemas com o marido, que voltou a beber há cerca de 6 meses,depois de perder o emprego, e ela está tendo que sustentar a casa sozinha. A única coisa que ainda lhe distrai, é quando saipara passear com o cachorro. Em relação ao quadro depressivo de Márcia, pode-se afirmar que",
+      "text": "Márcia, 46 anos, trabalha como caixa de supermercado e mora em uma comunidade vulnerável de Florianópolis. Procuroua Unidade Básica de Saúde do seu bairro e conseguiu ser consultada no mesmo dia. Durante a consulta, Márcia se queixa de cansaço, fraqueza, sentimento de tristeza e dores pelo corpo, sintomas que já tem ocorrido há cerca de 5 meses. Recentemente, também está com muita dificuldade para dormir, algo que tem lhe incomodado, pois sempre dormiu muito bem, e dificuldade para se concentrar no trabalho. Quando você pergunta se ela relacionou algo aos sentimentos detristeza, Márcia começa a chorar e relata que está com problemas com o marido, que voltou a beber há cerca de 6 meses,depois de perder o emprego, e ela está tendo que sustentar a casa sozinha. A única coisa que ainda lhe distrai, é quando saipara passear com o cachorro. Em relação ao quadro depressivo de Márcia, pode-se afirmar que",
       "options": [
         {
           "letter": "A",
@@ -29543,7 +29543,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos do Humor",
       "topic": "Transtornos do Humor",
       "title": "Questão 66",
-      "text": "Homem, 39 anos, divorciado, auxiliar de produção de uma indústria de calçados. Procurou a UBS por estar dormindo mal,acordando com sensação de fadiga, com dificuldade de ir ao trabalho, devido à dificuldade de concentração e irritabilidade.Permanece jogando futebol com os amigos durante a semana, e atividades de lazer com os filhos no fim de semana. Semalterações no apetite, no peso, na memória e na cognição. Comenta estresse diante as exigências excessivas no trabalho erelata que tudo começou quando foi transferido para o setor da empresa responsável pela colagem de sola de sapatos.Relata que o cheiro forte o desconcentrava e isso impedia que ele mantivesse a atenção e concentração nos processos detrabalho. Os recorrentes erros o levaram a situações vexaminosas devido às queixas da chefia. Qual diagnóstico maisprovável?",
+      "text": "Homem, 39 anos, divorciado, auxiliar de produção de uma indústria de calçados. Procurou a UBS por estar dormindo mal,acordando com sensação de fadiga, com dificuldade de ir ao trabalho, devido à dificuldade de concentração e irritabilidade. Permanece jogando futebol com os amigos durante a semana, e atividades de lazer com os filhos no fim de semana. Semalterações no apetite, no peso, na memória e na cognição. Comenta estresse diante as exigências excessivas no trabalho erelata que tudo começou quando foi transferido para o setor da empresa responsável pela colagem de sola de sapatos. Relata que o cheiro forte o desconcentrava e isso impedia que ele mantivesse a atenção e concentração nos processos detrabalho. Os recorrentes erros o levaram a situações vexaminosas devido às queixas da chefia. Qual diagnóstico maisprovável?",
       "options": [
         {
           "letter": "A",
@@ -29670,7 +29670,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos do Humor",
       "topic": "Transtornos do Humor",
       "title": "Questão 70",
-      "text": "Senhor Mário, sexo masculino, 50 anos, casado, evangélico, 4 filhos, pedreiro é levado pela esposa para atendimento médico, na unidade básica de saúde, com relato de que, há cerca de três semanas, vem evoluindo com quadro de tristeza,isolamento social, faltas frequentes ao trabalho, redução do apetite e consequente perda de peso, insônia inicial, desânimo,perda da energia, choro fácil e ideação suicida. Também parou de realizar atividades que, antes lhe davam prazer, como jogar futebol e encontrar-se com os amigos. Relatou episódio semelhante quando era mais jovem, mas percebe ossintomas atuais de forma mais intensa. Como fatores estressores, relata que está passando por dificuldades financeiras e que um dos filhos está usando drogas. Negou uso de álcool ou outras drogas. Negou sintomas, como alucinações ou delírios.Como comorbidades, apresenta hipertensão arterial. Diante do exposto, assinale a alternativa CORRETA que apresente hipótese diagnóstica para o caso do paciente",
+      "text": "Senhor Mário, sexo masculino, 50 anos, casado, evangélico, 4 filhos, pedreiro é levado pela esposa para atendimento médico, na unidade básica de saúde, com relato de que, há cerca de três semanas, vem evoluindo com quadro de tristeza,isolamento social, faltas frequentes ao trabalho, redução do apetite e consequente perda de peso, insônia inicial, desânimo,perda da energia, choro fácil e ideação suicida. Também parou de realizar atividades que, antes lhe davam prazer, como jogar futebol e encontrar-se com os amigos. Relatou episódio semelhante quando era mais jovem, mas percebe ossintomas atuais de forma mais intensa. Como fatores estressores, relata que está passando por dificuldades financeiras e que um dos filhos está usando drogas. Negou uso de álcool ou outras drogas. Negou sintomas, como alucinações ou delírios. Como comorbidades, apresenta hipertensão arterial. Diante do exposto, assinale a alternativa CORRETA que apresente hipótese diagnóstica para o caso do paciente",
       "options": [
         {
           "letter": "A",
@@ -29738,7 +29738,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos do Humor",
       "topic": "Transtornos do Humor",
       "title": "Questão 72",
-      "text": "Paciente de 72 anos, viúvo, aposentado, vive só. Os três filhos trabalham em outra cidade. É hipertenso controlado com usodiário de hidroclorotiazida. Vai regularmente ao Centro de Saúde, há anos, e diz que se alimenta pouco por falta de apetite.Diz não ter vontade de fazer comida somente para ele. Queixa-se de emagrecimento (6-7 Kg em um ano), sem outrasqueixas sistêmicas. Está corado, hidratado, PA 112/76 mmHg, FC 68 bpm, sem relato de febres ou dores. Sem gângliospalpáveis, sem outras alterações do exame físico, exceto aumento do próstata, já diagnosticado como hiperplasia benignasem sintomas. Os exames feitos nesses últimos meses não evidenciaram anemia ou outra anormalidade metabólica. Omotivo mais comum da perda do peso nesse caso, é",
+      "text": "Paciente de 72 anos, viúvo, aposentado, vive só. Os três filhos trabalham em outra cidade. É hipertenso controlado com usodiário de hidroclorotiazida. Vai regularmente ao Centro de Saúde, há anos, e diz que se alimenta pouco por falta de apetite. Diz não ter vontade de fazer comida somente para ele. Queixa-se de emagrecimento (6-7 Kg em um ano), sem outrasqueixas sistêmicas. Está corado, hidratado, PA 112/76 mmHg, FC 68 bpm, sem relato de febres ou dores. Sem gângliospalpáveis, sem outras alterações do exame físico, exceto aumento do próstata, já diagnosticado como hiperplasia benignasem sintomas. Os exames feitos nesses últimos meses não evidenciaram anemia ou outra anormalidade metabólica. Omotivo mais comum da perda do peso nesse caso, é",
       "options": [
         {
           "letter": "A",
@@ -29779,7 +29779,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos do Humor",
       "topic": "Transtornos do Humor",
       "title": "Questão 73",
-      "text": "Vendedora autônoma de produtos cosméticos, de 55 anos, casada, com dois filhos (de 18 e de 20 anos), vem para retorno de rotina na unidade básica de saúde, para acompanhamento de seu sobrepeso. Durante a consulta com o médico, relata estar se sentindo cansada com mais intensidade e frequência nos últimos dois meses, além de não conseguir dormir direito ànoite, ter dificuldade de se concentrar e sentir-se mais triste que seu habitual na maior parte dos dias. Nega outras queixas enega ideação suicida. Refere ter sentido algo parecido há cerca de 5 anos, mas de maneira menos intensa e por menos tempo. Conta também que fuma um cigarro todo dia na hora do almoço, a não ser que esteja em local onde é proibidofumar e aí só vai fumar no dia seguinte. Ao exame físico apresenta IMC de 28Kg/m², sem outras alterações ao exame físico.Qual é a conduta mais adequada a tomar nesta situação?",
+      "text": "Vendedora autônoma de produtos cosméticos, de 55 anos, casada, com dois filhos (de 18 e de 20 anos), vem para retorno de rotina na unidade básica de saúde, para acompanhamento de seu sobrepeso. Durante a consulta com o médico, relata estar se sentindo cansada com mais intensidade e frequência nos últimos dois meses, além de não conseguir dormir direito ànoite, ter dificuldade de se concentrar e sentir-se mais triste que seu habitual na maior parte dos dias. Nega outras queixas enega ideação suicida. Refere ter sentido algo parecido há cerca de 5 anos, mas de maneira menos intensa e por menos tempo. Conta também que fuma um cigarro todo dia na hora do almoço, a não ser que esteja em local onde é proibidofumar e aí só vai fumar no dia seguinte. Ao exame físico apresenta IMC de 28Kg/m², sem outras alterações ao exame físico. Qual é a conduta mais adequada a tomar nesta situação?",
       "options": [
         {
           "letter": "A",
@@ -29862,7 +29862,7 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "D",
-          "text": "eve-se marcar retorno em dois dias.DPacientes que choram em consulta indicam a necessidade de uso de benzodiazepínico. É necessário marcar um retorno em sete dias para a reavaliação"
+          "text": "eve-se marcar retorno em dois dias. DPacientes que choram em consulta indicam a necessidade de uso de benzodiazepínico. É necessário marcar um retorno em sete dias para a reavaliação"
         },
         {
           "letter": "E",
@@ -30004,7 +30004,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos do Humor",
       "topic": "Transtornos do Humor",
       "title": "Questão 80",
-      "text": "Leia o texto a seguir, extraído do livro Medicina Ambulatorial: Condutas de Atenção Primária Baseadas em Evidências(DUNCAN & cols, 4ª edição). A depressão é uma condição médica relativamente comum, de curso crônico e recorrente.Está muitas vezes associada à incapacitação funcional e comprometimento da saúde física. Pessoas deprimidas apresentam limitação das suas atividades e comprometimento do bem-estar, além de utilizarem mais os serviços de saúde. No entanto,a depressão segue sendo subdiagnosticada e subtratada. Entre 30 e 60% dos casos de depressão não são detectados pelomédico em atenção primária à saúde (APS). Muitas vezes, os pacientes deprimidos também não recebem tratamentossu6cientemente adequados e específicos. Em APS, a mediana de prevalência de depressão está acima de 10%. Empopulações específicas, como a de pacientes com infarto recente, é de 33%, chegando a 47% nos pacientes com câncer.A prevalência de depressão é aproximadamente 2x maior em mulheres do que em homens. Sobre transtorno depressivo, verifica-se o seguinte",
+      "text": "Leia o texto a seguir, extraído do livro Medicina Ambulatorial: Condutas de Atenção Primária Baseadas em Evidências(DUNCAN & cols, 4ª edição). A depressão é uma condição médica relativamente comum, de curso crônico e recorrente. Está muitas vezes associada à incapacitação funcional e comprometimento da saúde física. Pessoas deprimidas apresentam limitação das suas atividades e comprometimento do bem-estar, além de utilizarem mais os serviços de saúde. No entanto,a depressão segue sendo subdiagnosticada e subtratada. Entre 30 e 60% dos casos de depressão não são detectados pelomédico em atenção primária à saúde (APS). Muitas vezes, os pacientes deprimidos também não recebem tratamentossu6cientemente adequados e específicos. Em APS, a mediana de prevalência de depressão está acima de 10%. Empopulações específicas, como a de pacientes com infarto recente, é de 33%, chegando a 47% nos pacientes com câncer. A prevalência de depressão é aproximadamente 2x maior em mulheres do que em homens. Sobre transtorno depressivo, verifica-se o seguinte",
       "options": [
         {
           "letter": "A",
@@ -30190,7 +30190,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos do Humor",
       "topic": "Transtornos do Humor",
       "title": "Questão 86",
-      "text": "Você é médico de família e comunidade. Atualmente trabalha em uma Unidade de Saúde da Família (USF) no interior doEstado de São Paulo. J.D.M., 51 anos, divorciado, desempregado, vem para consulta eventual acompanhado de sua nora,Elaine. Relata que chegou há 3 semanas do Ceará para morar com seu filho (mora no território de abrangência da sua USF).Elaine diz que J.D.M. veio para tratamento, pois estava difícil arrumar \"médico de cabeça\", em Aracati. Segundo ela, há maisou menos 3 anos ele teve diagnóstico de depressão com alucinações (episódio depressivo maior com sintomaspsicóticos). Faz uso desde então de sertralina 75mg/dia, risperidona 1mg/dia e diazepam 5mg/dia. Estava bem, porém adepressão retornou há aproximadamente 1 ano, com aumento das alucinações (inclusive levando ao término de seu casamento há 3 meses). Já teve ideação suicida, mas no momento nega. Refere ainda insônia (diz que tem passado as noites em claro). Antecedentes: Sobrepeso, hipertensão arterial controlada com enalapril 10mg/dia e tabagismo 10cigarros/dia. Restante normal. Contexto familiar: J.D.M. mora com o filho, que tem 32 anos, é mecânico e é usuário de cocaína, Elaine trabalha em casa, vendendo bijuterias e produtos de beleza. Eles têm 3 filhos: um bebê de 2 anos, um menino de 5 anos (com síndrome de Down) e uma menina de 9 anos. Exame físico normal, exceto humor deprimido. Combase no caso descrito acima, você como médico de família e comunidade: (marque a resposta mais completa)",
+      "text": "Você é médico de família e comunidade. Atualmente trabalha em uma Unidade de Saúde da Família (USF) no interior doEstado de São Paulo. J.D.M., 51 anos, divorciado, desempregado, vem para consulta eventual acompanhado de sua nora,Elaine. Relata que chegou há 3 semanas do Ceará para morar com seu filho (mora no território de abrangência da sua USF). Elaine diz que J.D.M. veio para tratamento, pois estava difícil arrumar \"médico de cabeça\", em Aracati. Segundo ela, há maisou menos 3 anos ele teve diagnóstico de depressão com alucinações (episódio depressivo maior com sintomaspsicóticos). Faz uso desde então de sertralina 75mg/dia, risperidona 1mg/dia e diazepam 5mg/dia. Estava bem, porém adepressão retornou há aproximadamente 1 ano, com aumento das alucinações (inclusive levando ao término de seu casamento há 3 meses). Já teve ideação suicida, mas no momento nega. Refere ainda insônia (diz que tem passado as noites em claro). Antecedentes: Sobrepeso, hipertensão arterial controlada com enalapril 10mg/dia e tabagismo 10cigarros/dia. Restante normal. Contexto familiar: J.D.M. mora com o filho, que tem 32 anos, é mecânico e é usuário de cocaína, Elaine trabalha em casa, vendendo bijuterias e produtos de beleza. Eles têm 3 filhos: um bebê de 2 anos, um menino de 5 anos (com síndrome de Down) e uma menina de 9 anos. Exame físico normal, exceto humor deprimido. Combase no caso descrito acima, você como médico de família e comunidade: (marque a resposta mais completa)",
       "options": [
         {
           "letter": "A",
@@ -30224,7 +30224,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos do Humor",
       "topic": "Transtornos do Humor",
       "title": "Questão 87",
-      "text": "Mulher de 48 anos de idade, obesa, procura ambulatório de Clínica Médica, acompanhada da irmã, com queixas de sentir-se cansada, sem ânimo e interesse para suas atividades corriqueiras e sociais, apresentando constante vontade de dormir,sem conseguir concentrar-se nas suas atividades. Seu peso aumentou de 75 para 82 kg em um mês. A irmã relata que apaciente \"está fazendo as coisas de maneira lenta\", passa os dias em um quarto escuro e verbalizou vontade de morrer.Exame físico: IMC = 31 kg/m² (valor de referência < 25 Kg/m²), sem outras alterações. A paciente tem histórico de arritmia cardíaca. Avaliação recente de função tiroideana revelou resultados normais para TSH, T3 e T4. No caso descrito acima,qual a conduta terapêutica mais adequada?",
+      "text": "Mulher de 48 anos de idade, obesa, procura ambulatório de Clínica Médica, acompanhada da irmã, com queixas de sentir-se cansada, sem ânimo e interesse para suas atividades corriqueiras e sociais, apresentando constante vontade de dormir,sem conseguir concentrar-se nas suas atividades. Seu peso aumentou de 75 para 82 kg em um mês. A irmã relata que apaciente \"está fazendo as coisas de maneira lenta\", passa os dias em um quarto escuro e verbalizou vontade de morrer. Exame físico: IMC = 31 kg/m² (valor de referência < 25 Kg/m²), sem outras alterações. A paciente tem histórico de arritmia cardíaca. Avaliação recente de função tiroideana revelou resultados normais para TSH, T3 e T4. No caso descrito acima,qual a conduta terapêutica mais adequada?",
       "options": [
         {
           "letter": "A",
@@ -30254,7 +30254,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos do Humor",
       "topic": "Transtornos do Humor",
       "title": "Questão 88",
-      "text": "Homem de 50 anos, branco, solteiro (nunca casado), médico, está em tratamento para doença renal crônica, realizandohemodiálise. Vem à consulta clínica e conta que tem se sentido bastante desanimado, desesperançoso, triste e anedônico.Relata que perdeu peso nos últimos meses por diminuição importante do apetite e apresenta insônia quase que diariamente(utiliza um benzodiazepínico de forma constante como hipnótico e não faz uso de nenhum outro psicofármaco). Não vêperspectiva para o seu futuro, seja pessoal ou profissional. Nos últimos tempos, tem permanecido muito em casa sozinho,afastado de familiares e amigos. Ao final da consulta, conta que não vê mais muito sentido em seguir vivo. Tem,eventualmente, pensado em tirar a própria vida e já imaginou a forma como o faria. Assinale a alternativa correta",
+      "text": "Homem de 50 anos, branco, solteiro (nunca casado), médico, está em tratamento para doença renal crônica, realizandohemodiálise. Vem à consulta clínica e conta que tem se sentido bastante desanimado, desesperançoso, triste e anedônico. Relata que perdeu peso nos últimos meses por diminuição importante do apetite e apresenta insônia quase que diariamente(utiliza um benzodiazepínico de forma constante como hipnótico e não faz uso de nenhum outro psicofármaco). Não vêperspectiva para o seu futuro, seja pessoal ou profissional. Nos últimos tempos, tem permanecido muito em casa sozinho,afastado de familiares e amigos. Ao final da consulta, conta que não vê mais muito sentido em seguir vivo. Tem,eventualmente, pensado em tirar a própria vida e já imaginou a forma como o faria. Assinale a alternativa correta",
       "options": [
         {
           "letter": "A",
@@ -30673,7 +30673,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos da Personalidade",
       "topic": "Transtornos da Personalidade",
       "title": "Questão 4",
-      "text": "Considere uma paciente feminina, 48 anos, internada devido à tentativa de suicídio por meio da ingesta de 20 comprimidos de clonazepam 0,5 mg. Foi inicialmente internada em unidade de terapia intensiva devido ao risco de rebaixamento do nívelde consciência, mas evoluiu clinicamente bem e após 48 horas foi liberada para seguir internação em enfermaria. Em sua primeira avaliação, ainda sem a presença de um familiar, a paciente relata ser a sua terceira tentativa de suicídio. Todas astrês tentativas ocorreram no contexto de discussão com o seu cônjuge e foram por meio de ingestão de medicamentos.Relata estar “deprimida” e ainda persistir com ideação suicida, que tem plano de usar método diferente em nova tentativa,porém, não relata qual seria tal método. Já em avaliação subsequente com psicólogo, a paciente, acompanhada de sua .lhae muito bem humorada, relata estar arrependida de ter tentado pôr .m à própria vida e que não tem intensão de nova tentativa, relatando que essa é uma questão resolvida para ela. Por .m, em avaliação com o psiquiatra, a paciente,acompanhada de seu cônjuge, relatou em tom agressivo que não tem intensão de nova tentativa de suicídio, mas que nãoestá arrependida da tentativa atual, pois segundo ela, o seu cônjuge “mereceu tomar esse susto”.Assinale a alternativa correta com relação ao caso",
+      "text": "Considere uma paciente feminina, 48 anos, internada devido à tentativa de suicídio por meio da ingesta de 20 comprimidos de clonazepam 0,5 mg. Foi inicialmente internada em unidade de terapia intensiva devido ao risco de rebaixamento do nívelde consciência, mas evoluiu clinicamente bem e após 48 horas foi liberada para seguir internação em enfermaria. Em sua primeira avaliação, ainda sem a presença de um familiar, a paciente relata ser a sua terceira tentativa de suicídio. Todas astrês tentativas ocorreram no contexto de discussão com o seu cônjuge e foram por meio de ingestão de medicamentos. Relata estar “deprimida” e ainda persistir com ideação suicida, que tem plano de usar método diferente em nova tentativa,porém, não relata qual seria tal método. Já em avaliação subsequente com psicólogo, a paciente, acompanhada de sua .lhae muito bem humorada, relata estar arrependida de ter tentado pôr .m à própria vida e que não tem intensão de nova tentativa, relatando que essa é uma questão resolvida para ela. Por .m, em avaliação com o psiquiatra, a paciente,acompanhada de seu cônjuge, relatou em tom agressivo que não tem intensão de nova tentativa de suicídio, mas que nãoestá arrependida da tentativa atual, pois segundo ela, o seu cônjuge “mereceu tomar esse susto”.Assinale a alternativa correta com relação ao caso",
       "options": [
         {
           "letter": "A",
@@ -30801,7 +30801,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos da Personalidade",
       "topic": "Transtornos da Personalidade",
       "title": "Questão 9",
-      "text": "Um jovem de 18 anos de idade, depois de começar a trabalhar em uma agência de viagens, procura atendimentopsiquiátrico por aconselhamento da gerente que observou suas di.culdades em completar uma tarefa, seguir uma instruçãoe escutar quando alguém está falando com ele. Tem impulsividade e agitação. É desorganizado, distraído e demonstramuitas di.culdades escolares desde a infância, pois é difícil para ele conseguir se concentrar. Há quatro anos, usa álcool emaconha diariamente, várias vezes ao dia, inclusive no horário do trabalho. Sente-se também muito triste, com baixaautoestima, desesperançoso e com vontade de morrer. Para ele, parece que nunca vai conseguir ser feliz. Sua famíliasempre considerou que ele era “malcriado” e “preguiçoso”, por isso nunca procurou atendimento médico para ele.Com base nesse caso clínico e nos conhecimentos médicos correlatos, julgue os itens a seguir.Entre as opções de psicoterapia, nesse caso, pode-se indicar, a terapia comportamental dialética, que é um tratamento psicossocial, cujo objetivo dominante é ajudar a criar uma vida que vale a pena ser vivida, para pessoas que costumam sofrer tremendamente de problemas crônicos e globais em diversas áreas de suas vidas",
+      "text": "Um jovem de 18 anos de idade, depois de começar a trabalhar em uma agência de viagens, procura atendimentopsiquiátrico por aconselhamento da gerente que observou suas di.culdades em completar uma tarefa, seguir uma instruçãoe escutar quando alguém está falando com ele. Tem impulsividade e agitação. É desorganizado, distraído e demonstramuitas di.culdades escolares desde a infância, pois é difícil para ele conseguir se concentrar. Há quatro anos, usa álcool emaconha diariamente, várias vezes ao dia, inclusive no horário do trabalho. Sente-se também muito triste, com baixaautoestima, desesperançoso e com vontade de morrer. Para ele, parece que nunca vai conseguir ser feliz. Sua famíliasempre considerou que ele era “malcriado” e “preguiçoso”, por isso nunca procurou atendimento médico para ele. Com base nesse caso clínico e nos conhecimentos médicos correlatos, julgue os itens a seguir. Entre as opções de psicoterapia, nesse caso, pode-se indicar, a terapia comportamental dialética, que é um tratamento psicossocial, cujo objetivo dominante é ajudar a criar uma vida que vale a pena ser vivida, para pessoas que costumam sofrer tremendamente de problemas crônicos e globais em diversas áreas de suas vidas",
       "options": [
         {
           "letter": "A",
@@ -30823,7 +30823,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos da Personalidade",
       "topic": "Transtornos da Personalidade",
       "title": "Questão 10",
-      "text": "Um estudante de 29 anos de idade é levado pela mãe à unidade de saúde mental, encaminhado pela emergência. Temhistória de várias tentativas de suicídio. Há três dias, após briga com a namorada, sentiu-se desesperado e quebrou osdentes no meio-.o da calçada. Também conseguiu pegar um revólver da família e deu um tiro na própria mão. A mãe relataque ele costuma automutilar-se, cortando os braços e o abdome, ou en.a agulhas na sola dos pés, pois assim ninguém vê oferimento e não lhe “enchem o saco” com reprovações. Tem uma sensação de “vazio” interno, como se não tivessesentimentos, e precisa “preencher o vazio, mesmo que seja com a dor física”. Demonstra muita di.culdade para .nalizarseus planos de vida, como os próprios estudos.Tendo em vista esse caso clínico e os conhecimentos médicos correlatos, julgue os itens a seguir.Na avaliação das comorbidades que são as mais frequentes com o transtorno de personalidade borderline, deve-se prestar especial atenção à depressão, à distimia, à agorafobia, ao transtorno obsessivo-compulsivo e a transtornos por uso de substâncias",
+      "text": "Um estudante de 29 anos de idade é levado pela mãe à unidade de saúde mental, encaminhado pela emergência. Temhistória de várias tentativas de suicídio. Há três dias, após briga com a namorada, sentiu-se desesperado e quebrou osdentes no meio-.o da calçada. Também conseguiu pegar um revólver da família e deu um tiro na própria mão. A mãe relataque ele costuma automutilar-se, cortando os braços e o abdome, ou en.a agulhas na sola dos pés, pois assim ninguém vê oferimento e não lhe “enchem o saco” com reprovações. Tem uma sensação de “vazio” interno, como se não tivessesentimentos, e precisa “preencher o vazio, mesmo que seja com a dor física”. Demonstra muita di.culdade para .nalizarseus planos de vida, como os próprios estudos. Tendo em vista esse caso clínico e os conhecimentos médicos correlatos, julgue os itens a seguir. Na avaliação das comorbidades que são as mais frequentes com o transtorno de personalidade borderline, deve-se prestar especial atenção à depressão, à distimia, à agorafobia, ao transtorno obsessivo-compulsivo e a transtornos por uso de substâncias",
       "options": [
         {
           "letter": "A",
@@ -30845,7 +30845,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos da Personalidade",
       "topic": "Transtornos da Personalidade",
       "title": "Questão 11",
-      "text": "Um estudante de 29 anos de idade é levado pela mãe à unidade de saúde mental, encaminhado pela emergência. Temhistória de várias tentativas de suicídio. Há três dias, após briga com a namorada, sentiu-se desesperado e quebrou osdentes no meio-.o da calçada. Também conseguiu pegar um revólver da família e deu um tiro na própria mão. A mãe relataque ele costuma automutilar-se, cortando os braços e o abdome, ou en.a agulhas na sola dos pés, pois assim ninguém vê oferimento e não lhe “enchem o saco” com reprovações. Tem uma sensação de “vazio” interno, como se não tivessesentimentos, e precisa “preencher o vazio, mesmo que seja com a dor física”. Demonstra muita di.culdade para .nalizarseus planos de vida, como os próprios estudos.Tendo em vista esse caso clínico e os conhecimentos médicos correlatos, julgue os itens a seguir.O transtorno de personalidade que o paciente apresenta é o mais prevalente na população em geral",
+      "text": "Um estudante de 29 anos de idade é levado pela mãe à unidade de saúde mental, encaminhado pela emergência. Temhistória de várias tentativas de suicídio. Há três dias, após briga com a namorada, sentiu-se desesperado e quebrou osdentes no meio-.o da calçada. Também conseguiu pegar um revólver da família e deu um tiro na própria mão. A mãe relataque ele costuma automutilar-se, cortando os braços e o abdome, ou en.a agulhas na sola dos pés, pois assim ninguém vê oferimento e não lhe “enchem o saco” com reprovações. Tem uma sensação de “vazio” interno, como se não tivessesentimentos, e precisa “preencher o vazio, mesmo que seja com a dor física”. Demonstra muita di.culdade para .nalizarseus planos de vida, como os próprios estudos. Tendo em vista esse caso clínico e os conhecimentos médicos correlatos, julgue os itens a seguir. O transtorno de personalidade que o paciente apresenta é o mais prevalente na população em geral",
       "options": [
         {
           "letter": "A",
@@ -30867,7 +30867,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos da Personalidade",
       "topic": "Transtornos da Personalidade",
       "title": "Questão 12",
-      "text": "Um estudante de 29 anos de idade é levado pela mãe à unidade de saúde mental, encaminhado pela emergência. Temhistória de várias tentativas de suicídio. Há três dias, após briga com a namorada, sentiu-se desesperado e quebrou osdentes no meio-.o da calçada. Também conseguiu pegar um revólver da família e deu um tiro na própria mão. A mãe relataque ele costuma automutilar-se, cortando os braços e o abdome, ou en.a agulhas na sola dos pés, pois assim ninguém vê oferimento e não lhe “enchem o saco” com reprovações. Tem uma sensação de “vazio” interno, como se não tivessesentimentos, e precisa “preencher o vazio, mesmo que seja com a dor física”. Demonstra muita di.culdade para .nalizarseus planos de vida, como os próprios estudos.Tendo em vista esse caso clínico e os conhecimentos médicos correlatos, julgue os itens a seguir.Com base nas características de apresentar dificuldade em iniciar projetos ou de fazer coisas por conta própria, assim comoir a extremos para obter carinho e apoio de outros, como voluntariar-se para fazer coisas desagradáveis, o provável diagnóstico de transtorno de personalidade do paciente é do tipo borderline",
+      "text": "Um estudante de 29 anos de idade é levado pela mãe à unidade de saúde mental, encaminhado pela emergência. Temhistória de várias tentativas de suicídio. Há três dias, após briga com a namorada, sentiu-se desesperado e quebrou osdentes no meio-.o da calçada. Também conseguiu pegar um revólver da família e deu um tiro na própria mão. A mãe relataque ele costuma automutilar-se, cortando os braços e o abdome, ou en.a agulhas na sola dos pés, pois assim ninguém vê oferimento e não lhe “enchem o saco” com reprovações. Tem uma sensação de “vazio” interno, como se não tivessesentimentos, e precisa “preencher o vazio, mesmo que seja com a dor física”. Demonstra muita di.culdade para .nalizarseus planos de vida, como os próprios estudos. Tendo em vista esse caso clínico e os conhecimentos médicos correlatos, julgue os itens a seguir. Com base nas características de apresentar dificuldade em iniciar projetos ou de fazer coisas por conta própria, assim comoir a extremos para obter carinho e apoio de outros, como voluntariar-se para fazer coisas desagradáveis, o provável diagnóstico de transtorno de personalidade do paciente é do tipo borderline",
       "options": [
         {
           "letter": "A",
@@ -30889,7 +30889,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos da Personalidade",
       "topic": "Transtornos da Personalidade",
       "title": "Questão 13",
-      "text": "Uma paciente de 36 anos de idade é levada desacordada à emergência do hospital pelo marido. Ela havia tentado suicídio com uso de medicações e álcool. Foram realizados lavagem gástrica e controle dos sinais vitais, que se mantinham estáveis.A paciente acordou depois de duas horas e referiu que é usuária frequente de álcool e cocaína, e eventualmente, quando não encontra a cocaína em pó, fuma crack. O marido não sabe do seu uso de cocaína. Ela sente-se constantemente muito triste e, por isso, decidiu tentar suicídio. Está em tratamento psiquiátrico e psicoterápico, mas sem melhora dos sintomas.Considerando esse caso clínico e os conhecimentos médicos correlatos, julgue os itens a seguir.Pode-se a.rmar que os sintomas emergentes ganham uma conotação especí.ca no caso citado, em função dos seustransfundos estáveis, que são a personalidade e a inteligência",
+      "text": "Uma paciente de 36 anos de idade é levada desacordada à emergência do hospital pelo marido. Ela havia tentado suicídio com uso de medicações e álcool. Foram realizados lavagem gástrica e controle dos sinais vitais, que se mantinham estáveis. A paciente acordou depois de duas horas e referiu que é usuária frequente de álcool e cocaína, e eventualmente, quando não encontra a cocaína em pó, fuma crack. O marido não sabe do seu uso de cocaína. Ela sente-se constantemente muito triste e, por isso, decidiu tentar suicídio. Está em tratamento psiquiátrico e psicoterápico, mas sem melhora dos sintomas. Considerando esse caso clínico e os conhecimentos médicos correlatos, julgue os itens a seguir. Pode-se a.rmar que os sintomas emergentes ganham uma conotação especí.ca no caso citado, em função dos seustransfundos estáveis, que são a personalidade e a inteligência",
       "options": [
         {
           "letter": "A",
@@ -30911,7 +30911,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos da Personalidade",
       "topic": "Transtornos da Personalidade",
       "title": "Questão 14",
-      "text": "Uma mulher de 39 anos de idade começou a apresentar um comportamento estranho, referido pela família, que surgiu deforma rápida e aguda. Os familiares contam que, há aproximadamente seis semanas, ela começou a sentir tristeza,desânimo, diminuição do apetite, falta de interesse e insônia. Na última semana, tem estado intensamente descon.ada e falaque estão mudando o seu sexo biológico. Enxerga o próprio corpo sendo mudado para o sexo masculino. Ouve vozesdizendo-lhe que deve cortar os seios com uma faca, pois eles cresceram por ter tomado hormônios de forma involuntária,dada por seres estranhos. Acredita que a família dela também foi possuída por tais seres que colocam hormônio na comida.Por isso, come apenas alimentos que estão embalados.Acerca desse caso clínico e com base nos conhecimentos médicos correlatos, julgue os itens a seguir.A paciente manifesta um quadro caracteristicamente dramático, infantil, sedutor e manipulativo, critérios necessários para odiagnóstico de transtorno dissociativo como comorbidade, segundo o DSM-5",
+      "text": "Uma mulher de 39 anos de idade começou a apresentar um comportamento estranho, referido pela família, que surgiu deforma rápida e aguda. Os familiares contam que, há aproximadamente seis semanas, ela começou a sentir tristeza,desânimo, diminuição do apetite, falta de interesse e insônia. Na última semana, tem estado intensamente descon.ada e falaque estão mudando o seu sexo biológico. Enxerga o próprio corpo sendo mudado para o sexo masculino. Ouve vozesdizendo-lhe que deve cortar os seios com uma faca, pois eles cresceram por ter tomado hormônios de forma involuntária,dada por seres estranhos. Acredita que a família dela também foi possuída por tais seres que colocam hormônio na comida. Por isso, come apenas alimentos que estão embalados. Acerca desse caso clínico e com base nos conhecimentos médicos correlatos, julgue os itens a seguir. A paciente manifesta um quadro caracteristicamente dramático, infantil, sedutor e manipulativo, critérios necessários para odiagnóstico de transtorno dissociativo como comorbidade, segundo o DSM-5",
       "options": [
         {
           "letter": "A",
@@ -30940,7 +30940,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos da Personalidade",
       "topic": "Transtornos da Personalidade",
       "title": "Questão 15",
-      "text": "Mulher, 46 anos de idade, foi enfermeira por cinco anos. Relata que após estupro .cou incapacitada para o trabalho. Foilevada ao serviço de emergência de um hospital em função de tentativa de autoextermínio por intoxicação exógena (“tomeitodos os comprimidos que tinha em casa. Não suporto os homens. Eles só querem sexo, são violentos e não me respeitam.Falam que eu sou difícil, que demando muita atenção, que estou sempre insatisfeita e que se não tenho o que quero. Se sebebo alguma coisa, piora... falo em morrer, quebro as coisas... Eu sei que é assim desde a adolescência... Brigo por pouca coisa, me sinto sempre abandonada e tenho vontade de me cortar. Eu me corto e me alivio. Não suporto frustração, em especial, na vida amorosa. Tenho um “vazio” no peito desde a juventude e às vezes .co furiosa e agrido quem está por perto. Não bastasse isso tudo, eu tenho uma tristeza enorme... não é coisa de hoje, isso já dura mais de dois anos... e tudo piorou assim.”).Quais são os diagnósticos mais prováveis?",
+      "text": "Mulher, 46 anos de idade, foi enfermeira por cinco anos. Relata que após estupro .cou incapacitada para o trabalho. Foilevada ao serviço de emergência de um hospital em função de tentativa de autoextermínio por intoxicação exógena (“tomeitodos os comprimidos que tinha em casa. Não suporto os homens. Eles só querem sexo, são violentos e não me respeitam. Falam que eu sou difícil, que demando muita atenção, que estou sempre insatisfeita e que se não tenho o que quero. Se sebebo alguma coisa, piora... falo em morrer, quebro as coisas... Eu sei que é assim desde a adolescência... Brigo por pouca coisa, me sinto sempre abandonada e tenho vontade de me cortar. Eu me corto e me alivio. Não suporto frustração, em especial, na vida amorosa. Tenho um “vazio” no peito desde a juventude e às vezes .co furiosa e agrido quem está por perto. Não bastasse isso tudo, eu tenho uma tristeza enorme... não é coisa de hoje, isso já dura mais de dois anos... e tudo piorou assim.”). Quais são os diagnósticos mais prováveis?",
       "options": [
         {
           "letter": "A",
@@ -31060,7 +31060,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos da Personalidade",
       "topic": "Transtornos da Personalidade",
       "title": "Questão 20",
-      "text": "Um estudante de direito de 28 anos é admitido no hospital por acidente automobilístico sem traumatismo craniano. Ele se mostra obstinado e rígido, exigindo que a equipe faça as coisas à sua maneira, mantendo suas tarefas acadêmicas nocomputador. Fala que sua namorada ameaçou deixá-lo caso ele continue com sua forma inHexível de ser e não jogue fora coisas inúteis que costuma armazenar. Qual a principal hipótese diagnóstica quanto ao tipo de transtorno de personalidade?A",
+      "text": "Um estudante de direito de 28 anos é admitido no hospital por acidente automobilístico sem traumatismo craniano. Ele se mostra obstinado e rígido, exigindo que a equipe faça as coisas à sua maneira, mantendo suas tarefas acadêmicas nocomputador. Fala que sua namorada ameaçou deixá-lo caso ele continue com sua forma inHexível de ser e não jogue fora coisas inúteis que costuma armazenar. Qual a principal hipótese diagnóstica quanto ao tipo de transtorno de personalidade? A",
       "options": [
         {
           "letter": "A",
@@ -31198,7 +31198,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos da Personalidade",
       "topic": "Transtornos da Personalidade",
       "title": "Questão 27",
-      "text": "Transtorno de Personalidade BorderlineJ., de 27 anos, vem à consulta com seu namorado querendo ajuda para \"seu estado de nervos\". Diz que sempre foi muitoirritada, brigona, instável nos relacionamentos. Inicialmente, deposita muita con.ança nas pessoas, mas por pequenos motivos discute, fala palavrões e acaba rompendo o vínculo com elas. \"Mudo de humor de uma hora para outra\", diz. Contaainda que , na mesma hora em que está bem, ela \"explode\" por motivo banal e .ca mal-humorada. Tem di.culdade de controlar a raiva e já tentou suicídio inúmeras vezes, sempre de forma impulsiva, quando passava por alguma discussão.Apresenta baixa autoestima e sentimento de vazio na maior parte do tempo. Esse quadro é mais compatível com",
+      "text": "Transtorno de Personalidade BorderlineJ., de 27 anos, vem à consulta com seu namorado querendo ajuda para \"seu estado de nervos\". Diz que sempre foi muitoirritada, brigona, instável nos relacionamentos. Inicialmente, deposita muita con.ança nas pessoas, mas por pequenos motivos discute, fala palavrões e acaba rompendo o vínculo com elas. \"Mudo de humor de uma hora para outra\", diz. Contaainda que , na mesma hora em que está bem, ela \"explode\" por motivo banal e .ca mal-humorada. Tem di.culdade de controlar a raiva e já tentou suicídio inúmeras vezes, sempre de forma impulsiva, quando passava por alguma discussão. Apresenta baixa autoestima e sentimento de vazio na maior parte do tempo. Esse quadro é mais compatível com",
       "options": [
         {
           "letter": "A",
@@ -31206,7 +31206,7 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "B",
-          "text": "orderline.BTranstorno bipolar tipo 1"
+          "text": "orderline. BTranstorno bipolar tipo 1"
         },
         {
           "letter": "C",
@@ -31292,7 +31292,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos da Personalidade",
       "topic": "Transtornos da Personalidade",
       "title": "Questão 30",
-      "text": "Uma mulher de 23 anos é hospitalizada na unidade psiquiátrica por ter cortado ambos os pulsos quando o seu terapeuta saiuem férias por uma semana. Os cortes foram super.ciais e não precisaram de pontos. A paciente diz que está zangada como psiquiatra por \"abandoná-la\". Relata que este tipo de comportamento é frequente e ocorre sempre que se sentecontrariada ou frustrada com algo. Informa que ao realizar estes atos automutilatórios, sente um alívio dos seus sentimentos negativos. A.rma que se deprime frequentemente, embora as depressões durem \"apenas algumas horas\". Relata que as pessoas não lhe compreendem, pois se queixam que ela é muito instável. Quando foi hospitalizada, disse ao psiquiatra queouvia uma voz lhe dizendo que \"ela nunca seria nada\", mas subsequentemente negou ter ouvido a voz. Esta é sua 4ªhospitalização, e todas foram por tentativa de suicídio que ocorreu após a partida de alguém que fazia parte da sua vida.Depois de três dias na unidade, o psiquiatra discute com a equipe de enfermagem. Ele a.rma que a paciente está secomportando muito bem, respondendo à terapia e merece alta. Já as enfermeiras a.rmam que ela não tem seguido as regras da unidade, dorme durante os encontros de grupo e ignora os limites estabelecidos.O médico conclui com hipótese diagnóstica",
+      "text": "Uma mulher de 23 anos é hospitalizada na unidade psiquiátrica por ter cortado ambos os pulsos quando o seu terapeuta saiuem férias por uma semana. Os cortes foram super.ciais e não precisaram de pontos. A paciente diz que está zangada como psiquiatra por \"abandoná-la\". Relata que este tipo de comportamento é frequente e ocorre sempre que se sentecontrariada ou frustrada com algo. Informa que ao realizar estes atos automutilatórios, sente um alívio dos seus sentimentos negativos. A.rma que se deprime frequentemente, embora as depressões durem \"apenas algumas horas\". Relata que as pessoas não lhe compreendem, pois se queixam que ela é muito instável. Quando foi hospitalizada, disse ao psiquiatra queouvia uma voz lhe dizendo que \"ela nunca seria nada\", mas subsequentemente negou ter ouvido a voz. Esta é sua 4ªhospitalização, e todas foram por tentativa de suicídio que ocorreu após a partida de alguém que fazia parte da sua vida. Depois de três dias na unidade, o psiquiatra discute com a equipe de enfermagem. Ele a.rma que a paciente está secomportando muito bem, respondendo à terapia e merece alta. Já as enfermeiras a.rmam que ela não tem seguido as regras da unidade, dorme durante os encontros de grupo e ignora os limites estabelecidos. O médico conclui com hipótese diagnóstica",
       "options": [
         {
           "letter": "A",
@@ -31360,7 +31360,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos da Personalidade",
       "topic": "Transtornos da Personalidade",
       "title": "Questão 32",
-      "text": "O diagnóstico de transtorno de personalidade baseia-se, fundamentalmente: Ano quadro psicopatológico.Bna curva de vida + exames complementares.Cna curva de vida.Dna avaliação realizada pelo exame neuropsicológico. 4000018253Respostas:1C2D3C4E5D6D7C8A9A10B11B12B13",
+      "text": "O diagnóstico de transtorno de personalidade baseia-se, fundamentalmente: Ano quadro psicopatológico. Bna curva de vida + exames complementares. Cna curva de vida. Dna avaliação realizada pelo exame neuropsicológico. 4000018253Respostas:1C2D3C4E5D6D7C8A9A10B11B12B13",
       "options": [
         {
           "letter": "A",
@@ -31486,7 +31486,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Psicóticos",
       "topic": "Transtornos Psicóticos",
       "title": "Questão 5",
-      "text": "EsquizofreniaDiagnóstico da EsquizofreniaA esquizofrenia é um dos mais comuns transtornos mentais graves, mas sua natureza essencial ainda não foi esclarecida;portanto, às vezes, ela é referida como uma síndrome, como o grupo de esquizofrenias ou, como na quinta edição doManual Diagnóstico e Estatístico de Transtornos Mentais (DSM-5), o espectro da esquizofrenia.Em relação aos critérios diagnósticos da esquizofrenia, assinale a afirmativa incorreta",
+      "text": "EsquizofreniaDiagnóstico da EsquizofreniaA esquizofrenia é um dos mais comuns transtornos mentais graves, mas sua natureza essencial ainda não foi esclarecida;portanto, às vezes, ela é referida como uma síndrome, como o grupo de esquizofrenias ou, como na quinta edição doManual Diagnóstico e Estatístico de Transtornos Mentais (DSM-5), o espectro da esquizofrenia. Em relação aos critérios diagnósticos da esquizofrenia, assinale a afirmativa incorreta",
       "options": [
         {
           "letter": "A",
@@ -31550,7 +31550,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Psicóticos",
       "topic": "Transtornos Psicóticos",
       "title": "Questão 7",
-      "text": "Leia o caso clínico a seguir.Marcos é um jovem de 22 anos que foi levado ao pronto socorro por ter parado de se movimentar. Há duas semanas,começou a ficar mais de 20 horas deitado e imóvel na cama, algumas vezes se levanta e vai ao banheiro, e outras vezes urina na cama. Quando alguém faz uma pergunta ou comentário, ele repetia a última palavra ou sílaba inúmeras vezes. Nosúltimos dois dias, vem se recusando a se alimentar, não fala nenhuma palavra por dias seguidos e mantém posturas estranhaspor horas, além de rigidez muscular. Faz uso de lítio e lamotrigina há dois anos, após ocorrência de um quadro maníaco ediagnóstico de transtorno bipolar. Qual é a síndrome apresentada no momento e a conduta adequada?",
+      "text": "Leia o caso clínico a seguir. Marcos é um jovem de 22 anos que foi levado ao pronto socorro por ter parado de se movimentar. Há duas semanas,começou a ficar mais de 20 horas deitado e imóvel na cama, algumas vezes se levanta e vai ao banheiro, e outras vezes urina na cama. Quando alguém faz uma pergunta ou comentário, ele repetia a última palavra ou sílaba inúmeras vezes. Nosúltimos dois dias, vem se recusando a se alimentar, não fala nenhuma palavra por dias seguidos e mantém posturas estranhaspor horas, além de rigidez muscular. Faz uso de lítio e lamotrigina há dois anos, após ocorrência de um quadro maníaco ediagnóstico de transtorno bipolar. Qual é a síndrome apresentada no momento e a conduta adequada?",
       "options": [
         {
           "letter": "A",
@@ -31617,7 +31617,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Psicóticos",
       "topic": "Transtornos Psicóticos",
       "title": "Questão 9",
-      "text": "Transtorno PsicóticosAmbrósio, 17 anos, é levado pelos pais à UBS para consulta com a médica de família. Os pais contam que há 3 meses opaciente parece conversar sozinho, apontando em diversas direções. Também notaram que há algumas semanas o garototem falado sobre temas como invasão alienígena e sobre a teoria dos “antigos astronautas”. A mãe, mais observadora,também conta que há quase um ano seu filho passa a maior parte do tempo no quarto, tem saído menos de casa e passa alguns dias sem tomar banho.Assinale qual é a melhor hipótese para o caso",
+      "text": "Transtorno PsicóticosAmbrósio, 17 anos, é levado pelos pais à UBS para consulta com a médica de família. Os pais contam que há 3 meses opaciente parece conversar sozinho, apontando em diversas direções. Também notaram que há algumas semanas o garototem falado sobre temas como invasão alienígena e sobre a teoria dos “antigos astronautas”. A mãe, mais observadora,também conta que há quase um ano seu filho passa a maior parte do tempo no quarto, tem saído menos de casa e passa alguns dias sem tomar banho. Assinale qual é a melhor hipótese para o caso",
       "options": [
         {
           "letter": "A",
@@ -31625,7 +31625,7 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "B",
-          "text": "reve.BEsquizofrenia"
+          "text": "reve. BEsquizofrenia"
         },
         {
           "letter": "C",
@@ -31633,7 +31633,7 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "D",
-          "text": "elirante Persistente.DMania Bipolar"
+          "text": "elirante Persistente. DMania Bipolar"
         }
       ],
       "sourceId": "4000164460",
@@ -31721,7 +31721,7 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "B",
-          "text": "reve.BEsquizofrenia"
+          "text": "reve. BEsquizofrenia"
         },
         {
           "letter": "C",
@@ -31729,7 +31729,7 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "D",
-          "text": "elirante Persistente.DTranstorno"
+          "text": "elirante Persistente. DTranstorno"
         },
         {
           "letter": "E",
@@ -31747,7 +31747,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Psicóticos",
       "topic": "Transtornos Psicóticos",
       "title": "Questão 13",
-      "text": "EsquizofreniaAlfredinho, 19 anos, é levado pelos pais à UBS para consulta com a clínica geral. Os pais contam que, há 2 meses, o pacienteparece conversar sozinho, apontando para diversas direções. Também notaram que, há algumas semanas, o garoto temfalado sobre temas como invasão alienígena e sobre a teoria dos “antigos astronautas”. A mãe, mais observadora, também conta que, há quase um ano, seu filho passa a maior parte do tempo no quarto, tem saído menos de casa e passa alguns diassem tomar banho.Assinale qual é a melhor hipótese para o caso",
+      "text": "EsquizofreniaAlfredinho, 19 anos, é levado pelos pais à UBS para consulta com a clínica geral. Os pais contam que, há 2 meses, o pacienteparece conversar sozinho, apontando para diversas direções. Também notaram que, há algumas semanas, o garoto temfalado sobre temas como invasão alienígena e sobre a teoria dos “antigos astronautas”. A mãe, mais observadora, também conta que, há quase um ano, seu filho passa a maior parte do tempo no quarto, tem saído menos de casa e passa alguns diassem tomar banho. Assinale qual é a melhor hipótese para o caso",
       "options": [
         {
           "letter": "A",
@@ -31777,7 +31777,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Psicóticos",
       "topic": "Transtornos Psicóticos",
       "title": "Questão 15",
-      "text": "EsquizofreniaM.,17 anos de idade, previamente saudável, passou a se comportar de maneira estranha. Às vezes, parecia assustado e diziaa seus amigos que estava sendo seguido pela polícia e pelo serviço secreto. Em outras ocasiões, foi visto rindo sozinho,mesmo sem razão aparente. Durante os últimos oito meses, passou mais tempo isolado, sem vontade de realizar seusafazeres e, aparentemente, preocupado com seus próprios pensamentos. Seu desempenho acadêmico se deteriorou.Nega uso de qualquer substância psicoativa. Quanto o diagnóstico de esquizofrenia segundo o DSM-5",
+      "text": "EsquizofreniaM.,17 anos de idade, previamente saudável, passou a se comportar de maneira estranha. Às vezes, parecia assustado e diziaa seus amigos que estava sendo seguido pela polícia e pelo serviço secreto. Em outras ocasiões, foi visto rindo sozinho,mesmo sem razão aparente. Durante os últimos oito meses, passou mais tempo isolado, sem vontade de realizar seusafazeres e, aparentemente, preocupado com seus próprios pensamentos. Seu desempenho acadêmico se deteriorou. Nega uso de qualquer substância psicoativa. Quanto o diagnóstico de esquizofrenia segundo o DSM-5",
       "options": [
         {
           "letter": "A",
@@ -31807,7 +31807,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Psicóticos",
       "topic": "Transtornos Psicóticos",
       "title": "Questão 16",
-      "text": "Você está tratando de um paciente de 22 anos com um quadro de esquizofrenia. Inicialmente, você prescreveu haloperidol15mg e observou, após 3 meses, não houve nenhuma resposta. Depois da primeira tentativa frustrada, você trocou ohaloperidol por olanzapina 20mg e, após 2 meses, notou uma resposta terapêutica pobre, então decidiu que o melhor émudar sua estratégia.Diante desse contexto, quais são: a melhor descrição do diagnóstico e a melhor conduta?",
+      "text": "Você está tratando de um paciente de 22 anos com um quadro de esquizofrenia. Inicialmente, você prescreveu haloperidol15mg e observou, após 3 meses, não houve nenhuma resposta. Depois da primeira tentativa frustrada, você trocou ohaloperidol por olanzapina 20mg e, após 2 meses, notou uma resposta terapêutica pobre, então decidiu que o melhor émudar sua estratégia. Diante desse contexto, quais são: a melhor descrição do diagnóstico e a melhor conduta?",
       "options": [
         {
           "letter": "A",
@@ -31841,7 +31841,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Psicóticos",
       "topic": "Transtornos Psicóticos",
       "title": "Questão 17",
-      "text": "EsquizofreniaSeu Altamiro procura o postinho de saúde acompanhado de seu genro Carlos, sua filha Adriana e seu filho Rodolfo, que foilevado “na marra” pelos familiares para uma avaliação médica. A família conta que Rodolfo, de 19 anos, está mais calado eintrospectivo há 6 meses, tem saído pouco do quarto, tem apresentado desleixo com sua aparência e abandonou afaculdade de engenharia naval. Além disso, há cerca de 40 dias, o paciente também tem dado gargalhadas no escuro, gritadiversas ofensas pela janela para pessoas que passam na rua e acha que o cachorro do vizinho tem feito xixi no gramado desua casa para provocá-lo. Apesar de toda a insistência de sua família, o paciente nega-se veementemente a aceitar ajuda especializada e refuta a possibilidade de tomar remédios. Inclusive, deu um “cruzado” no rosto do pai e cuspiu na mãe e nairmã, que correram para acudir seu Altamiro, além de atirar uma faca contra seu cunhado, que passou de raspão.Diante desse cenário, assinale o provável diagnóstico de Rodolfo",
+      "text": "EsquizofreniaSeu Altamiro procura o postinho de saúde acompanhado de seu genro Carlos, sua filha Adriana e seu filho Rodolfo, que foilevado “na marra” pelos familiares para uma avaliação médica. A família conta que Rodolfo, de 19 anos, está mais calado eintrospectivo há 6 meses, tem saído pouco do quarto, tem apresentado desleixo com sua aparência e abandonou afaculdade de engenharia naval. Além disso, há cerca de 40 dias, o paciente também tem dado gargalhadas no escuro, gritadiversas ofensas pela janela para pessoas que passam na rua e acha que o cachorro do vizinho tem feito xixi no gramado desua casa para provocá-lo. Apesar de toda a insistência de sua família, o paciente nega-se veementemente a aceitar ajuda especializada e refuta a possibilidade de tomar remédios. Inclusive, deu um “cruzado” no rosto do pai e cuspiu na mãe e nairmã, que correram para acudir seu Altamiro, além de atirar uma faca contra seu cunhado, que passou de raspão. Diante desse cenário, assinale o provável diagnóstico de Rodolfo",
       "options": [
         {
           "letter": "A",
@@ -31875,7 +31875,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Psicóticos",
       "topic": "Transtornos Psicóticos",
       "title": "Questão 18",
-      "text": "A paciente Jéssica Lorraine, 28 anos, está apresentando um comportamento “diferente” há 18 dias. Apresenta risosimotivados, acusa sua irmã de ser uma espiã da antiga união soviética e acredita que sua mãe deseja envenenála, colocandoveneno de rato na sua comida. O quadro iniciou se abruptamente, após ser acusada de furtar 12 reais do caixa domercadinho em que trabalha. Após avaliação médica, a paciente é internada, inicia o tratamento com antipsicótico e temuma melhora completa do quadro após uma semana, com retorno a sua funcionalidade e padrão de comportamento.A hipótese diagnóstica para o caso é de",
+      "text": "A paciente Jéssica Lorraine, 28 anos, está apresentando um comportamento “diferente” há 18 dias. Apresenta risosimotivados, acusa sua irmã de ser uma espiã da antiga união soviética e acredita que sua mãe deseja envenenála, colocandoveneno de rato na sua comida. O quadro iniciou se abruptamente, após ser acusada de furtar 12 reais do caixa domercadinho em que trabalha. Após avaliação médica, a paciente é internada, inicia o tratamento com antipsicótico e temuma melhora completa do quadro após uma semana, com retorno a sua funcionalidade e padrão de comportamento. A hipótese diagnóstica para o caso é de",
       "options": [
         {
           "letter": "A",
@@ -32039,7 +32039,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Psicóticos",
       "topic": "Transtornos Psicóticos",
       "title": "Questão 23",
-      "text": "Qual efeito colateral da clozapina gerou o protocolo de hemogramas semanais e mensais?A",
+      "text": "Qual efeito colateral da clozapina gerou o protocolo de hemogramas semanais e mensais? A",
       "options": [
         {
           "letter": "A",
@@ -32107,7 +32107,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Psicóticos",
       "topic": "Transtornos Psicóticos",
       "title": "Questão 26",
-      "text": "De acordo com o modelo histórico de diagnóstico da esquizofrenia, é correto afirmar:APara Emil Kraepelin, os sintomas psicóticos definiam a demência precoce.BEugene Bleuler incluiu anedonia nos 4",
+      "text": "De acordo com o modelo histórico de diagnóstico da esquizofrenia, é correto afirmar:APara Emil Kraepelin, os sintomas psicóticos definiam a demência precoce. BEugene Bleuler incluiu anedonia nos 4",
       "options": [
         {
           "letter": "A",
@@ -32141,7 +32141,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Psicóticos",
       "topic": "Transtornos Psicóticos",
       "title": "Questão 27",
-      "text": "Um militar reformado por causa do diagnóstico de transtorno bipolar enfartou e foi internado. Necessitou de uma cirurgia cardíaca de emergência. Desde que começou a tomar olanzapina, engordou e atualmente está obeso e sedentário. No pós-operatório, voltou a apresentar sintomas maníacos. O serviço de psiquiatria foi acionado para uma interconsulta.Acerca desse caso clínico e com base nos conhecimentos médicos correlatos, julgue os itens a seguir.Medicamentos antipsicóticos que diminuem os sintomas positivos da esquizofrenia pelo bloqueio dos receptores dedopamina na via mesolímbica podem, simultaneamente, piorar os sintomas negativos por bloquearem receptores dedopamina semelhantes na via mesocortical",
+      "text": "Um militar reformado por causa do diagnóstico de transtorno bipolar enfartou e foi internado. Necessitou de uma cirurgia cardíaca de emergência. Desde que começou a tomar olanzapina, engordou e atualmente está obeso e sedentário. No pós-operatório, voltou a apresentar sintomas maníacos. O serviço de psiquiatria foi acionado para uma interconsulta. Acerca desse caso clínico e com base nos conhecimentos médicos correlatos, julgue os itens a seguir. Medicamentos antipsicóticos que diminuem os sintomas positivos da esquizofrenia pelo bloqueio dos receptores dedopamina na via mesolímbica podem, simultaneamente, piorar os sintomas negativos por bloquearem receptores dedopamina semelhantes na via mesocortical",
       "options": [
         {
           "letter": "A",
@@ -32163,7 +32163,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Psicóticos",
       "topic": "Transtornos Psicóticos",
       "title": "Questão 28",
-      "text": "Um jovem de 18 anos de idade, depois de começar a trabalhar em uma agência de viagens, procura atendimentopsiquiátrico por aconselhamento da gerente que observou suas dificuldades em completar uma tarefa, seguir uma instruçãoe escutar quando alguém está falando com ele. Tem impulsividade e agitação. É desorganizado, distraído e demonstramuitas dificuldades escolares desde a infância, pois é difícil para ele conseguir se concentrar. Há quatro anos, usa álcool emaconha diariamente, várias vezes ao dia, inclusive no horário do trabalho. Sente-se também muito triste, com baixaautoestima, desesperançoso e com vontade de morrer. Para ele, parece que nunca vai conseguir ser feliz. Sua famíliasempre considerou que ele era “malcriado” e “preguiçoso”, por isso nunca procurou atendimento médico para ele.Com base nesse caso clínico e nos conhecimentos médicos correlatos, julgue os itens a seguir.Estudos de neuroimagem e patologia identi+cam anormalidades estruturais na apresentação da esquizofrenia, incluindo córtex pré-frontal e hipocampo menores e ventrículos aumentados, sugerindo desenvolvimento anormal",
+      "text": "Um jovem de 18 anos de idade, depois de começar a trabalhar em uma agência de viagens, procura atendimentopsiquiátrico por aconselhamento da gerente que observou suas dificuldades em completar uma tarefa, seguir uma instruçãoe escutar quando alguém está falando com ele. Tem impulsividade e agitação. É desorganizado, distraído e demonstramuitas dificuldades escolares desde a infância, pois é difícil para ele conseguir se concentrar. Há quatro anos, usa álcool emaconha diariamente, várias vezes ao dia, inclusive no horário do trabalho. Sente-se também muito triste, com baixaautoestima, desesperançoso e com vontade de morrer. Para ele, parece que nunca vai conseguir ser feliz. Sua famíliasempre considerou que ele era “malcriado” e “preguiçoso”, por isso nunca procurou atendimento médico para ele. Com base nesse caso clínico e nos conhecimentos médicos correlatos, julgue os itens a seguir. Estudos de neuroimagem e patologia identi+cam anormalidades estruturais na apresentação da esquizofrenia, incluindo córtex pré-frontal e hipocampo menores e ventrículos aumentados, sugerindo desenvolvimento anormal",
       "options": [
         {
           "letter": "A",
@@ -32185,7 +32185,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Psicóticos",
       "topic": "Transtornos Psicóticos",
       "title": "Questão 29",
-      "text": "Uma mãe encaminha o filho de 22 anos de idade para atendimento. Ele está com excesso de peso, descuidado com aaparência e a higiene corporal, e veste roupas pretas, desgrenhadas e inadequadas para a estação. Ele fala que não sabe omotivo de ter sido levado para consulta psiquiátrica, pois não está acontecendo nada de errado com ele. Acha que quemprecisa de tratamento é a mãe. “Ela é que é a louca”. No entanto, a mãe conta que, há mais ou menos 15 dias, o filho tentouamputar o próprio pênis com uma faca. Foi atendido na emergência e realizada a sutura do ferimento. Apesar de nunca tersido muito sociável, no último ano tem permanecido, a maior parte do tempo, trancado no quarto e indiferente a tudo.Mostrase cada vez mais estranho. Não aceita a comida que a mãe faz, pois fala que enxerga e sente o cheiro do venenoque ela põe. Come apenas alimentos industrializados e lacrados, como pão, margarina e refrigerante.Acerca desse caso clínico e tendo em vista os conhecimentos médicos correlatos, julgue os itens a seguir.Uma das medicações utilizadas no tratamento da esquizofrenia é a olanzapina, na dose inicial de 5 mg/dia a 10 mg/dia,podendo também ser usada para episódios maníacos ou mistos associados ao transtorno bipolar 1",
+      "text": "Uma mãe encaminha o filho de 22 anos de idade para atendimento. Ele está com excesso de peso, descuidado com aaparência e a higiene corporal, e veste roupas pretas, desgrenhadas e inadequadas para a estação. Ele fala que não sabe omotivo de ter sido levado para consulta psiquiátrica, pois não está acontecendo nada de errado com ele. Acha que quemprecisa de tratamento é a mãe. “Ela é que é a louca”. No entanto, a mãe conta que, há mais ou menos 15 dias, o filho tentouamputar o próprio pênis com uma faca. Foi atendido na emergência e realizada a sutura do ferimento. Apesar de nunca tersido muito sociável, no último ano tem permanecido, a maior parte do tempo, trancado no quarto e indiferente a tudo. Mostrase cada vez mais estranho. Não aceita a comida que a mãe faz, pois fala que enxerga e sente o cheiro do venenoque ela põe. Come apenas alimentos industrializados e lacrados, como pão, margarina e refrigerante. Acerca desse caso clínico e tendo em vista os conhecimentos médicos correlatos, julgue os itens a seguir. Uma das medicações utilizadas no tratamento da esquizofrenia é a olanzapina, na dose inicial de 5 mg/dia a 10 mg/dia,podendo também ser usada para episódios maníacos ou mistos associados ao transtorno bipolar 1",
       "options": [
         {
           "letter": "A",
@@ -32207,7 +32207,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Psicóticos",
       "topic": "Transtornos Psicóticos",
       "title": "Questão 30",
-      "text": "Uma mãe encaminha o filho de 22 anos de idade para atendimento. Ele está com excesso de peso, descuidado com aaparência e a higiene corporal, e veste roupas pretas, desgrenhadas e inadequadas para a estação. Ele fala que não sabe omotivo de ter sido levado para consulta psiquiátrica, pois não está acontecendo nada de errado com ele. Acha que quemprecisa de tratamento é a mãe. “Ela é que é a louca”. No entanto, a mãe conta que, há mais ou menos 15 dias, o filho tentouamputar o próprio pênis com uma faca. Foi atendido na emergência e realizada a sutura do ferimento. Apesar de nunca tersido muito sociável, no último ano tem permanecido, a maior parte do tempo, trancado no quarto e indiferente a tudo.Mostrase cada vez mais estranho. Não aceita a comida que a mãe faz, pois fala que enxerga e sente o cheiro do venenoque ela põe. Come apenas alimentos industrializados e lacrados, como pão, margarina e refrigerante.Acerca desse caso clínico e tendo em vista os conhecimentos médicos correlatos, julgue os itens a seguir.Os sintomas positivos da esquizofrenia são aqueles que expressam um empobrecimento ou a perda de funções mentais",
+      "text": "Uma mãe encaminha o filho de 22 anos de idade para atendimento. Ele está com excesso de peso, descuidado com aaparência e a higiene corporal, e veste roupas pretas, desgrenhadas e inadequadas para a estação. Ele fala que não sabe omotivo de ter sido levado para consulta psiquiátrica, pois não está acontecendo nada de errado com ele. Acha que quemprecisa de tratamento é a mãe. “Ela é que é a louca”. No entanto, a mãe conta que, há mais ou menos 15 dias, o filho tentouamputar o próprio pênis com uma faca. Foi atendido na emergência e realizada a sutura do ferimento. Apesar de nunca tersido muito sociável, no último ano tem permanecido, a maior parte do tempo, trancado no quarto e indiferente a tudo. Mostrase cada vez mais estranho. Não aceita a comida que a mãe faz, pois fala que enxerga e sente o cheiro do venenoque ela põe. Come apenas alimentos industrializados e lacrados, como pão, margarina e refrigerante. Acerca desse caso clínico e tendo em vista os conhecimentos médicos correlatos, julgue os itens a seguir. Os sintomas positivos da esquizofrenia são aqueles que expressam um empobrecimento ou a perda de funções mentais",
       "options": [
         {
           "letter": "A",
@@ -32229,7 +32229,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Psicóticos",
       "topic": "Transtornos Psicóticos",
       "title": "Questão 31",
-      "text": "Uma mãe encaminha o filho de 22 anos de idade para atendimento. Ele está com excesso de peso, descuidado com aaparência e a higiene corporal, e veste roupas pretas, desgrenhadas e inadequadas para a estação. Ele fala que não sabe omotivo de ter sido levado para consulta psiquiátrica, pois não está acontecendo nada de errado com ele. Acha que quemprecisa de tratamento é a mãe. “Ela é que é a louca”. No entanto, a mãe conta que, há mais ou menos 15 dias, o filho tentouamputar o próprio pênis com uma faca. Foi atendido na emergência e realizada a sutura do ferimento. Apesar de nunca tersido muito sociável, no último ano tem permanecido, a maior parte do tempo, trancado no quarto e indiferente a tudo.Mostrase cada vez mais estranho. Não aceita a comida que a mãe faz, pois fala que enxerga e sente o cheiro do venenoque ela põe. Come apenas alimentos industrializados e lacrados, como pão, margarina e refrigerante.Acerca desse caso clínico e tendo em vista os conhecimentos médicos correlatos, julgue os itens a seguir.Tipicamente na esquizofrenia, o delírio é bizarro e mal sistematizado, podendo ser primário ou secundário",
+      "text": "Uma mãe encaminha o filho de 22 anos de idade para atendimento. Ele está com excesso de peso, descuidado com aaparência e a higiene corporal, e veste roupas pretas, desgrenhadas e inadequadas para a estação. Ele fala que não sabe omotivo de ter sido levado para consulta psiquiátrica, pois não está acontecendo nada de errado com ele. Acha que quemprecisa de tratamento é a mãe. “Ela é que é a louca”. No entanto, a mãe conta que, há mais ou menos 15 dias, o filho tentouamputar o próprio pênis com uma faca. Foi atendido na emergência e realizada a sutura do ferimento. Apesar de nunca tersido muito sociável, no último ano tem permanecido, a maior parte do tempo, trancado no quarto e indiferente a tudo. Mostrase cada vez mais estranho. Não aceita a comida que a mãe faz, pois fala que enxerga e sente o cheiro do venenoque ela põe. Come apenas alimentos industrializados e lacrados, como pão, margarina e refrigerante. Acerca desse caso clínico e tendo em vista os conhecimentos médicos correlatos, julgue os itens a seguir. Tipicamente na esquizofrenia, o delírio é bizarro e mal sistematizado, podendo ser primário ou secundário",
       "options": [
         {
           "letter": "A",
@@ -32251,7 +32251,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Psicóticos",
       "topic": "Transtornos Psicóticos",
       "title": "Questão 32",
-      "text": "Uma mãe encaminha o filho de 22 anos de idade para atendimento. Ele está com excesso de peso, descuidado com aaparência e a higiene corporal, e veste roupas pretas, desgrenhadas e inadequadas para a estação. Ele fala que não sabe omotivo de ter sido levado para consulta psiquiátrica, pois não está acontecendo nada de errado com ele. Acha que quemprecisa de tratamento é a mãe. “Ela é que é a louca”. No entanto, a mãe conta que, há mais ou menos 15 dias, o filho tentouamputar o próprio pênis com uma faca. Foi atendido na emergência e realizada a sutura do ferimento. Apesar de nunca tersido muito sociável, no último ano tem permanecido, a maior parte do tempo, trancado no quarto e indiferente a tudo.Mostra-se cada vez mais estranho. Não aceita a comida que a mãe faz, pois fala que enxerga e sente o cheiro do venenoque ela põe. Come apenas alimentos industrializados e lacrados, como pão, margarina e refrigerante. Acerca desse caso clínico e tendo em vista os conhecimentos médicos correlatos, julgue os itens a seguir.Como referido no caso, a esquizofrenia é considerada um transtorno do neurodesenvolvimento",
+      "text": "Uma mãe encaminha o filho de 22 anos de idade para atendimento. Ele está com excesso de peso, descuidado com aaparência e a higiene corporal, e veste roupas pretas, desgrenhadas e inadequadas para a estação. Ele fala que não sabe omotivo de ter sido levado para consulta psiquiátrica, pois não está acontecendo nada de errado com ele. Acha que quemprecisa de tratamento é a mãe. “Ela é que é a louca”. No entanto, a mãe conta que, há mais ou menos 15 dias, o filho tentouamputar o próprio pênis com uma faca. Foi atendido na emergência e realizada a sutura do ferimento. Apesar de nunca tersido muito sociável, no último ano tem permanecido, a maior parte do tempo, trancado no quarto e indiferente a tudo. Mostra-se cada vez mais estranho. Não aceita a comida que a mãe faz, pois fala que enxerga e sente o cheiro do venenoque ela põe. Come apenas alimentos industrializados e lacrados, como pão, margarina e refrigerante. Acerca desse caso clínico e tendo em vista os conhecimentos médicos correlatos, julgue os itens a seguir. Como referido no caso, a esquizofrenia é considerada um transtorno do neurodesenvolvimento",
       "options": [
         {
           "letter": "A",
@@ -32273,7 +32273,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Psicóticos",
       "topic": "Transtornos Psicóticos",
       "title": "Questão 33",
-      "text": "Uma mãe encaminha o filho de 22 anos de idade para atendimento. Ele está com excesso de peso, descuidado com aaparência e a higiene corporal, e veste roupas pretas, desgrenhadas e inadequadas para a estação. Ele fala que não sabe omotivo de ter sido levado para consulta psiquiátrica, pois não está acontecendo nada de errado com ele. Acha que quemprecisa de tratamento é a mãe. “Ela é que é a louca”. No entanto, a mãe conta que, há mais ou menos 15 dias, o filho tentouamputar o próprio pênis com uma faca. Foi atendido na emergência e realizada a sutura do ferimento. Apesar de nunca tersido muito sociável, no último ano tem permanecido, a maior parte do tempo, trancado no quarto e indiferente a tudo.Mostrase cada vez mais estranho. Não aceita a comida que a mãe faz, pois fala que enxerga e sente o cheiro do venenoque ela põe. Come apenas alimentos industrializados e lacrados, como pão, margarina e refrigerante.Acerca desse caso clínico e tendo em vista os conhecimentos médicos correlatos, julgue os itens a seguir.O caso refere-se ao possível diagnóstico de esquizofrenia. A epidemiologia desse transtorno varia de acordo com a região,sendo maior em países considerados menos desenvolvidos, quando comparados aos mais desenvolvidos",
+      "text": "Uma mãe encaminha o filho de 22 anos de idade para atendimento. Ele está com excesso de peso, descuidado com aaparência e a higiene corporal, e veste roupas pretas, desgrenhadas e inadequadas para a estação. Ele fala que não sabe omotivo de ter sido levado para consulta psiquiátrica, pois não está acontecendo nada de errado com ele. Acha que quemprecisa de tratamento é a mãe. “Ela é que é a louca”. No entanto, a mãe conta que, há mais ou menos 15 dias, o filho tentouamputar o próprio pênis com uma faca. Foi atendido na emergência e realizada a sutura do ferimento. Apesar de nunca tersido muito sociável, no último ano tem permanecido, a maior parte do tempo, trancado no quarto e indiferente a tudo. Mostrase cada vez mais estranho. Não aceita a comida que a mãe faz, pois fala que enxerga e sente o cheiro do venenoque ela põe. Come apenas alimentos industrializados e lacrados, como pão, margarina e refrigerante. Acerca desse caso clínico e tendo em vista os conhecimentos médicos correlatos, julgue os itens a seguir. O caso refere-se ao possível diagnóstico de esquizofrenia. A epidemiologia desse transtorno varia de acordo com a região,sendo maior em países considerados menos desenvolvidos, quando comparados aos mais desenvolvidos",
       "options": [
         {
           "letter": "A",
@@ -32295,7 +32295,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Psicóticos",
       "topic": "Transtornos Psicóticos",
       "title": "Questão 35",
-      "text": "Uma mulher de 39 anos de idade começou a apresentar um comportamento estranho, referido pela família, que surgiu de forma rápida e aguda. Os familiares contam que, há aproximadamente seis semanas, ela começou a sentir tristeza,desânimo, diminuição do apetite, falta de interesse e insônia. Na última semana, tem estado intensamente desconfiada e falaque estão mudando o seu sexo biológico. Enxerga o próprio corpo sendo mudado para o sexo masculino. Ouve vozesdizendo-lhe que deve cortar os seios com uma faca, pois eles cresceram por ter tomado hormônios de forma involuntária,dada por seres estranhos. Acredita que a família dela também foi possuída por tais seres que colocam hormônio na comida.Por isso, come apenas alimentos que estão embalados.Acerca desse caso clínico e com base nos conhecimentos médicos correlatos, julgue os itens a seguir.No caso clínico mencionado, podem ser identificados sintomas característicos da síndrome depressiva, da síndrome psicótica, da síndrome relacionada ao consumo de alimentos, da síndrome relacionada a substâncias psicoativas e da síndrome relacionada ao sono",
+      "text": "Uma mulher de 39 anos de idade começou a apresentar um comportamento estranho, referido pela família, que surgiu de forma rápida e aguda. Os familiares contam que, há aproximadamente seis semanas, ela começou a sentir tristeza,desânimo, diminuição do apetite, falta de interesse e insônia. Na última semana, tem estado intensamente desconfiada e falaque estão mudando o seu sexo biológico. Enxerga o próprio corpo sendo mudado para o sexo masculino. Ouve vozesdizendo-lhe que deve cortar os seios com uma faca, pois eles cresceram por ter tomado hormônios de forma involuntária,dada por seres estranhos. Acredita que a família dela também foi possuída por tais seres que colocam hormônio na comida. Por isso, come apenas alimentos que estão embalados. Acerca desse caso clínico e com base nos conhecimentos médicos correlatos, julgue os itens a seguir. No caso clínico mencionado, podem ser identificados sintomas característicos da síndrome depressiva, da síndrome psicótica, da síndrome relacionada ao consumo de alimentos, da síndrome relacionada a substâncias psicoativas e da síndrome relacionada ao sono",
       "options": [
         {
           "letter": "A",
@@ -32317,7 +32317,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Psicóticos",
       "topic": "Transtornos Psicóticos",
       "title": "Questão 37",
-      "text": "Uma mulher de 39 anos de idade começou a apresentar um comportamento estranho, referido pela família, que surgiu deforma rápida e aguda. Os familiares contam que, há aproximadamente seis semanas, ela começou a sentir tristeza,desânimo, diminuição do apetite, falta de interesse e insônia. Na última semana, tem estado intensamente desconfiada e falaque estão mudando o seu sexo biológico. Enxerga o próprio corpo sendo mudado para o sexo masculino. Ouve vozesdizendo-lhe que deve cortar os seios com uma faca, pois eles cresceram por ter tomado hormônios de forma involuntária,dada por seres estranhos. Acredita que a família dela também foi possuída por tais seres que colocam hormônio na comida.Por isso, come apenas alimentos que estão embalados.Acerca desse caso clínico e com base nos conhecimentos médicos correlatos, julgue os itens a seguir.No transtorno delirante, segundo o Manual de Diagnóstico e Estatística (DSM-5), subtipo somático, as alucinações são proeminentes e, dessa forma, esse também deve ser considerado como diagnóstico diferencial do caso apresentado",
+      "text": "Uma mulher de 39 anos de idade começou a apresentar um comportamento estranho, referido pela família, que surgiu deforma rápida e aguda. Os familiares contam que, há aproximadamente seis semanas, ela começou a sentir tristeza,desânimo, diminuição do apetite, falta de interesse e insônia. Na última semana, tem estado intensamente desconfiada e falaque estão mudando o seu sexo biológico. Enxerga o próprio corpo sendo mudado para o sexo masculino. Ouve vozesdizendo-lhe que deve cortar os seios com uma faca, pois eles cresceram por ter tomado hormônios de forma involuntária,dada por seres estranhos. Acredita que a família dela também foi possuída por tais seres que colocam hormônio na comida. Por isso, come apenas alimentos que estão embalados. Acerca desse caso clínico e com base nos conhecimentos médicos correlatos, julgue os itens a seguir. No transtorno delirante, segundo o Manual de Diagnóstico e Estatística (DSM-5), subtipo somático, as alucinações são proeminentes e, dessa forma, esse também deve ser considerado como diagnóstico diferencial do caso apresentado",
       "options": [
         {
           "letter": "A",
@@ -32339,7 +32339,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Psicóticos",
       "topic": "Transtornos Psicóticos",
       "title": "Questão 38",
-      "text": "Uma mulher de 39 anos de idade começou a apresentar um comportamento estranho, referido pela família, que surgiu deforma rápida e aguda. Os familiares contam que, há aproximadamente seis semanas, ela começou a sentir tristeza,desânimo, diminuição do apetite, falta de interesse e insônia. Na última semana, tem estado intensamente desconfiada e falaque estão mudando o seu sexo biológico. Enxerga o próprio corpo sendo mudado para o sexo masculino. Ouve vozesdizendo-lhe que deve cortar os seios com uma faca, pois eles cresceram por ter tomado hormônios de forma involuntária,dada por seres estranhos. Acredita que a família dela também foi possuída por tais seres que colocam hormônio na comida.Por isso, come apenas alimentos que estão embalados.Acerca desse caso clínico e com base nos conhecimentos médicos correlatos, julgue os itens a seguir.Trata-se de uma síndrome psicótica, quadro em que é importante considerar a esquizofrenia como diagnóstico diferencial",
+      "text": "Uma mulher de 39 anos de idade começou a apresentar um comportamento estranho, referido pela família, que surgiu deforma rápida e aguda. Os familiares contam que, há aproximadamente seis semanas, ela começou a sentir tristeza,desânimo, diminuição do apetite, falta de interesse e insônia. Na última semana, tem estado intensamente desconfiada e falaque estão mudando o seu sexo biológico. Enxerga o próprio corpo sendo mudado para o sexo masculino. Ouve vozesdizendo-lhe que deve cortar os seios com uma faca, pois eles cresceram por ter tomado hormônios de forma involuntária,dada por seres estranhos. Acredita que a família dela também foi possuída por tais seres que colocam hormônio na comida. Por isso, come apenas alimentos que estão embalados. Acerca desse caso clínico e com base nos conhecimentos médicos correlatos, julgue os itens a seguir. Trata-se de uma síndrome psicótica, quadro em que é importante considerar a esquizofrenia como diagnóstico diferencial",
       "options": [
         {
           "letter": "A",
@@ -32361,7 +32361,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Psicóticos",
       "topic": "Transtornos Psicóticos",
       "title": "Questão 39",
-      "text": "Paciente do sexo feminino, 40 anos de idade, chega ao psiquiatra alegando que seu vizinho começou a hostilizá-la,provocando-a ao andar e mover os móveis durante a noite em casa. Ela alega que o vizinho tem vigiado o comportamento dela de modo muito ostensivo. Segundo a filha da paciente, o vizinho e sua mãe sempre conviveram de forma cordial,respeitosa e cooperativa e que não observou nenhuma alteração no comportamento dele. Informa que a mãe sempre foi bastante sistemática, mas que não tinha apresentado nada parecido com essas queixas, antes. Ao exame do estado mental,a única alteração observada é a convicção em relação à mudança de comportamento do vizinho.Qual é o diagnóstico mais provável?",
+      "text": "Paciente do sexo feminino, 40 anos de idade, chega ao psiquiatra alegando que seu vizinho começou a hostilizá-la,provocando-a ao andar e mover os móveis durante a noite em casa. Ela alega que o vizinho tem vigiado o comportamento dela de modo muito ostensivo. Segundo a filha da paciente, o vizinho e sua mãe sempre conviveram de forma cordial,respeitosa e cooperativa e que não observou nenhuma alteração no comportamento dele. Informa que a mãe sempre foi bastante sistemática, mas que não tinha apresentado nada parecido com essas queixas, antes. Ao exame do estado mental,a única alteração observada é a convicção em relação à mudança de comportamento do vizinho. Qual é o diagnóstico mais provável?",
       "options": [
         {
           "letter": "A",
@@ -32608,7 +32608,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Psicóticos",
       "topic": "Transtornos Psicóticos",
       "title": "Questão 48",
-      "text": "Internação PsiquiátricaTratamento da EsquizofreniaEm uma visita domiciliar feita por uma Equipe de Estratégia de Saúde da Família (ESF), em uma comunidade localizada naperiferia de uma grande cidade brasileira, foi encontrada a seguinte situação: uma mãe relata à Equipe que seu filho, de 19anos, há cerca de 8 meses, vem apresentando sintomas de comportamento bizarro, solilóquios, alucinações auditivas evisuais, isolamento social importante e heteroagressividade em relação aos membros da família, tendo já causado lesão corporal na própria mãe com objeto perfurocortante. Está sem tratamento, pois, segundo ela, o paciente se recusa à ajuda. Diante desse quadro, qual a conduta a ser tomada?AEncaminhamento para um Centro de Atenção Psicossocial (C",
+      "text": "Internação PsiquiátricaTratamento da EsquizofreniaEm uma visita domiciliar feita por uma Equipe de Estratégia de Saúde da Família (ESF), em uma comunidade localizada naperiferia de uma grande cidade brasileira, foi encontrada a seguinte situação: uma mãe relata à Equipe que seu filho, de 19anos, há cerca de 8 meses, vem apresentando sintomas de comportamento bizarro, solilóquios, alucinações auditivas evisuais, isolamento social importante e heteroagressividade em relação aos membros da família, tendo já causado lesão corporal na própria mãe com objeto perfurocortante. Está sem tratamento, pois, segundo ela, o paciente se recusa à ajuda. Diante desse quadro, qual a conduta a ser tomada? AEncaminhamento para um Centro de Atenção Psicossocial (C",
       "options": [
         {
           "letter": "A",
@@ -32698,7 +32698,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Psicóticos",
       "topic": "Transtornos Psicóticos",
       "title": "Questão 51",
-      "text": "Paciente de 46 anos, do sexo masculino, é trazido por familiares para atendimento por estar \"retraído e isolado\". Há um mêsnão sai do quarto e nem toma banho. O paciente apresenta-se apático, retraído socialmente e está há anos sem trabalhar.Não se engaja em atividades prazerosas e nem em projetos de longo prazo. Fala poucas frases esparsas e desconectadase neologismos frequentes. Diz não entender o motivo de ter sido levado ao médico, ainda que passe dias sem tomar banhoe escovar os dentes. Não se sente triste. Os sintomas vêm se agravando há cerca de 20 anos e se iniciaram após um quadro psicótico que necessitou de internação por dois meses. Nesse caso, qual seria o tratamento ideal para esse paciente?",
+      "text": "Paciente de 46 anos, do sexo masculino, é trazido por familiares para atendimento por estar \"retraído e isolado\". Há um mêsnão sai do quarto e nem toma banho. O paciente apresenta-se apático, retraído socialmente e está há anos sem trabalhar. Não se engaja em atividades prazerosas e nem em projetos de longo prazo. Fala poucas frases esparsas e desconectadase neologismos frequentes. Diz não entender o motivo de ter sido levado ao médico, ainda que passe dias sem tomar banhoe escovar os dentes. Não se sente triste. Os sintomas vêm se agravando há cerca de 20 anos e se iniciaram após um quadro psicótico que necessitou de internação por dois meses. Nesse caso, qual seria o tratamento ideal para esse paciente?",
       "options": [
         {
           "letter": "A",
@@ -32799,7 +32799,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Psicóticos",
       "topic": "Transtornos Psicóticos",
       "title": "Questão 54",
-      "text": "Considere as assertivas abaixo sobre esquizofrenia. I - Menos de 10% das pessoas com esquizofrenia morrem por suicídio.II. - Pessoas com esquizofrenia frequentemente apresentam atitutes hostis e agressivas com estranhos de forma aleatória.III. - Em comparação com a população geral, as pessoas com esquizofrenia são mais frequentemente vítimas de violência.Quais são corretas? A",
+      "text": "Considere as assertivas abaixo sobre esquizofrenia. I - Menos de 10% das pessoas com esquizofrenia morrem por suicídio. II. - Pessoas com esquizofrenia frequentemente apresentam atitutes hostis e agressivas com estranhos de forma aleatória. III. - Em comparação com a população geral, as pessoas com esquizofrenia são mais frequentemente vítimas de violência. Quais são corretas? A",
       "options": [
         {
           "letter": "A",
@@ -33061,7 +33061,7 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "E",
-          "text": "Redução da fala.São considerados sintomas positivos dentro do quadro de esquizofrenia:"
+          "text": "Redução da fala. São considerados sintomas positivos dentro do quadro de esquizofrenia:"
         }
       ],
       "sourceId": "4000054380",
@@ -33109,7 +33109,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Psicóticos",
       "topic": "Transtornos Psicóticos",
       "title": "Questão 64",
-      "text": "Homem, 21 anos, vem para consulta trazido por acompanhantes que referem que ele vem apresentando dificuldade de expressar emoções e sentimentos associados com agitação, confusão e alucinações auditivas há cerca de 6 meses. Qualmelhor alternativa para dar início ao seu tratamento?A",
+      "text": "Homem, 21 anos, vem para consulta trazido por acompanhantes que referem que ele vem apresentando dificuldade de expressar emoções e sentimentos associados com agitação, confusão e alucinações auditivas há cerca de 6 meses. Qualmelhor alternativa para dar início ao seu tratamento? A",
       "options": [
         {
           "letter": "A",
@@ -33139,7 +33139,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Psicóticos",
       "topic": "Transtornos Psicóticos",
       "title": "Questão 65",
-      "text": "Homem, 22 anos de idade, chega ao pronto-socorro com história de alteração do comportamento há 2 dias, tendo agredido a mãe há poucas horas. Acusa os pais de colocarem câmeras pela casa para vigiá-lo e de tentarem envenená-lo.Os pais relatam que o paciente faz uso abusivo de álcool e uso regular de maconha há um ano, além de grandesquantidades de cocaína no último mês. Negam doenças prévias do filho e referem história de dependência química e de esquizofrenia na família (tio e primos). O exame clínico é normal e o do estado mental revelou desorientação alopsíquica,hipotenacidade, agitação psicomotora, ideias delirantes de caráter persecutório. O diagnóstico e o tratamento inicial no pronto-socorro, respectivamente, são",
+      "text": "Homem, 22 anos de idade, chega ao pronto-socorro com história de alteração do comportamento há 2 dias, tendo agredido a mãe há poucas horas. Acusa os pais de colocarem câmeras pela casa para vigiá-lo e de tentarem envenená-lo. Os pais relatam que o paciente faz uso abusivo de álcool e uso regular de maconha há um ano, além de grandesquantidades de cocaína no último mês. Negam doenças prévias do filho e referem história de dependência química e de esquizofrenia na família (tio e primos). O exame clínico é normal e o do estado mental revelou desorientação alopsíquica,hipotenacidade, agitação psicomotora, ideias delirantes de caráter persecutório. O diagnóstico e o tratamento inicial no pronto-socorro, respectivamente, são",
       "options": [
         {
           "letter": "A",
@@ -33210,7 +33210,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Psicóticos",
       "topic": "Transtornos Psicóticos",
       "title": "Questão 68",
-      "text": "Embora a esquizofrenia não seja uma doença curável, em muitos casos os sintomas e a evolução da doença podem sercontrolados. Entretanto, o sucesso do tratamento com medicamentos antipsicóticos está intimamente relacionado com opercentual da resposta ao medicamento e à sua adesão. Os efeitos colaterais do uso da medicação poderão comprometera devida utilização desses fármacos, sendo a inter-relação do diabetes com os antipsicóticos de importante entendimento.Sobre isso, assinale a alternativa INCORRETA",
+      "text": "Embora a esquizofrenia não seja uma doença curável, em muitos casos os sintomas e a evolução da doença podem sercontrolados. Entretanto, o sucesso do tratamento com medicamentos antipsicóticos está intimamente relacionado com opercentual da resposta ao medicamento e à sua adesão. Os efeitos colaterais do uso da medicação poderão comprometera devida utilização desses fármacos, sendo a inter-relação do diabetes com os antipsicóticos de importante entendimento. Sobre isso, assinale a alternativa INCORRETA",
       "options": [
         {
           "letter": "A",
@@ -33357,7 +33357,7 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "B",
-          "text": "reve.BEsquizofrenia indiferenciada"
+          "text": "reve. BEsquizofrenia indiferenciada"
         },
         {
           "letter": "C",
@@ -33365,7 +33365,7 @@ window.BANCO_RMAIS_QUESTIONS = {
         },
         {
           "letter": "D",
-          "text": "elirante Persistente.DTranstorno psicótico induzido por substâncias"
+          "text": "elirante Persistente. DTranstorno psicótico induzido por substâncias"
         }
       ],
       "sourceId": "4000102957",
@@ -33760,7 +33760,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Transtornos Psicóticos",
       "topic": "Transtornos Psicóticos",
       "title": "Questão 93",
-      "text": "Transtorno Delirante PersistenteL.A.M., 55 anos, solteira, professora de ensino médio, evangélica praticante, 1,50 m de altura, pesando cerca de 70 kg, foilevada ao consultório por duas irmãs. Essas alegam que, há mais de 10 anos, a irmã começou a “perceber ” que alguns alunos e pessoas na rua ou mesmo familiares cochicham, fazem gestos, dando a entender que ela é homossexual. No início,as irmãs chegaram a questionar pessoas, condoendo-se do sofrimento de L.A.M., porém, após algum tempo, ficou claro que era tudo imaginação da paciente. Recentemente, a situação piorou, pois ela tem feito denúncias à delegacia e criadoconstrangimento para todos, muito embora continue absolutamente normal em todos os outros aspectos funcionais.Questionada, a paciente garante que é vítima inocente e que realmente muita gente tem feito sinais ou falado entre si, sendoela o alvo desses comentários maldosos. A paciente afirma que jamais experimentou alucinações auditivas, apenas percebe os significados nos gestos dos outros. O quadro descrito é compatível com transtorno",
+      "text": "Transtorno Delirante PersistenteL.A.M., 55 anos, solteira, professora de ensino médio, evangélica praticante, 1,50 m de altura, pesando cerca de 70 kg, foilevada ao consultório por duas irmãs. Essas alegam que, há mais de 10 anos, a irmã começou a “perceber ” que alguns alunos e pessoas na rua ou mesmo familiares cochicham, fazem gestos, dando a entender que ela é homossexual. No início,as irmãs chegaram a questionar pessoas, condoendo-se do sofrimento de L.A.M., porém, após algum tempo, ficou claro que era tudo imaginação da paciente. Recentemente, a situação piorou, pois ela tem feito denúncias à delegacia e criadoconstrangimento para todos, muito embora continue absolutamente normal em todos os outros aspectos funcionais. Questionada, a paciente garante que é vítima inocente e que realmente muita gente tem feito sinais ou falado entre si, sendoela o alvo desses comentários maldosos. A paciente afirma que jamais experimentou alucinações auditivas, apenas percebe os significados nos gestos dos outros. O quadro descrito é compatível com transtorno",
       "options": [
         {
           "letter": "A",
@@ -37016,7 +37016,7 @@ window.BANCO_RMAIS_QUESTIONS = {
       "source": "Desenvolvimento Neuropsicomotor",
       "topic": "Desenvolvimento Neuropsicomotor",
       "title": "Questão 24",
-      "text": "Uma lactente de 13 meses de idade, de sexo feminino, é levada à Unidade Básica de Saúde para consulta de rotina. A mãe está preocupada, pois a criança ainda não é capaz de andar sem apoio. Não há outras queixas. O pré-natal materno não possui intercorrências; nasceu de parto normal, com 40 semanas de idade gestacional; Boletim de Apgar no 1° minuto = 6; no 5° minuto = 9; e no 10° minuto = 10; com peso ao nascer = 3 200 g e comprimento ao nascer = 50 cm. No exame clínico neonatal, observou-se estalido à manobra de Ortolani à direita; na ocasião, realizou exame ultrassonográfico de quadril apresentando resultado I pelo método de Graf. Recebeu alta no segundo dia de vida. Sem antecedentes pessoais ou familiares relevantes. Desenvolvimento neuropsicomotor prévio: sorriso social aos 2 meses; fixou o pescoço aos três meses; sentou sem apoio aos sete meses; passou a distinguir familiares de estranhos e a reconhecer seu nome aos nove meses; primeiras palavras com significado aos 11 meses. Atualmente engatinha, fica em pé com apoio das mãos e arrisca alguns passos sem apoio, mas logo cai; usa copo com ajuda, compreende ordens simples, bate palma, manda beijo, fala “mama” e “papa” para referir-se à mãe e ao pai respectivamente. Não apresenta alterações ao exame clínico.A conduta adequada para essa criança, considerando o desenvolvimento da marcha é",
+      "text": "Uma lactente de 13 meses de idade, de sexo feminino, é levada à Unidade Básica de Saúde para consulta de rotina. A mãe está preocupada, pois a criança ainda não é capaz de andar sem apoio. Não há outras queixas. O pré-natal materno não possui intercorrências; nasceu de parto normal, com 40 semanas de idade gestacional; Boletim de Apgar no 1° minuto = 6; no 5° minuto = 9; e no 10° minuto = 10; com peso ao nascer = 3 200 g e comprimento ao nascer = 50 cm. No exame clínico neonatal, observou-se estalido à manobra de Ortolani à direita; na ocasião, realizou exame ultrassonográfico de quadril apresentando resultado I pelo método de Graf. Recebeu alta no segundo dia de vida. Sem antecedentes pessoais ou familiares relevantes. Desenvolvimento neuropsicomotor prévio: sorriso social aos 2 meses; fixou o pescoço aos três meses; sentou sem apoio aos sete meses; passou a distinguir familiares de estranhos e a reconhecer seu nome aos nove meses; primeiras palavras com significado aos 11 meses. Atualmente engatinha, fica em pé com apoio das mãos e arrisca alguns passos sem apoio, mas logo cai; usa copo com ajuda, compreende ordens simples, bate palma, manda beijo, fala “mama” e “papa” para referir-se à mãe e ao pai respectivamente. Não apresenta alterações ao exame clínico. A conduta adequada para essa criança, considerando o desenvolvimento da marcha é",
       "options": [
         {
           "letter": "A",
