@@ -2,7 +2,8 @@
    - Qualquer pessoa logada: "Reportar erro nesta questão" (gabarito errado, texto cortado, falta
      figura...), com um campo opcional para explicar.
    - Administração: os reportes abertos entram na fila "Reportadas pelos usuários" (Administração >
-     Pendências do banco) e aparecem embaixo da questão, com "Marcar como resolvido". */
+     Pendências do banco) e aparecem embaixo da questão, com "Marcar como resolvido". O menu mostra
+     quantas questões reportadas estão esperando. */
 
 const REPORT_REASONS = [
   ["gabarito", "Gabarito errado"],
@@ -51,6 +52,7 @@ async function loadOpenReports() {
   }
   state.openReports = byQuestion;
   state.openReportsStatus = "ready";
+  state.openReportsLoadedAt = Date.now();
   renderPendingSummary();
   if (el.status?.value === "reported") applyFilters({ preserveCurrent: true });
   else render();
@@ -128,6 +130,27 @@ function renderQuestionReport() {
   }
 }
 
+/* Contador de reportes abertos no menu (Administração) e no botão "Mais" do celular. */
+function renderReportBadges() {
+  const count = state.isAdmin ? state.openReports.size : 0;
+  const targets = [
+    document.querySelector('.tab[data-tab="topics"]'),
+    document.querySelector('#bottomNav [data-nav="more"]'),
+  ];
+  for (const target of targets) {
+    if (!target) continue;
+    let badge = target.querySelector(".nav-badge");
+    if (!badge) {
+      badge = document.createElement("span");
+      badge.className = "nav-badge";
+      target.appendChild(badge);
+    }
+    badge.hidden = !count;
+    badge.textContent = count > 99 ? "99+" : String(count);
+    badge.title = count ? `${pluralize(count, "questão reportada", "questões reportadas")} esperando revisão` : "";
+  }
+}
+
 (function setupQuestionReports() {
   const box = document.querySelector("#questionReport");
   if (!box) return;
@@ -184,10 +207,19 @@ function renderQuestionReport() {
     return baseLoadQuestionErrorStats.apply(this, args);
   };
 
+  /* Novos reportes chegam sem recarregar: confere de novo a cada 10 minutos e ao voltar à aba. */
+  setInterval(() => {
+    if (state.isAdmin && document.visibilityState === "visible") loadOpenReports();
+  }, 10 * 60 * 1000);
+  document.addEventListener("visibilitychange", () => {
+    if (state.isAdmin && document.visibilityState === "visible" && Date.now() - (state.openReportsLoadedAt || 0) > 60 * 1000) loadOpenReports();
+  });
+
   const baseRender = render;
   render = function renderWithQuestionReport(...args) {
     const result = baseRender.apply(this, args);
     renderQuestionReport();
+    renderReportBadges();
     return result;
   };
 })();

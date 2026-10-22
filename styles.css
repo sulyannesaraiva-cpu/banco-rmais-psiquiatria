@@ -5208,3 +5208,38 @@ body.reading-serif .my-note-text,
   justify-self: start;
   font-size: 13px;
 }
+
+/* Contador de reportes abertos no menu (js/questionReports.js). */
+.nav-badge {
+  display: inline-grid;
+  place-items: center;
+  min-width: 20px;
+  height: 20px;
+  margin-left: 8px;
+  padding: 0 6px;
+  border-radius: 999px;
+  background: var(--bad);
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+.nav-badge[hidden] {
+  display: none;
+}
+
+#bottomNav [data-nav="more"] {
+  position: relative;
+}
+
+#bottomNav .nav-badge {
+  position: absolute;
+  top: 4px;
+  left: calc(50% + 6px);
+  margin: 0;
+  min-width: 18px;
+  height: 18px;
+  font-size: 10px;
+}
