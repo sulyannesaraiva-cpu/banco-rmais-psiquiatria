@@ -91,6 +91,22 @@
               <button id="flashcardErrorsReviewBtn" type="button">Flashcards dos meus erros</button>
             </div>
             <div class="today-reviews-section">
+              <h4>Minhas etiquetas</h4>
+              <p class="panel-line">Estude só as questões que você marcou com uma etiqueta.</p>
+              <div class="label-reviews" id="labelReviews"></div>
+            </div>
+            <div class="today-reviews-section">
+              <h4>Cartões dos meus erros</h4>
+              <p class="panel-line" id="errorCardsLine">Transforme as questões que você errou em flashcards da revisão espaçada.</p>
+              <div class="error-cards-actions">
+                <button id="createErrorCardsBtn" type="button" class="outline-btn">Criar cartões</button>
+                <label class="session-toggle">
+                  <input id="autoErrorCardsToggle" type="checkbox" />
+                  <span>Criar o cartão automaticamente quando eu errar</span>
+                </label>
+              </div>
+            </div>
+            <div class="today-reviews-section">
               <h4>Caderno de erros</h4>
               <p class="panel-line">Revise só os erros de um tipo, como "Confundi conceito".</p>
               <div class="error-notebook" id="errorNotebook"></div>
@@ -141,6 +157,7 @@
                 <span>Pendências do banco</span>
                 <select id="statusSelect">
                   <option value="all">Selecionar</option>
+                  <option value="reported">Reportadas pelos usuários</option>
                   <option value="needs-review">Precisam revisar</option>
                   <option value="missing-answer">Sem gabarito</option>
                   <option value="answer-mismatch">Gabarito inconsistente</option>
@@ -313,6 +330,10 @@
                 <p class="panel-line" id="customSimLine"></p>
                 <button id="customSimStart" type="button" class="primary-btn">Começar simulado personalizado</button>
               </section>
+              <label class="session-toggle sim-countdown-toggle">
+                <input id="simCountdownToggle" type="checkbox" checked />
+                <span>Simulados com tempo de prova: contagem regressiva (3 min por questão), aviso nos 15 minutos finais e entrega automática</span>
+              </label>
               <h4>Prova específica</h4>
               <label class="field compact-field">
                 <span>Prova</span>
@@ -363,6 +384,8 @@
           </div>
         </section>
         <div class="run-progress" id="runProgress" hidden></div>
+        <div class="sim-clock" id="simClock" hidden role="timer" aria-live="off"></div>
+        <section id="simReport" hidden aria-label="Relatório do simulado"></section>
         <nav class="question-nav">
           <button id="prevBtn">Anterior</button>
           <span id="positionLabel">0 / 0</span>
@@ -376,6 +399,11 @@
           <div id="optionsList" class="options"></div>
           <p id="answerBox" class="answer-box"></p>
           <p id="communityLine" class="community-line" hidden></p>
+          <div class="question-labels" id="questionLabels" hidden></div>
+          <section class="my-note" id="myNoteBox" hidden aria-label="Sua anotação">
+            <div class="my-note-head"><strong>Sua anotação</strong><button type="button" class="link-btn" id="myNoteEdit">Editar</button></div>
+            <div class="my-note-text" id="myNoteText"></div>
+          </section>
           <section class="explanation-panel" id="explanationPanel" hidden aria-label="Comentário da questão">
             <h3>Comentário</h3>
             <div class="markdown-content" id="explanationText"></div>
@@ -427,6 +455,22 @@
             </div>
           </div>
           <section class="concept-panel" id="conceptPanel" hidden></section>
+          <div class="question-report" id="questionReport" hidden>
+            <button id="reportQuestionBtn" type="button" class="link-btn">Reportar erro nesta questão</button>
+            <form id="reportQuestionForm" class="report-form" hidden>
+              <label class="field">
+                <span>O que está errado?</span>
+                <select id="reportReason"></select>
+              </label>
+              <textarea id="reportDetails" rows="3" maxlength="1000" placeholder="Explique, se quiser (ex.: o gabarito oficial é C; falta a tabela do enunciado)."></textarea>
+              <div class="report-actions">
+                <button type="submit" class="primary-btn">Enviar reporte</button>
+                <button type="button" id="reportCancel">Cancelar</button>
+              </div>
+            </form>
+            <p id="reportStatus" class="panel-line" hidden></p>
+            <div id="questionReportsAdmin" class="reports-admin" hidden></div>
+          </div>
         </article>
 
         <section id="editorPanel" class="editor-panel" hidden>
@@ -568,6 +612,10 @@
     <script src="js/customSimulation.js"></script>
     <script src="js/communityStats.js"></script>
     <script src="js/errorNotebookPrint.js"></script>
+    <script src="js/questionReports.js"></script>
+    <script src="js/simulationTimer.js"></script>
+    <script src="js/questionLabels.js"></script>
+    <script src="js/errorFlashcards.js"></script>
     <script src="js/questionSearch.js"></script>
     <script>
       /* Aplicativo/offline: registra o service worker (sw.js) depois que a página carregou. */

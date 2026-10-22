@@ -2753,7 +2753,8 @@ function applyFilters({ preserveCurrent = false } = {}) {
   const query = normalize(el.search.value);
   const topic = el.topic.value;
   const status = el.status.value;
-  const pendingStatuses = new Set(["needs-review", "missing-answer", "answer-mismatch", "incomplete-options", "duplicate-options", "uncertain-topic", "no-explanation", "missing-figure"]);
+  const pendingStatuses = new Set(["needs-review", "missing-answer", "answer-mismatch", "incomplete-options", "duplicate-options", "uncertain-topic", "no-explanation", "missing-figure", "reported"]);
+  const reportedIds = status === "reported" && typeof reportedQuestionIds === "function" ? reportedQuestionIds() : new Set();
   const pendingAdminMode = pendingStatuses.has(status);
   const activeTopicIds = state.topicActive ? new Set(state.topicIds) : null;
   const selectedTopicIds = !state.topicActive && Array.isArray(state.selectedTopics) ? new Set(state.selectedTopics) : null;
@@ -2783,6 +2784,7 @@ function applyFilters({ preserveCurrent = false } = {}) {
       (status === "missing-figure" && missingFigure(view)) ||
       (status === "uncertain-topic" && hasUncertainStudyTopic(question)) ||
       (status === "no-explanation" && lacksExplanation(view)) ||
+      (status === "reported" && reportedIds.has(question.id)) ||
       (status === "unseen" && !progress.grade) ||
       (status === "correct" && progress.grade === "correct") ||
       (status === "wrong" && progress.grade === "wrong") ||
@@ -2820,7 +2822,9 @@ function renderPendingSummary() {
   /* Só a administração vê; poupa varrer o banco inteiro (e classificar provas) a cada abertura. */
   if (!el.pendingSummary || !state.isAdmin) return;
   const counts = pendingCounts();
+  const reportedCount = typeof reportedQuestionIds === "function" ? reportedQuestionIds().size : 0;
   el.pendingSummary.innerHTML = `
+    <button data-pending-filter="reported" title="${state.openReportsStatus === "unavailable" ? "Para receber reportes, rode supabase/question_reports.sql no Supabase." : "Erros reportados pelos usuários"}"><strong>${reportedCount}</strong><span>reportadas pelos usuários</span>${state.openReportsStatus === "unavailable" ? "<small>falta ativar no banco</small>" : ""}</button>
     <button data-pending-filter="needs-review"><strong>${counts.total}</strong><span>pendentes</span></button>
     <button data-pending-filter="missing-answer"><strong>${counts["missing-answer"]}</strong><span>sem gabarito</span></button>
     <button data-pending-filter="answer-mismatch"><strong>${counts["answer-mismatch"]}</strong><span>gabarito inconsistente</span></button>

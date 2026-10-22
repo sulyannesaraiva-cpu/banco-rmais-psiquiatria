@@ -1,6 +1,6 @@
 /* Caderno de erros para imprimir ou salvar em PDF (Hoje > Outras revisões > Caderno de erros).
    Abre uma página própria para impressão com as questões erradas, agrupadas por tema: enunciado,
-   alternativas com a sua resposta e a correta marcadas, motivo do erro e comentário. */
+   alternativas com a sua resposta e a correta marcadas, motivo do erro, sua anotação e comentário. */
 (function setupErrorNotebookPrint() {
   const button = document.querySelector("#printErrorsBtn");
   const topicSelect = document.querySelector("#printErrorsTopic");
@@ -49,6 +49,8 @@
       return `<li class="${cls}"><b>${escapeHtml(option.letter)})</b> ${escapeHtml(option.text)}${marks.length ? ` <em>— ${marks.join(", ")}</em>` : ""}</li>`;
     }).join("");
     const reason = progress.errorType ? `<p class="meta">Motivo marcado: ${escapeHtml(errorTypeLabel(progress.errorType))}</p>` : "";
+    const noteText = typeof questionNoteText === "function" ? questionNoteText(question.id) : String(progress.note || "").trim();
+    const note = noteText ? `<div class="note"><strong>Sua anotação</strong><p>${escapeHtml(noteText)}</p></div>` : "";
     const explanation = String(view.explanation || "").trim()
       ? `<div class="explanation"><strong>Comentário</strong>${renderSafeMarkdown(view.explanation)}</div>`
       : "";
@@ -59,6 +61,7 @@
         ${view.image ? `<img src="${escapeHtml(new URL(view.image, location.href).href)}" alt="Figura da questão">` : ""}
         <ol class="options">${options}</ol>
         ${reason}
+        ${note}
         ${explanation}
       </article>`;
   }
@@ -98,6 +101,8 @@
         .options em{color:#555;font-size:11px}
         .explanation{margin-top:6px;padding:6px 10px;border-left:3px solid #2563eb;background:#f3f6fd}
         .explanation p{margin:4px 0}
+        .note{margin-top:6px;padding:6px 10px;border-left:3px solid #d97706;background:#fdf6ec}
+        .note p{margin:4px 0;white-space:pre-wrap}
         @media print{body{margin:0}h2{background:#eee !important;-webkit-print-color-adjust:exact;print-color-adjust:exact}}
       </style></head><body>
       <header><h1>Caderno de erros</h1><p>${escapeHtml(chosen === "Todos" ? "Todos os temas" : chosen)} · ${questions.length} questões · ${today} · Banco R+ Psiquiatria</p></header>

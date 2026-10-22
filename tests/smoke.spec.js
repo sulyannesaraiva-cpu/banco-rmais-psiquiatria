@@ -216,3 +216,44 @@ test("Hoje: plano e Só revisar agora", async ({ page }) => {
   await page.locator("[data-today-action=review-due]").click();
   expect(await page.evaluate(() => state.filtered.length)).toBe(12);
 });
+
+test("simulado com tempo: entrega automática e relatório na tela da prova", async ({ page }) => {
+  const errors = await openSite(page);
+  await goTab(page, "exams");
+  await page.locator('[data-sim-size="20"]').click();
+  await page.locator("#customSimStart").click();
+  await expect(page.locator("#simClock")).toContainText("Tempo restante");
+  await page.evaluate(() => {
+    state.filtered.slice(0, 10).forEach((q) => (state.examSimulationAnswers[q.id] = q.correctAnswer));
+    state.examSimulationStartedAt = Date.now() - 20 * 3 * 60000 - 1000;
+  });
+  await expect(page.locator("#simReport")).toContainText("Tempo esgotado");
+  await expect(page.locator("#simReport")).toContainText("Acertos por tema");
+  const entry = await page.evaluate(() => state.simulationHistory[0]);
+  expect(entry.correct).toBe(10);
+  expect(entry.byTopic.length).toBeGreaterThan(0);
+  expect(entry.timeUp).toBe(true);
+  expect(errors).toEqual([]);
+});
+
+test("etiquetas, cartões dos erros e reportar sem login", async ({ page }) => {
+  const errors = await openSite(page);
+  await goTab(page, "activity");
+  await page.locator("#startSessionBtn").click();
+  await page.locator('[data-question-label="decorar"]').click();
+  await page.locator("#reportQuestionBtn").click();
+  await expect(page.locator("#reportStatus")).toContainText("Entre na conta");
+  const letter = await page.evaluate(() => {
+    const q = effectiveQuestion(currentQuestion());
+    return q.options.find((o) => o.letter !== q.correctAnswer).letter;
+  });
+  await page.locator(`#optionsList [data-option="${letter}"]`).click();
+  await page.locator("#confirmAnswerBtn").click();
+  await page.evaluate(() => { finishSession(); setTab("overview"); render(); document.querySelector("#todayReviews").open = true; render(); });
+  await expect(page.locator('[data-label-review="decorar"]')).toContainText("1");
+  await page.locator("#createErrorCardsBtn").click();
+  expect(await page.evaluate(() => customFlashcardDeck().cards.length)).toBe(1);
+  await page.locator('[data-label-review="decorar"]').click();
+  expect(await page.evaluate(() => ({ active: state.sessionActive, n: state.filtered.length }))).toEqual({ active: true, n: 1 });
+  expect(errors).toEqual([]);
+});

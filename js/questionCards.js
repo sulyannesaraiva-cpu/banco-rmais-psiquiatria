@@ -88,14 +88,48 @@ function flashcardBackFromQuestion(question) {
   const isTrueFalse = (view.options || []).length === 2 && view.options.every((item) => ["C", "E"].includes(item.letter));
   const answer = isTrueFalse ? (view.correctAnswer === "C" ? "CERTO" : "ERRADO") : `${view.correctAnswer}) ${option?.text || ""}`;
   const source = [question.examTag || question.source, question.title].filter(Boolean).join(" · ");
-  return `${answer}${source ? ` — da questão ${source}` : ""}`;
+  const keyPoint = flashcardKeyPoint(view.explanation);
+  return `${answer}${keyPoint ? ` · Ponto-chave: ${keyPoint}` : ""}${source ? ` — da questão ${source}` : ""}`;
+}
+
+/* Primeira frase do comentário da questão (sem a marcação de negrito), para o verso do cartão. */
+function flashcardKeyPoint(explanation) {
+  const text = String(explanation || "")
+    .replace(/\*\*/g, "")
+    .replace(/^\s*(gabarito|resposta)( correta)?\s*:?\s*(alternativa\s*|letra\s*)?[A-E]?\s*[.:)–-]?\s*/i, "")
+    .replace(/\s+/g, " ")
+    .trim();
+  if (!text) return "";
+  const sentence = text.match(/^.{20,}?[.!?](?=\s|$)/)?.[0] || text;
+  return sentence.length > 260 ? `${sentence.slice(0, 257).trimEnd()}…` : sentence;
 }
 
 function createFlashcardFromQuestion(question) {
+  createFlashcardsFromQuestions([question]);
+}
+
+/* Cria os cartões de várias questões de uma vez (salva e sincroniza uma vez só). */
+function createFlashcardsFromQuestions(questions) {
   const deck = customFlashcardDeck();
-  if (!deck || !question || hasCustomCardFor(question)) return;
+  if (!deck) return 0;
+  let created = 0;
+  for (const question of questions) {
+    if (!question || hasCustomCardFor(question)) continue;
+    const card = buildFlashcardFromQuestion(question);
+    deck.cards.push(card);
+    // Já entra como vencido: aparece na revisão de flashcards e na tela Hoje.
+    state.flashcardProgress[card.id] = { ...(state.flashcardProgress[card.id] || {}), nextReviewAt: new Date().toISOString() };
+    created += 1;
+  }
+  if (!created) return 0;
+  saveFlashcardState();
+  saveCustomFlashcards();
+  return created;
+}
+
+function buildFlashcardFromQuestion(question) {
   const subtheme = questionSubtheme(question);
-  const card = {
+  return {
     id: customCardIdFor(question),
     front: flashcardFrontFromQuestion(question),
     back: flashcardBackFromQuestion(question),
@@ -107,11 +141,6 @@ function createFlashcardFromQuestion(question) {
     sourceQuestionId: question.id,
     createdAt: new Date().toISOString(),
   };
-  deck.cards.push(card);
-  // Já entra como vencido: aparece na revisão de flashcards e na tela Hoje.
-  state.flashcardProgress[card.id] = { ...(state.flashcardProgress[card.id] || {}), nextReviewAt: new Date().toISOString() };
-  saveFlashcardState();
-  saveCustomFlashcards();
 }
 
 /* ---------- flashcards do mesmo conceito ---------- */
