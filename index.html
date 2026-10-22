@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Banco R+ Psiquiatria</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <meta name="theme-color" content="#111827" />
+    <link rel="icon" href="icons/icon-192.png" type="image/png" />
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Banco R+" />
   </head>
   <body>
     <button id="sidebarToggle" class="sidebar-toggle" aria-label="Abrir ou fechar menu">&#9776;</button>
@@ -567,6 +573,12 @@
     <script src="js/performance.js"></script>
     <script src="js/simulationHistory.js"></script>
     <script src="js/questionSearch.js"></script>
+    <script>
+      /* Aplicativo/offline: registra o service worker (sw.js) depois que a página carregou. */
+      if ("serviceWorker" in navigator && (location.protocol === "https:" || location.hostname === "localhost")) {
+        window.addEventListener("load", () => navigator.serviceWorker.register("/sw.js").catch(() => {}));
+      }
+    </script>
     <script src="js/mobileNav.js"></script>
     <script src="js/globalBankCounter.js"></script>
   </body>
