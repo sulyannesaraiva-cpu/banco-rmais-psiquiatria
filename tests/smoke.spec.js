@@ -118,6 +118,37 @@ test("simulado: finaliza, guarda no histórico e conta no Desempenho", async ({ 
   expect(await page.evaluate(() => state.attempts.length)).toBe(attemptsBefore + 3);
 });
 
+test("tentativas feitas sem internet sobem para a conta sem duplicar", async ({ page }) => {
+  await openSite(page);
+  const result = await page.evaluate(async () => {
+    const q = state.questions;
+    const at = (min) => new Date(Date.now() - min * 60000).toISOString();
+    const cloud = [{ question_id: q[4].id, answered_at: at(10), is_correct: true }];
+    state.attempts = [
+      { question_id: q[0].id, answered_at: at(50), is_correct: true, user_id: null },
+      { question_id: q[1].id, answered_at: at(40), is_correct: false, user_id: "outra-pessoa" },
+      { question_id: q[4].id, answered_at: cloud[0].answered_at, is_correct: true, user_id: "eu" },
+    ];
+    let inserts = 0;
+    const chain = () => {
+      const c = {
+        select: () => c, eq: () => c, order: () => c,
+        range: async (from, to) => ({ data: cloud.slice(from, to + 1), error: null }),
+        insert: async (rows) => { inserts += rows.length; cloud.push(...rows); return { error: null }; },
+      };
+      return c;
+    };
+    state.supabase = { from: chain };
+    state.authUser = { id: "eu" };
+    await loadCloudAttempts();
+    const first = inserts;
+    await loadCloudAttempts();
+    return { first, second: inserts - first };
+  });
+  expect(result.first).toBe(1);
+  expect(result.second).toBe(0);
+});
+
 test("busca de questões abre um bloco", async ({ page }) => {
   await openSite(page);
   await goTab(page, "activity");

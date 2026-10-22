@@ -501,16 +501,52 @@ async function loadCloudAttempts() {
     rows.push(...(data || []));
     if (!data || data.length < pageSize) break;
   }
+  const cloudKeys = new Set(rows.map((row) => attemptKey(row)));
+  /* Com o limite atingido, só as tentativas mais novas que a mais antiga baixada podem estar faltando. */
+  const cutoff = rows.length >= MAX_STORED_ATTEMPTS ? Math.min(...rows.map((row) => Date.parse(row.answered_at) || 0)) : -Infinity;
+  await uploadMissingAttempts(cloudKeys, cutoff);
   const merged = new Map(state.attempts.map((attempt) => [attemptKey(attempt), attempt]));
   for (const row of rows) {
     const key = attemptKey(row);
-    if (!merged.has(key)) merged.set(key, { ...row, id: `${Date.parse(row.answered_at) || 0}-${row.question_id}` });
+    if (!merged.has(key)) merged.set(key, { ...row, user_id: state.authUser.id, id: `${Date.parse(row.answered_at) || 0}-${row.question_id}` });
   }
   state.attempts = [...merged.values()]
     .sort((a, b) => (Date.parse(a.answered_at) || 0) - (Date.parse(b.answered_at) || 0))
     .slice(-MAX_STORED_ATTEMPTS);
   saveAttempts();
 }
+
+const ATTEMPT_COLUMNS = ["question_id", "tema", "subtema", "answered_at", "selected_answer", "correct_answer", "is_correct", "confidence", "error_type", "source", "mode"];
+
+/* Envia à conta as tentativas deste aparelho que não chegaram lá: feitas sem internet (o envio na
+   hora falhou) ou antes de entrar na conta. Só as sem dono ou da própria pessoa logada. */
+async function uploadMissingAttempts(cloudKeys, cutoff) {
+  const userId = state.authUser?.id;
+  if (!userId) return;
+  const missing = state.attempts.filter((attempt) =>
+    (!attempt.user_id || attempt.user_id === userId) &&
+    (Date.parse(attempt.answered_at) || 0) > cutoff &&
+    !cloudKeys.has(attemptKey(attempt)));
+  for (let start = 0; start < missing.length; start += 500) {
+    const batch = missing.slice(start, start + 500).map((attempt) => {
+      const row = { user_id: userId };
+      for (const column of ATTEMPT_COLUMNS) row[column] = attempt[column] ?? null;
+      return row;
+    });
+    const { error } = await state.supabase.from("question_attempts").insert(batch);
+    if (error) {
+      console.warn("envio de tentativas pendentes falhou:", error.message);
+      return;
+    }
+  }
+  for (const attempt of missing) attempt.user_id = userId;
+  if (missing.length) setSyncStatus(`${missing.length} ${missing.length === 1 ? "tentativa enviada" : "tentativas enviadas"} à conta.`);
+}
+
+/* Voltou a internet: envia o que ficou pendente (e baixa o que veio de outros aparelhos). */
+window.addEventListener("online", () => {
+  if (state.authUser && state.cloudReady) loadCloudAttempts();
+});
 
 function saveReviewSchedule() {
   localStorage.setItem("banco-rmais-review-schedule", JSON.stringify(state.reviewSchedule));
