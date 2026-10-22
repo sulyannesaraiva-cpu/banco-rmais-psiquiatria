@@ -67,6 +67,26 @@
           <h2 id="questionTitle">Banco de questões</h2>
         </div>
         <div class="actions">
+          <button id="readingBtn" class="icon-btn reading-btn" title="Ajuste de leitura" aria-label="Ajuste de leitura" aria-expanded="false" aria-controls="readingPanel">Aa</button>
+          <div class="reading-panel" id="readingPanel" hidden role="dialog" aria-label="Ajuste de leitura">
+            <span class="reading-title">Tamanho da letra</span>
+            <div class="reading-size">
+              <button type="button" data-reading="smaller" aria-label="Diminuir letra">A−</button>
+              <strong data-reading-label>Padrão</strong>
+              <button type="button" data-reading="larger" aria-label="Aumentar letra">A+</button>
+            </div>
+            <span class="reading-title">Espaçamento entre linhas</span>
+            <div class="segmented">
+              <button type="button" data-reading-spacing="normal">Normal</button>
+              <button type="button" data-reading-spacing="airy">Amplo</button>
+            </div>
+            <span class="reading-title">Fonte</span>
+            <div class="segmented">
+              <button type="button" data-reading-font="sans">Padrão</button>
+              <button type="button" data-reading-font="serif" class="reading-serif-sample">Serifada</button>
+            </div>
+            <button type="button" class="link-btn" data-reading="reset">Voltar ao padrão</button>
+          </div>
           <button id="shuffleBtn" class="icon-btn" title="Embaralhar quest&otilde;es" aria-label="Embaralhar quest&otilde;es"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 3h5v5"></path><path d="M4 20 21 3"></path><path d="M21 16v5h-5"></path><path d="M15 15l6 6"></path><path d="M4 4l5 5"></path></svg></button>
           <button id="favoriteBtn" class="icon-btn" title="Favoritar quest&atilde;o" aria-label="Favoritar quest&atilde;o" aria-pressed="false"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.8 5.7 6.2.9-4.5 4.4 1.1 6.2L12 17.3 6.4 20.2l1.1-6.2L3 9.6l6.2-.9z"></path></svg></button>
           <button id="reviewBtn" class="icon-btn" title="Marcar para revisar depois" aria-label="Marcar para revisar depois" aria-pressed="false"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12v18l-6-4-6 4z"></path></svg></button>
@@ -640,6 +660,7 @@
     <script src="js/unseenMode.js"></script>
     <script src="js/examTopicRanking.js"></script>
     <script src="js/similarQuestions.js"></script>
+    <script src="js/readingSettings.js"></script>
     <script src="js/questionSearch.js"></script>
     <script>
       /* Aplicativo/offline: registra o service worker (sw.js) depois que a página carregou. */

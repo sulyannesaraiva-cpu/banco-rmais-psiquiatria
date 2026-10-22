@@ -295,3 +295,20 @@ test("questões parecidas ao errar entram no bloco", async ({ page }) => {
   expect(await page.evaluate(() => state.filtered.length)).toBeGreaterThan(before);
   expect(errors).toEqual([]);
 });
+
+test("ajuste de leitura: tamanho, espaçamento e fonte ficam salvos", async ({ page }) => {
+  const errors = await openSite(page);
+  await goTab(page, "activity");
+  await page.locator("#startSessionBtn").click();
+  await page.locator("#readingBtn").click();
+  await page.locator('[data-reading="larger"]').click();
+  await page.locator('[data-reading-spacing="airy"]').click();
+  await page.locator('[data-reading-font="serif"]').click();
+  expect(await page.evaluate(() => getComputedStyle(document.querySelector("#questionText")).zoom)).toBe("1.12");
+  await answerCurrent(page);
+  await expect(page.locator("#answerBox")).toContainText("Gabarito");
+  await page.reload();
+  await page.waitForFunction(() => typeof state !== "undefined" && state.questions.length > 1000);
+  expect(await page.evaluate(() => state.reading)).toEqual({ size: 2, spacing: "airy", font: "serif" });
+  expect(errors).toEqual([]);
+});

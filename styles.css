@@ -5113,3 +5113,98 @@ body.sidebar-collapsed {
   color: var(--muted);
   font-size: 13px;
 }
+
+/* ===== Ajuste de leitura (js/readingSettings.js) ===== */
+body {
+  --reading-zoom: 1;
+}
+
+.question-text,
+#optionsList,
+#answerBox,
+.explanation-panel .markdown-content,
+.my-note-text,
+.similar-list,
+.concept-card {
+  zoom: var(--reading-zoom);
+}
+
+body.reading-airy .question-text,
+body.reading-airy .option-text,
+body.reading-airy .explanation-panel .markdown-content p,
+body.reading-airy .my-note-text {
+  line-height: 1.95 !important;
+}
+
+body.reading-airy .option-text {
+  display: block;
+}
+
+body.reading-serif .question-text,
+body.reading-serif .option-text,
+body.reading-serif .explanation-panel .markdown-content,
+body.reading-serif .my-note-text,
+.reading-serif-sample {
+  font-family: Georgia, "Times New Roman", serif !important;
+}
+
+.topbar .actions {
+  position: relative;
+}
+
+.reading-btn {
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.reading-panel {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  z-index: 40;
+  display: grid;
+  gap: 8px;
+  width: min(280px, calc(100vw - 32px));
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--panel);
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.16);
+}
+
+.reading-panel[hidden] {
+  display: none;
+}
+
+.reading-title {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.reading-size {
+  display: grid;
+  grid-template-columns: 44px 1fr 44px;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+}
+
+.reading-size button {
+  min-height: 40px;
+  font-weight: 700;
+}
+
+.reading-size strong {
+  font-size: 14px;
+}
+
+.reading-panel .segmented {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.reading-panel .link-btn {
+  justify-self: start;
+  font-size: 13px;
+}
