@@ -54,7 +54,8 @@ async function networkFirst(request, isPage) {
   const key = isPage ? "/" : request;
   /* A busca na rede segue mesmo se a cópia for usada antes: quando chegar, atualiza a cópia. */
   const network = fetch(request).then((response) => {
-    if (response.ok) cache.put(key, response.clone());
+    /* "opaque": script de outro domínio (Supabase no CDN) carregado sem CORS. */
+    if (response.ok || response.type === "opaque") cache.put(key, response.clone());
     return response;
   });
   try {
