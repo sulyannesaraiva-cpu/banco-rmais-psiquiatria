@@ -342,6 +342,6 @@ test("flashcards por tema: mesmos temas do estudo e sessão do tema", async ({ p
   expect(topics).toBe(true);
   await page.locator('[data-flashcard-topic="Transtornos Psicóticos"] summary [data-flashcard-study-topic]').click();
   await expect(page.locator("#flashcardSessionBar")).toContainText("Transtornos Psicóticos");
-  expect(await page.evaluate(() => /esquizofrenia/i.test(currentFlashcard().front))).toBe(true);
+  expect(await page.evaluate(() => currentFlashcard().subtheme)).toBe("Esquizofrenia e psicoses");
   expect(errors).toEqual([]);
 });
