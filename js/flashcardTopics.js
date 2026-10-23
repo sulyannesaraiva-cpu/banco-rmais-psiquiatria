@@ -47,6 +47,11 @@ function flashcardTopicIndex() {
     groups.get(group).push(item);
   };
   for (const deck of decks) {
+    /* Deck escrito para um tema (data/highlightsFlashcards.js): todos os cartões ficam nele. */
+    if (deck.studyTopic) {
+      for (const card of flashcardCardsForDeck(deck, { applyImportance: false })) add(deck.studyTopic, deck.title, { deck, card });
+      continue;
+    }
     const entries = flashcardCardsForDeck(deck, { applyImportance: false }).map((card) => {
       const item = { deck, card };
       const subtheme = flashcardItemSubtheme(item);
@@ -62,7 +67,7 @@ function flashcardTopicIndex() {
          classificação automática mandou para outro tema (ex.: "delirium x psicose" no deck de
          Delirium) continua no tema do próprio deck. */
       if (entry.item.card.subtheme && entry.topic) add(entry.topic, entry.subtheme, entry.item);
-      else if (entry.known && entry.topic === mainTopic) add(mainTopic, entry.subtheme, entry.item);
+      else if (entry.known && (entry.topic === mainTopic || entry.topic === FLASHCARD_AREA_TOPIC[deck.area])) add(entry.topic, entry.subtheme, entry.item);
       else add(mainTopic, deck.title, entry.item);
     }
   }
