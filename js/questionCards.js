@@ -189,7 +189,7 @@ function conceptIndex() {
     for (const item of list) {
       const counts = deckSubthemes.get(item.deck.id);
       const main = counts ? [...counts.entries()].sort((a, b) => b[1] - a[1])[0][0] : item.subtheme;
-      item.offDeck = item.deck.id !== CUSTOM_DECK_ID && main !== item.subtheme;
+      item.offDeck = item.deck.id !== CUSTOM_DECK_ID && !item.card.subtheme && main !== item.subtheme;
     }
   }
   conceptIndexCache = { key, bySubtheme };
