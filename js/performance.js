@@ -323,7 +323,7 @@ function renderPerformancePanel() {
     ${data.next ? `
     <section class="perf-next">
       <span class="perf-next-kicker">Próximo passo</span>
-      <strong>${escapeHtml(data.next.label)}${data.next.share >= 0.06 && data.focusExam ? ` cai muito na ${escapeHtml(data.focusExam)} e` : ""} está em ${Math.round(data.next.accuracy * 100)}%.${data.next.pending ? ` ${pluralize(data.next.pending, "questão pendente", "questões pendentes")}.` : ""}</strong>
+      <strong>${escapeHtml(data.next.label)}${data.next.share >= 0.06 && data.focusExam ? ` cai muito ${escapeHtml(planExamPhrase({ targetExam: data.focusExam }))} e` : ""} está em ${Math.round(data.next.accuracy * 100)}%.${data.next.pending ? ` ${pluralize(data.next.pending, "questão pendente", "questões pendentes")}.` : ""}</strong>
       <button type="button" data-perf-train="${escapeHtml(data.next.label)}">Treinar agora</button>
     </section>` : ""}`}`;
   if (panel.dataset.renderedHtml !== html) {

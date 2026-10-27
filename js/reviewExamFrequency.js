@@ -17,6 +17,11 @@ function normalizedExamTarget(value) {
   return normalText(value).replace(/[^a-z0-9]+/g, "");
 }
 
+/* O plano pode ter mais de uma banca, guardadas juntas como "ENARE + SES-DF". */
+function examTargetList(targetExam) {
+  return String(targetExam || "").split("+").map(normalizedExamTarget).filter((item) => item && item !== "todas");
+}
+
 function examInstitutionLabel(exam) {
   return String(exam?.institution || exam?.provider || "").trim();
 }
@@ -35,11 +40,11 @@ function availableReviewExamTargets() {
 }
 
 function availableReviewExamAreas(targetExam = state.reviewTargetExam || "Todas") {
-  const target = normalizedExamTarget(targetExam);
+  const targets = examTargetList(targetExam);
   const areas = new Set();
   for (const exam of state.exams || []) {
     const institution = normalizedExamTarget(examInstitutionLabel(exam));
-    if (target && target !== "todas" && institution !== target) continue;
+    if (targets.length && !targets.includes(institution)) continue;
     const area = examAreaLabel(exam);
     if (area) areas.add(area);
   }
@@ -47,12 +52,12 @@ function availableReviewExamAreas(targetExam = state.reviewTargetExam || "Todas"
 }
 
 function examMatchesReviewTarget(exam, targetExam = "Todas", targetArea = "Todas") {
-  const target = normalizedExamTarget(targetExam);
+  const targets = examTargetList(targetExam);
   const area = normalizedExamTarget(targetArea);
   const institution = normalizedExamTarget(examInstitutionLabel(exam));
   const examArea = normalizedExamTarget(examAreaLabel(exam));
 
-  const institutionMatches = !target || target === "todas" || institution === target;
+  const institutionMatches = !targets.length || targets.includes(institution);
   const areaMatches = !area || area === "todas" || examArea === area;
   return institutionMatches && areaMatches;
 }

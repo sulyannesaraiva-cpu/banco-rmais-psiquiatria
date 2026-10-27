@@ -2901,11 +2901,11 @@ function sortByExplanationPriority(questions) {
     }
     share = (subtheme) => (counts.get(subtheme) || 0) / Math.max(examById.size, 1);
   }
-  const targetExam = state.studyPlan?.targetExam && state.studyPlan.targetExam !== "Todas" ? state.studyPlan.targetExam : "";
+  const targets = typeof examTargetList === "function" ? examTargetList(state.studyPlan?.targetExam) : [];
   const score = (question) => {
     const exam = examById.get(question.id);
     const year = Number(question.year || exam?.year) || 0;
-    const fromTarget = targetExam && String(exam?.institution || exam?.provider || "").trim() === targetExam;
+    const fromTarget = exam && targets.includes(normalizedExamTarget(String(exam.institution || exam.provider || "")));
     return (exam ? 3 : 0)
       + (fromTarget ? 3 : 0)
       + Math.min(share(questionSubtheme(question)) * 25, 3)

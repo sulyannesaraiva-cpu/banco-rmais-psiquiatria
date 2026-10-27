@@ -67,6 +67,21 @@ function questionsGoalForMinutes(minutes) {
   return Math.max(10, Math.round(((Number(minutes) || 60) * (2 / 3)) / 5) * 5);
 }
 
+/* Bancas do plano (uma ou mais, guardadas como "ENARE + SES-DF"). */
+function planExamList(plan = state.studyPlan) {
+  const value = String(plan?.targetExam || "");
+  if (!value || value === "Todas") return [];
+  return value.split("+").map((item) => item.trim()).filter(Boolean);
+}
+
+/* "na ENARE" ou "nas provas ENARE e SES-DF", para frases como "o que mais cai na prova". */
+function planExamPhrase(plan = state.studyPlan) {
+  const list = planExamList(plan);
+  if (!list.length) return "nas provas";
+  if (list.length === 1) return `na ${list[0]}`;
+  return `nas provas ${list.slice(0, -1).join(", ")} e ${list[list.length - 1]}`;
+}
+
 function planTargetLabel(plan = state.studyPlan) {
   if (!plan || !plan.targetExam || plan.targetExam === "Todas") return "Plano geral";
   return plan.targetArea && plan.targetArea !== "Todas" ? `${plan.targetExam} · ${plan.targetArea}` : plan.targetExam;
@@ -586,6 +601,7 @@ function accuracyChipClass(accuracy) {
 function renderPlanForm() {
   const draft = state.planDraft || (state.planDraft = defaultPlanDraft());
   const exams = typeof availableReviewExamTargets === "function" ? availableReviewExamTargets() : [];
+  const selectedExams = planExamList(draft);
   const areas = draft.targetExam !== "Todas" && typeof availableReviewExamAreas === "function" ? availableReviewExamAreas(draft.targetExam) : [];
   if (draft.targetArea !== "Todas" && !areas.includes(draft.targetArea)) draft.targetArea = "Todas";
   const editing = Boolean(state.studyPlan);
@@ -596,7 +612,7 @@ function renderPlanForm() {
     `<button type="button" class="plan-chip" ${attr}="${escapeHtml(value)}" aria-pressed="${active}">${escapeHtml(label)}</button>`;
   const preview = [
     days !== null && days > 0 ? `Faltam <strong>${days} dias</strong> para a prova.` : "",
-    top.length ? `Mais tempo em <strong>${top.map(escapeHtml).join("</strong>, <strong>")}</strong>, que são os temas que mais caem na ${escapeHtml(draft.targetExam)}.` : "",
+    top.length ? `Mais tempo em <strong>${top.map(escapeHtml).join("</strong>, <strong>")}</strong>, que são os temas que mais caem ${escapeHtml(planExamPhrase(draft))}.` : "",
     draft.targetExam === "Todas" ? "Sem banca definida, o plano equilibra todos os temas." : "",
   ].filter(Boolean).join(" ");
   return `
@@ -606,10 +622,10 @@ function renderPlanForm() {
         <p>Com isso o Banco R+ escolhe o que você estuda a cada dia e prioriza o que mais cai na sua prova.</p>
       </div>
       <fieldset class="plan-field">
-        <legend>Qual prova você vai fazer?</legend>
+        <legend>Quais provas você vai fazer? <span class="plan-optional">(pode marcar mais de uma)</span></legend>
         <div class="plan-chip-grid">
-          ${chip("data-plan-exam", "Todas", "Ainda não sei", draft.targetExam === "Todas")}
-          ${exams.map((exam) => chip("data-plan-exam", exam, exam, draft.targetExam === exam)).join("")}
+          ${chip("data-plan-exam", "Todas", "Ainda não sei", !selectedExams.length)}
+          ${exams.map((exam) => chip("data-plan-exam", exam, exam, selectedExams.includes(exam))).join("")}
         </div>
       </fieldset>
       ${areas.length > 1 ? `
@@ -621,7 +637,7 @@ function renderPlanForm() {
         </div>
       </fieldset>` : ""}
       <div class="plan-field">
-        <label for="planExamDate">Data da prova <span class="plan-optional">(opcional)</span></label>
+        <label for="planExamDate">${selectedExams.length > 1 ? "Data da primeira prova" : "Data da prova"} <span class="plan-optional">(opcional)</span></label>
         <input id="planExamDate" type="date" value="${escapeHtml(draft.examDate)}" min="${localDayKey()}">
       </div>
       <fieldset class="plan-field">
@@ -691,7 +707,7 @@ function renderTodayDashboard(data) {
   const daysLabel = data.daysLeft === null ? "" : data.daysLeft > 1 ? `${data.daysLeft}` : data.daysLeft === 1 ? "1" : data.daysLeft === 0 ? "Hoje" : "";
   const rows = [];
   if (!goalDone && data.reviewCount) rows.push({ icon: "review", tone: "warn", title: pluralize(data.reviewCount, "revisão vencida", "revisões vencidas"), text: "Questões que você errou ou estão no ponto de rever" });
-  if (!goalDone && data.newCount) rows.push({ icon: "target", tone: "good", title: pluralize(data.newCount, "questão nova", "questões novas"), text: plan?.targetExam && plan.targetExam !== "Todas" ? `Dos temas que mais caem na ${plan.targetExam} e dos seus pontos fracos` : "Dos seus pontos fracos, variando os temas" });
+  if (!goalDone && data.newCount) rows.push({ icon: "target", tone: "good", title: pluralize(data.newCount, "questão nova", "questões novas"), text: plan?.targetExam && plan.targetExam !== "Todas" ? `Dos temas que mais caem ${planExamPhrase(plan)} e dos seus pontos fracos` : "Dos seus pontos fracos, variando os temas" });
   if (data.flashcardsDue) {
     const parts = [data.flashcardsReview ? pluralize(data.flashcardsReview, "para revisar", "para revisar") : "", data.flashcardsNew ? pluralize(data.flashcardsNew, "novo", "novos") : ""].filter(Boolean).join(" · ");
     rows.push({ icon: "cards", tone: "info", title: `${pluralize(data.flashcardsDue, "flashcard", "flashcards")} hoje`, text: `${parts}${goalDone ? "" : " · depois das questões"}`, action: "flashcards", actionLabel: goalDone ? "Revisar" : "Só flashcards" });
@@ -704,7 +720,7 @@ function renderTodayDashboard(data) {
           <div class="today-weak-row">
             <div class="today-weak-text">
               <strong>${escapeHtml(item.label)}</strong>
-              <span>${hot ? `Cai muito na ${escapeHtml(plan.targetExam)} · ` : ""}${pluralize(pending, "pendente", "pendentes")}</span>
+              <span>${hot ? `Cai muito ${escapeHtml(planExamPhrase(plan))} · ` : ""}${pluralize(pending, "pendente", "pendentes")}</span>
             </div>
             <span class="${accuracyChipClass(item.accuracy)}">${Math.round(item.accuracy * 100)}%</span>
             <button type="button" class="outline-btn" data-today-action="reinforce" data-subtheme="${escapeHtml(item.label)}">Treinar</button>
@@ -792,7 +808,14 @@ function handleTodayClick(event) {
     state.planDraft.touched = true;
   }
   if (target.dataset.planExam !== undefined) {
-    state.planDraft.targetExam = target.dataset.planExam;
+    /* Várias provas: cada toque marca ou desmarca a banca; "Ainda não sei" limpa a seleção. */
+    const value = target.dataset.planExam;
+    const selected = new Set(planExamList(state.planDraft));
+    if (value === "Todas") selected.clear();
+    else if (selected.has(value)) selected.delete(value);
+    else selected.add(value);
+    const ordered = availableReviewExamTargets().filter((exam) => selected.has(exam));
+    state.planDraft.targetExam = ordered.length ? ordered.join(" + ") : "Todas";
     state.planDraft.targetArea = "Todas";
     render();
     return;

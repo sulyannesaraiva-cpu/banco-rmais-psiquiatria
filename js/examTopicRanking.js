@@ -41,7 +41,8 @@ function rankingRows(institution) {
 }
 
 function rankingDefaultInstitution() {
-  const planned = state.studyPlan?.targetExam;
+  /* Com mais de uma banca no plano, começa pela primeira. */
+  const planned = String(state.studyPlan?.targetExam || "").split("+")[0].trim();
   const institutions = new Set(state.exams.map((exam) => exam.institution));
   return planned && institutions.has(planned) ? planned : "Todas";
 }

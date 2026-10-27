@@ -66,7 +66,7 @@ function vesperaHtml({ highlight = false } = {}) {
   return `
     <div class="vespera ${highlight ? "highlight" : ""}">
       ${highlight ? `<strong class="vespera-title">${escapeHtml(when)}: hora da revisão de véspera</strong>` : ""}
-      <p class="panel-line">Temas que mais caem na ${escapeHtml(plan?.targetExam && plan.targetExam !== "Todas" ? plan.targetExam : "prova")}: ${topics.map(escapeHtml).join(", ")}.</p>
+      <p class="panel-line">Temas que mais caem ${escapeHtml(planExamPhrase(plan))}:${topics.map(escapeHtml).join(", ")}.</p>
       <div class="vespera-actions">
         <button type="button" class="${highlight ? "primary-btn" : "outline-btn"}" data-vespera="questions" ${questions.length ? "" : "disabled"}>Questões da véspera · ${questions.length}</button>
         <button type="button" class="outline-btn" data-vespera="flashcards" ${cards.length ? "" : "disabled"}>Flashcards da véspera · ${cards.length}</button>

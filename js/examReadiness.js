@@ -8,9 +8,7 @@ const READINESS_PACE_DAYS = 14;
 const READINESS_BLOCK = 20;
 
 function readinessExams(plan) {
-  const target = plan?.targetExam && plan.targetExam !== "Todas" ? plan.targetExam : null;
-  const area = plan?.targetArea && plan.targetArea !== "Todas" ? plan.targetArea : null;
-  const exams = state.exams.filter((exam) => !exam.custom && (!target || exam.institution === target) && (!area || exam.area === area));
+  const exams = state.exams.filter((exam) => !exam.custom && examMatchesReviewTarget(exam, plan?.targetExam || "Todas", plan?.targetArea || "Todas"));
   return exams.length ? exams : state.exams.filter((exam) => !exam.custom);
 }
 
@@ -91,7 +89,7 @@ function readinessHtml() {
       </div>
       <p class="panel-line">${onTrack
         ? "No seu ritmo atual, você vê todo o banco antes da prova."
-        : `No seu ritmo atual, você chega à prova com cerca de ${Math.round((data.projected / data.total) * 100)}% do banco feito. Priorize os temas marcados como Prioridade, que pesam mais na ${escapeHtml(data.examLabel)}.`}</p>`;
+        : `No seu ritmo atual, você chega à prova com cerca de ${Math.round((data.projected / data.total) * 100)}% do banco feito. Priorize os temas marcados como Prioridade, que pesam mais ${escapeHtml(planExamPhrase(data.plan))}.`}</p>`;
   }
   const rows = data.rows.map((row) => {
     const [label, tone] = READINESS_STATUS[row.status];
