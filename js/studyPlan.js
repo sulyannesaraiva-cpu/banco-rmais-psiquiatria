@@ -804,7 +804,8 @@ const TODAY_MORE_LINK = `<button type="button" class="today-more-link" data-toda
 function renderTodayPanel() {
   const container = document.querySelector("#todayContent");
   if (!container) return;
-  const moreView = state.todayView === "more" && !state.todaySummary && !state.planDraft;
+  /* Sem plano salvo existe um rascunho automático; só a edição aberta pela pessoa fecha a subtela. */
+  const moreView = state.todayView === "more" && !state.todaySummary && !state.planDraft?.openedByUser;
   document.querySelector("#startPanel")?.classList.toggle("show-more", moreView);
   el.source.textContent = todayDateLabel();
   el.title.textContent = moreView ? "Outras revisões" : state.todaySummary ? "Bom trabalho!" : state.studyPlan && !state.planDraft ? greetingForNow() : "Seu plano";

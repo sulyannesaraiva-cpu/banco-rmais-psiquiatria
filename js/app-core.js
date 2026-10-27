@@ -4093,8 +4093,13 @@ function render() {
       renderQuestionDiscussion(null);
       return;
     }
-    el.source.textContent = mainIdle ? "Pronto para estudar" : "Nenhuma questão encontrada";
-    el.title.textContent = mainIdle ? "Banco de questões" : "Ajuste os filtros";
+    if (!mainIdle) {
+      el.source.textContent = "Nenhuma questão encontrada";
+      el.title.textContent = "Ajuste os filtros";
+    } else if (!showStartPanel && !showPerformancePanel) {
+      el.source.textContent = "Banco R+ Psiquiatria";
+      el.title.textContent = document.querySelector(`.tab[data-tab="${state.activeTab}"]`)?.textContent.trim() || "Banco de questões";
+    }
     el.tags.innerHTML = "";
     el.tags.classList.remove("visible");
     el.text.textContent = "";
