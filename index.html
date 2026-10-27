@@ -57,6 +57,8 @@
           <p class="panel-line" id="syncStatus">Modo local ativo.</p>
         </section>
         <button id="themeToggleBtn" class="theme-toggle" type="button" aria-pressed="false">Modo escuro</button>
+        <button id="inviteBtn" class="theme-toggle invite-btn" type="button">Convidar colegas</button>
+        <small id="inviteStatus" class="invite-status" aria-live="polite"></small>
       </div>
     </aside>
 
@@ -101,6 +103,7 @@
         </div>
         <section class="start-panel today-panel" id="startPanel">
           <div class="today-toolbar"><button id="editPlanBtn" type="button" class="link-btn" hidden>Editar plano</button></div>
+          <section id="welcomeCard" class="today-card welcome-card" hidden aria-label="Boas-vindas"></section>
           <div id="vesperaCard" class="today-card" hidden></div>
           <div id="todayContent"></div>
           <details class="today-card today-reviews" id="todayReviews">
@@ -699,6 +702,7 @@
     <script src="js/suspiciousAnswers.js"></script>
     <script src="js/topicConfirm.js"></script>
     <script src="js/adminUsage.js"></script>
+    <script src="js/welcomeInvite.js"></script>
     <script src="js/simulationTimer.js"></script>
     <script src="js/questionLabels.js"></script>
     <script src="js/errorFlashcards.js"></script>

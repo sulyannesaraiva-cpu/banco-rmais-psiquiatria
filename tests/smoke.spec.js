@@ -382,3 +382,17 @@ test("revisão de véspera: cartão perto da prova e blocos de questões e flash
   expect(run.n).toBeGreaterThan(0);
   expect(errors).toEqual([]);
 });
+
+test("plano com mais de uma prova e boas-vindas para quem chega", async ({ page }) => {
+  const errors = await openSite(page);
+  await expect(page.locator("#welcomeCard")).toContainText("Bem-vindo");
+  await page.locator('[data-welcome="close"]').click();
+  await expect(page.locator("#welcomeCard")).toBeHidden();
+  await page.locator('[data-plan-exam="ENARE"]').click();
+  await page.locator('[data-plan-exam="SES-DF"]').click();
+  await page.locator('[data-today-action="save-plan"]').click();
+  const plan = await page.evaluate(() => ({ exam: state.studyPlan.targetExam, exams: readinessExams(state.studyPlan).map((exam) => exam.institution) }));
+  expect(plan.exam).toBe("ENARE + SES-DF");
+  expect([...new Set(plan.exams)].sort()).toEqual(["ENARE", "SES-DF"]);
+  expect(errors).toEqual([]);
+});
