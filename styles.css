@@ -5832,16 +5832,12 @@ body.theme-dark .primary-btn {
   color: #062124;
 }
 
+/* Símbolo: "p" e "q" espelhados, a haste do q em âmbar. Mesmo petróleo nos dois temas. */
 .brand-mark {
-  background: var(--accent);
-  color: #ffffff;
-  font-family: var(--font-display);
-  font-size: 24px;
-  font-weight: 800;
-}
-
-body.theme-dark .brand-mark {
-  color: #062124;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #0b6b70;
 }
 
 .brand h1 {
