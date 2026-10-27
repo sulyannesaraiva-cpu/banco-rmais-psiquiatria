@@ -20,6 +20,14 @@
     ["Depressão e suicídio", /depress|suic[ií]d|luto|eletroconvuls|\bECT\b/i],
     ["Sono", /\bsono\b|ins[oô]nia/i],
   ];
+  /* Cartões de sexualidade (parafilias, disfunções) ficam no tema próprio, qualquer que seja o deck. */
+  for (const deck of decks) {
+    for (const card of deck.cards || []) {
+      /* Só pela pergunta: cartões de antidepressivo citam disfunção sexual como efeito colateral. */
+      if (/paraf[ií]l|frotteur|sexual compulsivo|disforia de g[êe]nero|incongru[êe]ncia de g[êe]nero/i.test(card.front || "")) card.studyTopic = "Sexualidade e gênero";
+    }
+  }
+
   for (const deck of decks) {
     if (deck.area !== "Psicogeriatria") continue;
     for (const card of deck.cards || []) {

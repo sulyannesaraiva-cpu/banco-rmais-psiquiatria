@@ -5,7 +5,10 @@
    3. Palavras-chave claras de Forense/Ética, Psicoterapias ou Saúde Mental Coletiva.
    4. O resto: classificador (Naive Bayes) treinado com as questões didáticas, que já têm tema,
       reforçado por palavras-chave de cada tema. Em validação cruzada nas didáticas acerta ~82%.
-   Classificações com confiança baixa ficam marcadas (examTopicConfidence < 0.9) para revisão. */
+   Classificações com confiança baixa ficam marcadas (examTopicConfidence < 0.9) para revisão.
+   5. Sem palavra-chave do tema previsto: "Pesquisa e avaliação", "Sexualidade e gênero" e
+      genética/neurociência (Neuroanatomia) entram por palavra-chave. "Psiquiatria Infantil", o
+      tema mais genérico, só fica com questões que citam criança ou adolescente. */
 (function setupExamTopics() {
   const FORENSIC_TOPIC = "Forense e Ética";
   const PSYCHOTHERAPY_TOPIC = "Psicoterapias";
@@ -38,9 +41,21 @@
     "Saúde do Idoso": ["idoso", "envelhecimento", "geriatr", "fragilidade", "quedas", "polifarmacia", "senescen", "cuidador"],
   };
 
+  /* Temas sem questões didáticas suficientes: entram só por palavra-chave e só quando o tema
+     clínico previsto não tem nenhuma palavra-chave própria (ex.: questão de genética que o
+     classificador mandaria para Psiquiatria Infantil). */
+  const RESEARCH_TOPIC = "Pesquisa e avaliação em psiquiatria";
+  const SEXUALITY_TOPIC = "Sexualidade e gênero";
+  const NEURO_TOPIC = "Neuroanatomia e Neurofisiologia";
+  const WEAK_RULE_TOPICS = [
+    [SEXUALITY_TOPIC, ["parafili", "disfuncao sexual", "disfuncoes sexuais", "ejaculac", "eretil", "erecao", "orgasm", "desejo sexual", "excitacao sexual", "frotteur", "exibicionis", "voyeur", "fetichis", "pedofil", "sadismo sexual", "masoquismo sexual", "disforia de genero", "incongruencia de genero", "identidade de genero", "transexual", "transgener"]],
+    [RESEARCH_TOPIC, ["ensaio clinico", "ensaios clinicos", "randomiz", "coorte", "caso-controle", "caso controle", "metanalise", "meta-analise", "revisao sistematica", "intervalo de confianca", "odds ratio", "risco relativo", "valor preditivo", "sensibilidade e especificidade", "psicometri", "confiabilidade", "validade de", "conceito de validade", "kappa", "cronbach", "pesquisa qualitativa", "pesquisas quantitativas", "metodos qualitativos", "estudo transversal", "estudos observacionais", "desenho de estudo", "vies de", "hitop", "rdoc", "nosologi", "historia da psiquiatria"]],
+    [NEURO_TOPIC, ["genetic", "genoma", "genomic", "epigenet", "metilacao", "herdabilidade", "polimorfism", "gwas", "variantes gen", "escore de risco poligenico", "neurotrofina", "bdnf", "neuroplasticidade", "citocina", "rede de modo padrao", "default mode", "endocanabin", "neurotransmiss", "areas de associacao", "sistema limbico"]],
+  ];
+
   /* Temas que não existem nas didáticas: entram só por palavra-chave (ou pela área da prova). */
   const RULE_TOPICS = [
-    [FORENSIC_TOPIC, ["forense", "pericia", "perito", "imputab", "interdicao", "curatela", "capacidade civil", "codigo penal", "codigo civil", "medida de seguranca", "internacao involuntaria", "internacao compulsoria", "10.216", "sigilo", "etica medica", "codigo de etica", "conselho federal de medicina", "cfm", "resolucao", "responsabilidade penal", "laudo", "inss", "previdenciari"]],
+    [FORENSIC_TOPIC, ["forense", "pericia", "perito", "imputab", "interdicao", "curatela", "capacidade civil", "codigo penal", "codigo civil", "medida de seguranca", "internacao involuntaria", "internacao compulsoria", "10.216", "sigilo", "etica medica", "codigo de etica", "conselho federal de medicina", "cfm", "resolucao", "responsabilidade penal", "laudo", "inss", "previdenciari", "13.146", "estatuto da pessoa com deficiencia", "tomada de decisao apoiada", "bioetica"]],
     [PUBLIC_HEALTH_TOPIC, ["caps", "raps", "rede de atencao psicossocial", "consultorio na rua", "reforma psiquiatrica", "residencia terapeutica", "matriciamento", "atencao primaria", "atencao basica", "saude mental coletiva", "politica nacional", "epidemiolog", "prevalencia", "estrategia saude da familia", "sus"]],
     [PSYCHOTHERAPY_TOPIC, ["psicoterapia", "psicanal", "freud", "winnicott", "melanie klein", "lacan", "bion", "kohut", "contratransferencia", "neurose de transferencia", "mecanismo de defesa", "mecanismos de defesa", "terapia cognitiv", "terapia comportamental", "mentalizacao", "terapia interpessoal", "terapia familiar", "terapia de grupo", "alianca terapeutica", "entrevista motivacional", "psicodinamic", "metapsicolog"]],
   ];
@@ -49,9 +64,14 @@
   const compileKeywords = (list) =>
     list.map(normalize).map((word) => (word.length <= 4 ? new RegExp(`\\b${word}\\b`) : word));
   /* Muda sempre que as regras mudam: invalida a classificação guardada no navegador (classificationStore.js). */
-  const RULES_FINGERPRINT = JSON.stringify([TOPIC_KEYWORDS, RULE_TOPICS, KEYWORD_WEIGHT, LOW_CONFIDENCE, [...STOPWORDS]]);
+  const RULES_FINGERPRINT = JSON.stringify([TOPIC_KEYWORDS, RULE_TOPICS, WEAK_RULE_TOPICS, KEYWORD_WEIGHT, LOW_CONFIDENCE, [...STOPWORDS]]);
   for (const key of Object.keys(TOPIC_KEYWORDS)) TOPIC_KEYWORDS[key] = compileKeywords(TOPIC_KEYWORDS[key]);
   for (const rule of RULE_TOPICS) rule[1] = compileKeywords(rule[1]);
+  for (const rule of WEAK_RULE_TOPICS) rule[1] = compileKeywords(rule[1]);
+  /* "Psiquiatria Infantil" é o tema mais genérico das didáticas e atrai questões sem tema
+     próprio; só fica com ele a questão que tem alguma palavra ligada a criança ou adolescente. */
+  const SINK_TOPIC = "Psiquiatria Infantil";
+  const CHILD_WORDS = compileKeywords(["crianca", "infancia", "infantil", "adolescen", "escola", "escolar", "tdah", "autis", "espectro autista", "enurese", "encoprese", "tique", "tourette", "oposicao desafiante", "transtorno da conduta", "transtorno de conduta", "pediatr", "bebe", "lactente", "menino", "menina", "filho", "filha", "neurodesenvolv", "deficiencia intelectual", "retardo mental", "aprendizagem", "mutismo", "ansiedade de separacao", "apego", "puberdade", "juvenil", "jovens", "desregulacao do humor"]);
 
   const baseTopicForQuestion = topicForQuestion;
   let model = null;
@@ -116,7 +136,7 @@
     scores.sort((a, b) => b[1] - a[1]);
     const best = scores[0][1];
     const sum = scores.reduce((acc, [, score]) => acc + Math.exp(score - best), 0);
-    return { topic: scores[0][0], confidence: 1 / sum };
+    return { topic: scores[0][0], confidence: 1 / sum, ranking: scores.map(([label]) => label) };
   }
 
   function examAreaOf(question) {
@@ -138,7 +158,21 @@
         return { topic, confidence: hits >= 2 ? 0.95 : 0.8 };
       }
     }
-    return prediction;
+    const isSink = prediction.topic === SINK_TOPIC && keywordHits(text, CHILD_WORDS) === 0;
+    if (ownHits === 0 || isSink) {
+      /* Sinal forte (2+ palavras) de pesquisa, sexualidade ou neurociência vence; com 1 palavra
+         só, um tema clínico citado na questão tem prioridade. */
+      const [weakTopic, weakHits] = WEAK_RULE_TOPICS
+        .map(([topic, list]) => [topic, keywordHits(text, list)])
+        .sort((a, b) => b[1] - a[1])[0];
+      if (weakHits >= 2) return { topic: weakTopic, confidence: 0.95 };
+      const alternative = prediction.ranking.find((topic) => topic !== prediction.topic && topic !== SINK_TOPIC && keywordHits(text, TOPIC_KEYWORDS[topic] || []) > 0);
+      if (isSink && alternative) return { topic: alternative, confidence: 0.8 };
+      if (weakHits === 1 && !alternative) return { topic: weakTopic, confidence: 0.85 };
+      /* Sem palavra de criança nem tema alternativo: confiança baixa, para a administração revisar. */
+      if (isSink) return { topic: prediction.topic, confidence: 0.5 };
+    }
+    return { topic: prediction.topic, confidence: prediction.confidence };
   }
 
   function ensureReady() {

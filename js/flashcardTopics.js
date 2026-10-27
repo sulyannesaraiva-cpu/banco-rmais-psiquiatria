@@ -63,6 +63,11 @@ function flashcardTopicIndex() {
     for (const entry of entries) if (entry.topic) votesByTopic.set(entry.topic, (votesByTopic.get(entry.topic) || 0) + 1);
     const mainTopic = [...votesByTopic.entries()].sort((a, b) => b[1] - a[1])[0]?.[0] || FLASHCARD_AREA_TOPIC[deck.area] || FLASHCARD_OTHER_TOPIC;
     for (const entry of entries) {
+      /* Cartão com tema declarado (data/flashcardSubthemes.js) vai direto para ele. */
+      if (entry.item.card.studyTopic) {
+        add(entry.item.card.studyTopic, entry.known ? entry.subtheme : deck.title, entry.item);
+        continue;
+      }
       /* Cartão com subtema declarado fica no tema dele. Sem declaração, um cartão que a
          classificação automática mandou para outro tema (ex.: "delirium x psicose" no deck de
          Delirium) continua no tema do próprio deck. */

@@ -2829,6 +2829,10 @@ function applyFilters({ preserveCurrent = false } = {}) {
     return matchesQuery && matchesTopic && matchesStatus;
   });
   if (status === "no-explanation") state.filtered = sortByExplanationPriority(state.filtered);
+  /* Fila de tema incerto: as classificações mais duvidosas primeiro. */
+  if (status === "uncertain-topic" && typeof examTopicConfidence === "function") {
+    state.filtered.sort((a, b) => (examTopicConfidence(a) ?? 1) - (examTopicConfidence(b) ?? 1));
+  }
 
   if (filterChanged && !preserveCurrent) {
     restorePosition(nextFilterKey);

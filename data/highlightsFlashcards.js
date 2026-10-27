@@ -93,7 +93,7 @@
       ["Quais os riscos genéticos na esquizofrenia?", "Concordância de cerca de 50% em gêmeos monozigóticos e 15% em dizigóticos, risco de cerca de 10% com parente de 1º grau e herdabilidade de cerca de 80%; ainda assim, a maioria dos pacientes não tem parente de 1º grau afetado.", ["Genética", "Esquizofrenia"]],
     ]),
 
-    deck("pg-classificacoes-pesquisa", "Classificações, avaliação e pesquisa", "Psiquiatria Geral", 3, "Psicopatologia", [
+    deck("pg-classificacoes-pesquisa", "Classificações, avaliação e pesquisa", "Psiquiatria Geral", 3, "Pesquisa e avaliação em psiquiatria", [
       ["O que é o RDoC e quais seus domínios?", "Modelo de pesquisa do NIMH (2009), não de uso clínico. Domínios: valência negativa, valência positiva, sistemas cognitivos, processos sociais, sistemas de regulação e alerta e sistemas sensório-motores (o último, incluído em 2019).", ["Classificações", "RDoC"], "Hábito é constructo da valência positiva; frustração pertence à valência negativa."],
       ["Como o HiTOP organiza a psicopatologia?", "Em níveis: sintomas e traços, síndromes, subfatores, espectros e superespectro (fator geral). O subfator 'angústia' reúne depressão, TAG, TEPT e traços borderline. É descritivo e não incorpora etiologia.", ["Classificações", "HiTOP"]],
       ["Quais mudanças da CID-11 em relação à CID-10 mais caem?", "Capítulos próprios para sono-vigília e saúde sexual, inclusão do transtorno de acumulação e do transtorno por jogos eletrônicos, e luto prolongado. A reação aguda ao estresse deixou de ser transtorno mental.", ["Classificações", "CID-11"]],
