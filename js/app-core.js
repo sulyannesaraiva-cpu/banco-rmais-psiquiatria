@@ -5500,10 +5500,26 @@ function loadPayload() {
 /* A inicialização espera o fim do carregamento da página para que os módulos
    carregados depois deste arquivo (revisão, progresso por tema, sessão etc.) já
    estejam aplicados quando o app desenha a primeira tela. */
+/* Tira do banco as cópias de questões didáticas repetidas (data/duplicateQuestions.js). Se a
+   pessoa respondeu só a cópia, o progresso dela passa para a versão que fica. */
+function removeDuplicateQuestions(questions) {
+  const duplicates = window.BANCO_RMAIS_DUPLICATES || {};
+  let moved = false;
+  for (const [copyId, keptId] of Object.entries(duplicates)) {
+    const copy = state.progress[copyId];
+    if (copy?.grade && !state.progress[keptId]?.grade) {
+      state.progress[keptId] = { ...copy };
+      moved = true;
+    }
+  }
+  if (moved) localStorage.setItem("banco-rmais-progress", JSON.stringify(state.progress));
+  return questions.filter((question) => !duplicates[question.id]);
+}
+
 function startApp() {
   return loadPayload()
   .then(async (payload) => {
-    state.questions = payload.questions || [];
+    state.questions = removeDuplicateQuestions(payload.questions || []);
     state.exams = window.BANCO_RMAIS_EXAMS?.exams || [];
     state.flashcards = window.BANCO_RMAIS_FLASHCARDS?.decks || [];
     applyTheme(state.theme);
