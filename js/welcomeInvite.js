@@ -29,7 +29,7 @@ function renderWelcome() {
   if (!visible) return;
   const html = `
     ${state.invited ? '<span class="welcome-kicker">Você foi convidado por um colega</span>' : ""}
-    <h2>Bem-vindo ao Banco R+ Psiquiatria</h2>
+    <h2>Bem-vindo ao Psiquiatria em Questão</h2>
     <p>Questões de provas de residência e de títulos, flashcards e um plano de estudo que se ajusta à sua prova.</p>
     <ol class="welcome-steps">
       <li><strong>Monte seu plano</strong><span>Escolha as provas que vai fazer, a data e quanto tempo tem por dia.</span></li>
@@ -49,11 +49,11 @@ function renderWelcome() {
 
 async function inviteColleagues() {
   const url = `${location.origin}/?${INVITE_PARAM}=1`;
-  const text = "Estou usando o Banco R+ Psiquiatria para estudar para as provas: questões comentadas, flashcards e plano de estudo. Experimenta:";
+  const text = "Estou usando o Psiquiatria em Questão para estudar para as provas: questões comentadas, flashcards e plano de estudo. Experimenta:";
   const status = document.querySelector("#inviteStatus");
   try {
     if (navigator.share) {
-      await navigator.share({ title: "Banco R+ Psiquiatria", text, url });
+      await navigator.share({ title: "Psiquiatria em Questão", text, url });
       return;
     }
     await navigator.clipboard.writeText(`${text} ${url}`);

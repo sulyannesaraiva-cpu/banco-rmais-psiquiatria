@@ -619,7 +619,7 @@ function renderPlanForm() {
     <div class="plan-form">
       <div class="plan-head">
         <h2>${editing ? "Editar plano de estudo" : "Monte seu plano de estudo"}</h2>
-        <p>Com isso o Banco R+ escolhe o que você estuda a cada dia e prioriza o que mais cai na sua prova.</p>
+        <p>Com isso o site escolhe o que você estuda a cada dia e prioriza o que mais cai na sua prova.</p>
       </div>
       <fieldset class="plan-field">
         <legend>Quais provas você vai fazer? <span class="plan-optional">(pode marcar mais de uma)</span></legend>

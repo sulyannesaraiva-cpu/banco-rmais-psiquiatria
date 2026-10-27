@@ -1,13 +1,13 @@
 {
-  "name": "Banco R+ Psiquiatria",
-  "short_name": "Banco R+",
-  "description": "Banco de questões de Psiquiatria para residência e área de atuação.",
+  "name": "Psiquiatria em Questão",
+  "short_name": "Psiq. em Questão",
+  "description": "Questões comentadas, flashcards e plano de estudo de Psiquiatria para residência e título de especialista.",
   "lang": "pt-BR",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
-  "background_color": "#f8fafc",
-  "theme_color": "#111827",
+  "background_color": "#f3f6f6",
+  "theme_color": "#0b3b40",
   "icons": [
     { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
     { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },

@@ -82,7 +82,7 @@
       .map(([topic, items]) => `<section><h2>${escapeHtml(topic)} <small>(${items.length})</small></h2>${items.map((question) => questionHtml(question, ++number)).join("")}</section>`)
       .join("");
     const today = new Date().toLocaleDateString("pt-BR");
-    const html = `<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><title>Caderno de erros · Banco R+</title>
+    const html = `<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><title>Caderno de erros · Psiquiatria em Questão</title>
       <style>
         body{font:13px/1.5 Georgia,"Times New Roman",serif;color:#111;margin:24px auto;max-width:760px;padding:0 16px}
         header{border-bottom:2px solid #111;margin-bottom:16px;padding-bottom:8px}
@@ -105,7 +105,7 @@
         .note p{margin:4px 0;white-space:pre-wrap}
         @media print{body{margin:0}h2{background:#eee !important;-webkit-print-color-adjust:exact;print-color-adjust:exact}}
       </style></head><body>
-      <header><h1>Caderno de erros</h1><p>${escapeHtml(chosen === "Todos" ? "Todos os temas" : chosen)} · ${questions.length} questões · ${today} · Banco R+ Psiquiatria</p></header>
+      <header><h1>Caderno de erros</h1><p>${escapeHtml(chosen === "Todos" ? "Todos os temas" : chosen)} · ${questions.length} questões · ${today} · Psiquiatria em Questão</p></header>
       ${sections}
       <script>window.onload=()=>setTimeout(()=>window.print(),300)<\/script>
       </body></html>`;

@@ -3800,7 +3800,7 @@ function renderDangerousQuestions() {
           return `
             <button class="notebook-row" data-dangerous-question="${escapeHtml(question.id)}">
               <strong>${escapeHtml(topicForQuestion(question))}</strong>
-              <span>${escapeHtml(question.source || "Banco R+")} · Questão ${escapeHtml(String(question.number || ""))}</span>
+              <span>${escapeHtml(question.source || "Psiquiatria em Questão")} · Questão ${escapeHtml(String(question.number || ""))}</span>
               <small>${escapeHtml(reasons)}</small>
             </button>
           `;
@@ -4097,7 +4097,7 @@ function render() {
       el.source.textContent = "Nenhuma questão encontrada";
       el.title.textContent = "Ajuste os filtros";
     } else if (!showStartPanel && !showPerformancePanel) {
-      el.source.textContent = "Banco R+ Psiquiatria";
+      el.source.textContent = "Psiquiatria em Questão";
       el.title.textContent = document.querySelector(`.tab[data-tab="${state.activeTab}"]`)?.textContent.trim() || "Banco de questões";
     }
     el.tags.innerHTML = "";
@@ -4130,7 +4130,7 @@ function render() {
   const headerTarget = mainIdle ? { textContent: "" } : el.source;
   const titleTarget = mainIdle ? { textContent: "" } : el.title;
   if (mainIdle && !showStartPanel && !showPerformancePanel) {
-    el.source.textContent = "Banco R+ Psiquiatria";
+    el.source.textContent = "Psiquiatria em Questão";
     el.title.textContent = document.querySelector(`.tab[data-tab="${state.activeTab}"]`)?.textContent.trim() || "Banco de questões";
   }
   headerTarget.textContent = state.examSimulationActive
@@ -4153,7 +4153,7 @@ function render() {
           : "Temas selecionados"
         : state.spacedReviewActive && state.reviewFallbackNotice
           ? state.reviewFallbackNotice
-          : "Banco R+ Psiquiatria";
+          : "Psiquiatria em Questão";
   titleTarget.textContent = state.sessionActive || state.smartTrainingActive || state.examActive || state.examSimulationActive || state.examSetActive || state.topicActive || state.dangerousReviewActive ? `Questão ${state.index + 1}` : `Questão ${question.number}`;
   el.position.textContent = `${state.index + 1} / ${state.filtered.length}`;
   const examTag = question.examTag || (question.examId ? question.source : "");
