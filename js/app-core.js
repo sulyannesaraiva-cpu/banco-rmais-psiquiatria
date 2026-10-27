@@ -691,7 +691,7 @@ function renderAuth() {
   el.authStatus.textContent = user ? user.email : "Salve seu progresso com login.";
   el.authForm.hidden = Boolean(user);
   el.logout.hidden = !user;
-  if (!user) setSyncStatus(state.supabase ? "Modo local ativo." : "Supabase indisponivel neste navegador.");
+  if (!user) setSyncStatus(state.supabase ? "Modo local ativo." : "Supabase indisponível neste navegador.");
   renderAdminAccess();
 }
 
@@ -866,7 +866,7 @@ async function syncSettingsToCloud() {
     },
     { onConflict: "user_id" },
   );
-  setSyncStatus(error ? `Erro ao salvar configuracoes: ${error.message}` : "Configuracoes sincronizadas.");
+  setSyncStatus(error ? `Erro ao salvar configurações: ${error.message}` : "Configurações sincronizadas.");
 }
 
 /* Sincroniza progresso/configurações da conta sem desmontar um bloco de questões ativo. */
@@ -962,7 +962,7 @@ async function setupSupabaseAuth() {
 
 async function signIn() {
   if (!state.supabase) {
-    setSyncStatus("Supabase ainda nao carregou. Recarregue a pagina.");
+    setSyncStatus("Supabase ainda não carregou. Recarregue a página.");
     return;
   }
   const email = el.authEmail.value.trim();
@@ -978,7 +978,7 @@ async function signIn() {
 
 async function signUp() {
   if (!state.supabase) {
-    setSyncStatus("Supabase ainda nao carregou. Recarregue a pagina.");
+    setSyncStatus("Supabase ainda não carregou. Recarregue a página.");
     return;
   }
   const email = el.authEmail.value.trim();
@@ -993,7 +993,7 @@ async function signUp() {
     password,
     options: { emailRedirectTo: window.location.origin },
   });
-  setSyncStatus(error ? `Erro ao criar conta: ${error.message}` : "Conta criada. Verifique seu email se a confirmacao estiver ativa.");
+  setSyncStatus(error ? `Erro ao criar conta: ${error.message}` : "Conta criada. Verifique seu email se a confirmação estiver ativa.");
 }
 
 async function signOut() {
@@ -1015,7 +1015,7 @@ async function signOut() {
 
 async function resetPassword() {
   if (!state.supabase) {
-    setSyncStatus("Supabase ainda nao carregou. Recarregue a pagina.");
+    setSyncStatus("Supabase ainda não carregou. Recarregue a página.");
     return;
   }
   const email = el.authEmail.value.trim();
@@ -1024,7 +1024,7 @@ async function resetPassword() {
     return;
   }
   const { error } = await state.supabase.auth.resetPasswordForEmail(email, { redirectTo: window.location.origin });
-  setSyncStatus(error ? `Erro ao enviar recuperacao: ${error.message}` : "Email de recuperacao enviado.");
+  setSyncStatus(error ? `Erro ao enviar recuperação: ${error.message}` : "Email de recuperação enviado.");
 }
 
 function setDiscussionStaticText() {
@@ -1581,7 +1581,7 @@ function readinessIssues(question) {
   if (question?.maintenanceFlagged) issues.push("sinalizada para manutenção");
   if (question?.annulled) return issues;
   if (!question?.text?.trim()) issues.push("enunciado vazio");
-  if (!question?.options?.length || question.options.length < 2) issues.push("alternativas nao separadas");
+  if (!question?.options?.length || question.options.length < 2) issues.push("alternativas não separadas");
   if (question?.options?.length && new Set(question.options.map((option) => option.letter)).size !== question.options.length) {
     issues.push("alternativas com letras duplicadas");
   }
@@ -3258,7 +3258,7 @@ function renderFlashcards() {
         : ""
     }
     <div>${(card.tags || []).map((tag) => `<span class="mini-badge">${escapeHtml(tag)}</span>`).join("")}</div>
-    ${progress.lastGrade ? `<small>Ultima marcacao: ${escapeHtml(progress.lastGrade)}</small>` : ""}
+    ${progress.lastGrade ? `<small>Última marcação: ${escapeHtml(progress.lastGrade)}</small>` : ""}
   `;
   el.flashcardBack.hidden = !state.flashcardRevealed;
   el.flashcardGrade.hidden = !state.flashcardRevealed;
@@ -4051,6 +4051,8 @@ function render() {
   const showPerformancePanel = mainIdle && state.activeTab === "history" && typeof renderPerformancePanel === "function";
   const showTabView = flashcardMode || (mainIdle && state.activeTab !== "overview");
   if (el.startPanel) el.startPanel.hidden = !showStartPanel;
+  /* "Outras revisões" é uma subtela de Hoje: ao sair de Hoje, a volta é sempre para a tela principal. */
+  if (!showStartPanel) state.todayView = null;
   const performancePanel = document.querySelector("#performancePanel");
   if (performancePanel) performancePanel.hidden = !showPerformancePanel;
   if (el.tabView) el.tabView.hidden = !showTabView;
@@ -4118,7 +4120,15 @@ function render() {
   const examLocked = state.examSimulationActive && !state.examSimulationFinished;
   const selectedLetter = state.examSimulationActive ? state.examSimulationAnswers[question.id] || storedProgress.selected : progress.selected;
   state.selected = selectedLetter || null;
-  el.source.textContent = state.examSimulationActive
+  /* Com um bloco em andamento e outra aba aberta por cima (Hoje, Desempenho...), a questão
+     continua sendo montada por baixo, mas o cabeçalho é da aba que está na tela. */
+  const headerTarget = mainIdle ? { textContent: "" } : el.source;
+  const titleTarget = mainIdle ? { textContent: "" } : el.title;
+  if (mainIdle && !showStartPanel && !showPerformancePanel) {
+    el.source.textContent = "Banco R+ Psiquiatria";
+    el.title.textContent = document.querySelector(`.tab[data-tab="${state.activeTab}"]`)?.textContent.trim() || "Banco de questões";
+  }
+  headerTarget.textContent = state.examSimulationActive
     ? state.examSimulationFinished
       ? "Resultado da prova"
       : "Simulado em andamento"
@@ -4139,9 +4149,8 @@ function render() {
         : state.spacedReviewActive && state.reviewFallbackNotice
           ? state.reviewFallbackNotice
           : "Banco R+ Psiquiatria";
-  el.title.textContent = state.sessionActive || state.smartTrainingActive || state.examActive || state.examSimulationActive || state.examSetActive || state.topicActive ? `Questão ${state.index + 1}` : `Questão ${question.number}`;
+  titleTarget.textContent = state.sessionActive || state.smartTrainingActive || state.examActive || state.examSimulationActive || state.examSetActive || state.topicActive || state.dangerousReviewActive ? `Questão ${state.index + 1}` : `Questão ${question.number}`;
   el.position.textContent = `${state.index + 1} / ${state.filtered.length}`;
-  if (state.dangerousReviewActive) el.title.textContent = `Questão ${state.index + 1}`;
   const examTag = question.examTag || (question.examId ? question.source : "");
   const trainingReasons = state.smartTrainingActive ? questionTrainingReasons(question) : [];
   const dangerousTag = isDangerousQuestion(question) ? `Atenção Questão perigosa: ${dangerousReasonsFor(question).join(", ")}` : "";

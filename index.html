@@ -102,12 +102,12 @@
           <button id="tabViewBackBtn" type="button" class="primary-btn">Voltar &agrave; quest&atilde;o</button>
         </div>
         <section class="start-panel today-panel" id="startPanel">
-          <div class="today-toolbar"><button id="editPlanBtn" type="button" class="link-btn" hidden>Editar plano</button></div>
-          <section id="welcomeCard" class="today-card welcome-card" hidden aria-label="Boas-vindas"></section>
-          <div id="vesperaCard" class="today-card" hidden></div>
+          <div class="today-toolbar today-main-only"><button id="editPlanBtn" type="button" class="link-btn" hidden>Editar plano</button></div>
+          <section id="welcomeCard" class="today-card welcome-card today-main-only" hidden aria-label="Boas-vindas"></section>
+          <div id="vesperaCard" class="today-card today-main-only" hidden></div>
           <div id="todayContent"></div>
-          <details class="today-card today-reviews" id="todayReviews">
-            <summary><h3>Outras revisões</h3><span>erros, temas que mais caem, flashcards</span></summary>
+          <section class="today-card today-reviews today-more-only" id="todayReviews" aria-label="Revisões especiais">
+            <h3 class="today-reviews-title">Revisões especiais</h3>
             <div class="today-reviews-grid">
               <button id="quickReviewBtn" type="button">Revisão rápida · 10 min</button>
               <button id="repeatedErrorsReviewBtn" type="button">Meus erros repetidos</button>
@@ -149,8 +149,8 @@
               <button id="startDangerousReviewBtn" type="button" class="outline-btn">Revisar perigosas</button>
               <div class="dangerous-list" id="dangerousList"></div>
             </div>
-          </details>
-          <div class="today-more">
+          </section>
+          <div class="today-more today-more-only">
             <h3 class="today-more-title">Outras formas de estudar</h3>
             <div class="today-more-grid">
               <button id="goExamsBtn" type="button">Provas e simulados</button>
@@ -647,7 +647,7 @@
             <textarea id="noteInput" rows="5" placeholder="Resumo, pegadinha, mnemonico ou conduta..."></textarea>
           </label>
           <button id="savePrivateNoteBtn" class="primary-btn">Salvar anota&ccedil;&atilde;o</button>
-          <p class="panel-line" id="privateNoteStatus">Anotacao privada salva apenas neste navegador ate entrar na conta.</p>
+          <p class="panel-line" id="privateNoteStatus">Anotação privada salva apenas neste navegador até entrar na conta.</p>
           </div>
           </details>
         </section>

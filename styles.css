@@ -3603,37 +3603,63 @@ body.theme-dark .today-chip.good { background: #052e16; color: #86efac; }
   font-weight: 600;
 }
 
-.today-reviews > summary {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 4px 12px;
-  cursor: pointer;
-  list-style: none;
+/* Hoje mostra só a prova e o estudo do dia; o resto fica na subtela "Outras revisões". */
+.today-panel:not(.show-more) .today-more-only,
+.today-panel.show-more .today-main-only {
+  display: none !important;
 }
 
-.today-reviews > summary::-webkit-details-marker {
-  display: none;
-}
-
-.today-reviews > summary::after {
-  content: "▾";
-  margin-left: auto;
-  color: var(--muted);
-  transition: transform 0.15s ease;
-}
-
-.today-reviews:not([open]) > summary::after {
-  transform: rotate(-90deg);
-}
-
-.today-reviews > summary h3 {
+.today-reviews-title {
   margin: 0;
 }
 
-.today-reviews > summary span {
+.today-more-link {
+  width: 100%;
+  min-height: 60px;
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--panel);
+  color: var(--ink);
+  font-size: 22px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.today-more-link > span {
+  flex: 1;
+  display: grid;
+  gap: 2px;
+}
+
+.today-more-link strong {
+  font-size: 15px;
+}
+
+.today-more-link small {
   color: var(--muted);
-  font-size: 14px;
+  font-size: 13px;
+}
+
+.today-more-link:hover {
+  border-color: var(--accent);
+}
+
+.today-more-head {
+  display: grid;
+  gap: 4px;
+}
+
+.today-more-head .link-btn {
+  justify-self: start;
+}
+
+.today-more-head h2 {
+  margin: 0;
 }
 
 .today-reviews-grid {

@@ -249,7 +249,8 @@ test("etiquetas, cartões dos erros e reportar sem login", async ({ page }) => {
   });
   await page.locator(`#optionsList [data-option="${letter}"]`).click();
   await page.locator("#confirmAnswerBtn").click();
-  await page.evaluate(() => { finishSession(); setTab("overview"); render(); document.querySelector("#todayReviews").open = true; render(); });
+  await page.evaluate(() => { finishSession(); setTab("overview"); render(); });
+  await page.locator('[data-today-action="more"]').click();
   await expect(page.locator('[data-label-review="decorar"]')).toContainText("1");
   await page.locator("#createErrorCardsBtn").click();
   expect(await page.evaluate(() => customFlashcardDeck().cards.length)).toBe(1);

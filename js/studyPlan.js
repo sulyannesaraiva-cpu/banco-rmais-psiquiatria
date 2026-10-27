@@ -712,21 +712,7 @@ function renderTodayDashboard(data) {
     const parts = [data.flashcardsReview ? pluralize(data.flashcardsReview, "para revisar", "para revisar") : "", data.flashcardsNew ? pluralize(data.flashcardsNew, "novo", "novos") : ""].filter(Boolean).join(" · ");
     rows.push({ icon: "cards", tone: "info", title: `${pluralize(data.flashcardsDue, "flashcard", "flashcards")} hoje`, text: `${parts}${goalDone ? "" : " · depois das questões"}`, action: "flashcards", actionLabel: goalDone ? "Revisar" : "Só flashcards" });
   }
-  const weakHtml = data.weak.length
-    ? data.weak.map((item) => {
-        const pending = item.unanswered + item.due;
-        const hot = item.share >= 0.06 && plan?.targetExam && plan.targetExam !== "Todas";
-        return `
-          <div class="today-weak-row">
-            <div class="today-weak-text">
-              <strong>${escapeHtml(item.label)}</strong>
-              <span>${hot ? `Cai muito ${escapeHtml(planExamPhrase(plan))} · ` : ""}${pluralize(pending, "pendente", "pendentes")}</span>
-            </div>
-            <span class="${accuracyChipClass(item.accuracy)}">${Math.round(item.accuracy * 100)}%</span>
-            <button type="button" class="outline-btn" data-today-action="reinforce" data-subtheme="${escapeHtml(item.label)}">Treinar</button>
-          </div>`;
-      }).join("")
-    : '<p class="today-muted">Responda pelo menos 5 questões de um tema para ver seus pontos fracos aqui.</p>';
+  const blockInProgress = hasActiveQuestionFlow() && state.filtered.length > 0;
 
   return `
     <div class="today-dashboard">
@@ -759,10 +745,41 @@ function renderTodayDashboard(data) {
               ${row.action ? `<button type="button" class="outline-btn today-row-btn" data-today-action="${row.action}">${row.actionLabel}</button>` : ""}
             </div>`).join("")}
         </div>
-        <button type="button" class="primary-btn today-cta" data-today-action="${goalDone ? "start-extra" : "start"}">${goalDone ? "Estudar mais 10 questões" : "Começar"} ${TODAY_ICONS.arrow}</button>
-        ${data.due.length ? `<button type="button" class="outline-btn today-review-only" data-today-action="review-due">Só revisar agora · ${pluralize(Math.min(data.due.length, REVIEW_ONLY_LIMIT), "questão vencida", "questões vencidas")}</button>` : ""}
+        ${blockInProgress
+          ? `<button type="button" class="primary-btn today-cta" data-today-action="resume">Continuar o bloco (${state.index + 1} de ${state.filtered.length}) ${TODAY_ICONS.arrow}</button>`
+          : `<button type="button" class="primary-btn today-cta" data-today-action="${goalDone ? "start-extra" : "start"}">${goalDone ? "Estudar mais 10 questões" : "Começar"} ${TODAY_ICONS.arrow}</button>`}
+        ${!blockInProgress && data.due.length ? `<button type="button" class="outline-btn today-review-only" data-today-action="review-due">Só revisar agora · ${pluralize(Math.min(data.due.length, REVIEW_ONLY_LIMIT), "questão vencida", "questões vencidas")}</button>` : ""}
       </section>
+    </div>`;
+}
 
+/* Tela "Outras revisões": sequência de dias, pontos fracos e, logo abaixo (fixos no index.html),
+   as revisões especiais e as outras formas de estudar. Hoje fica só com a prova e o estudo do dia. */
+function renderTodayMore(data) {
+  const plan = data?.plan;
+  const weakHtml = !data
+    ? ""
+    : data.weak.length
+    ? data.weak.map((item) => {
+        const pending = item.unanswered + item.due;
+        const hot = item.share >= 0.06 && plan?.targetExam && plan.targetExam !== "Todas";
+        return `
+          <div class="today-weak-row">
+            <div class="today-weak-text">
+              <strong>${escapeHtml(item.label)}</strong>
+              <span>${hot ? `Cai muito ${escapeHtml(planExamPhrase(plan))} · ` : ""}${pluralize(pending, "pendente", "pendentes")}</span>
+            </div>
+            <span class="${accuracyChipClass(item.accuracy)}">${Math.round(item.accuracy * 100)}%</span>
+            <button type="button" class="outline-btn" data-today-action="reinforce" data-subtheme="${escapeHtml(item.label)}">Treinar</button>
+          </div>`;
+      }).join("")
+    : '<p class="today-muted">Responda pelo menos 5 questões de um tema para ver seus pontos fracos aqui.</p>';
+  return `
+    <div class="today-dashboard">
+      <div class="today-more-head">
+        <button type="button" class="link-btn" data-today-action="back-today">← Voltar para Hoje</button>
+      </div>
+      ${data ? `
       <div class="today-columns">
         <section class="today-card">
           <div class="today-streak-head">
@@ -778,19 +795,28 @@ function renderTodayDashboard(data) {
           <div class="today-card-head"><h3>Reforçar esta semana</h3></div>
           ${weakHtml}
         </section>
-      </div>
+      </div>` : ""}
     </div>`;
 }
+
+const TODAY_MORE_LINK = `<button type="button" class="today-more-link" data-today-action="more"><span><strong>Outras revisões</strong><small>Erros, etiquetas, véspera, pontos fracos e outras formas de estudar</small></span>${"›"}</button>`;
 
 function renderTodayPanel() {
   const container = document.querySelector("#todayContent");
   if (!container) return;
+  const moreView = state.todayView === "more" && !state.todaySummary && !state.planDraft;
+  document.querySelector("#startPanel")?.classList.toggle("show-more", moreView);
   el.source.textContent = todayDateLabel();
-  el.title.textContent = state.todaySummary ? "Bom trabalho!" : state.studyPlan && !state.planDraft ? greetingForNow() : "Seu plano";
+  el.title.textContent = moreView ? "Outras revisões" : state.todaySummary ? "Bom trabalho!" : state.studyPlan && !state.planDraft ? greetingForNow() : "Seu plano";
   let html;
-  if (state.todaySummary) html = renderTodaySummary(state.todaySummary);
-  else if (!state.studyPlan || state.planDraft) html = renderPlanForm();
-  else html = renderTodayDashboard(computeTodayData());
+  if (moreView) html = renderTodayMore(state.studyPlan ? computeTodayData() : null);
+  else if (state.todaySummary) html = renderTodaySummary(state.todaySummary);
+  else if (!state.studyPlan || state.planDraft) html = renderPlanForm() + (state.planDraft?.openedByUser ? "" : TODAY_MORE_LINK);
+  else {
+    html = renderTodayDashboard(computeTodayData()) + TODAY_MORE_LINK;
+    /* O botão "Continuar o bloco" já está no cartão do dia: a faixa do topo seria repetida. */
+    if (el.tabViewBack && hasActiveQuestionFlow() && state.filtered.length > 0) el.tabViewBack.hidden = true;
+  }
   if (container.dataset.renderedHtml !== html) {
     container.innerHTML = html;
     container.dataset.renderedHtml = html;
@@ -862,6 +888,16 @@ function handleTodayClick(event) {
   } else if (action === "close-summary") {
     state.todaySummary = null;
     render();
+  } else if (action === "more") {
+    state.todayView = "more";
+    render();
+    window.scrollTo(0, 0);
+  } else if (action === "back-today") {
+    state.todayView = null;
+    render();
+    window.scrollTo(0, 0);
+  } else if (action === "resume") {
+    returnToQuestion();
   }
 }
 
