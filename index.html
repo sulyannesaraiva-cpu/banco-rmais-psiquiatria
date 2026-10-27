@@ -101,6 +101,7 @@
         </div>
         <section class="start-panel today-panel" id="startPanel">
           <div class="today-toolbar"><button id="editPlanBtn" type="button" class="link-btn" hidden>Editar plano</button></div>
+          <div id="vesperaCard" class="today-card" hidden></div>
           <div id="todayContent"></div>
           <details class="today-card today-reviews" id="todayReviews">
             <summary><h3>Outras revisões</h3><span>erros, temas que mais caem, flashcards</span></summary>
@@ -109,6 +110,10 @@
               <button id="repeatedErrorsReviewBtn" type="button">Meus erros repetidos</button>
               <button id="examThemesReviewBtn" type="button">Temas que mais caem</button>
               <button id="flashcardErrorsReviewBtn" type="button">Flashcards dos meus erros</button>
+            </div>
+            <div class="today-reviews-section">
+              <h4>Revisão de véspera</h4>
+              <div id="vesperaReview"></div>
             </div>
             <div class="today-reviews-section">
               <h4>Minhas etiquetas</h4>
@@ -700,6 +705,7 @@
     <script src="js/flashcardDaily.js"></script>
     <script src="js/flashcardTopics.js"></script>
     <script src="js/examReadiness.js"></script>
+    <script src="js/vesperaReview.js"></script>
     <script src="js/questionSearch.js"></script>
     <script>
       /* Aplicativo/offline: registra o service worker (sw.js) depois que a página carregou. */

@@ -3347,10 +3347,14 @@ function renderDashboard() {
   if (hasActiveQuestionFlow() && !state.tabViewOpen) return;
   if (!heavyAnalyticsVisible()) return;
   renderPendingSummary();
-  renderTopicChecklist();
+  /* Lista de temas e montagem do bloco são as partes mais pesadas: só com a aba aberta (ao
+     trocar de aba, o render redesenha a nova). */
+  if (state.activeTab === "activity") {
+    renderTopicChecklist();
+    renderActivity();
+  }
   renderExamStudyFilters();
-  renderActivity();
-  renderHistory();
+  if (state.activeTab === "history") renderHistory();
   renderDangerousQuestions();
   renderSavedNotesPanel();
   renderExams();

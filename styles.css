@@ -5547,3 +5547,29 @@ body.reading-serif .my-note-text,
 .answer-stat span {
   color: var(--muted);
 }
+
+/* Revisão de véspera (js/vesperaReview.js). */
+.vespera {
+  display: grid;
+  gap: 8px;
+}
+
+.vespera .panel-line {
+  margin: 0;
+}
+
+.vespera-title {
+  font-size: 16px;
+}
+
+.vespera-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+#vesperaCard {
+  margin-bottom: 14px;
+  border-color: var(--warn);
+  background: var(--warn-soft);
+}

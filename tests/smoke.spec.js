@@ -362,3 +362,23 @@ test("até a prova: ritmo necessário e treino por tema", async ({ page }) => {
   expect(run.n).toBeGreaterThan(0);
   expect(errors).toEqual([]);
 });
+
+test("revisão de véspera: cartão perto da prova e blocos de questões e flashcards", async ({ page }) => {
+  const errors = await openSite(page);
+  await page.evaluate(() => {
+    const d = new Date(Date.now() + 3 * 86400e3);
+    const iso = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+    saveStudyPlan({ targetExam: "ENARE", targetArea: "Todas", minutesPerDay: 60, examDate: iso });
+    state.planDraft = null;
+    todayStudyPool().slice(0, 200).forEach((q, i) => { state.progress[q.id] = { grade: i % 3 ? "correct" : "wrong", selected: q.correctAnswer, lastWrongAt: Date.now() - 86400e3 }; });
+    saveProgress();
+    setTab("overview");
+    render();
+  });
+  await expect(page.locator("#vesperaCard")).toContainText("revisão de véspera");
+  await page.locator('#vesperaCard [data-vespera="questions"]').click();
+  const run = await page.evaluate(() => ({ active: state.sessionActive, n: state.filtered.length }));
+  expect(run.active).toBe(true);
+  expect(run.n).toBeGreaterThan(0);
+  expect(errors).toEqual([]);
+});
