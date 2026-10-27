@@ -178,6 +178,7 @@
                 <select id="statusSelect">
                   <option value="all">Selecionar</option>
                   <option value="reported">Reportadas pelos usuários</option>
+                  <option value="suspicious-key">Gabarito suspeito</option>
                   <option value="needs-review">Precisam revisar</option>
                   <option value="missing-answer">Sem gabarito</option>
                   <option value="answer-mismatch">Gabarito inconsistente</option>
@@ -538,6 +539,7 @@
             </form>
             <p id="reportStatus" class="panel-line" hidden></p>
             <div id="questionReportsAdmin" class="reports-admin" hidden></div>
+            <div id="answerStatsAdmin" class="answer-stats-admin" hidden></div>
           </div>
         </article>
 
@@ -687,6 +689,7 @@
     <script src="js/communityStats.js"></script>
     <script src="js/errorNotebookPrint.js"></script>
     <script src="js/questionReports.js"></script>
+    <script src="js/suspiciousAnswers.js"></script>
     <script src="js/simulationTimer.js"></script>
     <script src="js/questionLabels.js"></script>
     <script src="js/errorFlashcards.js"></script>

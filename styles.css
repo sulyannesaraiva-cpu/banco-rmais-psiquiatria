@@ -5505,3 +5505,45 @@ body.reading-serif .my-note-text,
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
+
+/* Gabarito suspeito: distribuição das respostas (js/suspiciousAnswers.js). */
+.answer-stats-admin {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-sm);
+  background: var(--panel-soft);
+  font-size: 14px;
+}
+
+.answer-stats {
+  display: grid;
+  gap: 4px;
+  margin: 8px 0 4px;
+}
+
+.answer-stat {
+  display: grid;
+  grid-template-columns: 18px minmax(0, 1fr) 110px;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.answer-stat i {
+  height: 8px;
+  border-radius: 4px;
+  background: linear-gradient(to right, var(--line-strong) var(--w), var(--line) var(--w));
+}
+
+.answer-stat.key i {
+  background: linear-gradient(to right, var(--good) var(--w), var(--line) var(--w));
+}
+
+.answer-stat.warn i {
+  background: linear-gradient(to right, var(--bad) var(--w), var(--line) var(--w));
+}
+
+.answer-stat span {
+  color: var(--muted);
+}
