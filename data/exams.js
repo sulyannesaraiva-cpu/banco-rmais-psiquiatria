@@ -799,7 +799,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2022.2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 24",
-          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1ª Edição. Artmed, 2022, na observação comparativa dos critérios de diagnóstico para Demências do DSM -IV e dos critér ios para transtorno neurocognitivo maior do DSM 5 várias diferenças são observadas. De acordo com esse conhecimento, assinale a alternativa que apresenta corretamente o critério incluído no DSM 5 para o diagnóstico de transtorno neurocognitivo maior (previamente demência) que NÃO consta dos critérios para demência do DSM-IV.",
+          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1ª Edição. Artmed, 2022, na observação comparativa dos critérios de diagnóstico para Demências do DSM -IV e dos critérios para transtorno neurocognitivo maior do DSM 5 várias diferenças são observadas. De acordo com esse conhecimento, assinale a alternativa que apresenta corretamente o critério incluído no DSM 5 para o diagnóstico de transtorno neurocognitivo maior (previamente demência) que NÃO consta dos critérios para demência do DSM-IV.",
           "options": [
             {
               "letter": "A",
@@ -1173,7 +1173,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2022.2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 35",
-          "text": "De acordo com a referência Kaplan & Sadock`s Comprenhensive Textbook of Psychiatry 10th edition Wolters Kluwer 2017, a neurociência afetiva moderna foca na importância de quatro regiões cerebrais na regulação de emoções normais: o córtex pré-frontal (PFC), o cingulado anterior (ACC), o hipocampo e a amígdala. O PFC é visto como a estrutura que detém representações de metas e respostas adequadas para a obtenção desses objetivos. Tais atividades são particularmente importantes quando múltiplas e conflitantes respostas comportamentais são possíveis ou quando é necessário anular a excitação afetiva. A reg ião dorsolateral do PFC é particularmente ativa na supressão de afetos negativos e é um componente -chave na rede de controle cognitivo (CCN). O PFC medial, juntamente com o cingulado posterior e hipocampo são importantes hubs na rede de modo padrão ou Default Mode Network (DMN), um circuito interconectado de regiões que estão ativas durante a vigília de repouso, pensamento autorreferencial (ou seja, memória autobiográfica) ou devaneio acordado. A DMN parece mostrar hiperconectividade em transtornos depressi vos, o que predispõe a recordações negativas e a uma outra alteração. Assinale a alternativa que caracteriza tal alteração.",
+          "text": "De acordo com a referência Kaplan & Sadock`s Comprenhensive Textbook of Psychiatry 10th edition Wolters Kluwer 2017, a neurociência afetiva moderna foca na importância de quatro regiões cerebrais na regulação de emoções normais: o córtex pré-frontal (PFC), o cingulado anterior (ACC), o hipocampo e a amígdala. O PFC é visto como a estrutura que detém representações de metas e respostas adequadas para a obtenção desses objetivos. Tais atividades são particularmente importantes quando múltiplas e conflitantes respostas comportamentais são possíveis ou quando é necessário anular a excitação afetiva. A reg ião dorsolateral do PFC é particularmente ativa na supressão de afetos negativos e é um componente -chave na rede de controle cognitivo (CCN). O PFC medial, juntamente com o cingulado posterior e hipocampo são importantes hubs na rede de modo padrão ou Default Mode Network (DMN), um circuito interconectado de regiões que estão ativas durante a vigília de repouso, pensamento autorreferencial (ou seja, memória autobiográfica) ou devaneio acordado. A DMN parece mostrar hiperconectividade em transtornos depressivos, o que predispõe a recordações negativas e a uma outra alteração. Assinale a alternativa que caracteriza tal alteração.",
           "options": [
             {
               "letter": "A",
@@ -1309,7 +1309,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2022.2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 39",
-          "text": "De acordo com a referência Kaplan & Sadock`s Comprenhensive Textbook of Psychiatry 10th edition Wolters Kluwer 2017, aberrações epigenéticas (epimutações) podem se originar de três fontes, agindo individualmente ou em combinação: (1) herdadas por processos germinativos; (2) influência dos fatore s ambientais que atuam em diferentes estágios de desenvolvimento; ou (3) gerada através de eventos estocásticos biológicos. Tal modificação epigenética do DNA e proteínas cromossômicas pode ter um impacto significativo na regulação da expressão genética por meio de alterações neuroquímicas dependentes da idade e de influências hormonais, ao invés de mudanças estruturais no cérebro. Estudos recentes sugerem que este pode ser um modelo útil para entender melhor os aspectos do desenvolvimento da esquizofrenia. Um estudo de caso de dois pares de gêmeos monozigóticos (um par concordante para esquizofrenia e o outro discordante) encontrou uma alteração nos linfócitos do co-gêmeo afetado em comparação com o gêmeo não afetado. Além disso, o gêmeo afetado no par discordante era epigeneticamente mais semelhante aos gêmeos afetados não relacionados do que ao seu próprio gêmeo não afetado. Tais estudos epigenéticos podem promover a compreensão atual de como genes anormalmente expressos (desenvolvimento) afetam o desenvol vimento do fenótipo da psicose. Assinale o mecanismo epigenético associado ao risco de esquizofrenia.",
+          "text": "De acordo com a referência Kaplan & Sadock`s Comprenhensive Textbook of Psychiatry 10th edition Wolters Kluwer 2017, aberrações epigenéticas (epimutações) podem se originar de três fontes, agindo individualmente ou em combinação: (1) herdadas por processos germinativos; (2) influência dos fatore s ambientais que atuam em diferentes estágios de desenvolvimento; ou (3) gerada através de eventos estocásticos biológicos. Tal modificação epigenética do DNA e proteínas cromossômicas pode ter um impacto significativo na regulação da expressão genética por meio de alterações neuroquímicas dependentes da idade e de influências hormonais, ao invés de mudanças estruturais no cérebro. Estudos recentes sugerem que este pode ser um modelo útil para entender melhor os aspectos do desenvolvimento da esquizofrenia. Um estudo de caso de dois pares de gêmeos monozigóticos (um par concordante para esquizofrenia e o outro discordante) encontrou uma alteração nos linfócitos do co-gêmeo afetado em comparação com o gêmeo não afetado. Além disso, o gêmeo afetado no par discordante era epigeneticamente mais semelhante aos gêmeos afetados não relacionados do que ao seu próprio gêmeo não afetado. Tais estudos epigenéticos podem promover a compreensão atual de como genes anormalmente expressos (desenvolvimento) afetam o desenvolvimento do fenótipo da psicose. Assinale o mecanismo epigenético associado ao risco de esquizofrenia.",
           "options": [
             {
               "letter": "A",
@@ -1343,7 +1343,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2022.2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 40",
-          "text": "De acordo com a Referência Kaplan & Sadock`s Co mprenhensive Textbook of Psychiatry 10th edition Wolters Kluwer 2017, neurotransmissores são tipicamente inativados ou por recaptação pelos neurônios que os liberam ou por degradação por enzimas altamente específicas, como o exemplo de acetilcolina hidroli sada pela acetilcolinesterase (AChE.). Ao menos duas enzimas existem para degradar endocanabinoides e atenuar sua neurotransmissão. A amida hidrolase de ácidos graxos (FAAH) converte anandamida em ácido aracdônico e etanolamina. A FAAH é encontrada em regi ões do cérebro onde os receptores CB1 são predominantes, e localiza-se em neurônios pós-sinápticos onde a anandamida é sintetizada. A rápida degradação da anandamida explica, em parte, sua potência relativamente baixa em comparação com o THC. Confirmando um papel de FAAH na inativação de anandamida, ratos transgênicos sem FAAH exibem um aumento de 15 vezes nos níveis de anandamida, mas não de 2 -AG. Esses camundongos têm maiores respostas comportamentais à anandamida exógena, devido à diminuição da sua degra dação. O endocanabinoide 2 -AG é inativado pela FAAH, mas também por um monoacilglicerol lipase (MAGL) localizado em neurônios pré-sinápticos. Os inibidores farmacológicos da FAAH têm sido desenvolvidos como fármacos potencialmente destituídos dos efeitos indesejáveis do THC. Assinale o efeito desejável dos inibidores da FAAH como potenciais agentes terapêuticos.",
+          "text": "De acordo com a Referência Kaplan & Sadock`s Co mprenhensive Textbook of Psychiatry 10th edition Wolters Kluwer 2017, neurotransmissores são tipicamente inativados ou por recaptação pelos neurônios que os liberam ou por degradação por enzimas altamente específicas, como o exemplo de acetilcolina hidroli sada pela acetilcolinesterase (AChE.). Ao menos duas enzimas existem para degradar endocanabinoides e atenuar sua neurotransmissão. A amida hidrolase de ácidos graxos (FAAH) converte anandamida em ácido aracdônico e etanolamina. A FAAH é encontrada em regiões do cérebro onde os receptores CB1 são predominantes, e localiza-se em neurônios pós-sinápticos onde a anandamida é sintetizada. A rápida degradação da anandamida explica, em parte, sua potência relativamente baixa em comparação com o THC. Confirmando um papel de FAAH na inativação de anandamida, ratos transgênicos sem FAAH exibem um aumento de 15 vezes nos níveis de anandamida, mas não de 2 -AG. Esses camundongos têm maiores respostas comportamentais à anandamida exógena, devido à diminuição da sua degra dação. O endocanabinoide 2 -AG é inativado pela FAAH, mas também por um monoacilglicerol lipase (MAGL) localizado em neurônios pré-sinápticos. Os inibidores farmacológicos da FAAH têm sido desenvolvidos como fármacos potencialmente destituídos dos efeitos indesejáveis do THC. Assinale o efeito desejável dos inibidores da FAAH como potenciais agentes terapêuticos.",
           "options": [
             {
               "letter": "A",
@@ -1960,7 +1960,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2023.1 Modelo 2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 8",
-          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022. apesar do sucesso do carbonato de lítio como estabilizador do humor, ele tem um potencial nefrotóxi co que deve ser levado em consideração não só na introdução, mas também na manutenção do tratamento. Enquanto sua capacidade de gerar diabetes insipidus nefrogênico (que pode afetar 20 a 40% dos pacientes) está bem estabelecida, o mecanismo pelo qual ele p ode gerar nefrite tubulointersticial, levando à doença renal crônica e à hipercalcemia, ainda não está totalmente claro. Diferentemente do hipotireoidismo, que pode ser compensado com o uso de levotiroxina (quando não há um mecanismo de tireotoxicidade env olvido), a lesão renal causada pelo lítio comumente leva à interrupção do tratamento. Com relação a esse risco de nefrotoxicidade é corrreto afirmar que:",
+          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022. apesar do sucesso do carbonato de lítio como estabilizador do humor, ele tem um potencial nefrotóxi co que deve ser levado em consideração não só na introdução, mas também na manutenção do tratamento. Enquanto sua capacidade de gerar diabetes insipidus nefrogênico (que pode afetar 20 a 40% dos pacientes) está bem estabelecida, o mecanismo pelo qual ele p ode gerar nefrite tubulointersticial, levando à doença renal crônica e à hipercalcemia, ainda não está totalmente claro. Diferentemente do hipotireoidismo, que pode ser compensado com o uso de levotiroxina (quando não há um mecanismo de tireotoxicidade envolvido), a lesão renal causada pelo lítio comumente leva à interrupção do tratamento. Com relação a esse risco de nefrotoxicidade é corrreto afirmar que:",
           "options": [
             {
               "letter": "A",
@@ -4038,7 +4038,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2023.1 Modelo 2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 72",
-          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, historicamente a avaliação do risco de violência costumava ser baseada nos seguintes critérios clín icos: quanto às fases do ciclo vital, quanto à morfologia do crime, quanto à vida prisional/manicomial, quanto às intercorrências psiquiátricas, quanto ao exame psíquico atual e quanto ao meio social/familiar. Mais recentemente, foram desenvolvidas escalas que visam tornar a avaliação mais objetiva, duas das quais validadas para uso no Brasil. Sejam quais forem os recursos utilizados, esse é um tema complexo e trabalhoso, objeto de intenso debate atualmente. Em relação aos perpetradores de atos violentos, a ssinale o grupo de indivíduos mais propenso a reincidências na sociedade.",
+          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, historicamente a avaliação do risco de violência costumava ser baseada nos seguintes critérios clínicos: quanto às fases do ciclo vital, quanto à morfologia do crime, quanto à vida prisional/manicomial, quanto às intercorrências psiquiátricas, quanto ao exame psíquico atual e quanto ao meio social/familiar. Mais recentemente, foram desenvolvidas escalas que visam tornar a avaliação mais objetiva, duas das quais validadas para uso no Brasil. Sejam quais forem os recursos utilizados, esse é um tema complexo e trabalhoso, objeto de intenso debate atualmente. Em relação aos perpetradores de atos violentos, a ssinale o grupo de indivíduos mais propenso a reincidências na sociedade.",
           "options": [
             {
               "letter": "A",
@@ -4950,7 +4950,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ABP 2023.1 Modelo 2 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 99",
-          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, as repercussões familiares do estigma dirigido aos pacientes psiquiátricos estendem-se a irmãos, cô njuges, filhos e outros parentes. Por exemplo, os pais foram acusados de criar um ambiente patológico que poderia favorecer o aparecimento de doenças men - tais, como a “mãe esquizofrênica” que induziu esquizofrenia em seu filho devido ao seu estilo de comu nicação disfuncional. Embora essa atitude fosse muito mais forte décadas atrás, essas ideias ainda persistem. Esse tipo de estigmatização é denominado:",
+          "text": "De acordo com a referência Silva, A. G., Quevedo, J., Nardi, A. E.. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. 1a Edição. Artmed, 2022, as repercussões familiares do estigma dirigido aos pacientes psiquiátricos estendem-se a irmãos, cô njuges, filhos e outros parentes. Por exemplo, os pais foram acusados de criar um ambiente patológico que poderia favorecer o aparecimento de doenças men - tais, como a “mãe esquizofrênica” que induziu esquizofrenia em seu filho devido ao seu estilo de comunicação disfuncional. Embora essa atitude fosse muito mais forte décadas atrás, essas ideias ainda persistem. Esse tipo de estigmatização é denominado:",
           "options": [
             {
               "letter": "A",
@@ -16035,7 +16035,7 @@ window.BANCO_RMAIS_EXAMS = {
           "options": [
             {
               "letter": "A",
-              "text": "Síndrome doIntestino Irritável."
+              "text": "Síndrome do Intestino Irritável."
             },
             {
               "letter": "B",
@@ -17676,7 +17676,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "AMRIGS 2017 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 32",
-          "text": "Analise as assertivas abaixo em relação aos transtornos alimentares: I. A prevalência para anorexia nervosa entre jovens do sexo feminino é de aproximadamente 4%. II. Um dos critérios da bulimia nervosa, de acordo com o DSM -5, é que a compulsão alimentar e os comportame ntos compensatórios inapropriados ocorrem, em média, no mínimo uma vez por semana durante três meses. III. A bulimia nervosa costuma afetar mais mulheres do que homens, com uma proporção feminino -masculino de aproximadamente 10:1. IV. Os transtornos alimentares, como a anorexia nervosa e a bulimia nervosa, são incomuns antes da puberdade ou depois dos 40 anos. Quais estão corretas?",
+          "text": "Analise as assertivas abaixo em relação aos transtornos alimentares: I. A prevalência para anorexia nervosa entre jovens do sexo feminino é de aproximadamente 4%. II. Um dos critérios da bulimia nervosa, de acordo com o DSM -5, é que a compulsão alimentar e os comportamentos compensatórios inapropriados ocorrem, em média, no mínimo uma vez por semana durante três meses. III. A bulimia nervosa costuma afetar mais mulheres do que homens, com uma proporção feminino -masculino de aproximadamente 10:1. IV. Os transtornos alimentares, como a anorexia nervosa e a bulimia nervosa, são incomuns antes da puberdade ou depois dos 40 anos. Quais estão corretas?",
           "options": [
             {
               "letter": "A",
@@ -20136,7 +20136,7 @@ window.BANCO_RMAIS_EXAMS = {
           "options": [
             {
               "letter": "A",
-              "text": "após psicoeducação e acol himento, recomendar ao médico responsável que nenhuma intervenção específica precisaria ser feita a respeito do quadro psíquico da paciente, além de aprofundar a comunicação médico-paciente."
+              "text": "após psicoeducação e acolhimento, recomendar ao médico responsável que nenhuma intervenção específica precisaria ser feita a respeito do quadro psíquico da paciente, além de aprofundar a comunicação médico-paciente."
             },
             {
               "letter": "B",
@@ -20404,7 +20404,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2024 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 35",
-          "text": "Menino de 6 anos foi levado para avaliação por sua mãe em razão de problemas de comportamento. As principais queixas estavam relacionadas a episódios de descontrole emocional e eventuais comportamentos agressivos direcionados aos colegas e à mãe. Esses episódios são sempre justificados pelo paciente como ocorrendo em resposta a ter sido provocado. De acordo com a mãe, o paciente sempre foi uma criança “difícil”; porém seu comportamento pio rou no último ano em que ele tem se apresentado mais raivoso e irritável. Ela conta que o menino não aceita ouvir “não”, e sempre que a mãe impõe regras ele a confronta dizendo que não irá cumprir. Também, neste último ano, toda semana ocorrem episódios de descontrole emocional, caso a mãe seja mais dura, em que o menino grita, joga objetos, fica agressivo e chora copiosamente. O pai é ausente, não se envolve nos cuidados do filho, chamando a esposa quando o menino o desafia. Diante desse caso, é correto afirmar que",
+          "text": "Menino de 6 anos foi levado para avaliação por sua mãe em razão de problemas de comportamento. As principais queixas estavam relacionadas a episódios de descontrole emocional e eventuais comportamentos agressivos direcionados aos colegas e à mãe. Esses episódios são sempre justificados pelo paciente como ocorrendo em resposta a ter sido provocado. De acordo com a mãe, o paciente sempre foi uma criança “difícil”; porém seu comportamento piorou no último ano em que ele tem se apresentado mais raivoso e irritável. Ela conta que o menino não aceita ouvir “não”, e sempre que a mãe impõe regras ele a confronta dizendo que não irá cumprir. Também, neste último ano, toda semana ocorrem episódios de descontrole emocional, caso a mãe seja mais dura, em que o menino grita, joga objetos, fica agressivo e chora copiosamente. O pai é ausente, não se envolve nos cuidados do filho, chamando a esposa quando o menino o desafia. Diante desse caso, é correto afirmar que",
           "options": [
             {
               "letter": "A",
@@ -21168,7 +21168,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Tranquilização quanto à natu reza normal dos sintomas do paciente, sem necessidade de qualquer intervenção."
+              "text": "Tranquilização quanto à natureza normal dos sintomas do paciente, sem necessidade de qualquer intervenção."
             },
             {
               "letter": "E",
@@ -21424,7 +21424,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2024 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 65",
-          "text": "Qual das medicações a seguir apresenta com frequência os seguintes efeitos colaterais: gan ho de peso; hipotensão ortostática; sialorreia; constipação e diminuição de limiar convulsivo?",
+          "text": "Qual das medicações a seguir apresenta com frequência os seguintes efeitos colaterais: ganho de peso; hipotensão ortostática; sialorreia; constipação e diminuição de limiar convulsivo?",
           "options": [
             {
               "letter": "A",
@@ -21546,7 +21546,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "E",
-              "text": "Todos os antipsicóticos provavelmente podem ter efeitos arritmogênicos e prolongar o intervalo QTc do ECG quando são administr ados em doses suficientemente altas."
+              "text": "Todos os antipsicóticos provavelmente podem ter efeitos arritmogênicos e prolongar o intervalo QTc do ECG quando são administrados em doses suficientemente altas."
             }
           ],
           "correctAnswer": "C",
@@ -23106,7 +23106,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2025 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 34",
-          "text": "Uma paciente de 25 anos procura consultório de psiquiatria queixando-se de medo de ser abandonada e alegando não ser compreendida por seus amigos e familiares. Relata mudanças bruscas de humor que se iniciaram na adolescência, levando inclusive a brigas físicas com suas irmãs. Tem dificuldade em seus relacionamentos, pois não se julga boa o suficiente para os parceiros; posteriormente, porém, afirma que esses parceiros \"não eram nada\" e não mereciam sua atenção. Relata múltiplos parceiros e relações sex uais desprotegidas. Houve tentativa de suicídio há 5 anos. Refere também desconfiar que suas irmãs estão tramando para que ela não receba a herança do pai, que está doente. Faz uso ocasional de cocaína. Durante a anamnese, mostra-se bastante agitada e irri tada com as perguntas do examinador. O diagnóstico mais provável é transtorno:",
+          "text": "Uma paciente de 25 anos procura consultório de psiquiatria queixando-se de medo de ser abandonada e alegando não ser compreendida por seus amigos e familiares. Relata mudanças bruscas de humor que se iniciaram na adolescência, levando inclusive a brigas físicas com suas irmãs. Tem dificuldade em seus relacionamentos, pois não se julga boa o suficiente para os parceiros; posteriormente, porém, afirma que esses parceiros \"não eram nada\" e não mereciam sua atenção. Relata múltiplos parceiros e relações sex uais desprotegidas. Houve tentativa de suicídio há 5 anos. Refere também desconfiar que suas irmãs estão tramando para que ela não receba a herança do pai, que está doente. Faz uso ocasional de cocaína. Durante a anamnese, mostra-se bastante agitada e irritada com as perguntas do examinador. O diagnóstico mais provável é transtorno:",
           "options": [
             {
               "letter": "A",
@@ -26247,7 +26247,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "ENARE 2026 - Psiquiatria Geral",
           "topic": "Psiquiatria Geral",
           "title": "Questao 46",
-          "text": "Homem de 47 anos procura atendimento relatando, de forma convicta, que existe um animal rastejante alojado em seu abdome. Ele afirma sen tir seus movimentos internos, apesar de múltiplas avaliações clínicas e exames complementares não apontar em qualquer anormalidade orgânica. Ele permanece firme nessa crença, sem qualquer crítica à ideia. Assinale a afirmativa que melhor descreve esse fenômeno clínico.",
+          "text": "Homem de 47 anos procura atendimento relatando, de forma convicta, que existe um animal rastejante alojado em seu abdome. Ele afirma sentir seus movimentos internos, apesar de múltiplas avaliações clínicas e exames complementares não apontar em qualquer anormalidade orgânica. Ele permanece firme nessa crença, sem qualquer crítica à ideia. Assinale a afirmativa que melhor descreve esse fenômeno clínico.",
           "options": [
             {
               "letter": "A",
@@ -26743,7 +26743,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "E",
-              "text": "Uma pessoa com transtorno bipolar poderá ser considerada no máx imo semi-imputável no Brasil caso, no momento do crime, ela esteja em um episódio depressivo grave."
+              "text": "Uma pessoa com transtorno bipolar poderá ser considerada no máximo semi-imputável no Brasil caso, no momento do crime, ela esteja em um episódio depressivo grave."
             }
           ],
           "correctAnswer": "A",
@@ -29319,7 +29319,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2021 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 2",
-          "text": "Mulher, 60 anos, solteira, chegou ao ambulatório trazida por uma colega de trabalho. Professora do ensino secundário, sem histórico de problemas adaptativos ou licenças médicas por causas psiquiátricas. A col ega conta que vinha tendo problemas no trabalho por dificuldade de relacionamento, se ndo esse desajuste de início recente. Também deixou de cuidar da casa, que estava desorganizada, suja e repleta de objetos inúteis e resíduos alimentares. No exame com tes te de rastreio cognitivo (MMSE) mostrava-se orientada, com memória discretamente comp rometida, algo desatenta, mas pontuou 27/30. Na entrevista, parecia visivelmente aflita e desconfiada, e disse estar irritada porque algumas pessoas estavam roubando os se us pertences. Também afirmava ter receio de que quisessem prejudicá-la, embora não soubesse referir o motivo. O psiquiatra solicitou exames gerais para esclarecimento. Com os dados disponíveis no momento, qual seria a sua hipótese diagnóstica e a conduta medicamentosa imediata?",
+          "text": "Mulher, 60 anos, solteira, chegou ao ambulatório trazida por uma colega de trabalho. Professora do ensino secundário, sem histórico de problemas adaptativos ou licenças médicas por causas psiquiátricas. A col ega conta que vinha tendo problemas no trabalho por dificuldade de relacionamento, se ndo esse desajuste de início recente. Também deixou de cuidar da casa, que estava desorganizada, suja e repleta de objetos inúteis e resíduos alimentares. No exame com tes te de rastreio cognitivo (MMSE) mostrava-se orientada, com memória discretamente comprometida, algo desatenta, mas pontuou 27/30. Na entrevista, parecia visivelmente aflita e desconfiada, e disse estar irritada porque algumas pessoas estavam roubando os se us pertences. Também afirmava ter receio de que quisessem prejudicá-la, embora não soubesse referir o motivo. O psiquiatra solicitou exames gerais para esclarecimento. Com os dados disponíveis no momento, qual seria a sua hipótese diagnóstica e a conduta medicamentosa imediata?",
           "options": [
             {
               "letter": "A",
@@ -29627,7 +29627,7 @@ window.BANCO_RMAIS_EXAMS = {
           "options": [
             {
               "letter": "A",
-              "text": "O CC L é caracterizado pela presença de prejuízo cog nitivo discreto, afetando diversos domínios cognitivos, com impacto sobre a funcionalidade básica."
+              "text": "O CC L é caracterizado pela presença de prejuízo cognitivo discreto, afetando diversos domínios cognitivos, com impacto sobre a funcionalidade básica."
             },
             {
               "letter": "B",
@@ -29699,7 +29699,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "O conceito de comprometimento comportamental leve (MBI - sigla em Inglês) é um constructo abrangente que engl oba alterações de comportamento e de personalidade d ecorrentes de condições psiquiátricas primárias do tipo depressão maior, transtorno de ansiedade generalizada, transtornos delirantes ou transtornos de personalidade."
+              "text": "O conceito de comprometimento comportamental leve (MBI - sigla em Inglês) é um constructo abrangente que engloba alterações de comportamento e de personalidade d ecorrentes de condições psiquiátricas primárias do tipo depressão maior, transtorno de ansiedade generalizada, transtornos delirantes ou transtornos de personalidade."
             }
           ],
           "correctAnswer": "C",
@@ -31182,7 +31182,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Como os adolescentes ainda estão em fase de desenvolvimento, o uso de qualquer substância psicoativa, em qualquer freq uência e quantidade, é considerado patológico."
+              "text": "Como os adolescentes ainda estão em fase de desenvolvimento, o uso de qualquer substância psicoativa, em qualquer frequência e quantidade, é considerado patológico."
             }
           ],
           "correctAnswer": "B",
@@ -31316,7 +31316,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2021 - Psiquiatria da Infancia e Adolescencia",
           "topic": "Psiquiatria da Infancia e Adolescencia",
           "title": "Questao 7",
-          "text": "Particularidades marcam a diferença nos aspectos clínicos e na terapêu tica da depressão em crianças e em adolescentes. Dentre essas diferenças podemos citar:",
+          "text": "Particularidades marcam a diferença nos aspectos clínicos e na terapêutica da depressão em crianças e em adolescentes. Dentre essas diferenças podemos citar:",
           "options": [
             {
               "letter": "A",
@@ -31358,7 +31358,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "Na avaliação de crianças, são de grande importância as informações obtidas junto aos pais/cuidadores, professores e out ros profissionais envolvidos nos cuidados delas, sendo geralmente dispensável a avaliação direta das crianças, uma vez que elas, na maioria das veze s, não conseguem expressar adequadamente os sintomas que apresentam."
+              "text": "Na avaliação de crianças, são de grande importância as informações obtidas junto aos pais/cuidadores, professores e outros profissionais envolvidos nos cuidados delas, sendo geralmente dispensável a avaliação direta das crianças, uma vez que elas, na maioria das veze s, não conseguem expressar adequadamente os sintomas que apresentam."
             },
             {
               "letter": "D",
@@ -31422,7 +31422,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Reação de intolerância à frustração normal para a idade / Adolescência normal / Suspensão de medi cações, psicoterapia psicodinâmica e seguimento ambulatorial espaçado."
+              "text": "Reação de intolerância à frustração normal para a idade / Adolescência normal / Suspensão de medicações, psicoterapia psicodinâmica e seguimento ambulatorial espaçado."
             }
           ],
           "correctAnswer": "A",
@@ -32614,7 +32614,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "A depressão diagnosticada nos indivíduos com CCL aumenta o risco de progre ssão para demência, assim como a presença de doença cerebrovascular, apresentação amnéstica e a presença de atrofia hipocampal em ressonância magnética."
+              "text": "A depressão diagnosticada nos indivíduos com CCL aumenta o risco de progressão para demência, assim como a presença de doença cerebrovascular, apresentação amnéstica e a presença de atrofia hipocampal em ressonância magnética."
             },
             {
               "letter": "D",
@@ -32674,7 +32674,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "O M i n i - Exame do EstadoMental (MEEM) é um instrumento adequado para a avaliação de rastreio para demências como a de Alzheimer e a frontotemporal variante comportamental."
+              "text": "Mental (MEEM) é um instrumento adequado para a avaliação de rastreio para demências como a de Alzheimer e a frontotemporal variante comportamental."
             },
             {
               "letter": "D",
@@ -33740,7 +33740,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2023 - Psiquiatria Forense",
           "topic": "Psiquiatria Forense",
           "title": "Questao 6",
-          "text": "O Estatuto da Pessoa com Deficiên cia (Lei 13.146/2015) determin ou importantes alterações no Código Civil brasileiro (Lei 10.406/2002). A partir destas modificações, atualmente são considerados absolutamente incapazes de exercer os atos da vida civil:",
+          "text": "O Estatuto da Pessoa com Deficiência (Lei 13.146/2015) determin ou importantes alterações no Código Civil brasileiro (Lei 10.406/2002). A partir destas modificações, atualmente são considerados absolutamente incapazes de exercer os atos da vida civil:",
           "options": [
             {
               "letter": "A",
@@ -36409,7 +36409,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2024 - Psicogeriatria",
           "topic": "Psicogeriatria",
           "title": "Questao 24",
-          "text": "Paciente do sexo feminino, 75 anos, hipertensa, Dm2, diagnóstico de demência de Alzheimer (CDR2 e katz 5). Usa donepezila 10 mg/dia, losartan a 50 mg 2x/dia, metformina 1.000 mg/dia. Vem para consulta em ambulatório de psicogeriatria acomp anhada do esposo e filha. Contam que tem ficado irritada quando auxiliam em seus autocuidados (banho e vestir - se) ou quando é impedida de sair de casa desacompanhada. Tem esquecido que se alimentou e deseja comer novamente. Assinale qual a melhor conduta para o momento.",
+          "text": "Paciente do sexo feminino, 75 anos, hipertensa, Dm2, diagnóstico de demência de Alzheimer (CDR2 e katz 5). Usa donepezila 10 mg/dia, losartan a 50 mg 2x/dia, metformina 1.000 mg/dia. Vem para consulta em ambulatório de psicogeriatria acompanhada do esposo e filha. Contam que tem ficado irritada quando auxiliam em seus autocuidados (banho e vestir - se) ou quando é impedida de sair de casa desacompanhada. Tem esquecido que se alimentou e deseja comer novamente. Assinale qual a melhor conduta para o momento.",
           "options": [
             {
               "letter": "A",
@@ -38306,7 +38306,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "A American PsychiatricAssociation (APA) possui uma regra em seu código de ética conhecida como Goldwater Rule, que proíbe seus associados de fornecer em opiniões profissionais sobre figuras públicas sem que tenham feito uma avaliação formal de tal indivíduo."
+              "text": "Association (APA) possui uma regra em seu código de ética conhecida como Goldwater Rule, que proíbe seus associados de fornecer em opiniões profissionais sobre figuras públicas sem que tenham feito uma avaliação formal de tal indivíduo."
             }
           ],
           "correctAnswer": "D",
@@ -40587,7 +40587,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Ano Adicional",
           "topic": "Ano Adicional",
           "title": "Questao 37",
-          "text": "Assinale a alternativa que exp lica o efeito atenuador de sensações agradáveis do álcool pela naltrexona.",
+          "text": "Assinale a alternativa que explica o efeito atenuador de sensações agradáveis do álcool pela naltrexona.",
           "options": [
             {
               "letter": "A",
@@ -41586,7 +41586,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "Comprometimento cognit ivo leve amnéstico único domínio."
+              "text": "Comprometimento cognitivo leve amnéstico único domínio."
             }
           ],
           "correctAnswer": "C",
@@ -42025,7 +42025,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Psicoterapia",
           "topic": "Psicoterapia",
           "title": "Questao 2",
-          "text": "Com o avanço da Inteligência Artifi cial (IA) na área da saúde, diversas ferramentas têm sido desenvolvidas para auxiliar no diagnóstico e tratamento de doenças. Sobre essa temática, assinale a alternativa correta.",
+          "text": "Com o avanço da Inteligência Artificial (IA) na área da saúde, diversas ferramentas têm sido desenvolvidas para auxiliar no diagnóstico e tratamento de doenças. Sobre essa temática, assinale a alternativa correta.",
           "options": [
             {
               "letter": "A",
@@ -42537,7 +42537,7 @@ window.BANCO_RMAIS_EXAMS = {
           "source": "USP 2025 - Psicoterapia",
           "topic": "Psicoterapia",
           "title": "Questao 19",
-          "text": "\"Compare as palavras artesanais da alquimia com as palavras usadas para as operações da psicoterapia: analisando a transferência, regressão a serviço do ego, desenvolvimento da função inferior, administrando a raiva, identificação sintônica, demonstrando hostilidade; melhorar, negar, resistir, identificar... Essa linguagem (a linguagem técnica da psicoterapia) não é apenas ab strata; ela é imprecisa. Por causa dessa imprecisão em nosso equipamento, em nossos conceitos para alcançar os movimentos da alma, acabamos acreditando que a alma é em si um fluxo inapreensível, quando na verdade a psique sempre se apresenta em comportamentos, experiências e imagens bem específicas e sensoriais.\" Hillman J. \"Psicologia alquimia\", Vozes, 2011. Assinale a alternativa que exp lica melhor a ideia de James Hillman, importante autor da psicologia analítica.",
+          "text": "\"Compare as palavras artesanais da alquimia com as palavras usadas para as operações da psicoterapia: analisando a transferência, regressão a serviço do ego, desenvolvimento da função inferior, administrando a raiva, identificação sintônica, demonstrando hostilidade; melhorar, negar, resistir, identificar... Essa linguagem (a linguagem técnica da psicoterapia) não é apenas ab strata; ela é imprecisa. Por causa dessa imprecisão em nosso equipamento, em nossos conceitos para alcançar os movimentos da alma, acabamos acreditando que a alma é em si um fluxo inapreensível, quando na verdade a psique sempre se apresenta em comportamentos, experiências e imagens bem específicas e sensoriais.\" Hillman J. \"Psicologia alquimia\", Vozes, 2011. Assinale a alternativa que explica melhor a ideia de James Hillman, importante autor da psicologia analítica.",
           "options": [
             {
               "letter": "A",
@@ -44799,7 +44799,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "O uso do betabloqueador para controle da taquicardia secundária ao uso dos antip sicóticos deve ser iniciada concomitantemente ao antipsic ótico escolhido, já que a taquicardia é um efeito adverso bastante comum em crianças e adolescentes."
+              "text": "O uso do betabloqueador para controle da taquicardia secundária ao uso dos antipsicóticos deve ser iniciada concomitantemente ao antipsic ótico escolhido, já que a taquicardia é um efeito adverso bastante comum em crianças e adolescentes."
             },
             {
               "letter": "D",
@@ -45073,7 +45073,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "De acordo com o Instrutivo Técnico da Rede de Atenção Psicossocial (Raps) no Sist ema Único de Saúde (SUS), unidades de internação psiquiátrica específicas para crianças e adolescentes devem ter a necessária estrutura que atenda especificidades em conformidade com o ECA, entre elas: acompanhamento presencial por responsável legal durante todo período de permanência e procedimentos realizados, privacidade, sigilo e medidas que assegurem a proteção da integridade da criança e adolescente."
+              "text": "De acordo com o Instrutivo Técnico da Rede de Atenção Psicossocial (Raps) no Sistema Único de Saúde (SUS), unidades de internação psiquiátrica específicas para crianças e adolescentes devem ter a necessária estrutura que atenda especificidades em conformidade com o ECA, entre elas: acompanhamento presencial por responsável legal durante todo período de permanência e procedimentos realizados, privacidade, sigilo e medidas que assegurem a proteção da integridade da criança e adolescente."
             }
           ],
           "correctAnswer": "D",
@@ -45193,7 +45193,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "D",
-              "text": "No caso de Carlos, de acordo com os critérios diagnósticos do DSM-5, deve-se fazer os diagnósticos de Transtorno de Déficit de Atenção e Hiperati vidade (TDAH), Transtorno Opositor Desafiante (TOD) e Transtorno Disruptivo de Desregulação do Humor (TDDH)."
+              "text": "No caso de Carlos, de acordo com os critérios diagnósticos do DSM-5, deve-se fazer os diagnósticos de Transtorno de Déficit de Atenção e Hiperatividade (TDAH), Transtorno Opositor Desafiante (TOD) e Transtorno Disruptivo de Desregulação do Humor (TDDH)."
             }
           ],
           "correctAnswer": "B",
@@ -49804,7 +49804,7 @@ window.BANCO_RMAIS_EXAMS = {
             },
             {
               "letter": "C",
-              "text": "Nessa faixa etária, é esperado que a criança consiga pular com um pé só, sendo necessário um acompanhamento atento do desenvolvimento motor de Bea triz, com retorno precoce com o pediatra"
+              "text": "Nessa faixa etária, é esperado que a criança consiga pular com um pé só, sendo necessário um acompanhamento atento do desenvolvimento motor de Beatriz, com retorno precoce com o pediatra"
             },
             {
               "letter": "D",
