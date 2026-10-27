@@ -345,3 +345,20 @@ test("flashcards por tema: mesmos temas do estudo e sessão do tema", async ({ p
   expect(await page.evaluate(() => currentFlashcard().subtheme)).toBe("Esquizofrenia e psicoses");
   expect(errors).toEqual([]);
 });
+
+test("até a prova: ritmo necessário e treino por tema", async ({ page }) => {
+  const errors = await openSite(page);
+  await page.evaluate(() => {
+    const d = new Date(Date.now() + 60 * 86400e3);
+    const iso = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+    saveStudyPlan({ targetExam: "ENARE", targetArea: "Todas", minutesPerDay: 60, examDate: iso });
+    state.planDraft = null;
+  });
+  await goTab(page, "history");
+  await expect(page.locator("#readinessHost")).toContainText("60 dias");
+  await page.locator("[data-readiness-train]").first().click();
+  const run = await page.evaluate(() => ({ active: state.sessionActive, n: state.filtered.length }));
+  expect(run.active).toBe(true);
+  expect(run.n).toBeGreaterThan(0);
+  expect(errors).toEqual([]);
+});
