@@ -41,7 +41,15 @@ function renderAdminUsage() {
       days.push(daily.find((item) => item.day === key) || { day: key, users: 0, attempts: 0 });
     }
     const maxAttempts = Math.max(1, ...days.map((item) => item.attempts));
-    const themes = usage.top_temas || [];
+    /* Respostas antigas de provas foram gravadas com o nome da prova no lugar do tema (antes da
+       classificação por tema): ficam juntas numa linha só. */
+    const knownTopics = new Set(allTopics());
+    const merged = new Map();
+    for (const item of usage.top_temas || []) {
+      const label = knownTopics.has(item.tema) ? item.tema : "Provas (registros antigos, sem tema)";
+      merged.set(label, (merged.get(label) || 0) + Number(item.attempts || 0));
+    }
+    const themes = [...merged.entries()].map(([tema, attempts]) => ({ tema, attempts })).sort((a, b) => b.attempts - a.attempts);
     const maxTheme = Math.max(1, ...themes.map((item) => item.attempts));
     const enough = Number(usage.active_30d || 0) >= 5;
     html = `
