@@ -196,6 +196,14 @@
 
   /* Usado pela administração para revisar as classificações duvidosas. */
   window.examTopicConfidence = (question) => examTopicInfo(question)?.confidence ?? null;
+  /* Até 3 temas sugeridos para confirmar na fila de tema incerto: o escolhido e os seguintes
+     do classificador. */
+  window.examTopicSuggestions = (question) => {
+    const info = examTopicInfo(question);
+    if (!info) return [];
+    const ranking = predict(questionText(question)).ranking || [];
+    return [...new Set([info.topic, ...ranking])].slice(0, 3);
+  };
   window.examTopicsFingerprint = RULES_FINGERPRINT + classify.toString() + predict.toString();
 
   topicForQuestion = function topicForQuestionWithExams(question) {

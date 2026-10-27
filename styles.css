@@ -5573,3 +5573,46 @@ body.reading-serif .my-note-text,
   border-color: var(--warn);
   background: var(--warn-soft);
 }
+
+/* Confirmar tema com um clique (js/topicConfirm.js). */
+.topic-confirm {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 14px;
+  padding: 12px 14px;
+  border: 1px solid var(--accent);
+  border-radius: var(--radius-sm);
+  background: var(--accent-soft);
+}
+
+.topic-confirm-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 12px;
+}
+
+.topic-confirm-head span,
+.topic-confirm .panel-line {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.topic-confirm-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.topic-confirm-actions button {
+  min-height: 36px;
+  padding: 0 12px;
+  font-size: 13px;
+}
+
+.topic-confirm-actions select {
+  width: auto;
+  min-width: 160px;
+  max-width: 100%;
+}
