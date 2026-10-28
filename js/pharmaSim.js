@@ -84,6 +84,7 @@ function setPharmaClass(id) {
   state.pharma.occupancy = pharmaDefaultOccupancy(pharmaDrug(cls.defaults.drug));
   resetPharmaLevel(pharmaDrug(cls.defaults.drug));
   state.pharma.inter = [];
+  state.pharma.tour = null;
   state.pharmaQuiz = null;
 }
 
@@ -2060,6 +2061,83 @@ function renderPharmaQuiz() {
     </section>`;
 }
 
+/* ---------- Roteiros guiados (data/pharmaTours.js) ---------- */
+
+function pharmaTours(cls) {
+  return (window.PHARMA_TOURS || {})[cls.id] || [];
+}
+
+function pharmaActiveTour() {
+  const active = state.pharma.tour;
+  if (!active) return null;
+  const tour = pharmaTours(pharmaClass()).find((item) => item.id === active.id);
+  return tour ? { tour, active } : null;
+}
+
+/* Entra num passo: aplica a tela e os controles do roteiro. */
+function applyPharmaTourStep(tour, index) {
+  state.pharma.tour = { id: tour.id, step: index, answer: null };
+  state.pharma.sourcesOpen = false;
+  const step = tour.steps[index];
+  if (!step) return;
+  const { drug, ...rest } = step.setup;
+  if (drug) {
+    state.pharma.drug = drug;
+    state.pharma.occupancy = pharmaDefaultOccupancy(pharmaDrug(drug));
+    resetPharmaLevel(pharmaDrug(drug));
+  }
+  Object.assign(state.pharma, rest);
+}
+
+function renderPharmaTour(cls) {
+  const tours = pharmaTours(cls);
+  if (!tours.length) return "";
+  const current = pharmaActiveTour();
+  if (!current) {
+    return `
+      <div class="pharma-tour-list">
+        <span>Roteiros</span>
+        ${tours.map((tour) => `<button type="button" class="pharma-tour-start" data-pharma-tour-start="${tour.id}">▶ ${escapeHtml(tour.title)}</button>`).join("")}
+      </div>`;
+  }
+  const { tour, active } = current;
+  const total = tour.steps.length + 1;
+  const isCheck = active.step >= tour.steps.length;
+  const bars = Array.from({ length: total }, (_, i) => `<i class="${i <= active.step ? "on" : ""}"></i>`).join("");
+  let body;
+  if (!isCheck) {
+    const step = tour.steps[active.step];
+    body = `
+      <strong class="pharma-tour-do">${escapeHtml(step.do)}</strong>
+      <span class="pharma-tour-see">${escapeHtml(step.see)}</span>
+      <div class="pharma-tour-actions">
+        <button type="button" data-pharma-tour-prev ${active.step === 0 ? "disabled" : ""}>Voltar</button>
+        <button type="button" class="next" data-pharma-tour-next>${active.step + 1 === tour.steps.length ? "Ir para a pergunta" : "Próximo passo"}</button>
+      </div>`;
+  } else {
+    const answered = active.answer !== null && active.answer !== undefined;
+    const options = tour.check.options.map((option, index) => {
+      const mark = answered ? (index === tour.check.correct ? "right" : index === active.answer ? "wrong" : "") : "";
+      return `<button type="button" class="pharma-tour-option ${mark}" data-pharma-tour-answer="${index}" ${answered ? "disabled" : ""}>${escapeHtml(option)}</button>`;
+    }).join("");
+    body = `
+      <strong class="pharma-tour-do">${escapeHtml(tour.check.prompt)}</strong>
+      <div class="pharma-tour-options">${options}</div>
+      ${answered ? `<span class="pharma-tour-see">${active.answer === tour.check.correct ? "Isso!" : "Não exatamente."} ${escapeHtml(tour.check.explain)}</span>` : ""}
+      <div class="pharma-tour-actions">
+        <button type="button" data-pharma-tour-prev>Voltar</button>
+        <button type="button" class="next" data-pharma-tour-exit>${answered ? "Concluir roteiro" : "Sair do roteiro"}</button>
+      </div>`;
+  }
+  return `
+    <section class="pharma-tour" aria-label="Roteiro guiado">
+      <div class="pharma-tour-top"><span>Roteiro · ${escapeHtml(tour.title)}</span><button type="button" class="pharma-tour-close" data-pharma-tour-exit aria-label="Sair do roteiro">×</button></div>
+      <div class="pharma-tour-bars">${bars}</div>
+      <span class="pharma-tour-count">${isCheck ? "Checagem" : `Passo ${active.step + 1} de ${tour.steps.length}`}</span>
+      ${body}
+    </section>`;
+}
+
 /* ---------- Fontes de cada tela (data/sources.js) ---------- */
 
 function pharmaRefs(cls, mode) {
@@ -2183,6 +2261,7 @@ function renderPharmaPanel() {
         </div>
       </div>
     </header>
+    ${renderPharmaTour(cls)}
     ${body}
     <p class="pharma-disclaimer">Material didático e simplificado, para estudo. ${escapeHtml(cls.source)} Não usar para prescrição.</p>
     ${state.pharma.sourcesOpen ? renderPharmaSources(cls, mode, labels[mode]) : ""}`;
@@ -2205,7 +2284,7 @@ function openPharmaStudy(drug) {
   const panel = document.querySelector("#pharmaPanel");
   if (!panel) return;
   panel.addEventListener("click", (event) => {
-    const target = event.target.closest("[data-pharma-drug], [data-pharma-class], [data-pharma-mode], [data-pharma-study], [data-pharma-answer], [data-pharma-quiz], [data-pharma-review], [data-pharma-inter], [data-pharma-stop], [data-pharma-repeat], [data-pharma-hub], [data-pharma-quick], [data-pharma-dtype], [data-pharma-dstage], [data-pharma-bg], [data-pharma-depot], [data-pharma-depotstop], [data-pharma-eps], [data-pharma-sources], [data-pharma-sources-close]");
+    const target = event.target.closest("[data-pharma-drug], [data-pharma-class], [data-pharma-mode], [data-pharma-study], [data-pharma-answer], [data-pharma-quiz], [data-pharma-review], [data-pharma-inter], [data-pharma-stop], [data-pharma-repeat], [data-pharma-hub], [data-pharma-quick], [data-pharma-dtype], [data-pharma-dstage], [data-pharma-bg], [data-pharma-depot], [data-pharma-depotstop], [data-pharma-eps], [data-pharma-sources], [data-pharma-sources-close], [data-pharma-tour-start], [data-pharma-tour-next], [data-pharma-tour-prev], [data-pharma-tour-exit], [data-pharma-tour-answer]");
     if (!target) return;
     const data = target.dataset;
     if (data.pharmaHub !== undefined) state.pharma.view = "hub";
@@ -2219,6 +2298,18 @@ function openPharmaStudy(drug) {
       setPharmaClass(data.pharmaClass);
       state.pharma.view = "class";
       state.pharma.mode = "paths";
+    } else if (data.pharmaTourStart) {
+      const tour = pharmaTours(pharmaClass()).find((item) => item.id === data.pharmaTourStart);
+      if (tour) applyPharmaTourStep(tour, 0);
+    } else if (data.pharmaTourNext !== undefined || data.pharmaTourPrev !== undefined) {
+      const current = pharmaActiveTour();
+      if (current) {
+        const index = current.active.step + (data.pharmaTourNext !== undefined ? 1 : -1);
+        applyPharmaTourStep(current.tour, Math.max(0, Math.min(index, current.tour.steps.length)));
+      }
+    } else if (data.pharmaTourExit !== undefined) state.pharma.tour = null;
+    else if (data.pharmaTourAnswer !== undefined) {
+      if (state.pharma.tour && state.pharma.tour.answer === null) state.pharma.tour.answer = Number(data.pharmaTourAnswer);
     } else if (data.pharmaSources !== undefined) state.pharma.sourcesOpen = true;
     else if (data.pharmaSourcesClose !== undefined) state.pharma.sourcesOpen = false;
     else if (data.pharmaEps) state.pharma.eps = data.pharmaEps;
@@ -2256,6 +2347,7 @@ function openPharmaStudy(drug) {
     savePharmaState();
     renderPharmaPanel();
     if (data.pharmaQuiz || data.pharmaReview || data.pharmaClass || data.pharmaHub !== undefined || data.pharmaQuick) panel.scrollIntoView({ block: "start" });
+    else if (data.pharmaTourStart || data.pharmaTourNext !== undefined || data.pharmaTourPrev !== undefined) panel.querySelector(".pharma-tour")?.scrollIntoView({ block: "start" });
   });
   /* O controle de ocupação atualiza só o desenho da sinapse, para não interromper o arraste. */
   panel.addEventListener("input", (event) => {

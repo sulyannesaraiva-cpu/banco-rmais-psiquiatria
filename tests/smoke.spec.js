@@ -620,6 +620,23 @@ test("simulador de fármacos: complementos (depósito, hipnóticos novos e escet
   await expect(page.locator("#pharmaSynapseView")).toContainText("NMDA bloqueado");
   expect(errors).toEqual([]);
 });
+test("simulador de fármacos: roteiro guiado até a checagem", async ({ page }) => {
+  const errors = await openSite(page);
+  await goTab(page, "pharma");
+  await page.locator('[data-pharma-class="dependencia"]').click();
+  await page.locator('[data-pharma-tour-start="dq-precipitada"]').click();
+  await expect(page.locator(".pharma-tour")).toContainText("Passo 1 de 3");
+  await expect(page.locator("#pharmaAddView")).toContainText("Efeito teto");
+  await page.locator("[data-pharma-tour-next]").click();
+  await page.locator("[data-pharma-tour-next]").click();
+  await expect(page.locator("#pharmaAddView")).toContainText("Abstinência precipitada");
+  await page.locator("[data-pharma-tour-next]").click();
+  await page.locator('[data-pharma-tour-answer="0"]').click();
+  await expect(page.locator(".pharma-tour")).toContainText("Isso!");
+  await page.locator(".pharma-tour-actions [data-pharma-tour-exit]").click();
+  await expect(page.locator(".pharma-tour")).toHaveCount(0);
+  expect(errors).toEqual([]);
+});
 test("navegação por áreas: Hoje, Estudar (com seletor), Simular e Você", async ({ page }) => {
   const errors = await openSite(page);
   const mobile = await page.evaluate(() => isMobileLayout());
