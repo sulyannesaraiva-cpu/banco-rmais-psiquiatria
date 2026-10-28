@@ -88,23 +88,37 @@ function pharmaPathways(drug) {
   };
 }
 
+/* Cada via tem uma cor fixa (paleta segura para daltonismo, Okabe-Ito); a gravidade do efeito vai
+   numa etiqueta no balão, e a via pouco afetada pelo remédio aparece tracejada e mais clara. */
+const PHARMA_PATHWAY_COLORS = {
+  mesolimbic: "#0b6b70",
+  mesocortical: "#d55e00",
+  nigrostriatal: "#0072b2",
+  tuberoinfundibular: "#b0418a",
+};
+
+function pharmaPathFaint(path) {
+  return path.tone === "low" || path.tone === "ok";
+}
+
 function pharmaBrainSvg(paths) {
-  const c = (key) => PHARMA_TONES[paths[key].tone].color;
+  const c = (key) => `${PHARMA_PATHWAY_COLORS[key]}" class="pharma-path${pharmaPathFaint(paths[key]) ? " faint" : ""}`;
+  const n = (key) => PHARMA_PATHWAY_COLORS[key];
   return `
     <svg class="pharma-brain" viewBox="0 0 560 400" role="img" aria-label="Corte do cérebro com as quatro vias dopaminérgicas">
       <path d="M70 225 C58 140 130 58 250 48 C372 38 482 90 507 178 C526 248 492 298 432 312 C400 320 372 316 352 328 C337 343 331 366 302 368 C272 370 264 346 250 332 C200 327 120 318 90 288 C78 276 72 256 70 225 Z" class="pharma-brain-outline"></path>
       <ellipse cx="420" cy="318" rx="62" ry="34" class="pharma-brain-cerebellum"></ellipse>
       <path d="M296 330 C298 356 294 380 288 398" class="pharma-brain-stem"></path>
-      <path d="M296 288 C262 252 182 222 126 168" stroke="${c("mesocortical")}" class="pharma-path"></path>
-      <path d="M296 288 C272 272 236 246 206 232" stroke="${c("mesolimbic")}" class="pharma-path"></path>
-      <path d="M316 278 C306 242 282 206 256 190" stroke="${c("nigrostriatal")}" class="pharma-path"></path>
-      <path d="M246 266 C244 280 241 290 237 304" stroke="${c("tuberoinfundibular")}" class="pharma-path"></path>
+      <path d="M296 288 C262 252 182 222 126 168" stroke="${c("mesocortical")}"></path>
+      <path d="M296 288 C272 272 236 246 206 232" stroke="${c("mesolimbic")}"></path>
+      <path d="M316 278 C306 242 282 206 256 190" stroke="${c("nigrostriatal")}"></path>
+      <path d="M246 266 C244 280 241 290 237 304" stroke="${c("tuberoinfundibular")}"></path>
       <circle cx="296" cy="288" r="9" class="pharma-node-origin"></circle>
       <circle cx="316" cy="278" r="9" class="pharma-node-origin"></circle>
-      <circle cx="126" cy="168" r="8" class="pharma-node" stroke="${c("mesocortical")}"></circle>
-      <circle cx="206" cy="232" r="8" class="pharma-node" stroke="${c("mesolimbic")}"></circle>
-      <circle cx="256" cy="190" r="8" class="pharma-node" stroke="${c("nigrostriatal")}"></circle>
-      <ellipse cx="236" cy="310" rx="10" ry="8" class="pharma-node" stroke="${c("tuberoinfundibular")}"></ellipse>
+      <circle cx="126" cy="168" r="8" class="pharma-node" stroke="${n("mesocortical")}"></circle>
+      <circle cx="206" cy="232" r="8" class="pharma-node" stroke="${n("mesolimbic")}"></circle>
+      <circle cx="256" cy="190" r="8" class="pharma-node" stroke="${n("nigrostriatal")}"></circle>
+      <ellipse cx="236" cy="310" rx="10" ry="8" class="pharma-node" stroke="${n("tuberoinfundibular")}"></ellipse>
       <text x="104" y="150" class="pharma-label">Córtex pré-frontal</text>
       <text x="140" y="256" class="pharma-label">N. accumbens</text>
       <text x="236" y="176" class="pharma-label">Estriado</text>
@@ -159,10 +173,11 @@ function renderPharmaPaths() {
         <div class="pharma-card-head"><h3>Vias dopaminérgicas · ${escapeHtml(drug.name)}</h3><span>${drug.generation === 1 ? "1ª geração" : "2ª geração"}</span></div>
         ${pharmaBrainSvg(paths)}
         <div class="pharma-paths">
-          ${Object.values(paths).map((path) => `
-            <div class="pharma-path-row tone-${path.tone}">
-              <i style="background:${PHARMA_TONES[path.tone].color}"></i>
+          ${Object.entries(paths).map(([key, path]) => `
+            <div class="pharma-path-row" style="--path:${PHARMA_PATHWAY_COLORS[key]}">
+              <i class="${pharmaPathFaint(path) ? "faint" : ""}"></i>
               <span><strong>${path.name}</strong> · ${escapeHtml(path.text)}</span>
+              <em class="pharma-severity tone-${path.tone}">${PHARMA_TONES[path.tone].label}</em>
             </div>`).join("")}
         </div>
       </section>

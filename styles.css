@@ -6612,3 +6612,71 @@ body.theme-dark .pharma-chip.on {
   min-height: 46px;
   padding: 0 22px;
 }
+/* Vias com cor própria: balão tingido com a cor da via e etiqueta de gravidade. */
+.pharma-path.faint {
+  stroke-dasharray: 2 12;
+  opacity: 0.55;
+}
+
+.pharma-path-row {
+  align-items: center;
+  border: 1px solid color-mix(in srgb, var(--path) 35%, transparent);
+  background: color-mix(in srgb, var(--path) 12%, var(--panel));
+}
+
+.pharma-path-row i {
+  margin-top: 0;
+  width: 18px;
+  height: 6px;
+  background: var(--path);
+}
+
+.pharma-path-row i.faint {
+  background: repeating-linear-gradient(90deg, var(--path) 0 3px, transparent 3px 6px);
+}
+
+.pharma-path-row span {
+  flex: 1;
+  min-width: 0;
+}
+
+.pharma-path-row strong {
+  color: color-mix(in srgb, var(--path) 70%, var(--ink));
+}
+
+.pharma-severity {
+  flex-shrink: 0;
+  padding: 3px 8px;
+  border-radius: 6px;
+  background: var(--panel);
+  color: var(--muted);
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.pharma-severity.tone-good {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+.pharma-severity.tone-warn {
+  background: #fdf1d8;
+  color: #6b4300;
+}
+
+.pharma-severity.tone-high {
+  background: #c2410c;
+  color: #ffffff;
+}
+
+@media (max-width: 640px) {
+  .pharma-path-row {
+    flex-wrap: wrap;
+  }
+
+  .pharma-severity {
+    margin-left: 28px;
+  }
+}
