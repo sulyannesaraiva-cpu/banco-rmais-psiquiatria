@@ -132,6 +132,96 @@ window.PHARMA_SIM.antipsicoticos = {
       pa: ["5HT1A"],
     },
   ],
+  /* Efeitos extrapiramidais: Maudsley 15ª ed., tabela 1.28 (sinais, escalas, prevalência, tempo e
+     tratamento) e notas do algoritmo da acatisia. from/to: janela em horas para a linha do tempo. */
+  eps: [
+    {
+      id: "distonia", name: "Distonia aguda", color: "#d55e00", from: 0.2, to: 120, when: "Horas depois de iniciar (minutos se IM ou IV)",
+      signs: "Espasmo muscular: olhos virados para cima (crise oculógira), pescoço torcido (torcicolo), dificuldade para engolir ou falar; em casos extremos, arqueamento das costas ou luxação da mandíbula. Dói e assusta.",
+      risk: "Cerca de 10%; mais em homens jovens, em quem nunca usou antipsicótico e com alta potência (haloperidol). Rara em idosos.",
+      scale: "Sem escala específica (parte das escalas gerais de extrapiramidais).",
+      steps: ["Anticolinérgico (ex.: biperideno) oral, IM ou IV conforme a gravidade.", "Lembrar que o paciente pode não conseguir engolir.", "Resposta em ~5 minutos (IV) ou ~20 minutos (IM)."],
+      caution: "Pior com antipsicótico de alta potência no início do tratamento.",
+      effect: "parkinsonism",
+    },
+    {
+      id: "acatisia", name: "Acatisia", color: "#e69f00", from: 1, to: 1008, when: "Horas a semanas depois de iniciar ou aumentar a dose",
+      signs: "Inquietação interna desagradável, com vontade de se mexer: bate o pé sentado, cruza e descruza as pernas, troca o peso de um pé para o outro, anda de um lado para o outro.",
+      risk: "Cerca de 25% com primeira geração, menos com segunda; menor com olanzapina, quetiapina e clozapina.",
+      scale: "Escala de Acatisia de Barnes (BARS).",
+      steps: ["Reduzir a dose do antipsicótico.", "Trocar por um com menos acatisia.", "Propranolol em dose baixa (30–80 mg/dia), clonazepam em dose baixa ou um antagonista 5-HT2 (mirtazapina, trazodona, ciproeptadina, mianserina) — fora de bula.", "Avaliar cada opção por cerca de 1 mês."],
+      caution: "Confundida com agitação psicótica; associada a ideação suicida e agressividade. Anticolinérgicos em geral não ajudam.",
+      effect: "akathisia",
+    },
+    {
+      id: "parkinsonismo", name: "Parkinsonismo", color: "#0072b2", from: 48, to: 1344, when: "Dias a semanas depois de iniciar ou aumentar a dose",
+      signs: "Tremor, rigidez, bradicinesia (pouca expressão facial, voz monótona, lentidão), bradifrenia (pensamento lento) e sialorreia.",
+      risk: "Cerca de 20%; mais em mulheres idosas e com lesão neurológica prévia (TCE, AVC).",
+      scale: "Escala de Simpson-Angus.",
+      steps: ["Reduzir a dose do antipsicótico.", "Trocar por um com menos parkinsonismo.", "Anticolinérgico, de dia (os sintomas somem no sono), revisando a cada 3 meses: a maioria não precisa dele por muito tempo."],
+      caution: "Confundido com depressão ou com sintomas negativos.",
+      effect: "parkinsonism",
+    },
+    {
+      id: "discinesia", name: "Discinesia tardia", color: "#b0418a", from: 2160, to: 43800, when: "Meses a anos de tratamento",
+      signs: "Movimentos involuntários: estalar ou mastigar com os lábios, protrusão da língua, movimentos de dedos 'tocando piano', movimentos coreoatetoides; pioram com estresse.",
+      risk: "Cerca de 5% por ano de exposição; mais com idade, transtorno afetivo, doses altas e extrapiramidais agudos no início. Menos com segunda geração.",
+      scale: "AIMS (Abnormal Involuntary Movement Scale).",
+      steps: ["Suspender o anticolinérgico, se houver.", "Reduzir a dose do antipsicótico.", "Trocar por um com menos risco: a clozapina é a mais associada à melhora (quetiapina também pode ajudar).", "Valbenazina ou deutetrabenazina como adjuvantes; ECT e toxina botulínica em casos graves."],
+      caution: "Anticolinérgicos pioram. Nem sempre reverte ao parar o antipsicótico.",
+      effect: null,
+    },
+  ],
+  cases: [
+    {
+      prompt: "Homem jovem, horas depois de haloperidol IM: olhos virados para cima e pescoço torcido. Qual a conduta?",
+      options: ["Anticolinérgico IM ou IV (ex.: biperideno)", "Propranolol oral", "Aumentar o haloperidol", "Valbenazina"],
+      correct: 0,
+      explain: "Distonia aguda: anticolinérgico por via parenteral, já que pode não conseguir engolir. Melhora em ~5 minutos (IV) ou ~20 minutos (IM).",
+    },
+    {
+      prompt: "Uma semana depois de aumentar a dose: inquietação interna, não consegue ficar sentado, cruza e descruza as pernas. Qual o quadro?",
+      options: ["Acatisia", "Piora da psicose", "Distonia aguda", "Discinesia tardia"],
+      correct: 0,
+      explain: "Acatisia é confundida com agitação psicótica e se associa a ideação suicida e agressividade. Aumentar o antipsicótico pioraria.",
+    },
+    {
+      prompt: "A acatisia persiste depois de reduzir a dose. Qual remédio pode ajudar?",
+      options: ["Propranolol em dose baixa", "Biperideno", "Haloperidol", "Metoclopramida"],
+      correct: 0,
+      explain: "Propranolol 30–80 mg/dia, clonazepam em dose baixa ou antagonistas 5-HT2 (mirtazapina, trazodona). Anticolinérgicos em geral não ajudam na acatisia.",
+    },
+    {
+      prompt: "Discinesia tardia em quem usa biperideno todos os dias. Qual o primeiro passo?",
+      options: ["Suspender o anticolinérgico", "Dobrar o anticolinérgico", "Somar haloperidol", "Somar metoclopramida"],
+      correct: 0,
+      explain: "Anticolinérgicos pioram a discinesia tardia. Depois, reduzir o antipsicótico ou trocar (clozapina é a mais associada à melhora); valbenazina ou deutetrabenazina como adjuvantes.",
+    },
+    {
+      prompt: "Qual antipsicótico mais se associa à melhora da discinesia tardia?",
+      options: ["Clozapina", "Haloperidol", "Flufenazina", "Risperidona"],
+      correct: 0,
+      explain: "A clozapina é a mais associada à resolução dos sintomas; a quetiapina também pode ajudar.",
+    },
+    {
+      prompt: "Idosa, 3 semanas após iniciar risperidona: rigidez, tremor, rosto inexpressivo e voz monótona. Parece deprimida. Hipótese?",
+      options: ["Parkinsonismo induzido", "Depressão", "Discinesia tardia", "Distonia aguda"],
+      correct: 0,
+      explain: "O parkinsonismo aparece em dias a semanas, é mais comum em mulheres idosas e é confundido com depressão ou sintomas negativos.",
+    },
+    {
+      prompt: "No parkinsonismo induzido, como usar o anticolinérgico?",
+      options: ["De dia, revisando a necessidade a cada 3 meses", "À noite, por tempo indeterminado", "Só por via IV", "Sempre junto com o antipsicótico, desde o início"],
+      correct: 0,
+      explain: "Os sintomas somem durante o sono, então não precisa à noite. A maioria não precisa de anticolinérgico por muito tempo.",
+    },
+    {
+      prompt: "Qual escala avalia a acatisia?",
+      options: ["Barnes (BARS)", "AIMS", "Simpson-Angus", "PANSS"],
+      correct: 0,
+      explain: "Barnes para acatisia, Simpson-Angus para parkinsonismo e AIMS para discinesia tardia.",
+    },
+  ],
   /* Antipsicóticos de depósito: Maudsley 15ª ed., tabelas 1.8 (doses, intervalos, dose-teste) e
      1.9 (tempo até o pico, meia-vida plasmática, tempo até o equilíbrio), e seções de aripiprazol,
      olanzapina e paliperidona de longa ação. peak e half em dias (valor médio das faixas);

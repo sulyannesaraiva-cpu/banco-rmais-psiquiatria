@@ -1733,6 +1733,69 @@ function renderPharmaDepot() {
     </div>`;
 }
 
+/* ---------- Antipsicóticos: efeitos extrapiramidais (quando aparecem e o que fazer) ---------- */
+
+/* Linha do tempo em escala logarítmica, de minutos a 5 anos de tratamento. */
+function pharmaEpsX(hours) {
+  return 30 + (Math.log10(Math.max(hours, 0.1)) + 1) / (Math.log10(43800) + 1) * 540;
+}
+
+function pharmaEpsSvg(selected) {
+  const eps = pharmaClass().eps;
+  const marks = [[1, "1 hora"], [24, "1 dia"], [168, "1 semana"], [720, "1 mês"], [8760, "1 ano"]];
+  const bands = eps.map((item, index) => {
+    const y = 30 + index * 34;
+    const on = item.id === selected.id;
+    return `<g class="eps-band ${on ? "on" : ""}" style="--c:${item.color}">
+      <rect x="${pharmaEpsX(item.from)}" y="${y}" width="${pharmaEpsX(item.to) - pharmaEpsX(item.from)}" height="22" rx="11"></rect>
+      <text x="${pharmaEpsX(item.from) + 10}" y="${y + 15}" class="pharma-label small">${escapeHtml(item.name)}</text>
+    </g>`;
+  }).join("");
+  const ticks = marks.map(([hours, label]) => `<line x1="${pharmaEpsX(hours)}" y1="26" x2="${pharmaEpsX(hours)}" y2="172" class="eps-grid"></line><text x="${pharmaEpsX(hours)}" y="190" text-anchor="middle" class="pharma-label small">${label}</text>`).join("");
+  return `
+    <svg class="pharma-kinetics" viewBox="0 0 600 200" role="img" aria-label="Quando cada efeito extrapiramidal costuma aparecer depois de iniciar o antipsicótico">
+      ${ticks}${bands}
+      <text x="30" y="16" class="pharma-label small">tempo desde o início ou o aumento da dose →</text>
+    </svg>`;
+}
+
+function renderPharmaEps() {
+  const drug = pharmaDrug(state.pharma.drug);
+  const eps = pharmaClass().eps;
+  const selected = eps.find((item) => item.id === state.pharma.eps) || eps[0];
+  const buttons = eps.map((item) => `<button type="button" class="pharma-toggle ${item.id === selected.id ? "on" : ""}" data-pharma-eps="${item.id}" aria-pressed="${item.id === selected.id}">${escapeHtml(item.name)}</button>`).join("");
+  const level = selected.effect ? drug.effects[selected.effect] ?? 0 : null;
+  const tone = level === null ? "ok" : level >= 3 ? "high" : level === 2 ? "warn" : "good";
+  const partial = pharmaIsPartial(drug, "D2");
+  const drugReading = level === null
+    ? `Risco ao longo dos anos: menor com antipsicóticos de segunda geração que com os de primeira; ${drug.generation === 1 ? `${escapeHtml(drug.name.toLowerCase())} é de primeira geração.` : `${escapeHtml(drug.name.toLowerCase())} é de segunda geração.`}`
+    : `${selected.effect === "akathisia" ? "Acatisia" : "Parkinsonismo"} com ${escapeHtml(drug.name.toLowerCase())}: ${PHARMA_EFFECT_LEVELS[level]} (Maudsley, tabela 1.7).${selected.id === "distonia" ? " A distonia acompanha o bloqueio D2 forte e a alta potência." : ""}${partial && selected.id === "acatisia" ? " Agonistas parciais D2 poupam o parkinsonismo, mas ainda podem dar acatisia." : ""}`;
+  return `
+    <div class="pharma-chips" role="group" aria-label="Antipsicótico">${pharmaDrugChips(drug.id)}</div>
+    <div class="pharma-grid">
+      <section class="pharma-card">
+        <div class="pharma-card-head"><h3>Quando aparecem</h3><span>escala de tempo logarítmica</span></div>
+        ${pharmaEpsSvg(selected)}
+        <div class="pharma-toggles">${buttons}</div>
+        <div class="pharma-reading tone-${tone}"><strong>${escapeHtml(selected.name)} · ${escapeHtml(drug.name)}</strong><span>${drugReading}</span></div>
+      </section>
+      <section class="pharma-card">
+        <h3>${escapeHtml(selected.name)}</h3>
+        <table class="pharma-table add-use"><tbody>
+          <tr><th scope="row">Quando</th><td>${escapeHtml(selected.when)}</td></tr>
+          <tr><th scope="row">Sinais</th><td>${escapeHtml(selected.signs)}</td></tr>
+          <tr><th scope="row">Quem tem mais</th><td>${escapeHtml(selected.risk)}</td></tr>
+          <tr><th scope="row">Escala</th><td>${escapeHtml(selected.scale)}</td></tr>
+        </tbody></table>
+        <h4>Conduta</h4>
+        <ol class="eps-steps">${selected.steps.map((step) => `<li>${escapeHtml(step)}</li>`).join("")}</ol>
+        <div class="pharma-reading tone-warn"><strong>Atenção</strong><span>${escapeHtml(selected.caution)}</span></div>
+        <p class="pharma-extra">Conforme o Maudsley (tabela 1.28). Biperideno é o anticolinérgico mais usado no Brasil.</p>
+        ${pharmaStudyLink(drug)}
+      </section>
+    </div>`;
+}
+
 /* ---------- Treino ---------- */
 
 function pharmaShuffle(list) {
@@ -1818,12 +1881,15 @@ function newPharmaQuiz() {
   const stimulant = pharmaIsStimulant();
   const dementia = pharmaIsDementia();
   const addiction = pharmaIsAddiction();
+  const hasCases = !dementia && !addiction && Boolean(pharmaClass().cases);
   const questions = [];
   let guard = 0;
   while (questions.length < 10 && guard < 300) {
     guard += 1;
     const roll = Math.random();
-    const question = addiction && roll < 0.35
+    const question = hasCases && roll < 0.25
+      ? pharmaCaseQuestion()
+      : addiction && roll < 0.35
       ? pharmaCaseQuestion()
       : addiction && roll < 0.5
       ? pharmaActionQuestion(drugs)
@@ -2042,9 +2108,9 @@ function renderPharmaPanel() {
     return;
   }
   const hasDepot = Boolean(pharmaClass().depots);
-  const mode = ["paths", "compare", "synapse", "quiz", ...(hasDepot ? ["depot"] : [])].includes(state.pharma.mode) ? state.pharma.mode : "paths";
+  const mode = ["paths", "compare", "synapse", "quiz", ...(hasDepot ? ["depot", "eps"] : [])].includes(state.pharma.mode) ? state.pharma.mode : "paths";
   const modeButton = (id, label) => `<button type="button" data-pharma-mode="${id}" class="${mode === id ? "active" : ""}" aria-pressed="${mode === id}">${label}</button>`;
-  const body = mode === "compare" ? renderPharmaCompare() : mode === "synapse" ? renderPharmaSynapse() : mode === "quiz" ? renderPharmaQuiz() : mode === "depot" ? renderPharmaDepot() : renderPharmaPaths();
+  const body = mode === "compare" ? renderPharmaCompare() : mode === "synapse" ? renderPharmaSynapse() : mode === "quiz" ? renderPharmaQuiz() : mode === "depot" ? renderPharmaDepot() : mode === "eps" ? renderPharmaEps() : renderPharmaPaths();
   const cls = pharmaClass();
   const html = `
     <header class="pharma-head">
@@ -2055,7 +2121,7 @@ function renderPharmaPanel() {
       </div>
       <div class="pharma-switches">
         <div class="segmented pharma-modes" role="group" aria-label="Modo">
-          ${modeButton("paths", pharmaIsStabilizer() ? "Mecanismos e fases" : pharmaIsAnxiolytic() || pharmaIsStimulant() || pharmaIsDementia() || pharmaIsAddiction() ? "Mecanismos e usos" : pharmaIsAntidepressant() ? "Sistemas e alvos" : "Vias e receptores")}${modeButton("compare", "Comparar")}${modeButton("synapse", pharmaIsStabilizer() ? "Nível e interações" : pharmaIsAnxiolytic() ? "Meia-vida e retirada" : pharmaIsStimulant() ? "Ao longo do dia" : pharmaIsDementia() ? "Indicação e segurança" : pharmaIsAddiction() ? "Receptor e uso" : "Sinapse")}${hasDepot ? modeButton("depot", "Depósito") : ""}${modeButton("quiz", "Treino")}
+          ${modeButton("paths", pharmaIsStabilizer() ? "Mecanismos e fases" : pharmaIsAnxiolytic() || pharmaIsStimulant() || pharmaIsDementia() || pharmaIsAddiction() ? "Mecanismos e usos" : pharmaIsAntidepressant() ? "Sistemas e alvos" : "Vias e receptores")}${modeButton("compare", "Comparar")}${modeButton("synapse", pharmaIsStabilizer() ? "Nível e interações" : pharmaIsAnxiolytic() ? "Meia-vida e retirada" : pharmaIsStimulant() ? "Ao longo do dia" : pharmaIsDementia() ? "Indicação e segurança" : pharmaIsAddiction() ? "Receptor e uso" : "Sinapse")}${hasDepot ? modeButton("depot", "Depósito") + modeButton("eps", "Extrapiramidais") : ""}${modeButton("quiz", "Treino")}
         </div>
       </div>
     </header>
@@ -2080,7 +2146,7 @@ function openPharmaStudy(drug) {
   const panel = document.querySelector("#pharmaPanel");
   if (!panel) return;
   panel.addEventListener("click", (event) => {
-    const target = event.target.closest("[data-pharma-drug], [data-pharma-class], [data-pharma-mode], [data-pharma-study], [data-pharma-answer], [data-pharma-quiz], [data-pharma-review], [data-pharma-inter], [data-pharma-stop], [data-pharma-repeat], [data-pharma-hub], [data-pharma-quick], [data-pharma-dtype], [data-pharma-dstage], [data-pharma-bg], [data-pharma-depot], [data-pharma-depotstop]");
+    const target = event.target.closest("[data-pharma-drug], [data-pharma-class], [data-pharma-mode], [data-pharma-study], [data-pharma-answer], [data-pharma-quiz], [data-pharma-review], [data-pharma-inter], [data-pharma-stop], [data-pharma-repeat], [data-pharma-hub], [data-pharma-quick], [data-pharma-dtype], [data-pharma-dstage], [data-pharma-bg], [data-pharma-depot], [data-pharma-depotstop], [data-pharma-eps]");
     if (!target) return;
     const data = target.dataset;
     if (data.pharmaHub !== undefined) state.pharma.view = "hub";
@@ -2094,7 +2160,8 @@ function openPharmaStudy(drug) {
       setPharmaClass(data.pharmaClass);
       state.pharma.view = "class";
       state.pharma.mode = "paths";
-    } else if (data.pharmaDepot) state.pharma.depot = data.pharmaDepot;
+    } else if (data.pharmaEps) state.pharma.eps = data.pharmaEps;
+    else if (data.pharmaDepot) state.pharma.depot = data.pharmaDepot;
     else if (data.pharmaDepotstop !== undefined) state.pharma.depotStop = !state.pharma.depotStop;
     else if (data.pharmaBg !== undefined) state.pharma.addBg = !state.pharma.addBg;
     else if (data.pharmaDtype) state.pharma.dtype = data.pharmaDtype;

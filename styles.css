@@ -7636,3 +7636,33 @@ body.theme-dark .pharma-chip.on {
   width: 30%;
   vertical-align: top;
 }
+/* Antipsicóticos: linha do tempo dos efeitos extrapiramidais. */
+.eps-band rect {
+  fill: var(--c);
+  fill-opacity: 0.22;
+  stroke: var(--c);
+  stroke-width: 1.5;
+}
+
+.eps-band.on rect {
+  fill-opacity: 0.55;
+  stroke-width: 3;
+}
+
+.eps-band text {
+  font-weight: 700;
+}
+
+.eps-grid {
+  stroke: var(--line);
+  stroke-dasharray: 3 4;
+}
+
+.eps-steps {
+  margin: 0 0 12px;
+  padding-left: 20px;
+  display: grid;
+  gap: 6px;
+  font-size: 14px;
+  line-height: 1.45;
+}
