@@ -307,9 +307,13 @@
               <p>Marque um ou mais temas e monte o bloco abaixo, ou toque em Continuar para seguir só as pendentes de um tema.</p>
             </header>
             <section class="question-search" aria-label="Buscar questões">
-              <input id="questionSearchInput" type="search" placeholder="Buscar questões por palavra (ex.: clozapina, Capgras, Lei 10.216)" autocomplete="off" />
+              <div class="question-search-row">
+                <input id="questionSearchInput" type="search" placeholder="Buscar questões por palavra (ex.: clozapina, Capgras, Lei 10.216)" autocomplete="off" />
+                <button type="button" class="study-filters-btn" id="studyFiltersBtn" aria-expanded="false" aria-controls="studyFilters"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16"></path><path d="M7 12h10"></path><path d="M10 18h4"></path></svg><span>Filtros</span><b class="study-filters-count" hidden></b></button>
+              </div>
               <div id="questionSearchResults"></div>
             </section>
+            <div class="study-filters" id="studyFilters">
             <section class="unseen-mode" aria-label="Só questões inéditas">
               <label class="session-toggle">
                 <input type="checkbox" data-unseen-toggle />
@@ -328,6 +332,7 @@
                 <button id="selectAllTopicsBtn" type="button" class="link-btn">Marcar todos</button>
                 <button id="clearTopicsBtn" type="button" class="link-btn">Desmarcar</button>
               </div>
+            </div>
             </div>
             <div class="topic-list" id="topicChecklist"></div>
 
@@ -358,6 +363,10 @@
               <p class="panel-line" id="sessionLine"></p>
             </section>
             <div class="session-summary" id="sessionSummary"></div>
+            <div class="block-quickbar" id="blockQuickBar" hidden>
+              <button type="button" class="link-btn" data-quickbar="adjust"><span data-quickbar-count>0 temas</span><small>Ajustar bloco</small></button>
+              <button type="button" class="primary-btn" data-quickbar="start">Começar bloco</button>
+            </div>
           </div>
 
           <div class="tab-panel" id="examsPanel">
@@ -756,6 +765,7 @@
     </script>
     <script src="js/mobileNav.js"></script>
     <script src="js/questionMobile.js"></script>
+    <script src="js/studyMobile.js"></script>
     <script src="js/globalBankCounter.js"></script>
   </body>
 </html>

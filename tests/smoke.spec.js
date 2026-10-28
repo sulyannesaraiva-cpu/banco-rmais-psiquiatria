@@ -573,3 +573,21 @@ test("questão no celular: mapa recolhido, ferramentas e barra fixa", async ({ p
   await expect(page.locator("#commentsAccordion")).toBeHidden();
   expect(errors).toEqual([]);
 });
+test("estudar por temas no celular: filtros recolhidos e barra Começar bloco", async ({ page }) => {
+  const errors = await openSite(page);
+  const mobile = await page.evaluate(() => isMobileLayout());
+  test.skip(!mobile, "layout enxuto só no celular");
+  await page.locator('#bottomNav [data-nav="study"]').click();
+  await page.locator('#studySubnav [data-subnav="activity"]').click();
+  await expect(page.locator("#studyFilters")).toBeHidden();
+  await page.locator("#studyFiltersBtn").click();
+  await expect(page.locator("#studyFilters")).toBeVisible();
+  await page.locator('[data-topic-source="exams"]').click();
+  await expect(page.locator(".study-filters-count")).toHaveText("1");
+  await page.locator('[data-topic-source="mixed"]').click();
+  await expect(page.locator("#blockQuickBar")).toContainText("temas marcados");
+  await page.locator('[data-quickbar="start"]').click();
+  expect(await page.evaluate(() => state.sessionActive && state.filtered.length > 0)).toBe(true);
+  await expect(page.locator("#blockQuickBar")).toBeHidden();
+  expect(errors).toEqual([]);
+});
