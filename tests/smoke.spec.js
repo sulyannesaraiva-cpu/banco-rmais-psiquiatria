@@ -240,7 +240,11 @@ test("etiquetas, cartões dos erros e reportar sem login", async ({ page }) => {
   const errors = await openSite(page);
   await goTab(page, "activity");
   await page.locator("#startSessionBtn").click();
+  /* No celular, etiquetas e "reportar" ficam atrás da linha de ferramentas da questão. */
+  const mobile = await page.evaluate(() => isMobileLayout());
+  if (mobile) await page.locator('[data-qtool="labels"]').click();
   await page.locator('[data-question-label="decorar"]').click();
+  if (mobile) await page.locator('[data-qtool="more"]').click();
   await page.locator("#reportQuestionBtn").click();
   await expect(page.locator("#reportStatus")).toContainText("Entre na conta");
   const letter = await page.evaluate(() => {

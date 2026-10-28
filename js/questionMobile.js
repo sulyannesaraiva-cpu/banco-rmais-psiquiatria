@@ -3,12 +3,13 @@
    - "Anterior · 13/30 · Próxima" fica numa barra fixa acima da barra de baixo (só CSS);
    - etiquetas, conceito (virar flashcard, questões parecidas), anotação, discussão e "mais"
      (gabarito, marcar acerto/erro, editar, reportar) ficam atrás de uma linha de ferramentas:
-     cada botão mostra só a sua seção;
+     cada botão mostra só a sua seção. As "questões parecidas" só aparecem depois de um erro e
+     ficam sempre à vista;
    - comentário longo aparece recolhido, com "Ler mais". */
 
 const QUESTION_TOOL_TARGETS = {
   labels: ["#questionLabels"],
-  concept: ["#conceptPanel", "#similarPanel"],
+  concept: ["#conceptPanel"],
   note: ["#noteAccordion"],
   comments: ["#commentsAccordion"],
   more: ["#moreToolsDetails", "#questionReport"],

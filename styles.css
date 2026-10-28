@@ -7136,7 +7136,6 @@ body.theme-dark .pharma-chip.on {
 
   body:not([data-qtool="labels"]) #questionLabels,
   body:not([data-qtool="concept"]) #conceptPanel,
-  body:not([data-qtool="concept"]) #similarPanel,
   body:not([data-qtool="note"]) #noteAccordion,
   body:not([data-qtool="comments"]) #commentsAccordion,
   body:not([data-qtool="more"]) #moreToolsDetails,
