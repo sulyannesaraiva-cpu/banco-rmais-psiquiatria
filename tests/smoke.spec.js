@@ -417,3 +417,26 @@ test("simulador de fármacos: vias, receptores, comparar e questões do remédio
   await expect(page.locator("#questionSearchInput")).toHaveValue("clozapina");
   expect(errors).toEqual([]);
 });
+test("simulador de fármacos: sinapse com ocupação e rodada de treino", async ({ page }) => {
+  const errors = await openSite(page);
+  await goTab(page, "pharma");
+  await page.locator('[data-pharma-mode="synapse"]').click();
+  await page.locator('[data-pharma-drug="haloperidol"]').click();
+  await page.locator("[data-pharma-occupancy]").evaluate((input) => {
+    input.value = "85";
+    input.dispatchEvent(new Event("input", { bubbles: true }));
+  });
+  await expect(page.locator("#pharmaSynapseView .pharma-reading")).toContainText("extrapiramidais");
+  await page.locator('[data-pharma-drug="aripiprazol"]').click();
+  await expect(page.locator("#pharmaSynapseView .pharma-reading")).toContainText("agonista parcial");
+  await page.locator('[data-pharma-mode="quiz"]').click();
+  for (let i = 0; i < 10; i += 1) {
+    await page.locator("[data-pharma-answer]").first().click();
+    await expect(page.locator(".pharma-feedback")).toBeVisible();
+    await page.locator('[data-pharma-quiz="next"]').click();
+  }
+  await expect(page.locator(".pharma-quiz-end")).toContainText("Rodada concluída");
+  await page.locator('[data-pharma-quiz="restart"]').click();
+  await expect(page.locator(".pharma-quiz")).toContainText("Pergunta 1 de 10");
+  expect(errors).toEqual([]);
+});

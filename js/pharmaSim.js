@@ -2,6 +2,8 @@
    - Vias e receptores: corte do cérebro com as 4 vias dopaminérgicas coloridas conforme o remédio
      escolhido, perfil de receptores e "o que esperar" (efeitos relativos).
    - Comparar: dois remédios lado a lado, com o porquê das diferenças.
+   - Sinapse: receptores D2 ocupados conforme o controle de ocupação, com as faixas clássicas.
+   - Treino: rodadas de 10 perguntas ("qual é o remédio por este perfil?" e "qual tem mais risco de…?").
    Material didático e simplificado; não serve para prescrição. */
 
 const PHARMA_KEY = "banco-rmais-pharma-sim";
@@ -16,7 +18,7 @@ const PHARMA_TONES = {
 };
 
 state.pharma = (() => {
-  const fallback = { mode: "paths", drug: "haloperidol", a: "olanzapina", b: "aripiprazol" };
+  const fallback = { mode: "paths", drug: "haloperidol", a: "olanzapina", b: "aripiprazol", occupancy: 70 };
   try {
     return { ...fallback, ...JSON.parse(localStorage.getItem(PHARMA_KEY) || "{}") };
   } catch {
@@ -234,10 +236,215 @@ function renderPharmaCompare() {
     </div>`;
 }
 
+/* ---------- Sinapse: ocupação de D2 ---------- */
+
+/* Faixas clássicas de ocupação de D2 para antagonistas (Kapur et al., 2000): resposta a partir de
+   ~65%, prolactina acima de ~72%, extrapiramidais acima de ~78%. */
+function pharmaOccupancyReading(drug, occupancy) {
+  if (pharmaIsPartial(drug, "D2")) {
+    return {
+      tone: occupancy >= 80 ? "good" : "ok",
+      title: occupancy >= 80 ? "Faixa clínica dos agonistas parciais (acima de ~80–90%)" : "Ocupação ainda baixa para um agonista parcial",
+      text: "Mesmo ocupando quase todos os receptores, o agonista parcial mantém parte da ativação de D2. Por isso há pouco parkinsonismo e a prolactina não sobe; a acatisia pode aparecer.",
+    };
+  }
+  const lowD2 = drug.receptors.D2 <= 1;
+  const note = lowD2 ? " Na dose usual, este remédio ocupa menos D2 (muitas vezes abaixo de 60%) e se solta rápido do receptor: o efeito não depende só de D2." : "";
+  if (occupancy < 65) return { tone: "low", title: "Abaixo de ~65%: pouco efeito antipsicótico", text: `Poucos receptores bloqueados para reduzir os sintomas positivos.${note}` };
+  if (occupancy <= 72) return { tone: "good", title: "~65–72%: faixa terapêutica", text: `Bloqueio suficiente na via mesolímbica, ainda abaixo dos limiares de prolactina e extrapiramidais.${note}` };
+  if (occupancy <= 78) return { tone: "warn", title: "~72–78%: terapêutico, prolactina subindo", text: `A via tuberoinfundibular já sente o bloqueio: risco de hiperprolactinemia.${note}` };
+  return { tone: "high", title: "Acima de ~78%: risco de extrapiramidais", text: `O bloqueio na via nigroestriatal passa do limite: parkinsonismo, distonia, acatisia.${note}` };
+}
+
+const PHARMA_RECEPTOR_ORDER = [4, 1, 7, 2, 9, 0, 5, 8, 3, 6];
+
+function pharmaSynapseSvg(drug, occupancy) {
+  const partial = pharmaIsPartial(drug, "D2");
+  const occupied = Math.round(occupancy / 10);
+  const taken = new Set(PHARMA_RECEPTOR_ORDER.slice(0, occupied));
+  const receptors = Array.from({ length: 10 }, (_, index) => {
+    const x = 36 + index * 32;
+    const blocked = taken.has(index);
+    const receptor = `<path d="M${x - 9} 214 v-14 h5 v8 h8 v-8 h5 v14 z" class="syn-receptor ${blocked ? (partial ? "partial" : "blocked") : ""}"></path>`;
+    const ligand = blocked
+      ? `<rect x="${x - 7}" y="194" width="14" height="10" rx="5" class="syn-drug ${partial ? "partial" : ""}"></rect>`
+      : index % 3 === 0
+      ? `<circle cx="${x}" cy="200" r="4" class="syn-dopamine"></circle>`
+      : "";
+    return receptor + ligand;
+  }).join("");
+  const freeDopamine = [60, 98, 132, 170, 204, 238, 276, 300].map((x, index) => `<circle cx="${x}" cy="${150 + (index % 3) * 12}" r="4" class="syn-dopamine"></circle>`).join("");
+  return `
+    <svg class="pharma-synapse" viewBox="0 0 360 290" role="img" aria-label="Sinapse dopaminérgica com ${occupancy}% dos receptores D2 ocupados por ${escapeHtml(drug.name)}">
+      <path d="M30 0 H330 V70 C330 116 280 128 180 128 C80 128 30 116 30 70 Z" class="syn-pre"></path>
+      <circle cx="120" cy="52" r="17" class="syn-vesicle"></circle><circle cx="180" cy="40" r="17" class="syn-vesicle"></circle><circle cx="240" cy="54" r="17" class="syn-vesicle"></circle>
+      <circle cx="114" cy="48" r="3.5" class="syn-dopamine"></circle><circle cx="125" cy="56" r="3.5" class="syn-dopamine"></circle><circle cx="174" cy="36" r="3.5" class="syn-dopamine"></circle><circle cx="186" cy="44" r="3.5" class="syn-dopamine"></circle><circle cx="236" cy="50" r="3.5" class="syn-dopamine"></circle><circle cx="246" cy="58" r="3.5" class="syn-dopamine"></circle>
+      <text x="44" y="24" class="pharma-label small">Neurônio dopaminérgico</text>
+      ${freeDopamine}
+      <path d="M20 290 V226 C20 216 60 212 180 212 C300 212 340 216 340 226 V290 Z" class="syn-post"></path>
+      ${receptors}
+      <text x="180" y="262" text-anchor="middle" class="pharma-label small">Receptores D2 pós-sinápticos</text>
+    </svg>`;
+}
+
+function renderPharmaSynapseView(drug) {
+  const occupancy = state.pharma.occupancy;
+  const reading = pharmaOccupancyReading(drug, occupancy);
+  const partial = pharmaIsPartial(drug, "D2");
+  return `
+    <div class="pharma-synapse-wrap">${pharmaSynapseSvg(drug, occupancy)}</div>
+    <div class="pharma-legend">
+      <span><i class="dot"></i>dopamina</span>
+      <span><i class="pill ${partial ? "partial" : ""}"></i>${escapeHtml(drug.name)}${partial ? " (agonista parcial)" : ""}</span>
+      <span><i class="rec"></i>receptor D2</span>
+    </div>
+    <div class="pharma-reading tone-${reading.tone}">
+      <strong>${occupancy}% de ocupação · ${escapeHtml(reading.title)}</strong>
+      <span>${escapeHtml(reading.text)}</span>
+    </div>`;
+}
+
+function renderPharmaSynapse() {
+  const drug = pharmaDrug(state.pharma.drug);
+  const partial = pharmaIsPartial(drug, "D2");
+  return `
+    <div class="pharma-chips" role="group" aria-label="Antipsicótico">${pharmaDrugChips(drug.id)}</div>
+    <div class="pharma-grid">
+      <section class="pharma-card">
+        <div class="pharma-card-head"><h3>Sinapse dopaminérgica · ${escapeHtml(drug.name)}</h3><span>${partial ? "agonista parcial D2" : "antagonista D2"}</span></div>
+        <div id="pharmaSynapseView">${renderPharmaSynapseView(drug)}</div>
+      </section>
+      <section class="pharma-card">
+        <h3>Ocupação de D2</h3>
+        <label class="pharma-slider-label" for="pharmaOccupancy">Arraste para simular uma dose maior ou menor</label>
+        <input id="pharmaOccupancy" class="pharma-slider" type="range" min="0" max="100" step="1" value="${state.pharma.occupancy}" data-pharma-occupancy>
+        ${partial
+          ? '<div class="pharma-zones partial"><span style="flex:80">ocupação baixa</span><span style="flex:20">faixa clínica</span></div>'
+          : '<div class="pharma-zones"><span class="z-low" style="flex:65">pouco efeito</span><span class="z-good" style="flex:7">65–72</span><span class="z-warn" style="flex:6">prol.</span><span class="z-high" style="flex:22">extrapiramidais</span></div>'}
+        <p class="pharma-extra">Cada receptor desenhado vale 10%. A dopamina compete com o remédio pelos receptores que sobram livres.</p>
+        <p class="pharma-extra">Limiares de ocupação conforme Kapur et al. (2000), estudo clássico com haloperidol e risperidona; valores aproximados.</p>
+        ${pharmaStudyLink(drug)}
+      </section>
+    </div>`;
+}
+
+/* ---------- Treino ---------- */
+
+function pharmaShuffle(list) {
+  const copy = [...list];
+  for (let i = copy.length - 1; i > 0; i -= 1) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [copy[i], copy[j]] = [copy[j], copy[i]];
+  }
+  return copy;
+}
+
+function pharmaProfileDistance(a, b) {
+  const receptors = window.PHARMA_SIM.receptors.map((receptor) => receptor.id);
+  const levels = receptors.reduce((sum, id) => sum + Math.abs((a.receptors[id] ?? 0) - (b.receptors[id] ?? 0)), 0);
+  return levels + (pharmaIsPartial(a, "D2") !== pharmaIsPartial(b, "D2") ? 3 : 0);
+}
+
+function pharmaProfileQuestion(drugs) {
+  const correct = drugs[Math.floor(Math.random() * drugs.length)];
+  const others = pharmaShuffle(drugs.filter((drug) => drug.id !== correct.id && pharmaProfileDistance(drug, correct) >= 3)).slice(0, 3);
+  if (others.length < 3) return null;
+  return { type: "profile", correct: correct.id, options: pharmaShuffle([correct, ...others]).map((drug) => drug.id) };
+}
+
+function pharmaEffectQuestion(drugs) {
+  const effect = window.PHARMA_SIM.effects[Math.floor(Math.random() * window.PHARMA_SIM.effects.length)];
+  const level = (drug) => drug.effects[effect.id] ?? 0;
+  const top = pharmaShuffle(drugs.filter((drug) => level(drug) >= 2));
+  for (const correct of top) {
+    const others = pharmaShuffle(drugs.filter((drug) => level(drug) <= level(correct) - 2)).slice(0, 3);
+    if (others.length === 3) return { type: "effect", effect: effect.id, correct: correct.id, options: pharmaShuffle([correct, ...others]).map((drug) => drug.id) };
+  }
+  return null;
+}
+
+function newPharmaQuiz() {
+  const drugs = window.PHARMA_SIM.drugs;
+  const questions = [];
+  let guard = 0;
+  while (questions.length < 10 && guard < 200) {
+    guard += 1;
+    const question = Math.random() < 0.5 ? pharmaProfileQuestion(drugs) : pharmaEffectQuestion(drugs);
+    if (!question) continue;
+    const key = `${question.type}|${question.correct}|${question.effect || ""}`;
+    if (questions.some((item) => `${item.type}|${item.correct}|${item.effect || ""}` === key)) continue;
+    questions.push(question);
+  }
+  return { questions, index: 0, answers: [] };
+}
+
+function pharmaProfileExplanation(drug) {
+  const r = drug.receptors;
+  const cues = [];
+  if (pharmaIsPartial(drug, "D2")) cues.push("D2 como agonista parcial (barra listrada)");
+  else if (r.D2 >= 4 && r["5HT2A"] <= 1) cues.push("D2 muito forte com pouco 5-HT2A: perfil de primeira geração de alta potência");
+  else if (r.D2 <= 1) cues.push("D2 fraco");
+  else if (r["5HT2A"] >= r.D2) cues.push("5-HT2A igual ou maior que D2: perfil atípico");
+  if (r.H1 >= 3) cues.push("H1 forte (sedação, peso)");
+  if (r.M1 >= 3) cues.push("M1 forte (anticolinérgico)");
+  if (r.A1 >= 3) cues.push("α1 forte (hipotensão)");
+  if (r.H1 === 0 && r.M1 === 0 && !pharmaIsPartial(drug, "D2")) cues.push("quase sem H1 e M1");
+  return `${cues.length ? `Pistas: ${cues.join("; ")}. ` : ""}${drug.extra}`;
+}
+
+function renderPharmaQuiz() {
+  if (!state.pharmaQuiz || !state.pharmaQuiz.questions.length) state.pharmaQuiz = newPharmaQuiz();
+  const quiz = state.pharmaQuiz;
+  const total = quiz.questions.length;
+  if (quiz.index >= total) {
+    const right = quiz.answers.filter((answer, index) => answer === quiz.questions[index].correct).length;
+    const missed = [...new Set(quiz.questions.filter((question, index) => quiz.answers[index] !== question.correct).map((question) => question.correct))];
+    return `
+      <section class="pharma-card pharma-quiz-end">
+        <h3>Rodada concluída: ${right} de ${total}</h3>
+        ${missed.length ? `<p class="pharma-extra">Vale rever: ${missed.map((id) => `<button type="button" class="link-btn" data-pharma-review="${id}">${escapeHtml(pharmaDrug(id).name)}</button>`).join(" · ")}</p>` : '<p class="pharma-extra">Acertou tudo.</p>'}
+        <button type="button" class="primary-btn" data-pharma-quiz="restart">Nova rodada</button>
+      </section>`;
+  }
+  const question = quiz.questions[quiz.index];
+  const answered = quiz.answers[quiz.index];
+  const correct = pharmaDrug(question.correct);
+  const effect = question.effect ? window.PHARMA_SIM.effects.find((item) => item.id === question.effect) : null;
+  const prompt = question.type === "profile"
+    ? "Este perfil de receptores é de qual antipsicótico?"
+    : `Qual destes tem o maior risco de ${effect.label.toLowerCase()}?`;
+  const options = question.options.map((id) => {
+    const drug = pharmaDrug(id);
+    const state_ = answered ? (id === question.correct ? "right" : id === answered ? "wrong" : "") : "";
+    return `<button type="button" class="pharma-option ${state_}" data-pharma-answer="${id}" ${answered ? "disabled" : ""}>${escapeHtml(drug.name)}${state_ === "right" ? " ✓" : state_ === "wrong" ? " ✗" : ""}</button>`;
+  }).join("");
+  const explanation = !answered
+    ? ""
+    : question.type === "profile"
+    ? pharmaProfileExplanation(correct)
+    : `${correct.name}: ${effect.label.toLowerCase()} ${PHARMA_EFFECT_LEVELS[correct.effects[effect.id]]}, por ${effect.why}. ${question.options.filter((id) => id !== correct.id).map((id) => `${pharmaDrug(id).name}: ${PHARMA_EFFECT_LEVELS[pharmaDrug(id).effects[effect.id]]}`).join("; ")}.`;
+  return `
+    <section class="pharma-card pharma-quiz">
+      <div class="pharma-quiz-top"><strong>Pergunta ${quiz.index + 1} de ${total}</strong><span>${quiz.answers.filter((answer, index) => answer === quiz.questions[index].correct).length} acertos</span></div>
+      <div class="pharma-quiz-bar"><i style="width:${(quiz.index / total) * 100}%"></i></div>
+      <h3>${escapeHtml(prompt)}</h3>
+      ${question.type === "profile" ? `<div class="pharma-receptors">${pharmaReceptorRows(correct)}</div>` : ""}
+      <div class="pharma-options">${options}</div>
+      ${answered ? `
+        <div class="pharma-feedback ${answered === question.correct ? "right" : "wrong"}">
+          <strong>${answered === question.correct ? `Isso! ${escapeHtml(correct.name)}.` : `Era ${escapeHtml(correct.name)}.`}</strong>
+          <span>${escapeHtml(explanation)}</span>
+        </div>
+        <button type="button" class="primary-btn" data-pharma-quiz="next">${quiz.index + 1 === total ? "Ver resultado" : "Próxima"}</button>` : ""}
+    </section>`;
+}
+
 function renderPharmaPanel() {
   const panel = document.querySelector("#pharmaPanel");
   if (!panel || !window.PHARMA_SIM) return;
-  const mode = state.pharma.mode === "compare" ? "compare" : "paths";
+  const mode = ["paths", "compare", "synapse", "quiz"].includes(state.pharma.mode) ? state.pharma.mode : "paths";
+  const modeButton = (id, label) => `<button type="button" data-pharma-mode="${id}" class="${mode === id ? "active" : ""}" aria-pressed="${mode === id}">${label}</button>`;
+  const body = mode === "compare" ? renderPharmaCompare() : mode === "synapse" ? renderPharmaSynapse() : mode === "quiz" ? renderPharmaQuiz() : renderPharmaPaths();
   const html = `
     <header class="pharma-head">
       <div>
@@ -245,11 +452,10 @@ function renderPharmaPanel() {
         <p>Antipsicóticos: como o perfil de receptores explica o efeito e os efeitos colaterais.</p>
       </div>
       <div class="segmented pharma-modes" role="group" aria-label="Modo">
-        <button type="button" data-pharma-mode="paths" class="${mode === "paths" ? "active" : ""}" aria-pressed="${mode === "paths"}">Vias e receptores</button>
-        <button type="button" data-pharma-mode="compare" class="${mode === "compare" ? "active" : ""}" aria-pressed="${mode === "compare"}">Comparar</button>
+        ${modeButton("paths", "Vias e receptores")}${modeButton("compare", "Comparar")}${modeButton("synapse", "Sinapse")}${modeButton("quiz", "Treino")}
       </div>
     </header>
-    ${mode === "compare" ? renderPharmaCompare() : renderPharmaPaths()}
+    ${body}
     <p class="pharma-disclaimer">Material didático e simplificado, para estudo. Afinidades em níveis qualitativos, conferidas com Stahl (Prescriber's Guide, 8ª ed.); efeitos relativos conforme Maudsley Prescribing Guidelines (15ª ed., tabela 1.7). Não usar para prescrição.</p>`;
   if (panel.dataset.renderedHtml !== html) {
     panel.innerHTML = html;
@@ -270,16 +476,38 @@ function openPharmaStudy(drug) {
   const panel = document.querySelector("#pharmaPanel");
   if (!panel) return;
   panel.addEventListener("click", (event) => {
-    const target = event.target.closest("[data-pharma-drug], [data-pharma-mode], [data-pharma-study]");
+    const target = event.target.closest("[data-pharma-drug], [data-pharma-mode], [data-pharma-study], [data-pharma-answer], [data-pharma-quiz], [data-pharma-review]");
     if (!target) return;
-    if (target.dataset.pharmaDrug) state.pharma.drug = target.dataset.pharmaDrug;
-    else if (target.dataset.pharmaMode) state.pharma.mode = target.dataset.pharmaMode;
-    else if (target.dataset.pharmaStudy) {
-      openPharmaStudy(pharmaDrug(target.dataset.pharmaStudy));
+    const data = target.dataset;
+    if (data.pharmaDrug) {
+      state.pharma.drug = data.pharmaDrug;
+      /* Ao trocar de remédio na sinapse, começa numa ocupação típica dele. */
+      state.pharma.occupancy = pharmaIsPartial(pharmaDrug(data.pharmaDrug), "D2") ? 90 : pharmaDrug(data.pharmaDrug).receptors.D2 <= 1 ? 55 : 70;
+    } else if (data.pharmaMode) state.pharma.mode = data.pharmaMode;
+    else if (data.pharmaStudy) {
+      openPharmaStudy(pharmaDrug(data.pharmaStudy));
       return;
+    } else if (data.pharmaAnswer) {
+      const quiz = state.pharmaQuiz;
+      if (quiz && quiz.answers[quiz.index] === undefined) quiz.answers[quiz.index] = data.pharmaAnswer;
+    } else if (data.pharmaQuiz === "next") state.pharmaQuiz.index += 1;
+    else if (data.pharmaQuiz === "restart") state.pharmaQuiz = newPharmaQuiz();
+    else if (data.pharmaReview) {
+      state.pharma.drug = data.pharmaReview;
+      state.pharma.mode = "paths";
     }
     savePharmaState();
     renderPharmaPanel();
+    if (data.pharmaQuiz || data.pharmaReview) panel.scrollIntoView({ block: "start" });
+  });
+  /* O controle de ocupação atualiza só o desenho da sinapse, para não interromper o arraste. */
+  panel.addEventListener("input", (event) => {
+    if (!event.target.matches("[data-pharma-occupancy]")) return;
+    state.pharma.occupancy = Number(event.target.value);
+    const view = panel.querySelector("#pharmaSynapseView");
+    if (view) view.innerHTML = renderPharmaSynapseView(pharmaDrug(state.pharma.drug));
+    panel.dataset.renderedHtml = "";
+    savePharmaState();
   });
   panel.addEventListener("change", (event) => {
     const which = event.target.dataset?.pharmaCompare;

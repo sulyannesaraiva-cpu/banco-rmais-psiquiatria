@@ -6356,3 +6356,259 @@ body.theme-dark .pharma-chip.on {
 .sidebar-collapsed .pq-switch {
   display: none;
 }
+/* Simulador: sinapse e treino. */
+.pharma-modes {
+  flex-wrap: wrap;
+}
+
+.pharma-synapse {
+  width: 100%;
+  max-width: 460px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.syn-pre {
+  fill: var(--accent-soft);
+  stroke: var(--line-strong);
+  stroke-width: 2;
+}
+
+.syn-post {
+  fill: var(--panel-soft);
+  stroke: var(--line-strong);
+  stroke-width: 2;
+}
+
+.syn-vesicle {
+  fill: var(--panel);
+  stroke: var(--line-strong);
+  stroke-width: 2;
+}
+
+.syn-dopamine {
+  fill: var(--accent);
+}
+
+.syn-receptor {
+  fill: var(--accent);
+  opacity: 0.55;
+  transition: opacity 0.2s ease;
+}
+
+.syn-receptor.blocked {
+  fill: var(--muted);
+  opacity: 0.8;
+}
+
+.syn-receptor.partial {
+  opacity: 0.8;
+}
+
+.syn-drug {
+  fill: #d99a1e;
+}
+
+.syn-drug.partial {
+  fill: #d99a1e;
+  stroke: var(--accent);
+  stroke-width: 2;
+  stroke-dasharray: 3 2;
+}
+
+.pharma-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.pharma-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.pharma-legend .dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 5px;
+  background: var(--accent);
+}
+
+.pharma-legend .pill {
+  width: 16px;
+  height: 9px;
+  border-radius: 5px;
+  background: #d99a1e;
+}
+
+.pharma-legend .pill.partial {
+  outline: 2px dashed var(--accent);
+}
+
+.pharma-legend .rec {
+  width: 10px;
+  height: 10px;
+  border: 3px solid var(--accent);
+  border-top: 0;
+  opacity: 0.6;
+}
+
+.pharma-reading {
+  display: grid;
+  gap: 4px;
+  padding: 12px 14px;
+  border-left: 0;
+  border-radius: 12px;
+  background: var(--panel-soft);
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.pharma-reading.tone-good {
+  background: var(--accent-soft);
+}
+
+.pharma-reading.tone-warn {
+  background: #fdf1d8;
+  color: #4a3200;
+}
+
+.pharma-reading.tone-high {
+  background: #fde8dd;
+  color: #5c1d05;
+}
+
+.pharma-slider-label {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.pharma-slider {
+  width: 100%;
+  min-height: 32px;
+  accent-color: var(--accent);
+}
+
+.pharma-zones {
+  display: flex;
+  overflow: hidden;
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.pharma-zones span {
+  min-width: 0;
+  padding: 5px 2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.pharma-zones .z-low,
+.pharma-zones.partial span:first-child {
+  background: var(--panel-soft);
+  color: var(--muted);
+}
+
+.pharma-zones .z-good,
+.pharma-zones.partial span:last-child {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+.pharma-zones .z-warn {
+  background: #f2b544;
+  color: #3d2900;
+}
+
+.pharma-zones .z-high {
+  background: #c2410c;
+  color: #ffffff;
+}
+
+.pharma-quiz,
+.pharma-quiz-end {
+  max-width: 640px;
+}
+
+.pharma-quiz-top {
+  display: flex;
+  justify-content: space-between;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.pharma-quiz-bar {
+  height: 6px;
+  border-radius: 3px;
+  background: var(--accent-soft);
+  overflow: hidden;
+}
+
+.pharma-quiz-bar i {
+  display: block;
+  height: 100%;
+  background: var(--accent);
+}
+
+.pharma-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.pharma-option {
+  min-height: 48px;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.pharma-option.right {
+  border: 2px solid #1f7a3d;
+  background: #e6f4ea;
+  color: #14532d;
+  opacity: 1;
+}
+
+.pharma-option.wrong {
+  border: 2px solid #c2410c;
+  background: #fde8dd;
+  color: #5c1d05;
+  opacity: 1;
+}
+
+.pharma-option:disabled:not(.right):not(.wrong) {
+  opacity: 0.6;
+}
+
+.pharma-feedback {
+  display: grid;
+  gap: 4px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.pharma-feedback.right {
+  background: #e6f4ea;
+  color: #14532d;
+}
+
+.pharma-feedback.wrong {
+  background: #fde8dd;
+  color: #5c1d05;
+}
+
+.pharma-quiz .primary-btn,
+.pharma-quiz-end .primary-btn {
+  justify-self: start;
+  min-height: 46px;
+  padding: 0 22px;
+}
