@@ -8008,3 +8008,93 @@ body.theme-dark .pharma-chip.on {
     white-space: nowrap;
   }
 }
+/* Entre classes: ranking por efeito e escolha de remédios para interações. */
+.pharma-hub-card.cross {
+  margin-top: 10px;
+}
+
+.cross-rank {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.cross-row {
+  display: grid;
+  grid-template-columns: minmax(120px, 180px) 1fr;
+  grid-template-areas: "name bar" "name meta";
+  column-gap: 12px;
+  row-gap: 2px;
+  align-items: center;
+}
+
+.cross-row strong {
+  grid-area: name;
+  font-size: 14px;
+}
+
+.cross-bar {
+  grid-area: bar;
+  height: 10px;
+  border-radius: 5px;
+  background: var(--panel-soft);
+  overflow: hidden;
+}
+
+.cross-bar i {
+  display: block;
+  height: 100%;
+  border-radius: 5px;
+  background: #9fb3b6;
+}
+
+.cross-bar i.tone-warn {
+  background: #b7791f;
+}
+
+.cross-bar i.tone-high {
+  background: #c2410c;
+}
+
+.cross-row small {
+  grid-area: meta;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.cross-picks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.cross-picks select {
+  min-height: 38px;
+  max-width: 100%;
+  padding: 0 10px;
+  border: 1px dashed var(--line);
+  border-radius: 999px;
+  background: var(--panel);
+  color: var(--ink);
+  font-size: 13px;
+}
+
+.cross-source {
+  color: inherit;
+  opacity: 0.75;
+  font-size: 11px;
+}
+
+@media (max-width: 860px) {
+  .cross-row {
+    grid-template-columns: 110px 1fr;
+  }
+}
+.pharma-bar-legend {
+  grid-column: 1 / -1;
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.4;
+}

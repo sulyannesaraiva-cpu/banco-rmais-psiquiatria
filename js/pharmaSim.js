@@ -360,17 +360,29 @@ function pharmaBrainSvg(paths) {
     </svg>`;
 }
 
+/* Mesma leitura das barras em todas as classes: afinidade (antipsicóticos, antidepressivos) ou
+   intensidade da ação; listrada = agonista parcial. */
+function pharmaBarsByAction() {
+  return pharmaIsStabilizer() || pharmaIsDementia() || pharmaIsAddiction();
+}
+
+function pharmaBarLegend() {
+  const partials = pharmaClass().drugs.some((drug) => (drug.pa || []).length);
+  return `<p class="pharma-bar-legend">Barras: ${pharmaBarsByAction() ? "quanto o remédio age em cada alvo" : "afinidade pelo alvo"}, em 5 níveis (0 a 4), resumidos para estudo.${partials ? " Listrada = agonista parcial." : ""}</p>`;
+}
+
 function pharmaReceptorRows(drug) {
+  const action = pharmaBarsByAction();
   return pharmaClass().receptors.map((receptor) => {
     const value = drug.receptors[receptor.id] ?? 0;
     const partial = pharmaIsPartial(drug, receptor.id);
     return `
       <div class="pharma-receptor" title="${escapeHtml(receptor.role)}">
         <strong>${escapeHtml(receptor.label)}</strong>
-        <span class="pharma-bar" role="img" aria-label="${escapeHtml(receptor.label)}: afinidade ${PHARMA_LEVELS[value]}"><i class="${partial ? "partial" : ""}" style="width:${Math.max(4, value * 25)}%"></i></span>
-        <small>${(pharmaIsStabilizer() || pharmaIsDementia() || pharmaIsAddiction() ? PHARMA_ACTION_LABELS : PHARMA_LEVELS)[value]}${partial ? " · agonista parcial" : ""}</small>
+        <span class="pharma-bar" role="img" aria-label="${escapeHtml(receptor.label)}: ${action ? "ação" : "afinidade"} ${(action ? PHARMA_ACTION_LABELS : PHARMA_LEVELS)[value]}"><i class="${partial ? "partial" : ""}" style="width:${Math.max(4, value * 25)}%"></i></span>
+        <small>${(action ? PHARMA_ACTION_LABELS : PHARMA_LEVELS)[value]}${partial ? " · agonista parcial" : ""}</small>
       </div>`;
-  }).join("");
+  }).join("") + pharmaBarLegend();
 }
 
 function pharmaEffectChips(drug) {
@@ -2061,6 +2073,179 @@ function renderPharmaQuiz() {
     </section>`;
 }
 
+/* ---------- Entre classes: um efeito em todas as classes e interações (data/pharmaCross.js) ---------- */
+
+function pharmaAllDrugs() {
+  return Object.values(window.PHARMA_SIM || {}).flatMap((cls) => cls.drugs.map((drug) => ({ drug, cls })));
+}
+
+function pharmaFindDrug(id) {
+  return pharmaAllDrugs().find((item) => item.drug.id === id);
+}
+
+function pharmaCrossLevel(item, effectId) {
+  const effect = window.PHARMA_CROSS.effects.find((entry) => entry.id === effectId);
+  if (!effect) return null;
+  if (effect.categories) {
+    const id = window.PHARMA_CROSS.alias[item.drug.id] || item.drug.id;
+    return effect.categories[id] ?? null;
+  }
+  const key = effect.map[item.cls.id];
+  return key ? item.drug.effects?.[key] ?? null : null;
+}
+
+function renderCrossEffect() {
+  const cross = window.PHARMA_CROSS;
+  const effect = cross.effects.find((entry) => entry.id === state.pharma.crossEffect) || cross.effects[0];
+  const seen = new Set();
+  const rows = pharmaAllDrugs()
+    .map((item) => ({ ...item, level: pharmaCrossLevel(item, effect.id) }))
+    .filter((item) => {
+      const key = cross.alias[item.drug.id] || item.drug.id;
+      if (item.level === null || item.level < 1 || seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    })
+    .sort((a, b) => b.level - a.level || a.drug.name.localeCompare(b.drug.name, "pt-BR"));
+  const labels = effect.levels || PHARMA_EFFECT_LEVELS;
+  const tone = (level) => (level >= 3 ? "high" : level === 2 ? "warn" : "low");
+  const classes = effect.categories ? [] : Object.keys(effect.map).map((id) => window.PHARMA_SIM[id]).filter(Boolean);
+  const sourceNote = effect.categories
+    ? `Categorias de efeito no QTc conforme ${effect.source}. Remédios sem categoria nessas tabelas não aparecem.`
+    : `Classes comparadas: ${classes.map((cls) => `${cls.label} (${cross.effectSources[cls.id] || "classificação didática"})`).join("; ")}. Escalas de classes diferentes são aproximadas.`;
+  return `
+    <div class="pharma-chips" role="group" aria-label="Efeito">${cross.effects.map((entry) => `<button type="button" class="pharma-chip ${entry.id === effect.id ? "on" : ""}" data-pharma-cross-effect="${entry.id}" aria-pressed="${entry.id === effect.id}">${escapeHtml(entry.label)}</button>`).join("")}</div>
+    <section class="pharma-card">
+      <div class="pharma-card-head"><h3>${escapeHtml(effect.label)} · do maior para o menor</h3><span>${rows.length} remédios</span></div>
+      <div class="cross-rank">${rows.map((item) => `
+        <div class="cross-row">
+          <strong>${escapeHtml(item.drug.name)}</strong>
+          <span class="cross-bar"><i class="tone-${tone(item.level)}" style="width:${(item.level / 3) * 100}%"></i></span>
+          <small>${escapeHtml(labels[item.level])} · ${escapeHtml(item.cls.label)}</small>
+        </div>`).join("")}</div>
+      <p class="pharma-extra">${escapeHtml(sourceNote)}</p>
+    </section>`;
+}
+
+/* Regras de interação: farmacodinâmicas (grupos) e de CYP (tabelas 3.11 e 3.12 do Maudsley). */
+function pharmaCrossInteractions(picks) {
+  const cross = window.PHARMA_CROSS;
+  const ids = picks.map((id) => cross.alias[id] || id);
+  const name = (id) => (pharmaFindDrug(id) || pharmaFindDrug(Object.keys(cross.alias).find((key) => cross.alias[key] === id) || id))?.drug.name || id;
+  const list = (items) => items.map((id) => name(id).toLowerCase()).join(", ").replace(/, ([^,]*)$/, " e $1");
+  const has = (group) => ids.filter((id) => cross.groups[group].includes(id));
+  const out = [];
+  const maoi = has("maoi");
+  const sero = [...has("serotonergic"), ...has("maoiSerotonergicAntipsychotic")];
+  if (maoi.length && (sero.length || maoi.length > 1)) {
+    out.push({ tone: "high", title: "Síndrome serotoninérgica: potencialmente fatal", text: `${list([...maoi, ...sero])}: IMAO com outro serotoninérgico (ISRS e afins, ziprasidona, tramadol, dextrometorfano) pode causar síndrome serotoninérgica fatal. Não combinar.`, source: "Maudsley, interações dos antidepressivos (cap. 3)" });
+  } else if (has("serotonergic").length >= 2) {
+    out.push({ tone: "warn", title: "Síndrome serotoninérgica", text: `${list(has("serotonergic"))} aumentam a serotonina: risco somado. Vigiar tremor, clônus, agitação, sudorese e febre.`, source: "Maudsley, interações dos antidepressivos (cap. 3)" });
+  }
+  if (maoi.length && has("stimulant").length) {
+    out.push({ tone: "high", title: "Crise hipertensiva", text: `${list([...maoi, ...has("stimulant")])}: o IMAO impede a degradação das catecolaminas; com psicoestimulantes, a pressão pode disparar.`, source: "Maudsley, interações dos antidepressivos (cap. 3)" });
+  }
+  if (ids.includes("escetamina") && (maoi.length || has("stimulant").length)) {
+    out.push({ tone: "warn", title: "Pressão arterial", text: "Escetamina com IMAO ou estimulante pode aumentar a pressão: medir antes e depois.", source: "Stahl, monografia da escetamina" });
+  }
+  const qtEffect = cross.effects.find((entry) => entry.id === "qt");
+  const qt = ids.map((id) => [id, qtEffect.categories[id] ?? null]).filter(([, level]) => level !== null && level >= 1);
+  const moderate = qt.filter(([, level]) => level >= 2);
+  if (moderate.length >= 2 || (moderate.length && qt.length >= 2)) {
+    out.push({ tone: moderate.length >= 2 ? "high" : "warn", title: `QT somado: risco ${moderate.length >= 2 ? "alto" : "moderado"}`, text: `${list(qt.map(([id]) => id))} prolongam o QTc (${qt.map(([id, level]) => `${name(id).toLowerCase()}: ${qtEffect.levels[level]}`).join("; ")}). ECG no início e depois de mudanças de dose; checar eletrólitos.`, source: qtEffect.source });
+  }
+  const opioid = has("opioid");
+  const depressant = has("depressant");
+  if (opioid.length && depressant.length) {
+    out.push({ tone: "high", title: "Depressão respiratória", text: `${list([...opioid, ...depressant])}: opioide com sedativo (benzodiazepínico, gabapentinoide, antipsicótico sedativo) soma a depressão respiratória.`, source: "Maudsley, metadona e buprenorfina (cap. 4)" });
+  } else if (depressant.length >= 2) {
+    out.push({ tone: "warn", title: "Sedação somada", text: `${list(depressant)} sedam: efeito somado, mais quedas em idosos e risco respiratório com álcool.`, source: "Maudsley, interações dos antidepressivos (cap. 3)" });
+  }
+  const anticholinergic = picks.map(pharmaFindDrug).filter((item) => item && pharmaCrossLevel(item, "anticholinergic") >= 2).map((item) => item.drug.id);
+  if (anticholinergic.length >= 2) {
+    out.push({ tone: "warn", title: "Efeito anticolinérgico somado", text: `${list(anticholinergic)}: boca seca, constipação (até obstrução intestinal), retenção urinária e confusão.`, source: "Maudsley, interações dos antidepressivos (cap. 3)" });
+  }
+  if (anticholinergic.length && has("acheI").length) {
+    out.push({ tone: "warn", title: "Efeitos opostos", text: `${list([...has("acheI"), ...anticholinergic])}: o anticolinérgico anula parte do anticolinesterásico e piora a cognição.`, source: "Maudsley, tabela 6.2" });
+  }
+  if (ids.includes("bupropiona") && has("seizureThreshold").length) {
+    out.push({ tone: "warn", title: "Limiar convulsivo", text: `Bupropiona com ${list(has("seizureThreshold"))}: os dois baixam o limiar convulsivo.`, source: "Maudsley, caps. 3 e 4" });
+  }
+  if (ids.includes("valproato") && ids.includes("lamotrigina")) {
+    out.push({ tone: "warn", title: "Nível de lamotrigina sobe", text: "O valproato pode dobrar o nível da lamotrigina: titulação e dose pela metade (risco de rash grave).", source: "Maudsley, cap. 2" });
+  }
+  if (ids.includes("carbamazepina") && ids.includes("lamotrigina")) {
+    out.push({ tone: "warn", title: "Nível de lamotrigina cai", text: "A carbamazepina induz o metabolismo da lamotrigina: doses maiores.", source: "Maudsley, cap. 2" });
+  }
+  const { inhibitors, inducers, substrates } = cross.cyp;
+  Object.entries(substrates).forEach(([enzyme, subs]) => {
+    ids.filter((id) => subs.includes(id)).forEach((sub) => {
+      const inhibitedBy = Object.keys(inhibitors[enzyme] || {}).filter((id) => id !== sub && ids.includes(id));
+      inhibitedBy.forEach((inh) => {
+        const strength = inhibitors[enzyme][inh];
+        const severe = inh === "fluvoxamina" && sub === "clozapina";
+        out.push({ tone: severe ? "high" : "warn", title: `Nível de ${name(sub).toLowerCase()} sobe (CYP${enzyme})`, text: `${name(inh)} inibe a CYP${enzyme}${strength ? ` (${strength})` : ""}, que metaboliza ${name(sub).toLowerCase()}.${severe ? " A fluvoxamina pode aumentar muito o nível da clozapina." : ""}`, source: "Maudsley, tabelas 3.11 e 3.12" });
+      });
+      (inducers[enzyme] || []).filter((id) => id !== sub && ids.includes(id)).forEach((ind) => {
+        out.push({ tone: "warn", title: `Nível de ${name(sub).toLowerCase()} cai (CYP${enzyme})`, text: `${name(ind)} induz a CYP${enzyme}, que metaboliza ${name(sub).toLowerCase()}: o efeito pode diminuir.`, source: "Maudsley, tabela 3.12" });
+      });
+    });
+  });
+  /* Uma mesma dupla pode cair em mais de uma enzima: junta pelo título. */
+  const unique = [];
+  out.forEach((item) => {
+    const same = unique.find((entry) => entry.title.replace(/ \(CYP.*\)$/, "") === item.title.replace(/ \(CYP.*\)$/, "") && /CYP/.test(item.title));
+    if (same) {
+      same.title = same.title.replace(/\)$/, `, ${item.title.match(/CYP\w+/)[0]})`);
+      if (item.tone === "high") same.tone = "high";
+    } else unique.push({ ...item, text: item.text.charAt(0).toUpperCase() + item.text.slice(1) });
+  });
+  return unique;
+}
+
+function renderCrossInteractions() {
+  const picks = state.pharma.crossPicks || [];
+  const groups = Object.values(window.PHARMA_SIM).map((cls) => `<optgroup label="${escapeHtml(cls.label)}">${cls.drugs.filter((drug) => !picks.includes(drug.id)).map((drug) => `<option value="${drug.id}">${escapeHtml(drug.name)}</option>`).join("")}</optgroup>`).join("");
+  const chips = picks.map((id) => `<button type="button" class="pharma-chip on" data-pharma-cross-remove="${id}" aria-label="Tirar ${escapeHtml(pharmaFindDrug(id)?.drug.name || id)}">${escapeHtml(pharmaFindDrug(id)?.drug.name || id)} ×</button>`).join("");
+  const results = picks.length >= 2 ? pharmaCrossInteractions(picks) : [];
+  const rank = { high: 0, warn: 1, ok: 2, good: 3 };
+  results.sort((a, b) => rank[a.tone] - rank[b.tone]);
+  return `
+    <section class="pharma-card">
+      <div class="pharma-card-head"><h3>Interações · escolha de 2 a 3 remédios</h3><span>${picks.length} de 3</span></div>
+      <div class="cross-picks">
+        ${chips}
+        ${picks.length < 3 ? `<select data-pharma-cross-add aria-label="Adicionar remédio"><option value="">+ remédio</option>${groups}</select>` : ""}
+      </div>
+      ${picks.length < 2
+        ? '<p class="pharma-extra">Escolha pelo menos dois remédios, de qualquer classe.</p>'
+        : results.length
+        ? results.map((item) => `<div class="pharma-reading tone-${item.tone}"><strong>${escapeHtml(item.title)}</strong><span>${escapeHtml(item.text)}</span><small class="cross-source">Fonte: ${escapeHtml(item.source)}</small></div>`).join("")
+        : '<div class="pharma-reading tone-good"><strong>Nenhuma interação desta lista</strong><span>Não há regra para esta combinação aqui. Isso não garante que não exista interação.</span></div>'}
+      <p class="pharma-extra">Lista didática, com as interações mais cobradas (síndrome serotoninérgica, QT, sedação, anticolinérgicos, CYP). Não substitui uma base de interações completa.</p>
+    </section>`;
+}
+
+function renderPharmaCross() {
+  const tab = state.pharma.crossTab === "inter" ? "inter" : "effect";
+  return `
+    <header class="pharma-head">
+      <div>
+        <div class="pharma-head-top"><button type="button" class="link-btn pharma-back" data-pharma-hub>← Classes</button></div>
+        <h2>Entre classes</h2>
+        <p>Compare um efeito em todas as classes ou veja o que acontece ao juntar remédios.</p>
+      </div>
+      <div class="pharma-switches">
+        <div class="segmented pharma-modes" role="group" aria-label="Modo">
+          <button type="button" data-pharma-cross-tab="effect" class="${tab === "effect" ? "active" : ""}" aria-pressed="${tab === "effect"}">Por efeito</button>
+          <button type="button" data-pharma-cross-tab="inter" class="${tab === "inter" ? "active" : ""}" aria-pressed="${tab === "inter"}">Interações</button>
+        </div>
+      </div>
+    </header>
+    ${tab === "inter" ? renderCrossInteractions() : renderCrossEffect()}
+    <p class="pharma-disclaimer">Material didático e simplificado, para estudo. Não usar para prescrição.</p>`;
+}
+
 /* ---------- Roteiros guiados (data/pharmaTours.js) ---------- */
 
 function pharmaTours(cls) {
@@ -2216,6 +2401,11 @@ function renderPharmaHub() {
       </div>
     </header>
     <div class="pharma-hub-list">${cards}</div>
+    <button type="button" class="pharma-hub-card cross" data-pharma-cross-open style="--c:#0b3b40">
+      <span class="pharma-hub-tag">⇄</span>
+      <span class="pharma-hub-text"><strong>Entre classes</strong><small>Um efeito em todas as classes · interações</small></span>
+      <span aria-hidden="true" class="pharma-hub-arrow">›</span>
+    </button>
     <button type="button" class="primary-btn pharma-hub-quiz" data-pharma-quick="${last.id}">Treino rápido · ${escapeHtml(last.label)}</button>
     <p class="pharma-disclaimer">Material didático e simplificado, para estudo. Não usar para prescrição.</p>`;
 }
@@ -2224,7 +2414,7 @@ function renderPharmaPanel() {
   const panel = document.querySelector("#pharmaPanel");
   if (!panel || !window.PHARMA_SIM) return;
   if (state.pharma.view !== "class") {
-    const hubHtml = renderPharmaHub();
+    const hubHtml = state.pharma.view === "cross" ? renderPharmaCross() : renderPharmaHub();
     if (panel.dataset.renderedHtml !== hubHtml) {
       panel.innerHTML = hubHtml;
       panel.dataset.renderedHtml = hubHtml;
@@ -2284,7 +2474,7 @@ function openPharmaStudy(drug) {
   const panel = document.querySelector("#pharmaPanel");
   if (!panel) return;
   panel.addEventListener("click", (event) => {
-    const target = event.target.closest("[data-pharma-drug], [data-pharma-class], [data-pharma-mode], [data-pharma-study], [data-pharma-answer], [data-pharma-quiz], [data-pharma-review], [data-pharma-inter], [data-pharma-stop], [data-pharma-repeat], [data-pharma-hub], [data-pharma-quick], [data-pharma-dtype], [data-pharma-dstage], [data-pharma-bg], [data-pharma-depot], [data-pharma-depotstop], [data-pharma-eps], [data-pharma-sources], [data-pharma-sources-close], [data-pharma-tour-start], [data-pharma-tour-next], [data-pharma-tour-prev], [data-pharma-tour-exit], [data-pharma-tour-answer]");
+    const target = event.target.closest("[data-pharma-drug], [data-pharma-class], [data-pharma-mode], [data-pharma-study], [data-pharma-answer], [data-pharma-quiz], [data-pharma-review], [data-pharma-inter], [data-pharma-stop], [data-pharma-repeat], [data-pharma-hub], [data-pharma-quick], [data-pharma-dtype], [data-pharma-dstage], [data-pharma-bg], [data-pharma-depot], [data-pharma-depotstop], [data-pharma-eps], [data-pharma-sources], [data-pharma-sources-close], [data-pharma-tour-start], [data-pharma-tour-next], [data-pharma-tour-prev], [data-pharma-tour-exit], [data-pharma-tour-answer], [data-pharma-cross-open], [data-pharma-cross-tab], [data-pharma-cross-effect], [data-pharma-cross-remove]");
     if (!target) return;
     const data = target.dataset;
     if (data.pharmaHub !== undefined) state.pharma.view = "hub";
@@ -2298,7 +2488,11 @@ function openPharmaStudy(drug) {
       setPharmaClass(data.pharmaClass);
       state.pharma.view = "class";
       state.pharma.mode = "paths";
-    } else if (data.pharmaTourStart) {
+    } else if (data.pharmaCrossOpen !== undefined) state.pharma.view = "cross";
+    else if (data.pharmaCrossTab) state.pharma.crossTab = data.pharmaCrossTab;
+    else if (data.pharmaCrossEffect) state.pharma.crossEffect = data.pharmaCrossEffect;
+    else if (data.pharmaCrossRemove) state.pharma.crossPicks = (state.pharma.crossPicks || []).filter((id) => id !== data.pharmaCrossRemove);
+    else if (data.pharmaTourStart) {
       const tour = pharmaTours(pharmaClass()).find((item) => item.id === data.pharmaTourStart);
       if (tour) applyPharmaTourStep(tour, 0);
     } else if (data.pharmaTourNext !== undefined || data.pharmaTourPrev !== undefined) {
@@ -2346,7 +2540,7 @@ function openPharmaStudy(drug) {
     }
     savePharmaState();
     renderPharmaPanel();
-    if (data.pharmaQuiz || data.pharmaReview || data.pharmaClass || data.pharmaHub !== undefined || data.pharmaQuick) panel.scrollIntoView({ block: "start" });
+    if (data.pharmaQuiz || data.pharmaReview || data.pharmaClass || data.pharmaHub !== undefined || data.pharmaQuick || data.pharmaCrossOpen !== undefined) panel.scrollIntoView({ block: "start" });
     else if (data.pharmaTourStart || data.pharmaTourNext !== undefined || data.pharmaTourPrev !== undefined) panel.querySelector(".pharma-tour")?.scrollIntoView({ block: "start" });
   });
   /* O controle de ocupação atualiza só o desenho da sinapse, para não interromper o arraste. */
@@ -2431,6 +2625,13 @@ function openPharmaStudy(drug) {
     renderPharmaPanel();
   });
   panel.addEventListener("change", (event) => {
+    if (event.target.matches("[data-pharma-cross-add]")) {
+      const id = event.target.value;
+      if (id) state.pharma.crossPicks = [...(state.pharma.crossPicks || []), id].slice(0, 3);
+      savePharmaState();
+      renderPharmaPanel();
+      return;
+    }
     if (event.target.matches('[data-pharma-eq="drug"]')) {
       state.pharma.eqDrug = event.target.value;
       state.pharma.eqDose = pharmaDrug(event.target.value).eq;

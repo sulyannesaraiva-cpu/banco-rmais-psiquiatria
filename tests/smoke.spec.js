@@ -637,6 +637,20 @@ test("simulador de fármacos: roteiro guiado até a checagem", async ({ page }) 
   await expect(page.locator(".pharma-tour")).toHaveCount(0);
   expect(errors).toEqual([]);
 });
+test("simulador de fármacos: entre classes (por efeito e interações)", async ({ page }) => {
+  const errors = await openSite(page);
+  await goTab(page, "pharma");
+  await page.locator("[data-pharma-cross-open]").click();
+  await page.locator('[data-pharma-cross-effect="qt"]').click();
+  await expect(page.locator("#pharmaPanel .cross-rank")).toContainText("Metadona");
+  await page.locator('[data-pharma-cross-tab="inter"]').click();
+  await page.locator("[data-pharma-cross-add]").selectOption("tranilcipromina");
+  await page.locator("[data-pharma-cross-add]").selectOption("sertralina");
+  await expect(page.locator("#pharmaPanel")).toContainText("Síndrome serotoninérgica: potencialmente fatal");
+  await page.locator('[data-pharma-cross-remove="sertralina"]').click();
+  await expect(page.locator("#pharmaPanel")).toContainText("Escolha pelo menos dois");
+  expect(errors).toEqual([]);
+});
 test("navegação por áreas: Hoje, Estudar (com seletor), Simular e Você", async ({ page }) => {
   const errors = await openSite(page);
   const mobile = await page.evaluate(() => isMobileLayout());
