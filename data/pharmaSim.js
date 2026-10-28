@@ -9,7 +9,13 @@
    - extra: outras ações relevantes, em texto curto.
    - search: termos para achar as questões do banco que citam o remédio. */
 
-window.PHARMA_SIM = {
+window.PHARMA_SIM = window.PHARMA_SIM || {};
+window.PHARMA_SIM.antipsicoticos = {
+  id: "antipsicoticos",
+  label: "Antipsicóticos",
+  tagline: "Como o perfil de receptores explica o efeito e os efeitos colaterais dos antipsicóticos.",
+  source: "Afinidades em níveis qualitativos, conferidas com Stahl (Prescriber's Guide, 8ª ed.); efeitos relativos conforme Maudsley Prescribing Guidelines (15ª ed., tabela 1.7).",
+  defaults: { drug: "haloperidol", a: "olanzapina", b: "aripiprazol" },
   receptors: [
     { id: "D2", label: "D2", role: "Antipsicótico; em excesso, extrapiramidais e prolactina" },
     { id: "5HT2A", label: "5-HT2A", role: "Libera dopamina no córtex e no estriado: menos extrapiramidais" },

@@ -440,3 +440,27 @@ test("simulador de fármacos: sinapse com ocupação e rodada de treino", async 
   await expect(page.locator(".pharma-quiz")).toContainText("Pergunta 1 de 10");
   expect(errors).toEqual([]);
 });
+test("simulador de fármacos: antidepressivos (sistemas, sinapse e treino)", async ({ page }) => {
+  const errors = await openSite(page);
+  await goTab(page, "pharma");
+  await page.locator('[data-pharma-class="antidepressivos"]').click();
+  await page.locator('[data-pharma-mode="paths"]').click();
+  await page.locator('[data-pharma-drug="bupropiona"]').click();
+  await expect(page.locator("#pharmaPanel .pharma-paths")).toContainText("Serotonina");
+  await expect(page.locator("#pharmaPanel .pharma-paths")).toContainText("sem efeito direto");
+  await page.locator('[data-pharma-mode="synapse"]').click();
+  await page.locator('[data-pharma-drug="mirtazapina"]').click();
+  await expect(page.locator("#pharmaSynapseView .pharma-reading")).toContainText("α2");
+  await page.locator('[data-pharma-drug="tranilcipromina"]').click();
+  await expect(page.locator("#pharmaSynapseView .pharma-reading")).toContainText("irreversível");
+  await page.locator('[data-pharma-mode="compare"]').click();
+  await page.locator('[data-pharma-compare="a"]').selectOption("sertralina");
+  await page.locator('[data-pharma-compare="b"]').selectOption("amitriptilina");
+  await expect(page.locator("#pharmaPanel .pharma-why")).toContainText("Anticolinérgico");
+  await page.locator('[data-pharma-mode="quiz"]').click();
+  await page.locator("[data-pharma-answer]").first().click();
+  await expect(page.locator(".pharma-feedback")).toBeVisible();
+  await page.locator('[data-pharma-class="antipsicoticos"]').click();
+  await expect(page.locator(".pharma-quiz")).toContainText("Pergunta 1 de 10");
+  expect(errors).toEqual([]);
+});

@@ -6680,3 +6680,56 @@ body.theme-dark .pharma-chip.on {
     margin-left: 28px;
   }
 }
+/* Simulador: troca de classe e alvos dos antidepressivos na sinapse. */
+.pharma-switches {
+  display: grid;
+  justify-items: end;
+  gap: 8px;
+}
+
+.pharma-classes {
+  flex-wrap: wrap;
+}
+
+@media (max-width: 640px) {
+  .pharma-switches {
+    justify-items: start;
+  }
+}
+
+.syn-transporter {
+  fill: var(--panel);
+  stroke: var(--ink);
+  stroke-width: 1.5;
+}
+
+.syn-channel {
+  fill: var(--accent-soft);
+}
+
+.syn-autoreceptor {
+  fill: #0072b2;
+  opacity: 0.7;
+}
+
+.syn-mao {
+  fill: #6b7f84;
+}
+
+.syn-mao.inhibited {
+  opacity: 0.35;
+}
+
+.pharma-legend .tr {
+  width: 9px;
+  height: 11px;
+  border: 1.5px solid var(--ink);
+  border-radius: 3px;
+}
+
+.pharma-legend .mao {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: conic-gradient(transparent 0 40deg, #6b7f84 40deg 320deg, transparent 320deg);
+}
