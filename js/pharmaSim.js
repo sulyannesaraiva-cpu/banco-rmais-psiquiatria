@@ -10,6 +10,10 @@
    Nos psicoestimulantes (data/pharmaSimStimulants.js), a primeira tela mostra pré-frontal,
    estriado/accumbens e corpo, e a segunda vira "Ao longo do dia" (curva de efeito por formulação,
    horário da dose e cobertura de escola, tarde e sono).
+   Nos fármacos nas demências (data/pharmaSimDementia.js), a primeira tela mostra a acetilcolina no
+   córtex e no hipocampo, o NMDA e o efeito vagal no corpo, e a segunda vira "Indicação e segurança"
+   (indicação por tipo e estágio de demência, dose e titulação, pulso e interações); o treino inclui
+   casos curtos de conduta.
    - Vias e receptores: corte do cérebro com as 4 vias dopaminérgicas coloridas conforme o remédio
      escolhido, perfil de receptores e "o que esperar" (efeitos relativos).
    - Comparar: dois remédios lado a lado, com o porquê das diferenças.
@@ -70,6 +74,7 @@ function setPharmaClass(id) {
   Object.assign(state.pharma, cls.defaults);
   state.pharma.occupancy = pharmaDefaultOccupancy(pharmaDrug(cls.defaults.drug));
   resetPharmaLevel(pharmaDrug(cls.defaults.drug));
+  state.pharma.inter = [];
   state.pharmaQuiz = null;
 }
 
@@ -80,7 +85,8 @@ function pharmaIsStabilizer() {
 /* Nível sérico e interações escolhidas voltam ao padrão ao trocar de remédio. */
 function resetPharmaLevel(drug) {
   state.pharma.level = drug?.level ? drug.level.start : null;
-  state.pharma.inter = [];
+  /* Nas demências as associações ficam ligadas ao trocar de remédio, para comparar. */
+  if (!pharmaIsDementia()) state.pharma.inter = [];
 }
 
 /* ---------- Estabilizadores: mecanismos, fases, nível e interações ---------- */
@@ -352,7 +358,7 @@ function pharmaReceptorRows(drug) {
       <div class="pharma-receptor" title="${escapeHtml(receptor.role)}">
         <strong>${escapeHtml(receptor.label)}</strong>
         <span class="pharma-bar" role="img" aria-label="${escapeHtml(receptor.label)}: afinidade ${PHARMA_LEVELS[value]}"><i class="${partial ? "partial" : ""}" style="width:${Math.max(4, value * 25)}%"></i></span>
-        <small>${(pharmaIsStabilizer() ? PHARMA_ACTION_LABELS : PHARMA_LEVELS)[value]}${partial ? " · agonista parcial" : ""}</small>
+        <small>${(pharmaIsStabilizer() || pharmaIsDementia() ? PHARMA_ACTION_LABELS : PHARMA_LEVELS)[value]}${partial ? " · agonista parcial" : ""}</small>
       </div>`;
   }).join("");
 }
@@ -765,6 +771,200 @@ function pharmaWeeksQuestion(drugs) {
   return { type: "weeks", correct: correct.id, options: pharmaShuffle([correct, ...pharmaShuffle(fast).slice(0, 3)]).map((drug) => drug.id) };
 }
 
+/* ---------- Fármacos nas demências: acetilcolina, NMDA, indicação e pulso ---------- */
+
+const PHARMA_DEM_COLORS = { cortex: "#0072b2", hippo: "#009e73", glu: "#d55e00", body: "#b0418a" };
+
+function pharmaIsDementia() {
+  return pharmaClass()?.kind === "dementia";
+}
+
+function pharmaDemRegions(drug) {
+  const r = drug.regions;
+  const level = (value) => ({ badge: PHARMA_REGION_LABELS[value], badgeTone: value >= 2 ? "good" : value === 1 ? "ok" : "low", faint: value === 0 });
+  return {
+    cortex: { name: "Córtex", ...level(r.cortex), text: r.cortex ? "Acetilcolina do núcleo basal de Meynert para o córtex: atenção e memória. É a via que mais se perde na doença de Alzheimer" : "Não aumenta a acetilcolina" },
+    hippo: { name: "Hipocampo", ...level(r.hippo), text: r.hippo ? "Acetilcolina do septo para o hipocampo: formação de novas memórias" : "Não aumenta a acetilcolina" },
+    glu: { name: "Glutamato (NMDA)", ...level(r.glu), text: r.glu ? "Bloqueia o canal NMDA aberto em excesso: reduz o ruído do glutamato sem tirar o sinal normal" : "Não age no glutamato" },
+    body: {
+      name: "Corpo",
+      badge: PHARMA_REGION_LABELS[r.body],
+      badgeTone: r.body >= 3 ? "high" : r.body === 2 ? "warn" : "low",
+      faint: r.body === 0,
+      text: r.body ? "Acetilcolina fora do cérebro: vago no coração (bradicardia, síncope), intestino (náusea, diarreia) e bexiga (incontinência)" : "Quase sem efeito colinérgico no corpo",
+    },
+  };
+}
+
+function pharmaDemSvg(regions) {
+  const stroke = (key) => `${PHARMA_DEM_COLORS[key]}" class="pharma-path${regions[key].faint ? " faint" : ""}`;
+  const node = (key) => PHARMA_DEM_COLORS[key];
+  return `
+    <svg class="pharma-brain" viewBox="0 0 560 400" role="img" aria-label="Corte do cérebro com as vias de acetilcolina para o córtex e o hipocampo, o glutamato e a saída vagal para o corpo">
+      <path d="M70 225 C58 140 130 58 250 48 C372 38 482 90 507 178 C526 248 492 298 432 312 C400 320 372 316 352 328 C337 343 331 366 302 368 C272 370 264 346 250 332 C200 327 120 318 90 288 C78 276 72 256 70 225 Z" class="pharma-brain-outline"></path>
+      <ellipse cx="420" cy="318" rx="62" ry="34" class="pharma-brain-cerebellum"></ellipse>
+      <path d="M296 330 C298 356 294 380 288 398" class="pharma-brain-stem"></path>
+      <path d="M236 262 C200 236 160 206 126 168" stroke="${stroke("cortex")}"></path>
+      <path d="M236 262 C240 190 262 120 300 72" stroke="${stroke("cortex")}"></path>
+      <path d="M236 262 C300 230 390 190 452 140" stroke="${stroke("cortex")}"></path>
+      <path d="M206 222 C260 246 310 268 356 272" stroke="${stroke("hippo")}"></path>
+      <path d="M356 272 C384 226 398 180 420 120" stroke="${stroke("glu")}"></path>
+      <path d="M312 336 C314 358 310 380 304 398" stroke="${stroke("body")}"></path>
+      <circle cx="236" cy="262" r="9" class="pharma-node-origin"></circle>
+      <circle cx="206" cy="222" r="8" class="pharma-node-origin"></circle>
+      <circle cx="126" cy="168" r="7" class="pharma-node" stroke="${node("cortex")}"></circle>
+      <circle cx="300" cy="72" r="7" class="pharma-node" stroke="${node("cortex")}"></circle>
+      <circle cx="452" cy="140" r="7" class="pharma-node" stroke="${node("cortex")}"></circle>
+      <ellipse cx="356" cy="272" rx="14" ry="9" class="pharma-node" stroke="${node("hippo")}"></ellipse>
+      <circle cx="420" cy="120" r="7" class="pharma-node" stroke="${node("glu")}"></circle>
+      <text x="100" y="150" class="pharma-label">Córtex frontal</text>
+      <text x="282" y="58" class="pharma-label">Córtex parietal</text>
+      <text x="440" y="122" class="pharma-label small">NMDA</text>
+      <text x="320" y="300" class="pharma-label">Hipocampo</text>
+      <text x="112" y="284" class="pharma-label small">N. basal de Meynert</text>
+      <text x="200" y="206" text-anchor="end" class="pharma-label small">Septo</text>
+      <text x="314" y="394" class="pharma-label small">vago: coração, intestino, bexiga</text>
+    </svg>`;
+}
+
+function renderDemMech(drug) {
+  const regions = pharmaDemRegions(drug);
+  const indications = pharmaClass().indications.map((item) => {
+    const value = drug.indications[item.id] ?? 0;
+    return `<span class="pharma-effect evidence-${value}">${escapeHtml(item.label)}: ${PHARMA_EVIDENCE_LABELS[value]}</span>`;
+  }).join("");
+  return `
+    <div class="pharma-chips" role="group" aria-label="Fármacos nas demências">${pharmaDrugChips(drug.id)}</div>
+    <div class="pharma-grid">
+      <section class="pharma-card">
+        <div class="pharma-card-head"><h3>Onde age · ${escapeHtml(drug.name)}</h3><span>${escapeHtml(pharmaDrugGroup(drug))}</span></div>
+        ${pharmaDemSvg(regions)}
+        <div class="pharma-paths">${pharmaPathRows(regions, PHARMA_DEM_COLORS)}</div>
+      </section>
+      <section class="pharma-card">
+        <h3>Alvos</h3>
+        <div class="pharma-receptors">${pharmaReceptorRows(drug)}</div>
+        <p class="pharma-extra">${escapeHtml(drug.extra)}</p>
+        <h4>Quando pesa a favor</h4>
+        <div class="pharma-effects">${indications}</div>
+        <h4>O que vigiar</h4>
+        <div class="pharma-effects">${pharmaEffectChips(drug)}</div>
+        ${pharmaStudyLink(drug)}
+      </section>
+    </div>`;
+}
+
+function pharmaDemGuidance(drug) {
+  const guidance = pharmaClass().guidance;
+  const type = guidance.types.find((item) => item.id === state.pharma.dtype) || guidance.types[0];
+  const stage = guidance.stages.find((item) => item.id === state.pharma.dstage) || guidance.stages[0];
+  const rule = guidance.rules[type.id];
+  const rows = typeof rule === "string"
+    ? `<div class="pharma-reading tone-low"><strong>Nenhum deles é indicado</strong><span>${escapeHtml(rule)}</span></div>`
+    : guidance.agents.map((agent) => {
+      const [status, text] = rule[stage.id][agent.id];
+      const info = guidance.statuses[status];
+      return `
+        <div class="pharma-path-row dem-agent ${agent.id === drug.agent ? "is-current" : ""}" style="--path:${agent.id === drug.agent ? "#0b6b70" : "#7d9396"}">
+          <span><strong>${escapeHtml(agent.label)}</strong> · ${escapeHtml(text)}</span>
+          <em class="pharma-severity tone-${info.tone}">${info.label}</em>
+        </div>`;
+    }).join("");
+  const staged = typeof rule !== "string";
+  const types = guidance.types.map((item) => `<button type="button" class="pharma-toggle ${item.id === type.id ? "on" : ""}" data-pharma-dtype="${item.id}" aria-pressed="${item.id === type.id}">${escapeHtml(item.label)}</button>`).join("");
+  const stages = guidance.stages.map((item) => {
+    const active = staged && item.id === stage.id;
+    return `<button type="button" class="${active ? "active" : ""}" data-pharma-dstage="${item.id}" aria-pressed="${active}" ${staged ? "" : "disabled"}>${escapeHtml(item.label)}</button>`;
+  }).join("");
+  return `
+    <h3>Indicação</h3>
+    <div class="pharma-toggles dem-types" role="group" aria-label="Tipo de demência">${types}</div>
+    <div class="segmented dem-stages" role="group" aria-label="Estágio">${stages}</div>
+    <div class="pharma-paths">${rows}</div>
+    <p class="pharma-extra">Recomendações do NICE resumidas no Maudsley (quadro 6.2). Diretrizes de outros países podem diferir.</p>`;
+}
+
+function pharmaDemDoseTable(drug) {
+  const d = drug.dose;
+  const rows = [["Início", d.start], ["Dose usual", d.usual], ["Subida", d.step], ["Meia-vida", d.half], ["Metabolismo", d.metab], ["Com alimento", d.food]];
+  return `
+    <h4>Dose e titulação · ${escapeHtml(drug.name)}</h4>
+    <table class="pharma-table"><tbody>${rows.map(([label, value]) => `<tr><th scope="row">${label}</th><td>${escapeHtml(value)}</td></tr>`).join("")}</tbody></table>
+    <p class="pharma-extra">Os efeitos adversos aparecem mais no início e a cada aumento de dose; subir devagar melhora a tolerância.</p>`;
+}
+
+function renderDemPulseView(drug) {
+  const pulse = state.pharma.pulse ?? 72;
+  const inter = state.pharma.inter || [];
+  const symptoms = inter.includes("sintomas");
+  const achei = drug.agent !== "memantina";
+  let reading;
+  if (!achei) {
+    reading = { tone: symptoms || pulse < 50 ? "warn" : "ok", title: symptoms || pulse < 50 ? "Investigar a causa do pulso baixo ou dos sintomas" : "Sem cuidado específico com o pulso", text: "O fluxo do pulso é dos anticolinesterásicos. A memantina mexe pouco no coração (há relatos de bradicardia); o cuidado maior é com a função renal e com convulsões." };
+  } else if (symptoms || pulse < 50) {
+    reading = { tone: "high", title: "Não iniciar (ou suspender) e investigar a causa", text: "Se a causa não for o remédio, ou depois de um marcapasso, pode-se tentar de novo." };
+  } else if (pulse <= 60) {
+    reading = { tone: "warn", title: "Pode iniciar ou continuar, com cuidado", text: "Rever pulso e sintomas em 1 semana. Depois, checar o pulso 1 semana após cada aumento de dose." };
+  } else {
+    reading = { tone: "good", title: "Pode iniciar ou continuar", text: "Pulso de rotina: no início, todo mês durante a titulação e a cada 6 meses depois." };
+  }
+  const active = pharmaClass().interactions.filter((item) => inter.includes(item.id));
+  const interRows = active.map((item) => {
+    const info = item.by[drug.agent] !== undefined ? item.by[drug.agent] : achei ? item.by.achei : undefined;
+    return info
+      ? `<div class="pharma-reading tone-${info.tone}"><strong>${escapeHtml(item.full || item.label)}</strong><span>${escapeHtml(info.text)}</span></div>`
+      : `<div class="pharma-reading tone-low"><strong>${escapeHtml(item.full || item.label)}</strong><span>Sem interação relevante descrita com ${escapeHtml(drug.name.toLowerCase())}.</span></div>`;
+  }).join("");
+  return `
+    <div class="pharma-reading tone-${reading.tone}"><strong>${pulse} bpm${symptoms ? " com sintomas" : ""}: ${escapeHtml(reading.title)}</strong><span>${escapeHtml(reading.text)}</span></div>
+    ${interRows}`;
+}
+
+function renderDemCare(drug) {
+  const pulse = state.pharma.pulse ?? 72;
+  const inter = state.pharma.inter || [];
+  const toggle = (id, label) => `<button type="button" class="pharma-toggle ${inter.includes(id) ? "on" : ""}" data-pharma-inter="${id}" aria-pressed="${inter.includes(id)}">${escapeHtml(label)}</button>`;
+  return `
+    <div class="pharma-chips" role="group" aria-label="Fármacos nas demências">${pharmaDrugChips(drug.id)}</div>
+    <div class="pharma-grid">
+      <section class="pharma-card">
+        ${pharmaDemGuidance(drug)}
+        ${pharmaDemDoseTable(drug)}
+      </section>
+      <section class="pharma-card">
+        <h3>Pulso e segurança</h3>
+        <label class="pharma-slider-label" for="pharmaPulse">Pulso antes ou durante o tratamento: <strong data-pharma-pulse-label>${pulse} bpm</strong></label>
+        <input id="pharmaPulse" class="pharma-slider" type="range" min="40" max="100" step="1" value="${pulse}" data-pharma-pulse>
+        <div class="pharma-toggles">${toggle("sintomas", "Síncope ou tonturas")}</div>
+        <h4>Associações e condições</h4>
+        <div class="pharma-toggles">${pharmaClass().interactions.map((item) => toggle(item.id, item.label)).join("")}</div>
+        <div id="pharmaPulseView">${renderDemPulseView(drug)}</div>
+        <p class="pharma-extra">Fluxo do pulso conforme o Maudsley (figura 6.1, adaptada de Rowland et al., 2007); interações da tabela 6.2.</p>
+        ${pharmaStudyLink(drug)}
+      </section>
+    </div>`;
+}
+
+function pharmaDemCues(drug) {
+  const r = drug.receptors;
+  const cues = [];
+  if (r.NMDA >= 3) cues.push("só NMDA, sem colinesterase: memantina");
+  if (r.BUCHE >= 3) cues.push("AChE e BuChE: rivastigmina");
+  if (r.NIC >= 2) cues.push("AChE e modulação nicotínica: galantamina");
+  if (r.ACHE >= 4 && !r.BUCHE && !r.NIC) cues.push("AChE seletiva e nada mais: donepezila");
+  return `${cues.length ? `Pistas: ${cues.join("; ")}. ` : ""}${drug.extra}`;
+}
+
+/* Casos curtos de conduta (indicação, pulso, troca), escritos a partir do Maudsley. */
+function pharmaCaseQuestion() {
+  const cases = pharmaClass().cases || [];
+  if (!cases.length) return null;
+  const index = Math.floor(Math.random() * cases.length);
+  const item = cases[index];
+  const keys = item.options.map((_, i) => `k${index}_${i}`);
+  return { type: "case", prompt: item.prompt, explain: item.explain, correct: keys[item.correct], options: pharmaShuffle(keys), labels: Object.fromEntries(keys.map((key, i) => [key, item.options[i]])) };
+}
+
 /* ---------- Antidepressivos: sistemas de serotonina, noradrenalina e dopamina ---------- */
 
 const PHARMA_SYSTEM_COLORS = { serotonin: "#b0418a", noradrenaline: "#0072b2", dopamine: "#d55e00" };
@@ -839,6 +1039,7 @@ function renderPharmaPaths() {
   if (pharmaIsStabilizer()) return renderStabilizerMech(drug);
   if (pharmaIsAnxiolytic()) return renderAnxMech(drug);
   if (pharmaIsStimulant()) return renderStimMech(drug);
+  if (pharmaIsDementia()) return renderDemMech(drug);
   const antidepressant = pharmaIsAntidepressant();
   let figure;
   let rows;
@@ -1146,6 +1347,7 @@ function renderPharmaSynapse() {
   if (pharmaIsStabilizer()) return renderStabilizerLevel(drug);
   if (pharmaIsAnxiolytic()) return renderAnxKinetics(drug);
   if (pharmaIsStimulant()) return renderStimDay(drug);
+  if (pharmaIsDementia()) return renderDemCare(drug);
   if (drug.mech) return renderAdSynapse(drug);
   const partial = pharmaIsPartial(drug, "D2");
   return `
@@ -1252,12 +1454,17 @@ function newPharmaQuiz() {
   const stabilizer = pharmaIsStabilizer();
   const anxiolytic = pharmaIsAnxiolytic();
   const stimulant = pharmaIsStimulant();
+  const dementia = pharmaIsDementia();
   const questions = [];
   let guard = 0;
   while (questions.length < 10 && guard < 300) {
     guard += 1;
     const roll = Math.random();
-    const question = stabilizer && roll < 0.4
+    const question = dementia && roll < 0.4
+      ? pharmaCaseQuestion()
+      : dementia && roll < 0.55
+      ? pharmaHalfLifeQuestion(drugs)
+      : stabilizer && roll < 0.4
       ? pharmaLevelQuestion(drugs)
       : stimulant && roll < 0.2
       ? pharmaDurationQuestion(drugs)
@@ -1317,6 +1524,7 @@ function pharmaProfileExplanation(drug) {
   if (pharmaIsStabilizer()) return pharmaStabilizerCues(drug);
   if (pharmaIsAnxiolytic()) return pharmaAnxCues(drug);
   if (pharmaIsStimulant()) return pharmaStimCues(drug);
+  if (pharmaIsDementia()) return pharmaDemCues(drug);
   if (drug.mech) return pharmaAdCues(drug);
   const r = drug.receptors;
   const cues = [];
@@ -1337,7 +1545,7 @@ function renderPharmaQuiz() {
   const total = quiz.questions.length;
   if (quiz.index >= total) {
     const right = quiz.answers.filter((answer, index) => answer === quiz.questions[index].correct).length;
-    const missed = [...new Set(quiz.questions.filter((question, index) => quiz.answers[index] !== question.correct).map((question) => question.drug || question.correct))];
+    const missed = [...new Set(quiz.questions.filter((question, index) => question.type !== "case" && quiz.answers[index] !== question.correct).map((question) => question.drug || question.correct))];
     return `
       <section class="pharma-card pharma-quiz-end">
         <h3>Rodada concluída: ${right} de ${total}</h3>
@@ -1352,9 +1560,11 @@ function renderPharmaQuiz() {
   const effect = question.effect ? pharmaClass().effects.find((item) => item.id === question.effect) : null;
   const profilePrompt = pharmaIsStabilizer()
     ? "Este perfil de mecanismos é de qual estabilizador?"
-    : pharmaIsAnxiolytic() || pharmaIsStimulant() ? "Este perfil de alvos é de qual remédio?"
+    : pharmaIsAnxiolytic() || pharmaIsStimulant() || pharmaIsDementia() ? "Este perfil de alvos é de qual remédio?"
     : pharmaIsAntidepressant() ? "Este perfil de alvos é de qual antidepressivo?" : "Este perfil de receptores é de qual antipsicótico?";
-  const prompt = question.type === "profile"
+  const prompt = question.type === "case"
+    ? question.prompt
+    : question.type === "profile"
     ? profilePrompt
     : question.type === "level"
     ? `Nível de ${correct.name.toLowerCase()} de ${question.value} ${correct.level.unit}: em que faixa está?`
@@ -1373,6 +1583,8 @@ function renderPharmaQuiz() {
   }).join("");
   const explanation = !answered
     ? ""
+    : question.type === "case"
+    ? question.explain
     : question.type === "profile"
     ? pharmaProfileExplanation(correct)
     : question.type === "level"
@@ -1411,6 +1623,7 @@ const PHARMA_HUB = {
   estabilizadores: { tag: "Li", color: "#0b6b70", text: "Nível sérico · interações · titulação" },
   ansioliticos: { tag: "GABA", color: "#009e73", text: "Meia-vida · retirada · equivalência" },
   estimulantes: { tag: "DA", color: "#d55e00", text: "Formulações ao longo do dia" },
+  demencias: { tag: "ACh", color: "#8a6a00", text: "Anticolinesterásicos e memantina · indicação e pulso" },
 };
 
 function renderPharmaHub() {
@@ -1464,7 +1677,7 @@ function renderPharmaPanel() {
       </div>
       <div class="pharma-switches">
         <div class="segmented pharma-modes" role="group" aria-label="Modo">
-          ${modeButton("paths", pharmaIsStabilizer() ? "Mecanismos e fases" : pharmaIsAnxiolytic() || pharmaIsStimulant() ? "Mecanismos e usos" : pharmaIsAntidepressant() ? "Sistemas e alvos" : "Vias e receptores")}${modeButton("compare", "Comparar")}${modeButton("synapse", pharmaIsStabilizer() ? "Nível e interações" : pharmaIsAnxiolytic() ? "Meia-vida e retirada" : pharmaIsStimulant() ? "Ao longo do dia" : "Sinapse")}${modeButton("quiz", "Treino")}
+          ${modeButton("paths", pharmaIsStabilizer() ? "Mecanismos e fases" : pharmaIsAnxiolytic() || pharmaIsStimulant() || pharmaIsDementia() ? "Mecanismos e usos" : pharmaIsAntidepressant() ? "Sistemas e alvos" : "Vias e receptores")}${modeButton("compare", "Comparar")}${modeButton("synapse", pharmaIsStabilizer() ? "Nível e interações" : pharmaIsAnxiolytic() ? "Meia-vida e retirada" : pharmaIsStimulant() ? "Ao longo do dia" : pharmaIsDementia() ? "Indicação e segurança" : "Sinapse")}${modeButton("quiz", "Treino")}
         </div>
       </div>
     </header>
@@ -1489,7 +1702,7 @@ function openPharmaStudy(drug) {
   const panel = document.querySelector("#pharmaPanel");
   if (!panel) return;
   panel.addEventListener("click", (event) => {
-    const target = event.target.closest("[data-pharma-drug], [data-pharma-class], [data-pharma-mode], [data-pharma-study], [data-pharma-answer], [data-pharma-quiz], [data-pharma-review], [data-pharma-inter], [data-pharma-stop], [data-pharma-repeat], [data-pharma-hub], [data-pharma-quick]");
+    const target = event.target.closest("[data-pharma-drug], [data-pharma-class], [data-pharma-mode], [data-pharma-study], [data-pharma-answer], [data-pharma-quiz], [data-pharma-review], [data-pharma-inter], [data-pharma-stop], [data-pharma-repeat], [data-pharma-hub], [data-pharma-quick], [data-pharma-dtype], [data-pharma-dstage]");
     if (!target) return;
     const data = target.dataset;
     if (data.pharmaHub !== undefined) state.pharma.view = "hub";
@@ -1503,7 +1716,9 @@ function openPharmaStudy(drug) {
       setPharmaClass(data.pharmaClass);
       state.pharma.view = "class";
       state.pharma.mode = "paths";
-    } else if (data.pharmaStop !== undefined) state.pharma.stopped = !state.pharma.stopped;
+    } else if (data.pharmaDtype) state.pharma.dtype = data.pharmaDtype;
+    else if (data.pharmaDstage) state.pharma.dstage = data.pharmaDstage;
+    else if (data.pharmaStop !== undefined) state.pharma.stopped = !state.pharma.stopped;
     else if (data.pharmaRepeat !== undefined) state.pharma.repeat = !state.pharma.repeat;
     else if (data.pharmaDrug) {
       state.pharma.drug = data.pharmaDrug;
@@ -1538,6 +1753,16 @@ function openPharmaStudy(drug) {
       if (view) view.innerHTML = renderStimDayView(pharmaDrug(state.pharma.drug));
       const label = panel.querySelector("[data-pharma-dose-label]");
       if (label) label.textContent = pharmaClock(state.pharma.doseTime);
+      panel.dataset.renderedHtml = "";
+      savePharmaState();
+      return;
+    }
+    if (event.target.matches("[data-pharma-pulse]")) {
+      state.pharma.pulse = Number(event.target.value);
+      const view = panel.querySelector("#pharmaPulseView");
+      if (view) view.innerHTML = renderDemPulseView(pharmaDrug(state.pharma.drug));
+      const label = panel.querySelector("[data-pharma-pulse-label]");
+      if (label) label.textContent = `${state.pharma.pulse} bpm`;
       panel.dataset.renderedHtml = "";
       savePharmaState();
       return;

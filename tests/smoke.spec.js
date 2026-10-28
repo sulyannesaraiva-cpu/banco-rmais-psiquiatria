@@ -406,7 +406,7 @@ test("plano com mais de uma prova e boas-vindas para quem chega", async ({ page 
 test("simulador de fármacos: vias, receptores, comparar e questões do remédio", async ({ page }) => {
   const errors = await openSite(page);
   await goTab(page, "pharma");
-  await expect(page.locator(".pharma-hub-card")).toHaveCount(5);
+  await expect(page.locator(".pharma-hub-card")).toHaveCount(6);
   await page.locator('[data-pharma-class="antipsicoticos"]').click();
   await expect(page.locator("#pharmaPanel .pharma-brain")).toBeVisible();
   await page.locator('[data-pharma-drug="haloperidol"]').click();
@@ -535,6 +535,29 @@ test("simulador de fármacos: psicoestimulantes e TDAH (regiões, dia e treino)"
   await expect(page.locator("[data-pharma-dose-label]")).toHaveText("8h");
   await page.locator('[data-pharma-drug="guanfacina"]').click();
   await expect(page.locator("#pharmaPanel")).toContainText("semanas");
+  await page.locator('[data-pharma-mode="quiz"]').click();
+  await page.locator("[data-pharma-answer]").first().click();
+  await expect(page.locator(".pharma-feedback")).toBeVisible();
+  expect(errors).toEqual([]);
+});
+test("simulador de fármacos: demências (vias, indicação, pulso e treino)", async ({ page }) => {
+  const errors = await openSite(page);
+  await goTab(page, "pharma");
+  await page.locator('[data-pharma-class="demencias"]').click();
+  await page.locator('[data-pharma-drug="memantina"]').click();
+  await expect(page.locator("#pharmaPanel .pharma-paths")).toContainText("canal NMDA");
+  await page.locator('[data-pharma-mode="synapse"]').click();
+  await page.locator('[data-pharma-drug="donepezila"]').click();
+  await page.locator('[data-pharma-dtype="lewy"]').click();
+  await expect(page.locator("#pharmaPanel")).toContainText("Só se donepezila e rivastigmina não forem toleradas");
+  await page.locator("[data-pharma-pulse]").evaluate((input) => {
+    input.value = "48";
+    input.dispatchEvent(new Event("input", { bubbles: true }));
+  });
+  await expect(page.locator("#pharmaPulseView")).toContainText("investigar a causa");
+  await page.locator('[data-pharma-inter="cyp"]').click();
+  await page.locator('[data-pharma-drug="rivastigmina-oral"]').click();
+  await expect(page.locator("#pharmaPulseView")).toContainText("Sem interação relevante");
   await page.locator('[data-pharma-mode="quiz"]').click();
   await page.locator("[data-pharma-answer]").first().click();
   await expect(page.locator(".pharma-feedback")).toBeVisible();

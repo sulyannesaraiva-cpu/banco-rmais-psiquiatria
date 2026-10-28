@@ -7523,3 +7523,20 @@ body.theme-dark .pharma-chip.on {
     max-width: calc(100% + 14px);
   }
 }
+/* Fármacos nas demências: seletor de tipo e estágio, remédio atual em destaque. */
+.dem-types {
+  margin-bottom: 8px;
+}
+
+.dem-stages {
+  margin-bottom: 12px;
+}
+
+.dem-stages button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.dem-agent.is-current {
+  border-width: 2px;
+}
