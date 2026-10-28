@@ -6909,3 +6909,25 @@ body.theme-dark .pharma-chip.on {
   color: var(--ink);
   font-weight: 600;
 }
+/* Simulador: psicoestimulantes (curva ao longo do dia). */
+.day-band.school {
+  fill: color-mix(in srgb, #0072b2 9%, transparent);
+}
+
+.day-band.afternoon {
+  fill: color-mix(in srgb, #009e73 9%, transparent);
+}
+
+.day-band.sleep {
+  fill: color-mix(in srgb, #6b7f84 16%, transparent);
+}
+
+.day-area {
+  fill: color-mix(in srgb, var(--accent) 16%, transparent);
+}
+
+.day-dose {
+  stroke: #d99a1e;
+  stroke-width: 4;
+  stroke-linecap: round;
+}

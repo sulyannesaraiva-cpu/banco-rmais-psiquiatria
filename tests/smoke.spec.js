@@ -508,3 +508,26 @@ test("simulador de fármacos: ansiolíticos (GABA-A, meia-vida, equivalência e 
   await expect(page.locator(".pharma-feedback")).toBeVisible();
   expect(errors).toEqual([]);
 });
+test("simulador de fármacos: psicoestimulantes e TDAH (regiões, dia e treino)", async ({ page }) => {
+  const errors = await openSite(page);
+  await goTab(page, "pharma");
+  await page.locator('[data-pharma-class="estimulantes"]').click();
+  await page.locator('[data-pharma-mode="paths"]').click();
+  await page.locator('[data-pharma-drug="atomoxetina"]').click();
+  await expect(page.locator("#pharmaPanel .pharma-paths")).toContainText("sem potencial de abuso");
+  await page.locator('[data-pharma-mode="synapse"]').click();
+  await page.locator('[data-pharma-drug="metilfenidato-li"]').click();
+  await expect(page.locator("#pharmaDayView")).toContainText("Efeito útil");
+  await page.locator("[data-pharma-repeat]").click();
+  await page.locator("[data-pharma-dose]").evaluate((input) => {
+    input.value = "8";
+    input.dispatchEvent(new Event("input", { bubbles: true }));
+  });
+  await expect(page.locator("[data-pharma-dose-label]")).toHaveText("8h");
+  await page.locator('[data-pharma-drug="guanfacina"]').click();
+  await expect(page.locator("#pharmaPanel")).toContainText("semanas");
+  await page.locator('[data-pharma-mode="quiz"]').click();
+  await page.locator("[data-pharma-answer]").first().click();
+  await expect(page.locator(".pharma-feedback")).toBeVisible();
+  expect(errors).toEqual([]);
+});

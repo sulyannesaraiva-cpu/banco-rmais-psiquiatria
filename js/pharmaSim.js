@@ -7,6 +7,9 @@
    Nos ansiolíticos e hipnóticos (data/pharmaSimAnxiolytics.js), a primeira tela mostra o receptor
    GABA-A por subunidade α, o α2δ e o 5-HT1A, e a segunda vira "Meia-vida e retirada" (curva de
    concentração com uso diário, parada abrupta e conversor de dose equivalente ao diazepam).
+   Nos psicoestimulantes (data/pharmaSimStimulants.js), a primeira tela mostra pré-frontal,
+   estriado/accumbens e corpo, e a segunda vira "Ao longo do dia" (curva de efeito por formulação,
+   horário da dose e cobertura de escola, tarde e sono).
    - Vias e receptores: corte do cérebro com as 4 vias dopaminérgicas coloridas conforme o remédio
      escolhido, perfil de receptores e "o que esperar" (efeitos relativos).
    - Comparar: dois remédios lado a lado, com o porquê das diferenças.
@@ -558,6 +561,210 @@ function renderAnxKinetics(drug) {
     </div>`;
 }
 
+/* ---------- Psicoestimulantes e TDAH: regiões, alvos e perfil ao longo do dia ---------- */
+
+const PHARMA_REGION_COLORS = { pfc: "#0072b2", striatum: "#d55e00", body: "#b0418a" };
+const PHARMA_REGION_LABELS = ["sem efeito direto", "efeito leve", "efeito moderado", "efeito forte"];
+
+function pharmaIsStimulant() {
+  return pharmaClass()?.kind === "stimulant";
+}
+
+function pharmaStimRegions(drug) {
+  const r = drug.regions;
+  const level = (value) => ({ badge: value < 0 ? "reduz" : PHARMA_REGION_LABELS[value], badgeTone: value < 0 ? "warn" : value >= 2 ? "good" : value === 1 ? "ok" : "low", faint: value === 0 });
+  return {
+    pfc: { name: "Pré-frontal", ...level(r.pfc), text: "Dopamina e noradrenalina: atenção, memória de trabalho e controle de impulsos" },
+    striatum: { name: "Estriado e accumbens", ...level(r.striatum), text: r.striatum ? "Dopamina: hiperatividade e recompensa; subidas rápidas aqui dão potencial de abuso" : "Sem subida de dopamina aqui: sem potencial de abuso" },
+    body: {
+      name: "Corpo",
+      ...level(r.body),
+      text: r.body < 0 ? "Agonismo α2 no tronco cerebral reduz a saída simpática: pressão e frequência caem" : "Noradrenalina no corpo: pressão e frequência sobem, apetite cai",
+    },
+  };
+}
+
+function pharmaStimSvg(regions) {
+  const stroke = (key) => `${PHARMA_REGION_COLORS[key]}" class="pharma-path${regions[key].faint ? " faint" : ""}`;
+  const node = (key) => PHARMA_REGION_COLORS[key];
+  return `
+    <svg class="pharma-brain" viewBox="0 0 560 400" role="img" aria-label="Corte do cérebro com pré-frontal, estriado e accumbens, e a saída para o corpo">
+      <path d="M70 225 C58 140 130 58 250 48 C372 38 482 90 507 178 C526 248 492 298 432 312 C400 320 372 316 352 328 C337 343 331 366 302 368 C272 370 264 346 250 332 C200 327 120 318 90 288 C78 276 72 256 70 225 Z" class="pharma-brain-outline"></path>
+      <ellipse cx="420" cy="318" rx="62" ry="34" class="pharma-brain-cerebellum"></ellipse>
+      <path d="M296 330 C298 356 294 380 288 398" class="pharma-brain-stem"></path>
+      <path d="M296 288 C262 252 182 222 126 168" stroke="${stroke("pfc")}"></path>
+      <path d="M326 318 C392 250 300 120 150 150" stroke="${stroke("pfc")}"></path>
+      <path d="M296 288 C272 272 236 246 206 232" stroke="${stroke("striatum")}"></path>
+      <path d="M296 288 C290 250 276 210 256 190" stroke="${stroke("striatum")}"></path>
+      <path d="M318 330 C318 356 312 378 306 398" stroke="${stroke("body")}"></path>
+      <circle cx="296" cy="288" r="9" class="pharma-node-origin"></circle>
+      <circle cx="326" cy="318" r="9" class="pharma-node-origin"></circle>
+      <circle cx="126" cy="168" r="8" class="pharma-node" stroke="${node("pfc")}"></circle>
+      <circle cx="150" cy="150" r="7" class="pharma-node" stroke="${node("pfc")}"></circle>
+      <circle cx="206" cy="232" r="8" class="pharma-node" stroke="${node("striatum")}"></circle>
+      <circle cx="256" cy="190" r="8" class="pharma-node" stroke="${node("striatum")}"></circle>
+      <text x="92" y="132" class="pharma-label">Córtex pré-frontal</text>
+      <text x="140" y="256" class="pharma-label">N. accumbens</text>
+      <text x="236" y="176" class="pharma-label">Estriado</text>
+      <text x="306" y="282" class="pharma-label small">ATV</text>
+      <text x="338" y="346" class="pharma-label small">L. coeruleus</text>
+      <text x="316" y="394" class="pharma-label small">para o coração e os vasos</text>
+    </svg>`;
+}
+
+function renderStimMech(drug) {
+  const regions = pharmaStimRegions(drug);
+  const indications = pharmaClass().indications.map((item) => {
+    const value = drug.indications[item.id] ?? 0;
+    return `<span class="pharma-effect evidence-${value}">${escapeHtml(item.label)}: ${PHARMA_EVIDENCE_LABELS[value]}</span>`;
+  }).join("");
+  return `
+    <div class="pharma-chips" role="group" aria-label="Psicoestimulantes e TDAH">${pharmaDrugChips(drug.id)}</div>
+    <div class="pharma-grid">
+      <section class="pharma-card">
+        <div class="pharma-card-head"><h3>Onde age · ${escapeHtml(drug.name)}</h3><span>${escapeHtml(pharmaDrugGroup(drug))}</span></div>
+        ${pharmaStimSvg(regions)}
+        <div class="pharma-paths">${pharmaPathRows(regions, PHARMA_REGION_COLORS)}</div>
+      </section>
+      <section class="pharma-card">
+        <h3>Alvos</h3>
+        <div class="pharma-receptors">${pharmaReceptorRows(drug)}</div>
+        <p class="pharma-extra">${escapeHtml(drug.extra)}</p>
+        <h4>Quando escolher</h4>
+        <div class="pharma-effects">${indications}</div>
+        <h4>O que vigiar</h4>
+        <div class="pharma-effects">${pharmaEffectChips(drug)}</div>
+        ${pharmaStudyLink(drug)}
+      </section>
+    </div>`;
+}
+
+/* Efeito relativo (0 a ~1) na hora "clock" para uma dose às "dose" horas: soma dos componentes da
+   formulação, cada um em forma de trapézio (sobe, platô, desce em 1,5 h). */
+function pharmaStimEffect(drug, clock, dose, repeat) {
+  const doses = repeat && drug.day.repeat ? [dose, dose + 4] : [dose];
+  return doses.reduce((total, given) => total + drug.day.components.reduce((sum, part) => {
+    const x = clock - given;
+    if (x < part.start || x >= part.dur) return sum;
+    const value = x < part.start + part.rise ? (x - part.start) / part.rise : x < part.dur - 1.5 ? 1 : (part.dur - x) / 1.5;
+    return sum + part.w * value;
+  }, 0), 0);
+}
+
+const PHARMA_STIM_THRESHOLD = 0.35;
+
+function pharmaStimCoverage(drug, dose, repeat) {
+  const points = [];
+  for (let clock = 6; clock <= 24.001; clock += 0.25) points.push([clock, pharmaStimEffect(drug, clock, dose, repeat)]);
+  const useful = points.filter((point) => point[1] >= PHARMA_STIM_THRESHOLD);
+  return { points, from: useful.length ? useful[0][0] : null, to: useful.length ? useful[useful.length - 1][0] : null };
+}
+
+function pharmaClock(value) {
+  const hours = Math.floor(value);
+  const minutes = Math.round((value - hours) * 60);
+  return minutes ? `${hours}h${String(minutes).padStart(2, "0")}` : `${hours}h`;
+}
+
+function pharmaStimDaySvg(drug, dose, repeat) {
+  const data = pharmaStimCoverage(drug, dose, repeat);
+  const top = Math.max(1.05, ...data.points.map((point) => point[1])) * 1.05;
+  const x = (clock) => 40 + ((clock - 6) / 18) * 540;
+  const y = (value) => 190 - (value / top) * 170;
+  const band = (from, to, label, cls) => `<rect x="${x(from)}" y="20" width="${x(to) - x(from)}" height="170" class="day-band ${cls}"></rect><text x="${(x(from) + x(to)) / 2}" y="34" text-anchor="middle" class="pharma-label small">${label}</text>`;
+  const line = data.points.map((point) => `${x(point[0]).toFixed(1)},${y(point[1]).toFixed(1)}`).join(" ");
+  const ticks = [6, 8, 10, 12, 14, 16, 18, 20, 22, 24].map((clock) => `<line x1="${x(clock)}" y1="190" x2="${x(clock)}" y2="194" class="kin-axis"></line><text x="${x(clock)}" y="208" text-anchor="middle" class="pharma-label small">${clock}h</text>`).join("");
+  return `
+    <svg class="pharma-kinetics" viewBox="0 0 600 220" role="img" aria-label="Efeito de ${escapeHtml(drug.name)} ao longo do dia com dose às ${pharmaClock(dose)}">
+      ${band(8, 12, "escola ou trabalho", "school")}${band(13, 18, "tarefas da tarde", "afternoon")}${band(22, 24, "sono", "sleep")}
+      <line x1="40" y1="190" x2="580" y2="190" class="kin-axis"></line>
+      <line x1="40" y1="${y(PHARMA_STIM_THRESHOLD)}" x2="580" y2="${y(PHARMA_STIM_THRESHOLD)}" class="kin-ref"></line>
+      <text x="578" y="${y(PHARMA_STIM_THRESHOLD) - 5}" text-anchor="end" class="pharma-label small">efeito útil</text>
+      <polygon points="${x(6)},190 ${line} ${x(24)},190" class="day-area"></polygon>
+      <polyline points="${line}" class="kin-line"></polyline>
+      <line x1="${x(dose)}" y1="190" x2="${x(dose)}" y2="176" class="day-dose"></line>
+      ${repeat && drug.day.repeat ? `<line x1="${x(dose + 4)}" y1="190" x2="${x(dose + 4)}" y2="176" class="day-dose"></line>` : ""}
+      ${ticks}
+    </svg>`;
+}
+
+function renderStimDayView(drug) {
+  const dose = state.pharma.doseTime ?? 7;
+  const repeat = Boolean(state.pharma.repeat);
+  const data = pharmaStimCoverage(drug, dose, repeat);
+  const at = (clock) => pharmaStimEffect(drug, clock, dose, repeat);
+  const covers = (from, to) => data.from !== null && data.from <= from + 0.5 && data.to >= to - 0.5;
+  const night = at(22);
+  const lastDrop = drug.day.components.length === 1 && drug.day.components[0].dur <= 5;
+  return `
+    ${pharmaStimDaySvg(drug, dose, repeat)}
+    <div class="pharma-reading tone-good"><strong>${data.from === null ? "Efeito abaixo do útil" : `Efeito útil das ${pharmaClock(data.from)} às ${pharmaClock(data.to)}`}</strong><span>Início ${escapeHtml(drug.day.onset)} depois da dose; duração ${escapeHtml(drug.day.duration)} (Maudsley, tabela 5.10).</span></div>
+    <div class="pharma-reading tone-${covers(8, 12) ? "good" : "warn"}"><strong>Escola ou trabalho (8h–12h): ${covers(8, 12) ? "coberto" : "não coberto por inteiro"}</strong><span>Tarefas da tarde (13h–18h): ${covers(13, 18) ? "cobertas" : "não cobertas por inteiro"}.${!covers(13, 18) && drug.day.repeat && !repeat ? " Uma segunda dose ajuda." : ""}</span></div>
+    <div class="pharma-reading tone-${night >= 0.2 ? "high" : "good"}"><strong>Às 22h: ${night >= 0.2 ? "ainda há efeito — risco de insônia" : "efeito já passou"}</strong><span>${night >= 0.2 ? "Dose mais cedo ou formulação mais curta." : "Menos risco de atrapalhar o sono."}${lastDrop ? " A queda rápida no fim de cada dose pode trazer rebote (irritabilidade, piora dos sintomas)." : ""}</span></div>`;
+}
+
+function renderStimDay(drug) {
+  if (drug.day.weeks) {
+    return `
+      <div class="pharma-chips" role="group" aria-label="Psicoestimulantes e TDAH">${pharmaDrugChips(drug.id)}</div>
+      <div class="pharma-grid">
+        <section class="pharma-card">
+          <div class="pharma-card-head"><h3>Ao longo do dia · ${escapeHtml(drug.name)}</h3><span>${escapeHtml(pharmaDrugGroup(drug))}</span></div>
+          <div class="pharma-reading tone-ok"><strong>Não tem curva de horas: o efeito se instala em ${escapeHtml(drug.day.weeks)}</strong><span>Depois disso cobre o dia todo, sem picos nem rebote no fim da tarde. Não serve para uso "quando precisar".</span></div>
+          <p class="pharma-extra">${escapeHtml(drug.extra)}</p>
+        </section>
+        <section class="pharma-card"><h3>Por que não é estimulante</h3><p class="pharma-extra">Não aumenta a dopamina no accumbens de forma rápida, por isso não tem o potencial de abuso dos estimulantes. É uma alternativa quando há risco de desvio, tiques ou intolerância.</p>${pharmaStudyLink(drug)}</section>
+      </div>`;
+  }
+  const dose = state.pharma.doseTime ?? 7;
+  return `
+    <div class="pharma-chips" role="group" aria-label="Psicoestimulantes e TDAH">${pharmaDrugChips(drug.id)}</div>
+    <div class="pharma-grid">
+      <section class="pharma-card">
+        <div class="pharma-card-head"><h3>Ao longo do dia · ${escapeHtml(drug.name)}</h3><span>${escapeHtml(pharmaDrugGroup(drug))}</span></div>
+        <label class="pharma-slider-label" for="pharmaDose">Horário da dose: <strong data-pharma-dose-label>${pharmaClock(dose)}</strong></label>
+        <input id="pharmaDose" class="pharma-slider" type="range" min="6" max="12" step="0.5" value="${dose}" data-pharma-dose>
+        ${drug.day.repeat ? `<div class="pharma-toggles"><button type="button" class="pharma-toggle ${state.pharma.repeat ? "on" : ""}" data-pharma-repeat aria-pressed="${Boolean(state.pharma.repeat)}">Segunda dose 4 h depois</button></div>` : ""}
+        <div id="pharmaDayView">${renderStimDayView(drug)}</div>
+        <p class="pharma-extra">Curva didática montada com o início e a duração de cada formulação; o efeito real varia de pessoa para pessoa e com a dose.</p>
+      </section>
+      <section class="pharma-card"><h3>Formulação</h3><p class="pharma-extra">${escapeHtml(drug.extra)}</p>${pharmaStudyLink(drug)}</section>
+    </div>`;
+}
+
+function pharmaStimCues(drug) {
+  const r = drug.receptors;
+  const cues = [];
+  if (r.REL >= 3) cues.push("faz o neurônio liberar dopamina: anfetamina");
+  else if (r.DAT >= 3 && r.NET >= 2) cues.push("bloqueia DAT e NET: metilfenidato");
+  if (r.NET >= 4 && r.DAT === 0) cues.push("só NET, sem DAT: atomoxetina");
+  if (r.A2A >= 3) cues.push("agonista α2A, sem mexer nos transportadores");
+  return `${cues.length ? `Pistas: ${cues.join("; ")}. ` : ""}${drug.extra}`;
+}
+
+/* "Qual destas formulações cobre mais (ou menos) horas do dia?" e "Qual leva semanas?". */
+function pharmaDurationQuestion(drugs) {
+  const timed = drugs.filter((drug) => drug.day && !drug.day.weeks);
+  if (timed.length < 4) return null;
+  const span = (drug) => {
+    const data = pharmaStimCoverage(drug, 7, false);
+    return data.from === null ? 0 : data.to - data.from;
+  };
+  const pool = pharmaShuffle(timed).slice(0, 4);
+  const sorted = [...pool].sort((a, b) => span(a) - span(b));
+  const longest = Math.random() < 0.5;
+  if (span(sorted[3]) - span(sorted[2]) < 0.5 || span(sorted[1]) - span(sorted[0]) < 0.5) return null;
+  return { type: "duration", longest, correct: (longest ? sorted[3] : sorted[0]).id, options: pool.map((drug) => drug.id) };
+}
+
+function pharmaWeeksQuestion(drugs) {
+  const slow = drugs.filter((drug) => drug.day?.weeks);
+  const fast = drugs.filter((drug) => drug.day && !drug.day.weeks);
+  if (!slow.length || fast.length < 3) return null;
+  const correct = slow[Math.floor(Math.random() * slow.length)];
+  return { type: "weeks", correct: correct.id, options: pharmaShuffle([correct, ...pharmaShuffle(fast).slice(0, 3)]).map((drug) => drug.id) };
+}
+
 /* ---------- Antidepressivos: sistemas de serotonina, noradrenalina e dopamina ---------- */
 
 const PHARMA_SYSTEM_COLORS = { serotonin: "#b0418a", noradrenaline: "#0072b2", dopamine: "#d55e00" };
@@ -631,6 +838,7 @@ function renderPharmaPaths() {
   const drug = pharmaDrug(state.pharma.drug);
   if (pharmaIsStabilizer()) return renderStabilizerMech(drug);
   if (pharmaIsAnxiolytic()) return renderAnxMech(drug);
+  if (pharmaIsStimulant()) return renderStimMech(drug);
   const antidepressant = pharmaIsAntidepressant();
   let figure;
   let rows;
@@ -709,6 +917,7 @@ function renderPharmaCompare() {
     </div>
     ${a.id === b.id ? '<p class="panel-line">Escolha dois remédios diferentes para comparar.</p>' : ""}
     ${a.halfLife && b.halfLife ? `<p class="pharma-extra">Meia-vida: ${escapeHtml(a.name)} ${pharmaHalfLifeText(a)} · ${escapeHtml(b.name)} ${pharmaHalfLifeText(b)}</p>` : ""}
+    ${a.day && b.day ? `<p class="pharma-extra">Duração: ${[a, b].map((item) => `${escapeHtml(item.name)} ${item.day.weeks ? `efeito em ${escapeHtml(item.day.weeks)}` : escapeHtml(item.day.duration)}`).join(" · ")}</p>` : ""}
     <div class="pharma-grid">
       <section class="pharma-card">
         <h3>${pharmaIsStabilizer() ? "Mecanismos" : pharmaIsAntidepressant() ? "Alvos" : "Receptores"}</h3>
@@ -936,6 +1145,7 @@ function renderPharmaSynapse() {
   const drug = pharmaDrug(state.pharma.drug);
   if (pharmaIsStabilizer()) return renderStabilizerLevel(drug);
   if (pharmaIsAnxiolytic()) return renderAnxKinetics(drug);
+  if (pharmaIsStimulant()) return renderStimDay(drug);
   if (drug.mech) return renderAdSynapse(drug);
   const partial = pharmaIsPartial(drug, "D2");
   return `
@@ -1041,6 +1251,7 @@ function newPharmaQuiz() {
   const drugs = pharmaClass().drugs;
   const stabilizer = pharmaIsStabilizer();
   const anxiolytic = pharmaIsAnxiolytic();
+  const stimulant = pharmaIsStimulant();
   const questions = [];
   let guard = 0;
   while (questions.length < 10 && guard < 300) {
@@ -1048,6 +1259,10 @@ function newPharmaQuiz() {
     const roll = Math.random();
     const question = stabilizer && roll < 0.4
       ? pharmaLevelQuestion(drugs)
+      : stimulant && roll < 0.2
+      ? pharmaDurationQuestion(drugs)
+      : stimulant && roll < 0.35
+      ? pharmaWeeksQuestion(drugs)
       : anxiolytic && roll < 0.25
       ? pharmaHalfLifeQuestion(drugs)
       : anxiolytic && roll < 0.45
@@ -1101,6 +1316,7 @@ function pharmaAnxCues(drug) {
 function pharmaProfileExplanation(drug) {
   if (pharmaIsStabilizer()) return pharmaStabilizerCues(drug);
   if (pharmaIsAnxiolytic()) return pharmaAnxCues(drug);
+  if (pharmaIsStimulant()) return pharmaStimCues(drug);
   if (drug.mech) return pharmaAdCues(drug);
   const r = drug.receptors;
   const cues = [];
@@ -1136,7 +1352,7 @@ function renderPharmaQuiz() {
   const effect = question.effect ? pharmaClass().effects.find((item) => item.id === question.effect) : null;
   const profilePrompt = pharmaIsStabilizer()
     ? "Este perfil de mecanismos é de qual estabilizador?"
-    : pharmaIsAnxiolytic() ? "Este perfil de alvos é de qual remédio?"
+    : pharmaIsAnxiolytic() || pharmaIsStimulant() ? "Este perfil de alvos é de qual remédio?"
     : pharmaIsAntidepressant() ? "Este perfil de alvos é de qual antidepressivo?" : "Este perfil de receptores é de qual antipsicótico?";
   const prompt = question.type === "profile"
     ? profilePrompt
@@ -1146,6 +1362,10 @@ function renderPharmaQuiz() {
     ? `Qual destes tem a meia-vida mais ${question.longest ? "longa" : "curta"}?`
     : question.type === "equivalence"
     ? `Quantos mg de ${correct.name.toLowerCase()} equivalem a cerca de 10 mg de diazepam?`
+    : question.type === "duration"
+    ? `Com uma dose às 7h, qual destes cobre ${question.longest ? "mais" : "menos"} horas do dia?`
+    : question.type === "weeks"
+    ? "Qual destes leva semanas para fazer efeito?"
     : `Qual destes tem o maior risco de ${effect.label.toLowerCase()}?`;
   const options = question.options.map((id) => {
     const state_ = answered ? (id === question.correct ? "right" : id === answered ? "wrong" : "") : "";
@@ -1161,6 +1381,10 @@ function renderPharmaQuiz() {
     ? `${question.options.map((id) => `${pharmaDrug(id).name}: ${pharmaHalfLifeText(pharmaDrug(id))}`).join("; ")}.`
     : question.type === "equivalence"
     ? `Tabela aproximada: ${pharmaClass().drugs.filter((item) => item.eq).map((item) => `${item.name} ${String(item.eq).replace(".", ",")} mg`).join(" · ")}.`
+    : question.type === "duration"
+    ? `Duração (Maudsley, tabela 5.10): ${question.options.map((id) => `${pharmaDrug(id).name} ${pharmaDrug(id).day.duration}`).join("; ")}.`
+    : question.type === "weeks"
+    ? `${correct.name}: efeito em ${correct.day.weeks}. Os estimulantes agem no mesmo dia, em minutos a horas.`
     : `${correct.name}: ${effect.label.toLowerCase()} ${PHARMA_EFFECT_LEVELS[correct.effects[effect.id]]}. Por quê: ${effect.why}. ${question.options.filter((id) => id !== correct.id).map((id) => `${pharmaDrug(id).name}: ${PHARMA_EFFECT_LEVELS[pharmaDrug(id).effects[effect.id]]}`).join("; ")}.`;
   const correctLabel = label(question.correct);
   return `
@@ -1196,7 +1420,7 @@ function renderPharmaPanel() {
       <div class="pharma-switches">
         <div class="segmented pharma-classes" role="group" aria-label="Classe">${classButtons}</div>
         <div class="segmented pharma-modes" role="group" aria-label="Modo">
-          ${modeButton("paths", pharmaIsStabilizer() ? "Mecanismos e fases" : pharmaIsAnxiolytic() ? "Mecanismos e usos" : pharmaIsAntidepressant() ? "Sistemas e alvos" : "Vias e receptores")}${modeButton("compare", "Comparar")}${modeButton("synapse", pharmaIsStabilizer() ? "Nível e interações" : pharmaIsAnxiolytic() ? "Meia-vida e retirada" : "Sinapse")}${modeButton("quiz", "Treino")}
+          ${modeButton("paths", pharmaIsStabilizer() ? "Mecanismos e fases" : pharmaIsAnxiolytic() || pharmaIsStimulant() ? "Mecanismos e usos" : pharmaIsAntidepressant() ? "Sistemas e alvos" : "Vias e receptores")}${modeButton("compare", "Comparar")}${modeButton("synapse", pharmaIsStabilizer() ? "Nível e interações" : pharmaIsAnxiolytic() ? "Meia-vida e retirada" : pharmaIsStimulant() ? "Ao longo do dia" : "Sinapse")}${modeButton("quiz", "Treino")}
         </div>
       </div>
     </header>
@@ -1221,10 +1445,11 @@ function openPharmaStudy(drug) {
   const panel = document.querySelector("#pharmaPanel");
   if (!panel) return;
   panel.addEventListener("click", (event) => {
-    const target = event.target.closest("[data-pharma-drug], [data-pharma-class], [data-pharma-mode], [data-pharma-study], [data-pharma-answer], [data-pharma-quiz], [data-pharma-review], [data-pharma-inter], [data-pharma-stop]");
+    const target = event.target.closest("[data-pharma-drug], [data-pharma-class], [data-pharma-mode], [data-pharma-study], [data-pharma-answer], [data-pharma-quiz], [data-pharma-review], [data-pharma-inter], [data-pharma-stop], [data-pharma-repeat]");
     if (!target) return;
     const data = target.dataset;
     if (data.pharmaStop !== undefined) state.pharma.stopped = !state.pharma.stopped;
+    else if (data.pharmaRepeat !== undefined) state.pharma.repeat = !state.pharma.repeat;
     else if (data.pharmaDrug) {
       state.pharma.drug = data.pharmaDrug;
       /* Ao trocar de remédio na sinapse, começa numa ocupação típica dele. */
@@ -1253,6 +1478,16 @@ function openPharmaStudy(drug) {
   });
   /* O controle de ocupação atualiza só o desenho da sinapse, para não interromper o arraste. */
   panel.addEventListener("input", (event) => {
+    if (event.target.matches("[data-pharma-dose]")) {
+      state.pharma.doseTime = Number(event.target.value);
+      const view = panel.querySelector("#pharmaDayView");
+      if (view) view.innerHTML = renderStimDayView(pharmaDrug(state.pharma.drug));
+      const label = panel.querySelector("[data-pharma-dose-label]");
+      if (label) label.textContent = pharmaClock(state.pharma.doseTime);
+      panel.dataset.renderedHtml = "";
+      savePharmaState();
+      return;
+    }
     if (event.target.matches("[data-pharma-days]")) {
       state.pharma.days = Number(event.target.value);
       const view = panel.querySelector("#pharmaKineticsView");
