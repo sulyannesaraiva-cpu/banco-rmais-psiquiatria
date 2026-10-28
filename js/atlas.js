@@ -300,7 +300,77 @@ function renderAtlasLimbic() {
     ${state.pharma.sourcesOpen ? renderPharmaSources({ id: "atlas-limbico", label: "Sistema límbico e Papez" }, "paths", lesion ? lesion.syndrome : "Circuito de Papez") : ""}`;
 }
 
+/* ---------- Vias de neurotransmissores: mapa sagital com um sistema por vez ---------- */
+
+const ATLAS_BRAIN_OUTLINE = "M70 225 C58 140 130 58 250 48 C372 38 482 90 507 178 C526 248 492 298 432 312 C400 320 372 316 352 328 C337 343 331 366 302 368 C272 370 264 346 250 332 C200 327 120 318 90 288 C78 276 72 256 70 225 Z";
+
+function atlasCurve(a, b) {
+  const mx = (a.x + b.x) / 2;
+  const my = (a.y + b.y) / 2 - Math.min(60, Math.abs(a.x - b.x) * 0.25 + 10);
+  return `M${a.x} ${a.y} Q${mx.toFixed(0)} ${my.toFixed(0)} ${b.x} ${b.y}`;
+}
+
+function atlasNeuroSvg(system) {
+  const neuro = window.ATLAS.neuro;
+  const pts = neuro.points;
+  const used = new Set(system.paths.flatMap(([from, to]) => [from, to]));
+  const paths = system.paths.map(([from, to]) => `<path d="${atlasCurve(pts[from], pts[to])}" class="neuro-path" stroke="${system.color}"></path>`).join("");
+  /* Rótulos em posição fixa; os núcleos de origem, muito juntos no tronco, ganham linha-guia. */
+  const dots = [...used].map((id) => {
+    const point = pts[id];
+    const origin = point.origin && system.paths.some(([from]) => from === id);
+    const leader = origin ? `<line x1="${point.x}" y1="${point.y}" x2="${point.lx + (point.anchor === "end" ? 3 : -3)}" y2="${point.ly - 4}" class="neuro-leader"></line>` : "";
+    return `${leader}<circle cx="${point.x}" cy="${point.y}" r="${origin ? 8 : 6}" class="neuro-dot${origin ? " origin" : ""}" stroke="${system.color}"></circle><text x="${point.lx}" y="${point.ly}" text-anchor="${point.anchor}" class="neuro-label${origin ? " origin" : ""}">${escapeHtml(point.label)}</text>`;
+  }).join("");
+  return `
+    <svg class="atlas-svg" viewBox="10 30 550 380" role="img" aria-label="Corte sagital com as projeções de ${escapeHtml(system.label.toLowerCase())}">
+      <path d="${ATLAS_BRAIN_OUTLINE}" class="pharma-brain-outline"></path>
+      <ellipse cx="420" cy="318" rx="62" ry="34" class="pharma-brain-cerebellum"></ellipse>
+      <path d="M296 330 C298 356 294 380 288 398" class="pharma-brain-stem"></path>
+      ${paths}${dots}
+    </svg>`;
+}
+
+function renderAtlasNeuro() {
+  const neuro = window.ATLAS.neuro;
+  const system = neuro.systems.find((item) => item.id === state.atlas.system) || neuro.systems[0];
+  const refCount = ((window.PHARMA_REFS || {})["atlas-neurotransmissores"]?.paths || []).length;
+  const chips = neuro.systems.map((item) => `<button type="button" class="pharma-chip ${item.id === system.id ? "on" : ""}" data-atlas-system="${item.id}" aria-pressed="${item.id === system.id}" style="--chip:${item.color}">${escapeHtml(item.label)}</button>`).join("");
+  const row = (label, text, tone = "ok") => `<div class="pharma-reading tone-${tone}"><strong>${label}</strong><span>${escapeHtml(text)}</span></div>`;
+  return `
+    <header class="pharma-head">
+      <div>
+        <div class="pharma-head-top">
+          <button type="button" class="link-btn pharma-back" data-atlas-home>← Vias</button>
+          ${refCount ? `<button type="button" class="pharma-sources-btn" data-pharma-sources aria-haspopup="dialog">Fontes · ${refCount}</button>` : ""}
+        </div>
+        <h2>Vias de neurotransmissores</h2>
+        <p>Poucos núcleos pequenos no tronco e no prosencéfalo basal projetam para o cérebro inteiro. É neles que a maioria dos psicofármacos age.</p>
+      </div>
+    </header>
+    <div class="pharma-chips" role="group" aria-label="Sistema">${chips}</div>
+    <div class="pharma-grid atlas-grid">
+      <section class="pharma-card">
+        <div class="pharma-card-head"><h3>${escapeHtml(system.label)}</h3><span>corte sagital esquemático</span></div>
+        ${atlasNeuroSvg(system)}
+        ${system.paths.some((path) => path[2]) ? `<div class="neuro-named">${system.paths.filter((path) => path[2]).map(([from, to, name]) => `<span><i style="background:${system.color}"></i><b>${escapeHtml(name)}</b> ${escapeHtml(neuro.points[from].label)} → ${escapeHtml(neuro.points[to].label)}</span>`).join("")}</div>` : ""}
+        <p class="pharma-extra">Círculo escuro: núcleo de origem. Círculo claro: principais alvos.</p>
+      </section>
+      <section class="pharma-card">
+        ${row("De onde sai", system.origin)}
+        ${row("Para onde vai", system.targets)}
+        ${row("Para que serve", system.role, "good")}
+        ${row("Quando falha ou sobra", system.clinic, "warn")}
+        ${row("Fármacos que agem aqui", system.drugs)}
+        ${system.link ? `<button type="button" class="link-btn atlas-link" data-atlas-drugs="${system.link.cls}">${escapeHtml(system.link.label)} ›</button>` : ""}
+      </section>
+    </div>
+    <p class="pharma-disclaimer">Mapa simplificado para estudo: cada sistema tem muito mais alvos do que os desenhados.</p>
+    ${state.pharma.sourcesOpen ? renderPharmaSources({ id: "atlas-neurotransmissores", label: "Vias de neurotransmissores" }, "paths", system.label) : ""}`;
+}
+
 function renderAtlas() {
+  if (state.atlas.module === "neurotransmissores") return renderAtlasNeuro();
   if (state.atlas.module === "limbico") return renderAtlasLimbic();
   if (state.atlas.module === "nucleos-base") return renderAtlasBasal();
   if (state.atlas.module === "frontoestriatais") return renderAtlasFronto();
@@ -311,7 +381,7 @@ function renderAtlas() {
   const panel = document.querySelector("#pharmaPanel");
   if (!panel) return;
   panel.addEventListener("click", (event) => {
-    const target = event.target.closest("[data-atlas-module], [data-atlas-home], [data-atlas-scenario], [data-atlas-step], [data-atlas-link], [data-sim-section], [data-atlas-circuit], [data-atlas-lesion], [data-atlas-limbic]");
+    const target = event.target.closest("[data-atlas-module], [data-atlas-home], [data-atlas-scenario], [data-atlas-step], [data-atlas-link], [data-sim-section], [data-atlas-circuit], [data-atlas-lesion], [data-atlas-limbic], [data-atlas-system], [data-atlas-drugs]");
     if (!target) return;
     const data = target.dataset;
     if (data.simSection) {
@@ -329,7 +399,13 @@ function renderAtlas() {
       state.atlas.circuit = data.atlasCircuit;
       state.atlas.lesionAt = null;
     } else if (data.atlasLesion !== undefined) state.atlas.lesionAt = data.atlasLesion || null;
-    else if (data.atlasLimbic !== undefined) {
+    else if (data.atlasSystem) state.atlas.system = data.atlasSystem;
+    else if (data.atlasDrugs) {
+      state.pharma.section = "drugs";
+      setPharmaClass(data.atlasDrugs);
+      state.pharma.view = "class";
+      state.pharma.mode = "paths";
+    } else if (data.atlasLimbic !== undefined) {
       state.atlas.limbicLesion = data.atlasLimbic || null;
       state.atlas.step = null;
     }
@@ -350,6 +426,6 @@ function renderAtlas() {
     saveAtlasState();
     savePharmaState();
     renderPharmaPanel();
-    if (data.atlasModule || data.atlasHome !== undefined || data.atlasLink || data.simSection) panel.scrollIntoView({ block: "start" });
+    if (data.atlasModule || data.atlasHome !== undefined || data.atlasLink || data.atlasDrugs || data.simSection) panel.scrollIntoView({ block: "start" });
   });
 })();

@@ -700,6 +700,19 @@ test("atlas de vias: sistema límbico e Papez (lesione e veja, seguir o sinal)",
   await expect(page.locator(".pharma-sources")).toContainText("Quevedo");
   expect(errors).toEqual([]);
 });
+test("atlas de vias: neurotransmissores (sistemas e atalho para os fármacos)", async ({ page }) => {
+  const errors = await openSite(page);
+  await goTab(page, "pharma");
+  await page.locator('[data-sim-section="atlas"]').click();
+  await page.locator('[data-atlas-module="neurotransmissores"]').click();
+  await expect(page.locator("#pharmaPanel")).toContainText("mesolímbica");
+  await page.locator('[data-atlas-system="orexina"]').click();
+  await expect(page.locator("#pharmaPanel")).toContainText("narcolepsia");
+  await page.locator('[data-atlas-system="acetilcolina"]').click();
+  await page.locator("[data-atlas-drugs]").click();
+  await expect(page.locator("#pharmaPanel h2")).toHaveText("Fármacos nas demências");
+  expect(errors).toEqual([]);
+});
 test("navegação por áreas: Hoje, Estudar (com seletor), Simular e Você", async ({ page }) => {
   const errors = await openSite(page);
   const mobile = await page.evaluate(() => isMobileLayout());

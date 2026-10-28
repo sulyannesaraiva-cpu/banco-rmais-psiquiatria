@@ -8401,3 +8401,59 @@ body.theme-dark .pharma-chip.on {
   font-size: 13px;
   font-style: italic;
 }
+/* Atlas: vias de neurotransmissores. */
+.neuro-path {
+  fill: none;
+  stroke-width: 4;
+  stroke-linecap: round;
+  opacity: 0.85;
+}
+
+.neuro-path-name {
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.neuro-dot {
+  fill: var(--panel);
+  stroke-width: 3;
+}
+
+.neuro-dot.origin {
+  fill: #10262d;
+}
+
+.neuro-label {
+  fill: var(--ink);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.neuro-label.origin {
+  font-weight: 800;
+}
+.neuro-leader {
+  stroke: var(--muted);
+  stroke-width: 1;
+  opacity: 0.6;
+}
+
+.neuro-named {
+  display: grid;
+  gap: 4px;
+  margin-top: 8px;
+  font-size: 13px;
+}
+
+.neuro-named i {
+  display: inline-block;
+  width: 14px;
+  height: 4px;
+  margin-right: 6px;
+  border-radius: 2px;
+  vertical-align: middle;
+}
+
+.neuro-named b {
+  margin-right: 4px;
+}

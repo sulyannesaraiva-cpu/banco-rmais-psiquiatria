@@ -201,6 +201,16 @@ window.PHARMA_REFS = {
       { about: "Ordem dos passos do circuito e desenho", src: "curadoria", where: "esquema não está em escala nem em posição anatômica", kind: "didatico" },
     ],
   },
+  "atlas-neurotransmissores": {
+    paths: [
+      { about: "Origens e projeções de dopamina, noradrenalina, serotonina, acetilcolina e histamina", src: "quevedo2020", where: "seção Neurotransmissores e vias", kind: "fonte" },
+      { about: "Locus coeruleus, rafe dorsal e caudal, núcleo basal de Meynert; Parkinson, depressão, 5-HIAA e Lewy", src: "kaufman", where: "capítulo de neurotransmissores", kind: "fonte" },
+      { about: "Orexina (hipocretina): hipotálamo, vigília, REM e narcolepsia", src: "kaufman", where: "questões do capítulo de sono", kind: "fonte" },
+      { about: "Histamina do núcleo tuberomamilar e orexina na tabela do sono", src: "quevedo2020", where: "capítulo de sono", kind: "fonte" },
+      { about: "Fármacos que agem em cada sistema", src: "curadoria", where: "a partir das classes do simulador (Stahl e Maudsley)", kind: "didatico" },
+      { about: "Posição dos núcleos e dos alvos no corte", src: "curadoria", where: "esquema não está em escala", kind: "didatico" },
+    ],
+  },
   dependencia: {
     paths: [
       { about: "Mecanismos de cada remédio", src: "maudsley15", where: "cap. 4", kind: "fonte" },
