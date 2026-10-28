@@ -14,6 +14,10 @@
    córtex e no hipocampo, o NMDA e o efeito vagal no corpo, e a segunda vira "Indicação e segurança"
    (indicação por tipo e estágio de demência, dose e titulação, pulso e interações); o treino inclui
    casos curtos de conduta.
+   Na dependência química (data/pharmaSimAddiction.js), a primeira tela mostra a via da recompensa
+   e os alvos (μ, nicotínico, glutamato/GABA, ALDH, recaptação), e a segunda vira "Receptor e uso":
+   receptores ocupados por agonista total, parcial ou antagonista, com ou sem um agonista de fundo
+   (abstinência precipitada, efeito teto), a reação álcool-dissulfiram e como usar cada remédio.
    - Vias e receptores: corte do cérebro com as 4 vias dopaminérgicas coloridas conforme o remédio
      escolhido, perfil de receptores e "o que esperar" (efeitos relativos).
    - Comparar: dois remédios lado a lado, com o porquê das diferenças.
@@ -358,7 +362,7 @@ function pharmaReceptorRows(drug) {
       <div class="pharma-receptor" title="${escapeHtml(receptor.role)}">
         <strong>${escapeHtml(receptor.label)}</strong>
         <span class="pharma-bar" role="img" aria-label="${escapeHtml(receptor.label)}: afinidade ${PHARMA_LEVELS[value]}"><i class="${partial ? "partial" : ""}" style="width:${Math.max(4, value * 25)}%"></i></span>
-        <small>${(pharmaIsStabilizer() || pharmaIsDementia() ? PHARMA_ACTION_LABELS : PHARMA_LEVELS)[value]}${partial ? " · agonista parcial" : ""}</small>
+        <small>${(pharmaIsStabilizer() || pharmaIsDementia() || pharmaIsAddiction() ? PHARMA_ACTION_LABELS : PHARMA_LEVELS)[value]}${partial ? " · agonista parcial" : ""}</small>
       </div>`;
   }).join("");
 }
@@ -965,6 +969,251 @@ function pharmaCaseQuestion() {
   return { type: "case", prompt: item.prompt, explain: item.explain, correct: keys[item.correct], options: pharmaShuffle(keys), labels: Object.fromEntries(keys.map((key, i) => [key, item.options[i]])) };
 }
 
+/* ---------- Dependência química: alvos, receptor (total, parcial, antagonista) e uso ---------- */
+
+const PHARMA_ADD_COLORS = { MU: "#0072b2", NIC: "#009e73", GLU: "#d55e00", ALDH: "#b0418a", DANE: "#8a6a00" };
+const PHARMA_ACT_LABELS = { full: "agonista total", partial: "agonista parcial", antagonist: "antagonista" };
+
+function pharmaIsAddiction() {
+  return pharmaClass()?.kind === "addiction";
+}
+
+function pharmaAddSvg(drug) {
+  const r = drug.receptors;
+  const cls = (id) => `pharma-target${r[id] === 0 ? " faint" : ""}${r[id] >= 3 ? " strong" : ""}`;
+  const c = PHARMA_ADD_COLORS;
+  return `
+    <svg class="pharma-brain" viewBox="0 0 560 400" role="img" aria-label="Via da recompensa da ATV ao accumbens, com os alvos dos remédios para dependência">
+      <path d="M70 225 C58 140 130 58 250 48 C372 38 482 90 507 178 C526 248 492 298 432 312 C400 320 372 316 352 328 C337 343 331 366 302 368 C272 370 264 346 250 332 C200 327 120 318 90 288 C78 276 72 256 70 225 Z" class="pharma-brain-outline"></path>
+      <ellipse cx="420" cy="318" rx="62" ry="34" class="pharma-brain-cerebellum"></ellipse>
+      <path d="M296 330 C298 356 294 380 288 398" class="pharma-brain-stem"></path>
+      <path d="M296 288 C272 272 236 246 206 232" class="add-reward"></path>
+      <circle cx="296" cy="288" r="9" class="pharma-node-origin"></circle>
+      <circle cx="206" cy="232" r="10" class="add-reward-node"></circle>
+      <text x="300" y="312" class="pharma-label small">ATV</text>
+      <text x="128" y="262" class="pharma-label">N. accumbens</text>
+      <text x="214" y="282" class="pharma-label small">dopamina</text>
+      <g class="${cls("MU")}" style="--t:${c.MU}"><circle cx="334" cy="262" r="17"></circle><text x="334" y="268" text-anchor="middle" class="pharma-label">μ</text></g>
+      <g class="${cls("NIC")}" style="--t:${c.NIC}"><rect x="320" y="200" width="36" height="28" rx="8"></rect><text x="338" y="219" text-anchor="middle" class="pharma-label small">α4β2</text></g>
+      <g class="${cls("GLU")}" style="--t:${c.GLU}">
+        <path d="M128 150 C150 180 176 206 198 222" class="arrow"></path>
+        <circle cx="124" cy="146" r="12"></circle>
+        <text x="92" y="128" class="pharma-label small">glutamato · GABA</text>
+      </g>
+      <g class="${cls("DANE")}" style="--t:${c.DANE}"><rect x="168" y="182" width="58" height="24" rx="8"></rect><text x="197" y="199" text-anchor="middle" class="pharma-label small">DAT · NET</text></g>
+      <g class="${cls("ALDH")}" style="--t:${c.ALDH}">
+        <path d="M40 352 C40 326 92 318 128 330 C150 338 150 366 124 374 C92 384 40 380 40 352 Z"></path>
+        <text x="92" y="356" text-anchor="middle" class="pharma-label small">fígado · ALDH</text>
+      </g>
+      <text x="376" y="228" class="pharma-label small">no neurônio de dopamina</text>
+    </svg>`;
+}
+
+function renderAddMech(drug) {
+  const rows = Object.fromEntries(pharmaClass().receptors.map((target) => {
+    const value = drug.receptors[target.id] ?? 0;
+    const act = drug.act && drug.act.target === target.id ? PHARMA_ACT_LABELS[drug.act.type] : null;
+    const badge = act || (target.id === "NIC" && value && !drug.act ? "antagonista" : PHARMA_ACTION_LABELS[value]);
+    return [target.id, { name: target.label, text: target.role, badge, badgeTone: value >= 3 ? "good" : value ? "ok" : "low", faint: value === 0 }];
+  }));
+  const indications = pharmaClass().indications.map((item) => {
+    const value = drug.indications[item.id] ?? 0;
+    return `<span class="pharma-effect evidence-${value}">${escapeHtml(item.label)}: ${PHARMA_EVIDENCE_LABELS[value]}</span>`;
+  }).join("");
+  return `
+    <div class="pharma-chips" role="group" aria-label="Dependência química">${pharmaDrugChips(drug.id)}</div>
+    <div class="pharma-grid">
+      <section class="pharma-card">
+        <div class="pharma-card-head"><h3>Onde age · ${escapeHtml(drug.name)}</h3><span>${escapeHtml(pharmaDrugGroup(drug))}</span></div>
+        ${pharmaAddSvg(drug)}
+        <div class="pharma-paths">${pharmaPathRows(rows, PHARMA_ADD_COLORS)}</div>
+      </section>
+      <section class="pharma-card">
+        <h3>Para que serve</h3>
+        <div class="pharma-effects">${indications}</div>
+        <p class="pharma-extra">${escapeHtml(drug.extra)}</p>
+        <h4>O que vigiar</h4>
+        <div class="pharma-effects">${pharmaEffectChips(drug)}</div>
+        ${pharmaStudyLink(drug)}
+      </section>
+    </div>`;
+}
+
+/* Modelo didático do receptor: o agonista "de fundo" (heroína/metadona ou nicotina do cigarro)
+   ocupa 90% quando ligado. Remédios de alta afinidade (parciais e antagonistas) tomam o lugar dele;
+   agonistas totais só ocupam o que sobra livre e somam efeito. */
+function pharmaAddModel(drug) {
+  const dose = state.pharma.addDose ?? 70;
+  const bg = Boolean(state.pharma.addBg);
+  const bgFull = bg ? 90 : 0;
+  let drugOcc;
+  let bgOcc;
+  if (drug.act.type === "full") {
+    bgOcc = bgFull;
+    drugOcc = Math.min(dose, 100 - bgOcc);
+  } else {
+    drugOcc = dose;
+    bgOcc = bg ? Math.min(bgFull, 100 - dose) : 0;
+  }
+  const activation = Math.round(drugOcc * drug.act.ia + bgOcc);
+  return { dose, bg, drugOcc, bgOcc, activation, before: bgFull, excess: drug.act.type === "full" && bg ? dose - drugOcc : 0 };
+}
+
+function pharmaAddReceptorSvg(drug, model) {
+  const nDrug = Math.round(model.drugOcc / 10);
+  const nBg = Math.round(model.bgOcc / 10);
+  const tone = drug.act.type === "antagonist" ? "ant" : drug.act.type;
+  const slots = Array.from({ length: 10 }, (_, i) => {
+    const kind = i < nDrug ? `drug ${tone}` : i < nDrug + nBg ? "bg" : "free";
+    const x = 30 + i * 54;
+    return `<g class="add-rec ${kind}"><path d="M${x} 96 v-36 h14 v20 h16 v-20 h14 v36 z"></path>${kind === "free" ? "" : `<circle cx="${x + 22}" cy="52" r="9"></circle>`}</g>`;
+  }).join("");
+  const width = Math.max(0, Math.min(100, model.activation));
+  return `
+    <svg class="pharma-kinetics" viewBox="0 0 600 170" role="img" aria-label="Receptores ocupados: ${nDrug} pelo remédio, ${nBg} pelo agonista de fundo; ativação ${model.activation}%">
+      ${slots}
+      <text x="30" y="126" class="pharma-label small">ativação do receptor</text>
+      <rect x="30" y="134" width="540" height="16" rx="8" class="add-bar-bg"></rect>
+      <rect x="30" y="134" width="${(width / 100) * 540}" height="16" rx="8" class="add-bar ${model.activation >= 95 ? "high" : ""}"></rect>
+      ${model.bg ? `<line x1="${30 + (model.before / 100) * 540}" y1="128" x2="${30 + (model.before / 100) * 540}" y2="156" class="kin-stop"></line><text x="${30 + (model.before / 100) * 540}" y="166" text-anchor="middle" class="pharma-label small">antes</text>` : ""}
+      <text x="570" y="126" text-anchor="end" class="pharma-label small">${model.activation}%</text>
+    </svg>`;
+}
+
+function pharmaAddReadings(drug, model) {
+  const mu = drug.act.target === "MU";
+  const type = drug.act.type;
+  if (model.dose === 0) {
+    return model.bg
+      ? { tone: "ok", title: "Só o agonista de fundo", text: mu ? "Heroína ou metadona ocupa 90% dos receptores: é a situação de quem está em uso, antes do remédio. Arraste a dose." : "A nicotina do cigarro ocupa os receptores: é a situação de quem ainda fuma. Arraste a dose." }
+      : { tone: "low", title: "Sem remédio no receptor", text: "Arraste para aumentar a dose." };
+  }
+  if (model.bg && type !== "full" && model.drugOcc >= 50) {
+    if (!mu) return { tone: "good", title: "Fumar dá menos prazer", text: "A vareniclina toma o lugar da nicotina do cigarro e ativa o receptor só em parte: o cigarro deixa de dar o pico de dopamina, mas a ativação parcial segura a fissura." };
+    if (type === "partial") return { tone: "high", title: "Abstinência precipitada", text: "A buprenorfina tem mais afinidade e tira o agonista total do receptor, mas ativa só em parte: a pessoa sente abstinência. Por isso se começa quando já há sinais de abstinência (COWS), ou com indução em doses baixas." };
+    if (drug.id === "naloxona") return { tone: "high", title: "Reverte a overdose — e precipita abstinência", text: "A naloxona tira o opioide do receptor em minutos. Como dura menos que muitos opioides, o efeito pode passar antes: repetir e observar." };
+    return { tone: "high", title: "Abstinência precipitada", text: "Com opioide no receptor, a naltrexona provoca abstinência: exige um intervalo sem opioide (até 7 dias para heroína, até 10 para metadona) e, na dúvida, teste com naloxona." };
+  }
+  if (model.bg && type === "full" && model.excess > 0) {
+    return mu
+      ? { tone: "high", title: "Agonistas totais se somam", text: "Metadona por cima de heroína (ou de álcool e benzodiazepínicos) não tem teto: a ativação vai a 100% e com ela a depressão respiratória. Não dar a quem está intoxicado." }
+      : { tone: "warn", title: "Nicotina em dobro", text: "Usar a reposição e continuar fumando soma nicotina: náusea é comum. O objetivo é substituir o cigarro, não somar." };
+  }
+  if (model.bg && type !== "full") return { tone: "warn", title: "Dose baixa demais para mudar muito", text: "O agonista de fundo continua ocupando a maior parte dos receptores." };
+  if (type === "antagonist") {
+    if (model.drugOcc < 50) return { tone: "warn", title: "Bloqueio parcial", text: "Sobram receptores livres: um opioide usado agora ainda daria efeito." };
+    return drug.id === "naloxona"
+      ? { tone: "ok", title: "Sem opioide no receptor, quase nada acontece", text: "A naloxona não tem efeito próprio: serve para tirar o opioide do receptor na overdose (ligue o agonista de fundo)." }
+      : { tone: "good", title: "Receptor bloqueado", text: "Se a pessoa usar opioide (ou beber), o efeito de recompensa fica bloqueado: ajuda a prevenir a recaída. Ao parar, a tolerância caiu — uma recaída pode ser fatal." };
+  }
+  if (type === "partial") {
+    if (model.activation < 20) return { tone: "warn", title: "Dose baixa: pouco alívio", text: mu ? "Ainda há abstinência e fissura." : "A fissura ainda aparece." };
+    return mu
+      ? { tone: "good", title: `Efeito teto: a ativação para em ~${Math.round(drug.act.ia * 100)}%`, text: "Mesmo com todos os receptores ocupados, a buprenorfina ativa só em parte: alivia abstinência e fissura com menos euforia e menos depressão respiratória (sozinha). E bloqueia outros opioides." }
+      : { tone: "good", title: "Ativação parcial e estável", text: "Libera dopamina de forma moderada e contínua: menos fissura e abstinência ao parar de fumar." };
+  }
+  if (mu) {
+    if (model.activation >= 80) return { tone: "high", title: "Sem teto: risco de depressão respiratória", text: "Agonista total: quanto maior a dose, maior o efeito. Como a metadona só chega ao equilíbrio após ~5 doses, a titulação é lenta e as mortes se concentram nessa fase." };
+    if (model.activation >= 40) return { tone: "good", title: "Faixa de substituição", text: "Alivia abstinência e fissura sem picos (dose terapêutica usual de 60 a 100 mg/dia, alcançada aos poucos)." };
+    return { tone: "warn", title: "Dose baixa: ainda há abstinência", text: "Subir 10 mg a cada poucos dias, observando sedação e respiração." };
+  }
+  return model.activation >= 40
+    ? { tone: "good", title: "Nicotina sem fumaça", text: "Repõe a nicotina e segura a abstinência; o dano do cigarro vem da combustão, não da nicotina." }
+    : { tone: "warn", title: "Dose baixa: fissura", text: "Quem fuma mais de 20 por dia ou logo ao acordar precisa de adesivo de 21 mg/24 h e uma forma rápida." };
+}
+
+function renderAddReceptorView(drug) {
+  const model = pharmaAddModel(drug);
+  const reading = pharmaAddReadings(drug, model);
+  return `
+    ${pharmaAddReceptorSvg(drug, model)}
+    <div class="pharma-reading tone-${reading.tone}"><strong>${escapeHtml(reading.title)}</strong><span>${escapeHtml(reading.text)}</span></div>`;
+}
+
+function pharmaAldhSvg(drinks) {
+  const size = Math.min(1, drinks / 5);
+  return `
+    <svg class="pharma-kinetics" viewBox="0 0 600 170" role="img" aria-label="Metabolismo do álcool com a ALDH bloqueada pelo dissulfiram">
+      <rect x="20" y="60" width="130" height="50" rx="12" class="add-step"></rect><text x="85" y="91" text-anchor="middle" class="pharma-label">Etanol</text>
+      <path d="M150 85 H222" class="add-arrow"></path><text x="186" y="74" text-anchor="middle" class="pharma-label small">ADH</text>
+      <rect x="224" y="${60 - size * 20}" width="150" height="${50 + size * 40}" rx="12" class="add-step toxic" style="--k:${0.15 + size * 0.6}"></rect><text x="299" y="91" text-anchor="middle" class="pharma-label">Acetaldeído</text>
+      <path d="M374 85 H446" class="add-arrow blocked"></path><text x="410" y="74" text-anchor="middle" class="pharma-label small">ALDH</text>
+      <path d="M398 70 L422 100 M422 70 L398 100" class="add-x"></path>
+      <rect x="448" y="60" width="130" height="50" rx="12" class="add-step faint"></rect><text x="513" y="91" text-anchor="middle" class="pharma-label">Acetato</text>
+      <text x="410" y="132" text-anchor="middle" class="pharma-label small">bloqueada pelo dissulfiram</text>
+    </svg>`;
+}
+
+function renderAddAldhView() {
+  const drinks = state.pharma.drinks ?? 0;
+  const reading = drinks === 0
+    ? { tone: "good", title: "Sem álcool, sem reação", text: "O dissulfiram sozinho quase não dá efeito. Boa parte da proteção vem de saber que a reação viria." }
+    : drinks <= 2
+    ? { tone: "warn", title: "Reação leve", text: "Rubor facial, sudorese, náusea, hiperventilação, falta de ar, taquicardia e hipotensão." }
+    : { tone: "high", title: "Reação grave", text: "Insuficiência cardíaca aguda, infarto, arritmias, bradicardia, depressão respiratória e hipotensão grave. A intensidade cresce com a quantidade de álcool e com a dose de dissulfiram." };
+  return `${pharmaAldhSvg(drinks)}<div class="pharma-reading tone-${reading.tone}"><strong>${drinks} ${drinks === 1 ? "dose" : "doses"} de álcool: ${escapeHtml(reading.title)}</strong><span>${escapeHtml(reading.text)}</span></div>`;
+}
+
+function renderAddCare(drug) {
+  let left;
+  if (drug.act) {
+    const mu = drug.act.target === "MU";
+    const dose = state.pharma.addDose ?? 70;
+    left = `
+      <div class="pharma-card-head"><h3>${mu ? "Receptor μ" : "Receptor nicotínico"} · ${escapeHtml(drug.name)}</h3><span>${PHARMA_ACT_LABELS[drug.act.type]}</span></div>
+      <div class="pharma-toggles"><button type="button" class="pharma-toggle ${state.pharma.addBg ? "on" : ""}" data-pharma-bg aria-pressed="${Boolean(state.pharma.addBg)}">${mu ? "Já há opioide no receptor (heroína ou metadona)" : "Ainda fumando"}</button></div>
+      <label class="pharma-slider-label" for="pharmaAddDose">Receptores que o remédio ocupa (dose): <strong data-pharma-adddose-label>${dose}%</strong></label>
+      <input id="pharmaAddDose" class="pharma-slider" type="range" min="0" max="100" step="10" value="${dose}" data-pharma-adddose>
+      <div id="pharmaAddView">${renderAddReceptorView(drug)}</div>
+      <p class="pharma-extra">Cada receptor desenhado vale 10%. Escuro: ${mu ? "heroína ou metadona" : "nicotina do cigarro"}; colorido: ${escapeHtml(drug.name.toLowerCase())}. Atividade do agonista parcial é um valor didático.</p>`;
+  } else if (drug.aldh) {
+    const drinks = state.pharma.drinks ?? 0;
+    left = `
+      <div class="pharma-card-head"><h3>Álcool e dissulfiram</h3><span>inibidor da ALDH</span></div>
+      <label class="pharma-slider-label" for="pharmaDrinks">Doses de álcool: <strong data-pharma-drinks-label>${drinks}</strong></label>
+      <input id="pharmaDrinks" class="pharma-slider" type="range" min="0" max="5" step="1" value="${drinks}" data-pharma-drinks>
+      <div id="pharmaAldhView">${renderAddAldhView()}</div>
+      <p class="pharma-extra">Reação conforme o Maudsley (tabela 4.8); os limites entre leve e grave aqui são didáticos.</p>`;
+  } else {
+    left = `
+      <div class="pharma-card-head"><h3>Como age · ${escapeHtml(drug.name)}</h3><span>${escapeHtml(pharmaDrugGroup(drug))}</span></div>
+      <p class="pharma-extra">${escapeHtml(drug.how || drug.extra)}</p>
+      <p class="pharma-extra">Não age como agonista nem antagonista nos receptores μ: o receptor não muda com ele.</p>`;
+  }
+  const use = drug.use.map(([label, text]) => `<tr><th scope="row">${escapeHtml(label)}</th><td>${escapeHtml(text)}</td></tr>`).join("");
+  return `
+    <div class="pharma-chips" role="group" aria-label="Dependência química">${pharmaDrugChips(drug.id)}</div>
+    <div class="pharma-grid">
+      <section class="pharma-card">${left}</section>
+      <section class="pharma-card">
+        <h3>Como usar</h3>
+        <table class="pharma-table add-use"><tbody>${use}</tbody></table>
+        ${pharmaStudyLink(drug)}
+      </section>
+    </div>`;
+}
+
+function pharmaAddCues(drug) {
+  const r = drug.receptors;
+  const cues = [];
+  if (drug.act) cues.push(`${PHARMA_ACT_LABELS[drug.act.type]} ${drug.act.target === "MU" ? "do receptor μ" : "do receptor nicotínico"}`);
+  if (r.ALDH >= 3) cues.push("bloqueia a ALDH: dissulfiram");
+  if (r.GLU >= 3) cues.push("glutamato e GABA: acamprosato");
+  else if (r.GLU >= 2) cues.push("glutamato e GABA, mais fraco: topiramato");
+  if (r.DANE >= 3) cues.push("recaptação de dopamina e noradrenalina: bupropiona");
+  return `${cues.length ? `Pistas: ${cues.join("; ")}. ` : ""}${drug.extra}`;
+}
+
+/* "Qual destes é agonista parcial (total, antagonista)?" entre os remédios que agem num receptor. */
+function pharmaActionQuestion(drugs) {
+  const acting = drugs.filter((drug) => drug.act);
+  const type = pharmaShuffle(["full", "partial", "antagonist"])[0];
+  const right = pharmaShuffle(acting.filter((drug) => drug.act.type === type))[0];
+  const wrong = pharmaShuffle(acting.filter((drug) => drug.act.type !== type)).slice(0, 3);
+  if (!right || wrong.length < 3) return null;
+  return { type: "action", act: type, correct: right.id, options: pharmaShuffle([right, ...wrong]).map((drug) => drug.id) };
+}
+
 /* ---------- Antidepressivos: sistemas de serotonina, noradrenalina e dopamina ---------- */
 
 const PHARMA_SYSTEM_COLORS = { serotonin: "#b0418a", noradrenaline: "#0072b2", dopamine: "#d55e00" };
@@ -1040,6 +1289,7 @@ function renderPharmaPaths() {
   if (pharmaIsAnxiolytic()) return renderAnxMech(drug);
   if (pharmaIsStimulant()) return renderStimMech(drug);
   if (pharmaIsDementia()) return renderDemMech(drug);
+  if (pharmaIsAddiction()) return renderAddMech(drug);
   const antidepressant = pharmaIsAntidepressant();
   let figure;
   let rows;
@@ -1348,6 +1598,7 @@ function renderPharmaSynapse() {
   if (pharmaIsAnxiolytic()) return renderAnxKinetics(drug);
   if (pharmaIsStimulant()) return renderStimDay(drug);
   if (pharmaIsDementia()) return renderDemCare(drug);
+  if (pharmaIsAddiction()) return renderAddCare(drug);
   if (drug.mech) return renderAdSynapse(drug);
   const partial = pharmaIsPartial(drug, "D2");
   return `
@@ -1455,12 +1706,17 @@ function newPharmaQuiz() {
   const anxiolytic = pharmaIsAnxiolytic();
   const stimulant = pharmaIsStimulant();
   const dementia = pharmaIsDementia();
+  const addiction = pharmaIsAddiction();
   const questions = [];
   let guard = 0;
   while (questions.length < 10 && guard < 300) {
     guard += 1;
     const roll = Math.random();
-    const question = dementia && roll < 0.4
+    const question = addiction && roll < 0.35
+      ? pharmaCaseQuestion()
+      : addiction && roll < 0.5
+      ? pharmaActionQuestion(drugs)
+      : dementia && roll < 0.4
       ? pharmaCaseQuestion()
       : dementia && roll < 0.55
       ? pharmaHalfLifeQuestion(drugs)
@@ -1525,6 +1781,7 @@ function pharmaProfileExplanation(drug) {
   if (pharmaIsAnxiolytic()) return pharmaAnxCues(drug);
   if (pharmaIsStimulant()) return pharmaStimCues(drug);
   if (pharmaIsDementia()) return pharmaDemCues(drug);
+  if (pharmaIsAddiction()) return pharmaAddCues(drug);
   if (drug.mech) return pharmaAdCues(drug);
   const r = drug.receptors;
   const cues = [];
@@ -1560,10 +1817,12 @@ function renderPharmaQuiz() {
   const effect = question.effect ? pharmaClass().effects.find((item) => item.id === question.effect) : null;
   const profilePrompt = pharmaIsStabilizer()
     ? "Este perfil de mecanismos é de qual estabilizador?"
-    : pharmaIsAnxiolytic() || pharmaIsStimulant() || pharmaIsDementia() ? "Este perfil de alvos é de qual remédio?"
+    : pharmaIsAnxiolytic() || pharmaIsStimulant() || pharmaIsDementia() || pharmaIsAddiction() ? "Este perfil de alvos é de qual remédio?"
     : pharmaIsAntidepressant() ? "Este perfil de alvos é de qual antidepressivo?" : "Este perfil de receptores é de qual antipsicótico?";
   const prompt = question.type === "case"
     ? question.prompt
+    : question.type === "action"
+    ? `Qual destes é ${PHARMA_ACT_LABELS[question.act]} no receptor?`
     : question.type === "profile"
     ? profilePrompt
     : question.type === "level"
@@ -1585,6 +1844,8 @@ function renderPharmaQuiz() {
     ? ""
     : question.type === "case"
     ? question.explain
+    : question.type === "action"
+    ? `${question.options.map((id) => `${pharmaDrug(id).name}: ${PHARMA_ACT_LABELS[pharmaDrug(id).act.type]} ${pharmaDrug(id).act.target === "MU" ? "μ" : "nicotínico"}`).join("; ")}.`
     : question.type === "profile"
     ? pharmaProfileExplanation(correct)
     : question.type === "level"
@@ -1624,6 +1885,7 @@ const PHARMA_HUB = {
   ansioliticos: { tag: "GABA", color: "#009e73", text: "Meia-vida · retirada · equivalência" },
   estimulantes: { tag: "DA", color: "#d55e00", text: "Formulações ao longo do dia" },
   demencias: { tag: "ACh", color: "#8a6a00", text: "Anticolinesterásicos e memantina · indicação e pulso" },
+  dependencia: { tag: "μ", color: "#5a4fcf", text: "Álcool, opioides e tabaco · agonista total, parcial e antagonista" },
 };
 
 function renderPharmaHub() {
@@ -1677,7 +1939,7 @@ function renderPharmaPanel() {
       </div>
       <div class="pharma-switches">
         <div class="segmented pharma-modes" role="group" aria-label="Modo">
-          ${modeButton("paths", pharmaIsStabilizer() ? "Mecanismos e fases" : pharmaIsAnxiolytic() || pharmaIsStimulant() || pharmaIsDementia() ? "Mecanismos e usos" : pharmaIsAntidepressant() ? "Sistemas e alvos" : "Vias e receptores")}${modeButton("compare", "Comparar")}${modeButton("synapse", pharmaIsStabilizer() ? "Nível e interações" : pharmaIsAnxiolytic() ? "Meia-vida e retirada" : pharmaIsStimulant() ? "Ao longo do dia" : pharmaIsDementia() ? "Indicação e segurança" : "Sinapse")}${modeButton("quiz", "Treino")}
+          ${modeButton("paths", pharmaIsStabilizer() ? "Mecanismos e fases" : pharmaIsAnxiolytic() || pharmaIsStimulant() || pharmaIsDementia() || pharmaIsAddiction() ? "Mecanismos e usos" : pharmaIsAntidepressant() ? "Sistemas e alvos" : "Vias e receptores")}${modeButton("compare", "Comparar")}${modeButton("synapse", pharmaIsStabilizer() ? "Nível e interações" : pharmaIsAnxiolytic() ? "Meia-vida e retirada" : pharmaIsStimulant() ? "Ao longo do dia" : pharmaIsDementia() ? "Indicação e segurança" : pharmaIsAddiction() ? "Receptor e uso" : "Sinapse")}${modeButton("quiz", "Treino")}
         </div>
       </div>
     </header>
@@ -1702,7 +1964,7 @@ function openPharmaStudy(drug) {
   const panel = document.querySelector("#pharmaPanel");
   if (!panel) return;
   panel.addEventListener("click", (event) => {
-    const target = event.target.closest("[data-pharma-drug], [data-pharma-class], [data-pharma-mode], [data-pharma-study], [data-pharma-answer], [data-pharma-quiz], [data-pharma-review], [data-pharma-inter], [data-pharma-stop], [data-pharma-repeat], [data-pharma-hub], [data-pharma-quick], [data-pharma-dtype], [data-pharma-dstage]");
+    const target = event.target.closest("[data-pharma-drug], [data-pharma-class], [data-pharma-mode], [data-pharma-study], [data-pharma-answer], [data-pharma-quiz], [data-pharma-review], [data-pharma-inter], [data-pharma-stop], [data-pharma-repeat], [data-pharma-hub], [data-pharma-quick], [data-pharma-dtype], [data-pharma-dstage], [data-pharma-bg]");
     if (!target) return;
     const data = target.dataset;
     if (data.pharmaHub !== undefined) state.pharma.view = "hub";
@@ -1716,7 +1978,8 @@ function openPharmaStudy(drug) {
       setPharmaClass(data.pharmaClass);
       state.pharma.view = "class";
       state.pharma.mode = "paths";
-    } else if (data.pharmaDtype) state.pharma.dtype = data.pharmaDtype;
+    } else if (data.pharmaBg !== undefined) state.pharma.addBg = !state.pharma.addBg;
+    else if (data.pharmaDtype) state.pharma.dtype = data.pharmaDtype;
     else if (data.pharmaDstage) state.pharma.dstage = data.pharmaDstage;
     else if (data.pharmaStop !== undefined) state.pharma.stopped = !state.pharma.stopped;
     else if (data.pharmaRepeat !== undefined) state.pharma.repeat = !state.pharma.repeat;
@@ -1753,6 +2016,26 @@ function openPharmaStudy(drug) {
       if (view) view.innerHTML = renderStimDayView(pharmaDrug(state.pharma.drug));
       const label = panel.querySelector("[data-pharma-dose-label]");
       if (label) label.textContent = pharmaClock(state.pharma.doseTime);
+      panel.dataset.renderedHtml = "";
+      savePharmaState();
+      return;
+    }
+    if (event.target.matches("[data-pharma-adddose]")) {
+      state.pharma.addDose = Number(event.target.value);
+      const view = panel.querySelector("#pharmaAddView");
+      if (view) view.innerHTML = renderAddReceptorView(pharmaDrug(state.pharma.drug));
+      const label = panel.querySelector("[data-pharma-adddose-label]");
+      if (label) label.textContent = `${state.pharma.addDose}%`;
+      panel.dataset.renderedHtml = "";
+      savePharmaState();
+      return;
+    }
+    if (event.target.matches("[data-pharma-drinks]")) {
+      state.pharma.drinks = Number(event.target.value);
+      const view = panel.querySelector("#pharmaAldhView");
+      if (view) view.innerHTML = renderAddAldhView();
+      const label = panel.querySelector("[data-pharma-drinks-label]");
+      if (label) label.textContent = String(state.pharma.drinks);
       panel.dataset.renderedHtml = "";
       savePharmaState();
       return;

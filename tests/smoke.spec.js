@@ -406,7 +406,7 @@ test("plano com mais de uma prova e boas-vindas para quem chega", async ({ page 
 test("simulador de fármacos: vias, receptores, comparar e questões do remédio", async ({ page }) => {
   const errors = await openSite(page);
   await goTab(page, "pharma");
-  await expect(page.locator(".pharma-hub-card")).toHaveCount(6);
+  await expect(page.locator(".pharma-hub-card")).toHaveCount(7);
   await page.locator('[data-pharma-class="antipsicoticos"]').click();
   await expect(page.locator("#pharmaPanel .pharma-brain")).toBeVisible();
   await page.locator('[data-pharma-drug="haloperidol"]').click();
@@ -558,6 +558,31 @@ test("simulador de fármacos: demências (vias, indicação, pulso e treino)", a
   await page.locator('[data-pharma-inter="cyp"]').click();
   await page.locator('[data-pharma-drug="rivastigmina-oral"]').click();
   await expect(page.locator("#pharmaPulseView")).toContainText("Sem interação relevante");
+  await page.locator('[data-pharma-mode="quiz"]').click();
+  await page.locator("[data-pharma-answer]").first().click();
+  await expect(page.locator(".pharma-feedback")).toBeVisible();
+  expect(errors).toEqual([]);
+});
+test("simulador de fármacos: dependência química (receptor, dissulfiram e treino)", async ({ page }) => {
+  const errors = await openSite(page);
+  await goTab(page, "pharma");
+  await page.locator('[data-pharma-class="dependencia"]').click();
+  await page.locator('[data-pharma-drug="dissulfiram"]').click();
+  await expect(page.locator("#pharmaPanel .pharma-paths")).toContainText("ALDH");
+  await page.locator('[data-pharma-mode="synapse"]').click();
+  await page.locator("[data-pharma-drinks]").evaluate((input) => {
+    input.value = "4";
+    input.dispatchEvent(new Event("input", { bubbles: true }));
+  });
+  await expect(page.locator("#pharmaAldhView")).toContainText("Reação grave");
+  await page.locator('[data-pharma-drug="buprenorfina"]').click();
+  await page.locator("[data-pharma-bg]").click();
+  await expect(page.locator("#pharmaAddView")).toContainText("Abstinência precipitada");
+  await page.locator("[data-pharma-adddose]").evaluate((input) => {
+    input.value = "0";
+    input.dispatchEvent(new Event("input", { bubbles: true }));
+  });
+  await expect(page.locator("[data-pharma-adddose-label]")).toHaveText("0%");
   await page.locator('[data-pharma-mode="quiz"]').click();
   await page.locator("[data-pharma-answer]").first().click();
   await expect(page.locator(".pharma-feedback")).toBeVisible();

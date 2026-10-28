@@ -7540,3 +7540,99 @@ body.theme-dark .pharma-chip.on {
 .dem-agent.is-current {
   border-width: 2px;
 }
+/* Dependência química: via da recompensa, receptores ocupados e metabolismo do álcool. */
+.add-reward {
+  fill: none;
+  stroke: #0b3b40;
+  stroke-width: 6;
+  stroke-linecap: round;
+  opacity: 0.55;
+}
+
+.add-reward-node {
+  fill: var(--panel);
+  stroke: #0b3b40;
+  stroke-width: 3;
+}
+
+.add-rec path {
+  fill: var(--panel);
+  stroke: var(--line);
+  stroke-width: 2;
+}
+
+.add-rec.bg path {
+  stroke: #4a5a5c;
+}
+
+.add-rec.bg circle {
+  fill: #4a5a5c;
+}
+
+.add-rec.drug path {
+  stroke: #0b6b70;
+}
+
+.add-rec.drug.full circle {
+  fill: #0b6b70;
+}
+
+.add-rec.drug.partial circle {
+  fill: #e69f00;
+}
+
+.add-rec.drug.ant circle {
+  fill: var(--panel);
+  stroke: #c2410c;
+  stroke-width: 3;
+}
+
+.add-bar-bg {
+  fill: var(--panel-soft);
+  stroke: var(--line);
+}
+
+.add-bar {
+  fill: #0b6b70;
+}
+
+.add-bar.high {
+  fill: #c2410c;
+}
+
+.add-step {
+  fill: var(--panel-soft);
+  stroke: var(--line);
+  stroke-width: 2;
+}
+
+.add-step.toxic {
+  fill: #c2410c;
+  fill-opacity: var(--k);
+  stroke: #c2410c;
+}
+
+.add-step.faint {
+  opacity: 0.4;
+}
+
+.add-arrow {
+  stroke: var(--muted);
+  stroke-width: 3;
+  fill: none;
+}
+
+.add-arrow.blocked {
+  stroke-dasharray: 4 5;
+}
+
+.add-x {
+  stroke: #c2410c;
+  stroke-width: 4;
+  stroke-linecap: round;
+}
+
+.add-use th {
+  width: 30%;
+  vertical-align: top;
+}
