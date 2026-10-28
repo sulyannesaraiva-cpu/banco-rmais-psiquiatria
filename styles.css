@@ -7666,3 +7666,171 @@ body.theme-dark .pharma-chip.on {
   font-size: 14px;
   line-height: 1.45;
 }
+/* Fontes de cada tela: botão no cabeçalho e lista (gaveta à direita no computador, de baixo no celular). */
+.pharma-head-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.pharma-sources-btn {
+  min-height: 32px;
+  padding: 0 12px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--accent, #0b6b70);
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.pharma-sources-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  background: rgba(16, 38, 45, 0.35);
+}
+
+.pharma-sources {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 81;
+  width: min(440px, 100vw);
+  box-sizing: border-box;
+  overflow-y: auto;
+  padding: 18px 20px 24px;
+  background: var(--panel);
+  color: var(--ink);
+  box-shadow: -10px 0 30px rgba(16, 38, 45, 0.18);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pharma-sources-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.pharma-sources-head div {
+  display: grid;
+  gap: 2px;
+}
+
+.pharma-sources-head strong {
+  font-family: Manrope, Inter, sans-serif;
+  font-size: 18px;
+}
+
+.pharma-sources-head span,
+.pharma-sources-legend {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.pharma-ref-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 8px;
+}
+
+.pharma-ref {
+  display: grid;
+  gap: 4px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.pharma-ref.didactic {
+  border-color: #f3dcae;
+  background: #fffaf0;
+}
+
+.pharma-ref div {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.pharma-ref strong {
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.pharma-ref em {
+  flex-shrink: 0;
+  align-self: flex-start;
+  padding: 2px 8px;
+  border-radius: 6px;
+  background: var(--accent-soft);
+  color: #0b5257;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.pharma-ref.didactic em {
+  background: #fdf1d8;
+  color: #6b4300;
+}
+
+.pharma-ref span,
+.pharma-ref small {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.pharma-ref-full {
+  margin: 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 6px;
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.pharma-review {
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: #fdf1d8;
+  color: #4a3200;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.pharma-review.done {
+  background: var(--accent-soft);
+  color: #0b3b40;
+}
+
+@media (max-width: 860px) {
+  .pharma-sources {
+    top: auto;
+    left: 0;
+    width: 100%;
+    max-height: 82vh;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 -10px 30px rgba(16, 38, 45, 0.18);
+  }
+}
+/* Cartões "didático" têm fundo claro fixo: texto escuro também no tema escuro. */
+.pharma-ref.didactic,
+.pharma-ref.didactic strong {
+  color: #4a3200;
+}
+
+.pharma-ref.didactic span,
+.pharma-ref.didactic small {
+  color: #6b4300;
+}

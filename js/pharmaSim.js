@@ -47,6 +47,9 @@ state.pharma = (() => {
   }
 })();
 
+/* A lista de fontes sempre começa fechada. */
+state.pharma.sourcesOpen = false;
+
 function savePharmaState() {
   try {
     localStorage.setItem(PHARMA_KEY, JSON.stringify(state.pharma));
@@ -2057,6 +2060,49 @@ function renderPharmaQuiz() {
     </section>`;
 }
 
+/* ---------- Fontes de cada tela (data/sources.js) ---------- */
+
+function pharmaRefs(cls, mode) {
+  const byClass = (window.PHARMA_REFS || {})[cls.id] || {};
+  /* Comparar usa os mesmos dados da primeira tela. */
+  return byClass[mode] || byClass[mode === "compare" ? "paths" : mode] || byClass.paths || [];
+}
+
+function pharmaSourceText(src) {
+  const source = (window.PHARMA_SOURCES || {})[src];
+  if (!source) return "";
+  return `${source.full}${source.pmid ? ` PMID ${source.pmid}.` : ""}`;
+}
+
+function renderPharmaSources(cls, mode, modeName) {
+  const refs = pharmaRefs(cls, mode);
+  const review = (window.PHARMA_REVIEW || {})[cls.id];
+  const used = [...new Set(refs.map((ref) => ref.src))];
+  const items = refs.map((ref) => {
+    const source = (window.PHARMA_SOURCES || {})[ref.src] || { short: ref.src };
+    const didactic = ref.kind === "didatico";
+    return `
+      <li class="pharma-ref ${didactic ? "didactic" : ""}">
+        <div><strong>${escapeHtml(ref.about)}</strong><em>${didactic ? "Didático" : "Fonte"}</em></div>
+        <span>${escapeHtml(source.short)}${ref.where ? ` · ${escapeHtml(ref.where)}` : ""}</span>
+        ${ref.note ? `<small>${escapeHtml(ref.note)}</small>` : ""}
+      </li>`;
+  }).join("");
+  return `
+    <div class="pharma-sources-backdrop" data-pharma-sources-close></div>
+    <section class="pharma-sources" role="dialog" aria-modal="true" aria-label="Fontes desta tela">
+      <div class="pharma-sources-head">
+        <div><strong>De onde vem cada dado</strong><span>${escapeHtml(cls.label)} · ${escapeHtml(modeName || "")}</span></div>
+        <button type="button" class="link-btn" data-pharma-sources-close aria-label="Fechar fontes">Fechar</button>
+      </div>
+      <ul class="pharma-ref-list">${items}</ul>
+      <p class="pharma-sources-legend"><b>Fonte</b>: o valor vem da fonte citada (às vezes resumido em níveis). <b>Didático</b>: esquema ou modelo nosso, conferido com a fonte, mas que não é um dado publicado.</p>
+      <h4>Referências</h4>
+      <ol class="pharma-ref-full">${used.map((src) => `<li>${escapeHtml(pharmaSourceText(src))}</li>`).join("")}</ol>
+      <div class="pharma-review ${review ? "done" : ""}">${review ? `Revisado por ${escapeHtml(review.by)} em ${escapeHtml(review.date)}.` : "Dados conferidos com as fontes ao montar a tela. Revisão humana ainda pendente."}</div>
+    </section>`;
+}
+
 /* ---------- Entrada da área Simular: classes em cartões ---------- */
 
 const PHARMA_HUB = {
@@ -2112,21 +2158,34 @@ function renderPharmaPanel() {
   const modeButton = (id, label) => `<button type="button" data-pharma-mode="${id}" class="${mode === id ? "active" : ""}" aria-pressed="${mode === id}">${label}</button>`;
   const body = mode === "compare" ? renderPharmaCompare() : mode === "synapse" ? renderPharmaSynapse() : mode === "quiz" ? renderPharmaQuiz() : mode === "depot" ? renderPharmaDepot() : mode === "eps" ? renderPharmaEps() : renderPharmaPaths();
   const cls = pharmaClass();
+  const labels = {
+    paths: pharmaIsStabilizer() ? "Mecanismos e fases" : pharmaIsAnxiolytic() || pharmaIsStimulant() || pharmaIsDementia() || pharmaIsAddiction() ? "Mecanismos e usos" : pharmaIsAntidepressant() ? "Sistemas e alvos" : "Vias e receptores",
+    compare: "Comparar",
+    synapse: pharmaIsStabilizer() ? "Nível e interações" : pharmaIsAnxiolytic() ? "Meia-vida e retirada" : pharmaIsStimulant() ? "Ao longo do dia" : pharmaIsDementia() ? "Indicação e segurança" : pharmaIsAddiction() ? "Receptor e uso" : "Sinapse",
+    depot: "Depósito",
+    eps: "Extrapiramidais",
+    quiz: "Treino",
+  };
+  const refCount = pharmaRefs(cls, mode).length;
   const html = `
     <header class="pharma-head">
       <div>
-        <button type="button" class="link-btn pharma-back" data-pharma-hub>← Classes</button>
+        <div class="pharma-head-top">
+          <button type="button" class="link-btn pharma-back" data-pharma-hub>← Classes</button>
+          ${refCount ? `<button type="button" class="pharma-sources-btn" data-pharma-sources aria-haspopup="dialog">Fontes · ${refCount}</button>` : ""}
+        </div>
         <h2>${escapeHtml(cls.label)}</h2>
         <p>${escapeHtml(cls.tagline)}</p>
       </div>
       <div class="pharma-switches">
         <div class="segmented pharma-modes" role="group" aria-label="Modo">
-          ${modeButton("paths", pharmaIsStabilizer() ? "Mecanismos e fases" : pharmaIsAnxiolytic() || pharmaIsStimulant() || pharmaIsDementia() || pharmaIsAddiction() ? "Mecanismos e usos" : pharmaIsAntidepressant() ? "Sistemas e alvos" : "Vias e receptores")}${modeButton("compare", "Comparar")}${modeButton("synapse", pharmaIsStabilizer() ? "Nível e interações" : pharmaIsAnxiolytic() ? "Meia-vida e retirada" : pharmaIsStimulant() ? "Ao longo do dia" : pharmaIsDementia() ? "Indicação e segurança" : pharmaIsAddiction() ? "Receptor e uso" : "Sinapse")}${hasDepot ? modeButton("depot", "Depósito") + modeButton("eps", "Extrapiramidais") : ""}${modeButton("quiz", "Treino")}
+          ${modeButton("paths", labels.paths)}${modeButton("compare", labels.compare)}${modeButton("synapse", labels.synapse)}${hasDepot ? modeButton("depot", labels.depot) + modeButton("eps", labels.eps) : ""}${modeButton("quiz", labels.quiz)}
         </div>
       </div>
     </header>
     ${body}
-    <p class="pharma-disclaimer">Material didático e simplificado, para estudo. ${escapeHtml(cls.source)} Não usar para prescrição.</p>`;
+    <p class="pharma-disclaimer">Material didático e simplificado, para estudo. ${escapeHtml(cls.source)} Não usar para prescrição.</p>
+    ${state.pharma.sourcesOpen ? renderPharmaSources(cls, mode, labels[mode]) : ""}`;
   if (panel.dataset.renderedHtml !== html) {
     panel.innerHTML = html;
     panel.dataset.renderedHtml = html;
@@ -2146,7 +2205,7 @@ function openPharmaStudy(drug) {
   const panel = document.querySelector("#pharmaPanel");
   if (!panel) return;
   panel.addEventListener("click", (event) => {
-    const target = event.target.closest("[data-pharma-drug], [data-pharma-class], [data-pharma-mode], [data-pharma-study], [data-pharma-answer], [data-pharma-quiz], [data-pharma-review], [data-pharma-inter], [data-pharma-stop], [data-pharma-repeat], [data-pharma-hub], [data-pharma-quick], [data-pharma-dtype], [data-pharma-dstage], [data-pharma-bg], [data-pharma-depot], [data-pharma-depotstop], [data-pharma-eps]");
+    const target = event.target.closest("[data-pharma-drug], [data-pharma-class], [data-pharma-mode], [data-pharma-study], [data-pharma-answer], [data-pharma-quiz], [data-pharma-review], [data-pharma-inter], [data-pharma-stop], [data-pharma-repeat], [data-pharma-hub], [data-pharma-quick], [data-pharma-dtype], [data-pharma-dstage], [data-pharma-bg], [data-pharma-depot], [data-pharma-depotstop], [data-pharma-eps], [data-pharma-sources], [data-pharma-sources-close]");
     if (!target) return;
     const data = target.dataset;
     if (data.pharmaHub !== undefined) state.pharma.view = "hub";
@@ -2160,7 +2219,9 @@ function openPharmaStudy(drug) {
       setPharmaClass(data.pharmaClass);
       state.pharma.view = "class";
       state.pharma.mode = "paths";
-    } else if (data.pharmaEps) state.pharma.eps = data.pharmaEps;
+    } else if (data.pharmaSources !== undefined) state.pharma.sourcesOpen = true;
+    else if (data.pharmaSourcesClose !== undefined) state.pharma.sourcesOpen = false;
+    else if (data.pharmaEps) state.pharma.eps = data.pharmaEps;
     else if (data.pharmaDepot) state.pharma.depot = data.pharmaDepot;
     else if (data.pharmaDepotstop !== undefined) state.pharma.depotStop = !state.pharma.depotStop;
     else if (data.pharmaBg !== undefined) state.pharma.addBg = !state.pharma.addBg;
@@ -2176,7 +2237,10 @@ function openPharmaStudy(drug) {
     } else if (data.pharmaInter) {
       const list = state.pharma.inter || [];
       state.pharma.inter = list.includes(data.pharmaInter) ? list.filter((id) => id !== data.pharmaInter) : [...list, data.pharmaInter];
-    } else if (data.pharmaMode) state.pharma.mode = data.pharmaMode;
+    } else if (data.pharmaMode) {
+      state.pharma.mode = data.pharmaMode;
+      state.pharma.sourcesOpen = false;
+    }
     else if (data.pharmaStudy) {
       openPharmaStudy(pharmaDrug(data.pharmaStudy));
       return;
@@ -2267,6 +2331,12 @@ function openPharmaStudy(drug) {
     if (view) view.innerHTML = renderPharmaSynapseView(pharmaDrug(state.pharma.drug));
     panel.dataset.renderedHtml = "";
     savePharmaState();
+  });
+  /* Esc fecha a lista de fontes. */
+  document.addEventListener("keydown", (event) => {
+    if (event.key !== "Escape" || !state.pharma.sourcesOpen) return;
+    state.pharma.sourcesOpen = false;
+    renderPharmaPanel();
   });
   panel.addEventListener("change", (event) => {
     if (event.target.matches('[data-pharma-eq="drug"]')) {

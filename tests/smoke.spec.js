@@ -602,6 +602,10 @@ test("simulador de fármacos: complementos (depósito, hipnóticos novos e escet
   await page.locator('[data-pharma-mode="eps"]').click();
   await page.locator('[data-pharma-eps="discinesia"]').click();
   await expect(page.locator("#pharmaPanel .eps-steps")).toContainText("Suspender o anticolinérgico");
+  await page.locator("[data-pharma-sources]").click();
+  await expect(page.locator(".pharma-sources")).toContainText("tabela 1.28");
+  await page.locator(".pharma-sources [data-pharma-sources-close]").click();
+  await expect(page.locator(".pharma-sources")).toHaveCount(0);
   await page.locator("[data-pharma-hub]").click();
   await page.locator('[data-pharma-class="ansioliticos"]').click();
   await page.locator('[data-pharma-drug="suvorexanto"]').click();
