@@ -651,6 +651,24 @@ test("simulador de fármacos: entre classes (por efeito e interações)", async 
   await expect(page.locator("#pharmaPanel")).toContainText("Escolha pelo menos dois");
   expect(errors).toEqual([]);
 });
+test("atlas de vias: núcleos da base (cenários, seguir o sinal e fontes)", async ({ page }) => {
+  const errors = await openSite(page);
+  await goTab(page, "pharma");
+  await page.locator('[data-sim-section="atlas"]').click();
+  await page.locator('[data-atlas-module="nucleos-base"]').click();
+  await expect(page.locator("#pharmaPanel .atlas-svg")).toBeVisible();
+  await page.locator('[data-atlas-scenario="parkinson"]').click();
+  await expect(page.locator("#pharmaPanel")).toContainText("bradicinesia");
+  await page.locator('[data-atlas-step="0"]').click();
+  await expect(page.locator(".atlas-step")).toContainText("passo 1 de 6");
+  await page.locator("[data-pharma-sources]").click();
+  await expect(page.locator(".pharma-sources")).toContainText("Clinical Neurology for Psychiatrists");
+  await page.locator(".pharma-sources [data-pharma-sources-close]").click();
+  await page.locator('[data-atlas-scenario="antipsicotico"]').click();
+  await page.locator("[data-atlas-link]").click();
+  await expect(page.locator("#pharmaPanel .eps-steps")).toBeVisible();
+  expect(errors).toEqual([]);
+});
 test("navegação por áreas: Hoje, Estudar (com seletor), Simular e Você", async ({ page }) => {
   const errors = await openSite(page);
   const mobile = await page.evaluate(() => isMobileLayout());

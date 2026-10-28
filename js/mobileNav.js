@@ -66,6 +66,7 @@ function renderStudySubnav() {
     /* Tocar em Simular já estando lá volta para a lista de classes. */
     if (key === "simulate" && state.activeTab === "pharma" && state.pharma) {
       state.pharma.view = "hub";
+      if (state.atlas) state.atlas.module = null;
       if (typeof savePharmaState === "function") savePharmaState();
       render();
       window.scrollTo(0, 0);

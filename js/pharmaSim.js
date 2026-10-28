@@ -2389,17 +2389,21 @@ function renderPharmaHub() {
         <span aria-hidden="true" class="pharma-hub-arrow">›</span>
       </button>`;
   }).join("");
-  return `
+  const atlas = state.pharma.section === "atlas" && typeof renderAtlasHome === "function";
+  const section = (id, label) => `<button type="button" class="${(atlas ? "atlas" : "drugs") === id ? "active" : ""}" data-sim-section="${id}" aria-pressed="${(atlas ? "atlas" : "drugs") === id}">${label}</button>`;
+  const head = `
     <header class="pharma-head pharma-hub-head">
       <div>
         <h2>Simular</h2>
-        <p>Explore como o mecanismo de cada remédio explica o efeito e os efeitos colaterais.</p>
+        <p>${atlas ? "Siga os circuitos do cérebro e veja o que muda quando uma estrutura falha." : "Explore como o mecanismo de cada remédio explica o efeito e os efeitos colaterais."}</p>
       </div>
       <div class="segmented pharma-sections" role="group" aria-label="Seção">
-        <button type="button" class="active" aria-pressed="true">Fármacos</button>
+        ${section("drugs", "Fármacos")}${section("atlas", "Vias")}
         <button type="button" disabled title="Em breve">Pacientes <span class="pharma-soon">em breve</span></button>
       </div>
-    </header>
+    </header>`;
+  if (atlas) return head + renderAtlasHome();
+  return `${head}
     <div class="pharma-hub-list">${cards}</div>
     <button type="button" class="pharma-hub-card cross" data-pharma-cross-open style="--c:#0b3b40">
       <span class="pharma-hub-tag">⇄</span>
@@ -2414,7 +2418,8 @@ function renderPharmaPanel() {
   const panel = document.querySelector("#pharmaPanel");
   if (!panel || !window.PHARMA_SIM) return;
   if (state.pharma.view !== "class") {
-    const hubHtml = state.pharma.view === "cross" ? renderPharmaCross() : renderPharmaHub();
+    const atlasHtml = state.pharma.section === "atlas" && typeof renderAtlas === "function" ? renderAtlas() : null;
+    const hubHtml = atlasHtml || (state.pharma.view === "cross" ? renderPharmaCross() : renderPharmaHub());
     if (panel.dataset.renderedHtml !== hubHtml) {
       panel.innerHTML = hubHtml;
       panel.dataset.renderedHtml = hubHtml;

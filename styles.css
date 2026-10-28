@@ -8098,3 +8098,176 @@ body.theme-dark .pharma-chip.on {
   font-size: 12px;
   line-height: 1.4;
 }
+/* Atlas de vias: entrada, circuito e legenda. */
+.atlas-group {
+  margin: 14px 0 8px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.pharma-hub-card.soon {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.atlas-soon {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.atlas-soon span {
+  padding: 7px 11px;
+  border: 1px dashed var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.atlas-grid {
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+}
+
+.atlas-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.atlas-edge {
+  fill: none;
+  stroke-linecap: round;
+  transition: opacity 0.2s, stroke-width 0.2s;
+}
+
+.atlas-edge.dim {
+  opacity: 0.15;
+}
+
+.atlas-edge.lit {
+  filter: drop-shadow(0 0 4px rgba(242, 181, 68, 0.9));
+}
+
+.atlas-edge.blocked {
+  stroke-dasharray: 3 5;
+}
+
+.atlas-node rect {
+  fill: var(--panel-soft);
+  stroke: #0b6b70;
+  stroke-width: 2;
+}
+
+.atlas-node.up rect {
+  fill: #fde8dd;
+  stroke: #c2410c;
+  stroke-width: 3;
+}
+
+.atlas-node.down rect {
+  fill: #e9f0f0;
+  stroke: #9fb3b6;
+  stroke-dasharray: 5 4;
+}
+
+.atlas-node.lesion rect {
+  fill: #2b2b2b;
+  stroke: #c2410c;
+  stroke-width: 3;
+}
+
+.atlas-node-label {
+  fill: var(--ink);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.atlas-node.up .atlas-node-label,
+.atlas-node.down .atlas-node-label {
+  fill: #10262d;
+}
+
+.atlas-node.lesion .atlas-node-label {
+  fill: #ffffff;
+}
+
+.atlas-node-sub {
+  fill: var(--muted);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.atlas-node.up .atlas-node-sub {
+  fill: #a3360a;
+}
+
+.atlas-node.down .atlas-node-sub {
+  fill: #4f6469;
+}
+
+.atlas-node.lesion .atlas-node-sub {
+  fill: #f0a37b;
+}
+
+.atlas-edge-label {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.atlas-block circle {
+  fill: #c2410c;
+}
+
+.atlas-block text {
+  fill: #ffffff;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.atlas-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.atlas-legend i {
+  display: inline-block;
+  width: 18px;
+  height: 4px;
+  margin-right: 6px;
+  border-radius: 2px;
+  vertical-align: middle;
+}
+
+.atlas-trace {
+  width: 100%;
+  margin-top: 6px;
+}
+
+.atlas-step .atlas-step-actions button {
+  border-color: var(--line);
+  color: var(--ink);
+}
+
+.atlas-step .atlas-step-actions button.next {
+  border-color: #f2b544;
+  color: #10262d;
+}
+
+.atlas-link {
+  align-self: flex-start;
+  margin: 2px 0 8px;
+}
+
+@media (max-width: 860px) {
+  .atlas-grid {
+    grid-template-columns: 1fr;
+  }
+}

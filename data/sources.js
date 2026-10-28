@@ -52,6 +52,10 @@ window.PHARMA_SOURCES = {
     short: "Bula do Circadin",
     full: "Circadin 2 mg prolonged-release tablets: Summary of Product Characteristics (citada no Maudsley 15ª ed.).",
   },
+  kaufman: {
+    short: "Clinical Neurology for Psychiatrists",
+    full: "Kaufman DM et al. Kaufman's Clinical Neurology for Psychiatrists. Elsevier. Cap. 18 (Involuntary Movement Disorders).",
+  },
   curadoria: {
     short: "Curadoria do site",
     full: "Esquemas, modelos e casos feitos para este site a partir das fontes citadas na mesma tela. Não são dados publicados.",
@@ -150,6 +154,17 @@ window.PHARMA_REFS = {
     ],
     quiz: [
       { about: "Casos de conduta", src: "curadoria", where: "redigidos a partir do cap. 6 do Maudsley", kind: "didatico" },
+    ],
+  },
+  "atlas-nucleos-base": {
+    paths: [
+      { about: "Estruturas dos núcleos da base e vias direta (D1) e indireta (D2, pelo pálido externo e subtalâmico) até o pálido interno, tálamo e córtex", src: "kaufman", where: "cap. 18, \"The basal ganglia\" e figura 18-1", kind: "fonte" },
+      { about: "Parkinson: falta de dopamina e mais inibição das projeções tálamo-corticais", src: "kaufman", where: "cap. 18", kind: "fonte" },
+      { about: "Huntington: degeneração dos neurônios GABA do estriado e atrofia do caudado", src: "kaufman", where: "cap. 18", kind: "fonte" },
+      { about: "Hemibalismo por lesão do subtalâmico contralateral", src: "kaufman", where: "cap. 18", kind: "fonte" },
+      { about: "Bloqueio de D2 e parkinsonismo; ocupação de ~78%", src: "kapur2000", where: "estudo com PET", kind: "fonte" },
+      { about: "Atividade de cada estrutura nos cenários e espessura das setas", src: "curadoria", where: "modelo clássico de vias direta e indireta, simplificado", kind: "didatico" },
+      { about: "Desenho do circuito", src: "curadoria", where: "esquema não está em escala nem em posição anatômica", kind: "didatico" },
     ],
   },
   dependencia: {
