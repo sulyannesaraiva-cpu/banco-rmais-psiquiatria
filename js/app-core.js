@@ -392,6 +392,7 @@ const el = {
     activity: document.querySelector("#activityPanel"),
     history: document.querySelector("#historyPanel"),
     exams: document.querySelector("#examsPanel"),
+    pharma: document.querySelector("#pharmaPanel"),
   },
   topicPanelSearch: document.querySelector("#topicPanelSearch"),
   topicChecklist: document.querySelector("#topicChecklist"),

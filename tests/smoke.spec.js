@@ -398,3 +398,22 @@ test("plano com mais de uma prova e boas-vindas para quem chega", async ({ page 
   expect([...new Set(plan.exams)].sort()).toEqual(["ENARE", "SES-DF"]);
   expect(errors).toEqual([]);
 });
+
+test("simulador de fármacos: vias, receptores, comparar e questões do remédio", async ({ page }) => {
+  const errors = await openSite(page);
+  await goTab(page, "pharma");
+  await expect(page.locator("#pharmaPanel .pharma-brain")).toBeVisible();
+  await page.locator('[data-pharma-drug="haloperidol"]').click();
+  await expect(page.locator("#pharmaPanel .pharma-paths")).toContainText("Parkinsonismo: risco alto");
+  await page.locator('[data-pharma-drug="aripiprazol"]').click();
+  await expect(page.locator("#pharmaPanel .pharma-receptors")).toContainText("agonista parcial");
+  await page.locator('[data-pharma-mode="compare"]').click();
+  await page.locator('[data-pharma-compare="a"]').selectOption("olanzapina");
+  await page.locator('[data-pharma-compare="b"]').selectOption("aripiprazol");
+  await expect(page.locator("#pharmaPanel .pharma-why")).toContainText("Ganho de peso");
+  await page.locator('[data-pharma-mode="paths"]').click();
+  await page.locator('[data-pharma-drug="clozapina"]').click();
+  await page.locator("[data-pharma-study]").click();
+  await expect(page.locator("#questionSearchInput")).toHaveValue("clozapina");
+  expect(errors).toEqual([]);
+});
