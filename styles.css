@@ -6322,3 +6322,37 @@ body.theme-dark .pharma-chip.on {
     margin-top: -6px;
   }
 }
+/* Seletor Estudo | Prática clínica (leva ao site de escalas e exame psíquico). */
+.pq-switch {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+  margin: -6px 0 16px;
+  padding: 4px;
+  border-radius: 12px;
+  background: var(--accent-soft);
+}
+
+.pq-switch a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 36px;
+  border-radius: 9px;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.pq-switch a[aria-current="page"] {
+  background: var(--panel);
+  color: var(--accent-strong);
+  font-weight: 700;
+  box-shadow: 0 1px 2px rgba(16, 38, 45, 0.12);
+}
+
+.sidebar-collapsed .pq-switch {
+  display: none;
+}

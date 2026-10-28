@@ -6,7 +6,7 @@
    Fica desligado enquanto NEW_SITE_URL estiver vazio. Depois de um tempo, o endereço antigo
    passa a redirecionar direto (configuração na Vercel) e este arquivo pode sair. */
 
-const NEW_SITE_URL = "";
+const NEW_SITE_URL = "https://www.psiquiatriaemquestao.com.br/";
 const OLD_SITE_HOST = "banco-rmais-psiquiatria.vercel.app";
 const DOMAIN_MOVE_SNOOZE_KEY = "banco-rmais-domain-move-snooze";
 const DOMAIN_MOVE_SNOOZE_MS = 3 * 24 * 60 * 60 * 1000;
