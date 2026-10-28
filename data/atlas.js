@@ -13,7 +13,7 @@ window.ATLAS = {
     { id: "frontoestriatais", tag: "CPF", color: "#d55e00", title: "Circuitos frontoestriatais", text: "Dorsolateral · orbitofrontal · cingulado anterior", ready: true },
     { id: "limbico", tag: "Lb", color: "#b0418a", title: "Sistema límbico e Papez", text: "Memória · emoção · Korsakoff", ready: true },
     { id: "neurotransmissores", tag: "DA", color: "#0b6b70", title: "Vias de neurotransmissores", text: "Dopamina, serotonina, noradrenalina, acetilcolina, histamina, orexina", ready: true },
-    { id: "hha", tag: "HHA", color: "#009e73", title: "Eixo hipotálamo-hipófise-adrenal", text: "Estresse · cortisol · depressão" },
+    { id: "hha", tag: "HHA", color: "#009e73", title: "Eixo hipotálamo-hipófise-adrenal", text: "Estresse · cortisol · depressão", ready: true },
   ],
   classic: ["Corticoespinal", "Sensitivas", "Visual", "Nervos cranianos", "Territórios arteriais"],
   basal: {
@@ -277,6 +277,56 @@ window.ATLAS = {
         clinic: "Na narcolepsia com cataplexia, a hipocretina no líquor está ausente ou quase.",
         drugs: "Antagonistas de orexina (suvorexanto, daridorexanto) como hipnóticos; contraindicados na narcolepsia.",
         link: { cls: "ansioliticos", label: "Abrir ansiolíticos e hipnóticos" },
+      },
+    ],
+  },
+  /* Eixo hipotálamo-hipófise-adrenal (HHA, também chamado HHS): Quevedo e Izquierdo (2020),
+     cap. 3 (Psiconeuroendocrinologia); psicose por corticoide conforme Clinical Neurology for
+     Psychiatrists. activity: 1 = normal; feedback: força do feedback negativo (0 a 1). */
+  hpa: {
+    nodes: {
+      estresse: { label: "Estressor", sub: "físico ou psicológico", x: 270, y: 20 },
+      hipocampo: { label: "Hipocampo", sub: "freia o eixo", x: 30, y: 130 },
+      hipotalamo: { label: "Hipotálamo", sub: "núcleo paraventricular", x: 270, y: 130 },
+      hipofise: { label: "Hipófise anterior", sub: "", x: 270, y: 260 },
+      adrenal: { label: "Córtex adrenal", sub: "", x: 270, y: 390 },
+    },
+    hormones: { hipotalamo: "CRH e AVP", hipofise: "ACTH", adrenal: "Cortisol" },
+    scenarios: [
+      {
+        id: "normal", label: "Normal",
+        activity: {}, feedback: 1,
+        change: "O hipotálamo libera CRH (e AVP), a hipófise libera ACTH e a adrenal libera cortisol. O cortisol volta e freia o hipotálamo e a hipófise (feedback negativo, pelos receptores RM e RG).",
+        result: "O eixo se autolimita: o cortisol sobe quando precisa e volta ao basal.",
+        tone: "good", dex: "Cortisol cai: a dexametasona freia a hipófise pelo RG (supressão normal).",
+      },
+      {
+        id: "agudo", label: "Estresse agudo",
+        activity: { estresse: 1.6, hipotalamo: 1.5, hipofise: 1.4, adrenal: 1.5 }, feedback: 1,
+        change: "O estressor ativa o hipotálamo: CRH, ACTH e cortisol sobem. Serotonina e noradrenalina (em dose baixa) também estimulam o CRH.",
+        result: "Resposta adaptativa: mais energia disponível. Com o feedback íntegro, o eixo volta ao basal quando o estresse passa.",
+        tone: "ok", dex: "Cortisol cai: o feedback continua funcionando.",
+      },
+      {
+        id: "depressao", label: "Depressão grave",
+        activity: { hipotalamo: 1.6, hipofise: 1.3, adrenal: 1.6, hipocampo: 0.6 }, feedback: 0.35,
+        change: "O feedback do cortisol perde força (menos efeito pelos receptores no hipotálamo e no hipocampo): sobra CRH (alto no líquor), a hipófise e a adrenal aumentam de tamanho e o cortisol fica alto no plasma, na urina e no líquor.",
+        result: "Hiperatividade do eixo, um dos achados mais consistentes da psiquiatria, sobretudo na depressão grave e melancólica. O CRH em excesso se liga a menos apetite, libido baixa, alterações psicomotoras e do sono. Tende a se normalizar quando a depressão melhora.",
+        tone: "high", dex: "Parte dos pacientes não suprime: o cortisol continua alto. O teste tem baixa sensibilidade (40–50%), por isso não é usado na rotina; o teste DEX/CRH é mais sensível.",
+      },
+      {
+        id: "cascata", label: "Estresse crônico",
+        activity: { estresse: 1.4, hipotalamo: 1.5, hipofise: 1.3, adrenal: 1.6, hipocampo: 0.4 }, feedback: 0.3,
+        change: "Hipótese da cascata de glicocorticoides: cortisol alto por muito tempo danifica o hipocampo, que é quem ajuda a frear o eixo. Com menos freio, o cortisol sobe ainda mais.",
+        result: "Um ciclo que se retroalimenta e contribuiria para as consequências do estresse crônico. Hoje se sabe que, em alguns quadros, o problema é o oposto: sinalização insuficiente do cortisol.",
+        tone: "high", dex: "Supressão prejudicada, como na depressão.",
+      },
+      {
+        id: "corticoide", label: "Corticoide em dose alta",
+        activity: { hipotalamo: 0.4, hipofise: 0.4, adrenal: 0.4, exogeno: 1.8 }, feedback: 1, exogenous: true,
+        change: "Um corticoide de fora (prednisona, dexametasona) faz o papel do cortisol e freia o hipotálamo e a hipófise: CRH e ACTH caem e a adrenal produz menos.",
+        result: "Em dose alta, o corticoide pode causar sintomas psiquiátricos, inclusive a psicose por corticoide. Ao suspender um uso prolongado, a adrenal demora a voltar a produzir.",
+        tone: "warn", dex: "O eixo já está freado pelo corticoide externo.",
       },
     ],
   },

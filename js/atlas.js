@@ -369,7 +369,91 @@ function renderAtlasNeuro() {
     ${state.pharma.sourcesOpen ? renderPharmaSources({ id: "atlas-neurotransmissores", label: "Vias de neurotransmissores" }, "paths", system.label) : ""}`;
 }
 
+/* ---------- Eixo hipotálamo-hipófise-adrenal ---------- */
+
+function atlasHpaSvg(scenario, dex) {
+  const hpa = window.ATLAS.hpa;
+  const nodes = hpa.nodes;
+  const level = (id) => scenario.activity[id] ?? 1;
+  const width = (id) => Math.max(1.5, Math.min(11, 2 + level(id) * 4)).toFixed(1);
+  const feedbackWidth = Math.max(1.5, scenario.feedback * 6).toFixed(1);
+  const box = (id) => {
+    const node = nodes[id];
+    const value = level(id);
+    const tone = value >= 1.2 ? "up" : value <= 0.8 ? "down" : "";
+    const badge = value >= 1.2 ? "↑ mais ativo" : value <= 0.8 ? "↓ menos ativo" : node.sub;
+    return `<g class="atlas-node ${tone}"><rect x="${node.x}" y="${node.y}" width="220" height="64" rx="16"></rect><text x="${node.x + 110}" y="${node.y + 27}" text-anchor="middle" class="atlas-node-label">${escapeHtml(node.label)}</text><text x="${node.x + 110}" y="${node.y + 46}" text-anchor="middle" class="atlas-node-sub">${escapeHtml(badge)}</text></g>`;
+  };
+  const hormone = (x, y, text) => `<text x="${x}" y="${y}" class="hpa-hormone">${escapeHtml(text)}</text>`;
+  const dexBox = dex ? `
+    <g class="hpa-ext"><rect x="560" y="290" width="170" height="58" rx="14"></rect><text x="645" y="316" text-anchor="middle" class="atlas-node-label">Dexametasona</text><text x="645" y="334" text-anchor="middle" class="atlas-node-sub">teste de supressão</text></g>
+    <path d="M558 314 H496" class="hpa-arrow minus" stroke-width="4" marker-end="url(#hpa-minus)"></path>` : "";
+  const exoBox = scenario.exogenous ? `
+    <g class="hpa-ext"><rect x="560" y="392" width="170" height="58" rx="14"></rect><text x="645" y="418" text-anchor="middle" class="atlas-node-label">Corticoide externo</text><text x="645" y="436" text-anchor="middle" class="atlas-node-sub">dose alta</text></g>` : "";
+  return `
+    <svg class="atlas-svg" viewBox="0 0 760 480" role="img" aria-label="Eixo hipotálamo-hipófise-adrenal: ${escapeHtml(scenario.label)}">
+      <defs>
+        <marker id="hpa-plus" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#009e73"/></marker>
+        <marker id="hpa-minus" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#c2410c"/></marker>
+      </defs>
+      <path d="M380 86 V126" class="hpa-arrow plus" stroke-width="${width("estresse")}" marker-end="url(#hpa-plus)"></path>
+      <path d="M252 162 H266" class="hpa-arrow minus" stroke-width="${width("hipocampo")}" marker-end="url(#hpa-minus)"></path>
+      <path d="M380 196 V256" class="hpa-arrow plus" stroke-width="${width("hipotalamo")}" marker-end="url(#hpa-plus)"></path>
+      ${hormone(392, 232, hpa.hormones.hipotalamo)}
+      <path d="M380 326 V386" class="hpa-arrow plus" stroke-width="${width("hipofise")}" marker-end="url(#hpa-plus)"></path>
+      ${hormone(392, 362, hpa.hormones.hipofise)}
+      <path d="M492 422 H540 V170 H496" class="hpa-arrow minus feedback" stroke-width="${feedbackWidth}" marker-end="url(#hpa-minus)"></path>
+      <path d="M540 292 H496" class="hpa-arrow minus feedback" stroke-width="${feedbackWidth}" marker-end="url(#hpa-minus)"></path>
+      <path d="M540 170 V110 H140 V126" class="hpa-arrow minus feedback" stroke-width="${feedbackWidth}" marker-end="url(#hpa-minus)"></path>
+      ${hormone(270, 474, `${hpa.hormones.adrenal}${scenario.exogenous ? " + corticoide" : ""} → feedback negativo (tracejado)`)}
+      ${scenario.exogenous ? '<path d="M558 421 H546" class="hpa-arrow plus" stroke-width="5" marker-end="url(#hpa-plus)"></path>' : ""}
+      ${Object.keys(nodes).map(box).join("")}
+      ${dexBox}${exoBox}
+    </svg>`;
+}
+
+function renderAtlasHpa() {
+  const hpa = window.ATLAS.hpa;
+  const scenario = hpa.scenarios.find((item) => item.id === state.atlas.hpa) || hpa.scenarios[0];
+  const dex = Boolean(state.atlas.dex) && !scenario.exogenous;
+  const refCount = ((window.PHARMA_REFS || {})["atlas-hha"]?.paths || []).length;
+  const chips = hpa.scenarios.map((item) => `<button type="button" class="pharma-chip ${item.id === scenario.id ? "on" : ""}" data-atlas-hpa="${item.id}" aria-pressed="${item.id === scenario.id}">${escapeHtml(item.label)}</button>`).join("");
+  return `
+    <header class="pharma-head">
+      <div>
+        <div class="pharma-head-top">
+          <button type="button" class="link-btn pharma-back" data-atlas-home>← Vias</button>
+          ${refCount ? `<button type="button" class="pharma-sources-btn" data-pharma-sources aria-haspopup="dialog">Fontes · ${refCount}</button>` : ""}
+        </div>
+        <h2>Eixo hipotálamo-hipófise-adrenal</h2>
+        <p>A resposta hormonal ao estresse: hipotálamo, hipófise e adrenal em cadeia, com o cortisol freando o próprio eixo.</p>
+      </div>
+    </header>
+    <div class="pharma-chips" role="group" aria-label="Cenário">${chips}</div>
+    <div class="pharma-grid atlas-grid">
+      <section class="pharma-card">
+        <div class="pharma-card-head"><h3>A alça do cortisol</h3><span>esquema didático</span></div>
+        ${atlasHpaSvg(scenario, dex)}
+        <div class="atlas-legend">
+          <span><i style="background:#009e73"></i>estimula</span>
+          <span><i style="background:#c2410c"></i>inibe (feedback negativo tracejado)</span>
+          <span>espessura = força</span>
+        </div>
+        ${scenario.exogenous ? "" : `<div class="pharma-toggles"><button type="button" class="pharma-toggle ${dex ? "on" : ""}" data-atlas-dex aria-pressed="${dex}">Dar dexametasona (teste de supressão)</button></div>`}
+      </section>
+      <section class="pharma-card">
+        <h3>${escapeHtml(scenario.label)}</h3>
+        <div class="pharma-reading tone-ok"><strong>O que muda</strong><span>${escapeHtml(scenario.change)}</span></div>
+        <div class="pharma-reading tone-${scenario.tone}"><strong>Resultado</strong><span>${escapeHtml(scenario.result)}</span></div>
+        ${dex ? `<div class="pharma-reading tone-warn"><strong>Teste de supressão com dexametasona</strong><span>${escapeHtml(scenario.dex)}</span></div>` : ""}
+      </section>
+    </div>
+    <p class="pharma-disclaimer">Esquema simplificado: o eixo recebe muitas outras influências (neurotransmissores, sistema imune, ritmo circadiano).</p>
+    ${state.pharma.sourcesOpen ? renderPharmaSources({ id: "atlas-hha", label: "Eixo hipotálamo-hipófise-adrenal" }, "paths", scenario.label) : ""}`;
+}
+
 function renderAtlas() {
+  if (state.atlas.module === "hha") return renderAtlasHpa();
   if (state.atlas.module === "neurotransmissores") return renderAtlasNeuro();
   if (state.atlas.module === "limbico") return renderAtlasLimbic();
   if (state.atlas.module === "nucleos-base") return renderAtlasBasal();
@@ -381,7 +465,7 @@ function renderAtlas() {
   const panel = document.querySelector("#pharmaPanel");
   if (!panel) return;
   panel.addEventListener("click", (event) => {
-    const target = event.target.closest("[data-atlas-module], [data-atlas-home], [data-atlas-scenario], [data-atlas-step], [data-atlas-link], [data-sim-section], [data-atlas-circuit], [data-atlas-lesion], [data-atlas-limbic], [data-atlas-system], [data-atlas-drugs]");
+    const target = event.target.closest("[data-atlas-module], [data-atlas-home], [data-atlas-scenario], [data-atlas-step], [data-atlas-link], [data-sim-section], [data-atlas-circuit], [data-atlas-lesion], [data-atlas-limbic], [data-atlas-system], [data-atlas-drugs], [data-atlas-hpa], [data-atlas-dex]");
     if (!target) return;
     const data = target.dataset;
     if (data.simSection) {
@@ -400,6 +484,8 @@ function renderAtlas() {
       state.atlas.lesionAt = null;
     } else if (data.atlasLesion !== undefined) state.atlas.lesionAt = data.atlasLesion || null;
     else if (data.atlasSystem) state.atlas.system = data.atlasSystem;
+    else if (data.atlasHpa) state.atlas.hpa = data.atlasHpa;
+    else if (data.atlasDex !== undefined) state.atlas.dex = !state.atlas.dex;
     else if (data.atlasDrugs) {
       state.pharma.section = "drugs";
       setPharmaClass(data.atlasDrugs);

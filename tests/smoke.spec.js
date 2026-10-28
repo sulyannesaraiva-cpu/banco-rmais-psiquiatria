@@ -713,6 +713,19 @@ test("atlas de vias: neurotransmissores (sistemas e atalho para os fármacos)", 
   await expect(page.locator("#pharmaPanel h2")).toHaveText("Fármacos nas demências");
   expect(errors).toEqual([]);
 });
+test("atlas de vias: eixo HHA (cenários e teste de supressão com dexametasona)", async ({ page }) => {
+  const errors = await openSite(page);
+  await goTab(page, "pharma");
+  await page.locator('[data-sim-section="atlas"]').click();
+  await page.locator('[data-atlas-module="hha"]').click();
+  await page.locator('[data-atlas-hpa="depressao"]').click();
+  await expect(page.locator("#pharmaPanel")).toContainText("Hiperatividade do eixo");
+  await page.locator("[data-atlas-dex]").click();
+  await expect(page.locator("#pharmaPanel")).toContainText("não suprime");
+  await page.locator('[data-atlas-hpa="corticoide"]').click();
+  await expect(page.locator("#pharmaPanel")).toContainText("psicose por corticoide");
+  expect(errors).toEqual([]);
+});
 test("navegação por áreas: Hoje, Estudar (com seletor), Simular e Você", async ({ page }) => {
   const errors = await openSite(page);
   const mobile = await page.evaluate(() => isMobileLayout());

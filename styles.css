@@ -8457,3 +8457,40 @@ body.theme-dark .pharma-chip.on {
 .neuro-named b {
   margin-right: 4px;
 }
+/* Atlas: eixo hipotálamo-hipófise-adrenal. */
+.hpa-arrow {
+  fill: none;
+  stroke-linecap: round;
+}
+
+.hpa-arrow.plus {
+  stroke: #009e73;
+}
+
+.hpa-arrow.minus {
+  stroke: #c2410c;
+}
+
+.hpa-arrow.feedback {
+  stroke-dasharray: 7 6;
+}
+
+.hpa-hormone {
+  fill: var(--ink);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.hpa-ext rect {
+  fill: #fdf1d8;
+  stroke: #b7791f;
+  stroke-width: 2;
+}
+
+.hpa-ext .atlas-node-label {
+  fill: #10262d;
+}
+
+.hpa-ext .atlas-node-sub {
+  fill: #6b4300;
+}

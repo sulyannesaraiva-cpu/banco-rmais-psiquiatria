@@ -211,6 +211,16 @@ window.PHARMA_REFS = {
       { about: "Posição dos núcleos e dos alvos no corte", src: "curadoria", where: "esquema não está em escala", kind: "didatico" },
     ],
   },
+  "atlas-hha": {
+    paths: [
+      { about: "Regulação do eixo (CRH e AVP, ACTH, glicocorticoides) e feedback negativo pelos receptores RM e RG", src: "quevedo2020", where: "cap. 3, Psiconeuroendocrinologia", kind: "fonte" },
+      { about: "Hiperatividade do eixo na depressão (cortisol, CRH no líquor, hipófise e adrenal aumentadas) e normalização com a melhora", src: "quevedo2020", where: "cap. 3", kind: "fonte" },
+      { about: "Teste de supressão com dexametasona (sensibilidade de 40–50%) e teste DEX/CRH", src: "quevedo2020", where: "cap. 3", kind: "fonte" },
+      { about: "Hipótese da cascata de glicocorticoides e dano ao hipocampo; sinalização insuficiente do cortisol", src: "quevedo2020", where: "cap. 3", kind: "fonte" },
+      { about: "Psicose por corticoide em dose alta", src: "kaufman", where: "menções a steroid psychosis", kind: "fonte" },
+      { about: "Níveis de cada estrutura nos cenários, supressão do eixo pelo corticoide externo e demora da adrenal para voltar", src: "curadoria", where: "fisiologia do feedback, simplificada", kind: "didatico" },
+    ],
+  },
   dependencia: {
     paths: [
       { about: "Mecanismos de cada remédio", src: "maudsley15", where: "cap. 4", kind: "fonte" },
