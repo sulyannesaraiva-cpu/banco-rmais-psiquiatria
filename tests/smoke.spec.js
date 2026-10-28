@@ -406,7 +406,7 @@ test("plano com mais de uma prova e boas-vindas para quem chega", async ({ page 
 test("simulador de fármacos: vias, receptores, comparar e questões do remédio", async ({ page }) => {
   const errors = await openSite(page);
   await goTab(page, "pharma");
-  await expect(page.locator(".pharma-hub-card")).toHaveCount(7);
+  await expect(page.locator(".pharma-hub-card[data-pharma-class]")).toHaveCount(7);
   await page.locator('[data-pharma-class="antipsicoticos"]').click();
   await expect(page.locator("#pharmaPanel .pharma-brain")).toBeVisible();
   await page.locator('[data-pharma-drug="haloperidol"]').click();
