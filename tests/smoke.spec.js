@@ -588,6 +588,31 @@ test("simulador de fármacos: dependência química (receptor, dissulfiram e tre
   await expect(page.locator(".pharma-feedback")).toBeVisible();
   expect(errors).toEqual([]);
 });
+test("simulador de fármacos: complementos (depósito, hipnóticos novos e escetamina)", async ({ page }) => {
+  const errors = await openSite(page);
+  await goTab(page, "pharma");
+  await page.locator('[data-pharma-class="antipsicoticos"]').click();
+  await page.locator('[data-pharma-drug="brexpiprazol"]').click();
+  await expect(page.locator("#pharmaPanel .pharma-receptors")).toContainText("agonista parcial");
+  await page.locator('[data-pharma-mode="depot"]').click();
+  await page.locator('[data-pharma-depot="aripiprazol-1m"]').click();
+  await expect(page.locator("#pharmaPanel")).toContainText("14 dias");
+  await page.locator("[data-pharma-depotstop]").click();
+  await expect(page.locator("#pharmaPanel")).toContainText("Depois da última injeção");
+  await page.locator("[data-pharma-hub]").click();
+  await page.locator('[data-pharma-class="ansioliticos"]').click();
+  await page.locator('[data-pharma-drug="suvorexanto"]').click();
+  await expect(page.locator("#pharmaPanel .pharma-paths")).toContainText("Orexina");
+  await page.locator('[data-pharma-mode="synapse"]').click();
+  await page.locator("[data-pharma-stop]").click();
+  await expect(page.locator("#pharmaKineticsView")).toContainText("Sem evidência de dependência");
+  await page.locator("[data-pharma-hub]").click();
+  await page.locator('[data-pharma-class="antidepressivos"]').click();
+  await page.locator('[data-pharma-mode="synapse"]').click();
+  await page.locator('[data-pharma-drug="escetamina"]').click();
+  await expect(page.locator("#pharmaSynapseView")).toContainText("NMDA bloqueado");
+  expect(errors).toEqual([]);
+});
 test("navegação por áreas: Hoje, Estudar (com seletor), Simular e Você", async ({ page }) => {
   const errors = await openSite(page);
   const mobile = await page.evaluate(() => isMobileLayout());

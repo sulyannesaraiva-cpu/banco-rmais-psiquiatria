@@ -29,6 +29,7 @@ window.PHARMA_SIM.antidepressivos = {
     { id: "H1", label: "H1", role: "Sedação e ganho de peso" },
     { id: "M1", label: "M1", role: "Boca seca, constipação, visão turva, retenção urinária" },
     { id: "A1", label: "α1", role: "Hipotensão postural, tontura" },
+    { id: "NMDA", label: "NMDA", role: "Bloqueio do canal NMDA: surto de glutamato, ativação de AMPA e novas sinapses (escetamina)" },
   ],
   effects: [
     { id: "sedation", label: "Sedação", why: "bloqueio H1 (e α1, 5-HT2A)" },
@@ -198,6 +199,14 @@ window.PHARMA_SIM.antidepressivos = {
       effects: { sedation: 1, hypotension: 0, cardiac: 0, anticholinergic: 0, nausea: 0, sexual: 0 },
       mech: { type: "receptor", target: "5HT2C", transmitter: "noradrenalina e dopamina" },
       extra: "Agonista dos receptores de melatonina MT1 e MT2 e antagonista 5-HT2C. Não aumenta a serotonina; exige controle de enzimas hepáticas.",
+    },
+    {
+      id: "escetamina", name: "Escetamina", group: "Antagonista NMDA", search: ["escetamina", "esketamina", "cetamina", "ketamina"],
+      receptors: { SERT: 0, NET: 0, DAT: 0, MAO: 0, A2: 0, "5HT2A": 0, "5HT2C": 0, H1: 0, M1: 0, A1: 0, NMDA: 4 },
+      boost: { serotonin: 0, noradrenaline: 0, dopamine: 0 },
+      effects: { sedation: 2, hypotension: 0, cardiac: 0, anticholinergic: 0, nausea: 2, sexual: 0 },
+      mech: { type: "receptor", target: "NMDA", transmitter: "glutamato" },
+      extra: "Spray nasal, sempre junto com um antidepressivo oral, na depressão resistente e na depressão com ideação suicida aguda. Efeito em até 24 horas. Dissociação, tontura, náusea, sedação e aumento da pressão: medir a pressão antes e ~40 minutos depois e observar até estabilizar. Potencial de abuso.",
     },
   ],
 };

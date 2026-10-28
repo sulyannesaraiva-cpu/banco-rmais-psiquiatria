@@ -6,15 +6,18 @@
      ausente no guia americano, conforme bula).
    - eq: dose aproximada equivalente a 10 mg de diazepam. Maudsley 15ª ed., tabela 3.24
      (diazepam, clonazepam, lorazepam, clordiazepóxido); demais conforme o Ashton Manual.
-   - indications e effects: classificação didática (0 a 3) a partir de Maudsley (cap. 3) e Stahl. */
+   - indications e effects: classificação didática (0 a 3) a partir de Maudsley (cap. 3) e Stahl.
+   - Hipnóticos não benzodiazepínicos (melatonina, antagonistas de orexina, doxepina em dose baixa):
+     mecanismo e meia-vida conforme Stahl; melatonina de liberação prolongada conforme a bula do
+     Circadin citada no Maudsley. "withdrawal" substitui o texto padrão de retirada. */
 
 window.PHARMA_SIM = window.PHARMA_SIM || {};
 window.PHARMA_SIM.ansioliticos = {
   id: "ansioliticos",
   kind: "anxiolytic",
   label: "Ansiolíticos e hipnóticos",
-  tagline: "Onde cada um age no receptor GABA-A (ou fora dele), quanto tempo fica no corpo e o que isso significa para ressaca, acúmulo e retirada.",
-  source: "Mecanismos e meias-vidas conforme Stahl (Prescriber's Guide, 8ª ed.); doses equivalentes conforme Maudsley Prescribing Guidelines (15ª ed., tabela 3.24) e Ashton Manual. Classificação de usos e efeitos é didática.",
+  tagline: "Onde cada um age (GABA-A, melatonina, orexina, histamina e outros), quanto tempo fica no corpo e o que isso significa para ressaca, acúmulo e retirada.",
+  source: "Mecanismos e meias-vidas conforme Stahl (Prescriber's Guide, 8ª ed.) e bula da melatonina de liberação prolongada; doses equivalentes conforme Maudsley Prescribing Guidelines (15ª ed., tabela 3.24) e Ashton Manual. Classificação de usos e efeitos é didática.",
   defaults: { drug: "clonazepam", a: "clonazepam", b: "alprazolam" },
   receptors: [
     { id: "A1", label: "GABA-A α1", role: "Sedação, amnésia e efeito anticonvulsivante" },
@@ -22,6 +25,9 @@ window.PHARMA_SIM.ansioliticos = {
     { id: "A5", label: "GABA-A α5", role: "Memória e cognição" },
     { id: "A2D", label: "α2δ (Ca²⁺)", role: "Menos entrada de cálcio e menos liberação de glutamato" },
     { id: "HT1A", label: "5-HT1A", role: "Agonismo parcial: ansiolítico sem sedação, com latência de semanas" },
+    { id: "MT", label: "MT1/MT2", role: "Receptores de melatonina: sinalizam a noite e ajustam o relógio biológico" },
+    { id: "OX", label: "Orexina", role: "Bloqueio dos receptores OX1 e OX2: desliga o sinal que mantém a vigília" },
+    { id: "H1", label: "H1", role: "Bloqueio da histamina, que também mantém a vigília" },
   ],
   indications: [
     { id: "anxiety", label: "Ansiedade (TAG, pânico)" },
@@ -129,6 +135,42 @@ window.PHARMA_SIM.ansioliticos = {
       indications: { anxiety: 2, insomnia: 0, agitation: 0, alcohol: 0, seizure: 0 },
       effects: { sedation: 0, memory: 0, falls: 0, dependence: 0, withdrawal: 0, respiratory: 0, complexSleep: 0, misuse: 0 },
       extra: "Sem sedação, dependência ou tolerância cruzada com benzodiazepínicos (não serve para a retirada deles). Efeito ansiolítico leva semanas.",
+    },
+    {
+      id: "melatonina", name: "Melatonina LP", group: "Agonista de melatonina", search: ["melatonina"],
+      receptors: { A1: 0, A23: 0, A5: 0, A2D: 0, HT1A: 0, MT: 3, OX: 0, H1: 0 },
+      halfLife: [3.5, 4], eq: null,
+      indications: { anxiety: 0, insomnia: 1, agitation: 0, alcohol: 0, seizure: 0 },
+      effects: { sedation: 0, memory: 0, falls: 0, dependence: 0, withdrawal: 0, respiratory: 0, complexSleep: 0, misuse: 0 },
+      withdrawal: "Sem dependência nem retirada relevantes.",
+      extra: "Liberação prolongada (2 mg, uma hora ou duas antes de deitar): imita o pico noturno de melatonina. Licença para insônia acima de 55 anos; efeito modesto. Fígado: o fabricante sugere evitar na doença hepática moderada ou grave.",
+    },
+    {
+      id: "suvorexanto", name: "Suvorexanto", group: "Antagonista de orexina (DORA)", search: ["suvorexanto", "suvorexant"],
+      receptors: { A1: 0, A23: 0, A5: 0, A2D: 0, HT1A: 0, MT: 0, OX: 4, H1: 0 },
+      halfLife: [12, 12], eq: null,
+      indications: { anxiety: 0, insomnia: 3, agitation: 0, alcohol: 0, seizure: 0 },
+      effects: { sedation: 2, memory: 0, falls: 1, dependence: 0, withdrawal: 0, respiratory: 0, complexSleep: 1, misuse: 1 },
+      withdrawal: "Sem evidência de dependência física ou retirada nos estudos; não precisa de redução gradual.",
+      extra: "Bloqueia os receptores OX1 e OX2: em vez de sedar pelo GABA, desliga o sinal de vigília. Raros: paralisia do sono, alucinações hipnagógicas e sintomas parecidos com cataplexia. Não usar na narcolepsia nem com inibidores fortes de CYP3A4.",
+    },
+    {
+      id: "daridorexanto", name: "Daridorexanto", group: "Antagonista de orexina (DORA)", search: ["daridorexanto", "daridorexant"],
+      receptors: { A1: 0, A23: 0, A5: 0, A2D: 0, HT1A: 0, MT: 0, OX: 4, H1: 0 },
+      halfLife: [8, 8], eq: null,
+      indications: { anxiety: 0, insomnia: 3, agitation: 0, alcohol: 0, seizure: 0 },
+      effects: { sedation: 1, memory: 0, falls: 1, dependence: 0, withdrawal: 0, respiratory: 0, complexSleep: 1, misuse: 1 },
+      withdrawal: "Sem evidência de dependência física ou retirada nos estudos; não precisa de redução gradual.",
+      extra: "Antagonista de orexina de meia-vida mais curta (8 h): menos sonolência no dia seguinte. Metabolizado pela CYP3A4; não usar na narcolepsia.",
+    },
+    {
+      id: "doxepina", name: "Doxepina (dose baixa)", group: "Antagonista H1 seletivo", search: ["doxepina"],
+      receptors: { A1: 0, A23: 0, A5: 0, A2D: 0, HT1A: 0, MT: 0, OX: 0, H1: 4 },
+      halfLife: [8, 24], eq: null,
+      indications: { anxiety: 0, insomnia: 2, agitation: 0, alcohol: 0, seizure: 0 },
+      effects: { sedation: 2, memory: 0, falls: 1, dependence: 0, withdrawal: 0, respiratory: 0, complexSleep: 0, misuse: 0 },
+      withdrawal: "Em dose baixa (3 a 6 mg), sem efeitos de retirada; não precisa de redução gradual.",
+      extra: "Tricíclico que, em 3 a 6 mg, bloqueia quase só o H1: ajuda a manter o sono. Nessa dose quase não tem efeitos anticolinérgicos; em dose antidepressiva, vira um tricíclico completo.",
     },
   ],
 };

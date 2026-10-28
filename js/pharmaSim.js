@@ -22,6 +22,8 @@
      escolhido, perfil de receptores e "o que esperar" (efeitos relativos).
    - Comparar: dois remédios lado a lado, com o porquê das diferenças.
    - Sinapse: receptores D2 ocupados conforme o controle de ocupação, com as faixas clássicas.
+   - Depósito (só antipsicóticos): nível relativo ao longo das semanas para cada antipsicótico de
+     longa ação, com tempo até o pico, meia-vida e equilíbrio do Maudsley, e o que acontece ao parar.
    - Treino: rodadas de 10 perguntas ("qual é o remédio por este perfil?" e "qual tem mais risco de…?").
    Material didático e simplificado; não serve para prescrição. */
 
@@ -391,7 +393,7 @@ function pharmaDrugChips(selected) {
 
 /* ---------- Ansiolíticos e hipnóticos: GABA-A, meia-vida, retirada e equivalência ---------- */
 
-const PHARMA_ANX_COLORS = { A1: "#0072b2", A23: "#009e73", A5: "#e69f00", A2D: "#d55e00", HT1A: "#b0418a" };
+const PHARMA_ANX_COLORS = { A1: "#0072b2", A23: "#009e73", A5: "#e69f00", A2D: "#d55e00", HT1A: "#b0418a", MT: "#4f5bd5", OX: "#8a6a00", H1: "#0b6b70" };
 
 function pharmaIsAnxiolytic() {
   return pharmaClass()?.kind === "anxiolytic";
@@ -420,7 +422,7 @@ function pharmaAnxSvg(drug) {
   const cls = (id) => `pharma-target${r[id] === 0 ? " faint" : ""}${r[id] >= 3 ? " strong" : ""}`;
   const c = PHARMA_ANX_COLORS;
   return `
-    <svg class="pharma-brain" viewBox="0 0 560 300" role="img" aria-label="Receptores GABA-A com subunidades α1, α2/α3 e α5, canal de cálcio com α2δ e receptor 5-HT1A">
+    <svg class="pharma-brain" viewBox="0 0 560 320" role="img" aria-label="Receptores GABA-A com subunidades α1, α2/α3 e α5, canal de cálcio com α2δ e receptores 5-HT1A, de melatonina, de orexina e H1">
       <g class="${cls("A1")}" style="--t:${c.A1}">${pharmaPentamer(80, 96)}<text x="80" y="160" text-anchor="middle" class="pharma-label">GABA-A</text><text x="80" y="178" text-anchor="middle" class="pharma-label small">com α1</text></g>
       <g class="${cls("A23")}" style="--t:${c.A23}">${pharmaPentamer(200, 96)}<text x="200" y="160" text-anchor="middle" class="pharma-label">GABA-A</text><text x="200" y="178" text-anchor="middle" class="pharma-label small">com α2/α3</text></g>
       <g class="${cls("A5")}" style="--t:${c.A5}">${pharmaPentamer(320, 96)}<text x="320" y="160" text-anchor="middle" class="pharma-label">GABA-A</text><text x="320" y="178" text-anchor="middle" class="pharma-label small">com α5</text></g>
@@ -429,11 +431,13 @@ function pharmaAnxSvg(drug) {
         <circle cx="510" cy="58" r="16"></circle>
         <text x="476" y="160" text-anchor="middle" class="pharma-label">Canal de Ca²⁺</text><text x="476" y="178" text-anchor="middle" class="pharma-label small">subunidade α2δ</text>
       </g>
-      <g class="${cls("HT1A")}" style="--t:${c.HT1A}">
-        <path d="M232 268 v-36 h14 v20 h20 v-20 h14 v36 z"></path>
-        <text x="300" y="246" class="pharma-label">5-HT1A</text><text x="300" y="264" class="pharma-label small">receptor de serotonina</text>
-      </g>
+      ${[["HT1A", 72, "5-HT1A", "serotonina"], ["MT", 204, "MT1/MT2", "melatonina"], ["OX", 336, "OX1/OX2", "orexina"], ["H1", 468, "H1", "histamina"]].map(([id, x, label, sub]) => `
+      <g class="${cls(id)}" style="--t:${c[id]}">
+        <path d="M${x - 24} 270 v-36 h14 v20 h20 v-20 h14 v36 z"></path>
+        <text x="${x}" y="292" text-anchor="middle" class="pharma-label">${label}</text><text x="${x}" y="310" text-anchor="middle" class="pharma-label small">${sub}</text>
+      </g>`).join("")}
       <text x="200" y="22" text-anchor="middle" class="pharma-label small">Cl⁻ entra pelo poro central quando o GABA abre o canal</text>
+      <text x="280" y="216" text-anchor="middle" class="pharma-label small">Receptores fora do GABA-A</text>
     </svg>`;
 }
 
@@ -504,6 +508,7 @@ function pharmaKineticsSvg(drug, days, stopped) {
 
 function pharmaWithdrawalText(drug) {
   const half = pharmaHalfLifeMid(drug);
+  if (drug.withdrawal) return drug.withdrawal;
   if (drug.id === "buspirona") return "Sem síndrome de retirada nem dependência relevantes.";
   if (half <= 8) return "Meia-vida curta: o nível cai em horas. Retirada e rebote (insônia, ansiedade) podem começar já no dia seguinte e são mais intensos.";
   if (half <= 20) return "Meia-vida intermediária: a retirada costuma aparecer em 1 a 2 dias e é intensa; troca por diazepam e redução gradual ajudam.";
@@ -551,7 +556,7 @@ function renderAnxEquivalence(drug) {
       <label><span>Dose (mg)</span><input type="number" min="0" step="0.25" value="${dose}" data-pharma-eq="dose" inputmode="decimal"></label>
     </div>
     <div id="pharmaEqResult">${renderAnxEquivalenceResult(drug)}</div>
-    <p class="pharma-extra">Equivalências aproximadas, para orientar a troca por diazepam na retirada; ajustar pelos sintomas. Midazolam, eszopiclona, pregabalina e buspirona não entram na tabela.</p>`;
+    <p class="pharma-extra">Equivalências aproximadas, para orientar a troca por diazepam na retirada; ajustar pelos sintomas. Midazolam, eszopiclona, pregabalina, buspirona, melatonina, antagonistas de orexina e doxepina não entram na tabela.</p>`;
 }
 
 function renderAnxKinetics(drug) {
@@ -1217,6 +1222,7 @@ function pharmaActionQuestion(drugs) {
 /* ---------- Antidepressivos: sistemas de serotonina, noradrenalina e dopamina ---------- */
 
 const PHARMA_SYSTEM_COLORS = { serotonin: "#b0418a", noradrenaline: "#0072b2", dopamine: "#d55e00" };
+const PHARMA_GLUTAMATE_COLOR = "#8a6a00";
 const PHARMA_BOOST_LABELS = ["sem efeito direto", "aumento leve", "aumento moderado", "aumento forte"];
 
 function pharmaSystems(drug) {
@@ -1461,7 +1467,7 @@ const PHARMA_MECH_TEXT = {
   reuptake: { SERT: "Ocupação do transportador de serotonina (SERT)", NET: "Ocupação do transportador de noradrenalina (NET)" },
   alpha2: "Ocupação dos autorreceptores α2 (o freio)",
   mao: "Inibição da MAO",
-  receptor: { "5HT2A": "Ocupação dos receptores 5-HT2A", "5HT2C": "Ocupação dos receptores 5-HT2C" },
+  receptor: { "5HT2A": "Ocupação dos receptores 5-HT2A", "5HT2C": "Ocupação dos receptores 5-HT2C", NMDA: "Bloqueio dos receptores NMDA" },
 };
 
 function pharmaMechLabel(drug) {
@@ -1476,6 +1482,7 @@ function pharmaTransmitterColors(drug) {
   if (text.includes("serotonina")) colors.push(PHARMA_SYSTEM_COLORS.serotonin);
   if (text.includes("noradrenalina")) colors.push(PHARMA_SYSTEM_COLORS.noradrenaline);
   if (text.includes("dopamina")) colors.push(PHARMA_SYSTEM_COLORS.dopamine);
+  if (text.includes("glutamato")) colors.push(PHARMA_GLUTAMATE_COLOR);
   return colors.length ? colors : [PHARMA_SYSTEM_COLORS.serotonin];
 }
 
@@ -1504,6 +1511,11 @@ function pharmaAdReading(drug, occupancy) {
       : "Inibição reversível e só da MAO-A: a tiramina em excesso desloca o remédio, com menor risco de crise hipertensiva.";
     if (occupancy < 80) return { tone: "ok", title: "MAO parcialmente inibida", text: `Parte das monoaminas ainda é degradada dentro do neurônio. ${kind}` };
     return { tone: "good", title: "MAO inibida", text: `Sobram serotonina, noradrenalina e dopamina dentro do neurônio para serem liberadas. ${kind}` };
+  }
+  if (drug.id === "escetamina") {
+    return occupancy >= 50
+      ? { tone: "good", title: "NMDA bloqueado", text: "Bloqueando o NMDA dos interneurônios GABA, a escetamina solta um surto de glutamato que ativa receptores AMPA; isso dispara BDNF e mTORC1 e forma novas espinhas dendríticas. Por isso o efeito vem em horas, não semanas." }
+      : { tone: "low", title: "Pouco bloqueio de NMDA", text: "Bloqueio insuficiente para o surto de glutamato." };
   }
   if (drug.id === "agomelatina") {
     return { tone: occupancy >= 50 ? "good" : "low", title: occupancy >= 50 ? "5-HT2C bloqueado" : "Pouco bloqueio de 5-HT2C", text: "O bloqueio de 5-HT2C libera noradrenalina e dopamina no pré-frontal; o agonismo MT1/MT2 ajuda a ressincronizar o ritmo circadiano. Não aumenta a serotonina." };
@@ -1560,7 +1572,7 @@ function renderAdSynapseView(drug) {
   return `
     <div class="pharma-synapse-wrap">${pharmaAdSynapseSvg(drug, occupancy)}</div>
     <div class="pharma-legend">
-      ${pharmaTransmitterColors(drug).map((color) => `<span><i class="dot" style="background:${color}"></i>${color === PHARMA_SYSTEM_COLORS.serotonin ? "serotonina" : color === PHARMA_SYSTEM_COLORS.noradrenaline ? "noradrenalina" : "dopamina"}</span>`).join("")}
+      ${pharmaTransmitterColors(drug).map((color) => `<span><i class="dot" style="background:${color}"></i>${color === PHARMA_SYSTEM_COLORS.serotonin ? "serotonina" : color === PHARMA_SYSTEM_COLORS.noradrenaline ? "noradrenalina" : color === PHARMA_GLUTAMATE_COLOR ? "glutamato" : "dopamina"}</span>`).join("")}
       <span><i class="pill"></i>${escapeHtml(drug.name)}</span>
       <span>${targetLegend}</span>
     </div>
@@ -1618,6 +1630,105 @@ function renderPharmaSynapse() {
         <p class="pharma-extra">Cada receptor desenhado vale 10%. A dopamina compete com o remédio pelos receptores que sobram livres.</p>
         <p class="pharma-extra">Limiares de ocupação conforme Kapur et al. (2000), estudo clássico com haloperidol e risperidona; valores aproximados.</p>
         ${pharmaStudyLink(drug)}
+      </section>
+    </div>`;
+}
+
+/* ---------- Antipsicóticos de depósito: nível ao longo das semanas ---------- */
+
+/* Cada injeção soma uma curva de Bateman: sobe com a constante rápida (ajustada para dar o tempo
+   até o pico da tabela 1.9 do Maudsley) e cai com a meia-vida plasmática aparente. Modelo didático. */
+function pharmaDepotRates(depot) {
+  const k1 = Math.log(2) / depot.half;
+  const tmax = (k2) => Math.log(k2 / k1) / (k2 - k1);
+  if (depot.peak >= tmax(k1 * 1.001)) return { k1, k2: k1 * 1.05 };
+  let low = k1 * 1.001;
+  let high = 50;
+  for (let i = 0; i < 60; i += 1) {
+    const mid = (low + high) / 2;
+    if (tmax(mid) > depot.peak) low = mid;
+    else high = mid;
+  }
+  return { k1, k2: (low + high) / 2 };
+}
+
+function pharmaDepotCurve(depot, stopped) {
+  const { k1, k2 } = pharmaDepotRates(depot);
+  const weeks = Math.min(60, Math.max(26, Math.ceil((3.3 * depot.half) / 7) + depot.every * 2));
+  const end = weeks * 7;
+  const lag = depot.lag || 0;
+  const stopAt = stopped ? Math.round(end * 0.45) : end;
+  const shots = [];
+  for (let day = 0; day < end && day <= stopAt; day += depot.every * 7) shots.push(day);
+  const level = (t) => shots.reduce((sum, shot) => {
+    const tau = t - shot - lag;
+    return tau > 0 ? sum + Math.exp(-k1 * tau) - Math.exp(-k2 * tau) : sum;
+  }, 0);
+  const points = [];
+  for (let t = 0; t <= end; t += 1) points.push([t, level(t)]);
+  const steady = (1 / k1 - 1 / k2) / (depot.every * 7);
+  return { points, end, weeks, shots, steady, level, stopped };
+}
+
+function pharmaDepotSvg(depot, data) {
+  const top = Math.max(data.steady * 1.4, ...data.points.map((point) => point[1])) * 1.08;
+  const x = (t) => 40 + (t / data.end) * 540;
+  const y = (c) => 200 - (c / top) * 180;
+  const line = data.points.map((point) => `${x(point[0]).toFixed(1)},${y(point[1]).toFixed(1)}`).join(" ");
+  const step = data.weeks > 40 ? 8 : 4;
+  const ticks = Array.from({ length: Math.floor(data.weeks / step) + 1 }, (_, i) => i * step)
+    .map((week) => `<line x1="${x(week * 7)}" y1="200" x2="${x(week * 7)}" y2="204" class="kin-axis"></line><text x="${x(week * 7)}" y="218" text-anchor="middle" class="pharma-label small">${week}</text>`).join("");
+  const shots = data.shots.map((day) => `<line x1="${x(day)}" y1="200" x2="${x(day)}" y2="188" class="day-dose"></line>`).join("");
+  const nineTenths = (depot.lag || 0) + depot.half * 3;
+  return `
+    <svg class="pharma-kinetics" viewBox="0 0 600 240" role="img" aria-label="Nível relativo de ${escapeHtml(depot.name)} com injeções a cada ${depot.every} semanas">
+      <line x1="40" y1="200" x2="580" y2="200" class="kin-axis"></line>
+      <line x1="40" y1="${y(data.steady)}" x2="580" y2="${y(data.steady)}" class="kin-ref"></line>
+      <text x="44" y="${y(data.steady) - 5}" class="pharma-label small kin-ref-label">média no equilíbrio</text>
+      ${nineTenths < data.end && !data.stopped ? `<line x1="${x(nineTenths)}" y1="24" x2="${x(nineTenths)}" y2="200" class="kin-stop"></line><text x="${x(nineTenths) + 4}" y="34" class="pharma-label small">~90% do equilíbrio</text>` : ""}
+      <polyline points="${line}" class="kin-line"></polyline>
+      ${shots}
+      ${ticks}
+      <text x="580" y="236" text-anchor="end" class="pharma-label small">semanas</text>
+    </svg>`;
+}
+
+function renderDepotView(depot) {
+  const stopped = Boolean(state.pharma.depotStop);
+  const data = pharmaDepotCurve(depot, stopped);
+  /* Média do último intervalo até a 6ª semana (um ponto só cairia no vale da injeção). */
+  const from = 42 - Math.min(depot.every * 7, 42);
+  let sum = 0;
+  for (let t = from; t < 42; t += 1) sum += data.level(t);
+  const at6 = Math.round((sum / (42 - from) / data.steady) * 100);
+  const readings = [
+    `<div class="pharma-reading tone-ok"><strong>Pico em ${escapeHtml(depot.peakText)}; meia-vida ${escapeHtml(depot.halfText)}; equilíbrio em ${escapeHtml(depot.steady)}</strong><span>O equilíbrio vem com 3 a 5 meias-vidas e não chega antes com doses maiores ou mais frequentes; dose de ataque só antecipa o nível terapêutico.</span></div>`,
+    `<div class="pharma-reading tone-${at6 < 80 ? "warn" : "good"}"><strong>Na 6ª semana: ~${at6}% da média do equilíbrio</strong><span>O nível sobe por acúmulo sem mudar a dose. Aumentar antes de 6 a 8 semanas é difícil de avaliar; subir só depois de pelo menos 1 mês de observação.</span></div>`,
+  ];
+  if (depot.lag) readings.push(`<div class="pharma-reading tone-high"><strong>Liberação atrasada</strong><span>${escapeHtml(depot.oral)}</span></div>`);
+  if (stopped) readings.push(`<div class="pharma-reading tone-warn"><strong>Depois da última injeção</strong><span>O nível leva cerca de ${Math.round(depot.half / 7) || 1} ${Math.round(depot.half / 7) > 1 ? "semanas" : "semana"} para cair à metade: a recaída depois de parar um depósito costuma aparecer mais tarde que com o oral.</span></div>`);
+  return `${pharmaDepotSvg(depot, data)}${readings.join("")}`;
+}
+
+function renderPharmaDepot() {
+  const depots = pharmaClass().depots;
+  const depot = depots.find((item) => item.id === state.pharma.depot) || depots[0];
+  const chips = depots.map((item) => `<button type="button" class="pharma-chip ${item.id === depot.id ? "on" : ""}" data-pharma-depot="${item.id}" aria-pressed="${item.id === depot.id}">${escapeHtml(item.name)}</button>`).join("");
+  const rows = [["Dose", depot.dose], ["Intervalo", `a cada ${depot.every} semanas`], ["Dose-teste", depot.test], ["Início", depot.oral], ["Atenção", depot.note]];
+  return `
+    <div class="pharma-chips" role="group" aria-label="Antipsicóticos de depósito">${chips}</div>
+    <div class="pharma-grid">
+      <section class="pharma-card">
+        <div class="pharma-card-head"><h3>Nível ao longo das semanas · ${escapeHtml(depot.name)}</h3><span>injeção a cada ${depot.every} semanas</span></div>
+        <div class="pharma-toggles"><button type="button" class="pharma-toggle ${state.pharma.depotStop ? "on" : ""}" data-pharma-depotstop aria-pressed="${Boolean(state.pharma.depotStop)}">Parar as injeções no meio</button></div>
+        ${renderDepotView(depot)}
+        <p class="pharma-extra">Curva didática montada com o tempo até o pico e a meia-vida do Maudsley (tabela 1.9), sem dose de ataque; o traço embaixo marca cada injeção.</p>
+      </section>
+      <section class="pharma-card">
+        <h3>Como usar</h3>
+        <table class="pharma-table add-use"><tbody>${rows.map(([label, value]) => `<tr><th scope="row">${label}</th><td>${escapeHtml(value)}</td></tr>`).join("")}</tbody></table>
+        <p class="pharma-extra">Doses e intervalos conforme o Maudsley (tabela 1.8), para adultos. Somar um antipsicótico oral ao depósito pode levar sem querer a uma dose alta.</p>
+        ${depot.drug ? pharmaStudyLink(pharmaDrug(depot.drug)) : ""}
       </section>
     </div>`;
 }
@@ -1748,6 +1859,7 @@ function pharmaAdCues(drug) {
   else if (drug.group === "IRSN") cues.push("SERT e NET, sem receptores; o NET pesa mais conforme a dose: IRSN");
   else if (drug.group === "Tricíclico") cues.push("transportadores mais muitos receptores: tricíclico");
   if (r.NET >= 2 && r.DAT >= 2 && r.SERT === 0) cues.push("NET e DAT, sem SERT");
+  if (r.NMDA >= 3) cues.push("só NMDA, fora das monoaminas: escetamina");
   if (r["5HT2A"] >= 4) cues.push("5-HT2A muito forte");
   if (r.H1 >= 3) cues.push("H1 forte (sedação, peso)");
   if (r.M1 >= 3) cues.push("M1 forte (anticolinérgico)");
@@ -1773,6 +1885,9 @@ function pharmaAnxCues(drug) {
   else if (r.A1 >= 3 && r.A23 <= 2) cues.push("preferência por GABA-A com α1: Z-drug (hipnótico)");
   if (r.A2D >= 3) cues.push("α2δ dos canais de cálcio: gabapentinoide");
   if (r.HT1A >= 3) cues.push("agonista parcial 5-HT1A, fora do GABA-A");
+  if (r.MT >= 3) cues.push("receptores de melatonina: melatonina");
+  if (r.OX >= 3) cues.push("bloqueio de orexina: antagonista de orexina (DORA)");
+  if (r.H1 >= 3) cues.push("só H1: doxepina em dose baixa");
   return `${cues.length ? `Pistas: ${cues.join("; ")}. ` : ""}${drug.extra}`;
 }
 
@@ -1926,9 +2041,10 @@ function renderPharmaPanel() {
     }
     return;
   }
-  const mode = ["paths", "compare", "synapse", "quiz"].includes(state.pharma.mode) ? state.pharma.mode : "paths";
+  const hasDepot = Boolean(pharmaClass().depots);
+  const mode = ["paths", "compare", "synapse", "quiz", ...(hasDepot ? ["depot"] : [])].includes(state.pharma.mode) ? state.pharma.mode : "paths";
   const modeButton = (id, label) => `<button type="button" data-pharma-mode="${id}" class="${mode === id ? "active" : ""}" aria-pressed="${mode === id}">${label}</button>`;
-  const body = mode === "compare" ? renderPharmaCompare() : mode === "synapse" ? renderPharmaSynapse() : mode === "quiz" ? renderPharmaQuiz() : renderPharmaPaths();
+  const body = mode === "compare" ? renderPharmaCompare() : mode === "synapse" ? renderPharmaSynapse() : mode === "quiz" ? renderPharmaQuiz() : mode === "depot" ? renderPharmaDepot() : renderPharmaPaths();
   const cls = pharmaClass();
   const html = `
     <header class="pharma-head">
@@ -1939,7 +2055,7 @@ function renderPharmaPanel() {
       </div>
       <div class="pharma-switches">
         <div class="segmented pharma-modes" role="group" aria-label="Modo">
-          ${modeButton("paths", pharmaIsStabilizer() ? "Mecanismos e fases" : pharmaIsAnxiolytic() || pharmaIsStimulant() || pharmaIsDementia() || pharmaIsAddiction() ? "Mecanismos e usos" : pharmaIsAntidepressant() ? "Sistemas e alvos" : "Vias e receptores")}${modeButton("compare", "Comparar")}${modeButton("synapse", pharmaIsStabilizer() ? "Nível e interações" : pharmaIsAnxiolytic() ? "Meia-vida e retirada" : pharmaIsStimulant() ? "Ao longo do dia" : pharmaIsDementia() ? "Indicação e segurança" : pharmaIsAddiction() ? "Receptor e uso" : "Sinapse")}${modeButton("quiz", "Treino")}
+          ${modeButton("paths", pharmaIsStabilizer() ? "Mecanismos e fases" : pharmaIsAnxiolytic() || pharmaIsStimulant() || pharmaIsDementia() || pharmaIsAddiction() ? "Mecanismos e usos" : pharmaIsAntidepressant() ? "Sistemas e alvos" : "Vias e receptores")}${modeButton("compare", "Comparar")}${modeButton("synapse", pharmaIsStabilizer() ? "Nível e interações" : pharmaIsAnxiolytic() ? "Meia-vida e retirada" : pharmaIsStimulant() ? "Ao longo do dia" : pharmaIsDementia() ? "Indicação e segurança" : pharmaIsAddiction() ? "Receptor e uso" : "Sinapse")}${hasDepot ? modeButton("depot", "Depósito") : ""}${modeButton("quiz", "Treino")}
         </div>
       </div>
     </header>
@@ -1964,7 +2080,7 @@ function openPharmaStudy(drug) {
   const panel = document.querySelector("#pharmaPanel");
   if (!panel) return;
   panel.addEventListener("click", (event) => {
-    const target = event.target.closest("[data-pharma-drug], [data-pharma-class], [data-pharma-mode], [data-pharma-study], [data-pharma-answer], [data-pharma-quiz], [data-pharma-review], [data-pharma-inter], [data-pharma-stop], [data-pharma-repeat], [data-pharma-hub], [data-pharma-quick], [data-pharma-dtype], [data-pharma-dstage], [data-pharma-bg]");
+    const target = event.target.closest("[data-pharma-drug], [data-pharma-class], [data-pharma-mode], [data-pharma-study], [data-pharma-answer], [data-pharma-quiz], [data-pharma-review], [data-pharma-inter], [data-pharma-stop], [data-pharma-repeat], [data-pharma-hub], [data-pharma-quick], [data-pharma-dtype], [data-pharma-dstage], [data-pharma-bg], [data-pharma-depot], [data-pharma-depotstop]");
     if (!target) return;
     const data = target.dataset;
     if (data.pharmaHub !== undefined) state.pharma.view = "hub";
@@ -1978,7 +2094,9 @@ function openPharmaStudy(drug) {
       setPharmaClass(data.pharmaClass);
       state.pharma.view = "class";
       state.pharma.mode = "paths";
-    } else if (data.pharmaBg !== undefined) state.pharma.addBg = !state.pharma.addBg;
+    } else if (data.pharmaDepot) state.pharma.depot = data.pharmaDepot;
+    else if (data.pharmaDepotstop !== undefined) state.pharma.depotStop = !state.pharma.depotStop;
+    else if (data.pharmaBg !== undefined) state.pharma.addBg = !state.pharma.addBg;
     else if (data.pharmaDtype) state.pharma.dtype = data.pharmaDtype;
     else if (data.pharmaDstage) state.pharma.dstage = data.pharmaDstage;
     else if (data.pharmaStop !== undefined) state.pharma.stopped = !state.pharma.stopped;

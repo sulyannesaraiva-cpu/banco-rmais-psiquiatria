@@ -117,5 +117,73 @@ window.PHARMA_SIM.antipsicoticos = {
       extra: "Agonista parcial D2 e, com preferência, D3 (efeito discutido sobre sintomas negativos).",
       pa: ["D2", "5HT1A"],
     },
+    {
+      id: "brexpiprazol", name: "Brexpiprazol", generation: 2, search: ["brexpiprazol", "brexpiprazole"],
+      receptors: { D2: 4, "5HT2A": 4, "5HT1A": 4, H1: 2, M1: 0, A1: 3 },
+      effects: { sedation: 0, weight: 1, akathisia: 1, parkinsonism: 0, anticholinergic: 0, hypotension: 0, prolactin: 0, qt: 0 },
+      extra: "Agonista parcial D2 com atividade intrínseca menor que a do aripiprazol, agonista parcial 5-HT1A e bloqueador potente de 5-HT2A.",
+      pa: ["D2", "5HT1A"],
+    },
+    {
+      id: "asenapina", name: "Asenapina", generation: 2, search: ["asenapina", "asenapine"],
+      receptors: { D2: 3, "5HT2A": 4, "5HT1A": 2, H1: 3, M1: 0, A1: 3 },
+      effects: { sedation: 1, weight: 1, akathisia: 1, parkinsonism: 1, anticholinergic: 0, hypotension: 0, prolactin: 1, qt: 0 },
+      extra: "Comprimido sublingual (engolido, quase não é absorvido): não comer nem beber logo depois. Dormência na boca e alteração do paladar. Também bloqueia 5-HT2C, 5-HT7 e α2.",
+      pa: ["5HT1A"],
+    },
+  ],
+  /* Antipsicóticos de depósito: Maudsley 15ª ed., tabelas 1.8 (doses, intervalos, dose-teste) e
+     1.9 (tempo até o pico, meia-vida plasmática, tempo até o equilíbrio), e seções de aripiprazol,
+     olanzapina e paliperidona de longa ação. peak e half em dias (valor médio das faixas);
+     every em semanas; lag em dias para a risperidona em microesferas (liberação atrasada). */
+  depots: [
+    {
+      id: "haloperidol-dec", name: "Decanoato de haloperidol", drug: "haloperidol", every: 4, peak: 6, half: 21,
+      peakText: "3–9 dias", halfText: "21 dias", steady: "~14 semanas",
+      dose: "50 a 300 mg a cada 4 semanas", test: "25 mg", oral: "Dose-teste e depois titular; esperar 4 a 10 dias após o teste.",
+      note: "Alto risco de extrapiramidais.",
+    },
+    {
+      id: "flufenazina-dec", name: "Decanoato de flufenazina", drug: "flufenazina", every: 2, peak: 1, half: 8.5,
+      peakText: "provavelmente dois picos: no dia e ~1 semana depois", halfText: "7–10 dias", steady: "~8 semanas",
+      dose: "12,5 mg a cada 2 semanas até 100 mg a cada 2 semanas", test: "12,5 mg", oral: "Dose-teste e depois titular.",
+      note: "Alto risco de extrapiramidais.",
+    },
+    {
+      id: "zuclopentixol-dec", name: "Decanoato de zuclopentixol", drug: null, every: 2, peak: 5.5, half: 19,
+      peakText: "4–7 dias", halfText: "19 dias", steady: "~12 semanas",
+      dose: "200 mg a cada 3 semanas até 600 mg por semana", test: "100 mg", oral: "Dose-teste e depois titular.",
+      note: "Alto risco de extrapiramidais.",
+    },
+    {
+      id: "risperidona-microesferas", name: "Risperidona em microesferas", drug: "risperidona", every: 2, peak: 7, half: 4.5, lag: 18,
+      peakText: "~28 dias", halfText: "3–6 dias", steady: "~8 semanas",
+      dose: "25 a 50 mg a cada 2 semanas", test: "Não precisa (tolerância ao oral antes)", oral: "Manter o oral nas primeiras semanas: a liberação só começa depois de 2 a 3 semanas.",
+      note: "Liberação atrasada: sem cobertura oral, há semanas sem remédio.",
+    },
+    {
+      id: "paliperidona-1m", name: "Palmitato de paliperidona mensal", drug: "paliperidona", every: 4, peak: 13, half: 37,
+      peakText: "13 dias", halfText: "25–49 dias", steady: "~20 semanas",
+      dose: "Ataque: 150 mg no dia 1 e 100 mg no dia 8, no deltoide; depois 50 a 150 mg por mês", test: "Não precisa (resposta prévia a risperidona ou paliperidona oral)", oral: "O oral pode ser suspenso ao iniciar.",
+      note: "A dose de ataque leva rápido ao nível terapêutico; a curva abaixo não mostra o ataque.",
+    },
+    {
+      id: "paliperidona-3m", name: "Palmitato de paliperidona trimestral", drug: "paliperidona", every: 13, peak: 25, half: 90,
+      peakText: "25 dias", halfText: "84–95 dias (deltoide)", steady: "~52 semanas",
+      dose: "175 a 525 mg a cada 3 meses", test: "Não precisa", oral: "Só depois de 4 meses de paliperidona mensal.",
+      note: "Não serve para paciente agudamente agitado.",
+    },
+    {
+      id: "aripiprazol-1m", name: "Aripiprazol mensal", drug: "aripiprazol", every: 4, peak: 6, half: 27,
+      peakText: "4 dias (deltoide); 5–7 dias (glúteo)", halfText: "27 dias", steady: "~20 semanas",
+      dose: "300 a 400 mg por mês", test: "Não precisa (tolerância ao oral antes)", oral: "Aripiprazol oral 10 a 20 mg/dia por 14 dias depois da primeira injeção (sem isso, o nível pode não bastar).",
+      note: "Não aumenta a prolactina.",
+    },
+    {
+      id: "olanzapina-pamoato", name: "Pamoato de olanzapina", drug: "olanzapina", every: 4, peak: 4, half: 30,
+      peakText: "2–6 dias", halfText: "30 dias", steady: "~12 semanas",
+      dose: "150 mg a cada 4 semanas até 300 mg a cada 2 semanas (só no glúteo)", test: "Não precisa (tolerância ao oral antes)", oral: "Efeito já em cerca de 3 dias.",
+      note: "Síndrome pós-injeção (delirium e sedação) em menos de 0,1% das injeções, quase sempre na primeira hora: aplicar e observar em serviço de saúde.",
+    },
   ],
 };
