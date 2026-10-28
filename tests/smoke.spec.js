@@ -488,3 +488,23 @@ test("simulador de fármacos: estabilizadores (mecanismos, nível, interações 
   await expect(page.locator(".pharma-feedback")).toBeVisible();
   expect(errors).toEqual([]);
 });
+test("simulador de fármacos: ansiolíticos (GABA-A, meia-vida, equivalência e treino)", async ({ page }) => {
+  const errors = await openSite(page);
+  await goTab(page, "pharma");
+  await page.locator('[data-pharma-class="ansioliticos"]').click();
+  await page.locator('[data-pharma-mode="paths"]').click();
+  await page.locator('[data-pharma-drug="zolpidem"]').click();
+  await expect(page.locator("#pharmaPanel .pharma-effects").first()).toContainText("Insônia: forte");
+  await page.locator('[data-pharma-mode="synapse"]').click();
+  await page.locator('[data-pharma-drug="diazepam"]').click();
+  await expect(page.locator("#pharmaKineticsView")).toContainText("Acúmulo com uso diário");
+  await page.locator("[data-pharma-stop]").click();
+  await expect(page.locator("#pharmaKineticsView")).toContainText("Meia-vida longa");
+  await page.locator('[data-pharma-eq="drug"]').selectOption("clonazepam");
+  await page.locator('[data-pharma-eq="dose"]').fill("2");
+  await expect(page.locator("#pharmaEqResult")).toContainText("40 mg de diazepam");
+  await page.locator('[data-pharma-mode="quiz"]').click();
+  await page.locator("[data-pharma-answer]").first().click();
+  await expect(page.locator(".pharma-feedback")).toBeVisible();
+  expect(errors).toEqual([]);
+});

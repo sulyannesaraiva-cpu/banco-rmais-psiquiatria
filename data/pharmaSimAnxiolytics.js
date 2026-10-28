@@ -1,0 +1,134 @@
+/* Dados do simulador de psicofarmacologia: ansiolíticos e hipnóticos. Material didático e
+   simplificado: não serve para prescrição.
+   - receptors: alvos com nível qualitativo (0 = sem ação, 4 = ação principal), conforme o
+     mecanismo descrito em Stahl, Prescriber's Guide 8ª ed. (2024). "pa" marca agonismo parcial.
+   - halfLife: meia-vida de eliminação em horas [mínimo, máximo], conforme Stahl (bromazepam,
+     ausente no guia americano, conforme bula).
+   - eq: dose aproximada equivalente a 10 mg de diazepam. Maudsley 15ª ed., tabela 3.24
+     (diazepam, clonazepam, lorazepam, clordiazepóxido); demais conforme o Ashton Manual.
+   - indications e effects: classificação didática (0 a 3) a partir de Maudsley (cap. 3) e Stahl. */
+
+window.PHARMA_SIM = window.PHARMA_SIM || {};
+window.PHARMA_SIM.ansioliticos = {
+  id: "ansioliticos",
+  kind: "anxiolytic",
+  label: "Ansiolíticos e hipnóticos",
+  tagline: "Onde cada um age no receptor GABA-A (ou fora dele), quanto tempo fica no corpo e o que isso significa para ressaca, acúmulo e retirada.",
+  source: "Mecanismos e meias-vidas conforme Stahl (Prescriber's Guide, 8ª ed.); doses equivalentes conforme Maudsley Prescribing Guidelines (15ª ed., tabela 3.24) e Ashton Manual. Classificação de usos e efeitos é didática.",
+  defaults: { drug: "clonazepam", a: "clonazepam", b: "alprazolam" },
+  receptors: [
+    { id: "A1", label: "GABA-A α1", role: "Sedação, amnésia e efeito anticonvulsivante" },
+    { id: "A23", label: "GABA-A α2/α3", role: "Efeito ansiolítico e relaxamento muscular" },
+    { id: "A5", label: "GABA-A α5", role: "Memória e cognição" },
+    { id: "A2D", label: "α2δ (Ca²⁺)", role: "Menos entrada de cálcio e menos liberação de glutamato" },
+    { id: "HT1A", label: "5-HT1A", role: "Agonismo parcial: ansiolítico sem sedação, com latência de semanas" },
+  ],
+  indications: [
+    { id: "anxiety", label: "Ansiedade (TAG, pânico)" },
+    { id: "insomnia", label: "Insônia" },
+    { id: "agitation", label: "Agitação aguda" },
+    { id: "alcohol", label: "Abstinência alcoólica" },
+    { id: "seizure", label: "Convulsões" },
+  ],
+  effects: [
+    { id: "sedation", label: "Sedação e ressaca", why: "GABA-A com α1; maior quanto mais longa a meia-vida em uso noturno" },
+    { id: "memory", label: "Prejuízo de memória", why: "GABA-A com α1 e α5 (amnésia anterógrada)" },
+    { id: "falls", label: "Quedas em idosos", why: "sedação, relaxamento muscular e acúmulo das meias-vidas longas" },
+    { id: "dependence", label: "Tolerância e dependência", why: "adaptação do receptor GABA-A ao uso contínuo" },
+    { id: "withdrawal", label: "Retirada e rebote", why: "mais intensos e mais precoces nas meias-vidas curtas" },
+    { id: "respiratory", label: "Depressão respiratória", why: "sobretudo somado a álcool ou opioides" },
+    { id: "complexSleep", label: "Comportamentos complexos do sono", why: "Z-drugs: dirigir, comer ou andar sem lembrar" },
+    { id: "misuse", label: "Uso indevido", why: "início rápido e meia-vida curta reforçam o uso" },
+  ],
+  drugs: [
+    {
+      id: "diazepam", name: "Diazepam", group: "Benzodiazepínico", search: ["diazepam"],
+      receptors: { A1: 3, A23: 3, A5: 3, A2D: 0, HT1A: 0 },
+      halfLife: [20, 50], eq: 10,
+      indications: { anxiety: 3, insomnia: 1, agitation: 2, alcohol: 3, seizure: 3 },
+      effects: { sedation: 2, memory: 2, falls: 3, dependence: 3, withdrawal: 2, respiratory: 3, complexSleep: 0, misuse: 2 },
+      extra: "Meia-vida longa e metabólito ativo (desmetildiazepam) de meia-vida ainda maior: acumula, mas a retirada é mais suave. Referência para as doses equivalentes e para a retirada gradual.",
+    },
+    {
+      id: "clordiazepoxido", name: "Clordiazepóxido", group: "Benzodiazepínico", search: ["clordiazepoxido", "clordiazepóxido"],
+      receptors: { A1: 3, A23: 3, A5: 3, A2D: 0, HT1A: 0 },
+      halfLife: [24, 48], eq: 25,
+      indications: { anxiety: 2, insomnia: 0, agitation: 1, alcohol: 3, seizure: 1 },
+      effects: { sedation: 2, memory: 1, falls: 3, dependence: 3, withdrawal: 2, respiratory: 2, complexSleep: 0, misuse: 1 },
+      extra: "Meia-vida longa, clássico na abstinência alcoólica (esquemas de redução).",
+    },
+    {
+      id: "clonazepam", name: "Clonazepam", group: "Benzodiazepínico", search: ["clonazepam"],
+      receptors: { A1: 3, A23: 3, A5: 3, A2D: 0, HT1A: 0 },
+      halfLife: [30, 40], eq: 0.5,
+      indications: { anxiety: 3, insomnia: 1, agitation: 2, alcohol: 1, seizure: 3 },
+      effects: { sedation: 2, memory: 2, falls: 3, dependence: 3, withdrawal: 2, respiratory: 2, complexSleep: 0, misuse: 2 },
+      extra: "Alta potência e meia-vida longa: muito usado no pânico. Poucas doses ao dia.",
+    },
+    {
+      id: "alprazolam", name: "Alprazolam", group: "Benzodiazepínico", search: ["alprazolam"],
+      receptors: { A1: 3, A23: 3, A5: 3, A2D: 0, HT1A: 0 },
+      halfLife: [12, 15], eq: 0.5,
+      indications: { anxiety: 3, insomnia: 0, agitation: 1, alcohol: 0, seizure: 0 },
+      effects: { sedation: 1, memory: 2, falls: 2, dependence: 3, withdrawal: 3, respiratory: 2, complexSleep: 0, misuse: 3 },
+      extra: "Alta potência e efeito que dura menos que a meia-vida: ansiedade entre doses e retirada intensa. Metabolizado pela CYP3A4.",
+    },
+    {
+      id: "lorazepam", name: "Lorazepam", group: "Benzodiazepínico", search: ["lorazepam"],
+      receptors: { A1: 3, A23: 3, A5: 3, A2D: 0, HT1A: 0 },
+      halfLife: [10, 20], eq: 1,
+      indications: { anxiety: 3, insomnia: 1, agitation: 3, alcohol: 3, seizure: 3 },
+      effects: { sedation: 2, memory: 2, falls: 2, dependence: 3, withdrawal: 3, respiratory: 2, complexSleep: 0, misuse: 2 },
+      extra: "Sem metabólitos ativos (só glucuronidação): preferido na doença hepática e no idoso. Útil na catatonia e na agitação.",
+    },
+    {
+      id: "bromazepam", name: "Bromazepam", group: "Benzodiazepínico", search: ["bromazepam"],
+      receptors: { A1: 3, A23: 3, A5: 3, A2D: 0, HT1A: 0 },
+      halfLife: [12, 20], eq: 6,
+      indications: { anxiety: 3, insomnia: 1, agitation: 1, alcohol: 1, seizure: 0 },
+      effects: { sedation: 2, memory: 2, falls: 3, dependence: 3, withdrawal: 2, respiratory: 2, complexSleep: 0, misuse: 2 },
+      extra: "Muito usado no Brasil. Meia-vida intermediária (valores de bula; ausente do guia americano de Stahl).",
+    },
+    {
+      id: "midazolam", name: "Midazolam", group: "Benzodiazepínico", search: ["midazolam"],
+      receptors: { A1: 3, A23: 3, A5: 3, A2D: 0, HT1A: 0 },
+      halfLife: [1.8, 6.4], eq: null,
+      indications: { anxiety: 0, insomnia: 1, agitation: 3, alcohol: 1, seizure: 3 },
+      effects: { sedation: 3, memory: 3, falls: 2, dependence: 2, withdrawal: 2, respiratory: 3, complexSleep: 0, misuse: 1 },
+      extra: "Início muito rápido e meia-vida curta: sedação de procedimentos e agitação (via intramuscular). Metabolizado pela CYP3A4.",
+    },
+    {
+      id: "zolpidem", name: "Zolpidem", group: "Z-drug", search: ["zolpidem"],
+      receptors: { A1: 4, A23: 1, A5: 0, A2D: 0, HT1A: 0 },
+      halfLife: [2.5, 2.5], eq: 20,
+      indications: { anxiety: 0, insomnia: 3, agitation: 0, alcohol: 0, seizure: 0 },
+      effects: { sedation: 1, memory: 2, falls: 2, dependence: 2, withdrawal: 2, respiratory: 1, complexSleep: 3, misuse: 2 },
+      extra: "Seletivo para GABA-A com α1: hipnótico com pouco efeito ansiolítico ou relaxante. Meia-vida curta: pouca ressaca.",
+    },
+    {
+      id: "eszopiclona", name: "Eszopiclona", group: "Z-drug", search: ["eszopiclona", "zopiclona"],
+      receptors: { A1: 3, A23: 2, A5: 1, A2D: 0, HT1A: 0 },
+      halfLife: [6, 6], eq: null,
+      indications: { anxiety: 0, insomnia: 3, agitation: 0, alcohol: 0, seizure: 0 },
+      effects: { sedation: 1, memory: 1, falls: 2, dependence: 2, withdrawal: 1, respiratory: 1, complexSleep: 2, misuse: 1 },
+      extra: "Z-drug menos seletiva que o zolpidem. Gosto metálico é queixa comum.",
+    },
+    {
+      id: "pregabalina", name: "Pregabalina", group: "Gabapentinoide", search: ["pregabalina"],
+      receptors: { A1: 0, A23: 0, A5: 0, A2D: 4, HT1A: 0 },
+      halfLife: [5, 7], eq: null,
+      indications: { anxiety: 3, insomnia: 1, agitation: 0, alcohol: 1, seizure: 2 },
+      effects: { sedation: 2, memory: 1, falls: 2, dependence: 2, withdrawal: 2, respiratory: 2, complexSleep: 0, misuse: 2 },
+      extra: "Não age no GABA-A: liga-se à subunidade α2δ dos canais de cálcio. Eliminada pelo rim sem metabolismo hepático. Risco de depressão respiratória com opioides.",
+    },
+    {
+      id: "buspirona", name: "Buspirona", group: "Agonista parcial 5-HT1A", search: ["buspirona"],
+      receptors: { A1: 0, A23: 0, A5: 0, A2D: 0, HT1A: 3 },
+      pa: ["HT1A"],
+      halfLife: [2, 3], eq: null,
+      indications: { anxiety: 2, insomnia: 0, agitation: 0, alcohol: 0, seizure: 0 },
+      effects: { sedation: 0, memory: 0, falls: 0, dependence: 0, withdrawal: 0, respiratory: 0, complexSleep: 0, misuse: 0 },
+      extra: "Sem sedação, dependência ou tolerância cruzada com benzodiazepínicos (não serve para a retirada deles). Efeito ansiolítico leva semanas.",
+    },
+  ],
+};

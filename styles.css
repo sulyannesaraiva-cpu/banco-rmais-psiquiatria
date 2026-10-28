@@ -6845,3 +6845,67 @@ body.theme-dark .pharma-chip.on {
   background: #fde8dd;
   color: #5c1d05;
 }
+/* Simulador: ansiolíticos (GABA-A, curva de concentração, equivalência). */
+.pharma-target path {
+  fill: color-mix(in srgb, var(--t) 30%, var(--panel));
+  stroke: var(--t);
+  stroke-width: 2;
+}
+
+.pharma-target .pore {
+  fill: var(--panel);
+  stroke-width: 1.5;
+}
+
+.pharma-kinetics {
+  width: 100%;
+  height: auto;
+}
+
+.kin-axis {
+  stroke: var(--line-strong);
+  stroke-width: 1.5;
+}
+
+.kin-ref {
+  stroke: var(--muted);
+  stroke-width: 1;
+  stroke-dasharray: 4 4;
+}
+
+.kin-stop {
+  stroke: #c2410c;
+  stroke-width: 2;
+  stroke-dasharray: 6 4;
+}
+
+.kin-line {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 2.5;
+  stroke-linejoin: round;
+}
+
+.pharma-eq {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 120px;
+  gap: 10px;
+}
+
+.pharma-eq label {
+  display: grid;
+  gap: 4px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.pharma-eq select,
+.pharma-eq input {
+  min-height: 42px;
+  padding: 0 10px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--panel);
+  color: var(--ink);
+  font-weight: 600;
+}

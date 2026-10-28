@@ -4,6 +4,9 @@
    remédio (recaptação, freio α2, MAO ou receptor). Nos estabilizadores (data/pharmaSimStabilizers.js),
    a primeira tela mostra os alvos no terminal nervoso e as fases em que cada um funciona, e a
    segunda vira "Nível e interações" (faixas de nível sérico, interações e titulação da lamotrigina).
+   Nos ansiolíticos e hipnóticos (data/pharmaSimAnxiolytics.js), a primeira tela mostra o receptor
+   GABA-A por subunidade α, o α2δ e o 5-HT1A, e a segunda vira "Meia-vida e retirada" (curva de
+   concentração com uso diário, parada abrupta e conversor de dose equivalente ao diazepam).
    - Vias e receptores: corte do cérebro com as 4 vias dopaminérgicas coloridas conforme o remédio
      escolhido, perfil de receptores e "o que esperar" (efeitos relativos).
    - Comparar: dois remédios lado a lado, com o porquê das diferenças.
@@ -373,6 +376,188 @@ function pharmaDrugChips(selected) {
     <button type="button" class="pharma-chip ${drug.id === selected ? "on" : ""}" data-pharma-drug="${drug.id}" aria-pressed="${drug.id === selected}">${escapeHtml(drug.name)}</button>`).join("");
 }
 
+/* ---------- Ansiolíticos e hipnóticos: GABA-A, meia-vida, retirada e equivalência ---------- */
+
+const PHARMA_ANX_COLORS = { A1: "#0072b2", A23: "#009e73", A5: "#e69f00", A2D: "#d55e00", HT1A: "#b0418a" };
+
+function pharmaIsAnxiolytic() {
+  return pharmaClass()?.kind === "anxiolytic";
+}
+
+function pharmaHalfLifeMid(drug) {
+  return (drug.halfLife[0] + drug.halfLife[1]) / 2;
+}
+
+function pharmaHalfLifeText(drug) {
+  const [low, high] = drug.halfLife;
+  const fmt = (value) => String(value).replace(".", ",");
+  return low === high ? `~${fmt(low)} h` : `${fmt(low)}–${fmt(high)} h`;
+}
+
+function pharmaPentamer(x, y) {
+  const subunits = Array.from({ length: 5 }, (_, i) => {
+    const angle = -Math.PI / 2 + (i * 2 * Math.PI) / 5;
+    return `<circle cx="${(x + Math.cos(angle) * 27).toFixed(1)}" cy="${(y + Math.sin(angle) * 27).toFixed(1)}" r="16"></circle>`;
+  }).join("");
+  return `${subunits}<circle cx="${x}" cy="${y}" r="8" class="pore"></circle>`;
+}
+
+function pharmaAnxSvg(drug) {
+  const r = drug.receptors;
+  const cls = (id) => `pharma-target${r[id] === 0 ? " faint" : ""}${r[id] >= 3 ? " strong" : ""}`;
+  const c = PHARMA_ANX_COLORS;
+  return `
+    <svg class="pharma-brain" viewBox="0 0 560 300" role="img" aria-label="Receptores GABA-A com subunidades α1, α2/α3 e α5, canal de cálcio com α2δ e receptor 5-HT1A">
+      <g class="${cls("A1")}" style="--t:${c.A1}">${pharmaPentamer(80, 96)}<text x="80" y="160" text-anchor="middle" class="pharma-label">GABA-A</text><text x="80" y="178" text-anchor="middle" class="pharma-label small">com α1</text></g>
+      <g class="${cls("A23")}" style="--t:${c.A23}">${pharmaPentamer(200, 96)}<text x="200" y="160" text-anchor="middle" class="pharma-label">GABA-A</text><text x="200" y="178" text-anchor="middle" class="pharma-label small">com α2/α3</text></g>
+      <g class="${cls("A5")}" style="--t:${c.A5}">${pharmaPentamer(320, 96)}<text x="320" y="160" text-anchor="middle" class="pharma-label">GABA-A</text><text x="320" y="178" text-anchor="middle" class="pharma-label small">com α5</text></g>
+      <g class="${cls("A2D")}" style="--t:${c.A2D}">
+        <rect x="420" y="62" width="34" height="70" rx="8"></rect><rect x="458" y="62" width="34" height="70" rx="8"></rect>
+        <circle cx="510" cy="58" r="16"></circle>
+        <text x="476" y="160" text-anchor="middle" class="pharma-label">Canal de Ca²⁺</text><text x="476" y="178" text-anchor="middle" class="pharma-label small">subunidade α2δ</text>
+      </g>
+      <g class="${cls("HT1A")}" style="--t:${c.HT1A}">
+        <path d="M232 268 v-36 h14 v20 h20 v-20 h14 v36 z"></path>
+        <text x="300" y="246" class="pharma-label">5-HT1A</text><text x="300" y="264" class="pharma-label small">receptor de serotonina</text>
+      </g>
+      <text x="200" y="22" text-anchor="middle" class="pharma-label small">Cl⁻ entra pelo poro central quando o GABA abre o canal</text>
+    </svg>`;
+}
+
+function renderAnxMech(drug) {
+  const rows = Object.fromEntries(pharmaClass().receptors.map((target) => {
+    const value = drug.receptors[target.id] ?? 0;
+    const partial = pharmaIsPartial(drug, target.id);
+    return [target.id, { name: target.label, text: target.role, badge: partial && value ? "agonista parcial" : PHARMA_ACTION_LABELS[value], badgeTone: value >= 3 ? "good" : value ? "ok" : "low", faint: value === 0 }];
+  }));
+  const indications = pharmaClass().indications.map((item) => {
+    const value = drug.indications[item.id] ?? 0;
+    return `<span class="pharma-effect evidence-${value}">${escapeHtml(item.label)}: ${PHARMA_EVIDENCE_LABELS[value]}</span>`;
+  }).join("");
+  return `
+    <div class="pharma-chips" role="group" aria-label="Ansiolíticos e hipnóticos">${pharmaDrugChips(drug.id)}</div>
+    <div class="pharma-grid">
+      <section class="pharma-card">
+        <div class="pharma-card-head"><h3>Onde age · ${escapeHtml(drug.name)}</h3><span>${escapeHtml(pharmaDrugGroup(drug))} · meia-vida ${pharmaHalfLifeText(drug)}</span></div>
+        ${pharmaAnxSvg(drug)}
+        <div class="pharma-paths">${pharmaPathRows(rows, PHARMA_ANX_COLORS)}</div>
+      </section>
+      <section class="pharma-card">
+        <h3>Para que serve</h3>
+        <div class="pharma-effects">${indications}</div>
+        <p class="pharma-extra">${escapeHtml(drug.extra)}</p>
+        <h4>O que vigiar</h4>
+        <div class="pharma-effects">${pharmaEffectChips(drug)}</div>
+        ${pharmaStudyLink(drug)}
+      </section>
+    </div>`;
+}
+
+/* Curva didática de concentração: uma dose por dia (à noite), eliminação de primeira ordem com a
+   meia-vida média do remédio; 1,0 = pico de uma dose isolada. */
+function pharmaKinetics(drug, days, stopped) {
+  const k = Math.log(2) / pharmaHalfLifeMid(drug);
+  const doses = Array.from({ length: days }, (_, i) => i * 24);
+  const end = (days + 5) * 24;
+  const points = [];
+  for (let t = 0; t <= end; t += 2) {
+    const given = stopped ? doses.filter((dose) => dose <= t) : Array.from({ length: Math.floor(t / 24) + 1 }, (_, i) => i * 24);
+    points.push([t, given.reduce((sum, dose) => sum + Math.exp(-k * (t - dose)), 0)]);
+  }
+  const accumulation = 1 / (1 - Math.exp(-k * 24));
+  const morning = Math.exp(-k * 8) * doses.reduce((sum, dose) => sum + Math.exp(-k * ((days - 1) * 24 - dose)), 0);
+  return { points, end, accumulation, morning, steadyDays: (4.5 * pharmaHalfLifeMid(drug)) / 24, lastDose: (days - 1) * 24 };
+}
+
+function pharmaKineticsSvg(drug, days, stopped) {
+  const data = pharmaKinetics(drug, days, stopped);
+  const top = Math.max(1.2, ...data.points.map((point) => point[1])) * 1.08;
+  const x = (t) => 40 + (t / data.end) * 540;
+  const y = (c) => 200 - (c / top) * 180;
+  const line = data.points.map((point) => `${x(point[0]).toFixed(1)},${y(point[1]).toFixed(1)}`).join(" ");
+  const ticks = Array.from({ length: Math.floor(data.end / 24) + 1 }, (_, i) => i).filter((i) => i % (data.end > 24 * 14 ? 2 : 1) === 0)
+    .map((i) => `<line x1="${x(i * 24)}" y1="200" x2="${x(i * 24)}" y2="204" class="kin-axis"></line><text x="${x(i * 24)}" y="218" text-anchor="middle" class="pharma-label small">${i}</text>`).join("");
+  return `
+    <svg class="pharma-kinetics" viewBox="0 0 600 230" role="img" aria-label="Curva de concentração de ${escapeHtml(drug.name)} com uma dose por dia por ${days} dias">
+      <line x1="40" y1="200" x2="580" y2="200" class="kin-axis"></line>
+      <line x1="40" y1="${y(1)}" x2="580" y2="${y(1)}" class="kin-ref"></line>
+      <text x="578" y="${y(1) - 5}" text-anchor="end" class="pharma-label small kin-ref-label">pico de uma dose</text>
+      ${stopped ? `<line x1="${x(data.lastDose + 24)}" y1="20" x2="${x(data.lastDose + 24)}" y2="200" class="kin-stop"></line><text x="${x(data.lastDose + 24) + 4}" y="32" class="pharma-label small">parou</text>` : ""}
+      <polyline points="${line}" class="kin-line"></polyline>
+      ${ticks}
+      <text x="580" y="218" text-anchor="end" class="pharma-label small">dias</text>
+    </svg>`;
+}
+
+function pharmaWithdrawalText(drug) {
+  const half = pharmaHalfLifeMid(drug);
+  if (drug.id === "buspirona") return "Sem síndrome de retirada nem dependência relevantes.";
+  if (half <= 8) return "Meia-vida curta: o nível cai em horas. Retirada e rebote (insônia, ansiedade) podem começar já no dia seguinte e são mais intensos.";
+  if (half <= 20) return "Meia-vida intermediária: a retirada costuma aparecer em 1 a 2 dias e é intensa; troca por diazepam e redução gradual ajudam.";
+  return "Meia-vida longa: o nível cai devagar, como uma redução automática. A retirada aparece mais tarde (vários dias) e costuma ser mais suave, mas o acúmulo pesa em idosos e na doença hepática.";
+}
+
+function renderAnxKineticsView(drug) {
+  const days = state.pharma.days || 7;
+  const stopped = Boolean(state.pharma.stopped);
+  const data = pharmaKinetics(drug, days, stopped);
+  const pct = (value) => `${Math.round(value * 100)}%`;
+  return `
+    ${pharmaKineticsSvg(drug, days, stopped)}
+    <div class="pharma-reading tone-${data.accumulation >= 2 ? "warn" : "good"}">
+      <strong>Acúmulo com uso diário: ${data.accumulation.toFixed(1).replace(".", ",")} vezes o pico de uma dose</strong>
+      <span>Chega ao equilíbrio em cerca de ${data.steadyDays < 1 ? "menos de 1 dia" : `${Math.round(data.steadyDays)} ${Math.round(data.steadyDays) === 1 ? "dia" : "dias"}`} (4 a 5 meias-vidas).</span>
+    </div>
+    <div class="pharma-reading tone-${data.morning >= 0.5 ? "high" : data.morning >= 0.25 ? "warn" : "good"}">
+      <strong>Na manhã seguinte (8 h depois da dose): ${pct(data.morning)} do pico de uma dose</strong>
+      <span>${data.morning >= 0.5 ? "Sobra muito remédio de manhã: risco de ressaca, sonolência ao dirigir e quedas." : data.morning >= 0.25 ? "Ainda sobra parte do efeito pela manhã." : "Pouco resto pela manhã: menos ressaca."}</span>
+    </div>
+    ${stopped ? `<div class="pharma-reading tone-warn"><strong>Depois de parar</strong><span>${escapeHtml(pharmaWithdrawalText(drug))}</span></div>` : ""}`;
+}
+
+function pharmaEqChoice(drug) {
+  const options = pharmaClass().drugs.filter((item) => item.eq);
+  const chosen = options.find((item) => item.id === state.pharma.eqDrug) || options.find((item) => item.id === drug.id) || options[0];
+  const dose = Number(state.pharma.eqDose ?? chosen.eq);
+  return { options, chosen, dose: Number.isFinite(dose) ? dose : chosen.eq };
+}
+
+function renderAnxEquivalenceResult(drug) {
+  const { options, chosen, dose } = pharmaEqChoice(drug);
+  const diazepam = (dose / chosen.eq) * 10;
+  const fmt = (value) => (Math.round(value * 100) / 100).toString().replace(".", ",");
+  return `<div class="pharma-reading tone-good"><strong>≈ ${fmt(diazepam)} mg de diazepam</strong><span>${options.filter((item) => item.id !== chosen.id && item.id !== "diazepam").map((item) => `${escapeHtml(item.name)} ${fmt((diazepam / 10) * item.eq)} mg`).join(" · ")}</span></div>`;
+}
+
+function renderAnxEquivalence(drug) {
+  const { options, chosen, dose } = pharmaEqChoice(drug);
+  return `
+    <h3>Dose equivalente</h3>
+    <div class="pharma-eq">
+      <label><span>Remédio</span><select data-pharma-eq="drug">${options.map((item) => `<option value="${item.id}" ${item.id === chosen.id ? "selected" : ""}>${escapeHtml(item.name)}</option>`).join("")}</select></label>
+      <label><span>Dose (mg)</span><input type="number" min="0" step="0.25" value="${dose}" data-pharma-eq="dose" inputmode="decimal"></label>
+    </div>
+    <div id="pharmaEqResult">${renderAnxEquivalenceResult(drug)}</div>
+    <p class="pharma-extra">Equivalências aproximadas, para orientar a troca por diazepam na retirada; ajustar pelos sintomas. Midazolam, eszopiclona, pregabalina e buspirona não entram na tabela.</p>`;
+}
+
+function renderAnxKinetics(drug) {
+  const days = state.pharma.days || 7;
+  return `
+    <div class="pharma-chips" role="group" aria-label="Ansiolíticos e hipnóticos">${pharmaDrugChips(drug.id)}</div>
+    <div class="pharma-grid">
+      <section class="pharma-card">
+        <div class="pharma-card-head"><h3>Concentração · ${escapeHtml(drug.name)}</h3><span>meia-vida ${pharmaHalfLifeText(drug)}</span></div>
+        <label class="pharma-slider-label" for="pharmaDays">Dias de uso, uma dose à noite: <strong data-pharma-days-label>${days}</strong></label>
+        <input id="pharmaDays" class="pharma-slider" type="range" min="1" max="21" step="1" value="${days}" data-pharma-days>
+        <div class="pharma-toggles"><button type="button" class="pharma-toggle ${state.pharma.stopped ? "on" : ""}" data-pharma-stop aria-pressed="${Boolean(state.pharma.stopped)}">Parar de repente depois do último dia</button></div>
+        <div id="pharmaKineticsView">${renderAnxKineticsView(drug)}</div>
+        <p class="pharma-extra">Modelo didático: eliminação simples com a meia-vida média; o efeito clínico pode durar menos que a meia-vida, e metabólitos ativos (como os do diazepam) prolongam a ação.</p>
+      </section>
+      <section class="pharma-card">${renderAnxEquivalence(drug)}${pharmaStudyLink(drug)}</section>
+    </div>`;
+}
+
 /* ---------- Antidepressivos: sistemas de serotonina, noradrenalina e dopamina ---------- */
 
 const PHARMA_SYSTEM_COLORS = { serotonin: "#b0418a", noradrenaline: "#0072b2", dopamine: "#d55e00" };
@@ -445,6 +630,7 @@ function pharmaPathRows(paths, colors) {
 function renderPharmaPaths() {
   const drug = pharmaDrug(state.pharma.drug);
   if (pharmaIsStabilizer()) return renderStabilizerMech(drug);
+  if (pharmaIsAnxiolytic()) return renderAnxMech(drug);
   const antidepressant = pharmaIsAntidepressant();
   let figure;
   let rows;
@@ -522,6 +708,7 @@ function renderPharmaCompare() {
       <label class="pharma-pick b"><i></i>${pharmaDrugSelect("b", b.id)}</label>
     </div>
     ${a.id === b.id ? '<p class="panel-line">Escolha dois remédios diferentes para comparar.</p>' : ""}
+    ${a.halfLife && b.halfLife ? `<p class="pharma-extra">Meia-vida: ${escapeHtml(a.name)} ${pharmaHalfLifeText(a)} · ${escapeHtml(b.name)} ${pharmaHalfLifeText(b)}</p>` : ""}
     <div class="pharma-grid">
       <section class="pharma-card">
         <h3>${pharmaIsStabilizer() ? "Mecanismos" : pharmaIsAntidepressant() ? "Alvos" : "Receptores"}</h3>
@@ -748,6 +935,7 @@ function renderAdSynapse(drug) {
 function renderPharmaSynapse() {
   const drug = pharmaDrug(state.pharma.drug);
   if (pharmaIsStabilizer()) return renderStabilizerLevel(drug);
+  if (pharmaIsAnxiolytic()) return renderAnxKinetics(drug);
   if (drug.mech) return renderAdSynapse(drug);
   const partial = pharmaIsPartial(drug, "D2");
   return `
@@ -821,15 +1009,50 @@ function pharmaLevelQuestion(drugs) {
   return { type: "level", drug: drug.id, value, correct: `z${index}`, options: pharmaShuffle([index, ...others]).map((i) => `z${i}`), labels };
 }
 
+/* "Qual destes tem a meia-vida mais longa/curta?" só com faixas de meia-vida que não se sobrepõem,
+   para não haver resposta ambígua. */
+function pharmaHalfLifeQuestion(drugs) {
+  const pool = [];
+  const apart = (a, b) => a.halfLife[1] < b.halfLife[0] || b.halfLife[1] < a.halfLife[0];
+  for (const drug of pharmaShuffle(drugs.filter((item) => item.halfLife))) {
+    if (pool.every((item) => apart(item, drug))) pool.push(drug);
+    if (pool.length === 4) break;
+  }
+  if (pool.length < 4) return null;
+  const longest = Math.random() < 0.5;
+  const sorted = [...pool].sort((a, b) => pharmaHalfLifeMid(a) - pharmaHalfLifeMid(b));
+  const correct = longest ? sorted[3] : sorted[0];
+  return { type: "halflife", longest, correct: correct.id, options: pool.map((drug) => drug.id) };
+}
+
+/* "Quantos mg de X equivalem a 10 mg de diazepam?" (tabela de equivalência). */
+function pharmaEquivalenceQuestion(drugs) {
+  const withEq = drugs.filter((drug) => drug.eq && drug.id !== "diazepam");
+  if (!withEq.length) return null;
+  const drug = withEq[Math.floor(Math.random() * withEq.length)];
+  const values = [...new Set(drugs.filter((item) => item.eq).map((item) => item.eq))];
+  const others = pharmaShuffle(values.filter((value) => value !== drug.eq)).slice(0, 3);
+  if (others.length < 3) return null;
+  const labels = Object.fromEntries(values.map((value) => [`q${value}`, `${String(value).replace(".", ",")} mg`]));
+  return { type: "equivalence", drug: drug.id, correct: `q${drug.eq}`, options: pharmaShuffle([drug.eq, ...others]).map((value) => `q${value}`), labels };
+}
+
 function newPharmaQuiz() {
   const drugs = pharmaClass().drugs;
   const stabilizer = pharmaIsStabilizer();
+  const anxiolytic = pharmaIsAnxiolytic();
   const questions = [];
   let guard = 0;
   while (questions.length < 10 && guard < 300) {
     guard += 1;
     const roll = Math.random();
-    const question = stabilizer && roll < 0.4 ? pharmaLevelQuestion(drugs) : roll < 0.7 ? pharmaEffectQuestion(drugs) : pharmaProfileQuestion(drugs);
+    const question = stabilizer && roll < 0.4
+      ? pharmaLevelQuestion(drugs)
+      : anxiolytic && roll < 0.25
+      ? pharmaHalfLifeQuestion(drugs)
+      : anxiolytic && roll < 0.45
+      ? pharmaEquivalenceQuestion(drugs)
+      : roll < 0.75 ? pharmaEffectQuestion(drugs) : pharmaProfileQuestion(drugs);
     if (!question) continue;
     const key = `${question.type}|${question.drug || ""}|${question.correct}|${question.effect || ""}`;
     if (questions.some((item) => `${item.type}|${item.drug || ""}|${item.correct}|${item.effect || ""}` === key)) continue;
@@ -865,8 +1088,19 @@ function pharmaStabilizerCues(drug) {
   return `${cues.length ? `Pistas: ${cues.join("; ")}. ` : ""}${drug.extra}`;
 }
 
+function pharmaAnxCues(drug) {
+  const r = drug.receptors;
+  const cues = [];
+  if (r.A1 >= 3 && r.A23 >= 3 && r.A5 >= 3) cues.push("GABA-A com α1, α2/α3 e α5 por igual: benzodiazepínico");
+  else if (r.A1 >= 3 && r.A23 <= 2) cues.push("preferência por GABA-A com α1: Z-drug (hipnótico)");
+  if (r.A2D >= 3) cues.push("α2δ dos canais de cálcio: gabapentinoide");
+  if (r.HT1A >= 3) cues.push("agonista parcial 5-HT1A, fora do GABA-A");
+  return `${cues.length ? `Pistas: ${cues.join("; ")}. ` : ""}${drug.extra}`;
+}
+
 function pharmaProfileExplanation(drug) {
   if (pharmaIsStabilizer()) return pharmaStabilizerCues(drug);
+  if (pharmaIsAnxiolytic()) return pharmaAnxCues(drug);
   if (drug.mech) return pharmaAdCues(drug);
   const r = drug.receptors;
   const cues = [];
@@ -898,15 +1132,20 @@ function renderPharmaQuiz() {
   const question = quiz.questions[quiz.index];
   const answered = quiz.answers[quiz.index];
   const label = (id) => (question.labels ? question.labels[id] : pharmaDrug(id).name);
-  const correct = question.type === "level" ? pharmaDrug(question.drug) : pharmaDrug(question.correct);
+  const correct = question.drug ? pharmaDrug(question.drug) : pharmaDrug(question.correct);
   const effect = question.effect ? pharmaClass().effects.find((item) => item.id === question.effect) : null;
   const profilePrompt = pharmaIsStabilizer()
     ? "Este perfil de mecanismos é de qual estabilizador?"
+    : pharmaIsAnxiolytic() ? "Este perfil de alvos é de qual remédio?"
     : pharmaIsAntidepressant() ? "Este perfil de alvos é de qual antidepressivo?" : "Este perfil de receptores é de qual antipsicótico?";
   const prompt = question.type === "profile"
     ? profilePrompt
     : question.type === "level"
     ? `Nível de ${correct.name.toLowerCase()} de ${question.value} ${correct.level.unit}: em que faixa está?`
+    : question.type === "halflife"
+    ? `Qual destes tem a meia-vida mais ${question.longest ? "longa" : "curta"}?`
+    : question.type === "equivalence"
+    ? `Quantos mg de ${correct.name.toLowerCase()} equivalem a cerca de 10 mg de diazepam?`
     : `Qual destes tem o maior risco de ${effect.label.toLowerCase()}?`;
   const options = question.options.map((id) => {
     const state_ = answered ? (id === question.correct ? "right" : id === answered ? "wrong" : "") : "";
@@ -918,6 +1157,10 @@ function renderPharmaQuiz() {
     ? pharmaProfileExplanation(correct)
     : question.type === "level"
     ? correct.level.zones[Number(question.correct.slice(1))].text
+    : question.type === "halflife"
+    ? `${question.options.map((id) => `${pharmaDrug(id).name}: ${pharmaHalfLifeText(pharmaDrug(id))}`).join("; ")}.`
+    : question.type === "equivalence"
+    ? `Tabela aproximada: ${pharmaClass().drugs.filter((item) => item.eq).map((item) => `${item.name} ${String(item.eq).replace(".", ",")} mg`).join(" · ")}.`
     : `${correct.name}: ${effect.label.toLowerCase()} ${PHARMA_EFFECT_LEVELS[correct.effects[effect.id]]}. Por quê: ${effect.why}. ${question.options.filter((id) => id !== correct.id).map((id) => `${pharmaDrug(id).name}: ${PHARMA_EFFECT_LEVELS[pharmaDrug(id).effects[effect.id]]}`).join("; ")}.`;
   const correctLabel = label(question.correct);
   return `
@@ -953,7 +1196,7 @@ function renderPharmaPanel() {
       <div class="pharma-switches">
         <div class="segmented pharma-classes" role="group" aria-label="Classe">${classButtons}</div>
         <div class="segmented pharma-modes" role="group" aria-label="Modo">
-          ${modeButton("paths", pharmaIsStabilizer() ? "Mecanismos e fases" : pharmaIsAntidepressant() ? "Sistemas e alvos" : "Vias e receptores")}${modeButton("compare", "Comparar")}${modeButton("synapse", pharmaIsStabilizer() ? "Nível e interações" : "Sinapse")}${modeButton("quiz", "Treino")}
+          ${modeButton("paths", pharmaIsStabilizer() ? "Mecanismos e fases" : pharmaIsAnxiolytic() ? "Mecanismos e usos" : pharmaIsAntidepressant() ? "Sistemas e alvos" : "Vias e receptores")}${modeButton("compare", "Comparar")}${modeButton("synapse", pharmaIsStabilizer() ? "Nível e interações" : pharmaIsAnxiolytic() ? "Meia-vida e retirada" : "Sinapse")}${modeButton("quiz", "Treino")}
         </div>
       </div>
     </header>
@@ -978,10 +1221,11 @@ function openPharmaStudy(drug) {
   const panel = document.querySelector("#pharmaPanel");
   if (!panel) return;
   panel.addEventListener("click", (event) => {
-    const target = event.target.closest("[data-pharma-drug], [data-pharma-class], [data-pharma-mode], [data-pharma-study], [data-pharma-answer], [data-pharma-quiz], [data-pharma-review], [data-pharma-inter]");
+    const target = event.target.closest("[data-pharma-drug], [data-pharma-class], [data-pharma-mode], [data-pharma-study], [data-pharma-answer], [data-pharma-quiz], [data-pharma-review], [data-pharma-inter], [data-pharma-stop]");
     if (!target) return;
     const data = target.dataset;
-    if (data.pharmaDrug) {
+    if (data.pharmaStop !== undefined) state.pharma.stopped = !state.pharma.stopped;
+    else if (data.pharmaDrug) {
       state.pharma.drug = data.pharmaDrug;
       /* Ao trocar de remédio na sinapse, começa numa ocupação típica dele. */
       state.pharma.occupancy = pharmaDefaultOccupancy(pharmaDrug(data.pharmaDrug));
@@ -1009,6 +1253,24 @@ function openPharmaStudy(drug) {
   });
   /* O controle de ocupação atualiza só o desenho da sinapse, para não interromper o arraste. */
   panel.addEventListener("input", (event) => {
+    if (event.target.matches("[data-pharma-days]")) {
+      state.pharma.days = Number(event.target.value);
+      const view = panel.querySelector("#pharmaKineticsView");
+      if (view) view.innerHTML = renderAnxKineticsView(pharmaDrug(state.pharma.drug));
+      const label = panel.querySelector("[data-pharma-days-label]");
+      if (label) label.textContent = state.pharma.days;
+      panel.dataset.renderedHtml = "";
+      savePharmaState();
+      return;
+    }
+    if (event.target.matches('[data-pharma-eq="dose"]')) {
+      state.pharma.eqDose = Number(String(event.target.value).replace(",", "."));
+      const view = panel.querySelector("#pharmaEqResult");
+      if (view) view.innerHTML = renderAnxEquivalenceResult(pharmaDrug(state.pharma.drug));
+      panel.dataset.renderedHtml = "";
+      savePharmaState();
+      return;
+    }
     if (event.target.matches("[data-pharma-level]")) {
       state.pharma.level = Number(event.target.value);
       const view = panel.querySelector("#pharmaLevelView");
@@ -1025,6 +1287,13 @@ function openPharmaStudy(drug) {
     savePharmaState();
   });
   panel.addEventListener("change", (event) => {
+    if (event.target.matches('[data-pharma-eq="drug"]')) {
+      state.pharma.eqDrug = event.target.value;
+      state.pharma.eqDose = pharmaDrug(event.target.value).eq;
+      savePharmaState();
+      renderPharmaPanel();
+      return;
+    }
     const which = event.target.dataset?.pharmaCompare;
     if (!which) return;
     state.pharma[which] = event.target.value;
