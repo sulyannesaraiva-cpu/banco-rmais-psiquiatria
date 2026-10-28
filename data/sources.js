@@ -191,6 +191,16 @@ window.PHARMA_REFS = {
       { about: "Desenho das alças lado a lado e escolha do ponto da lesão", src: "curadoria", where: "esquema não está em escala nem em posição anatômica", kind: "didatico" },
     ],
   },
+  "atlas-limbico": {
+    paths: [
+      { about: "Estruturas do circuito de Papez e as acrescentadas depois (amígdala, área frontobasal, orbitofrontal)", src: "quevedo2020", where: "seção Sistema límbico", kind: "fonte" },
+      { about: "Funções da amígdala e transtornos com disfunção dela", src: "quevedo2020", where: "seção Sistema límbico", kind: "fonte" },
+      { about: "Wernicke-Korsakoff: amnésia, sinais agudos, corpos mamilares e confabulação em geral discreta", src: "kaufman", where: "seção Wernicke-Korsakoff Syndrome e questões de revisão", kind: "fonte" },
+      { about: "Klüver-Bucy: lesão temporal bilateral, causas e manifestações em humanos", src: "kaufman", where: "seção The Klüver-Bucy Syndrome", kind: "fonte" },
+      { about: "Hipocampo no Alzheimer e na esquizofrenia", src: "kaufman", where: "seção Alzheimer's disease", kind: "fonte" },
+      { about: "Ordem dos passos do circuito e desenho", src: "curadoria", where: "esquema não está em escala nem em posição anatômica", kind: "didatico" },
+    ],
+  },
   dependencia: {
     paths: [
       { about: "Mecanismos de cada remédio", src: "maudsley15", where: "cap. 4", kind: "fonte" },

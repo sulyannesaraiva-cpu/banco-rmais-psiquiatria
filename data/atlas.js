@@ -11,7 +11,7 @@ window.ATLAS = {
   modules: [
     { id: "nucleos-base", tag: "NB", color: "#0072b2", title: "Núcleos da base", text: "Vias direta e indireta · Parkinson · extrapiramidais", ready: true },
     { id: "frontoestriatais", tag: "CPF", color: "#d55e00", title: "Circuitos frontoestriatais", text: "Dorsolateral · orbitofrontal · cingulado anterior", ready: true },
-    { id: "limbico", tag: "Lb", color: "#b0418a", title: "Sistema límbico e Papez", text: "Memória · emoção · Korsakoff" },
+    { id: "limbico", tag: "Lb", color: "#b0418a", title: "Sistema límbico e Papez", text: "Memória · emoção · Korsakoff", ready: true },
     { id: "neurotransmissores", tag: "DA", color: "#0b6b70", title: "Vias de neurotransmissores", text: "Dopamina, serotonina, noradrenalina, acetilcolina" },
     { id: "hha", tag: "HHA", color: "#009e73", title: "Eixo hipotálamo-hipófise-adrenal", text: "Estresse · cortisol · depressão" },
   ],
@@ -135,5 +135,61 @@ window.ATLAS = {
       },
     ],
     keyPoint: "Lesões em qualquer ponto da mesma alça (córtex, estriado, pálido ou tálamo) dão síndromes parecidas: é o circuito, e não só o córtex, que sustenta o comportamento.",
+  },
+  /* Sistema límbico e circuito de Papez: estruturas conforme Quevedo e Izquierdo (2020, cap. 1);
+     Wernicke-Korsakoff, Klüver-Bucy e hipocampo no Alzheimer conforme Clinical Neurology for
+     Psychiatrists. Posições do desenho são esquemáticas. */
+  limbic: {
+    nodes: {
+      cingulo: { label: "Giro do cíngulo", x: 280, y: 30, w: 200, h: 58 },
+      talamo: { label: "Núcleo anterior", sub: "do tálamo", x: 530, y: 170, w: 200, h: 58 },
+      mamilares: { label: "Corpos mamilares", sub: "hipotálamo", x: 530, y: 350, w: 200, h: 58 },
+      fornix: { label: "Fórnix", x: 280, y: 450, w: 200, h: 58 },
+      hipocampo: { label: "Hipocampo", sub: "lobo temporal medial", x: 30, y: 350, w: 200, h: 58 },
+      entorrinal: { label: "Para-hipocampal", sub: "e entorrinal", x: 30, y: 170, w: 200, h: 58 },
+      amigdala: { label: "Amígdala", sub: "medo e emoção", x: 280, y: 290, w: 200, h: 58, extra: true },
+    },
+    edges: [
+      { id: "hip-for", from: "hipocampo", to: "fornix", path: "M130 410 C140 470 200 482 276 480" },
+      { id: "for-mam", from: "fornix", to: "mamilares", path: "M482 480 C560 482 620 450 628 412" },
+      { id: "mam-tal", from: "mamilares", to: "talamo", path: "M630 348 V232", label: "trato mamilotalâmico" },
+      { id: "tal-cin", from: "talamo", to: "cingulo", path: "M628 168 C620 100 560 60 484 60" },
+      { id: "cin-ent", from: "cingulo", to: "entorrinal", path: "M276 60 C200 60 140 100 130 166" },
+      { id: "ent-hip", from: "entorrinal", to: "hipocampo", path: "M130 230 V346" },
+      { id: "ami-hip", from: "amigdala", to: "hipocampo", path: "M278 330 C250 345 240 360 234 370", extra: true },
+    ],
+    steps: [
+      { edges: ["ent-hip"], text: "O córtex entorrinal leva ao hipocampo a informação que chega do córtex: é a porta de entrada da memória." },
+      { edges: ["hip-for"], text: "Do hipocampo, as fibras saem pelo fórnix, um feixe em arco sob o corpo caloso." },
+      { edges: ["for-mam"], text: "O fórnix termina nos corpos mamilares, no hipotálamo." },
+      { edges: ["mam-tal"], text: "O trato mamilotalâmico leva o sinal ao núcleo anterior do tálamo." },
+      { edges: ["tal-cin"], text: "O tálamo anterior projeta para o giro do cíngulo." },
+      { edges: ["cin-ent"], text: "Do cíngulo, o sinal volta ao para-hipocampal e ao entorrinal, fechando o circuito." },
+    ],
+    lesions: [
+      {
+        id: "korsakoff", label: "Corpos mamilares", nodes: ["mamilares"],
+        syndrome: "Wernicke-Korsakoff",
+        cause: "Álcool crônico e deficiência de tiamina; os corpos mamilares estão entre as áreas mais vulneráveis.",
+        signs: ["Amnésia anterógrada (não guarda o novo) e retrógrada (perde o que sabia)", "Na fase aguda (Wernicke): ataxia, nistagmo e paresia da movimentação ocular", "Neuropatia periférica e atrofia do verme cerebelar no alcoolismo crônico", "Confabulação: clássica nos livros, mas em geral discreta ou ausente"],
+      },
+      {
+        id: "hipocampo", label: "Hipocampos", nodes: ["hipocampo"],
+        syndrome: "Amnésia hipocampal",
+        cause: "Doença de Alzheimer (a atrofia começa pelo hipocampo), encefalite herpética, hipóxia.",
+        signs: ["Dificuldade de formar memórias novas (amnésia anterógrada)", "Memórias antigas relativamente preservadas no início", "No Alzheimer, a atrofia avança depois para os lobos temporal, parietal e frontal"],
+      },
+      {
+        id: "kluver", label: "Amígdalas (temporal anterior)", nodes: ["amigdala", "hipocampo"],
+        syndrome: "Klüver-Bucy",
+        cause: "Lesão temporal bilateral: encefalite por herpes simples, demência frontotemporal, infarto bilateral da artéria cerebral posterior, encefalite límbica paraneoplásica.",
+        signs: ["Hiperoralidade: come, fuma ou bebe de forma compulsiva", "Comportamento sexual aumentado em cerca de metade; em geral só falas ou gestos sugestivos", "Agressividade verbal ou gestual", "Agnosia visual (“cegueira psíquica”)", "Amnésia, afasia ou demência por lesão temporal associada"],
+      },
+    ],
+    psychiatry: [
+      { name: "Amígdala", text: "Medo, emoção, aprendizado e resposta de luta ou fuga. Disfunção descrita na depressão, no transtorno bipolar, no TEPT, nas demências, no autismo e no transtorno da personalidade borderline." },
+      { name: "Hipocampo", text: "Atrofia do hipocampo anterior também aparece na esquizofrenia; no Alzheimer, é a primeira região a atrofiar." },
+      { name: "Sistema límbico ampliado", text: "Depois de Papez, foram acrescentados a amígdala, a área frontobasal e o córtex orbitofrontal; é sítio importante de ação dos psicofármacos." },
+    ],
   },
 };

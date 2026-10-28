@@ -222,7 +222,86 @@ function renderAtlasFronto() {
     ${state.pharma.sourcesOpen ? renderPharmaSources({ id: "atlas-frontoestriatais", label: "Circuitos frontoestriatais" }, "paths", active.label) : ""}`;
 }
 
+/* ---------- Sistema límbico e circuito de Papez ---------- */
+
+const ATLAS_LIMBIC_COLOR = "#b0418a";
+
+function atlasLimbicSvg(lesion, step) {
+  const limbic = window.ATLAS.limbic;
+  const hurt = new Set(lesion ? lesion.nodes : []);
+  const lit = step === null ? null : new Set(limbic.steps[step].edges);
+  const edges = limbic.edges.map((edge) => {
+    const broken = hurt.has(edge.from) || hurt.has(edge.to);
+    const cls = ["limbic-edge", edge.extra ? "extra" : "", broken ? "broken" : "", lit && !lit.has(edge.id) ? "dim" : "", lit && lit.has(edge.id) ? "lit" : ""].join(" ");
+    return `<path d="${edge.path}" class="${cls}" marker-end="url(#limbic-head)"></path>`;
+  }).join("");
+  const nodes = Object.entries(limbic.nodes).map(([id, node]) => `
+    <g class="limbic-node${node.extra ? " extra" : ""}${hurt.has(id) ? " lesion" : ""}">
+      <rect x="${node.x}" y="${node.y}" width="${node.w}" height="${node.h}" rx="16"></rect>
+      <text x="${node.x + node.w / 2}" y="${node.y + (node.sub ? 25 : 34)}" text-anchor="middle" class="atlas-node-label">${escapeHtml(node.label)}</text>
+      ${node.sub || hurt.has(id) ? `<text x="${node.x + node.w / 2}" y="${node.y + 44}" text-anchor="middle" class="atlas-node-sub">${hurt.has(id) ? "lesão" : escapeHtml(node.sub)}</text>` : ""}
+    </g>`).join("");
+  const labels = limbic.edges.filter((edge) => edge.label).map(() => `<text x="620" y="292" text-anchor="end" class="atlas-edge-label limbic-label">trato mamilotalâmico</text>`).join("");
+  return `
+    <svg class="atlas-svg" viewBox="0 0 760 520" role="img" aria-label="Circuito de Papez${lesion ? ` com lesão: ${escapeHtml(lesion.label.toLowerCase())}` : ""}">
+      <defs><marker id="limbic-head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="${ATLAS_LIMBIC_COLOR}"/></marker></defs>
+      ${edges}${nodes}${labels}
+      <text x="380" y="250" text-anchor="middle" class="limbic-center">circuito de Papez</text>
+    </svg>`;
+}
+
+function renderAtlasLimbic() {
+  const limbic = window.ATLAS.limbic;
+  const lesion = limbic.lesions.find((item) => item.id === state.atlas.limbicLesion) || null;
+  const step = Number.isInteger(state.atlas.step) ? state.atlas.step : null;
+  const refCount = ((window.PHARMA_REFS || {})["atlas-limbico"]?.paths || []).length;
+  const lesionButtons = limbic.lesions.map((item) => `<button type="button" class="pharma-toggle ${lesion?.id === item.id ? "on" : ""}" data-atlas-limbic="${item.id}" aria-pressed="${lesion?.id === item.id}">${escapeHtml(item.label)}</button>`).join("");
+  const stepBox = step === null
+    ? `<button type="button" class="primary-btn atlas-trace" data-atlas-step="0">Seguir o sinal, passo a passo</button>`
+    : `
+      <div class="pharma-reading tone-ok atlas-step">
+        <strong>Seguir o sinal · passo ${step + 1} de ${limbic.steps.length}</strong>
+        <span>${escapeHtml(limbic.steps[step].text)}</span>
+        <div class="pharma-tour-actions atlas-step-actions">
+          <button type="button" data-atlas-step="${step - 1}" ${step === 0 ? "disabled" : ""}>Voltar</button>
+          ${step + 1 < limbic.steps.length ? `<button type="button" class="next" data-atlas-step="${step + 1}">Próximo</button>` : '<button type="button" class="next" data-atlas-step="-1">Ver o circuito todo</button>'}
+        </div>
+      </div>`;
+  return `
+    <header class="pharma-head">
+      <div>
+        <div class="pharma-head-top">
+          <button type="button" class="link-btn pharma-back" data-atlas-home>← Vias</button>
+          ${refCount ? `<button type="button" class="pharma-sources-btn" data-pharma-sources aria-haspopup="dialog">Fontes · ${refCount}</button>` : ""}
+        </div>
+        <h2>Sistema límbico e Papez</h2>
+        <p>Papez descreveu em 1937 um circuito de emoção e memória: hipocampo, fórnix, corpos mamilares, núcleo anterior do tálamo e giro do cíngulo. Depois entraram a amígdala e o orbitofrontal.</p>
+      </div>
+    </header>
+    <div class="pharma-grid atlas-grid">
+      <section class="pharma-card">
+        <div class="pharma-card-head"><h3>Circuito de Papez</h3><span>esquema didático · não em escala</span></div>
+        ${atlasLimbicSvg(lesion, step)}
+        ${stepBox}
+        <h4>Lesione e veja</h4>
+        <div class="pharma-toggles">${lesionButtons}${lesion ? '<button type="button" class="pharma-toggle" data-atlas-limbic="">Tirar a lesão</button>' : ""}</div>
+      </section>
+      <section class="pharma-card">
+        ${lesion ? `
+          <h3>${escapeHtml(lesion.syndrome)}</h3>
+          <div class="pharma-reading tone-warn"><strong>Causa</strong><span>${escapeHtml(lesion.cause)}</span></div>
+          <div class="pharma-reading tone-high"><strong>O que aparece</strong><ul class="fronto-signs">${lesion.signs.map((sign) => `<li>${escapeHtml(sign)}</li>`).join("")}</ul></div>`
+          : `<h3>Memória e emoção</h3><div class="pharma-reading tone-low"><strong>Escolha uma lesão</strong><span>Em “Lesione e veja”, toque numa estrutura para ver a síndrome.</span></div>`}
+        <h4>Na psiquiatria</h4>
+        ${limbic.psychiatry.map((item) => `<div class="pharma-reading tone-ok"><strong>${escapeHtml(item.name)}</strong><span>${escapeHtml(item.text)}</span></div>`).join("")}
+      </section>
+    </div>
+    <p class="pharma-disclaimer">Esquema simplificado para estudo: as estruturas límbicas têm muitas outras conexões.</p>
+    ${state.pharma.sourcesOpen ? renderPharmaSources({ id: "atlas-limbico", label: "Sistema límbico e Papez" }, "paths", lesion ? lesion.syndrome : "Circuito de Papez") : ""}`;
+}
+
 function renderAtlas() {
+  if (state.atlas.module === "limbico") return renderAtlasLimbic();
   if (state.atlas.module === "nucleos-base") return renderAtlasBasal();
   if (state.atlas.module === "frontoestriatais") return renderAtlasFronto();
   return null;
@@ -232,7 +311,7 @@ function renderAtlas() {
   const panel = document.querySelector("#pharmaPanel");
   if (!panel) return;
   panel.addEventListener("click", (event) => {
-    const target = event.target.closest("[data-atlas-module], [data-atlas-home], [data-atlas-scenario], [data-atlas-step], [data-atlas-link], [data-sim-section], [data-atlas-circuit], [data-atlas-lesion]");
+    const target = event.target.closest("[data-atlas-module], [data-atlas-home], [data-atlas-scenario], [data-atlas-step], [data-atlas-link], [data-sim-section], [data-atlas-circuit], [data-atlas-lesion], [data-atlas-limbic]");
     if (!target) return;
     const data = target.dataset;
     if (data.simSection) {
@@ -243,12 +322,17 @@ function renderAtlas() {
       state.atlas.module = data.atlasModule;
       state.atlas.step = null;
       state.atlas.lesionAt = null;
+      state.atlas.limbicLesion = null;
     } else if (data.atlasHome !== undefined) state.atlas.module = null;
     else if (data.atlasScenario) state.atlas.scenario = data.atlasScenario;
     else if (data.atlasCircuit) {
       state.atlas.circuit = data.atlasCircuit;
       state.atlas.lesionAt = null;
     } else if (data.atlasLesion !== undefined) state.atlas.lesionAt = data.atlasLesion || null;
+    else if (data.atlasLimbic !== undefined) {
+      state.atlas.limbicLesion = data.atlasLimbic || null;
+      state.atlas.step = null;
+    }
     else if (data.atlasStep !== undefined) {
       const step = Number(data.atlasStep);
       state.atlas.step = step < 0 ? null : step;

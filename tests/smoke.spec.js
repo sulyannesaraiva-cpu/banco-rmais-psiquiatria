@@ -684,6 +684,22 @@ test("atlas de vias: circuitos frontoestriatais (lesione e veja)", async ({ page
   await expect(page.locator(".pharma-sources")).toContainText("Cummings");
   expect(errors).toEqual([]);
 });
+test("atlas de vias: sistema límbico e Papez (lesione e veja, seguir o sinal)", async ({ page }) => {
+  const errors = await openSite(page);
+  await goTab(page, "pharma");
+  await page.locator('[data-sim-section="atlas"]').click();
+  await page.locator('[data-atlas-module="limbico"]').click();
+  await page.locator('[data-atlas-limbic="korsakoff"]').click();
+  await expect(page.locator("#pharmaPanel")).toContainText("Wernicke-Korsakoff");
+  await expect(page.locator("#pharmaPanel")).toContainText("tiamina");
+  await page.locator('[data-atlas-limbic="kluver"]').click();
+  await expect(page.locator("#pharmaPanel")).toContainText("Hiperoralidade");
+  await page.locator('[data-atlas-step="0"]').click();
+  await expect(page.locator(".atlas-step")).toContainText("passo 1 de 6");
+  await page.locator("[data-pharma-sources]").click();
+  await expect(page.locator(".pharma-sources")).toContainText("Quevedo");
+  expect(errors).toEqual([]);
+});
 test("navegação por áreas: Hoje, Estudar (com seletor), Simular e Você", async ({ page }) => {
   const errors = await openSite(page);
   const mobile = await page.evaluate(() => isMobileLayout());
