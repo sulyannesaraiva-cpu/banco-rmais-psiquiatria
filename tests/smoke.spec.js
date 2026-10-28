@@ -464,3 +464,27 @@ test("simulador de fármacos: antidepressivos (sistemas, sinapse e treino)", asy
   await expect(page.locator(".pharma-quiz")).toContainText("Pergunta 1 de 10");
   expect(errors).toEqual([]);
 });
+test("simulador de fármacos: estabilizadores (mecanismos, nível, interações e treino)", async ({ page }) => {
+  const errors = await openSite(page);
+  await goTab(page, "pharma");
+  await page.locator('[data-pharma-class="estabilizadores"]').click();
+  await page.locator('[data-pharma-mode="paths"]').click();
+  await page.locator('[data-pharma-drug="lamotrigina"]').click();
+  await expect(page.locator("#pharmaPanel .pharma-effects").first()).toContainText("Prevenção de depressão: forte");
+  await page.locator('[data-pharma-mode="synapse"]').click();
+  await page.locator('[data-pharma-drug="litio"]').click();
+  await page.locator("[data-pharma-level]").evaluate((input) => {
+    input.value = "1.8";
+    input.dispatchEvent(new Event("input", { bubbles: true }));
+  });
+  await expect(page.locator("#pharmaLevelView")).toContainText("Toxicidade");
+  await page.locator('[data-pharma-inter="tiazidico"]').click();
+  await expect(page.locator("#pharmaLevelView")).toContainText("Pode chegar a");
+  await page.locator('[data-pharma-drug="lamotrigina"]').click();
+  await page.locator('[data-pharma-inter="valproato"]').click();
+  await expect(page.locator(".pharma-table")).toContainText("12,5 mg/dia");
+  await page.locator('[data-pharma-mode="quiz"]').click();
+  await page.locator("[data-pharma-answer]").first().click();
+  await expect(page.locator(".pharma-feedback")).toBeVisible();
+  expect(errors).toEqual([]);
+});

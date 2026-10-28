@@ -6733,3 +6733,115 @@ body.theme-dark .pharma-chip.on {
   border-radius: 50%;
   background: conic-gradient(transparent 0 40deg, #6b7f84 40deg 320deg, transparent 320deg);
 }
+/* Simulador: estabilizadores (alvos no terminal, barra de nível, interações). */
+.pharma-target rect,
+.pharma-target circle:not(.dot) {
+  fill: color-mix(in srgb, var(--t) 18%, var(--panel));
+  stroke: var(--t);
+  stroke-width: 2.5;
+}
+
+.pharma-target .dot {
+  fill: var(--t);
+}
+
+.pharma-target .arrow {
+  stroke: var(--t);
+  stroke-width: 3;
+  stroke-dasharray: 4 5;
+  fill: none;
+}
+
+.pharma-target.strong rect,
+.pharma-target.strong circle:not(.dot) {
+  stroke-width: 4;
+  fill: color-mix(in srgb, var(--t) 32%, var(--panel));
+}
+
+.pharma-target.faint {
+  opacity: 0.35;
+}
+
+.pharma-target.faint rect,
+.pharma-target.faint circle:not(.dot) {
+  stroke-dasharray: 3 4;
+}
+
+.syn-postline {
+  stroke: var(--line-strong);
+  stroke-width: 6;
+  stroke-linecap: round;
+}
+
+.pharma-effect.evidence-3 {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+.pharma-effect.evidence-2 {
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+}
+
+.pharma-effect.evidence-0 {
+  opacity: 0.7;
+}
+
+.pharma-levelbar {
+  position: relative;
+  margin: 6px 0 4px;
+}
+
+.pharma-levelbar .pharma-zones {
+  height: 16px;
+}
+
+.pharma-zones .z-ok {
+  background: var(--accent-soft);
+}
+
+.pharma-pin {
+  position: absolute;
+  top: -5px;
+  width: 4px;
+  height: 26px;
+  margin-left: -2px;
+  border-radius: 2px;
+  background: var(--ink);
+}
+
+.pharma-pin.after {
+  background: var(--accent);
+  outline: 2px dashed var(--panel);
+}
+
+.pharma-pin.band {
+  display: none;
+}
+
+.pharma-band {
+  position: absolute;
+  top: 3px;
+  height: 10px;
+  border-radius: 5px;
+  background: repeating-linear-gradient(135deg, rgba(16, 38, 45, 0.55) 0 4px, transparent 4px 8px);
+  pointer-events: none;
+}
+
+.pharma-toggles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.pharma-toggle {
+  min-height: 42px;
+  border-radius: 21px;
+  font-weight: 600;
+}
+
+.pharma-toggle.on {
+  border-color: #c2410c;
+  background: #fde8dd;
+  color: #5c1d05;
+}

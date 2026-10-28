@@ -1,7 +1,9 @@
 /* Simulador de psicofarmacologia (aba "Simulador"). Dados por classe em data/pharmaSim.js
    (antipsicóticos) e data/pharmaSimAntidepressants.js. Nos antidepressivos, a primeira tela mostra
    os sistemas de serotonina, noradrenalina e dopamina, e a sinapse mostra o mecanismo de cada
-   remédio (recaptação, freio α2, MAO ou receptor).
+   remédio (recaptação, freio α2, MAO ou receptor). Nos estabilizadores (data/pharmaSimStabilizers.js),
+   a primeira tela mostra os alvos no terminal nervoso e as fases em que cada um funciona, e a
+   segunda vira "Nível e interações" (faixas de nível sérico, interações e titulação da lamotrigina).
    - Vias e receptores: corte do cérebro com as 4 vias dopaminérgicas coloridas conforme o remédio
      escolhido, perfil de receptores e "o que esperar" (efeitos relativos).
    - Comparar: dois remédios lado a lado, com o porquê das diferenças.
@@ -61,7 +63,183 @@ function setPharmaClass(id) {
   state.pharma.cls = id;
   Object.assign(state.pharma, cls.defaults);
   state.pharma.occupancy = pharmaDefaultOccupancy(pharmaDrug(cls.defaults.drug));
+  resetPharmaLevel(pharmaDrug(cls.defaults.drug));
   state.pharmaQuiz = null;
+}
+
+function pharmaIsStabilizer() {
+  return pharmaClass()?.kind === "stabilizer";
+}
+
+/* Nível sérico e interações escolhidas voltam ao padrão ao trocar de remédio. */
+function resetPharmaLevel(drug) {
+  state.pharma.level = drug?.level ? drug.level.start : null;
+  state.pharma.inter = [];
+}
+
+/* ---------- Estabilizadores: mecanismos, fases, nível e interações ---------- */
+
+const PHARMA_TARGET_COLORS = { NA: "#0072b2", CA: "#009e73", GLU: "#d55e00", GABA: "#b0418a", INTRA: "#e69f00" };
+const PHARMA_ACTION_LABELS = ["sem ação", "ação leve", "ação moderada", "ação forte", "ação principal"];
+const PHARMA_EVIDENCE_LABELS = ["sem evidência", "fraca", "moderada", "forte"];
+
+function pharmaStabilizerSvg(drug) {
+  const r = drug.receptors;
+  const cls = (id) => `pharma-target${r[id] === 0 ? " faint" : ""}${r[id] >= 3 ? " strong" : ""}`;
+  const c = PHARMA_TARGET_COLORS;
+  return `
+    <svg class="pharma-brain" viewBox="0 0 560 330" role="img" aria-label="Terminal nervoso com os alvos dos estabilizadores de humor">
+      <path d="M20 118 H250 C262 64 330 40 380 46 C452 54 498 104 494 160 C490 220 438 246 372 246 C318 246 268 226 250 172 H20 Z" class="pharma-brain-outline"></path>
+      <path d="M40 290 H520" class="syn-postline"></path>
+      <text x="280" y="318" text-anchor="middle" class="pharma-label small">Neurônio seguinte</text>
+      <g class="${cls("NA")}" style="--t:${c.NA}">
+        <rect x="128" y="108" width="34" height="20" rx="5"></rect><rect x="128" y="162" width="34" height="20" rx="5"></rect>
+        <text x="145" y="98" text-anchor="middle" class="pharma-label">Na⁺</text>
+      </g>
+      <g class="${cls("CA")}" style="--t:${c.CA}">
+        <rect x="300" y="236" width="30" height="20" rx="5"></rect>
+        <text x="315" y="274" text-anchor="middle" class="pharma-label">Ca²⁺</text>
+      </g>
+      <g class="${cls("GLU")}" style="--t:${c.GLU}">
+        <circle cx="390" cy="200" r="16"></circle><circle cx="432" cy="182" r="16"></circle>
+        <circle cx="386" cy="198" r="3" class="dot"></circle><circle cx="395" cy="204" r="3" class="dot"></circle><circle cx="428" cy="178" r="3" class="dot"></circle><circle cx="437" cy="186" r="3" class="dot"></circle>
+        <path d="M410 238 V282" class="arrow"></path>
+        <text x="452" y="226" class="pharma-label">Glutamato</text>
+      </g>
+      <g class="${cls("GABA")}" style="--t:${c.GABA}">
+        <circle cx="488" cy="42" r="26"></circle>
+        <circle cx="480" cy="40" r="3" class="dot"></circle><circle cx="492" cy="48" r="3" class="dot"></circle><circle cx="494" cy="34" r="3" class="dot"></circle>
+        <text x="488" y="88" text-anchor="middle" class="pharma-label">GABA</text>
+      </g>
+      <g class="${cls("INTRA")}" style="--t:${c.INTRA}">
+        <rect x="300" y="96" width="132" height="54" rx="10"></rect>
+        <text x="366" y="118" text-anchor="middle" class="pharma-label small">inositol · GSK-3</text>
+        <text x="366" y="136" text-anchor="middle" class="pharma-label small">proteína quinase C</text>
+      </g>
+      <text x="60" y="150" class="pharma-label small">axônio</text>
+    </svg>`;
+}
+
+function renderStabilizerMech(drug) {
+  const rows = Object.fromEntries(pharmaClass().receptors.map((target) => {
+    const value = drug.receptors[target.id] ?? 0;
+    return [target.id, { name: target.label, text: target.role, badge: PHARMA_ACTION_LABELS[value], badgeTone: value >= 3 ? "good" : value ? "ok" : "low", faint: value === 0 }];
+  }));
+  const indications = pharmaClass().indications.map((item) => {
+    const value = drug.indications[item.id] ?? 0;
+    return `<span class="pharma-effect evidence-${value}">${escapeHtml(item.label)}: ${PHARMA_EVIDENCE_LABELS[value]}</span>`;
+  }).join("");
+  return `
+    <div class="pharma-chips" role="group" aria-label="Estabilizadores de humor">${pharmaDrugChips(drug.id)}</div>
+    <div class="pharma-grid">
+      <section class="pharma-card">
+        <div class="pharma-card-head"><h3>Onde age · ${escapeHtml(drug.name)}</h3><span>${escapeHtml(pharmaDrugGroup(drug))}</span></div>
+        ${pharmaStabilizerSvg(drug)}
+        <div class="pharma-paths">${pharmaPathRows(rows, PHARMA_TARGET_COLORS)}</div>
+      </section>
+      <section class="pharma-card">
+        <h3>Para que fase serve</h3>
+        <div class="pharma-effects">${indications}</div>
+        <p class="pharma-extra">${escapeHtml(drug.extra)}</p>
+        <h4>O que vigiar</h4>
+        <div class="pharma-effects">${pharmaEffectChips(drug)}</div>
+        ${pharmaStudyLink(drug)}
+      </section>
+    </div>`;
+}
+
+function pharmaFormatLevel(value, level) {
+  return Number(value).toFixed(level.decimals).replace(".", ",");
+}
+
+function pharmaLevelZone(level, value) {
+  return level.zones.find((zone) => value < zone.to) || level.zones[level.zones.length - 1];
+}
+
+function pharmaZonesBar(level, marks) {
+  let from = level.min;
+  const span = level.max - level.min;
+  const zones = level.zones.map((zone) => {
+    const width = ((Math.min(zone.to, level.max) - from) / span) * 100;
+    from = zone.to;
+    return `<span class="z-${zone.tone}" style="flex:${width}" title="${escapeHtml(zone.label)}"></span>`;
+  }).join("");
+  const pins = marks.map((mark) => `<i class="pharma-pin ${mark.kind}" style="left:${Math.min(100, ((mark.value - level.min) / span) * 100)}%"></i>`).join("");
+  const band = marks.find((mark) => mark.kind === "band");
+  const bandHtml = band ? `<b class="pharma-band" style="left:${((band.from - level.min) / span) * 100}%;width:${((Math.min(band.value, level.max) - band.from) / span) * 100}%"></b>` : "";
+  return `<div class="pharma-levelbar"><div class="pharma-zones">${zones}</div>${bandHtml}${pins}</div>`;
+}
+
+function renderStabilizerLevelView(drug) {
+  const level = drug.level;
+  const value = state.pharma.level ?? level.start;
+  const zone = pharmaLevelZone(level, value);
+  const active = level.interactions.filter((item) => state.pharma.inter.includes(item.id));
+  const rising = active.filter((item) => item.factor > 1);
+  const falling = active.filter((item) => item.factor > 0 && item.factor < 1);
+  const marks = [{ kind: "now", value }];
+  let projection = "";
+  if (rising.length) {
+    const top = Math.min(level.max, value * Math.max(...rising.map((item) => item.factor)));
+    marks.push({ kind: "band", from: value, value: top });
+    projection = `<div class="pharma-reading tone-${pharmaLevelZone(level, top).tone}"><strong>Pode chegar a ~${pharmaFormatLevel(top, level)} ${level.unit}${top >= level.max ? " ou mais" : ""} · ${escapeHtml(pharmaLevelZone(level, top).label)}</strong><span>${escapeHtml(rising.map((item) => item.effect).join(" "))}${rising.length > 1 ? " Combinações somam o risco." : ""}</span></div>`;
+  } else if (falling.length) {
+    const low = value * falling[0].factor;
+    marks.push({ kind: "after", value: low });
+    projection = `<div class="pharma-reading tone-${pharmaLevelZone(level, low).tone}"><strong>Depois da autoindução: ~${pharmaFormatLevel(low, level)} ${level.unit} · ${escapeHtml(pharmaLevelZone(level, low).label)}</strong><span>${escapeHtml(falling[0].effect)}</span></div>`;
+  }
+  const textOnly = active.filter((item) => item.factor === 0);
+  return `
+    ${pharmaZonesBar(level, marks)}
+    <div class="pharma-reading tone-${zone.tone}">
+      <strong>${pharmaFormatLevel(value, level)} ${level.unit} · ${escapeHtml(zone.label)}</strong>
+      <span>${escapeHtml(zone.text)}</span>
+    </div>
+    ${projection}
+    ${textOnly.map((item) => `<div class="pharma-reading tone-warn"><strong>${escapeHtml(item.label)}</strong><span>${escapeHtml(item.effect)}</span></div>`).join("")}`;
+}
+
+function renderStabilizerTitration(drug) {
+  const titration = drug.titration;
+  const active = titration.modifiers.filter((item) => state.pharma.inter.includes(item.id));
+  /* Com valproato, vale a regra do valproato mesmo que haja indutor junto. */
+  const modifier = active.find((item) => item.id === "valproato") || active[0];
+  const factor = modifier ? modifier.factor : 1;
+  const rows = titration.weeks.map((week) => `<tr><th scope="row">${escapeHtml(week.label)}</th><td>${(week.dose * factor).toString().replace(".", ",")} mg/dia</td></tr>`).join("");
+  return `
+    <table class="pharma-table"><thead><tr><th scope="col">Período</th><th scope="col">Dose diária</th></tr></thead><tbody>${rows}</tbody></table>
+    ${modifier ? `<div class="pharma-reading tone-warn"><strong>${escapeHtml(modifier.label)}</strong><span>${escapeHtml(modifier.effect)}</span></div>` : ""}
+    <div class="pharma-reading tone-high"><strong>Por que devagar?</strong><span>Subir rápido (ou somar valproato sem reduzir a dose) aumenta o risco de rash grave, inclusive Stevens-Johnson. Se ficar mais de 5 meias-vidas sem tomar, recomeça a titulação.</span></div>`;
+}
+
+function renderStabilizerLevel(drug) {
+  let left;
+  let right;
+  if (drug.level) {
+    const level = drug.level;
+    left = `
+      <h3>Nível sérico · ${escapeHtml(drug.name)}</h3>
+      <label class="pharma-slider-label" for="pharmaLevel">Arraste para simular o nível no sangue (${level.unit})</label>
+      <input id="pharmaLevel" class="pharma-slider" type="range" min="${level.min}" max="${level.max}" step="${level.step}" value="${state.pharma.level ?? level.start}" data-pharma-level>
+      <div id="pharmaLevelView">${renderStabilizerLevelView(drug)}</div>`;
+    right = level.interactions.length
+      ? `<h3>Interações</h3><p class="pharma-extra">Ligue para ver o que acontece com o nível.</p>
+         <div class="pharma-toggles">${level.interactions.map((item) => `<button type="button" class="pharma-toggle ${state.pharma.inter.includes(item.id) ? "on" : ""}" data-pharma-inter="${item.id}" aria-pressed="${state.pharma.inter.includes(item.id)}">${escapeHtml(item.label)}</button>`).join("")}</div>`
+      : `<h3>Interações</h3><p class="pharma-extra">${escapeHtml(drug.extra)}</p>`;
+  } else if (drug.titration) {
+    left = `<h3>Titulação · ${escapeHtml(drug.name)}</h3><p class="pharma-extra">A lamotrigina não tem faixa de nível usada na prática: o cuidado está na velocidade de subida.</p>${renderStabilizerTitration(drug)}`;
+    right = `<h3>Associações</h3><p class="pharma-extra">Ligue para ver como a dose muda.</p>
+      <div class="pharma-toggles">${drug.titration.modifiers.map((item) => `<button type="button" class="pharma-toggle ${state.pharma.inter.includes(item.id) ? "on" : ""}" data-pharma-inter="${item.id}" aria-pressed="${state.pharma.inter.includes(item.id)}">${escapeHtml(item.label)}</button>`).join("")}</div>`;
+  } else {
+    left = `<h3>Nível sérico · ${escapeHtml(drug.name)}</h3><p class="pharma-extra">Sem faixa de nível usada na prática. O que mais pesa é o sódio: a hiponatremia é mais frequente que com a carbamazepina, sobretudo em idosos e com diuréticos.</p>`;
+    right = `<h3>Interações</h3><p class="pharma-extra">${escapeHtml(drug.extra)}</p>`;
+  }
+  return `
+    <div class="pharma-chips" role="group" aria-label="Estabilizadores de humor">${pharmaDrugChips(drug.id)}</div>
+    <div class="pharma-grid">
+      <section class="pharma-card">${left}</section>
+      <section class="pharma-card">${right}${pharmaStudyLink(drug)}</section>
+    </div>`;
 }
 
 function pharmaDrug(id) {
@@ -168,7 +346,7 @@ function pharmaReceptorRows(drug) {
       <div class="pharma-receptor" title="${escapeHtml(receptor.role)}">
         <strong>${escapeHtml(receptor.label)}</strong>
         <span class="pharma-bar" role="img" aria-label="${escapeHtml(receptor.label)}: afinidade ${PHARMA_LEVELS[value]}"><i class="${partial ? "partial" : ""}" style="width:${Math.max(4, value * 25)}%"></i></span>
-        <small>${PHARMA_LEVELS[value]}${partial ? " · agonista parcial" : ""}</small>
+        <small>${(pharmaIsStabilizer() ? PHARMA_ACTION_LABELS : PHARMA_LEVELS)[value]}${partial ? " · agonista parcial" : ""}</small>
       </div>`;
   }).join("");
 }
@@ -266,6 +444,7 @@ function pharmaPathRows(paths, colors) {
 
 function renderPharmaPaths() {
   const drug = pharmaDrug(state.pharma.drug);
+  if (pharmaIsStabilizer()) return renderStabilizerMech(drug);
   const antidepressant = pharmaIsAntidepressant();
   let figure;
   let rows;
@@ -345,7 +524,7 @@ function renderPharmaCompare() {
     ${a.id === b.id ? '<p class="panel-line">Escolha dois remédios diferentes para comparar.</p>' : ""}
     <div class="pharma-grid">
       <section class="pharma-card">
-        <h3>${pharmaIsAntidepressant() ? "Alvos" : "Receptores"}</h3>
+        <h3>${pharmaIsStabilizer() ? "Mecanismos" : pharmaIsAntidepressant() ? "Alvos" : "Receptores"}</h3>
         <div class="pharma-compare-legend"><span class="a">${escapeHtml(a.name)}</span><span class="b">${escapeHtml(b.name)}</span><span class="partial-key">listrado = agonista parcial</span></div>
         ${receptorRows}
       </section>
@@ -568,6 +747,7 @@ function renderAdSynapse(drug) {
 
 function renderPharmaSynapse() {
   const drug = pharmaDrug(state.pharma.drug);
+  if (pharmaIsStabilizer()) return renderStabilizerLevel(drug);
   if (drug.mech) return renderAdSynapse(drug);
   const partial = pharmaIsPartial(drug, "D2");
   return `
@@ -626,16 +806,33 @@ function pharmaEffectQuestion(drugs) {
   return null;
 }
 
+/* "Nível de lítio de 1,8 mmol/L: em que faixa está?" (só para remédios com faixa de nível). */
+function pharmaLevelQuestion(drugs) {
+  const withLevel = drugs.filter((drug) => drug.level);
+  if (!withLevel.length) return null;
+  const drug = withLevel[Math.floor(Math.random() * withLevel.length)];
+  const zones = drug.level.zones;
+  const index = Math.floor(Math.random() * zones.length);
+  const from = index ? zones[index - 1].to : drug.level.min;
+  const to = Math.min(zones[index].to, drug.level.max);
+  const value = pharmaFormatLevel(from + (to - from) / 2, drug.level);
+  const others = pharmaShuffle(zones.map((_, i) => i).filter((i) => i !== index)).slice(0, 3);
+  const labels = Object.fromEntries(zones.map((zone, i) => [`z${i}`, zone.label]));
+  return { type: "level", drug: drug.id, value, correct: `z${index}`, options: pharmaShuffle([index, ...others]).map((i) => `z${i}`), labels };
+}
+
 function newPharmaQuiz() {
   const drugs = pharmaClass().drugs;
+  const stabilizer = pharmaIsStabilizer();
   const questions = [];
   let guard = 0;
-  while (questions.length < 10 && guard < 200) {
+  while (questions.length < 10 && guard < 300) {
     guard += 1;
-    const question = Math.random() < 0.5 ? pharmaProfileQuestion(drugs) : pharmaEffectQuestion(drugs);
+    const roll = Math.random();
+    const question = stabilizer && roll < 0.4 ? pharmaLevelQuestion(drugs) : roll < 0.7 ? pharmaEffectQuestion(drugs) : pharmaProfileQuestion(drugs);
     if (!question) continue;
-    const key = `${question.type}|${question.correct}|${question.effect || ""}`;
-    if (questions.some((item) => `${item.type}|${item.correct}|${item.effect || ""}` === key)) continue;
+    const key = `${question.type}|${question.drug || ""}|${question.correct}|${question.effect || ""}`;
+    if (questions.some((item) => `${item.type}|${item.drug || ""}|${item.correct}|${item.effect || ""}` === key)) continue;
     questions.push(question);
   }
   return { questions, index: 0, answers: [] };
@@ -657,7 +854,19 @@ function pharmaAdCues(drug) {
   return `${cues.length ? `Pistas: ${cues.join("; ")}. ` : ""}${drug.extra}`;
 }
 
+function pharmaStabilizerCues(drug) {
+  const r = drug.receptors;
+  const cues = [];
+  if (r.INTRA >= 4) cues.push("age sobretudo dentro da célula (inositol, GSK-3): lítio");
+  if (r.GABA >= 3) cues.push("aumenta o GABA");
+  if (r.NA >= 4) cues.push("bloqueio forte de canais de sódio");
+  if (r.GLU >= 3) cues.push("reduz bem a liberação de glutamato");
+  if (r.CA >= 2) cues.push("também bloqueia canais de cálcio");
+  return `${cues.length ? `Pistas: ${cues.join("; ")}. ` : ""}${drug.extra}`;
+}
+
 function pharmaProfileExplanation(drug) {
+  if (pharmaIsStabilizer()) return pharmaStabilizerCues(drug);
   if (drug.mech) return pharmaAdCues(drug);
   const r = drug.receptors;
   const cues = [];
@@ -678,7 +887,7 @@ function renderPharmaQuiz() {
   const total = quiz.questions.length;
   if (quiz.index >= total) {
     const right = quiz.answers.filter((answer, index) => answer === quiz.questions[index].correct).length;
-    const missed = [...new Set(quiz.questions.filter((question, index) => quiz.answers[index] !== question.correct).map((question) => question.correct))];
+    const missed = [...new Set(quiz.questions.filter((question, index) => quiz.answers[index] !== question.correct).map((question) => question.drug || question.correct))];
     return `
       <section class="pharma-card pharma-quiz-end">
         <h3>Rodada concluída: ${right} de ${total}</h3>
@@ -688,21 +897,29 @@ function renderPharmaQuiz() {
   }
   const question = quiz.questions[quiz.index];
   const answered = quiz.answers[quiz.index];
-  const correct = pharmaDrug(question.correct);
+  const label = (id) => (question.labels ? question.labels[id] : pharmaDrug(id).name);
+  const correct = question.type === "level" ? pharmaDrug(question.drug) : pharmaDrug(question.correct);
   const effect = question.effect ? pharmaClass().effects.find((item) => item.id === question.effect) : null;
+  const profilePrompt = pharmaIsStabilizer()
+    ? "Este perfil de mecanismos é de qual estabilizador?"
+    : pharmaIsAntidepressant() ? "Este perfil de alvos é de qual antidepressivo?" : "Este perfil de receptores é de qual antipsicótico?";
   const prompt = question.type === "profile"
-    ? pharmaIsAntidepressant() ? "Este perfil de alvos é de qual antidepressivo?" : "Este perfil de receptores é de qual antipsicótico?"
+    ? profilePrompt
+    : question.type === "level"
+    ? `Nível de ${correct.name.toLowerCase()} de ${question.value} ${correct.level.unit}: em que faixa está?`
     : `Qual destes tem o maior risco de ${effect.label.toLowerCase()}?`;
   const options = question.options.map((id) => {
-    const drug = pharmaDrug(id);
     const state_ = answered ? (id === question.correct ? "right" : id === answered ? "wrong" : "") : "";
-    return `<button type="button" class="pharma-option ${state_}" data-pharma-answer="${id}" ${answered ? "disabled" : ""}>${escapeHtml(drug.name)}${state_ === "right" ? " ✓" : state_ === "wrong" ? " ✗" : ""}</button>`;
+    return `<button type="button" class="pharma-option ${state_}" data-pharma-answer="${id}" ${answered ? "disabled" : ""}>${escapeHtml(label(id))}${state_ === "right" ? " ✓" : state_ === "wrong" ? " ✗" : ""}</button>`;
   }).join("");
   const explanation = !answered
     ? ""
     : question.type === "profile"
     ? pharmaProfileExplanation(correct)
-    : `${correct.name}: ${effect.label.toLowerCase()} ${PHARMA_EFFECT_LEVELS[correct.effects[effect.id]]}, por ${effect.why}. ${question.options.filter((id) => id !== correct.id).map((id) => `${pharmaDrug(id).name}: ${PHARMA_EFFECT_LEVELS[pharmaDrug(id).effects[effect.id]]}`).join("; ")}.`;
+    : question.type === "level"
+    ? correct.level.zones[Number(question.correct.slice(1))].text
+    : `${correct.name}: ${effect.label.toLowerCase()} ${PHARMA_EFFECT_LEVELS[correct.effects[effect.id]]}. Por quê: ${effect.why}. ${question.options.filter((id) => id !== correct.id).map((id) => `${pharmaDrug(id).name}: ${PHARMA_EFFECT_LEVELS[pharmaDrug(id).effects[effect.id]]}`).join("; ")}.`;
+  const correctLabel = label(question.correct);
   return `
     <section class="pharma-card pharma-quiz">
       <div class="pharma-quiz-top"><strong>Pergunta ${quiz.index + 1} de ${total}</strong><span>${quiz.answers.filter((answer, index) => answer === quiz.questions[index].correct).length} acertos</span></div>
@@ -712,7 +929,7 @@ function renderPharmaQuiz() {
       <div class="pharma-options">${options}</div>
       ${answered ? `
         <div class="pharma-feedback ${answered === question.correct ? "right" : "wrong"}">
-          <strong>${answered === question.correct ? `Isso! ${escapeHtml(correct.name)}.` : `Era ${escapeHtml(correct.name)}.`}</strong>
+          <strong>${answered === question.correct ? `Isso! ${escapeHtml(correctLabel)}.` : `Era: ${escapeHtml(correctLabel)}.`}</strong>
           <span>${escapeHtml(explanation)}</span>
         </div>
         <button type="button" class="primary-btn" data-pharma-quiz="next">${quiz.index + 1 === total ? "Ver resultado" : "Próxima"}</button>` : ""}
@@ -736,7 +953,7 @@ function renderPharmaPanel() {
       <div class="pharma-switches">
         <div class="segmented pharma-classes" role="group" aria-label="Classe">${classButtons}</div>
         <div class="segmented pharma-modes" role="group" aria-label="Modo">
-          ${modeButton("paths", pharmaIsAntidepressant() ? "Sistemas e alvos" : "Vias e receptores")}${modeButton("compare", "Comparar")}${modeButton("synapse", "Sinapse")}${modeButton("quiz", "Treino")}
+          ${modeButton("paths", pharmaIsStabilizer() ? "Mecanismos e fases" : pharmaIsAntidepressant() ? "Sistemas e alvos" : "Vias e receptores")}${modeButton("compare", "Comparar")}${modeButton("synapse", pharmaIsStabilizer() ? "Nível e interações" : "Sinapse")}${modeButton("quiz", "Treino")}
         </div>
       </div>
     </header>
@@ -761,13 +978,17 @@ function openPharmaStudy(drug) {
   const panel = document.querySelector("#pharmaPanel");
   if (!panel) return;
   panel.addEventListener("click", (event) => {
-    const target = event.target.closest("[data-pharma-drug], [data-pharma-class], [data-pharma-mode], [data-pharma-study], [data-pharma-answer], [data-pharma-quiz], [data-pharma-review]");
+    const target = event.target.closest("[data-pharma-drug], [data-pharma-class], [data-pharma-mode], [data-pharma-study], [data-pharma-answer], [data-pharma-quiz], [data-pharma-review], [data-pharma-inter]");
     if (!target) return;
     const data = target.dataset;
     if (data.pharmaDrug) {
       state.pharma.drug = data.pharmaDrug;
       /* Ao trocar de remédio na sinapse, começa numa ocupação típica dele. */
       state.pharma.occupancy = pharmaDefaultOccupancy(pharmaDrug(data.pharmaDrug));
+      resetPharmaLevel(pharmaDrug(data.pharmaDrug));
+    } else if (data.pharmaInter) {
+      const list = state.pharma.inter || [];
+      state.pharma.inter = list.includes(data.pharmaInter) ? list.filter((id) => id !== data.pharmaInter) : [...list, data.pharmaInter];
     } else if (data.pharmaClass) setPharmaClass(data.pharmaClass);
     else if (data.pharmaMode) state.pharma.mode = data.pharmaMode;
     else if (data.pharmaStudy) {
@@ -788,6 +1009,14 @@ function openPharmaStudy(drug) {
   });
   /* O controle de ocupação atualiza só o desenho da sinapse, para não interromper o arraste. */
   panel.addEventListener("input", (event) => {
+    if (event.target.matches("[data-pharma-level]")) {
+      state.pharma.level = Number(event.target.value);
+      const view = panel.querySelector("#pharmaLevelView");
+      if (view) view.innerHTML = renderStabilizerLevelView(pharmaDrug(state.pharma.drug));
+      panel.dataset.renderedHtml = "";
+      savePharmaState();
+      return;
+    }
     if (!event.target.matches("[data-pharma-occupancy]")) return;
     state.pharma.occupancy = Number(event.target.value);
     const view = panel.querySelector("#pharmaSynapseView");
