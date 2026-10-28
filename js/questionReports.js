@@ -130,12 +130,12 @@ function renderQuestionReport() {
   }
 }
 
-/* Contador de reportes abertos no menu (Administração) e no botão "Mais" do celular. */
+/* Contador de reportes abertos no menu (Administração) e no botão "Você" do celular. */
 function renderReportBadges() {
   const count = state.isAdmin ? state.openReports.size : 0;
   const targets = [
     document.querySelector('.tab[data-tab="topics"]'),
-    document.querySelector('#bottomNav [data-nav="more"]'),
+    document.querySelector('#bottomNav [data-nav="you"]'),
   ];
   for (const target of targets) {
     if (!target) continue;

@@ -33,11 +33,14 @@
 
       <nav class="tabs" aria-label="Painel do banco">
         <button class="tab active" data-tab="overview">Hoje</button>
+        <div class="tab-group-label">Estudar</div>
         <button class="tab" data-tab="activity">Estudo por temas</button>
         <button class="tab" data-tab="exams">Provas</button>
         <button class="tab" data-tab="flashcards">Flashcards</button>
         <button class="tab" data-tab="history">Desempenho</button>
-        <button class="tab" data-tab="pharma">Simulador de fármacos</button>
+        <div class="tab-group-label">Simular</div>
+        <button class="tab" data-tab="pharma">Fármacos</button>
+        <div class="tab-group-label">Você</div>
         <button class="tab" data-tab="notes">Anota&ccedil;&otilde;es</button>
         <div class="admin-nav-divider admin-only">Administra&ccedil;&atilde;o</div>
         <button class="tab admin-tab admin-only" data-tab="topics">Administra&ccedil;&atilde;o</button>
@@ -105,6 +108,12 @@
       </header>
 
       <section class="question-shell">
+        <nav class="area-subnav" id="studySubnav" hidden aria-label="Estudar">
+          <button type="button" data-subnav="activity">Temas</button>
+          <button type="button" data-subnav="exams">Provas</button>
+          <button type="button" data-subnav="flashcards">Flashcards</button>
+          <button type="button" data-subnav="history">Desempenho</button>
+        </nav>
         <section class="domain-move" id="domainMoveBanner" hidden aria-label="Mudança de endereço"></section>
         <div class="tab-view-back" id="tabViewBack" hidden>
           <span id="tabViewBackLabel">Voc&ecirc; tem um bloco de quest&otilde;es em andamento.</span>
@@ -668,9 +677,9 @@
     <nav class="bottom-nav" id="bottomNav" aria-label="Navegação principal">
       <button type="button" data-nav="today"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"></path></svg><span>Hoje</span></button>
       <button type="button" data-nav="study"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2z"></path><path d="M8 7h6"></path></svg><span>Estudar</span></button>
-      <button type="button" data-nav="flashcards"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="14" height="14" rx="2"></rect><path d="M7 3h12a2 2 0 0 1 2 2v12"></path></svg><span>Flashcards</span></button>
-      <button type="button" data-nav="performance"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10"></path><path d="M10 20V4"></path><path d="M16 20v-7"></path><path d="M22 20H2"></path></svg><span>Desempenho</span></button>
-      <button type="button" data-nav="more"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5" cy="12" r="1.5"></circle><circle cx="12" cy="12" r="1.5"></circle><circle cx="19" cy="12" r="1.5"></circle></svg><span>Mais</span></button>
+      <button type="button" data-nav="simulate"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6"></path><path d="M10 3v6l-5 9a2 2 0 0 0 2 3h10a2 2 0 0 0 2-3l-5-9V3"></path><path d="M7.5 14h9"></path></svg><span>Simular</span></button>
+      <button type="button" data-nav="practice"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4h6v3H9z"></path><path d="M7 5H5v16h14V5h-2"></path><path d="M8.5 12l2 2 4-4"></path></svg><span>Prática</span></button>
+      <button type="button" data-nav="you"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c1.5-4 5-6 8-6s6.5 2 8 6"></path></svg><span>Você</span></button>
     </nav>
     <!-- Dados: cada arquivo acrescenta provas/questões/flashcards aos objetos globais, nesta ordem. -->
     <script src="data/questions.js"></script>

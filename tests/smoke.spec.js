@@ -531,3 +531,20 @@ test("simulador de fármacos: psicoestimulantes e TDAH (regiões, dia e treino)"
   await expect(page.locator(".pharma-feedback")).toBeVisible();
   expect(errors).toEqual([]);
 });
+test("navegação por áreas: Hoje, Estudar (com seletor), Simular e Você", async ({ page }) => {
+  const errors = await openSite(page);
+  const mobile = await page.evaluate(() => isMobileLayout());
+  test.skip(!mobile, "barra de baixo só existe no celular");
+  await page.locator('#bottomNav [data-nav="study"]').click();
+  await expect(page.locator("#studySubnav")).toBeVisible();
+  await page.locator('#studySubnav [data-subnav="exams"]').click();
+  expect(await page.evaluate(() => state.activeTab)).toBe("exams");
+  await page.locator('#bottomNav [data-nav="simulate"]').click();
+  expect(await page.evaluate(() => state.activeTab)).toBe("pharma");
+  await expect(page.locator("#studySubnav")).toBeHidden();
+  await page.locator('#bottomNav [data-nav="study"]').click();
+  expect(await page.evaluate(() => state.activeTab)).toBe("exams");
+  await page.locator('#bottomNav [data-nav="you"]').click();
+  await expect(page.locator("#authPanel")).toBeVisible();
+  expect(errors).toEqual([]);
+});

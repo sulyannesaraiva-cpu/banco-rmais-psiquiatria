@@ -5256,7 +5256,7 @@ body.reading-serif .my-note-text,
   display: none;
 }
 
-#bottomNav [data-nav="more"] {
+#bottomNav [data-nav="you"] {
   position: relative;
 }
 
@@ -6930,4 +6930,98 @@ body.theme-dark .pharma-chip.on {
   stroke: #d99a1e;
   stroke-width: 4;
   stroke-linecap: round;
+}
+/* ===== Navegação por áreas (js/mobileNav.js) ===== */
+.tab-group-label {
+  margin: 14px 12px 4px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.area-subnav {
+  display: none;
+}
+
+@media (max-width: 860px) {
+  .area-subnav:not([hidden]) {
+    position: sticky;
+    top: 0;
+    z-index: 15;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 4px;
+    margin: 0 0 14px;
+    padding: 4px;
+    border-radius: 12px;
+    background: var(--accent-soft);
+    box-shadow: 0 6px 12px -10px rgba(16, 38, 45, 0.35);
+  }
+
+  .area-subnav button {
+    min-height: 38px;
+    padding: 0 4px;
+    border: 0;
+    border-radius: 9px;
+    background: transparent;
+    color: var(--muted);
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  .area-subnav button.active {
+    background: var(--panel);
+    color: var(--accent-strong);
+    font-weight: 700;
+    box-shadow: 0 1px 2px rgba(16, 38, 45, 0.12);
+  }
+
+  /* A gaveta "Você" fica só com o que não está na barra de baixo. */
+  .sidebar .tabs .tab[data-tab="overview"],
+  .sidebar .tabs .tab[data-tab="activity"],
+  .sidebar .tabs .tab[data-tab="exams"],
+  .sidebar .tabs .tab[data-tab="flashcards"],
+  .sidebar .tabs .tab[data-tab="history"],
+  .sidebar .tabs .tab[data-tab="pharma"],
+  .sidebar .tab-group-label,
+  .sidebar .pq-switch {
+    display: none;
+  }
+
+  .bottom-nav button[data-nav="you"] {
+    position: relative;
+  }
+}
+@media (max-width: 860px) {
+  .area-subnav:not([hidden]) {
+    display: flex;
+  }
+
+  .area-subnav button {
+    flex: 1 1 auto;
+    padding: 0 8px;
+    background: transparent;
+  }
+
+  /* Gaveta "Você": conta primeiro, depois anotações, tema e convite, sem o vão no meio. */
+  .sidebar {
+    justify-content: flex-start;
+  }
+
+  .sidebar .sidebar-footer {
+    order: 2;
+    margin-top: 0;
+  }
+
+  .sidebar .tabs {
+    order: 3;
+    margin: 8px 0 0;
+  }
+
+  .sidebar .brand {
+    order: 1;
+  }
 }
