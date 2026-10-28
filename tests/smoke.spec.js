@@ -669,6 +669,21 @@ test("atlas de vias: núcleos da base (cenários, seguir o sinal e fontes)", asy
   await expect(page.locator("#pharmaPanel .eps-steps")).toBeVisible();
   expect(errors).toEqual([]);
 });
+test("atlas de vias: circuitos frontoestriatais (lesione e veja)", async ({ page }) => {
+  const errors = await openSite(page);
+  await goTab(page, "pharma");
+  await page.locator('[data-sim-section="atlas"]').click();
+  await page.locator('[data-atlas-module="frontoestriatais"]').click();
+  await page.locator('[data-atlas-circuit="cingulado"]').click();
+  await page.locator('[data-atlas-lesion="thalamus"]').click();
+  await expect(page.locator("#pharmaPanel")).toContainText("Lesão no tálamo: síndrome apática");
+  await expect(page.locator("#pharmaPanel")).toContainText("mutismo acinético");
+  await page.locator('[data-atlas-circuit="orbitofrontal"]').click();
+  await expect(page.locator("#pharmaPanel")).toContainText("TOC");
+  await page.locator("[data-pharma-sources]").click();
+  await expect(page.locator(".pharma-sources")).toContainText("Cummings");
+  expect(errors).toEqual([]);
+});
 test("navegação por áreas: Hoje, Estudar (com seletor), Simular e Você", async ({ page }) => {
   const errors = await openSite(page);
   const mobile = await page.evaluate(() => isMobileLayout());

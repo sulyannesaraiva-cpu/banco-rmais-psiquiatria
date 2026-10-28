@@ -56,6 +56,20 @@ window.PHARMA_SOURCES = {
     short: "Clinical Neurology for Psychiatrists",
     full: "Kaufman DM et al. Kaufman's Clinical Neurology for Psychiatrists. Elsevier. Cap. 18 (Involuntary Movement Disorders).",
   },
+  alexander1986: {
+    short: "Alexander et al., 1986",
+    full: "Alexander GE, DeLong MR, Strick PL. Parallel organization of functionally segregated circuits linking basal ganglia and cortex. Annu Rev Neurosci. 1986;9:357-381.",
+    pmid: "3085570",
+  },
+  cummings1993: {
+    short: "Cummings, 1993",
+    full: "Cummings JL. Frontal-subcortical circuits and human behavior. Arch Neurol. 1993;50(8):873-880.",
+    pmid: "8352676",
+  },
+  quevedo2020: {
+    short: "Quevedo e Izquierdo, 2020",
+    full: "Quevedo J, Izquierdo I (orgs.). Neurobiologia dos transtornos psiquiátricos. Artmed; 2020.",
+  },
   curadoria: {
     short: "Curadoria do site",
     full: "Esquemas, modelos e casos feitos para este site a partir das fontes citadas na mesma tela. Não são dados publicados.",
@@ -165,6 +179,16 @@ window.PHARMA_REFS = {
       { about: "Bloqueio de D2 e parkinsonismo; ocupação de ~78%", src: "kapur2000", where: "estudo com PET", kind: "fonte" },
       { about: "Atividade de cada estrutura nos cenários e espessura das setas", src: "curadoria", where: "modelo clássico de vias direta e indireta, simplificado", kind: "didatico" },
       { about: "Desenho do circuito", src: "curadoria", where: "esquema não está em escala nem em posição anatômica", kind: "didatico" },
+    ],
+  },
+  "atlas-frontoestriatais": {
+    paths: [
+      { about: "Alças paralelas córtex → estriado → pálido/SN reticulada → tálamo → córtex", src: "alexander1986", where: "artigo de revisão", kind: "fonte" },
+      { about: "Estruturas de cada alça (dorsolateral, orbitofrontal, cingulado anterior) e síndromes de lesão em qualquer ponto da alça", src: "cummings1993", where: "artigo de revisão", kind: "fonte" },
+      { about: "Sinais das lesões frontais (apatia, abulia, mutismo acinético, desinibição, distraibilidade, perseveração, witzelsucht)", src: "kaufman", where: "seção Frontal Lobe Disorders", kind: "fonte" },
+      { about: "Alça orbitofrontal até o tálamo mediodorsal e anterior", src: "quevedo2020", where: "capítulo sobre impulsividade", kind: "fonte" },
+      { about: "TOC, dependência química, depressão (cingulado subgenual) e TDAH", src: "quevedo2020", where: "capítulos de estimulação cerebral profunda, dependência e TDAH", kind: "fonte" },
+      { about: "Desenho das alças lado a lado e escolha do ponto da lesão", src: "curadoria", where: "esquema não está em escala nem em posição anatômica", kind: "didatico" },
     ],
   },
   dependencia: {

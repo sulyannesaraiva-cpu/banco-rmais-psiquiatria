@@ -10,7 +10,7 @@
 window.ATLAS = {
   modules: [
     { id: "nucleos-base", tag: "NB", color: "#0072b2", title: "Núcleos da base", text: "Vias direta e indireta · Parkinson · extrapiramidais", ready: true },
-    { id: "frontoestriatais", tag: "CPF", color: "#d55e00", title: "Circuitos frontoestriatais", text: "Dorsolateral · orbitofrontal · cingulado anterior" },
+    { id: "frontoestriatais", tag: "CPF", color: "#d55e00", title: "Circuitos frontoestriatais", text: "Dorsolateral · orbitofrontal · cingulado anterior", ready: true },
     { id: "limbico", tag: "Lb", color: "#b0418a", title: "Sistema límbico e Papez", text: "Memória · emoção · Korsakoff" },
     { id: "neurotransmissores", tag: "DA", color: "#0b6b70", title: "Vias de neurotransmissores", text: "Dopamina, serotonina, noradrenalina, acetilcolina" },
     { id: "hha", tag: "HHA", color: "#009e73", title: "Eixo hipotálamo-hipófise-adrenal", text: "Estresse · cortisol · depressão" },
@@ -87,5 +87,53 @@ window.ATLAS = {
       { edges: ["stn-gpi"], text: "O subtalâmico, solto, excita o pálido interno: o oposto da via direta." },
       { edges: ["gpi-tha", "tha-ctx"], text: "O pálido interno freia o tálamo (GABA). O tálamo, quando liberado, excita o córtex motor e o movimento sai." },
     ],
+  },
+  /* Circuitos frontoestriatais: modelo de alças paralelas córtex → estriado → pálido/SN
+     reticulada → tálamo → córtex (Alexander et al., 1986; Cummings, 1993). Síndromes conforme
+     Clinical Neurology for Psychiatrists (seção Frontal Lobe Disorders) e Cummings (1993);
+     ligações com transtornos conforme Quevedo e Izquierdo (2020). */
+  fronto: {
+    levels: [
+      { id: "cortex", label: "Córtex" },
+      { id: "striatum", label: "Estriado" },
+      { id: "pallidum", label: "Pálido / SN reticulada" },
+      { id: "thalamus", label: "Tálamo" },
+    ],
+    circuits: [
+      {
+        id: "dorsolateral", label: "Dorsolateral", color: "#0072b2",
+        nodes: { cortex: "Pré-frontal dorsolateral", striatum: "Caudado dorsolateral", pallidum: "GPi dorsomedial lateral e SNr rostrolateral", thalamus: "VA e mediodorsal" },
+        function: "Funções executivas: planejar, manter informação em mente (memória de trabalho), mudar de estratégia, organizar e resolver problemas.",
+        syndrome: "Síndrome disexecutiva",
+        signs: ["Dificuldade para planejar e organizar", "Não consegue mudar de estratégia (rigidez, mudança de set prejudicada)", "Perseveração", "Pensamento lento, pouca fluência verbal", "Memória preservada, mas mal usada (busca desorganizada)"],
+        disorders: [
+          { name: "Dependência química", text: "Faz parte do circuito de controle executivo (com cingulado anterior e orbitofrontal lateral), que perde força frente aos circuitos de motivação e memória." },
+          { name: "TDAH", text: "Circuitos frontoestriatais menos ativos; o metilfenidato muda a ativação dessas redes." },
+        ],
+      },
+      {
+        id: "orbitofrontal", label: "Orbitofrontal", color: "#d55e00",
+        nodes: { cortex: "Orbitofrontal lateral", striatum: "Caudado ventromedial", pallidum: "GPi dorsomedial medial e SNr rostromedial", thalamus: "VA e mediodorsal" },
+        function: "Comportamento social e inibição: frear impulsos, adequar a conduta ao contexto, avaliar recompensa e consequência.",
+        syndrome: "Síndrome desinibida",
+        signs: ["Desinibição e impulsividade", "Comentários e condutas socialmente inadequados", "Irritabilidade e labilidade afetiva", "Distraibilidade, preso ao estímulo do momento", "Jocosidade inadequada (witzelsucht)"],
+        disorders: [
+          { name: "TOC", text: "Disfunção nas conexões dos núcleos da base com os córtices orbitofrontal e cingulado anterior; as fibras passam pelo ramo anterior da cápsula interna, alvo de estimulação cerebral profunda." },
+          { name: "Dependência química", text: "O orbitofrontal medial atribui saliência (motivação) e o lateral participa do controle; na dependência, motivação e memória superam o controle." },
+        ],
+      },
+      {
+        id: "cingulado", label: "Cingulado anterior", color: "#b0418a",
+        nodes: { cortex: "Cingulado anterior", striatum: "Estriado ventral (accumbens)", pallidum: "Pálido ventral e GPi rostrolateral", thalamus: "Mediodorsal" },
+        function: "Motivação e iniciativa: dar partida ao comportamento, atenção ao que importa, monitorar erros.",
+        syndrome: "Síndrome apática",
+        signs: ["Apatia: indiferença ao ambiente e à própria doença", "Abulia: pouca fala e pouca iniciativa", "Pouca resposta emocional", "Nas lesões bilaterais graves: mutismo acinético"],
+        disorders: [
+          { name: "TOC", text: "Junto com o orbitofrontal, o cingulado anterior aparece hiperconectado aos núcleos da base no TOC." },
+          { name: "Depressão", text: "O cingulado anterior subgenual (área 25) regula o humor; é alvo experimental de estimulação cerebral profunda na depressão resistente." },
+        ],
+      },
+    ],
+    keyPoint: "Lesões em qualquer ponto da mesma alça (córtex, estriado, pálido ou tálamo) dão síndromes parecidas: é o circuito, e não só o córtex, que sustenta o comportamento.",
   },
 };

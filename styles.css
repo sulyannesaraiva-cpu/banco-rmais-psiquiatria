@@ -8271,3 +8271,71 @@ body.theme-dark .pharma-chip.on {
     grid-template-columns: 1fr;
   }
 }
+/* Atlas: circuitos frontoestriatais. */
+.fronto-loop {
+  opacity: 0.35;
+  transition: opacity 0.2s;
+}
+
+.fronto-loop.on {
+  opacity: 1;
+}
+
+.fronto-node rect {
+  fill: var(--panel-soft);
+  stroke: var(--c);
+  stroke-width: 2;
+}
+
+.fronto-loop.on .fronto-node rect {
+  fill: color-mix(in srgb, var(--c) 12%, var(--panel));
+  stroke-width: 3;
+}
+
+.fronto-loop.on .fronto-node.lesion rect,
+.fronto-node.lesion rect {
+  fill: #2b2b2b;
+  stroke: #c2410c;
+}
+
+.fronto-level {
+  fill: var(--muted);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.fronto-sub {
+  fill: var(--ink);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.fronto-node.lesion .fronto-level,
+.fronto-node.lesion .fronto-sub {
+  fill: #ffffff;
+}
+
+.fronto-title {
+  fill: var(--c);
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.fronto-arrow {
+  fill: none;
+  stroke: var(--c);
+  stroke-width: 3;
+}
+
+.fronto-arrow.back {
+  stroke-dasharray: 6 5;
+}
+
+.fronto-signs {
+  margin: 4px 0 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 3px;
+}
