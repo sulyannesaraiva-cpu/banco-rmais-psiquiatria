@@ -63,6 +63,14 @@ function renderStudySubnav() {
       renderBottomNav();
       return;
     }
+    /* Tocar em Simular já estando lá volta para a lista de classes. */
+    if (key === "simulate" && state.activeTab === "pharma" && state.pharma) {
+      state.pharma.view = "hub";
+      if (typeof savePharmaState === "function") savePharmaState();
+      render();
+      window.scrollTo(0, 0);
+      return;
+    }
     /* Estudar volta para a última sub-área usada (Temas na primeira vez). */
     const target = key === "today"
       ? "overview"

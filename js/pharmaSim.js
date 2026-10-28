@@ -1403,22 +1403,66 @@ function renderPharmaQuiz() {
     </section>`;
 }
 
+/* ---------- Entrada da área Simular: classes em cartões ---------- */
+
+const PHARMA_HUB = {
+  antipsicoticos: { tag: "D2", color: "#0072b2", text: "Vias dopaminérgicas · ocupação de D2" },
+  antidepressivos: { tag: "5-HT", color: "#b0418a", text: "Monoaminas · recaptação, α2, MAO" },
+  estabilizadores: { tag: "Li", color: "#0b6b70", text: "Nível sérico · interações · titulação" },
+  ansioliticos: { tag: "GABA", color: "#009e73", text: "Meia-vida · retirada · equivalência" },
+  estimulantes: { tag: "DA", color: "#d55e00", text: "Formulações ao longo do dia" },
+};
+
+function renderPharmaHub() {
+  const last = pharmaClass();
+  const cards = Object.values(window.PHARMA_SIM).map((cls) => {
+    const hub = PHARMA_HUB[cls.id] || { tag: "Rx", color: "#0b6b70", text: "" };
+    return `
+      <button type="button" class="pharma-hub-card" data-pharma-class="${cls.id}" style="--c:${hub.color}">
+        <span class="pharma-hub-tag">${escapeHtml(hub.tag)}</span>
+        <span class="pharma-hub-text"><strong>${escapeHtml(cls.label)}</strong><small>${escapeHtml(hub.text)} · ${pluralize(cls.drugs.length, "remédio", "remédios")}</small></span>
+        <span aria-hidden="true" class="pharma-hub-arrow">›</span>
+      </button>`;
+  }).join("");
+  return `
+    <header class="pharma-head pharma-hub-head">
+      <div>
+        <h2>Simular</h2>
+        <p>Explore como o mecanismo de cada remédio explica o efeito e os efeitos colaterais.</p>
+      </div>
+      <div class="segmented pharma-sections" role="group" aria-label="Seção">
+        <button type="button" class="active" aria-pressed="true">Fármacos</button>
+        <button type="button" disabled title="Em breve">Pacientes <span class="pharma-soon">em breve</span></button>
+      </div>
+    </header>
+    <div class="pharma-hub-list">${cards}</div>
+    <button type="button" class="primary-btn pharma-hub-quiz" data-pharma-quick="${last.id}">Treino rápido · ${escapeHtml(last.label)}</button>
+    <p class="pharma-disclaimer">Material didático e simplificado, para estudo. Não usar para prescrição.</p>`;
+}
+
 function renderPharmaPanel() {
   const panel = document.querySelector("#pharmaPanel");
   if (!panel || !window.PHARMA_SIM) return;
+  if (state.pharma.view !== "class") {
+    const hubHtml = renderPharmaHub();
+    if (panel.dataset.renderedHtml !== hubHtml) {
+      panel.innerHTML = hubHtml;
+      panel.dataset.renderedHtml = hubHtml;
+    }
+    return;
+  }
   const mode = ["paths", "compare", "synapse", "quiz"].includes(state.pharma.mode) ? state.pharma.mode : "paths";
   const modeButton = (id, label) => `<button type="button" data-pharma-mode="${id}" class="${mode === id ? "active" : ""}" aria-pressed="${mode === id}">${label}</button>`;
   const body = mode === "compare" ? renderPharmaCompare() : mode === "synapse" ? renderPharmaSynapse() : mode === "quiz" ? renderPharmaQuiz() : renderPharmaPaths();
   const cls = pharmaClass();
-  const classButtons = Object.values(window.PHARMA_SIM).map((item) => `<button type="button" data-pharma-class="${item.id}" class="${item.id === cls.id ? "active" : ""}" aria-pressed="${item.id === cls.id}">${escapeHtml(item.label)}</button>`).join("");
   const html = `
     <header class="pharma-head">
       <div>
-        <h2>Simulador de psicofarmacologia</h2>
+        <button type="button" class="link-btn pharma-back" data-pharma-hub>← Classes</button>
+        <h2>${escapeHtml(cls.label)}</h2>
         <p>${escapeHtml(cls.tagline)}</p>
       </div>
       <div class="pharma-switches">
-        <div class="segmented pharma-classes" role="group" aria-label="Classe">${classButtons}</div>
         <div class="segmented pharma-modes" role="group" aria-label="Modo">
           ${modeButton("paths", pharmaIsStabilizer() ? "Mecanismos e fases" : pharmaIsAnxiolytic() || pharmaIsStimulant() ? "Mecanismos e usos" : pharmaIsAntidepressant() ? "Sistemas e alvos" : "Vias e receptores")}${modeButton("compare", "Comparar")}${modeButton("synapse", pharmaIsStabilizer() ? "Nível e interações" : pharmaIsAnxiolytic() ? "Meia-vida e retirada" : pharmaIsStimulant() ? "Ao longo do dia" : "Sinapse")}${modeButton("quiz", "Treino")}
         </div>
@@ -1445,10 +1489,21 @@ function openPharmaStudy(drug) {
   const panel = document.querySelector("#pharmaPanel");
   if (!panel) return;
   panel.addEventListener("click", (event) => {
-    const target = event.target.closest("[data-pharma-drug], [data-pharma-class], [data-pharma-mode], [data-pharma-study], [data-pharma-answer], [data-pharma-quiz], [data-pharma-review], [data-pharma-inter], [data-pharma-stop], [data-pharma-repeat]");
+    const target = event.target.closest("[data-pharma-drug], [data-pharma-class], [data-pharma-mode], [data-pharma-study], [data-pharma-answer], [data-pharma-quiz], [data-pharma-review], [data-pharma-inter], [data-pharma-stop], [data-pharma-repeat], [data-pharma-hub], [data-pharma-quick]");
     if (!target) return;
     const data = target.dataset;
-    if (data.pharmaStop !== undefined) state.pharma.stopped = !state.pharma.stopped;
+    if (data.pharmaHub !== undefined) state.pharma.view = "hub";
+    else if (data.pharmaQuick) {
+      setPharmaClass(data.pharmaQuick);
+      state.pharma.view = "class";
+      state.pharma.mode = "quiz";
+      state.pharmaQuiz = null;
+    } else if (data.pharmaClass) {
+      /* Cartão da entrada: abre a classe na primeira tela. */
+      setPharmaClass(data.pharmaClass);
+      state.pharma.view = "class";
+      state.pharma.mode = "paths";
+    } else if (data.pharmaStop !== undefined) state.pharma.stopped = !state.pharma.stopped;
     else if (data.pharmaRepeat !== undefined) state.pharma.repeat = !state.pharma.repeat;
     else if (data.pharmaDrug) {
       state.pharma.drug = data.pharmaDrug;
@@ -1458,8 +1513,7 @@ function openPharmaStudy(drug) {
     } else if (data.pharmaInter) {
       const list = state.pharma.inter || [];
       state.pharma.inter = list.includes(data.pharmaInter) ? list.filter((id) => id !== data.pharmaInter) : [...list, data.pharmaInter];
-    } else if (data.pharmaClass) setPharmaClass(data.pharmaClass);
-    else if (data.pharmaMode) state.pharma.mode = data.pharmaMode;
+    } else if (data.pharmaMode) state.pharma.mode = data.pharmaMode;
     else if (data.pharmaStudy) {
       openPharmaStudy(pharmaDrug(data.pharmaStudy));
       return;
@@ -1474,7 +1528,7 @@ function openPharmaStudy(drug) {
     }
     savePharmaState();
     renderPharmaPanel();
-    if (data.pharmaQuiz || data.pharmaReview) panel.scrollIntoView({ block: "start" });
+    if (data.pharmaQuiz || data.pharmaReview || data.pharmaClass || data.pharmaHub !== undefined || data.pharmaQuick) panel.scrollIntoView({ block: "start" });
   });
   /* O controle de ocupação atualiza só o desenho da sinapse, para não interromper o arraste. */
   panel.addEventListener("input", (event) => {

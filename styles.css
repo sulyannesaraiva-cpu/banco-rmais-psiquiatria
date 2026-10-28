@@ -7376,3 +7376,150 @@ body.theme-dark .pharma-chip.on {
     font-size: 12px;
   }
 }
+/* ===== Entrada da área Simular (js/pharmaSim.js) ===== */
+.pharma-hub-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  gap: 10px;
+}
+
+.pharma-hub-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 72px;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--panel);
+  color: var(--ink);
+  text-align: left;
+}
+
+.pharma-hub-card:hover {
+  border-color: var(--c);
+}
+
+.pharma-hub-tag {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--c) 14%, var(--panel));
+  color: var(--c);
+  font-family: var(--font-display, inherit);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.pharma-hub-text {
+  flex: 1;
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+
+.pharma-hub-text strong {
+  font-size: 15px;
+}
+
+.pharma-hub-text small {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.pharma-hub-arrow {
+  color: var(--muted);
+  font-size: 20px;
+}
+
+.pharma-hub-quiz {
+  justify-self: start;
+  min-height: 48px;
+  padding: 0 20px;
+  border-radius: 14px;
+}
+
+.pharma-sections button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.pharma-soon {
+  margin-left: 4px;
+  padding: 1px 6px;
+  border-radius: 6px;
+  background: #fdf1d8;
+  color: #6b4300;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.pharma-back {
+  margin-bottom: 4px;
+  padding: 0;
+  font-weight: 700;
+}
+
+@media (max-width: 640px) {
+  .pharma-hub-quiz {
+    justify-self: stretch;
+  }
+}
+@media (max-width: 860px) {
+  /* Simular sem caixa dentro de caixa no celular. */
+  #pharmaPanel {
+    padding: 4px 0 8px;
+    border: 0;
+    background: transparent;
+  }
+}
+@media (max-width: 860px) {
+  /* Remédios e modos em faixas que deslizam para o lado, em vez de várias linhas. */
+  #pharmaPanel .pharma-chips,
+  #pharmaPanel .pharma-modes {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    margin-right: -14px;
+    padding-right: 14px;
+  }
+
+  #pharmaPanel .pharma-chips::-webkit-scrollbar,
+  #pharmaPanel .pharma-modes::-webkit-scrollbar {
+    display: none;
+  }
+
+  #pharmaPanel .pharma-chip,
+  #pharmaPanel .pharma-modes button {
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+
+  #pharmaPanel .pharma-modes {
+    display: flex;
+    width: auto;
+  }
+
+  #pharmaPanel .pharma-head p {
+    font-size: 14px;
+  }
+
+  #pharmaPanel .pharma-switches {
+    width: 100%;
+  }
+}
+@media (max-width: 860px) {
+  #pharmaPanel .pharma-switches,
+  #pharmaPanel .pharma-head > * {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  #pharmaPanel .pharma-modes {
+    max-width: calc(100% + 14px);
+  }
+}

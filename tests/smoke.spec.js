@@ -406,6 +406,8 @@ test("plano com mais de uma prova e boas-vindas para quem chega", async ({ page 
 test("simulador de fármacos: vias, receptores, comparar e questões do remédio", async ({ page }) => {
   const errors = await openSite(page);
   await goTab(page, "pharma");
+  await expect(page.locator(".pharma-hub-card")).toHaveCount(5);
+  await page.locator('[data-pharma-class="antipsicoticos"]').click();
   await expect(page.locator("#pharmaPanel .pharma-brain")).toBeVisible();
   await page.locator('[data-pharma-drug="haloperidol"]').click();
   await expect(page.locator("#pharmaPanel .pharma-paths")).toContainText("Parkinsonismo: risco alto");
@@ -424,6 +426,7 @@ test("simulador de fármacos: vias, receptores, comparar e questões do remédio
 test("simulador de fármacos: sinapse com ocupação e rodada de treino", async ({ page }) => {
   const errors = await openSite(page);
   await goTab(page, "pharma");
+  await page.locator('[data-pharma-class="antipsicoticos"]').click();
   await page.locator('[data-pharma-mode="synapse"]').click();
   await page.locator('[data-pharma-drug="haloperidol"]').click();
   await page.locator("[data-pharma-occupancy]").evaluate((input) => {
@@ -464,7 +467,9 @@ test("simulador de fármacos: antidepressivos (sistemas, sinapse e treino)", asy
   await page.locator('[data-pharma-mode="quiz"]').click();
   await page.locator("[data-pharma-answer]").first().click();
   await expect(page.locator(".pharma-feedback")).toBeVisible();
+  await page.locator("[data-pharma-hub]").click();
   await page.locator('[data-pharma-class="antipsicoticos"]').click();
+  await page.locator('[data-pharma-mode="quiz"]').click();
   await expect(page.locator(".pharma-quiz")).toContainText("Pergunta 1 de 10");
   expect(errors).toEqual([]);
 });
