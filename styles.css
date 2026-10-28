@@ -5879,3 +5879,40 @@ body.theme-dark .perf-tile.mid {
   background: #164447;
   color: #d4ecec;
 }
+/* Aviso de mudança de endereço (js/domainMove.js), só no endereço antigo. */
+.domain-move {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 16px;
+  padding: 16px 18px;
+  border: 1px solid var(--accent);
+  border-radius: 14px;
+  background: var(--accent-soft);
+}
+
+.domain-move p {
+  display: grid;
+  gap: 4px;
+  margin: 0;
+}
+
+.domain-move span {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.domain-move-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.domain-move-actions a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 0 14px;
+  border-radius: 8px;
+  text-decoration: none;
+}
