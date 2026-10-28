@@ -548,3 +548,24 @@ test("navegação por áreas: Hoje, Estudar (com seletor), Simular e Você", asy
   await expect(page.locator("#authPanel")).toBeVisible();
   expect(errors).toEqual([]);
 });
+test("questão no celular: mapa recolhido, ferramentas e barra fixa", async ({ page }) => {
+  const errors = await openSite(page);
+  const mobile = await page.evaluate(() => isMobileLayout());
+  test.skip(!mobile, "layout de questão compacto só no celular");
+  await goTab(page, "activity");
+  await page.locator("#startSessionBtn").click();
+  await expect(page.locator("#questionMap")).toBeHidden();
+  await page.locator("#positionLabel").click();
+  await expect(page.locator("#questionMap")).toBeVisible();
+  await page.locator("#questionMap button").nth(1).click();
+  await expect(page.locator("#questionMap")).toBeHidden();
+  expect(await page.evaluate(() => state.index)).toBe(1);
+  await expect(page.locator("#commentsAccordion")).toBeHidden();
+  await page.locator('[data-qtool="comments"]').click();
+  await expect(page.locator("#commentsAccordion")).toBeVisible();
+  await answerCurrent(page);
+  await page.locator('[data-qtool="concept"]').click();
+  await expect(page.locator("#conceptPanel")).toBeVisible();
+  await expect(page.locator("#commentsAccordion")).toBeHidden();
+  expect(errors).toEqual([]);
+});

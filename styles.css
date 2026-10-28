@@ -7025,3 +7025,170 @@ body.theme-dark .pharma-chip.on {
     order: 1;
   }
 }
+/* ===== Questão no celular (js/questionMobile.js) ===== */
+.question-toolbar {
+  display: none;
+}
+
+.explanation-more[hidden] {
+  display: none;
+}
+
+@media (max-width: 860px) {
+  /* Mapa do bloco recolhido: abre pelo contador. */
+  body:not(.map-open) .question-map {
+    display: none !important;
+  }
+
+  .position-toggle {
+    min-height: 40px;
+    padding: 0 14px;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    background: var(--panel);
+    color: var(--ink);
+    font-family: var(--font-display, inherit);
+    font-weight: 800;
+    white-space: nowrap;
+  }
+
+  .position-toggle::after {
+    content: " ▾";
+    color: var(--muted);
+    font-size: 12px;
+  }
+
+  body.map-open .position-toggle::after {
+    content: " ▴";
+  }
+
+  /* Anterior · posição · Próxima fixos acima da barra de baixo. */
+  body:not(.no-question-active):not(.flashcard-active) .question-nav {
+    position: fixed;
+    right: 0;
+    bottom: calc(66px + env(safe-area-inset-bottom));
+    left: 0;
+    z-index: 19;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    padding: 8px 12px;
+    border-top: 1px solid var(--line);
+    background: var(--panel);
+    box-shadow: 0 -6px 14px -12px rgba(16, 38, 45, 0.4);
+  }
+
+  body:not(.no-question-active):not(.flashcard-active) .question-nav #prevBtn,
+  body:not(.no-question-active):not(.flashcard-active) .question-nav #nextBtn {
+    min-height: 44px;
+    border-radius: 12px;
+    font-weight: 700;
+  }
+
+  body:not(.no-question-active):not(.flashcard-active) .question-nav #nextBtn {
+    border-color: var(--accent);
+    background: var(--accent);
+    color: #ffffff;
+  }
+
+  body:not(.no-question-active):not(.flashcard-active) .question-shell {
+    padding-bottom: 84px;
+  }
+
+  .kbd-hint,
+  .quick-grade-hint {
+    display: none !important;
+  }
+
+  /* Linha de ferramentas: cada botão mostra só a sua seção. */
+  .question-toolbar {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 6px;
+    margin: 12px 0 4px;
+  }
+
+  .question-toolbar button {
+    display: grid;
+    justify-items: center;
+    gap: 3px;
+    min-height: 54px;
+    padding: 6px 2px;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: var(--panel);
+    color: var(--ink);
+    font-size: 11px;
+    font-weight: 600;
+  }
+
+  .question-toolbar button.active {
+    border-color: var(--accent);
+    background: var(--accent-soft);
+    color: var(--accent-strong);
+  }
+
+  .question-toolbar button:disabled {
+    opacity: 0.4;
+  }
+
+  body:not([data-qtool="labels"]) #questionLabels,
+  body:not([data-qtool="concept"]) #conceptPanel,
+  body:not([data-qtool="concept"]) #similarPanel,
+  body:not([data-qtool="note"]) #noteAccordion,
+  body:not([data-qtool="comments"]) #commentsAccordion,
+  body:not([data-qtool="more"]) #moreToolsDetails,
+  body:not([data-qtool="more"]) #questionReport {
+    display: none !important;
+  }
+
+  /* Comentário longo recolhido. */
+  .explanation-panel.clamped .markdown-content {
+    max-height: 190px;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(to bottom, #000 70%, transparent);
+    mask-image: linear-gradient(to bottom, #000 70%, transparent);
+  }
+
+  .explanation-more {
+    justify-self: start;
+    margin-top: 6px;
+    font-weight: 700;
+  }
+
+  /* "Como foi?" / "Por quê?" mais compactos. */
+  .error-type-panel .error-type-grid button {
+    min-height: 40px;
+    font-size: 13px;
+  }
+}
+@media (max-width: 860px) {
+  /* Alternativas mais leves: mais largura para o texto e "Riscar" discreto ao lado da letra. */
+  body:not(.no-question-active) .question-card {
+    padding: 14px 12px;
+  }
+
+  #optionsList .option {
+    grid-template-columns: 30px minmax(0, 1fr);
+    column-gap: 10px;
+    row-gap: 2px;
+    padding: 11px 12px;
+  }
+
+  #optionsList .option-text {
+    font-size: 15px;
+    font-weight: 450;
+    line-height: 1.5;
+  }
+
+  #optionsList .discard-toggle {
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: center;
+    min-height: 0;
+    padding: 2px 6px;
+    font-size: 10px;
+  }
+}
