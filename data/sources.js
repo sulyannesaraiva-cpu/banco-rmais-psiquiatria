@@ -271,6 +271,13 @@ window.PHARMA_REFS = {
       { about: "Ocupação do SERT ~80% na dose mínima eficaz (base da curva hiperbólica)", src: "meyer2004", where: "estudo com PET", kind: "fonte" },
       { about: "Faixa de doses aceitas no campo e dose usual da tranilcipromina (fora da tabela do Maudsley)", src: "stahl8", where: "monografias de cada antidepressivo", kind: "fonte" },
       { about: "Degraus semanais em mg (metades até 1/4 da dose mínima), arredondamentos, curva de ocupação e comparação linear × proporcional", src: "curadoria", where: "modelo a partir do exemplo e da figura 3.3 do Maudsley", kind: "didatico" },
+      { about: "Antipsicóticos: doses mínimas eficazes no primeiro episódio e no multiepisódio", src: "maudsley15", where: "cap. 1, Antipsychotics – minimum effective doses, tabela 1.1", kind: "fonte" },
+      { about: "Antipsicóticos: tempo de retirada do antigo na troca (nenhum, 1 semana, 3–4 semanas, 4 semanas ou mais), começo do novo em dose intermediária em 3–7 dias, quetiapina e clozapina mais lentas, benzodiazepínico ou anticolinérgico na troca, risperidona × paliperidona", src: "stahl8", where: "seções The art of switching de cada antipsicótico", kind: "fonte" },
+      { about: "Antipsicóticos: retirada proporcional, olanzapina (tabela 1.27 e box 1.1), quando tentar, tamanho do degrau, dose final mínima, depósito, recaída nos primeiros meses, sintomas de retirada e rebote colinérgico da clozapina", src: "maudsley15", where: "cap. 1, Stopping antipsychotics e Restarting clozapine after a break in treatment", kind: "fonte" },
+      { about: "Haloperidol e clorpromazina: tempo de retirada na troca por semelhança farmacológica (o Stahl não traz o esquema)", src: "curadoria", where: "analogia com os de mesmo perfil de bloqueio", kind: "didatico" },
+      { about: "Benzodiazepínicos: equivalências com diazepam, troca gradual por diazepam, risco de retirada, redução proporcional, guia de degraus do diazepam, sintomas de retirada e ocupação do GABA-A", src: "maudsley15", where: "cap. 3, Benzodiazepines, z-drugs and gabapentinoids, tabela 3.24 e box 3.12", kind: "fonte" },
+      { about: "Equivalências de alprazolam, bromazepam e zolpidem", src: "ashton", where: "tabela de equivalências", kind: "fonte" },
+      { about: "Troca por diazepam em 4 semanas (25% por semana) e curvas de ocupação D2 (olanzapina) e GABA-A ajustadas aos números do Maudsley", src: "curadoria", where: "modelo didático", kind: "didatico" },
     ],
   },
   dependencia: {

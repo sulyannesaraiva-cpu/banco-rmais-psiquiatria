@@ -49,3 +49,92 @@ window.PHARMA_DOSE = {
   /* Ocupação do SERT: modelo hiperbólico com ~80% na dose mínima eficaz (Meyer 2004). */
   sertAtMed: 80,
 };
+
+/* Antipsicóticos.
+   - med: dose mínima eficaz em multiepisódio; medFirst: primeiro episódio (Maudsley 15ª ed.,
+     tabela 1.1; "*" no livro = estimativa). Clozapina não está na tabela.
+   - off: quanto tempo leva a retirada do antigo na troca (Stahl 8ª ed., "The art of switching"):
+     none (pode parar quando o novo chega à dose-alvo), w1 (1 semana), w4 (3–4 semanas, pelo
+     bloqueio colinérgico, histamínico e α1), w4plus (4 semanas ou mais). analogy: o Stahl não
+     traz o esquema deste remédio; tempo escolhido por semelhança farmacológica (didático).
+   - slowStart: começar devagar (pelo menos 2 semanas) quando vem de remédio pouco sedativo.
+   Retirada: Maudsley, "Stopping antipsychotics" (redução proporcional, olanzapina, tabela 1.27). */
+window.PHARMA_DOSE.ap = {
+  drugs: {
+    haloperidol: { med: 4, medFirst: 2, range: [0.5, 20], off: "w1", analogy: true },
+    clorpromazina: { med: 300, medFirst: 200, range: [25, 1000], off: "w4", analogy: true },
+    amissulprida: { med: 400, medFirst: 300, range: [50, 1200], off: "none" },
+    risperidona: { med: 4, medFirst: 2, range: [0.5, 16], off: "w1" },
+    paliperidona: { med: 3, medFirst: 3, range: [3, 12], off: "none" },
+    olanzapina: { med: 7.5, medFirst: 5, range: [2.5, 20], off: "w4" },
+    quetiapina: { med: 300, medFirst: 150, range: [25, 800], off: "w4", slowStart: true },
+    clozapina: { med: null, dose: 300, range: [12.5, 900], off: "w4plus", noTarget: true },
+    ziprasidona: { med: 80, medFirst: 40, range: [20, 160], off: "w1" },
+    lurasidona: { med: 40, medFirst: 40, range: [20, 160], off: "w1" },
+    aripiprazol: { med: 10, medFirst: 10, range: [2, 30], off: "none" },
+    cariprazina: { med: 1.5, medFirst: 1.5, range: [1.5, 6], off: "none" },
+    brexpiprazol: { med: 4, medFirst: 2, range: [1, 4], off: "none" },
+    asenapina: { med: 10, medFirst: 5, range: [5, 20], off: "w4" },
+  },
+  offText: {
+    none: "pode parar quando o novo chega à dose-alvo",
+    w1: "retirar em cerca de 1 semana",
+    w4: "retirar devagar, em 3–4 semanas (bloqueio colinérgico, histamínico e α1)",
+    w4plus: "retirar devagar, em 4 semanas ou mais",
+  },
+  rules: [
+    "Começar o novo em dose intermediária e chegar à dose-alvo em 3–7 dias; quetiapina e clozapina vindas de remédio pouco sedativo sobem mais devagar (pelo menos 2 semanas).",
+    "Quetiapina, olanzapina e asenapina saem devagar (3–4 semanas); clozapina, em 4 semanas ou mais. Amissulprida, aripiprazol, brexpiprazol, cariprazina e paliperidona podem parar quando o novo chega à dose-alvo.",
+    "Benzodiazepínico ou anticolinérgico podem ser usados por pouco tempo na troca para insônia, agitação ou piora dos sintomas.",
+    "Clozapina parada de repente: vigiar rebote colinérgico (náusea, vômitos, diarreia, sudorese, cefaleia), distonias, discinesias e catatonia. Mais de 48 horas sem tomar: reintroduzir com nova titulação.",
+    "Risperidona e paliperidona juntas não: a paliperidona é o metabólito ativo da risperidona.",
+  ],
+  risk: {
+    low: { label: "Menor", pct: 25, range: "até 25% no primeiro degrau", text: "Uso por menos de 1 ano." },
+    high: { label: "Maior", pct: 20, range: "teste de 5–10%; depois 10–25% a cada 2–3 meses", text: "Uso prolongado (mais de 1 ano). Alguns usuários de longo prazo só toleram menos de 5% ao mês." },
+  },
+  taperRules: [
+    "Pensar em retirar só depois de remissão por 6 meses (primeiro episódio) ou 1 ano (multiepisódio); muitos com esquizofrenia recaem de qualquer forma.",
+    "Primeiro degrau de teste e observação por várias semanas: sintomas passageiros podem ser retirada, não recaída inevitável.",
+    "Se tolerado, seguir com 10–25% da última dose a cada 2–3 meses. Retiradas em 1 ano tiveram 3,5 vezes menos recaída que retiradas em dias.",
+    "Piora importante: voltar um ou dois degraus (ou à dose original), estabilizar e tentar depois, mais devagar.",
+    "A dose final pode precisar ser mínima (até 1/80 da dose terapêutica, como 0,25 mg de olanzapina): solução oral ou partir comprimidos. Evitar doses em dias alternados nos de meia-vida curta.",
+    "Depósito: a meia-vida longa ajuda, mas não é uma retirada automática; da menor dose de depósito passa-se ao oral para continuar.",
+  ],
+  withdrawal: "Retirada de antipsicótico: insônia, agitação, ansiedade, náusea, sudorese (rebote colinérgico), discinesia de retirada, acatisia e até sintomas psicóticos. Recaída é mais frequente nos primeiros 3 meses após a parada.",
+  olanzapineExample: "No Maudsley, tirar olanzapina de 5 para 0 mg reduz o bloqueio D2 em 52,6 pontos, mais do que de 40 para 5 mg (37,3 pontos). Reduzir pela metade a cada degrau (20, 10, 5, 2,5, 1,25, 0,6, 0,3 mg) tira cerca de 15 pontos por vez.",
+  /* Ocupação D2 da olanzapina: ajuste à tabela 1.27 do Maudsley (20 mg ≈ 73%, 5 mg ≈ 40%): Emax ≈ 100%, ED50 ≈ 7,3 mg. */
+  olanzapineEd50: 7.3,
+};
+
+/* Benzodiazepínicos e zolpidem.
+   - eq: dose equivalente a 10 mg de diazepam (Maudsley tabela 3.24; alprazolam, bromazepam e
+     zolpidem pelo Ashton Manual). long: meia-vida longa.
+   - Ocupação GABA-A do diazepam: ajuste aos números do Maudsley (5 mg a menos a partir de 50 mg
+     tira 2,3 pontos; de 5 para 0 mg, 18,3 pontos): ED50 ≈ 22 mg de diazepam. */
+window.PHARMA_DOSE.bz = {
+  drugs: {
+    diazepam: { eq: 10, range: [1, 60], long: true },
+    clordiazepoxido: { eq: 25, range: [5, 100], long: true },
+    clonazepam: { eq: 0.5, range: [0.25, 8], long: true },
+    alprazolam: { eq: 0.5, range: [0.25, 6] },
+    lorazepam: { eq: 1, range: [0.5, 10] },
+    bromazepam: { eq: 6, range: [1.5, 36] },
+    zolpidem: { eq: 20, range: [5, 20], zdrug: true },
+  },
+  ed50Diazepam: 22,
+  switchText: "Remédios de meia-vida curta ou intermediária podem ser retirados direto (às vezes em mais de uma tomada por dia) ou trocados por dose equivalente de diazepam, de meia-vida longa. Como algumas pessoas têm sintomas na troca súbita, a troca é feita aos poucos, uma parte da dose por semana. A equivalência é aproximada: ajustar pelos sintomas.",
+  risk: {
+    low: { label: "Menor", pct: 15, range: "10–20% no primeiro degrau", text: "Menos de 6 meses de uso, benzodiazepínico de meia-vida longa e sem retirada importante no passado." },
+    high: { label: "Maior", pct: 10, range: "5–10% no primeiro degrau", text: "Mais de 6 meses de uso, meia-vida curta ou retirada difícil no passado. A maioria dos usuários de longo prazo segue a 5–10% da última dose por mês." },
+  },
+  taperRules: [
+    "Nunca parar de repente: a retirada abrupta pode causar convulsões e delirium e pode ser fatal.",
+    "Retirar só com a concordância do paciente; apoio e preparo ajudam (TCC e relaxamento têm evidência mais fraca que a redução gradual).",
+    "Reduzir uma proporção da última dose (em geral 5–10% ao mês, ou um pouco mais rápido); acompanhar os sintomas por 2–4 semanas a cada degrau.",
+    "Guia do Maudsley para diazepam: 5–10 mg a cada 2–4 semanas até 50 mg; 2–5 mg até 20 mg; 1–2 mg até 10 mg; 0,5–1 mg até 5 mg; 0,25–0,5 mg até 2,5 mg; depois 0,1–0,25 mg até parar.",
+    "Sintomas intoleráveis: manter a dose ou voltar à última bem tolerada e seguir mais devagar. A dose final pode ser de apenas 0,1 mg de diazepam.",
+    "Cuidado na insuficiência hepática: diazepam e outros de ação longa podem acumular.",
+  ],
+  withdrawal: "Retirada de benzodiazepínico: ansiedade, insônia, pânico, pesadelos, despersonalização, humor deprimido ou instável; rigidez, fadiga, parestesias, hipersensibilidade sensorial, tremor, tontura, taquicardia, acatisia. Convulsões, delirium e psicose sobretudo na retirada muito rápida. Acatisia e ideação suicida nova estão entre as piores consequências e costumam passar despercebidas.",
+};

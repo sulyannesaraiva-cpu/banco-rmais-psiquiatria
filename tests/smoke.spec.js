@@ -793,6 +793,16 @@ test("troca de medicamentos: doses em mg e retirada gradual", async ({ page }) =
   await page.locator('[data-taper-field="use"]').selectOption("gt24");
   await expect(page.locator("#pharmaPanel")).toContainText("Risco alto de retirada");
   await expect(page.locator(".taper-compare > div")).toHaveCount(4);
+  await page.locator('[data-dose-class="ap"]').click();
+  await page.locator('[data-switch-tab="switch"]').click();
+  await page.locator('[data-ap-switch="from"]').selectOption("olanzapina");
+  await page.locator('[data-ap-switch="to"]').selectOption("aripiprazol");
+  await expect(page.locator("#pharmaPanel")).toContainText("3–4 semanas");
+  await page.locator('[data-dose-class="bz"]').click();
+  await page.locator('[data-bz-switch="from"]').selectOption("alprazolam");
+  await expect(page.locator("#pharmaPanel")).toContainText("≈ diazepam 10 mg");
+  await page.locator("[data-bz-to-taper]").click();
+  await expect(page.locator('[data-taper-field="drug"]')).toHaveValue("diazepam");
   expect(errors).toEqual([]);
 });
 test("simular: seções Psicofarmacologia e Neuroanatomia e o atalho Ver no atlas", async ({ page }) => {

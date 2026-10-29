@@ -9308,3 +9308,18 @@ body.theme-dark .pharma-chip.on {
 .switch-pick .dose-med {
   flex: 1 1 100%;
 }
+
+.dose-classes {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 860px) {
+  .dose-classes {
+    overflow-x: auto;
+    max-width: 100%;
+  }
+
+  .dose-classes button {
+    white-space: nowrap;
+  }
+}
