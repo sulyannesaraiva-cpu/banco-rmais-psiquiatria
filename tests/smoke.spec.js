@@ -778,6 +778,23 @@ test("simulador de fármacos: troca de antidepressivo", async ({ page }) => {
   await expect(page.locator('[data-pharma-switch="from"]')).toHaveValue("duloxetina");
   expect(errors).toEqual([]);
 });
+test("troca de medicamentos: doses em mg e retirada gradual", async ({ page }) => {
+  const errors = await openSite(page);
+  await goTab(page, "pharma");
+  await page.locator("[data-pharma-switch-open]").click();
+  await page.locator('[data-pharma-switch="from"]').selectOption("citalopram");
+  await page.locator('[data-pharma-switch="to"]').selectOption("mirtazapina");
+  await page.locator('[data-dose-input="switch"]').fill("40");
+  await page.locator('[data-dose-input="switch"]').press("Enter");
+  await page.locator('[data-dose-input="switch"]').blur();
+  await expect(page.locator(".dose-table")).toContainText("2,5 mg");
+  await expect(page.locator(".dose-table tbody tr")).toHaveCount(6);
+  await page.locator('[data-switch-tab="taper"]').click();
+  await page.locator('[data-taper-field="use"]').selectOption("gt24");
+  await expect(page.locator("#pharmaPanel")).toContainText("Risco alto de retirada");
+  await expect(page.locator(".taper-compare > div")).toHaveCount(4);
+  expect(errors).toEqual([]);
+});
 test("simular: seções Psicofarmacologia e Neuroanatomia e o atalho Ver no atlas", async ({ page }) => {
   const errors = await openSite(page);
   await goTab(page, "pharma");

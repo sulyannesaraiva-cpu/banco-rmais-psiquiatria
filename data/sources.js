@@ -264,7 +264,13 @@ window.PHARMA_REFS = {
   troca: {
     paths: [
       { about: "Conduta para cada par de antidepressivos, intervalos e notas (fluoxetina, fluvoxamina, bupropiona, vortioxetina, duloxetina, imipramina)", src: "maudsley15", where: "cap. 3, Switching antidepressants, tabela 3.7", kind: "fonte" },
-      { about: "Linha do tempo da troca (degraus de dose semana a semana)", src: "curadoria", where: "modelo a partir do exemplo citalopram → mirtazapina do Maudsley", kind: "didatico" },
+      { about: "Doses mínimas eficazes de cada antidepressivo (tricíclicos: pelo menos 75–100 mg/dia)", src: "maudsley15", where: "cap. 3, Recognised minimum effective doses of antidepressants, tabela 3.2", kind: "fonte" },
+      { about: "Exemplo de redução cruzada citalopram 40 → 2,5 mg com mirtazapina 15 → 45 mg; reduzir à dose mínima eficaz antes da troca direta; fluoxetina demora 1–2 semanas para atingir o equilíbrio", src: "maudsley15", where: "cap. 3, Switching antidepressants", kind: "fonte" },
+      { about: "Retirada: estratificação de risco, redução de 10–25% da última dose a cada 2–4 semanas, dose final muito pequena, conduta diante de sintomas, remédios de maior risco e duração de 3 meses a 3 anos", src: "maudsley15", where: "cap. 3, Stopping antidepressants e box 3.2", kind: "fonte" },
+      { about: "Sintomas de retirada e como distinguir de recaída", src: "maudsley15", where: "cap. 3, Antidepressant withdrawal symptoms e Stopping antidepressants", kind: "fonte" },
+      { about: "Ocupação do SERT ~80% na dose mínima eficaz (base da curva hiperbólica)", src: "meyer2004", where: "estudo com PET", kind: "fonte" },
+      { about: "Faixa de doses aceitas no campo e dose usual da tranilcipromina (fora da tabela do Maudsley)", src: "stahl8", where: "monografias de cada antidepressivo", kind: "fonte" },
+      { about: "Degraus semanais em mg (metades até 1/4 da dose mínima), arredondamentos, curva de ocupação e comparação linear × proporcional", src: "curadoria", where: "modelo a partir do exemplo e da figura 3.3 do Maudsley", kind: "didatico" },
     ],
   },
   dependencia: {

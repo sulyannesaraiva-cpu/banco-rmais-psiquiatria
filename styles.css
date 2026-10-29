@@ -9188,3 +9188,123 @@ body.theme-dark .pharma-chip.on {
 .artery-under {
   fill: var(--panel);
 }
+
+/* Troca de medicamentos com doses. */
+.switch-tabs {
+  margin-bottom: 12px;
+}
+
+.dose-input input {
+  width: 120px;
+}
+
+.dose-med {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.dose-table {
+  width: 100%;
+  margin: 10px 0;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.dose-table th,
+.dose-table td {
+  padding: 5px 6px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.dose-table thead th {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.dose-table td:last-child {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.dose-table tr.gap td,
+.dose-table tr.gap th {
+  background: var(--panel-soft);
+}
+
+.taper-risk {
+  align-items: center;
+}
+
+.taper-check {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+}
+
+.taper-occ {
+  fill: none;
+  stroke: #d55e00;
+  stroke-width: 2.5;
+}
+
+.taper-compare {
+  display: grid;
+  gap: 6px;
+  margin: 8px 0;
+}
+
+.taper-compare div {
+  display: grid;
+  grid-template-columns: 130px 1fr 80px;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.taper-compare i {
+  display: block;
+  height: 12px;
+  border-radius: 6px;
+  background: #d55e00;
+}
+
+.taper-compare b {
+  text-align: right;
+}
+
+@media (max-width: 860px) {
+  .taper-compare div {
+    grid-template-columns: 110px 1fr 70px;
+  }
+}
+
+.switch-pick label.taper-check {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: flex-end;
+  padding-bottom: 10px;
+}
+
+.switch-pick label.taper-check input {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+}
+
+.dose-table {
+  table-layout: fixed;
+  overflow-wrap: anywhere;
+}
+
+.dose-table th:first-child {
+  width: 76px;
+}
+
+.switch-pick .dose-med {
+  flex: 1 1 100%;
+}
