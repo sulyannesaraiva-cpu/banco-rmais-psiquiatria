@@ -95,6 +95,10 @@ window.PHARMA_SOURCES = {
     full: "Narita N, Hashimoto K, Tomitaka S, Minabe Y. Interactions of selective serotonin reuptake inhibitors with subtypes of sigma receptors in rat brain. Eur J Pharmacol. 1996;307(1):117-119.",
     pmid: "8831113",
   },
+  apa6: {
+    short: "APA Textbook of Psychopharmacology, 6ª ed.",
+    full: "Schatzberg AF, Nemeroff CB, eds. The American Psychiatric Association Publishing Textbook of Psychopharmacology. 6ª ed. Washington, DC: American Psychiatric Association Publishing; 2024.",
+  },
   maudsleyDeprescribing: {
     short: "Maudsley Deprescribing Guidelines",
     full: "Horowitz M, Taylor D. The Maudsley Deprescribing Guidelines: Antidepressants, Benzodiazepines, Gabapentinoids and Z-drugs. John Wiley & Sons; 2024.",
@@ -123,6 +127,9 @@ window.PHARMA_REFS = {
     paths: [
       { about: "Efeitos relativos (sedação, peso, acatisia, parkinsonismo, prolactina, QT…)", src: "maudsley15", where: "tabela 1.7", kind: "fonte" },
       { about: "Níveis de afinidade por receptor (0 a 4)", src: "stahl8", where: "monografias de cada antipsicótico", kind: "didatico", note: "Níveis resumidos de dados de afinidade publicados; a substituir por valores de Ki com fonte própria." },
+      { about: "Valores de Ki de haloperidol, risperidona, paliperidona e clozapina (D2, 5-HT2A, 5-HT1A, H1, muscarínico, α1)", src: "apa6", where: "cap. 29, tabela 29-1 (Schotte et al., 1996)", kind: "fonte" },
+      { about: "Valores de Ki de aripiprazol, brexpiprazol e cariprazina", src: "apa6", where: "cap. 34, tabela 34-1 (Citrome, 2015); cap. 30, tabelas 30-1 e 30-2", kind: "fonte" },
+      { about: "Afinidade relativa dos antipsicóticos clássicos (clorpromazina, flufenazina, haloperidol): H1, M1 e α1 da flufenazina e H1 do haloperidol ajustados por ela", src: "apa6", where: "cap. 25, tabela 25-1", kind: "fonte" },
       { about: "Desenho das quatro vias dopaminérgicas e cores", src: "curadoria", where: "esquema não está em escala", kind: "didatico" },
     ],
     synapse: [
@@ -150,6 +157,8 @@ window.PHARMA_REFS = {
     paths: [
       { about: "Efeitos relativos (sedação, hipotensão, condução cardíaca, náusea, disfunção sexual)", src: "maudsley15", where: "tabela 3.23", kind: "fonte" },
       { about: "Alvos (transportadores, MAO, receptores) em níveis de 0 a 4", src: "stahl8", where: "monografias de cada antidepressivo", kind: "didatico", note: "Níveis resumidos de dados de afinidade publicados." },
+      { about: "Valores de Ki de amitriptilina, clomipramina, imipramina e nortriptilina (transportadores, α1, α2, H1, M1)", src: "apa6", where: "cap. 11, tabela 11-1 (Tatsumi et al., 1997; Richelson e Nelson, 1984)", kind: "fonte" },
+      { about: "Valores de Ki da duloxetina nos transportadores de serotonina, noradrenalina e dopamina", src: "apa6", where: "cap. 20, tabela 20-1 (Auclair et al., 2013)", kind: "fonte" },
       { about: "Receptor sigma-1: fluvoxamina como agonista (efeito rápido na ansiedade e na insônia, sedação) e ligação da sertralina (ação ansiolítica)", src: "stahl8", where: "monografias da fluvoxamina e da sertralina", kind: "fonte" },
       { about: "Ordem de afinidade pelo sigma-1: fluvoxamina > sertralina > fluoxetina > citalopram > imipramina > paroxetina (níveis 3 a 1 conforme essa ordem)", src: "narita1996", where: "ensaio de ligação em cérebro de rato", kind: "fonte" },
       { about: "Escetamina: mecanismo, início, pressão e efeitos", src: "stahl8", where: "monografia da escetamina", kind: "fonte" },

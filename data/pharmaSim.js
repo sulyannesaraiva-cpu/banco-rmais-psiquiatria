@@ -37,13 +37,14 @@ window.PHARMA_SIM.antipsicoticos = {
   drugs: [
     {
       id: "haloperidol", name: "Haloperidol", generation: 1, search: ["haloperidol"],
-      receptors: { D2: 4, "5HT2A": 1, "5HT1A": 0, H1: 0, M1: 0, A1: 2 },
+      receptors: { D2: 4, "5HT2A": 1, "5HT1A": 0, H1: 1, M1: 0, A1: 2 },
+      ki: { D2: 2.2, "5HT2A": 200, "5HT1A": 1500, H1: 790, M1: 4670, A1: 19 },
       effects: { sedation: 1, weight: 1, akathisia: 3, parkinsonism: 3, anticholinergic: 0, hypotension: 1, prolactin: 3, qt: 2 },
       extra: "Bloqueador D2 de alta potência, quase sem outras ações.",
     },
     {
       id: "flufenazina", name: "Flufenazina", generation: 1, search: ["flufenazina"],
-      receptors: { D2: 4, "5HT2A": 2, "5HT1A": 0, H1: 2, M1: 0, A1: 2 },
+      receptors: { D2: 4, "5HT2A": 2, "5HT1A": 0, H1: 3, M1: 1, A1: 3 },
       effects: { sedation: 1, weight: 1, akathisia: 2, parkinsonism: 3, anticholinergic: 1, hypotension: 1, prolactin: 3, qt: 1 },
       extra: "Fenotiazina de alta potência; tem forma de depósito.",
     },
@@ -62,12 +63,14 @@ window.PHARMA_SIM.antipsicoticos = {
     {
       id: "risperidona", name: "Risperidona", generation: 2, search: ["risperidona"],
       receptors: { D2: 4, "5HT2A": 4, "5HT1A": 1, H1: 2, M1: 0, A1: 4 },
+      ki: { D2: 5.9, "5HT2A": 0.52, "5HT1A": 420, H1: 27, M1: ">5000", A1: 2.3 },
       effects: { sedation: 1, weight: 2, akathisia: 2, parkinsonism: 1, anticholinergic: 0, hypotension: 2, prolactin: 3, qt: 1 },
       extra: "Atípico que mais eleva prolactina, com dose-dependência de extrapiramidais.",
     },
     {
       id: "paliperidona", name: "Paliperidona", generation: 2, search: ["paliperidona"],
       receptors: { D2: 4, "5HT2A": 4, "5HT1A": 1, H1: 2, M1: 0, A1: 3 },
+      ki: { D2: 4.8, "5HT2A": 1.0, "5HT1A": 590, H1: 32, M1: 3570, A1: 4.0 },
       effects: { sedation: 1, weight: 2, akathisia: 2, parkinsonism: 1, anticholinergic: 0, hypotension: 2, prolactin: 3, qt: 1 },
       extra: "Metabólito ativo da risperidona (9-hidroxirrisperidona); tem forma de depósito.",
     },
@@ -86,6 +89,7 @@ window.PHARMA_SIM.antipsicoticos = {
     {
       id: "clozapina", name: "Clozapina", generation: 2, search: ["clozapina"],
       receptors: { D2: 1, "5HT2A": 4, "5HT1A": 1, H1: 4, M1: 4, A1: 4 },
+      ki: { D2: 190, "5HT2A": 9.6, "5HT1A": 140, H1: 0.23, M1: 34, A1: 23 },
       effects: { sedation: 3, weight: 3, akathisia: 0, parkinsonism: 0, anticholinergic: 3, hypotension: 3, prolactin: 0, qt: 3 },
       extra: "D2 fraco e muitas outras ações. Sialorreia, convulsões e agranulocitose não se explicam por este perfil.",
     },
@@ -106,6 +110,7 @@ window.PHARMA_SIM.antipsicoticos = {
     {
       id: "aripiprazol", name: "Aripiprazol", generation: 2, search: ["aripiprazol"],
       receptors: { D2: 4, "5HT2A": 3, "5HT1A": 3, H1: 2, M1: 0, A1: 2 },
+      ki: { D2: 0.34, "5HT2A": 3.4, "5HT1A": 1.7, H1: 61, A1: 57 },
       effects: { sedation: 0, weight: 1, akathisia: 1, parkinsonism: 0, anticholinergic: 0, hypotension: 0, prolactin: 0, qt: 0 },
       extra: "Agonista parcial D2: baixa a dopamina onde ela sobra e sobe onde falta. Pode até reduzir a prolactina.",
       pa: ["D2", "5HT1A"],
@@ -113,6 +118,7 @@ window.PHARMA_SIM.antipsicoticos = {
     {
       id: "cariprazina", name: "Cariprazina", generation: 2, search: ["cariprazina"],
       receptors: { D2: 4, "5HT2A": 2, "5HT1A": 3, H1: 2, M1: 0, A1: 1 },
+      ki: { D2: 0.49, "5HT2A": 18.8, "5HT1A": 2.6, H1: 23.2, A1: 155 },
       effects: { sedation: 0, weight: 1, akathisia: 1, parkinsonism: 0, anticholinergic: 0, hypotension: 0, prolactin: 0, qt: 0 },
       extra: "Agonista parcial D2 e, com preferência, D3 (efeito discutido sobre sintomas negativos).",
       pa: ["D2", "5HT1A"],
@@ -120,6 +126,7 @@ window.PHARMA_SIM.antipsicoticos = {
     {
       id: "brexpiprazol", name: "Brexpiprazol", generation: 2, search: ["brexpiprazol", "brexpiprazole"],
       receptors: { D2: 4, "5HT2A": 4, "5HT1A": 4, H1: 2, M1: 0, A1: 3 },
+      ki: { D2: 0.30, "5HT2A": 0.47, "5HT1A": 0.12, H1: 19, A1: 3.8 },
       effects: { sedation: 0, weight: 1, akathisia: 1, parkinsonism: 0, anticholinergic: 0, hypotension: 0, prolactin: 0, qt: 0 },
       extra: "Agonista parcial D2 com atividade intrínseca menor que a do aripiprazol, agonista parcial 5-HT1A e bloqueador potente de 5-HT2A.",
       pa: ["D2", "5HT1A"],

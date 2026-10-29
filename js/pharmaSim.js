@@ -380,9 +380,14 @@ function pharmaReceptorRows(drug) {
       <div class="pharma-receptor" title="${escapeHtml(receptor.role)}">
         <strong>${escapeHtml(receptor.label)}</strong>
         <span class="pharma-bar" role="img" aria-label="${escapeHtml(receptor.label)}: ${action ? "ação" : "afinidade"} ${(action ? PHARMA_ACTION_LABELS : PHARMA_LEVELS)[value]}"><i class="${partial ? "partial" : ""}" style="width:${Math.max(4, value * 25)}%"></i></span>
-        <small>${(action ? PHARMA_ACTION_LABELS : PHARMA_LEVELS)[value]}${partial ? " · agonista parcial" : ""}</small>
+        <small>${(action ? PHARMA_ACTION_LABELS : PHARMA_LEVELS)[value]}${partial ? " · agonista parcial" : ""}${drug.ki?.[receptor.id] !== undefined ? ` · <span class="pharma-ki">Ki ${escapeHtml(pharmaKiText(drug.ki[receptor.id]))} nM</span>` : ""}</small>
       </div>`;
-  }).join("") + pharmaBarLegend();
+  }).join("") + pharmaBarLegend() + (drug.ki ? '<p class="pharma-bar-legend">Ki: constante de afinidade medida em laboratório (APA Textbook of Psychopharmacology, 6ª ed.). Quanto menor, mais forte a ligação. O nível da barra também considera a concentração que o remédio atinge no uso clínico.</p>' : "");
+}
+
+function pharmaKiText(value) {
+  if (typeof value === "string") return value.replace(/(\d)(?=(\d{3})+$)/, "$1.");
+  return value >= 1000 ? value.toLocaleString("pt-BR") : String(value).replace(".", ",");
 }
 
 function pharmaEffectChips(drug) {

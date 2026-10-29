@@ -108,6 +108,7 @@ window.PHARMA_SIM.antidepressivos = {
     {
       id: "duloxetina", name: "Duloxetina", group: "IRSN", search: ["duloxetina"],
       receptors: { SERT: 4, NET: 3, DAT: 0, MAO: 0, A2: 0, "5HT2A": 0, "5HT2C": 0, H1: 0, M1: 0, A1: 0 },
+      ki: { SERT: 0.2, NET: 8.9, DAT: 230 },
       boost: { serotonin: 3, noradrenaline: 2, dopamine: 1 },
       effects: { sedation: 0, hypotension: 0, cardiac: 0, anticholinergic: 0, nausea: 2, sexual: 3 },
       mech: { type: "reuptake", target: "SERT", transmitter: "serotonina e noradrenalina" },
@@ -116,6 +117,7 @@ window.PHARMA_SIM.antidepressivos = {
     {
       id: "amitriptilina", name: "Amitriptilina", group: "Tricíclico", search: ["amitriptilina"],
       receptors: { SERT: 3, NET: 3, DAT: 0, MAO: 0, A2: 1, "5HT2A": 3, "5HT2C": 3, H1: 4, M1: 3, A1: 3 },
+      ki: { SERT: 4.3, NET: 35, DAT: 3250, A1: 27, A2: 940, H1: 1.1, M1: 18 },
       boost: { serotonin: 3, noradrenaline: 3, dopamine: 1 },
       effects: { sedation: 3, hypotension: 3, cardiac: 3, anticholinergic: 3, nausea: 1, sexual: 3 },
       mech: { type: "reuptake", target: "SERT", transmitter: "serotonina e noradrenalina" },
@@ -124,6 +126,7 @@ window.PHARMA_SIM.antidepressivos = {
     {
       id: "nortriptilina", name: "Nortriptilina", group: "Tricíclico", search: ["nortriptilina"],
       receptors: { SERT: 2, NET: 4, DAT: 0, MAO: 0, A2: 0, "5HT2A": 2, "5HT2C": 2, H1: 3, M1: 2, A1: 2 },
+      ki: { SERT: 18, NET: 4.37, DAT: 1140, A1: 60, A2: 2500, H1: 10, M1: 150 },
       boost: { serotonin: 1, noradrenaline: 3, dopamine: 1 },
       effects: { sedation: 1, hypotension: 2, cardiac: 2, anticholinergic: 1, nausea: 1, sexual: 1 },
       mech: { type: "reuptake", target: "NET", transmitter: "noradrenalina" },
@@ -132,6 +135,7 @@ window.PHARMA_SIM.antidepressivos = {
     {
       id: "clomipramina", name: "Clomipramina", group: "Tricíclico", search: ["clomipramina"],
       receptors: { SERT: 4, NET: 2, DAT: 0, MAO: 0, A2: 0, "5HT2A": 2, "5HT2C": 2, H1: 3, M1: 3, A1: 3 },
+      ki: { SERT: 0.28, NET: 38, DAT: 2190, A1: 38, A2: 3200, H1: 31, M1: 37 },
       boost: { serotonin: 3, noradrenaline: 2, dopamine: 1 },
       effects: { sedation: 2, hypotension: 3, cardiac: 3, anticholinergic: 2, nausea: 2, sexual: 3 },
       mech: { type: "reuptake", target: "SERT", transmitter: "serotonina e noradrenalina" },
@@ -140,6 +144,7 @@ window.PHARMA_SIM.antidepressivos = {
     {
       id: "imipramina", name: "Imipramina", group: "Tricíclico", search: ["imipramina"],
       receptors: { SERT: 3, NET: 3, DAT: 0, MAO: 0, A2: 0, "5HT2A": 2, "5HT2C": 1, H1: 3, M1: 3, A1: 3, SIGMA: 1 },
+      ki: { SERT: 1.4, NET: 37, DAT: 8500, A1: 90, A2: 3200, H1: 11, M1: 90 },
       boost: { serotonin: 3, noradrenaline: 3, dopamine: 1 },
       effects: { sedation: 2, hypotension: 3, cardiac: 3, anticholinergic: 3, nausea: 1, sexual: 1 },
       mech: { type: "reuptake", target: "SERT", transmitter: "serotonina e noradrenalina" },
