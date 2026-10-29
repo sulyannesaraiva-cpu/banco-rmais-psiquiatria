@@ -8771,3 +8771,19 @@ body.theme-dark .pharma-chip.on {
   stroke: #9fb3b6;
   stroke-width: 4;
 }
+/* Cabeçalho da classe: "Ver no atlas" e "Fontes" lado a lado. */
+.pharma-head-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Menu lateral: item ainda não disponível. */
+.tab.sim-soon {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.tab.sim-soon .pharma-soon {
+  margin-left: 4px;
+}

@@ -12,7 +12,7 @@ window.ATLAS = {
     { id: "nucleos-base", tag: "NB", color: "#0072b2", title: "Núcleos da base", text: "Vias direta e indireta · Parkinson · extrapiramidais", ready: true },
     { id: "frontoestriatais", tag: "CPF", color: "#d55e00", title: "Circuitos frontoestriatais", text: "Dorsolateral · orbitofrontal · cingulado anterior", ready: true },
     { id: "limbico", tag: "Lb", color: "#b0418a", title: "Sistema límbico e Papez", text: "Memória · emoção · Korsakoff", ready: true },
-    { id: "neurotransmissores", tag: "DA", color: "#0b6b70", title: "Vias de neurotransmissores", text: "Dopamina, serotonina, noradrenalina, acetilcolina, histamina, orexina", ready: true },
+    { id: "neurotransmissores", tag: "DA", color: "#0b6b70", title: "Sistemas de neurotransmissores", text: "Dopamina, serotonina, noradrenalina, acetilcolina, histamina, orexina", ready: true },
     { id: "hha", tag: "HHA", color: "#009e73", title: "Eixo hipotálamo-hipófise-adrenal", text: "Estresse · cortisol · depressão", ready: true },
   ],
   classicModules: [

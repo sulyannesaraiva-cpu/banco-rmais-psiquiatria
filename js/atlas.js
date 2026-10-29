@@ -33,9 +33,9 @@ function renderAtlasHome() {
         <span class="pharma-hub-text"><strong>${escapeHtml(module.title)}</strong><small>${escapeHtml(module.text)} · em breve</small></span>
       </div>`;
   return `
-    <p class="atlas-group">Circuitos da psiquiatria</p>
+    <p class="atlas-group">Circuitos e sistemas</p>
     <div class="pharma-hub-list">${window.ATLAS.modules.map(card).join("")}</div>
-    <p class="atlas-group">Vias clássicas</p>
+    <p class="atlas-group">Vias e lesões</p>
     <div class="pharma-hub-list">${window.ATLAS.classicModules.map(card).join("")}</div>
     <div class="atlas-soon">${window.ATLAS.classic.map((name) => `<span>${escapeHtml(name)} · em breve</span>`).join("")}</div>
     <p class="pharma-disclaimer">Esquemas didáticos, desenhados para este site e conferidos com as fontes citadas em cada módulo.</p>`;
@@ -104,7 +104,7 @@ function renderAtlasBasal() {
     <header class="pharma-head">
       <div>
         <div class="pharma-head-top">
-          <button type="button" class="link-btn pharma-back" data-atlas-home>← Vias</button>
+          <button type="button" class="link-btn pharma-back" data-atlas-home>← Neuroanatomia</button>
           ${refCount ? `<button type="button" class="pharma-sources-btn" data-pharma-sources aria-haspopup="dialog">Fontes · ${refCount}</button>` : ""}
         </div>
         <h2>Núcleos da base</h2>
@@ -189,7 +189,7 @@ function renderAtlasFronto() {
     <header class="pharma-head">
       <div>
         <div class="pharma-head-top">
-          <button type="button" class="link-btn pharma-back" data-atlas-home>← Vias</button>
+          <button type="button" class="link-btn pharma-back" data-atlas-home>← Neuroanatomia</button>
           ${refCount ? `<button type="button" class="pharma-sources-btn" data-pharma-sources aria-haspopup="dialog">Fontes · ${refCount}</button>` : ""}
         </div>
         <h2>Circuitos frontoestriatais</h2>
@@ -201,7 +201,7 @@ function renderAtlasFronto() {
       <section class="pharma-card">
         <div class="pharma-card-head"><h3>Alças córtex-estriado-tálamo</h3><span>esquema didático · não em escala</span></div>
         ${atlasFrontoSvg(active, lesionAt)}
-        <h4>Lesione e veja</h4>
+        <h4>Simular lesão</h4>
         <p class="pharma-extra">Escolha onde lesionar a alça ${escapeHtml(active.label.toLowerCase())}:</p>
         <div class="pharma-toggles">${lesionButtons}${lesionAt ? '<button type="button" class="pharma-toggle" data-atlas-lesion="">Tirar a lesão</button>' : ""}</div>
       </section>
@@ -214,8 +214,8 @@ function renderAtlasFronto() {
             <ul class="fronto-signs">${active.signs.map((sign) => `<li>${escapeHtml(sign)}</li>`).join("")}</ul>
           </div>
           <div class="pharma-reading tone-warn"><strong>Por que o lugar quase não muda</strong><span>${escapeHtml(fronto.keyPoint)}</span></div>`
-          : `<div class="pharma-reading tone-low"><strong>${escapeHtml(active.syndrome)}</strong><span>Escolha um ponto da alça em “Lesione e veja” para ver o que acontece.</span></div>`}
-        <h4>Na psiquiatria</h4>
+          : `<div class="pharma-reading tone-low"><strong>${escapeHtml(active.syndrome)}</strong><span>Escolha um ponto da alça em “Simular lesão” para ver o que acontece.</span></div>`}
+        <h4>Correlação clínica</h4>
         ${active.disorders.map((item) => `<div class="pharma-reading tone-ok"><strong>${escapeHtml(item.name)}</strong><span>${escapeHtml(item.text)}</span></div>`).join("")}
       </section>
     </div>
@@ -272,7 +272,7 @@ function renderAtlasLimbic() {
     <header class="pharma-head">
       <div>
         <div class="pharma-head-top">
-          <button type="button" class="link-btn pharma-back" data-atlas-home>← Vias</button>
+          <button type="button" class="link-btn pharma-back" data-atlas-home>← Neuroanatomia</button>
           ${refCount ? `<button type="button" class="pharma-sources-btn" data-pharma-sources aria-haspopup="dialog">Fontes · ${refCount}</button>` : ""}
         </div>
         <h2>Sistema límbico e Papez</h2>
@@ -284,7 +284,7 @@ function renderAtlasLimbic() {
         <div class="pharma-card-head"><h3>Circuito de Papez</h3><span>esquema didático · não em escala</span></div>
         ${atlasLimbicSvg(lesion, step)}
         ${stepBox}
-        <h4>Lesione e veja</h4>
+        <h4>Simular lesão</h4>
         <div class="pharma-toggles">${lesionButtons}${lesion ? '<button type="button" class="pharma-toggle" data-atlas-limbic="">Tirar a lesão</button>' : ""}</div>
       </section>
       <section class="pharma-card">
@@ -292,8 +292,8 @@ function renderAtlasLimbic() {
           <h3>${escapeHtml(lesion.syndrome)}</h3>
           <div class="pharma-reading tone-warn"><strong>Causa</strong><span>${escapeHtml(lesion.cause)}</span></div>
           <div class="pharma-reading tone-high"><strong>O que aparece</strong><ul class="fronto-signs">${lesion.signs.map((sign) => `<li>${escapeHtml(sign)}</li>`).join("")}</ul></div>`
-          : `<h3>Memória e emoção</h3><div class="pharma-reading tone-low"><strong>Escolha uma lesão</strong><span>Em “Lesione e veja”, toque numa estrutura para ver a síndrome.</span></div>`}
-        <h4>Na psiquiatria</h4>
+          : `<h3>Memória e emoção</h3><div class="pharma-reading tone-low"><strong>Escolha uma lesão</strong><span>Em “Simular lesão”, toque numa estrutura para ver a síndrome.</span></div>`}
+        <h4>Correlação clínica</h4>
         ${limbic.psychiatry.map((item) => `<div class="pharma-reading tone-ok"><strong>${escapeHtml(item.name)}</strong><span>${escapeHtml(item.text)}</span></div>`).join("")}
       </section>
     </div>
@@ -301,7 +301,7 @@ function renderAtlasLimbic() {
     ${state.pharma.sourcesOpen ? renderPharmaSources({ id: "atlas-limbico", label: "Sistema límbico e Papez" }, "paths", lesion ? lesion.syndrome : "Circuito de Papez") : ""}`;
 }
 
-/* ---------- Vias de neurotransmissores: mapa sagital com um sistema por vez ---------- */
+/* ---------- Sistemas de neurotransmissores: mapa sagital com um sistema por vez ---------- */
 
 const ATLAS_BRAIN_OUTLINE = "M70 225 C58 140 130 58 250 48 C372 38 482 90 507 178 C526 248 492 298 432 312 C400 320 372 316 352 328 C337 343 331 366 302 368 C272 370 264 346 250 332 C200 327 120 318 90 288 C78 276 72 256 70 225 Z";
 
@@ -342,10 +342,10 @@ function renderAtlasNeuro() {
     <header class="pharma-head">
       <div>
         <div class="pharma-head-top">
-          <button type="button" class="link-btn pharma-back" data-atlas-home>← Vias</button>
+          <button type="button" class="link-btn pharma-back" data-atlas-home>← Neuroanatomia</button>
           ${refCount ? `<button type="button" class="pharma-sources-btn" data-pharma-sources aria-haspopup="dialog">Fontes · ${refCount}</button>` : ""}
         </div>
-        <h2>Vias de neurotransmissores</h2>
+        <h2>Sistemas de neurotransmissores</h2>
         <p>Poucos núcleos pequenos no tronco e no prosencéfalo basal projetam para o cérebro inteiro. É neles que a maioria dos psicofármacos age.</p>
       </div>
     </header>
@@ -367,7 +367,7 @@ function renderAtlasNeuro() {
       </section>
     </div>
     <p class="pharma-disclaimer">Mapa simplificado para estudo: cada sistema tem muito mais alvos do que os desenhados.</p>
-    ${state.pharma.sourcesOpen ? renderPharmaSources({ id: "atlas-neurotransmissores", label: "Vias de neurotransmissores" }, "paths", system.label) : ""}`;
+    ${state.pharma.sourcesOpen ? renderPharmaSources({ id: "atlas-neurotransmissores", label: "Sistemas de neurotransmissores" }, "paths", system.label) : ""}`;
 }
 
 /* ---------- Eixo hipotálamo-hipófise-adrenal ---------- */
@@ -423,7 +423,7 @@ function renderAtlasHpa() {
     <header class="pharma-head">
       <div>
         <div class="pharma-head-top">
-          <button type="button" class="link-btn pharma-back" data-atlas-home>← Vias</button>
+          <button type="button" class="link-btn pharma-back" data-atlas-home>← Neuroanatomia</button>
           ${refCount ? `<button type="button" class="pharma-sources-btn" data-pharma-sources aria-haspopup="dialog">Fontes · ${refCount}</button>` : ""}
         </div>
         <h2>Eixo hipotálamo-hipófise-adrenal</h2>
@@ -546,7 +546,7 @@ function renderAtlasLong() {
     <header class="pharma-head">
       <div>
         <div class="pharma-head-top">
-          <button type="button" class="link-btn pharma-back" data-atlas-home>← Vias</button>
+          <button type="button" class="link-btn pharma-back" data-atlas-home>← Neuroanatomia</button>
           ${refCount ? `<button type="button" class="pharma-sources-btn" data-pharma-sources aria-haspopup="dialog">Fontes · ${refCount}</button>` : ""}
         </div>
         <h2>Vias motoras e sensitivas</h2>
@@ -562,7 +562,7 @@ function renderAtlasLong() {
         </div>
         ${atlasLongSvg(body, lesion)}
         <div class="atlas-legend">${data.tracts.map((tract) => `<span><i style="background:${tract.color}"></i>${escapeHtml(tract.label)} (cruza no ${tract.cross})</span>`).join("")}</div>
-        <h4>Lesione e veja</h4>
+        <h4>Simular lesão</h4>
         <div class="tract-picks">${lesionButtons}</div>
         ${lesion ? '<div class="pharma-toggles"><button type="button" class="pharma-toggle" data-atlas-tract-lesion="">Tirar a lesão</button></div>' : ""}
       </section>
@@ -636,7 +636,7 @@ function renderAtlasOptic() {
     <header class="pharma-head">
       <div>
         <div class="pharma-head-top">
-          <button type="button" class="link-btn pharma-back" data-atlas-home>← Vias</button>
+          <button type="button" class="link-btn pharma-back" data-atlas-home>← Neuroanatomia</button>
           ${refCount ? `<button type="button" class="pharma-sources-btn" data-pharma-sources aria-haspopup="dialog">Fontes · ${refCount}</button>` : ""}
         </div>
         <h2>Via óptica</h2>
@@ -680,10 +680,19 @@ function renderAtlas() {
   const panel = document.querySelector("#pharmaPanel");
   if (!panel) return;
   panel.addEventListener("click", (event) => {
-    const target = event.target.closest("[data-atlas-module], [data-atlas-home], [data-atlas-scenario], [data-atlas-step], [data-atlas-link], [data-sim-section], [data-atlas-circuit], [data-atlas-lesion], [data-atlas-limbic], [data-atlas-system], [data-atlas-drugs], [data-atlas-hpa], [data-atlas-dex], [data-atlas-tract-body], [data-atlas-tract-lesion], [data-atlas-optic]");
+    const target = event.target.closest("[data-atlas-module], [data-atlas-home], [data-atlas-scenario], [data-atlas-step], [data-atlas-link], [data-sim-section], [data-atlas-circuit], [data-atlas-lesion], [data-atlas-limbic], [data-atlas-system], [data-atlas-drugs], [data-atlas-hpa], [data-atlas-dex], [data-atlas-tract-body], [data-atlas-tract-lesion], [data-atlas-optic], [data-atlas-goto]");
     if (!target) return;
     const data = target.dataset;
-    if (data.simSection) {
+    if (data.atlasGoto) {
+      /* "Ver no atlas" a partir de uma classe de fármacos. */
+      const link = PHARMA_ATLAS_LINKS[data.atlasGoto];
+      state.pharma.section = "atlas";
+      state.pharma.view = "hub";
+      state.atlas.module = link.module;
+      state.atlas.step = null;
+      if (link.scenario) state.atlas.scenario = link.scenario;
+      if (link.system) state.atlas.system = link.system;
+    } else if (data.simSection) {
       state.pharma.section = data.simSection;
       state.pharma.view = "hub";
       state.atlas.module = null;
@@ -732,6 +741,7 @@ function renderAtlas() {
     saveAtlasState();
     savePharmaState();
     renderPharmaPanel();
-    if (data.atlasModule || data.atlasHome !== undefined || data.atlasLink || data.atlasDrugs || data.simSection) panel.scrollIntoView({ block: "start" });
+    if (typeof syncSimTabs === "function") syncSimTabs();
+    if (data.atlasGoto || data.atlasModule || data.atlasHome !== undefined || data.atlasLink || data.atlasDrugs || data.simSection) panel.scrollIntoView({ block: "start" });
   });
 })();

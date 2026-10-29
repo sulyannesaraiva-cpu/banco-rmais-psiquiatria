@@ -2231,15 +2231,9 @@ function renderPharmaCross() {
   return `
     <header class="pharma-head">
       <div>
-        <div class="pharma-head-top"><button type="button" class="link-btn pharma-back" data-pharma-hub>← Classes</button></div>
-        <h2>Entre classes</h2>
-        <p>Compare um efeito em todas as classes ou veja o que acontece ao juntar remédios.</p>
-      </div>
-      <div class="pharma-switches">
-        <div class="segmented pharma-modes" role="group" aria-label="Modo">
-          <button type="button" data-pharma-cross-tab="effect" class="${tab === "effect" ? "active" : ""}" aria-pressed="${tab === "effect"}">Por efeito</button>
-          <button type="button" data-pharma-cross-tab="inter" class="${tab === "inter" ? "active" : ""}" aria-pressed="${tab === "inter"}">Interações</button>
-        </div>
+        <div class="pharma-head-top"><button type="button" class="link-btn pharma-back" data-pharma-hub>← Psicofarmacologia</button></div>
+        <h2>${tab === "inter" ? "Interações" : "Comparar efeitos"}</h2>
+        <p>${tab === "inter" ? "Escolha dois ou três remédios, de qualquer classe, e veja o que acontece ao juntá-los." : "Um efeito colateral em todas as classes, do maior para o menor risco."}</p>
       </div>
     </header>
     ${tab === "inter" ? renderCrossInteractions() : renderCrossEffect()}
@@ -2343,11 +2337,11 @@ function renderPharmaSwitch() {
     <header class="pharma-head">
       <div>
         <div class="pharma-head-top">
-          <button type="button" class="link-btn pharma-back" data-pharma-hub>← Classes</button>
+          <button type="button" class="link-btn pharma-back" data-pharma-hub>← Psicofarmacologia</button>
           <button type="button" class="pharma-sources-btn" data-pharma-sources aria-haspopup="dialog">Fontes · 2</button>
         </div>
-        <h2>Troca de antidepressivo</h2>
-        <p>Como passar de um antidepressivo para outro: redução cruzada, troca direta ou intervalo sem remédio, conforme a tabela de trocas do Maudsley.</p>
+        <h2>Troca de medicamentos</h2>
+        <p>Antidepressivos: como passar de um para outro — redução cruzada, troca direta ou intervalo sem remédio, conforme a tabela de trocas do Maudsley.</p>
       </div>
     </header>
     <div class="pharma-grid">
@@ -2500,7 +2494,7 @@ function renderPharmaSources(cls, mode, modeName) {
 /* ---------- Entrada da área Simular: classes em cartões ---------- */
 
 const PHARMA_HUB = {
-  antipsicoticos: { tag: "D2", color: "#0072b2", text: "Vias dopaminérgicas · ocupação de D2" },
+  antipsicoticos: { tag: "D2", color: "#0072b2", text: "Vias dopaminérgicas · D2 · depósito · extrapiramidais" },
   antidepressivos: { tag: "5-HT", color: "#b0418a", text: "Monoaminas · recaptação, α2, MAO" },
   estabilizadores: { tag: "Li", color: "#0b6b70", text: "Nível sérico · interações · titulação" },
   ansioliticos: { tag: "GABA", color: "#009e73", text: "Meia-vida · retirada · equivalência" },
@@ -2526,28 +2520,54 @@ function renderPharmaHub() {
     <header class="pharma-head pharma-hub-head">
       <div>
         <h2>Simular</h2>
-        <p>${atlas ? "Siga os circuitos do cérebro e veja o que muda quando uma estrutura falha." : "Explore como o mecanismo de cada remédio explica o efeito e os efeitos colaterais."}</p>
+        <p>${atlas ? "Siga circuitos e vias do sistema nervoso e veja o que muda quando uma estrutura falha." : "Explore como o mecanismo de cada remédio explica o efeito e os efeitos colaterais."}</p>
       </div>
       <div class="segmented pharma-sections" role="group" aria-label="Seção">
-        ${section("drugs", "Fármacos")}${section("atlas", "Vias")}
-        <button type="button" disabled title="Em breve">Pacientes <span class="pharma-soon">em breve</span></button>
+        ${section("drugs", "Psicofarmacologia")}${section("atlas", "Neuroanatomia")}
+        <button type="button" disabled title="Em breve">Casos clínicos <span class="pharma-soon">em breve</span></button>
       </div>
     </header>`;
   if (atlas) return head + renderAtlasHome();
+  const tool = (attr, tag, color, title, text) => `
+    <button type="button" class="pharma-hub-card" ${attr} style="--c:${color}">
+      <span class="pharma-hub-tag">${tag}</span>
+      <span class="pharma-hub-text"><strong>${title}</strong><small>${text}</small></span>
+      <span aria-hidden="true" class="pharma-hub-arrow">›</span>
+    </button>`;
   return `${head}
+    <p class="atlas-group">Classes</p>
     <div class="pharma-hub-list">${cards}</div>
-    <button type="button" class="pharma-hub-card cross" data-pharma-cross-open style="--c:#0b3b40">
-      <span class="pharma-hub-tag">⇄</span>
-      <span class="pharma-hub-text"><strong>Entre classes</strong><small>Um efeito em todas as classes · interações</small></span>
-      <span aria-hidden="true" class="pharma-hub-arrow">›</span>
-    </button>
-    <button type="button" class="pharma-hub-card cross" data-pharma-switch-open style="--c:#b0418a">
-      <span class="pharma-hub-tag">↪</span>
-      <span class="pharma-hub-text"><strong>Troca de antidepressivo</strong><small>Redução cruzada, troca direta ou intervalo · linha do tempo</small></span>
-      <span aria-hidden="true" class="pharma-hub-arrow">›</span>
-    </button>
+    <p class="atlas-group">Ferramentas</p>
+    <div class="pharma-hub-list">
+      ${tool(`data-pharma-cross-open="effect"`, "⇅", "#0b3b40", "Comparar efeitos", "Um efeito (QT, peso, sedação…) em todas as classes")}
+      ${tool(`data-pharma-cross-open="inter"`, "⇄", "#c2410c", "Interações", "Dois ou três remédios de qualquer classe, com a fonte de cada aviso")}
+      ${tool("data-pharma-switch-open", "↪", "#b0418a", "Troca de medicamentos", "Antidepressivos: redução cruzada, troca direta ou intervalo")}
+    </div>
+    <p class="atlas-group">Treino</p>
     <button type="button" class="primary-btn pharma-hub-quiz" data-pharma-quick="${last.id}">Treino rápido · ${escapeHtml(last.label)}</button>
     <p class="pharma-disclaimer">Material didático e simplificado, para estudo. Não usar para prescrição.</p>`;
+}
+
+/* Ligação de cada classe com o módulo de neuroanatomia correspondente. */
+const PHARMA_ATLAS_LINKS = {
+  antipsicoticos: { module: "nucleos-base", scenario: "antipsicotico" },
+  antidepressivos: { module: "neurotransmissores", system: "serotonina" },
+  ansioliticos: { module: "neurotransmissores", system: "orexina" },
+  estimulantes: { module: "neurotransmissores", system: "dopamina" },
+  demencias: { module: "neurotransmissores", system: "acetilcolina" },
+  dependencia: { module: "neurotransmissores", system: "dopamina" },
+};
+
+/* Menu lateral: Psicofarmacologia e Neuroanatomia abrem a mesma aba, em seções diferentes. */
+function syncSimTabs() {
+  document.querySelectorAll(".tab[data-sim-target]").forEach((button) => {
+    const on = state.activeTab === "pharma" && (state.pharma.section === "atlas" ? "atlas" : "drugs") === button.dataset.simTarget;
+    button.classList.toggle("active", on);
+  });
+  if (state.activeTab === "pharma" && document.body.classList.contains("tab-view-active")) {
+    const title = document.querySelector("#questionTitle");
+    if (title) title.textContent = state.pharma.section === "atlas" ? "Neuroanatomia" : "Psicofarmacologia";
+  }
 }
 
 function renderPharmaPanel() {
@@ -2568,7 +2588,7 @@ function renderPharmaPanel() {
   const body = mode === "compare" ? renderPharmaCompare() : mode === "synapse" ? renderPharmaSynapse() : mode === "quiz" ? renderPharmaQuiz() : mode === "depot" ? renderPharmaDepot() : mode === "eps" ? renderPharmaEps() : renderPharmaPaths();
   const cls = pharmaClass();
   const labels = {
-    paths: pharmaIsStabilizer() ? "Mecanismos e fases" : pharmaIsAnxiolytic() || pharmaIsStimulant() || pharmaIsDementia() || pharmaIsAddiction() ? "Mecanismos e usos" : pharmaIsAntidepressant() ? "Sistemas e alvos" : "Vias e receptores",
+    paths: "Mecanismo",
     compare: "Comparar",
     synapse: pharmaIsStabilizer() ? "Nível e interações" : pharmaIsAnxiolytic() ? "Meia-vida e retirada" : pharmaIsStimulant() ? "Ao longo do dia" : pharmaIsDementia() ? "Indicação e segurança" : pharmaIsAddiction() ? "Receptor e uso" : "Sinapse",
     depot: "Depósito",
@@ -2580,8 +2600,11 @@ function renderPharmaPanel() {
     <header class="pharma-head">
       <div>
         <div class="pharma-head-top">
-          <button type="button" class="link-btn pharma-back" data-pharma-hub>← Classes</button>
-          ${refCount ? `<button type="button" class="pharma-sources-btn" data-pharma-sources aria-haspopup="dialog">Fontes · ${refCount}</button>` : ""}
+          <button type="button" class="link-btn pharma-back" data-pharma-hub>← Psicofarmacologia</button>
+          <span class="pharma-head-actions">
+            ${PHARMA_ATLAS_LINKS[cls.id] ? `<button type="button" class="link-btn" data-atlas-goto="${cls.id}">Ver no atlas ›</button>` : ""}
+            ${refCount ? `<button type="button" class="pharma-sources-btn" data-pharma-sources aria-haspopup="dialog">Fontes · ${refCount}</button>` : ""}
+          </span>
         </div>
         <h2>${escapeHtml(cls.label)}</h2>
         <p>${escapeHtml(cls.tagline)}</p>
@@ -2629,7 +2652,10 @@ function openPharmaStudy(drug) {
       setPharmaClass(data.pharmaClass);
       state.pharma.view = "class";
       state.pharma.mode = "paths";
-    } else if (data.pharmaCrossOpen !== undefined) state.pharma.view = "cross";
+    } else if (data.pharmaCrossOpen !== undefined) {
+      state.pharma.view = "cross";
+      state.pharma.crossTab = data.pharmaCrossOpen === "inter" ? "inter" : "effect";
+    }
     else if (data.pharmaSwitchOpen !== undefined) state.pharma.view = "switch";
     else if (data.pharmaSwitchSwap !== undefined) {
       const from = state.pharma.switchFrom || "sertralina";
@@ -2799,10 +2825,33 @@ function openPharmaStudy(drug) {
     renderPharmaPanel();
   });
 
+  /* Itens do menu lateral com data-sim-target escolhem a seção antes de abrir a aba. */
+  document.addEventListener("click", (event) => {
+    const button = event.target.closest(".tab[data-sim-target]");
+    if (!button) return;
+    state.pharma.section = button.dataset.simTarget;
+    state.pharma.view = "hub";
+    if (state.atlas) state.atlas.module = null;
+    savePharmaState();
+    /* Já estando no Simular, a aba não muda: redesenha a seção depois do clique. */
+    setTimeout(() => {
+      if (state.activeTab === "pharma") renderPharmaPanel();
+      syncSimTabs();
+    }, 0);
+  }, true);
+
+  const baseSetTab = setTab;
+  setTab = function setTabWithSim(...args) {
+    const result = baseSetTab.apply(this, args);
+    syncSimTabs();
+    return result;
+  };
+
   const baseRender = render;
   render = function renderWithPharma(...args) {
     const result = baseRender.apply(this, args);
     if (state.activeTab === "pharma") renderPharmaPanel();
+    syncSimTabs();
     return result;
   };
 })();

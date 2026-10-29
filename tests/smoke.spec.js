@@ -640,10 +640,11 @@ test("simulador de fármacos: roteiro guiado até a checagem", async ({ page }) 
 test("simulador de fármacos: entre classes (por efeito e interações)", async ({ page }) => {
   const errors = await openSite(page);
   await goTab(page, "pharma");
-  await page.locator("[data-pharma-cross-open]").click();
+  await page.locator('[data-pharma-cross-open="effect"]').click();
   await page.locator('[data-pharma-cross-effect="qt"]').click();
   await expect(page.locator("#pharmaPanel .cross-rank")).toContainText("Metadona");
-  await page.locator('[data-pharma-cross-tab="inter"]').click();
+  await page.locator("[data-pharma-hub]").click();
+  await page.locator('[data-pharma-cross-open="inter"]').click();
   await page.locator("[data-pharma-cross-add]").selectOption("tranilcipromina");
   await page.locator("[data-pharma-cross-add]").selectOption("sertralina");
   await expect(page.locator("#pharmaPanel")).toContainText("Síndrome serotoninérgica: potencialmente fatal");
@@ -754,6 +755,21 @@ test("simulador de fármacos: troca de antidepressivo", async ({ page }) => {
   await expect(page.locator("#pharmaPanel")).toContainText("60 mg/dia");
   await page.locator("[data-pharma-switch-swap]").click();
   await expect(page.locator('[data-pharma-switch="from"]')).toHaveValue("duloxetina");
+  expect(errors).toEqual([]);
+});
+test("simular: seções Psicofarmacologia e Neuroanatomia e o atalho Ver no atlas", async ({ page }) => {
+  const errors = await openSite(page);
+  await goTab(page, "pharma");
+  await page.locator('[data-sim-section="atlas"]').click();
+  await expect(page.locator("#pharmaPanel")).toContainText("Circuitos e sistemas");
+  await expect(page.locator("#pharmaPanel")).toContainText("Vias e lesões");
+  await page.locator('[data-sim-section="drugs"]').click();
+  await expect(page.locator("#pharmaPanel")).toContainText("Ferramentas");
+  await page.locator('[data-pharma-class="antipsicoticos"]').click();
+  await expect(page.locator('.pharma-modes [data-pharma-mode="paths"]')).toHaveText("Mecanismo");
+  await page.locator("[data-atlas-goto]").click();
+  await expect(page.locator("#pharmaPanel h2")).toHaveText("Núcleos da base");
+  await expect(page.locator("#pharmaPanel")).toContainText("Parkinsonismo induzido");
   expect(errors).toEqual([]);
 });
 test("navegação por áreas: Hoje, Estudar (com seletor), Simular e Você", async ({ page }) => {
