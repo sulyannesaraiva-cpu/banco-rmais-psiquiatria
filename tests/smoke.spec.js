@@ -763,6 +763,22 @@ test("atlas de vias: nervos cranianos e territórios arteriais", async ({ page }
   await expect(page.locator("#pharmaPanel h2")).toHaveText("Circuitos frontoestriatais");
   expect(errors).toEqual([]);
 });
+test("atlas de vias: afasias em três perguntas", async ({ page }) => {
+  const errors = await openSite(page);
+  await goTab(page, "pharma");
+  await page.locator('[data-sim-section="atlas"]').click();
+  await page.locator('[data-atlas-module="afasias"]').click();
+  await page.locator('[data-aph-q="fluent:1"]').click();
+  await page.locator('[data-aph-q="comp:1"]').click();
+  await page.locator('[data-aph-q="rep:0"]').click();
+  await expect(page.locator("#pharmaPanel")).toContainText("Afasia de condução");
+  await page.locator('[data-aph-syndrome="wernicke"]').click();
+  await expect(page.locator("#pharmaPanel")).toContainText("psicose aguda");
+  await expect(page.locator(".aph-compare")).toContainText("Esquizofrenia");
+  await page.locator("[data-aph-artery]").click();
+  await expect(page.locator("#pharmaPanel h2")).toHaveText("Territórios arteriais");
+  expect(errors).toEqual([]);
+});
 test("simulador de fármacos: troca de antidepressivo", async ({ page }) => {
   const errors = await openSite(page);
   await goTab(page, "pharma");

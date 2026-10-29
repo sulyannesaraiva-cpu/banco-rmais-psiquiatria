@@ -311,12 +311,107 @@ function renderAtlasArteries() {
     ${state.pharma.sourcesOpen ? renderPharmaSources({ id: "atlas-territorios", label: "Territórios arteriais" }, "paths", selected ? selected.label : "Territórios") : ""}`;
 }
 
+/* ---------- Afasias ---------- */
+
+function aphasiaFromAnswers(q) {
+  const data = window.ATLAS.aphasia;
+  if (!q || [q.fluent, q.comp, q.rep].some((v) => v === undefined || v === null)) return null;
+  return data.syndromes.find((s) => s.answers.fluent === q.fluent && s.answers.comp === q.comp && s.answers.rep === q.rep) || null;
+}
+
+function atlasAphasiaSvg(selected) {
+  const data = window.ATLAS.aphasia;
+  const hit = new Set(selected ? selected.regions : []);
+  const shades = Object.entries(data.regions).filter(([id]) => hit.has(id)).map(([, r]) => `<ellipse cx="${r.cx}" cy="${r.cy}" rx="${r.rx}" ry="${r.ry}" class="aph-lesion" clip-path="url(#aph-brain)"></ellipse>`).join("");
+  const label = (id, x, y, anchor = "middle") => `<text x="${x}" y="${y}" text-anchor="${anchor}" class="aph-label${hit.has(id) ? " on" : ""}">${escapeHtml(data.regions[id].label)}</text>`;
+  return `
+    <svg viewBox="12 8 240 162" class="artery-svg aph-svg" role="img" aria-label="Hemisfério esquerdo visto pela esquerda, com as áreas da linguagem">
+      <defs><clipPath id="aph-brain"><path d="${ARTERY_LATERAL}"></path></clipPath></defs>
+      <path d="${ARTERY_LATERAL}" class="aph-brain"></path>
+      <path d="M72 102 C108 92 140 96 172 110" class="artery-fissure"></path>
+      <path d="M128 16 C122 46 116 70 112 96" class="artery-fissure"></path>
+      ${shades}
+      <ellipse cx="74" cy="90" rx="17" ry="11" class="aph-area"></ellipse>
+      <ellipse cx="168" cy="120" rx="19" ry="11" class="aph-area"></ellipse>
+      <path d="M84 82 C102 66 150 66 168 109" class="aph-arcuate"></path>
+      ${label("broca", 74, 93)}${label("wernicke", 168, 123)}
+      <text x="124" y="62" text-anchor="middle" class="aph-label small">fascículo arqueado</text>
+      ${hit.has("msa") ? label("msa", 92, 30) : ""}${hit.has("posterior") ? label("posterior", 250, 44, "end") : ""}${hit.has("angular") ? label("angular", 196, 86) : ""}${hit.has("supramarginal") ? label("supramarginal", 154, 84) : ""}${hit.has("temporalPole") ? label("temporalPole", 92, 145) : ""}
+      <text x="30" y="166" class="artery-label">frente</text>
+      <text x="236" y="166" text-anchor="end" class="artery-label">trás</text>
+    </svg>`;
+}
+
+function renderAtlasAphasia() {
+  const data = window.ATLAS.aphasia;
+  const q = state.atlas.aphasiaQ || {};
+  const selected = data.syndromes.find((s) => s.id === state.atlas.aphasia) || aphasiaFromAnswers(q);
+  const refCount = ((window.PHARMA_REFS || {})["atlas-afasias"]?.paths || []).length;
+  const answerBtn = (question, value) => {
+    const on = q[question.id] === value;
+    return `<button type="button" class="${on ? "active" : ""}" data-aph-q="${question.id}:${value ? "1" : "0"}" aria-pressed="${on}">${escapeHtml(value ? question.yes : question.no)}</button>`;
+  };
+  const chip = (level) => `<span class="aph-chip ${level}">${escapeHtml(data.levelLabels[level])}</span>`;
+  const artery = selected?.artery ? window.ATLAS.arteries.list.find((a) => a.id === selected.artery) : null;
+  return `
+    <header class="pharma-head">
+      <div>
+        <div class="pharma-head-top">
+          <button type="button" class="link-btn pharma-back" data-atlas-home>← Neuroanatomia</button>
+          ${refCount ? `<button type="button" class="pharma-sources-btn" data-pharma-sources aria-haspopup="dialog">Fontes · ${refCount}</button>` : ""}
+        </div>
+        <h2>Afasias</h2>
+        <p>Três perguntas classificam as afasias clássicas: a fala é fluente? compreende? repete? Lesões na frente da fissura lateral tiram a fluência; atrás, a compreensão; no arco entre elas, a repetição.</p>
+      </div>
+    </header>
+    <div class="pharma-grid atlas-grid">
+      <section class="pharma-card">
+        <div class="pharma-card-head"><h3>Hemisfério esquerdo</h3><span>esquema didático</span></div>
+        ${atlasAphasiaSvg(selected)}
+        <h4>Diagnóstico em três perguntas</h4>
+        ${data.questions.map((question) => `<div class="aph-q"><span>${escapeHtml(question.label)}</span><div class="segmented dem-stages">${answerBtn(question, true)}${answerBtn(question, false)}</div></div>`).join("")}
+        <h4>Ou escolha a síndrome</h4>
+        <div class="pharma-toggles aph-buttons">${data.syndromes.map((s) => `<button type="button" class="pharma-toggle ${selected?.id === s.id ? "on" : ""}" data-aph-syndrome="${s.id}">${escapeHtml(s.name.replace(/^Afasia (de )?/, ""))}</button>`).join("")}</div>
+        ${selected || Object.keys(q).length ? '<div class="pharma-toggles"><button type="button" class="pharma-toggle" data-aph-syndrome="">Limpar</button></div>' : ""}
+      </section>
+      <section class="pharma-card">
+        ${selected ? `
+          <h3>${escapeHtml(selected.name)}</h3>
+          <div class="aph-profile">${Object.entries(data.profileLabels).map(([key, labelText]) => `<div><b>${escapeHtml(labelText)}</b>${chip(selected.profile[key])}</div>`).join("")}</div>
+          <div class="pharma-reading tone-high"><strong>Como fala</strong><span>${escapeHtml(selected.speech)}</span></div>
+          <div class="pharma-reading tone-low"><strong>Onde é a lesão</strong><span>${escapeHtml(selected.lesion)}</span></div>
+          <div class="pharma-reading tone-warn"><strong>Sinais associados</strong><span>${escapeHtml(selected.signs)}</span></div>
+          ${selected.behavior ? `<div class="pharma-reading tone-ok"><strong>Comportamento</strong><span>${escapeHtml(selected.behavior)}</span></div>` : ""}
+          ${selected.psych ? `<div class="pharma-reading tone-ok"><strong>Correlação clínica</strong><span>${escapeHtml(selected.psych)}</span></div>` : ""}
+          ${artery ? `<div class="pharma-toggles"><button type="button" class="pharma-toggle" data-aph-artery="${artery.id}">Ver ${escapeHtml(artery.label.toLowerCase())} em Territórios arteriais ›</button></div>` : ""}`
+          : `<h3>Responda as perguntas</h3>
+            <div class="pharma-reading tone-ok"><strong>Fluente ou não fluente?</strong><span>Não fluente: pouca fala, com esforço, frases curtas; lesão anterior, em geral com hemiparesia direita. Fluente: fala solta, com parafasias; lesão posterior, muitas vezes sem déficit motor.</span></div>
+            <div class="pharma-reading tone-low"><strong>Repetição</strong><span>Repetição preservada indica que o arco perissilviano (Broca, fascículo arqueado, Wernicke) está intacto: são as afasias transcorticais e a anômica.</span></div>`}
+      </section>
+      <section class="pharma-card cn-face-card">
+        <div class="pharma-card-head"><h3>Afasia de Wernicke, delirium, esquizofrenia ou mania?</h3><span>Yudofsky, tabela 15-2</span></div>
+        <div class="aph-compare-wrap">
+          <table class="dose-table aph-compare">
+            <thead><tr><th></th>${data.compare.columns.map((c) => `<th>${escapeHtml(c)}</th>`).join("")}</tr></thead>
+            <tbody>${data.compare.rows.map((row) => `<tr><th>${escapeHtml(row[0])}</th>${row.slice(1).map((cell) => `<td>${escapeHtml(cell)}</td>`).join("")}</tr>`).join("")}</tbody>
+          </table>
+        </div>
+        ${data.compare.tips.map((tip) => `<div class="pharma-reading tone-ok"><span>${escapeHtml(tip)}</span></div>`).join("")}
+        <h4>Outros transtornos da comunicação</h4>
+        ${data.others.map((o) => `<div class="pharma-reading tone-low"><strong>${escapeHtml(o.name)}</strong><span>${escapeHtml(o.text)}</span></div>`).join("")}
+      </section>
+    </div>
+    <p class="pharma-disclaimer">Esquema simplificado: as síndromes puras são raras, os limites variam e muitas afasias mudam de tipo durante a recuperação.</p>
+    ${state.pharma.sourcesOpen ? renderPharmaSources({ id: "atlas-afasias", label: "Afasias" }, "paths", selected ? selected.name : "Afasias") : ""}`;
+}
+
 /* ---------- Despacho e cliques ---------- */
 
 const baseRenderAtlas = renderAtlas;
 renderAtlas = function renderAtlasWithClinical() {
   if (state.atlas.module === "nervos-cranianos") return renderAtlasCranial();
   if (state.atlas.module === "territorios-arteriais") return renderAtlasArteries();
+  if (state.atlas.module === "afasias") return renderAtlasAphasia();
   return baseRenderAtlas();
 };
 
@@ -324,12 +419,23 @@ renderAtlas = function renderAtlasWithClinical() {
   const panel = document.querySelector("#pharmaPanel");
   if (!panel) return;
   panel.addEventListener("click", (event) => {
-    const target = event.target.closest("[data-atlas-cn], [data-atlas-face], [data-atlas-artery]");
+    const target = event.target.closest("[data-atlas-cn], [data-atlas-face], [data-atlas-artery], [data-aph-q], [data-aph-syndrome], [data-aph-artery]");
     if (!target) return;
     const data = target.dataset;
     if (data.atlasCn !== undefined) state.atlas.cn = data.atlasCn && state.atlas.cn !== data.atlasCn ? data.atlasCn : null;
     else if (data.atlasFace) state.atlas.face = data.atlasFace;
-    else if (data.atlasArtery !== undefined) state.atlas.artery = data.atlasArtery && state.atlas.artery !== data.atlasArtery ? data.atlasArtery : null;
+    else if (data.aphQ) {
+      const [key, value] = data.aphQ.split(":");
+      state.atlas.aphasiaQ = { ...(state.atlas.aphasiaQ || {}), [key]: value === "1" };
+      state.atlas.aphasia = null;
+    } else if (data.aphSyndrome !== undefined) {
+      const s = window.ATLAS.aphasia.syndromes.find((item) => item.id === data.aphSyndrome);
+      state.atlas.aphasia = s ? s.id : null;
+      state.atlas.aphasiaQ = s ? { ...s.answers } : {};
+    } else if (data.aphArtery) {
+      state.atlas.module = "territorios-arteriais";
+      state.atlas.artery = data.aphArtery;
+    } else if (data.atlasArtery !== undefined) state.atlas.artery = data.atlasArtery && state.atlas.artery !== data.atlasArtery ? data.atlasArtery : null;
     state.pharma.sourcesOpen = false;
     saveAtlasState();
     renderPharmaPanel();

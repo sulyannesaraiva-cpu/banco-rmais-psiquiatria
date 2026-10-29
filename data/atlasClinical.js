@@ -168,6 +168,7 @@ window.ATLAS.arteries = {
       where: "Quase toda a face lateral do hemisfério: áreas motora e sensitiva da face e do membro superior, áreas da linguagem, radiação óptica.",
       deficits: ["Hemiplegia do lado oposto, maior na face e no membro superior: o membro inferior fica no território da cerebral anterior", "Perda de sensibilidade do lado oposto", "Hemianopsia homônima do lado oposto", "Olhar desviado para o lado da lesão", "No hemisfério esquerdo (dominante na maioria): afasia (global, se o tronco da artéria for ocluído) e apraxia ideomotora"],
       psych: "A afasia, sobretudo a fluente, pode ser confundida com a fala desorganizada da psicose.",
+      goto: { module: "afasias", label: "Afasias" },
     },
     {
       id: "acm-dir", label: "Cerebral média direita", short: "ACM D", hemi: "D", color: "#d55e00", body: { face: 1, arm: 1, leg: 0.35 }, field: true,
@@ -200,4 +201,128 @@ window.ATLAS.arteries = {
     },
   ],
   basilar: "Artérias vertebrais e basilar irrigam o tronco encefálico e o cerebelo: as síndromes estão em Nervos cranianos e tronco encefálico.",
+};
+
+/* Afasias: Yudofsky e Hales, Neuropsiquiatria e neurociências na prática clínica (4ª ed.),
+   cap. 15 (tabelas 15-1 e 15-2, síndromes e aspectos neuropsiquiátricos), e Clinical Neurology
+   for Psychiatrists, cap. 8 (afasia fluente × não fluente, isolamento, condução, esquizofrenia).
+   - profile: fluência, compreensão, repetição e nomeação ("ok" preservada, "low" relativamente
+     preservada, "bad" alterada).
+   - regions: áreas sombreadas no mapa (esquema, hemisfério esquerdo visto pela esquerda). */
+window.ATLAS.aphasia = {
+  regions: {
+    broca: { cx: 74, cy: 90, rx: 17, ry: 11, label: "Broca" },
+    wernicke: { cx: 168, cy: 120, rx: 19, ry: 11, label: "Wernicke" },
+    supramarginal: { cx: 160, cy: 92, rx: 15, ry: 10, label: "supramarginal" },
+    angular: { cx: 192, cy: 94, rx: 13, ry: 11, label: "angular" },
+    msa: { cx: 92, cy: 40, rx: 26, ry: 13, label: "fronteira anterior" },
+    posterior: { cx: 206, cy: 66, rx: 20, ry: 14, label: "fronteira posterior" },
+    perisylvian: { cx: 122, cy: 104, rx: 74, ry: 30, label: "" },
+    temporalPole: { cx: 92, cy: 128, rx: 14, ry: 9, label: "polo temporal" },
+  },
+  questions: [
+    { id: "fluent", label: "A fala é fluente?", yes: "Fluente", no: "Não fluente" },
+    { id: "comp", label: "Compreende o que ouve?", yes: "Compreende", no: "Não compreende" },
+    { id: "rep", label: "Repete frases?", yes: "Repete", no: "Não repete" },
+  ],
+  syndromes: [
+    {
+      id: "broca", name: "Afasia de Broca", answers: { fluent: false, comp: true, rep: false }, regions: ["broca"],
+      profile: { fluencia: "bad", compreensao: "low", repeticao: "bad", nomeacao: "bad" },
+      speech: "Fala escassa, com esforço, disártrica e telegráfica (frases curtas, sem conectivos). Entende quase tudo, mas pode errar palavras de relação como “acima” e “atrás”.",
+      lesion: "Opérculo frontal esquerdo, com a área de Broca. Lesão só cortical: boa recuperação; se chega aos núcleos da base e à cápsula interna, tende a ficar.",
+      signs: "Fraqueza à direita (de paresia leve a hemiplegia), às vezes perda sensitiva; apraxia bucolingual e do membro esquerdo.",
+      artery: "acm-esq",
+      behavior: "Sabe o que quer dizer e não consegue: frustração, depressão (mais comum e intensa que nas afasias posteriores, ligada a lesões pré-frontais esquerdas) e, às vezes, reação catastrófica.",
+    },
+    {
+      id: "wernicke", name: "Afasia de Wernicke", answers: { fluent: true, comp: false, rep: false }, regions: ["wernicke"],
+      profile: { fluencia: "ok", compreensao: "bad", repeticao: "bad", nomeacao: "bad" },
+      speech: "Fala fluente, sem esforço e com frases de tamanho normal, mas vazia de conteúdo e cheia de parafasias e neologismos; no extremo, jargão incompreensível.",
+      lesion: "Lobo temporal superior posterior esquerdo (córtex de associação auditiva).",
+      signs: "Muitas vezes sem déficit motor; pode haver quadrantanopsia superior.",
+      artery: "acm-esq",
+      behavior: "Não percebe o próprio déficit (às vezes nega que a gravação seja a própria fala). Pode surgir paranoia com agitação e impulsividade; quase todos os afásicos que precisam de contenção por comportamento perigoso têm afasia posterior e fluente.",
+      psych: "Afasia fluente de início súbito é causa frequente de interconsulta por “psicose aguda”: sem hemiparesia, o déficit neurológico passa despercebido.",
+    },
+    {
+      id: "conducao", name: "Afasia de condução", answers: { fluent: true, comp: true, rep: false }, regions: ["supramarginal"],
+      profile: { fluencia: "ok", compreensao: "low", repeticao: "bad", nomeacao: "bad" },
+      speech: "Fluente e com boa compreensão, mas repete muito mal, desproporcionalmente ao resto; parafasias por troca de sons (fonêmicas).",
+      lesion: "Lobo parietal inferior anterior (giro supramarginal) e fascículo arqueado, que liga Wernicke a Broca: uma síndrome de desconexão.",
+      signs: "Pouco ou nenhum déficit físico (no máximo fraqueza facial inferior à direita); apraxia é frequente.",
+      artery: "acm-esq",
+      behavior: "Em geral, pequeno AVC embólico no ramo temporal posterior da cerebral média esquerda.",
+    },
+    {
+      id: "global", name: "Afasia global", answers: { fluent: false, comp: false, rep: false }, regions: ["perisylvian"],
+      profile: { fluencia: "bad", compreensao: "bad", repeticao: "bad", nomeacao: "bad" },
+      speech: "Todas as funções alteradas: fala, compreensão, repetição, nomeação, leitura e escrita. Muitos ficam mudos.",
+      lesion: "Toda a região perissilviana esquerda, em geral por infarto completo da cerebral média (ou da carótida interna).",
+      signs: "Hemiplegia, perda sensitiva e hemianopsia homônima à direita, com o olhar desviado para a esquerda. Exceção: êmbolos múltiplos podem dar afasia global sem hemiparesia.",
+      artery: "acm-esq",
+    },
+    {
+      id: "tcm", name: "Afasia transcortical motora", answers: { fluent: false, comp: true, rep: true }, regions: ["msa"],
+      profile: { fluencia: "bad", compreensao: "low", repeticao: "ok", nomeacao: "bad" },
+      speech: "Parece Broca (fala espontânea pobre e com esforço), mas repete normalmente: diz com facilidade, ao repetir, as palavras que não consegue usar na conversa.",
+      lesion: "Área motora suplementar esquerda ou entre ela e o opérculo frontal (fronteira anterior, poupando o arco da linguagem).",
+      signs: "Depende da extensão da lesão.",
+      artery: null,
+    },
+    {
+      id: "tcs", name: "Afasia transcortical sensorial", answers: { fluent: true, comp: false, rep: true }, regions: ["angular", "posterior"],
+      profile: { fluencia: "ok", compreensao: "bad", repeticao: "ok", nomeacao: "bad" },
+      speech: "Parece Wernicke (fluente, parafásica, não compreende), mas repete bem; no extremo, ecolalia: repete o que o examinador diz.",
+      lesion: "Região parietal posterior esquerda, mais comumente o giro angular (fronteira posterior).",
+      signs: "Frequentemente sem déficit motor.",
+      artery: null,
+      psych: "A ecolalia pode levar ao diagnóstico errado de quadro psiquiátrico ou factício. No Alzheimer, a dificuldade para achar palavras costuma evoluir para este padrão.",
+    },
+    {
+      id: "mista", name: "Afasia transcortical mista (isolamento)", answers: { fluent: false, comp: false, rep: true }, regions: ["msa", "posterior"],
+      profile: { fluencia: "bad", compreensao: "bad", repeticao: "ok", nomeacao: "bad" },
+      speech: "Quase muda e sem compreender, mas repete frases longas de forma involuntária, às vezes compulsiva (ecolalia em papagaio).",
+      lesion: "Córtex em volta do arco da linguagem, que fica intacto e isolado: zonas de fronteira entre as cerebrais anterior, média e posterior.",
+      signs: "Infarto de zona de fronteira por hipotensão ou hipóxia: parada cardíaca, intoxicação por monóxido de carbono (inclusive em tentativas de suicídio).",
+      artery: null,
+      psych: "Numa avaliação rápida, a ecolalia pode ser confundida com jargão irracional.",
+    },
+    {
+      id: "anomica", name: "Afasia anômica", answers: { fluent: true, comp: true, rep: true }, regions: ["angular", "temporalPole"],
+      profile: { fluencia: "ok", compreensao: "ok", repeticao: "ok", nomeacao: "bad" },
+      speech: "Fluente, compreende e repete, mas não nomeia: pausas para achar palavras, circunlóquios, fala um pouco hesitante.",
+      lesion: "Sem localização específica; na maioria das vezes, giro angular esquerdo; também polo temporal esquerdo. É o resíduo comum depois da melhora de outras afasias.",
+      signs: "Pode vir com dificuldade de leitura e escrita.",
+      artery: null,
+      psych: "Também aparece em doenças degenerativas (Alzheimer, demência frontotemporal): a anomia, e não a memória, pode explicar por que não diz o nome de lugares e pessoas.",
+    },
+  ],
+  profileLabels: { fluencia: "Fluência", compreensao: "Compreensão", repeticao: "Repetição", nomeacao: "Nomeação" },
+  levelLabels: { ok: "preservada", low: "quase preservada", bad: "alterada" },
+  /* Afasia de Wernicke × delirium × esquizofrenia × mania (Yudofsky, tabela 15-2, resumida). */
+  compare: {
+    columns: ["Afasia de Wernicke", "Delirium", "Esquizofrenia", "Mania"],
+    rows: [
+      ["Compreensão", "alterada", "variável", "preservada", "preservada"],
+      ["Repetição", "alterada", "levemente alterada", "preservada", "preservada"],
+      ["Nomeação", "alterada", "erros não afásicos", "preservada", "preservada"],
+      ["Escrita", "alterada", "alterada", "espelha a fala", "preservada"],
+      ["Neologismos e parafasias", "frequentes", "ausentes", "raros, com significado estável", "—"],
+      ["Conteúdo", "vazio", "incoerente", "empobrecido, bizarro", "grandioso"],
+      ["Fala", "fluente, sem esforço", "disártrica, incoerente", "—", "pressão de fala, fuga de ideias"],
+      ["Exame neurológico", "pode estar alterado", "pode estar alterado", "normal", "normal"],
+    ],
+    tips: [
+      "Esquizofrenia: em geral começa aos poucos, em pessoa jovem (20 a 30 anos) com história psiquiátrica; os neologismos são raros e discretos, e ela repete palavras longas e frases complexas.",
+      "Afasia: em geral começa de repente, aos 60 a 80 anos; fora a fluente, a maioria percebe que não consegue se comunicar e pede ajuda. Hemiparesia ou hemianopsia à direita fecham o diagnóstico.",
+      "Diante de fala desorganizada de início súbito, testar repetição, nomeação e escrita antes de falar em psicose.",
+    ],
+  },
+  others: [
+    { name: "Aprosódia (amelodia)", text: "Lesão do opérculo frontal direito, o equivalente da área de Broca no hemisfério direito: fala monótona, sem melodia, rosto e gestos pouco expressivos. Facilmente confundida com depressão; quem parece deprimido e não consegue cantar uma melodia merece neuroimagem." },
+    { name: "Indecoro verbal", text: "A linguagem está normal, mas o controle do conteúdo não: fala demais, sem filtro, faz comentários cruéis. Convexidade frontal direita, lesões orbitofrontais, trauma e demência frontotemporal; diferenciar da pressão de fala da mania." },
+    { name: "Alexia sem agrafia", text: "Escreve, mas não consegue ler o que escreveu: lesão da cerebral posterior esquerda com o esplênio do corpo caloso (ver Territórios arteriais)." },
+    { name: "Síndrome de Gerstmann", text: "Giro angular esquerdo: agrafia, acalculia, confusão entre direita e esquerda e agnosia digital." },
+  ],
 };

@@ -74,6 +74,10 @@ window.PHARMA_SOURCES = {
     short: "Machado, Neuroanatomia Funcional",
     full: "Machado ABM, Haertel LM. Neuroanatomia Funcional. 4ª ed. Atheneu; 2022.",
   },
+  yudofsky: {
+    short: "Yudofsky e Hales, 4ª ed.",
+    full: "Yudofsky SC, Hales RE. Neuropsiquiatria e neurociências na prática clínica. 4ª ed. Porto Alegre: Artmed; 2006 (tradução de The American Psychiatric Publishing Textbook of Neuropsychiatry and Clinical Neurosciences, 4ª ed., 2002).",
+  },
   narita1996: {
     short: "Narita et al., 1996",
     full: "Narita N, Hashimoto K, Tomitaka S, Minabe Y. Interactions of selective serotonin reuptake inhibitors with subtypes of sigma receptors in rat brain. Eur J Pharmacol. 1996;307(1):117-119.",
@@ -272,6 +276,17 @@ window.PHARMA_REFS = {
       { about: "Nervo craniano do mesmo lado e hemiparesia do lado oposto; Wallenberg como infarto de tronco mais comum; ausência de afasia nas lesões do tronco", src: "kaufman", where: "cap. 11, Infarctions in the basilar artery distribution e tabela 11-4", kind: "fonte" },
       { about: "Funções e nível de saída de cada nervo craniano", src: "machado", where: "caps. 5 e 15 (anatomia do tronco e nervos cranianos)", kind: "fonte" },
       { about: "Vista anterior, cortes do tronco, posição dos núcleos e desenho da face", src: "curadoria", where: "esquema que junta estruturas de alturas diferentes do mesmo nível", kind: "didatico" },
+    ],
+  },
+  "atlas-afasias": {
+    paths: [
+      { about: "Perfil de fluência, compreensão, repetição e nomeação de cada síndrome (Broca, Wernicke, condução, global, transcorticais motora, sensorial e mista, anômica)", src: "yudofsky", where: "cap. 15, tabela 15-1 e texto das síndromes", kind: "fonte" },
+      { about: "Fala, localização da lesão e sinais associados de cada síndrome; afasia global e êmbolos múltiplos; prognóstico da lesão profunda na afasia de Broca", src: "yudofsky", where: "cap. 15", kind: "fonte" },
+      { about: "Síndromes comportamentais: depressão e reação catastrófica nas afasias anteriores; falta de consciência do déficit, paranoia e impulsividade nas posteriores", src: "yudofsky", where: "cap. 15, Aspectos neuropsiquiátricos da afasia", kind: "fonte" },
+      { about: "Afasia de Wernicke × delirium × esquizofrenia × mania", src: "yudofsky", where: "cap. 15, tabela 15-2 (resumida)", kind: "fonte" },
+      { about: "Aprosódia, indecoro verbal e síndrome de Gerstmann", src: "yudofsky", where: "cap. 15, Amelodia/aprosodia, Indecoro verbal e Transtornos diversos", kind: "fonte" },
+      { about: "Afasia fluente sem hemiparesia como causa de interconsulta por psicose aguda; afasia de isolamento por infarto de zona de fronteira; condução por êmbolo no ramo temporal posterior; afasia × esquizofrenia (idade, início, repetição, consciência do déficit); alexia sem agrafia", src: "kaufman", where: "cap. 8, Aphasia and related disorders", kind: "fonte" },
+      { about: "Diagnóstico em três perguntas (fluência, compreensão, repetição) e mapa das áreas no hemisfério esquerdo", src: "curadoria", where: "esquema clássico de classificação a partir da tabela 15-1", kind: "didatico" },
     ],
   },
   "atlas-territorios": {

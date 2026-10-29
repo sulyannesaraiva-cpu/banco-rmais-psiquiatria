@@ -20,6 +20,7 @@ window.ATLAS = {
     { id: "via-optica", tag: "◉", color: "#0072b2", title: "Via óptica", text: "Do nervo óptico ao córtex · defeitos de campo visual", ready: true },
     { id: "nervos-cranianos", tag: "NC", color: "#b0418a", title: "Nervos cranianos e tronco encefálico", text: "Síndromes alternas · Weber, Wallenberg · paralisia facial", ready: true },
     { id: "territorios-arteriais", tag: "AV", color: "#009e73", title: "Territórios arteriais", text: "Cerebrais anterior, média e posterior · ramos profundos", ready: true },
+    { id: "afasias", tag: "Af", color: "#cc79a7", title: "Afasias", text: "Broca, Wernicke, condução, transcorticais · afasia × psicose", ready: true },
   ],
   classic: [],
   basal: {
