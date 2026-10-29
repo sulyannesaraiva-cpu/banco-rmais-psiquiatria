@@ -32,6 +32,7 @@ function pharmaPopulationsBlock(drug) {
   const data = window.PHARMA_POPULATIONS;
   const found = data && pharmaPopulationData(drug.id);
   if (!found) return "";
+  const rel = typeof pharmaPatientPopFields === "function" ? pharmaPatientPopFields() : [];
   const open = state.pharma.pop && found.entry[state.pharma.pop] ? state.pharma.pop : null;
   return `
     <div class="pop-block" data-pop-drug="${escapeHtml(drug.id)}">
@@ -40,7 +41,7 @@ function pharmaPopulationsBlock(drug) {
         ${data.fields.map((f) => {
           const tone = (found.entry[f.id] || ["low"])[0];
           const color = data.tones[tone].color;
-          return `<button type="button" class="pop-chip${open === f.id ? " on" : ""}" data-pop-field="${f.id}" style="--c:${color}" aria-pressed="${open === f.id}" title="${escapeHtml(data.tones[tone].label)}"><i style="background:${color}"></i>${escapeHtml(f.label)}</button>`;
+          return `<button type="button" class="pop-chip${open === f.id ? " on" : ""}${rel.includes(f.id) ? " rel" : ""}" data-pop-field="${f.id}" style="--c:${color}" aria-pressed="${open === f.id}" title="${escapeHtml(data.tones[tone].label)}"><i style="background:${color}"></i>${escapeHtml(f.label)}${rel.includes(f.id) ? " <small>perfil</small>" : ""}</button>`;
         }).join("")}
       </div>
       <div class="pop-slot">${open ? pharmaPopulationDetail(drug.id, open) : ""}</div>

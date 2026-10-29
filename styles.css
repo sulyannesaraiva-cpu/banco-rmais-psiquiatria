@@ -9993,3 +9993,142 @@ body.theme-dark .pharma-chip.on {
   display: grid;
   gap: 8px;
 }
+
+/* Busca única, perfil do paciente e ficha do remédio */
+.pcard-search {
+  display: grid;
+  gap: 6px;
+  margin: 4px 0 12px;
+}
+
+.pcard-search input {
+  width: 100%;
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: 16px;
+}
+
+.pcard-hits {
+  display: grid;
+  gap: 4px;
+}
+
+.pcard-hits:empty {
+  display: none;
+}
+
+.pcard-hit {
+  display: grid;
+  gap: 2px;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.pcard-hit small {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.pcard-patient {
+  margin-bottom: 12px;
+}
+
+.pcard-patient-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.pcard-patient-head > span:first-child {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+
+.pcard-patient-head small {
+  color: var(--muted);
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+.pcard-fields {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.pcard-field {
+  display: grid;
+  gap: 4px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.pcard-field select,
+.pcard-meds select {
+  width: 100%;
+  max-width: 100%;
+  min-height: 38px;
+}
+
+.pcard-meds {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.pcard-meds > span {
+  width: 100%;
+  color: var(--muted);
+}
+
+.pcard-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.pcard-for,
+.pcard-summary {
+  display: grid;
+  gap: 8px;
+}
+
+.pop-chip.rel {
+  outline: 2px solid var(--c);
+  outline-offset: 1px;
+}
+
+.pop-chip small {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: var(--muted);
+}

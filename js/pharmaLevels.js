@@ -9,8 +9,8 @@ function pharmaLevelsState() {
   return {
     drug,
     dose: Number(lv.dose) > 0 ? Number(lv.dose) : pharmaLevelsDefaultDose(drug),
-    sex: lv.sex === "m" ? "m" : "f",
-    smoke: lv.smoke === "fuma" ? "fuma" : "nao",
+    sex: lv.sex ? (lv.sex === "m" ? "m" : "f") : (state.pharma.patient?.sex === "m" ? "m" : "f"),
+    smoke: lv.smoke ? (lv.smoke === "fuma" ? "fuma" : "nao") : (["fuma", "voltou"].includes(state.pharma.patient?.smoke) ? "fuma" : "nao"),
     cyp: lv.cyp === "im" ? "im" : "em",
     measured: Number(lv.measured) > 0 ? Number(lv.measured) : null,
     speed: lv.speed === "fast" ? "fast" : "slow",

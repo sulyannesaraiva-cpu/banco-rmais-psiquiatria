@@ -864,6 +864,25 @@ test("psicofarmacologia: níveis séricos de antipsicóticos", async ({ page }) 
   await expect(page.locator(".lv-numbers")).toContainText("Dose para o limiar");
   expect(errors).toEqual([]);
 });
+test("psicofarmacologia: busca por nome comercial, perfil do paciente e ficha", async ({ page }) => {
+  const errors = await openSite(page);
+  await goTab(page, "pharma");
+  await page.locator("[data-pcard-search]").fill("Rivotril");
+  await expect(page.locator(".pcard-hits")).toContainText("Clonazepam");
+  await page.locator("[data-pf-toggle]").click();
+  await page.locator('[data-pf-field="age"]').selectOption("idoso");
+  await page.locator("[data-pf-med-add]").selectOption("fluvoxamina");
+  await expect(page.locator(".pcard-patient-head")).toContainText("em uso: Fluvoxamina");
+  await page.locator("[data-pcard-search]").fill("cloza");
+  await page.locator(".pcard-hit").first().click();
+  await expect(page.locator("#pharmaPanel h2")).toHaveText("Clozapina");
+  await expect(page.locator(".pcard-for")).toContainText("Nível de clozapina sobe");
+  await expect(page.locator(".pcard-for")).toContainText("Idosos");
+  await expect(page.locator('.pop-chip.rel[data-pop-field="i"]')).toHaveCount(1);
+  await page.locator('[data-pcard-go="inter"]').click();
+  await expect(page.locator(".cross-picks")).toContainText("Fluvoxamina");
+  expect(errors).toEqual([]);
+});
 test("simulador de fármacos: cartão explicativo de cada alvo", async ({ page }) => {
   const errors = await openSite(page);
   await goTab(page, "pharma");
