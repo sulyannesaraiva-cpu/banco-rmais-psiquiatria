@@ -726,6 +726,21 @@ test("atlas de vias: eixo HHA (cenários e teste de supressão com dexametasona)
   await expect(page.locator("#pharmaPanel")).toContainText("psicose por corticoide");
   expect(errors).toEqual([]);
 });
+test("atlas de vias: vias longas (Brown-Séquard) e via óptica", async ({ page }) => {
+  const errors = await openSite(page);
+  await goTab(page, "pharma");
+  await page.locator('[data-sim-section="atlas"]').click();
+  await page.locator('[data-atlas-module="vias-longas"]').click();
+  await page.locator('[data-atlas-tract-lesion="cervical:E"]').click();
+  await expect(page.locator("#pharmaPanel")).toContainText("Dor e temperatura: no lado direito do corpo");
+  await expect(page.locator("#pharmaPanel")).toContainText("Síndrome de Brown-Séquard");
+  await page.locator("[data-atlas-home]").click();
+  await page.locator('[data-atlas-module="via-optica"]').click();
+  await page.locator('.optic-buttons [data-atlas-optic="B"]').click();
+  await expect(page.locator("#pharmaPanel")).toContainText("Hemianopsia bitemporal");
+  await expect(page.locator(".field-quad.blind")).toHaveCount(4);
+  expect(errors).toEqual([]);
+});
 test("navegação por áreas: Hoje, Estudar (com seletor), Simular e Você", async ({ page }) => {
   const errors = await openSite(page);
   const mobile = await page.evaluate(() => isMobileLayout());

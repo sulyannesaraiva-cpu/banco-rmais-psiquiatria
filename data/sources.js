@@ -70,6 +70,10 @@ window.PHARMA_SOURCES = {
     short: "Quevedo e Izquierdo, 2020",
     full: "Quevedo J, Izquierdo I (orgs.). Neurobiologia dos transtornos psiquiátricos. Artmed; 2020.",
   },
+  machado: {
+    short: "Machado, Neuroanatomia Funcional",
+    full: "Machado ABM, Haertel LM. Neuroanatomia Funcional. 4ª ed. Atheneu; 2022.",
+  },
   curadoria: {
     short: "Curadoria do site",
     full: "Esquemas, modelos e casos feitos para este site a partir das fontes citadas na mesma tela. Não são dados publicados.",
@@ -219,6 +223,23 @@ window.PHARMA_REFS = {
       { about: "Hipótese da cascata de glicocorticoides e dano ao hipocampo; sinalização insuficiente do cortisol", src: "quevedo2020", where: "cap. 3", kind: "fonte" },
       { about: "Psicose por corticoide em dose alta", src: "kaufman", where: "menções a steroid psychosis", kind: "fonte" },
       { about: "Níveis de cada estrutura nos cenários, supressão do eixo pelo corticoide externo e demora da adrenal para voltar", src: "curadoria", where: "fisiologia do feedback, simplificada", kind: "didatico" },
+    ],
+  },
+  "atlas-vias-longas": {
+    paths: [
+      { about: "Trajeto do trato corticoespinal e decussação das pirâmides (75% a 90% das fibras)", src: "machado", where: "cap. 30, Grandes vias eferentes", kind: "fonte" },
+      { about: "Via espinotalâmica: cruzamento na comissura branca da medula e lemnisco espinal", src: "machado", where: "cap. 29, Grandes vias aferentes", kind: "fonte" },
+      { about: "Coluna dorsal: fascículos grácil e cuneiforme, fibras arqueadas internas e lemnisco medial", src: "machado", where: "cap. 29", kind: "fonte" },
+      { about: "Síndrome de Brown-Séquard", src: "machado", where: "cap. 19, item 3.3", kind: "fonte" },
+      { about: "Síndrome do neurônio motor superior e sinal de Babinski", src: "machado", where: "cap. 30", kind: "fonte" },
+      { about: "Desenho das vias, níveis de lesão e bonecos de déficit", src: "curadoria", where: "esquema sem face, sem trato anterior e sem detalhe dos níveis medulares", kind: "didatico" },
+    ],
+  },
+  "atlas-via-optica": {
+    paths: [
+      { about: "Lesões A a F da via óptica e defeitos de campo correspondentes", src: "machado", where: "cap. 29, item 3.6.3 e figura 29.10", kind: "fonte" },
+      { about: "Causas típicas (tumor de hipófise, aneurisma de carótida, tumor do lobo temporal) e reflexo fotomotor no trato × radiação", src: "machado", where: "cap. 29, item 3.6.3", kind: "fonte" },
+      { about: "Desenho da via vista de cima e dos campos visuais", src: "curadoria", where: "esquema sem sobreposição dos campos dos dois olhos", kind: "didatico" },
     ],
   },
   dependencia: {

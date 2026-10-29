@@ -22,7 +22,7 @@ function saveAtlasState() {
 }
 
 function renderAtlasHome() {
-  const modules = window.ATLAS.modules.map((module) => module.ready
+  const card = (module) => module.ready
     ? `<button type="button" class="pharma-hub-card" data-atlas-module="${module.id}" style="--c:${module.color}">
         <span class="pharma-hub-tag">${escapeHtml(module.tag)}</span>
         <span class="pharma-hub-text"><strong>${escapeHtml(module.title)}</strong><small>${escapeHtml(module.text)}</small></span>
@@ -31,12 +31,13 @@ function renderAtlasHome() {
     : `<div class="pharma-hub-card soon" style="--c:${module.color}" aria-disabled="true">
         <span class="pharma-hub-tag">${escapeHtml(module.tag)}</span>
         <span class="pharma-hub-text"><strong>${escapeHtml(module.title)}</strong><small>${escapeHtml(module.text)} · em breve</small></span>
-      </div>`).join("");
+      </div>`;
   return `
     <p class="atlas-group">Circuitos da psiquiatria</p>
-    <div class="pharma-hub-list">${modules}</div>
-    <p class="atlas-group">Vias clássicas · em breve</p>
-    <div class="atlas-soon">${window.ATLAS.classic.map((name) => `<span>${escapeHtml(name)}</span>`).join("")}</div>
+    <div class="pharma-hub-list">${window.ATLAS.modules.map(card).join("")}</div>
+    <p class="atlas-group">Vias clássicas</p>
+    <div class="pharma-hub-list">${window.ATLAS.classicModules.map(card).join("")}</div>
+    <div class="atlas-soon">${window.ATLAS.classic.map((name) => `<span>${escapeHtml(name)} · em breve</span>`).join("")}</div>
     <p class="pharma-disclaimer">Esquemas didáticos, desenhados para este site e conferidos com as fontes citadas em cada módulo.</p>`;
 }
 
@@ -452,7 +453,221 @@ function renderAtlasHpa() {
     ${state.pharma.sourcesOpen ? renderPharmaSources({ id: "atlas-hha", label: "Eixo hipotálamo-hipófise-adrenal" }, "paths", scenario.label) : ""}`;
 }
 
+/* ---------- Vias motoras e sensitivas: onde cruzam e "onde está a lesão" ---------- */
+
+const ATLAS_SIDE_X = { E: 250, D: 510 };
+const ATLAS_SIDE_NAME = { E: "esquerdo", D: "direito" };
+const otherSide = (side) => (side === "E" ? "D" : "E");
+
+/* De que lado do neuroeixo a via (que serve o lado B do corpo) passa em cada nível. */
+function tractSideAt(tract, body, levelId) {
+  const level = window.ATLAS.longTracts.levels.find((item) => item.id === levelId);
+  if (level.brain) return otherSide(body);
+  return tract.cross === "medula" ? otherSide(body) : body;
+}
+
+function longTractDeficits(lesion) {
+  if (!lesion) return [];
+  const data = window.ATLAS.longTracts;
+  return data.tracts.map((tract) => ({ tract, sides: ["E", "D"].filter((body) => tractSideAt(tract, body, lesion.level) === lesion.side) }));
+}
+
+function atlasLongSvg(body, lesion) {
+  const data = window.ATLAS.longTracts;
+  const y = Object.fromEntries(data.levels.map((level) => [level.id, level.y]));
+  const offsets = { motor: -40, dorsal: 0, pain: 40 };
+  const bands = data.levels.map((level) => `
+    <g class="tract-level${level.noLesion ? " muted" : ""}">
+      <line x1="150" y1="${level.y}" x2="610" y2="${level.y}"></line>
+      <text x="380" y="${level.y - 8}" text-anchor="middle" class="tract-level-label">${escapeHtml(level.label)}</text>
+    </g>`).join("");
+  const paths = data.tracts.map((tract) => {
+    const opp = ATLAS_SIDE_X[otherSide(body)] + offsets[tract.id];
+    const same = ATLAS_SIDE_X[body] + offsets[tract.id];
+    let d;
+    if (tract.cross === "bulbo" && tract.id === "motor") {
+      d = `M${opp} ${y.cortex} V${y.bulbo} L${same} ${y.bulbo + 40} V470`;
+    } else if (tract.cross === "bulbo") {
+      /* Via ascendente: começa embaixo, no lado do corpo, e cruza no bulbo. */
+      d = `M${same} 470 V${y.bulbo + 40} L${opp} ${y.bulbo} V${y.cortex}`;
+    } else {
+      d = `M${same} 470 V452 L${opp} 432 V${y.cortex}`;
+    }
+    const dir = tract.id === "motor" ? "url(#tract-down)" : "url(#tract-up)";
+    return `<path d="${d}" class="tract-path" stroke="${tract.color}" marker-${tract.id === "motor" ? "end" : "end"}="${dir}"></path>`;
+  }).join("");
+  const mark = lesion ? `<g class="tract-lesion"><circle cx="${ATLAS_SIDE_X[lesion.side]}" cy="${y[lesion.level]}" r="18"></circle><text x="${ATLAS_SIDE_X[lesion.side]}" y="${y[lesion.level] + 6}" text-anchor="middle">✕</text></g>` : "";
+  const markers = data.tracts.map((tract) => `<marker id="tract-${tract.id === "motor" ? "down" : "up"}" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#4f6469"/></marker>`).join("");
+  return `
+    <svg class="atlas-svg" viewBox="120 0 520 480" role="img" aria-label="Vias longas que servem o lado ${ATLAS_SIDE_NAME[body]} do corpo">
+      <defs>${markers}</defs>
+      <text x="${ATLAS_SIDE_X.E}" y="18" text-anchor="middle" class="tract-side">lado esquerdo</text>
+      <text x="${ATLAS_SIDE_X.D}" y="18" text-anchor="middle" class="tract-side">lado direito</text>
+      <line x1="380" y1="24" x2="380" y2="476" class="tract-midline"></line>
+      ${bands}${paths}${mark}
+    </svg>`;
+}
+
+/* Bonequinho de frente: o lado direito do paciente fica à esquerda de quem olha. */
+function atlasBodyFigure(id, sides, extent, color) {
+  const top = extent === "cervical" ? 48 : extent === "toracica" ? 88 : 40;
+  const shape = "M60 40 C40 40 32 46 30 60 L22 112 L32 114 L40 70 L40 130 L36 196 L50 196 L58 136 L62 136 L70 196 L84 196 L80 130 L80 70 L88 114 L98 112 L90 60 C88 46 80 40 60 40 Z";
+  const halves = sides.map((side) => {
+    const x = side === "D" ? 0 : 60;
+    return `<rect x="${x}" y="${top}" width="60" height="${200 - top}" fill="${color}" opacity="0.75" clip-path="url(#body-${id})"></rect>`;
+  }).join("");
+  return `
+    <svg viewBox="0 0 120 210" class="tract-body" aria-hidden="true">
+      <defs><clipPath id="body-${id}"><path d="${shape}"></path></clipPath></defs>
+      <circle cx="60" cy="22" r="15" class="tract-body-shape"></circle>
+      <path d="${shape}" class="tract-body-shape"></path>
+      ${halves}
+      <text x="30" y="208" text-anchor="middle" class="tract-body-side">D</text>
+      <text x="90" y="208" text-anchor="middle" class="tract-body-side">E</text>
+    </svg>`;
+}
+
+function renderAtlasLong() {
+  const data = window.ATLAS.longTracts;
+  const body = state.atlas.tractBody === "E" ? "E" : "D";
+  const lesion = state.atlas.tractLesion || null;
+  const deficits = longTractDeficits(lesion);
+  const refCount = ((window.PHARMA_REFS || {})["atlas-vias-longas"]?.paths || []).length;
+  const level = lesion ? data.levels.find((item) => item.id === lesion.level) : null;
+  const lesionButtons = data.levels.filter((item) => !item.noLesion).map((item) => `
+    <div class="tract-pick">
+      <span>${escapeHtml(item.label)}</span>
+      ${["D", "E"].map((side) => `<button type="button" class="pharma-toggle ${lesion && lesion.level === item.id && lesion.side === side ? "on" : ""}" data-atlas-tract-lesion="${item.id}:${side}">${side === "D" ? "direito" : "esquerdo"}</button>`).join("")}
+    </div>`).join("");
+  const describe = (sides) => (sides.length === 2 ? "dos dois lados" : sides.length ? `no lado ${ATLAS_SIDE_NAME[sides[0]]} do corpo` : "sem déficit");
+  const extent = level ? (level.brain ? "em todo o hemicorpo" : level.below) : "";
+  const isBrownSequard = lesion && !level.brain;
+  return `
+    <header class="pharma-head">
+      <div>
+        <div class="pharma-head-top">
+          <button type="button" class="link-btn pharma-back" data-atlas-home>← Vias</button>
+          ${refCount ? `<button type="button" class="pharma-sources-btn" data-pharma-sources aria-haspopup="dialog">Fontes · ${refCount}</button>` : ""}
+        </div>
+        <h2>Vias motoras e sensitivas</h2>
+        <p>Três vias longas, três lugares de cruzamento. Saber onde cada uma cruza é o que permite dizer onde está a lesão.</p>
+      </div>
+    </header>
+    <div class="pharma-grid atlas-grid">
+      <section class="pharma-card">
+        <div class="pharma-card-head"><h3>Vias que servem o lado ${ATLAS_SIDE_NAME[body]} do corpo</h3><span>esquema didático</span></div>
+        <div class="segmented dem-stages" role="group" aria-label="Lado do corpo">
+          <button type="button" class="${body === "D" ? "active" : ""}" data-atlas-tract-body="D" aria-pressed="${body === "D"}">Lado direito do corpo</button>
+          <button type="button" class="${body === "E" ? "active" : ""}" data-atlas-tract-body="E" aria-pressed="${body === "E"}">Lado esquerdo do corpo</button>
+        </div>
+        ${atlasLongSvg(body, lesion)}
+        <div class="atlas-legend">${data.tracts.map((tract) => `<span><i style="background:${tract.color}"></i>${escapeHtml(tract.label)} (cruza no ${tract.cross})</span>`).join("")}</div>
+        <h4>Lesione e veja</h4>
+        <div class="tract-picks">${lesionButtons}</div>
+        ${lesion ? '<div class="pharma-toggles"><button type="button" class="pharma-toggle" data-atlas-tract-lesion="">Tirar a lesão</button></div>' : ""}
+      </section>
+      <section class="pharma-card">
+        ${lesion ? `
+          <h3>Lesão: ${escapeHtml(level.label.toLowerCase())}, lado ${ATLAS_SIDE_NAME[lesion.side]}</h3>
+          <div class="tract-bodies">${deficits.map(({ tract, sides }) => `<figure>${atlasBodyFigure(tract.id, sides, lesion.level, tract.color)}<figcaption>${escapeHtml(tract.short)}</figcaption></figure>`).join("")}</div>
+          ${deficits.map(({ tract, sides }) => `<div class="pharma-reading tone-${sides.length ? "high" : "low"}"><strong>${escapeHtml(tract.short)}: ${describe(sides)}${sides.length ? `, ${escapeHtml(extent)}` : ""}</strong><span>${sides.length ? escapeHtml(tract.deficit) : "Esta via não passa por aqui deste lado."}</span></div>`).join("")}
+          ${isBrownSequard ? `<div class="pharma-reading tone-warn"><strong>Síndrome de Brown-Séquard</strong><span>${escapeHtml(data.brownSequard)}</span></div>` : `<div class="pharma-reading tone-warn"><strong>Acima das decussações</strong><span>Lesões no encéfalo, acima do bulbo, dão déficits do lado oposto do corpo para as três vias.</span></div>`}`
+          : `<h3>Onde cada via cruza</h3>${data.tracts.map((tract) => `<div class="pharma-reading tone-ok"><strong style="color:${tract.color}">${escapeHtml(tract.label)}</strong><span>${escapeHtml(tract.note)}</span></div>`).join("")}`}
+      </section>
+    </div>
+    <p class="pharma-disclaimer">Esquema simplificado: não mostra a face (via corticonuclear), as áreas exatas do córtex nem o trato corticoespinal anterior.</p>
+    ${state.pharma.sourcesOpen ? renderPharmaSources({ id: "atlas-vias-longas", label: "Vias motoras e sensitivas" }, "paths", lesion ? "Lesão" : "Vias") : ""}`;
+}
+
+/* ---------- Via óptica: lesões A a F e defeitos de campo visual ---------- */
+
+function atlasFieldSvg(eye, blind) {
+  /* Campo visual visto pelo paciente: no olho esquerdo, o campo temporal fica à esquerda;
+     no direito, à direita. */
+  const temporalLeft = eye === "OE";
+  const quad = { ts: [temporalLeft ? 0 : 1, 0], ti: [temporalLeft ? 0 : 1, 1], ns: [temporalLeft ? 1 : 0, 0], ni: [temporalLeft ? 1 : 0, 1] };
+  const parts = Object.entries(quad).map(([id, [col, row]]) => {
+    const x = col ? 50 : 10;
+    const y = row ? 50 : 10;
+    const d = `M50 50 L${col ? 90 : 10} 50 A40 40 0 0 ${col === row ? 1 : 0} 50 ${row ? 90 : 10} Z`;
+    return `<path d="${d}" class="field-quad${blind.includes(id) ? " blind" : ""}"></path>`;
+  }).join("");
+  return `
+    <svg viewBox="0 0 100 112" class="field-eye" role="img" aria-label="Campo visual do olho ${eye === "OE" ? "esquerdo" : "direito"}">
+      ${parts}
+      <circle cx="50" cy="50" r="40" class="field-ring"></circle>
+      <line x1="50" y1="10" x2="50" y2="90" class="field-axis"></line><line x1="10" y1="50" x2="90" y2="50" class="field-axis"></line>
+      <text x="${temporalLeft ? 14 : 86}" y="108" text-anchor="middle" class="field-label">T</text>
+      <text x="${temporalLeft ? 86 : 14}" y="108" text-anchor="middle" class="field-label">N</text>
+    </svg>`;
+}
+
+function atlasOpticSvg(lesion) {
+  const points = { A: [470, 110], B: [380, 175], C: [478, 172], D: [461, 238], E: [486, 330], F: [452, 418] };
+  const markers = Object.entries(points).map(([id, [x, y]]) => `<g class="optic-mark${lesion?.id === id ? " on" : ""}" data-atlas-optic="${id}"><circle cx="${x}" cy="${y}" r="13"></circle><text x="${x}" y="${y + 5}" text-anchor="middle">${id}</text></g>`).join("");
+  return `
+    <svg class="atlas-svg optic-svg" viewBox="150 20 460 430" role="img" aria-label="Via óptica vista de cima, com os pontos de lesão A a F">
+      <circle cx="290" cy="60" r="34" class="optic-eye"></circle><text x="290" y="64" text-anchor="middle" class="optic-text">OE</text>
+      <circle cx="470" cy="60" r="34" class="optic-eye"></circle><text x="470" y="64" text-anchor="middle" class="optic-text">OD</text>
+      <path d="M300 92 L380 170 L470 260" class="optic-fiber nasal"></path>
+      <path d="M460 92 L380 170 L290 260" class="optic-fiber nasal"></path>
+      <path d="M262 84 C268 140 300 190 292 256" class="optic-fiber temporal"></path>
+      <path d="M498 84 C492 140 460 190 468 256" class="optic-fiber temporal"></path>
+      <ellipse cx="290" cy="268" rx="22" ry="12" class="optic-lgn"></ellipse>
+      <ellipse cx="470" cy="268" rx="22" ry="12" class="optic-lgn"></ellipse>
+      <path d="M290 280 C260 330 270 380 310 420" class="optic-radiation"></path>
+      <path d="M470 280 C500 330 490 380 450 420" class="optic-radiation"></path>
+      <path d="M260 430 Q310 400 360 430" class="optic-cortex"></path>
+      <path d="M400 430 Q450 400 500 430" class="optic-cortex"></path>
+      <text x="380" y="150" text-anchor="middle" class="optic-text small">quiasma</text>
+      <text x="160" y="300" class="optic-text small">corpo geniculado</text>
+      <text x="170" y="360" class="optic-text small">radiação</text>
+      <text x="380" y="448" text-anchor="middle" class="optic-text small">córtex visual (área 17)</text>
+      ${markers}
+    </svg>`;
+}
+
+function renderAtlasOptic() {
+  const optic = window.ATLAS.optic;
+  const lesion = optic.lesions.find((item) => item.id === state.atlas.optic) || null;
+  const refCount = ((window.PHARMA_REFS || {})["atlas-via-optica"]?.paths || []).length;
+  const buttons = optic.lesions.map((item) => `<button type="button" class="pharma-toggle ${lesion?.id === item.id ? "on" : ""}" data-atlas-optic="${item.id}"><b>${item.id}</b> ${escapeHtml(item.label)}</button>`).join("");
+  return `
+    <header class="pharma-head">
+      <div>
+        <div class="pharma-head-top">
+          <button type="button" class="link-btn pharma-back" data-atlas-home>← Vias</button>
+          ${refCount ? `<button type="button" class="pharma-sources-btn" data-pharma-sources aria-haspopup="dialog">Fontes · ${refCount}</button>` : ""}
+        </div>
+        <h2>Via óptica</h2>
+        <p>As fibras das retinas nasais cruzam no quiasma; as temporais não. Por isso, antes do quiasma o defeito é de um olho, no quiasma é heterônimo e depois dele é homônimo.</p>
+      </div>
+    </header>
+    <div class="pharma-grid atlas-grid">
+      <section class="pharma-card">
+        <div class="pharma-card-head"><h3>Vista de cima</h3><span>toque numa letra para lesionar</span></div>
+        ${atlasOpticSvg(lesion)}
+        <div class="atlas-legend"><span><i style="background:#0072b2"></i>fibras da retina nasal (cruzam)</span><span><i style="background:#d55e00"></i>fibras da retina temporal (não cruzam)</span></div>
+        <div class="pharma-toggles optic-buttons">${buttons}</div>
+      </section>
+      <section class="pharma-card">
+        <h3>Campos visuais</h3>
+        <div class="field-pair">
+          <figure>${atlasFieldSvg("OE", lesion?.blind.OE || [])}<figcaption>Olho esquerdo</figcaption></figure>
+          <figure>${atlasFieldSvg("OD", lesion?.blind.OD || [])}<figcaption>Olho direito</figcaption></figure>
+        </div>
+        ${lesion
+          ? `<div class="pharma-reading tone-high"><strong>${lesion.id}. ${escapeHtml(lesion.name)}</strong><span>${escapeHtml(lesion.text)}</span></div>`
+          : '<div class="pharma-reading tone-low"><strong>Sem lesão</strong><span>Escolha um ponto de A a F. Em preto, a parte do campo visual que se perde (T = temporal, N = nasal).</span></div>'}
+      </section>
+    </div>
+    <p class="pharma-disclaimer">Esquema simplificado: não considera a sobreposição parcial dos campos dos dois olhos.</p>
+    ${state.pharma.sourcesOpen ? renderPharmaSources({ id: "atlas-via-optica", label: "Via óptica" }, "paths", lesion ? lesion.name : "Via óptica") : ""}`;
+}
+
 function renderAtlas() {
+  if (state.atlas.module === "vias-longas") return renderAtlasLong();
+  if (state.atlas.module === "via-optica") return renderAtlasOptic();
   if (state.atlas.module === "hha") return renderAtlasHpa();
   if (state.atlas.module === "neurotransmissores") return renderAtlasNeuro();
   if (state.atlas.module === "limbico") return renderAtlasLimbic();
@@ -465,7 +680,7 @@ function renderAtlas() {
   const panel = document.querySelector("#pharmaPanel");
   if (!panel) return;
   panel.addEventListener("click", (event) => {
-    const target = event.target.closest("[data-atlas-module], [data-atlas-home], [data-atlas-scenario], [data-atlas-step], [data-atlas-link], [data-sim-section], [data-atlas-circuit], [data-atlas-lesion], [data-atlas-limbic], [data-atlas-system], [data-atlas-drugs], [data-atlas-hpa], [data-atlas-dex]");
+    const target = event.target.closest("[data-atlas-module], [data-atlas-home], [data-atlas-scenario], [data-atlas-step], [data-atlas-link], [data-sim-section], [data-atlas-circuit], [data-atlas-lesion], [data-atlas-limbic], [data-atlas-system], [data-atlas-drugs], [data-atlas-hpa], [data-atlas-dex], [data-atlas-tract-body], [data-atlas-tract-lesion], [data-atlas-optic]");
     if (!target) return;
     const data = target.dataset;
     if (data.simSection) {
@@ -485,6 +700,11 @@ function renderAtlas() {
     } else if (data.atlasLesion !== undefined) state.atlas.lesionAt = data.atlasLesion || null;
     else if (data.atlasSystem) state.atlas.system = data.atlasSystem;
     else if (data.atlasHpa) state.atlas.hpa = data.atlasHpa;
+    else if (data.atlasTractBody) state.atlas.tractBody = data.atlasTractBody;
+    else if (data.atlasTractLesion !== undefined) {
+      const [level, side] = data.atlasTractLesion.split(":");
+      state.atlas.tractLesion = level ? { level, side } : null;
+    } else if (data.atlasOptic) state.atlas.optic = state.atlas.optic === data.atlasOptic ? null : data.atlasOptic;
     else if (data.atlasDex !== undefined) state.atlas.dex = !state.atlas.dex;
     else if (data.atlasDrugs) {
       state.pharma.section = "drugs";

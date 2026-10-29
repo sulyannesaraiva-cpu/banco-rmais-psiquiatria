@@ -8494,3 +8494,230 @@ body.theme-dark .pharma-chip.on {
 .hpa-ext .atlas-node-sub {
   fill: #6b4300;
 }
+/* Atlas: vias motoras e sensitivas. */
+.tract-level line {
+  stroke: var(--line);
+  stroke-dasharray: 4 6;
+}
+
+.tract-level-label {
+  fill: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.tract-level.muted .tract-level-label {
+  font-style: italic;
+}
+
+.tract-side {
+  fill: var(--ink);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.tract-midline {
+  stroke: var(--line);
+  stroke-width: 2;
+}
+
+.tract-path {
+  fill: none;
+  stroke-width: 5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.tract-lesion circle {
+  fill: #2b2b2b;
+  stroke: #c2410c;
+  stroke-width: 3;
+}
+
+.tract-lesion text {
+  fill: #ffffff;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.tract-picks {
+  display: grid;
+  gap: 6px;
+}
+
+.tract-pick {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+
+.tract-pick > span {
+  min-width: 128px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.tract-bodies {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.tract-bodies figure {
+  margin: 0;
+  text-align: center;
+}
+
+.tract-bodies figcaption {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.tract-body {
+  width: 100%;
+  max-width: 110px;
+}
+
+.tract-body-shape {
+  fill: var(--panel-soft);
+  stroke: var(--muted);
+  stroke-width: 2;
+}
+
+.tract-body-side {
+  fill: var(--muted);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* Atlas: via óptica. */
+.optic-eye {
+  fill: var(--panel-soft);
+  stroke: var(--muted);
+  stroke-width: 2;
+}
+
+.optic-text {
+  fill: var(--ink);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.optic-text.small {
+  fill: var(--muted);
+  font-size: 11px;
+}
+
+.optic-fiber {
+  fill: none;
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+
+.optic-fiber.nasal {
+  stroke: #0072b2;
+}
+
+.optic-fiber.temporal {
+  stroke: #d55e00;
+}
+
+.optic-lgn {
+  fill: var(--panel-soft);
+  stroke: var(--muted);
+  stroke-width: 2;
+}
+
+.optic-radiation {
+  fill: none;
+  stroke: #7d9396;
+  stroke-width: 6;
+  stroke-linecap: round;
+}
+
+.optic-cortex {
+  fill: none;
+  stroke: #b0418a;
+  stroke-width: 6;
+  stroke-linecap: round;
+}
+
+.optic-mark {
+  cursor: pointer;
+}
+
+.optic-mark circle {
+  fill: var(--panel);
+  stroke: #c2410c;
+  stroke-width: 2;
+}
+
+.optic-mark text {
+  fill: #c2410c;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.optic-mark.on circle {
+  fill: #2b2b2b;
+}
+
+.optic-mark.on text {
+  fill: #ffffff;
+}
+
+.optic-buttons .pharma-toggle b {
+  margin-right: 4px;
+}
+
+.field-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.field-pair figure {
+  margin: 0;
+  text-align: center;
+}
+
+.field-pair figcaption {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.field-eye {
+  width: 100%;
+  max-width: 150px;
+}
+
+.field-quad {
+  fill: #fff7d6;
+}
+
+.field-quad.blind {
+  fill: #10262d;
+}
+
+.field-ring {
+  fill: none;
+  stroke: var(--muted);
+  stroke-width: 2;
+}
+
+.field-axis {
+  stroke: var(--muted);
+  stroke-width: 1;
+  opacity: 0.5;
+}
+
+.field-label {
+  fill: var(--muted);
+  font-size: 10px;
+  font-weight: 700;
+}

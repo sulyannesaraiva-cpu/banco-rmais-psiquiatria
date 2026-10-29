@@ -15,7 +15,11 @@ window.ATLAS = {
     { id: "neurotransmissores", tag: "DA", color: "#0b6b70", title: "Vias de neurotransmissores", text: "Dopamina, serotonina, noradrenalina, acetilcolina, histamina, orexina", ready: true },
     { id: "hha", tag: "HHA", color: "#009e73", title: "Eixo hipotálamo-hipófise-adrenal", text: "Estresse · cortisol · depressão", ready: true },
   ],
-  classic: ["Corticoespinal", "Sensitivas", "Visual", "Nervos cranianos", "Territórios arteriais"],
+  classicModules: [
+    { id: "vias-longas", tag: "M/S", color: "#c2410c", title: "Vias motoras e sensitivas", text: "Corticoespinal · coluna dorsal · espinotalâmica · Brown-Séquard", ready: true },
+    { id: "via-optica", tag: "◉", color: "#0072b2", title: "Via óptica", text: "Do nervo óptico ao córtex · defeitos de campo visual", ready: true },
+  ],
+  classic: ["Nervos cranianos", "Territórios arteriais"],
   basal: {
     nodes: {
       cortex: { label: "Córtex motor", sub: "e pré-frontal", x: 40, y: 24, w: 680, h: 62 },
@@ -328,6 +332,49 @@ window.ATLAS = {
         result: "Em dose alta, o corticoide pode causar sintomas psiquiátricos, inclusive a psicose por corticoide. Ao suspender um uso prolongado, a adrenal demora a voltar a produzir.",
         tone: "warn", dex: "O eixo já está freado pelo corticoide externo.",
       },
+    ],
+  },
+  /* Vias longas: conforme Machado, Neuroanatomia Funcional (4ª ed.): cap. 29 (grandes vias
+     aferentes), cap. 30 (grandes vias eferentes) e cap. 19 (Brown-Séquard).
+     cross: onde a via cruza ("bulbo" ou "medula"); para cada nível, a via está do lado do
+     corpo que ela serve (ipsilateral) abaixo do cruzamento e do lado oposto acima. */
+  longTracts: {
+    levels: [
+      { id: "cortex", label: "Córtex", sub: "giros pré e pós-central", y: 40, brain: true },
+      { id: "capsula", label: "Cápsula interna", sub: "perna posterior", y: 110, brain: true },
+      { id: "ponte", label: "Ponte", sub: "tronco encefálico", y: 190, brain: true },
+      { id: "bulbo", label: "Bulbo", sub: "decussações", y: 265, brain: true, noLesion: true },
+      { id: "cervical", label: "Medula cervical", sub: "hemissecção", y: 345, below: "abaixo do pescoço" },
+      { id: "toracica", label: "Medula torácica", sub: "hemissecção", y: 425, below: "abaixo do tórax" },
+    ],
+    tracts: [
+      {
+        id: "motor", label: "Corticoespinal lateral", short: "Força", color: "#c2410c", cross: "bulbo",
+        deficit: "Fraqueza com síndrome do neurônio motor superior (espasticidade, reflexos vivos, sinal de Babinski)",
+        note: "Origem no córtex motor; desce pela cápsula interna, base do pedúnculo, base da ponte e pirâmide bulbar. Na decussação das pirâmides cruzam 75% a 90% das fibras (trato corticoespinal lateral); as que não cruzam formam o trato corticoespinal anterior.",
+      },
+      {
+        id: "dorsal", label: "Coluna dorsal e lemnisco medial", short: "Propriocepção e tato fino", color: "#0072b2", cross: "bulbo",
+        deficit: "Perda da propriocepção consciente, do tato epicrítico e da vibração",
+        note: "Sobe do mesmo lado nos fascículos grácil e cuneiforme; no bulbo, as fibras arqueadas internas cruzam e formam o lemnisco medial, que vai ao tálamo (ventral posterolateral) e ao giro pós-central.",
+      },
+      {
+        id: "pain", label: "Espinotalâmico lateral", short: "Dor e temperatura", color: "#009e73", cross: "medula",
+        deficit: "Perda da dor e da temperatura, a partir de 1 ou 2 dermátomos abaixo da lesão",
+        note: "O neurônio II, na coluna posterior da medula, cruza logo pela comissura branca e sobe do lado oposto; na ponte forma o lemnisco espinal, que vai ao tálamo e ao giro pós-central.",
+      },
+    ],
+    brownSequard: "Hemissecção da medula (síndrome de Brown-Séquard): do mesmo lado, fraqueza do neurônio motor superior e perda de propriocepção e tato epicrítico; do lado oposto, perda de dor e temperatura. Tudo abaixo do nível da lesão.",
+  },
+  /* Via óptica: Machado (4ª ed.), cap. 29, item 3.6.3 e figura 29.10 (lesões A a F, lado direito). */
+  optic: {
+    lesions: [
+      { id: "A", label: "Nervo óptico direito", blind: { OD: ["ts", "ti", "ns", "ni"] }, name: "Cegueira do olho direito", text: "Perda completa da visão do olho correspondente (trauma, glaucoma). A pupila desse olho não reage à luz direta." },
+      { id: "B", label: "Quiasma (parte mediana)", blind: { OE: ["ts", "ti"], OD: ["ts", "ti"] }, name: "Hemianopsia bitemporal (heterônima)", text: "Interrompe as fibras das retinas nasais, que cruzam no quiasma. Típica dos tumores de hipófise, que comprimem o quiasma de baixo para cima, e dos gliomas do quiasma." },
+      { id: "C", label: "Quiasma (parte lateral direita)", blind: { OD: ["ns", "ni"] }, name: "Hemianopsia nasal do olho direito", text: "Interrompe as fibras da retina temporal desse olho. Mais comum por aneurisma da carótida interna; dos dois lados, hemianopsia binasal." },
+      { id: "D", label: "Trato óptico direito", blind: { OE: ["ts", "ti"], OD: ["ns", "ni"] }, name: "Hemianopsia homônima esquerda", text: "Retroquiasmática: perde-se o mesmo lado do campo nos dois olhos. Trauma ou tumor; lesão do corpo geniculado lateral dá o mesmo defeito. O reflexo fotomotor na metade cega da retina está ausente." },
+      { id: "E", label: "Radiação óptica (parte inferior direita)", blind: { OE: ["ts"], OD: ["ns"] }, name: "Quadrantanopsia homônima superior esquerda", text: "Lesão parcial da radiação: só um quadrante. Visto em certos tumores do lobo temporal." },
+      { id: "F", label: "Radiação óptica completa ou córtex visual direito", blind: { OE: ["ts", "ti"], OD: ["ns", "ni"] }, name: "Hemianopsia homônima esquerda", text: "Mesmo defeito da lesão do trato, mas o reflexo fotomotor está preservado, porque as fibras do reflexo já saíram antes do corpo geniculado lateral. Lesões completas da radiação são raras: o mais comum são defeitos parciais." },
     ],
   },
 };
