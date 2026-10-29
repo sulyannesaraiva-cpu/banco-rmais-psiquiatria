@@ -20,6 +20,8 @@
       ph: "Taylor, Gaughran e Pillinger, Maudsley Practice Guidelines for Physical Health Conditions",
       mi: "Ferrando, Levenson e Owen, Psychopharmacology in the Medically Ill",
       maudsley15: "Maudsley Prescribing Guidelines (15ª ed.)",
+      grassi: "Grassi e Riba, Psychopharmacology in Oncology and Palliative Care",
+      cordas: "Cordás, Soares e Fraguas, Prática Psiquiátrica em Oncologia (2020)",
     },
     groups: [
       { id: "cardio", label: "Coração e vasos" },
@@ -28,7 +30,8 @@
       { id: "neuro", label: "Neurologia" },
       { id: "resp", label: "Pulmão" },
       { id: "renal", label: "Rim e vias urinárias" },
-      { id: "onco", label: "Câncer e imunologia" },
+      { id: "onco", label: "Câncer" },
+      { id: "imuno", label: "Reumatologia e imunologia" },
       { id: "olho", label: "Olhos" },
     ],
     conditions: [
@@ -139,22 +142,91 @@
         effects: [{ classes: ["antipsicoticos", "antidepressivos"], key: "anticholinergic", min: 2, tone: "caution", text: "Efeito anticolinérgico moderado ou forte: risco de retenção urinária." }],
       },
       {
-        id: "tamoxifeno", label: "Câncer de mama com tamoxifeno", group: "onco", src: "mi", where: "cap. 8, Oncology",
+        id: "tamoxifeno", label: "Câncer de mama com tamoxifeno", group: "onco", src: "cordas", where: "cap. 2, Depressão e oncologia",
         rules: {
-          antidepressivos: { avoid: [[["paroxetina", "fluoxetina", "bupropiona", "duloxetina", "moclobemida"], "Inibem a CYP2D6 e reduzem o endoxifeno (forma ativa do tamoxifeno): mais recidiva e morte por câncer de mama."]], caution: [[["sertralina"], "Inibe a CYP2D6 em doses acima de 200 mg/dia."]], prefer: [[["citalopram", "escitalopram", "venlafaxina", "mirtazapina"], "Preferidos: não alteram o metabolismo do tamoxifeno."]] },
-          estimulantes: { avoid: [[["atomoxetina"], "Inibe a CYP2D6."]] },
+          antidepressivos: {
+            avoid: [[["paroxetina", "fluoxetina"], "Inibidores fortes da CYP2D6: reduzem a formação do endoxifeno, a forma ativa do tamoxifeno."]],
+            caution: [
+              [["duloxetina", "sertralina", "bupropiona"], "Inibidores moderados da CYP2D6 (a sertralina pesa mais acima de 200 mg/dia, segundo Medically Ill)."],
+              [["moclobemida"], "Inibe a CYP2D6: evitar durante o tamoxifeno.", "mi", "cap. 8, Oncology"],
+            ],
+            prefer: [
+              [["venlafaxina", "desvenlafaxina"], "Primeira escolha com tamoxifeno: quase não inibem a CYP2D6 e ainda ajudam nos fogachos."],
+              [["citalopram", "escitalopram"], "Não inibem a CYP2D6 de forma relevante (citalopram: atenção ao QT a partir de 40 mg/dia)."],
+              [["mirtazapina"], "Sem efeito no metabolismo do tamoxifeno.", "mi", "cap. 8, Oncology"],
+            ],
+          },
+          estimulantes: { avoid: [[["atomoxetina"], "Inibe a CYP2D6.", "mi", "cap. 8, Oncology"]] },
+        },
+        noteAll: true,
+        note: "Há debate: metanálises mostram queda do endoxifeno com inibidores da CYP2D6, mas sem efeito claro em recidiva ou sobrevida; enquanto não se resolve, é prudente evitar os inibidores fortes quando há alternativa (Grassi e Riba, cap. 9). Medically Ill (cap. 8) recomenda evitar todos os inibidores.",
+      },
+      {
+        id: "caquexia", label: "Câncer com náusea, insônia ou perda de peso", group: "onco", src: "cordas", where: "caps. 2 e 9",
+        rules: {
+          antidepressivos: {
+            prefer: [[["mirtazapina"], "Ajuda no sono, no apetite e na náusea; tem comprimido orodispersível. Pode também prender o intestino em quem tem diarreia."]],
+            caution: [
+              [["fluoxetina", "sertralina"], "Podem reduzir o apetite: muito critério em quem está caquético ou perdeu muito peso."],
+              [["bupropiona"], "Neutra para o peso ou leva a perda: não é primeira linha na caquexia.", "grassi", "cap. 9"],
+            ],
+          },
         },
       },
       {
-        id: "quimio", label: "Quimioterapia ou imunossupressor que deprime a medula", group: "onco", src: "mi", where: "cap. 14, tabela 14-2",
+        id: "snc", label: "Tumor ou metástase no cérebro", group: "onco", src: "grassi", where: "cap. 9, tabela 9.3",
         rules: {
-          antipsicoticos: { caution: [[MYELO.antipsicoticos, "Pode somar supressão da medula (discrasias sanguíneas)."]] },
+          antidepressivos: { avoid: [[["bupropiona"], "Risco maior de convulsão: evitar em câncer do sistema nervoso central ou com risco de metástase cerebral (também Cordás, cap. 2)."]] },
+        },
+        noteAll: true,
+        note: "Para o risco de convulsão dos outros psicofármacos, marque também \"Epilepsia ou convulsões\".",
+      },
+      {
+        id: "fogachos", label: "Fogachos (câncer de mama ou próstata)", group: "onco", src: "grassi", where: "cap. 10, Hot flashes",
+        rules: {
+          antidepressivos: {
+            prefer: [
+              [["venlafaxina", "desvenlafaxina"], "Reduzem os fogachos da privação hormonal (Cordás, caps. 2 e 9)."],
+              [["paroxetina"], "Reduziu fogachos na análise conjunta dos ensaios (com venlafaxina); não usar com tamoxifeno."],
+            ],
+          },
+          estimulantes: { prefer: [[["clonidina"], "Recomendada para fogachos em mulheres jovens com câncer de mama."]] },
+        },
+      },
+      {
+        id: "dorOnco", label: "Dor neuropática ou dor oncológica", group: "onco", src: "grassi", where: "cap. 10, tratamento da dor",
+        rules: {
+          antidepressivos: {
+            prefer: [
+              [["duloxetina", "venlafaxina"], "Antidepressivos duais: recomendados nas diretrizes de dor neuropática, com melhor equilíbrio entre eficácia e segurança."],
+              [["amitriptilina", "nortriptilina"], "Analgésicos já em dose baixa; pouco tolerados nas doses de antidepressivo."],
+            ],
+          },
+        },
+      },
+      {
+        id: "fadiga", label: "Fadiga oncológica ou doença avançada", group: "onco", src: "grassi", where: "caps. 9 e 10",
+        rules: {
+          antidepressivos: { prefer: [[["bupropiona"], "Ativadora: melhora fadiga e concentração (cuidado em quem tem agitação ou ansiedade)."]] },
+          estimulantes: { prefer: [[["metilfenidato-li", "metilfenidato-la", "metilfenidato-oros", "lisdexanfetamina"], "Efeito em horas a dias: útil na doença avançada, quando a rapidez importa; cautela na doença cardíaca."]] },
+        },
+      },
+      {
+        id: "quimio", label: "Em quimioterapia", group: "onco", src: "mi", where: "cap. 14, tabela 14-2",
+        rules: {
+          antipsicoticos: { caution: [[MYELO.antipsicoticos, "Pode somar supressão da medula: hemograma de perto junto com os antineoplásicos (Grassi e Riba, cap. 13)."]] },
           estabilizadores: { caution: [[MYELO.estabilizadores, "Pode somar supressão da medula (discrasias sanguíneas)."]] },
-          antidepressivos: { caution: [[MYELO.antidepressivos, "Pode somar supressão da medula (rara)."]], prefer: [[["mirtazapina"], "No câncer, eficaz na depressão e também ajuda náusea, insônia e apetite (cap. 8)."]] },
+          antidepressivos: {
+            caution: [
+              [MYELO.antidepressivos, "Pode somar supressão da medula (neutropenia rara)."],
+              [["fluvoxamina", "fluoxetina", "paroxetina"], "Muitas interações por CYP com antineoplásicos (por exemplo, ciclofosfamida, taxanos): escolher outro se possível.", "grassi", "cap. 9"],
+            ],
+            prefer: [[["citalopram", "escitalopram", "desvenlafaxina"], "Pouco efeito nas enzimas do fígado: menos interação com a quimioterapia.", "grassi", "cap. 9, tabela 9.4"]],
+          },
         },
       },
       {
-        id: "reumato", label: "Doença reumatológica (AINE, metotrexato, hidroxicloroquina)", group: "onco", src: "mi", where: "cap. 14",
+        id: "reumato", label: "Doença reumatológica (AINE, metotrexato, hidroxicloroquina)", group: "imuno", src: "mi", where: "cap. 14",
         rules: {
           antidepressivos: { caution: [[[...SSRI, ...SNRI, "amitriptilina", "imipramina", "clomipramina"], "Com AINE: mais sangramento digestivo (serotoninérgicos e tricíclicos terciários)."]], prefer: [[["duloxetina"], "Tem efeito analgésico comprovado na dor reumatológica."]] },
           antipsicoticos: { caution: [[["clozapina"], "Com metotrexato e outros imunossupressores: pode somar supressão da medula."], [["clorpromazina"], "Raramente induz síndrome semelhante a lúpus (positiva anticorpos)."], [["risperidona", "paliperidona", "quetiapina", "ziprasidona"], "Com hidroxicloroquina: mais risco de arritmia (QT somado)."]] },
@@ -213,6 +285,14 @@
     short: "Psychopharmacology in the Medically Ill",
     full: "Ferrando SJ, Levenson JL, Owen JA, eds. Clinical Manual of Psychopharmacology in the Medically Ill. American Psychiatric Publishing.",
   };
+  sources.grassiRiba = sources.grassiRiba || {
+    short: "Grassi e Riba, Psychopharmacology in Oncology and Palliative Care",
+    full: "Grassi L, Riba M, eds. Psychopharmacology in Oncology and Palliative Care: A Practical Manual. Springer; 2014.",
+  };
+  sources.cordas2020 = sources.cordas2020 || {
+    short: "Cordás e colaboradores, Prática Psiquiátrica em Oncologia",
+    full: "Cordás TA, Soares SMSR, Fraguas Jr R, orgs. Prática psiquiátrica em oncologia. Porto Alegre: Artmed; 2020.",
+  };
   const refs = window.PHARMA_REFS || {};
   refs.paciente = {
     paths: [
@@ -224,7 +304,9 @@
       { about: "Diabetes e obesidade: antipsicóticos de menor risco metabólico e ranking de ganho de peso", src: "maudsleyPhysical", where: "caps. 11 e 14", kind: "fonte" },
       { about: "Remédios que baixam o limiar convulsivo (alto, moderado, baixo)", src: "maudsleyPhysical", where: "cap. 53, quadro 53.2", kind: "fonte" },
       { about: "Retenção urinária e anticolinérgicos", src: "maudsleyPhysical", where: "cap. 29", kind: "fonte" },
-      { about: "Tamoxifeno e inibidores da CYP2D6; mirtazapina no câncer", src: "medicallyIll", where: "cap. 8, Oncology", kind: "fonte" },
+      { about: "Tamoxifeno: inibidores fortes e moderados da CYP2D6; venlafaxina e desvenlafaxina como primeira escolha; mirtazapina na náusea, insônia e caquexia; fluoxetina e sertralina reduzindo o apetite", src: "cordas2020", where: "cap. 2 (Depressão e oncologia) e cap. 9, quadro 9.1", kind: "fonte" },
+      { about: "Debate sobre o peso clínico da interação com tamoxifeno; bupropiona em tumor cerebral, na fadiga e na caquexia; antidepressivos duais na dor neuropática; fogachos; interações com quimioterápicos", src: "grassiRiba", where: "caps. 9 e 10, tabelas 9.3 e 9.4", kind: "fonte" },
+      { about: "Tamoxifeno (evitar todos os inibidores da CYP2D6); mirtazapina no câncer; quimioterapia que deprime a medula", src: "medicallyIll", where: "caps. 8 e 14", kind: "fonte" },
       { about: "Doenças reumatológicas: AINE, metotrexato, hidroxicloroquina e lúpus induzido", src: "medicallyIll", where: "cap. 14 e tabela 14-2", kind: "fonte" },
       { about: "Lítio com AINE", src: "maudsley15", where: "cap. 2, interações do lítio", kind: "fonte" },
       { about: "Prioridades (peso, sedação, disfunção sexual, prolactina, anticolinérgico, hipotensão, náusea)", src: "curadoria", where: "níveis de efeito das telas de cada classe, com as fontes delas", kind: "didatico" },

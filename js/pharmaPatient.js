@@ -17,8 +17,10 @@ function pharmaComorbReasons(item, p) {
     if (!cond) return;
     const rules = cond.rules[item.cls.id] || {};
     [["prefer", "good"], ["caution", "caution"], ["avoid", "avoid"]].forEach(([key, kind]) => {
-      (rules[key] || []).forEach(([ids, text]) => {
-        if (ids.includes(item.drug.id)) out.push({ kind, cond: cond.label, text, src: pharmaComorbSrc(cond) });
+      (rules[key] || []).forEach(([ids, text, srcKey, where]) => {
+        if (!ids.includes(item.drug.id)) return;
+        const src = srcKey ? `${data.sources[srcKey] || srcKey}, ${where}` : pharmaComorbSrc(cond);
+        out.push({ kind, cond: cond.label, text, src });
       });
     });
     (cond.effects || []).forEach((hook) => {
@@ -99,7 +101,7 @@ function pharmaPatientRow(row) {
 function pharmaPatientResults(clsId, p) {
   const rows = pharmaPatientEvaluate(clsId, p);
   const data = window.PHARMA_COMORB;
-  const notes = p.comorb.map((id) => data.conditions.find((c) => c.id === id)).filter((c) => c && c.note && !(c.rules[clsId])).map((c) => `<b>${escapeHtml(c.label)}:</b> ${escapeHtml(c.note)}`);
+  const notes = p.comorb.map((id) => data.conditions.find((c) => c.id === id)).filter((c) => c && c.note && (c.noteAll || !c.rules[clsId])).map((c) => `<b>${escapeHtml(c.label)}:</b> ${escapeHtml(c.note)}`);
   const noRules = p.comorb.map((id) => data.conditions.find((c) => c.id === id)).filter((c) => c && !c.rules[clsId] && !c.note && !(c.effects || []).some((h) => h.classes.includes(clsId))).map((c) => c.label);
   const groups = [
     ["good", "Mais favoráveis", "Têm ponto a favor para este perfil e nenhum alerta."],
