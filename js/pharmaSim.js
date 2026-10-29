@@ -438,7 +438,7 @@ function pharmaStudyLink(drug) {
       <span class="pharma-study-tag">Estudo</span>
       <span>${count ? `${pluralize(count, "questão do banco cita", "questões do banco citam")} ${escapeHtml(drug.name.toLowerCase())}` : `Nenhuma questão do banco cita ${escapeHtml(drug.name.toLowerCase())} ainda`}</span>
       <span aria-hidden="true">›</span>
-    </button>${typeof pharmaSafetyChips === "function" ? pharmaSafetyChips(drug) : ""}`;
+    </button>${typeof pharmaSafetyChips === "function" ? pharmaSafetyChips(drug) : ""}${typeof pharmaPopulationsBlock === "function" ? pharmaPopulationsBlock(drug) : ""}`;
 }
 
 function pharmaDrugChips(selected) {

@@ -831,6 +831,21 @@ test("simulador de fármacos: ferramenta de segurança", async ({ page }) => {
   await expect(page.locator(".safety-detail h3")).toHaveText("Agranulocitose");
   expect(errors).toEqual([]);
 });
+test("simulador de fármacos: populações especiais", async ({ page }) => {
+  const errors = await openSite(page);
+  await goTab(page, "pharma");
+  await page.locator("[data-pharma-safety-open]").first().click();
+  await page.locator('[data-safety-event="snm"]').click();
+  await page.locator('[data-safety-drug="antipsicoticos:clozapina"]').click();
+  await expect(page.locator(".pop-block")).toContainText("Populações especiais");
+  await page.locator('.pop-block [data-pop-field="i"]').click();
+  await expect(page.locator(".pop-detail")).toContainText("12,5 mg");
+  await page.locator('.pop-block [data-pop-field="g"]').click();
+  await expect(page.locator(".pop-detail")).toContainText("CANMAT");
+  await page.locator('.pop-block [data-pop-field="g"]').click();
+  await expect(page.locator(".pop-detail")).toHaveCount(0);
+  expect(errors).toEqual([]);
+});
 test("simulador de fármacos: cartão explicativo de cada alvo", async ({ page }) => {
   const errors = await openSite(page);
   await goTab(page, "pharma");
