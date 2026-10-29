@@ -90,6 +90,10 @@ window.PHARMA_SOURCES = {
     short: "Oxford Textbook of Neuropsychiatry",
     full: "Agrawal N, Faruqui R, Bodani M, eds. Oxford Textbook of Neuropsychiatry. Oxford University Press; 2020.",
   },
+  balon2023: {
+    short: "Balon e Morreale, Pocket Guide, 2023",
+    full: "Balon R, Morreale MK, eds. Pocket Guide to Emergent and Serious Adverse Events in Psychopharmacology. Washington, DC: American Psychiatric Association Publishing; 2023.",
+  },
   narita1996: {
     short: "Narita et al., 1996",
     full: "Narita N, Hashimoto K, Tomitaka S, Minabe Y. Interactions of selective serotonin reuptake inhibitors with subtypes of sigma receptors in rat brain. Eur J Pharmacol. 1996;307(1):117-119.",
@@ -333,6 +337,21 @@ window.PHARMA_REFS = {
       { about: "Fibras da face, do braço e da perna juntas na cápsula interna; sensibilidade pelos ramos para o tálamo", src: "curadoria", where: "dedução anatômica a partir dos territórios do Machado, cap. 18", kind: "didatico" },
       { about: "Mapas da face lateral e do corte coronal, bonequinho e regra prática", src: "curadoria", where: "limites entre territórios simplificados", kind: "didatico" },
       { about: "Correlações com quadros psiquiátricos (afasia × fala desorganizada, anosognosia, aprosódia, cegueira funcional)", src: "curadoria", where: "comentário clínico", kind: "didatico" },
+    ],
+  },
+  seguranca: {
+    paths: [
+      { about: "Síndrome neuroléptica maligna: quadro, critérios, exames, fatores de risco, conduta (lorazepam, dantroleno, bromocriptina, amantadina, ECT) e reintrodução", src: "balon2023", where: "cap. 10", kind: "fonte" },
+      { about: "Síndrome serotoninérgica: critérios de Hunter (sensibilidade 84%, especificidade 97%), diferencial com SNM e conduta (ciproeptadina nos leves a moderados)", src: "balon2023", where: "cap. 16", kind: "fonte" },
+      { about: "Agranulocitose: definição pelos neutrófilos, incidência com clozapina (0,65–0,80% ao ano; 0,91% em 1,5 ano), outros remédios e fatores de risco", src: "balon2023", where: "cap. 3", kind: "fonte" },
+      { about: "QT longo e torsades (metas de potássio e magnésio), citalopram e escitalopram, miocardite por clozapina e monitorização nas 4 primeiras semanas", src: "balon2023", where: "cap. 5", kind: "fonte" },
+      { about: "Crise hipertensiva com IMAO: alimentos com tiramina, simpaticomiméticos, definição e conduta (fentolamina, nicardipina)", src: "balon2023", where: "cap. 8", kind: "fonte" },
+      { about: "Hiponatremia: remédios, fatores de risco (diurético 11–13 vezes), quando dosar o sódio e alternativas", src: "balon2023", where: "cap. 9", kind: "fonte" },
+      { about: "Hepatotoxicidade: definição, padrões, valproato, carbamazepina, antidepressivos de maior e menor risco, quando suspender", src: "balon2023", where: "cap. 7", kind: "fonte" },
+      { about: "Benzodiazepínico com opioide: depressão respiratória somada e risco crescente com a dose", src: "balon2023", where: "cap. 4", kind: "fonte" },
+      { about: "Convulsões: bupropiona (0,4%), tricíclicos de maior risco, clozapina dose-dependente e titulação de 25 mg/dia", src: "balon2023", where: "cap. 15", kind: "fonte" },
+      { about: "Intoxicações por antidepressivos, lítio e antipsicóticos: observação, ECG, bicarbonato, magnésio, fisostigmina, lítio (tubo, soro, hemodiálise)", src: "balon2023", where: "cap. 12", kind: "fonte" },
+      { about: "Lista de remédios do simulador ligados a cada evento e resumo dos sinais", src: "curadoria", where: "a partir dos capítulos acima", kind: "didatico" },
     ],
   },
   troca: {

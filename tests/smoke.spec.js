@@ -809,6 +809,18 @@ test("simulador de fármacos: troca de antidepressivo", async ({ page }) => {
   await expect(page.locator('[data-pharma-switch="from"]')).toHaveValue("duloxetina");
   expect(errors).toEqual([]);
 });
+test("simulador de fármacos: ferramenta de segurança", async ({ page }) => {
+  const errors = await openSite(page);
+  await goTab(page, "pharma");
+  await page.locator("[data-pharma-safety-open]").first().click();
+  await page.locator('[data-safety-event="snm"]').click();
+  await expect(page.locator(".safety-detail")).toContainText("Dantroleno");
+  await page.locator('[data-safety-drug="antipsicoticos:clozapina"]').click();
+  await expect(page.locator(".pharma-safety-chips")).toContainText("Agranulocitose");
+  await page.locator('.pharma-safety-chips [data-pharma-safety-open="agranulocitose"]').click();
+  await expect(page.locator(".safety-detail h3")).toHaveText("Agranulocitose");
+  expect(errors).toEqual([]);
+});
 test("simulador de fármacos: cartão explicativo de cada alvo", async ({ page }) => {
   const errors = await openSite(page);
   await goTab(page, "pharma");

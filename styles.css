@@ -9569,3 +9569,102 @@ body.theme-dark .pharma-chip.on {
   flex-wrap: wrap;
   gap: 6px;
 }
+
+/* Segurança: eventos graves. */
+.safety-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.safety-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  align-items: start;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--c);
+  border-radius: 12px;
+  background: var(--panel);
+  color: var(--ink);
+  text-align: left;
+  font: inherit;
+  cursor: pointer;
+}
+
+.safety-card.on {
+  background: var(--panel-soft);
+  box-shadow: 0 0 0 2px var(--c);
+}
+
+.safety-tag {
+  min-width: 42px;
+  padding: 4px 6px;
+  border-radius: 8px;
+  background: var(--c);
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.safety-text {
+  display: grid;
+  gap: 2px;
+}
+
+.safety-text small {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.safety-detail {
+  border-top: 4px solid var(--c);
+}
+
+.safety-onset {
+  margin: 0 0 10px;
+  font-size: 13px;
+}
+
+.safety-drugs {
+  display: grid;
+  gap: 4px;
+  margin-bottom: 10px;
+}
+
+.safety-class {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.safety-drugs small {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.pharma-safety-chips {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.pharma-safety-chips b {
+  color: #c2410c;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.pharma-safety-chips i {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 6px;
+  border-radius: 50%;
+}
