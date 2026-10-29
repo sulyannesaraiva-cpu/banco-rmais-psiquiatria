@@ -809,6 +809,16 @@ test("simulador de fármacos: troca de antidepressivo", async ({ page }) => {
   await expect(page.locator('[data-pharma-switch="from"]')).toHaveValue("duloxetina");
   expect(errors).toEqual([]);
 });
+test("interações: tabagismo muda o nível da clozapina", async ({ page }) => {
+  const errors = await openSite(page);
+  await goTab(page, "pharma");
+  await page.locator('[data-pharma-cross-open="inter"]').click();
+  await page.locator("[data-pharma-cross-add]").selectOption("clozapina");
+  await page.locator("[data-pharma-smoking]").selectOption("parou");
+  await expect(page.locator("#pharmaPanel")).toContainText("Clozapina e tabagismo");
+  await expect(page.locator("#pharmaPanel")).toContainText("75% da original");
+  expect(errors).toEqual([]);
+});
 test("simulador de fármacos: ferramenta de segurança", async ({ page }) => {
   const errors = await openSite(page);
   await goTab(page, "pharma");

@@ -94,6 +94,10 @@ window.PHARMA_SOURCES = {
     short: "Balon e Morreale, Pocket Guide, 2023",
     full: "Balon R, Morreale MK, eds. Pocket Guide to Emergent and Serious Adverse Events in Psychopharmacology. Washington, DC: American Psychiatric Association Publishing; 2023.",
   },
+  ghaemi2024: {
+    short: "Ghaemi, 2024",
+    full: "Ghaemi SN. The pseudoscience of lithium and suicide: reanalysis of a misleading meta-analysis. J Psychopharmacol. 2024. doi:10.1177/02698811241257833",
+  },
   narita1996: {
     short: "Narita et al., 1996",
     full: "Narita N, Hashimoto K, Tomitaka S, Minabe Y. Interactions of selective serotonin reuptake inhibitors with subtypes of sigma receptors in rat brain. Eur J Pharmacol. 1996;307(1):117-119.",
@@ -149,6 +153,7 @@ window.PHARMA_REFS = {
     ],
     eps: [
       { about: "Sinais, escalas, prevalência, tempo de início e conduta", src: "maudsley15", where: "tabela 1.28", kind: "fonte" },
+      { about: "Distonia aguda: tempo de início (50% em 48 h, 90% em 5 dias), fatores de risco, distonia laríngea como emergência e profilaxia de 4 a 7 dias; discinesia tardia: AIMS em toda consulta e inibidor de VMAT2", src: "balon2023", where: "caps. 1 e 18", kind: "fonte" },
       { about: "Tratamento da acatisia (propranolol, clonazepam, antagonistas 5-HT2)", src: "maudsley15", where: "notas do algoritmo da acatisia (cap. 1)", kind: "fonte" },
       { about: "Risco do remédio escolhido", src: "maudsley15", where: "tabela 1.7", kind: "fonte" },
       { about: "Linha do tempo", src: "curadoria", where: "janelas aproximadas a partir da tabela 1.28", kind: "didatico" },
@@ -178,6 +183,7 @@ window.PHARMA_REFS = {
   },
   estabilizadores: {
     paths: [
+      { about: "Lítio e suicídio: metanálise de 2022 sem efeito significativo e reanálise que sustenta o benefício", src: "ghaemi2024", where: "artigo de perspectiva (J Psychopharmacol)", kind: "fonte" },
       { about: "Explicação de cada alvo (o que é, o que o remédio faz, efeito desejado, efeitos indesejados, na prática)", src: "curadoria", where: "resumo a partir de Stahl's Essential Psychopharmacology (5ª ed.), do Prescriber's Guide (8ª ed.) e do Maudsley (15ª ed.)", kind: "didatico" },
       { about: "Alvos (canais de sódio e cálcio, glutamato, GABA, vias intracelulares)", src: "stahl8", where: "monografias", kind: "didatico", note: "Intensidade de cada mecanismo em níveis resumidos." },
       { about: "Fases em que cada um funciona e efeitos", src: "maudsley15", where: "cap. 2", kind: "fonte" },

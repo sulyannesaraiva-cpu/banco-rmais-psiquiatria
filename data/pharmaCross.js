@@ -65,3 +65,37 @@ window.PHARMA_CROSS = {
     },
   },
 };
+
+/* Tabagismo (Maudsley 15ª ed., cap. 11, "Smoking and psychotropic drugs" e tabela 11.7;
+   Levenson e Ferrando, Psychopharmacology in the Medically Ill, 3ª ed., apêndice B).
+   Os hidrocarbonetos policíclicos da fumaça (não a nicotina) induzem a CYP1A2 (e talvez 2C19,
+   3A4 e UGT). Clozapina e olanzapina têm números próprios na tabela; os demais aparecem como
+   afetados, sem número. */
+window.PHARMA_CROSS.smoking = {
+  options: [
+    { id: "", label: "Tabagismo: não considerar" },
+    { id: "fuma", label: "Fuma tabaco" },
+    { id: "parou", label: "Parou de fumar agora" },
+    { id: "voltou", label: "Voltou a fumar" },
+  ],
+  strong: {
+    clozapina: {
+      fuma: "A fumaça reduz o nível de clozapina em até 50%; o efeito já é máximo com 2 a 5 cigarros por dia.",
+      parou: "Dosar o nível antes de parar; reduzir a dose aos poucos, em 1 semana, até cerca de 75% da original; repetir o nível 1 semana depois e esperar novas reduções. Sem ajuste, o nível sobe e pode intoxicar.",
+      voltou: "Dosar o nível antes; voltar à dose de fumante em 1 semana e repetir o nível. Piora clínica é comum se a dose não acompanhar a queda do nível.",
+    },
+    olanzapina: {
+      fuma: "A fumaça reduz o nível de olanzapina em até 50%, mais quanto mais cigarros.",
+      parou: "Dosar o nível antes de parar; reduzir a dose em 25%; repetir o nível 1 semana depois e considerar novas reduções.",
+      voltou: "Dosar o nível antes; voltar à dose de fumante em 1 semana e repetir o nível.",
+    },
+  },
+  affected: ["agomelatina", "carbamazepina", "clorpromazina", "duloxetina", "escitalopram", "flufenazina", "fluvoxamina", "haloperidol", "mirtazapina", "risperidona", "trazodona", "amitriptilina", "nortriptilina", "clomipramina", "imipramina", "diazepam", "clonazepam", "alprazolam", "lorazepam", "bromazepam", "clordiazepoxido", "midazolam"],
+  general: {
+    fuma: "o fumo de tabaco reduz o nível desses remédios: fumantes podem precisar de doses maiores.",
+    parou: "ao parar de fumar, a indução some em dias (a atividade da enzima cai pela metade a cada 2 dias, mais ou menos) e o nível sobe: acompanhar efeitos adversos e reduzir a dose se preciso.",
+    voltou: "ao voltar a fumar, o nível cai: acompanhar e considerar voltar à dose usada quando fumava.",
+  },
+  note: "Reposição de nicotina, vape e cigarro eletrônico não induzem a enzima; cigarro de maconha com tabaco induz.",
+  source: "Maudsley 15ª ed., cap. 11, Smoking and psychotropic drugs e tabela 11.7; Levenson e Ferrando, Psychopharmacology in the Medically Ill (3ª ed., 2024), apêndice B",
+};

@@ -2242,6 +2242,24 @@ function pharmaCrossInteractions(picks) {
   return unique;
 }
 
+/* Avisos de tabagismo (indução da CYP1A2 pela fumaça) para os remédios escolhidos. */
+function pharmaSmokingWarnings(picks, smokingState) {
+  const smoke = window.PHARMA_CROSS.smoking;
+  if (!smoke || !smokingState || !picks.length) return [];
+  const name = (id) => pharmaFindDrug(id)?.drug.name || id;
+  const out = [];
+  picks.filter((id) => smoke.strong[id]).forEach((id) => {
+    out.push({ tone: smokingState === "parou" ? "high" : "warn", title: `${name(id)} e tabagismo`, text: `${smoke.strong[id][smokingState]} ${smoke.note}`, source: smoke.source });
+  });
+  const others = picks.filter((id) => !smoke.strong[id] && smoke.affected.includes(id));
+  if (others.length) {
+    const list = others.map((id) => name(id).toLowerCase()).join(", ").replace(/, ([^,]*)$/, " e $1");
+    out.push({ tone: "warn", title: "Tabagismo muda o nível", text: `${list.charAt(0).toUpperCase() + list.slice(1)}: ${smoke.general[smokingState]} ${smoke.note}`, source: smoke.source });
+  }
+  if (!out.length) out.push({ tone: "good", title: "Tabagismo", text: "Nenhum dos remédios escolhidos está na lista de afetados pelo fumo (Maudsley, tabela 11.7).", source: smoke.source });
+  return out;
+}
+
 function renderCrossInteractions() {
   const picks = state.pharma.crossPicks || [];
   const groups = Object.values(window.PHARMA_SIM).map((cls) => `<optgroup label="${escapeHtml(cls.label)}">${cls.drugs.filter((drug) => !picks.includes(drug.id)).map((drug) => `<option value="${drug.id}">${escapeHtml(drug.name)}</option>`).join("")}</optgroup>`).join("");
@@ -2249,6 +2267,10 @@ function renderCrossInteractions() {
   const results = picks.length >= 2 ? pharmaCrossInteractions(picks) : [];
   const rank = { high: 0, warn: 1, ok: 2, good: 3 };
   results.sort((a, b) => rank[a.tone] - rank[b.tone]);
+  const smoke = window.PHARMA_CROSS.smoking;
+  const smokingState = smoke && smoke.options.some((o) => o.id === state.pharma.smoking) ? state.pharma.smoking : "";
+  const smokingResults = pharmaSmokingWarnings(picks, smokingState);
+  const card = (item) => `<div class="pharma-reading tone-${item.tone}"><strong>${escapeHtml(item.title)}</strong><span>${escapeHtml(item.text)}</span><small class="cross-source">Fonte: ${escapeHtml(item.source)}</small></div>`;
   return `
     <section class="pharma-card">
       <div class="pharma-card-head"><h3>Interações · escolha de 2 a 3 remédios</h3><span>${picks.length} de 3</span></div>
@@ -2256,8 +2278,10 @@ function renderCrossInteractions() {
         ${chips}
         ${picks.length < 3 ? `<select data-pharma-cross-add aria-label="Adicionar remédio"><option value="">+ remédio</option>${groups}</select>` : ""}
       </div>
+      ${smoke ? `<div class="cross-smoking"><select data-pharma-smoking aria-label="Tabagismo">${smoke.options.map((o) => `<option value="${o.id}" ${o.id === smokingState ? "selected" : ""}>${escapeHtml(o.label)}</option>`).join("")}</select></div>` : ""}
+      ${smokingResults.map(card).join("")}
       ${picks.length < 2
-        ? '<p class="pharma-extra">Escolha pelo menos dois remédios, de qualquer classe.</p>'
+        ? `<p class="pharma-extra">Escolha pelo menos dois remédios, de qualquer classe${smoke ? ", ou um remédio com o tabagismo" : ""}.</p>`
         : results.length
         ? results.map((item) => `<div class="pharma-reading tone-${item.tone}"><strong>${escapeHtml(item.title)}</strong><span>${escapeHtml(item.text)}</span><small class="cross-source">Fonte: ${escapeHtml(item.source)}</small></div>`).join("")
         : '<div class="pharma-reading tone-good"><strong>Nenhuma interação desta lista</strong><span>Não há regra para esta combinação aqui. Isso não garante que não exista interação.</span></div>'}
@@ -2905,6 +2929,18 @@ function openPharmaStudy(drug) {
     if (!target) return;
     const id = target.dataset.pharmaTarget;
     state.pharma.target = id && state.pharma.target !== id ? id : null;
+    savePharmaState();
+    renderPharmaPanel();
+  });
+})();
+
+/* Seletor de tabagismo nas Interações. */
+(function setupPharmaSmoking() {
+  const panel = document.querySelector("#pharmaPanel");
+  if (!panel) return;
+  panel.addEventListener("change", (event) => {
+    if (!event.target.matches("[data-pharma-smoking]")) return;
+    state.pharma.smoking = event.target.value;
     savePharmaState();
     renderPharmaPanel();
   });

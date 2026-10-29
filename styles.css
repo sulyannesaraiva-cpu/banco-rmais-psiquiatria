@@ -9668,3 +9668,11 @@ body.theme-dark .pharma-chip.on {
   margin-right: 6px;
   border-radius: 50%;
 }
+
+.cross-smoking {
+  margin: 8px 0;
+}
+
+.cross-smoking select {
+  max-width: 100%;
+}

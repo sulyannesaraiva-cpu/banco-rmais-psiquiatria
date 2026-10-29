@@ -190,7 +190,7 @@
         name: "Sinalização dentro da célula",
         what: "Vias de segundos mensageiros (inositol, enzima GSK-3, proteína quinase C) que regulam genes e a sobrevivência do neurônio.",
         action: "O lítio inibe a GSK-3 e a reciclagem do inositol.",
-        good: "Estabilização do humor, redução do risco de suicídio e possível efeito neuroprotetor.",
+        good: "Estabilização do humor, redução do risco de suicídio e possível efeito neuroprotetor. O efeito contra o suicídio foi questionado por uma metanálise de 2022 (Nabi e colaboradores), mas a reanálise de Ghaemi (2024), juntando os ensaios, sustenta o benefício.",
         bad: "Os efeitos do lítio dependem do nível no sangue: tremor, poliúria e sede, hipotireoidismo, alterações renais; toxicidade com nível alto.",
         clinic: "Por isso o lítio exige dosagem de nível sérico, função renal e da tireoide (ver Nível sérico).",
       },

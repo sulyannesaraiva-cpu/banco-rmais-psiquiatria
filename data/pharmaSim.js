@@ -145,9 +145,9 @@ window.PHARMA_SIM.antipsicoticos = {
     {
       id: "distonia", name: "Distonia aguda", color: "#d55e00", from: 0.2, to: 120, when: "Horas depois de iniciar (minutos se IM ou IV)",
       signs: "Espasmo muscular: olhos virados para cima (crise oculógira), pescoço torcido (torcicolo), dificuldade para engolir ou falar; em casos extremos, arqueamento das costas ou luxação da mandíbula. Dói e assusta.",
-      risk: "Cerca de 10%; mais em homens jovens, em quem nunca usou antipsicótico e com alta potência (haloperidol). Rara em idosos.",
+      risk: "Cerca de 10%; mais em homens jovens (sobretudo 12 a 19 anos), em quem nunca usou antipsicótico e com alta potência (haloperidol). Também: distonia prévia, uso de cocaína, hipocalcemia e desidratação. Rara em idosos. Metade dos casos nas primeiras 48 horas e até 90% nos primeiros 5 dias.",
       scale: "Sem escala específica (parte das escalas gerais de extrapiramidais).",
-      steps: ["Anticolinérgico (ex.: biperideno) oral, IM ou IV conforme a gravidade.", "Lembrar que o paciente pode não conseguir engolir.", "Resposta em ~5 minutos (IV) ou ~20 minutos (IM)."],
+      steps: ["Anticolinérgico (ex.: biperideno) oral, IM ou IV conforme a gravidade.", "Lembrar que o paciente pode não conseguir engolir.", "Resposta em ~5 minutos (IV) ou ~20 minutos (IM).", "Distonia laríngea (rouquidão, estridor) é emergência: anticolinérgico IV, oxigênio e intubação se necessário.", "Depois do episódio, manter anticolinérgico oral por 4 a 7 dias para evitar recorrência."],
       caution: "Pior com antipsicótico de alta potência no início do tratamento.",
       effect: "parkinsonism",
     },
