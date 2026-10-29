@@ -18,8 +18,10 @@ window.ATLAS = {
   classicModules: [
     { id: "vias-longas", tag: "M/S", color: "#c2410c", title: "Vias motoras e sensitivas", text: "Corticoespinal · coluna dorsal · espinotalâmica · Brown-Séquard", ready: true },
     { id: "via-optica", tag: "◉", color: "#0072b2", title: "Via óptica", text: "Do nervo óptico ao córtex · defeitos de campo visual", ready: true },
+    { id: "nervos-cranianos", tag: "NC", color: "#b0418a", title: "Nervos cranianos e tronco encefálico", text: "Síndromes alternas · Weber, Wallenberg · paralisia facial", ready: true },
+    { id: "territorios-arteriais", tag: "AV", color: "#009e73", title: "Territórios arteriais", text: "Cerebrais anterior, média e posterior · ramos profundos", ready: true },
   ],
-  classic: ["Nervos cranianos", "Territórios arteriais"],
+  classic: [],
   basal: {
     nodes: {
       cortex: { label: "Córtex motor", sub: "e pré-frontal", x: 40, y: 24, w: 680, h: 62 },

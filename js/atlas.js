@@ -37,7 +37,7 @@ function renderAtlasHome() {
     <div class="pharma-hub-list">${window.ATLAS.modules.map(card).join("")}</div>
     <p class="atlas-group">Vias e lesões</p>
     <div class="pharma-hub-list">${window.ATLAS.classicModules.map(card).join("")}</div>
-    <div class="atlas-soon">${window.ATLAS.classic.map((name) => `<span>${escapeHtml(name)} · em breve</span>`).join("")}</div>
+    ${window.ATLAS.classic.length ? `<div class="atlas-soon">${window.ATLAS.classic.map((name) => `<span>${escapeHtml(name)} · em breve</span>`).join("")}</div>` : ""}
     <p class="pharma-disclaimer">Esquemas didáticos, desenhados para este site e conferidos com as fontes citadas em cada módulo.</p>`;
 }
 

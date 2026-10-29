@@ -242,6 +242,25 @@ window.PHARMA_REFS = {
       { about: "Desenho da via vista de cima e dos campos visuais", src: "curadoria", where: "esquema sem sobreposição dos campos dos dois olhos", kind: "didatico" },
     ],
   },
+  "atlas-nervos-cranianos": {
+    paths: [
+      { about: "Síndromes de Parinaud, Benedikt, Weber, Millard-Gubler, lesão da ponte no nível do trigêmeo, encarceramento (locked-in), base do bulbo e Wallenberg", src: "machado", where: "cap. 19, Considerações anatomoclínicas sobre a medula e o tronco encefálico", kind: "fonte" },
+      { about: "Paralisia facial central × periférica (metade superior da face, reflexo corneano, movimentos emocionais, gustação)", src: "machado", where: "cap. 19", kind: "fonte" },
+      { about: "Nervo craniano do mesmo lado e hemiparesia do lado oposto; Wallenberg como infarto de tronco mais comum; ausência de afasia nas lesões do tronco", src: "kaufman", where: "cap. 11, Infarctions in the basilar artery distribution e tabela 11-4", kind: "fonte" },
+      { about: "Funções e nível de saída de cada nervo craniano", src: "machado", where: "caps. 5 e 15 (anatomia do tronco e nervos cranianos)", kind: "fonte" },
+      { about: "Vista anterior, cortes do tronco, posição dos núcleos e desenho da face", src: "curadoria", where: "esquema que junta estruturas de alturas diferentes do mesmo nível", kind: "didatico" },
+    ],
+  },
+  "atlas-territorios": {
+    paths: [
+      { about: "Territórios e quadros das artérias cerebrais anterior (incluindo o ramo recorrente e o corpo caloso), média (lado esquerdo e direito, ramos profundos) e coróidea anterior", src: "machado", where: "cap. 18, Vascularização do sistema nervoso central", kind: "fonte" },
+      { about: "Cerebral posterior: hemianopsia homônima, alexia sem agrafia, cegueira cortical; amnésia global transitória; cerebral anterior bilateral (mutismo, apatia, incontinência)", src: "kaufman", where: "cap. 11, tabela 11-4 e seção Transient Global Amnesia", kind: "fonte" },
+      { about: "Pupilas que reagem à luz na cegueira cortical", src: "machado", where: "cap. 29, item 3.6.3 (fibras do reflexo fotomotor saem antes do corpo geniculado lateral)", kind: "fonte" },
+      { about: "Fibras da face, do braço e da perna juntas na cápsula interna; sensibilidade pelos ramos para o tálamo", src: "curadoria", where: "dedução anatômica a partir dos territórios do Machado, cap. 18", kind: "didatico" },
+      { about: "Mapas da face lateral e do corte coronal, bonequinho e regra prática", src: "curadoria", where: "limites entre territórios simplificados", kind: "didatico" },
+      { about: "Correlações com quadros psiquiátricos (afasia × fala desorganizada, anosognosia, aprosódia, cegueira funcional)", src: "curadoria", where: "comentário clínico", kind: "didatico" },
+    ],
+  },
   troca: {
     paths: [
       { about: "Conduta para cada par de antidepressivos, intervalos e notas (fluoxetina, fluvoxamina, bupropiona, vortioxetina, duloxetina, imipramina)", src: "maudsley15", where: "cap. 3, Switching antidepressants, tabela 3.7", kind: "fonte" },

@@ -742,6 +742,27 @@ test("atlas de vias: vias longas (Brown-Séquard) e via óptica", async ({ page 
   await expect(page.locator(".field-quad.blind")).toHaveCount(4);
   expect(errors).toEqual([]);
 });
+test("atlas de vias: nervos cranianos e territórios arteriais", async ({ page }) => {
+  const errors = await openSite(page);
+  await goTab(page, "pharma");
+  await page.locator('[data-sim-section="atlas"]').click();
+  await page.locator('[data-atlas-module="nervos-cranianos"]').click();
+  await expect(page.locator("#pharmaPanel")).toContainText("Nervos do tronco, por nível");
+  await page.locator('.cn-buttons [data-atlas-cn="wallenberg"]').click();
+  await expect(page.locator("#pharmaPanel")).toContainText("Síndrome de Horner");
+  await expect(page.locator(".cn-part.hit")).toHaveCount(4);
+  await page.locator('[data-atlas-face="central"]').click();
+  await expect(page.locator("#pharmaPanel")).toContainText("Só a metade inferior da face");
+  await page.locator("[data-atlas-home]").click();
+  await page.locator('[data-atlas-module="territorios-arteriais"]').click();
+  await page.locator('[data-atlas-artery="acp-bi"]').click();
+  await expect(page.locator("#pharmaPanel")).toContainText("Cegueira cortical");
+  await expect(page.locator(".field-quad.blind")).toHaveCount(8);
+  await page.locator('[data-atlas-artery="aca"]').click();
+  await page.locator('[data-atlas-module="frontoestriatais"]').click();
+  await expect(page.locator("#pharmaPanel h2")).toHaveText("Circuitos frontoestriatais");
+  expect(errors).toEqual([]);
+});
 test("simulador de fármacos: troca de antidepressivo", async ({ page }) => {
   const errors = await openSite(page);
   await goTab(page, "pharma");
