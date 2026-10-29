@@ -548,6 +548,116 @@ function renderTaper(cls, drugs) {
     </div>`;
 }
 
+/* ---------- Retirar antidepressivo: ritmos do Maudsley Deprescribing Guidelines ---------- */
+
+function adTaperModel(drugId) {
+  const m = (window.PHARMA_DOSE.adTaper || {})[drugId];
+  if (!m || !m.emax) return null;
+  return {
+    target: m.target,
+    occ: (d) => (d <= 0 ? 0 : (m.emax * d) / (d + m.k)),
+    dose: (o) => (m.k * o) / (m.emax - o),
+  };
+}
+
+/* Degraus: perder no máximo "pp" pontos de ocupação por vez (curva do livro) ou, nos remédios
+   sem curva, os degraus do livro com degraus intermediários nos ritmos mais lentos. */
+function adTaperSteps(drugId, dose, speed) {
+  const m = window.PHARMA_DOSE.adTaper[drugId];
+  const model = adTaperModel(drugId);
+  if (model) {
+    const pp = m.pp[speed];
+    const steps = [dose];
+    let d = dose;
+    let o = model.occ(dose);
+    for (let i = 0; i < 80; i += 1) {
+      o -= pp;
+      if (o <= pp * 0.4) break;
+      /* Nas doses altas a curva é plana: no máximo metade da dose por degrau, como no livro. */
+      d = Math.max(model.dose(o), d / 2);
+      o = model.occ(d);
+      steps.push(Number(d.toPrecision(2)));
+    }
+    return steps;
+  }
+  let steps = [dose, ...m.steps.filter((s) => s < dose * 0.95)];
+  for (let r = 0; r < speed; r += 1) {
+    const next = [];
+    steps.forEach((s, i) => {
+      next.push(s);
+      const after = steps[i + 1];
+      next.push(Number((after ? Math.sqrt(s * after) : s / 2).toPrecision(2)));
+    });
+    steps = next;
+  }
+  return steps;
+}
+
+function renderTaperAd(drugs) {
+  const data = window.PHARMA_DOSE;
+  const ad = data.adTaper;
+  const t = taperState("ad");
+  const drugId = drugs.some((item) => item.id === t.drug) ? t.drug : "sertralina";
+  const drug = drugs.find((item) => item.id === drugId);
+  const m = ad[drugId];
+  const model = adTaperModel(drugId);
+  const dose = doseCurrent(drugId);
+  const risk = taperRisk("ad", drugId, t);
+  const suggested = { low: 0, mid: 1, high: 2 }[risk.level];
+  const speed = [0, 1, 2].includes(t.speed) ? t.speed : suggested;
+  const weeks = [2, 4].includes(Number(t.weeks)) ? Number(t.weeks) : 2;
+  const steps = adTaperSteps(drugId, dose, speed);
+  const months = Math.round((steps.length * weeks) / 4.3);
+  const bookMonths = (m.months || ad.defaultMonths)[speed];
+  const shown = steps.length > 14 ? [...steps.slice(0, 9).map((d, i) => [i, d]), null, ...steps.slice(-4).map((d, i) => [steps.length - 4 + i, d])] : steps.map((d, i) => [i, d]);
+  const practicalCol = Boolean((window.PHARMA_BRAZIL || {})[drugId]?.liquid);
+  const target = model ? { label: `ocupação do ${m.target} (curva do livro)`, occ: model.occ } : null;
+  const speedText = (i) => (model ? `até ${doseNum(m.pp[i])} pontos de ${m.target} por degrau` : `${["degraus do livro", "um degrau intermediário entre os do livro", "três degraus intermediários entre os do livro"][i]}`);
+  const tone = risk.level === "high" ? "high" : risk.level === "mid" ? "warn" : "ok";
+  return `
+    <div class="pharma-grid">
+      <section class="pharma-card">
+        <div class="switch-pick">
+          <label><span>Remédio</span><select data-taper-field="drug">${drugOptions(drugs, drugId)}</select></label>
+          ${doseInputHtml(drugId, "taper")}
+        </div>
+        <div class="switch-pick taper-risk">
+          <label><span>Tempo de uso</span><select data-taper-field="use">${taperUseOptions("ad", t.use)}</select></label>
+          <label class="taper-check"><input type="checkbox" data-taper-field="history" ${t.history ? "checked" : ""}> <span>Retirada difícil no passado</span></label>
+        </div>
+        <div class="pharma-reading tone-${tone}"><strong>Risco ${risk.label.toLowerCase()} de retirada · ritmo sugerido: ${ad.speeds[suggested].label.toLowerCase()}</strong><span>${escapeHtml(risk.text)}</span></div>
+        <div class="segmented dem-stages" role="group" aria-label="Ritmo da retirada">
+          ${ad.speeds.map((s, i) => `<button type="button" class="${speed === i ? "active" : ""}" data-taper-speed="${i}" aria-pressed="${speed === i}">${s.label}</button>`).join("")}
+        </div>
+        <p class="dose-med">${escapeHtml(ad.speeds[speed].label)}: ${escapeHtml(speedText(speed))}; no livro, cerca de ${escapeHtml(bookMonths)} meses a partir da dose máxima.</p>
+        <div class="switch-pick">
+          <label><span>Intervalo</span><select data-taper-field="weeks">${[2, 4].map((w) => `<option value="${w}" ${w === weeks ? "selected" : ""}>a cada ${w} semanas</option>`).join("")}</select></label>
+        </div>
+        <div class="pharma-reading tone-low"><strong>${steps.length - 1} degraus · cerca de ${months} meses</strong><span>Simulação a partir da dose atual: o ritmo real se ajusta aos sintomas, degrau a degrau.</span></div>
+        ${taperSvg(steps, target, weeks)}
+        <div class="atlas-legend"><span><i style="background:#9fb3b6"></i>dose (mg/dia)</span>${target ? `<span><i style="background:#d55e00"></i>${escapeHtml(target.label)}</span>` : ""}</div>
+        <table class="dose-table">
+          <thead><tr><th>Degrau</th><th>Dose</th>${model ? `<th>${escapeHtml(m.target)}</th>` : ""}<th>Semana</th>${practicalCol ? "<th>Na prática</th>" : ""}</tr></thead>
+          <tbody>${shown.map((item) => item ? `<tr><th>${item[0] === 0 ? "Hoje" : item[0]}</th><td>${doseFmt(item[1])}</td>${model ? `<td>${Math.round(model.occ(item[1]))}%</td>` : ""}<td>${item[0] * weeks}</td>${practicalCol ? `<td>${escapeHtml(dosePractical(drugId, item[1]))}</td>` : ""}</tr>` : `<tr class="gap"><th>…</th><td>…</td>${model ? "<td></td>" : ""}<td></td>${practicalCol ? "<td></td>" : ""}</tr>`).join("")}
+            <tr><th>Fim</th><td>parar</td>${model ? "<td>0%</td>" : ""}<td>${steps.length * weeks}</td>${practicalCol ? "<td></td>" : ""}</tr></tbody>
+        </table>
+        ${steps[steps.length - 1] < 1 ? '<p class="pharma-extra">As últimas doses ficam abaixo de 1 mg: na prática exigem solução oral, diluição ou formulação manipulada.</p>' : ""}
+      </section>
+      <section class="pharma-card">
+        ${brazilCard(drugId, drug.name)}
+        ${m.note ? `<div class="pharma-reading tone-warn"><strong>${escapeHtml(drug.name)} no livro</strong><span>${escapeHtml(m.note)}</span></div>` : ""}
+        ${target ? `<h3>Por que degraus cada vez menores?</h3>
+          <p class="pharma-extra">A ocupação do ${escapeHtml(m.target)} segue uma curva hiperbólica. Tirar ${escapeHtml(drug.name.toLowerCase())} em 4 degraus iguais de mg:</p>
+          ${taperLinearCompare(dose, target)}
+          <p class="pharma-extra">O último degrau derruba a ocupação muito mais que o primeiro. Os ritmos do livro tiram a mesma quantidade de ocupação a cada degrau, por isso as doses finais ficam tão pequenas.</p>` : ""}
+        <h4>Como conduzir</h4>
+        <ul class="fronto-signs">${ad.rules.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
+        <div class="pharma-reading tone-low"><strong>Retirada ou recaída?</strong><span>${escapeHtml(data.withdrawal)}</span></div>
+        ${patientCard()}
+      </section>
+    </div>`;
+}
+
 /* ---------- Página ---------- */
 
 renderPharmaSwitch = function renderPharmaSwitchWithDoses() {
@@ -556,7 +666,7 @@ renderPharmaSwitch = function renderPharmaSwitchWithDoses() {
   const drugs = doseDrugs(cls);
   const refCount = ((window.PHARMA_REFS || {}).troca?.paths || []).length;
   const switchLabel = cls === "bz" ? "Trocar para ação longa" : "Trocar";
-  const body = tab === "taper" ? renderTaper(cls, drugs) : cls === "ap" ? renderSwitchAp(drugs) : cls === "bz" ? renderSwitchBz(drugs) : renderSwitchAd(drugs);
+  const body = tab === "taper" ? (cls === "ad" ? renderTaperAd(drugs) : renderTaper(cls, drugs)) : cls === "ap" ? renderSwitchAp(drugs) : cls === "bz" ? renderSwitchBz(drugs) : renderSwitchAd(drugs);
   return `
     <header class="pharma-head">
       <div>
@@ -584,12 +694,13 @@ renderPharmaSwitch = function renderPharmaSwitchWithDoses() {
   const panel = document.querySelector("#pharmaPanel");
   if (!panel) return;
   panel.addEventListener("click", (event) => {
-    const target = event.target.closest("[data-switch-tab], [data-dose-class], [data-bz-to-taper], [data-bz-target]");
+    const target = event.target.closest("[data-switch-tab], [data-dose-class], [data-bz-to-taper], [data-bz-target], [data-taper-speed]");
     if (!target) return;
     const data = target.dataset;
     const cls = state.pharma.doseClass || "ad";
     if (data.doseClass) state.pharma.doseClass = data.doseClass;
     else if (data.bzTarget) state.pharma.bzTarget = data.bzTarget;
+    else if (data.taperSpeed !== undefined) taperState(cls).speed = Number(data.taperSpeed);
     else if (data.bzToTaper) {
       const drug = data.bzToTaperDrug || "diazepam";
       state.pharma.switchDoses = { ...(state.pharma.switchDoses || {}), [drug]: Number(data.bzToTaper) };
@@ -617,9 +728,9 @@ renderPharmaSwitch = function renderPharmaSwitchWithDoses() {
     } else if (el.matches("[data-taper-field]")) {
       const t = taperState(cls);
       const field = el.dataset.taperField;
-      if (field === "drug") { t.drug = el.value; t.pct = null; }
-      if (field === "use") { t.use = el.value; t.pct = null; }
-      if (field === "history") { t.history = el.checked; t.pct = null; }
+      if (field === "drug") { t.drug = el.value; t.pct = null; t.speed = null; }
+      if (field === "use") { t.use = el.value; t.pct = null; t.speed = null; }
+      if (field === "history") { t.history = el.checked; t.pct = null; t.speed = null; }
       if (field === "pct") t.pct = Number(el.value);
       if (field === "weeks") t.weeks = Number(el.value);
     } else return;

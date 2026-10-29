@@ -793,6 +793,9 @@ test("troca de medicamentos: doses em mg e retirada gradual", async ({ page }) =
   await page.locator('[data-taper-field="use"]').selectOption("gt24");
   await expect(page.locator("#pharmaPanel")).toContainText("Risco alto de retirada");
   await expect(page.locator(".taper-compare > div")).toHaveCount(4);
+  await expect(page.locator('[data-taper-speed="2"]')).toHaveClass(/active/);
+  await page.locator('[data-taper-speed="0"]').click();
+  await expect(page.locator(".dose-table thead")).toContainText("SERT");
   await page.locator('[data-dose-class="ap"]').click();
   await page.locator('[data-switch-tab="switch"]').click();
   await page.locator('[data-ap-switch="from"]').selectOption("olanzapina");

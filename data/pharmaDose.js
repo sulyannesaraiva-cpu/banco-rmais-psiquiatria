@@ -150,3 +150,47 @@ window.PHARMA_DOSE.bz = {
   ],
   withdrawal: "Retirada de benzodiazepínico: ansiedade, insônia, pânico, pesadelos, despersonalização, humor deprimido ou instável; rigidez, fadiga, parestesias, hipersensibilidade sensorial, tremor, tontura, taquicardia, acatisia. Convulsões, delirium e psicose sobretudo na retirada muito rápida. Acatisia e ideação suicida nova estão entre as piores consequências e costumam passar despercebidas.",
 };
+
+/* Retirada de antidepressivos: Maudsley Deprescribing Guidelines (Horowitz e Taylor, 2024),
+   cap. 2, "Tapering guidance for specific antidepressants".
+   - target: alvo usado pelo livro para medir a ocupação; emax e k: curva hiperbólica
+     (ocupação = emax × dose / (dose + k)) ajustada aos pares dose → ocupação das tabelas do livro.
+   - pp: máximo de pontos de ocupação perdidos por degrau nos ritmos rápido, moderado e lento.
+   - steps: remédios sem curva de receptor no livro (degraus pela "trajetória média" dos outros
+     antidepressivos), com os degraus do ritmo rápido; os outros ritmos intercalam degraus.
+   - months: duração aproximada de cada ritmo, quando o livro dá outra que não 5–10/10–20/20–40. */
+window.PHARMA_DOSE.adTaper = {
+  sertralina: { target: "SERT", emax: 92, k: 8.4, pp: [10, 5, 2.6] },
+  citalopram: { target: "SERT", emax: 83.6, k: 2.34, pp: [11, 5, 2.7], months: ["4–9", "10–20", "20–40"] },
+  escitalopram: { target: "SERT", emax: 90.4, k: 2.89, pp: [9, 5, 3] },
+  fluoxetina: { target: "SERT", emax: 85.8, k: 1.86, pp: [11, 5, 3], months: ["4–9", "9–18", "20–40"], note: "Meia-vida longa: o livro aceita espaçar as doses (por exemplo, 10 mg a cada 3 dias, depois a cada 5) como alternativa à solução. Os sintomas de retirada podem aparecer semanas depois de cada degrau." },
+  fluvoxamina: { target: "SERT", emax: 95.7, k: 16.7, pp: [11, 5, 3] },
+  paroxetina: { target: "SERT", emax: 96.2, k: 5.26, pp: [9, 5.1, 2.8], note: "Alto risco de retirada na análise de notificações da OMS." },
+  vortioxetina: { target: "SERT", emax: 100, k: 4.62, pp: [10, 5, 2.5], note: "Meia-vida longa: o livro aceita alternar doses em dias seguidos (por exemplo, 5 e 10 mg alternados ≈ 7 mg/dia). Sem forma líquida no Brasil, isso ajuda nos degraus intermediários." },
+  venlafaxina: { target: "SERT", emax: 90.7, k: 5.96, pp: [10, 5, 2.5], months: ["6–10", "10–20", "20–40"], note: "Alto risco de retirada (OMS). As cápsulas têm microgrânulos de liberação controlada: dá para obter doses menores contando grânulos, mas é trabalhoso; nas doses baixas o livro usa solução, em duas tomadas por dia." },
+  desvenlafaxina: { target: "SERT", emax: 100, k: 16.1, pp: [11, 5, 2.5], note: "Alto risco de retirada (OMS). Só há comprimidos de liberação prolongada: quando não der mais para descer com eles, o livro sugere trocar por venlafaxina (50 mg de desvenlafaxina ≈ 75 mg de venlafaxina) e continuar a retirada com ela." },
+  duloxetina: { target: "SERT", emax: 90.7, k: 6.38, pp: [10, 6, 2.5], note: "Alto risco de retirada (OMS). Os grânulos das cápsulas têm revestimento entérico: não podem ser triturados nem dissolvidos. Abrir a cápsula e contar grânulos é uso fora da bula." },
+  clomipramina: { target: "NET", emax: 100, k: 9.8, pp: [14, 6, 3] },
+  imipramina: { target: "SERT", emax: 100, k: 17.6, pp: [11, 5.5, 2.8] },
+  nortriptilina: { target: "NET", emax: 60.2, k: 25.7, pp: [5.2, 3, 1.5] },
+  mirtazapina: { target: "α2", emax: 37.6, k: 6.62, pp: [4, 2, 1] },
+  trazodona: { target: "SERT", emax: 100, k: 15, pp: [12.5, 6, 2.5] },
+  moclobemida: { target: "MAO-A", emax: 88.4, k: 63.4, pp: [8, 4.6, 2.2] },
+  tranilcipromina: { target: "MAO-B", emax: 100, k: 6.65, pp: [10, 5, 2.5] },
+  agomelatina: { steps: [50, 25, 12.5, 6.25], months: ["2–3", "5–10", "10–20"], note: "O livro não usa curva de receptor para a agomelatina: os degraus seguem a trajetória média dos outros antidepressivos." },
+  amitriptilina: { steps: [100, 50, 25, 12.5, 7.5, 5, 3, 1.6, 0.8], note: "O livro não usa curva de receptor para a amitriptilina: os degraus seguem a trajetória média dos outros antidepressivos." },
+  bupropiona: { steps: [450, 300, 150, 75, 37.5, 22.5, 15, 10, 5, 2.5], note: "O livro não usa curva de receptor para a bupropiona: os degraus seguem a trajetória média dos outros antidepressivos. No Brasil só há comprimidos de liberação prolongada, que não devem ser partidos." },
+  speeds: [
+    { id: "A", label: "Rápido" },
+    { id: "B", label: "Moderado" },
+    { id: "C", label: "Lento" },
+  ],
+  defaultMonths: ["5–10", "10–20", "20–40"],
+  rules: [
+    "Cada degrau só depois que os sintomas de retirada do anterior passaram em boa parte, para não acumular. Sintomas toleráveis e que somem em até umas 2 semanas: em geral, um degrau a cada 2–4 semanas.",
+    "Usuários de longo prazo que passam bem pelos primeiros degraus podem encurtar o intervalo para 1 semana, nunca menos (risco de recaída).",
+    "Uso por poucas semanas: pode-se pular degraus e reduzir a cada poucos dias; a retirada não precisa durar mais que o tempo de uso.",
+    "Sintomas moderados ou que duram mais de 2 semanas: adiar o próximo degrau e passar para um ritmo mais lento. Sintomas graves: voltar à dose anterior, esperar e seguir mais devagar. Se nem o lento for tolerado, intercalar degraus intermediários.",
+    "Não usar doses em dias alternados, salvo nos de meia-vida longa (fluoxetina, vortioxetina): a oscilação do nível no sangue provoca sintomas.",
+  ],
+};
