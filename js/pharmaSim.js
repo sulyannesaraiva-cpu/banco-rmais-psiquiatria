@@ -2586,7 +2586,7 @@ function renderPharmaHub() {
         <p>${atlas ? "Siga circuitos e vias do sistema nervoso e veja o que muda quando uma estrutura falha." : "Explore como o mecanismo de cada remédio explica o efeito e os efeitos colaterais."}</p>
       </div>
       <div class="segmented pharma-sections" role="group" aria-label="Seção">
-        ${section("drugs", "Psicofarmacologia")}${section("atlas", "Neuroanatomia")}
+        ${section("drugs", "Psicofarmacologia")}${section("atlas", "Neuroanatomia")}${section("patient", "Paciente")}
         <button type="button" disabled title="Em breve">Casos clínicos <span class="pharma-soon">em breve</span></button>
       </div>
     </header>`;
@@ -2626,12 +2626,13 @@ const PHARMA_ATLAS_LINKS = {
 /* Menu lateral: Psicofarmacologia e Neuroanatomia abrem a mesma aba, em seções diferentes. */
 function syncSimTabs() {
   document.querySelectorAll(".tab[data-sim-target]").forEach((button) => {
-    const on = state.activeTab === "pharma" && (state.pharma.section === "atlas" ? "atlas" : "drugs") === button.dataset.simTarget;
+    const sec = ["atlas", "patient"].includes(state.pharma.section) ? state.pharma.section : "drugs";
+    const on = state.activeTab === "pharma" && sec === button.dataset.simTarget;
     button.classList.toggle("active", on);
   });
   if (state.activeTab === "pharma" && document.body.classList.contains("tab-view-active")) {
     const title = document.querySelector("#questionTitle");
-    if (title) title.textContent = state.pharma.section === "atlas" ? "Neuroanatomia" : "Psicofarmacologia";
+    if (title) title.textContent = state.pharma.section === "atlas" ? "Neuroanatomia" : state.pharma.section === "patient" ? "Paciente" : "Psicofarmacologia";
   }
 }
 

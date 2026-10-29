@@ -883,6 +883,23 @@ test("psicofarmacologia: busca por nome comercial, perfil do paciente e ficha", 
   await expect(page.locator(".cross-picks")).toContainText("Fluvoxamina");
   expect(errors).toEqual([]);
 });
+test("aba Paciente: comorbidades e escolha dentro da classe", async ({ page }) => {
+  const errors = await openSite(page);
+  await page.evaluate(() => document.querySelector('.tab[data-sim-target="patient"]').click());
+  await expect(page.locator("#pharmaPanel h2")).toHaveText("Paciente");
+  await page.locator('[data-pt-comorb="fa"]').click();
+  await page.locator('[data-pt-comorb="epilepsia"]').click();
+  await expect(page.locator(".pt-group-good")).toContainText("Mirtazapina");
+  await expect(page.locator(".pt-group-avoid")).toContainText("Bupropiona");
+  await page.locator('[data-pt-class="estabilizadores"]').click();
+  await expect(page.locator(".pt-group-caution")).toContainText("Lítio");
+  await page.locator('[data-pt-class="antidepressivos"]').click();
+  await page.locator(".pt-group-good .pt-name").first().click();
+  await expect(page.locator(".pcard-for")).toContainText("Fibrilação atrial");
+  await page.locator("[data-pharma-hub]").click();
+  await expect(page.locator("#pharmaPanel h2")).toHaveText("Paciente");
+  expect(errors).toEqual([]);
+});
 test("simulador de fármacos: cartão explicativo de cada alvo", async ({ page }) => {
   const errors = await openSite(page);
   await goTab(page, "pharma");

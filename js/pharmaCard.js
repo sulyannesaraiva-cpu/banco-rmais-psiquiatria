@@ -15,11 +15,11 @@ const PHARMA_PATIENT_FIELDS = [
 
 function pharmaPatient() {
   const p = state.pharma.patient || {};
-  return { age: p.age || "", sex: p.sex || "", repro: p.repro || "", renal: p.renal || "", hepatic: p.hepatic || "", smoke: p.smoke || "", meds: Array.isArray(p.meds) ? p.meds : [] };
+  return { age: p.age || "", sex: p.sex || "", repro: p.repro || "", renal: p.renal || "", hepatic: p.hepatic || "", smoke: p.smoke || "", meds: Array.isArray(p.meds) ? p.meds : [], comorb: Array.isArray(p.comorb) ? p.comorb : [], prio: Array.isArray(p.prio) ? p.prio : [] };
 }
 
 function pharmaPatientActive(p = pharmaPatient()) {
-  return Boolean(p.age || p.sex || p.repro || p.renal || p.hepatic || p.smoke || p.meds.length);
+  return Boolean(p.age || p.sex || p.repro || p.renal || p.hepatic || p.smoke || p.meds.length || p.comorb.length);
 }
 
 /* Campos de populações especiais que o perfil torna relevantes. */
@@ -42,6 +42,8 @@ function pharmaPatientSummary(p = pharmaPatient()) {
   });
   const meds = p.meds.map((id) => pharmaFindDrug(id)?.drug.name).filter(Boolean);
   if (meds.length) parts.push(`em uso: ${meds.join(", ")}`);
+  const conds = p.comorb.map((id) => (window.PHARMA_COMORB?.conditions || []).find((c) => c.id === id)?.label).filter(Boolean);
+  if (conds.length) parts.push(conds.join(", "));
   return parts.join(" · ");
 }
 
@@ -93,16 +95,16 @@ function pharmaMedOptions(exclude) {
   return Object.values(window.PHARMA_SIM).map((cls) => `<optgroup label="${escapeHtml(cls.label)}">${cls.drugs.filter((d) => d.kind !== "eps" && !exclude.includes(d.id)).map((d) => `<option value="${d.id}">${escapeHtml(d.name)}</option>`).join("")}</optgroup>`).join("");
 }
 
-function pharmaPatientForm() {
+function pharmaPatientForm(forceOpen) {
   const p = pharmaPatient();
-  const open = state.pharma.patientOpen;
+  const open = forceOpen || state.pharma.patientOpen;
   const summary = pharmaPatientSummary(p);
   return `
     <section class="pharma-card pcard-patient${open ? " open" : ""}">
-      <button type="button" class="pcard-patient-head" data-pf-toggle aria-expanded="${Boolean(open)}">
+      ${forceOpen ? `<div class="pcard-patient-head"><span><strong>Perfil do paciente</strong><small>${summary ? escapeHtml(summary) : "Preencha o que se aplica; o resto fica como caso geral."}</small></span></div>` : `<button type="button" class="pcard-patient-head" data-pf-toggle aria-expanded="${Boolean(open)}">
         <span><strong>Perfil do paciente</strong><small>${summary ? escapeHtml(summary) : "Não preenchido: as ferramentas mostram o caso geral."}</small></span>
         <span aria-hidden="true">${open ? "▴" : "▾"}</span>
-      </button>
+      </button>`}
       ${open ? `
         <div class="pcard-fields">
           ${PHARMA_PATIENT_FIELDS.map((f) => `
@@ -173,6 +175,11 @@ function pharmaCardForPatient(item, p) {
   if (p.smoke && typeof pharmaSmokingWarnings === "function") {
     pharmaSmokingWarnings([item.drug.id], p.smoke).filter((w) => w.tone !== "good").forEach((w) => out.push({ tone: w.tone, title: w.title, text: w.text, source: w.source }));
   }
+  /* Comorbidades (aba Paciente). */
+  if (p.comorb.length && typeof pharmaComorbReasons === "function") {
+    const toneOf = { avoid: "high", caution: "warn", good: "good" };
+    pharmaComorbReasons(item, p).forEach((r) => out.push({ tone: toneOf[r.kind] || "low", title: `${r.cond} · ${r.kind === "avoid" ? "evitar" : r.kind === "caution" ? "cautela" : "favorável"}`, text: r.text, source: r.src }));
+  }
   return out;
 }
 
@@ -198,7 +205,7 @@ function renderPharmaCard() {
   return `
     <header class="pharma-head">
       <div>
-        <div class="pharma-head-top"><button type="button" class="link-btn pharma-back" data-pharma-hub>← Psicofarmacologia</button></div>
+        <div class="pharma-head-top"><button type="button" class="link-btn pharma-back" data-pharma-hub>← ${state.pharma.section === "patient" ? "Paciente" : "Psicofarmacologia"}</button></div>
         <h2>${escapeHtml(drug.name)}</h2>
         <p>${escapeHtml(cls.label)} · ficha com o resumo de todas as ferramentas.</p>
       </div>
@@ -245,6 +252,7 @@ function pharmaOpenCard(clsId, drugId) {
   const baseHub = renderPharmaHub;
   renderPharmaHub = function () {
     if (state.pharma.view === "card") return renderPharmaCard();
+    if (state.pharma.section === "patient" && typeof renderPatientTab === "function") return renderPatientTab();
     const html = baseHub();
     if (state.pharma.section === "atlas") return html;
     return html.replace('<p class="atlas-group">Classes</p>', `${pharmaSearchBox()}${pharmaPatientForm()}<p class="atlas-group">Classes</p>`);

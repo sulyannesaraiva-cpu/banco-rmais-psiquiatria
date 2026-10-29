@@ -10132,3 +10132,131 @@ body.theme-dark .pharma-chip.on {
   text-transform: uppercase;
   color: var(--muted);
 }
+
+/* Aba Paciente: comorbidades, prioridades e escolha dentro da classe */
+.pt-cond-group {
+  display: grid;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.pt-cond-group > small {
+  color: var(--muted);
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.pt-result {
+  display: grid;
+  gap: 12px;
+}
+
+.pt-group {
+  display: grid;
+  gap: 8px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border-left: 4px solid var(--c);
+  background: color-mix(in srgb, var(--c) 6%, transparent);
+}
+
+.pt-group-good {
+  --c: #1b7f4b;
+}
+
+.pt-group-caution {
+  --c: #b26a00;
+}
+
+.pt-group-avoid {
+  --c: #c0392b;
+}
+
+.pt-group-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.pt-group-head span {
+  color: var(--c);
+  font-weight: 700;
+}
+
+.pt-hint,
+.pt-small,
+.pt-none {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.pt-row {
+  display: grid;
+  gap: 4px;
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--panel, transparent);
+}
+
+.pt-name {
+  justify-self: start;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.pt-reasons {
+  display: grid;
+  gap: 4px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.pt-reasons li {
+  position: relative;
+  padding-left: 14px;
+  overflow-wrap: anywhere;
+}
+
+.pt-reasons li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #6b7280;
+}
+
+.pt-reasons li.pt-r-good::before {
+  background: #1b7f4b;
+}
+
+.pt-reasons li.pt-r-caution::before {
+  background: #b26a00;
+}
+
+.pt-reasons li.pt-r-avoid::before {
+  background: #c0392b;
+}
+
+.pt-reasons small {
+  display: block;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.pt-group-neutral {
+  --c: #6b7280;
+}
