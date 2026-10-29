@@ -2541,7 +2541,7 @@ function renderPharmaHub() {
     <div class="pharma-hub-list">
       ${tool(`data-pharma-cross-open="effect"`, "⇅", "#0b3b40", "Comparar efeitos", "Um efeito (QT, peso, sedação…) em todas as classes")}
       ${tool(`data-pharma-cross-open="inter"`, "⇄", "#c2410c", "Interações", "Dois ou três remédios de qualquer classe, com a fonte de cada aviso")}
-      ${tool("data-pharma-switch-open", "↪", "#b0418a", "Troca de medicamentos", "Antidepressivos: redução cruzada, troca direta ou intervalo")}
+      ${tool("data-pharma-switch-open", "↪", "#b0418a", "Troca de medicamentos", "Antidepressivos, antipsicóticos e benzodiazepínicos: troca e retirada em mg")}
     </div>
     <p class="atlas-group">Treino</p>
     <button type="button" class="primary-btn pharma-hub-quiz" data-pharma-quick="${last.id}">Treino rápido · ${escapeHtml(last.label)}</button>

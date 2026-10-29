@@ -74,6 +74,11 @@ window.PHARMA_SOURCES = {
     short: "Machado, Neuroanatomia Funcional",
     full: "Machado ABM, Haertel LM. Neuroanatomia Funcional. 4ª ed. Atheneu; 2022.",
   },
+  narita1996: {
+    short: "Narita et al., 1996",
+    full: "Narita N, Hashimoto K, Tomitaka S, Minabe Y. Interactions of selective serotonin reuptake inhibitors with subtypes of sigma receptors in rat brain. Eur J Pharmacol. 1996;307(1):117-119.",
+    pmid: "8831113",
+  },
   maudsleyDeprescribing: {
     short: "Maudsley Deprescribing Guidelines",
     full: "Horowitz M, Taylor D. The Maudsley Deprescribing Guidelines: Antidepressants, Benzodiazepines, Gabapentinoids and Z-drugs. John Wiley & Sons; 2024.",
@@ -129,6 +134,8 @@ window.PHARMA_REFS = {
     paths: [
       { about: "Efeitos relativos (sedação, hipotensão, condução cardíaca, náusea, disfunção sexual)", src: "maudsley15", where: "tabela 3.23", kind: "fonte" },
       { about: "Alvos (transportadores, MAO, receptores) em níveis de 0 a 4", src: "stahl8", where: "monografias de cada antidepressivo", kind: "didatico", note: "Níveis resumidos de dados de afinidade publicados." },
+      { about: "Receptor sigma-1: fluvoxamina como agonista (efeito rápido na ansiedade e na insônia, sedação) e ligação da sertralina (ação ansiolítica)", src: "stahl8", where: "monografias da fluvoxamina e da sertralina", kind: "fonte" },
+      { about: "Ordem de afinidade pelo sigma-1: fluvoxamina > sertralina > fluoxetina > citalopram > imipramina > paroxetina (níveis 3 a 1 conforme essa ordem)", src: "narita1996", where: "ensaio de ligação em cérebro de rato", kind: "fonte" },
       { about: "Escetamina: mecanismo, início, pressão e efeitos", src: "stahl8", where: "monografia da escetamina", kind: "fonte" },
       { about: "Quanto cada um aumenta serotonina, noradrenalina e dopamina", src: "curadoria", where: "a partir do mecanismo descrito no Stahl", kind: "didatico" },
     ],

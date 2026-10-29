@@ -30,6 +30,7 @@ window.PHARMA_SIM.antidepressivos = {
     { id: "M1", label: "M1", role: "Boca seca, constipação, visão turva, retenção urinária" },
     { id: "A1", label: "α1", role: "Hipotensão postural, tontura" },
     { id: "NMDA", label: "NMDA", role: "Bloqueio do canal NMDA: surto de glutamato, ativação de AMPA e novas sinapses (escetamina)" },
+    { id: "SIGMA", label: "σ1", role: "Receptor sigma-1 (chaperona do retículo endoplasmático): a fluvoxamina é agonista e a sertralina também se liga; pode contribuir para o efeito ansiolítico e na insônia. Níveis conforme a ordem de afinidade de Narita et al. (1996); os não estudados aparecem como 0" },
   ],
   effects: [
     { id: "sedation", label: "Sedação", why: "bloqueio H1 (e α1, 5-HT2A)" },
@@ -42,7 +43,7 @@ window.PHARMA_SIM.antidepressivos = {
   drugs: [
     {
       id: "fluoxetina", name: "Fluoxetina", group: "ISRS", search: ["fluoxetina"],
-      receptors: { SERT: 4, NET: 1, DAT: 0, MAO: 0, A2: 0, "5HT2A": 1, "5HT2C": 2, H1: 0, M1: 0, A1: 0 },
+      receptors: { SERT: 4, NET: 1, DAT: 0, MAO: 0, A2: 0, "5HT2A": 1, "5HT2C": 2, H1: 0, M1: 0, A1: 0, SIGMA: 2 },
       boost: { serotonin: 3, noradrenaline: 1, dopamine: 1 },
       effects: { sedation: 0, hypotension: 0, cardiac: 0, anticholinergic: 0, nausea: 2, sexual: 3 },
       mech: { type: "reuptake", target: "SERT", transmitter: "serotonina" },
@@ -50,7 +51,7 @@ window.PHARMA_SIM.antidepressivos = {
     },
     {
       id: "sertralina", name: "Sertralina", group: "ISRS", search: ["sertralina"],
-      receptors: { SERT: 4, NET: 1, DAT: 2, MAO: 0, A2: 0, "5HT2A": 0, "5HT2C": 0, H1: 0, M1: 0, A1: 1 },
+      receptors: { SERT: 4, NET: 1, DAT: 2, MAO: 0, A2: 0, "5HT2A": 0, "5HT2C": 0, H1: 0, M1: 0, A1: 1, SIGMA: 3 },
       boost: { serotonin: 3, noradrenaline: 0, dopamine: 1 },
       effects: { sedation: 0, hypotension: 0, cardiac: 0, anticholinergic: 0, nausea: 2, sexual: 3 },
       mech: { type: "reuptake", target: "SERT", transmitter: "serotonina" },
@@ -58,7 +59,7 @@ window.PHARMA_SIM.antidepressivos = {
     },
     {
       id: "paroxetina", name: "Paroxetina", group: "ISRS", search: ["paroxetina"],
-      receptors: { SERT: 4, NET: 2, DAT: 0, MAO: 0, A2: 0, "5HT2A": 0, "5HT2C": 0, H1: 0, M1: 2, A1: 0 },
+      receptors: { SERT: 4, NET: 2, DAT: 0, MAO: 0, A2: 0, "5HT2A": 0, "5HT2C": 0, H1: 0, M1: 2, A1: 0, SIGMA: 1 },
       boost: { serotonin: 3, noradrenaline: 1, dopamine: 0 },
       effects: { sedation: 1, hypotension: 0, cardiac: 0, anticholinergic: 1, nausea: 2, sexual: 3 },
       mech: { type: "reuptake", target: "SERT", transmitter: "serotonina" },
@@ -66,7 +67,7 @@ window.PHARMA_SIM.antidepressivos = {
     },
     {
       id: "citalopram", name: "Citalopram", group: "ISRS", search: ["citalopram"],
-      receptors: { SERT: 4, NET: 0, DAT: 0, MAO: 0, A2: 0, "5HT2A": 0, "5HT2C": 0, H1: 1, M1: 0, A1: 0 },
+      receptors: { SERT: 4, NET: 0, DAT: 0, MAO: 0, A2: 0, "5HT2A": 0, "5HT2C": 0, H1: 1, M1: 0, A1: 0, SIGMA: 1 },
       boost: { serotonin: 3, noradrenaline: 0, dopamine: 0 },
       effects: { sedation: 0, hypotension: 0, cardiac: 1, anticholinergic: 0, nausea: 2, sexual: 3 },
       mech: { type: "reuptake", target: "SERT", transmitter: "serotonina" },
@@ -82,11 +83,11 @@ window.PHARMA_SIM.antidepressivos = {
     },
     {
       id: "fluvoxamina", name: "Fluvoxamina", group: "ISRS", search: ["fluvoxamina"],
-      receptors: { SERT: 4, NET: 0, DAT: 0, MAO: 0, A2: 0, "5HT2A": 0, "5HT2C": 0, H1: 0, M1: 0, A1: 0 },
+      receptors: { SERT: 4, NET: 0, DAT: 0, MAO: 0, A2: 0, "5HT2A": 0, "5HT2C": 0, H1: 0, M1: 0, A1: 0, SIGMA: 3 },
       boost: { serotonin: 3, noradrenaline: 0, dopamine: 0 },
       effects: { sedation: 1, hypotension: 0, cardiac: 0, anticholinergic: 0, nausea: 3, sexual: 3 },
       mech: { type: "reuptake", target: "SERT", transmitter: "serotonina" },
-      extra: "Liga-se ao receptor sigma 1. Inibe fortemente enzimas hepáticas (CYP1A2 e 2C19): muitas interações.",
+      extra: "Agonista do receptor sigma 1, o que pode explicar em parte o efeito às vezes rápido na ansiedade e na insônia (e alguma sedação). Inibe fortemente enzimas hepáticas (CYP1A2 e 2C19): muitas interações.",
     },
     {
       id: "venlafaxina", name: "Venlafaxina", group: "IRSN", search: ["venlafaxina"],
@@ -138,7 +139,7 @@ window.PHARMA_SIM.antidepressivos = {
     },
     {
       id: "imipramina", name: "Imipramina", group: "Tricíclico", search: ["imipramina"],
-      receptors: { SERT: 3, NET: 3, DAT: 0, MAO: 0, A2: 0, "5HT2A": 2, "5HT2C": 1, H1: 3, M1: 3, A1: 3 },
+      receptors: { SERT: 3, NET: 3, DAT: 0, MAO: 0, A2: 0, "5HT2A": 2, "5HT2C": 1, H1: 3, M1: 3, A1: 3, SIGMA: 1 },
       boost: { serotonin: 3, noradrenaline: 3, dopamine: 1 },
       effects: { sedation: 2, hypotension: 3, cardiac: 3, anticholinergic: 3, nausea: 1, sexual: 1 },
       mech: { type: "reuptake", target: "SERT", transmitter: "serotonina e noradrenalina" },
