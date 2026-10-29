@@ -8787,3 +8787,28 @@ body.theme-dark .pharma-chip.on {
 .tab.sim-soon .pharma-soon {
   margin-left: 4px;
 }
+@media (max-width: 860px) {
+  /* Seletor Psicofarmacologia | Neuroanatomia | Casos clínicos desliza em vez de alargar a página. */
+  #pharmaPanel .pharma-hub-head,
+  #pharmaPanel .pharma-hub-head > div {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  #pharmaPanel .pharma-sections {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    max-width: 100%;
+  }
+
+  #pharmaPanel .pharma-sections::-webkit-scrollbar {
+    display: none;
+  }
+
+  #pharmaPanel .pharma-sections button {
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+}
