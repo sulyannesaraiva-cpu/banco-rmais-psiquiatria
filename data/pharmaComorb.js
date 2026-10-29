@@ -32,6 +32,7 @@
       { id: "renal", label: "Rim e vias urinárias" },
       { id: "onco", label: "Câncer" },
       { id: "imuno", label: "Reumatologia e imunologia" },
+      { id: "hiv", label: "HIV" },
       { id: "olho", label: "Olhos" },
     ],
     conditions: [
@@ -282,6 +283,95 @@
         note: "Primeiro passo: reduzir ou suspender o corticoide, se possível (cursos de menos de 3 semanas podem parar de uma vez; longos, só com retirada lenta). Risco cresce com a dose de prednisona: 1,3% abaixo de 40 mg/dia, 4,6% entre 40 e 80 mg e 18% acima de 80 mg. Mania e confusão são mais precoces (mediana de 11,5 dias); depressão predomina no uso crônico e na retirada. Os sintomas revertem, em média, em até um mês.",
       },
       {
+        id: "hiv", label: "HIV ou aids (qualquer esquema)", group: "hiv", src: "mi", where: "cap. 12, Infectious Diseases, Key Points",
+        rules: {
+          antidepressivos: { prefer: [[SSRI, "Há boa evidência de eficácia dos ISRS na depressão com HIV. Conferir as interações com o esquema antirretroviral (marque o esquema abaixo)."]], caution: [[["fluvoxamina", "fluoxetina", "paroxetina"], "Inibidores potentes de enzimas do fígado: podem aumentar os efeitos adversos dos antirretrovirais.", "ph", "cap. 45"]] },
+          estabilizadores: { avoid: [[["carbamazepina"], "Indutor potente: acelera a eliminação dos antirretrovirais e pode levar à falha do tratamento do HIV.", "ph", "cap. 45"]] },
+          antipsicoticos: { caution: [[["haloperidol", "flufenazina", "clorpromazina"], "Pessoas com HIV ou aids, sobretudo com acometimento do sistema nervoso, são mais sensíveis a efeitos extrapiramidais."]] },
+        },
+        noteAll: true,
+        note: "Marque também o esquema antirretroviral: as interações mudam muito entre esquemas com reforço (ritonavir ou cobicistate), com efavirenz ou nevirapina e com inibidores de integrase sem reforço. Para conferir combinações específicas, o site de interações de HIV da Universidade de Liverpool é a referência (Maudsley Practice Guidelines, cap. 45).",
+      },
+      {
+        id: "hivReforco", label: "Antirretroviral com ritonavir ou cobicistate", group: "hiv", src: "ph", where: "cap. 45, tabela 45.2",
+        rules: {
+          antipsicoticos: {
+            avoid: [[["quetiapina", "lurasidona"], "Contraindicadas no Reino Unido com inibidor de protease reforçado; nos Estados Unidos, usar um sexto da dose original."]],
+            caution: [
+              [["aripiprazol", "cariprazina", "brexpiprazol"], "O nível sobe (inibição da CYP3A4): reduzir a dose."],
+              [["risperidona", "paliperidona"], "O nível pode subir (CYP3A4 e 2D6): começar baixo e subir pela resposta."],
+              [["clozapina"], "O nível pode subir ou cair com ritonavir; com cobicistate, tende a subir: dosar o nível."],
+              [["olanzapina"], "Ritonavir reduz o nível: pode ser preciso aumentar a dose."],
+              [["haloperidol", "amissulprida", "clorpromazina", "ziprasidona"], "QT somado com inibidores de protease (saquinavir, atazanavir, darunavir, ritonavir, lopinavir)."],
+            ],
+          },
+          antidepressivos: {
+            caution: [
+              [["citalopram", "escitalopram"], "QT somado com inibidores de protease (contraindicados com saquinavir)."],
+              [TCA, "Ritonavir sobe o nível dos tricíclicos e soma QT: começar baixo, menor dose eficaz."],
+              [["trazodona"], "QT somado; começar baixo e subir pela resposta."],
+              [["fluvoxamina"], "Nível pode subir: começar baixo; com elvitegravir reforçado, evitar."],
+              [["sertralina", "paroxetina"], "Darunavir pode reduzir o nível: ajustar pela resposta."],
+              [["mirtazapina"], "Começar baixo e subir pela resposta."],
+              [["venlafaxina"], "Titular pela resposta; preferir liberação prolongada (menos interação pela glicoproteína P)."],
+            ],
+          },
+          ansioliticos: {
+            avoid: [[["alprazolam", "clonazepam", "diazepam", "midazolam"], "O nível sobe muito (CYP3A4): preferir lorazepam."]],
+            prefer: [[["lorazepam"], "Não é afetado: alternativa preferida entre os benzodiazepínicos."]],
+            caution: [[["zolpidem", "eszopiclona"], "Pode ser preciso reduzir a dose."]],
+          },
+          estabilizadores: {
+            avoid: [[["carbamazepina"], "Interações complexas com inibidores de protease (induz CYP3A4): buscar alternativa."]],
+            caution: [
+              [["lamotrigina"], "Atazanavir, darunavir e lopinavir reforçados reduzem o nível: pode ser preciso subir a dose e dosar."],
+              [["valproato"], "Ritonavir pode reduzir o nível; o valproato pode subir o lopinavir: dosar e vigiar efeitos."],
+            ],
+          },
+        },
+      },
+      {
+        id: "hivNnrti", label: "Antirretroviral com efavirenz ou nevirapina", group: "hiv", src: "ph", where: "cap. 45, tabela 45.2",
+        rules: {
+          antipsicoticos: {
+            caution: [
+              [["aripiprazol", "cariprazina", "lurasidona", "olanzapina", "quetiapina"], "Efavirenz e nevirapina induzem a CYP3A4: o nível pode cair."],
+              [["clozapina"], "O nível pode cair (CYP3A4): dosar e acompanhar a resposta."],
+              [["haloperidol", "amissulprida", "clorpromazina", "ziprasidona"], "QT somado com efavirenz (e rilpivirina)."],
+            ],
+          },
+          antidepressivos: {
+            caution: [
+              [["sertralina", "trazodona", "bupropiona"], "Indução de CYP3A4 e 2B6: o nível pode cair; ajustar pela resposta."],
+              [["citalopram", "escitalopram"], "O nível pode cair, e há QT somado com efavirenz."],
+              [TCA, "QT somado com efavirenz e rilpivirina."],
+            ],
+          },
+          ansioliticos: {
+            caution: [[["alprazolam", "diazepam", "midazolam", "clonazepam"], "Nevirapina e efavirenz reduzem o nível (com efavirenz, também pode subir)."]],
+            prefer: [[["lorazepam"], "Não é afetado."]],
+          },
+          estabilizadores: { avoid: [[["carbamazepina"], "Reduz o nível da maioria dos não nucleosídeos: não recomendada."]] },
+        },
+        noteAll: true,
+        note: "O efavirenz causa eventos psiquiátricos em 25 a 60% (tontura, sonhos vívidos, insônia, depressão, ansiedade) e não é recomendado para quem já tem transtorno psiquiátrico (Maudsley Practice Guidelines, cap. 45).",
+      },
+      {
+        id: "hivSemReforco", label: "Antirretroviral sem reforço (tenofovir, zidovudina, dolutegravir)", group: "hiv", src: "ph", where: "cap. 45, tabela 45.2",
+        rules: {
+          estabilizadores: {
+            caution: [
+              [["litio"], "Lítio e tenofovir saem pelo rim e são nefrotóxicos: acompanhar a função renal."],
+              [["valproato"], "Aumenta o nível da zidovudina; há relato de toxicidade hepática com a combinação."],
+            ],
+            avoid: [[["carbamazepina"], "Reduz o tenofovir (contraindicada) e exige ajuste do dolutegravir."]],
+          },
+          antipsicoticos: { caution: [[["clozapina"], "Zidovudina soma risco de neutropenia e leucopenia."]] },
+        },
+        noteAll: true,
+        note: "Com nucleosídeos (tenofovir, zidovudina) e inibidores de integrase sem reforço (dolutegravir, raltegravir), não se esperam interações relevantes com antidepressivos, antipsicóticos e hipnóticos.",
+      },
+      {
         id: "glaucomaFechado", label: "Glaucoma de ângulo fechado", group: "olho", src: "gee", where: "cap. 11",
         rules: {
           antidepressivos: { prefer: [[["agomelatina"], "Escolha do livro no ângulo fechado."], [["citalopram"], "Se precisar de ISRS, o preferido."]], avoid: [[[...TCA, "bupropiona", "paroxetina"], "Evitar no ângulo fechado (anticolinérgico ou midríase)."]], caution: [[["sertralina", "fluoxetina"], "O livro pede evitá-los, se possível, no ângulo fechado."]] },
@@ -360,6 +450,8 @@
       { about: "Debate sobre o peso clínico da interação com tamoxifeno; bupropiona em tumor cerebral, na fadiga e na caquexia; antidepressivos duais na dor neuropática; fogachos; interações com quimioterápicos", src: "grassiRiba", where: "caps. 9 e 10, tabelas 9.3 e 9.4", kind: "fonte" },
       { about: "Tamoxifeno (evitar todos os inibidores da CYP2D6); mirtazapina no câncer; quimioterapia que deprime a medula", src: "medicallyIll", where: "caps. 8 e 14", kind: "fonte" },
       { about: "Doenças reumatológicas: lúpus induzido por psicofármacos, AINE, imunossupressores, hidroxicloroquina e tacrolimo, antidepressivos na artrite", src: "medicallyIll", where: "cap. 14, tabela 14-2 e Key Points", kind: "fonte" },
+      { about: "HIV: interações dos antirretrovirais (com reforço, efavirenz ou nevirapina, sem reforço) com antipsicóticos, clozapina, antidepressivos, hipnóticos e estabilizadores; efavirenz e eventos psiquiátricos", src: "maudsleyPhysical", where: "cap. 45, tabela 45.2", kind: "fonte" },
+      { about: "HIV: ISRS eficazes na depressão; mais sensibilidade a efeitos extrapiramidais", src: "medicallyIll", where: "cap. 12, Key Points", kind: "fonte" },
       { about: "Psicose lúpica e diferencial com encefalite autoimune; biológicos anticitocina e sintomas depressivos", src: "harrisonImmuno", where: "caps. 5 e 8", kind: "fonte" },
       { about: "Efeitos psiquiátricos do corticoide: risco por dose, início, manejo por classe e prevenção", src: "geeTaylor2025", where: "cap. 10", kind: "fonte" },
       { about: "Lítio com AINE", src: "maudsley15", where: "cap. 2, interações do lítio", kind: "fonte" },
