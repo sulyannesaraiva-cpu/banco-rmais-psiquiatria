@@ -809,6 +809,17 @@ test("simulador de fármacos: troca de antidepressivo", async ({ page }) => {
   await expect(page.locator('[data-pharma-switch="from"]')).toHaveValue("duloxetina");
   expect(errors).toEqual([]);
 });
+test("simulador de fármacos: cartão explicativo de cada alvo", async ({ page }) => {
+  const errors = await openSite(page);
+  await goTab(page, "pharma");
+  await page.locator('[data-pharma-class="antipsicoticos"]').click();
+  await page.locator('[data-pharma-target="D2"]').first().click();
+  await expect(page.locator(".pharma-target-card")).toContainText("Receptor de dopamina D2");
+  await expect(page.locator(".pharma-target-card")).toContainText("Efeitos indesejados");
+  await page.locator('.pharma-target-card [data-pharma-target=""]').click();
+  await expect(page.locator(".pharma-target-card")).toHaveCount(0);
+  expect(errors).toEqual([]);
+});
 test("troca de medicamentos: doses em mg e retirada gradual", async ({ page }) => {
   const errors = await openSite(page);
   await goTab(page, "pharma");

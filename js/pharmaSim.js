@@ -371,17 +371,51 @@ function pharmaBarLegend() {
   return `<p class="pharma-bar-legend">Barras: ${pharmaBarsByAction() ? "quanto o remédio age em cada alvo" : "afinidade pelo alvo"}, em 5 níveis (0 a 4), resumidos para estudo.${partials ? " Listrada = agonista parcial." : ""}</p>`;
 }
 
+/* Cartão "o que é este alvo" (data/pharmaTargets.js), aberto ao tocar no nome do alvo. */
+function pharmaTargetCard(drug) {
+  const cls = pharmaClass();
+  const info = ((window.PHARMA_TARGETS || {})[cls.id] || {})[state.pharma.target];
+  const receptor = cls.receptors.find((r) => r.id === state.pharma.target);
+  if (!info || !receptor) return "";
+  const action = pharmaBarsByAction();
+  const value = drug.receptors[receptor.id] ?? 0;
+  const ki = drug.ki?.[receptor.id];
+  const strong = cls.drugs.filter((d) => (d.receptors[receptor.id] ?? 0) >= 3 && d.id !== drug.id);
+  const row = (title, text) => (text ? `<div class="pharma-target-row"><b>${title}</b><span>${escapeHtml(text)}</span></div>` : "");
+  return `
+    <div class="pharma-target-card" role="region" aria-label="${escapeHtml(info.name)}">
+      <div class="pharma-target-head">
+        <strong>${escapeHtml(info.name)}</strong>
+        <button type="button" class="link-btn" data-pharma-target="" aria-label="Fechar">✕</button>
+      </div>
+      <p class="pharma-target-level">${escapeHtml(drug.name)}: ${(action ? PHARMA_ACTION_LABELS : PHARMA_LEVELS)[value]}${ki !== undefined ? ` (Ki ${escapeHtml(pharmaKiText(ki))} nM)` : ""}${pharmaIsPartial(drug, receptor.id) ? " · agonista parcial" : ""}</p>
+      ${row("O que é", info.what)}
+      ${row("O que o remédio faz", info.action)}
+      ${row("Efeito desejado", info.good)}
+      ${row("Efeitos indesejados", info.bad)}
+      ${row("Na prática", info.clinic)}
+      ${strong.length ? `<div class="pharma-target-row"><b>Agem forte aqui</b><span class="pharma-target-drugs">${strong.map((d) => `<button type="button" class="pharma-toggle" data-pharma-drug="${d.id}">${escapeHtml(d.name)}</button>`).join("")}</span></div>` : ""}
+    </div>`;
+}
+
 function pharmaReceptorRows(drug) {
   const action = pharmaBarsByAction();
-  return pharmaClass().receptors.map((receptor) => {
+  const targets = (window.PHARMA_TARGETS || {})[pharmaClass().id] || {};
+  const hasInfo = Object.keys(targets).length > 0;
+  const hint = hasInfo ? `<p class="pharma-target-hint">Toque no nome de um alvo para entender o que ele faz. <span>${escapeHtml(window.PHARMA_TARGETS.intro)}</span></p>` : "";
+  return hint + pharmaClass().receptors.map((receptor) => {
     const value = drug.receptors[receptor.id] ?? 0;
     const partial = pharmaIsPartial(drug, receptor.id);
+    const open = state.pharma.target === receptor.id;
+    const label = targets[receptor.id]
+      ? `<button type="button" class="pharma-target-btn${open ? " on" : ""}" data-pharma-target="${receptor.id}" aria-expanded="${open}">${escapeHtml(receptor.label)}<i aria-hidden="true">ⓘ</i></button>`
+      : `<strong>${escapeHtml(receptor.label)}</strong>`;
     return `
-      <div class="pharma-receptor" title="${escapeHtml(receptor.role)}">
-        <strong>${escapeHtml(receptor.label)}</strong>
+      <div class="pharma-receptor${open ? " is-open" : ""}" title="${escapeHtml(receptor.role)}">
+        ${label}
         <span class="pharma-bar" role="img" aria-label="${escapeHtml(receptor.label)}: ${action ? "ação" : "afinidade"} ${(action ? PHARMA_ACTION_LABELS : PHARMA_LEVELS)[value]}"><i class="${partial ? "partial" : ""}" style="width:${Math.max(4, value * 25)}%"></i></span>
         <small>${(action ? PHARMA_ACTION_LABELS : PHARMA_LEVELS)[value]}${partial ? " · agonista parcial" : ""}${drug.ki?.[receptor.id] !== undefined ? ` · <span class="pharma-ki">Ki ${escapeHtml(pharmaKiText(drug.ki[receptor.id]))} nM</span>` : ""}</small>
-      </div>`;
+      </div>${open ? pharmaTargetCard(drug) : ""}`;
   }).join("") + pharmaBarLegend() + (drug.ki ? '<p class="pharma-bar-legend">Ki: constante de afinidade medida em laboratório (APA Textbook of Psychopharmacology, 6ª ed.). Quanto menor, mais forte a ligação. O nível da barra também considera a concentração que o remédio atinge no uso clínico.</p>' : "");
 }
 
@@ -2859,4 +2893,18 @@ function openPharmaStudy(drug) {
     syncSimTabs();
     return result;
   };
+})();
+
+/* Tocar no nome do alvo abre ou fecha o cartão explicativo (data/pharmaTargets.js). */
+(function setupPharmaTargets() {
+  const panel = document.querySelector("#pharmaPanel");
+  if (!panel) return;
+  panel.addEventListener("click", (event) => {
+    const target = event.target.closest("[data-pharma-target]");
+    if (!target) return;
+    const id = target.dataset.pharmaTarget;
+    state.pharma.target = id && state.pharma.target !== id ? id : null;
+    savePharmaState();
+    renderPharmaPanel();
+  });
 })();

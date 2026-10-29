@@ -125,6 +125,7 @@ window.PHARMA_SOURCES = {
 window.PHARMA_REFS = {
   antipsicoticos: {
     paths: [
+      { about: "Explicação de cada alvo (o que é, o que o remédio faz, efeito desejado, efeitos indesejados, na prática)", src: "curadoria", where: "resumo a partir de Stahl's Essential Psychopharmacology (5ª ed.), do Prescriber's Guide (8ª ed.) e do Maudsley (15ª ed.)", kind: "didatico" },
       { about: "Efeitos relativos (sedação, peso, acatisia, parkinsonismo, prolactina, QT…)", src: "maudsley15", where: "tabela 1.7", kind: "fonte" },
       { about: "Níveis de afinidade por receptor (0 a 4)", src: "stahl8", where: "monografias de cada antipsicótico", kind: "didatico", note: "Níveis resumidos de dados de afinidade publicados; a substituir por valores de Ki com fonte própria." },
       { about: "Valores de Ki de haloperidol, risperidona, paliperidona e clozapina (D2, 5-HT2A, 5-HT1A, H1, muscarínico, α1)", src: "apa6", where: "cap. 29, tabela 29-1 (Schotte et al., 1996)", kind: "fonte" },
@@ -155,6 +156,7 @@ window.PHARMA_REFS = {
   },
   antidepressivos: {
     paths: [
+      { about: "Explicação de cada alvo (o que é, o que o remédio faz, efeito desejado, efeitos indesejados, na prática)", src: "curadoria", where: "resumo a partir de Stahl's Essential Psychopharmacology (5ª ed.), do Prescriber's Guide (8ª ed.) e do Maudsley (15ª ed.)", kind: "didatico" },
       { about: "Efeitos relativos (sedação, hipotensão, condução cardíaca, náusea, disfunção sexual)", src: "maudsley15", where: "tabela 3.23", kind: "fonte" },
       { about: "Alvos (transportadores, MAO, receptores) em níveis de 0 a 4", src: "stahl8", where: "monografias de cada antidepressivo", kind: "didatico", note: "Níveis resumidos de dados de afinidade publicados." },
       { about: "Valores de Ki de amitriptilina, clomipramina, imipramina e nortriptilina (transportadores, α1, α2, H1, M1)", src: "apa6", where: "cap. 11, tabela 11-1 (Tatsumi et al., 1997; Richelson e Nelson, 1984)", kind: "fonte" },
@@ -172,6 +174,7 @@ window.PHARMA_REFS = {
   },
   estabilizadores: {
     paths: [
+      { about: "Explicação de cada alvo (o que é, o que o remédio faz, efeito desejado, efeitos indesejados, na prática)", src: "curadoria", where: "resumo a partir de Stahl's Essential Psychopharmacology (5ª ed.), do Prescriber's Guide (8ª ed.) e do Maudsley (15ª ed.)", kind: "didatico" },
       { about: "Alvos (canais de sódio e cálcio, glutamato, GABA, vias intracelulares)", src: "stahl8", where: "monografias", kind: "didatico", note: "Intensidade de cada mecanismo em níveis resumidos." },
       { about: "Fases em que cada um funciona e efeitos", src: "maudsley15", where: "cap. 2", kind: "fonte" },
     ],
@@ -184,6 +187,7 @@ window.PHARMA_REFS = {
   },
   ansioliticos: {
     paths: [
+      { about: "Explicação de cada alvo (o que é, o que o remédio faz, efeito desejado, efeitos indesejados, na prática)", src: "curadoria", where: "resumo a partir de Stahl's Essential Psychopharmacology (5ª ed.), do Prescriber's Guide (8ª ed.) e do Maudsley (15ª ed.)", kind: "didatico" },
       { about: "Mecanismo (GABA-A por subunidade, α2δ, 5-HT1A, melatonina, orexina, H1)", src: "stahl8", where: "monografias", kind: "fonte" },
       { about: "Usos e efeitos em níveis de 0 a 3", src: "curadoria", where: "a partir do Maudsley (cap. 3) e do Stahl", kind: "didatico" },
     ],
@@ -197,6 +201,7 @@ window.PHARMA_REFS = {
   },
   estimulantes: {
     paths: [
+      { about: "Explicação de cada alvo (o que é, o que o remédio faz, efeito desejado, efeitos indesejados, na prática)", src: "curadoria", where: "resumo a partir de Stahl's Essential Psychopharmacology (5ª ed.), do Prescriber's Guide (8ª ed.) e do Maudsley (15ª ed.)", kind: "didatico" },
       { about: "Mecanismos (DAT, NET, liberação, α2A)", src: "stahl8", where: "monografias", kind: "fonte" },
       { about: "Regiões, usos e efeitos em níveis", src: "curadoria", where: "a partir do Maudsley e do Stahl", kind: "didatico" },
     ],
@@ -207,6 +212,7 @@ window.PHARMA_REFS = {
   },
   demencias: {
     paths: [
+      { about: "Explicação de cada alvo (o que é, o que o remédio faz, efeito desejado, efeitos indesejados, na prática)", src: "curadoria", where: "resumo a partir de Stahl's Essential Psychopharmacology (5ª ed.), do Prescriber's Guide (8ª ed.) e do Maudsley (15ª ed.)", kind: "didatico" },
       { about: "Mecanismos (AChE, BuChE, nicotínico, NMDA)", src: "maudsley15", where: "tabela 6.1", kind: "fonte" },
       { about: "Galantamina como modulador nicotínico", src: "stahl8", where: "monografia da galantamina", kind: "fonte" },
       { about: "Efeitos em níveis de 0 a 3", src: "curadoria", where: "a partir da tabela 6.1 e da metanálise citada no Maudsley", kind: "didatico" },
@@ -357,6 +363,7 @@ window.PHARMA_REFS = {
   },
   dependencia: {
     paths: [
+      { about: "Explicação de cada alvo (o que é, o que o remédio faz, efeito desejado, efeitos indesejados, na prática)", src: "curadoria", where: "resumo a partir de Stahl's Essential Psychopharmacology (5ª ed.), do Prescriber's Guide (8ª ed.) e do Maudsley (15ª ed.)", kind: "didatico" },
       { about: "Mecanismos de cada remédio", src: "maudsley15", where: "cap. 4", kind: "fonte" },
       { about: "Topiramato: mecanismo e efeitos adversos", src: "stahl8", where: "monografia do topiramato", kind: "fonte" },
       { about: "Efeitos em níveis de 0 a 3", src: "curadoria", where: "a partir do cap. 4 do Maudsley", kind: "didatico" },
