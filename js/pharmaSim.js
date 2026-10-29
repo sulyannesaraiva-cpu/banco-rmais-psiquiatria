@@ -2246,6 +2246,137 @@ function renderPharmaCross() {
     <p class="pharma-disclaimer">Material didático e simplificado, para estudo. Não usar para prescrição.</p>`;
 }
 
+/* ---------- Troca de antidepressivo (data/pharmaSwitch.js) ---------- */
+
+function pharmaSwitchPlan(fromId, toId) {
+  const data = window.PHARMA_SWITCH;
+  const from = data.groupOf[fromId];
+  const to = data.groupOf[toId];
+  const raw = data.matrix[from]?.[to];
+  if (!raw) return null;
+  const cell = typeof raw === "string" ? { type: raw } : { ...raw };
+  let wait = cell.wait;
+  if (cell.imipramine && toId === "imipramina") wait = cell.imipramine;
+  if (cell.imipramine && fromId === "imipramina") wait = cell.imipramine;
+  if (cell.vortioxetine && fromId === "vortioxetina") wait = cell.vortioxetine;
+  return { ...cell, wait, from, to };
+}
+
+function pharmaSwitchWaitText(wait) {
+  if (Array.isArray(wait)) return wait[0] >= 28 ? `${wait[0] / 7}–${wait[1] / 7} semanas` : `${wait[0]}–${wait[1]} dias`;
+  if (wait === 1) return "24 horas";
+  if (wait % 7 === 0) return `${wait / 7} ${wait === 7 ? "semana" : "semanas"}`;
+  return `${wait} dias`;
+}
+
+function pharmaSwitchText(plan, a, b) {
+  const newName = b.name.toLowerCase();
+  const oldName = a.name.toLowerCase();
+  const low = plan.low ? " em dose baixa" : "";
+  if (plan.text) return plan.text;
+  if (plan.type === "cross") return `Redução cruzada cuidadosa (em geral 2 a 4 semanas): ${oldName} desce enquanto ${newName} sobe${low}.`;
+  if (plan.type === "direct") return `Troca direta possível: reduzir ${oldName} à dose mínima eficaz e passar para ${newName} na dose mínima eficaz.`;
+  if (plan.type === "halve") return `Reduzir ${oldName} à metade, acrescentar ${newName} e então retirar ${oldName} devagar.`;
+  if (plan.type === "stop") return `Parar ${oldName} (a meia-vida longa funciona como redução), esperar ${pharmaSwitchWaitText(plan.wait)} e então começar ${newName}${low}.`;
+  return plan.wait
+    ? `Reduzir e parar ${oldName}, esperar ${pharmaSwitchWaitText(plan.wait)} e então começar ${newName}${low}.`
+    : `Reduzir e parar ${oldName} e então começar ${newName}${low}.`;
+}
+
+/* Linha do tempo didática, em dias: dose de cada remédio em % da dose de manutenção. */
+function pharmaSwitchTimeline(plan) {
+  const wait = Array.isArray(plan.wait) ? plan.wait[1] : plan.wait || 0;
+  const start = plan.low ? 25 : 50;
+  if (plan.type === "cross") return { a: [[0, 7, 50], [7, 14, 25], [14, 21, 12], [21, 28, 6]], b: [[0, 7, start], [7, 28, 100]], end: 35 };
+  if (plan.type === "direct") return { a: [], b: [[0, 35, 100]], end: 35, note: "dia 0: último dia do primeiro remédio" };
+  if (plan.type === "halve") return { a: [[0, 14, 50], [14, 21, 25], [21, 28, 12]], b: [[0, 14, 50], [14, 35, 100]], end: 35 };
+  if (plan.type === "stop") return { a: [], b: [[wait, wait + 7, start], [wait + 7, wait + 28, 100]], gap: [0, wait], end: wait + 28 };
+  const taper = plan.noTaper ? 0 : 14;
+  return { a: taper ? [[0, 7, 50], [7, 14, 25]] : [], b: [[taper + wait, taper + wait + 7, start], [taper + wait + 7, taper + wait + 28, 100]], gap: wait ? [taper, taper + wait] : null, end: taper + wait + 28 };
+}
+
+function pharmaSwitchSvg(plan, a, b) {
+  const line = pharmaSwitchTimeline(plan);
+  const x = (day) => 60 + (day / line.end) * 520;
+  const lane = (segments, y, cls) => segments.map(([from, to, dose]) => `<rect x="${x(from).toFixed(1)}" y="${(y + 40 - dose * 0.4).toFixed(1)}" width="${(x(to) - x(from)).toFixed(1)}" height="${(dose * 0.4).toFixed(1)}" class="switch-bar ${cls}"></rect>`).join("");
+  const ticks = [];
+  const step = line.end > 45 ? 14 : 7;
+  for (let day = 0; day <= line.end - step / 2; day += step) ticks.push(`<line x1="${x(day)}" y1="150" x2="${x(day)}" y2="154" class="kin-axis"></line><text x="${x(day)}" y="168" text-anchor="middle" class="pharma-label small">${day}</text>`);
+  const gap = line.gap ? `<rect x="${x(line.gap[0])}" y="16" width="${x(line.gap[1]) - x(line.gap[0])}" height="130" class="switch-gap"></rect><text x="${(x(line.gap[0]) + x(line.gap[1])) / 2}" y="30" text-anchor="middle" class="pharma-label small">sem antidepressivo</text>` : "";
+  return `
+    <svg class="pharma-kinetics" viewBox="0 0 600 176" role="img" aria-label="Linha do tempo da troca de ${escapeHtml(a.name)} para ${escapeHtml(b.name)}">
+      ${gap}
+      <text x="8" y="58" class="pharma-label small">${escapeHtml(a.name)}</text>
+      <text x="8" y="128" class="pharma-label small">${escapeHtml(b.name)}</text>
+      <line x1="60" y1="80" x2="580" y2="80" class="kin-axis"></line>
+      <line x1="60" y1="150" x2="580" y2="150" class="kin-axis"></line>
+      ${lane(line.a, 40, "old")}${lane(line.b, 110, "new")}
+      ${line.a.length ? "" : `<line x1="${x(0)}" y1="44" x2="${x(0)}" y2="80" class="switch-stop"></line><text x="${x(0) + 6}" y="66" class="pharma-label small">última dose no dia 0</text>`}
+      ${ticks.join("")}
+      <text x="580" y="168" text-anchor="end" class="pharma-label small">dias</text>
+    </svg>`;
+}
+
+function renderPharmaSwitch() {
+  const data = window.PHARMA_SWITCH;
+  const drugs = (window.PHARMA_SIM.antidepressivos?.drugs || []).filter((drug) => data.groupOf[drug.id]);
+  const fromId = data.groupOf[state.pharma.switchFrom] ? state.pharma.switchFrom : "sertralina";
+  const toId = data.groupOf[state.pharma.switchTo] ? state.pharma.switchTo : "mirtazapina";
+  const a = drugs.find((drug) => drug.id === fromId);
+  const b = drugs.find((drug) => drug.id === toId);
+  const options = (selected) => drugs.map((drug) => `<option value="${drug.id}" ${drug.id === selected ? "selected" : ""}>${escapeHtml(drug.name)}</option>`).join("");
+  const plan = fromId === toId ? null : pharmaSwitchPlan(fromId, toId);
+  const notes = [];
+  if (plan) {
+    if (plan.from === "flx" || plan.to === "flx") notes.push(data.notes.flx);
+    if (plan.from === "fvx" || plan.to === "fvx") notes.push(data.notes.fvx);
+    if (plan.from === "bup" || plan.to === "bup") notes.push(data.notes.bup);
+    if (plan.from === "ago" || plan.to === "ago") notes.push(data.notes.ago);
+    if (fromId === "vortioxetina" || toId === "vortioxetina") notes.push(data.notes.vortioxetina);
+    if (toId === "duloxetina" && (plan.from === "ssri" || fromId === "venlafaxina")) notes.push(data.notes.duloxetina);
+    if (plan.toFluoxetine) notes.push(data.notes.toFluoxetine);
+  }
+  const serotonergic = ["mao", "moc"].includes(plan?.from) || ["mao", "moc"].includes(plan?.to);
+  const tone = !plan ? "low" : plan.type === "direct" ? "good" : plan.type === "cross" || plan.type === "halve" ? "ok" : "warn";
+  const typeLabel = { cross: "Redução cruzada", direct: "Troca direta", halve: "Metade + acréscimo", stop: "Parar e esperar", taper: plan?.wait ? "Reduzir, parar e esperar" : "Reduzir, parar e começar" };
+  return `
+    <header class="pharma-head">
+      <div>
+        <div class="pharma-head-top">
+          <button type="button" class="link-btn pharma-back" data-pharma-hub>← Classes</button>
+          <button type="button" class="pharma-sources-btn" data-pharma-sources aria-haspopup="dialog">Fontes · 2</button>
+        </div>
+        <h2>Troca de antidepressivo</h2>
+        <p>Como passar de um antidepressivo para outro: redução cruzada, troca direta ou intervalo sem remédio, conforme a tabela de trocas do Maudsley.</p>
+      </div>
+    </header>
+    <div class="pharma-grid">
+      <section class="pharma-card">
+        <div class="switch-pick">
+          <label><span>De</span><select data-pharma-switch="from">${options(fromId)}</select></label>
+          <button type="button" class="link-btn" data-pharma-switch-swap aria-label="Inverter">⇄</button>
+          <label><span>Para</span><select data-pharma-switch="to">${options(toId)}</select></label>
+        </div>
+        ${plan ? `
+          <div class="pharma-reading tone-${tone}"><strong>${typeLabel[plan.type]}</strong><span>${escapeHtml(pharmaSwitchText(plan, a, b))}</span></div>
+          ${pharmaSwitchSvg(plan, a, b)}
+          <div class="atlas-legend"><span><i style="background:#9fb3b6"></i>${escapeHtml(a.name)}</span><span><i style="background:#0b6b70"></i>${escapeHtml(b.name)}</span><span>altura = % da dose de manutenção</span></div>
+          <p class="pharma-extra">Linha do tempo didática: o ritmo real segue a tolerância, a dose, o tempo de uso e o motivo da troca.</p>`
+          : `<div class="pharma-reading tone-low"><strong>Escolha dois antidepressivos diferentes</strong><span>A troca é calculada a partir do grupo de cada um (ISRS, IRSN, tricíclico, IMAO etc.).</span></div>`}
+      </section>
+      <section class="pharma-card">
+        ${notes.length ? `<h3>Atenção nesta troca</h3>${notes.map((note) => `<div class="pharma-reading tone-warn"><span>${escapeHtml(note)}</span></div>`).join("")}` : ""}
+        ${serotonergic ? `<div class="pharma-reading tone-high"><strong>IMAO na troca</strong><span>Muitos casos graves de síndrome serotoninérgica envolvem um IMAO (inclusive moclobemida) com ISRS: respeitar o intervalo.</span></div>` : ""}
+        <h4>Regras gerais</h4>
+        <ul class="fronto-signs">${data.general.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
+        <h4>Síndrome serotoninérgica</h4>
+        ${data.serotoninSyndrome.map((item) => `<div class="pharma-reading tone-${item.level === "Grave" ? "high" : item.level === "Moderada" ? "warn" : "ok"}"><strong>${item.level}</strong><span>${escapeHtml(item.text)}</span></div>`).join("")}
+      </section>
+    </div>
+    <p class="pharma-disclaimer">Material didático e simplificado, para estudo. A própria tabela do Maudsley é em parte teórica: cautela e monitorização em toda troca. Não usar para prescrição.</p>
+    ${state.pharma.sourcesOpen ? renderPharmaSources({ id: "troca", label: "Troca de antidepressivo" }, "paths", plan ? `${a.name} → ${b.name}` : "") : ""}`;
+}
+
 /* ---------- Roteiros guiados (data/pharmaTours.js) ---------- */
 
 function pharmaTours(cls) {
@@ -2410,6 +2541,11 @@ function renderPharmaHub() {
       <span class="pharma-hub-text"><strong>Entre classes</strong><small>Um efeito em todas as classes · interações</small></span>
       <span aria-hidden="true" class="pharma-hub-arrow">›</span>
     </button>
+    <button type="button" class="pharma-hub-card cross" data-pharma-switch-open style="--c:#b0418a">
+      <span class="pharma-hub-tag">↪</span>
+      <span class="pharma-hub-text"><strong>Troca de antidepressivo</strong><small>Redução cruzada, troca direta ou intervalo · linha do tempo</small></span>
+      <span aria-hidden="true" class="pharma-hub-arrow">›</span>
+    </button>
     <button type="button" class="primary-btn pharma-hub-quiz" data-pharma-quick="${last.id}">Treino rápido · ${escapeHtml(last.label)}</button>
     <p class="pharma-disclaimer">Material didático e simplificado, para estudo. Não usar para prescrição.</p>`;
 }
@@ -2419,7 +2555,7 @@ function renderPharmaPanel() {
   if (!panel || !window.PHARMA_SIM) return;
   if (state.pharma.view !== "class") {
     const atlasHtml = state.pharma.section === "atlas" && typeof renderAtlas === "function" ? renderAtlas() : null;
-    const hubHtml = atlasHtml || (state.pharma.view === "cross" ? renderPharmaCross() : renderPharmaHub());
+    const hubHtml = atlasHtml || (state.pharma.view === "cross" ? renderPharmaCross() : state.pharma.view === "switch" ? renderPharmaSwitch() : renderPharmaHub());
     if (panel.dataset.renderedHtml !== hubHtml) {
       panel.innerHTML = hubHtml;
       panel.dataset.renderedHtml = hubHtml;
@@ -2479,7 +2615,7 @@ function openPharmaStudy(drug) {
   const panel = document.querySelector("#pharmaPanel");
   if (!panel) return;
   panel.addEventListener("click", (event) => {
-    const target = event.target.closest("[data-pharma-drug], [data-pharma-class], [data-pharma-mode], [data-pharma-study], [data-pharma-answer], [data-pharma-quiz], [data-pharma-review], [data-pharma-inter], [data-pharma-stop], [data-pharma-repeat], [data-pharma-hub], [data-pharma-quick], [data-pharma-dtype], [data-pharma-dstage], [data-pharma-bg], [data-pharma-depot], [data-pharma-depotstop], [data-pharma-eps], [data-pharma-sources], [data-pharma-sources-close], [data-pharma-tour-start], [data-pharma-tour-next], [data-pharma-tour-prev], [data-pharma-tour-exit], [data-pharma-tour-answer], [data-pharma-cross-open], [data-pharma-cross-tab], [data-pharma-cross-effect], [data-pharma-cross-remove]");
+    const target = event.target.closest("[data-pharma-drug], [data-pharma-class], [data-pharma-mode], [data-pharma-study], [data-pharma-answer], [data-pharma-quiz], [data-pharma-review], [data-pharma-inter], [data-pharma-stop], [data-pharma-repeat], [data-pharma-hub], [data-pharma-quick], [data-pharma-dtype], [data-pharma-dstage], [data-pharma-bg], [data-pharma-depot], [data-pharma-depotstop], [data-pharma-eps], [data-pharma-sources], [data-pharma-sources-close], [data-pharma-tour-start], [data-pharma-tour-next], [data-pharma-tour-prev], [data-pharma-tour-exit], [data-pharma-tour-answer], [data-pharma-cross-open], [data-pharma-cross-tab], [data-pharma-cross-effect], [data-pharma-cross-remove], [data-pharma-switch-open], [data-pharma-switch-swap]");
     if (!target) return;
     const data = target.dataset;
     if (data.pharmaHub !== undefined) state.pharma.view = "hub";
@@ -2494,6 +2630,12 @@ function openPharmaStudy(drug) {
       state.pharma.view = "class";
       state.pharma.mode = "paths";
     } else if (data.pharmaCrossOpen !== undefined) state.pharma.view = "cross";
+    else if (data.pharmaSwitchOpen !== undefined) state.pharma.view = "switch";
+    else if (data.pharmaSwitchSwap !== undefined) {
+      const from = state.pharma.switchFrom || "sertralina";
+      state.pharma.switchFrom = state.pharma.switchTo || "mirtazapina";
+      state.pharma.switchTo = from;
+    }
     else if (data.pharmaCrossTab) state.pharma.crossTab = data.pharmaCrossTab;
     else if (data.pharmaCrossEffect) state.pharma.crossEffect = data.pharmaCrossEffect;
     else if (data.pharmaCrossRemove) state.pharma.crossPicks = (state.pharma.crossPicks || []).filter((id) => id !== data.pharmaCrossRemove);
@@ -2545,7 +2687,7 @@ function openPharmaStudy(drug) {
     }
     savePharmaState();
     renderPharmaPanel();
-    if (data.pharmaQuiz || data.pharmaReview || data.pharmaClass || data.pharmaHub !== undefined || data.pharmaQuick || data.pharmaCrossOpen !== undefined) panel.scrollIntoView({ block: "start" });
+    if (data.pharmaQuiz || data.pharmaReview || data.pharmaClass || data.pharmaHub !== undefined || data.pharmaQuick || data.pharmaCrossOpen !== undefined || data.pharmaSwitchOpen !== undefined) panel.scrollIntoView({ block: "start" });
     else if (data.pharmaTourStart || data.pharmaTourNext !== undefined || data.pharmaTourPrev !== undefined) panel.querySelector(".pharma-tour")?.scrollIntoView({ block: "start" });
   });
   /* O controle de ocupação atualiza só o desenho da sinapse, para não interromper o arraste. */
@@ -2630,6 +2772,12 @@ function openPharmaStudy(drug) {
     renderPharmaPanel();
   });
   panel.addEventListener("change", (event) => {
+    if (event.target.matches("[data-pharma-switch]")) {
+      state.pharma[event.target.dataset.pharmaSwitch === "from" ? "switchFrom" : "switchTo"] = event.target.value;
+      savePharmaState();
+      renderPharmaPanel();
+      return;
+    }
     if (event.target.matches("[data-pharma-cross-add]")) {
       const id = event.target.value;
       if (id) state.pharma.crossPicks = [...(state.pharma.crossPicks || []), id].slice(0, 3);

@@ -242,6 +242,12 @@ window.PHARMA_REFS = {
       { about: "Desenho da via vista de cima e dos campos visuais", src: "curadoria", where: "esquema sem sobreposição dos campos dos dois olhos", kind: "didatico" },
     ],
   },
+  troca: {
+    paths: [
+      { about: "Conduta para cada par de antidepressivos, intervalos e notas (fluoxetina, fluvoxamina, bupropiona, vortioxetina, duloxetina, imipramina)", src: "maudsley15", where: "cap. 3, Switching antidepressants, tabela 3.7", kind: "fonte" },
+      { about: "Linha do tempo da troca (degraus de dose semana a semana)", src: "curadoria", where: "modelo a partir do exemplo citalopram → mirtazapina do Maudsley", kind: "didatico" },
+    ],
+  },
   dependencia: {
     paths: [
       { about: "Mecanismos de cada remédio", src: "maudsley15", where: "cap. 4", kind: "fonte" },

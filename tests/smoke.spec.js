@@ -741,6 +741,21 @@ test("atlas de vias: vias longas (Brown-Séquard) e via óptica", async ({ page 
   await expect(page.locator(".field-quad.blind")).toHaveCount(4);
   expect(errors).toEqual([]);
 });
+test("simulador de fármacos: troca de antidepressivo", async ({ page }) => {
+  const errors = await openSite(page);
+  await goTab(page, "pharma");
+  await page.locator("[data-pharma-switch-open]").click();
+  await page.locator('[data-pharma-switch="from"]').selectOption("fluoxetina");
+  await page.locator('[data-pharma-switch="to"]').selectOption("tranilcipromina");
+  await expect(page.locator("#pharmaPanel")).toContainText("esperar 5–6 semanas");
+  await page.locator('[data-pharma-switch="from"]').selectOption("sertralina");
+  await page.locator('[data-pharma-switch="to"]').selectOption("duloxetina");
+  await expect(page.locator("#pharmaPanel")).toContainText("Troca direta possível");
+  await expect(page.locator("#pharmaPanel")).toContainText("60 mg/dia");
+  await page.locator("[data-pharma-switch-swap]").click();
+  await expect(page.locator('[data-pharma-switch="from"]')).toHaveValue("duloxetina");
+  expect(errors).toEqual([]);
+});
 test("navegação por áreas: Hoje, Estudar (com seletor), Simular e Você", async ({ page }) => {
   const errors = await openSite(page);
   const mobile = await page.evaluate(() => isMobileLayout());
