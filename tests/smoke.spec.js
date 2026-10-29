@@ -763,6 +763,21 @@ test("atlas de vias: nervos cranianos e territórios arteriais", async ({ page }
   await expect(page.locator("#pharmaPanel h2")).toHaveText("Circuitos frontoestriatais");
   expect(errors).toEqual([]);
 });
+test("atlas de vias: lobos cerebrais", async ({ page }) => {
+  const errors = await openSite(page);
+  await goTab(page, "pharma");
+  await page.locator('[data-sim-section="atlas"]').click();
+  await page.locator('[data-atlas-module="lobos"]').click();
+  await expect(page.locator("#pharmaPanel")).toContainText("Três síndromes frontais");
+  await page.locator('.lobe-tabs [data-lobe="parietal"]').click();
+  await page.locator('[data-lobe-region="1"]').click();
+  await page.locator('[data-lobe-side="D"]').click();
+  await expect(page.locator("#pharmaPanel")).toContainText("Negligência do lado esquerdo");
+  await page.locator('.lobe-tabs [data-lobe="temporal"]').click();
+  await page.locator('[data-lobe-side="B"]').click();
+  await expect(page.locator("#pharmaPanel")).toContainText("Amnésia anterógrada grave");
+  expect(errors).toEqual([]);
+});
 test("atlas de vias: afasias em três perguntas", async ({ page }) => {
   const errors = await openSite(page);
   await goTab(page, "pharma");

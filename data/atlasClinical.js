@@ -326,3 +326,104 @@ window.ATLAS.aphasia = {
     { name: "Síndrome de Gerstmann", text: "Giro angular esquerdo: agrafia, acalculia, confusão entre direita e esquerda e agnosia digital." },
   ],
 };
+
+/* Lobos cerebrais e síndromes corticais.
+   - regions (E, D, B = lesão esquerda, direita, bilateral): Yudofsky e Hales (4ª ed.), cap. 3,
+     tabelas 3-2 a 3-5 (Tranel, Damasio), resumidas.
+   - syndromes (frontal): Oxford Textbook of Neuropsychiatry, cap. 21, e Mesulam, Principles of
+     Behavioral and Cognitive Neurology, cap. 1 (abúlica × desinibida).
+   - signs e psych: Lishman's Organic Psychiatry, cap. 1 ("Clinical picture in focal cerebral
+     disorder"), Mesulam e Oxford. dominance: Yudofsky, tabela 3-1. */
+window.ATLAS.lobes = {
+  order: ["frontal", "parietal", "temporal", "occipital"],
+  list: {
+    frontal: {
+      label: "Frontal", color: "#0072b2", link: { module: "frontoestriatais", label: "Circuitos frontoestriatais" },
+      path: "M0 0 L130 0 L128 16 C122 46 116 70 112 96 L72 102 L0 112 Z", labelAt: [62, 58],
+      intro: "Lesões frontais mudam mais o comportamento e a personalidade que a linguagem, a memória ou a força. Lesões de um lado só podem ser discretas; as bilaterais dão os quadros mais intensos.",
+      syndromes: [
+        { name: "Orbitofrontal", text: "Desinibição, irritabilidade e labilidade; a família relata “mudança de personalidade”. Impulsividade com perda de julgamento e de crítica, às vezes com testes cognitivos normais." },
+        { name: "Dorsolateral", text: "Dificuldade de atenção sustentada e de sequenciar ações, perseveração; tende ao quadro abúlico: apatia, pouca iniciativa, pensamento lento." },
+        { name: "Medial (cingulado anterior)", text: "Abulia, apatia, indiferença e lentificação; no extremo, mutismo acinético." },
+      ],
+      regions: [
+        { name: "Opérculo frontal", E: "Afasia de Broca; dificuldade para evocar verbos.", D: "Aprosódia expressiva (fala sem melodia emocional).", B: "" },
+        { name: "Pré-frontal dorsolateral", E: "Memória de trabalho e intelecto verbais, fluência verbal, julgamento de tempo e de frequência para material verbal; funções executivas.", D: "Memória de trabalho espacial, intelecto não verbal, fluência para desenhar, julgamento de tempo e de frequência para material não verbal; funções executivas.", B: "" },
+        { name: "Orbital", E: "Prejuízo da conduta social (“sociopatia adquirida”) e da memória prospectiva.", D: "Prejuízo da conduta social (“sociopatia adquirida”) e da memória prospectiva.", B: "Mesmo quadro, mais grave." },
+        { name: "Medial superior", E: "Mutismo acinético.", D: "Mutismo acinético.", B: "Mutismo acinético mais grave." },
+        { name: "Prosencéfalo basal (medial inferior)", E: "Amnésia anterógrada e retrógrada com confabulação, pior para material verbal.", D: "Amnésia anterógrada e retrógrada com confabulação, pior para material não verbal.", B: "" },
+      ],
+      signs: [
+        "Fraqueza do lado oposto se a lesão chega ao córtex motor, em geral primeiro na face e mais no movimento voluntário que no emocional.",
+        "Reflexo de preensão e outros sinais de liberação frontal (sucção, palmomentual); às vezes é o único sinal.",
+        "Lesão orbital: perda do olfato ou atrofia óptica do mesmo lado (a anosmia costuma passar despercebida); comportamento de utilização de objetos.",
+        "Incontinência esfincteriana precoce, com o intelecto relativamente preservado.",
+      ],
+      psych: [
+        "A abulia frontal pode ser confundida com depressão, e a desinibição, com mania.",
+        "Euforia vazia, jocosidade e trocadilhos (moria, Witzelsucht), indiferença aos outros e falta de crítica sobre o próprio comportamento.",
+        "Pode parecer uma demência; e tumores frontais são “silenciosos”: crescem bastante antes de dar sinais neurológicos.",
+      ],
+    },
+    parietal: {
+      label: "Parietal", color: "#e69f00", link: { module: "afasias", label: "Afasias" },
+      path: "M130 0 L214 0 L206 30 C208 60 206 80 200 100 L172 110 C150 100 130 96 112 96 C116 70 122 46 128 16 Z", labelAt: [168, 52],
+      intro: "O lobo parietal integra sensibilidade, espaço e corpo. À esquerda, linguagem, cálculo e praxias; à direita, atenção ao espaço e consciência do próprio corpo e do déficit.",
+      regions: [
+        { name: "Junção temporoparietal", E: "Afasia de Wernicke.", D: "Amusia (prejuízo no reconhecimento musical) e dificuldade de reconhecer vozes (“fonagnosia”).", B: "Agnosia auditiva." },
+        { name: "Lóbulo parietal inferior", E: "Afasia de condução, agnosia tátil, acalculia; componentes da síndrome de Gerstmann e apraxia dos dois lados.", D: "Negligência do lado esquerdo, anosognosia, anosodiaforia (indiferença ao déficit), agnosia tátil de objetos; apraxia do vestir.", B: "Alterações do esquema corporal, anosognosia, anosodiaforia." },
+      ],
+      signs: [
+        "Perda sensitiva cortical: não reconhece objetos pelo tato (astereognosia) nem números escritos na pele; discriminação de dois pontos alterada.",
+        "Extinção: com dois estímulos simultâneos, ignora o do lado oposto à lesão (tato ou visão).",
+        "Dificuldade visuoespacial e desorientação topográfica (se perde em lugares conhecidos); apraxia construtiva, mais com lesão direita.",
+        "Lesão profunda: hemianopsia homônima do lado oposto, mais completa nos quadrantes inferiores.",
+      ],
+      psych: [
+        "Lesão direita: o paciente pode não reconhecer ou rejeitar os membros esquerdos e negar a paralisia. Não é negação psicológica nem delírio primário: é sinal de lesão parietal.",
+        "Negligência e apraxia do vestir podem parecer desorganização ou descuido.",
+      ],
+    },
+    temporal: {
+      label: "Temporal", color: "#cc79a7", link: { module: "limbico", label: "Sistema límbico e Papez" },
+      path: "M0 112 L72 102 C108 92 140 96 172 110 L200 100 C202 120 198 150 190 180 L0 180 Z", labelAt: [118, 136],
+      intro: "Memória (face medial), nomes e conceitos (polo e face inferior), reconhecimento de faces (junção com o occipital) e audição e linguagem (face superior).",
+      regions: [
+        { name: "Medial (hipocampo)", E: "Amnésia anterógrada para material verbal.", D: "Amnésia anterógrada para material não verbal.", B: "Amnésia anterógrada grave, verbal e não verbal." },
+        { name: "Polo temporal", E: "Dificuldade para evocar nomes próprios.", D: "Dificuldade para evocar conceitos de entidades únicas; prejuízo da memória episódica.", B: "Dificuldade com conceitos e nomes de entidades únicas; prejuízo da memória episódica." },
+        { name: "Inferotemporal", E: "Dificuldade para evocar nomes comuns.", D: "Dificuldade para evocar conceitos de algumas entidades.", B: "Dificuldade com conceitos e nomes de algumas entidades." },
+        { name: "Junção occipitotemporal", E: "Prosopagnosia “profunda”; dificuldade com conceitos de algumas entidades.", D: "Prosopagnosia temporária ou leve; dificuldade com conceitos de algumas entidades.", B: "Prosopagnosia grave e permanente; agnosia visual de objetos." },
+      ],
+      signs: [
+        "Lesão profunda: quadrantanopsia homônima superior do lado oposto (alça de Meyer), às vezes o único sinal.",
+        "Lesão profunda também pode dar fraqueza leve ou perda sensitiva do lado oposto. Lesões unilaterais não tiram a audição nem o equilíbrio.",
+        "Fenômenos epilépticos são comuns e ajudam a localizar.",
+      ],
+      psych: [
+        "Lesões temporais crônicas são conhecidas por alterações de personalidade, instabilidade emocional e agressividade, e por maior risco de psicose parecida com esquizofrenia.",
+        "Despersonalização e alterações da função sexual podem ser proeminentes. No lado dominante podem ocorrer alucinações auditivas.",
+      ],
+    },
+    occipital: {
+      label: "Occipital", color: "#009e73", link: { module: "via-optica", label: "Via óptica" },
+      path: "M214 0 L270 0 L270 190 L190 190 C198 150 202 120 200 100 C206 80 208 60 206 30 Z", labelAt: [222, 108],
+      intro: "Visão: a via dorsal (“onde”, em direção ao parietal) localiza e guia o movimento; a via ventral (“o quê”, em direção ao temporal) reconhece cores, formas, palavras e faces.",
+      regions: [
+        { name: "Dorsal (occipitoparietal)", E: "Síndrome de Balint parcial ou leve.", D: "Síndrome de Balint parcial ou leve.", B: "Síndrome de Balint: desorientação visual, apraxia ocular e ataxia óptica; percepção de movimento e de profundidade prejudicadas." },
+        { name: "Ventral (occipitotemporal)", E: "Perda da visão de cores na metade direita do campo (hemiacromatopsia); alexia pura (sem agrafia); imaginação visual prejudicada.", D: "Hemiacromatopsia esquerda; agnosia visual aperceptiva; prejuízo para imaginar faces.", B: "Acromatopsia total, agnosia visual de objetos, prosopagnosia, imaginação visual prejudicada." },
+      ],
+      signs: [
+        "Fora a visão, os sintomas focais são poucos: hemianopsia homônima do lado oposto (ver Via óptica).",
+        "Agnosia visual de objetos e prosopagnosia costumam exigir lesão bilateral; alexia sem agrafia e agnosia para cores, lesão occipital ou occipitotemporal dominante.",
+      ],
+      psych: [
+        "Alucinações visuais complexas e metamorfopsias são descritas mais em lesões occipitais não dominantes.",
+      ],
+    },
+  },
+  dominance: {
+    left: ["Verbal", "Serial", "Analítico", "Controlado", "Lógico", "Proposicional", "Racional"],
+    right: ["Não verbal", "Paralelo", "Holístico", "Criativo", "Imaginativo", "Aposicional", "Intuitivo"],
+    note: "Diferenças funcionais aproximadas entre os hemisférios; há muita sobreposição.",
+  },
+};

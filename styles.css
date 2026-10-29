@@ -9427,3 +9427,58 @@ body.theme-dark .pharma-chip.on {
 .aph-compare {
   min-width: 520px;
 }
+
+/* Atlas: lobos cerebrais. */
+.lobe-area {
+  cursor: pointer;
+  stroke: #ffffff;
+  stroke-width: 1;
+}
+
+.lobe-label {
+  fill: #10262d;
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.lobe-tabs {
+  margin: 8px 0;
+}
+
+.lobe-compare {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 8px;
+  font-size: 12px;
+}
+
+.lobe-compare div {
+  display: grid;
+  gap: 2px;
+  padding: 8px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+
+.lobe-dominance td {
+  color: var(--ink) !important;
+  font-size: 13px !important;
+}
+
+@media (max-width: 860px) {
+  .lobe-compare {
+    grid-template-columns: 1fr;
+  }
+}
+
+.segmented.lobe-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.segmented.lobe-tabs button {
+  flex: 1 1 auto;
+}

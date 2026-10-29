@@ -405,6 +405,90 @@ function renderAtlasAphasia() {
     ${state.pharma.sourcesOpen ? renderPharmaSources({ id: "atlas-afasias", label: "Afasias" }, "paths", selected ? selected.name : "Afasias") : ""}`;
 }
 
+/* ---------- Lobos cerebrais ---------- */
+
+function atlasLobesSvg(activeId) {
+  const data = window.ATLAS.lobes;
+  const lobes = data.order.map((id) => {
+    const lobe = data.list[id];
+    const on = id === activeId;
+    return `<path d="${lobe.path}" fill="${lobe.color}" class="lobe-area${on ? " on" : ""}" opacity="${activeId ? (on ? 0.85 : 0.18) : 0.5}" data-lobe="${id}" clip-path="url(#lobe-brain)"></path>`;
+  }).join("");
+  const labels = data.order.map((id) => {
+    const lobe = data.list[id];
+    return `<text x="${lobe.labelAt[0]}" y="${lobe.labelAt[1]}" text-anchor="middle" class="lobe-label${id === activeId ? " on" : ""}" data-lobe="${id}">${escapeHtml(lobe.label)}</text>`;
+  }).join("");
+  return `
+    <svg viewBox="12 8 240 162" class="artery-svg lobe-svg" role="img" aria-label="Hemisfério visto de lado, com os quatro lobos">
+      <defs><clipPath id="lobe-brain"><path d="${ARTERY_LATERAL}"></path></clipPath></defs>
+      <path d="${ARTERY_LATERAL}" class="aph-brain"></path>
+      ${lobes}
+      <path d="${ARTERY_LATERAL}" class="artery-outline"></path>
+      <path d="M72 102 C108 92 140 96 172 110" class="artery-fissure"></path>
+      <path d="M128 16 C122 46 116 70 112 96" class="artery-fissure"></path>
+      ${labels}
+      <text x="30" y="166" class="artery-label">frente</text>
+      <text x="236" y="166" text-anchor="end" class="artery-label">trás</text>
+    </svg>`;
+}
+
+function renderAtlasLobes() {
+  const data = window.ATLAS.lobes;
+  const lobeId = data.list[state.atlas.lobe] ? state.atlas.lobe : "frontal";
+  const lobe = data.list[lobeId];
+  const regionIndex = Math.min(Number(state.atlas.lobeRegion) || 0, lobe.regions.length - 1);
+  const region = lobe.regions[regionIndex];
+  const sides = [["E", "Esquerda"], ["D", "Direita"], ["B", "Dos dois lados"]].filter(([key]) => key !== "B" || region.B);
+  const side = sides.some(([key]) => key === state.atlas.lobeSide) ? state.atlas.lobeSide : "E";
+  const refCount = ((window.PHARMA_REFS || {})["atlas-lobos"]?.paths || []).length;
+  return `
+    <header class="pharma-head">
+      <div>
+        <div class="pharma-head-top">
+          <button type="button" class="link-btn pharma-back" data-atlas-home>← Neuroanatomia</button>
+          ${refCount ? `<button type="button" class="pharma-sources-btn" data-pharma-sources aria-haspopup="dialog">Fontes · ${refCount}</button>` : ""}
+        </div>
+        <h2>Lobos cerebrais</h2>
+        <p>O que se perde em cada região do córtex, e por que o lado da lesão importa: à esquerda, linguagem e material verbal; à direita, espaço, faces, música e consciência do déficit.</p>
+      </div>
+    </header>
+    <div class="pharma-grid atlas-grid">
+      <section class="pharma-card">
+        <div class="pharma-card-head"><h3>Toque num lobo</h3><span>esquema didático</span></div>
+        ${atlasLobesSvg(lobeId)}
+        <div class="segmented dem-stages lobe-tabs" role="group" aria-label="Lobo">
+          ${data.order.map((id) => `<button type="button" class="${id === lobeId ? "active" : ""}" data-lobe="${id}" aria-pressed="${id === lobeId}">${escapeHtml(data.list[id].label)}</button>`).join("")}
+        </div>
+        <p class="pharma-extra">${escapeHtml(lobe.intro)}</p>
+        <h4>Região</h4>
+        <div class="pharma-toggles">${lobe.regions.map((r, i) => `<button type="button" class="pharma-toggle ${i === regionIndex ? "on" : ""}" data-lobe-region="${i}">${escapeHtml(r.name)}</button>`).join("")}</div>
+        <h4>Lado da lesão</h4>
+        <div class="segmented dem-stages" role="group" aria-label="Lado da lesão">
+          ${sides.map(([key, labelText]) => `<button type="button" class="${key === side ? "active" : ""}" data-lobe-side="${key}" aria-pressed="${key === side}">${labelText}</button>`).join("")}
+        </div>
+        <div class="pharma-reading tone-high"><strong>${escapeHtml(region.name)} · ${escapeHtml(sides.find(([key]) => key === side)[1].toLowerCase())}</strong><span>${escapeHtml(region[side])}</span></div>
+        ${side !== "B" && region.E && region.D ? `<div class="lobe-compare"><div><b>Esquerda</b><span>${escapeHtml(region.E)}</span></div><div><b>Direita</b><span>${escapeHtml(region.D)}</span></div></div>` : ""}
+      </section>
+      <section class="pharma-card">
+        <h3>Lobo ${escapeHtml(lobe.label.toLowerCase())}</h3>
+        ${lobe.syndromes ? `<h4>Três síndromes frontais</h4>${lobe.syndromes.map((s) => `<div class="pharma-reading tone-low"><strong>${escapeHtml(s.name)}</strong><span>${escapeHtml(s.text)}</span></div>`).join("")}` : ""}
+        <h4>Sinais que ajudam a localizar</h4>
+        <ul class="fronto-signs">${lobe.signs.map((s) => `<li>${escapeHtml(s)}</li>`).join("")}</ul>
+        <h4>Correlação clínica</h4>
+        ${lobe.psych.map((p) => `<div class="pharma-reading tone-ok"><span>${escapeHtml(p)}</span></div>`).join("")}
+        <div class="pharma-toggles"><button type="button" class="pharma-toggle" data-atlas-module="${lobe.link.module}">Ver ${escapeHtml(lobe.link.label)} ›</button></div>
+      </section>
+      <section class="pharma-card cn-face-card">
+        <div class="pharma-card-head"><h3>Dominância hemisférica</h3><span>aproximação</span></div>
+        <table class="dose-table lobe-dominance"><thead><tr><th>Hemisfério esquerdo</th><th>Hemisfério direito</th></tr></thead>
+          <tbody>${data.dominance.left.map((l, i) => `<tr><td>${escapeHtml(l)}</td><td>${escapeHtml(data.dominance.right[i])}</td></tr>`).join("")}</tbody></table>
+        <p class="pharma-extra">${escapeHtml(data.dominance.note)}</p>
+      </section>
+    </div>
+    <p class="pharma-disclaimer">Esquema simplificado: os limites entre lobos e regiões são aproximados, lesões reais raramente respeitam uma só região e o hemisfério dominante para a linguagem é o esquerdo na maioria das pessoas.</p>
+    ${state.pharma.sourcesOpen ? renderPharmaSources({ id: "atlas-lobos", label: "Lobos cerebrais" }, "paths", `${lobe.label}: ${region.name}`) : ""}`;
+}
+
 /* ---------- Despacho e cliques ---------- */
 
 const baseRenderAtlas = renderAtlas;
@@ -412,6 +496,7 @@ renderAtlas = function renderAtlasWithClinical() {
   if (state.atlas.module === "nervos-cranianos") return renderAtlasCranial();
   if (state.atlas.module === "territorios-arteriais") return renderAtlasArteries();
   if (state.atlas.module === "afasias") return renderAtlasAphasia();
+  if (state.atlas.module === "lobos") return renderAtlasLobes();
   return baseRenderAtlas();
 };
 
@@ -419,11 +504,16 @@ renderAtlas = function renderAtlasWithClinical() {
   const panel = document.querySelector("#pharmaPanel");
   if (!panel) return;
   panel.addEventListener("click", (event) => {
-    const target = event.target.closest("[data-atlas-cn], [data-atlas-face], [data-atlas-artery], [data-aph-q], [data-aph-syndrome], [data-aph-artery]");
+    const target = event.target.closest("[data-atlas-cn], [data-atlas-face], [data-atlas-artery], [data-aph-q], [data-aph-syndrome], [data-aph-artery], [data-lobe], [data-lobe-region], [data-lobe-side]");
     if (!target) return;
     const data = target.dataset;
     if (data.atlasCn !== undefined) state.atlas.cn = data.atlasCn && state.atlas.cn !== data.atlasCn ? data.atlasCn : null;
     else if (data.atlasFace) state.atlas.face = data.atlasFace;
+    else if (data.lobe) {
+      state.atlas.lobe = data.lobe;
+      state.atlas.lobeRegion = 0;
+    } else if (data.lobeRegion !== undefined) state.atlas.lobeRegion = Number(data.lobeRegion);
+    else if (data.lobeSide) state.atlas.lobeSide = data.lobeSide;
     else if (data.aphQ) {
       const [key, value] = data.aphQ.split(":");
       state.atlas.aphasiaQ = { ...(state.atlas.aphasiaQ || {}), [key]: value === "1" };

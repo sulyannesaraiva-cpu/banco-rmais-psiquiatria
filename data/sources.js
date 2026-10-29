@@ -78,6 +78,18 @@ window.PHARMA_SOURCES = {
     short: "Yudofsky e Hales, 4ª ed.",
     full: "Yudofsky SC, Hales RE. Neuropsiquiatria e neurociências na prática clínica. 4ª ed. Porto Alegre: Artmed; 2006 (tradução de The American Psychiatric Publishing Textbook of Neuropsychiatry and Clinical Neurosciences, 4ª ed., 2002).",
   },
+  mesulam: {
+    short: "Mesulam, Principles of Behavioral and Cognitive Neurology",
+    full: "Mesulam MM, ed. Principles of Behavioral and Cognitive Neurology. 2ª ed. Oxford University Press; 2000.",
+  },
+  lishman: {
+    short: "Lishman's Organic Psychiatry",
+    full: "David AS, Fleminger S, Kopelman MD, Lovestone S, Mellers JDC, eds. Lishman's Organic Psychiatry: A Textbook of Neuropsychiatry. 4ª ed. Wiley-Blackwell; 2009.",
+  },
+  oxfordNeuropsychiatry: {
+    short: "Oxford Textbook of Neuropsychiatry",
+    full: "Agrawal N, Faruqui R, Bodani M, eds. Oxford Textbook of Neuropsychiatry. Oxford University Press; 2020.",
+  },
   narita1996: {
     short: "Narita et al., 1996",
     full: "Narita N, Hashimoto K, Tomitaka S, Minabe Y. Interactions of selective serotonin reuptake inhibitors with subtypes of sigma receptors in rat brain. Eur J Pharmacol. 1996;307(1):117-119.",
@@ -276,6 +288,15 @@ window.PHARMA_REFS = {
       { about: "Nervo craniano do mesmo lado e hemiparesia do lado oposto; Wallenberg como infarto de tronco mais comum; ausência de afasia nas lesões do tronco", src: "kaufman", where: "cap. 11, Infarctions in the basilar artery distribution e tabela 11-4", kind: "fonte" },
       { about: "Funções e nível de saída de cada nervo craniano", src: "machado", where: "caps. 5 e 15 (anatomia do tronco e nervos cranianos)", kind: "fonte" },
       { about: "Vista anterior, cortes do tronco, posição dos núcleos e desenho da face", src: "curadoria", where: "esquema que junta estruturas de alturas diferentes do mesmo nível", kind: "didatico" },
+    ],
+  },
+  "atlas-lobos": {
+    paths: [
+      { about: "O que cada região perde com lesão esquerda, direita ou bilateral (frontal, parietal, temporal e occipital) e dominância hemisférica", src: "yudofsky", where: "cap. 3, tabelas 3-1 a 3-5", kind: "fonte" },
+      { about: "Três síndromes pré-frontais (orbitofrontal, dorsolateral e medial) e sinais frontais de liberação", src: "oxfordNeuropsychiatry", where: "cap. 21, Neuropsychiatric aspects of CNS tumours in adults", kind: "fonte" },
+      { about: "Síndrome frontal abúlica × desinibida; abulia confundida com depressão e desinibição com mania; caso de Phineas Gage", src: "mesulam", where: "cap. 1, The clinical picture of frontal lobe syndromes", kind: "fonte" },
+      { about: "Sinais neurológicos de cada lobo (paresia, preensão, anosmia, incontinência, perda sensitiva cortical, extinção, quadrantanopsias), moria e Witzelsucht, negligência e asomatognosia, personalidade, agressividade e psicose nas lesões temporais, alucinações visuais nas occipitais", src: "lishman", where: "cap. 1, Clinical picture in focal cerebral disorder", kind: "fonte" },
+      { about: "Mapa dos lobos, divisão das regiões, vias visuais dorsal e ventral e frases de correlação clínica", src: "curadoria", where: "esquema e resumo a partir das fontes acima", kind: "didatico" },
     ],
   },
   "atlas-afasias": {
