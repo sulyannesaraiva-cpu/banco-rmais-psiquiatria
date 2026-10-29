@@ -226,12 +226,60 @@
         },
       },
       {
-        id: "reumato", label: "Doença reumatológica (AINE, metotrexato, hidroxicloroquina)", group: "imuno", src: "mi", where: "cap. 14",
+        id: "lupus", label: "Lúpus eritematoso sistêmico", group: "imuno", src: "mi", where: "cap. 14, lúpus induzido por psicofármacos",
         rules: {
-          antidepressivos: { caution: [[[...SSRI, ...SNRI, "amitriptilina", "imipramina", "clomipramina"], "Com AINE: mais sangramento digestivo (serotoninérgicos e tricíclicos terciários)."]], prefer: [[["duloxetina"], "Tem efeito analgésico comprovado na dor reumatológica."]] },
-          antipsicoticos: { caution: [[["clozapina"], "Com metotrexato e outros imunossupressores: pode somar supressão da medula."], [["clorpromazina"], "Raramente induz síndrome semelhante a lúpus (positiva anticorpos)."], [["risperidona", "paliperidona", "quetiapina", "ziprasidona"], "Com hidroxicloroquina: mais risco de arritmia (QT somado)."]] },
-          estabilizadores: { caution: [[["litio"], "AINE sobem o nível do lítio: dosar ao iniciar ou mudar a dose (Maudsley 15). Com hidroxicloroquina, QT somado."], [["carbamazepina", "valproato"], "Supressão da medula somada com imunossupressores; a carbamazepina raramente induz lúpus."]] },
+          antipsicoticos: { caution: [[["clorpromazina"], "Pode positivar anticorpos antinucleares e antifosfolípides; risco baixo (0,1 a 1%) de lúpus induzido."]] },
+          estabilizadores: { caution: [[["carbamazepina"], "Risco baixo (0,1 a 1%) de lúpus induzido."]] },
         },
+        noteAll: true,
+        note: "Sintomas psiquiátricos aparecem em pelo menos metade das pessoas com lúpus. A psicose lúpica costuma surgir cedo (até 3 anos do diagnóstico) e raramente volta com o tratamento: imunossupressão mais antipsicótico. Antes de atribuir ao lúpus, pensar em corticoide, antimalárico e encefalite autoimune (Harrison, Textbook of Immunopsychiatry, cap. 5). Oxcarbazepina, valproato, lamotrigina e lítio têm risco muito baixo (até 0,1%) de lúpus induzido; o lúpus induzido vem mais de remédios reumatológicos (infliximabe, adalimumabe) que de psicofármacos.",
+      },
+      {
+        id: "artrite", label: "Artrite reumatoide, artrose ou dor articular crônica", group: "imuno", src: "mi", where: "cap. 14, Key Points",
+        rules: {
+          antidepressivos: {
+            prefer: [
+              [["duloxetina"], "Eficaz na dor da artrose de joelho em ensaios controlados; mais analgésica que os ISRS."],
+              [["amitriptilina"], "Reduziu dor articular na artrite reumatoide em ensaio controlado (dose baixa); pior tolerância em doses de antidepressivo."],
+              [["venlafaxina", "desvenlafaxina", "nortriptilina", "imipramina"], "Tricíclicos e duais têm mais efeito analgésico que os ISRS."],
+            ],
+          },
+        },
+        noteAll: true,
+        note: "Antidepressivos funcionam na depressão da artrite reumatoide (ensaios controlados). Os biológicos anticitocina (anti-TNF e outros), usados para a doença, também parecem melhorar sintomas depressivos, em parte independente da melhora física (Harrison, Textbook of Immunopsychiatry, cap. 8).",
+      },
+      {
+        id: "aine", label: "Uso contínuo de anti-inflamatório (AINE)", group: "imuno", src: "mi", where: "cap. 14, tabela 14-2",
+        rules: {
+          antidepressivos: { caution: [[[...SSRI, ...SNRI, "amitriptilina", "imipramina", "clomipramina", "vortioxetina"], "Com AINE, mais sangramento digestivo (serotoninérgicos e tricíclicos terciários); considerar protetor gástrico."]], prefer: [[["mirtazapina", "agomelatina"], "Pouco efeito nas plaquetas (Gee e Taylor, cap. 1)."]] },
+          estabilizadores: { caution: [[["litio"], "AINE sobem o nível do lítio: dosar ao iniciar ou mudar a dose.", "maudsley15", "cap. 2, interações do lítio"]] },
+        },
+      },
+      {
+        id: "imunossupressor", label: "Imunossupressor (metotrexato, azatioprina, sulfassalazina, inibidor de JAK)", group: "imuno", src: "mi", where: "cap. 14, tabela 14-2",
+        rules: {
+          antipsicoticos: { caution: [[["clozapina"], "Pode somar supressão da medula: hemograma de perto."]] },
+          estabilizadores: { caution: [[["valproato"], "Pode somar supressão da medula."]], avoid: [[["carbamazepina"], "Soma supressão da medula e, como indutor da CYP3A4, deve ser evitada com inibidores de JAK metabolizados por ela (upadacitinibe)."]] },
+          antidepressivos: { caution: [[["mirtazapina"], "Pode somar supressão da medula (neutropenia rara)."]] },
+        },
+      },
+      {
+        id: "qtImuno", label: "Hidroxicloroquina ou tacrolimo", group: "imuno", src: "mi", where: "cap. 14 e tabela 14-2",
+        rules: {
+          antipsicoticos: { caution: [[["haloperidol", "flufenazina", "clorpromazina", "risperidona", "paliperidona", "quetiapina", "ziprasidona"], "Tacrolimo: mais risco de arritmia com outros que alargam o QT. Hidroxicloroquina também pode alargar o QT, mas estudos não mostraram piora ao associar antipsicóticos."]] },
+          antidepressivos: { caution: [[TCA, "Tacrolimo: mais risco de arritmia com tricíclicos (QT)."]] },
+          estabilizadores: { caution: [[["litio"], "Tacrolimo: mais risco de arritmia com lítio (QT)."]] },
+        },
+      },
+      {
+        id: "corticoide", label: "Corticoide em uso ou retirada recente", group: "imuno", src: "gee", where: "cap. 10",
+        rules: {
+          antidepressivos: { avoid: [[TCA, "Evitar: mais risco de suicídio nessa população, e podem piorar a psicose por corticoide."]], prefer: [[[...SSRI, ...SNRI], "Relatos de sucesso na depressão por corticoide (sem ensaio que compare remédios)."]] },
+          estabilizadores: { prefer: [[["litio"], "Relatos de sucesso na depressão e na prevenção da psicose por corticoide."], [["valproato"], "Relatos de prevenção da psicose por corticoide."]], avoid: [[["carbamazepina"], "Induz a CYP3A4 e baixa o nível do corticoide: evitar."]] },
+          antipsicoticos: { prefer: [[["olanzapina"], "Eficaz e bem tolerada num ensaio aberto na mania ou estado misto por corticoide."]] },
+        },
+        noteAll: true,
+        note: "Primeiro passo: reduzir ou suspender o corticoide, se possível (cursos de menos de 3 semanas podem parar de uma vez; longos, só com retirada lenta). Risco cresce com a dose de prednisona: 1,3% abaixo de 40 mg/dia, 4,6% entre 40 e 80 mg e 18% acima de 80 mg. Mania e confusão são mais precoces (mediana de 11,5 dias); depressão predomina no uso crônico e na retirada. Os sintomas revertem, em média, em até um mês.",
       },
       {
         id: "glaucomaFechado", label: "Glaucoma de ângulo fechado", group: "olho", src: "gee", where: "cap. 11",
@@ -285,6 +333,10 @@
     short: "Psychopharmacology in the Medically Ill",
     full: "Ferrando SJ, Levenson JL, Owen JA, eds. Clinical Manual of Psychopharmacology in the Medically Ill. American Psychiatric Publishing.",
   };
+  sources.harrisonImmuno = sources.harrisonImmuno || {
+    short: "Harrison, Textbook of Immunopsychiatry",
+    full: "Harrison N, ed. Textbook of Immunopsychiatry. Cambridge University Press; 2021.",
+  };
   sources.grassiRiba = sources.grassiRiba || {
     short: "Grassi e Riba, Psychopharmacology in Oncology and Palliative Care",
     full: "Grassi L, Riba M, eds. Psychopharmacology in Oncology and Palliative Care: A Practical Manual. Springer; 2014.",
@@ -307,7 +359,9 @@
       { about: "Tamoxifeno: inibidores fortes e moderados da CYP2D6; venlafaxina e desvenlafaxina como primeira escolha; mirtazapina na náusea, insônia e caquexia; fluoxetina e sertralina reduzindo o apetite", src: "cordas2020", where: "cap. 2 (Depressão e oncologia) e cap. 9, quadro 9.1", kind: "fonte" },
       { about: "Debate sobre o peso clínico da interação com tamoxifeno; bupropiona em tumor cerebral, na fadiga e na caquexia; antidepressivos duais na dor neuropática; fogachos; interações com quimioterápicos", src: "grassiRiba", where: "caps. 9 e 10, tabelas 9.3 e 9.4", kind: "fonte" },
       { about: "Tamoxifeno (evitar todos os inibidores da CYP2D6); mirtazapina no câncer; quimioterapia que deprime a medula", src: "medicallyIll", where: "caps. 8 e 14", kind: "fonte" },
-      { about: "Doenças reumatológicas: AINE, metotrexato, hidroxicloroquina e lúpus induzido", src: "medicallyIll", where: "cap. 14 e tabela 14-2", kind: "fonte" },
+      { about: "Doenças reumatológicas: lúpus induzido por psicofármacos, AINE, imunossupressores, hidroxicloroquina e tacrolimo, antidepressivos na artrite", src: "medicallyIll", where: "cap. 14, tabela 14-2 e Key Points", kind: "fonte" },
+      { about: "Psicose lúpica e diferencial com encefalite autoimune; biológicos anticitocina e sintomas depressivos", src: "harrisonImmuno", where: "caps. 5 e 8", kind: "fonte" },
+      { about: "Efeitos psiquiátricos do corticoide: risco por dose, início, manejo por classe e prevenção", src: "geeTaylor2025", where: "cap. 10", kind: "fonte" },
       { about: "Lítio com AINE", src: "maudsley15", where: "cap. 2, interações do lítio", kind: "fonte" },
       { about: "Prioridades (peso, sedação, disfunção sexual, prolactina, anticolinérgico, hipotensão, náusea)", src: "curadoria", where: "níveis de efeito das telas de cada classe, com as fontes delas", kind: "didatico" },
       { about: "Separação em preferir, cautela e evitar, e ordem dentro de cada grupo", src: "curadoria", where: "regra nossa que soma os motivos acima; não é uma recomendação publicada", kind: "didatico" },
