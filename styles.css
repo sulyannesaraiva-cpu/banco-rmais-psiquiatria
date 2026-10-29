@@ -9756,3 +9756,240 @@ body.theme-dark .pharma-chip.on {
   color: var(--muted);
   font-size: 13px;
 }
+
+.pharma-reading.tone-ok {
+  background: var(--accent-soft);
+}
+
+/* Níveis séricos de antipsicóticos */
+.lv-drugs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 12px 0;
+}
+
+.lv-calc,
+.lv-cloz {
+  display: grid;
+  gap: 12px;
+}
+
+.lv-inputs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+}
+
+.lv-field {
+  display: grid;
+  gap: 4px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.lv-field input {
+  width: 100%;
+  min-height: 40px;
+  padding: 6px 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--ink, inherit);
+  font: inherit;
+  font-size: 16px;
+}
+
+.lv-opt {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 10px;
+  font-size: 13px;
+}
+
+.lv-opt > span {
+  color: var(--muted);
+  min-width: 70px;
+}
+
+.lv-result {
+  display: grid;
+  gap: 10px;
+}
+
+.lv-numbers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 8px;
+}
+
+.lv-numbers > div {
+  display: grid;
+  gap: 2px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+
+.lv-numbers small,
+.lv-numbers span {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.lv-numbers strong {
+  font-size: 18px;
+}
+
+.lv-scale {
+  display: grid;
+  gap: 4px;
+  padding: 6px 4px 0;
+}
+
+.lv-bar {
+  position: relative;
+  height: 14px;
+  border-radius: 7px;
+  overflow: visible;
+  background: var(--panel-soft);
+}
+
+.lv-zone {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.lv-zone.below {
+  left: 0;
+  background: #f3d9a4;
+  border-radius: 7px 0 0 7px;
+}
+
+.lv-zone.range {
+  background: #9fd4b4;
+}
+
+.lv-zone.futile {
+  background: #f1b8a8;
+  border-radius: 0 7px 7px 0;
+}
+
+.lv-alert {
+  position: absolute;
+  top: -4px;
+  bottom: -4px;
+  width: 0;
+  border-left: 2px dashed #c0392b;
+}
+
+.lv-pin {
+  position: absolute;
+  top: 50%;
+  width: 16px;
+  height: 16px;
+  margin-left: -8px;
+  margin-top: -8px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.35);
+}
+
+.lv-pin.expected,
+.lv-legend i.expected {
+  background: #0072b2;
+}
+
+.lv-pin.measured,
+.lv-legend i.measured {
+  background: #1f2937;
+  border-radius: 3px;
+}
+
+.lv-legend i.alert {
+  border-left: 2px dashed #c0392b;
+  border-radius: 0;
+  width: 0;
+  background: none;
+}
+
+.lv-marks {
+  position: relative;
+  height: 30px;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.lv-mark {
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.lv-mark.t {
+  top: 0;
+}
+
+.lv-mark.f {
+  top: 14px;
+}
+
+.lv-mark em {
+  font-style: normal;
+}
+
+.lv-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.lv-legend i {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+  border-radius: 50%;
+  vertical-align: -1px;
+}
+
+.lv-small {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.lv-table-wrap {
+  overflow-x: auto;
+}
+
+.lv-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.lv-table th,
+.lv-table td {
+  padding: 6px 8px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+}
+
+.lv-table th {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.lv-cards,
+.lv-rules {
+  display: grid;
+  gap: 8px;
+}

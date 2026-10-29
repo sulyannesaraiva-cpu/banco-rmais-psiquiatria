@@ -846,6 +846,24 @@ test("simulador de fármacos: populações especiais", async ({ page }) => {
   await expect(page.locator(".pop-detail")).toHaveCount(0);
   expect(errors).toEqual([]);
 });
+test("psicofarmacologia: níveis séricos de antipsicóticos", async ({ page }) => {
+  const errors = await openSite(page);
+  await goTab(page, "pharma");
+  await page.locator("[data-pharma-levels-open]").first().click();
+  await expect(page.locator("#pharmaPanel h2")).toHaveText("Níveis séricos");
+  await page.locator('[data-lv-drug="clozapina"]').click();
+  await page.locator('[data-lv-smoke="nao"]').click();
+  await page.locator('[data-lv-sex="f"]').click();
+  await page.locator('[data-lv-input="dose"]').fill("300");
+  await expect(page.locator(".lv-numbers")).toContainText("396 ng/mL");
+  await expect(page.locator(".lv-cloz")).toContainText("Miocardite");
+  await page.locator('[data-lv-input="measured"]').fill("150");
+  await expect(page.locator(".lv-result")).toContainText("Bem abaixo do esperado");
+  await page.locator('[data-lv-drug="haloperidol"]').click();
+  await expect(page.locator(".lv-cloz")).toHaveCount(0);
+  await expect(page.locator(".lv-numbers")).toContainText("Dose para o limiar");
+  expect(errors).toEqual([]);
+});
 test("simulador de fármacos: cartão explicativo de cada alvo", async ({ page }) => {
   const errors = await openSite(page);
   await goTab(page, "pharma");
