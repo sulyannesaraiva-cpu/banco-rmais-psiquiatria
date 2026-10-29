@@ -900,6 +900,18 @@ test("aba Paciente: comorbidades e escolha dentro da classe", async ({ page }) =
   await expect(page.locator("#pharmaPanel h2")).toHaveText("Paciente");
   expect(errors).toEqual([]);
 });
+test("aba Paciente: prioridades combinadas ordenam sem mudar o grupo de segurança", async ({ page }) => {
+  const errors = await openSite(page);
+  await page.evaluate(() => document.querySelector('.tab[data-sim-target="patient"]').click());
+  await page.locator('[data-pt-class="antipsicoticos"]').click();
+  await page.locator('[data-pt-prio="weight"]').click();
+  await page.locator('[data-pt-prio="prolactin"]').click();
+  await expect(page.locator(".pt-prio-line")).toContainText("Atendem todas e não têm alerta");
+  await expect(page.locator(".pt-group-neutral .pt-row").first()).toContainText("Atende 2 de 2");
+  await expect(page.locator(".pt-group-neutral")).toContainText("Clozapina");
+  await expect(page.locator(".pt-group-caution")).not.toContainText("Clozapina");
+  expect(errors).toEqual([]);
+});
 test("simulador de fármacos: cartão explicativo de cada alvo", async ({ page }) => {
   const errors = await openSite(page);
   await goTab(page, "pharma");

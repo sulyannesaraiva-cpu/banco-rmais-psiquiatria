@@ -10260,3 +10260,55 @@ body.theme-dark .pharma-chip.on {
 .pt-group-neutral {
   --c: #6b7280;
 }
+
+/* Aba Paciente: encaixe nas prioridades */
+.pt-prio-line {
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: var(--panel-soft);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.pt-fit {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 6px;
+  font-size: 12px;
+}
+
+.pt-fit > b {
+  margin-right: 2px;
+  color: var(--muted);
+}
+
+.pt-fit > b.all {
+  color: #1b7f4b;
+}
+
+.pt-fit-chip {
+  padding: 1px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  white-space: nowrap;
+}
+
+.pt-fit-met {
+  border-color: #1b7f4b;
+  color: #1b7f4b;
+}
+
+.pt-fit-part {
+  border-color: #b26a00;
+  color: #b26a00;
+}
+
+.pt-fit-miss {
+  border-color: #c0392b;
+  color: #c0392b;
+}
+
+.pt-fit-none {
+  color: var(--muted);
+}

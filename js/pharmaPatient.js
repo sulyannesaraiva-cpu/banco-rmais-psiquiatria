@@ -57,23 +57,31 @@ function pharmaPatientReasons(item, p) {
   if (p.smoke && typeof pharmaSmokingWarnings === "function") {
     pharmaSmokingWarnings([item.drug.id], p.smoke).filter((w) => w.tone !== "good").forEach((w) => reasons.push({ kind: "caution", cond: "Tabagismo", text: w.text, src: w.source }));
   }
-  const prios = (window.PHARMA_COMORB?.priorities || []).filter((x) => p.prio.includes(x.id));
-  prios.forEach((prio) => {
-    const key = prio.key[item.cls.id];
-    if (!key) return;
-    const level = item.drug.effects?.[key];
-    if (level == null) return;
-    const name = prio.label.replace(/^(Evitar|Quer) /, "").replace(/ \(.*\)$/, "");
-    if (prio.want) {
-      if (level >= 2) reasons.push({ kind: "good", cond: "Prioridade", text: `Sedação ${PHARMA_PRIO_LEVELS[level]}: ajuda no sono.`, src: "níveis de efeito do simulador" });
-      else if (level === 0) reasons.push({ kind: "note", cond: "Prioridade", text: "Não seda: não ajuda no sono.", src: "níveis de efeito do simulador" });
-    } else if (level >= 3) reasons.push({ kind: "caution", cond: "Prioridade", text: `${name.charAt(0).toUpperCase() + name.slice(1)}: efeito forte.`, src: "níveis de efeito do simulador" });
-    else if (level === 2) reasons.push({ kind: "note", cond: "Prioridade", text: `${name.charAt(0).toUpperCase() + name.slice(1)}: efeito moderado.`, src: "níveis de efeito do simulador" });
-    else if (level === 0) reasons.push({ kind: "good", cond: "Prioridade", text: `Pouco ou nenhum efeito de ${name}.`, src: "níveis de efeito do simulador" });
-  });
   const br = (window.PHARMA_BRAZIL || {})[item.drug.id];
   if (br && br.available === false) reasons.push({ kind: "caution", cond: "Brasil", text: "Sem venda no Brasil.", src: "Dieckmann e Haddad (2025), Nomes no Brasil" });
   return reasons;
+}
+
+/* Prioridades: não mexem no grupo (isso é segurança); só ordenam e mostram o quanto cada remédio atende.
+   Para "evitar X": nenhum = 3 pontos, leve = 2, moderado = 1, forte = 0. Para "quer sedação": o contrário.
+   Atende a prioridade quem fica em nenhum ou leve (ou, querendo sedação, moderado ou forte). */
+function pharmaPatientPrioFit(item, p) {
+  const prios = (window.PHARMA_COMORB?.priorities || []).filter((x) => p.prio.includes(x.id));
+  const parts = prios.map((prio) => {
+    const key = prio.key[item.cls.id];
+    const level = key ? item.drug.effects?.[key] : null;
+    const short = prio.label.replace(/^(Evitar|Quer) /, "").replace(/ \(.*\)$/, "").replace(/^ganho de /, "");
+    if (level == null) return { prio, short, level: null, points: null, met: null };
+    const points = prio.want ? level : 3 - level;
+    return { prio, short, level, points, met: points >= 2 };
+  });
+  const known = parts.filter((x) => x.points != null);
+  return {
+    parts,
+    applicable: known.length,
+    met: known.filter((x) => x.met).length,
+    score: known.length ? known.reduce((s, x) => s + x.points, 0) / known.length : -1,
+  };
 }
 
 function pharmaPatientEvaluate(clsId, p) {
@@ -84,8 +92,20 @@ function pharmaPatientEvaluate(clsId, p) {
     const reasons = pharmaPatientReasons(item, p);
     const count = (k) => reasons.filter((r) => r.kind === k).length;
     const group = count("avoid") ? "avoid" : count("caution") ? "caution" : count("good") ? "good" : "neutral";
-    return { item, reasons, group, good: count("good"), caution: count("caution") };
-  }).sort((a, b) => b.good - a.good || a.caution - b.caution || a.item.drug.name.localeCompare(b.item.drug.name, "pt-BR"));
+    return { item, reasons, group, good: count("good"), caution: count("caution"), fit: pharmaPatientPrioFit(item, p) };
+  }).sort((a, b) =>
+    b.fit.met - a.fit.met || b.fit.score - a.fit.score || b.good - a.good || a.caution - b.caution || a.item.drug.name.localeCompare(b.item.drug.name, "pt-BR"));
+}
+
+function pharmaPatientFitHtml(fit) {
+  if (!fit.parts.length) return "";
+  const chips = fit.parts.map((x) => {
+    const tone = x.points == null ? "none" : x.met ? "met" : x.points === 1 ? "part" : "miss";
+    const label = x.level == null ? "sem dado" : PHARMA_PRIO_LEVELS[x.level];
+    return `<span class="pt-fit-chip pt-fit-${tone}">${escapeHtml(x.short)}: ${label}</span>`;
+  }).join("");
+  const summary = fit.applicable ? `Atende ${fit.met} de ${fit.applicable} ${fit.applicable === 1 ? "prioridade" : "prioridades"}` : "Prioridades não se aplicam a esta classe";
+  return `<div class="pt-fit"><b class="${fit.applicable && fit.met === fit.applicable ? "all" : ""}">${summary}</b>${chips}</div>`;
 }
 
 function pharmaPatientRow(row) {
@@ -94,7 +114,8 @@ function pharmaPatientRow(row) {
   return `
     <div class="pt-row pt-${row.group}">
       <button type="button" class="pt-name" data-pcard-open="${row.item.cls.id}:${row.item.drug.id}">${escapeHtml(row.item.drug.name)} <span aria-hidden="true">›</span></button>
-      ${reasons.length ? `<ul class="pt-reasons">${reasons.map((r) => `<li class="pt-r-${r.kind}"><b>${escapeHtml(r.cond)}:</b> ${escapeHtml(r.text)} <small>${escapeHtml(r.src)}</small></li>`).join("")}</ul>` : `<p class="pt-none">Nada no perfil muda a escolha deste remédio.</p>`}
+      ${pharmaPatientFitHtml(row.fit)}
+      ${reasons.length ? `<ul class="pt-reasons">${reasons.map((r) => `<li class="pt-r-${r.kind}"><b>${escapeHtml(r.cond)}:</b> ${escapeHtml(r.text)} <small>${escapeHtml(r.src)}</small></li>`).join("")}</ul>` : row.fit.parts.length ? "" : `<p class="pt-none">Nada no perfil muda a escolha deste remédio.</p>`}
     </div>`;
 }
 
@@ -104,17 +125,27 @@ function pharmaPatientResults(clsId, p) {
   const notes = p.comorb.map((id) => data.conditions.find((c) => c.id === id)).filter((c) => c && c.note && (c.noteAll || !c.rules[clsId])).map((c) => `<b>${escapeHtml(c.label)}:</b> ${escapeHtml(c.note)}`);
   const noRules = p.comorb.map((id) => data.conditions.find((c) => c.id === id)).filter((c) => c && !c.rules[clsId] && !c.note && !(c.effects || []).some((h) => h.classes.includes(clsId))).map((c) => c.label);
   const groups = [
-    ["good", "Mais favoráveis", "Têm ponto a favor para este perfil e nenhum alerta."],
-    ["neutral", "Sem alerta nas fontes", "Nenhuma regra das fontes, nem a favor nem contra, para este perfil: não quer dizer que sejam seguros."],
+    ["good", "Mais favoráveis", "Têm ponto a favor de segurança para este perfil e nenhum alerta."],
+    ["neutral", "Sem alerta nas fontes", "Nenhuma regra de segurança das fontes, nem a favor nem contra, para este perfil: não quer dizer que sejam seguros."],
     ["caution", "Usar com cautela", "Têm algum alerta, mas podem ser usados com ajuste ou monitorização."],
     ["avoid", "Evitar", "Contraindicação ou risco alto para este perfil."],
   ];
+  const prioLabels = (data.priorities || []).filter((x) => p.prio.includes(x.id)).map((x) => x.label.toLowerCase());
+  const usable = rows.filter((r) => r.group !== "avoid" && r.fit.applicable);
+  const best = usable.filter((r) => r.fit.met === r.fit.applicable && r.fit.applicable === Math.max(...usable.map((x) => x.fit.applicable)));
+  const bestFree = best.filter((r) => r.group !== "caution");
+  const bestCaution = best.filter((r) => r.group === "caution");
+  const prioLine = prioLabels.length
+    ? `<div class="pt-prio-line"><b>Prioridades:</b> ${escapeHtml(prioLabels.join(" + "))}. Elas não mudam o grupo (que é de segurança): dentro de cada grupo, vem primeiro quem atende mais prioridades.${best.length ? `${bestFree.length ? ` <b>Atendem todas e não têm alerta:</b> ${bestFree.map((r) => escapeHtml(r.item.drug.name)).join(", ")}.` : ""}${bestCaution.length ? ` <b>Atendem todas, mas com cautela:</b> ${bestCaution.map((r) => escapeHtml(r.item.drug.name)).join(", ")}.` : ""}` : " <b>Nenhum remédio fora do grupo \"evitar\" atende todas</b>: vale rever qual prioridade pesa mais."}</div>`
+    : "";
   return `
     ${notes.length ? `<p class="pt-small">${notes.join("<br>")}</p>` : ""}
     ${noRules.length ? `<p class="pt-small">Sem regra das fontes para esta classe em: ${escapeHtml(noRules.join(", "))}.</p>` : ""}
+    ${prioLine}
     ${groups.map(([id, title, hint]) => {
       const list = rows.filter((r) => r.group === id);
-      if (id === "neutral") {
+      if (id === "neutral" && !list.length) return "";
+      if (id === "neutral" && !prioLabels.length) {
         if (!list.length) return "";
         return `
         <div class="pt-group pt-group-neutral">
