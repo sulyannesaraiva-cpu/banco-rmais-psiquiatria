@@ -2189,10 +2189,10 @@ function pharmaCrossInteractions(picks) {
       inhibitedBy.forEach((inh) => {
         const strength = inhibitors[enzyme][inh];
         const severe = inh === "fluvoxamina" && sub === "clozapina";
-        out.push({ tone: severe ? "high" : "warn", title: `Nível de ${name(sub).toLowerCase()} sobe (CYP${enzyme})`, text: `${name(inh)} inibe a CYP${enzyme}${strength ? ` (${strength})` : ""}, que metaboliza ${name(sub).toLowerCase()}.${severe ? " A fluvoxamina pode aumentar muito o nível da clozapina." : ""}`, source: "Maudsley, tabelas 3.11 e 3.12" });
+        out.push({ tone: severe ? "high" : "warn", title: `Nível de ${name(sub).toLowerCase()} sobe (CYP${enzyme})`, text: `${name(inh)} inibe a CYP${enzyme}${strength ? ` (${strength})` : ""}, que metaboliza ${name(sub).toLowerCase()}.${severe ? " A fluvoxamina pode aumentar muito o nível da clozapina." : ""}`, source: "Maudsley, tabelas 3.11 e 3.12; confirmado em Levenson e Ferrando, Psychopharmacology in the Medically Ill (3ª ed., 2024), cap. 1" });
       });
       (inducers[enzyme] || []).filter((id) => id !== sub && ids.includes(id)).forEach((ind) => {
-        out.push({ tone: "warn", title: `Nível de ${name(sub).toLowerCase()} cai (CYP${enzyme})`, text: `${name(ind)} induz a CYP${enzyme}, que metaboliza ${name(sub).toLowerCase()}: o efeito pode diminuir.`, source: "Maudsley, tabela 3.12" });
+        out.push({ tone: "warn", title: `Nível de ${name(sub).toLowerCase()} cai (CYP${enzyme})`, text: `${name(ind)} induz a CYP${enzyme}, que metaboliza ${name(sub).toLowerCase()}: o efeito pode diminuir.`, source: "Maudsley, tabela 3.12; confirmado em Levenson e Ferrando, Psychopharmacology in the Medically Ill (3ª ed., 2024), cap. 1" });
       });
     });
   });
