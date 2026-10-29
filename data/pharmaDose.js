@@ -110,8 +110,12 @@ window.PHARMA_DOSE.ap = {
 /* Benzodiazepínicos e zolpidem.
    - eq: dose equivalente a 10 mg de diazepam (Maudsley tabela 3.24; alprazolam, bromazepam e
      zolpidem pelo Ashton Manual). long: meia-vida longa.
-   - Ocupação GABA-A do diazepam: ajuste aos números do Maudsley (5 mg a menos a partir de 50 mg
-     tira 2,3 pontos; de 5 para 0 mg, 18,3 pontos): ED50 ≈ 22 mg de diazepam. */
+   - Ocupação do GABA-A: ajuste à tabela do clonazepam do Maudsley Deprescribing Guidelines
+     (4 mg ≈ 76%, 1 mg ≈ 45%, 0,5 mg ≈ 29%): Emax ≈ 100%, ED50 ≈ 1,24 mg de clonazepam. Os
+     outros são convertidos para clonazepam pela tabela de equivalência. Bate com os números do
+     diazepam no Maudsley 15ª ed. (de 5 para 0 mg de diazepam, ~18 pontos).
+   - Referência da troca: clonazepam (gotas de 2,5 mg/mL no Brasil, 1 gota = 0,1 mg, permitem
+     degraus finos) ou diazepam (só comprimidos de 5 e 10 mg no Brasil). */
 window.PHARMA_DOSE.bz = {
   drugs: {
     diazepam: { eq: 10, range: [1, 60], long: true },
@@ -122,8 +126,13 @@ window.PHARMA_DOSE.bz = {
     bromazepam: { eq: 6, range: [1.5, 36] },
     zolpidem: { eq: 20, range: [5, 20], zdrug: true },
   },
-  ed50Diazepam: 22,
-  switchText: "Remédios de meia-vida curta ou intermediária podem ser retirados direto (às vezes em mais de uma tomada por dia) ou trocados por dose equivalente de diazepam, de meia-vida longa. Como algumas pessoas têm sintomas na troca súbita, a troca é feita aos poucos, uma parte da dose por semana. A equivalência é aproximada: ajustar pelos sintomas.",
+  ed50Clonazepam: 1.24,
+  switchText: "Remédios de meia-vida curta ou intermediária podem ser retirados direto (às vezes em mais de uma tomada por dia) ou trocados por dose equivalente de um benzodiazepínico de ação mais longa. Como algumas pessoas têm sintomas na troca súbita, a troca é feita aos poucos, uma parte da dose por semana. A equivalência é aproximada: ajustar pelos sintomas.",
+  targets: {
+    clonazepam: { label: "Clonazepam (gotas)", why: "No Brasil, o clonazepam tem solução oral de 2,5 mg/mL (1 gota = 0,1 mg), inclusive no SUS (Rename, componente básico): dá para descer de gota em gota, sem partir comprimidos. Meia-vida de 20–60 horas. O Stahl's Deprescriber's Guide cita a troca direta de lorazepam para clonazepam como exemplo." },
+    diazepam: { label: "Diazepam", why: "Meia-vida mais longa (com metabólito ativo), referência clássica do Maudsley e do Ashton. No Brasil só há comprimidos de 5 e 10 mg (e injetável): as doses finais exigem partir comprimidos ou manipulação. Acumula na insuficiência hepática." },
+  },
+  dilution: "Abaixo de 1 gota (0,1 mg): diluir 10 gotas da solução de 2,5 mg/mL em água até 10 mL, o que dá 0,1 mg/mL; preparar no dia, agitar bem antes de medir com seringa (Maudsley Deprescribing Guidelines).",
   risk: {
     low: { label: "Menor", pct: 15, range: "10–20% no primeiro degrau", text: "Menos de 6 meses de uso, benzodiazepínico de meia-vida longa e sem retirada importante no passado." },
     high: { label: "Maior", pct: 10, range: "5–10% no primeiro degrau", text: "Mais de 6 meses de uso, meia-vida curta ou retirada difícil no passado. A maioria dos usuários de longo prazo segue a 5–10% da última dose por mês." },
@@ -132,6 +141,9 @@ window.PHARMA_DOSE.bz = {
     "Nunca parar de repente: a retirada abrupta pode causar convulsões e delirium e pode ser fatal.",
     "Retirar só com a concordância do paciente; apoio e preparo ajudam (TCC e relaxamento têm evidência mais fraca que a redução gradual).",
     "Reduzir uma proporção da última dose (em geral 5–10% ao mês, ou um pouco mais rápido); acompanhar os sintomas por 2–4 semanas a cada degrau.",
+    "Teto de velocidade: a diretriz conjunta norte-americana de 2025 (ASAM) recomenda não passar de 25% a cada 2 semanas; com sintomas importantes, degraus ainda menores (citada no Stahl's Deprescriber's Guide).",
+    "Não usar doses em dias alternados para espaçar a retirada: a oscilação do nível no sangue provoca sintomas entre as doses (Maudsley Deprescribing Guidelines).",
+    "Uso por poucas semanas: a retirada pode ser mais rápida, em geral não mais longa que o tempo de uso.",
     "Guia do Maudsley para diazepam: 5–10 mg a cada 2–4 semanas até 50 mg; 2–5 mg até 20 mg; 1–2 mg até 10 mg; 0,5–1 mg até 5 mg; 0,25–0,5 mg até 2,5 mg; depois 0,1–0,25 mg até parar.",
     "Sintomas intoleráveis: manter a dose ou voltar à última bem tolerada e seguir mais devagar. A dose final pode ser de apenas 0,1 mg de diazepam.",
     "Cuidado na insuficiência hepática: diazepam e outros de ação longa podem acumular.",

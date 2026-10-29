@@ -131,24 +131,67 @@ function apSwitchSchedule(fromId, toId, dose) {
   return rows;
 }
 
-/* ---------- Benzodiazepínicos: passar para diazepam aos poucos ---------- */
+/* ---------- Benzodiazepínicos: passar para clonazepam (gotas) ou diazepam aos poucos ---------- */
 
-function bzToDiazepam(fromId, dose) {
-  const info = doseInfo(fromId);
-  return doseRound((dose / info.eq) * 10);
+/* Arredonda para o que dá para medir: gotas inteiras quando há gotas (≥ 1 gota). */
+function doseRoundFor(id, d) {
+  const br = (window.PHARMA_BRAZIL || {})[id];
+  if (br?.drops && d >= br.drops) return Math.round(d / br.drops) * br.drops;
+  return doseRound(d);
 }
 
-function bzSwitchSchedule(fromId, dose) {
-  const total = bzToDiazepam(fromId, dose);
+function bzTargetId() {
+  return state.pharma.bzTarget === "diazepam" ? "diazepam" : "clonazepam";
+}
+
+function bzConvert(fromId, dose, targetId) {
+  return doseRoundFor(targetId, (dose / doseInfo(fromId).eq) * doseInfo(targetId).eq);
+}
+
+function bzSwitchSchedule(fromId, dose, targetId, targetName) {
+  const total = bzConvert(fromId, dose, targetId);
   const rows = [{ label: "Hoje", a: dose, b: null, days: 0 }];
   [0.25, 0.5, 0.75, 1].forEach((f, i) => rows.push({
     label: scheduleWeekLabel(rows),
     a: f === 1 ? 0 : doseRound(dose * (1 - f)),
-    b: doseRound(total * f),
-    note: i === 0 ? "troca uma parte da dose por semana" : f === 1 ? "só diazepam; daqui segue a retirada" : "",
+    b: doseRoundFor(targetId, total * f),
+    note: i === 0 ? "troca uma parte da dose por semana" : f === 1 ? `só ${targetName.toLowerCase()}; daqui segue a retirada` : "",
     days: 7,
   }));
   return rows;
+}
+
+/* "Na prática": gotas ou mL quando há forma líquida no Brasil. */
+function dosePractical(id, d) {
+  const br = (window.PHARMA_BRAZIL || {})[id];
+  if (!br || !d) return "";
+  if (br.drops) {
+    const drops = d / br.drops;
+    return drops >= 1 ? `${Math.round(drops)} ${Math.round(drops) === 1 ? "gota" : "gotas"}` : id === "clonazepam" ? `${doseNum(Math.round(drops * 100) / 100)} mL da diluição` : "menos de 1 gota: manipular";
+  }
+  if (br.ml) return `${doseNum(Math.round((d / br.ml) * 100) / 100)} mL`;
+  return "";
+}
+
+function practicalTag(id, d) {
+  if (!(window.PHARMA_BRAZIL || {})[id]?.drops) return "";
+  const text = dosePractical(id, d);
+  return text ? ` <small class="dose-practical">${escapeHtml(text)}</small>` : "";
+}
+
+function brazilCard(id, name) {
+  const br = (window.PHARMA_BRAZIL || {})[id];
+  if (!br) return "";
+  const lines = [];
+  if (br.available === false) lines.push("Sem venda no Brasil: a simulação serve só para estudo.");
+  else if (br.liquid) lines.push(`Tem ${br.liquid}${br.drops ? ` (1 gota = ${doseNum(br.drops)} mg)` : ""}: permite degraus finos no fim da retirada.`);
+  else if (br.noSplit) lines.push("Só há formas de liberação prolongada ou cápsulas, que não devem ser partidas: degraus menores que a menor apresentação exigem manipulação.");
+  else lines.push("Sem forma líquida no Brasil: os degraus finais exigem partir comprimidos sulcados ou manipulação.");
+  return `
+    <div class="pharma-reading tone-${br.available === false ? "high" : "low"} brazil-card">
+      <strong>No Brasil: ${escapeHtml(name)}</strong>
+      <span><b>Nomes:</b> ${escapeHtml(br.names)}<br><b>Apresentações:</b> ${escapeHtml(br.forms)}<br><b>SUS:</b> ${escapeHtml(br.sus)}<br><b>Para o desmame:</b> ${escapeHtml(lines.join(" "))}</span>
+    </div>`;
 }
 
 /* ---------- Gráfico e tabela da troca ---------- */
@@ -195,7 +238,7 @@ function scheduleHtml(rows, a, b, bMax) {
     <div class="atlas-legend"><span><i style="background:#9fb3b6"></i>${escapeHtml(a.name)}</span><span><i style="background:#0b6b70"></i>${escapeHtml(b.name)}</span></div>
     <table class="dose-table">
       <thead><tr><th></th><th>${escapeHtml(a.name)}</th><th>${escapeHtml(b.name)}</th><th></th></tr></thead>
-      <tbody>${rows.map((row, i) => `<tr class="${row.gap ? "gap" : ""}"><th>${escapeHtml(row.label)}</th><td>${row.a === 0 && i > 0 ? (rows[i - 1].a > 0 ? "parar" : "—") : doseFmt(row.a)}</td><td>${doseFmt(row.b)}</td><td>${escapeHtml(row.note || "")}</td></tr>`).join("")}</tbody>
+      <tbody>${rows.map((row, i) => `<tr class="${row.gap ? "gap" : ""}"><th>${escapeHtml(row.label)}</th><td>${row.a === 0 && i > 0 ? (rows[i - 1].a > 0 ? "parar" : "—") : doseFmt(row.a) + practicalTag(a.id, row.a)}</td><td>${doseFmt(row.b)}${practicalTag(b.id, row.b)}</td><td>${escapeHtml(row.note || "")}</td></tr>`).join("")}</tbody>
     </table>`;
 }
 
@@ -260,6 +303,7 @@ function renderSwitchAd(drugs) {
       <section class="pharma-card">
         ${notes.length ? `<h3>Atenção nesta troca</h3>${notes.map((note) => `<div class="pharma-reading tone-warn"><span>${escapeHtml(note)}</span></div>`).join("")}` : ""}
         ${serotonergic ? `<div class="pharma-reading tone-high"><strong>IMAO na troca</strong><span>Muitos casos graves de síndrome serotoninérgica envolvem um IMAO (inclusive moclobemida) com ISRS: respeitar o intervalo.</span></div>` : ""}
+        ${brazilCard(fromId, a.name)}${b && fromId !== toId ? brazilCard(toId, b.name) : ""}
         <h4>Como o cronograma foi montado</h4>
         <div class="pharma-reading tone-ok"><span>${escapeHtml(doseData.example)}</span></div>
         <h4>Regras gerais</h4>
@@ -300,6 +344,7 @@ function renderSwitchAp(drugs) {
           ${patientCard()}`}
       </section>
       <section class="pharma-card">
+        ${brazilCard(fromId, a.name)}${same ? "" : brazilCard(toId, b.name)}
         <h4>Como trocar antipsicóticos</h4>
         <ul class="fronto-signs">${ap.rules.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
         <div class="pharma-reading tone-low"><strong>Retirada ou recaída?</strong><span>${escapeHtml(ap.withdrawal)}</span></div>
@@ -309,30 +354,38 @@ function renderSwitchAp(drugs) {
 
 function renderSwitchBz(drugs) {
   const bz = window.PHARMA_DOSE.bz;
-  const choices = drugs.filter((drug) => drug.id !== "diazepam" && !bz.drugs[drug.id].zdrug);
+  const targetId = bzTargetId();
+  const choices = drugs.filter((drug) => drug.id !== targetId && !bz.drugs[drug.id].zdrug);
   const fromId = choices.some((drug) => drug.id === state.pharma.bzFrom) ? state.pharma.bzFrom : "alprazolam";
   const a = drugs.find((drug) => drug.id === fromId);
-  const b = drugs.find((drug) => drug.id === "diazepam");
+  const b = drugs.find((drug) => drug.id === targetId);
   const dose = doseCurrent(fromId);
-  const total = bzToDiazepam(fromId, dose);
-  const rows = bzSwitchSchedule(fromId, dose);
+  const total = bzConvert(fromId, dose, targetId);
+  const rows = bzSwitchSchedule(fromId, dose, targetId, b.name);
+  const practical = dosePractical(targetId, total);
   return `
     <div class="pharma-grid">
       <section class="pharma-card">
+        <div class="segmented dem-stages" role="group" aria-label="Benzodiazepínico de referência">
+          ${Object.entries(bz.targets).map(([id, t]) => `<button type="button" class="${targetId === id ? "active" : ""}" data-bz-target="${id}" aria-pressed="${targetId === id}">${escapeHtml(t.label)}</button>`).join("")}
+        </div>
         <div class="switch-pick">
           <label><span>De</span><select data-bz-switch="from">${drugOptions(choices, fromId)}</select></label>
           ${doseInputHtml(fromId, "switch")}
         </div>
-        <div class="pharma-reading tone-ok"><strong>${escapeHtml(a.name)} ${doseFmt(dose)} ≈ diazepam ${doseFmt(total)}</strong><span>Equivalência aproximada: ${escapeHtml(a.name.toLowerCase())} ${doseNum(bz.drugs[fromId].eq)} mg ≈ diazepam 10 mg.</span></div>
+        <div class="pharma-reading tone-ok"><strong>${escapeHtml(a.name)} ${doseFmt(dose)} ≈ ${escapeHtml(b.name.toLowerCase())} ${doseFmt(total)}${practical ? ` (${practical})` : ""}</strong><span>Equivalência aproximada: ${escapeHtml(a.name.toLowerCase())} ${doseNum(bz.drugs[fromId].eq)} mg ≈ diazepam 10 mg ≈ clonazepam 0,5 mg.</span></div>
         ${scheduleHtml(rows, a, b, total)}
-        <div class="pharma-toggles"><button type="button" class="pharma-toggle" data-bz-to-taper="${total}">Retirar o diazepam a partir de ${doseFmt(total)} ›</button></div>
+        <div class="pharma-toggles"><button type="button" class="pharma-toggle" data-bz-to-taper="${total}" data-bz-to-taper-drug="${targetId}">Retirar o ${escapeHtml(b.name.toLowerCase())} a partir de ${doseFmt(total)} ›</button></div>
         ${patientCard()}
       </section>
       <section class="pharma-card">
-        <h4>Por que passar para diazepam?</h4>
-        <div class="pharma-reading tone-ok"><span>${escapeHtml(bz.switchText)}</span></div>
-        <h4>Equivalências (≈ 10 mg de diazepam)</h4>
-        <table class="dose-table"><tbody>${drugs.map((drug) => `<tr><th>${escapeHtml(drug.name)}</th><td>${doseFmt(bz.drugs[drug.id].eq)}</td><td>${bz.drugs[drug.id].long ? "meia-vida longa" : bz.drugs[drug.id].zdrug ? "hipnótico Z" : "meia-vida curta ou intermediária"}</td></tr>`).join("")}</tbody></table>
+        <h4>Por que ${escapeHtml(b.name.toLowerCase())}?</h4>
+        <div class="pharma-reading tone-ok"><span>${escapeHtml(bz.targets[targetId].why)}</span></div>
+        <div class="pharma-reading tone-low"><span>${escapeHtml(bz.switchText)}</span></div>
+        ${brazilCard(fromId, a.name)}
+        ${brazilCard(targetId, b.name)}
+        <h4>Equivalências aproximadas</h4>
+        <table class="dose-table"><thead><tr><th></th><th>≈ diazepam 10 mg</th><th></th></tr></thead><tbody>${drugs.map((drug) => `<tr><th>${escapeHtml(drug.name)}</th><td>${doseFmt(bz.drugs[drug.id].eq)}</td><td>${bz.drugs[drug.id].long ? "meia-vida longa" : bz.drugs[drug.id].zdrug ? "hipnótico Z" : "meia-vida curta ou intermediária"}</td></tr>`).join("")}</tbody></table>
         <div class="pharma-reading tone-low"><strong>Retirada</strong><span>${escapeHtml(bz.withdrawal)}</span></div>
       </section>
     </div>`;
@@ -347,7 +400,7 @@ function taperState(cls) {
 }
 
 function taperDefaults(cls) {
-  return { ad: "sertralina", ap: "olanzapina", bz: "diazepam" }[cls];
+  return { ad: "sertralina", ap: "olanzapina", bz: "clonazepam" }[cls];
 }
 
 function taperRisk(cls, drugId, t) {
@@ -379,7 +432,7 @@ function taperSteps(dose, pct, floor) {
   let d = dose;
   for (let i = 0; i < 80 && d > floor; i += 1) {
     d *= 1 - pct / 100;
-    steps.push(doseRound(d));
+    steps.push(Number(d.toPrecision(2)));
   }
   return steps;
 }
@@ -395,8 +448,8 @@ function taperTarget(cls, drugId) {
   }
   if (cls === "ap" && drugId === "olanzapina") return { label: "bloqueio D2 estimado", occ: (d) => (d <= 0 ? 0 : (100 * d) / (d + data.ap.olanzapineEd50)) };
   if (cls === "bz") {
-    const toDiaz = 10 / info.eq;
-    return { label: "ocupação estimada do GABA-A", occ: (d) => (d <= 0 ? 0 : (100 * d * toDiaz) / (d * toDiaz + data.bz.ed50Diazepam)) };
+    const toClz = 0.5 / info.eq;
+    return { label: "ocupação estimada do GABA-A", occ: (d) => (d <= 0 ? 0 : (100 * d * toClz) / (d * toClz + data.bz.ed50Clonazepam)) };
   }
   return null;
 }
@@ -440,11 +493,12 @@ function renderTaper(cls, drugs) {
   const pct = Number(t.pct) || risk.pct;
   const weekOptions = cls === "ap" ? [4, 8, 12] : [2, 4];
   const weeks = weekOptions.includes(Number(t.weeks)) ? Number(t.weeks) : cls === "ad" ? 2 : cls === "ap" ? 8 : 4;
-  const floor = cls === "ad" ? info.med * 0.01 : cls === "ap" ? dose / 80 : info.eq / 100;
+  const floor = cls === "ad" ? info.med * 0.01 : cls === "ap" ? dose / 80 : info.eq / 20;
   const steps = taperSteps(dose, pct, floor);
   const months = Math.round((steps.length * weeks) / 4.3);
   const shown = steps.length > 12 ? [...steps.slice(0, 8).map((d, i) => [i, d]), null, ...steps.slice(-3).map((d, i) => [steps.length - 3 + i, d])] : steps.map((d, i) => [i, d]);
   const target = taperTarget(cls, drugId);
+  const practicalCol = Boolean((window.PHARMA_BRAZIL || {})[drugId]?.liquid);
   const rules = cls === "ap" ? data.ap.taperRules : cls === "bz" ? data.bz.taperRules : data.taperRules;
   const withdrawal = cls === "ap" ? data.ap.withdrawal : cls === "bz" ? data.bz.withdrawal : data.withdrawal;
   const tone = risk.level === "high" ? "high" : risk.level === "mid" ? "warn" : "ok";
@@ -474,13 +528,15 @@ function renderTaper(cls, drugs) {
         ${taperSvg(steps, target, weeks)}
         <div class="atlas-legend"><span><i style="background:#9fb3b6"></i>dose (mg/dia)</span>${target ? `<span><i style="background:#d55e00"></i>${target.label}</span>` : ""}</div>
         <table class="dose-table">
-          <thead><tr><th>Degrau</th><th>Dose</th><th>Semana</th></tr></thead>
-          <tbody>${shown.map((item) => item ? `<tr><th>${item[0] === 0 ? "Hoje" : item[0]}</th><td>${doseFmt(item[1])}</td><td>${item[0] * weeks}</td></tr>` : '<tr class="gap"><th>…</th><td>…</td><td></td></tr>').join("")}
-            <tr><th>Fim</th><td>parar</td><td>${steps.length * weeks}</td></tr></tbody>
+          <thead><tr><th>Degrau</th><th>Dose</th><th>Semana</th>${practicalCol ? "<th>Na prática</th>" : ""}</tr></thead>
+          <tbody>${shown.map((item) => item ? `<tr><th>${item[0] === 0 ? "Hoje" : item[0]}</th><td>${doseFmt(item[1])}</td><td>${item[0] * weeks}</td>${practicalCol ? `<td>${escapeHtml(dosePractical(drugId, item[1]))}</td>` : ""}</tr>` : `<tr class="gap"><th>…</th><td>…</td><td></td>${practicalCol ? "<td></td>" : ""}</tr>`).join("")}
+            <tr><th>Fim</th><td>parar</td><td>${steps.length * weeks}</td>${practicalCol ? "<td></td>" : ""}</tr></tbody>
         </table>
         ${steps[steps.length - 1] < 1 ? '<p class="pharma-extra">As últimas doses ficam abaixo de 1 mg: na prática exigem solução oral ou formulação manipulada.</p>' : ""}
       </section>
       <section class="pharma-card">
+        ${brazilCard(drugId, drug.name)}
+        ${drugId === "clonazepam" ? `<div class="pharma-reading tone-ok"><strong>Doses menores que 1 gota</strong><span>${escapeHtml(data.bz.dilution)}</span></div>` : ""}
         ${why}
         ${info.longHalfLife ? '<div class="pharma-reading tone-warn"><strong>Fluoxetina</strong><span>A meia-vida longa atrasa os sintomas de retirada por semanas: avaliar com mais tempo antes do próximo degrau.</span></div>' : ""}
         ${cls === "ap" && drugId === "clozapina" ? '<div class="pharma-reading tone-high"><strong>Clozapina</strong><span>Parada brusca pode dar rebote colinérgico (náusea, vômitos, diarreia, sudorese), distonias, discinesias e catatonia: retirar devagar.</span></div>' : ""}
@@ -499,7 +555,7 @@ renderPharmaSwitch = function renderPharmaSwitchWithDoses() {
   const tab = state.pharma.switchTab === "taper" ? "taper" : "switch";
   const drugs = doseDrugs(cls);
   const refCount = ((window.PHARMA_REFS || {}).troca?.paths || []).length;
-  const switchLabel = cls === "bz" ? "Passar para diazepam" : "Trocar";
+  const switchLabel = cls === "bz" ? "Trocar para ação longa" : "Trocar";
   const body = tab === "taper" ? renderTaper(cls, drugs) : cls === "ap" ? renderSwitchAp(drugs) : cls === "bz" ? renderSwitchBz(drugs) : renderSwitchAd(drugs);
   return `
     <header class="pharma-head">
@@ -528,14 +584,16 @@ renderPharmaSwitch = function renderPharmaSwitchWithDoses() {
   const panel = document.querySelector("#pharmaPanel");
   if (!panel) return;
   panel.addEventListener("click", (event) => {
-    const target = event.target.closest("[data-switch-tab], [data-dose-class], [data-bz-to-taper]");
+    const target = event.target.closest("[data-switch-tab], [data-dose-class], [data-bz-to-taper], [data-bz-target]");
     if (!target) return;
     const data = target.dataset;
     const cls = state.pharma.doseClass || "ad";
     if (data.doseClass) state.pharma.doseClass = data.doseClass;
+    else if (data.bzTarget) state.pharma.bzTarget = data.bzTarget;
     else if (data.bzToTaper) {
-      state.pharma.switchDoses = { ...(state.pharma.switchDoses || {}), diazepam: Number(data.bzToTaper) };
-      taperState("bz").drug = "diazepam";
+      const drug = data.bzToTaperDrug || "diazepam";
+      state.pharma.switchDoses = { ...(state.pharma.switchDoses || {}), [drug]: Number(data.bzToTaper) };
+      taperState("bz").drug = drug;
       state.pharma.switchTab = "taper";
     } else {
       state.pharma.switchTab = data.switchTab;

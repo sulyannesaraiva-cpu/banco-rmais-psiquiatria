@@ -74,6 +74,22 @@ window.PHARMA_SOURCES = {
     short: "Machado, Neuroanatomia Funcional",
     full: "Machado ABM, Haertel LM. Neuroanatomia Funcional. 4ª ed. Atheneu; 2022.",
   },
+  maudsleyDeprescribing: {
+    short: "Maudsley Deprescribing Guidelines",
+    full: "Horowitz M, Taylor D. The Maudsley Deprescribing Guidelines: Antidepressants, Benzodiazepines, Gabapentinoids and Z-drugs. John Wiley & Sons; 2024.",
+  },
+  stahlDeprescriber: {
+    short: "Stahl's Deprescriber's Guide",
+    full: "Strawn JR, Stahl SM. Stahl's Deprescriber's Guide. Cambridge University Press; 2026.",
+  },
+  dieckmann2025: {
+    short: "Dieckmann e Haddad, 2025",
+    full: "Dieckmann LHJ, Haddad M. Psicofarmacologia: da teoria à clínica. Porto Alegre: Artmed; 2025.",
+  },
+  apresentacoesBr: {
+    short: "Apresentações no Brasil",
+    full: "Quadro de apresentações de um manual brasileiro de psicofármacos e bulas brasileiras de fabricantes e farmácias (escitalopram em gotas, Aristab, Rexulti, Brintellix, Lorax, Tofranil), consultados em outubro de 2026. Conferir a bula vigente no Bulário Eletrônico da Anvisa.",
+  },
   curadoria: {
     short: "Curadoria do site",
     full: "Esquemas, modelos e casos feitos para este site a partir das fontes citadas na mesma tela. Não são dados publicados.",
@@ -277,7 +293,12 @@ window.PHARMA_REFS = {
       { about: "Haloperidol e clorpromazina: tempo de retirada na troca por semelhança farmacológica (o Stahl não traz o esquema)", src: "curadoria", where: "analogia com os de mesmo perfil de bloqueio", kind: "didatico" },
       { about: "Benzodiazepínicos: equivalências com diazepam, troca gradual por diazepam, risco de retirada, redução proporcional, guia de degraus do diazepam, sintomas de retirada e ocupação do GABA-A", src: "maudsley15", where: "cap. 3, Benzodiazepines, z-drugs and gabapentinoids, tabela 3.24 e box 3.12", kind: "fonte" },
       { about: "Equivalências de alprazolam, bromazepam e zolpidem", src: "ashton", where: "tabela de equivalências", kind: "fonte" },
-      { about: "Troca por diazepam em 4 semanas (25% por semana) e curvas de ocupação D2 (olanzapina) e GABA-A ajustadas aos números do Maudsley", src: "curadoria", where: "modelo didático", kind: "didatico" },
+      { about: "Clonazepam: ocupação do GABA-A por dose (base da curva), formas líquidas, diluição de 10 gotas em 10 mL (0,1 mg/mL), degraus a cada 1–4 semanas, evitar dias alternados, retirada curta em uso curto", src: "maudsleyDeprescribing", where: "cap. 3, monografia do clonazepam e Tapering benzodiazepines and z-drugs in practice", kind: "fonte" },
+      { about: "Troca direta entre benzodiazepínicos (ex.: lorazepam → clonazepam) e teto de 25% a cada 2 semanas da diretriz conjunta da ASAM (2025)", src: "stahlDeprescriber", where: "cap. 1, How to switch, e monografias de alprazolam e clonazepam", kind: "fonte" },
+      { about: "Disponibilidade no Brasil, nomes comerciais e oferta no SUS (Rename) de cada remédio; clonazepam gotas 2,5 mg/mL na Rename; clordiazepóxido só em associação; moclobemida, cariprazina e asenapina sem venda no Brasil", src: "dieckmann2025", where: "monografias, itens Nomes no Brasil e SUS", kind: "fonte" },
+      { about: "Apresentações orais no Brasil (comprimidos, gotas e soluções) e mg por gota do clonazepam (0,1 mg) e do escitalopram (1 mg)", src: "apresentacoesBr", where: "quadro de apresentações e bulas", kind: "fonte" },
+      { about: "Clonazepam como referência da troca (pelas gotas disponíveis no Brasil), conversão de cada degrau em gotas ou mL e arredondamento para gotas inteiras", src: "curadoria", where: "adaptação à realidade brasileira", kind: "didatico" },
+      { about: "Troca para clonazepam ou diazepam em 4 semanas (25% por semana) e curvas de ocupação D2 (olanzapina) e GABA-A ajustadas aos números do Maudsley", src: "curadoria", where: "modelo didático", kind: "didatico" },
     ],
   },
   dependencia: {

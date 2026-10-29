@@ -802,7 +802,9 @@ test("troca de medicamentos: doses em mg e retirada gradual", async ({ page }) =
   await page.locator('[data-bz-switch="from"]').selectOption("alprazolam");
   await expect(page.locator("#pharmaPanel")).toContainText("≈ diazepam 10 mg");
   await page.locator("[data-bz-to-taper]").click();
-  await expect(page.locator('[data-taper-field="drug"]')).toHaveValue("diazepam");
+  await expect(page.locator('[data-taper-field="drug"]')).toHaveValue("clonazepam");
+  await expect(page.locator(".dose-table").first()).toContainText("5 gotas");
+  await expect(page.locator("#pharmaPanel")).toContainText("No Brasil: Clonazepam");
   expect(errors).toEqual([]);
 });
 test("simular: seções Psicofarmacologia e Neuroanatomia e o atalho Ver no atlas", async ({ page }) => {

@@ -9323,3 +9323,13 @@ body.theme-dark .pharma-chip.on {
     white-space: nowrap;
   }
 }
+
+.dose-practical {
+  display: block;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.brazil-card b {
+  font-weight: 700;
+}
