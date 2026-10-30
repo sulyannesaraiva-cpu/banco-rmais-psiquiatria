@@ -10579,3 +10579,185 @@ body.theme-dark mark.q-hl {
     display: none;
   }
 }
+
+/* Paciente simulado: casos de exemplo, faixa-resumo e passos */
+.pt-examples {
+  display: grid;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.pt-examples > small {
+  color: var(--muted);
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.pt-summary {
+  position: sticky;
+  top: 0;
+  z-index: 11;
+  display: grid;
+  gap: 6px;
+  margin: 0 0 12px;
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--bg);
+  box-shadow: 0 6px 10px -10px rgba(16, 38, 45, 0.4);
+}
+
+.pt-summary-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.pt-sum-chip {
+  padding: 3px 9px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--panel, transparent);
+  color: inherit;
+  font: inherit;
+  font-size: 12.5px;
+  cursor: pointer;
+}
+
+.pt-sum-chip span {
+  color: var(--muted);
+}
+
+.pt-sum-empty {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.pt-summary-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 14px;
+  font-size: 13px;
+}
+
+.pt-sum-class {
+  font-weight: 700;
+}
+
+.pt-step > .pt-step-head,
+.pt-step > summary.pt-step-head {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 10px;
+  cursor: default;
+}
+
+.pt-step > summary.pt-step-head {
+  cursor: pointer;
+  list-style: none;
+}
+
+.pt-step > summary.pt-step-head::-webkit-details-marker {
+  display: none;
+}
+
+.pt-step > summary.pt-step-head::after {
+  content: "▾";
+  margin-left: auto;
+  color: var(--muted);
+}
+
+.pt-step:not([open]) > summary.pt-step-head {
+  margin-bottom: 0;
+}
+
+.pt-step:not([open]) > summary.pt-step-head::after {
+  content: "▸";
+}
+
+.pt-step-head small {
+  color: var(--muted);
+  font-size: 12.5px;
+}
+
+.pt-step-n {
+  display: inline-grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--accent-strong, #0b6b70);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.pt-step .pcard-patient {
+  margin: 0 0 12px;
+  padding: 0;
+  border: 0;
+  box-shadow: none;
+  background: transparent;
+}
+
+.pt-block {
+  display: grid;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.pt-block-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.pt-block-head h4 {
+  margin: 0;
+}
+
+.pt-block-head span {
+  color: var(--muted);
+  font-size: 12.5px;
+}
+
+.pt-filter {
+  width: 100%;
+  min-height: 38px;
+  padding: 6px 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: 16px;
+}
+
+details.pt-cond-group > summary {
+  cursor: pointer;
+  color: var(--muted);
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+details.pt-cond-group > summary b {
+  display: inline-grid;
+  place-items: center;
+  min-width: 18px;
+  height: 18px;
+  margin-left: 4px;
+  border-radius: 9px;
+  background: var(--accent-strong, #0b6b70);
+  color: #fff;
+  font-size: 11px;
+}
+
+details.pt-cond-group > .pharma-toggles {
+  margin-top: 6px;
+}
+
+.pt-reasons li.pt-r-adjust::before {
+  background: #e0a800;
+}

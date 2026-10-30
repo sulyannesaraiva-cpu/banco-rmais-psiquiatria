@@ -5,6 +5,12 @@ const { test, expect } = require("@playwright/test");
 async function goTab(page, tab) {
   await page.evaluate((name) => document.querySelector(`[data-tab="${name}"]`).click(), tab);
 }
+/* Os grupos de comorbidades vêm recolhidos: abre o grupo e marca. */
+async function pickComorb(page, id) {
+  await page.evaluate((cid) => { const b = document.querySelector(`[data-pt-comorb="${cid}"]`); b.closest("details").open = true; }, id);
+  await page.locator(`[data-pt-comorb="${id}"]`).click();
+}
+
 
 async function openSite(page) {
   const errors = [];
@@ -888,8 +894,8 @@ test("aba Paciente: comorbidades e escolha dentro da classe", async ({ page }) =
   const errors = await openSite(page);
   await page.evaluate(() => document.querySelector('.tab[data-sim-target="patient"]').click());
   await expect(page.locator("#pharmaPanel h2")).toHaveText("Paciente simulado");
-  await page.locator('[data-pt-comorb="fa"]').click();
-  await page.locator('[data-pt-comorb="epilepsia"]').click();
+  await pickComorb(page, "fa");
+  await pickComorb(page, "epilepsia");
   await expect(page.locator(".pt-group-good")).toContainText("Mirtazapina");
   await expect(page.locator(".pt-group-avoid")).toContainText("Bupropiona");
   await page.locator('[data-pt-class="estabilizadores"]').click();
@@ -899,6 +905,19 @@ test("aba Paciente: comorbidades e escolha dentro da classe", async ({ page }) =
   await expect(page.locator(".pcard-for")).toContainText("Fibrilação atrial");
   await page.locator("[data-pharma-hub]").click();
   await expect(page.locator("#pharmaPanel h2")).toHaveText("Paciente simulado");
+  expect(errors).toEqual([]);
+});
+test("paciente simulado: caso de exemplo, faixa-resumo e filtro de comorbidades", async ({ page }) => {
+  const errors = await openSite(page);
+  await page.evaluate(() => document.querySelector('.tab[data-sim-target="patient"]').click());
+  await page.locator('[data-pt-preset="icDep"]').click();
+  await expect(page.locator(".pt-summary")).toContainText("Insuficiência cardíaca");
+  await expect(page.locator(".pt-group-good .pt-name").first()).toContainText("Sertralina");
+  await page.locator("[data-pt-filter]").fill("lúpus");
+  await expect(page.locator('[data-pt-comorb="lupus"]')).toBeVisible();
+  await expect(page.locator('[data-pt-comorb="ic"]')).toBeHidden();
+  await page.locator('[data-pt-remove="comorb:ic"]').click();
+  await expect(page.locator(".pt-summary")).not.toContainText("Insuficiência cardíaca");
   expect(errors).toEqual([]);
 });
 test("busca global com Ctrl+K abre a ficha pelo nome comercial", async ({ page }) => {
@@ -976,7 +995,7 @@ test("aba Paciente: várias comorbidades mostram o encaixe em cada uma e ordenam
   const errors = await openSite(page);
   await page.evaluate(() => document.querySelector('.tab[data-sim-target="patient"]').click());
   await page.locator('[data-pt-class="antipsicoticos"]').click();
-  for (const id of ["ic", "diabetes", "epilepsia"]) await page.locator(`[data-pt-comorb="${id}"]`).click();
+  for (const id of ["ic", "diabetes", "epilepsia"]) await pickComorb(page, id);
   await expect(page.locator(".pt-prio-line").first()).toContainText("3 comorbidades");
   await expect(page.locator(".pt-group-good .pt-row").first().locator(".pt-cfit")).toContainText("Favorável em 2 de 3");
   await expect(page.locator(".pt-group-good .pt-row").last().locator(".pt-cfit")).toContainText("Favorável em 1 de 3");

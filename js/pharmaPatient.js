@@ -44,8 +44,9 @@ function pharmaPatientReasons(item, p) {
       const entry = pop.entry[f];
       if (!entry) return;
       const field = popData.fields.find((x) => x.id === f);
-      const kind = { high: "avoid", warn: "caution", low: "caution", ok: "good" }[entry[0]];
-      reasons.push({ kind, cond: field.label, text: entry[0] === "low" ? `Poucos dados. ${entry[1]}` : entry[1], src: "Dieckmann e Haddad (2025); gestação e lactação: CANMAT 2024" });
+      /* "Ajustar dose ou monitorar" (warn) aparece, mas não muda o grupo: quase todo remédio tem isso no idoso ou no rim. */
+      const kind = { high: "avoid", warn: "adjust", low: "caution", ok: "good" }[entry[0]];
+      reasons.push({ kind, cond: entry[0] === "warn" ? `${field.label} · ajustar ou monitorar` : field.label, text: entry[0] === "low" ? `Poucos dados. ${entry[1]}` : entry[1], src: "Dieckmann e Haddad (2025); gestação e lactação: CANMAT 2024" });
     });
   }
   const meds = p.meds.filter((id) => id !== item.drug.id);
@@ -137,7 +138,7 @@ function pharmaPatientFitHtml(fit) {
 }
 
 function pharmaPatientRow(row) {
-  const order = { avoid: 0, caution: 1, note: 2, good: 3 };
+  const order = { avoid: 0, caution: 1, adjust: 2, note: 3, good: 4 };
   const reasons = [...row.reasons].sort((a, b) => order[a.kind] - order[b.kind]);
   return `
     <div class="pt-row pt-${row.group}">
@@ -207,12 +208,90 @@ function pharmaPatientResults(clsId, p) {
     }).join("")}`;
 }
 
+
+/* ---------- Tela: casos de exemplo, faixa-resumo fixa e passos ---------- */
+
+const PT_PRESETS = [
+  { id: "icDep", label: "Insuficiência cardíaca e depressão", patient: { age: "idoso", comorb: ["ic"] }, cls: "antidepressivos" },
+  { id: "esqDm", label: "Esquizofrenia com diabetes e obesidade", patient: { comorb: ["diabetes"], prio: ["weight"] }, cls: "antipsicoticos" },
+  { id: "gestAnsi", label: "Gestante com ansiedade", patient: { sex: "f", repro: "gestante" }, cls: "antidepressivos" },
+  { id: "bpDialise", label: "Bipolar em diálise", patient: { renal: "grave", comorb: ["dialise"] }, cls: "estabilizadores" },
+  { id: "tamox", label: "Câncer de mama com tamoxifeno e fogachos", patient: { sex: "f", comorb: ["tamoxifeno", "fogachos"] }, cls: "antidepressivos" },
+  { id: "hivSono", label: "HIV com ritonavir e insônia", patient: { comorb: ["hiv", "hivReforco"], prio: ["sedationWant"] }, cls: "ansioliticos" },
+];
+
+function pharmaPatientSummaryChips(p, clsId) {
+  const chips = [];
+  PHARMA_PATIENT_FIELDS.forEach((f) => {
+    if (!p[f.id]) return;
+    const label = f.options.find(([v]) => v === p[f.id])?.[1] || p[f.id];
+    chips.push([`field:${f.id}`, f.id === "age" || f.id === "sex" || f.id === "repro" ? label : `${f.label}: ${label.toLowerCase()}`]);
+  });
+  p.meds.forEach((id) => chips.push([`med:${id}`, `Em uso: ${pharmaFindDrug(id)?.drug.name || id}`]));
+  const data = window.PHARMA_COMORB;
+  p.comorb.forEach((id) => chips.push([`comorb:${id}`, data.conditions.find((c) => c.id === id)?.label.replace(/ \(.*\)$/, "") || id]));
+  p.prio.forEach((id) => chips.push([`prio:${id}`, data.priorities.find((x) => x.id === id)?.label || id]));
+  return `
+    <div class="pt-summary" role="region" aria-label="Resumo do paciente">
+      <div class="pt-summary-chips">
+        ${chips.length ? chips.map(([key, label]) => `<button type="button" class="pt-sum-chip" data-pt-remove="${escapeHtml(key)}" title="Tirar">${escapeHtml(label)} <span aria-hidden="true">×</span></button>`).join("") : `<span class="pt-sum-empty">Paciente ainda sem dados: use um caso de exemplo ou preencha o passo 1.</span>`}
+      </div>
+      <div class="pt-summary-actions">
+        <span class="pt-sum-class">${escapeHtml(window.PHARMA_SIM[clsId]?.label || "")}</span>
+        <button type="button" class="link-btn" data-pt-jump>Ver resultado ↓</button>
+        ${chips.length ? `<button type="button" class="link-btn" data-pf-clear>Limpar</button>` : ""}
+      </div>
+    </div>`;
+}
+
+function pharmaPatientComorbSection(p) {
+  const data = window.PHARMA_COMORB;
+  const opened = state.pharma.ptGroupsOpen || {};
+  return `
+    <div class="pt-block">
+      <div class="pt-block-head"><h4>Comorbidades</h4><span>${p.comorb.length ? `${p.comorb.length} marcada${p.comorb.length > 1 ? "s" : ""}` : "nenhuma"}</span></div>
+      <input type="search" class="pt-filter" data-pt-filter placeholder="Filtrar (ex.: rim, lúpus, HIV, QT)" aria-label="Filtrar comorbidades" value="${escapeHtml(state.pharma.ptFilter || "")}" autocomplete="off">
+      ${data.groups.map((g) => {
+        const conds = data.conditions.filter((c) => c.group === g.id);
+        if (!conds.length) return "";
+        const marked = conds.filter((c) => p.comorb.includes(c.id)).length;
+        const open = opened[g.id] ?? marked > 0;
+        return `
+          <details class="pt-cond-group" data-pt-group="${g.id}" ${open ? "open" : ""}>
+            <summary>${escapeHtml(g.label)}${marked ? ` <b>${marked}</b>` : ""}</summary>
+            <div class="pharma-toggles">${conds.map((c) => `<button type="button" class="pharma-toggle${p.comorb.includes(c.id) ? " on" : ""}" data-pt-comorb="${c.id}" data-pt-label="${escapeHtml(pharmaNorm(c.label))}" aria-pressed="${p.comorb.includes(c.id)}">${escapeHtml(c.label)}</button>`).join("")}</div>
+          </details>`;
+      }).join("")}
+      <p class="pt-none pt-filter-empty" hidden>Nenhuma comorbidade com esse nome.</p>
+    </div>`;
+}
+
+/* Filtro só esconde ou mostra (não redesenha), para não perder o foco ao digitar. */
+function applyPatientComorbFilter(root) {
+  const q = pharmaNorm(state.pharma.ptFilter || "");
+  let any = false;
+  root.querySelectorAll("[data-pt-group]").forEach((group) => {
+    let hits = 0;
+    group.querySelectorAll("[data-pt-comorb]").forEach((b) => {
+      const ok = !q || b.dataset.ptLabel.includes(q);
+      b.hidden = !ok;
+      if (ok) hits += 1;
+    });
+    group.hidden = Boolean(q) && !hits;
+    if (q && hits) group.open = true;
+    if (hits) any = true;
+  });
+  const empty = root.querySelector(".pt-filter-empty");
+  if (empty) empty.hidden = !q || any;
+}
+
 function renderPatientTab() {
   const data = window.PHARMA_COMORB;
   const p = pharmaPatient();
   const clsId = data.classes.includes(state.pharma.patientClass) ? state.pharma.patientClass : "antidepressivos";
   const refCount = ((window.PHARMA_REFS || {}).paciente?.paths || []).length;
   const section = (id, label) => `<button type="button" class="${id === "patient" ? "active" : ""}" data-sim-section="${id}" aria-pressed="${id === "patient"}">${label}</button>`;
+  const step1Open = state.pharma.ptStep1Open !== false;
   return `
     <header class="pharma-head pharma-hub-head">
       <div>
@@ -226,21 +305,22 @@ function renderPatientTab() {
         ${section("drugs", "Psicofarmacologia")}${section("atlas", "Neuroanatomia")}${section("patient", "Paciente simulado")}
       </div>
     </header>
-    ${pharmaPatientForm(true)}
-    <section class="pharma-card">
-      <div class="pharma-card-head"><h3>Comorbidades</h3><span>${p.comorb.length ? `${p.comorb.length} marcada${p.comorb.length > 1 ? "s" : ""}` : "nenhuma"}</span></div>
-      ${data.groups.map((g) => {
-        const conds = data.conditions.filter((c) => c.group === g.id);
-        if (!conds.length) return "";
-        return `<div class="pt-cond-group"><small>${escapeHtml(g.label)}</small><div class="pharma-toggles">${conds.map((c) => `<button type="button" class="pharma-toggle${p.comorb.includes(c.id) ? " on" : ""}" data-pt-comorb="${c.id}" aria-pressed="${p.comorb.includes(c.id)}">${escapeHtml(c.label)}</button>`).join("")}</div></div>`;
-      }).join("")}
-    </section>
-    <section class="pharma-card">
-      <div class="pharma-card-head"><h3>Prioridades</h3><span>o que buscar ou evitar</span></div>
-      <div class="pharma-toggles">${data.priorities.map((x) => `<button type="button" class="pharma-toggle${p.prio.includes(x.id) ? " on" : ""}" data-pt-prio="${x.id}" aria-pressed="${p.prio.includes(x.id)}">${escapeHtml(x.label)}</button>`).join("")}</div>
-    </section>
-    <section class="pharma-card pt-result">
-      <div class="pharma-card-head"><h3>Escolher dentro da classe</h3></div>
+    <div class="pt-examples">
+      <small>Comece por um caso</small>
+      <div class="pharma-toggles">${PT_PRESETS.map((x) => `<button type="button" class="pharma-toggle" data-pt-preset="${x.id}">${escapeHtml(x.label)}</button>`).join("")}</div>
+    </div>
+    ${pharmaPatientSummaryChips(p, clsId)}
+    <details class="pharma-card pt-step" data-pt-step1 ${step1Open ? "open" : ""}>
+      <summary class="pt-step-head"><span class="pt-step-n">1</span><strong>Paciente</strong><small>perfil, comorbidades e prioridades</small></summary>
+      ${pharmaPatientForm(true)}
+      ${pharmaPatientComorbSection(p)}
+      <div class="pt-block">
+        <div class="pt-block-head"><h4>Prioridades</h4><span>o que buscar ou evitar</span></div>
+        <div class="pharma-toggles">${data.priorities.map((x) => `<button type="button" class="pharma-toggle${p.prio.includes(x.id) ? " on" : ""}" data-pt-prio="${x.id}" aria-pressed="${p.prio.includes(x.id)}">${escapeHtml(x.label)}</button>`).join("")}</div>
+      </div>
+    </details>
+    <section class="pharma-card pt-result pt-step">
+      <div class="pt-step-head"><span class="pt-step-n">2</span><strong>Escolher dentro da classe</strong></div>
       <div class="pharma-chips" role="group" aria-label="Classe">
         ${data.classes.map((id) => `<button type="button" class="pharma-chip${id === clsId ? " on" : ""}" data-pt-class="${id}" aria-pressed="${id === clsId}">${escapeHtml(window.PHARMA_SIM[id]?.label || id)}</button>`).join("")}
       </div>
@@ -254,12 +334,24 @@ function renderPatientTab() {
 (function setupPharmaPatient() {
   const panel = document.querySelector("#pharmaPanel");
   if (!panel) return;
+  const rerender = (keepScroll = true) => {
+    const y = window.scrollY;
+    panel.dataset.renderedHtml = "";
+    renderPharmaPanel();
+    applyPatientComorbFilter(panel);
+    if (keepScroll) window.scrollTo(0, y);
+  };
+
   panel.addEventListener("click", (event) => {
-    const t = event.target.closest("[data-pt-comorb], [data-pt-prio], [data-pt-class]");
+    const t = event.target.closest("[data-pt-comorb], [data-pt-prio], [data-pt-class], [data-pt-preset], [data-pt-remove], [data-pt-jump]");
     if (!t) return;
     const d = t.dataset;
     const p = pharmaPatient();
     const toggle = (list, id) => (list.includes(id) ? list.filter((x) => x !== id) : [...list, id]);
+    if (d.ptJump !== undefined) {
+      panel.querySelector(".pt-result")?.scrollIntoView({ behavior: "smooth", block: "start" });
+      return;
+    }
     if (d.ptComorb) state.pharma.patient = { ...p, comorb: toggle(p.comorb, d.ptComorb) };
     else if (d.ptPrio) {
       let prio = toggle(p.prio, d.ptPrio);
@@ -267,10 +359,52 @@ function renderPatientTab() {
       if (conflict && prio.includes(d.ptPrio)) prio = prio.filter((x) => x !== conflict);
       state.pharma.patient = { ...p, prio };
     } else if (d.ptClass) state.pharma.patientClass = d.ptClass;
+    else if (d.ptPreset) {
+      const preset = PT_PRESETS.find((x) => x.id === d.ptPreset);
+      if (!preset) return;
+      state.pharma.patient = { ...preset.patient };
+      state.pharma.patientClass = preset.cls;
+      state.pharma.ptGroupsOpen = {};
+      state.pharma.ptFilter = "";
+      savePharmaState();
+      rerender(false);
+      panel.querySelector(".pt-result")?.scrollIntoView({ behavior: "smooth", block: "start" });
+      return;
+    } else if (d.ptRemove) {
+      const [kind, id] = d.ptRemove.split(":");
+      if (kind === "field") state.pharma.patient = { ...p, [id]: "" };
+      else if (kind === "med") state.pharma.patient = { ...p, meds: p.meds.filter((x) => x !== id) };
+      else if (kind === "comorb") state.pharma.patient = { ...p, comorb: p.comorb.filter((x) => x !== id) };
+      else if (kind === "prio") state.pharma.patient = { ...p, prio: p.prio.filter((x) => x !== id) };
+    }
     savePharmaState();
-    const y = window.scrollY;
-    panel.dataset.renderedHtml = "";
-    renderPharmaPanel();
-    window.scrollTo(0, y);
+    rerender();
   });
+
+  /* Lembra quais blocos ficaram abertos (o toggle não borbulha: escuta na captura). */
+  panel.addEventListener("toggle", (event) => {
+    const el = event.target;
+    if (el.matches?.("[data-pt-step1]")) {
+      state.pharma.ptStep1Open = el.open;
+      savePharmaState();
+    } else if (el.matches?.("[data-pt-group]") && !state.pharma.ptFilter) {
+      state.pharma.ptGroupsOpen = { ...(state.pharma.ptGroupsOpen || {}), [el.dataset.ptGroup]: el.open };
+    }
+  }, true);
+
+  panel.addEventListener("input", (event) => {
+    const input = event.target.closest("[data-pt-filter]");
+    if (!input) return;
+    state.pharma.ptFilter = input.value;
+    applyPatientComorbFilter(panel);
+    panel.dataset.renderedHtml = "";
+  });
+
+  /* Depois de qualquer redesenho do painel, reaplica o filtro digitado. */
+  const baseRenderPanel = renderPharmaPanel;
+  renderPharmaPanel = function renderPharmaPanelWithPatientFilter(...args) {
+    const result = baseRenderPanel.apply(this, args);
+    if (state.pharma.section === "patient" && state.pharma.ptFilter) applyPatientComorbFilter(panel);
+    return result;
+  };
 })();
