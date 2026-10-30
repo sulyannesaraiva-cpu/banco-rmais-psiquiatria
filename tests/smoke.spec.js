@@ -278,6 +278,7 @@ test("só inéditas e ranking de temas por banca", async ({ page }) => {
   expect(run.anyDone).toBe(false);
   await page.evaluate(() => endSession());
   await goTab(page, "exams");
+  await page.locator("#examTopicRankingCard summary").click();
   await expect(page.locator("#examTopicRanking .ranking-list li").first()).toBeVisible();
   await page.locator("[data-ranking-train]").first().click();
   expect(await page.evaluate(() => state.sessionActive && state.filtered.length > 0)).toBe(true);
@@ -898,6 +899,19 @@ test("aba Paciente: comorbidades e escolha dentro da classe", async ({ page }) =
   await expect(page.locator(".pcard-for")).toContainText("Fibrilação atrial");
   await page.locator("[data-pharma-hub]").click();
   await expect(page.locator("#pharmaPanel h2")).toHaveText("Paciente simulado");
+  expect(errors).toEqual([]);
+});
+test("simulado esconde comentários até finalizar", async ({ page }) => {
+  const errors = await openSite(page);
+  await goTab(page, "exams");
+  await page.locator('[data-sim-size="20"]').click();
+  await page.locator("#customSimStart").click();
+  await expect(page.locator("body")).toHaveClass(/sim-running/);
+  await expect(page.locator("#commentsAccordion")).toBeHidden();
+  await expect(page.locator("#simCommentsNote")).toBeVisible();
+  await page.evaluate(() => finishExamSimulation());
+  await expect(page.locator("body")).not.toHaveClass(/sim-running/);
+  await expect(page.locator("#commentsAccordion")).toBeVisible();
   expect(errors).toEqual([]);
 });
 test("reiniciar desempenho pede APAGAR e oferece backup", async ({ page }) => {

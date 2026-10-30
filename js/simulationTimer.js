@@ -68,7 +68,25 @@ function trackSimulationTime() {
 
 /* ---------- relógio ---------- */
 
+/* Enquanto o simulado corre, os comentários da questão ficam ocultos (podem entregar o gabarito). */
+function syncSimulationRunningState() {
+  const running = simulationRunning();
+  document.body.classList.toggle("sim-running", running);
+  const accordion = document.querySelector("#commentsAccordion");
+  if (!accordion) return;
+  let note = document.querySelector("#simCommentsNote");
+  if (running && !note) {
+    note = document.createElement("p");
+    note.id = "simCommentsNote";
+    note.className = "sim-comments-note";
+    note.textContent = "Comentários da questão ficam ocultos até finalizar o simulado.";
+    accordion.after(note);
+  }
+  if (note) note.hidden = !running;
+}
+
 function renderSimClock() {
+  syncSimulationRunningState();
   const clock = document.querySelector("#simClock");
   if (!clock) return;
   const elapsed = activeExamElapsedMs();

@@ -10404,3 +10404,24 @@ body.area-lab .sidebar .nav-study {
   opacity: 0.5;
   cursor: not-allowed;
 }
+
+/* Simulado: relógio fixo no alto ao rolar enunciados longos */
+.sim-clock:not([hidden]) {
+  position: sticky;
+  top: 0;
+  z-index: 12;
+  padding: 8px 0;
+  background: var(--bg);
+  box-shadow: 0 6px 8px -8px rgba(16, 38, 45, 0.25);
+}
+
+/* Simulado em andamento: comentários escondidos até finalizar (evita spoiler do gabarito) */
+body.sim-running #commentsAccordion {
+  display: none;
+}
+
+.sim-comments-note {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+}
