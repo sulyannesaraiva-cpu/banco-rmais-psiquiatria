@@ -911,7 +911,7 @@ test("simulado esconde comentários até finalizar", async ({ page }) => {
   await expect(page.locator("#simCommentsNote")).toBeVisible();
   await page.evaluate(() => finishExamSimulation());
   await expect(page.locator("body")).not.toHaveClass(/sim-running/);
-  await expect(page.locator("#commentsAccordion")).toBeVisible();
+  await expect(page.locator("#simCommentsNote")).toBeHidden();
   expect(errors).toEqual([]);
 });
 test("reiniciar desempenho pede APAGAR e oferece backup", async ({ page }) => {
