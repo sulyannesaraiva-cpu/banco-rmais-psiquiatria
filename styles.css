@@ -10761,3 +10761,94 @@ details.pt-cond-group > .pharma-toggles {
 .pt-reasons li.pt-r-adjust::before {
   background: #e0a800;
 }
+
+/* Paciente simulado: modo por sintoma-alvo */
+.pt-mode {
+  margin-bottom: 10px;
+}
+
+.sy-pick {
+  display: grid;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.sy-pick > small {
+  color: var(--muted);
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.sy-first,
+.sy-cautions {
+  margin-bottom: 8px;
+}
+
+.sy-group-best {
+  --c: #1b7f4b;
+}
+
+.sy-group-option {
+  --c: #b26a00;
+}
+
+.sy-group-avoid {
+  --c: #c0392b;
+}
+
+.sy-item {
+  display: grid;
+  gap: 4px;
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--panel, transparent);
+}
+
+.sy-item p {
+  margin: 0;
+  font-size: 13.5px;
+  line-height: 1.45;
+}
+
+.sy-item small {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.sy-name {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 10px;
+}
+
+.sy-out {
+  padding: 1px 7px;
+  border: 1px dashed var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.sy-verdict {
+  padding: 1px 8px;
+  border-radius: 999px;
+  font-size: 11.5px;
+  font-weight: 600;
+}
+
+.sy-v-good {
+  background: #e3f4ea;
+  color: #14603a;
+}
+
+.sy-v-caution {
+  background: #fdf1d8;
+  color: #6b4500;
+}
+
+.sy-v-avoid {
+  background: #fde8dd;
+  color: #7a2008;
+}

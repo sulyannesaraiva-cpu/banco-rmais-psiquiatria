@@ -218,7 +218,81 @@ const PT_PRESETS = [
   { id: "bpDialise", label: "Bipolar em diálise", patient: { renal: "grave", comorb: ["dialise"] }, cls: "estabilizadores" },
   { id: "tamox", label: "Câncer de mama com tamoxifeno e fogachos", patient: { sex: "f", comorb: ["tamoxifeno", "fogachos"] }, cls: "antidepressivos" },
   { id: "hivSono", label: "HIV com ritonavir e insônia", patient: { comorb: ["hiv", "hivReforco"], prio: ["sedationWant"] }, cls: "ansioliticos" },
+  { id: "alzAgit", label: "Idoso com Alzheimer e agitação", patient: { age: "idoso" }, mode: "symptom", ctx: "alzheimer", target: "agitacao" },
+  { id: "tceAgress", label: "Pós-TCE com agressividade", patient: {}, mode: "symptom", ctx: "tce", target: "agitacao" },
+  { id: "lewyPsic", label: "Corpos de Lewy com alucinações", patient: { age: "idoso" }, mode: "symptom", ctx: "lewy", target: "psicose" },
 ];
+
+/* ---------- Modo "Por sintoma-alvo" (data/pharmaSymptoms.js) ---------- */
+
+/* Texto da faixa-resumo: a classe escolhida ou, no modo sintoma, contexto e sintoma. */
+function pharmaPatientModeLabel(clsId) {
+  const data = window.PHARMA_SYMPTOMS;
+  if (state.pharma.ptMode === "symptom" && data) {
+    const ctx = data.contexts.find((c) => c.id === state.pharma.ptCtx) || data.contexts[0];
+    const available = data.targets.filter((t) => ctx.targets[t.id]);
+    const target = available.find((t) => t.id === state.pharma.ptTarget) || available[0];
+    return `${ctx.label.replace(/ \(.*\)$/, "")} · ${target.label}`;
+  }
+  return window.PHARMA_SIM[clsId]?.label || "";
+}
+
+/* Veredito do perfil para um remédio do simulador: o pior motivo de segurança. */
+function pharmaSymptomProfileVerdict(simRef, p) {
+  if (!simRef || !pharmaPatientActive(p)) return null;
+  const [clsId, drugId] = simRef.split(":");
+  const cls = window.PHARMA_SIM[clsId];
+  const drug = cls?.drugs.find((d) => d.id === drugId);
+  if (!drug) return null;
+  const reasons = pharmaPatientReasons({ drug, cls }, p).filter((r) => ["avoid", "caution", "good"].includes(r.kind));
+  if (!reasons.length) return null;
+  const order = { avoid: 0, caution: 1, good: 2 };
+  reasons.sort((a, b) => order[a.kind] - order[b.kind]);
+  return reasons[0];
+}
+
+function pharmaSymptomSection(p) {
+  const data = window.PHARMA_SYMPTOMS;
+  if (!data) return "";
+  const ctx = data.contexts.find((c) => c.id === state.pharma.ptCtx) || data.contexts[0];
+  const available = data.targets.filter((t) => ctx.targets[t.id]);
+  const target = available.find((t) => t.id === state.pharma.ptTarget) || available[0];
+  const items = ctx.targets[target.id] || [];
+  const levelInfo = [
+    ["best", "Opções com mais apoio na fonte"],
+    ["option", "Outras opções"],
+    ["avoid", "Evitar ou pouco eficaz"],
+  ];
+  const verdictLabel = { avoid: "evitar", caution: "cautela", good: "favorável" };
+  const row = (it) => {
+    const verdict = pharmaSymptomProfileVerdict(it.sim, p);
+    return `
+      <div class="sy-item sy-${it.level}">
+        <div class="sy-name">
+          ${it.sim ? `<button type="button" class="pt-name" data-pcard-open="${escapeHtml(it.sim)}">${escapeHtml(it.name)} <span aria-hidden="true">›</span></button>` : `<strong>${escapeHtml(it.name)}</strong> <span class="sy-out">fora do simulador</span>`}
+          ${verdict ? `<span class="sy-verdict sy-v-${verdict.kind}" title="${escapeHtml(verdict.text)}">Perfil: ${verdictLabel[verdict.kind]} · ${escapeHtml(verdict.cond)}</span>` : ""}
+        </div>
+        <p>${escapeHtml(it.text)}</p>
+        <small>${escapeHtml(it.src)}</small>
+      </div>`;
+  };
+  return `
+    <div class="sy-pick">
+      <small>Contexto</small>
+      <div class="pharma-toggles">${data.contexts.map((c) => `<button type="button" class="pharma-toggle${c.id === ctx.id ? " on" : ""}" data-sy-ctx="${c.id}" aria-pressed="${c.id === ctx.id}">${escapeHtml(c.label)}</button>`).join("")}</div>
+      <small>Sintoma-alvo</small>
+      <div class="pharma-toggles">${available.map((t) => `<button type="button" class="pharma-toggle${t.id === target.id ? " on" : ""}" data-sy-target="${t.id}" aria-pressed="${t.id === target.id}">${escapeHtml(t.label)}</button>`).join("")}</div>
+    </div>
+    <div class="pharma-reading tone-low sy-first"><strong>Antes do remédio</strong><span>${ctx.first.map((x) => `• ${escapeHtml(x)}`).join("<br>")}</span></div>
+    <div class="pharma-reading tone-warn sy-cautions"><strong>Cautelas neste contexto</strong><span>${ctx.cautions.map((x) => `• ${escapeHtml(x)}`).join("<br>")}</span></div>
+    ${levelInfo.map(([lv, title]) => {
+      const list = items.filter((it) => it.level === lv);
+      if (!list.length) return "";
+      return `<div class="pt-group sy-group-${lv}"><div class="pt-group-head"><strong>${title}</strong><span>${list.length}</span></div>${list.map(row).join("")}</div>`;
+    }).join("")}
+    ${pharmaPatientActive(p) ? `<p class="pt-small">"Perfil" mostra o pior ponto de segurança do paciente montado no passo 1 (comorbidades, populações, interações).</p>` : ""}
+    <p class="pt-small">Nenhum remédio tem aprovação no Brasil para comportamento sem diagnóstico psiquiátrico fechado; as opções vêm das fontes citadas, quase sempre com evidência limitada.</p>`;
+}
 
 function pharmaPatientSummaryChips(p, clsId) {
   const chips = [];
@@ -237,7 +311,7 @@ function pharmaPatientSummaryChips(p, clsId) {
         ${chips.length ? chips.map(([key, label]) => `<button type="button" class="pt-sum-chip" data-pt-remove="${escapeHtml(key)}" title="Tirar">${escapeHtml(label)} <span aria-hidden="true">×</span></button>`).join("") : `<span class="pt-sum-empty">Paciente ainda sem dados: use um caso de exemplo ou preencha o passo 1.</span>`}
       </div>
       <div class="pt-summary-actions">
-        <span class="pt-sum-class">${escapeHtml(window.PHARMA_SIM[clsId]?.label || "")}</span>
+        <span class="pt-sum-class">${escapeHtml(pharmaPatientModeLabel(clsId))}</span>
         <button type="button" class="link-btn" data-pt-jump>Ver resultado ↓</button>
         ${chips.length ? `<button type="button" class="link-btn" data-pf-clear>Limpar</button>` : ""}
       </div>
@@ -292,6 +366,7 @@ function renderPatientTab() {
   const refCount = ((window.PHARMA_REFS || {}).paciente?.paths || []).length;
   const section = (id, label) => `<button type="button" class="${id === "patient" ? "active" : ""}" data-sim-section="${id}" aria-pressed="${id === "patient"}">${label}</button>`;
   const step1Open = state.pharma.ptStep1Open !== false;
+  const symptomMode = state.pharma.ptMode === "symptom" && Boolean(window.PHARMA_SYMPTOMS);
   return `
     <header class="pharma-head pharma-hub-head">
       <div>
@@ -320,12 +395,17 @@ function renderPatientTab() {
       </div>
     </details>
     <section class="pharma-card pt-result pt-step">
-      <div class="pt-step-head"><span class="pt-step-n">2</span><strong>Escolher dentro da classe</strong></div>
+      <div class="pt-step-head"><span class="pt-step-n">2</span><strong>O que tratar</strong></div>
+      <div class="segmented pt-mode" role="group" aria-label="Como escolher">
+        <button type="button" class="${symptomMode ? "" : "active"}" data-pt-mode="class" aria-pressed="${!symptomMode}">Por classe</button>
+        <button type="button" class="${symptomMode ? "active" : ""}" data-pt-mode="symptom" aria-pressed="${symptomMode}">Por sintoma-alvo</button>
+      </div>
+      ${symptomMode ? pharmaSymptomSection(p) : `
       <div class="pharma-chips" role="group" aria-label="Classe">
         ${data.classes.map((id) => `<button type="button" class="pharma-chip${id === clsId ? " on" : ""}" data-pt-class="${id}" aria-pressed="${id === clsId}">${escapeHtml(window.PHARMA_SIM[id]?.label || id)}</button>`).join("")}
       </div>
       ${pharmaPatientResults(clsId, p)}
-      <p class="pt-small">A separação soma os motivos acima (regra nossa); não é uma recomendação publicada. Toque no nome do remédio para abrir a ficha.</p>
+      <p class="pt-small">A separação soma os motivos acima (regra nossa); não é uma recomendação publicada. Toque no nome do remédio para abrir a ficha.</p>`}
     </section>
     <p class="pharma-disclaimer">Material didático para estudo. A escolha real depende da indicação, da história de resposta e da preferência do paciente.</p>
     ${state.pharma.sourcesOpen ? renderPharmaSources({ id: "paciente", label: "Paciente" }, "paths", "Escolha por perfil") : ""}`;
@@ -343,7 +423,7 @@ function renderPatientTab() {
   };
 
   panel.addEventListener("click", (event) => {
-    const t = event.target.closest("[data-pt-comorb], [data-pt-prio], [data-pt-class], [data-pt-preset], [data-pt-remove], [data-pt-jump]");
+    const t = event.target.closest("[data-pt-comorb], [data-pt-prio], [data-pt-class], [data-pt-preset], [data-pt-remove], [data-pt-jump], [data-pt-mode], [data-sy-ctx], [data-sy-target]");
     if (!t) return;
     const d = t.dataset;
     const p = pharmaPatient();
@@ -359,11 +439,21 @@ function renderPatientTab() {
       if (conflict && prio.includes(d.ptPrio)) prio = prio.filter((x) => x !== conflict);
       state.pharma.patient = { ...p, prio };
     } else if (d.ptClass) state.pharma.patientClass = d.ptClass;
+    else if (d.ptMode) state.pharma.ptMode = d.ptMode;
+    else if (d.syCtx) state.pharma.ptCtx = d.syCtx;
+    else if (d.syTarget) state.pharma.ptTarget = d.syTarget;
     else if (d.ptPreset) {
       const preset = PT_PRESETS.find((x) => x.id === d.ptPreset);
       if (!preset) return;
       state.pharma.patient = { ...preset.patient };
-      state.pharma.patientClass = preset.cls;
+      if (preset.mode === "symptom") {
+        state.pharma.ptMode = "symptom";
+        state.pharma.ptCtx = preset.ctx;
+        state.pharma.ptTarget = preset.target;
+      } else {
+        state.pharma.ptMode = "class";
+        state.pharma.patientClass = preset.cls;
+      }
       state.pharma.ptGroupsOpen = {};
       state.pharma.ptFilter = "";
       savePharmaState();

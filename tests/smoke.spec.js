@@ -920,6 +920,20 @@ test("paciente simulado: caso de exemplo, faixa-resumo e filtro de comorbidades"
   await expect(page.locator(".pt-summary")).not.toContainText("Insuficiência cardíaca");
   expect(errors).toEqual([]);
 });
+test("paciente simulado: modo por sintoma-alvo (pós-TCE e demência)", async ({ page }) => {
+  const errors = await openSite(page);
+  await page.evaluate(() => document.querySelector('.tab[data-sim-target="patient"]').click());
+  await page.locator('[data-pt-preset="tceAgress"]').click();
+  await expect(page.locator(".pt-summary")).toContainText("Pós-TCE");
+  await expect(page.locator(".sy-group-best")).toContainText("Propranolol");
+  await expect(page.locator(".sy-group-best")).toContainText("fora do simulador");
+  await expect(page.locator(".sy-first")).toContainText("Antes do remédio");
+  await page.locator('[data-sy-ctx="lewy"]').click();
+  await expect(page.locator(".sy-cautions")).toContainText("neurolépticos");
+  await page.locator('[data-pt-mode="class"]').click();
+  await expect(page.locator(".pt-result .pharma-chips")).toBeVisible();
+  expect(errors).toEqual([]);
+});
 test("busca global com Ctrl+K abre a ficha pelo nome comercial", async ({ page }) => {
   const errors = await openSite(page);
   await page.keyboard.press("Control+k");
