@@ -20,13 +20,13 @@ function pharmaComorbReasons(item, p) {
       (rules[key] || []).forEach(([ids, text, srcKey, where]) => {
         if (!ids.includes(item.drug.id)) return;
         const src = srcKey ? `${data.sources[srcKey] || srcKey}, ${where}` : pharmaComorbSrc(cond);
-        out.push({ kind, cond: cond.label, text, src });
+        out.push({ kind, cond: cond.label, condId: cond.id, text, src });
       });
     });
     (cond.effects || []).forEach((hook) => {
       if (!hook.classes.includes(item.cls.id)) return;
       const level = item.drug.effects?.[hook.key];
-      if (level != null && level >= hook.min) out.push({ kind: hook.tone, cond: cond.label, text: hook.text, src: "níveis de efeito do simulador" });
+      if (level != null && level >= hook.min) out.push({ kind: hook.tone, cond: cond.label, condId: cond.id, text: hook.text, src: "níveis de efeito do simulador" });
     });
   });
   return out;
@@ -84,6 +84,21 @@ function pharmaPatientPrioFit(item, p) {
   };
 }
 
+/* Veredito por comorbidade: o pior motivo daquela condição para o remédio
+   (evitar > cautela > favorável > sem regra). Serve para ordenar e mostrar onde cada um encaixa. */
+function pharmaPatientComorbFit(reasons, p) {
+  const data = window.PHARMA_COMORB;
+  const parts = p.comorb.map((id) => {
+    const cond = data.conditions.find((c) => c.id === id);
+    if (!cond) return null;
+    const kinds = reasons.filter((r) => r.condId === id).map((r) => r.kind);
+    const verdict = kinds.includes("avoid") ? "avoid" : kinds.includes("caution") ? "caution" : kinds.includes("good") ? "good" : "none";
+    return { id, short: cond.label.replace(/ \(.*\)$/, ""), verdict };
+  }).filter(Boolean);
+  const n = (v) => parts.filter((x) => x.verdict === v).length;
+  return { parts, total: parts.length, fav: n("good"), avoid: n("avoid"), caution: n("caution"), none: n("none") };
+}
+
 function pharmaPatientEvaluate(clsId, p) {
   const cls = window.PHARMA_SIM[clsId];
   if (!cls) return [];
@@ -92,9 +107,22 @@ function pharmaPatientEvaluate(clsId, p) {
     const reasons = pharmaPatientReasons(item, p);
     const count = (k) => reasons.filter((r) => r.kind === k).length;
     const group = count("avoid") ? "avoid" : count("caution") ? "caution" : count("good") ? "good" : "neutral";
-    return { item, reasons, group, good: count("good"), caution: count("caution"), fit: pharmaPatientPrioFit(item, p) };
+    return { item, reasons, group, good: count("good"), caution: count("caution"), avoidN: count("avoid"), cfit: pharmaPatientComorbFit(reasons, p), fit: pharmaPatientPrioFit(item, p) };
   }).sort((a, b) =>
-    b.fit.met - a.fit.met || b.fit.score - a.fit.score || b.good - a.good || a.caution - b.caution || a.item.drug.name.localeCompare(b.item.drug.name, "pt-BR"));
+    /* Segurança primeiro: menos comorbidades contra, depois mais a favor; depois prioridades. */
+    a.cfit.avoid - b.cfit.avoid || a.cfit.caution - b.cfit.caution || b.cfit.fav - a.cfit.fav ||
+    a.avoidN - b.avoidN || a.caution - b.caution ||
+    b.fit.met - a.fit.met || b.fit.score - a.fit.score || b.good - a.good ||
+    a.item.drug.name.localeCompare(b.item.drug.name, "pt-BR"));
+}
+
+function pharmaPatientComorbFitHtml(cfit) {
+  if (cfit.total < 2) return "";
+  const label = { good: "favorável", caution: "cautela", avoid: "evitar", none: "sem regra" };
+  const tone = { good: "met", caution: "part", avoid: "miss", none: "none" };
+  const bad = cfit.avoid + cfit.caution;
+  const summary = `Favorável em ${cfit.fav} de ${cfit.total}${bad ? ` · alerta em ${bad}` : ""}`;
+  return `<div class="pt-fit pt-cfit"><b class="${cfit.fav === cfit.total ? "all" : ""}">${summary}</b>${cfit.parts.map((x) => `<span class="pt-fit-chip pt-fit-${tone[x.verdict]}">${escapeHtml(x.short)}: ${label[x.verdict]}</span>`).join("")}</div>`;
 }
 
 function pharmaPatientFitHtml(fit) {
@@ -114,6 +142,7 @@ function pharmaPatientRow(row) {
   return `
     <div class="pt-row pt-${row.group}">
       <button type="button" class="pt-name" data-pcard-open="${row.item.cls.id}:${row.item.drug.id}">${escapeHtml(row.item.drug.name)} <span aria-hidden="true">›</span></button>
+      ${pharmaPatientComorbFitHtml(row.cfit)}
       ${pharmaPatientFitHtml(row.fit)}
       ${reasons.length ? `<ul class="pt-reasons">${reasons.map((r) => `<li class="pt-r-${r.kind}"><b>${escapeHtml(r.cond)}:</b> ${escapeHtml(r.text)} <small>${escapeHtml(r.src)}</small></li>`).join("")}</ul>` : row.fit.parts.length ? "" : `<p class="pt-none">Nada no perfil muda a escolha deste remédio.</p>`}
     </div>`;
@@ -138,9 +167,24 @@ function pharmaPatientResults(clsId, p) {
   const prioLine = prioLabels.length
     ? `<div class="pt-prio-line"><b>Prioridades:</b> ${escapeHtml(prioLabels.join(" + "))}. Elas não mudam o grupo (que é de segurança): dentro de cada grupo, vem primeiro quem atende mais prioridades.${best.length ? `${bestFree.length ? ` <b>Atendem todas e não têm alerta:</b> ${bestFree.map((r) => escapeHtml(r.item.drug.name)).join(", ")}.` : ""}${bestCaution.length ? ` <b>Atendem todas, mas com cautela:</b> ${bestCaution.map((r) => escapeHtml(r.item.drug.name)).join(", ")}.` : ""}` : " <b>Nenhum remédio fora do grupo \"evitar\" atende todas</b>: vale rever qual prioridade pesa mais."}</div>`
     : "";
+  /* Resumo das comorbidades (com duas ou mais): quem é favorável em todas e quem chega mais perto. */
+  let comorbLine = "";
+  const nCond = rows[0]?.cfit.total || 0;
+  if (nCond >= 2) {
+    const safe = rows.filter((r) => r.group !== "avoid" && !r.cfit.avoid && !r.cfit.caution);
+    const all = safe.filter((r) => r.cfit.fav === nCond);
+    const maxFav = Math.max(0, ...safe.map((r) => r.cfit.fav));
+    const near = maxFav > 0 && !all.length ? safe.filter((r) => r.cfit.fav === maxFav) : [];
+    const names = (list) => list.map((r) => `${escapeHtml(r.item.drug.name)}${r.group === "caution" ? " (com cautela por outro motivo)" : ""}`).join(", ");
+    comorbLine = `<div class="pt-prio-line"><b>${nCond} comorbidades:</b> o remédio cai no grupo do pior motivo (basta uma contraindicação para ir a "evitar"). Dentro de cada grupo, vem primeiro quem tem menos alertas e é favorável em mais comorbidades.${
+      all.length ? ` <b>Favoráveis em todas, sem alerta em nenhuma:</b> ${names(all)}.`
+      : near.length ? ` <b>Nenhum é favorável em todas.</b> Mais perto (favorável em ${maxFav} de ${nCond}, sem alerta nas outras): ${names(near)}.`
+      : " <b>Nenhum remédio desta classe é favorável sem alerta</b> nessas comorbidades: vale olhar o grupo \"cautela\"."}</div>`;
+  }
   return `
     ${notes.length ? `<p class="pt-small">${notes.join("<br>")}</p>` : ""}
     ${noRules.length ? `<p class="pt-small">Sem regra das fontes para esta classe em: ${escapeHtml(noRules.join(", "))}.</p>` : ""}
+    ${comorbLine}
     ${prioLine}
     ${groups.map(([id, title, hint]) => {
       const list = rows.filter((r) => r.group === id);

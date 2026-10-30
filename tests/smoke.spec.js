@@ -912,6 +912,17 @@ test("aba Paciente: prioridades combinadas ordenam sem mudar o grupo de seguran�
   await expect(page.locator(".pt-group-caution")).not.toContainText("Clozapina");
   expect(errors).toEqual([]);
 });
+test("aba Paciente: várias comorbidades mostram o encaixe em cada uma e ordenam", async ({ page }) => {
+  const errors = await openSite(page);
+  await page.evaluate(() => document.querySelector('.tab[data-sim-target="patient"]').click());
+  await page.locator('[data-pt-class="antipsicoticos"]').click();
+  for (const id of ["ic", "diabetes", "epilepsia"]) await page.locator(`[data-pt-comorb="${id}"]`).click();
+  await expect(page.locator(".pt-prio-line").first()).toContainText("3 comorbidades");
+  await expect(page.locator(".pt-group-good .pt-row").first().locator(".pt-cfit")).toContainText("Favorável em 2 de 3");
+  await expect(page.locator(".pt-group-good .pt-row").last().locator(".pt-cfit")).toContainText("Favorável em 1 de 3");
+  await expect(page.locator(".pt-group-avoid .pt-row").first()).toContainText("Clorpromazina");
+  expect(errors).toEqual([]);
+});
 test("simulador de fármacos: cartão explicativo de cada alvo", async ({ page }) => {
   const errors = await openSite(page);
   await goTab(page, "pharma");
