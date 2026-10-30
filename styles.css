@@ -10425,3 +10425,157 @@ body.sim-running #commentsAccordion {
   color: var(--muted);
   font-size: 13px;
 }
+
+/* Celular: Confirmar no lugar de Próxima enquanto há letra marcada sem confirmar */
+.question-nav .nav-confirm {
+  border: 0;
+  border-radius: 12px;
+  background: var(--accent-strong, #0b6b70);
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+}
+
+.question-nav.confirm-mode #nextBtn {
+  display: none;
+}
+
+/* Marca-texto no enunciado */
+mark.q-hl {
+  background: #fde68a;
+  color: inherit;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+body.theme-dark mark.q-hl {
+  background: #7c5c0a;
+}
+
+.highlight-btn {
+  position: fixed;
+  z-index: 60;
+  padding: 6px 14px;
+  border: 0;
+  border-radius: 999px;
+  background: #1f2937;
+  color: #fff;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+/* Busca global */
+.global-search-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: -8px 0 14px;
+  padding: 7px 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 13.5px;
+  cursor: pointer;
+}
+
+.global-search-btn kbd,
+.gs-foot kbd {
+  padding: 1px 6px;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  font-size: 11px;
+  font-family: inherit;
+}
+
+.sidebar-collapsed .global-search-btn {
+  display: none;
+}
+
+.global-search {
+  width: min(560px, calc(100vw - 32px));
+  margin-top: 12vh;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--panel, #fff);
+  color: inherit;
+}
+
+.global-search::backdrop {
+  background: rgba(15, 23, 32, 0.45);
+}
+
+.gs-box {
+  display: grid;
+  gap: 6px;
+  padding: 12px;
+}
+
+.gs-input {
+  width: 100%;
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: 16px;
+}
+
+.gs-list {
+  display: grid;
+  gap: 2px;
+  max-height: 50vh;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  list-style: none;
+}
+
+.gs-list li {
+  display: grid;
+  gap: 1px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.gs-list li.on {
+  background: var(--accent-soft);
+}
+
+.gs-list small {
+  color: var(--muted);
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.gs-list span,
+.gs-empty {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.gs-foot {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+@media (max-width: 860px) {
+  .sidebar .global-search-btn {
+    order: 1;
+    margin: 0 0 12px;
+  }
+
+  .global-search-btn kbd {
+    display: none;
+  }
+}

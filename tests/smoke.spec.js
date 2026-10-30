@@ -901,6 +901,38 @@ test("aba Paciente: comorbidades e escolha dentro da classe", async ({ page }) =
   await expect(page.locator("#pharmaPanel h2")).toHaveText("Paciente simulado");
   expect(errors).toEqual([]);
 });
+test("busca global com Ctrl+K abre a ficha pelo nome comercial", async ({ page }) => {
+  const errors = await openSite(page);
+  await page.keyboard.press("Control+k");
+  await expect(page.locator("#globalSearch")).toBeVisible();
+  await page.locator("#globalSearch .gs-input").fill("rivotril");
+  await expect(page.locator("#globalSearch li").first()).toContainText("Clonazepam");
+  await page.locator("#globalSearch .gs-input").press("Enter");
+  await expect(page.locator("#pharmaPanel h2")).toHaveText("Clonazepam");
+  expect(errors).toEqual([]);
+});
+test("marca-texto no enunciado grifa, guarda e remove", async ({ page }) => {
+  const errors = await openSite(page);
+  await page.evaluate(() => startStudyRun(state.questions.slice(0, 5), { kind: "teste", label: "teste" }));
+  await page.evaluate(() => {
+    const root = document.querySelector("#questionText");
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+    let node;
+    while ((node = walker.nextNode())) if (node.textContent.trim().length > 30 && !node.parentElement.closest("summary")) break;
+    const range = document.createRange();
+    range.setStart(node, 2);
+    range.setEnd(node, 14);
+    getSelection().removeAllRanges();
+    getSelection().addRange(range);
+  });
+  await expect(page.locator("#highlightBtn")).toBeVisible();
+  await page.locator("#highlightBtn").click();
+  await expect(page.locator("#questionText mark.q-hl")).toHaveCount(1);
+  expect(await page.evaluate(() => Object.keys(JSON.parse(localStorage.getItem("banco-rmais-highlights") || "{}")).length)).toBe(1);
+  await page.locator("#questionText mark.q-hl").click();
+  await expect(page.locator("#questionText mark.q-hl")).toHaveCount(0);
+  expect(errors).toEqual([]);
+});
 test("simulado esconde comentários até finalizar", async ({ page }) => {
   const errors = await openSite(page);
   await goTab(page, "exams");
