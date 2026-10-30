@@ -869,13 +869,13 @@ test("psicofarmacologia: busca por nome comercial, perfil do paciente e ficha", 
   await goTab(page, "pharma");
   await page.locator("[data-pcard-search]").fill("Rivotril");
   await expect(page.locator(".pcard-hits")).toContainText("Clonazepam");
+  await page.locator("[data-pcard-search]").fill("cloza");
+  await page.locator(".pcard-hit").first().click();
+  await expect(page.locator("#pharmaPanel h2")).toHaveText("Clozapina");
   await page.locator("[data-pf-toggle]").click();
   await page.locator('[data-pf-field="age"]').selectOption("idoso");
   await page.locator("[data-pf-med-add]").selectOption("fluvoxamina");
   await expect(page.locator(".pcard-patient-head")).toContainText("em uso: Fluvoxamina");
-  await page.locator("[data-pcard-search]").fill("cloza");
-  await page.locator(".pcard-hit").first().click();
-  await expect(page.locator("#pharmaPanel h2")).toHaveText("Clozapina");
   await expect(page.locator(".pcard-for")).toContainText("Nível de clozapina sobe");
   await expect(page.locator(".pcard-for")).toContainText("Idosos");
   await expect(page.locator('.pop-chip.rel[data-pop-field="i"]')).toHaveCount(1);
@@ -886,7 +886,7 @@ test("psicofarmacologia: busca por nome comercial, perfil do paciente e ficha", 
 test("aba Paciente: comorbidades e escolha dentro da classe", async ({ page }) => {
   const errors = await openSite(page);
   await page.evaluate(() => document.querySelector('.tab[data-sim-target="patient"]').click());
-  await expect(page.locator("#pharmaPanel h2")).toHaveText("Paciente");
+  await expect(page.locator("#pharmaPanel h2")).toHaveText("Paciente simulado");
   await page.locator('[data-pt-comorb="fa"]').click();
   await page.locator('[data-pt-comorb="epilepsia"]').click();
   await expect(page.locator(".pt-group-good")).toContainText("Mirtazapina");
@@ -897,7 +897,7 @@ test("aba Paciente: comorbidades e escolha dentro da classe", async ({ page }) =
   await page.locator(".pt-group-good .pt-name").first().click();
   await expect(page.locator(".pcard-for")).toContainText("Fibrilação atrial");
   await page.locator("[data-pharma-hub]").click();
-  await expect(page.locator("#pharmaPanel h2")).toHaveText("Paciente");
+  await expect(page.locator("#pharmaPanel h2")).toHaveText("Paciente simulado");
   expect(errors).toEqual([]);
 });
 test("aba Paciente: prioridades combinadas ordenam sem mudar o grupo de segurança", async ({ page }) => {

@@ -217,13 +217,13 @@ function renderPatientTab() {
     <header class="pharma-head pharma-hub-head">
       <div>
         <div class="pharma-head-top">
-          <h2>Paciente</h2>
+          <h2>Paciente simulado</h2>
           ${refCount ? `<button type="button" class="pharma-sources-btn" data-pharma-sources aria-haspopup="dialog">Fontes · ${refCount}</button>` : ""}
         </div>
-        <p>Monte um paciente e compare os remédios de uma classe: o que preferir, o que usar com cautela e o que evitar, com o motivo e a fonte.</p>
+        <p>Ambiente de teste: monte um paciente fictício, mude o perfil e veja como a escolha dentro de cada classe se reorganiza, com o motivo e a fonte de cada ponto. Serve para treinar o raciocínio, não é recomendação de tratamento.</p>
       </div>
       <div class="segmented pharma-sections" role="group" aria-label="Seção">
-        ${section("drugs", "Psicofarmacologia")}${section("atlas", "Neuroanatomia")}${section("patient", "Paciente")}
+        ${section("drugs", "Psicofarmacologia")}${section("atlas", "Neuroanatomia")}${section("patient", "Paciente simulado")}
       </div>
     </header>
     ${pharmaPatientForm(true)}

@@ -2582,11 +2582,11 @@ function renderPharmaHub() {
   const head = `
     <header class="pharma-head pharma-hub-head">
       <div>
-        <h2>Simular</h2>
+        <h2>${typeof LAB_NAME === "string" ? LAB_NAME : "Simular"}</h2>
         <p>${atlas ? "Siga circuitos e vias do sistema nervoso e veja o que muda quando uma estrutura falha." : "Explore como o mecanismo de cada remédio explica o efeito e os efeitos colaterais."}</p>
       </div>
       <div class="segmented pharma-sections" role="group" aria-label="Seção">
-        ${section("drugs", "Psicofarmacologia")}${section("atlas", "Neuroanatomia")}${section("patient", "Paciente")}
+        ${section("drugs", "Psicofarmacologia")}${section("atlas", "Neuroanatomia")}${section("patient", "Paciente simulado")}
         <button type="button" disabled title="Em breve">Casos clínicos <span class="pharma-soon">em breve</span></button>
       </div>
     </header>`;

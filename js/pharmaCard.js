@@ -205,7 +205,7 @@ function renderPharmaCard() {
   return `
     <header class="pharma-head">
       <div>
-        <div class="pharma-head-top"><button type="button" class="link-btn pharma-back" data-pharma-hub>← ${state.pharma.section === "patient" ? "Paciente" : "Psicofarmacologia"}</button></div>
+        <div class="pharma-head-top"><button type="button" class="link-btn pharma-back" data-pharma-hub>← ${state.pharma.section === "patient" ? "Paciente simulado" : "Psicofarmacologia"}</button></div>
         <h2>${escapeHtml(drug.name)}</h2>
         <p>${escapeHtml(cls.label)} · ficha com o resumo de todas as ferramentas.</p>
       </div>
@@ -255,7 +255,7 @@ function pharmaOpenCard(clsId, drugId) {
     if (state.pharma.section === "patient" && typeof renderPatientTab === "function") return renderPatientTab();
     const html = baseHub();
     if (state.pharma.section === "atlas") return html;
-    return html.replace('<p class="atlas-group">Classes</p>', `${pharmaSearchBox()}${pharmaPatientForm()}<p class="atlas-group">Classes</p>`);
+    return html.replace('<p class="atlas-group">Classes</p>', `${pharmaSearchBox()}<p class="atlas-group">Classes</p>`);
   };
 
   const panel = document.querySelector("#pharmaPanel");

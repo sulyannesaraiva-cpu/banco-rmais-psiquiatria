@@ -26,27 +26,34 @@
           <p>Residência e título de especialista</p>
         </div>
       </div>
-      <nav class="pq-switch" aria-label="Área do site">
-        <a href="/" aria-current="page">Estudo</a>
+      <nav class="pq-switch pq-switch-3" aria-label="Área do site">
+        <a href="/" data-area="study" aria-current="page">Estudo</a>
+        <a href="/" data-area="lab" class="lab-name">Laboratório</a>
         <a href="https://escalas.psiquiatriaemquestao.com.br/">Prática clínica</a>
       </nav>
 
       <nav class="tabs" aria-label="Painel do banco">
-        <button class="tab active" data-tab="overview">Hoje</button>
-        <div class="tab-group-label">Estudar</div>
-        <button class="tab" data-tab="activity">Estudo por temas</button>
-        <button class="tab" data-tab="exams">Provas</button>
-        <button class="tab" data-tab="flashcards">Flashcards</button>
-        <button class="tab" data-tab="history">Desempenho</button>
-        <div class="tab-group-label">Simular</div>
-        <button class="tab" data-tab="pharma" data-sim-target="drugs">Psicofarmacologia</button>
-        <button class="tab" data-tab="pharma" data-sim-target="atlas">Neuroanatomia</button>
-        <button class="tab" data-tab="pharma" data-sim-target="patient">Paciente</button>
-        <button class="tab sim-soon" type="button" disabled>Casos clínicos <span class="pharma-soon">em breve</span></button>
-        <div class="tab-group-label">Você</div>
-        <button class="tab" data-tab="notes">Anota&ccedil;&otilde;es</button>
-        <div class="admin-nav-divider admin-only">Administra&ccedil;&atilde;o</div>
-        <button class="tab admin-tab admin-only" data-tab="topics">Administra&ccedil;&atilde;o</button>
+        <button class="tab active nav-study" data-tab="overview">Hoje</button>
+        <div class="tab-group-label nav-study">Estudar</div>
+        <button class="tab nav-study" data-tab="activity">Estudo por temas</button>
+        <button class="tab nav-study" data-tab="exams">Provas</button>
+        <button class="tab nav-study" data-tab="flashcards">Flashcards</button>
+        <button class="tab nav-study" data-tab="history">Desempenho</button>
+        <div class="tab-group-label nav-lab">Simuladores</div>
+        <button class="tab nav-lab" data-tab="pharma" data-sim-target="drugs">Psicofarmacologia</button>
+        <button class="tab nav-lab" data-tab="pharma" data-sim-target="atlas">Neuroanatomia</button>
+        <button class="tab nav-lab" data-tab="pharma" data-sim-target="patient">Paciente simulado</button>
+        <button class="tab sim-soon nav-lab" type="button" disabled>Casos clínicos <span class="pharma-soon">em breve</span></button>
+        <div class="tab-group-label nav-lab">Ferramentas</div>
+        <button class="tab nav-lab" data-tab="pharma" data-sim-target="drugs" data-sim-view="inter">Interações</button>
+        <button class="tab nav-lab" data-tab="pharma" data-sim-target="drugs" data-sim-view="switch">Troca e retirada</button>
+        <button class="tab nav-lab" data-tab="pharma" data-sim-target="drugs" data-sim-view="safety">Segurança</button>
+        <button class="tab nav-lab" data-tab="pharma" data-sim-target="drugs" data-sim-view="levels">Níveis séricos</button>
+        <button class="tab nav-lab" data-tab="pharma" data-sim-target="drugs" data-sim-view="effect">Comparar efeitos</button>
+        <div class="tab-group-label nav-study">Você</div>
+        <button class="tab nav-study" data-tab="notes">Anota&ccedil;&otilde;es</button>
+        <div class="admin-nav-divider admin-only nav-study">Administra&ccedil;&atilde;o</div>
+        <button class="tab admin-tab admin-only nav-study" data-tab="topics">Administra&ccedil;&atilde;o</button>
       </nav>
 
       <div class="sidebar-footer">
@@ -695,7 +702,7 @@
     <nav class="bottom-nav" id="bottomNav" aria-label="Navegação principal">
       <button type="button" data-nav="today"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"></path></svg><span>Hoje</span></button>
       <button type="button" data-nav="study"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2z"></path><path d="M8 7h6"></path></svg><span>Estudar</span></button>
-      <button type="button" data-nav="simulate"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6"></path><path d="M10 3v6l-5 9a2 2 0 0 0 2 3h10a2 2 0 0 0 2-3l-5-9V3"></path><path d="M7.5 14h9"></path></svg><span>Simular</span></button>
+      <button type="button" data-nav="simulate"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6"></path><path d="M10 3v6l-5 9a2 2 0 0 0 2 3h10a2 2 0 0 0 2-3l-5-9V3"></path><path d="M7.5 14h9"></path></svg><span class="lab-name">Laboratório</span></button>
       <button type="button" data-nav="practice"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4h6v3H9z"></path><path d="M7 5H5v16h14V5h-2"></path><path d="M8.5 12l2 2 4-4"></path></svg><span>Prática</span></button>
       <button type="button" data-nav="you"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c1.5-4 5-6 8-6s6.5 2 8 6"></path></svg><span>Você</span></button>
     </nav>
@@ -767,6 +774,7 @@
     <script src="data/pharmaComorb.js"></script>
     <script src="js/pharmaCard.js"></script>
     <script src="js/pharmaPatient.js"></script>
+    <script src="js/labNav.js"></script>
     <script src="data/atlas.js"></script>
     <script src="js/atlas.js"></script>
     <script src="data/atlasClinical.js"></script>
