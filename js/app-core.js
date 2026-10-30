@@ -692,7 +692,7 @@ function renderAuth() {
   el.authStatus.textContent = user ? user.email : "Salve seu progresso com login.";
   el.authForm.hidden = Boolean(user);
   el.logout.hidden = !user;
-  if (!user) setSyncStatus(state.supabase ? "Modo local ativo." : "Supabase indisponível neste navegador.");
+  if (!user) setSyncStatus(state.supabase ? "Modo local: seu progresso fica só neste navegador e pode se perder ao limpar os dados ou trocar de aparelho. Entre para guardar na sua conta." : "Supabase indisponível neste navegador.");
   renderAdminAccess();
 }
 
@@ -957,7 +957,7 @@ async function setupSupabaseAuth() {
     else state.isAdmin = false;
     renderAuth();
     if (state.authUser) await loadCloudState();
-    else setSyncStatus("Modo local ativo.");
+    else setSyncStatus("Modo local: seu progresso fica só neste navegador e pode se perder ao limpar os dados ou trocar de aparelho. Entre para guardar na sua conta.");
   });
 }
 
@@ -4794,11 +4794,21 @@ function endExam() {
   applyFilters({ preserveCurrent: true });
 }
 
+/* Abre a janela de confirmação (js/resetDialog.js): mostra o alcance real, oferece backup e pede "APAGAR". */
 function resetUserProgress() {
+  if (typeof openResetDialog === "function") {
+    openResetDialog(performUserProgressReset);
+    return;
+  }
   const shouldReset = window.confirm(
-    "Tem certeza que deseja zerar seu histórico de desempenho? Isso apaga acertos, erros, respostas marcadas, revisões programadas, anotações e alternativas riscadas neste navegador. O banco de questões e as correções administrativas serão preservados.",
+    state.authUser
+      ? "Isso apaga acertos, erros, respostas, revisões programadas, anotações e alternativas riscadas deste navegador E da sua conta, em todos os aparelhos. Não dá para desfazer. Continuar?"
+      : "Isso apaga acertos, erros, respostas, revisões programadas, anotações e alternativas riscadas deste navegador. Não dá para desfazer. Continuar?",
   );
-  if (!shouldReset) return;
+  if (shouldReset) performUserProgressReset();
+}
+
+async function performUserProgressReset() {
   state.progress = {};
   state.attempts = [];
   state.reviewSchedule = {};
@@ -4827,11 +4837,19 @@ function resetUserProgress() {
   saveAttempts();
   saveReviewSchedule();
   saveDiscardedOptions();
+  let cloudError = false;
   if (state.authUser && state.supabase) {
-    state.supabase.from("user_progress").delete().eq("user_id", state.authUser.id);
-    state.supabase.from("question_attempts").delete().eq("user_id", state.authUser.id);
-    state.supabase.from("review_schedule").delete().eq("user_id", state.authUser.id);
+    /* Espera a resposta do banco para avisar se algo não foi apagado na conta. */
+    const results = await Promise.all([
+      state.supabase.from("user_progress").delete().eq("user_id", state.authUser.id),
+      state.supabase.from("question_attempts").delete().eq("user_id", state.authUser.id),
+      state.supabase.from("review_schedule").delete().eq("user_id", state.authUser.id),
+    ]).catch(() => [{ error: true }]);
+    cloudError = results.some((r) => r && r.error);
     syncSettingsToCloud();
+  }
+  if (cloudError) {
+    state.sessionCompletionMessage = "Histórico zerado neste navegador, mas a conta não respondeu: parte do histórico pode voltar ao sincronizar. Tente de novo com a internet estável.";
   }
   state.index = 0;
   setTab("activity");

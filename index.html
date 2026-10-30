@@ -75,7 +75,7 @@
             </div>
           </details>
           <button id="logoutBtn" hidden>Sair</button>
-          <p class="panel-line" id="syncStatus">Modo local ativo.</p>
+          <p class="panel-line" id="syncStatus">Modo local: seu progresso fica só neste navegador e pode se perder ao limpar os dados ou trocar de aparelho. Entre para guardar na sua conta.</p>
         </section>
         <button id="themeToggleBtn" class="theme-toggle" type="button" aria-pressed="false">Modo escuro</button>
         <button id="inviteBtn" class="theme-toggle invite-btn" type="button">Convidar colegas</button>
@@ -228,7 +228,7 @@
               </label>
               <button id="confirmPendingBtn" class="primary-btn">Confirmar</button>
               <div class="pending-summary" id="pendingSummary"></div>
-              <p class="panel-line">Área para localizar questões que precisam de revisão de cadastro, como gabarito, enunciado ou alternativas. Futuramente isso pode ficar restrito a perfil administrador.</p>
+              <p class="panel-line">Área para localizar questões que precisam de revisão de cadastro, como gabarito, enunciado ou alternativas. Visível só para administradores.</p>
               <div class="admin-tools">
                 <button id="exportCorrectionsBtn">Exportar revisões</button>
                 <p class="panel-line" id="correctionExportLine">Exporte as revisões feitas neste navegador para aplicar ao banco definitivo.</p>
@@ -775,6 +775,7 @@
     <script src="js/pharmaCard.js"></script>
     <script src="js/pharmaPatient.js"></script>
     <script src="js/labNav.js"></script>
+    <script src="js/resetDialog.js"></script>
     <script src="data/atlas.js"></script>
     <script src="js/atlas.js"></script>
     <script src="data/atlasClinical.js"></script>

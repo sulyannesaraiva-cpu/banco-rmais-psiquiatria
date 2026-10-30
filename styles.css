@@ -10330,3 +10330,77 @@ body:not(.area-lab) .sidebar .nav-lab,
 body.area-lab .sidebar .nav-study {
   display: none;
 }
+
+/* Janela de confirmação de Reiniciar desempenho */
+.reset-dialog {
+  width: min(440px, calc(100vw - 32px));
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--panel, #fff);
+  color: inherit;
+}
+
+.reset-dialog::backdrop {
+  background: rgba(15, 23, 32, 0.45);
+}
+
+.reset-dialog-body {
+  display: grid;
+  gap: 10px;
+  padding: 18px;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.reset-dialog-body h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.reset-dialog-body p {
+  margin: 0;
+}
+
+.reset-scope {
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: var(--panel-soft);
+}
+
+.reset-scope.cloud {
+  background: #fde8dd;
+  color: #5c1d05;
+}
+
+.reset-backup {
+  justify-self: start;
+}
+
+.reset-type {
+  display: grid;
+  gap: 4px;
+}
+
+.reset-type input {
+  min-height: 40px;
+  padding: 6px 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+}
+
+.reset-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.reset-actions .danger-lite:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

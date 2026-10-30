@@ -29,7 +29,7 @@ function renderWelcome() {
   if (!visible) return;
   const html = `
     ${state.invited ? '<span class="welcome-kicker">Você foi convidado por um colega</span>' : ""}
-    <h2>Bem-vindo ao Psiquiatria em Questão</h2>
+    <h2>Boas-vindas ao Psiquiatria em Questão</h2>
     <p>Questões de provas de residência e de títulos, flashcards e um plano de estudo que se ajusta à sua prova.</p>
     <ol class="welcome-steps">
       <li><strong>Monte seu plano</strong><span>Escolha as provas que vai fazer, a data e quanto tempo tem por dia.</span></li>

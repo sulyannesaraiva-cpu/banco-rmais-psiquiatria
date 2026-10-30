@@ -391,7 +391,7 @@ test("revisão de véspera: cartão perto da prova e blocos de questões e flash
 
 test("plano com mais de uma prova e boas-vindas para quem chega", async ({ page }) => {
   const errors = await openSite(page);
-  await expect(page.locator("#welcomeCard")).toContainText("Bem-vindo");
+  await expect(page.locator("#welcomeCard")).toContainText("Boas-vindas");
   await page.locator('[data-welcome="close"]').click();
   await expect(page.locator("#welcomeCard")).toBeHidden();
   await page.locator('[data-plan-exam="ENARE"]').click();
@@ -898,6 +898,20 @@ test("aba Paciente: comorbidades e escolha dentro da classe", async ({ page }) =
   await expect(page.locator(".pcard-for")).toContainText("Fibrilação atrial");
   await page.locator("[data-pharma-hub]").click();
   await expect(page.locator("#pharmaPanel h2")).toHaveText("Paciente simulado");
+  expect(errors).toEqual([]);
+});
+test("reiniciar desempenho pede APAGAR e oferece backup", async ({ page }) => {
+  const errors = await openSite(page);
+  await goTab(page, "history");
+  await page.evaluate(() => document.querySelector("#resetProgressBtn").click());
+  const dialog = page.locator("#resetDialog");
+  await expect(dialog).toContainText("Modo local: apaga só deste navegador");
+  await expect(dialog.locator("[data-reset-backup]")).toBeVisible();
+  await expect(dialog.locator("[data-reset-confirm]")).toBeDisabled();
+  await dialog.locator("[data-reset-input]").fill("APAGAR");
+  await expect(dialog.locator("[data-reset-confirm]")).toBeEnabled();
+  await dialog.locator("[data-reset-cancel]").click();
+  await expect(page.locator("#resetDialog")).toHaveCount(0);
   expect(errors).toEqual([]);
 });
 test("aba Paciente: prioridades combinadas ordenam sem mudar o grupo de segurança", async ({ page }) => {
